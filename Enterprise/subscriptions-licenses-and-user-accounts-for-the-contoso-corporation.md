@@ -20,87 +20,87 @@ ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Sottoscrizioni, licenze e account utente per Contoso Corporation
+# <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a><span data-ttu-id="4d622-103">Sottoscrizioni, licenze e account utente per Contoso Corporation</span><span class="sxs-lookup"><span data-stu-id="4d622-103">Subscriptions, licenses, and user accounts for the Contoso Corporation</span></span>
 
- **Riepilogo:** Comprensione della struttura delle sottoscrizioni cloud di Contoso, le licenze, gli account utente e tenant.
+ <span data-ttu-id="4d622-104">**Riepilogo:** Comprensione della struttura delle sottoscrizioni cloud di Contoso, le licenze, gli account utente e tenant.</span><span class="sxs-lookup"><span data-stu-id="4d622-104">**Summary:** Understand the structure of Contoso's cloud subscriptions, licenses, user accounts, and tenants.</span></span>
   
-Per garantire un utilizzo coerente di identità e fatturazione per tutte le offerte cloud, Microsoft fornisce una gerarchia di organizzazioni/sottoscrizioni/licenze/account utente:
+<span data-ttu-id="4d622-105">Per garantire un utilizzo coerente di identità e fatturazione per tutte le offerte cloud, Microsoft fornisce una gerarchia di organizzazioni/sottoscrizioni/licenze/account utente:</span><span class="sxs-lookup"><span data-stu-id="4d622-105">To provide a consistent use of identities and billing for all cloud offerings, Microsoft provides an organization/subscriptions/licenses/user accounts hierarchy:</span></span>
   
-- Organizzazione
+- <span data-ttu-id="4d622-106">Organizzazione</span><span class="sxs-lookup"><span data-stu-id="4d622-106">Organization</span></span>
     
-    L'entità aziendale che utilizza offerte cloud Microsoft, in genere identificate tramite un nome di dominio DNS pubblico, ad esempio contoso.com.
+    <span data-ttu-id="4d622-107">L'entità aziendale che utilizza offerte cloud Microsoft, in genere identificate tramite un nome di dominio DNS pubblico, ad esempio contoso.com.</span><span class="sxs-lookup"><span data-stu-id="4d622-107">The business entity that is using Microsoft cloud offerings, typically identified by a public DNS domain name, such as contoso.com.</span></span>
     
-- Sottoscrizioni
+- <span data-ttu-id="4d622-108">Sottoscrizioni</span><span class="sxs-lookup"><span data-stu-id="4d622-108">Subscriptions</span></span>
     
-    Per SaaS Microsoft cloud offerte (Office 365, Intune/EMS e Dynamics 365), una sottoscrizione è un prodotto specifico e un set acquistato delle licenze utente. Per Azure, una sottoscrizione consente di fatturazione dei servizi cloud consumato nell'organizzazione.
+    <span data-ttu-id="4d622-p101">Per SaaS Microsoft cloud offerte (Office 365, Intune/EMS e Dynamics 365), una sottoscrizione è un prodotto specifico e un set acquistato delle licenze utente. Per Azure, una sottoscrizione consente di fatturazione dei servizi cloud consumato nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="4d622-p101">For Microsoft SaaS cloud offerings (Office 365, Intune/EMS, and Dynamics 365), a subscription is a specific product and a purchased set of user licenses. For Azure, a subscription allows for billing of consumed cloud services to the organization.</span></span>
     
-- Licenze
+- <span data-ttu-id="4d622-111">Licenze</span><span class="sxs-lookup"><span data-stu-id="4d622-111">Licenses</span></span>
     
-    Per le offerte cloud Microsoft SaaS, di una licenza consente a un account utente specifico utilizzare i servizi cloud. Per Azure, le licenze software sono incorporate nel servizio prezzi, ma in alcuni casi che è necessario acquistare licenze software aggiuntive.
+    <span data-ttu-id="4d622-p102">Per le offerte cloud Microsoft SaaS, di una licenza consente a un account utente specifico utilizzare i servizi cloud. Per Azure, le licenze software sono incorporate nel servizio prezzi, ma in alcuni casi che è necessario acquistare licenze software aggiuntive.</span><span class="sxs-lookup"><span data-stu-id="4d622-p102">For Microsoft SaaS cloud offerings, a license allows a specific user account to use cloud services. For Azure, software licenses are built into service pricing, but in some cases you will need to purchase additional software licenses.</span></span>
     
-- Account utente
+- <span data-ttu-id="4d622-114">Account utente</span><span class="sxs-lookup"><span data-stu-id="4d622-114">User accounts</span></span>
     
-    Gli account utente vengono archiviati in un tenant di Azure AD e possono essere sincronizzati da un provider di identità locale, ad esempio Windows Server AD.
+    <span data-ttu-id="4d622-115">Gli account utente vengono archiviati in un tenant di Azure AD e possono essere sincronizzati da un provider di identità locale, ad esempio Windows Server AD.</span><span class="sxs-lookup"><span data-stu-id="4d622-115">User accounts are stored in an Azure AD tenant and can be synchronized from an on-premises identity provider such as Windows Server AD.</span></span>
     
-## <a name="contosos-structure"></a>Struttura di Contoso
+## <a name="contosos-structure"></a><span data-ttu-id="4d622-116">Struttura di Contoso</span><span class="sxs-lookup"><span data-stu-id="4d622-116">Contoso's structure</span></span>
 
-Contoso ha determinato la struttura seguente per l'organizzazione e per le sottoscrizioni, licenze, account e tenant della stessa:
+<span data-ttu-id="4d622-117">Contoso ha determinato la struttura seguente per l'organizzazione e per le sottoscrizioni, licenze, account e tenant della stessa:</span><span class="sxs-lookup"><span data-stu-id="4d622-117">Contoso determined the following structure for the organization and its subscriptions, licenses, accounts, and tenants:</span></span>
   
-**Nella figura 1: Del Contoso organizzazione, sottoscrizioni, licenze, gli account utente e tenant**
+<span data-ttu-id="4d622-118">**Nella figura 1: Del Contoso organizzazione, sottoscrizioni, licenze, gli account utente e tenant**</span><span class="sxs-lookup"><span data-stu-id="4d622-118">**Figure 1: Contoso's organization, subscriptions, licenses, user accounts and tenants**</span></span>
 
 ![Organizzazione di Contoso, sottoscrizioni, licenze, account utente e tenant](images/Contoso_Poster/Subscriptions.png)
   
-Nella figura 1 viene mostrato in che modo l'organizzazione Contoso include più sottoscrizioni ed è legata a un tenant di Azure AD, il quale comprende gli account utente sincronizzati dalla foresta Windows Server AD di contoso.com.
+<span data-ttu-id="4d622-120">Nella figura 1 viene mostrato in che modo l'organizzazione Contoso include più sottoscrizioni ed è legata a un tenant di Azure AD, il quale comprende gli account utente sincronizzati dalla foresta Windows Server AD di contoso.com.</span><span class="sxs-lookup"><span data-stu-id="4d622-120">Figure 1 shows how the Contoso organization includes multiple subscriptions and is tied to a common Azure AD tenant that contains the user accounts synchronized from the contoso.com Windows Server AD forest.</span></span>
   
-- **Organizzazione** Contoso Corporation è identificata dal relativo nome di dominio pubblico contoso.com.
+- <span data-ttu-id="4d622-121">**Organizzazione** Contoso Corporation è identificata dal relativo nome di dominio pubblico contoso.com.</span><span class="sxs-lookup"><span data-stu-id="4d622-121">**Organization** The Contoso Corporation is identified by its public domain name contoso.com.</span></span>
     
-  - **Licenze e sottoscrizioni** Contoso Corporation utilizza le operazioni seguenti:
+  - <span data-ttu-id="4d622-122">**Licenze e sottoscrizioni** Contoso Corporation utilizza le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="4d622-122">**Subscriptions and licenses** The Contoso Corporation is using the following:</span></span>
     
-  - Il prodotto Office 365 Enterprise E3 con 5.000 licenze
+  - <span data-ttu-id="4d622-123">Il prodotto Office 365 Enterprise E3 con 5.000 licenze</span><span class="sxs-lookup"><span data-stu-id="4d622-123">The Office 365 Enterprise E3 product with 5,000 licenses</span></span>
     
-  - Il prodotto Office 365 Enterprise E5 con 200 licenze
+  - <span data-ttu-id="4d622-124">Il prodotto Office 365 Enterprise E5 con 200 licenze</span><span class="sxs-lookup"><span data-stu-id="4d622-124">The Office 365 Enterprise E5 product with 200 licenses</span></span>
     
-  - Il prodotto EMS con 5.000 licenze
+  - <span data-ttu-id="4d622-125">Il prodotto EMS con 5.000 licenze</span><span class="sxs-lookup"><span data-stu-id="4d622-125">The EMS product with 5,000 licenses</span></span>
     
-  - Prodotto Dynamics 365 con 100 licenze
+  - <span data-ttu-id="4d622-126">Prodotto Dynamics 365 con 100 licenze</span><span class="sxs-lookup"><span data-stu-id="4d622-126">The Dynamics 365 product with 100 licenses</span></span>
     
-  - Più sottoscrizioni Azure basate sulle aree geografiche
+  - <span data-ttu-id="4d622-127">Più sottoscrizioni Azure basate sulle aree geografiche</span><span class="sxs-lookup"><span data-stu-id="4d622-127">Multiple Azure subscriptions based on regions</span></span>
     
-  - **Account utente** Un comune tenant di Azure Active Directory contiene l'elenco degli account utente e i gruppi utilizzati da tutte le sottoscrizioni di Contoso, ad eccezione di sviluppo e di testing sottoscrizioni di Azure.
+  - <span data-ttu-id="4d622-128">**Account utente** Un comune tenant di Azure Active Directory contiene l'elenco degli account utente e i gruppi utilizzati da tutte le sottoscrizioni di Contoso, ad eccezione di sviluppo e di testing sottoscrizioni di Azure.</span><span class="sxs-lookup"><span data-stu-id="4d622-128">**User accounts** A common Azure AD tenant contains the list of user accounts and groups used by all of Contoso's subscriptions, with the exception of dev/test Azure subscriptions.</span></span>
     
-Per i tenant Contoso:
+<span data-ttu-id="4d622-129">Per i tenant Contoso:</span><span class="sxs-lookup"><span data-stu-id="4d622-129">For Contoso's tenants:</span></span>
   
-- Per le offerte cloud SaaS, tenant è il percorso internazionale in cui si trova il server che offrono servizi basati su cloud. Contoso ha scelto la regione Europa per ospitare il tenant Office 365, EMS e Dynamics 365. 
+- <span data-ttu-id="4d622-p103">Per le offerte cloud SaaS, tenant è il percorso internazionale in cui si trova il server che offrono servizi basati su cloud. Contoso ha scelto la regione Europa per ospitare il tenant Office 365, EMS e Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="4d622-p103">For SaaS cloud offerings, the tenant is the regional location that houses the servers providing cloud services. Contoso chose the European region to host its Office 365, EMS, and Dynamics 365 tenants.</span></span> 
     
-- Azure PaaS servizi e applicazioni e carichi di lavoro IaaS IT possono avere tenancy in un Data Center Azure in tutto il mondo. Un tenant di Azure Active Directory è un'istanza specifica di Azure Active Directory contenente gli account e gruppi.
+- <span data-ttu-id="4d622-p104">Azure PaaS servizi e applicazioni e carichi di lavoro IaaS IT possono avere tenancy in un Data Center Azure in tutto il mondo. Un tenant di Azure Active Directory è un'istanza specifica di Azure Active Directory contenente gli account e gruppi.</span><span class="sxs-lookup"><span data-stu-id="4d622-p104">Azure PaaS services and apps and IaaS IT workloads can have tenancy in any Azure datacenter across the world. An Azure AD tenant is a specific instance of Azure AD containing accounts and groups.</span></span>
     
-- Il comune tenant di Azure Active Directory contenente gli account di sincronizzazione per la foresta Contoso Windows Server Active Directory fornisce IDaaS nelle offerte cloud di Microsoft.
+- <span data-ttu-id="4d622-134">Il comune tenant di Azure Active Directory contenente gli account di sincronizzazione per la foresta Contoso Windows Server Active Directory fornisce IDaaS nelle offerte cloud di Microsoft.</span><span class="sxs-lookup"><span data-stu-id="4d622-134">The common Azure AD tenant that contains the synchronized accounts for the Contoso Windows Server AD forest provides IDaaS across Microsoft's cloud offerings.</span></span>
     
-Per ulteriori informazioni, vedere [sottoscrizioni, le licenze, gli account utilizzati e tenant per le offerte cloud di Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+<span data-ttu-id="4d622-135">Per ulteriori informazioni, vedere [sottoscrizioni, le licenze, gli account utilizzati e tenant per le offerte cloud di Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span><span class="sxs-lookup"><span data-stu-id="4d622-135">For more information, see [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span></span>
   
-## <a name="contosos-azure-subscriptions"></a>Sottoscrizioni Azure contoso
+## <a name="contosos-azure-subscriptions"></a><span data-ttu-id="4d622-136">Sottoscrizioni Azure contoso</span><span class="sxs-lookup"><span data-stu-id="4d622-136">Contoso's Azure subscriptions</span></span>
 
-Nella figura 2 viene illustrata la struttura gerarchica delle sottoscrizioni Azure Contoso:
+<span data-ttu-id="4d622-137">Nella figura 2 viene illustrata la struttura gerarchica delle sottoscrizioni Azure Contoso:</span><span class="sxs-lookup"><span data-stu-id="4d622-137">Figure 2 shows the hierarchical design of Contoso's Azure subscriptions:</span></span>
   
-**Figura 2: Struttura di Contoso per le sottoscrizioni di Azure**
+<span data-ttu-id="4d622-138">**Figura 2: Struttura di Contoso per le sottoscrizioni di Azure**</span><span class="sxs-lookup"><span data-stu-id="4d622-138">**Figure 2: Contoso's structure for Azure subscriptions**</span></span>
 
 ![Struttura di Contoso per sottoscrizioni di Azure](images/Contoso_Poster/Subscriptions_Nested.png)
   
-- Contoso è nella parte superiore, in base agli accordi aziendali con Microsoft.
+- <span data-ttu-id="4d622-140">Contoso è nella parte superiore, in base agli accordi aziendali con Microsoft.</span><span class="sxs-lookup"><span data-stu-id="4d622-140">Contoso is at the top, based on its Enterprise Agreement with Microsoft.</span></span>
     
-- Sono disponibili un set di account corrispondente per aree geografiche diverse di Contoso Corporation tutto il mondo, basato sui domini della foresta di Windows Server Active Directory Contoso.
+- <span data-ttu-id="4d622-141">Sono disponibili un set di account corrispondente per aree geografiche diverse di Contoso Corporation tutto il mondo, basato sui domini della foresta di Windows Server Active Directory Contoso.</span><span class="sxs-lookup"><span data-stu-id="4d622-141">There are a set of accounts corresponding to the different regions of the Contoso Corporation around the world, based on the domains of Contoso's Windows Server AD forest.</span></span>
     
-- In ogni area, esistono uno o più sottoscrizioni in base alle esigenze di distribuzione di sviluppo, test e produzione dell'area.
+- <span data-ttu-id="4d622-142">In ogni area, esistono uno o più sottoscrizioni in base alle esigenze di distribuzione di sviluppo, test e produzione dell'area.</span><span class="sxs-lookup"><span data-stu-id="4d622-142">Within each region, there are one or more subscriptions based on the region's development, testing, and production deployment needs.</span></span>
     
-Ogni sottoscrizione ad Azure può essere associata a un singolo tenant Azure AD contenente account utente e gruppi per l'autenticazione e l'autorizzazione dei servizi Azure. Le sottoscrizioni di produzione utilizzano il tenant di Contoso Azure AD comune.
+<span data-ttu-id="4d622-p105">Ogni sottoscrizione ad Azure può essere associata a un singolo tenant Azure AD contenente account utente e gruppi per l'autenticazione e l'autorizzazione dei servizi Azure. Le sottoscrizioni di produzione utilizzano il tenant di Contoso Azure AD comune.</span><span class="sxs-lookup"><span data-stu-id="4d622-p105">Each Azure subscription can be associated with a single Azure AD tenant that contains user accounts and groups for authentication and authorization to Azure services. Production subscriptions use the common Contoso Azure AD tenant.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="4d622-145">See Also</span><span class="sxs-lookup"><span data-stu-id="4d622-145">See Also</span></span>
 
-[Contoso nel Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
+[<span data-ttu-id="4d622-146">Contoso nel Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="4d622-146">Contoso in the Microsoft Cloud</span></span>](contoso-in-the-microsoft-cloud.md)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="4d622-147">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="4d622-147">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="4d622-148">Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT</span><span class="sxs-lookup"><span data-stu-id="4d622-148">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

@@ -24,149 +24,149 @@ ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificazione e assegnazione di un'etichetta ai dati nell'ambiente di sviluppo/test di Office 365
+# <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a><span data-ttu-id="35c7b-103">Classificazione e assegnazione di un'etichetta ai dati nell'ambiente di sviluppo/test di Office 365</span><span class="sxs-lookup"><span data-stu-id="35c7b-103">Data classification and labeling in the Office 365 dev/test environment</span></span>
 
- **Riepilogo:** configurare e dimostrare la classificazione e l'etichettatura dei dati tramite il client Azure Information Protection (AIP) nel proprio ambiente di sviluppo e testing di Office 365.
+ <span data-ttu-id="35c7b-104">**Riepilogo:** configurare e dimostrare la classificazione e l'etichettatura dei dati tramite il client Azure Information Protection (AIP) nel proprio ambiente di sviluppo e testing di Office 365.</span><span class="sxs-lookup"><span data-stu-id="35c7b-104">**Summary:** Configure and demonstrate data classification and labeling using the Azure Information Protection (AIP) client in your Office 365 dev/test environment.</span></span>
   
-Il client Azure Information Protection consente di classificare un documento prima di caricarlo in una cartella di SharePoint Online in Office 365. Con le istruzioni disponibili in questo articolo, si installa il client Azure Information Protection e si esegue la classificazione dei dati. Per ulteriori informazioni, vedere [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
+<span data-ttu-id="35c7b-p101">Il client Azure Information Protection consente di classificare un documento prima di caricarlo in una cartella di SharePoint Online in Office 365. Con le istruzioni disponibili in questo articolo, si installa il client Azure Information Protection e si esegue la classificazione dei dati. Per ulteriori informazioni, vedere [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).</span><span class="sxs-lookup"><span data-stu-id="35c7b-p101">The Azure Information Protection client allows you to classify a document before you upload it to a SharePoint Online folder in Office 365. With the instructions in this article, you install the Azure Information Protection client and demonstrate data classification. For more information, see [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).</span></span>
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> <span data-ttu-id="35c7b-108">Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.</span><span class="sxs-lookup"><span data-stu-id="35c7b-108">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/testing di Office 365
+## <a name="phase-1-build-out-your-office-365-devtest-environment"></a><span data-ttu-id="35c7b-109">Fase 1: creare l'ambiente di sviluppo/testing di Office 365</span><span class="sxs-lookup"><span data-stu-id="35c7b-109">Phase 1: Build out your Office 365 dev/test environment</span></span>
 
-Seguire le istruzioni riportate in [Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md).
+<span data-ttu-id="35c7b-110">Seguire le istruzioni riportate in [Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md).</span><span class="sxs-lookup"><span data-stu-id="35c7b-110">Follow the instructions in [Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
   
-## <a name="phase-2-add-the-azure-information-protection-trial-subscription"></a>Fase 2: aggiungere la sottoscrizione di prova ad Azure Information Protection
+## <a name="phase-2-add-the-azure-information-protection-trial-subscription"></a><span data-ttu-id="35c7b-111">Fase 2: aggiungere la sottoscrizione di prova ad Azure Information Protection</span><span class="sxs-lookup"><span data-stu-id="35c7b-111">Phase 2: Add the Azure Information Protection trial subscription</span></span>
 
-In questa fase, è necessario aggiungere Azure Information Protection all'ambiente di sviluppo/testing di Office 365 e abilitarlo per gli account utente. Se è stato configurato l'[Ambiente di sviluppo/test di Office 365 ed EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx), ignorare questa fase. La sottoscrizione di prova a Enterprise Mobility Suite include le licenze per Azure Information Protection.
+<span data-ttu-id="35c7b-p102">In questa fase, è necessario aggiungere Azure Information Protection all'ambiente di sviluppo/testing di Office 365 e abilitarlo per gli account utente. Se è stato configurato l'[Ambiente di sviluppo/test di Office 365 ed EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx), ignorare questa fase. La sottoscrizione di prova a Enterprise Mobility Suite include le licenze per Azure Information Protection.</span><span class="sxs-lookup"><span data-stu-id="35c7b-p102">In this phase, you add Azure Information Protection to your Office 365 dev/test environment and enable it for your user accounts. If you have configured the [Office 365 and EMS dev/test environment](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx), skip this phase. The Enterprise Mobility Suite trial subscription includes Azure Information Protection licenses.</span></span>
   
-Innanzitutto, registrarsi per la sottoscrizione di prova ad Azure Information Protection.
+<span data-ttu-id="35c7b-115">Innanzitutto, registrarsi per la sottoscrizione di prova ad Azure Information Protection.</span><span class="sxs-lookup"><span data-stu-id="35c7b-115">First, sign up for an Azure Information Protection trial subscription.</span></span>
   
-### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Registrarsi per la sottoscrizione di prova ad Azure Information Protection
+### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a><span data-ttu-id="35c7b-116">Registrarsi per la sottoscrizione di prova ad Azure Information Protection</span><span class="sxs-lookup"><span data-stu-id="35c7b-116">Sign up for an Azure Information Protection trial subscription</span></span>
 
-1. Da Internet Explorer o dal browser, visitare [http://portal.office.com](http://portal.office.com) e accedere all'account di amministratore globale di Office 365.
+1. <span data-ttu-id="35c7b-117">Da Internet Explorer o dal browser, visitare [http://portal.office.com](http://portal.office.com) e accedere all'account di amministratore globale di Office 365.</span><span class="sxs-lookup"><span data-stu-id="35c7b-117">In Internet Explorer or your browser, go to [http://portal.office.com](http://portal.office.com) and sign in with your Office 365 global administrator account.</span></span>
     
-2. Nella scheda **Microsoft Office Home**, fare clic sulla sezione **Amministrazione**.
+2. <span data-ttu-id="35c7b-118">Nella scheda **Microsoft Office Home**, fare clic sulla sezione **Amministrazione**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-118">On the **Microsoft Office Home** tab, click the **Admin** tile.</span></span>
     
-3. Nella scheda Amministrazione di Office 365, nella barra di spostamento sinistra, fare clic su **Fatturazione > Acquisto di servizi**.
+3. <span data-ttu-id="35c7b-119">Nella scheda Amministrazione di Office 365, nella barra di spostamento sinistra, fare clic su **Fatturazione > Acquisto di servizi**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-119">On the Office 365 Admin tab, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. Nella pagina **Acquisto di servizi**, individuare la voce **Azure Information Protection Premium P2**. Posizionare il mouse su di essa e fare clic su **Avvia la versione di valutazione gratuita**.
+4. <span data-ttu-id="35c7b-p103">Nella pagina **Acquisto di servizi**, individuare la voce **Azure Information Protection Premium P2**. Posizionare il mouse su di essa e fare clic su **Avvia la versione di valutazione gratuita**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-p103">On the **Purchase services** page, find the **Azure Information Protection Premium P2** item. Hover your mouse over it and click **Start free trial**.</span></span>
     
-5. Nella pagina **Conferma l'ordine**, fare clic su **Prova adesso**.
+5. <span data-ttu-id="35c7b-122">Nella pagina **Conferma l'ordine**, fare clic su **Prova adesso**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-122">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. Nella pagina **Ricevuta ordine**, fare clic su **Continua**.
+6. <span data-ttu-id="35c7b-123">Nella pagina **Ricevuta ordine**, fare clic su **Continua**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-123">On the **Order receipt** page, click **Continue**.</span></span>
     
-Successivamente, attivare la licenza di Azure Information Protection per tutti gli account utente.
+<span data-ttu-id="35c7b-124">Successivamente, attivare la licenza di Azure Information Protection per tutti gli account utente.</span><span class="sxs-lookup"><span data-stu-id="35c7b-124">Next, you enable the Azure Information Protection license for all user accounts.</span></span>
   
-1. Nella scheda dell'interfaccia di amministrazione di Office 365, fare clic su **Utenti**.
+1. <span data-ttu-id="35c7b-125">Nella scheda dell'interfaccia di amministrazione di Office 365, fare clic su **Utenti**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-125">On the Office 365 admin center tab, click **Users**.</span></span>
     
-2.  Nell'elenco di account utente, selezionare l'account dell'amministratore globale, quindi su **Modifica** per **Licenze per i prodotti**.
+2.  <span data-ttu-id="35c7b-126">Nell'elenco di account utente, selezionare l'account dell'amministratore globale, quindi su **Modifica** per **Licenze per i prodotti**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-126">In the list of user accounts, select your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-3. Impostare la licenza del prodotto per **Azure Information Protection Premium P2** su **Attiva**, fare clic su **Salva** e fare clic su **Chiudi** due volte.
+3. <span data-ttu-id="35c7b-127">Impostare la licenza del prodotto per **Azure Information Protection Premium P2** su **Attiva**, fare clic su **Salva** e fare clic su **Chiudi** due volte.</span><span class="sxs-lookup"><span data-stu-id="35c7b-127">Turn the product license for **Azure Information Protection Premium P2** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
-4. Ripetere i passaggi 2 e 3 per gli altri account utente (dall'utente 1 all'utente 5).
+4. <span data-ttu-id="35c7b-128">Ripetere i passaggi 2 e 3 per gli altri account utente (dall'utente 1 all'utente 5).</span><span class="sxs-lookup"><span data-stu-id="35c7b-128">Repeat steps 2 and 3 for your other user accounts (User 1 through User 5).</span></span>
     
-A questo punto, l'ambiente di sviluppo/test di Office 365 dispone di:
+<span data-ttu-id="35c7b-129">A questo punto, l'ambiente di sviluppo/test di Office 365 dispone di:</span><span class="sxs-lookup"><span data-stu-id="35c7b-129">Your Office 365 dev/test environment now has:</span></span>
   
-- Sottoscrizioni di prova ad Azure Information Protection e Office 365 E5 Enterprise.
+- <span data-ttu-id="35c7b-130">Sottoscrizioni di prova ad Azure Information Protection e Office 365 E5 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="35c7b-130">Office 365 E5 Enterprise and Azure Information Protection trial subscriptions.</span></span>
     
-- Tutti gli account utente abilitati per usare Office 365 E5 e Azure Information Protection.
+- <span data-ttu-id="35c7b-131">Tutti gli account utente abilitati per usare Office 365 E5 e Azure Information Protection.</span><span class="sxs-lookup"><span data-stu-id="35c7b-131">All of your user accounts enabled to use both Office 365 E5 Enterprise and Azure Information Protection.</span></span>
     
-## <a name="phase-3-demonstrate-data-classification"></a>Fase 3: eseguire la classificazione dei dati
+## <a name="phase-3-demonstrate-data-classification"></a><span data-ttu-id="35c7b-132">Fase 3: eseguire la classificazione dei dati</span><span class="sxs-lookup"><span data-stu-id="35c7b-132">Phase 3: Demonstrate data classification</span></span>
 
-In questa fase, viene eseguita la classificazione dei dati utilizzando il client Azure Information Protection e il criterio Azure Information Protection predefinito.
+<span data-ttu-id="35c7b-133">In questa fase, viene eseguita la classificazione dei dati utilizzando il client Azure Information Protection e il criterio Azure Information Protection predefinito.</span><span class="sxs-lookup"><span data-stu-id="35c7b-133">In this phase, you demonstrate data classification using the Azure Information Protection client and the default Azure Information Protection policy.</span></span>
   
-Se si usa l'ambiente di sviluppo/testing di Office 365 simulato, è necessario innanzitutto installare Office 2016 su CLIENT1.
+<span data-ttu-id="35c7b-134">Se si usa l'ambiente di sviluppo/testing di Office 365 simulato, è necessario innanzitutto installare Office 2016 su CLIENT1.</span><span class="sxs-lookup"><span data-stu-id="35c7b-134">If you are using the simulated enterprise Office 365 dev/test environment, you must first install Office 2016 on CLIENT1.</span></span>
   
-1. Utilizzare il browser e visitare il [portale di Azure](http://portal.azure.com).
+1. <span data-ttu-id="35c7b-135">Utilizzare il browser e visitare il [portale di Azure](http://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="35c7b-135">Use your browser and go to the [Azure portal](http://portal.azure.com).</span></span>
     
-2. Fare clic su **Gruppi di risorse >** [nome del proprio gruppo di risorse] **> CLIENT1 > Connetti**.
+2. <span data-ttu-id="35c7b-136">Fare clic su **Gruppi di risorse >** [nome del proprio gruppo di risorse] **> CLIENT1 > Connetti**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-136">Click **Resource Groups >** [your resource group name] **> CLIENT1 > Connect**.</span></span>
     
-3. Da CLIENT1, eseguire Internet Explorer, visitare il portale di Office all'indirizzo [http://portal.office.com](http://portal.office.com), quindi accedere con il nome utente e la password dell'account User5.
+3. <span data-ttu-id="35c7b-137">Da CLIENT1, eseguire Internet Explorer, visitare il portale di Office all'indirizzo [http://portal.office.com](http://portal.office.com), quindi accedere con il nome utente e la password dell'account User5.</span><span class="sxs-lookup"><span data-stu-id="35c7b-137">From CLIENT1, run Internet Explorer, go to the Office portal at [http://portal.office.com](http://portal.office.com), and then sign in with the User5 account name and password.</span></span>
     
-4. Nella scheda **Microsoft Office Home**, fare clic su **Installa Office 2016**.
+4. <span data-ttu-id="35c7b-138">Nella scheda **Microsoft Office Home**, fare clic su **Installa Office 2016**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-138">On the **Microsoft Office Home** tab, click **Install Office 2016**.</span></span>
     
-5. Avviare il download e fare clic su **Sì**, quando viene richiesto dal controllo dell'account utente. Attendere che Office si installi. Al termine dell'operazione, fare clic su **Chiudi** per due volte.
+5. <span data-ttu-id="35c7b-p104">Avviare il download e fare clic su **Sì**, quando viene richiesto dal controllo dell'account utente. Attendere che Office si installi. Al termine dell'operazione, fare clic su **Chiudi** per due volte.</span><span class="sxs-lookup"><span data-stu-id="35c7b-p104">Run the download when prompted and click **Yes** when prompted by User Account Control. Wait for Office to install. When complete, click **Close** twice.</span></span>
     
-In seguito, installare il client Azure Information Protection.
+<span data-ttu-id="35c7b-142">In seguito, installare il client Azure Information Protection.</span><span class="sxs-lookup"><span data-stu-id="35c7b-142">Next, you install the Azure Information Protection client.</span></span>
   
-1. Nel browser o Internet Explorer, passare alla [pagina di download di Microsoft Azure Information Protection](https://www.microsoft.com/download/details.aspx?id=53018).
+1. <span data-ttu-id="35c7b-143">Nel browser o Internet Explorer, passare alla [pagina di download di Microsoft Azure Information Protection](https://www.microsoft.com/download/details.aspx?id=53018).</span><span class="sxs-lookup"><span data-stu-id="35c7b-143">In your browser or Internet Explorer, go to the [Microsoft Azure Information Protection download page](https://www.microsoft.com/download/details.aspx?id=53018).</span></span>
     
-  - Se si usa la versione semplificata dell'ambiente di sviluppo/testing di Office 365, utilizzare il browser del computer locale.
+  - <span data-ttu-id="35c7b-144">Se si usa la versione semplificata dell'ambiente di sviluppo/testing di Office 365, utilizzare il browser del computer locale.</span><span class="sxs-lookup"><span data-stu-id="35c7b-144">If you are using the lightweight version of the Office 365 dev/test environment, use the browser on your local computer.</span></span>
     
-  - Se si usa l'ambiente di sviluppo/testing di Office 365 simulato, eseguire Internet Explorer dal CLIENT1.
+  - <span data-ttu-id="35c7b-145">Se si usa l'ambiente di sviluppo/testing di Office 365 simulato, eseguire Internet Explorer dal CLIENT1.</span><span class="sxs-lookup"><span data-stu-id="35c7b-145">If you are using the simulated enterprise Office 365 dev/test environment, run Internet Explorer from CLIENT1.</span></span>
     
-2. Nella pagina di download **Microsoft Azure Information Protection**, fare clic su **Download**, selezionare **AzInfoProtection.exe** e infine **Avanti**.
+2. <span data-ttu-id="35c7b-146">Nella pagina di download **Microsoft Azure Information Protection**, fare clic su **Download**, selezionare **AzInfoProtection.exe** e infine **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-146">On the **Microsoft Azure Information Protection** download page, click **Download**, click **AzInfoProtection.exe**, and then click **Next**.</span></span>
     
-3. Quando richiesto, eseguire AzInfoProtection.exe.
+3. <span data-ttu-id="35c7b-147">Quando richiesto, eseguire AzInfoProtection.exe.</span><span class="sxs-lookup"><span data-stu-id="35c7b-147">When prompted, run AzInfoProtection.exe.</span></span>
     
-4. Nella casella **Installare Azure Information Protection** del client, selezionare **Accetto**, quindi fare clic su **Sì**, quando viene richiesto dal controllo dell'account utente.
+4. <span data-ttu-id="35c7b-148">Nella casella **Installare Azure Information Protection** del client, selezionare **Accetto**, quindi fare clic su **Sì**, quando viene richiesto dal controllo dell'account utente.</span><span class="sxs-lookup"><span data-stu-id="35c7b-148">In the **Install the Azure Information Protection** client box, click **I agree**, and then click **Yes** when prompted by User Account Control.</span></span>
     
-5. Nella casella **Operazione completata**, fare clic su **Chiudi**.
+5. <span data-ttu-id="35c7b-149">Nella casella **Operazione completata**, fare clic su **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-149">In the **Completed successfully** box, click **Close.**</span></span>
     
-Successivamente, eseguire la classificazione dei documenti.
+<span data-ttu-id="35c7b-150">Successivamente, eseguire la classificazione dei documenti.</span><span class="sxs-lookup"><span data-stu-id="35c7b-150">Next, you demonstrate document classification.</span></span>
   
-1. Fare clic sull'icona di **Word** sulla barra delle applicazioni.
+1. <span data-ttu-id="35c7b-151">Fare clic sull'icona di **Word** sulla barra delle applicazioni.</span><span class="sxs-lookup"><span data-stu-id="35c7b-151">Click the **Word** icon in the taskbar.</span></span>
     
-2. Quando richiesto, accedere con il nome e la password dell'account User5.
+2. <span data-ttu-id="35c7b-152">Quando richiesto, accedere con il nome e la password dell'account User5.</span><span class="sxs-lookup"><span data-stu-id="35c7b-152">When prompted, sign in with the User5 account name and password.</span></span>
     
-3. Se Office 2016 è stato installato su CLIENT1, nella casella **Per iniziare** fare clic su **Accetto**.
+3. <span data-ttu-id="35c7b-153">Se Office 2016 è stato installato su CLIENT1, nella casella **Per iniziare** fare clic su **Accetto**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-153">If you just installed Office 2016 on CLIENT1, in the **First things first** box, click **Accept**.</span></span>
     
-4. Fare clic su **Documento vuoto**. 
+4. <span data-ttu-id="35c7b-154">Fare clic su **Documento vuoto**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-154">Click **Blank document**.</span></span> 
     
-    Annotare la sezione **Protezione** della barra multifunzione presente nella scheda **Home** e la riga della classificazione dei documenti.
+    <span data-ttu-id="35c7b-155">Annotare la sezione **Protezione** della barra multifunzione presente nella scheda **Home** e la riga della classificazione dei documenti.</span><span class="sxs-lookup"><span data-stu-id="35c7b-155">Note the **Protection** section of the ribbon on the **Home** tab and the row of document classifications.</span></span>
     
-5. Nel documento vuoto, digitare testo.
+5. <span data-ttu-id="35c7b-156">Nel documento vuoto, digitare testo.</span><span class="sxs-lookup"><span data-stu-id="35c7b-156">In the blank document, type some text.</span></span>
     
-6. Fare clic su **File > Salva**, digitare il nome **BeforeAIP** e fare clic su **OK**. 
+6. <span data-ttu-id="35c7b-157">Fare clic su **File > Salva**, digitare il nome **BeforeAIP** e fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-157">Click **File > Save**, type the name **BeforeAIP**, and then click **OK**.</span></span> 
     
-7. Nella riga relativa alle classi del documento, fare clic sulla freccia verso il basso per **Segreto**, quindi fare clic su **Tutta la società**.
+7. <span data-ttu-id="35c7b-158">Nella riga relativa alle classi del documento, fare clic sulla freccia verso il basso per **Segreto**, quindi fare clic su **Tutta la società**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-158">In the row of document classes, click the down arrow for **Secret**, and then click **All Company**.</span></span>
     
-8. Fare clic su **File > Salva con nome**, digitare il nome **AfterAIP** e fare clic su **OK**.
+8. <span data-ttu-id="35c7b-159">Fare clic su **File > Salva con nome**, digitare il nome **AfterAIP** e fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-159">Click **File > Save As**, type the name **AfterAIP**, and then click **OK**.</span></span>
     
-9. Fare clic su **Esplora File** sulla barra delle applicazioni, quindi aprire la cartella **Documenti**.
+9. <span data-ttu-id="35c7b-160">Fare clic su **Esplora File** sulla barra delle applicazioni, quindi aprire la cartella **Documenti**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-160">Click **File Explorer** in the taskbar, and then open the **Documents** folder.</span></span>
     
-    Annotare le differenti dimensioni dei file dei documenti **BeforeAIP** e **AfterAIP**. Il documento AfterAIP è più grande perché contiene le informazioni di classificazione.
+    <span data-ttu-id="35c7b-p105">Annotare le differenti dimensioni dei file dei documenti **BeforeAIP** e **AfterAIP**. Il documento AfterAIP è più grande perché contiene le informazioni di classificazione.</span><span class="sxs-lookup"><span data-stu-id="35c7b-p105">Note the different file sizes of the **BeforeAIP** and **AfterAIP** documents. The AfterAIP document is larger because it contains the classification information.</span></span>
     
-Successivamente, consentire a tutti gli utenti di accedere alla raccolta siti di supporto.
+<span data-ttu-id="35c7b-163">Successivamente, consentire a tutti gli utenti di accedere alla raccolta siti di supporto.</span><span class="sxs-lookup"><span data-stu-id="35c7b-163">Next, you allow everyone to access the Support site collection.</span></span>
   
-1. Nella scheda **Microsoft Office Home**, fare clic su **SharePoint**.
+1. <span data-ttu-id="35c7b-164">Nella scheda **Microsoft Office Home**, fare clic su **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-164">On the **Microsoft Office Home** tab, click **SharePoint**.</span></span>
     
-2. Dalla scheda **SharePoint**, fare clic su **Raccolta siti di supporto**.
+2. <span data-ttu-id="35c7b-165">Dalla scheda **SharePoint**, fare clic su **Raccolta siti di supporto**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-165">From the **SharePoint** tab, click **Support site collection**.</span></span>
     
-3. In alto a destra, fare clic sull'icona **Impostazioni**, quindi selezionare **Condiviso con**.
+3. <span data-ttu-id="35c7b-166">In alto a destra, fare clic sull'icona **Impostazioni**, quindi selezionare **Condiviso con**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-166">In the upper right, click the **Settings** icon, and then click **Shared with**.</span></span>
     
-4. In **Condividi "Raccolta siti di supporto"**, fare clic su **Impostazioni avanzate**.
+4. <span data-ttu-id="35c7b-167">In **Condividi "Raccolta siti di supporto"**, fare clic su **Impostazioni avanzate**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-167">In **Share 'Support site collection'**, click **Advanced**.</span></span>
     
-5. Nell'elenco dei gruppi di SharePoint, fare clic su **Supporta membri raccolta siti**.
+5. <span data-ttu-id="35c7b-168">Nell'elenco dei gruppi di SharePoint, fare clic su **Supporta membri raccolta siti**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-168">In the list of SharePoint groups, click **Support site collection Members**.</span></span>
     
-6. Nella pagina **Utenti e gruppi** fare clic su **Nuovo**.
+6. <span data-ttu-id="35c7b-169">Nella pagina **Utenti e gruppi** fare clic su **Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-169">On the **People and Groups** page, click **New**.</span></span>
     
-7. In **Condividi "Raccolta siti di supporto"**, digitare **Tutti**, fare clic su **Tutti tranne gli utenti esterni**, quindi selezionare **Condividi**.
+7. <span data-ttu-id="35c7b-170">In **Condividi "Raccolta siti di supporto"**, digitare **Tutti**, fare clic su **Tutti tranne gli utenti esterni**, quindi selezionare **Condividi**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-170">In **Share 'Support site collection'**, type **Everyone**, click **Everyone except external users**, and then click **Share.**</span></span>
     
-8. Chiudi la scheda **Utenti e gruppi**.
+8. <span data-ttu-id="35c7b-171">Chiudi la scheda **Utenti e gruppi**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-171">Close the **People and Groups** tab.</span></span>
     
-In seguito, accedere con l'account User5 e caricare il documento con protezione AIP nella cartella Documenti della raccolta siti di supporto.
+<span data-ttu-id="35c7b-172">In seguito, accedere con l'account User5 e caricare il documento con protezione AIP nella cartella Documenti della raccolta siti di supporto.</span><span class="sxs-lookup"><span data-stu-id="35c7b-172">Next, you sign in with your User5 account and upload the AIP-protected document to the Documents folder of the Support site collection.</span></span>
   
-1. Nella **Microsoft Office Home** in alto a destra, fare clic sull'icona dell'utente e quindi fare clic su **Disconnetti**.
+1. <span data-ttu-id="35c7b-173">Nella **Microsoft Office Home** in alto a destra, fare clic sull'icona dell'utente e quindi fare clic su **Disconnetti**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-173">On the **Microsoft Office Home** tab, in the upper right, click the user icon, and then click **Sign out**.</span></span>
     
-2. Visitare [http://portal.office.com](http://portal.office.com).
+2. <span data-ttu-id="35c7b-174">Visitare [http://portal.office.com](http://portal.office.com).</span><span class="sxs-lookup"><span data-stu-id="35c7b-174">Go to [http://portal.office.com](http://portal.office.com).</span></span>
     
-3. Nella * * Office 365 accedere * * di pagina, fare clic sul nome di account User5 ed effettuare l'accesso.
+3. <span data-ttu-id="35c7b-175">Nella * * Office 365 accedere * * di pagina, fare clic sul nome di account User5 ed effettuare l'accesso.</span><span class="sxs-lookup"><span data-stu-id="35c7b-175">On the ** Office 365 sign in** page, click the User5 account name and sign in.</span></span>
     
-4. Nella scheda **Microsoft Office Home**, fare clic su **SharePoint > Raccolta siti di supporto**.
+4. <span data-ttu-id="35c7b-176">Nella scheda **Microsoft Office Home**, fare clic su **SharePoint > Raccolta siti di supporto**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-176">On the **Microsoft Office Home** tab, click **SharePoint > Support site collection**.</span></span>
     
-5. Fare clic su **Documenti**, scegliere **Carica**, fare clic sul documento **AfterAIP** e scegliere **Apri**.
+5. <span data-ttu-id="35c7b-177">Fare clic su **Documenti**, scegliere **Carica**, fare clic sul documento **AfterAIP** e scegliere **Apri**.</span><span class="sxs-lookup"><span data-stu-id="35c7b-177">Click **Documents**, click **Upload**, click the **AfterAIP** document, and then click **Open**.</span></span>
     
-    Nella cartella Documenti della raccolta siti di supporto dovrebbe essere presente il documento AfterAIP.docx.
+    <span data-ttu-id="35c7b-178">Nella cartella Documenti della raccolta siti di supporto dovrebbe essere presente il documento AfterAIP.docx.</span><span class="sxs-lookup"><span data-stu-id="35c7b-178">You should see AfterAIP.docx in the Documents folder on the Support site collection.</span></span>
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="35c7b-179">See Also</span><span class="sxs-lookup"><span data-stu-id="35c7b-179">See Also</span></span>
 
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="35c7b-180">Test Lab Guide (TLG) di adozione cloud</span><span class="sxs-lookup"><span data-stu-id="35c7b-180">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
 
-[Ambiente di sviluppo/test di Office 365 ed EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
+[<span data-ttu-id="35c7b-181">Ambiente di sviluppo/test di Office 365 ed EMS</span><span class="sxs-lookup"><span data-stu-id="35c7b-181">Office 365 and EMS dev/test environment</span></span>](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
-[Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
+[<span data-ttu-id="35c7b-182">Azure Information Protection</span><span class="sxs-lookup"><span data-stu-id="35c7b-182">Azure Information Protection</span></span>](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 

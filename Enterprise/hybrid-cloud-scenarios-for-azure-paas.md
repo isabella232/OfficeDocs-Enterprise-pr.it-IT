@@ -22,109 +22,109 @@ ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scenari basati su cloud ibrida per Azure PaaS
+# <a name="hybrid-cloud-scenarios-for-azure-paas"></a><span data-ttu-id="0829c-103">Scenari basati su cloud ibrida per Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="0829c-103">Hybrid cloud scenarios for Azure PaaS</span></span>
 
- **Riepilogo:** Acquisire familiarità con l'architettura ibrida e gli scenari per la piattaforma Microsoft come servizio (PaaS)-basato su cloud offerte in Azure.
+ <span data-ttu-id="0829c-104">**Riepilogo:** Acquisire familiarità con l'architettura ibrida e gli scenari per la piattaforma Microsoft come servizio (PaaS)-basato su cloud offerte in Azure.</span><span class="sxs-lookup"><span data-stu-id="0829c-104">**Summary:** Understand the hybrid architecture and scenarios for Microsoft's Platform as a Service (PaaS)-based cloud offerings in Azure.</span></span>
   
-Combinare dati locali o le risorse di elaborazione con nuove o convertire applicazioni in esecuzione in Azure PaaS, che possono trarre vantaggio cloud prestazioni, l'affidabilità e la scala e fornire supporto migliorato per gli utenti mobili. 
+<span data-ttu-id="0829c-105">Combinare dati locali o le risorse di elaborazione con nuove o convertire applicazioni in esecuzione in Azure PaaS, che possono trarre vantaggio cloud prestazioni, l'affidabilità e la scala e fornire supporto migliorato per gli utenti mobili.</span><span class="sxs-lookup"><span data-stu-id="0829c-105">Combine on-premises data or computing resources with new or converted applications running in Azure PaaS, which can take advantage of cloud performance, reliability, and scale and provide better support for mobile users.</span></span> 
   
-## <a name="azure-paas-hybrid-scenario-architecture"></a>Architettura di uno scenario ibrido PaaS Azure
+## <a name="azure-paas-hybrid-scenario-architecture"></a><span data-ttu-id="0829c-106">Architettura di uno scenario ibrido PaaS Azure</span><span class="sxs-lookup"><span data-stu-id="0829c-106">Azure PaaS hybrid scenario architecture</span></span>
 
-Nella figura 1 illustra l'architettura di scenari basati su PaaS ibridi Microsoft in Azure.
+<span data-ttu-id="0829c-107">Nella figura 1 illustra l'architettura di scenari basati su PaaS ibridi Microsoft in Azure.</span><span class="sxs-lookup"><span data-stu-id="0829c-107">Figure 1 shows the architecture of Microsoft PaaS-based hybrid scenarios in Azure.</span></span>
   
-**Nella figura 1: Scenari di ibrida basata su PaaS Microsoft in Azure**
+<span data-ttu-id="0829c-108">**Nella figura 1: Scenari di ibrida basata su PaaS Microsoft in Azure**</span><span class="sxs-lookup"><span data-stu-id="0829c-108">**Figure 1: Microsoft PaaS-based hybrid scenarios in Azure**</span></span>
 
 ![Scenari ibridi Microsoft basati su PaaS in Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS.png)
   
-Per ogni livello dell'architettura:
+<span data-ttu-id="0829c-110">Per ogni livello dell'architettura:</span><span class="sxs-lookup"><span data-stu-id="0829c-110">For each layer of the architecture:</span></span>
   
-- App e scenari
+- <span data-ttu-id="0829c-111">App e scenari</span><span class="sxs-lookup"><span data-stu-id="0829c-111">Apps and scenarios</span></span>
     
-    Un ambiente ibrido applicazione PaaS viene eseguito in Azure e utilizza risorse compute o l'archiviazione in locale.
+    <span data-ttu-id="0829c-112">Un ambiente ibrido applicazione PaaS viene eseguito in Azure e utilizza risorse compute o l'archiviazione in locale.</span><span class="sxs-lookup"><span data-stu-id="0829c-112">A hybrid PaaS application runs in Azure and uses on-premises compute or storage resources.</span></span>
     
-- Identità
+- <span data-ttu-id="0829c-113">Identità</span><span class="sxs-lookup"><span data-stu-id="0829c-113">Identity</span></span>
     
-    È costituita dalla sincronizzazione delle directory o la federazione con un provider di identità di terze parti.
+    <span data-ttu-id="0829c-114">È costituita dalla sincronizzazione delle directory o la federazione con un provider di identità di terze parti.</span><span class="sxs-lookup"><span data-stu-id="0829c-114">Consists of either directory synchronization or federation with a third-party identity provider.</span></span>
     
-- Rete
+- <span data-ttu-id="0829c-115">Rete</span><span class="sxs-lookup"><span data-stu-id="0829c-115">Network</span></span>
     
-    È costituita dal canale Internet esistente o una connessione ExpressRoute con peering pubblica per Azure PaaS. È necessario includere un modo per l'applicazione PaaS Azure accedere alla risorsa compute o l'archiviazione in locale.
+    <span data-ttu-id="0829c-p101">È costituita dal canale Internet esistente o una connessione ExpressRoute con peering pubblica per Azure PaaS. È necessario includere un modo per l'applicazione PaaS Azure accedere alla risorsa compute o l'archiviazione in locale.</span><span class="sxs-lookup"><span data-stu-id="0829c-p101">Consists of either your existing Internet pipe or an ExpressRoute connection with public peering to Azure PaaS. You must include a way for the Azure PaaS application to access the on-premises compute or storage resource.</span></span>
     
-- Locale
+- <span data-ttu-id="0829c-118">Locale</span><span class="sxs-lookup"><span data-stu-id="0829c-118">On-premises</span></span>
     
-    È costituita da identità e la protezione dell'infrastruttura e line-of business (LOB) applicazioni o server di database, un'applicazione di Azure PaaS può accedere in modo sicuro esistenti.
+    <span data-ttu-id="0829c-119">È costituita da identità e la protezione dell'infrastruttura e line-of business (LOB) applicazioni o server di database, un'applicazione di Azure PaaS può accedere in modo sicuro esistenti.</span><span class="sxs-lookup"><span data-stu-id="0829c-119">Consists of identity and security infrastructure and existing line of business (LOB) applications or database servers, which an Azure PaaS application can securely access.</span></span>
     
-## <a name="azure-paas-hybrid-application"></a>Applicazione di ibrida PaaS Azure
+## <a name="azure-paas-hybrid-application"></a><span data-ttu-id="0829c-120">Applicazione di ibrida PaaS Azure</span><span class="sxs-lookup"><span data-stu-id="0829c-120">Azure PaaS hybrid application</span></span>
 
-Nella figura 2 viene illustrata la configurazione di un'applicazione ibrida in esecuzione in Azure.
+<span data-ttu-id="0829c-121">Nella figura 2 viene illustrata la configurazione di un'applicazione ibrida in esecuzione in Azure.</span><span class="sxs-lookup"><span data-stu-id="0829c-121">Figure 2 shows the configuration of a hybrid application running in Azure.</span></span>
   
-**Nella figura 2: Applicazione ibrida basata su PaaS Azure**
+<span data-ttu-id="0829c-122">**Nella figura 2: Applicazione ibrida basata su PaaS Azure**</span><span class="sxs-lookup"><span data-stu-id="0829c-122">**Figure 2: Azure PaaS-based hybrid application**</span></span>
 
 ![Applicazione ibrida basta su PaaS di Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps.png)
   
-Nella figura 2, una rete locale ospita archiviazione o applicazioni server e una DMZ contenente un server proxy. Si connette ai servizi di Azure PaaS tramite Internet o con una connessione ExpressRoute.
+<span data-ttu-id="0829c-p102">Nella figura 2, una rete locale ospita archiviazione o applicazioni server e una DMZ contenente un server proxy. Si connette ai servizi di Azure PaaS tramite Internet o con una connessione ExpressRoute.</span><span class="sxs-lookup"><span data-stu-id="0829c-p102">In Figure 2, an on-premises network hosts storage or apps on servers and a DMZ containing a proxy server. It is connected to Azure PaaS services either over the Internet or with an ExpressRoute connection.</span></span>
   
-Un'organizzazione, è possibile effettuare le relative risorse compute o l'archiviazione disponibili per l'applicazione ibrida PaaS Azure per:
+<span data-ttu-id="0829c-126">Un'organizzazione, è possibile effettuare le relative risorse compute o l'archiviazione disponibili per l'applicazione ibrida PaaS Azure per:</span><span class="sxs-lookup"><span data-stu-id="0829c-126">An organization can make its compute or storage resources available to the Azure PaaS hybrid application by:</span></span>
   
-- Hosting delle risorse nei server DMZ.
+- <span data-ttu-id="0829c-127">Hosting delle risorse nei server DMZ.</span><span class="sxs-lookup"><span data-stu-id="0829c-127">Hosting the resource on servers in the DMZ.</span></span>
     
-- Hosting di un server proxy inverso nella DMZ, che consente le richieste di utenti autenticate, in ingresso, basato su HTTPS per la risorsa che si trova in locale.
+- <span data-ttu-id="0829c-128">Hosting di un server proxy inverso nella DMZ, che consente le richieste di utenti autenticate, in ingresso, basato su HTTPS per la risorsa che si trova in locale.</span><span class="sxs-lookup"><span data-stu-id="0829c-128">Hosting a reverse proxy server in the DMZ, which allows authenticated, inbound, HTTPS-based requests to the resource that is located on-premises.</span></span>
     
-L'app Azure è possibile utilizzare le credenziali da:
+<span data-ttu-id="0829c-129">L'app Azure è possibile utilizzare le credenziali da:</span><span class="sxs-lookup"><span data-stu-id="0829c-129">The Azure app can use credentials from:</span></span>
   
-- Azure Active Directory, che possono essere sincronizzati con il provider di identità in locale, ad esempio Windows Server Active Directory.
+- <span data-ttu-id="0829c-130">Azure Active Directory, che possono essere sincronizzati con il provider di identità in locale, ad esempio Windows Server Active Directory.</span><span class="sxs-lookup"><span data-stu-id="0829c-130">Azure AD, which can be synchronized with your on-premises identity provider, such as Windows Server AD.</span></span>
     
-- Un provider di identità di terze parti.
+- <span data-ttu-id="0829c-131">Un provider di identità di terze parti.</span><span class="sxs-lookup"><span data-stu-id="0829c-131">A third-party identity provider.</span></span>
     
-### <a name="example-azure-paas-hybrid-application"></a>Applicazione di esempio Azure PaaS ibrida
+### <a name="example-azure-paas-hybrid-application"></a><span data-ttu-id="0829c-132">Applicazione di esempio Azure PaaS ibrida</span><span class="sxs-lookup"><span data-stu-id="0829c-132">Example Azure PaaS hybrid application</span></span>
 
-Nella figura 3 viene mostrata un'applicazione di ibrida di esempio in esecuzione in Azure.
+<span data-ttu-id="0829c-133">Nella figura 3 viene mostrata un'applicazione di ibrida di esempio in esecuzione in Azure.</span><span class="sxs-lookup"><span data-stu-id="0829c-133">Figure 3 shows an example hybrid application running in Azure.</span></span>
   
-**Figura 3: Un esempio di un'applicazione basata su Azure PaaS ibrida**
+<span data-ttu-id="0829c-134">**Figura 3: Un esempio di un'applicazione basata su Azure PaaS ibrida**</span><span class="sxs-lookup"><span data-stu-id="0829c-134">**Figure 3: An example Azure PaaS-based hybrid application**</span></span>
 
 ![Un esempio di applicazione ibrida di Azure basata su PaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_Ex.png)
   
-Nella figura 3, un host di rete locale un LOB App Azure PaaS ospita un'applicazione personalizzata per dispositivi mobili. Un dispositivo smartphone su Internet accede l'app personalizzata per dispositivi mobili in Azure, che invia le richieste di dati per l'applicazione LOB locale.
+<span data-ttu-id="0829c-p103">Nella figura 3, un host di rete locale un LOB App Azure PaaS ospita un'applicazione personalizzata per dispositivi mobili. Un dispositivo smartphone su Internet accede l'app personalizzata per dispositivi mobili in Azure, che invia le richieste di dati per l'applicazione LOB locale.</span><span class="sxs-lookup"><span data-stu-id="0829c-p103">In Figure 3, an on-premises network hosts an LOB app. Azure PaaS hosts a custom mobile app. A smartphone on the Internet accesses the custom mobile app in Azure, which sends data requests to the on-premises LOB app.</span></span>
   
-In questo esempio Azure PaaS ibrida applicazione sia un'app per dispositivi mobili personalizzata che fornisce informazioni aggiornate sui contatti sui dipendenti. Lo scenario ibrido end-to-end è costituito da:
+<span data-ttu-id="0829c-p104">In questo esempio Azure PaaS ibrida applicazione sia un'app per dispositivi mobili personalizzata che fornisce informazioni aggiornate sui contatti sui dipendenti. Lo scenario ibrido end-to-end è costituito da:</span><span class="sxs-lookup"><span data-stu-id="0829c-p104">This example Azure PaaS hybrid application is a custom mobile app that provides up-to-date contact information on employees. The end-to-end hybrid scenario consists of:</span></span>
   
-- Una smartphone app che richiede la convalida, le credenziali locali per l'esecuzione.
+- <span data-ttu-id="0829c-141">Una smartphone app che richiede la convalida, le credenziali locali per l'esecuzione.</span><span class="sxs-lookup"><span data-stu-id="0829c-141">A smartphone app that requires validated, on-premises credentials to run.</span></span>
     
-- Un'applicazione personalizzata per dispositivi mobili in esecuzione in Azure PaaS, che richiede informazioni sui dipendenti specifici in base alle query da app smartphone dell'utente.
+- <span data-ttu-id="0829c-142">Un'applicazione personalizzata per dispositivi mobili in esecuzione in Azure PaaS, che richiede informazioni sui dipendenti specifici in base alle query da app smartphone dell'utente.</span><span class="sxs-lookup"><span data-stu-id="0829c-142">A custom mobile app running in Azure PaaS, which requests information about specific employees based on queries from a user's smartphone app.</span></span>
     
-- Un server proxy inverso nella DMZ che convalida l'app per dispositivi mobili personalizzato e inoltra la richiesta.
+- <span data-ttu-id="0829c-143">Un server proxy inverso nella DMZ che convalida l'app per dispositivi mobili personalizzato e inoltra la richiesta.</span><span class="sxs-lookup"><span data-stu-id="0829c-143">A reverse proxy server in the DMZ that validates the custom mobile app and forwards the request.</span></span>
     
-- Una farm di server applicazioni LOB che gestisce la richiesta di contatto, soggette alle autorizzazioni dell'account dell'utente.
+- <span data-ttu-id="0829c-144">Una farm di server applicazioni LOB che gestisce la richiesta di contatto, soggette alle autorizzazioni dell'account dell'utente.</span><span class="sxs-lookup"><span data-stu-id="0829c-144">An LOB application server farm that services the contact request, subject to the permissions of the user's account.</span></span>
     
-Dal momento che il provider di identità locale è stato sincronizzato con Azure Active Directory, l'app per dispositivi mobili personalizzato e le applicazioni LOB possano convalidare il richiedente nome dell'account utente.
+<span data-ttu-id="0829c-145">Dal momento che il provider di identità locale è stato sincronizzato con Azure Active Directory, l'app per dispositivi mobili personalizzato e le applicazioni LOB possano convalidare il richiedente nome dell'account utente.</span><span class="sxs-lookup"><span data-stu-id="0829c-145">Because the on-premises identity provider has been synchronized with Azure AD, both the custom mobile app and the LOB app can validate the requesting user's account name.</span></span>
   
-## <a name="stretch-database-with-sql-server-2016"></a>Estensione database con SQL Server 2016
+## <a name="stretch-database-with-sql-server-2016"></a><span data-ttu-id="0829c-146">Estensione database con SQL Server 2016</span><span class="sxs-lookup"><span data-stu-id="0829c-146">Stretch Database with SQL Server 2016</span></span>
 
-Estensione database è una funzionalità di SQL Server 2016 che consente di spostare in modo sicuro e in modo trasparente freddi dati, ad esempio dati business chiuso in una tabella di grandi dimensioni che contiene informazioni sugli ordini, a un database SQL adatta in Azure.
+<span data-ttu-id="0829c-147">Estensione database è una funzionalità di SQL Server 2016 che consente di spostare in modo sicuro e in modo trasparente freddi dati, ad esempio dati business chiuso in una tabella di grandi dimensioni che contiene informazioni sugli ordini, a un database SQL adatta in Azure.</span><span class="sxs-lookup"><span data-stu-id="0829c-147">Stretch database is a feature of SQL Server 2016 that allows you to transparently and securely move cold data, such as closed business data in a large table that contains customer order information, to a SQL Stretch database in Azure.</span></span>
   
-Quando estesa, il contenuto di un'istanza di SQL Server, un database o anche una singola tabella è la combinazione di dati locali nel server SQL Server 2016 e dati remoti in Azure. Dati diventa idonei per Ridimensiona vengono automaticamente spostati Azure da SQL Server 2016.
+<span data-ttu-id="0829c-p105">Quando estesa, il contenuto di un'istanza di SQL Server, un database o anche una singola tabella è la combinazione di dati locali nel server SQL Server 2016 e dati remoti in Azure. Dati diventa idonei per Ridimensiona vengono automaticamente spostati Azure da SQL Server 2016.</span><span class="sxs-lookup"><span data-stu-id="0829c-p105">When stretched, the contents of a SQL Server instance, a database, or even a single table is the combination of local data in SQL Server 2016 server and remote data in Azure. Data that becomes eligible for stretch is automatically moved to Azure by SQL Server 2016.</span></span>
   
-Database Ridimensiona con SQL Server 2016 illustrato nella figura 4.
+<span data-ttu-id="0829c-150">Database Ridimensiona con SQL Server 2016 illustrato nella figura 4.</span><span class="sxs-lookup"><span data-stu-id="0829c-150">Figure 4 shows Stretch Database with SQL Server 2016.</span></span>
   
-**Figura 4: Database esteso con SQL Server 2016**
+<span data-ttu-id="0829c-151">**Figura 4: Database esteso con SQL Server 2016**</span><span class="sxs-lookup"><span data-stu-id="0829c-151">**Figure 4: Stretch Database with SQL Server 2016**</span></span>
 
 ![Estensione database con SQL Server 2016](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_SQL.png)
   
-Nella figura 4, una rete locale ospita un server che esegue SQL Server 2016 con un database locale di piccole dimensioni. Azure PaaS ospita un'istanza di Database Ridimensiona Azure SQL Server con la parte estesa del database. Query T-SQL da un utente locale inviati a SQL server in locale in modo sicuro vengono inoltrate al Database Ridimensiona SQL Azure, che restituisce i risultati all'utente richiedente.
+<span data-ttu-id="0829c-p106">Nella figura 4, una rete locale ospita un server che esegue SQL Server 2016 con un database locale di piccole dimensioni. Azure PaaS ospita un'istanza di Database Ridimensiona Azure SQL Server con la parte estesa del database. Query T-SQL da un utente locale inviati a SQL server in locale in modo sicuro vengono inoltrate al Database Ridimensiona SQL Azure, che restituisce i risultati all'utente richiedente.</span><span class="sxs-lookup"><span data-stu-id="0829c-p106">In Figure 4, an on-premises network hosts a server running SQL Server 2016 with a small local database. Azure PaaS hosts an instance of Azure SQL Server Stretch Database with the stretched portion of the database. T-SQL queries from an on-premises user sent to the on-premises SQL server are securely forwarded to the Azure SQL Stretch Database, which returns the results to the requesting user.</span></span>
   
- Le query utente che includono i dati cronologici vengono inoltrate in modo trasparente al database esteso di SQL Azure. Le query non devono essere scritte nuovamente, anche se la tabella viene estesa.
+ <span data-ttu-id="0829c-p107">Le query utente che includono i dati cronologici vengono inoltrate in modo trasparente al database esteso di SQL Azure. Le query non devono essere scritte nuovamente, anche se la tabella viene estesa.</span><span class="sxs-lookup"><span data-stu-id="0829c-p107">User queries that include the historical data are transparently forwarded to Azure SQL Stretch database. The queries do not need to be re-written, even though the table is stretched.</span></span>
   
-Il database esteso fornisce un'opzione conveniente per l'archiviazione a lungo termine e l'accesso trasparente ai dati cronologici. Consente inoltre di risolvere problemi relativi a prestazioni e disponibilità che si verificano quando le tabelle diventano molto grandi.
+<span data-ttu-id="0829c-p108">Il database esteso fornisce un'opzione conveniente per l'archiviazione a lungo termine e l'accesso trasparente ai dati cronologici. Consente inoltre di risolvere problemi relativi a prestazioni e disponibilità che si verificano quando le tabelle diventano molto grandi.</span><span class="sxs-lookup"><span data-stu-id="0829c-p108">Stretch database provides a cost-effective option for long-term storage and transparent access to historical data. It also solves performance and availability problems that arise when tables become very large.</span></span>
   
-Per ulteriori informazioni, vedere [Database adatta](https://msdn.microsoft.com/library/dn935011.aspx).
+<span data-ttu-id="0829c-160">Per ulteriori informazioni, vedere [Database adatta](https://msdn.microsoft.com/library/dn935011.aspx).</span><span class="sxs-lookup"><span data-stu-id="0829c-160">For more information, see [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="0829c-161">See Also</span><span class="sxs-lookup"><span data-stu-id="0829c-161">See Also</span></span>
 
-[Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[<span data-ttu-id="0829c-162">Cloud ibrido Microsoft per Enterprise Architects</span><span class="sxs-lookup"><span data-stu-id="0829c-162">Microsoft Hybrid Cloud for Enterprise Architects</span></span>](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="0829c-163">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="0829c-163">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="0829c-164">Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT</span><span class="sxs-lookup"><span data-stu-id="0829c-164">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

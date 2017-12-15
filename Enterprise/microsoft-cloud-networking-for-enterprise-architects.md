@@ -23,55 +23,56 @@ ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Rete cloud Microsoft per Enterprise Architects
+# <a name="microsoft-cloud-networking-for-enterprise-architects"></a><span data-ttu-id="c7c4a-103">Rete cloud Microsoft per Enterprise Architects</span><span class="sxs-lookup"><span data-stu-id="c7c4a-103">Microsoft Cloud Networking for Enterprise Architects</span></span>
 
- **Riepilogo:** Progettare una rete per i servizi cloud e le piattaforme Microsoft.
+ <span data-ttu-id="c7c4a-104">**Riepilogo:** Progettare una rete per i servizi cloud e le piattaforme Microsoft.</span><span class="sxs-lookup"><span data-stu-id="c7c4a-104">**Summary:** Design your networking for Microsoft cloud services and platforms.</span></span>
   
-In questo articolo è disponibile il collegamento a una serie di articoli in cui viene descritto cosa devono sapere gli architetti IT sulla progettazione della rete per le organizzazioni che utilizzano i servizi cloud e le piattaforme Microsoft. È possibile visualizzare queste informazioni anche come poster di 12 pagine e stamparle in formato tabloid (noto anche come ledger, 11 x 17 o A3).
+<span data-ttu-id="c7c4a-p101">In questo articolo è disponibile il collegamento a una serie di articoli in cui viene descritto cosa devono sapere gli architetti IT sulla progettazione della rete per le organizzazioni che utilizzano i servizi cloud e le piattaforme Microsoft. È possibile visualizzare queste informazioni anche come poster di 12 pagine e stamparle in formato tabloid (noto anche come ledger, 11 x 17 o A3).</span><span class="sxs-lookup"><span data-stu-id="c7c4a-p101">This article links you to a set of articles that describe what IT architects need to know about designing networking for organizations using Microsoft cloud services and platforms. You can also view this information as a 12-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
   
-[![Casella di scorrimento immagine per il modello di rete cloud Microsoft](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
-](https://go.microsoft.com/fwlink/p/?linkid=842073)
+<span data-ttu-id="c7c4a-107">[![Casella di scorrimento immagine per il modello di rete cloud Microsoft](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+](https://go.microsoft.com/fwlink/p/?linkid=842073)</span><span class="sxs-lookup"><span data-stu-id="c7c4a-107">[![Thumb image for Microsoft cloud networking model](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+](https://go.microsoft.com/fwlink/p/?linkid=842073)</span></span>
   
-![File PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![File Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Visualizzare una pagina con le versioni in altre lingue](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54425)
+<span data-ttu-id="c7c4a-108">![File PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![File Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Visualizzare una pagina con le versioni in altre lingue](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54425)</span><span class="sxs-lookup"><span data-stu-id="c7c4a-108">![PDF file](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio file](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![See a page with versions in additional languages](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[More languages](https://www.microsoft.com/download/details.aspx?id=54425)</span></span>
   
-È anche possibile visualizzare tutti i modelli di [risorse dell'architettura IT Cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e passare attraverso [Guida di orientamento al Cloud Microsoft Enterprise: risorse per i responsabili delle decisioni IT](https://aka.ms/cloudarchitecture).
+<span data-ttu-id="c7c4a-109">È anche possibile visualizzare tutti i modelli di [risorse dell'architettura IT Cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e passare attraverso [Guida di orientamento al Cloud Microsoft Enterprise: risorse per i responsabili delle decisioni IT](https://aka.ms/cloudarchitecture).</span><span class="sxs-lookup"><span data-stu-id="c7c4a-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
   
-Vedere le seguenti sezioni:
+<span data-ttu-id="c7c4a-110">Vedere le seguenti sezioni:</span><span class="sxs-lookup"><span data-stu-id="c7c4a-110">See the following sections:</span></span>
   
-- [Evoluzione della rete per la connettività cloud](evolving-your-network-for-cloud-connectivity.md)
+- [<span data-ttu-id="c7c4a-111">Evoluzione della rete per la connettività cloud</span><span class="sxs-lookup"><span data-stu-id="c7c4a-111">Evolving your network for cloud connectivity</span></span>](evolving-your-network-for-cloud-connectivity.md)
     
-    La migrazione cloud cambia il volume e la natura dei flussi del traffico all'interno e all'esterno di una rete aziendale. Influisce, inoltre, sugli approcci finalizzati alla mitigazione dei rischi per la sicurezza.
+    <span data-ttu-id="c7c4a-p102">La migrazione cloud cambia il volume e la natura dei flussi del traffico all'interno e all'esterno di una rete aziendale. Influisce, inoltre, sugli approcci finalizzati alla mitigazione dei rischi per la sicurezza.</span><span class="sxs-lookup"><span data-stu-id="c7c4a-p102">Cloud migration changes the volume and nature of traffic flows within and outside a corporate network. It also affects approaches to mitigating security risk.</span></span>
     
-- [Elementi comuni della connettività cloud Microsoft](common-elements-of-microsoft-cloud-connectivity.md)
+- [<span data-ttu-id="c7c4a-114">Elementi comuni della connettività cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="c7c4a-114">Common elements of Microsoft cloud connectivity</span></span>](common-elements-of-microsoft-cloud-connectivity.md)
     
-    L'integrazione della rete con il cloud di Microsoft consente di accedere facilmente a una vasta gamma di servizi.
+    <span data-ttu-id="c7c4a-115">L'integrazione della rete con il cloud di Microsoft consente di accedere facilmente a una vasta gamma di servizi.</span><span class="sxs-lookup"><span data-stu-id="c7c4a-115">Integrating your networking with the Microsoft cloud provides optimal access to a broad range of services.</span></span>
     
-- [ExpressRoute per la connettività cloud Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
+- [<span data-ttu-id="c7c4a-116">ExpressRoute per la connettività cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="c7c4a-116">ExpressRoute for Microsoft cloud connectivity</span></span>](expressroute-for-microsoft-cloud-connectivity.md)
     
-    ExpressRoute fornisce una connessione di rete a elevata velocità effettiva, dedicata e privata per il cloud Microsoft.
+    <span data-ttu-id="c7c4a-117">ExpressRoute fornisce una connessione di rete a elevata velocità effettiva, dedicata e privata per il cloud Microsoft.</span><span class="sxs-lookup"><span data-stu-id="c7c4a-117">ExpressRoute provides a private, dedicated, high-throughput network connection to Microsoft's cloud.</span></span>
     
-- [Progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md)
+- [<span data-ttu-id="c7c4a-118">Progettazione di rete per Microsoft SaaS</span><span class="sxs-lookup"><span data-stu-id="c7c4a-118">Designing networking for Microsoft SaaS</span></span>](designing-networking-for-microsoft-saas.md)
     
-    L'ottimizzazione della rete per i servizi SaaS di Microsoft richiede un'analisi approfondita della connessione Internet, dei dispositivi client e delle operazioni IT tipiche.
+    <span data-ttu-id="c7c4a-119">L'ottimizzazione della rete per i servizi SaaS di Microsoft richiede un'analisi approfondita della connessione Internet, dei dispositivi client e delle operazioni IT tipiche.</span><span class="sxs-lookup"><span data-stu-id="c7c4a-119">Optimizing your network for Microsoft SaaS services requires careful analysis of your Internet edge, your client devices, and typical IT operations.</span></span>
     
-- [Progettazione di rete per Microsoft Azure PaaS](designing-networking-for-microsoft-azure-paas.md)
+- [<span data-ttu-id="c7c4a-120">Progettazione di rete per Microsoft Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="c7c4a-120">Designing networking for Microsoft Azure PaaS</span></span>](designing-networking-for-microsoft-azure-paas.md)
     
-    L'ottimizzazione della rete per le app PaaS di Azure necessita di una larghezza di banda Internet adeguata e può richiedere la distribuzione del traffico di rete in più siti o app.
+    <span data-ttu-id="c7c4a-121">L'ottimizzazione della rete per le app PaaS di Azure necessita di una larghezza di banda Internet adeguata e può richiedere la distribuzione del traffico di rete in più siti o app.</span><span class="sxs-lookup"><span data-stu-id="c7c4a-121">Optimizing networking for Azure PaaS apps requires adequate Internet bandwidth and can require the distribution of network traffic across multiple sites or apps.</span></span>
     
-- [Progettazione della rete per IaaS di Microsoft Azure](designing-networking-for-microsoft-azure-iaas.md)
+- [<span data-ttu-id="c7c4a-122">Progettazione della rete per IaaS di Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="c7c4a-122">Designing networking for Microsoft Azure IaaS</span></span>](designing-networking-for-microsoft-azure-iaas.md)
     
-    Passaggi del processo di progettazione per creare una rete virtuale Azure ottimale (VNet) per l'hosting di carichi di lavoro IT basati su server, tra cui sottoreti, spazi di indirizzi, routing, DNS, bilanciamento del carico e connettività di rete locale, altri VNet e Internet.
+    <span data-ttu-id="c7c4a-123">Passaggi del processo di progettazione per creare una rete virtuale Azure ottimale (VNet) per l'hosting di carichi di lavoro IT basati su server, tra cui sottoreti, spazi di indirizzi, routing, DNS, bilanciamento del carico e connettività di rete locale, altri VNet e Internet.</span><span class="sxs-lookup"><span data-stu-id="c7c4a-123">Step through the design process to create an optimal Azure virtual network (VNet) for hosting server-based IT workloads, including subnets, address spaces, routing, DNS, load balancing, and connectivity to your on-premises network, other VNets, and the Internet.</span></span>
     
-Per un riepilogo di 30 minuti di punti chiavi di questo poster, vedere il corso di Microsoft Virtual Academy [Ottimizzazione della rete per le offerte Cloud Microsoft](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) .
+<span data-ttu-id="c7c4a-124">Per un riepilogo di 30 minuti di punti chiavi di questo poster, vedere il corso di Microsoft Virtual Academy [Ottimizzazione della rete per le offerte Cloud Microsoft](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) .</span><span class="sxs-lookup"><span data-stu-id="c7c4a-124">For a 30-minute summary of the key points of this poster, see the [Optimize Your Network for Microsoft Cloud Offerings](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) Microsoft Virtual Academy course.</span></span>
   
 > [!NOTE]
-> Questi articoli riflettono il rilascio di **giugno 2017** della rete cloud Microsoft per Enterprise Architects.
+> <span data-ttu-id="c7c4a-125">Questi articoli riflettono il rilascio di **giugno 2017** della rete cloud Microsoft per Enterprise Architects.</span><span class="sxs-lookup"><span data-stu-id="c7c4a-125">These articles reflect the **June 2017** release of the Microsoft Cloud Networking for Enterprise Architects poster.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="c7c4a-126">See Also</span><span class="sxs-lookup"><span data-stu-id="c7c4a-126">See Also</span></span>
 
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="c7c4a-127">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="c7c4a-127">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="c7c4a-128">Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT</span><span class="sxs-lookup"><span data-stu-id="c7c4a-128">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

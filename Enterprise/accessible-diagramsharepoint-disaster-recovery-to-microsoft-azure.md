@@ -16,198 +16,198 @@ ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagramma accessibile - ripristino di emergenza di SharePoint in Microsoft Azure
+# <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a><span data-ttu-id="74b30-103">Diagramma accessibile - ripristino di emergenza di SharePoint in Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="74b30-103">Accessible diagram - SharePoint Disaster Recovery to Microsoft Azure</span></span>
 
-**Riepilogo:** In questo articolo è una versione testo accessibile del diagramma denominata SharePoint il ripristino di emergenza in Microsoft Azure.
+<span data-ttu-id="74b30-104">**Riepilogo:** In questo articolo è una versione testo accessibile del diagramma denominata SharePoint il ripristino di emergenza in Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-104">**Summary:** This article is an accessible text version of the diagram named SharePoint Disaster Recovery to Microsoft Azure.</span></span>
   
-Questo poster vengono forniti esempi di architetture per la creazione di un ambiente di ripristino di Azure. 
+<span data-ttu-id="74b30-105">Questo poster vengono forniti esempi di architetture per la creazione di un ambiente di ripristino di Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-105">This poster provides examples of architectures for building a recovery environment in Azure.</span></span> 
   
-## <a name="on-premises-environment-with-an-azure-recovery-environment"></a>Ambiente locale con un ambiente di ripristino di Azure
+## <a name="on-premises-environment-with-an-azure-recovery-environment"></a><span data-ttu-id="74b30-106">Ambiente locale con un ambiente di ripristino di Azure</span><span class="sxs-lookup"><span data-stu-id="74b30-106">On-premises environment with an Azure recovery environment</span></span>
 
-Il diagramma mostra un esempio di architettura, utilizzata per l'ambiente di produzione di un ambiente locale che utilizza Azure per il ripristino. 
+<span data-ttu-id="74b30-107">Il diagramma mostra un esempio di architettura, utilizzata per l'ambiente di produzione di un ambiente locale che utilizza Azure per il ripristino.</span><span class="sxs-lookup"><span data-stu-id="74b30-107">The diagram shows an example of architecture used for the production environment of an on-premises environment that uses Azure for recovery.</span></span> 
   
-### <a name="on-premises-production-environment"></a>Ambiente di produzione in locale
+### <a name="on-premises-production-environment"></a><span data-ttu-id="74b30-108">Ambiente di produzione in locale</span><span class="sxs-lookup"><span data-stu-id="74b30-108">On-premises production environment</span></span>
 
-Nella figura relativa viene illustrato un ambiente di produzione con quattro livelli di server in una server farm. 
+<span data-ttu-id="74b30-109">Nella figura relativa viene illustrato un ambiente di produzione con quattro livelli di server in una server farm.</span><span class="sxs-lookup"><span data-stu-id="74b30-109">The accompanying diagram shows a live production environment with four tiers of servers in a server farm.</span></span> 
   
-#### <a name="tier-1"></a>Livello 1
+#### <a name="tier-1"></a><span data-ttu-id="74b30-110">Livello 1</span><span class="sxs-lookup"><span data-stu-id="74b30-110">Tier 1</span></span>
 
-Esistono due server per i servizi front-end e di elaborazione delle query. Esiste una partizione di indice che fornisce una replica di entrambi i server. 
+<span data-ttu-id="74b30-p101">Esistono due server per i servizi front-end e di elaborazione delle query. Esiste una partizione di indice che fornisce una replica di entrambi i server.</span><span class="sxs-lookup"><span data-stu-id="74b30-p101">There are two servers for front-end services and query processing. There is an index partition that provides a replica of both servers.</span></span> 
   
-#### <a name="tier-2"></a>Livello 2
+#### <a name="tier-2"></a><span data-ttu-id="74b30-113">Livello 2</span><span class="sxs-lookup"><span data-stu-id="74b30-113">Tier 2</span></span>
 
-Esistono due server per la cache distribuita in questo livello. 
+<span data-ttu-id="74b30-114">Esistono due server per la cache distribuita in questo livello.</span><span class="sxs-lookup"><span data-stu-id="74b30-114">There are two servers for distributed cache in this tier.</span></span> 
   
-#### <a name="tier-3"></a>Livello 3
+#### <a name="tier-3"></a><span data-ttu-id="74b30-115">Livello 3</span><span class="sxs-lookup"><span data-stu-id="74b30-115">Tier 3</span></span>
 
-Esistono tre server in questo livello. Ogni server fornisce i servizi seguenti: 
+<span data-ttu-id="74b30-p102">Esistono tre server in questo livello. Ogni server fornisce i servizi seguenti:</span><span class="sxs-lookup"><span data-stu-id="74b30-p102">There are three servers in this tier. Each server provides the following services:</span></span> 
   
-- Servizi back-end 
+- <span data-ttu-id="74b30-118">Servizi back-end</span><span class="sxs-lookup"><span data-stu-id="74b30-118">Backend services</span></span> 
     
-- Admin 
+- <span data-ttu-id="74b30-119">Admin</span><span class="sxs-lookup"><span data-stu-id="74b30-119">Admin</span></span> 
     
-- Gestione flusso di lavoro 
+- <span data-ttu-id="74b30-120">Gestione flusso di lavoro</span><span class="sxs-lookup"><span data-stu-id="74b30-120">Workflow manager</span></span> 
     
-- Ricerca per indicizzazione 
+- <span data-ttu-id="74b30-121">Ricerca per indicizzazione</span><span class="sxs-lookup"><span data-stu-id="74b30-121">Crawl</span></span> 
     
-- Elaborazione del contenuto 
+- <span data-ttu-id="74b30-122">Elaborazione del contenuto</span><span class="sxs-lookup"><span data-stu-id="74b30-122">Content processing</span></span> 
     
-- Analisi 
+- <span data-ttu-id="74b30-123">Analisi</span><span class="sxs-lookup"><span data-stu-id="74b30-123">Analytics</span></span> 
     
-#### <a name="tier-4"></a>Livello 4
+#### <a name="tier-4"></a><span data-ttu-id="74b30-124">Livello 4</span><span class="sxs-lookup"><span data-stu-id="74b30-124">Tier 4</span></span>
 
-In questo livello sono disponibili due server. Entrambi i server presenti tre gruppi di disponibilità, come indicato di seguito: 
+<span data-ttu-id="74b30-p103">In questo livello sono disponibili due server. Entrambi i server presenti tre gruppi di disponibilità, come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="74b30-p103">There are two servers in this tier. Both servers have three availability groups, as follows:</span></span> 
   
-- Gruppo di disponibilità #1 fornisce funzionalità di ricerca. 
+- <span data-ttu-id="74b30-127">Gruppo di disponibilità #1 fornisce funzionalità di ricerca.</span><span class="sxs-lookup"><span data-stu-id="74b30-127">Availability group #1 provides search capabilities.</span></span> 
     
-- Gruppo di disponibilità #2 fornisce contenuto, la configurazione e le applicazioni di servizio. 
+- <span data-ttu-id="74b30-128">Gruppo di disponibilità #2 fornisce contenuto, la configurazione e le applicazioni di servizio.</span><span class="sxs-lookup"><span data-stu-id="74b30-128">Availability group #2 provides content, configuration, and service applications.</span></span> 
     
-- Gruppo di disponibilità #3 fornisce contenuto. 
+- <span data-ttu-id="74b30-129">Gruppo di disponibilità #3 fornisce contenuto.</span><span class="sxs-lookup"><span data-stu-id="74b30-129">Availability group #3 provides content.</span></span> 
     
-È inoltre disponibile un file server in questo livello di condivisione. I server di livello 4 utilizzano la distribuzione dei log per comunicare con tale server. Il server, a sua volta, comunica su Distributed File System replica (che il servizio) a un server di condivisione di file nell'ambiente di Azure ripristino con warm standby, come descritto nella sezione seguente. 
+<span data-ttu-id="74b30-p104">È inoltre disponibile un file server in questo livello di condivisione. I server di livello 4 utilizzano la distribuzione dei log per comunicare con tale server. Il server, a sua volta, comunica su Distributed File System replica (che il servizio) a un server di condivisione di file nell'ambiente di Azure ripristino con warm standby, come descritto nella sezione seguente.</span><span class="sxs-lookup"><span data-stu-id="74b30-p104">There is also a file sharing server in this tier. The tier 4 servers use log shipping to communicate with this server. This server, in turn, communicates over Distributed File System Replication (DFSR) to a file share server in the Azure warm standby recovery environment, as described in the following section.</span></span> 
   
-### <a name="azure-recovery-environment"></a>Ambiente di ripristino di Azure
+### <a name="azure-recovery-environment"></a><span data-ttu-id="74b30-133">Ambiente di ripristino di Azure</span><span class="sxs-lookup"><span data-stu-id="74b30-133">Azure recovery environment</span></span>
 
-#### <a name="warm-standby-environment-running-virtual-machines"></a>Con warm standby ambiente macchine virtuali in esecuzione
+#### <a name="warm-standby-environment-running-virtual-machines"></a><span data-ttu-id="74b30-134">Con warm standby ambiente macchine virtuali in esecuzione</span><span class="sxs-lookup"><span data-stu-id="74b30-134">Warm standby environment running virtual machines</span></span>
 
-La relativa diagramma dell'ambiente locale replicato esattamente nell'ambiente di ripristino Azure. Il server di condivisione di file in questo ambiente è collegato l'ambiente locale e che il servizio. Che il servizio trasferisce registri dall'ambiente di produzione per l'ambiente di ripristino tramite il server di condivisione di file. 
+<span data-ttu-id="74b30-p105">La relativa diagramma dell'ambiente locale replicato esattamente nell'ambiente di ripristino Azure. Il server di condivisione di file in questo ambiente è collegato l'ambiente locale e che il servizio. Che il servizio trasferisce registri dall'ambiente di produzione per l'ambiente di ripristino tramite il server di condivisione di file.</span><span class="sxs-lookup"><span data-stu-id="74b30-p105">The accompanying diagram shows the on-premises environment replicated exactly in the Azure recovery environment. The file share server in this environment is linked to the on-premises environment through DFSR. DFSR transfers logs from the production environment to the recovery environment through the file share server.</span></span> 
   
-### <a name="overview"></a>Panoramica
+### <a name="overview"></a><span data-ttu-id="74b30-138">Panoramica</span><span class="sxs-lookup"><span data-stu-id="74b30-138">Overview</span></span>
 
-L'ambiente di ripristino di emergenza per una farm di SharePoint 2013 locali può essere ospitata in Azure. 
+<span data-ttu-id="74b30-139">L'ambiente di ripristino di emergenza per una farm di SharePoint 2013 locali può essere ospitata in Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-139">The disaster recovery environment for an on-premises SharePoint 2013 farm can be hosted in Azure.</span></span> 
   
--  Servizi di infrastruttura Azure offre un centro dati secondario.
+-  <span data-ttu-id="74b30-140">Servizi di infrastruttura Azure offre un centro dati secondario.</span><span class="sxs-lookup"><span data-stu-id="74b30-140">Azure Infrastructure Services provides a secondary datacenter.</span></span>
     
-- Prestare solo per le risorse utilizzate. 
+- <span data-ttu-id="74b30-141">Prestare solo per le risorse utilizzate.</span><span class="sxs-lookup"><span data-stu-id="74b30-141">Pay only for the resources you use.</span></span> 
     
-- Farm di piccole dimensioni ripristino può essere scalata dopo una situazione di emergenza per soddisfare gli obiettivi di capacità e scalabilità. 
+- <span data-ttu-id="74b30-142">Farm di piccole dimensioni ripristino può essere scalata dopo una situazione di emergenza per soddisfare gli obiettivi di capacità e scalabilità.</span><span class="sxs-lookup"><span data-stu-id="74b30-142">Small recovery farms can be scaled out after a disaster to meet scale and capacity targets.</span></span> 
     
-La farm di ripristino in Azure è configurata come in modo identico possibile nella farm di produzione in locale. 
+<span data-ttu-id="74b30-143">La farm di ripristino in Azure è configurata come in modo identico possibile nella farm di produzione in locale.</span><span class="sxs-lookup"><span data-stu-id="74b30-143">The recovery farm in Azure is configured as identically as possible to the production on-premises farm.</span></span> 
   
-- Stessa rappresentazione dei ruoli del server. 
+- <span data-ttu-id="74b30-144">Stessa rappresentazione dei ruoli del server.</span><span class="sxs-lookup"><span data-stu-id="74b30-144">Same representation of server roles.</span></span> 
     
-- Stessa configurazione di personalizzazioni. 
+- <span data-ttu-id="74b30-145">Stessa configurazione di personalizzazioni.</span><span class="sxs-lookup"><span data-stu-id="74b30-145">Same configuration of customizations.</span></span> 
     
-- Stessa configurazione delle funzionalità di ricerca (possibile in una versione ridotta di farm di produzione). 
+- <span data-ttu-id="74b30-146">Stessa configurazione delle funzionalità di ricerca (possibile in una versione ridotta di farm di produzione).</span><span class="sxs-lookup"><span data-stu-id="74b30-146">Same configuration of search features (these can be on a smaller version of the production farm).</span></span> 
     
-La distribuzione dei log e che il servizio vengono utilizzati per copiare i log delle transazioni e dei backup di database alla farm di Azure. 
+<span data-ttu-id="74b30-147">La distribuzione dei log e che il servizio vengono utilizzati per copiare i log delle transazioni e dei backup di database alla farm di Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-147">Log shipping and DFSR are used to copy database backups and transaction logs to the Azure farm.</span></span> 
   
-- Che il servizio viene utilizzato per trasferire i registri dall'ambiente di produzione per l'ambiente di ripristino. In uno scenario WAN, che il servizio è più efficiente log direttamente al server secondario in Azure. 
+- <span data-ttu-id="74b30-p106">Che il servizio viene utilizzato per trasferire i registri dall'ambiente di produzione per l'ambiente di ripristino. In uno scenario WAN, che il servizio è più efficiente log direttamente al server secondario in Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-p106">DFSR is used to transfer logs from the production environment to the recovery environment. In a WAN scenario, DFSR is more efficient than shipping the logs directly to the secondary server in Azure.</span></span> 
     
-- I registri vengono riprodotti nei computer basato su Azure SQL Server. 
+- <span data-ttu-id="74b30-150">I registri vengono riprodotti nei computer basato su Azure SQL Server.</span><span class="sxs-lookup"><span data-stu-id="74b30-150">Logs are replayed to the Azure-based SQL Server computers.</span></span> 
     
-- Database con log Shipping vengono collegati alla farm finché non viene eseguito un esercizio di ripristino. 
+- <span data-ttu-id="74b30-151">Database con log Shipping vengono collegati alla farm finché non viene eseguito un esercizio di ripristino.</span><span class="sxs-lookup"><span data-stu-id="74b30-151">Log-shipped databases are not attached to the farm until a recovery exercise is performed.</span></span> 
     
-Procedure di failover: 
+<span data-ttu-id="74b30-152">Procedure di failover:</span><span class="sxs-lookup"><span data-stu-id="74b30-152">Failover procedures:</span></span> 
   
-1. Arrestare il log shipping 
+1. <span data-ttu-id="74b30-153">Arrestare il log shipping</span><span class="sxs-lookup"><span data-stu-id="74b30-153">Stop log shipping.</span></span> 
     
-2. Smettere di accettare il traffico alla farm primaria. 
+2. <span data-ttu-id="74b30-154">Smettere di accettare il traffico alla farm primaria.</span><span class="sxs-lookup"><span data-stu-id="74b30-154">Stop accepting traffic to the primary farm.</span></span> 
     
-3. Riprodurre i registri di transazioni finali. 
+3. <span data-ttu-id="74b30-155">Riprodurre i registri di transazioni finali.</span><span class="sxs-lookup"><span data-stu-id="74b30-155">Replay the final transaction logs.</span></span> 
     
-4. Collegare i database di contenuto alla farm. 
+4. <span data-ttu-id="74b30-156">Collegare i database di contenuto alla farm.</span><span class="sxs-lookup"><span data-stu-id="74b30-156">Attach the content databases to the farm.</span></span> 
     
-5. Avviare una ricerca per indicizzazione completa. 
+5. <span data-ttu-id="74b30-157">Avviare una ricerca per indicizzazione completa.</span><span class="sxs-lookup"><span data-stu-id="74b30-157">Start a full crawl.</span></span> 
     
-6. Ripristinare le applicazioni di servizio dai database di servizi replicati. 
+6. <span data-ttu-id="74b30-158">Ripristinare le applicazioni di servizio dai database di servizi replicati.</span><span class="sxs-lookup"><span data-stu-id="74b30-158">Restore service applications from the replicated services databases.</span></span> 
     
-Obiettivi del recupero forniti da questa soluzione includono: 
+<span data-ttu-id="74b30-159">Obiettivi del recupero forniti da questa soluzione includono:</span><span class="sxs-lookup"><span data-stu-id="74b30-159">Recovery objectives provided by this solution include:</span></span> 
   
-- Siti e contenuto 
+- <span data-ttu-id="74b30-160">Siti e contenuto</span><span class="sxs-lookup"><span data-stu-id="74b30-160">Sites and content</span></span> 
     
-- Ricerca (nuovamente a ricerca per indicizzazione, nessuna cronologia ricerca) 
+- <span data-ttu-id="74b30-161">Ricerca (nuovamente a ricerca per indicizzazione, nessuna cronologia ricerca)</span><span class="sxs-lookup"><span data-stu-id="74b30-161">Search (re-crawled, no search history)</span></span> 
     
-- Servizi
+- <span data-ttu-id="74b30-162">Servizi</span><span class="sxs-lookup"><span data-stu-id="74b30-162">Services</span></span>
     
-Ulteriori elementi che possono essere risolti da Microsoft Consulting Services o un partner: 
+<span data-ttu-id="74b30-163">Ulteriori elementi che possono essere risolti da Microsoft Consulting Services o un partner:</span><span class="sxs-lookup"><span data-stu-id="74b30-163">Additional items that can be addressed by Microsoft Consulting Services or a partner:</span></span> 
   
-- Sincronizzazione di soluzioni farm personalizzate 
+- <span data-ttu-id="74b30-164">Sincronizzazione di soluzioni farm personalizzate</span><span class="sxs-lookup"><span data-stu-id="74b30-164">Synchronizing custom farm solutions</span></span> 
     
-- Connessioni a origini dati in locale (origine contenuti di integrazione applicativa dei dati (BDC) e ricerca) 
+- <span data-ttu-id="74b30-165">Connessioni a origini dati in locale (origine contenuti di integrazione applicativa dei dati (BDC) e ricerca)</span><span class="sxs-lookup"><span data-stu-id="74b30-165">Connections to data sources on premises (Business Data Connectivity (BDC) and search content sources)</span></span> 
     
-- Scenari di ripristino di ricerca 
+- <span data-ttu-id="74b30-166">Scenari di ripristino di ricerca</span><span class="sxs-lookup"><span data-stu-id="74b30-166">Search restore scenarios</span></span> 
     
-- Gli obiettivi di tempo di ripristino (RTO) e obiettivi del punto di ripristino (RPO) 
+- <span data-ttu-id="74b30-167">Gli obiettivi di tempo di ripristino (RTO) e obiettivi del punto di ripristino (RPO)</span><span class="sxs-lookup"><span data-stu-id="74b30-167">Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)</span></span> 
     
-#### <a name="cold-standby-environment-running-virtual-machines"></a>Ambiente di standby fredda macchine virtuali in esecuzione
+#### <a name="cold-standby-environment-running-virtual-machines"></a><span data-ttu-id="74b30-168">Ambiente di standby fredda macchine virtuali in esecuzione</span><span class="sxs-lookup"><span data-stu-id="74b30-168">Cold standby environment running virtual machines</span></span>
 
-Cold standby ambienti richiedono più tempo per avviare ma sono meno costosi. 
+<span data-ttu-id="74b30-169">Cold standby ambienti richiedono più tempo per avviare ma sono meno costosi.</span><span class="sxs-lookup"><span data-stu-id="74b30-169">Cold standby environments take longer to start but are less expensive.</span></span> 
   
-- Viene creata completamente la farm, ma le macchine virtuali vengono arrestate dopo la creazione della farm. Corrisposto solo i costi di elaborazione per le macchine virtuali sono in esecuzione, ma si applicano i costi di archiviazione e di rete trasferimento di dati. 
+- <span data-ttu-id="74b30-p107">Viene creata completamente la farm, ma le macchine virtuali vengono arrestate dopo la creazione della farm. Corrisposto solo i costi di elaborazione per le macchine virtuali sono in esecuzione, ma si applicano i costi di archiviazione e di rete trasferimento di dati.</span><span class="sxs-lookup"><span data-stu-id="74b30-p107">The farm is fully built, but the virtual machines are stopped after the farm is created. You pay only processing costs when the virtual machines are running, but storage and network data transfer costs apply.</span></span> 
     
-- In caso di emergenza, tutte le macchine virtuali della farm vengono avviate e un'applicazione di patch. 
+- <span data-ttu-id="74b30-172">In caso di emergenza, tutte le macchine virtuali della farm vengono avviate e un'applicazione di patch.</span><span class="sxs-lookup"><span data-stu-id="74b30-172">In the event of a disaster, all the virtual machines in the farm are started and patched.</span></span> 
     
-- Backup e i registri delle transazioni vengono applicati ai database della farm. 
+- <span data-ttu-id="74b30-173">Backup e i registri delle transazioni vengono applicati ai database della farm.</span><span class="sxs-lookup"><span data-stu-id="74b30-173">Backups and transaction logs are applied to the farm databases.</span></span> 
     
-Nell'elenco seguente vengono descritte le procedure aggiuntive per con cold standby ambienti: 
+<span data-ttu-id="74b30-174">Nell'elenco seguente vengono descritte le procedure aggiuntive per con cold standby ambienti:</span><span class="sxs-lookup"><span data-stu-id="74b30-174">The following list describes additional procedures for cold standby environments:</span></span> 
   
-- Attivare le macchine virtuali regolarmente di patch, aggiornare e verifica dell'ambiente. 
+- <span data-ttu-id="74b30-175">Attivare le macchine virtuali regolarmente di patch, aggiornare e verifica dell'ambiente.</span><span class="sxs-lookup"><span data-stu-id="74b30-175">Turn on virtual machines regularly to patch, update, and verify the environment.</span></span> 
     
-- Eseguire le procedure per aggiornare DNS e gli indirizzi IP. 
+- <span data-ttu-id="74b30-176">Eseguire le procedure per aggiornare DNS e gli indirizzi IP.</span><span class="sxs-lookup"><span data-stu-id="74b30-176">Run procedures to refresh DNS and IP addresses.</span></span> 
     
-- Configurare SQL AlwaysOn dopo il failover. 
+- <span data-ttu-id="74b30-177">Configurare SQL AlwaysOn dopo il failover.</span><span class="sxs-lookup"><span data-stu-id="74b30-177">Set up SQL AlwaysOn after a failover.</span></span> 
     
-Nella figura relativa viene illustrato un ambiente di ripristino replicato nelle macchine virtuali. Dopo il failover in un ambiente con cold standby, tutte le macchine virtuali siano state avviate e configurati i gruppi di disponibilità utilizzando i registri di riesecuzione per rendere disponibili i server di database. 
+<span data-ttu-id="74b30-p108">Nella figura relativa viene illustrato un ambiente di ripristino replicato nelle macchine virtuali. Dopo il failover in un ambiente con cold standby, tutte le macchine virtuali siano state avviate e configurati i gruppi di disponibilità utilizzando i registri di riesecuzione per rendere disponibili i server di database.</span><span class="sxs-lookup"><span data-stu-id="74b30-p108">The accompanying diagram shows a replicated recovery environment on virtual machines. After failover to a cold standby environment, all virtual machines are started, and the availability groups are configured using replay logs to make the database servers available.</span></span> 
   
-## <a name="sharepoint-recovery-environment-in-azure"></a>Ambiente di ripristino di SharePoint in Azure
+## <a name="sharepoint-recovery-environment-in-azure"></a><span data-ttu-id="74b30-180">Ambiente di ripristino di SharePoint in Azure</span><span class="sxs-lookup"><span data-stu-id="74b30-180">SharePoint recovery environment in Azure</span></span>
 
-Progettare e creare l'ambiente di failover in Azure. 
+<span data-ttu-id="74b30-181">Progettare e creare l'ambiente di failover in Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-181">Design and build the failover environment in Azure.</span></span> 
   
-- Creare una rete virtuale in Azure. 
+- <span data-ttu-id="74b30-182">Creare una rete virtuale in Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-182">Create a virtual network in Azure.</span></span> 
     
-- Connettersi alla rete locale con la rete virtuale in Azure con una connessione VPN del sito per sito. La connessione utilizza un gateway dinamico in Azure. 
+- <span data-ttu-id="74b30-p109">Connettersi alla rete locale con la rete virtuale in Azure con una connessione VPN del sito per sito. La connessione utilizza un gateway dinamico in Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-p109">Connect the on-premises network with the virtual network in Azure with a site-to-site VPN connection. This connection uses a dynamic gateway in Azure.</span></span> 
     
-- Distribuire uno o più controller di dominio per la rete virtuale Azure e configurare questi per l'utilizzo con il dominio locale. I controller di dominio sono i server di catalogo. 
+- <span data-ttu-id="74b30-p110">Distribuire uno o più controller di dominio per la rete virtuale Azure e configurare questi per l'utilizzo con il dominio locale. I controller di dominio sono i server di catalogo.</span><span class="sxs-lookup"><span data-stu-id="74b30-p110">Deploy one or more domain controllers to the Azure virtual network, and configure these to work with your on-premises domain. These domain controllers are catalog servers.</span></span> 
     
-- Adattare la farm di SharePoint per i set di disponibilità e servizi cloud. 
+- <span data-ttu-id="74b30-187">Adattare la farm di SharePoint per i set di disponibilità e servizi cloud.</span><span class="sxs-lookup"><span data-stu-id="74b30-187">Adapt the SharePoint farm for cloud services and availability sets.</span></span> 
     
-- Distribuire la farm di SharePoint e un file server a condivisioni file host. 
+- <span data-ttu-id="74b30-188">Distribuire la farm di SharePoint e un file server a condivisioni file host.</span><span class="sxs-lookup"><span data-stu-id="74b30-188">Deploy the SharePoint farm plus a file server to host file shares.</span></span> 
     
-- Configurare la distribuzione dei log e che il servizio tra l'ambiente locale e l'ambiente di ripristino basato su Azure. 
+- <span data-ttu-id="74b30-189">Configurare la distribuzione dei log e che il servizio tra l'ambiente locale e l'ambiente di ripristino basato su Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-189">Set up log shipping and DFSR between the on-premises environment and the Azure-based recovery environment.</span></span> 
     
-Figura relativa che mostra l'ambiente locale e la rete virtuale Azure con le caratteristiche seguenti: 
+<span data-ttu-id="74b30-190">Figura relativa che mostra l'ambiente locale e la rete virtuale Azure con le caratteristiche seguenti:</span><span class="sxs-lookup"><span data-stu-id="74b30-190">The accompanying diagram shows the on-premises environment and the Azure virtual network with the following features:</span></span> 
   
-### <a name="on-premises-environment"></a>Ambiente locale
+### <a name="on-premises-environment"></a><span data-ttu-id="74b30-191">Ambiente locale</span><span class="sxs-lookup"><span data-stu-id="74b30-191">On-premises environment</span></span>
 
-- Configurazione di Windows Server 2012 
+- <span data-ttu-id="74b30-192">Configurazione di Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="74b30-192">Windows Server 2012 RRAS</span></span> 
     
-- Server Active Directory 
+- <span data-ttu-id="74b30-193">Server Active Directory</span><span class="sxs-lookup"><span data-stu-id="74b30-193">Active Directory server</span></span> 
     
-Le interfacce di rete locale con la rete virtuale Azure tramite un gateway di rete privata virtuale (VPN). 
+<span data-ttu-id="74b30-194">Le interfacce di rete locale con la rete virtuale Azure tramite un gateway di rete privata virtuale (VPN).</span><span class="sxs-lookup"><span data-stu-id="74b30-194">The on-premises network interfaces with the Azure virtual network over a virtual private network (VPN) gateway.</span></span> 
   
-### <a name="azure-virtual-network"></a>Rete virtuale Azure
+### <a name="azure-virtual-network"></a><span data-ttu-id="74b30-195">Rete virtuale Azure</span><span class="sxs-lookup"><span data-stu-id="74b30-195">Azure virtual network</span></span>
 
-Le interfacce di gateway VPN con una subnet di gateway VPN attiva. 
+<span data-ttu-id="74b30-196">Le interfacce di gateway VPN con una subnet di gateway VPN attiva.</span><span class="sxs-lookup"><span data-stu-id="74b30-196">The VPN gateway interfaces with an active VPN gateway subnet.</span></span> 
   
-Esistono tre servizi cloud nella rete virtuale Azure: 
+<span data-ttu-id="74b30-197">Esistono tre servizi cloud nella rete virtuale Azure:</span><span class="sxs-lookup"><span data-stu-id="74b30-197">There are three cloud services in the Azure virtual network:</span></span> 
   
-- Il primo servizio cloud dispone di due Active Directory e dei server DNS con una disponibilità impostato. 
+- <span data-ttu-id="74b30-198">Il primo servizio cloud dispone di due Active Directory e dei server DNS con una disponibilità impostato.</span><span class="sxs-lookup"><span data-stu-id="74b30-198">The first cloud service has two Active Directory and DNS servers with an availability set.</span></span> 
     
-- Il servizio cloud secondo presenta tre gruppi di server: due distribuiti i server della cache con un gruppo di disponibilità. Due server front-end con un gruppo di disponibilità. Tre server back-end con un gruppo di disponibilità.
+- <span data-ttu-id="74b30-p111">Il servizio cloud secondo presenta tre gruppi di server: due distribuiti i server della cache con un gruppo di disponibilità. Due server front-end con un gruppo di disponibilità. Tre server back-end con un gruppo di disponibilità.</span><span class="sxs-lookup"><span data-stu-id="74b30-p111">The second cloud service has three sets of servers: Two distributed cache servers with an availability set. Two front-end servers with an availability set. Three backend servers with an availability set.</span></span>
     
-- Il terzo servizio cloud con tre server di database con un gruppo di disponibilità. Uno di questi server di database è una condivisione file per nodo log shipping e un terzo di una maggioranza dei nodi per SQL Server AlwaysOn. 
+- <span data-ttu-id="74b30-p112">Il terzo servizio cloud con tre server di database con un gruppo di disponibilità. Uno di questi server di database è una condivisione file per nodo log shipping e un terzo di una maggioranza dei nodi per SQL Server AlwaysOn.</span><span class="sxs-lookup"><span data-stu-id="74b30-p112">The third cloud service has three database servers with an availability set. One of these database servers is a file share for log shipping and a third node of a node majority for SQL Server AlwaysOn.</span></span> 
     
-### <a name="build-the-ad-ds-hybrid-environment"></a>Creare l'ambiente ibrido di servizi di dominio Active Directory
+### <a name="build-the-ad-ds-hybrid-environment"></a><span data-ttu-id="74b30-204">Creare l'ambiente ibrido di servizi di dominio Active Directory</span><span class="sxs-lookup"><span data-stu-id="74b30-204">Build the AD DS hybrid environment</span></span>
 
-La configurazione di AD DS per questa soluzione costituisce uno scenario di distribuzione ibrida, in cui è parzialmente distribuiti in locale di dominio Active Directory e parzialmente distribuiti nelle macchine virtuali Azure. 
+<span data-ttu-id="74b30-205">La configurazione di AD DS per questa soluzione costituisce uno scenario di distribuzione ibrida, in cui è parzialmente distribuiti in locale di dominio Active Directory e parzialmente distribuiti nelle macchine virtuali Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-205">The configuration of AD DS for this solution constitutes a hybrid deployment scenario in which AD DS is partly deployed on-premises and partly deployed on Azure virtual machines.</span></span> 
   
-Importante: Prima di distribuire Active Directory in Azure, leggere le linee guida per la distribuzione di Windows Server Active Directory in Microsoft macchine virtuali di Azure (http://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx). 
+<span data-ttu-id="74b30-206">Importante: Prima di distribuire Active Directory in Azure, leggere le linee guida per la distribuzione di Windows Server Active Directory in Microsoft macchine virtuali di Azure (http://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx).</span><span class="sxs-lookup"><span data-stu-id="74b30-206">Important — Before you deploy AD DS in Azure, read Guidelines for Deploying Windows Server Active Directory on Microsoft Azure Virtual Machines (http://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx).</span></span> 
   
-Per indicazioni dettagliate sulla progettazione e distribuzione di ambienti Active Directory, vedere http://TechNet.microsoft.com. 
+<span data-ttu-id="74b30-207">Per indicazioni dettagliate sulla progettazione e distribuzione di ambienti Active Directory, vedere http://TechNet.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="74b30-207">For complete guidance on designing and deploying Active Directory environments, see http://TechNet.microsoft.com.</span></span> 
   
-Questa architettura di riferimento include due macchine virtuali configurate come controller di dominio. È stata configurata come indicato di seguito: 
+<span data-ttu-id="74b30-p113">Questa architettura di riferimento include due macchine virtuali configurate come controller di dominio. È stata configurata come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="74b30-p113">This reference architecture includes two virtual machines configured as domain controllers. Each is configured as follows:</span></span> 
   
-- Dimensioni, ovvero piccola. 
+- <span data-ttu-id="74b30-210">Dimensioni, ovvero piccola.</span><span class="sxs-lookup"><span data-stu-id="74b30-210">Size — Small.</span></span> 
     
-- Sistema operativo: Windows Server 2012. 
+- <span data-ttu-id="74b30-211">Sistema operativo: Windows Server 2012.</span><span class="sxs-lookup"><span data-stu-id="74b30-211">Operating system — Windows Server 2012.</span></span> 
     
-- Ruolo, ovvero i controller di dominio Active Directory designato come server di catalogo globale. Questa configurazione consente di ridurre il traffico in uscita attraverso la connessione VPN. In un ambiente con più domini con modifiche molto frequenti, configurare domain controller locale non sincronizzare con il server di catalogo globale in Azure. 
+- <span data-ttu-id="74b30-p114">Ruolo, ovvero i controller di dominio Active Directory designato come server di catalogo globale. Questa configurazione consente di ridurre il traffico in uscita attraverso la connessione VPN. In un ambiente con più domini con modifiche molto frequenti, configurare domain controller locale non sincronizzare con il server di catalogo globale in Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-p114">Role — AD DS domain controller designated as a global catalog server. This configuration reduces egress traffic across the VPN connection. In a multi-domain environment with high rates of change, configure domain controllers on-premises to not sync with the global catalog servers in Azure.</span></span> 
     
-- Dischi dati, posizionare il database di dominio Active Directory, log e SYSVOL su dischi dati Azure. Non collocare questi del disco di sistema operativo o i dischi temporanei forniti da Azure. Questo è importante. 
+- <span data-ttu-id="74b30-p115">Dischi dati, posizionare il database di dominio Active Directory, log e SYSVOL su dischi dati Azure. Non collocare questi del disco di sistema operativo o i dischi temporanei forniti da Azure. Questo è importante.</span><span class="sxs-lookup"><span data-stu-id="74b30-p115">Data disks — Place the AD DS database, logs, and SYSVOL on Azure data disks. Do not place these on the operating system disk or the temporary disks provided by Azure. This is important.</span></span> 
     
-- Ruolo, Installare e configurare Windows DNS nei controller di dominio. 
+- <span data-ttu-id="74b30-218">Ruolo, Installare e configurare Windows DNS nei controller di dominio.</span><span class="sxs-lookup"><span data-stu-id="74b30-218">Role — Install and configure Windows DNS on the domain controllers.</span></span> 
     
-- Indirizzi IP, utilizzare gli indirizzi IP dinamici. È necessario creare una rete virtuale Azure. 
+- <span data-ttu-id="74b30-p116">Indirizzi IP, utilizzare gli indirizzi IP dinamici. È necessario creare una rete virtuale Azure.</span><span class="sxs-lookup"><span data-stu-id="74b30-p116">IP addresses — Use dynamic IP addresses. This requires you to create an Azure Virtual Network.</span></span> 
     
 

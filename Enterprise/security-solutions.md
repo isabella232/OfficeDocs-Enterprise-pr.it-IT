@@ -22,39 +22,39 @@ ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="security-solutions"></a>Soluzioni di sicurezza
+# <a name="security-solutions"></a><span data-ttu-id="5b59c-103">Soluzioni di sicurezza</span><span class="sxs-lookup"><span data-stu-id="5b59c-103">Security solutions</span></span>
 
- **Sintesi:** consultare questi articoli per distribuire soluzioni di sicurezza con le offerte cloud di Microsoft.
+ <span data-ttu-id="5b59c-104">**Sintesi:** consultare questi articoli per distribuire soluzioni di sicurezza con le offerte cloud di Microsoft.</span><span class="sxs-lookup"><span data-stu-id="5b59c-104">**Summary:** Use these articles to deploy security solutions with Microsoft's cloud offerings.</span></span>
   
-Di seguito sono riportate alcune soluzioni per proteggere l'accesso, la collaborazione e i dati di Microsoft Office 365, Microsoft Azure, Microsoft Dynamics 365 e la suite Microsoft Enterprise Mobility + Security (EMS):
+<span data-ttu-id="5b59c-105">Di seguito sono riportate alcune soluzioni per proteggere l'accesso, la collaborazione e i dati di Microsoft Office 365, Microsoft Azure, Microsoft Dynamics 365 e la suite Microsoft Enterprise Mobility + Security (EMS):</span><span class="sxs-lookup"><span data-stu-id="5b59c-105">Here are solutions for secure access, collaboration, and data with Microsoft Office 365, Microsoft Azure, Microsoft Dynamics 365, and the Microsoft Enterprise Mobility + Security (EMS) suite:</span></span>
 
-- [Protezione delle informazioni di Office 365 per PILR](office-365-information-protection-for-gdpr.md)
+- [<span data-ttu-id="5b59c-106">Protezione delle informazioni di Office 365 per PILR</span><span class="sxs-lookup"><span data-stu-id="5b59c-106">Office 365 Information Protection for GDPR</span></span>](office-365-information-protection-for-gdpr.md)
   
-- [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+- [<span data-ttu-id="5b59c-107">Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili</span><span class="sxs-lookup"><span data-stu-id="5b59c-107">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
     
-- [Protezione di file e siti di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+- [<span data-ttu-id="5b59c-108">Protezione di file e siti di SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="5b59c-108">Secure SharePoint Online sites and files</span></span>](secure-sharepoint-online-sites-and-files.md)
     
-- [Siti del team di SharePoint Online isolati](isolated-sharepoint-online-team-sites.md)
+- [<span data-ttu-id="5b59c-109">Siti del team di SharePoint Online isolati</span><span class="sxs-lookup"><span data-stu-id="5b59c-109">Isolated SharePoint Online team sites</span></span>](isolated-sharepoint-online-team-sites.md)
 <br/>
     
-**Partecipare alla discussione**
+<span data-ttu-id="5b59c-110">**Partecipare alla discussione**</span><span class="sxs-lookup"><span data-stu-id="5b59c-110">**Join the discussion**</span></span>
 
-|**Contattaci**|**Descrizione**|
+|<span data-ttu-id="5b59c-111">**Contattaci**</span><span class="sxs-lookup"><span data-stu-id="5b59c-111">**Contact us**</span></span>|<span data-ttu-id="5b59c-112">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="5b59c-112">**Description**</span></span>|
 |:-----|:-----|
-|**Ottenere la soluzione necessaria** <br/> |Microsoft sta creando documenti contenenti soluzioni che fanno riferimento a numerosi prodotti e servizi. Fornire commenti e suggerimenti sulle soluzioni tra server proposte o richiedere una soluzione specifica inviando un'e-mail all'indirizzo [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Partecipare alla discussione sulle soluzioni** <br/> |Se si è sulle soluzioni basate su cloud, è consigliabile partecipare il Cloud adozione consulenza Consiglio (CAAB) per la connessione con una più grande e vivace community di sviluppatori contenuti Microsoft, ai professionisti del settore e i clienti di tutto il mondo. Per partecipare, aggiungere l'utente come membri dello [spazio CAAB (scheda consulenza adozione di Cloud)](https://aka.ms/caab) della Community di Microsoft Tech e inviare un messaggio di posta elettronica rapido a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tutti gli utenti possono leggere il contenuto correlato al community sul [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Tuttavia, membri CAAB ottenere gli inviti per webinar privato che descrivono le nuove risorse adozione cloud e soluzioni.<br/> |
-|**Ottenere l'immagine visualizzata** <br/> |Se si desidera una copia modificabile dell'oggetto WordArt che viene visualizzato in questo articolo, verranno contenti inviare all'utente. La richiesta, incluso l'URL e il titolo dell'oggetto WordArt alla [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)della posta elettronica.<br/> |
+|<span data-ttu-id="5b59c-113">**Ottenere la soluzione necessaria**</span><span class="sxs-lookup"><span data-stu-id="5b59c-113">**What cloud adoption content do you need?**</span></span> <br/> |<span data-ttu-id="5b59c-p101">Microsoft sta creando documenti contenenti soluzioni che fanno riferimento a numerosi prodotti e servizi. Fornire commenti e suggerimenti sulle soluzioni tra server proposte o richiedere una soluzione specifica inviando un'e-mail all'indirizzo [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).</span><span class="sxs-lookup"><span data-stu-id="5b59c-p101">We are creating content for cloud adoption that spans multiple Microsoft cloud platforms and services. Let us know what you think about our cloud adoption content, or ask for specific content by sending email to [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).  </span></span><br/> |
+|<span data-ttu-id="5b59c-116">**Partecipare alla discussione sulle soluzioni**</span><span class="sxs-lookup"><span data-stu-id="5b59c-116">**Join the cloud adoption discussion**</span></span> <br/> |<span data-ttu-id="5b59c-p102">Se si è sulle soluzioni basate su cloud, è consigliabile partecipare il Cloud adozione consulenza Consiglio (CAAB) per la connessione con una più grande e vivace community di sviluppatori contenuti Microsoft, ai professionisti del settore e i clienti di tutto il mondo. Per partecipare, aggiungere l'utente come membri dello [spazio CAAB (scheda consulenza adozione di Cloud)](https://aka.ms/caab) della Community di Microsoft Tech e inviare un messaggio di posta elettronica rapido a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tutti gli utenti possono leggere il contenuto correlato al community sul [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Tuttavia, membri CAAB ottenere gli inviti per webinar privato che descrivono le nuove risorse adozione cloud e soluzioni.</span><span class="sxs-lookup"><span data-stu-id="5b59c-p102">If you are passionate about cloud-based solutions, consider joining the Cloud Adoption Advisory Board (CAAB) to connect with a larger, vibrant community of Microsoft content developers, industry professionals, and customers from around the globe. To join, add yourself as a member of the [CAAB (Cloud Adoption Advisory Board) space](https://aka.ms/caab) of the Microsoft Tech Community and send us a quick email at [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Anyone can read community-related content on the [CAAB blog](https://blogs.technet.com/b/solutions_advisory_board/). However, CAAB members get invitations to private webinars that describe new cloud adoption resources and solutions.  </span></span><br/> |
+|<span data-ttu-id="5b59c-120">**Ottenere l'immagine visualizzata**</span><span class="sxs-lookup"><span data-stu-id="5b59c-120">**Get the art you see here**</span></span> <br/> |<span data-ttu-id="5b59c-p103">Se si desidera una copia modificabile dell'oggetto WordArt che viene visualizzato in questo articolo, verranno contenti inviare all'utente. La richiesta, incluso l'URL e il titolo dell'oggetto WordArt alla [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)della posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="5b59c-p103">If you want an editable copy of the art you see in this article, we'll be glad to send it to you. Email your request, including the URL and title of the art, to [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  </span></span><br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="5b59c-123">See Also</span><span class="sxs-lookup"><span data-stu-id="5b59c-123">See Also</span></span>
 
-[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="5b59c-124">Adozione del cloud e soluzioni ibride</span><span class="sxs-lookup"><span data-stu-id="5b59c-124">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="5b59c-125">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="5b59c-125">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
   
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="5b59c-126">Test Lab Guide (TLG) di adozione cloud</span><span class="sxs-lookup"><span data-stu-id="5b59c-126">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[<span data-ttu-id="5b59c-127">Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync</span><span class="sxs-lookup"><span data-stu-id="5b59c-127">Architectural models for SharePoint, Exchange, Skype for Business, and Lync</span></span>](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
-[Soluzioni ibride](hybrid-solutions.md)
+[<span data-ttu-id="5b59c-128">Soluzioni ibride</span><span class="sxs-lookup"><span data-stu-id="5b59c-128">Hybrid solutions</span></span>](hybrid-solutions.md)
 
 

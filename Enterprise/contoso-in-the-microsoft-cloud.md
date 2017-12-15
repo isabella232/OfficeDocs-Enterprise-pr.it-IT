@@ -24,54 +24,54 @@ ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="contoso-in-the-microsoft-cloud"></a>Contoso nel Microsoft Cloud
+# <a name="contoso-in-the-microsoft-cloud"></a><span data-ttu-id="d2df5-103">Contoso nel Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="d2df5-103">Contoso in the Microsoft Cloud</span></span>
 
- **Riepilogo:** modalità di adozione di un'infrastruttura IT con cloud da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale con le offerte cloud di Microsoft.
+ <span data-ttu-id="d2df5-104">**Riepilogo:** modalità di adozione di un'infrastruttura IT con cloud da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale con le offerte cloud di Microsoft.</span><span class="sxs-lookup"><span data-stu-id="d2df5-104">**Summary:** How a fictional but representative global organization is adopting a cloud-inclusive IT infrastructure with Microsoft's cloud offerings.</span></span>
   
-In questo articolo sono disponibili dei collegamenti a un insieme di articoli in cui viene descritto il modo in cui Contoso Corporation, un complesso industriale globale con sede principale a Parigi, passa a un'infrastruttura IT con cloud e prende decisioni importanti sulla progettazione di rete, identità e sicurezza, oltre al modo in cui vengono implementati gli scenari cloud aziendali per risolvere i problemi aziendali. È possibile visualizzare queste informazioni anche come poster di 11 pagine e stamparlo in formato tabloid (noto anche come ledger, 11 x 17 o A3).
+<span data-ttu-id="d2df5-p101">In questo articolo sono disponibili dei collegamenti a un insieme di articoli in cui viene descritto il modo in cui Contoso Corporation, un complesso industriale globale con sede principale a Parigi, passa a un'infrastruttura IT con cloud e prende decisioni importanti sulla progettazione di rete, identità e sicurezza, oltre al modo in cui vengono implementati gli scenari cloud aziendali per risolvere i problemi aziendali. È possibile visualizzare queste informazioni anche come poster di 11 pagine e stamparlo in formato tabloid (noto anche come ledger, 11 x 17 o A3).</span><span class="sxs-lookup"><span data-stu-id="d2df5-p101">This article links you to a set of articles that describe how the Contoso Corporation, a global manufacturing conglomerate with its headquarters in Paris, is embracing a cloud-inclusive IT infrastructure and has addressed major design decisions for networking, identity, and security and how it is implementing enterprise cloud scenarios to address its business problems. You can also view this information as an 11-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
   
-[![Immagine in generale di Contoso nel poster Microsoft Cloud.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+<span data-ttu-id="d2df5-107">[![Immagine in generale di Contoso nel poster Microsoft Cloud.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)</span><span class="sxs-lookup"><span data-stu-id="d2df5-107">[![Thumb image of the Contoso in the Microsoft Cloud poster.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)</span></span>
   
-![File PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![File Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Visualizzare una pagina con le versioni in altre lingue](images/Common_Images/GlobeIcon.png)[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54427)
+<span data-ttu-id="d2df5-108">![File PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![File Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Visualizzare una pagina con le versioni in altre lingue](images/Common_Images/GlobeIcon.png)[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54427)</span><span class="sxs-lookup"><span data-stu-id="d2df5-108">![PDF file](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Visio file](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![See a page with versions in additional languages](images/Common_Images/GlobeIcon.png)[More languages](https://www.microsoft.com/download/details.aspx?id=54427)</span></span>
   
-Vedere le seguenti sezioni:
+<span data-ttu-id="d2df5-109">Vedere le seguenti sezioni:</span><span class="sxs-lookup"><span data-stu-id="d2df5-109">See the following sections:</span></span>
   
-- [Panoramica del cloud ibrida](hybrid-cloud-overview.md)
+- [<span data-ttu-id="d2df5-110">Panoramica del cloud ibrida</span><span class="sxs-lookup"><span data-stu-id="d2df5-110">Hybrid cloud overview</span></span>](hybrid-cloud-overview.md)
     
-    Contoso Corporation è un'azienda conglomerata di produzione, vendita e supporto con oltre 100.000 prodotti.
+    <span data-ttu-id="d2df5-111">Contoso Corporation è un'azienda conglomerata di produzione, vendita e supporto con oltre 100.000 prodotti.</span><span class="sxs-lookup"><span data-stu-id="d2df5-111">The Contoso Corporation is a global conglomerate manufacturing, sales, and support organization with over 100,000 products.</span></span>
     
-- [Contoso è necessario e dell'infrastruttura IT](contoso-it-infrastructure-and-needs.md)
+- [<span data-ttu-id="d2df5-112">Contoso è necessario e dell'infrastruttura IT</span><span class="sxs-lookup"><span data-stu-id="d2df5-112">Contoso's IT infrastructure and needs</span></span>](contoso-it-infrastructure-and-needs.md)
     
-    Contoso è in fase di transizione da un'infrastruttura IT centralizzata locale a un'infrastruttura inclusiva di cloud che incorpora carichi di lavoro di produttività personale basati su cloud, applicazioni e scenari ibridi.
+    <span data-ttu-id="d2df5-113">Contoso è in fase di transizione da un'infrastruttura IT centralizzata locale a un'infrastruttura inclusiva di cloud che incorpora carichi di lavoro di produttività personale basati su cloud, applicazioni e scenari ibridi.</span><span class="sxs-lookup"><span data-stu-id="d2df5-113">Contoso is transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive one that incorporates cloud-based personal productivity workloads, applications, and hybrid scenarios.</span></span>
     
-- [Servizi di rete per Contoso Corporation](networking-for-the-contoso-corporation.md)
+- [<span data-ttu-id="d2df5-114">Servizi di rete per Contoso Corporation</span><span class="sxs-lookup"><span data-stu-id="d2df5-114">Networking for the Contoso Corporation</span></span>](networking-for-the-contoso-corporation.md)
     
-    Per garantire prestazioni ottimali per i servizi basati su cloud, gli ingegneri di rete di Contoso hanno perfezionato il traffico della connessione Internet.
+    <span data-ttu-id="d2df5-115">Per garantire prestazioni ottimali per i servizi basati su cloud, gli ingegneri di rete di Contoso hanno perfezionato il traffico della connessione Internet.</span><span class="sxs-lookup"><span data-stu-id="d2df5-115">For best performance to cloud-based services, Contoso's network engineers optimized traffic to their Internet edge and across the Internet.</span></span>
     
-- [Identità per Contoso Corporation](identity-for-the-contoso-corporation.md)
+- [<span data-ttu-id="d2df5-116">Identità per Contoso Corporation</span><span class="sxs-lookup"><span data-stu-id="d2df5-116">Identity for the Contoso Corporation</span></span>](identity-for-the-contoso-corporation.md)
     
-    L'identità di Contoso nella soluzione cloud sfrutta il provider di identità locale e include l'autenticazione federativa con i provider di identità di terze parti attendibili esistenti.
+    <span data-ttu-id="d2df5-117">L'identità di Contoso nella soluzione cloud sfrutta il provider di identità locale e include l'autenticazione federativa con i provider di identità di terze parti attendibili esistenti.</span><span class="sxs-lookup"><span data-stu-id="d2df5-117">Contoso's identity in the cloud solution leverages their on-premises identity provider and includes federated authentication with their existing trusted, third-party identity providers.</span></span>
     
-- [Sottoscrizioni, licenze e account utente per Contoso Corporation](subscriptions-licenses-and-user-accounts-for-the-contoso-corporation.md)
+- [<span data-ttu-id="d2df5-118">Sottoscrizioni, licenze e account utente per Contoso Corporation</span><span class="sxs-lookup"><span data-stu-id="d2df5-118">Subscriptions, licenses, and user accounts for the Contoso Corporation</span></span>](subscriptions-licenses-and-user-accounts-for-the-contoso-corporation.md)
     
-    Contoso utilizza la gerarchia organizzazione/sottoscrizioni/licenze/account utente per accedere alle offerte cloud di Microsoft.
+    <span data-ttu-id="d2df5-119">Contoso utilizza la gerarchia organizzazione/sottoscrizioni/licenze/account utente per accedere alle offerte cloud di Microsoft.</span><span class="sxs-lookup"><span data-stu-id="d2df5-119">Contoso uses the organization/subscriptions/licenses/user accounts hierarchy to access Microsoft's cloud offerings.</span></span>
     
-- [Sicurezza per Contoso Corporation](security-for-the-contoso-corporation.md)
+- [<span data-ttu-id="d2df5-120">Sicurezza per Contoso Corporation</span><span class="sxs-lookup"><span data-stu-id="d2df5-120">Security for the Contoso Corporation</span></span>](security-for-the-contoso-corporation.md)
     
-    Al momento della transizione dall'infrastruttura IT a un'infrastruttura inclusiva di cloud, Contoso ha verificato che i requisiti di sicurezza locale fossero supportati e implementati nelle offerte cloud di Microsoft.
+    <span data-ttu-id="d2df5-121">Al momento della transizione dall'infrastruttura IT a un'infrastruttura inclusiva di cloud, Contoso ha verificato che i requisiti di sicurezza locale fossero supportati e implementati nelle offerte cloud di Microsoft.</span><span class="sxs-lookup"><span data-stu-id="d2df5-121">When transitioning their IT infrastructure to a cloud-inclusive one, Contoso made sure that their on-premises security requirements were supported and implemented in Microsoft's cloud offerings.</span></span>
     
-- [Scenari aziendali per Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
+- [<span data-ttu-id="d2df5-122">Scenari aziendali per Contoso Corporation</span><span class="sxs-lookup"><span data-stu-id="d2df5-122">Enterprise scenarios for the Contoso Corporation</span></span>](enterprise-scenarios-for-the-contoso-corporation.md)
     
-    Vedere in che modo Contoso risponde alle proprie esigenze di business tramite le offerte cloud di Microsoft.
+    <span data-ttu-id="d2df5-123">Vedere in che modo Contoso risponde alle proprie esigenze di business tramite le offerte cloud di Microsoft.</span><span class="sxs-lookup"><span data-stu-id="d2df5-123">See how Contoso is addressing its business needs with Microsoft's cloud offerings.</span></span>
     
 > [!NOTE]
-> Questi articoli riflettono la versione di **settembre 2017** del poster Contoso in Microsoft Cloud.
+> <span data-ttu-id="d2df5-124">Questi articoli riflettono la versione di **settembre 2017** del poster Contoso in Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="d2df5-124">These articles reflect the **September 2017** release of the Contoso in the Microsoft Cloud poster.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="d2df5-125">See Also</span><span class="sxs-lookup"><span data-stu-id="d2df5-125">See Also</span></span>
 
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="d2df5-126">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="d2df5-126">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="d2df5-127">Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT</span><span class="sxs-lookup"><span data-stu-id="d2df5-127">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
