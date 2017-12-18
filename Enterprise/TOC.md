@@ -81,5 +81,5 @@
 #### [Distribuire un sito del team di SharePoint Online isolato](deploy-an-isolated-sharepoint-online-team-site.md)
 #### [Gestire un sito del team di SharePoint Online isolato](manage-an-isolated-sharepoint-online-team-site.md)
 #### [Ambiente isolato di sviluppo e di testing di sito del team SharePoint Online](isolated-sharepoint-online-team-site-dev-test-environment.md)
-## [Gestire Office 365 con Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
+## [Gestire Office 365 con PowerShell di Office 365](powershell/manage-office-365-with-office-365-powershell.md)
 
