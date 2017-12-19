@@ -16,7 +16,7 @@ ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: "Riepilogo: Informazioni sulla società Contoso Corporation e sulla struttura a livelli dei suoi uffici nel mondo."
 ms.openlocfilehash: 6243f6d6e5c08342cae7650d0b4e75de27ed3527
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -85,7 +85,7 @@ Gli architetti IT di Contoso hanno identificato gli elementi seguenti durante la
     
     La gestione per le app basate su cloud e i carichi di lavoro SaaS richiederà la capacità di mantenere impostazioni, dati, account, criteri e autorizzazioni e di monitorare le prestazioni e l'integrità in corso. Gli strumenti di gestione server esistenti verranno utilizzati per gestire macchine virtuali di Azure IaaS.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Contoso nel Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   

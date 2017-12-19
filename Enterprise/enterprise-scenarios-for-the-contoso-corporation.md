@@ -16,7 +16,7 @@ ms.assetid: 8f004c92-773e-4eb0-8bb5-24494ca538d3
 description: 'Sintesi: come un''organizzazione fittizia ma rappresentativa a livello internazionale affronta i problemi aziendali con scenari cloud.'
 ms.openlocfilehash: ff520c317fe4137b5e683935dc238bd7ff3f05ac
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -34,7 +34,7 @@ Con l'infrastruttura di sicurezza, di identità e di rete sul posto, Contoso ha 
     
     Contoso ha implementato siti del team di SharePoint Online estremamente riservati e sensibili per una collaborazione più facile, ma comunque sicura, per i dirigenti e i rispettivi centri di ricerca.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Contoso nel Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   

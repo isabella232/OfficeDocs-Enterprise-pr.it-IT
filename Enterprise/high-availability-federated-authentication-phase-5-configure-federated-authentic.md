@@ -19,7 +19,7 @@ ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "Riepilogo: Configurare Azure AD Connect per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
 ms.openlocfilehash: 8340058dc93389d4b2b1e843726bc7e8ef30cdde
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -57,11 +57,11 @@ Ora dovrebbe essere possibile configurare l'autenticazione federata di Azure AD 
     
 - È stato determinato un servizio federativo FQDN in base al nome di dominio pubblico.
     
-- Un record A DNS pubblico per il servizio federativo FQDN sceglie l'indirizzo IP pubblico di bilanciamento del carico di Azure per Internet per i server proxy dell'applicazione Web.
+- Un record A DNS pubblico per il servizio federativo FQDN sceglie l’indirizzo IP pubblico di bilanciamento del carico di Azure per Internet per i server proxy dell’applicazione Web.
     
-- Un record A DNS privato per il servizio federativo FQDN sceglie l'indirizzo IP privato di bilanciamento del carico interno di Azure per i server AD FS.
+- Un record A DNS privato per il servizio federativo FQDN sceglie l’indirizzo IP privato di bilanciamento del carico interno di Azure per i server AD FS.
     
-- Un certificato digitale emesso dall'Autorità di certificazione pubblica adatto per connessioni SSL con impostazione SAN sul servizio federativo FQDN è un file PFX archiviato nel server DirSync.
+- Un certificato digitale emesso dall’Autorità di certificazione pubblica adatto per connessioni SSL con impostazione SAN sul servizio federativo FQDN è un file PFX archiviato nel server DirSync.
     
 - Il certificato radice per l'Autorità di certificazione pubblica viene installato nell'archivio Autorità di certificazione radice attendibili su computer e dispositivi.
     
@@ -73,7 +73,7 @@ Di seguito viene riportato un esempio per l'organizzazione Contoso:
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Eseguire Azure AD Connect per configurare l'autenticazione federata
 
-Lo strumento Azure AD Connect configura i server AD FS, i server proxy dell'applicazione Web e Office 365 per l'autenticazione federata in base alla seguente procedura:
+Lo strumento Azure AD Connect configura i server AD FS, i server proxy dell’applicazione Web e Office 365 per l'autenticazione federata in base alla seguente procedura:
   
 1. Creare una connessione desktop remota al server DirSync con un account di dominio dotato dei privilegi di amministratore.
     
@@ -129,9 +129,9 @@ Lo strumento Azure AD Connect configura i server AD FS, i server proxy dell'appl
     
 27. Nella pagina **Installazione completata** fare clic su **Verifica**. Verranno visualizzati due messaggi che indicano la corretta configurazione Internet e intranet.
     
-  - Il messaggio relativo all'intranet indicherà l'indirizzo IP privato di bilanciamento del carico interno di Azure per i server AD FS.
+  - Il messaggio relativo all’intranet indicherà l'indirizzo IP privato di bilanciamento del carico interno di Azure per i server AD FS.
     
-  - Il messaggio relativo a Internet indicherà l'indirizzo IP pubblico di bilanciamento del carico Internet di Azure per i server proxy dell'applicazione Web.
+  - Il messaggio relativo a Internet indicherà l'indirizzo IP pubblico di bilanciamento del carico Internet di Azure per i server proxy dell’applicazione Web.
     
 28. Nella pagina **Installazione completata**, fare clic su **Chiudi**.
     
@@ -143,7 +143,7 @@ Di seguito viene riportata la configurazione finale, con i nomi segnaposto per i
   
 L'infrastruttura di autenticazione federata con disponibilità elevata per Office 365 in Azure è completata.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Distribuire l'autenticazione federata ad alta visibilità per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

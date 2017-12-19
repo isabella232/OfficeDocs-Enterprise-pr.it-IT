@@ -20,7 +20,7 @@ ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: 'Riepilogo: Utilizzare questa guida del laboratorio di testing per aggiungere Dynamics 365 all''ambiente di sviluppo/test di Office 365.'
 ms.openlocfilehash: 49648dd357d23eaee2d08d35252e18edf6a5d2ec
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -38,7 +38,7 @@ Con le istruzioni disponibili in questo articolo, è possibile aggiungere una so
     
 - [Microsoft Dynamics 365 for Field Service](https://www.microsoft.com/dynamics365/field-service). Padroneggiare le chiamate del servizio, ottimizzando pianificazioni, equipaggiando i dipendenti e usando strumenti predittivi per aumentare il profitto.
     
-- [Microsoft Dynamics 365 for Project Service Automation](https://www.microsoft.com/en-us/dynamics365/project-service-automation). Completare correttamente i progetti e creare relazioni redditizie con dipendenti produttivi e strumenti intelligenti.
+- [Microsoft Dynamics 365 for Project Service Automation](https://www.microsoft.com/it-IT/dynamics365/project-service-automation). Completare correttamente i progetti e creare relazioni redditizie con dipendenti produttivi e strumenti intelligenti.
     
 Per la sottoscrizione di valutazione per 365 Dynamics, è possibile esplorare una o più delle soluzioni riportate.
   
@@ -60,7 +60,7 @@ Se si desidera testare Office 365 e Dynamics 365 per un'azienda simulata, seguir
 
 In questa fase, è possibile iscriversi per la sottoscrizione di valutazione di Dynamics 365 e aggiungerla alla stessa organizzazione delle sottoscrizioni di prova di Office 365.
   
-### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Iscriversi a una sottoscrizione di valutazione Dynamics 365
+### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Iscriversi a  una sottoscrizione di valutazione Dynamics 365
 
 1. Utilizzando un browser sul computer desktop (configurazione leggera) o da CLIENT1 (configurazione aziendale simulata), accedere al portale di Office 365 su [https://portal.office.com](https://portal.office.com) con le credenziali dell'account di amministratore globale.
     
@@ -126,7 +126,7 @@ Seguire questi passaggi per configurare gli account User 2 e User 3 come amminis
 > [!NOTE]
 > All'account di amministratore globale di Office 365 è stato assegnato automaticamente il ruolo di amministratore di sistema di Dynamics 365. 
   
-L'ambiente di sviluppo/test di Office 365 e Dynamics 365 ora dispone di:
+L’ambiente di sviluppo/test di Office 365 e Dynamics 365 ora dispone di:
   
 - Sottoscrizioni di valutazione di Office 365 E5 Enterprise e Dynamics 365 che condividono la stessa organizzazione e lo stesso tenant di Azure AD con l'elenco di account utente in uso.
     
@@ -136,7 +136,7 @@ L'ambiente di sviluppo/test di Office 365 e Dynamics 365 ora dispone di:
 
 Configurare e illustrare in che modo Office 365 e Dynamics 365 interagiscono nelle cassette postali di Exchange Online con [Integrazione di Exchange Online per il proprio ambiente di sviluppo/test di Office 365 e Dynamics 365](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   

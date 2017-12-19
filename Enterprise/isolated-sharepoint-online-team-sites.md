@@ -19,7 +19,7 @@ ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 'Sintesi: informazioni sugli utilizzi dei siti del team di SharePoint Online isolati.'
 ms.openlocfilehash: 3de60bb19498d9f84c18e51181a3fedda9846bdf
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -61,7 +61,7 @@ Per provare a usare un sito del team di SharePoint Online isolato in una sottosc
   
 Quando si è pronti a distribuire un sito del team di SharePoint Online isolato in produzione, vedere le considerazioni di progettazione dettagliate in [Progettare un sito del team di SharePoint Online isolato](design-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Progettare un sito del team di SharePoint Online isolato](design-an-isolated-sharepoint-online-team-site.md)
   

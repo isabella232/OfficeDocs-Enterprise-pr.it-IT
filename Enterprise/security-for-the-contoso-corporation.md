@@ -16,7 +16,7 @@ ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: 'Sintesi: informazioni sul modo in cui Contoso ha mappato i propri requisiti di sicurezza per rientrare nelle offerte cloud di Microsoft e su come ha determinato un percorso per preparare la sicurezza cloud.'
 ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -134,7 +134,7 @@ In conformità alle procedure di sicurezza consigliate per Office 365, gli ammin
     
     Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita dei dati](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Contoso nel Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   

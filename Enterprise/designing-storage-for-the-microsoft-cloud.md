@@ -18,7 +18,7 @@ ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "Sintesi: vengono fornite informazioni sul perché sia necessaria l'archiviazione cloud e l'elenco delle opzioni di archiviazione cloud di Microsoft e gli scenari di archiviazione chiave."
 ms.openlocfilehash: 3501f6a39498276d02fe4178f701a06dfb6a3e93
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -158,7 +158,7 @@ Di seguito sono illustrati gli scenari principali che richiedono l'archiviazione
 
 Rivedere le opzioni di archiviazione cloud di [Pronto per l'utilizzo](move-in-ready.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Archiviazione cloud Microsoft per Enterprise Architects](microsoft-cloud-storage-for-enterprise-architects.md)
   

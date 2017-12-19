@@ -16,7 +16,7 @@ ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "Sintesi: informazioni su come Contoso trae vantaggio da una soluzione di gestione delle identità e degli accessi distribuita come servizio (IDaaS) e fornisce un'autenticazione ridondante e distribuita a livello geografico per i suoi utenti."
 ms.openlocfilehash: a0de29ac7e73216e04fe02c680f2557e9f402883
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -44,7 +44,7 @@ Contoso consente:
   
 - Ai clienti di usare il proprio account Microsoft, Facebook o Google Mail per accedere al proprio sito Web pubblico.
     
-- Ai fornitori e ai partner di usare il proprio account LinkedIn, Salesforce o Google Mail per accedere all'extranet dei partner.
+- Ai fornitori e ai partner di usare il proprio account LinkedIn, Salesforce o Google Mail per accedere all’extranet dei partner.
     
 **Figura 2: Supporto di Contoso per l'autenticazione federata di clienti e partner**
 
@@ -52,7 +52,7 @@ Contoso consente:
   
 Nella figura 2 viene mostrata la rete perimetrale di Contoso contenente un sito Web pubblico, una rete extranet partner e un set di server AD FS. La rete perimetrale è connessa a Internet che contiene clienti, partner e servizi Internet.
   
-I server di Active Directory Federation Services (AD FS) nella DMZ autenticano le credenziali dei clienti per l'accesso al sito Web pubblico e le credenziali dei partner per l'accesso all'extranet dei partner.
+I server di Active Directory Federation Services (AD FS) nella DMZ autenticano le credenziali dei clienti per l'accesso al sito Web pubblico e le credenziali dei partner per l'accesso all’extranet dei partner.
   
 Quando Contoso effettua la transizione dal proprio sito Web pubblico in Azure Web App e dall'extranet dei partner a Dynamics 365, desidera continuare a utilizzare i provider di identità di terze parti per clienti e partner. Questo sarà possibile configurando la federazione tra i tenant di Contoso Azure AD e i provider di identità di terze parti.
   
@@ -72,7 +72,7 @@ Contoso ha configurato l'autenticazione federata, che permette ai dipendenti di 
 
 Per supportare al meglio le proprie risorse mobili e remote, Contoso ha distribuito insiemi di server di autenticazione nelle proprie filiali. Questa infrastruttura distribuisce il carico e offre ridondanza, nonché prestazioni migliori durante l'autenticazione delle credenziali utente per l'accesso alle offerte cloud di Microsoft che utilizzano il tenant di Azure AD comune.
   
-Per distribuire il carico delle richieste di autenticazione, Contoso ha configurato Azure Traffic Manager con un profilo che utilizza il metodo di routing delle prestazioni, che consente di autenticare i client al set di server di autenticazione nell'area geografica più vicina. 
+Per distribuire il carico delle richieste di autenticazione, Contoso ha configurato Azure Traffic Manager con un profilo che utilizza il metodo di routing delle prestazioni, che consente di autenticare i client al set di server di autenticazione nell’area geografica più vicina. 
   
 **Figura 4: Distribuzione geografica del traffico di autenticazione per le sedi regionali**
 
@@ -112,7 +112,7 @@ Per garantire la ridondanza a dipendenti remoti e mobili della sede di Parigi co
   
 Nella figura 5 vengono mostrati i proxy Web e i server AD FS nella rete perimetrale e un set aggiuntivo di ognuno di questi in una rete virtuale di Azure cross-premise.
   
-Quando i server di autenticazione principali nella rete perimetrale della sede centrale diventano non disponibili, il personale IT passa al set ridondante distribuito in IaaS di Azure. Le richieste di autenticazione successive provenienti dai computer della sede di Parigi usano il set in IaaS di Azure finché il problema di disponibilità non viene corretto.
+Quando i server di autenticazione principale nella DMZ della sede non sono disponibili, il personale IT passa al set ridondante distribuito in IaaS di Azure. Le richieste di autenticazione successive dai computer degli uffici di Parigi utilizzano i set di IaaS di Azure finché non viene risolto il problema di disponibilità.
   
 Per effettuare questi passaggi, Contoso aggiorna il profilo Azure Traffic Manager affinché l'area di Parigi possa utilizzare un set di indirizzi IP diverso per i proxy di applicazioni Web:
   
@@ -120,7 +120,7 @@ Per effettuare questi passaggi, Contoso aggiorna il profilo Azure Traffic Manage
     
 - Quando l'autenticazione ai server della rete perimetrale torna disponibile, usa gli indirizzi IP dei server in IaaS di Azure.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Contoso nel Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   

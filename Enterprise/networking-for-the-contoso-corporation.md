@@ -16,7 +16,7 @@ ms.assetid: 014b3710-e6e9-485c-8550-975d510eb2fc
 description: 'Riepilogo: Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.'
 ms.openlocfilehash: 115a4844d96c1d027fd63e7d91f02cbadeb975d9
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -60,7 +60,7 @@ Contoso ha ideato l'applicazione e l'infrastruttura del server per le operazioni
   
 - Gli uffici secondari si avvalgono dei server di memorizzazione nella cache locale per archiviare documenti con accesso frequente e siti Web interni.
     
-- Gli hub regionali utilizzano server applicazioni regionali per gli uffici secondari e regionali. Questi server vengono sincronizzati con i server della sede di Parigi.
+- Gli hub regionali si avvalgono di server applicazioni regionali per gli uffici regionali e quelli secondari. Tali server effettuano la sincronizzazione con i server della sede di Parigi.
     
 - Il campus di Parigi dispone di datacenter che contengono i server applicazioni centralizzati che servono l'intera organizzazione.
     
@@ -128,7 +128,7 @@ Contoso usa la seguente procedura per predisporre la rete per il cloud Microsoft
     
     Conservazione dello spazio di indirizzi privato per le reti virtuali e le sottoreti di Azure in base ai numeri di server proiettati a breve e a lungo termine in IaaS di Azure.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Contoso nel Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
