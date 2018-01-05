@@ -16,10 +16,10 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
-description: 'Riepilogo: Applicare la protezione delle informazioni di Azure per proteggere i file in un sito del team di SharePoint Online altamente riservato.'
+description: 'Sintesi: Applicare la protezione delle informazioni di Azure per proteggere i file in un sito del team di SharePoint Online di livello estremamente riservato.'
 ms.openlocfilehash: bc2c7dbbcc254270cf2c7db3d3eed98b3f7872f6
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -32,13 +32,13 @@ Usare i passaggi descritti in questo articolo per configurare la protezione dell
 > [!NOTE]
 > Quando la crittografia di Azure Information Protection viene applicata ai file di Office 365, il servizio non può elaborare il contenuto di tali file. Creazione condivisa, eDiscovery, ricerca, Delve e altre funzionalità di collaborazione non funzionano. I criteri di prevenzione della perdita dei dati (DLP) possono funzionare solo con i metadati (comprese le etichette di Office 365), ma non con i contenuti di tali file (ad esempio i numeri di carta di credito all'interno dei file). 
   
-Innanzitutto, attenersi alle istruzioni in [Attivare Azure RMS con l'interfaccia di amministrazione di Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) per la sottoscrizione di Office 365 in uso.
+Innanzitutto, attenersi alle istruzioni in [Attivare Azure RMS con l'interfaccia di amministrazione di Office 365]((https://docs.microsoft.com/information-protection/deploy-use/activate-office365)) per la sottoscrizione di Office 365 in uso.
   
 Configurare quindi Azure Information Protection con un nuovo criterio con ambito e un'etichetta secondaria per la protezione e le autorizzazioni del sito del team di SharePoint Online di livello estremamente riservato.
   
-1. Accedere al portale di Office 365 con un account che dispone del ruolo Amministratore della sicurezza oppure Amministratore della società. Per informazioni, vedere [Dove accedere a Office 365 per le aziende](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere al portale di Office 365 con un account che dispone del ruolo Amministratore della sicurezza oppure Amministratore della società. Per informazioni, vedere [Dove accedere a Office 365 per le aziende]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
     
-2. In una scheda a parte del browser, accedere al portale di Azure ([https://portal.azure.com](https://portal.azure.com)).
+2. In una scheda a parte del browser, accedere al portale di Azure ([(https://portal.azure.com)]((https://portal.azure.com))).
     
 3. Se è la prima volta che viene configurato Azure Information Protection, consultare queste [istruzioni](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
@@ -82,11 +82,11 @@ Ecco il risultato della configurazione per il sito del team di SharePoint Online
   
 A questo punto si è pronti per iniziare a creare documenti e a proteggerli con la protezione delle informazioni di Azure e con la nuova etichetta.
   
-È necessario [installare il client Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) nel computer che esegue Windows o nel dispositivo. È possibile creare uno script e automatizzare l'installazione oppure gli utenti possono installare il client manualmente. Vedere le risorse seguenti:
+È necessario [installare il client Azure Information Protection]((https://docs.microsoft.com/information-protection/rms-client/install-client-app)) nel computer che esegue Windows o nel dispositivo. È possibile creare uno script e automatizzare l'installazione oppure gli utenti possono installare il client manualmente. Vedere le risorse seguenti:
   
-- [Lato client di Protezione delle informazioni di Azure](https://docs.microsoft.com/information-protection/rms-client/use-client)
+- [Lato client di Protezione delle informazioni di Azure]((https://docs.microsoft.com/information-protection/rms-client/use-client))
     
-- [Installazione del client Protezione delle informazioni di Azure](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide)
+- [Installazione del client Protezione delle informazioni di Azure]((https://docs.microsoft.com/information-protection/rms-client/client-admin-guide))
     
 - [Pagina di download per l'installazione manuale](https://www.microsoft.com/download/details.aspx?id=53018)
     
@@ -95,7 +95,7 @@ Dopo aver eseguito l'installazione, gli utenti eseguono il programma, quindi acc
 > [!NOTE]
 > Se si dispone di più siti del team di SharePoint Online di livello estremamente riservato, è necessario creare più criteri con ambiti di Azure Information Protection con etichette secondarie con le impostazioni precedenti, con le autorizzazioni per ogni etichetta impostata per il gruppo di accesso dei membri di un sito del team di SharePoint Online specifico. 
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Protezione di file e siti di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   

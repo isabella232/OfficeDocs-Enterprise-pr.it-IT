@@ -14,13 +14,13 @@ ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "Riepilogo: Utilizzare PowerShell di Office 365 per gestire le proprietà dell'account utente di Skype for Business online con i criteri."
 ms.openlocfilehash: 9b3877d2680b2b36d155cb5dd2a69fa21c972fe3
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gestire criteri Skype for Business Online con PowerShell di Office 365
 
- **Riepilogo:** Utilizzare Office 365 PowerShell per gestire i Skype per la proprietà degli account utente in linea Business con i criteri.
+ **Sintesi:** Utilizzare PowerShell di Office 365 per gestire le proprietà dell'account utente di Skype for Business online con i criteri.
   
 Per gestire molte proprietà dell'account utente per Skype for Business online, è necessario specificarle come proprietà dei criteri con PowerShell di Office 365.
   
@@ -41,7 +41,7 @@ Import-PSSession $sfbSession
 
 Quando richiesto, immettere il nome e la password dell'account Administrator di Skype for Business online.
     
-## <a name="manage-user-account-policies"></a>Gestione dei criteri dell'account utente
+## <a name="manage-user-account-policies"></a>Gestione dei criteri dell’account utente
 
 Molte proprietà dell'account utente di Skype for Business online sono configurate utilizzando criteri. I criteri consistono in una raccolta di impostazioni che possono essere applicate a uno o più utenti. Per esaminare la configurazione del criterio, è possibile eseguire il comando di esempio riportato per il criterio FederationAndPICDefault.
   
@@ -49,7 +49,7 @@ Molte proprietà dell'account utente di Skype for Business online sono configura
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
 ```
 
-A sua volta, si dovrebbe ottenere qualcosa di simile alla seguente:
+Verrà restituito un elemento analogo al seguente:
   
 ```
 Identity                          : Tag:FederationAndPICDefault
@@ -61,13 +61,13 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-Nell'esempio riportato, i valori compresi nei criteri determinano le operazioni di comunicazione con utenti federati che Alex può davvero effettuare o meno. Ad esempio, la proprietà EnableOutsideAccess deve essere impostata su True affinché un utente possa comunicare con utenti esterni all'organizzazione. Tenere presente che tale proprietà non viene visualizzata nell'interfaccia di amministrazione di Office 365. Al contrario, la proprietà viene impostata automaticamente su True o False in base alle altre selezioni effettuate. Le altre due proprietà di interesse sono:
+Nell’esempio riportato, i valori compresi nei criteri determinano le operazioni di comunicazione con utenti federati che Alex può davvero effettuare o meno. Ad esempio, la proprietà EnableOutsideAccess deve essere impostata su True affinché un utente possa comunicare con utenti esterni all'organizzazione. Tenere presente che tale proprietà non viene visualizzata nell'interfaccia di amministrazione di Office 365. Al contrario, la proprietà viene impostata automaticamente su True o False in base alle altre selezioni effettuate. Le altre due proprietà di interesse sono:
   
 - **EnableFederationAccess** indica se l'utente può comunicare con utenti di domini federati.
     
 - **EnablePublicCloudAccess** indica se l'utente può comunicare con gli utenti di Windows Live.
     
-Pertanto, non modificare direttamente le proprietà relativi alla federazione per gli account utente (ad esempio, **Set-CsUser-EnableFederationAccess $True**). Invece di assegnare un account un criterio di accesso esterno con i valori delle proprietà desiderate preconfigurati. Se si desidera che un utente di comunicare con utenti federati e utenti di Windows Live, tale utente deve essere assegnato un criterio che consente di tali tipi di comunicazione.
+Pertanto, non è possibile modificare proprietà correlate alla federazione negli account utente (ad esempio, **Set-CsUser -EnableFederationAccess $True**). Al contrario, a un account viene assegnato un criterio di accesso esterno che dispone dei valori di proprietà desiderati e preconfigurati. Se si desidera che un utente sia in grado di comunicare con gli utenti federati e con gli utenti di Windows Live, è necessario assegnare all'account utente un criterio che consenta questo tipo di comunicazione.
   
 Se si desidera sapere se qualche utente è in grado di comunicare con utenti esterni all'organizzazione, è necessario:
   
@@ -103,7 +103,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Che restituisce un elenco di tutti i criteri vocali disponibili per l'utente. Tenere tuttavia presente che non tutti i criteri possono essere assegnati a tutti gli utenti. Ciò è dovuto diverse restrizioni che coinvolgono posizione geografica e licenza. (Cosiddetti "[percorso utilizzo](https://msdn.microsoft.com/en-us/library/azure/dn194136.aspx).") Se si desidera conoscere i criteri di accesso esterno e i criteri di conferenza che possono essere assegnati a un determinato utente, utilizzare i comandi simili ai seguenti: 
+> Viene restituito un elenco di tutti i criteri vocali disponibili per l'utente. Tuttavia, tenere presente che non tutti i criteri possono essere assegnati a qualsiasi utente. Ciò si verifica a causa di vari limiti che riguardano le licenze e la posizione geografica. (Il "[percorso di utilizzo]((https://msdn.microsoft.com/it-IT/library/azure/dn194136.aspx))"). Se si desidera conoscere i criteri di accesso esterno e i criteri di conferenza che possono essere assegnati a un utente particolare, utilizzare comandi analoghi ai seguenti: 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
@@ -120,7 +120,7 @@ Con Skype for Business online, gli utenti devono essere gestiti da un criterio d
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 #### 
 

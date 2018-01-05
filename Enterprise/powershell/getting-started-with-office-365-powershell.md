@@ -17,13 +17,13 @@ ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 'Riepilogo: valutare l''importanza di PowerShell di Office 365, connettersi al tenant di Office 365 e ricevere assistenza.'
 ms.openlocfilehash: 16df86ef7f2fe75fd6bc3e384d01329de545ae11
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Guida introduttiva a PowerShell di Office 365
 
- **Riepilogo:** Capire l'importanza di Office 365 PowerShell, la connessione al tenant di Office 365 e ottenere assistenza.
+ **Sintesi:** valutare l'importanza di PowerShell di Office 365, connettersi al tenant di Office 365 e ricevere assistenza.
   
 Con PowerShell di Office 365, è possibile gestire Office 365 con comandi e script per semplificare le attività quotidiane. Sono disponibili informazioni per comprendere il ruolo fondamentale di PowerShell di Office 365 nella gestione di Office 365, come connettersi alla sottoscrizione a Office 365, creare report e ottenere informazioni aggiuntive e assistenza dalla community di Office 365.
   
@@ -53,7 +53,7 @@ Selezionare l'articolo in base alle proprie esigenze:
     
     Iniziare da qui per connettersi alla community di PowerShell e ricevere assistenza e informazioni aggiornate sull'utilizzo di PowerShell di Office 365.
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 #### 
 

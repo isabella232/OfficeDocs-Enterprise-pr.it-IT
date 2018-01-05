@@ -20,7 +20,7 @@ ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Riepilogo: modalità di adozione di un'infrastruttura IT con cloud da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale con le offerte cloud di Microsoft."
 ms.openlocfilehash: 17ee633c13f50db4c1de630a5c006506d9d79ece
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/15/2017
   
 In questo articolo sono disponibili dei collegamenti a un insieme di articoli in cui viene descritto il modo in cui Contoso Corporation, un complesso industriale globale con sede principale a Parigi, passa a un'infrastruttura IT con cloud e prende decisioni importanti sulla progettazione di rete, identità e sicurezza, oltre al modo in cui vengono implementati gli scenari cloud aziendali per risolvere i problemi aziendali. È possibile visualizzare queste informazioni anche come poster di 11 pagine e stamparlo in formato tabloid (noto anche come ledger, 11 x 17 o A3).
   
-[![Immagine in generale di Contoso nel poster Microsoft Cloud.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![Immagine cursore di Contoso nel poster di Microsoft Cloud.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
 ![File PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![File Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Visualizzare una pagina con le versioni in altre lingue](images/Common_Images/GlobeIcon.png)[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54427)
   
@@ -67,11 +67,11 @@ Vedere le seguenti sezioni:
 > [!NOTE]
 > Questi articoli riflettono la versione di **settembre 2017** del poster Contoso in Microsoft Cloud.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
+[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

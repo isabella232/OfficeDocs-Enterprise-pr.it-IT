@@ -14,13 +14,13 @@ ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 'Riepilogo: utilizzare Windows PowerShell remoto per connettersi a Exchange Online tramite il parametro DelegatedOrg.'
 ms.openlocfilehash: 9bb6a5a316f4bc23c6586da825b8755cf755f484
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Connettersi ai tenant Exchange Online con Windows PowerShell remoto per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
- **Riepilogo:** Utilizzare Windows PowerShell remoto per la connessione a Exchange Online utilizzando il parametro _DelegatedOrg_ .
+ **Sintesi:** Utilizzare Windows PowerShell remoto per connettersi a Exchange Online tramite il parametro _DelegatedOrg_.
   
 Windows PowerShell remoto consente di gestire le impostazioni di Exchange Online dalla riga di comando. Per creare una sessione remota in Exchange Online, utilizzare Windows PowerShell sul computer locale. È un processo di tre passaggi nel quale si inseriscono le credenziali di Exchange Online, vengono fornite le impostazioni di connessione necessarie e poi vengono importati i cmdlet di Exchange Online nella sessione di Windows PowerShell locale per poterli usare.
   
@@ -57,7 +57,7 @@ I partner DAP sono partner di Syndication e Cloud Solution Providers (CSP). Di s
   
 ## <a name="connect-to-exchange-online"></a>Connessione a Exchange Online
 
-1. Nel computer locale, aprire Windows PowerShell ed eseguire il comando seguente.
+1. Nel computer locale, aprire Windows PowerShell ed eseguire il comando riportato di seguito.
     
   ```
   $UserCredential = Get-Credential

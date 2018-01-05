@@ -17,17 +17,17 @@ ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "Riepilogo: utilizzare la funzionalità oData in Microsoft Excel per recuperare informazioni di report dettagliate per la distribuzione di Office 365."
 ms.openlocfilehash: 72c0fce0a70f5cc3136ab01b48bb178d32a8f64d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>Usare Excel per recuperare dati di report Office 365
 
- **Riepilogo:** Utilizzare la funzionalità di oData di Microsoft Excel per recuperare le informazioni relative ai rapporti dettagliati per la distribuzione di Office 365
+ **Sintesi:** Utilizzare la funzionalità oData in Microsoft Excel per recuperare informazioni di report dettagliate per la distribuzione di Office 365.
   
 La creazione di report è una parte fondamentale dell'amministrazione del sistema. L'interfaccia di amministrazione di Office 365 include un numero di report predefiniti, disponibili nella sezione **Report** del riquadro di spostamento sinistro. Qui, sono presenti report su utilizzo e sicurezza e report di conformità.
   
-I report disponibili dipendono dalla versione di Office 365 in uso e quali servizi Office 365 sono attivati. Per ulteriori informazioni, vedere la [Pagina report](https://technet.microsoft.com/en-us/library/office-365-reports.aspx).
+I report disponibili dipendono dalla versione di Office 365 in uso e quali servizi Office 365 sono attivati. Per ulteriori informazioni, vedere la [Pagina report]((https://technet.microsoft.com/it-IT/library/office-365-reports.aspx)).
   
 I report Admin center predefiniti sono un'eccellente risorsa e facilitano il controllo dell'uso della cassetta postale o dei minuti che gli utenti hanno passato in conferente online. Tuttavia, per quanto concerne l'analisi dettagliata del dominio Office 365, i report hanno dei limiti.
   
@@ -87,7 +87,7 @@ A questo punto Excel effettuerà la connessione e recupererà i dati.
     
 Tenere presente che i file .ODC sono file XML di testo normale, che includono nome utente e password di Office 365:
     
-\<odc: ConnectionString > origine dati = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/; Spazi dei nomi da includere = *; Max ricevuti dimensione messaggio = 4398046511104; Integrated Security = Basic. **Utente ID=admin@litwareinc.onmicrosoft.com; Password = MYpassw0rd!**; Mantieni informazioni di sicurezza = false; Url del servizio di documento = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString >
+\<odc:ConnectionString>Data Source=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/;Namespaces to Include=*;Max Received Message Size=4398046511104;Integrated Security=Basic; **User ID=admin@litwareinc.onmicrosoft.com;Password=MYpassw0rd!**;Persist Security Info=false;Service Document Url=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString>
     
 Se non si desidera salvare il proprio nome utente e password in un file di testo normale, non selezionare la casella nominata **Salvare password nel file**. Se si fa in questo modo, ricordarsi che non si sarà in grado di riutilizzare queste connessioni di dati. Questo perché, senza nome utente e password, Office 365 non sarà in grado di autenticare il tentativo di accesso al servizio.
     
@@ -101,7 +101,7 @@ Se non si desidera salvare il proprio nome utente e password in un file di testo
   
 Cosa fare con questi dati è una scelta dell'utente. Per qualche suggerimento dare un'occhiata a [Creare un dashboard di Excel Services usando un feed di dati OData](https://technet.microsoft.com/en-us/library/jj873965%28v=office.15%29.aspx). Anche se questo articolo non utilizza il servizio di creazione report di Office 365, fornisce dei consigli pratici su certe operazioni come l'aggiunta di filtri e filtri dei dati al nuovo dashboard.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 #### 
 

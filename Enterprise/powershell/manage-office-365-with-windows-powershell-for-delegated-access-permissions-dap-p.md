@@ -14,13 +14,13 @@ ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 'Riepilogo: i Partner di Syndication e Cloud Solution Provider (CSP) possono utilizzare Windows PowerShell per gestire i tenant dei clienti di Office 365.'
 ms.openlocfilehash: 98144aa6c4f60591677468ee7f5efd7e1a7956d1
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestire Office 365 con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
- **Riepilogo:** Partner diffusione su diversi canali e Cloud soluzione CSP (Provider) è possibile utilizzare Windows PowerShell per gestire Office 365 tenant di clienti.
+ **Sintesi:** I Partner di Syndication e Cloud Solution Provider (CSP) possono utilizzare Windows PowerShell per gestire i tenant dei clienti di Office 365.
   
 I partner di autorizzazione accesso delegato (DAP, Delegated Access Permission) sono partner di Syndication e Cloud Solution Provider (CSP). Di solito, rappresentano fornitori di rete o telecomunicazioni di altre aziende. Consentono di raggruppare le sottoscrizioni Office 365 nelle offerte di servizio per i clienti. Quando vendono una sottoscrizione a Office 365, ricevono automaticamente le autorizzazioni Amministra per conto terzi per itenancy cliente, al fine di gestire ed eseguire segnalazioni per tutti i tenancy dei clienti. Nella migliore delle ipotesi, è un'operazione lunga e complessa da eseguire nell'interfaccia di amministrazione di Office 365. È molto più facile effettuare attività amministrative, come elencare tutti i **TenantId** e i domini dei clienti o identificare tutti gli utenti in un tenancy e le licenze loro assegnate, utilizzando Windows PowerShell per Office 365. In alcuni casi, è possibile eseguire tali attività amministrative solo in Windows PowerShell per Office 365. Di seguito sono riportati alcuni esempi di scenari più frequenti in cui i partner di Syndication e Cloud Solution Providers (CSP) amministrano i tenancy dei clienti:
   

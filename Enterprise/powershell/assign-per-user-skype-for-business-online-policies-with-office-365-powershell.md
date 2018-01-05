@@ -14,13 +14,13 @@ ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Riepilogo: Utilizzare PowerShell di Office 365 per assegnare impostazioni di comunicazione per utente con criteri Skype for Business online.'
 ms.openlocfilehash: 91916b41ba420a204ecabb27eea2e451a91f6f25
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Assegnare criteri Skype for Business Online con PowerShell di Office 365
 
- **Riepilogo:** Utilizzare Office 365 PowerShell per assegnare impostazioni per le comunicazioni con Skype per i criteri aziendali in linea per utente.
+ **Sintesi:** Utilizzare PowerShell di Office 365 per assegnare impostazioni di comunicazione per utente con criteri Skype for Business online.
   
 L'utilizzo di PowerShell di Office 365 è un modo efficace di assegnare impostazioni di comunicazione per utente con criteri Skype for Business online.
   
@@ -49,7 +49,7 @@ Si supponga di voler modificare le impostazioni di comunicazione esterna in un a
 2. Assegnare tale criterio di accesso esterno ad Alex.
     
 > [!NOTE]
->  Non è possibile creare un criterio personalizzato tutti i propri. Ciò avviene perché Skype Business online non consente di creare criteri personalizzati. In realtà, è necessario assegnare uno dei criteri che sono stati creati specificamente per Office 365. I criteri creati in precedenza includono: 4 criteri client differenti, 224 criteri conferenza differenti, 5 dial plan differenti, 5 criteri di accesso esterno differenti, il criterio di segreteria telefonica ospitata 1 e 4 criteri vocali differenti.
+>  Non è possibile creare un criterio personalizzato in autonomia. Ciò si verifica poiché Skype for Business online non consente all'utente di creare criteri personalizzati. Al contrario, è necessario assegnare uno dei criteri che sono stati creati appositamente per Office 365. Tali criteri creati in precedenza includono: 4 criteri client differenti, 224 criteri conferenza differenti, 5 dial plan differenti, 5 criteri di accesso esterno differenti, 1 criterio segreteria telefonica ospitata e 4 criteri vocali differenti.
   
 Pertanto, come è possibile determinare qualche criterio di accesso esterno deve essere assegnato ad Alex? Il comando seguente restituisce tutti i criteri di accesso esterno nei quali EnableFederationAccess è impostato su True e EnablePublicCloudAccess è impostato su False:
   
@@ -57,7 +57,7 @@ Pertanto, come è possibile determinare qualche criterio di accesso esterno deve
 Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Il comando non è restituire tutti i criteri che soddisfano due criteri: la proprietà EnableFederationAccess è impostata su True e il criterio EnablePublicCloudAccess è impostato su False. A sua volta, il comando restituisce un criterio che soddisfi i criteri necessari (FederationOnly). Di seguito è riportato un esempio:
+Il comando chiede di restituire tutti i criteri che soddisfano due requisiti: la proprietà EnableFederationAccess deve essere impostata su True e il criterio EnablePublicCloudAccess su False. A sua volta, il comando restituisce un criterio (FederationOnly) che soddisfa i criteri necessari. Di seguito viene riportato un esempio:
   
 ```
 Identity                          : Tag:FederationOnly
@@ -104,9 +104,9 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 Il comando imposta il nome del criterio di accesso esterno assegnato ad Alex su un valore ($Null). Null vuol dire "niente". In altre parole, nessun criterio di accesso esterno viene assegnato ad Alex. Se non viene assegnato alcun criterio di accesso esterno a un utente, quest'ultimo viene gestito dal criterio globale.
   
-Per disabilitare un account utente utilizzando Windows PowerShell, utilizzare i cmdlet di Azure Active Directory per rimuovere Skype di Alex per licenza Business Online. Per ulteriori informazioni, vedere [disabilitare l'accesso ai servizi di Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+Per disabilitare un account utente tramite Windows PowerShell, utilizzare i cmdlet di Azure Active Directory per rimuovere la licenza di Skype for Business Online di Alex. Per ulteriori informazioni, vedere [Disabilitare l'accesso ai servizi con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 #### 
 

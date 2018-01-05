@@ -18,17 +18,17 @@ ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Sintesi: utilizzare PowerShell di Office 365 e il cmdlet Add-MsolRoleMember per assegnare ruoli agli account utente.'
 ms.openlocfilehash: 673a71fb2f85515276e94767ed3f9dd40655dfea
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Assegnare i ruoli agli account utente con Office 365 PowerShell
 
- **Riepilogo:** Utilizzare il cmdlet **Add-MsolRoleMember** e Office 365 PowerShell per assegnare ruoli agli account utente.
+ **Sintesi:** utilizzare PowerShell di Office 365 e il cmdlet **Add-MsolRoleMember** per assegnare ruoli agli account utente.
   
-È possibile assegnare ruoli rapidamente e facilmente a degli account utente con Office 365 PowerShell identificando nome visualizzato dell'account utente e il nome di ruolo.
+È possibile rapidamente e facilmente assegnare ruoli agli account utente tramite PowerShell di Office 365 identificando il nome visualizzato dell'account utente e il nome del ruolo.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365 utilizzando un account amministratore globale. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
   
@@ -38,7 +38,7 @@ Determinare quanto segue:
   
 - L'account utente da configurare.
     
-    Per specificare l'account utente, è necessario determinare il relativo nome visualizzato. Per ottenere un elenco completo di account, utilizzare questo comando:
+    Per specificare l'account utente, è necessario determinare il nome visualizzato. Per ottenere un elenco completo di account, utilizzare questo comando:
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
@@ -68,7 +68,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Copiare i comandi e incollarli in blocco note. Per le variabili **$dispName** e **$roleName** , sostituire il testo della descrizione con i relativi valori, rimuovere il \< e > caratteri e lasciare il tra virgolette. Copiare le righe modificate e incollarli nella finestra di Windows Azure Active Directory Module per Windows PowerShell per eseguirle. In alternativa, è possibile utilizzare Windows PowerShell Integrated Script Environment (ISE).
+Copiare i comandi e incollarli nel blocco note. Per le variabili **$dispName** e **$roleName**, sostituire il testo della descrizione con i rispettivi valori, rimuovere i caratteri \< e > e lasciare le virgolette. Copiare le righe modificate e incollarle nel modulo di Windows Azure Active Directory modulo affinché Windows PowerShell le esegua. È anche possibile utilizzare Windows PowerShell Integrated Scripting Environment (ISE).
   
 Segue un esempio di un set di comandi completati:
   
@@ -90,7 +90,7 @@ Determinare quanto segue:
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    Questo comando consente di elencare il nome visualizzato di tutti gli account utente, ordinati in base al nome visualizzato, una schermata alla volta. È possibile filtrare l'elenco di un insieme ridotto utilizzando il cmdlet **dove** . Di seguito è riportato un esempio:
+    Questo comando elenca il nome visualizzato di tutti gli account utente, ordinati per nome visualizzato, una schermata alla volta. È possibile filtrare l'elenco in un set più piccolo utilizzando il cmdlet **Where**. Ecco un esempio:
     
   ```
   Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
@@ -123,7 +123,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 #### 
 
@@ -134,5 +134,5 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 [Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
 #### 
 
-[Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
+[Add-MsolRoleMember]((https://msdn.microsoft.com/library/dn194120.aspx))
 

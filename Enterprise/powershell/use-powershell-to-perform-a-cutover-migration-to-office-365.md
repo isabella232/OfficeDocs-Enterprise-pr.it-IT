@@ -14,13 +14,13 @@ ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 'Riepilogo: informazioni su come utilizzare Windows PowerShell per eseguire una migrazione completa a Office 365.'
 ms.openlocfilehash: be5a3587538c32589c20fe6d27d69a84e0b8e7db
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Utilizzare PowerShell per eseguire una migrazione completa a Office 365
 
- **Riepilogo:** Informazioni su come utilizzare Windows PowerShell per eseguire una migrazione a Office 365.
+ **Sintesi:** Informazioni su come utilizzare Windows PowerShell per eseguire una migrazione completa a Office 365.
   
 È possibile migrare i contenuti delle cassette postali degli utenti da un sistema di posta elettronica di origine a Office 365 in un'unica operazione utilizzando una migrazione completa. In questo articolo vengono illustrate le attività per una migrazione completa della posta elettronica tramite PowerShell di Exchange Online. 
   
@@ -63,7 +63,7 @@ Per un elenco completo dei comandi di migrazione, vedere [Cmdlet di spostamento 
     
   - Utilizzare Microsoft Outlook all'esterno della rete aziendale per connettersi alla cassetta postale di Exchange locale.
     
-  - Utilizzare Microsoft [Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) per testare le impostazioni della connessione. Utilizzare Outlook via Internet (RPC su HTTP) o i test di individuazione automatica di Outlook.
+  - Utilizzare Microsoft [Exchange Remote Connectivity Analyzer]((https://www.testexchangeconnectivity.com/)) per testare le impostazioni della connessione. Utilizzare Outlook via Internet (RPC su HTTP) o i test di individuazione automatica di Outlook.
     
   - In PowerShell di Exchange Online, eseguire i comandi seguenti.
     
@@ -217,7 +217,7 @@ Remove-MigrationBatch -Identity CutoverBatch
     
 - **Rimuovere i server di Exchange locali.** Dopo aver verificato che tutta la posta elettronica venga instradata direttamente alle cassette postali di Office 365 e non è più necessario mantenere l'organizzazione di posta elettronica locale o non si prevede di implementare una soluzione Single Sign On (SSO), è possibile disinstallare Exchange dai server e rimuovere l'organizzazione di Exchange locale.
     
-    Per ulteriori informazioni, vedere quanto segue:
+    Per ulteriori informazioni, vedere gli argomenti seguenti:
     
   - [Modifica o eliminazione di Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
     

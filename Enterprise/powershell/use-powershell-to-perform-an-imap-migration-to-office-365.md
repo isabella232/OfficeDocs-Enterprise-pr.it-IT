@@ -14,13 +14,13 @@ ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 'Riepilogo: informazioni sull''utilizzo di Windows PowerShell per eseguire una migrazione IMAP a Office 365.'
 ms.openlocfilehash: 6187207d57723c9c69fa6fdc7885c91de6d5080f
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Utilizzo di PowerShell per eseguire una migrazione IMAP a Office 365
 
- **Riepilogo:** Informazioni su come utilizzare Windows PowerShell per eseguire una migrazione IMAP a Office 365.
+ **Sintesi:** Informazioni sull'utilizzo di Windows PowerShell per eseguire una migrazione IMAP a Office 365.
   
 Come parte del processo di distribuzione di Office 365, è possibile scegliere di eseguire la migrazione dei contenuti delle cassette postali degli utenti da un servizio di posta elettronica IMAP (Internet Mail Access Protocol) a Office 365. In questo articolo vengono illustrate le attività per una migrazione IMAP della posta elettronica tramite PowerShell di Exchange Online. 
   
@@ -238,7 +238,7 @@ Il comando restituirà il batch di migrazione con uno stato di **Rimozione in co
   
 Per ulteriori informazioni sul cmdlet **Get-MigrationBatch**, vedere[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 #### 
 

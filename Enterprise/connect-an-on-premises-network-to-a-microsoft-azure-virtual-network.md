@@ -21,7 +21,7 @@ ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Riepilogo: informazioni su come configurare una rete virtuale di Azure cross-premise per i carichi di lavoro del server di Office.'
 ms.openlocfilehash: 83e5842a4b3192ee2f65048cefe57790cd1e2341
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -52,7 +52,7 @@ Per configurare la connessione VPN tra la rete virtuale di Azure e la rete local
   
 1. **Locale:** definire e creare un route di rete locale per lo spazio degli indirizzi della rete virtuale di Azure che punta al dispositivo VPN locale.
     
-2. **Microsoft Azure:** Creare una rete virtuale Azure con una connessione VPN del sito per sito. In questo articolo vengono descritti l'utilizzo di [ExpressRoute](https://azure.microsoft.com/services/expressroute/).
+2. **Microsoft Azure:** creare una rete virtuale di Azure con una connessione VPN da sito a sito. In questo articolo non viene descritto l'utilizzo di [ExpressRoute]((https://azure.microsoft.com/services/expressroute/)).
     
 3. **Locale:** configurare il dispositivo VPN software o hardware locale per terminare la connessione VPN, che utilizza IPsec (Internet Protocol Security).
     
@@ -64,7 +64,7 @@ Dopo avere stabilito la connessione VPN da sito a sito, aggiungere le macchine v
 ### <a name="prerequisites"></a>Prerequisiti
 <a name="Prerequisites"> </a>
 
-- Una sottoscrizione di Azure. Per informazioni sulle sottoscrizioni di Azure, andare alla [pagina relativa alla sottoscrizione di Microsoft Azure](https://azure.microsoft.com/pricing/purchase-options/).
+- Una sottoscrizione di Azure. Per informazioni sulle sottoscrizioni di Azure, andare alla [pagina relativa alla sottoscrizione di Microsoft Azure]((https://azure.microsoft.com/pricing/purchase-options/)).
     
 - Uno spazio di indirizzi IPv4 privato disponibile da assegnare alla rete virtuale e alle relative subnet, con spazio sufficiente per adattarsi alla quantità di macchine virtuali necessarie ora e in futuro.
     
@@ -74,7 +74,7 @@ Dopo avere stabilito la connessione VPN da sito a sito, aggiungere le macchine v
     
 - Un proxy Web che consente l'accesso a Internet ai computer connessi alla rete locale e alla rete virtuale di Azure.
     
-### <a name="solution-architecture-design-assumptions"></a>Presupposti per la progettazione dell'architettura della soluzione
+### <a name="solution-architecture-design-assumptions"></a>Presupposti per la progettazione dell’architettura della soluzione
 <a name="DesignAssumptions"> </a>
 
 Nel seguente elenco vengono riportate le scelte di progettazione effettuate in merito all'architettura della soluzione. 
@@ -151,11 +151,11 @@ Per le impostazioni della rete virtuale, compilare la tabella V.
 |2.  <br/> |Percorso della rete virtuale  <br/> |Data center di Azure che conterrà la rete virtuale (come Stati Uniti occidentali).  <br/> |__________________  <br/> |
 |3.  <br/> |Indirizzo IP del dispositivo VPN  <br/> |L'indirizzo IPv4 pubblico dell'interfaccia del dispositivo VPN su Internet. Consultare il proprio reparto IT per determinare tale indirizzo.  <br/> |__________________  <br/> |
 |4.  <br/> |Spazio degli indirizzi delle reti virtuali  <br/> |Lo spazio di indirizzi (definito in un singolo prefisso di indirizzi privati) per la rete virtuale. Consultare il proprio reparto IT per determinare tale spazio di indirizzi. Lo spazio di indirizzi deve essere in formato CIDR (Classless Interdomain Routing), noto anche come formato del prefisso di rete. Ad esempio, 10.24.64.0/20.  <br/> |__________________  <br/> |
-|5.  <br/> |Chiave condivisa IPsec  <br/> |Una stringa con 32 caratteri alfanumerici casuali che verrà utilizzata per autenticare entrambi i lati della connessione VPN da sito a sito. Consultare il reparto IT o della sicurezza per determinare tale valore chiave e archiviarlo in un percorso sicuro. In alternativa, vedere [Creare una stringa casuale per una chiave già condivisa IPsec ](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |__________________  <br/> |
+|5.  <br/> |Chiave condivisa IPsec  <br/> |Una stringa con 32 caratteri alfanumerici casuali che verrà utilizzata per autenticare entrambi i lati della connessione VPN da sito a sito. Consultare il reparto IT o della sicurezza per determinare tale valore chiave e archiviarlo in un percorso sicuro. In alternativa, vedere [Creare una stringa casuale per una chiave già condivisa IPsec ]((https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)).<br/> |__________________  <br/> |
    
 Compilare la tabella S per le subnet della soluzione.
   
-- Per la prima subnet, determinare uno spazio di indirizzi a 28 bit (con una lunghezza del prefisso di /28) per la subnet del gateway di Azure. Per informazioni su come determinare questo spazio di indirizzi, vedere l'articolo relativo al [calcolo dello spazio di indirizzi della subnet del gateway per reti virtuali di Azure](https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/).
+- Per la prima subnet, determinare uno spazio di indirizzi a 28 bit (con una lunghezza del prefisso di /28) per la subnet del gateway di Azure. Per informazioni su come determinare questo spazio di indirizzi, vedere l'articolo relativo al [calcolo dello spazio di indirizzi della subnet del gateway per reti virtuali di Azure]((https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/)).
     
 - Per la seconda subnet, specificare un nome descrittivo, un singolo spazio di indirizzi IP basato sullo spazio di indirizzi della rete virtuale e uno scopo descrittivo.
     
@@ -212,10 +212,10 @@ Di seguito è riportata la configurazione risultante.
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Fase 2: creare la rete virtuale cross-premise in Azure
 <a name="Phase2"> </a>
 
-Per prima cosa, aprire un prompt di Azure PowerShell. Se Azure PowerShell non è installato, vedere [Panoramica di Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
+Per prima cosa, aprire un prompt di Azure PowerShell. Se Azure PowerShell non è installato, vedere [Panoramica di Azure PowerShell]((https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)).
   
 > [!NOTE]
-> Questi comandi sono compatibili con Azure PowerShell 1.0 e versioni successive. Per un file di testo contenente tutti i comandi di PowerShell riportati in questo articolo, fare clic [qui](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
+> Questi comandi sono compatibili con Azure PowerShell 1.0 e versioni successive. Per un file di testo contenente tutti i comandi di PowerShell riportati in questo articolo, fare clic [qui]((https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)). 
   
 Successivamente, accedere al proprio account di Azure con questo comando.
   
@@ -334,7 +334,7 @@ Di seguito è riportata la configurazione risultante.
   
 ![La rete virtuale ha ora a disposizione un gateway.](images/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
-Successivamente, configurare il dispositivo VPN locale per stabilire una connessione con il gateway VPN di Azure. Per ulteriori informazioni, vedere [Informazioni sui dispositivi VPN per connessioni delle reti virtuali di Azure da sito a sito](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Successivamente, configurare il dispositivo VPN locale per stabilire una connessione con il gateway VPN di Azure. Per ulteriori informazioni, vedere [Informazioni sui dispositivi VPN per connessioni delle reti virtuali di Azure da sito a sito]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)).
   
 Per configurare il dispositivo VPN, è necessario quanto segue:
   
@@ -365,7 +365,7 @@ Di seguito è riportata la configurazione risultante.
   
 ![La rete virtuale ora ospita macchine virtuali che sono accessibili dalla rete locale.](images/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 <a name="DeploymentRoadmap"> </a>
 
@@ -375,7 +375,7 @@ Di seguito è riportata la configurazione risultante.
 
 [Come creare la macchina virtuale](https://go.microsoft.com/fwlink/p/?LinkId=393098)
   
-[Informazioni sui dispositivi VPN per connessioni di reti virtuali di Azure](https://azure.microsoft.com/documentation/articles/vpn-gateway-about-vpn-devices/)
+[Informazioni sui dispositivi VPN per connessioni di reti virtuali di Azure]((https://azure.microsoft.com/documentation/articles/vpn-gateway-about-vpn-devices/))
   
 [Come installare e configurare Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/#how-to-install-azure-powershell)
 

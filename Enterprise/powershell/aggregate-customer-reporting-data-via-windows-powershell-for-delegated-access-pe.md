@@ -14,18 +14,18 @@ ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
 description: 'Riepilogo: utilizzare Windows PowerShell per Office 365 per recuperare i report su tutti i tenancy dei clienti e aggregare i dati in un unico percorso.'
 ms.openlocfilehash: 89651971424d1b9a494335572d2654d8402ec146
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>Aggregare i dati di report dei clienti tramite Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
- **Riepilogo:** Utilizzare Windows PowerShell per Office 365 recuperare i rapporti in tutti i contratti d'affitto cliente e aggrega i dati in un'unica posizione.
+ **Sintesi:** Utilizzare Windows PowerShell per Office 365 per recuperare i report su tutti i tenancy dei clienti e aggregare i dati in un unico percorso.
   
 Per impostazione predefinita, Windows PowerShell per Office 365 non dispone di un'aggregazione integrata dei dati di report dai tenancy di più clienti. Tuttavia, è possibile utilizzare questo script di Windows PowerShell per Office 365 di esempio per eseguire l'iterazione tramite tutti i tenancy dei clienti in modo da recuperare un singolo report per ogni cliente e aggregare i dati di report in un unico percorso. In questo modo si otterrà un unico report per tutti i tenant dei clienti. 
   
 I partner di autorizzazione accesso delegato (DAP, Delegated Access Permission) sono partner di Syndication e Cloud Solution Provider (CSP). Di solito, rappresentano fornitori di rete o telecomunicazioni di altre aziende. Consentono di raggruppare le sottoscrizioni Office 365 nelle offerte di servizio per i clienti. Quando vendono una sottoscrizione a Office 365, ricevono automaticamente le autorizzazioni Amministra per conto terzi per itenancy cliente, al fine di gestire ed eseguire segnalazioni per tutti i tenancy dei clienti.
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Per utilizzare questo script, sostituire i valori particolari per le variabili seguenti:
   
@@ -137,7 +137,7 @@ foreach ($c in $contracts) {
 
 Nello script di esempio il report aggregato è collocato nel file ReportOutput.csv.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 #### 
 

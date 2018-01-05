@@ -16,20 +16,20 @@ ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Informazioni su come assegnare licenze ad account utente e disabilitare i piani di servizio specifici nello stesso momento usando PowerShell di Office 365.
 ms.openlocfilehash: 907314e13b353e5d5ddbcd8fe467db568473d0b3
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente
 
-**Riepilogo:**  Informazioni su come assegnare licenze agli account utente e disabilitare i piani del servizio specifico contemporaneamente tramite Office 365 PowerShell.
+**Sintesi**: Informazioni su come assegnare licenze ad account utente e disabilitare i piani di servizio specifici nello stesso momento usando PowerShell di Office 365.
   
 Le sottoscrizioni a Office 365 includono piani di servizio per i singoli servizi. Gli amministratori di Office 365 spesso devono disabilitare alcuni piani quando assegnano le licenze agli utenti. Con le istruzioni disponibili in questo articolo, è possibile assegnare una licenza di Office 365 durante la disabilitazione di piani di servizio specifici usando PowerShell per un singolo account utente o più account utente.
   
 > [!NOTE]
 > Questo articolo è basato sul lavoro di Siddhartha Parmar, ingegnere escalation del supporto tecnico Microsoft. 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
   
@@ -43,7 +43,7 @@ Get-MsolAccountSku
 
 Nella visualizzazione del comando  `Get-MsolAccountSku`:
   
-- **AccountSkuId** è una sottoscrizione per l'organizzazione in \<OrganizationName >:\<sottoscrizione > formato. Il \<OrganizationName > è il valore fornito al momento è registrato in Office 365 ed è univoco per l'organizzazione. Il \<sottoscrizione > valore è per una sottoscrizione specifica. Ad esempio, per litwareinc: enterprisepack, il nome dell'organizzazione è litwareinc e il nome della sottoscrizione è ENTERPRISEPACK (Office 365 Enterprise E3).
+- **AccountSkuId** è un abbonamento per l'organizzazione nel formato \<OrganizationName>:\<Subscription>. \<OrganizationName> è il valore fornito dall'utente al momento della registrazione in Office 365 ed è univoco per la propria organizzazione. Il valore \<Subscription> è per una sottoscrizione specifica. Ad esempio, per litwareinc:ENTERPRISEPACK, il nome dell'organizzazione è litwareinc e il nome della sottoscrizione è ENTERPRISEPACK (Office 365 Enterprise E3).
     
 - **ActiveUnits** è il numero di licenze acquistate per la sottoscrizione.
     
@@ -79,7 +79,7 @@ Dopo aver creato AccountSkuId e i piani di servizio da disabilitare, è possibil
   
 ## <a name="for-a-single-user"></a>Per un utente singolo
 
-Per un singolo utente, immettere il nome dell'entità utente dell'account utente, il AccountSkuId e l'elenco dei piani di servizio per disattivare e rimuovere il testo descrittivo e la \< e > caratteri. Al prompt dei comandi di PowerShell, eseguire i comandi risultanti.
+Per un singolo utente, immettere il nome dell'entità utente dell'account utente, AccountSkuId e l'elenco dei piani di servizio per disattivare e rimuovere il testo esplicativo e i caratteri \< e >. Successivamente, eseguire i comandi risultanti nel prompt dei comandi di PowerShell.
   
 ```
 $userUPN="<the user's account name in email format>"
@@ -150,7 +150,7 @@ Blocco di comando di PowerShell:
     
 - Crea un file CSV con tutti gli utenti che sono stati elaborati e mostra il relativo stato della licenza.
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 #### 
 

@@ -15,24 +15,24 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: Imparare a utilizzare Office 365 PowerShell per eliminare e ripristinare gli account utente di Office 365.
+description: Informazioni su come usare PowerShell di Office 365 per eliminare e ripristinare gli account utente di Office 365.
 ms.openlocfilehash: 8404395ea9594cea1a2e772cecbeb011756b7754
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Eliminare e ripristinare account utente con Office 365 PowerShell
 
-**Riepilogo:**  Imparare a utilizzare Office 365 PowerShell per eliminare e ripristinare gli account utente di Office 365.
+**Sintesi:** Informazioni su come usare PowerShell di Office 365 per eliminare e ripristinare gli account utente di Office 365.
   
 Quando si utilizza PowerShell di Office 365 per eliminare un account utente, quest'ultimo non viene rimosso in modo definitivo. Infatti, si hanno a disposizione 30 giorni di tempo per ripristinare l'account utente eliminato.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
     
-- Se si utilizza il cmdlet **Get-MsolUser** senza utilizzare il _-tutti_ parametro, vengono restituiti solo i primi 500 account.
+- Se si usa il cmdlet **Get-MsolUser** senza utilizzare il parametro _-All_, vengono restituiti solo i primi 500 account.
     
 ## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a>Utilizzare PowerShell di Office 365 per bloccare l'accesso a singoli account utente
 <a name="ShortVersion"> </a>
@@ -74,7 +74,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-remove-a-user-account"></a>Utilizzare il modulo Azure Active Directory V2 PowerShell per rimuovere un account utente
 <a name="ShortVersion"> </a>
 
-Per utilizzare il cmdlet **Remove-AzureADUser** dal modulo di Azure Active Directory V2 PowerShell, è innanzitutto necessario connettersi alla sottoscrizione. Per ulteriori informazioni, vedere [Connect con il modulo di Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).
+Per utilizzare il cmdlet **Remove-AzureADUser** dal modulo Azure Active Directory V2 PowerShell, è necessario innanzitutto connettersi alla propria sottoscrizione. Per visualizzare le istruzioni, consultare [Connettersi con il modulo Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).
   
 Una volta stabilita la connessione, utilizzare la sintassi seguente per rimuovere un singolo account utente:
   

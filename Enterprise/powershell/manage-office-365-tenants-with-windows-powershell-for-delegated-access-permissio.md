@@ -14,13 +14,13 @@ ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 'Riepilogo: utilizzare Windows PowerShell per gestire i tenancy dei propri clienti tramite Office 365.'
 ms.openlocfilehash: 6001a6b40d2851d13e8fb74da615a2b8137f17ec
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestire tenant Office 365 con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
- **Riepilogo:** Utilizzare Windows PowerShell per Office 365 per gestire i contratti d'affitto dei clienti.
+ **Sintesi:** Utilizzare Windows PowerShell per gestire i tenancy dei propri clienti tramite Office 365.
   
 Windows PowerShell agevola i Partner di Syndication e Cloud Solution Provider (CSP) nell'amministrazione e nella creazione di report sulle impostazioni dei tenancy dei clienti che non sono disponibili nell'interfaccia di amministrazione di Office 365. Tenere presente che le autorizzazioni Amministra per conto terzi (AOBO, Administer On Behalf Of) sono necessarie all'account amministratore del partner per connettersi ai tenancy dei clienti.
   
@@ -82,7 +82,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### <a name="get-all-details-about-a-user"></a>Ottenere tutti i dettagli di un utente
 
-Se si desidera visualizzare tutte le proprietà di un utente specifico, eseguire il comando seguente. Sostituire _<customer TenantId value>_ e _<user principal name value>_ con i valori effettivi.
+Se si desidera visualizzare tutte le proprietà per un utente particolare, eseguire questo comando. Sostituire _<customer TenantId value>_  e _<user principal name value>_ con i valori effettivi.
   
 ```
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>
@@ -112,7 +112,7 @@ In seguito alla creazione del file CSV, eseguire questo comando per creare accou
 Import-Csv .\\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 #### 
 
