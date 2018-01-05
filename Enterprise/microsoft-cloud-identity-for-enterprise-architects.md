@@ -20,7 +20,7 @@ ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "Riepilogo: Progettare una soluzione di identità per i servizi cloud e le piattaforme Microsoft."
 ms.openlocfilehash: f581711345b043d61de503360d101fbcc09de82e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,15 +30,15 @@ ms.lasthandoff: 12/15/2017
   
 In questo articolo viene descritto cosa devono sapere gli architetti IT sulla progettazione di identità per le organizzazioni che utilizzano i servizi cloud e le piattaforme Microsoft. È possibile visualizzare questo articolo anche come poster di 5 pagine e stamparlo in formato tabloid (noto anche come ledger, 11 x 17 o A3).
   
-[![Immagine in generale per il modello di identità cloud Microsoft](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
+[![Immagine di scorrimento per modello di identità del cloud Microsoft](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
   
-![File PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![File Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![Visualizzare una pagina con le versioni in altre lingue](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54431)
+![File PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![File Visio](images/ITPro_Other_VisioIcon.jpg)[Visio]((https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)) | ![Visualizzare una pagina con le versioni in altre lingue](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54431)
   
-È anche possibile visualizzare tutti i modelli di [risorse dell'architettura IT Cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e passare attraverso [Guida di orientamento al Cloud Microsoft Enterprise: risorse per i responsabili delle decisioni IT](https://aka.ms/cloudarchitecture).
+È inoltre possibile visualizzare tutti i modelli nelle [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e consultare la [Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://aka.ms/cloudarchitecture)).
   
 > [!NOTE]
-> In questo articolo riflette la versione di gennaio 2016 del poster di **identità del cloud Microsoft per architetti enterprise** . Non contiene le modifiche per 2016 aprile o versioni successive del poster.
+> Questo articolo riflette la versione di gennaio 2016 del poster **Identità cloud Microsoft per Enterprise Architects**. Non contiene le modifiche apportate alla versione di aprile 2016 o successiva del poster.
   
 ## <a name="designing-identity-for-the-microsoft-cloud"></a>Progettazione dell'identità per il cloud Microsoft
 
@@ -66,7 +66,7 @@ Sono disponibili tre versioni di Azure AD: gratuita, di base e premium.
 ||||
 |:-----|:-----|:-----|
 |**Gratuita** <br/> |**Di base** <br/> |**Premium** <br/> |
-| Gestione degli account utente <br/>  Sincronizzazione con directory locali <br/>  Single Sign-On in Azure, Office 365 e migliaia di altre note applicazioni SaaS, come Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox e altro <br/> | Include tutte le capacità della versione gratuita, oltre a: <br/>  Informazioni personalizzate distintive dell'azienda <br/>  Accesso alle applicazioni sulla base di un gruppo <br/>  Reimpostazione password self-service <br/>  Contratto di servizio aziendale del 99,9% <br/> | Include tutte le caratteristiche della versione gratuita e della versione di base, oltre a: <br/>  Gestione gruppi self-service <br/>  Avvisi e report di sicurezza avanzata <br/>  Autenticazione a più fattori <br/>  Reimpostazione della password con write-back in AD DS locale <br/>  Sincronizzazione bidirezionale dello strumento Azure AD Connect <br/>  Proxy di applicazione Azure AD <br/>  Microsoft Forefront Identity Manager (MIM) <br/> |
+| 	Gestione degli account utente <br/>  Sincronizzazione con directory locali <br/>  Single Sign-On in Azure, Office 365 e migliaia di altre note applicazioni SaaS, come Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox e altro <br/> | Include tutte le capacità della versione gratuita, oltre a: <br/>  Informazioni personalizzate distintive dell'azienda <br/>  Accesso alle applicazioni sulla base di un gruppo <br/>  Reimpostazione password self-service <br/>  Contratto di servizio aziendale del 99,9% <br/> | Include tutte le caratteristiche della versione gratuita e della versione di base, oltre a: <br/>  Gestione gruppi self-service <br/>  Avvisi e report di sicurezza avanzata <br/>  Autenticazione a più fattori <br/>  Reimpostazione della password con write-back in AD DS locale <br/>  Sincronizzazione bidirezionale dello strumento Azure AD Connect <br/>  Proxy di applicazione Azure AD <br/>  	Microsoft Forefront Identity Manager (MIM) <br/> |
    
 Per ulteriori informazioni sulle versioni, vedere [Edizioni di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524280).
   
@@ -197,7 +197,7 @@ L'autenticazione federata richiede un investimento maggiore in infrastrutture lo
     
 - Richiede componenti hardware, licenze e operazioni per server AD FS, proxy AD FS o server proxy di applicazione Web, firewall e servizi di bilanciamento del carico. 
     
-- Disponibilità e prestazioni sono importanti per garantire agli utenti l'accesso a Office 365 e ad altre applicazioni cloud.
+- Disponibilità e prestazioni sono importanti per garantire agli utenti l’accesso a Office 365 e ad altre applicazioni cloud.
     
 ### <a name="more-information"></a>Ulteriori informazioni
 
@@ -287,7 +287,7 @@ Per eseguire l'autenticazione di Azure AD e recuperare i dati, ADAL gestisce il 
   
 Di seguito sono riportati i componenti della directory che è possibile inserire in una rete virtuale di Azure:
   
-- Strumento Azure AD Connect
+- 	Strumento Azure AD Connect
     
 - Componenti di autenticazione federata
     
@@ -363,11 +363,11 @@ Nella figura 10 viene illustrata una rete virtuale di Azure che ospita un insiem
     
 Per ulteriori informazioni, vedere [Integrazione delle identità locali con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
+[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

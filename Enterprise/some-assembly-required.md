@@ -18,7 +18,7 @@ ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
 description: "Sintesi: visualizzare i dettagli sul set di opzioni di archiviazione cloud che è possibile utilizzare per creare la propria soluzione di archiviazione personalizzata."
 ms.openlocfilehash: bf6f7586b3a890cd25aba314e4892d5e2ac5bb34
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -28,13 +28,13 @@ ms.lasthandoff: 12/15/2017
   
 Soluzioni di archiviazione "Alcuni assembly richiesti":
   
-- Utilizzare servizi esistenti come punto di partenza per la soluzione di archiviazione.
+- Utilizza i servizi esistenti come punto di partenza per la soluzione di archiviazione.
     
-- Richiedono alcune operazioni di configurazione o la scrittura di codice.
+- Richiede la configurazione o la codifica.
     
-- Può essere personalizzato secondo le proprie esigenze.
+- Può essere personalizzato per adattarlo alle proprie esigenze.
     
-Nelle sezioni seguenti vengono descritti i dettagli di ogni soluzione di archiviazione "Alcuni assembly richiesto".
+Le sezioni seguenti descrivono i dettagli di ciascuna soluzione di archiviazione "Alcuni assembly richiesti".
   
 ## <a name="azure-content-delivery-network"></a>Rete per la distribuzione di contenuti
 
@@ -62,9 +62,9 @@ Nelle sezioni seguenti vengono descritti i dettagli di ogni soluzione di archivi
     
 ### <a name="resources"></a>Risorse
 
-Per ulteriori informazioni, fare clic [qui](https://azure.microsoft.com/services/cdn/).
+Per ulteriori informazioni, fare clic [qui]((https://azure.microsoft.com/services/cdn/)).
   
-Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/details/cdn/).
+Per informazioni sui costi, fare clic [qui]((https://azure.microsoft.com/pricing/details/cdn/)).
   
 ## <a name="hdinsight"></a>HdInsight
 
@@ -98,9 +98,9 @@ Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/
     
 ### <a name="resources"></a>Risorse
 
-Per ulteriori informazioni, fare clic [qui](https://azure.microsoft.com/services/hdinsight/).
+Per ulteriori informazioni, fare clic [qui]((https://azure.microsoft.com/services/hdinsight/)).
   
-Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/details/hdinsight/).
+Per informazioni sui costi, fare clic [qui]((https://azure.microsoft.com/pricing/details/hdinsight/)).
   
 ## <a name="azure-sql-database"></a>Database SQL di Azure
 
@@ -112,7 +112,7 @@ Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/
     
 - Consigliato per le organizzazioni che gestiscono centinaia o migliaia di database di dimensioni fino a 1 TB
     
-- Le tecniche sharding possono dividere i dati tra database per uno spazio di archiviazione maggiore
+- Le tecniche sharding possono dividere i dati tra database per uno spazio di archiviazione maggiore 
     
 - Estensione database con SQL Server 2016
     
@@ -148,7 +148,7 @@ Con la scalabilità orizzontale, è possibile aggiungere nuovi database in base 
   
 ![Ridimensionamento orizzontale fornito dal database SQL di Azure.](images/Storage_Poster/CloudStor-HorizScale.png)
   
-Fare clic [qui](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) per ulteriori informazioni.
+Fare clic [qui]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)) per ulteriori informazioni.
   
 ### <a name="stretch-database-with-sql-server-2016"></a>Estensione database con SQL Server 2016
 
@@ -156,17 +156,17 @@ L'estensione database è una funzionalità di SQL Server 2016 che consente di sp
   
 ![Estensione database con SQL Server 2016.](images/Storage_Poster/CloudStor-Stretch.png)
   
-Le query utente che includono i dati cronologici vengono inoltrate in modo trasparente al database esteso di SQL Azure. Le query non devono essere scritte nuovamente, anche se la tabella viene estesa.
+Le query degli utenti che includono i dati cronologici vengono inoltrate in modo trasparente all'estensione database Azure SQL. Le query non devono essere riscritte, anche se la tabella viene estesa.
   
 Il database esteso fornisce un'opzione conveniente per l'archiviazione a lungo termine e l'accesso trasparente ai dati cronologici. Consente inoltre di risolvere problemi relativi a prestazioni e disponibilità che si verificano quando le tabelle diventano molto grandi.
   
-Fare clic [qui](https://msdn.microsoft.com/library/dn935011.aspx) per ulteriori informazioni.
+Fare clic [qui]((https://msdn.microsoft.com/library/dn935011.aspx)) per ulteriori informazioni.
   
 ### <a name="resources"></a>Risorse
 
-Per ulteriori informazioni, fare clic [qui](http://azure.microsoft.com/services/sql-database/).
+Per ulteriori informazioni, fare clic [qui]((http://azure.microsoft.com/services/sql-database/)).
   
-Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/sql-database/).
+Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/sql-database/)).
   
 ## <a name="azure-cosmos-db"></a>Azure Cosmos DB
 
@@ -210,9 +210,9 @@ La tabella seguente mostra gli attributi non comuni di Azure Cosmos DB, Archivia
   
 ### <a name="resources"></a>Risorse
 
-Per ulteriori informazioni, fare clic [qui](http://azure.microsoft.com/services/documentdb/).
+Per ulteriori informazioni, fare clic [qui]((http://azure.microsoft.com/services/documentdb/)).
   
-Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/documentdb/).
+Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/documentdb/)).
   
 ## <a name="azure-media-services"></a>Servizi multimediali di Azure
 
@@ -234,7 +234,7 @@ Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/d
 
 - Codificare, archiviare e trasmettere audio e video in scala
     
-- Streaming e VOD in tempo reale
+- Streaming e VOD in tempo reale 
     
 - Gestione semplificata dei contenuti video
     
@@ -244,9 +244,9 @@ Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/d
     
 ### <a name="resources"></a>Risorse
 
-Per ulteriori informazioni, fare clic [qui](https://azure.microsoft.com/services/media-services/).
+Per ulteriori informazioni, fare clic [qui]((https://azure.microsoft.com/services/media-services/)).
   
-Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/media-services/).
+Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/media-services/)).
   
 ## <a name="azure-redis-cache"></a>Cache Redis di Azure
 
@@ -278,9 +278,9 @@ Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/d
     
 ### <a name="resources"></a>Risorse
 
-Per ulteriori informazioni, fare clic [qui](http://azure.microsoft.com/services/cache/).
+Per ulteriori informazioni, fare clic [qui]((http://azure.microsoft.com/services/cache/)).
   
-Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/cache/).
+Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/cache/)).
   
 ## <a name="sql-server-on-an-azure-vm"></a>SQL Server in una VM di Azure
 
@@ -300,9 +300,9 @@ Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/d
     
 ### <a name="resources"></a>Risorse
 
-Per ulteriori informazioni, fare clic [qui](http://azure.microsoft.com/services/virtual-machines/).
+Per ulteriori informazioni, fare clic [qui]((http://azure.microsoft.com/services/virtual-machines/)).
   
-Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/virtual-machines/).
+Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/virtual-machines/)).
   
 ## <a name="storsimple"></a>StorSimple
 
@@ -334,9 +334,9 @@ Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/d
     
 ### <a name="resources"></a>Risorse
 
-Per ulteriori informazioni, fare clic [qui](http://azure.microsoft.com/services/storsimple/).
+Per ulteriori informazioni, fare clic [qui]((http://azure.microsoft.com/services/storsimple/)).
   
-Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/storsimple/).
+Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/storsimple/)).
   
 ## <a name="azure-sql-data-warehouse"></a>Data Warehouse SQL Azure
 
@@ -364,9 +364,9 @@ Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/d
     
 ### <a name="resources"></a>Risorse
 
-Per ulteriori informazioni, fare clic [qui](https://azure.microsoft.com/services/sql-data-warehouse/).
+Per ulteriori informazioni, fare clic [qui]((https://azure.microsoft.com/services/sql-data-warehouse/)).
   
-Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/details/sql-data-warehouse/).
+Per informazioni sui costi, fare clic [qui]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/)).
   
 ## <a name="azure-data-lake-store"></a>Azure Data Lake Store
 
@@ -398,21 +398,21 @@ Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/
     
 ### <a name="resources"></a>Risorse
 
-Per ulteriori informazioni, fare clic [qui](https://azure.microsoft.com/services/data-lake-store/).
+Per ulteriori informazioni, fare clic [qui]((https://azure.microsoft.com/services/data-lake-store/)).
   
-Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/details/data-lake-store/).
+Per informazioni sui costi, fare clic [qui]((https://azure.microsoft.com/pricing/details/data-lake-store/)).
   
 ## <a name="next-step"></a>Passaggio successivo
 
 Rivedere le opzioni di archiviazione cloud di [Creare da zero](build-from-the-ground-up.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Archiviazione cloud Microsoft per Enterprise Architects](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
+[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

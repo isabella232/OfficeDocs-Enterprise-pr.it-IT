@@ -18,7 +18,7 @@ ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 'Sintesi: gestire il sito del team di SharePoint Online isolato con queste procedure.'
 ms.openlocfilehash: 516bf9d1c94992789bd8341b347a5788dbb04933
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -44,7 +44,7 @@ Se si gestiscono account utente e gruppi con Office 365, è possibile utilizzare
   
 - Per l'interfaccia di amministrazione di Office, accedere con un account utente con il ruolo Amministratore account utente o Amministratore società e utilizzare Gruppi per aggiungere gli utenti appropriati ai gruppi di accesso opportuni.
     
-- Per la prima [connessione con il modulo di Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218)PowerShell. Per aggiungere un account utente a un gruppo di accesso con il nome dell'entità utente (UPN), utilizzare il seguente blocco di comandi di PowerShell:
+- Per PowerShell, innanzitutto [Connettersi con il modulo Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218). Per aggiungere un account utente a un gruppo di accesso con il relativo nome dell'entità utente (UPN), utilizzare il seguente blocco di comandi di PowerShell:
     
 ```
 $userUPN="<UPN of the user account>"
@@ -53,7 +53,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
 ```
 
 > [!TIP]
-> Per un file di testo che contiene tutti i comandi di PowerShell e un foglio di lavoro di configurazione di Excel che genera comandi di PowerShell in base ai nomi degli account utente e di gruppo, scaricare [Kit di distribuzione del sito di SharePoint Online Team isolato](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907). 
+> Per un file di testo che contiene tutti i comandi di PowerShell e un foglio di lavoro di configurazione di Excel che genera comandi di PowerShell in base ai nomi degli account utente e di gruppo, scaricare [Kit di distribuzione del sito di SharePoint Online Team isolato]((https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)). 
 
 Per aggiungere un account utente a un gruppo di accesso con il relativo nome visualizzato, utilizzare il seguente blocco di comandi di PowerShell:
 
@@ -79,7 +79,7 @@ Se si gestiscono account utente e gruppi con Office 365, è possibile utilizzare
   
 - Per l'interfaccia di amministrazione di Office, accedere con un account utente con il ruolo Amministratore account utente o Amministratore società e utilizzare Gruppi per aggiungere i gruppi appropriati ai gruppi di accesso opportuni.
     
-- Per la prima [connessione con il modulo di Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218)PowerShell. Utilizzare i comandi di PowerShell seguenti:
+- Per PowerShell, consultare [Connettersi con il modulo Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218). Quindi, usare i seguenti comandi di PowerShell:
  
 ```
 $newGroupName="<display name of the new group to add>"
@@ -103,7 +103,7 @@ Se si gestiscono account utente e gruppi con Office 365, è possibile utilizzare
   
 - Per l'interfaccia di amministrazione di Office, accedere con un account utente con il ruolo Amministratore account utente o Amministratore società e utilizzare Gruppi per rimuovere gli utenti appropriati dai gruppi di accesso opportuni.
     
-- Per la prima [connessione con il modulo di Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218)PowerShell. Per rimuovere un account utente da un gruppo di accesso con il relativo UPN, utilizzare il seguente blocco di comandi di PowerShell:
+- Per PowerShell, innanzitutto [Connettersi con il modulo Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218). Per rimuovere un account utente da un gruppo di accesso con il relativo UPN, utilizzare il seguente blocco di comandi di PowerShell:
     
 ```
 $userUPN="<UPN of the user account>"
@@ -150,7 +150,7 @@ In alcuni casi, un sottoinsieme di utenti che lavorano all'interno del sito isol
   
 Per creare una sottocartella di documenti con autorizzazioni personalizzate, eseguire le operazioni seguenti:
   
-1. Accedere a Office 365 con un account che è membro del gruppo di accesso degli amministratori del sito. Per informazioni, vedere [Dove accedere a Office 365 per le aziende](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere a Office 365 con un account che è membro del gruppo di accesso degli amministratori del sito. Per informazioni, vedere [Dove accedere a Office 365 per le aziende]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
     
 2. Accedere al sito del team isolato e fare clic su **Documenti**.
     
@@ -168,9 +168,9 @@ Per creare una sottocartella di documenti con autorizzazioni personalizzate, ese
     
 9. Fare clic su **Concedi autorizzazioni > Condiviso con > Avanzate**.
     
-10. Nella pagina autorizzazioni fare clic su ** \<nome del sito > membri nell'elenco**.
+10. Nella pagina relativa alle autorizzazioni, fare clic su **\<Membri di <nome sito> nell'elenco**.
     
-11. Nella ** \<nome del sito > membri** di pagina, selezionare il segno di spunta accanto al gruppo accesso membri del sito, fare clic su **Azioni**, fare clic su **Rimuovi utenti dal gruppo**e quindi fare clic su **OK**.
+11. Nella pagina **\<Membri di <nome sito>**, selezionare la casella di controllo accanto al gruppo di accesso dei membri del sito, fare clic su **Azioni**, fare clic su **Rimuovi utenti dal gruppo** e infine su **OK**.
     
 12. Per aggiungere membri specifici a questa sottocartella, fare clic su **Nuovo > Aggiungi utenti**.
     
@@ -178,13 +178,13 @@ Per creare una sottocartella di documenti con autorizzazioni personalizzate, ese
     
 14. Aggiornare la pagina Web per visualizzare i nuovi risultati.
     
-15. In **gruppi** nel riquadro di spostamento sinistra fare clic sul ** \<nome del sito > visitatori** di gruppo e utilizzare i passaggi da 11 a 14 per specificare il set di account utente che possono visualizzare i file presenti nella sottocartella (in base alle esigenze).
+15. In **Gruppi** nella barra di spostamento sinistra, fare clic sul gruppo **\<Visitatori di <nome sito>** e seguire i passaggi 11-14 per specificare il set di account utente in grado di visualizzare i file nella sottocartella (in base alle esigenze).
     
-16. In **gruppi** nel riquadro di spostamento sinistra fare clic sul ** \<nome del sito > proprietari** di gruppo e utilizzare i passaggi da 11 a 14 per specificare il set di account utente che può amministrare le autorizzazioni nella sottocartella (in base alle esigenze).
+16. In **Gruppi** nella barra di spostamento sinistra, fare clic sul gruppo **\<Proprietari di <nome sito>** e seguire i passaggi 11-14 per specificare il set di account utente in grado di amministrare le autorizzazioni nella sottocartella (in base alle esigenze).
     
 17. Chiudere la scheda **Utenti e gruppi** visualizzata nel browser.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Siti del team di SharePoint Online isolati](isolated-sharepoint-online-team-sites.md)
   

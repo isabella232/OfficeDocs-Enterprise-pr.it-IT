@@ -19,7 +19,7 @@ ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: 'Sintesi: progettare una risorsa di archiviazione per i servizi cloud e le piattaforme Microsoft.'
 ms.openlocfilehash: 1222fc842d637992d14614b71a339ed98e1491d6
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,12 +29,12 @@ ms.lasthandoff: 12/15/2017
   
 In questo articolo è disponibile il collegamento a una serie di articoli in cui viene descritto cosa devono sapere gli architetti IT sulla progettazione della risorsa di archiviazione per le organizzazioni che utilizzano i servizi cloud e le piattaforme Microsoft. È possibile visualizzare queste informazioni anche come poster di 6 pagine e stamparle in formato tabloid (noto anche come ledger, 11 x 17 o A3).
   
-[![Immagine in generale per il modello di archiviazione cloud Microsoft](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+[![Immagine di scorrimento per modello di archiviazione del cloud Microsoft](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
 ](https://www.microsoft.com/download/details.aspx?id=49552)
   
 ![File PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![File Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![Visualizzare una pagina con le versioni in altre lingue](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Altre lingue](https://www.microsoft.com/download/details.aspx?id=49552)
   
-È anche possibile visualizzare tutti i modelli di [risorse dell'architettura IT Cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e passare attraverso [Guida di orientamento al Cloud Microsoft Enterprise: risorse per i responsabili delle decisioni IT](https://aka.ms/cloudarchitecture).
+È inoltre possibile visualizzare tutti i modelli nelle [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e consultare la [Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://aka.ms/cloudarchitecture)).
   
 Vedere le seguenti sezioni:
   
@@ -57,11 +57,11 @@ Vedere le seguenti sezioni:
 > [!NOTE]
 > Questi articoli riflettono il rilascio di **settembre 2017** della risorsa di archiviazione cloud Microsoft per Enterprise Architects.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
+[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

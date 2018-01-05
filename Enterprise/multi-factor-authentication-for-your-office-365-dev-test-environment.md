@@ -21,7 +21,7 @@ ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "Riepilogo: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno smartphone in un ambiente di sviluppo e testing di Office 365."
 ms.openlocfilehash: 87fdcc2ccd910e8da399e14d37fe3d0d1f0a66d4
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2017
 ---
@@ -33,14 +33,14 @@ Per un ulteriore livello di sicurezza per l'accesso alla propria sottoscrizione 
   
 In questo articolo viene illustrato come abilitare e testare l'autenticazione basata su messaggi di testo per uno specifico account di Office 365.
   
-Le fasi di configurazione dell'autenticazione a più fattori per Office 365 in un ambiente di sviluppo e testing sono due:
+Le fasi di configurazione dell’autenticazione a più fattori per Office 365 in un ambiente di sviluppo e testing sono due:
   
 1. Creare l'ambiente di sviluppo/testing di Office 365
     
 2. Abilitare e testare l'autenticazione a più fattori per l'account User 2.
     
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui]((http://aka.ms/catlgstack)) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365 aziendale leggero o simulato
 
@@ -49,13 +49,13 @@ Se si desidera semplicemente testare l'autenticazione a più fattori con i requi
 Se si desidera testare l'autenticazione a più fattori in un'azienda simulata, seguire le istruzioni in [DirSync per l'ambiente di sviluppo/test di Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Il test dell'autenticazione a più fattori non richiede l'ambiente di sviluppo/testing aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione directory per una foresta di Windows Server AD. Questo test viene fornito qui come opzione in modo per consentire di testare l'autenticazione a più fattori e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
+> Il test dell’autenticazione a più fattori non richiede l'ambiente di sviluppo/testing aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione directory per una foresta di Windows Server AD. Questo test viene fornito qui come opzione in modo per consentire di testare l’autenticazione a più fattori e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>Fase 2: Abilitare e testare l'autenticazione a più fattori per l'account User 2
 
 Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel modo seguente:
   
-1. Aprire un'istanza separata del browser, accedere al Portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
+1. Aprire un'istanza separata del browser, accedere al Portale di Office 365 ([(https://portal.office.com)]((https://portal.office.com))) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
 2. Dalla pagina principale del portale, fare clic su **Admin**.
     
@@ -79,7 +79,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 1. Aprire una nuova istanza del browser.
     
-2. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere con l'account utente 2 (user2 @\<nome organizzazione >. onmicrosoft.com) e una password.
+2. Andare al portale di Office 365 ([(https://portal.office.com)]((https://portal.office.com))) ed eseguire l'accesso con l'account User 2 (user2@\<nome organizzazione>.onmicrosoft.com) e la password.
     
 3. Dopo l'accesso, viene chiesto di configurare l'account per un'ulteriore convalida di sicurezza. Fare clic su **Configura ora**.
     
@@ -105,7 +105,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
     Verrà visualizzato il portale di Office 365 per User 2.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
@@ -115,5 +115,5 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 
-[Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365]((https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba))
 
