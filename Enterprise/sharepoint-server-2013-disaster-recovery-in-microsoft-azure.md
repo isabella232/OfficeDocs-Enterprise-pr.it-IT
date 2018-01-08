@@ -1,7 +1,7 @@
 ---
 title: Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,11 +16,11 @@ ms.custom:
 - Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Riepilogo: Con Azure è possibile creare un ambiente di ripristino di emergenza per la farm locale di SharePoint. In questo articolo viene descritto come progettare e implementare questa soluzione."
-ms.openlocfilehash: 79469b862dbc18a34b09d638879e199869de880a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
 
@@ -146,7 +146,7 @@ Dopo che è stato eseguito un ripristino, questa soluzione fornisce gli elementi
 |:-----|:-----|
 |Siti e contenuto  <br/> |Siti e contenuto sono disponibili nell'ambiente di ripristino.  <br/> |
 |Una nuova istanza di ricerca  <br/> |In questa soluzione con warm standby, la ricerca non viene ripristinata dai database di ricerca. I componenti della ricerca nella farm di ripristino sono configurati in modo più simile possibile alla farm di produzione. Una volta ripristinati i siti e il contenuto, viene avviata una ricerca per indicizzazione completa per ricompilare l'indice di ricerca. Non è necessario attendere che la ricerca per indicizzazione venga completata per rendere disponibili i siti e il contenuto.  <br/> |
-|Servizi  <br/> | I servizi che archiviano i dati nei database vengono ripristinati dai database sottoposti a log shipping. I servizi che non archiviano i dati nei database vengono semplicemente avviati. <br/>  Non tutti i servizi con i database devono essere ripristinati. Per i seguenti servizi non è necessario il ripristino dai database e possono essere semplicemente avviati dopo il failover: <br/>  Raccolta dati di integrità e utilizzo <br/>  Servizio informazioni sullo stato <br/>  Word Automation <br/>  Qualsiasi altro servizio che non usa un database <br/> |
+|Servizi  <br/> | I servizi che archiviano i dati nei database vengono ripristinati dai database sottoposti a log shipping. I servizi che non archiviano i dati nei database vengono semplicemente avviati. <br/>  Non tutti i servizi con i database devono essere ripristinati. Per i seguenti servizi non è necessario il ripristino dai database e possono essere semplicemente avviati dopo il failover: <br/>  Raccolta dati di utilizzo e integrità <br/>  Servizio informazioni sullo stato <br/>  Word Automation <br/>  Qualsiasi altro servizio che non usa un database <br/> |
    
 È possibile lavorare con Microsoft Consulting Services (MCS) o un partner per risolvere obiettivi di ripristino più complessi. Tali obiettivi sono riepilogati nella tabella riportata di seguito:
   
@@ -360,18 +360,18 @@ Nella tabella seguente vengono forniti i collegamenti ad articoli di riferimento
   
 **Tabella: Articoli di riferimento per DFSR**
 
-|**Titolo**|**Descrizione**|
+|**Title**|**Descrizione**|
 |:-----|:-----|
 |[Replica](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |Argomento di DFS Management TechNet con collegamenti per la replica  <br/> |
 |[Replica DFS: Guida di sopravvivenza](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Wiki con collegamenti a informazioni DFS  <br/> |
 |[Replica DFS: Domande frequenti](https://go.microsoft.com/fwlink/p/?LinkId=392738) <br/> |Argomento DFS replica TechNet  <br/> |
-|[Blog di Jose Barreto](https://go.microsoft.com/fwlink/p/?LinkId=392739) <br/> |Blog scritto dal responsabile programma di un'entità di sicurezza del team di File Server Microsoft  <br/> |
+|[Blog di Jose Barreto](https://go.microsoft.com/fwlink/p/?LinkId=392739) <br/> |Blog scritto dal responsabile programma di un’entità di sicurezza del team di File Server Microsoft  <br/> |
 |[Team di Archiviazione Microsoft - Blog sugli schedari](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |Blog su servizi file e le funzionalità di archiviazione in Windows Server  <br/> |
    
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Fase 6: Configurare il log shipping nella farm di ripristino
 <a name="Phase6"> </a>
 
-Il log shipping è il componente fondamentale per la configurazione del ripristino di emergenza in questo ambiente. È possibile utilizzare il log shipping per inviare automaticamente i file di registro delle transazioni per i database da un'istanza del server di database primaria a un'istanza del server di database secondaria. Per configurare il log shipping, vedere [Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx). 
+Il log shipping è il componente fondamentale per la configurazione del ripristino di emergenza in questo ambiente. È possibile utilizzare il log shipping per inviare automaticamente i file di registro delle transazioni per i database da un'istanza del server di database primaria a un'istanza del server di database secondaria. Per configurare il log shipping, vedere [Configure log shipping in SharePoint 2013]((http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)). 
   
 > [!IMPORTANT]
 > Il supporto del log shipping in SharePoint Server è limitato a determinati database. Per ulteriori informazioni, vedere [Opzioni di disponibilità elevata e di ripristino di emergenza supportate per database di SharePoint (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 
@@ -464,7 +464,7 @@ Nella tabella seguente viene illustrato come ripristinare i servizi che dispongo
 
 |**Ripristinare questi servizi dai database per i quali è stato eseguito il log shipping**|**Sebbene questi servizi dispongano di database, ma è consigliabile avviarli senza ripristinarne i database**|**Questi servizi non archiviano i dati nei database. Avviarli dopo il failover**|
 |:-----|:-----|:-----|
-| Servizio di traduzione automatica <br/>  Servizio metadati gestiti <br/>  servizio di archiviazione sicura <br/>  Profilo utente. Sono supportati solo i database Profilo e Social tagging. Il database Sincronizzazione non è supportato. <br/>  Servizio delle impostazioni di sottoscrizione di Microsoft SharePoint Foundation <br/> | Raccolta dati di integrità e utilizzo <br/>  Servizio informazioni sullo stato <br/>  Word Automation <br/> | Excel Services <br/>  PerformancePoint Services <br/>  Conversione PowerPoint <br/>  Servizio grafica di Visio <br/>  Gestione del lavoro <br/> |
+| Servizio di traduzione automatica <br/>  Servizio metadati gestiti <br/>  Servizio di archiviazione sicura <br/>  Profilo utente. Sono supportati solo i database Profilo e Social tagging. Il database Sincronizzazione non è supportato. <br/>  Servizio impostazioni di sottoscrizione di Microsoft SharePoint Foundation <br/> | Raccolta dati di integrità e utilizzo <br/>  Servizio informazioni sullo stato <br/>  Word Automation <br/> | Excel Services <br/>  PerformancePoint Services <br/>  Conversione PowerPoint <br/>  Servizio grafica di Visio <br/>  Gestione del lavoro <br/> |
    
 Nell'esempio seguente viene illustrato come ripristinare il servizio metadati gestiti da un database.
   
@@ -517,7 +517,7 @@ La tabella seguente descrive le macchine virtuali Hyper-V che sono state create 
 |FS1  <br/> |File server con condivisioni per i backup e un endpoint per DFSR.  <br/> |Quattro processori  <br/> 2 - 12 GB di RAM  <br/> 1 disco rigido da 127 GB  <br/> 1 disco rigido da 1 TB (SAN)  <br/> 1 disco rigido da 750 GB  <br/> |
 |SP-WFE1, SP-WFE2  <br/> |Server Web front-end.  <br/> |Quattro processori  <br/> 16 GB di RAM  <br/> |
 |SP-APP1, SP-APP2, SP-APP3  <br/> |Server applicazioni.  <br/> |Quattro processori  <br/> 2 - 16 GB di RAM  <br/> |
-|SP-SQL-HA1, SP-SQL-HA2  <br/> |Server di database, configurati con gruppi di disponibilità AlwaysOn SQL Server 2012 per garantire disponibilità elevata. Questa configurazione utilizza SP-SQL-HA1 e SP-SQL-HA2 come repliche primarie e secondarie.  <br/> |Quattro processori  <br/> 2 - 16 GB di RAM  <br/> |
+|SP-SQL-HA1 SP-SQL-HA2  <br/> |Server di database, configurati con gruppi di disponibilità AlwaysOn SQL Server 2012 per garantire disponibilità elevata. Questa configurazione utilizza SP-SQL-HA1 e SP-SQL-HA2 come repliche primarie e secondarie.  <br/> |Quattro processori  <br/> 2 - 16 GB di RAM  <br/> |
    
 La tabella seguente descrive le configurazioni di unità per le macchine virtuali Hyper-V che abbiamo creato e configurato per i server Web front-end e i server applicazioni per l'ambiente di test locale.
   
@@ -525,9 +525,9 @@ La tabella seguente descrive le configurazioni di unità per le macchine virtual
 
 |**Lettera di unità**|**Dimensioni**|**Nome della directory**|**Percorso**|
 |:-----|:-----|:-----|:-----|
-|C  <br/> |80  <br/> |Unità di sistema  <br/> |<DriveLetter>:\\File di programma\\Microsoft SQL Server\\  <br/> |
-|E  <br/> |80  <br/> |Unità di registro (40 GB)  <br/> |<DriveLetter>:\\File di programma\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\dati  <br/> |
-|F  <br/> |80  <br/> |Pagina (36 GB)  <br/> |<DriveLetter>:\\File di programma\\Microsoft SQL Server\\MSSQL\\dati  <br/> |
+|C  <br/> |80  <br/> |Unità di sistema  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\  <br/> |
+|E  <br/> |80  <br/> |Unità di registro (40 GB)  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
+|F  <br/> |80  <br/> |Pagina (36 GB)  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL\\DATI  <br/> |
    
 La tabella seguente descrive le configurazioni di unità per le macchine virtuali Hyper-V create e configurate per fungere da server di database locali. Nella pagina **Configurazione del motore di database** accedere alla scheda **Directory dati** per impostare e confermare le impostazioni riportate nella tabella seguente.
   
@@ -535,11 +535,11 @@ La tabella seguente descrive le configurazioni di unità per le macchine virtual
 
 |**Lettera di unità**|**Dimensioni**|**Nome della directory**|**Percorso**|
 |:-----|:-----|:-----|:-----|
-|C  <br/> |80  <br/> |Directory radice dati  <br/> |<DriveLetter>:\\File di programma\\Microsoft SQL Server\\  <br/> |
-|E  <br/> |500  <br/> |Directory database utente  <br/> |<DriveLetter>:\\File di programma\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\dati  <br/> |
-|F  <br/> |500  <br/> |Directory log database utente  <br/> |<DriveLetter>:\\File di programma\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\dati  <br/> |
-|G  <br/> |500  <br/> |Directory DB temp  <br/> |<DriveLetter>:\\File di programma\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\dati  <br/> |
-|H  <br/> |500  <br/> |Directory log DB temp  <br/> |<DriveLetter>:\\File di programma\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\dati  <br/> |
+|C  <br/> |80  <br/> |Directory radice dati  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\  <br/> |
+|E  <br/> |500  <br/> |Directory database utente  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
+|F  <br/> |500  <br/> |Directory log database utente  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
+|G  <br/> |500  <br/> |Directory DB temp  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
+|H  <br/> |500  <br/> |Directory log DB temp  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
    
 ### <a name="setting-up-the-test-environment"></a>Configurazione dell'ambiente di testing
 
@@ -588,7 +588,7 @@ Abbiamo ripetuto i passaggi seguenti nell'ambiente di ripristino:
     
 - Configurazione di AlwaysOn e creazione di tre gruppi di disponibilità per la farm.
     
-- Provisioning di AZ-APP1 per l'hosting di Amministrazione centrale.
+- Provisioning di  AZ-APP1 per l’hosting di Amministrazione centrale.
     
 - Provisioning di AZ-WFE1 e AZ-WFE2 per ospitare la cache distribuita.
     
@@ -641,7 +641,7 @@ La sezione illustra i problemi che si sono verificati durante il test e le relat
   
 ### <a name="using-the-term-store-management-tool-caused-the-error-the-managed-metadata-store-or-connection-is-currently-not-available"></a>L'utilizzo dello Strumento di gestione archivio termini ha causato l'errore "The Managed Metadata Store or Connection is currently not available", in cui si comunica che l'archivio dei metadati gestiti o la connessione non è disponibile al momento.
 
-Assicurarsi che l'account del pool di applicazioni utilizzato dall'applicazione Web disponga dell'autorizzazione Accesso in lettura all'archivio termini.
+Assicurarsi che l'account del pool di applicazioni utilizzato dall'applicazione Web disponga dell’autorizzazione Accesso in lettura all'archivio termini.
   
 ### <a name="custom-term-sets-are-not-available-in-the-site-collection"></a>I set di termini personalizzati non sono disponibili nella raccolta siti
 
@@ -688,7 +688,7 @@ Ipconfig /flushdns
   
 [Configurare gruppi di disponibilità AlwaysOn di SQL Server 2012 per SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 <a name="Troubleshooting"> </a>
 
