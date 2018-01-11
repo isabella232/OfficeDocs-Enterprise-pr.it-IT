@@ -72,11 +72,11 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="eedf2-133">Per ulteriori informazioni, vedere:</span><span class="sxs-lookup"><span data-stu-id="eedf2-133">For more information, see:</span></span>
   
-- <span data-ttu-id="eedf2-134">[Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business Online]((https://technet.microsoft.com/library/jj205403.aspx))</span><span class="sxs-lookup"><span data-stu-id="eedf2-134">[Plan hybrid connectivity between Skype for Business Server and Skype for Business Online]((https://technet.microsoft.com/library/jj205403.aspx))</span></span>
+- <span data-ttu-id="eedf2-134">[Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business Online](https://technet.microsoft.com/library/jj205403.aspx)</span><span class="sxs-lookup"><span data-stu-id="eedf2-134">[Plan hybrid connectivity between Skype for Business Server and Skype for Business Online](https://technet.microsoft.com/library/jj205403.aspx)</span></span>
     
-- <span data-ttu-id="eedf2-135">[Configurazione ibride supportate per Skype for Business Server 2015]((https://technet.microsoft.com/library/jj945633.aspx))</span><span class="sxs-lookup"><span data-stu-id="eedf2-135">[Supported hybrid configurations for Skype for Business Server 2015]((https://technet.microsoft.com/library/jj945633.aspx))</span></span>
+- <span data-ttu-id="eedf2-135">[Configurazione ibride supportate per Skype for Business Server 2015](https://technet.microsoft.com/library/jj945633.aspx)</span><span class="sxs-lookup"><span data-stu-id="eedf2-135">[Supported hybrid configurations for Skype for Business Server 2015](https://technet.microsoft.com/library/jj945633.aspx)</span></span>
     
-- <span data-ttu-id="eedf2-136">[Versione ibrida di Skype for Business]((http://hybrid.office.com/skype-for-business/))</span><span class="sxs-lookup"><span data-stu-id="eedf2-136">[Skype for Business Hybrid]((http://hybrid.office.com/skype-for-business/))</span></span>
+- <span data-ttu-id="eedf2-136">[Versione ibrida di Skype for Business](http://hybrid.office.com/skype-for-business/)</span><span class="sxs-lookup"><span data-stu-id="eedf2-136">[Skype for Business Hybrid](http://hybrid.office.com/skype-for-business/)</span></span>
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a><span data-ttu-id="eedf2-137">Cloud PBX con Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="eedf2-137">Cloud PBX with Skype for Business Server</span></span>
 
@@ -92,11 +92,11 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="eedf2-p104">È un ottimo esempio di configurazione ibrida che permette di effettuare gradualmente la migrazione a un servizio basato sul cloud. È possibile mantenere le funzionalità vocali degli utenti non appena vengono trasferiti su Skype for Business Online. È possibile trasferire gli utenti al proprio ritmo, sapendo che le funzionalità vocali saranno comunque disponibili a prescindere da dove sono ospitate.</span><span class="sxs-lookup"><span data-stu-id="eedf2-p104">This is a great example of a hybrid configuration that allows you to gradually migrate to a cloud-based service. You can retain your users' voice capabilities as you begin to move them to Skype for Business Online. You can move your users at your own pace, knowing that their voice features will continue no matter where they are homed.</span></span> 
   
-<span data-ttu-id="eedf2-146">Per ulteriori informazioni, vedere [Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business Online o Lync Server 2013]((https://technet.microsoft.com/library/jj205403.aspx)).</span><span class="sxs-lookup"><span data-stu-id="eedf2-146">For more information, see [Plan hybrid connectivity between Skype for Business Server and Skype for Business Online or Lync Server 2013]((https://technet.microsoft.com/library/jj205403.aspx)).</span></span>
+<span data-ttu-id="eedf2-146">Per ulteriori informazioni, vedere [Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business Online o Lync Server 2013](https://technet.microsoft.com/library/jj205403.aspx).</span><span class="sxs-lookup"><span data-stu-id="eedf2-146">For more information, see [Plan hybrid connectivity between Skype for Business Server and Skype for Business Online or Lync Server 2013](https://technet.microsoft.com/library/jj205403.aspx).</span></span>
   
 <span data-ttu-id="eedf2-147">Se non disponi già di una distribuzione di Lync Server o Skype for Business Server esistente, puoi usare la versione del connettore cloud di Skype for Business, un set di macchine virtuali in pacchetto che implementano la connettività PSTN locale con Cloud PBX.</span><span class="sxs-lookup"><span data-stu-id="eedf2-147">If you do not already have an existing Lync Server or Skype for Business Server deployment, you can use Skype for Business Cloud Connector Edition, a set of packaged virtual machines (VMs) that implement on-premises PSTN connectivity with Cloud PBX.</span></span>
   
-<span data-ttu-id="eedf2-148">Per ulteriori informazioni, vedere [Piano per Skype for Business Cloud Connector Edition]((https://technet.microsoft.com/library/mt605227.aspx)).</span><span class="sxs-lookup"><span data-stu-id="eedf2-148">For more information, see [Plan for Skype for Business Cloud Connector Edition]((https://technet.microsoft.com/library/mt605227.aspx)).</span></span>
+<span data-ttu-id="eedf2-148">Per ulteriori informazioni, vedere [Piano per Skype for Business Cloud Connector Edition](https://technet.microsoft.com/library/mt605227.aspx).</span><span class="sxs-lookup"><span data-stu-id="eedf2-148">For more information, see [Plan for Skype for Business Cloud Connector Edition](https://technet.microsoft.com/library/mt605227.aspx).</span></span>
   
 ## <a name="sharepoint-hybrid"></a><span data-ttu-id="eedf2-149">Ambiente ibrido di SharePoint</span><span class="sxs-lookup"><span data-stu-id="eedf2-149">SharePoint Hybrid</span></span>
 
@@ -114,23 +114,23 @@ ms.lasthandoff: 01/11/2018
     
 - [<span data-ttu-id="eedf2-156">Versione ibrida dei siti del team</span><span class="sxs-lookup"><span data-stu-id="eedf2-156">Hybrid team sites</span></span>](https://technet.microsoft.com/library/mt346110%28v=office.16%29.aspx)
     
-- <span data-ttu-id="eedf2-157">[Soluzione Extranet B2B ibrida]((https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037))</span><span class="sxs-lookup"><span data-stu-id="eedf2-157">[Hybrid Extranet B2B]((https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037))</span></span>
+- <span data-ttu-id="eedf2-157">[Soluzione Extranet B2B ibrida](https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037)</span><span class="sxs-lookup"><span data-stu-id="eedf2-157">[Hybrid Extranet B2B](https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037)</span></span>
     
 - [<span data-ttu-id="eedf2-158">Ricerca ibrida</span><span class="sxs-lookup"><span data-stu-id="eedf2-158">Hybrid search</span></span>](https://technet.microsoft.com/library/dn720906%28v=office.16%29.aspx)
     
-- <span data-ttu-id="eedf2-159">[Profili ibridi]((https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4))</span><span class="sxs-lookup"><span data-stu-id="eedf2-159">[Hybrid profiles]((https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4))</span></span>
+- <span data-ttu-id="eedf2-159">[Profili ibridi](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)</span><span class="sxs-lookup"><span data-stu-id="eedf2-159">[Hybrid profiles](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)</span></span>
     
-- <span data-ttu-id="eedf2-160">[Selezione ibrida]((https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c))</span><span class="sxs-lookup"><span data-stu-id="eedf2-160">[Hybrid Picker]((https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c))</span></span>
+- <span data-ttu-id="eedf2-160">[Selezione ibrida](https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c)</span><span class="sxs-lookup"><span data-stu-id="eedf2-160">[Hybrid Picker](https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c)</span></span>
     
     <span data-ttu-id="eedf2-161">È facile abilitare gli scenari ibridi con le procedure guidate che rendono automatica la configurazione ibrida, disponibili dall'interfaccia di amministrazione di SharePoint Online in Office 365.</span><span class="sxs-lookup"><span data-stu-id="eedf2-161">It is easy to enable hybrid scenarios using the wizards that automate hybrid configuration, available from the SharePoint Online admin center in Office 365.</span></span>
     
-- <span data-ttu-id="eedf2-162">[Icona di avvio delle app estendibile ibrida]((https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91))</span><span class="sxs-lookup"><span data-stu-id="eedf2-162">[Extensible hybrid app launcher]((https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91))</span></span>
+- <span data-ttu-id="eedf2-162">[Icona di avvio delle app estendibile ibrida](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)</span><span class="sxs-lookup"><span data-stu-id="eedf2-162">[Extensible hybrid app launcher](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)</span></span>
     
     <span data-ttu-id="eedf2-163">Consente agli utenti di visualizzare e usare i video in Office 365 e le app e le esperienze Delve nelle pagine della relativa farm di SharePoint locale.</span><span class="sxs-lookup"><span data-stu-id="eedf2-163">Allows users to view and use Office 365 video and Delve apps and experiences within the pages of their on-premises SharePoint farm.</span></span>
     
 <span data-ttu-id="eedf2-164">Tutti questi scenari ibridi di SharePoint, ad eccezione dell'icona di avvio delle app ibrida estensibile, sono disponibili per gli utenti di SharePoint 2016 e SharePoint 2013.</span><span class="sxs-lookup"><span data-stu-id="eedf2-164">All of these SharePoint hybrid scenarios, except the Extensible hybrid app launcher, are available for both SharePoint 2016 and SharePoint 2013 users.</span></span>
   
-<span data-ttu-id="eedf2-165">Per ulteriori informazioni, vedere [SharePoint ibrido]((http://hybrid.office.com/sharepoint/)).</span><span class="sxs-lookup"><span data-stu-id="eedf2-165">For more information, see [SharePoint Hybrid]((http://hybrid.office.com/sharepoint/)).</span></span>
+<span data-ttu-id="eedf2-165">Per ulteriori informazioni, vedere [SharePoint ibrido](http://hybrid.office.com/sharepoint/).</span><span class="sxs-lookup"><span data-stu-id="eedf2-165">For more information, see [SharePoint Hybrid](http://hybrid.office.com/sharepoint/).</span></span>
   
 ## <a name="exchange-server-2016-hybrid"></a><span data-ttu-id="eedf2-166">Exchange Server 2016 ibrido</span><span class="sxs-lookup"><span data-stu-id="eedf2-166">Exchange Server 2016 Hybrid</span></span>
 
@@ -156,7 +156,7 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="eedf2-177">Puoi anche integrare questa configurazione ibrida con altre applicazioni di Microsoft Office 365, tra cui Skype for Business Online e SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="eedf2-177">You can also integrate this hybrid configuration with other Microsoft Office 365 applications, including Skype for Business Online and SharePoint Online.</span></span>
   
-<span data-ttu-id="eedf2-178">Per ulteriori informazioni, vedere [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) e [Versione ibrida di Exchange]((http://hybrid.office.com/exchange/)).</span><span class="sxs-lookup"><span data-stu-id="eedf2-178">For more information, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) and [Exchange Hybrid]((http://hybrid.office.com/exchange/)).</span></span>
+<span data-ttu-id="eedf2-178">Per ulteriori informazioni, vedere [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) e [Versione ibrida di Exchange](http://hybrid.office.com/exchange/).</span><span class="sxs-lookup"><span data-stu-id="eedf2-178">For more information, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) and [Exchange Hybrid](http://hybrid.office.com/exchange/).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="eedf2-179">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="eedf2-179">See Also</span></span>
 
@@ -164,7 +164,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="eedf2-181">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="eedf2-181">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="eedf2-182">[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="eedf2-182">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="eedf2-182">[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="eedf2-182">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

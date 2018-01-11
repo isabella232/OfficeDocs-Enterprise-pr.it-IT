@@ -42,7 +42,7 @@ ms.lasthandoff: 01/11/2018
 2. <span data-ttu-id="64393-114">Installare e configurare Azure AD Connect su APP1.</span><span class="sxs-lookup"><span data-stu-id="64393-114">Install and configure Azure AD Connect on APP1.</span></span>
     
 > [!TIP]
-> <span data-ttu-id="64393-115">Fare clic [qui]((http://aka.ms/catlgstack)) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.</span><span class="sxs-lookup"><span data-stu-id="64393-115">Click [here]((http://aka.ms/catlgstack)) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="64393-115">Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.</span><span class="sxs-lookup"><span data-stu-id="64393-115">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a><span data-ttu-id="64393-116">Fase 1: creare l'ambiente di sviluppo e di testing di Office 365</span><span class="sxs-lookup"><span data-stu-id="64393-116">Phase 1: Create an Office 365 dev/test environment</span></span>
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/11/2018
   
 ### <a name="install-and-configure-azure-ad-connect-on-app1"></a><span data-ttu-id="64393-126">Installare e configurare Azure AD Connect su APP1</span><span class="sxs-lookup"><span data-stu-id="64393-126">Install and configure Azure AD Connect on APP1</span></span>
 
-1. <span data-ttu-id="64393-127">Dal [portale Azure]((https://portal.azure.com)), connettersi ad APP1 con l'account CORP\\User1.</span><span class="sxs-lookup"><span data-stu-id="64393-127">From the [Azure portal]((https://portal.azure.com)), connect to APP1 with the CORP\\User1 account.</span></span>
+1. <span data-ttu-id="64393-127">Dal [portale Azure](https://portal.azure.com), connettersi ad APP1 con l'account CORP\\User1.</span><span class="sxs-lookup"><span data-stu-id="64393-127">From the [Azure portal](https://portal.azure.com), connect to APP1 with the CORP\\User1 account.</span></span>
     
 2. <span data-ttu-id="64393-128">Da APP1, aprire un prompt dei comandi di Windows PowerShell a livello di amministratore ed eseguire questi comandi:</span><span class="sxs-lookup"><span data-stu-id="64393-128">From APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:</span></span>
     
@@ -73,7 +73,7 @@ Stop-Process -Name Explorer -Force
 
   ```
 
-3. <span data-ttu-id="64393-129">Dalla barra delle attività, fare clic su **Internet Explorer** e passare a [(https://aka.ms/aadconnect)]((https://aka.ms/aadconnect)).</span><span class="sxs-lookup"><span data-stu-id="64393-129">From the task bar, click **Internet Explorer** and go to [((https://aka.ms/aadconnect))]((https://aka.ms/aadconnect)).</span></span>
+3. <span data-ttu-id="64393-129">Dalla barra delle attività, fare clic su **Internet Explorer** e passare a [(https://aka.ms/aadconnect)](https://aka.ms/aadconnect).</span><span class="sxs-lookup"><span data-stu-id="64393-129">From the task bar, click **Internet Explorer** and go to [((https://aka.ms/aadconnect))](https://aka.ms/aadconnect).</span></span>
     
 4. <span data-ttu-id="64393-130">Nella pagina Microsoft Azure Active Directory Connect, fare clic su **Download** e quindi su **Esegui**.</span><span class="sxs-lookup"><span data-stu-id="64393-130">On the Microsoft Azure Active Directory Connect page, click **Download**, and then click **Run**.</span></span>
     
@@ -91,7 +91,7 @@ Stop-Process -Name Explorer -Force
     
 11. <span data-ttu-id="64393-137">Nella pagina **Configurazione completata**, fare clic su **Esci**.</span><span class="sxs-lookup"><span data-stu-id="64393-137">On the **Configuration complete** page, click **Exit**.</span></span>
     
-12. <span data-ttu-id="64393-138">In Internet Explorer, accedere al portale di Office 365 ([(https://portal.office.com)]((https://portal.office.com))) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.</span><span class="sxs-lookup"><span data-stu-id="64393-138">In Internet Explorer, go to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
+12. <span data-ttu-id="64393-138">In Internet Explorer, accedere al portale di Office 365 ([(https://portal.office.com)](https://portal.office.com)) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.</span><span class="sxs-lookup"><span data-stu-id="64393-138">In Internet Explorer, go to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
     
 13. <span data-ttu-id="64393-139">Dalla pagina principale del portale, fare clic su **Admin**.</span><span class="sxs-lookup"><span data-stu-id="64393-139">From the main portal page, click **Admin**.</span></span>
     

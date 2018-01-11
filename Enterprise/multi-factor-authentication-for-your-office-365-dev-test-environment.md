@@ -35,7 +35,7 @@ ms.lasthandoff: 01/11/2018
 2. <span data-ttu-id="63771-111">Abilitare e testare l'autenticazione a più fattori per l'account User 2.</span><span class="sxs-lookup"><span data-stu-id="63771-111">Enable and test multi-factor authentication for the User 2 account.</span></span>
     
 > [!TIP]
-> <span data-ttu-id="63771-112">Fare clic [qui]((http://aka.ms/catlgstack)) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.</span><span class="sxs-lookup"><span data-stu-id="63771-112">Click [here]((http://aka.ms/catlgstack)) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="63771-112">Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.</span><span class="sxs-lookup"><span data-stu-id="63771-112">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a><span data-ttu-id="63771-113">Fase 1: creare l'ambiente di sviluppo/test di Office 365 aziendale leggero o simulato</span><span class="sxs-lookup"><span data-stu-id="63771-113">Phase 1: Build out your lightweight or simulated enterprise Office 365 dev/test environment</span></span>
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/11/2018
 
 <span data-ttu-id="63771-119">Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel modo seguente:</span><span class="sxs-lookup"><span data-stu-id="63771-119">Enable multi-factor authentication for the User 2 account with these steps:</span></span>
   
-1. <span data-ttu-id="63771-120">Aprire un'istanza separata del browser, accedere al Portale di Office 365 ([(https://portal.office.com)]((https://portal.office.com))) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.</span><span class="sxs-lookup"><span data-stu-id="63771-120">Open a separate instance of your browser, go to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))), and then sign in to your Office 365 trial subscription with your global administrator account.</span></span>
+1. <span data-ttu-id="63771-120">Aprire un'istanza separata del browser, accedere al Portale di Office 365 ([(https://portal.office.com)](https://portal.office.com)) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.</span><span class="sxs-lookup"><span data-stu-id="63771-120">Open a separate instance of your browser, go to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)), and then sign in to your Office 365 trial subscription with your global administrator account.</span></span>
     
 2. <span data-ttu-id="63771-121">Dalla pagina principale del portale, fare clic su **Admin**.</span><span class="sxs-lookup"><span data-stu-id="63771-121">From the main portal page, click **Admin**.</span></span>
     
@@ -74,7 +74,7 @@ ms.lasthandoff: 01/11/2018
   
 1. <span data-ttu-id="63771-131">Aprire una nuova istanza del browser.</span><span class="sxs-lookup"><span data-stu-id="63771-131">Open a new instance of your browser.</span></span>
     
-2. <span data-ttu-id="63771-132">Andare al portale di Office 365 ([(https://portal.office.com)]((https://portal.office.com))) ed eseguire l'accesso con l'account User 2 (user2@\<nome organizzazione>.onmicrosoft.com) e la password.</span><span class="sxs-lookup"><span data-stu-id="63771-132">Go to the Office 365 portal ([((https://portal.office.com))]((https://portal.office.com))) and sign in with the User 2 account (user2@\<organization name>.onmicrosoft.com) and password.</span></span>
+2. <span data-ttu-id="63771-132">Andare al portale di Office 365 ([(https://portal.office.com)](https://portal.office.com)) ed eseguire l'accesso con l'account User 2 (user2@\<nome organizzazione>.onmicrosoft.com) e la password.</span><span class="sxs-lookup"><span data-stu-id="63771-132">Go to the Office 365 portal ([((https://portal.office.com))](https://portal.office.com)) and sign in with the User 2 account (user2@\<organization name>.onmicrosoft.com) and password.</span></span>
     
 3. <span data-ttu-id="63771-p103">Dopo l'accesso, viene chiesto di configurare l'account per un'ulteriore convalida di sicurezza. Fare clic su **Configura ora**.</span><span class="sxs-lookup"><span data-stu-id="63771-p103">After signing in, you are prompted to set up the account for additional security validation. Click **Set it up now**.</span></span>
     
@@ -110,5 +110,5 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="63771-152">Adozione del cloud e soluzioni ibride</span><span class="sxs-lookup"><span data-stu-id="63771-152">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
-<span data-ttu-id="63771-153">[Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365]((https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba))</span><span class="sxs-lookup"><span data-stu-id="63771-153">[Plan for multi-factor authentication for Office 365 Deployments]((https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba))</span></span>
+<span data-ttu-id="63771-153">[Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)</span><span class="sxs-lookup"><span data-stu-id="63771-153">[Plan for multi-factor authentication for Office 365 Deployments](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)</span></span>
 

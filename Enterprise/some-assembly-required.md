@@ -58,9 +58,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0487d-122">Risorse</span><span class="sxs-lookup"><span data-stu-id="0487d-122">Resources</span></span>
 
-<span data-ttu-id="0487d-123">Per ulteriori informazioni, fare clic [qui]((https://azure.microsoft.com/services/cdn/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-123">For additional information, click [here]((https://azure.microsoft.com/services/cdn/)).</span></span>
+<span data-ttu-id="0487d-123">Per ulteriori informazioni, fare clic [qui](https://azure.microsoft.com/services/cdn/).</span><span class="sxs-lookup"><span data-stu-id="0487d-123">For additional information, click [here](https://azure.microsoft.com/services/cdn/).</span></span>
   
-<span data-ttu-id="0487d-124">Per informazioni sui costi, fare clic [qui]((https://azure.microsoft.com/pricing/details/cdn/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-124">For cost information, click [here]((https://azure.microsoft.com/pricing/details/cdn/)).</span></span>
+<span data-ttu-id="0487d-124">Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/details/cdn/).</span><span class="sxs-lookup"><span data-stu-id="0487d-124">For cost information, click [here](https://azure.microsoft.com/pricing/details/cdn/).</span></span>
   
 ## <a name="hdinsight"></a><span data-ttu-id="0487d-125">HdInsight</span><span class="sxs-lookup"><span data-stu-id="0487d-125">HdInsight</span></span>
 
@@ -94,9 +94,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0487d-140">Risorse</span><span class="sxs-lookup"><span data-stu-id="0487d-140">Resources</span></span>
 
-<span data-ttu-id="0487d-141">Per ulteriori informazioni, fare clic [qui]((https://azure.microsoft.com/services/hdinsight/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-141">For additional information, click [here]((https://azure.microsoft.com/services/hdinsight/)).</span></span>
+<span data-ttu-id="0487d-141">Per ulteriori informazioni, fare clic [qui](https://azure.microsoft.com/services/hdinsight/).</span><span class="sxs-lookup"><span data-stu-id="0487d-141">For additional information, click [here](https://azure.microsoft.com/services/hdinsight/).</span></span>
   
-<span data-ttu-id="0487d-142">Per informazioni sui costi, fare clic [qui]((https://azure.microsoft.com/pricing/details/hdinsight/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-142">For cost information, click [here]((https://azure.microsoft.com/pricing/details/hdinsight/)).</span></span>
+<span data-ttu-id="0487d-142">Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/details/hdinsight/).</span><span class="sxs-lookup"><span data-stu-id="0487d-142">For cost information, click [here](https://azure.microsoft.com/pricing/details/hdinsight/).</span></span>
   
 ## <a name="azure-sql-database"></a><span data-ttu-id="0487d-143">Database SQL di Azure</span><span class="sxs-lookup"><span data-stu-id="0487d-143">Azure SQL Database</span></span>
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 01/11/2018
   
 ![Ridimensionamento orizzontale fornito dal database SQL di Azure.](images/Storage_Poster/CloudStor-HorizScale.png)
   
-<span data-ttu-id="0487d-166">Fare clic [qui]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)) per ulteriori informazioni.</span><span class="sxs-lookup"><span data-stu-id="0487d-166">Click [here]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)) for more information.</span></span>
+<span data-ttu-id="0487d-166">Fare clic [qui](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) per ulteriori informazioni.</span><span class="sxs-lookup"><span data-stu-id="0487d-166">Click [here](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) for more information.</span></span>
   
 ### <a name="stretch-database-with-sql-server-2016"></a><span data-ttu-id="0487d-167">Estensione database con SQL Server 2016</span><span class="sxs-lookup"><span data-stu-id="0487d-167">Stretch Database with SQL Server 2016</span></span>
 
@@ -156,13 +156,13 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="0487d-p103">Il database esteso fornisce un'opzione conveniente per l'archiviazione a lungo termine e l'accesso trasparente ai dati cronologici. Consente inoltre di risolvere problemi relativi a prestazioni e disponibilità che si verificano quando le tabelle diventano molto grandi.</span><span class="sxs-lookup"><span data-stu-id="0487d-p103">Stretch database provides a cost-effective option for long-term storage and transparent access to historical data. It also solves performance and availability problems that arise when tables become very large.</span></span>
   
-<span data-ttu-id="0487d-176">Fare clic [qui]((https://msdn.microsoft.com/library/dn935011.aspx)) per ulteriori informazioni.</span><span class="sxs-lookup"><span data-stu-id="0487d-176">Click [here]((https://msdn.microsoft.com/library/dn935011.aspx)) for more information.</span></span>
+<span data-ttu-id="0487d-176">Fare clic [qui](https://msdn.microsoft.com/library/dn935011.aspx) per ulteriori informazioni.</span><span class="sxs-lookup"><span data-stu-id="0487d-176">Click [here](https://msdn.microsoft.com/library/dn935011.aspx) for more information.</span></span>
   
 ### <a name="resources"></a><span data-ttu-id="0487d-177">Risorse</span><span class="sxs-lookup"><span data-stu-id="0487d-177">Resources</span></span>
 
-<span data-ttu-id="0487d-178">Per ulteriori informazioni, fare clic [qui]((http://azure.microsoft.com/services/sql-database/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-178">For additional information, click [here]((http://azure.microsoft.com/services/sql-database/)).</span></span>
+<span data-ttu-id="0487d-178">Per ulteriori informazioni, fare clic [qui](http://azure.microsoft.com/services/sql-database/).</span><span class="sxs-lookup"><span data-stu-id="0487d-178">For additional information, click [here](http://azure.microsoft.com/services/sql-database/).</span></span>
   
-<span data-ttu-id="0487d-179">Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/sql-database/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-179">For cost information, click [here]((http://azure.microsoft.com/pricing/details/sql-database/)).</span></span>
+<span data-ttu-id="0487d-179">Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/sql-database/).</span><span class="sxs-lookup"><span data-stu-id="0487d-179">For cost information, click [here](http://azure.microsoft.com/pricing/details/sql-database/).</span></span>
   
 ## <a name="azure-cosmos-db"></a><span data-ttu-id="0487d-180">Azure Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="0487d-180">Azure Cosmos DB</span></span>
 
@@ -206,9 +206,9 @@ ms.lasthandoff: 01/11/2018
   
 ### <a name="resources"></a><span data-ttu-id="0487d-200">Risorse</span><span class="sxs-lookup"><span data-stu-id="0487d-200">Resources</span></span>
 
-<span data-ttu-id="0487d-201">Per ulteriori informazioni, fare clic [qui]((http://azure.microsoft.com/services/documentdb/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-201">For additional information, click [here]((http://azure.microsoft.com/services/documentdb/)).</span></span>
+<span data-ttu-id="0487d-201">Per ulteriori informazioni, fare clic [qui](http://azure.microsoft.com/services/documentdb/).</span><span class="sxs-lookup"><span data-stu-id="0487d-201">For additional information, click [here](http://azure.microsoft.com/services/documentdb/).</span></span>
   
-<span data-ttu-id="0487d-202">Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/documentdb/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-202">For cost information, click [here]((http://azure.microsoft.com/pricing/details/documentdb/)).</span></span>
+<span data-ttu-id="0487d-202">Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/documentdb/).</span><span class="sxs-lookup"><span data-stu-id="0487d-202">For cost information, click [here](http://azure.microsoft.com/pricing/details/documentdb/).</span></span>
   
 ## <a name="azure-media-services"></a><span data-ttu-id="0487d-203">Servizi multimediali di Azure</span><span class="sxs-lookup"><span data-stu-id="0487d-203">Azure Media Services</span></span>
 
@@ -240,9 +240,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0487d-217">Risorse</span><span class="sxs-lookup"><span data-stu-id="0487d-217">Resources</span></span>
 
-<span data-ttu-id="0487d-218">Per ulteriori informazioni, fare clic [qui]((https://azure.microsoft.com/services/media-services/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-218">For additional information, click [here]((https://azure.microsoft.com/services/media-services/)).</span></span>
+<span data-ttu-id="0487d-218">Per ulteriori informazioni, fare clic [qui](https://azure.microsoft.com/services/media-services/).</span><span class="sxs-lookup"><span data-stu-id="0487d-218">For additional information, click [here](https://azure.microsoft.com/services/media-services/).</span></span>
   
-<span data-ttu-id="0487d-219">Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/media-services/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-219">For cost information, click [here]((http://azure.microsoft.com/pricing/details/media-services/)).</span></span>
+<span data-ttu-id="0487d-219">Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/media-services/).</span><span class="sxs-lookup"><span data-stu-id="0487d-219">For cost information, click [here](http://azure.microsoft.com/pricing/details/media-services/).</span></span>
   
 ## <a name="azure-redis-cache"></a><span data-ttu-id="0487d-220">Cache Redis di Azure</span><span class="sxs-lookup"><span data-stu-id="0487d-220">Azure Redis Cache</span></span>
 
@@ -274,9 +274,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0487d-234">Risorse</span><span class="sxs-lookup"><span data-stu-id="0487d-234">Resources</span></span>
 
-<span data-ttu-id="0487d-235">Per ulteriori informazioni, fare clic [qui]((http://azure.microsoft.com/services/cache/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-235">For additional information, click [here]((http://azure.microsoft.com/services/cache/)).</span></span>
+<span data-ttu-id="0487d-235">Per ulteriori informazioni, fare clic [qui](http://azure.microsoft.com/services/cache/).</span><span class="sxs-lookup"><span data-stu-id="0487d-235">For additional information, click [here](http://azure.microsoft.com/services/cache/).</span></span>
   
-<span data-ttu-id="0487d-236">Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/cache/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-236">For cost information, click [here]((http://azure.microsoft.com/pricing/details/cache/)).</span></span>
+<span data-ttu-id="0487d-236">Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/cache/).</span><span class="sxs-lookup"><span data-stu-id="0487d-236">For cost information, click [here](http://azure.microsoft.com/pricing/details/cache/).</span></span>
   
 ## <a name="sql-server-on-an-azure-vm"></a><span data-ttu-id="0487d-237">SQL Server in una VM di Azure</span><span class="sxs-lookup"><span data-stu-id="0487d-237">SQL Server on an Azure VM</span></span>
 
@@ -296,9 +296,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0487d-245">Risorse</span><span class="sxs-lookup"><span data-stu-id="0487d-245">Resources</span></span>
 
-<span data-ttu-id="0487d-246">Per ulteriori informazioni, fare clic [qui]((http://azure.microsoft.com/services/virtual-machines/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-246">For additional information, click [here]((http://azure.microsoft.com/services/virtual-machines/)).</span></span>
+<span data-ttu-id="0487d-246">Per ulteriori informazioni, fare clic [qui](http://azure.microsoft.com/services/virtual-machines/).</span><span class="sxs-lookup"><span data-stu-id="0487d-246">For additional information, click [here](http://azure.microsoft.com/services/virtual-machines/).</span></span>
   
-<span data-ttu-id="0487d-247">Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/virtual-machines/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-247">For cost information, click [here]((http://azure.microsoft.com/pricing/details/virtual-machines/)).</span></span>
+<span data-ttu-id="0487d-247">Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/virtual-machines/).</span><span class="sxs-lookup"><span data-stu-id="0487d-247">For cost information, click [here](http://azure.microsoft.com/pricing/details/virtual-machines/).</span></span>
   
 ## <a name="storsimple"></a><span data-ttu-id="0487d-248">StorSimple</span><span class="sxs-lookup"><span data-stu-id="0487d-248">StorSimple</span></span>
 
@@ -330,9 +330,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0487d-262">Risorse</span><span class="sxs-lookup"><span data-stu-id="0487d-262">Resources</span></span>
 
-<span data-ttu-id="0487d-263">Per ulteriori informazioni, fare clic [qui]((http://azure.microsoft.com/services/storsimple/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-263">For additional information, click [here]((http://azure.microsoft.com/services/storsimple/)).</span></span>
+<span data-ttu-id="0487d-263">Per ulteriori informazioni, fare clic [qui](http://azure.microsoft.com/services/storsimple/).</span><span class="sxs-lookup"><span data-stu-id="0487d-263">For additional information, click [here](http://azure.microsoft.com/services/storsimple/).</span></span>
   
-<span data-ttu-id="0487d-264">Per informazioni sui costi, fare clic [qui]((http://azure.microsoft.com/pricing/details/storsimple/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-264">For cost information, click [here]((http://azure.microsoft.com/pricing/details/storsimple/)).</span></span>
+<span data-ttu-id="0487d-264">Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/details/storsimple/).</span><span class="sxs-lookup"><span data-stu-id="0487d-264">For cost information, click [here](http://azure.microsoft.com/pricing/details/storsimple/).</span></span>
   
 ## <a name="azure-sql-data-warehouse"></a><span data-ttu-id="0487d-265">Data Warehouse SQL Azure</span><span class="sxs-lookup"><span data-stu-id="0487d-265">Azure SQL Data Warehouse</span></span>
 
@@ -360,9 +360,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0487d-277">Risorse</span><span class="sxs-lookup"><span data-stu-id="0487d-277">Resources</span></span>
 
-<span data-ttu-id="0487d-278">Per ulteriori informazioni, fare clic [qui]((https://azure.microsoft.com/services/sql-data-warehouse/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-278">For additional information, click [here]((https://azure.microsoft.com/services/sql-data-warehouse/)).</span></span>
+<span data-ttu-id="0487d-278">Per ulteriori informazioni, fare clic [qui](https://azure.microsoft.com/services/sql-data-warehouse/).</span><span class="sxs-lookup"><span data-stu-id="0487d-278">For additional information, click [here](https://azure.microsoft.com/services/sql-data-warehouse/).</span></span>
   
-<span data-ttu-id="0487d-279">Per informazioni sui costi, fare clic [qui]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-279">For cost information, click [here]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/)).</span></span>
+<span data-ttu-id="0487d-279">Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/details/sql-data-warehouse/).</span><span class="sxs-lookup"><span data-stu-id="0487d-279">For cost information, click [here](https://azure.microsoft.com/pricing/details/sql-data-warehouse/).</span></span>
   
 ## <a name="azure-data-lake-store"></a><span data-ttu-id="0487d-280">Azure Data Lake Store</span><span class="sxs-lookup"><span data-stu-id="0487d-280">Azure Data Lake Store</span></span>
 
@@ -394,9 +394,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0487d-294">Risorse</span><span class="sxs-lookup"><span data-stu-id="0487d-294">Resources</span></span>
 
-<span data-ttu-id="0487d-295">Per ulteriori informazioni, fare clic [qui]((https://azure.microsoft.com/services/data-lake-store/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-295">For additional information, click [here]((https://azure.microsoft.com/services/data-lake-store/)).</span></span>
+<span data-ttu-id="0487d-295">Per ulteriori informazioni, fare clic [qui](https://azure.microsoft.com/services/data-lake-store/).</span><span class="sxs-lookup"><span data-stu-id="0487d-295">For additional information, click [here](https://azure.microsoft.com/services/data-lake-store/).</span></span>
   
-<span data-ttu-id="0487d-296">Per informazioni sui costi, fare clic [qui]((https://azure.microsoft.com/pricing/details/data-lake-store/)).</span><span class="sxs-lookup"><span data-stu-id="0487d-296">For cost information, click [here]((https://azure.microsoft.com/pricing/details/data-lake-store/)).</span></span>
+<span data-ttu-id="0487d-296">Per informazioni sui costi, fare clic [qui](https://azure.microsoft.com/pricing/details/data-lake-store/).</span><span class="sxs-lookup"><span data-stu-id="0487d-296">For cost information, click [here](https://azure.microsoft.com/pricing/details/data-lake-store/).</span></span>
   
 ## <a name="next-step"></a><span data-ttu-id="0487d-297">Passaggio successivo</span><span class="sxs-lookup"><span data-stu-id="0487d-297">Next step</span></span>
 
@@ -408,7 +408,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="0487d-301">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="0487d-301">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="0487d-302">[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="0487d-302">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="0487d-302">[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="0487d-302">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

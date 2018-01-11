@@ -77,7 +77,7 @@ ms.lasthandoff: 01/11/2018
     
     <span data-ttu-id="e2bb7-139">La sicurezza per le identità basate su cloud e i dati deve includere la protezione dei dati, la gestione dei privilegi di amministrazione, la riconoscibilità delle minacce e l'implementazione dei criteri di governance e sicurezza dei dati.</span><span class="sxs-lookup"><span data-stu-id="e2bb7-139">Security for cloud-based identities and data must include data protection, administrative privilege management, threat awareness, and the implementation of data governance and security policies.</span></span>
     
-    <span data-ttu-id="e2bb7-140">Per ulteriori informazioni, vedere il poster [Sicurezza cloud Microsoft per Enterprise Architects]((http://aka.ms/cloudarchsecurity)).</span><span class="sxs-lookup"><span data-stu-id="e2bb7-140">For more information, see the [Microsoft Cloud Security for Enterprise Architects]((http://aka.ms/cloudarchsecurity)) poster.</span></span>
+    <span data-ttu-id="e2bb7-140">Per ulteriori informazioni, vedere il poster [Sicurezza cloud Microsoft per Enterprise Architects](http://aka.ms/cloudarchsecurity).</span><span class="sxs-lookup"><span data-stu-id="e2bb7-140">For more information, see the [Microsoft Cloud Security for Enterprise Architects](http://aka.ms/cloudarchsecurity) poster.</span></span>
     
 - <span data-ttu-id="e2bb7-141">Gestione</span><span class="sxs-lookup"><span data-stu-id="e2bb7-141">Management</span></span>
     
@@ -89,7 +89,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="e2bb7-146">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="e2bb7-146">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="e2bb7-147">[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="e2bb7-147">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="e2bb7-147">[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="e2bb7-147">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
  
 
 

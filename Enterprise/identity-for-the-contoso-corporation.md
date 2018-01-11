@@ -124,11 +124,11 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="41326-166">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="41326-166">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="41326-167">[Identità di Microsoft Cloud per Enterprise Architects]((http://aka.ms/cloudarchidentity))</span><span class="sxs-lookup"><span data-stu-id="41326-167">[Microsoft Cloud Identity for Enterprise Architects]((http://aka.ms/cloudarchidentity))</span></span>
+<span data-ttu-id="41326-167">[Identità di Microsoft Cloud per Enterprise Architects](http://aka.ms/cloudarchidentity)</span><span class="sxs-lookup"><span data-stu-id="41326-167">[Microsoft Cloud Identity for Enterprise Architects](http://aka.ms/cloudarchidentity)</span></span>
   
-<span data-ttu-id="41326-168">[Protezione di dispositivi e identità per Office 365]((http://aka.ms/o365protect_device))</span><span class="sxs-lookup"><span data-stu-id="41326-168">[Identity and Device Protection for Office 365]((http://aka.ms/o365protect_device))</span></span>
+<span data-ttu-id="41326-168">[Protezione di dispositivi e identità per Office 365](http://aka.ms/o365protect_device)</span><span class="sxs-lookup"><span data-stu-id="41326-168">[Identity and Device Protection for Office 365](http://aka.ms/o365protect_device)</span></span>
   
-<span data-ttu-id="41326-169">[Guida di orientamento per Enterprise Cloud di Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="41326-169">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="41326-169">[Guida di orientamento per Enterprise Cloud di Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="41326-169">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 
