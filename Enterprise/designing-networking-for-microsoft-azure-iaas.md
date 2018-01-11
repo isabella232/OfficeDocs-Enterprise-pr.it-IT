@@ -5,20 +5,18 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Riepilogo: Informazioni su come progettare la rete ottimizzata per carichi di lavoro in Microsoft Azure IaaS.'
-ms.openlocfilehash: e4861de51f386af6e142debdafc64f655f010880
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 6f431eb2d87a4420e6e0ba7f48bfc3ef836c0cbe
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Progettazione della rete per IaaS di Microsoft Azure
 
@@ -428,11 +426,11 @@ Figura 19 mostra i nove server di una farm di SharePoint Server 2016 distribuiti
   
 Per ulteriori esempi di carichi di lavoro IT distribuiti nelle macchine virtuali in un virtuali di Azure cross-premise di rete, vedere [scenari basati su cloud ibrida per Azure IaaS](https://technet.microsoft.com/library/mt750502.aspx).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 <a name="cross_prem"> </a>
 
-[Microsoft Cloud per architetti di rete](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

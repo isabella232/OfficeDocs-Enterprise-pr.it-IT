@@ -9,16 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Riepilogo: Informazioni su come preparare la rete e gli elementi comuni dell''infrastruttura di rete.'
-ms.openlocfilehash: 27a83217e94d6a0f882825c57346b58ea1834443
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 9dffcae28283c9f8b8c219284554225645435e0a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementi comuni della connettività cloud Microsoft
 
@@ -78,11 +76,11 @@ Nella figura 1 viene illustrato come una rete locale può essere connesso a offe
     
 - **Internet DNS:** A, AAAA, CNAME, MX, PTR e altri record per individuare Microsoft cloud o i servizi ospitati nel cloud. Ad esempio, si potrebbe essere necessario un record CNAME per l'app ospitate in Azure PaaS.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 <a name="steps"> </a>
 
-[Microsoft Cloud per architetti di rete](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

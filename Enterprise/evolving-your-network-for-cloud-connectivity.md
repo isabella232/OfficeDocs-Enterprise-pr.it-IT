@@ -5,20 +5,18 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: 'Riepilogo: Informazioni su come l''adozione cloud richiede un nuovo approccio agli investimenti nell''infrastruttura di rete.'
-ms.openlocfilehash: 810640ab3b870759424af2f88392bbaf0b0e11c7
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 18b4e5e10094a43f0d2b10cd0f01684f2352a0a8
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Evoluzione della rete per la connettività cloud
 
@@ -83,9 +81,9 @@ L'ambito degli investimenti rete variano a seconda della categoria del servizio 
 |Progettare e implementare il bilanciamento del carico per carichi di lavoro IT interni e con connessione Internet  <br/> |||Si applica  <br/> |
 |Risoluzione dei problemi di connettività e velocità effettiva delle macchine virtuali  <br/> |||Si applica  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
-[Microsoft Cloud per architetti di rete](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [ExpressRoute per la connettività cloud Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
   

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Riepilogo: Distribuire un nuovo sito del team SharePoint Online isolato, con queste istruzioni dettagliate.'
-ms.openlocfilehash: 9715c6168276b6ba9ffc63591cc6421708bbda27
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 31a1f588aefccd9e2cb353af86d8aa0d598696af
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Distribuire un sito del team di SharePoint Online isolato
 
@@ -232,7 +228,7 @@ I membri del sito, tramite l'appartenenza a uno dei gruppi di accesso, possono o
 
 Quando è necessario modificare l'appartenenza al gruppo di accesso del sito o creare una cartella di documenti con autorizzazioni personalizzate, vedere [Manage a un sito del team di SharePoint Online isolato](manage-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Siti del team di SharePoint Online isolati](isolated-sharepoint-online-team-sites.md)
   

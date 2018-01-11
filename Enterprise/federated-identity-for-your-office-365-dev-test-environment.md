@@ -8,22 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Riepilogo: Configurare l''autenticazione federata per l''ambiente di sviluppo e di testing di Office 365.'
-ms.openlocfilehash: 62d3b5483a405a591038f347af2b9bcc798b1917
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: c88019389e610a60625d6a97881249077477c4ea
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identità federata per l'ambiente di sviluppo/test di Office 365
 
@@ -441,7 +437,7 @@ La sottoscrizione di valutazione di Office 365 è ora configurata con l'autentic
 
 Quando si è pronti per la distribuzione di produzione pronto, l'autenticazione federata di disponibilità elevata per Office 365 in Azure, vedere [Deploy la disponibilità elevata nell'autenticazione federata per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   

@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: None
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: "Riepilogo: Creare Office 365 e mobilità aziendale + sottoscrizioni di valutazione di sicurezza (EMS) con gli utenti e gruppi per un ambiente di sviluppo e di testing politici campagne."
-ms.openlocfilehash: 7faf428fc2225d3f31297ba6bf83a10a7682009a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e876c8770651c3f23c06c9c499bdaabca52da353
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
 
@@ -195,7 +193,7 @@ Registrare questi valori per utilizzarli con le sottoscrizioni di valutazione di
 
 Creare quattro diversi tipi di siti del team SharePoint Online in questo ambiente di sviluppo e di testing e [creare siti del team in un ambiente di sviluppo e di testing politici campagne](create-team-sites-in-a-political-campaign-dev-test-environment.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Riepilogo: Informazioni su architettura ibrida e gli scenari per l''infrastruttura di Microsoft come servizio (IaaS)-basato su cloud offerte in Azure.'
-ms.openlocfilehash: 389ab2b7ce37423a1601a2f76d143370833085cb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 5ec74058174724b6497a5cb41e67896818ef4d05
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scenari cloud ibridi per IaaS di Azure
 
@@ -150,7 +146,7 @@ Seguire questo percorso per l’adozione:
     
     Vedere [Progettazione di una farm di SharePoint Server 2016 in Azure](https://technet.microsoft.com/library/mt779108%28v=office.16%29.aspx) per eseguire un processo per determinare il set di rete Azure IaaS, compute ed elementi di archiviazione per ospitare la farm e le relative impostazioni.
     
-3. Gestione
+3. Distribuzione
     
     Vedere [distribuzione di SharePoint Server 2016 con SQL Server AlwaysOn Availability Groups in Azure](https://technet.microsoft.com/library/mt793552%28v=office.16%29.aspx) per eseguire la configurazione end-to-end della farm di disponibilità elevata in cinque fasi.
     
@@ -176,7 +172,7 @@ Seguire questo percorso per l’adozione:
     
     [Identità federata per l'ambiente di sviluppo e di testing di Office 365](federated-identity-for-your-office-365-dev-test-environment.md) per creare un ambiente di sviluppo e di testing simulato per l'autenticazione federata con Office 365, vedere.
     
-2. Gestione
+2. Distribuzione
     
     Vedere [l'autenticazione federata distribuire la disponibilità elevata per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) per eseguire la configurazione end-to-end della disponibilità elevata dell'infrastruttura ADFS in cinque fasi.
     
@@ -188,7 +184,7 @@ Consultare queste risorse aggiuntive:
     
 - [Progettare e creare un'applicazione LOB in Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

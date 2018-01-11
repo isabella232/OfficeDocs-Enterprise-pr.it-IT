@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Riepilogo: Creare siti di team di SharePoint Online pubblici, privati, riservati e altamente riservati in un ambiente di sviluppo e di testing.'
-ms.openlocfilehash: 17abee7a293996194a097693607b4b4d9c117046
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4878eb201fa32fbeb34be755a22e329fe45d5885
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteggere i siti di SharePoint Online in un ambiente di sviluppo e di testing
 
@@ -590,7 +588,7 @@ Di seguito è la configurazione globale per tutti i siti dei team quattro ShareP
 
 Quando si è pronti per la distribuzione di produzione di protezione dei siti SharePoint Online, vedere [file e siti di SharePoint Online sicura](secure-sharepoint-online-sites-and-files.md) per informazioni dettagliate e collegamenti ad articoli sulla distribuzione dettagliate.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Protezione di file e siti di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   

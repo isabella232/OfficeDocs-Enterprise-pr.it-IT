@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Ent_TLGs
 - Strat_O365_Enterprise
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: "Riepilogo: Utilizzare questa guida dei laboratori di testing per creare un ambiente di sviluppo e di testing che include Office 365 E5, mobilità aziendale + E5 di sicurezza (EMS) e un computer che esegue Windows 10 Enterprise."
-ms.openlocfilehash: 547662a21733941e3242e9cdd933090a4f53714d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f6baabaee10c25243690918aa6c9b2c68ff3758b
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Ambiente di sviluppo e di testing di Microsoft 365 Enterprise
 
@@ -227,7 +224,7 @@ Utilizzare questi articoli aggiuntivi per esplorare le funzionalità di Microsof
     
 - [Configurare e testare avanzate Threat Protection](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [L'ambiente di sviluppo e di testing uno Cloud Microsoft](the-one-microsoft-cloud-dev-test-environment.md)
 

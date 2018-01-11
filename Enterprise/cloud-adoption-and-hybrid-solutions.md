@@ -1,25 +1,24 @@
 ---
-title: Soluzioni basate su Cloud dell'organizzazione
-description: "Risolvere i problemi aziendali tramite Microsoft Cloud. Per informazioni su ibrida più recente e soluzioni basate su cloud di sicurezza, l'adozione cloud e altro."
-services: o365-solutions
+title: Soluzioni cloud aziendali
+description: "Risolvere i problemi aziendali utilizzando Microsoft Cloud. Informazioni sulle soluzioni cloud di sicurezza e ibride più recenti, sull'adozione cloud e altro."
 author: JoeDavies-MSFT
 manager: laurawi
 layout: LandingPage
 ms.assetid: 
 ms.service: o365-solutions
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: landing-page
+localization_priority: Normal
+ms.collection: Ent_O365
 ms.date: 12/13/2017
 ms.author: JoeDavies-MSFT
-ms.openlocfilehash: c9717be6f881968af0cc8ef66dfae54f4a6e7298
-ms.sourcegitcommit: d61cf5f3cd127dc0d446c5e78402aa8913041d06
+ms.openlocfilehash: 396d61debdd3f0cb222e9627b74a7baaa287c4c3
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
-<h1>Soluzioni basate su Cloud dell'organizzazione</h1>
-<p>Risolvere i problemi aziendali tramite Microsoft Cloud. Per informazioni su ibrida più recente e soluzioni basate su cloud di sicurezza, l'adozione cloud e altro.</p>
+<h1>Soluzioni cloud aziendali</h1>
+<p>Risolvere i problemi aziendali utilizzando Microsoft Cloud. Informazioni sulle soluzioni cloud di sicurezza e ibride più recenti, sull'adozione cloud e altro.</p>
 <p>Le soluzioni tecniche ai problemi aziendali di oggi spesso interessano più prodotti e piattaforme. È possibile utilizzare l'infrastruttura locale esistente approfittando della flessibilità e della riduzione dei costi offerte dalle piattaforme e dai servizi Microsoft. Il nostro obiettivo è di fornire le informazioni necessarie per raggiungere gli obiettivi aziendali con prodotti e servizi Microsoft. </p>
 <ul class="cardsF panelContent">
     <li>

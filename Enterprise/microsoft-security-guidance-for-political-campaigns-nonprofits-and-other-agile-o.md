@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Riepilogo: Pianificazione e implementazione per lo spostamento di fast organizzazioni che dispongono di un profilo di rischio maggiore.'
-ms.openlocfilehash: 0177e91ac0cbd7ba6ce7ffe95206036036c43da4
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: 7b400a1c097bb1d3906a59dfd21461df0568c76a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili
 
@@ -49,7 +47,7 @@ Per creare un ambiente di sviluppo/test per questa soluzione, utilizzare le guid
     
 Per ulteriori funzionalità di protezione per la dimostrazione o modello di prova, vedere [Office 365 guide dei laboratori di testing](http://aka.ms/o365tlgs).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Soluzioni di sicurezza](security-solutions.md)
   

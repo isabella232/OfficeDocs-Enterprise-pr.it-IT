@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
 description: "Riepilogo: Ottenere informazioni dettagliate sul set di cloud blocchi predefiniti di archiviazione che è possibile utilizzare per creare una soluzione o il proprio servizio di archiviazione."
-ms.openlocfilehash: 18aa8cb7fa0dda05302a88487dcc69bdbcb174d5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eabf38e0ccef3335b2d198a33f5622d0d449589a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="build-from-the-ground-up"></a>Creare da zero
 
@@ -72,7 +68,7 @@ Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/d
   
 ## <a name="azure-storage-blobs"></a>Spazio di archiviazione di Azure (blob)
 
-### <a name="features"></a>Funzionalità
+### <a name="features"></a>Caratteristiche
 
 - Ogni account di archiviazione può contenere un massimo di 500 TB (una sottoscrizione può avere più account di archiviazione)
     
@@ -194,7 +190,7 @@ Quando si progetta la soluzione di archiviazione personalizzata con l'archiviazi
     
 - Suddividere i dati in verticale (per tabella) o in orizzontale (segmentare la tabella in più partizioni) per distribuire il carico tra più database.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Archiviazione cloud Microsoft per Enterprise Architects](microsoft-cloud-storage-for-enterprise-architects.md)
   

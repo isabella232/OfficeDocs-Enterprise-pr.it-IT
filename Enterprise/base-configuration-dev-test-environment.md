@@ -10,17 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Riepilogo: Creare una rete intranet semplificata come un ambiente di sviluppo e di testing in Microsoft Azure.'
-ms.openlocfilehash: 672486f62a940d812c821fda67d3e92a4164eea8
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f61490ea9ee9ee23df2b2fd13df1097d183a8de7
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>Ambiente di sviluppo/test della configurazione di base
 
@@ -360,7 +358,7 @@ Questa è la configurazione finale.
 La configurazione di Base in Azure è pronta per lo sviluppo di applicazioni e i test o per la creazione di ambienti di testing aggiuntivi. 
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per una rappresentazione grafica a tutti gli articoli nello stack di uno Microsoft Cloud Test Lab Guide.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
   
 ## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Ridurre al minimo i costi delle macchine virtuali nell’ambiente di testing in Azure
 <a name="mincost"> </a>
@@ -397,7 +395,7 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "APP1"
 Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 ```
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 <a name="mincost"> </a>
 

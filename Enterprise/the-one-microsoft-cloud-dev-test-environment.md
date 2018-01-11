@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Riepilogo: Utilizzare questa guida dei laboratori di testing per creare un ambiente di sviluppo e di testing che includa tutte le offerte cloud di Microsoft.'
-ms.openlocfilehash: a6375c60ff6c216f34e2f78850e1afd5ed0c8c80
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2cbfb3e963927f18d2ee46ed1f5076b274a99154
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Ambiente di sviluppo/test One Microsoft Cloud
 
@@ -185,7 +182,7 @@ Nella figura 3 è riportata la configurazione risultante.
     
 - [Creare una rete simulato tra locali in servizi di infrastruttura per l'hosting dei carichi di lavoro basate su server](https://technet.microsoft.com/library/mt745150.aspx)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   

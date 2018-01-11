@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_TLGs
+ms.collection: Ent_O365
+ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 'Riepilogo: Utilizzare questa guida dei laboratori di testing per aggiungere criteri di gestione (MAM) mobili applicazione EMS all''ambiente di sviluppo e di testing Microsoft 365.'
-ms.openlocfilehash: d088970dca1ec55212642f16d0519e89bd9591e5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: cd5a9801ec7cc5c8fe287fa65015fcb02dd542bf
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Criteri MAM per l'ambiente di sviluppo e di testing Microsoft 365 Enterprise
 
@@ -141,9 +137,9 @@ In questa fase, è possibile creare e distribuire due diversi criteri MAM: uno p
 Ora si dispone di due criteri MAM, uno per i dispositivi iOS e uno per i dispositivi Android, e sono pronti per essere utilizzati con le impostazioni di testing per le app selezionate.
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per una rappresentazione grafica a tutti gli articoli nello stack di uno Microsoft Cloud Test Lab Guide.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [L'ambiente di sviluppo e di testing Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
   

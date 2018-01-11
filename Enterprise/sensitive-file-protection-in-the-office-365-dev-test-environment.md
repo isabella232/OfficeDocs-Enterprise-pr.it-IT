@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Riepilogo: Configurare e illustrare come Information Rights Management di Office 365 consente di proteggere i file riservati, anche quando vengono registrate per la raccolta siti di SharePoint Online non corretto.'
-ms.openlocfilehash: a6547cf4327980e3909323d5bda4455dfffd37f4
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eb456c86b118556abde6a887fe8b9ab68300740b
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protezione dei file sensibili nell’ambiente di sviluppo/test di Office 365
 
@@ -331,7 +327,7 @@ Successivamente, opera come utente normale, si tenta di accedere al documento **
     
 Per vedere la protezione IRM, è necessario esaminare i file nella cartella locale. **SensitiveData AfterIRM.docx** deve essere maggiore del file **SensitiveData BeforeIRM.docx** . Il file **SensitiveData AfterIRM.docx** è crittografato e aggiunte le informazioni di protezione IRM a tale.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: 'Riepilogo: Informazioni su architettura ibrida e gli scenari per la piattaforma Microsoft come servizio (PaaS)-basato su cloud offerte in Azure.'
-ms.openlocfilehash: f6d7d1c9ca04c0b7bbaa020a771cf84734e5d385
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 304322e5ad36f0a7f385a41fc3f2e5232dcecd69
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scenari basati su cloud ibrida per Azure PaaS
 
@@ -112,13 +108,13 @@ Database Ridimensiona con SQL Server 2016 illustrato nella figura 4.
   
 Nella figura 4, una rete locale ospita un server che esegue SQL Server 2016 con un database locale di piccole dimensioni. Azure PaaS ospita un'istanza di Database Ridimensiona Azure SQL Server con la parte estesa del database. Query T-SQL da un utente locale inviati a SQL server in locale in modo sicuro vengono inoltrate al Database Ridimensiona SQL Azure, che restituisce i risultati all'utente richiedente.
   
- Le query utente che includono i dati cronologici vengono inoltrate in modo trasparente al database esteso di SQL Azure. Le query non devono essere scritte nuovamente, anche se la tabella viene estesa.
+ Le query degli utenti che includono i dati cronologici vengono inoltrate in modo trasparente all'estensione database Azure SQL. Le query non devono essere riscritte, anche se la tabella viene estesa.
   
 Il database esteso fornisce un'opzione conveniente per l'archiviazione a lungo termine e l'accesso trasparente ai dati cronologici. Consente inoltre di risolvere problemi relativi a prestazioni e disponibilità che si verificano quando le tabelle diventano molto grandi.
   
 Per ulteriori informazioni, vedere [Database adatta](https://msdn.microsoft.com/library/dn935011.aspx).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

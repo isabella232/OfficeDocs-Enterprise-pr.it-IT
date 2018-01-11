@@ -12,16 +12,15 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
 - LIL_Placement
-- DecEntMigration
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 description: Questo articolo viene illustrato come utilizzare Office 365 PowerShell assegna una licenza di Office 365 per gli utenti senza licenza.
-ms.openlocfilehash: 7120b5d61b98f401f9ec1830598f20fbcbecdb66
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 88628a78179605c734cd1d3f114a8a1dcb712376
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Assegnare le licenze agli account utente con Office 365 PowerShell
 
@@ -227,7 +226,7 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
 |:-----|
 |![L'icona breve di apprendimento LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **New a Office 365?**         Scopri corsi video gratuiti per [i professionisti IT e gli amministratori di Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), per offerto da Learning LinkedIn. |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 <a name="SeeAlso"> </a>
 
 Vedere i seguenti argomenti aggiuntivi sulla gestione degli utenti con Office 365 PowerShell:

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Riepilogo: Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.'
-ms.openlocfilehash: 9ece0f2e09384c0b9e6d9042b899d782be6327b5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 6f4eb3a814c6dcf50321ae34a05671cfa8cf17c1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="hybrid-cloud-overview"></a>Panoramica del cloud ibrida
 
@@ -86,7 +82,7 @@ Scenari per il cloud ibrida con servizi cloud Microsoft variano con la piattafor
     
     Gestione di scenari basati su cloud ibrida include la possibilità di gestire le impostazioni, dati, account, criteri e le autorizzazioni e per monitorare lo stato in corso degli elementi dello scenario e le prestazioni. È inoltre possibile utilizzare il set di strumenti stesso, ad esempio Systems Management Server per la gestione delle macchine virtuali di Azure IaaS.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

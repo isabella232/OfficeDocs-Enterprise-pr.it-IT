@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: 'Riepilogo: Comprendere l''architettura di ibrida offerte cloud di Microsoft.'
-ms.openlocfilehash: 0909964421cecec455ed3c45c965a330501d361c
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 6c61d7467177b0dbf70e5540e32b059b348a062c
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architettura di scenari basati su cloud ibrida Microsoft
 
@@ -64,7 +60,7 @@ Molte aziende, tra cui Microsoft, utilizzano un approccio tre fasi per adottando
     
     Per scenari ascensore MAIUSC e compilazione nel cloud, le applicazioni basate su server in esecuzione su macchine virtuali di Azure offrono il provisioning di tipo semplice e la scala.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

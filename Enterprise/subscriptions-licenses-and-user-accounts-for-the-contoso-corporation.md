@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: ec3b08f0-288c-4ba3-b822-dbf6352fa761
 description: 'Riepilogo: Comprendere la struttura delle sottoscrizioni cloud di Contoso, le licenze, gli account utente e tenant.'
-ms.openlocfilehash: 6bc90d7b166d5e0983eac8ed47ba16bede57426d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 0fdd72a697edb312be13c9794e543a81bf9a8e54
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Sottoscrizioni, licenze e account utente per Contoso Corporation
 
@@ -94,7 +92,7 @@ Nella figura 2 viene illustrata la struttura gerarchica delle sottoscrizioni Azu
     
 Ogni sottoscrizione ad Azure può essere associata a un singolo tenant Azure AD contenente account utente e gruppi per l'autenticazione e l'autorizzazione dei servizi Azure. Le sottoscrizioni di produzione utilizzano il tenant di Contoso Azure AD comune.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Contoso nel Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   

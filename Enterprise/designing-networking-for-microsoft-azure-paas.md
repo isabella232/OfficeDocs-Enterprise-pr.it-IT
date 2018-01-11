@@ -9,16 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 'Riepilogo: Informazioni su come ottimizzare la rete per l''accesso a Microsoft Azure PaaS.'
-ms.openlocfilehash: d63a7a20d4648b0044a24ea86ad4e9125779a027
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Progettazione di rete per Microsoft Azure PaaS
 
@@ -100,9 +98,9 @@ Nella figura 3 viene illustrato il processo di base di gestione del traffico vie
     
 Per ulteriori informazioni, vedere [Gestione del traffico](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
-[Microsoft Cloud per architetti di rete](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

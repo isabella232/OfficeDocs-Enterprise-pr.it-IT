@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Riepilogo: Soluzioni di SharePoint 2013 possono essere ospitate in macchine virtuali di Microsoft Azure. Informazioni su quali tipi di soluzioni sono utile e configurare Microsoft Azure per ospitare uno.'
-ms.openlocfilehash: ee157ef81101cd51090fff50c972edd37562a179
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: e7290e3e53173ecf3406470ef0a136bb1364e39b
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure Architectures for SharePoint 2013
 
@@ -223,10 +219,10 @@ Figura che mostra la farm di SharePoint implementata in servizi di infrastruttur
 |**Contattaci**|**Descrizione**|
 |:-----|:-----|
 |**Ottenere la soluzione necessaria** <br/> |Microsoft sta creando documenti contenenti soluzioni che fanno riferimento a numerosi prodotti e servizi. Fornire commenti e suggerimenti sulle soluzioni tra server proposte o richiedere una soluzione specifica inviando un'e-mail all'indirizzo [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Partecipare alla discussione sulle soluzioni** <br/> |Se si è sulle soluzioni basate su cloud, è consigliabile partecipare il Cloud adozione consulenza Consiglio (CAAB) per la connessione con una più grande e vivace community di sviluppatori contenuti Microsoft, ai professionisti del settore e i clienti di tutto il mondo. Per partecipare, aggiungere l'utente come membri dello [spazio CAAB (scheda consulenza adozione di Cloud)](https://aka.ms/caab) della Community di Microsoft Tech e inviare un messaggio di posta elettronica rapido a[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tutti gli utenti possono leggere il contenuto correlato al community sul [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Tuttavia, membri CAAB ottenere gli inviti per webinar privato che descrivono le nuove risorse adozione cloud e soluzioni.<br/> |
-|**Ottenere l'immagine visualizzata** <br/> |Se si desidera una copia modificabile dell'oggetto WordArt che viene visualizzato in questo articolo, verranno contenti inviare all'utente. La richiesta, incluso l'URL e il titolo dell'oggetto WordArt alla [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)della posta elettronica.<br/> |
+|**Partecipare alla discussione sulle soluzioni** <br/> |Se si è appassionati di soluzioni basate sul cloud, prendere in considerazione l'idea di accedere al Cloud Adoption Advisory Board (CAAB) per connettersi con una community più ampia e vivace di sviluppatori di contenuti Microsoft, professionisti del settore e clienti di tutto il mondo. Per accedervi, diventare un membro dell'[area CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) della Community tecnica Microsoft e inviare una breve e-mail all'indirizzo [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Chiunque può leggere i contenuti correlati alla community nel [blog di CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Tuttavia, i membri CAAB ricevono inviti a webinar privati che descrivono le nuove soluzioni e risorse relative all'adozione del cloud.  <br/> |
+|**Ottenere l'immagine visualizzata** <br/> |Se si desidera una copia modificabile dell'immagine visualizzata in questo articolo, Microsoft si occuperà di inviarla. Inviare la propria richiesta tramite e-mail, includendo l'URL e il titolo dell'immagine, all'indirizzo [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
   

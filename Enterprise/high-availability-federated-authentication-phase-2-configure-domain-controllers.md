@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: "Riepilogo: Configurare il controller di dominio e il server di DirSync per l'autenticazione federata la disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: 86b5630f073a1c07dc2dbf270ac7e9d2220f7503
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 609d282321296be79c20c451cca12ccf46fe036d
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 dell'autenticazione federata a disponibilità elevata: configurare i controller di dominio
 
@@ -255,7 +250,7 @@ Di seguito è riportata la configurazione risultante dal completamento corretto 
 
 Utilizzare [la disponibilità elevata federati autenticazione fase 3: configurare i server ADFS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) per continuare a configurare questo carico di lavoro.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Distribuire l'autenticazione federata ad alta visibilità per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: 'Riepilogo: Come Contoso ha implementato SQL Server estensione del database per ridurre le esigenze di archiviazione in locale e giornaliera in esecuzione i costi.'
-ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ef21b00f54fcc6efda2e83cb5952a99c7b8c8f28
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>Spostamento dei dati di cronologia delle transazioni per il cloud
 
@@ -69,7 +67,7 @@ Dopo l'implementazione di Database Ridimensiona, Contoso:
     
 - Riduzione dei costi in esecuzione giornalieri in modo significativo.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Scenari aziendali per Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   

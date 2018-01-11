@@ -1,5 +1,5 @@
 ---
-title: Protect SharePoint Online files with Office 365 labels and DLP
+title: Proteggere i file di SharePoint Online con Office 365 etichette e DLP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,26 +8,23 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
-description: 'Summary: Apply Office 365 labels and data loss prevention (DLP) policies for SharePoint Online team sites with various levels of information protection.'
-ms.openlocfilehash: 502a899c586114644bb59a2d55ca388c819f7777
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+description: 'Riepilogo: Office 365 dati ed etichette perdita criterio DLP criteri applicati ai siti dei team SharePoint Online con diversi livelli di protezione delle informazioni.'
+ms.openlocfilehash: dd4f71d8fae458d6d20f7a5b35b46e14a72853f1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Protect SharePoint Online files with Office 365 labels and DLP
+# <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteggere i file di SharePoint Online con Office 365 etichette e DLP
 
- **Summary:** Apply Office 365 labels and data loss prevention (DLP) policies for SharePoint Online team sites with various levels of information protection.
+ **Riepilogo:** Office 365 dati ed etichette perdita criterio DLP criteri applicati ai siti dei team SharePoint Online con diversi livelli di protezione delle informazioni.
   
-Use the steps in this article to design and deploy Office 365 labels and DLP policies for baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md).
+Utilizzare i passaggi descritti in questo articolo per progettare e distribuire le etichette di Office 365 e criteri DLP per la linea di base, importanti o altamente riservati team siti di SharePoint Online. Per ulteriori informazioni su questi tre livelli di protezione, vedere [file e siti di SharePoint Online sicura](secure-sharepoint-online-sites-and-files.md).
   
 ## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>Etichette di Office 365 per i siti di SharePoint Online
 
@@ -37,7 +34,7 @@ Esistono tre fasi per creare e poi assegnare le etichette di Office 365 ai siti 
 
 In questa fase, si determinano i nomi delle etichette di Office 365 per i quattro livelli di protezione delle informazioni applicati ai siti del team di SharePoint Online. Nella tabella seguente sono riportati i nomi consigliati per ogni livello.
   
-|**SharePoint Online team site protection level**|**Label name**|
+|**Livello di protezione del sito del team SharePoint Online**|**Nome di etichetta**|
 |:-----|:-----|
 |Pubblico di livello di base  <br/> |Pubblico di livello interno  <br/> |
 |Privato di livello di base  <br/> |Privato  <br/> |
@@ -54,25 +51,25 @@ Per creare le etichette, è possibile utilizzare l'interfaccia di amministrazion
 
 1. Accedere al portale di Office 365 con un account che dispone del ruolo Amministratore della sicurezza oppure Amministratore della società. Per informazioni, vedere [Dove accedere a Office 365 per le aziende](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. From the **Microsoft Office Home** tab, click the **Admin** tile.
+2. Nella scheda **Home page di Microsoft Office** , fare clic su tessera di **amministrazione** .
     
-3. From the new **Office Admin center** tab of your browser, click **Admin centers > Security &amp; Compliance**.
+3. Scheda di **interfaccia di amministrazione di Office** nuovo del browser fare clic su **Admin Center > sicurezza &amp; conformità**.
     
-4. From the new **Home - Security &amp; Compliance** tab of your browser, click **Classifications > Labels**.
+4. Dalla nuova **Home - sicurezza &amp; conformità** scheda del browser, fare clic su **classificazioni > etichette**.
     
-5. From the **Home > Labels** pane, click **Create a label**.
+5. Dal **Home > etichette** riquadro, fare clic su **Crea un'etichetta**.
     
-6. On the **Name your label** pane, type the name of the label, and then click **Next**.
+6. Nel riquadro di **nome dell'etichetta** , digitare il nome dell'etichetta e quindi fare clic su **Avanti**.
     
-7. On the **Label settings** pane, click **Next**.
+7. Nel riquadro di **impostazioni dell'etichetta** , fare clic su **Avanti**.
     
-8. On the **Review your settings** pane, click **Create this label**, and then click **Close**.
+8. Nel riquadro di **Rivedere le impostazioni** , fare clic su **Crea l'etichetta**e quindi fare clic su **Chiudi**.
     
 9. Ripetere i passaggi da 5 a 8 per etichette aggiuntive.
     
 ### <a name="create-office-365-labels-with-powershell"></a>Creare etichette di Office 365 con PowerShell
 
-1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409) and specify the credentials of an account that has the Security Administrator or Company Administrator role.
+1. [Connetti a Office 365 Security &amp; centro conformità utilizzando PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409) e specificare le credenziali di un account che dispone del ruolo di amministratore della sicurezza o amministratore azienda.
     
 2. Compilare l'elenco di nomi delle etichette, quindi eseguire questi comandi al prompt dei comandi di PowerShell:
     
@@ -83,37 +80,37 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
 
 Successivamente, seguire questi passaggi per pubblicare le nuove etichette di Office 365.
   
-1. From the **Home > Labels** pane the Security &amp; Compliance Center, click **Publish labels**.
+1. Dal **Home > etichette** riquadro della protezione &amp; centro conformità, fare clic su **pubblica etichette**.
     
-2. On the **Choose labels to publish** pane, click **Choose labels to publish**.
+2. Nel riquadro di **scegliere le etichette per la pubblicazione** , fare clic su **etichette scegliere per la pubblicazione**.
     
-3. On the **Choose labels** pane, click **Add** and select all four labels.
+3. Nel riquadro **scegliere etichette** , fare clic su **Aggiungi** e selezionare tutte le etichette di quattro.
     
-4. Click **Done**.
+4. Fare clic su **Chiudi**.
     
-5. On the **Choose labels to publish** pane, click **Next**.
+5. Nel riquadro di **scegliere le etichette per la pubblicazione** , fare clic su **Avanti**.
     
-6. On the **Choose locations** pane, click **Next**.
+6. Nel riquadro **scegliere percorsi** , fare clic su **Avanti**.
     
-7. On the **Name your policy** pane, type a name for your set of labels in **Name**, and then click **Next**.
+7. Nel riquadro **nome del criterio** digitare un nome per il set di etichette di **nome**e quindi fare clic su **Avanti**.
     
-8. On the **Review your settings** pane, click **Publish labels**, and then click **Close**.
+8. Nel riquadro di **Rivedere le impostazioni** , fare clic su **etichette pubblica**e quindi fare clic su **Chiudi**.
     
 ### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>Fase 3: Applicare le etichette di Office 365 per i siti di SharePoint Online
 
 Seguire questi passaggi per applicare le etichette di Office 365 alle cartelle di documenti dei siti del team di SharePoint Online.
   
-1. From the **Microsoft Office Home** tab of your browser, click the **SharePoint** tile.
+1. Nella scheda **Home page di Microsoft Office** del browser, fare clic su tessera di **SharePoint** .
     
-2. On the new **SharePoint** tab in your browser, click a site that needs an Office 365 label assigned.
+2. Nella scheda **SharePoint** nuovo nel browser, fare clic su un sito in cui è necessario assegnata un'etichetta di Office 365.
     
-3. In the new SharePoint site tab of your browser, click **Documents**.
+3. Nella scheda sito di SharePoint nuovo del browser fare clic su **documenti**.
     
-4. Click the settings icon, and then click **Library settings**.
+4. Fare clic sull'icona impostazioni e quindi fare clic su **Impostazioni raccolta**.
     
-5. Under **Permissions and Management**, click **Apply label to items in this library**.
+5. Nella sezione **autorizzazioni e gestione**, fare clic su **Applica etichetta agli elementi della raccolta**.
     
-6. In **Settings-Apply Label**, select the appropriate label, and then click **Save**.
+6. In **Impostazioni si applicano etichetta**, selezionare l'etichetta appropriata e quindi fare clic su **Salva**.
     
 7. Chiudere la scheda per il sito di SharePoint Online.
     
@@ -125,37 +122,37 @@ Di seguito è riportata la configurazione risultante.
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>Criteri DLP per i siti di SharePoint Online
 
-Use these steps to configure a DLP policy that notifies users when they share a document on a SharePoint Online sensitive team site outside the organization.
+Utilizzare la procedura seguente per configurare un criterio DLP che informa gli utenti quando si condivide un documento in un sito del team riservate SharePoint Online all'esterno dell'organizzazione.
   
-1. From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.
+1. Nella scheda **Home page di Microsoft Office** nel browser, fare clic sul **protezione &amp; conformità** affiancate.
     
-2. On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.
+2. Nel nuovo computer **protezione &amp; conformità** nel browser, fare clic **prevenzione della perdita di dati > criteri**.
     
-3. In the **Data loss prevention** pane, click **+ Create a policy**.
+3. Nel riquadro di **prevenzione della perdita di dati** , fare clic su **+ Crea un criterio**.
     
-4. In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.
+4. Nella **iniziare con un modello o creare un criterio personalizzato** riquadro, fare clic su **personalizzata**e quindi fare clic su **Avanti**.
     
-5. In the **Name your policy** pane, type the name for the sensitive level DLP policy in **Name**, and then click **Next**.
+5. Nel riquadro **nome del criterio** , digitare il nome per il criterio DLP livello riservato in **nome**e quindi fare clic su **Avanti**.
     
-6. In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.
+6. Nel riquadro **scegliere percorsi** , fare clic su **Seleziona manualmente percorsi specifici**e quindi fare clic su **Avanti**.
     
-7. In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.
+7. Nell'elenco delle posizioni, disattivare i percorsi di **posta elettronica di Exchange** e **gli account di OneDrive** e quindi fare clic su **Avanti**.
     
-8. In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.
+8. Nel riquadro di **personalizzare i tipi di informazioni riservate che si desidera proteggere** , fare clic su **Modifica**.
     
-9. In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.
+9. Nel riquadro **scegliere i tipi di contenuto per la protezione** , fare clic su **Aggiungi** nella casella a discesa e quindi fare clic su **etichette**.
     
-10. In the **Labels** pane, click **+ Add**, select the **Sensitive** label, click **Add**, and then click **Done**.
+10. Nel riquadro **etichette** fare clic su **+ Aggiungi**, selezionare l'etichetta **riservati** , fare clic su **Aggiungi**e quindi fare clic su **Fine**.
     
-11. In the **Choose the types of content to protect** pane, click **Save**.
+11. Nel riquadro **scegliere i tipi di contenuto per la protezione** , fare clic su **Salva**.
     
-12. In the **Customize the types of sensitive info you want to protect** pane, click **Next**.
+12. Nel riquadro di **personalizzare i tipi di informazioni riservate che si desidera proteggere** , fare clic su **Avanti**.
     
-13. In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.
+13. Nella **Selezionare l'operazione da eseguire se si rileva informazioni riservate?** riquadro, fare clic su **Personalizza la descrizione e posta elettronica**.
     
-14. In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.
+14. Nel riquadro **suggerimenti sui criteri di personalizzazione e notifiche tramite posta elettronica** , fare clic su **Personalizza il testo del suggerimento criteri**.
     
-15. In the text box, type or paste in the following:
+15. Nella casella di testo digitare o incollare negli articoli seguenti:
     
   - Per condividere con un utente esterno all'organizzazione, scaricare il file e quindi aprirlo. Fare clic su File, Proteggi documento, Crittografa con password, quindi specificare una password complessa. Inviare la password in un'e-mail separata o con altri mezzi di comunicazione.
     
@@ -163,11 +160,11 @@ Use these steps to configure a DLP policy that notifies users when they share a 
     
 16. Fare clic su **OK**.
     
-17. In the **What do you want to do if we detect sensitive info?** pane, clear the **Block people from sharing, and restrict access to shared content** check box, and then click **Next**.
+17. Nella **Selezionare l'operazione da eseguire se si rileva informazioni riservate?** riquadro, deselezionare la casella di controllo **Blocca la condivisione degli utenti e limitare l'accesso al contenuto condiviso** e quindi fare clic su **Avanti**.
     
-18. In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.
+18. Nella **si desidera attivare le operazioni criteri o di testing prima?** riquadro, fare clic su **Sì, attivarlo immediatamente**e quindi fare clic su **Avanti**.
     
-19. In the **Review your settings** pane, click **Create**, and then click **Close**.
+19. Nel riquadro di **Rivedere le impostazioni** , fare clic su **Crea**e quindi fare clic su **Chiudi**.
     
 Ne risulta la configurazione per i siti del team di SharePoint Online di livello riservato.
   
@@ -175,35 +172,35 @@ Ne risulta la configurazione per i siti del team di SharePoint Online di livello
   
 Successivamente, seguire questi passaggi per configurare un criterio DLP che blocca gli utenti quando condividono un documento in un sito di SharePoint Online di livello riservato all'esterno dell'organizzazione.
   
-1. From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.
+1. Nella scheda **Home page di Microsoft Office** nel browser, fare clic sul **protezione &amp; conformità** affiancate.
     
-2. On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.
+2. Nel nuovo computer **protezione &amp; conformità** nel browser, fare clic **prevenzione della perdita di dati > criteri**.
     
-3. In the **Data loss prevention** pane, click **+ Create a policy**.
+3. Nel riquadro di **prevenzione della perdita di dati** , fare clic su **+ Crea un criterio**.
     
-4. In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.
+4. Nella **iniziare con un modello o creare un criterio personalizzato** riquadro, fare clic su **personalizzata**e quindi fare clic su **Avanti**.
     
-5. In the **Name your policy** pane, type the name for the highly sensitive level DLP policy in **Name**, and then click **Next**.
+5. Nel riquadro **nome del criterio** , digitare il nome per il criterio DLP livello altamente riservato in **nome**e quindi fare clic su **Avanti**.
     
-6. In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.
+6. Nel riquadro **scegliere percorsi** , fare clic su **Seleziona manualmente percorsi specifici**e quindi fare clic su **Avanti**.
     
-7. In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.
+7. Nell'elenco delle posizioni, disattivare i percorsi di **posta elettronica di Exchange** e **gli account di OneDrive** e quindi fare clic su **Avanti**.
     
-8. In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.
+8. Nel riquadro di **personalizzare i tipi di informazioni riservate che si desidera proteggere** , fare clic su **Modifica**.
     
-9. In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.
+9. Nel riquadro **scegliere i tipi di contenuto per la protezione** , fare clic su **Aggiungi** nella casella a discesa e quindi fare clic su **etichette**.
     
-10. In the **Labels** pane, click **+ Add**, select the **Highly Confidential** label, click **Add**, and then click **Done**.
+10. Nel riquadro **etichette** fare clic su **+ Aggiungi**, selezionare l'etichetta **Altamente riservati** , fare clic su **Aggiungi**e quindi fare clic su **Fine**.
     
-11. In the **Choose the types of content to protect** pane, click **Save**.
+11. Nel riquadro **scegliere i tipi di contenuto per la protezione** , fare clic su **Salva**.
     
-12. In the **Customize the types of sensitive info you want to protect** pane, click **Next**.
+12. Nel riquadro di **personalizzare i tipi di informazioni riservate che si desidera proteggere** , fare clic su **Avanti**.
     
-13. In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.
+13. Nella **Selezionare l'operazione da eseguire se si rileva informazioni riservate?** riquadro, fare clic su **Personalizza la descrizione e posta elettronica**.
     
-14. In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.
+14. Nel riquadro **suggerimenti sui criteri di personalizzazione e notifiche tramite posta elettronica** , fare clic su **Personalizza il testo del suggerimento criteri**.
     
-15. In the text box, type or paste in the following:
+15. Nella casella di testo digitare o incollare negli articoli seguenti:
     
   - Per condividere con un utente esterno all'organizzazione, scaricare il file e quindi aprirlo. Fare clic su File, Proteggi documento, Crittografa con password, quindi specificare una password complessa. Inviare la password in un'e-mail separata o con altri mezzi di comunicazione.
     
@@ -211,11 +208,11 @@ Successivamente, seguire questi passaggi per configurare un criterio DLP che blo
     
 16. Fare clic su **OK**.
     
-17. In the **What do you want to do if we detect sensitive info?** pane, select **Require a business justification to override**, and then click **Next**.
+17. Nella **Selezionare l'operazione da eseguire se si rileva informazioni riservate?** riquadro, selezionare **Richiedi motivazione aziendale per eseguire l'override**e quindi fare clic su **Avanti**.
     
-18. In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.
+18. Nella **si desidera attivare le operazioni criteri o di testing prima?** riquadro, fare clic su **Sì, attivarlo immediatamente**e quindi fare clic su **Avanti**.
     
-19. In the **Review your settings** pane, click **Create**, and then click **Close**.
+19. Nel riquadro di **Rivedere le impostazioni** , fare clic su **Crea**e quindi fare clic su **Chiudi**.
     
 Ne risulta la configurazione per i siti del team di SharePoint Online di livello estremamente riservato.
   
@@ -223,9 +220,9 @@ Ne risulta la configurazione per i siti del team di SharePoint Online di livello
   
 ## <a name="next-step"></a>Passaggio successivo
 
-[Protect SharePoint Online files with Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
+[Proteggere i file di SharePoint Online con la protezione delle informazioni di Azure](protect-sharepoint-online-files-with-azure-information-protection.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Protezione di file e siti di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
