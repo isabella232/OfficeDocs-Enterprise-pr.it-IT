@@ -12,29 +12,28 @@ ms.collection: Ent_O365
 ms.custom:
 - PowerShell
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
 description: Informazioni su come scaricare lo script ManageSway.ps1 PowerShell che consente di disattivare l'accesso a Sway nell'organizzazione di Office 365.
-ms.openlocfilehash: c27aaa7006fa0e29644b11ebc53c0d50e0d97fda
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 576e770ef6453f1b14d52af2a524a081fb0fbdb5
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="disable-access-to-sway-with-office-365-powershell"></a><span data-ttu-id="bdd64-103">Disattivare l'accesso a Sway con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="bdd64-103">Disable access to Sway with Office 365 PowerShell</span></span>
+# <a name="disable-access-to-sway-with-office-365-powershell"></a><span data-ttu-id="5b84d-103">Disattivare l'accesso a Sway con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="5b84d-103">Disable access to Sway with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="bdd64-104">**Sintesi** Informazioni su come scaricare lo script ManageSway.ps1 PowerShell per disattivare l'accesso a Sway nell'organizzazione di Office 365.</span><span class="sxs-lookup"><span data-stu-id="bdd64-104">Learn where to download the ManageSway.ps1 PowerShell script that allows you to disable access to Sway in your Office 365 organization.</span></span>
+<span data-ttu-id="5b84d-104">**Sintesi** Informazioni su come scaricare lo script ManageSway.ps1 PowerShell per disattivare l'accesso a Sway nell'organizzazione di Office 365.</span><span class="sxs-lookup"><span data-stu-id="5b84d-104">**Summary** Use the ManageSway.ps1 PowerShell script to disable access to Sway in your Office 365 organization.</span></span>
   
-<span data-ttu-id="bdd64-p101">Lo script ManageSway.ps1 PowerShell consente di visualizzare e disabilitare i servizi nell'organizzazione di Office 365, tra cui Sway. Questo script consente di automatizzare le procedure descritte negli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="bdd64-p101">The ManageSway.ps1 PowerShell script allows you to view and disable services in your Office 365 organization, including Sway. This script automates the procedures that are described in the following topics:</span></span>
+<span data-ttu-id="5b84d-p101">Lo script ManageSway.ps1 PowerShell consente di visualizzare e disabilitare i servizi nell'organizzazione di Office 365, tra cui Sway. Questo script consente di automatizzare le procedure descritte negli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="5b84d-p101">The ManageSway.ps1 PowerShell script allows you to view and disable services in your Office 365 organization, including Sway. This script automates the procedures that are described in the following topics:</span></span>
   
-- [<span data-ttu-id="bdd64-107">Visualizzare le licenze e i servizi con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="bdd64-107">View licenses and services with Office 365 PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
+- [<span data-ttu-id="5b84d-107">Visualizzare le licenze e i servizi con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="5b84d-107">View licenses and services with Office 365 PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
     
-- [<span data-ttu-id="bdd64-108">Disattivare l'accesso ai servizi con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="bdd64-108">Disable access to services with Office 365 PowerShell</span></span>](disable-access-to-services-with-office-365-powershell.md)
+- [<span data-ttu-id="5b84d-108">Disattivare l'accesso ai servizi con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="5b84d-108">Disable access to services with Office 365 PowerShell</span></span>](disable-access-to-services-with-office-365-powershell.md)
     
-<span data-ttu-id="bdd64-109">È necessario scaricare i due file che sono associati allo script:</span><span class="sxs-lookup"><span data-stu-id="bdd64-109">You need to download the two files that are associated with the script:</span></span>
+<span data-ttu-id="5b84d-109">È necessario scaricare i due file che sono associati allo script:</span><span class="sxs-lookup"><span data-stu-id="5b84d-109">You need to download the two files that are associated with the script:</span></span>
   
-- <span data-ttu-id="bdd64-110">Script ManageSway.ps1 in [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)</span><span class="sxs-lookup"><span data-stu-id="bdd64-110">The ManageSway.ps1 script at [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)</span></span>
+- <span data-ttu-id="5b84d-110">Script ManageSway.ps1 in [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)</span><span class="sxs-lookup"><span data-stu-id="5b84d-110">The ManageSway.ps1 script at [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)</span></span>
     
-- <span data-ttu-id="bdd64-111">File della Guida per lo script in [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)</span><span class="sxs-lookup"><span data-stu-id="bdd64-111">The help file for the script https://go.microsoft.com/fwlink/p/?LinkId=785072</span></span>
+- <span data-ttu-id="5b84d-111">File della Guida per lo script in [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)</span><span class="sxs-lookup"><span data-stu-id="5b84d-111">The help file for the script at [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)</span></span>
     
 
