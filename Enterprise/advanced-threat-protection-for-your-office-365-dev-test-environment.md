@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Riepilogo: Configurare ed effettuare una dimostrazione di protezione di Office 365 avanzate rischio nell''ambiente di sviluppo e di testing di Office 365.'
-ms.openlocfilehash: 00b1fc8fea930346f082d3d2302a14dea7ad4309
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 3af5255d038f5cea40242162e149a873f347203f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Protezione avanzata dalle minacce per l'ambiente di sviluppo/test di Office 365
 
@@ -158,7 +155,7 @@ In questa fase, viene mostrato come ATP si occupa dei messaggi di posta elettron
 > [!TIP]
 > Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   

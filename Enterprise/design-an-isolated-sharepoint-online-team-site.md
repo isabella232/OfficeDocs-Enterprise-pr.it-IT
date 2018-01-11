@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Riepilogo: Passaggio attraverso il processo di progettazione di siti del team di SharePoint Online isolati.'
-ms.openlocfilehash: 343872ef7a41b40a87454da27ddccc4530ffe2eb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7b2e8f0bc06a7901c52187ec6e63a056a11fa5e1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Progettare un sito del team di SharePoint Online isolato
 
@@ -133,7 +129,7 @@ Poiché tutti gli account utente di ricerca, Engineering e Project leads team ha
 
 Quando si è pronti creare e configurare un sito isolato nell'ambiente di produzione, vedere [distribuzione di un sito del team di SharePoint Online isolato](deploy-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Siti del team di SharePoint Online isolati](isolated-sharepoint-online-team-sites.md)
   
