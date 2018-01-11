@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 'Riepilogo: configurare e dimostrare la classificazione e l''etichettatura dei dati tramite il client Azure Information Protection (AIP) nel proprio ambiente di sviluppo e testing di Office 365.'
-ms.openlocfilehash: 2784f4105903855de89c6c45f7a643279bb4dfbf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a2db6817bea879caeb52ed9b11b40c6c317ea171
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificazione e assegnazione di un'etichetta ai dati nell'ambiente di sviluppo/test di Office 365
 

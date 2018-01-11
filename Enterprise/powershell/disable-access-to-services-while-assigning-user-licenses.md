@@ -11,14 +11,13 @@ localization_priority: Normal
 ms.custom:
 - PowerShell
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Informazioni su come assegnare licenze ad account utente e disabilitare i piani di servizio specifici nello stesso momento usando PowerShell di Office 365.
-ms.openlocfilehash: 907314e13b353e5d5ddbcd8fe467db568473d0b3
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 96ce12f811ee147a92da6b6928c2f6e3391c9b1f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente
 

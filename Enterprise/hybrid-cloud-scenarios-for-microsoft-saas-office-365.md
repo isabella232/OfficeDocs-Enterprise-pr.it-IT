@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: 'Sintesi: Comprendere l''architettura ibrida e gli scenari delle offerte cloud basate sul software distribuito come servizio Microsoft (SaaS) in Office 365.'
-ms.openlocfilehash: 5f50573376b70ad94b3b1cd4b86ce3ef1fdc67dd
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 63126d694817f8323494e584f1f497a1a732c678
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Scenari per il cloud ibrido per SaaS Microsoft (Office 365)
 

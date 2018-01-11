@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "Sintesi: vengono fornite informazioni sul perché sia necessaria l'archiviazione cloud e l'elenco delle opzioni di archiviazione cloud di Microsoft e gli scenari di archiviazione chiave."
-ms.openlocfilehash: 3501f6a39498276d02fe4178f701a06dfb6a3e93
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 199e385ea0238e8fb27c04153faf177df07e1025
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-storage-for-the-microsoft-cloud"></a>Progettazione dello spazio di archiviazione per il cloud Microsoft
 
@@ -164,6 +160,6 @@ Rivedere le opzioni di archiviazione cloud di [Pronto per l'utilizzo](move-in-re
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
+[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 

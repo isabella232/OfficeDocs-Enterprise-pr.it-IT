@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: 'Riepilogo: Utilizzare questa guida del laboratorio di testing per aggiungere Dynamics 365 all''ambiente di sviluppo/test di Office 365.'
-ms.openlocfilehash: 49648dd357d23eaee2d08d35252e18edf6a5d2ec
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a61e831eeabc159da4774cfe730c694c383e6801
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365 e Dynamics 365
 
@@ -32,20 +28,20 @@ Con le istruzioni disponibili in questo articolo, è possibile aggiungere una so
   
 È possibile utilizzare una sottoscrizione di valutazione per Dynamics 365 per illustrare le funzionalità e le capacità di Dynamics 365. Le soluzioni seguenti sono incluse in una versione di valutazione di Dynamics 365 Plan 1 Enterprise Edition:
   
-- [Microsoft Dynamics 365 for Sales](https://www.microsoft.com/dynamics365/sales). Aumentare le vendite tramite l'automazione e l'intelligence digitale, consentendo ai venditori di restare concentrati e lavorare con maggiore efficienza.
+- [Microsoft Dynamics 365 for Sales]((https://www.microsoft.com/dynamics365/sales)). Aumentare le vendite tramite l'automazione e l'intelligence digitale, consentendo ai venditori di restare concentrati e lavorare con maggiore efficienza.
     
-- [Microsoft Dynamics 365 for Customer Service](https://www.microsoft.com/dynamics365/customer-service). Conquista la fedeltà degli agenti fornendo loro le informazioni complete e l'intelligence digitale di cui hanno bisogno per offrire un servizio continuo.
+- [Microsoft Dynamics 365 for Customer Service]((https://www.microsoft.com/dynamics365/customer-service)). Conquista la fedeltà degli agenti fornendo loro le informazioni complete e l'intelligence digitale di cui hanno bisogno per offrire un servizio continuo.
     
-- [Microsoft Dynamics 365 for Field Service](https://www.microsoft.com/dynamics365/field-service). Padroneggiare le chiamate del servizio, ottimizzando pianificazioni, equipaggiando i dipendenti e usando strumenti predittivi per aumentare il profitto.
+- [Microsoft Dynamics 365 for Field Service]((https://www.microsoft.com/dynamics365/field-service)). Padroneggiare le chiamate del servizio, ottimizzando pianificazioni, equipaggiando i dipendenti e usando strumenti predittivi per aumentare il profitto.
     
-- [Microsoft Dynamics 365 for Project Service Automation](https://www.microsoft.com/it-IT/dynamics365/project-service-automation). Completare correttamente i progetti e creare relazioni redditizie con dipendenti produttivi e strumenti intelligenti.
+- [Microsoft Dynamics 365 for Project Service Automation]((https://www.microsoft.com/it-IT/dynamics365/project-service-automation)). Completare correttamente i progetti e creare relazioni redditizie con dipendenti produttivi e strumenti intelligenti.
     
 Per la sottoscrizione di valutazione per 365 Dynamics, è possibile esplorare una o più delle soluzioni riportate.
   
 ![Guide dei laboratori di testing nel cloud Microsoft](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui]((http://aka.ms/catlgstack)) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365 aziendale leggero o simulato
 
@@ -62,7 +58,7 @@ In questa fase, è possibile iscriversi per la sottoscrizione di valutazione di 
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Iscriversi a  una sottoscrizione di valutazione Dynamics 365
 
-1. Utilizzando un browser sul computer desktop (configurazione leggera) o da CLIENT1 (configurazione aziendale simulata), accedere al portale di Office 365 su [https://portal.office.com](https://portal.office.com) con le credenziali dell'account di amministratore globale.
+1. Utilizzando un browser sul computer desktop (configurazione leggera) o da CLIENT1 (configurazione aziendale simulata), accedere al portale di Office 365 su [(https://portal.office.com)]((https://portal.office.com)) con le credenziali dell'account di amministratore globale.
     
 2. Fare clic sul riquadro **Amministratore**.
     
@@ -146,8 +142,8 @@ Configurare e illustrare in che modo Office 365 e Dynamics 365 interagiscono nel
   
 [DirSync per l'ambiente di sviluppo/test di Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Gestione della sottoscrizione per Dynamics 365 (Online)](https://technet.microsoft.com/library/jj679903.aspx)
+[Gestione della sottoscrizione per Dynamics 365 (Online)]((https://technet.microsoft.com/library/jj679903.aspx))
   
-[Amministrare Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)
+[Amministrare Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))
 
 

@@ -9,14 +9,14 @@ ms.topic: hub-page
 ms.prod: office-online-server
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: DecEntMigration
+ms.custom: 
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Riepilogo: utilizzare PowerShell di Office 365 per gestire i criteri, i criteri per utente e le impostazioni relative alle riunioni di Skype for Business online.'
-ms.openlocfilehash: 66a3cdd90f1c0c205ddf5cab52597e32a638688d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 9714c197e47222a1f7033478770a2d7d7191525f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gestire Skype for Business Online con PowerShell di Office 365
 

@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: "Riepilogo: Informazioni sulla società Contoso Corporation e sulla struttura a livelli dei suoi uffici nel mondo."
-ms.openlocfilehash: 6243f6d6e5c08342cae7650d0b4e75de27ed3527
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: c00e7fd75f580b82f8f920b9f74551a5e5e1b328
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Panoramica di Contoso Corporation
 
@@ -79,7 +77,7 @@ Gli architetti IT di Contoso hanno identificato gli elementi seguenti durante la
     
     La sicurezza per le identità basate su cloud e i dati deve includere la protezione dei dati, la gestione dei privilegi di amministrazione, la riconoscibilità delle minacce e l'implementazione dei criteri di governance e sicurezza dei dati.
     
-    Per ulteriori informazioni, vedere il poster [Sicurezza cloud Microsoft per Enterprise Architects](http://aka.ms/cloudarchsecurity).
+    Per ulteriori informazioni, vedere il poster [Sicurezza cloud Microsoft per Enterprise Architects]((http://aka.ms/cloudarchsecurity)).
     
 - Gestione
     
@@ -91,7 +89,7 @@ Gli architetti IT di Contoso hanno identificato gli elementi seguenti durante la
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
+[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
  
 
 

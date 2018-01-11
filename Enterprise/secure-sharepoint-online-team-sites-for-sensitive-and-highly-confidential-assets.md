@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "Sintesi: informazioni su come Contoso ha implementato siti del team di SharePoint Online estremamente riservati e sensibili per una collaborazione più facile, ma comunque sicura, per i dirigenti e i rispettivi centri di ricerca."
-ms.openlocfilehash: 1574babb54bfcb3fd74fb8ce4f31c364bb96b14a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 062238bd301200e388ba9d4f6d24503d33046f50
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Proteggere i siti del team di SharePoint Online per risorse estremamente riservate e sensibili
 
