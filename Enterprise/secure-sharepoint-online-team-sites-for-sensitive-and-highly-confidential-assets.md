@@ -52,9 +52,9 @@ Contoso ha utilizzato questa procedura per creare siti del team di SharePoint On
     
 Si ottengono due siti di collaborazione il cui accesso è rigidamente controllato dagli amministratori della sicurezza e di SharePoint. I file con l'etichetta Riservatezza elevata, anche se sono distribuiti all'esterno del sito del team Ricerca, sono crittografati e possono essere aperti solo da un membro di un team di ricerca.
   
-Per ulteriori informazioni, vedere [Proteggere siti e file di SharePoint Online]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).
+Per ulteriori informazioni, vedere [Proteggere siti e file di SharePoint Online](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).
   
- Per configurarli per una dimostrazione, un modello di verifica o sviluppo/test, vedere [Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).
+ Per configurarli per una dimostrazione, un modello di verifica o sviluppo/test, vedere [Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
   
 ## <a name="see-also"></a>Vedere anche
 
@@ -64,9 +64,9 @@ Per ulteriori informazioni, vedere [Proteggere siti e file di SharePoint Online]
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))
+[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)
   
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
