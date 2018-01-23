@@ -4,7 +4,7 @@
       "docset_name": "OfficeDocs-Enterprise",
       "build_source_folder": "Enterprise",
       "build_output_subfolder": "OfficeDocs-Enterprise",
-      "locale": "it-it",
+      "locale": "it-IT",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
@@ -16,7 +16,7 @@
       "docset_name": "OfficeDocs-O365Enterprise",
       "build_source_folder": "Enterprise",
       "build_output_subfolder": "OfficeDocs-O365Enterprise",
-      "locale": "it-it",
+      "locale": "it-IT",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
@@ -44,12 +44,6 @@
       "branch": "master",
       "branch_mapping": {}
     },
-            {
-      "path_to_root": "enterprise/common",
-      "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr.it-it",
-      "branch": "live",
-      "branch_mapping": {}
-    },
     {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/MicrosoftDocs/OfficeDocs-Enterprise-pr",
@@ -58,6 +52,12 @@
         "live": "live",
         "master": "master"
       }
+    },
+    {
+      "path_to_root": "enterprise/common",
+      "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr.it-IT",
+      "branch": "live",
+      "branch_mapping": {}
     },
     {
     "path_to_root": "_themes.pdf",
