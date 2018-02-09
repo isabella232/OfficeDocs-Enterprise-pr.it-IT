@@ -9,14 +9,15 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Riepilogo: Informazioni su come preparare la rete e gli elementi comuni dell''infrastruttura di rete.'
-ms.openlocfilehash: 9dffcae28283c9f8b8c219284554225645435e0a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 28825ad299ee12b55037963c68a289f43ffcc56a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementi comuni della connettività cloud Microsoft
 
@@ -76,6 +77,11 @@ Nella figura 1 viene illustrato come una rete locale può essere connesso a offe
     
 - **Internet DNS:** A, AAAA, CNAME, MX, PTR e altri record per individuare Microsoft cloud o i servizi ospitati nel cloud. Ad esempio, si potrebbe essere necessario un record CNAME per l'app ospitate in Azure PaaS.
     
+
+## <a name="next-step"></a>Passaggio successivo
+
+[ExpressRoute per la connettività cloud Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
+
 ## <a name="see-also"></a>Vedere anche
 
 <a name="steps"> </a>
@@ -83,7 +89,5 @@ Nella figura 1 viene illustrato come una rete locale può essere connesso a offe
 [Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
 
 

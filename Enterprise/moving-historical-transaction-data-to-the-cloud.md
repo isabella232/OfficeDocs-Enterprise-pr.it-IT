@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: 'Riepilogo: Come Contoso ha implementato SQL Server estensione del database per ridurre le esigenze di archiviazione in locale e giornaliera in esecuzione i costi.'
-ms.openlocfilehash: ef21b00f54fcc6efda2e83cb5952a99c7b8c8f28
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9d8d51aa1bc7a304d1148111aedd54916d9e8052
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>Spostamento dei dati di cronologia delle transazioni per il cloud
 

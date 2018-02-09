@@ -6,15 +6,16 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: "In questo articolo è una versione testo accessibile del diagramma denominato funzionalità di integrazione tra Office prodotti Server Microsoft - Server di SharePoint, Exchange Server, Lync Server e Office Online."
-ms.openlocfilehash: c927bca4d60fe49f941d9f03177e6fdd64e27389
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagramma accessibile - funzionalità di integrazione tra prodotti Microsoft Office Server
 
@@ -126,7 +127,7 @@ Registrazioni delle riunioni. Questa caratteristica è applicabile a:
     
 - Lync
     
-### <a name="office-web-apps-server"></a>Server Office Web Apps
+### <a name="office-web-apps-server"></a>server Office Web Apps
 
 Office Web Apps Server è un prodotto di server di Office che sono disponibili file basato su browser visualizzazione e modifica di servizi per i file di Office. Office Web Apps Server funziona con prodotti e servizi che supportano il Web Application Open piattaforma interfaccia protocollo WOPI (). Questi prodotti, noti come host, includono SharePoint 2013, Lync Server 2013 ed Exchange Server 2013. 
   

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: "Riepilogo: Configurare il server proxy applicazione web per l'autenticazione federata la disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: 9e7c07a659993437776a7c26e5d02498b1680699
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 3465281c6ba27c52cc7a991e400fb4f4a892b244
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 dell'autenticazione federata a disponibilità elevata: Configurare i proxy dell'applicazione Web
 
@@ -63,13 +63,13 @@ Write-Host (Get-AzureRMPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $
   
 Una volta ottenuto il nome di dominio completo del servizio federativo, creare un record di tipo A del dominio DNS pubblico per il nome di dominio completo che consente di determinare l'indirizzo IP pubblico del bilanciatore di carico per traffico Internet di Azure.
   
-|**Nome**|**Tipo**|**TTL**|**Valore**|
+|**Name**|**Tipo**|**TTL**|**Valore**|
 |:-----|:-----|:-----|:-----|
 |Nome di dominio completo del servizio federativo  <br/> |A  <br/> |3600  <br/> |indirizzo IP pubblico del bilanciamento del carico per Internet di Azure (visualizzato dal comando di **Write-Host** nella sezione precedente) <br/> |
    
 Ecco un esempio:
   
-|**Nome**|**Tipo**|**TTL**|**Valore**|
+|**Name**|**Tipo**|**TTL**|**Valore**|
 |:-----|:-----|:-----|:-----|
 |FS.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    

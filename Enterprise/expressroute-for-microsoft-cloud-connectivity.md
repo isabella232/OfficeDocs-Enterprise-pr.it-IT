@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "Riepilogo: Informazioni su come ExpressRoute grado di aiutarti con connessioni più veloci e affidabili a piattaforme e servizi cloud di Microsoft."
-ms.openlocfilehash: 4534f06e5d4eca759aadb9b589e39f0c8cdeffb1
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute per la connettività cloud Microsoft
 
@@ -261,6 +261,10 @@ Vedere le risorse aggiuntive per ulteriori informazioni:
     
 - [ExpressRoute per Azure](https://azure.microsoft.com/services/expressroute/)
     
+## <a name="next-step"></a>Passaggio successivo
+
+[Progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md)
+
 ## <a name="see-also"></a>Vedere anche
 
 [Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)

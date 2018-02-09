@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 'Riepilogo: Informazioni su come ottimizzare la rete per l''accesso ai servizi SaaS di Microsoft, tra cui Office 365, Microsoft Intune e Dynamics 365.'
-ms.openlocfilehash: 970d27e50e06f4d872de67589295c490aaa6e0e7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Progettazione di rete per Microsoft SaaS
 
@@ -185,6 +185,10 @@ Per ulteriori informazioni, vedere:
 - [Corso di Academy virtuale Microsoft di gestione delle prestazioni di Office 365](https://aka.ms/o365perf)
     
 - [ExpressRoute per Office 365](https://aka.ms/expressrouteoffice365)
+
+## <a name="next-step"></a>Passaggio successivo
+
+[Progettazione di rete per Microsoft Azure PaaS](designing-networking-for-microsoft-azure-paas.md)
     
 ## <a name="see-also"></a>Vedere anche
 

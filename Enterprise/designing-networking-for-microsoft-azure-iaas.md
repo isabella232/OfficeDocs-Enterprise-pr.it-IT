@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Riepilogo: Informazioni su come progettare la rete ottimizzata per carichi di lavoro in Microsoft Azure IaaS.'
-ms.openlocfilehash: 6f431eb2d87a4420e6e0ba7f48bfc3ef836c0cbe
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 2430b62e04392ddd4266d37797b18ae7e890c092
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Progettazione della rete per IaaS di Microsoft Azure
 
@@ -196,8 +196,7 @@ Nella tabella 5 sono riportati i metodi per filtrare o esaminare il traffico in 
 |1. Endpoint e ACL configurati sui servizi cloud  <br/> |Classico  <br/> |
 |2. Gruppi di sicurezza di rete  <br/> |Gestione risorse e classico  <br/> |
 |3. Bilanciamento del carico con accesso a Internet con regole NAT in ingresso  <br/> |Manager delle risorse  <br/> |
-|4. dispositivi di rete della protezione in di Azure 
- Marketplace (non visualizzata)  <br/> |Gestione risorse e classico  <br/> |
+|4. dispositivi di rete della protezione in Azure Marketplace (non visualizzata)  <br/> |Gestione risorse e classico  <br/> |
    
  **Tabella 5: Metodi di connessione per le macchine virtuali e dai modelli di distribuzione Azure corrispondenti**
   
@@ -379,10 +378,8 @@ La tabella 7 mostra i passaggi e i prefissi risultanti che definiscono lo spazio
 |**Passaggio**|**Risultati**|
 |:-----|:-----|
 |1. Elencare i prefissi che non sono lo spazio radice per lo spazio indirizzi della rete virtuale.  <br/> |172.16.0.0/12 e 192.168.0.0/16  <br/> |
-|2. elencare i prefissi senza sovrapposizioni per ottetti variabile fino a ma non inclusa l'ultima utilizzato 
- ottetti nello spazio di indirizzi VNet.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 prefissi, ignorando 10.100.0.0/16)  <br/> |
-|3. elenco senza sovrapposizioni prefissi all'interno di 
- utilizzato per ultimo ottetti VNet spazio degli indirizzi.  <br/> | 10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 prefissi, ignorando 10.100.100.0/24)  <br/> |
+|2. elenco i prefissi senza sovrapposizioni per variabile ottetti fino a ma non incluso l'ultimo ottetti utilizzati nello spazio di indirizzi VNet.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 prefissi, ignorando 10.100.0.0/16)  <br/> |
+|3. elenco i prefissi senza sovrapposizioni all'interno di ottetti utilizzato ultimo VNet spazio degli indirizzi.  <br/> |10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 prefissi, ignorando 10.100.100.0/24)  <br/> |
    
  **Tabella 7: Spazio di rete esempio indirizzi locali**
   
@@ -413,7 +410,7 @@ Figura 18 viene illustrata una VNet cross-premise a una route definita dall'uten
 ## <a name="sharepoint-server-2016-farm-in-azure"></a>Farm di SharePoint Server 2016 in Azure
 <a name="cross_prem"> </a>
 
-Un esempio del carico di lavoro di una Intranet IT ospitata in IaaS di Azure è una farm a più livelli e a disponibilità elevata di SharePoint Server 2016, come mostrato nella figura 19.
+Un esempio di un carico di lavoro IT ospitata in Azure IaaS intranet è una farm di SharePoint Server 2016 altamente disponibili, a più livelli.
   
 **Figura 19: Una farm di SharePoint Server 2016 intranet a disponibilità elevata in Azure IaaS**
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 'Riepilogo: Informazioni su come ottimizzare la rete per l''accesso a Microsoft Azure PaaS.'
-ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Progettazione di rete per Microsoft Azure PaaS
 
@@ -26,8 +26,6 @@ L'ottimizzazione della rete per le app PaaS di Azure necessita di una larghezza 
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Passaggi di pianificazione per l'hosting di applicazioni PaaS organizzazione in Azure
 
-Inserire qui il corpo della sezione.
-  
 1. Passare attraverso la sezione **operazioni per preparare la rete di servizi cloud Microsoft** in [elementi comuni di integrazione applicativa di Microsoft cloud](common-elements-of-microsoft-cloud-connectivity.md).
     
 2. Ottimizzare la larghezza di banda Internet utilizzando i passaggi da 2 a 4 della sezione **passaggi per la preparazione della rete per i servizi Microsoft SaaS** nella [Progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md).
@@ -97,7 +95,11 @@ Nella figura 3 viene illustrato il processo di base di gestione del traffico vie
 2. L'utente avvia il traffico con l'app web internazionali in Europa.
     
 Per ulteriori informazioni, vedere [Gestione del traffico](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
-  
+
+## <a name="next-step"></a>Passaggio successivo
+
+[Progettazione della rete per IaaS di Microsoft Azure](designing-networking-for-microsoft-azure-iaas.md)
+ 
 ## <a name="see-also"></a>Vedere anche
 
 [Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
