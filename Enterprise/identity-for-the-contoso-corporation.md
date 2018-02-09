@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "Sintesi: informazioni su come Contoso trae vantaggio da una soluzione di gestione delle identità e degli accessi distribuita come servizio (IDaaS) e fornisce un'autenticazione ridondante e distribuita a livello geografico per i suoi utenti."
-ms.openlocfilehash: d9aee05d36061433398cd8ce913a03bce65cc103
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7a6448969a90f1f646f70fee4c67a6da992dd2bc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identità per Contoso Corporation
 
@@ -124,11 +124,11 @@ Per effettuare questi passaggi, Contoso aggiorna il profilo Azure Traffic Manage
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Identità di Microsoft Cloud per Enterprise Architects]((http://aka.ms/cloudarchidentity))
+[Identità di Microsoft Cloud per Enterprise Architects](http://aka.ms/cloudarchidentity)
   
-[Protezione di dispositivi e identità per Office 365]((http://aka.ms/o365protect_device))
+[Protezione di dispositivi e identità per Office 365](http://aka.ms/o365protect_device)
   
-[Guida di orientamento per Enterprise Cloud di Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Guida di orientamento per Enterprise Cloud di Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

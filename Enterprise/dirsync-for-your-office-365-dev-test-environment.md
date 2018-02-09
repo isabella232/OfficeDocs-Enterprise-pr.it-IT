@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Riepilogo: Configurare la sincronizzazione di directory per l''ambiente di sviluppo e di testing di Office 365.'
-ms.openlocfilehash: d8a663367e61ac3f01e67f4d3731a0dccdd5a222
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 32b9be8bb82d0efec2549dcacb5706c5e3dbc6f3
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="dirsync-for-your-office-365-devtest-environment"></a>DirSync per l'ambiente di sviluppo/test di Office 365
 
@@ -42,7 +42,7 @@ Le fasi principali della configurazione dell'ambiente di sviluppo e di testing s
 2. Installare e configurare Azure AD Connect su APP1.
     
 > [!TIP]
-> Fare clic [qui]((http://aka.ms/catlgstack)) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo e di testing di Office 365
 
@@ -62,7 +62,7 @@ Una volta installato e configurato, Azure AD Connect sincronizza il set di accou
   
 ### <a name="install-and-configure-azure-ad-connect-on-app1"></a>Installare e configurare Azure AD Connect su APP1
 
-1. Dal [portale Azure]((https://portal.azure.com)), connettersi ad APP1 con l'account CORP\\User1.
+1. Dal [portale Azure](https://portal.azure.com), connettersi ad APP1 con l'account CORP\\User1.
     
 2. Da APP1, aprire un prompt dei comandi di Windows PowerShell a livello di amministratore ed eseguire questi comandi:
     
@@ -73,7 +73,7 @@ Stop-Process -Name Explorer -Force
 
   ```
 
-3. Dalla barra delle attività, fare clic su **Internet Explorer** e passare a [(https://aka.ms/aadconnect)]((https://aka.ms/aadconnect)).
+3. Dalla barra delle attività, fare clic su **Internet Explorer** e passare a [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
     
 4. Nella pagina Microsoft Azure Active Directory Connect, fare clic su **Download** e quindi su **Esegui**.
     
@@ -91,7 +91,7 @@ Stop-Process -Name Explorer -Force
     
 11. Nella pagina **Configurazione completata**, fare clic su **Esci**.
     
-12. In Internet Explorer, accedere al portale di Office 365 ([(https://portal.office.com)]((https://portal.office.com))) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
+12. In Internet Explorer, accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
 13. Dalla pagina principale del portale, fare clic su **Admin**.
     

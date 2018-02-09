@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: 'Sintesi: informazioni sul modo in cui Contoso ha mappato i propri requisiti di sicurezza per rientrare nelle offerte cloud di Microsoft e su come ha determinato un percorso per preparare la sicurezza cloud.'
-ms.openlocfilehash: 4d38f58595f0043e1a02106b6428b92dabad2e17
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: f8df7f6437159aefe88851a22cc8da8b19c3838c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="security-for-the-contoso-corporation"></a>Sicurezza per Contoso Corporation
 
@@ -46,7 +46,7 @@ Ecco i requisiti di sicurezza di Contoso per il cloud:
     
 ## <a name="contosos-data-sensitivity-classification"></a>Classificazione della riservatezza dei dati di Contoso
 
-Usando le informazioni nel [Toolkit di classificazione dei dati]((https://msdn.microsoft.com/library/hh204743.aspx)), Contoso ha eseguito un'analisi dei dati e ha determinato i livelli seguenti.
+Usando le informazioni nel [Toolkit di classificazione dei dati](https://msdn.microsoft.com/library/hh204743.aspx), Contoso ha eseguito un'analisi dei dati e ha determinato i livelli seguenti.
   
 |**Livello 1: valore aziendale basso**|**Livello 2: valore aziendale medio**|**Livello 3: alto valore aziendale**|
 |:-----|:-----|:-----|
@@ -96,7 +96,7 @@ In conformità alle procedure di sicurezza consigliate per Office 365, gli ammin
     
     Invece di assegnare il ruolo di amministratore globale agli account utente di uso quotidiano, Contoso ha creato 3 account di amministratore globale dedicati e caratterizzati da password molto complesse. L'accesso con un account di amministratore globale viene effettuato soltanto per determinate attività di amministrazione e le password sono conosciute soltanto da un gruppo limitato di dipendenti. Gli amministratori della sicurezza di Contoso hanno assegnato ruoli di amministrazione agli account che fanno riferimento alla funzione e alla responsabilità professionale di un addetto IT.
     
-    Per ulteriori informazioni, vedere [Informazioni sui ruoli di amministratore di Office 365]((https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)).
+    Per ulteriori informazioni, vedere [Informazioni sui ruoli di amministratore di Office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
     
 - **Autenticazione a più fattori per account utente importanti**
     
@@ -106,13 +106,13 @@ In conformità alle procedure di sicurezza consigliate per Office 365, gli ammin
     
   - Per proteggersi da attacchi di phishing, nei quali un utente malintenzionato compromette le credenziali di una persona attendibile dell'organizzazione e invia e-mail pericolose, Contoso ha abilitato l'autenticazione a più fattori su tutti gli account utente per i responsabili, inclusi i dirigenti.
     
-    Per maggiori informazioni, vedere [Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365]((https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba))
+    Per maggiori informazioni, vedere [Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
 - **Gestione avanzata della sicurezza**
     
     L'autenticazione a più fattori utilizza criteri configurati per monitorare le attività dannose. Gli amministratori della sicurezza di Contoso hanno configurato avvisi dell'autenticazione a più fattori in modo che gli amministratori IT ricevano notifica di attività insolite o rischiose, ad esempio, download di grandi quantità di dati, vari tentativi di accesso non riusciti, accessi da indirizzi IP pericolosi o ignoti
     
-    Per ulteriori informazioni, vedere [Panoramica di Advanced Security Management in Office 365]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)).
+    Per ulteriori informazioni, vedere [Panoramica di Advanced Security Management in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
     
 - **Flusso di posta elettronica e registrazione di controllo delle cassette postali**
     
@@ -120,9 +120,9 @@ In conformità alle procedure di sicurezza consigliate per Office 365, gli ammin
     
     Per ulteriori informazioni, vedere: 
     
-  - [Protezione dalla posta indesiderata in Office 365]((https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586))
+  - [Protezione dalla posta indesiderata in Office 365](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
     
-  - [Protezione avanzata dalle minacce per allegati e collegamenti sicuri]((https://technet.microsoft.com/library/mt148491.aspx))
+  - [Protezione avanzata dalle minacce per allegati e collegamenti sicuri](https://technet.microsoft.com/library/mt148491.aspx)
     
   - [Abilitare il controllo delle cassette postali in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109)
     
@@ -130,7 +130,7 @@ In conformità alle procedure di sicurezza consigliate per Office 365, gli ammin
     
     Contoso ha identificato dati sensibili e configurato criteri DLP per Exchange Online, SharePoint Online e OneDrive per impedire agli utenti di condividere dati in modo intenzionale o accidentale. 
     
-    Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita dei dati]((https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)).
+    Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita dei dati](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
     
 ## <a name="see-also"></a>Vedere anche
 
@@ -138,9 +138,9 @@ In conformità alle procedure di sicurezza consigliate per Office 365, gli ammin
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft Resources for IT Decision Makers (Risorse per i decision maker IT)]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Guida di orientamento del cloud aziendale Microsoft Resources for IT Decision Makers (Risorse per i decision maker IT)](https://sway.com/FJ2xsyWtkJc2taRD)
   
-[Procedure consigliate per la sicurezza per Office 365]((https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3))
+[Procedure consigliate per la sicurezza per Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 
 
 

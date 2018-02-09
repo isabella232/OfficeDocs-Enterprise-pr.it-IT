@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8f004c92-773e-4eb0-8bb5-24494ca538d3
 description: 'Sintesi: come un''organizzazione fittizia ma rappresentativa a livello internazionale affronta i problemi aziendali con scenari cloud.'
-ms.openlocfilehash: e63e5cdcece24cbffa7a0d6027c7bc28dbff4c7e
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 3964ed03e8437ce50aab10f1209a7afb6e06bc8b
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enterprise-scenarios-for-the-contoso-corporation"></a>Scenari aziendali per Contoso Corporation
 
@@ -38,7 +38,7 @@ Con l'infrastruttura di sicurezza, di identità e di rete sul posto, Contoso ha 
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

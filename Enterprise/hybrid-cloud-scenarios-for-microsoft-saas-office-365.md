@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: 'Sintesi: Comprendere l''architettura ibrida e gli scenari delle offerte cloud basate sul software distribuito come servizio Microsoft (SaaS) in Office 365.'
-ms.openlocfilehash: 63126d694817f8323494e584f1f497a1a732c678
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 65b1841a155e286af8862c2fb7c37d0bfb61e1e8
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Scenari per il cloud ibrido per SaaS Microsoft (Office 365)
 
@@ -72,11 +72,11 @@ Nella figura 2 viene mostrata la configurazione ibrida di Skype for Business 201
   
 Per ulteriori informazioni, vedere:
   
-- [Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business Online]((https://technet.microsoft.com/library/jj205403.aspx))
+- [Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business Online](https://technet.microsoft.com/library/jj205403.aspx)
     
-- [Configurazione ibride supportate per Skype for Business Server 2015]((https://technet.microsoft.com/library/jj945633.aspx))
+- [Configurazione ibride supportate per Skype for Business Server 2015](https://technet.microsoft.com/library/jj945633.aspx)
     
-- [Versione ibrida di Skype for Business]((http://hybrid.office.com/skype-for-business/))
+- [Versione ibrida di Skype for Business](http://hybrid.office.com/skype-for-business/)
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a>Cloud PBX con Skype for Business Server
 
@@ -92,11 +92,11 @@ Gli utenti nell'organizzazione ospitati nel cloud possono ricevere servizi PBX (
   
 È un ottimo esempio di configurazione ibrida che permette di effettuare gradualmente la migrazione a un servizio basato sul cloud. È possibile mantenere le funzionalità vocali degli utenti non appena vengono trasferiti su Skype for Business Online. È possibile trasferire gli utenti al proprio ritmo, sapendo che le funzionalità vocali saranno comunque disponibili a prescindere da dove sono ospitate. 
   
-Per ulteriori informazioni, vedere [Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business Online o Lync Server 2013]((https://technet.microsoft.com/library/jj205403.aspx)).
+Per ulteriori informazioni, vedere [Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business Online o Lync Server 2013](https://technet.microsoft.com/library/jj205403.aspx).
   
 Se non disponi già di una distribuzione di Lync Server o Skype for Business Server esistente, puoi usare la versione del connettore cloud di Skype for Business, un set di macchine virtuali in pacchetto che implementano la connettività PSTN locale con Cloud PBX.
   
-Per ulteriori informazioni, vedere [Piano per Skype for Business Cloud Connector Edition]((https://technet.microsoft.com/library/mt605227.aspx)).
+Per ulteriori informazioni, vedere [Piano per Skype for Business Cloud Connector Edition](https://technet.microsoft.com/library/mt605227.aspx).
   
 ## <a name="sharepoint-hybrid"></a>Ambiente ibrido di SharePoint
 
@@ -114,23 +114,23 @@ Scenari ibridi di SharePoint:
     
 - [Versione ibrida dei siti del team](https://technet.microsoft.com/library/mt346110%28v=office.16%29.aspx)
     
-- [Soluzione Extranet B2B ibrida]((https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037))
+- [Soluzione Extranet B2B ibrida](https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037)
     
 - [Ricerca ibrida](https://technet.microsoft.com/library/dn720906%28v=office.16%29.aspx)
     
-- [Profili ibridi]((https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4))
+- [Profili ibridi](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
     
-- [Selezione ibrida]((https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c))
+- [Selezione ibrida](https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c)
     
     È facile abilitare gli scenari ibridi con le procedure guidate che rendono automatica la configurazione ibrida, disponibili dall'interfaccia di amministrazione di SharePoint Online in Office 365.
     
-- [Icona di avvio delle app estendibile ibrida]((https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91))
+- [Icona di avvio delle app estendibile ibrida](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
     
     Consente agli utenti di visualizzare e usare i video in Office 365 e le app e le esperienze Delve nelle pagine della relativa farm di SharePoint locale.
     
 Tutti questi scenari ibridi di SharePoint, ad eccezione dell'icona di avvio delle app ibrida estensibile, sono disponibili per gli utenti di SharePoint 2016 e SharePoint 2013.
   
-Per ulteriori informazioni, vedere [SharePoint ibrido]((http://hybrid.office.com/sharepoint/)).
+Per ulteriori informazioni, vedere [SharePoint ibrido](http://hybrid.office.com/sharepoint/).
   
 ## <a name="exchange-server-2016-hybrid"></a>Exchange Server 2016 ibrido
 
@@ -156,7 +156,7 @@ Questa configurazione ibrida:
     
 Puoi anche integrare questa configurazione ibrida con altre applicazioni di Microsoft Office 365, tra cui Skype for Business Online e SharePoint Online.
   
-Per ulteriori informazioni, vedere [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) e [Versione ibrida di Exchange]((http://hybrid.office.com/exchange/)).
+Per ulteriori informazioni, vedere [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) e [Versione ibrida di Exchange](http://hybrid.office.com/exchange/).
   
 ## <a name="see-also"></a>Vedere anche
 
@@ -164,7 +164,7 @@ Per ulteriori informazioni, vedere [Distribuzioni ibride di Exchange Server](htt
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

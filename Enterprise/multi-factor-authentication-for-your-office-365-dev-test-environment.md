@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "Riepilogo: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno smartphone in un ambiente di sviluppo e testing di Office 365."
-ms.openlocfilehash: 66b0fadd097e6df940754c28cd7b95549eb3a761
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 345ad65a2476f8b25b5f34b281b3f617fa3d48cc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365
 
@@ -35,7 +35,7 @@ Le fasi di configurazione dell’autenticazione a più fattori per Office 365 in
 2. Abilitare e testare l'autenticazione a più fattori per l'account User 2.
     
 > [!TIP]
-> Fare clic [qui]((http://aka.ms/catlgstack)) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365 aziendale leggero o simulato
 
@@ -50,7 +50,7 @@ Se si desidera testare l'autenticazione a più fattori in un'azienda simulata, s
 
 Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel modo seguente:
   
-1. Aprire un'istanza separata del browser, accedere al Portale di Office 365 ([(https://portal.office.com)]((https://portal.office.com))) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
+1. Aprire un'istanza separata del browser, accedere al Portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
 2. Dalla pagina principale del portale, fare clic su **Admin**.
     
@@ -74,7 +74,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 1. Aprire una nuova istanza del browser.
     
-2. Andare al portale di Office 365 ([(https://portal.office.com)]((https://portal.office.com))) ed eseguire l'accesso con l'account User 2 (user2@\<nome organizzazione>.onmicrosoft.com) e la password.
+2. Andare al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso con l'account User 2 (user2@\<nome organizzazione>.onmicrosoft.com) e la password.
     
 3. Dopo l'accesso, viene chiesto di configurare l'account per un'ulteriore convalida di sicurezza. Fare clic su **Configura ora**.
     
@@ -110,5 +110,5 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 
-[Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365]((https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba))
+[Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

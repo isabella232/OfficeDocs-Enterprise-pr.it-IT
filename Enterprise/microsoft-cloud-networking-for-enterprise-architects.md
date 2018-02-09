@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Riepilogo: Progettare una rete per i servizi cloud e le piattaforme Microsoft.'
-ms.openlocfilehash: 155e40bfe769a8d8771d71e570cab418d4a6b2a0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7fe7fc71825ddbdf485fedece890c87be914d4fc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Rete cloud Microsoft per Enterprise Architects
 
@@ -31,7 +31,7 @@ In questo articolo è disponibile il collegamento a una serie di articoli in cui
   
 ![File PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![File Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Visualizzare una pagina con le versioni in altre lingue](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54425)
   
-È inoltre possibile visualizzare tutti i modelli nelle [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e consultare la [Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://aka.ms/cloudarchitecture)).
+È inoltre possibile visualizzare tutti i modelli nelle [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e consultare la [Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://aka.ms/cloudarchitecture).
   
 Vedere le seguenti sezioni:
   
@@ -59,7 +59,7 @@ Vedere le seguenti sezioni:
     
     Passaggi del processo di progettazione per creare una rete virtuale Azure ottimale (VNet) per l'hosting di carichi di lavoro IT basati su server, tra cui sottoreti, spazi di indirizzi, routing, DNS, bilanciamento del carico e connettività di rete locale, altri VNet e Internet.
     
-Per un riepilogo di 30 minuti relativo ai punti principali del poster, vedere il corso [Optimize Your Network for Microsoft Cloud Offerings (Ottimizzare la rete per le offerte cloud di Microsoft)]((https://mva.microsoft.com/it-IT/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)) della Microsoft Virtual Academy.
+Per un riepilogo di 30 minuti relativo ai punti principali del poster, vedere il corso [Optimize Your Network for Microsoft Cloud Offerings (Ottimizzare la rete per le offerte cloud di Microsoft)](https://mva.microsoft.com/it-IT/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) della Microsoft Virtual Academy.
   
 > [!NOTE]
 > Questi articoli riflettono il rilascio di **giugno 2017** della rete cloud Microsoft per Enterprise Architects.
@@ -68,7 +68,7 @@ Per un riepilogo di 30 minuti relativo ai punti principali del poster, vedere il
 
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
