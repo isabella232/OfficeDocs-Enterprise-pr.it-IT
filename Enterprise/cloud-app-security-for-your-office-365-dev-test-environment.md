@@ -9,16 +9,14 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- TLG
-- Ent_TLGs
+ms.custom: TLG, Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Riepilogo: Configurare ed effettuare una dimostrazione di sicurezza di Office 365 Cloud App nell''ambiente di sviluppo e di testing di Office 365.'
-ms.openlocfilehash: b13931ca21b440188563feef9236cd70e6df084b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: a1a7269b5ac9bff949d9f7d31775bdaa2c4d3d3a
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security per l'ambiente di sviluppo/test di Office 365
 

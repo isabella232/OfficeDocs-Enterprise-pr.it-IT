@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.collection: Ent_O365
+ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: None
 ms.custom: Strat_O365_Enterprise
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Riepilogo: Creare siti del team SharePoint Online pubblici, privati, riservati e altamente riservati nell''ambiente di sviluppo e di testing politici campagne.'
-ms.openlocfilehash: cc410dc98e37ca6fc0e96f00f413e57ba1958d50
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: d1515d2534713de41c16640d0008b1f8146ab300
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Creare siti del team in un ambiente di sviluppo/test per la campagna politica
 
@@ -384,9 +384,9 @@ Configurare quindi la protezione delle informazioni di Azure con un nuovo criter
     
 11. In **Configurare le autorizzazioni per documenti e messaggi di posta elettronica contenenti questa etichetta** fare clic su **Proteggi**.
     
-12. Nella sezione **Protezione**, fare clic su **Azure (chiave cloud)**.
+12. Nella sezione **Protezione** fare clic su **Azure (chiave cloud)**.
     
-13. Nel pannello **Protezione**, in **Impostazioni di protezione**, fare clic su **+ Aggiungi autorizzazioni**.
+13. Nel pannello **Protezione** fare clic su **+ Aggiungi autorizzazioni** in **Impostazioni di protezione**.
     
 14. Nel pannello **Aggiungi autorizzazioni**, in **Specifica utenti e gruppi** fare clic su **+ Sfoglia la directory**.
     

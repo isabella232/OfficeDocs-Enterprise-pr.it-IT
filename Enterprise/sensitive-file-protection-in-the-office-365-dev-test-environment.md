@@ -9,16 +9,14 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- TLG
-- Ent_TLGs
+ms.custom: TLG, Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Riepilogo: Configurare e illustrare come Information Rights Management di Office 365 consente di proteggere i file riservati, anche quando vengono registrate per la raccolta siti di SharePoint Online non corretto.'
-ms.openlocfilehash: 388eb2a6288fc72771b6a554d1c9de78febe8a4e
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 22f12143dc7cb50c19a135f51c08cb4b9bf02f38
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protezione dei file sensibili nell’ambiente di sviluppo/test di Office 365
 
