@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Riepilogo: Connettersi all'organizzazione Office 365 con Office 365 PowerShell per eseguire attività di Office 365 admin center dalla riga di comando."
-ms.openlocfilehash: 9aa3fe8bc0f7debd01e3a3e5f91ca8403e696f56
-ms.sourcegitcommit: 5045bd498a9a531f34ac9db742e5cd9f15126bcc
+ms.openlocfilehash: 2f51c68acf55239c7d47f9b617a8a72965ead79d
+ms.sourcegitcommit: 7ed9108846227ca883cb5113543a165704d9bbc8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
@@ -123,7 +123,7 @@ Se non vengono visualizzati errori, controllare i requisiti seguenti:
 ## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>Connettersi con il modulo Azure Active Directory V2 PowerShell
 <a name="ConnectV2"> </a>
 
-I comandi di Microsoft Azure Active Directory Module per Windows PowerShell dispongono "AzureAD" nel loro nome del cmdlet.
+Comandi del modulo di Azure Active Directory V2 PowerShell hanno "AzureAD" nel loro nome del cmdlet.
 
 Per le procedure necessarie per i nuovi cmdlet nel [modulo di Azure Active Directory V2 PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory), utilizzare la procedura seguente per installare il modulo ed eseguire la connessione alla sottoscrizione Office 365.
 
