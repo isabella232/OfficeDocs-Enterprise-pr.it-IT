@@ -3,7 +3,7 @@ title: Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Riepilogo: Con Azure è possibile creare un ambiente di ripristino di emergenza per la farm locale di SharePoint. In questo articolo viene descritto come progettare e implementare questa soluzione."
-ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
-ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
+ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
 
@@ -89,7 +89,7 @@ Sono disponibili opzioni meno complesse per le organizzazioni con poca esperienz
   
 Nel materiale sussidiario di questo articolo viene descritto come implementare un ambiente warm standby. È anche possibile adattarlo a un ambiente cold standby, anche se è necessario seguire ulteriori procedure per supportare questo tipo di ambiente. In questo articolo non viene descritto come implementare una ambiente hot standby.
   
-Per ulteriori informazioni sulle soluzioni di ripristino di emergenza, vedere [Concetti relativi a ripristino di emergenza e disponibilità elevata in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) e[Scegliere una strategia di ripristino di emergenza per SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
+Per ulteriori informazioni sulle soluzioni di ripristino di emergenza, vedere [High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) e [Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
   
 ## <a name="solution-description"></a>Descrizione della soluzione
 <a name="SOL"> </a>
@@ -106,7 +106,7 @@ La figura seguente illustra questi tre elementi.
   
 **Figura: elementi di una soluzione con warm standby in Azure**
 
-![Elementi di una soluzione con warm standby di SharePoint in Azure](images/AZarch_AZWarmStndby.gif)
+![Elementi di una soluzione con warm standby di SharePoint in Azure](images/AZarch_AZWarmStndby.png)
   
 Il log shipping di SQL Server con Replica DFS viene utilizzato per copiare i backup di database e i registri transazioni nella farm di ripristino in Azure: 
   
@@ -181,7 +181,7 @@ Nella figura seguente viene illustrata una soluzione di ripristino di emergenza 
   
 **Figura: topologia ed elementi chiave di una farm di produzione e di una farm di ripristino con warm standby.**
 
-![Mostra la topologia e gli elementi chiave di una farm di produzione di SharePoint e una farm di ripristino con warm standby.](images/AZarchWarmStndby.gif)
+![Topologia di una farm di SharePoint e una farm di ripristino con warm standby](images/AZarch_AZWarmStndby.png)
   
 In questo diagramma:
   

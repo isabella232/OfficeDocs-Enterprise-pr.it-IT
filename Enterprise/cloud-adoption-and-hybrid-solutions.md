@@ -6,20 +6,20 @@ manager: laurawi
 layout: LandingPage
 ms.assetid: 
 ms.service: o365-solutions
-ms.topic: landing-page
+ms.topic: hub-page
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.date: 12/13/2017
 ms.author: JoeDavies-MSFT
-ms.openlocfilehash: 396d61debdd3f0cb222e9627b74a7baaa287c4c3
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
-ms.translationtype: MT
+ms.openlocfilehash: 32e15b5d80fd7c7a200987ea55bca927e6e02372
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 <h1>Soluzioni cloud aziendali</h1>
 <p>Risolvere i problemi aziendali utilizzando Microsoft Cloud. Informazioni sulle soluzioni cloud di sicurezza e ibride più recenti, sull'adozione cloud e altro.</p>
-<p>Le soluzioni tecniche ai problemi aziendali di oggi spesso interessano più prodotti e piattaforme. È possibile utilizzare l'infrastruttura locale esistente approfittando della flessibilità e della riduzione dei costi offerte dalle piattaforme e dai servizi Microsoft. Il nostro obiettivo è di fornire le informazioni necessarie per raggiungere gli obiettivi aziendali con prodotti e servizi Microsoft. </p>
+<p>Le soluzioni tecniche ai problemi aziendali di oggi spesso interessano più prodotti e piattaforme. È possibile utilizzare l'infrastruttura locale esistente approfittando della flessibilità e della riduzione dei costi offerte dalle piattaforme e dai servizi Microsoft. Il nostro obiettivo è di fornire le informazioni necessarie per raggiungere gli obiettivi aziendali con prodotti e servizi Microsoft.</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="/office365/enterprise/microsoft-cloud-it-architecture-resources">
@@ -32,8 +32,8 @@ ms.lasthandoff: 01/11/2018
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cloud risorse sull'architettura IT</h3>
-                <p>Utilizza questi strumenti di architettura e poster per informazioni sui servizi Cloud Microsoft e piattaforme, ad esempio Office 365, Microsoft Azure, mobilità aziendale Microsoft + sicurezza (EMS) / private Intune, Microsoft Dynamics 365, cloud datacenter e in locale soluzioni ibride e cloud.</p>
+                        <h3>Risorse sull'architettura IT del cloud</h3>
+                <p>Utilizzare questi poster e strumenti dell'architettura per informazioni su servizi e piattaforme Microsoft Cloud, tra cui Office 365, Microsoft Azure, Microsoft Enterprise Mobility + Security (EMS)/Intune, Microsoft Dynamics 365, datacenter cloud privato e soluzioni cloud e ibride locali.</p>
                     </div>
                 </div>
             </div>
@@ -51,8 +51,8 @@ ms.lasthandoff: 01/11/2018
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Modelli dell'architettura</h3>
-                <p>Utilizzare questi modelli dell'architettura e le opzioni di distribuzione per SharePoint, Exchange, Skype per le aziende e Lync per determinare la configurazione e la piattaforma ideale.</p>
+                        <h3>Modelli architetturali</h3>
+                <p>Utilizzare questi modelli architetturali e opzioni di sviluppo per SharePoint, Exchange, Skype for Business e Lync per determinare la piattaforma e la configurazione ideali.</p>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@ ms.lasthandoff: 01/11/2018
                     </div>
                     <div class="cardText">
                         <h3>Guide dei laboratori di testing</h3>
-                <p>Utilizzare queste cloud adozione testare guide dei laboratori (laboratori) per configurare gli ambienti di sviluppo e di testing per Office 365, Azure, mobilità aziendale + sicurezza (EMS) / prodotti Intune, Dynamics 365 e Office Server.</p>
+                <p>Utilizzare queste guide dei laboratori di testing sull'adozione del cloud per configurare ambienti di sviluppo e di testing per i prodotti Office 365, Azure, Enterprise Mobility + Security (EMS)/Intune, Dynamics 365 e Office Server.</p>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@ ms.lasthandoff: 01/11/2018
                     </div>
                     <div class="cardText">
                         <h3>Soluzioni ibride</h3>
-                <p>Informazioni su come distribuire i carichi di lavoro di Office Server in servizi di infrastruttura.</p>
+                <p>Informazioni su come distribuire i carichi di lavoro di Office Server nei servizi infrastruttura di Azure.</p>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@ ms.lasthandoff: 01/11/2018
                     </div>
                     <div class="cardText">
                         <h3>Soluzioni di sicurezza</h3>
-                <p>Informazioni su come distribuire soluzioni di sicurezza con servizi cloud Microsoft e piattaforme.</p>
+                <p>Informazioni su come distribuire soluzioni di sicurezza con i servizi e le piattaforme cloud di Microsoft.</p>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@ ms.lasthandoff: 01/11/2018
 
 <h2>Contattaci</h2>
 <ul>
-    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">Ottenere la soluzione necessaria</a><br>Si sta creando una contenuto per l'adozione cloud che si espande su più piattaforme Microsoft cloud e servizi. Inviaci Cosa pensa al contenuto di adozione il cloud, rivolgersi al contenuto specifico mediante l'invio di posta elettronica a cloudadopt@microsoft.com.</li><br>
-    <li><a href="https://aka.ms/caab">Partecipare alla discussione sulle soluzioni</a><br>Se si è sulle soluzioni basate su cloud, è consigliabile partecipare il Cloud adozione consulenza Consiglio (CAAB) per la connessione con una più grande e vivace community di sviluppatori contenuti Microsoft, ai professionisti del settore e i clienti di tutto il mondo. Per partecipare, aggiungere l'utente come membri dello spazio CAAB (scheda consulenza adozione di Cloud) della Community di Microsoft Tech e inviare un messaggio di posta elettronica rapido a <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>. Tutti gli utenti possono leggere il contenuto correlato al community nel CAAB <a href="https://blogs.technet.com/b/solutions_advisory_board/">blog</a>. Tuttavia, membri CAAB ottenere gli inviti per webinar privato che descrivono le nuove risorse adozione cloud e soluzioni.</li><br>
-    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">Ottenere l'immagine visualizzata</a><br>Se si desidera una copia modificabile dell'oggetto WordArt che viene visualizzato in questo articolo, verranno contenti inviare all'utente. La richiesta, incluso l'URL e il titolo dell'oggetto WordArt alla cloudadopt@microsoft.com della posta elettronica</li>
+    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">Ottenere la soluzione necessaria</a><br>Microsoft sta creando documenti contenenti soluzioni che fanno riferimento a numerosi prodotti e servizi. Fornire commenti e suggerimenti sulle soluzioni tra server proposte o richiedere una soluzione specifica inviando un'e-mail all'indirizzo MODAcontent@microsoft.com.</li><br>
+    <li><a href="https://aka.ms/caab">Partecipare alla discussione sulle soluzioni</a><br>Se si è appassionati di soluzioni basate sul cloud, prendere in considerazione l'idea di accedere al Cloud Adoption Advisory Board (CAAB) per connettersi con una community più ampia e vivace di sviluppatori di contenuti Microsoft, professionisti del settore e clienti di tutto il mondo. Per accedervi, diventare un membro dell'area CAAB (Cloud Adoption Advisory Board) della Community tecnica Microsoft e inviare una breve e-mail all'indirizzo <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>. Chiunque può leggere i contenuti correlati alla community nel <a href="https://blogs.technet.com/b/solutions_advisory_board/">blog di CAAB</a>. Tuttavia, i membri CAAB ricevono inviti a webinar privati che descrivono le nuove soluzioni e risorse relative all'adozione del cloud.</li><br>
+    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">Ottenere l'immagine visualizzata</a><br>Se si desidera una copia modificabile dell'immagine visualizzata in questo articolo, Microsoft si occuperà di inviarla. Inviare la propria richiesta tramite e-mail, includendo l'URL e il titolo dell'immagine, all'indirizzo cloudadopt@microsoft.com</li>
 </ul>
