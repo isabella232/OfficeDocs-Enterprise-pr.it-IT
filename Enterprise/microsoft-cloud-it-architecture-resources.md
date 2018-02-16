@@ -8,21 +8,19 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Architecture
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: 'Riepilogo: Acquisire informazioni su servizi cloud Microsoft e opzioni delle piattaforme. Rivedere la guida di orientamento del cloud aziendale, esplorare serie di architetture cloud e altro ancora.'
-ms.openlocfilehash: 94b0e732e84fe7ec47431b7521be4c21a1d858df
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 202e7f837275474694a37060803a272c9aa5bdc4
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 
- **Riepilogo:** Acquisire informazioni su servizi cloud Microsoft e opzioni delle piattaforme. Rivedere la guida di orientamento del cloud aziendale, esplorare serie di architetture cloud e altro ancora.
+ **Sintesi:** Acquisire informazioni su servizi cloud Microsoft e opzioni delle piattaforme. Rivedere la guida di orientamento del cloud aziendale, esplorare serie di architetture cloud e altro ancora.
   
 Questi poster e strumenti dell'architettura forniscono informazioni su servizi e piattaforme Microsoft Cloud, tra cui Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics 365, datacenter cloud privato e soluzioni cloud e locali ibride. Progettisti e architetti IT possono usare queste risorse per determinare le soluzioni ideali per i propri carichi di lavoro e prendere decisioni sulla base di componenti dell'infrastruttura, quali sicurezza e identità. 
   
