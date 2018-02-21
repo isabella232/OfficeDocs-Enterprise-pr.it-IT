@@ -12,16 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
 - PowerShell
-- apr17entnews
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Riepilogo: Guardare, elencare o visualizzare gli account utente in vari modi con Office 365 PowerShell.'
-ms.openlocfilehash: b27f9045d26d4dabd3ada70766491f722d822a91
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e9ffa439c1840cbbbd8a47c2835d9427330804be
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Visualizzare gli account utente con Office 365 PowerShell
 
@@ -29,7 +27,7 @@ ms.lasthandoff: 12/15/2017
   
 Sebbene sia possibile utilizzare l'interfaccia di amministrazione di Office 365 per visualizzare gli account per il tenant di Office 365, è possibile utilizzare Office 365 PowerShell ed effettuare alcune operazioni che non è l'interfaccia di amministrazione di Office 365.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
   
@@ -79,7 +77,7 @@ Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null}
 
 Questo comando indica a PowerShell di Office 365 di:
   
-- Ottenere tutte le informazioni sugli account utente ( **Get-MsolUser** ) e inviarlo al comando successivo ( **|** ).
+- Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).
     
 - Trovare tutti gli account utente con un percorso di utilizzo non specificata ( **Where-Object {$\_. UsageLocation - eq $Null}** ). Parentesi graffe, il comando consente di indicare a Office 365 PowerShell per trovare solo il set di account in cui gli account utente UsageLocation proprietà ( ** $ \_. UsageLocation** ) non è specificata ( **-eq $Null** ).
     
@@ -132,7 +130,7 @@ Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
 
 Questo comando indica a PowerShell di Office 365 di:
   
-- Ottenere tutte le informazioni sugli account utente ( **Get-MsolUser** ) e inviarlo al comando successivo ( **|** ).
+- Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).
     
 - Visualizza solo posizione dell'account utente nome, reparto e dati di utilizzo ( **Select-Object DisplayName, reparto, UsageLocation** ).
     
@@ -165,7 +163,7 @@ Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object Display
 
 Questo comando indica a PowerShell di Office 365 di:
   
-- Ottenere tutte le informazioni sugli account utente ( **Get-MsolUser** ) e inviarlo al comando successivo ( **|** ).
+- Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).
     
 - Trovare tutti gli account utente con un percorso di utilizzo non specificata ( **Where-Object {$\_. UsageLocation - eq $Null}** ) e inviare le informazioni ottenute con il comando successivo ( **|** ). Parentesi graffe, il comando è indica a Office 365 PowerShell per trovare solo il set di account in cui gli account utente UsageLocation proprietà ( ** $ \_. UsageLocation** ) non è specificata ( **-eq $Null** ).
     
@@ -208,7 +206,7 @@ Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
 
 Questo comando indica a PowerShell di Office 365 di:
   
-- Ottenere tutte le informazioni sugli account utente ( **Get-AzureADUser** ) e inviarlo al comando successivo ( **|** ).
+- Accedere a tutte le informazioni degli account utente ( **Get-AzureADUser** ) e inviarle al comando successivo ( **|** ).
     
 - Trovare tutti gli account utente con un percorso di utilizzo non specificata ( **Where-Object {$\_. UsageLocation - eq $Null}** ). Parentesi graffe, il comando consente di indicare a Office 365 PowerShell per trovare solo il set di account in cui gli account utente UsageLocation proprietà ( ** $ \_. UsageLocation** ) non è specificata ( **-eq $Null** ).
     
@@ -237,7 +235,7 @@ Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 
 Questo comando indica a PowerShell di Office 365 di:
   
-- Ottenere tutte le informazioni sugli account utente ( **Get-AzureADUser** ) e inviarlo al comando successivo ( **|** ).
+- Accedere a tutte le informazioni degli account utente ( **Get-AzureADUser** ) e inviarle al comando successivo ( **|** ).
     
 - Visualizza solo posizione dell'account utente nome, reparto e dati di utilizzo ( **Select-Object DisplayName, reparto, UsageLocation** ).
     
@@ -249,7 +247,7 @@ Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object Disp
 
 Questo comando indica a PowerShell di Office 365 di:
   
-- Ottenere tutte le informazioni sugli account utente ( **Get-AzureADUser** ) e inviarlo al comando successivo ( **|** ).
+- Accedere a tutte le informazioni degli account utente ( **Get-AzureADUser** ) e inviarle al comando successivo ( **|** ).
     
 - Trovare tutti gli account utente con un percorso di utilizzo non specificata ( **Where-Object {$\_. UsageLocation - eq $Null}** ) e inviare le informazioni ottenute con il comando successivo ( **|** ). Parentesi graffe, il comando è indica a Office 365 PowerShell per trovare solo il set di account in cui gli account utente UsageLocation proprietà ( ** $ \_. UsageLocation** ) non è specificata ( **-eq $Null** ).
     
@@ -257,11 +255,9 @@ Questo comando indica a PowerShell di Office 365 di:
     
 ## <a name="new-to-office-365"></a>Nuovo utente di Office 365?
 
-||
-|:-----|
-|![L'icona breve di apprendimento LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **New a Office 365?**         Scopri corsi video gratuiti per [i professionisti IT e gli amministratori di Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), per offerto da Learning LinkedIn. |
-   
-## <a name="see-also"></a>See also
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+  
+## <a name="see-also"></a>Vedere anche
 
 #### 
 

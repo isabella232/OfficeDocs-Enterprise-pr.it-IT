@@ -13,14 +13,13 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - LIL_Placement
-- DecEntMigration
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Questo articolo viene illustrato come utilizzare Office 365 PowerShell per determinare i servizi di Office 365 che sono stati assegnati agli utenti.
-ms.openlocfilehash: 59a6444e0f6618fd837e8eae567661499e795c69
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell
 
@@ -292,7 +291,7 @@ Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[
 E si un comando molto sorta. Ma viene creato un file CSV con tutti gli utenti e tutto il relativo stato servizio.
 
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 <a name="SeeAlso"> </a>
 
 Vedere i seguenti argomenti aggiuntivi sulla gestione degli utenti con Office 365 PowerShell:
@@ -324,8 +323,4 @@ Per ulteriori informazioni sui cmdlet utilizzati in questa procedura, vedere i s
 ## <a name="new-to-office-365"></a>Nuovo utente di Office 365?
 
 
-||
-|:-----|
-|![L'icona breve di apprendimento LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **New a Office 365?**         Scopri corsi video gratuiti per [i professionisti IT e gli amministratori di Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), per offerto da Learning LinkedIn. |
-   
-
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]

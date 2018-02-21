@@ -1,5 +1,5 @@
 ---
-title: "Contoso è necessario e dell'infrastruttura IT"
+title: Infrastruttura IT ed esigenze di Contoso
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,18 +9,16 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
 description: "Riepilogo: Comprendere la struttura di base di Contoso locale come la propria attività è necessario possono essere soddisfatti dall'offerte cloud di Microsoft e l'infrastruttura IT."
-ms.openlocfilehash: 98ead7ffa3164c3cd57ec50def836b690881ba63
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="contosos-it-infrastructure-and-needs"></a>Contoso è necessario e dell'infrastruttura IT
+# <a name="contosos-it-infrastructure-and-needs"></a>Infrastruttura IT ed esigenze di Contoso
 
  **Riepilogo:** Acquisire familiarità con la struttura di base di Contoso locale come la propria attività è necessario possono essere soddisfatti dall'offerte cloud di Microsoft e l'infrastruttura IT.
   
@@ -82,7 +80,7 @@ Basato su un'analisi delle offerte cloud di Microsoft, Contoso del reparto IT de
 |**Dynamics 365:** Utilizzare la gestione di fornitori e clienti basata su cloud. Rimuovere partner extranet nella DMZ.<br/> Esigenza azienda: 2  <br/> |Applicazioni per dispositivi mobili sono basati sul cloud, anziché Parigi basate su Data Center.  <br/> Le esigenze aziendali: 4 3  <br/> |Eseguire la migrazione dei dati da centri dati locali e le applicazioni di utilizzo poco.  <br/> Esigenza azienda: 5  <br/> |
 |**Intune/EMS:** Gestire iOS e dispositivi Android. <br/> Esigenza azienda: 3  <br/> ||Aggiungere server temporanei e archiviazione per esigenze di elaborazione di fine del trimestre.  <br/> Esigenza azienda: 6  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Contoso nel Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
