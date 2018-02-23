@@ -8,64 +8,62 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Architecture
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 'Riepilogo: Cosa devono sapere gli architetti IT degli scenari ibridi che utilizzano i servizi cloud e le piattaforme Microsoft.'
-ms.openlocfilehash: 9972241d5e7291a2cecf8c72811f34115dcf116a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: e31981c87d7b1ca350eff0acc3a63092092c8567
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
-# <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a><span data-ttu-id="09567-103">Cloud ibrido Microsoft per Enterprise Architects</span><span class="sxs-lookup"><span data-stu-id="09567-103">Microsoft Hybrid Cloud for Enterprise Architects</span></span>
+# <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a><span data-ttu-id="78403-103">Cloud ibrido Microsoft per Enterprise Architects</span><span class="sxs-lookup"><span data-stu-id="78403-103">Microsoft Hybrid Cloud for Enterprise Architects</span></span>
 
- <span data-ttu-id="09567-104">**Riepilogo:** Cosa devono sapere gli architetti IT degli scenari ibridi che utilizzano i servizi cloud e le piattaforme Microsoft.</span><span class="sxs-lookup"><span data-stu-id="09567-104">**Summary:** What IT architects need to know about hybrid scenarios using Microsoft cloud services and platforms.</span></span>
+ <span data-ttu-id="78403-104">**Riepilogo:** Cosa devono sapere gli architetti IT degli scenari ibridi che utilizzano i servizi cloud e le piattaforme Microsoft.</span><span class="sxs-lookup"><span data-stu-id="78403-104">**Summary:** What IT architects need to know about hybrid scenarios using Microsoft cloud services and platforms.</span></span>
   
-<span data-ttu-id="09567-p101">In questo articolo è disponibile il collegamento a una serie di articoli in cui viene descritto cosa devono sapere gli architetti IT sull'architettura ibrida e sulle configurazioni con i servizi cloud e le piattaforme Microsoft. È possibile visualizzare questo articolo anche come poster di 7 pagine e stamparlo in formato tabloid (noto anche come ledger, 11 x 17 o A3).</span><span class="sxs-lookup"><span data-stu-id="09567-p101">This article links you to a set of articles that describe what IT architects need to know about hybrid architecture and configurations with Microsoft cloud services and platforms. You can also view this article as a 7-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
+<span data-ttu-id="78403-p101">In questo articolo è disponibile il collegamento a una serie di articoli in cui viene descritto cosa devono sapere gli architetti IT sull'architettura ibrida e sulle configurazioni con i servizi cloud e le piattaforme Microsoft. È possibile visualizzare questo articolo anche come poster di 7 pagine e stamparlo in formato tabloid (noto anche come ledger, 11 x 17 o A3).</span><span class="sxs-lookup"><span data-stu-id="78403-p101">This article links you to a set of articles that describe what IT architects need to know about hybrid architecture and configurations with Microsoft cloud services and platforms. You can also view this article as a 7-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
   
-<span data-ttu-id="09567-107">[![Immagine di scorrimento per modello ibrido del cloud Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
-)</span><span class="sxs-lookup"><span data-stu-id="09567-107">[![Thumb image for the Microsoft hybrid cloud model](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+<span data-ttu-id="78403-107">[![Immagine di scorrimento per modello ibrido del cloud Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+)</span><span class="sxs-lookup"><span data-stu-id="78403-107">[![Thumb image for the Microsoft hybrid cloud model](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )</span></span>
   
-<span data-ttu-id="09567-108">![File PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![File Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![Visualizzare una pagina con le versioni in altre lingue](images/Common_Images/GlobeIcon.png)
-[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54424)</span><span class="sxs-lookup"><span data-stu-id="09567-108">![PDF file](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio file](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![See a page with versions in additional languages](images/Common_Images/GlobeIcon.png)
+<span data-ttu-id="78403-108">![File PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![File Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![Visualizzare una pagina con le versioni in altre lingue](images/Common_Images/GlobeIcon.png)
+[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54424)</span><span class="sxs-lookup"><span data-stu-id="78403-108">![PDF file](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio file](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![See a page with versions in additional languages](images/Common_Images/GlobeIcon.png)
 [More languages](https://www.microsoft.com/download/details.aspx?id=54424)</span></span>
   
-<span data-ttu-id="09567-109">È inoltre possibile visualizzare tutti i modelli nelle [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e consultare la [Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://aka.ms/cloudarchitecture).</span><span class="sxs-lookup"><span data-stu-id="09567-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
+<span data-ttu-id="78403-109">È inoltre possibile visualizzare tutti i modelli nelle [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e consultare la [Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://aka.ms/cloudarchitecture).</span><span class="sxs-lookup"><span data-stu-id="78403-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
   
-<span data-ttu-id="09567-110">Vedere le seguenti sezioni:</span><span class="sxs-lookup"><span data-stu-id="09567-110">See the following sections:</span></span>
+<span data-ttu-id="78403-110">Vedere le seguenti sezioni:</span><span class="sxs-lookup"><span data-stu-id="78403-110">See the following sections:</span></span>
   
-- [<span data-ttu-id="09567-111">Panoramica del cloud ibrida</span><span class="sxs-lookup"><span data-stu-id="09567-111">Hybrid cloud overview</span></span>](hybrid-cloud-overview.md)
+- [<span data-ttu-id="78403-111">Panoramica del cloud ibrida</span><span class="sxs-lookup"><span data-stu-id="78403-111">Hybrid cloud overview</span></span>](hybrid-cloud-overview.md)
     
-    <span data-ttu-id="09567-112">Offerte di cloud Microsoft (SaaS, Azure PaaS e Azure IaaS) e relativi elementi comuni.</span><span class="sxs-lookup"><span data-stu-id="09567-112">Microsoft's cloud offerings (SaaS, Azure PaaS, and Azure IaaS) and their common elements.</span></span>
+    <span data-ttu-id="78403-112">Offerte di cloud Microsoft (SaaS, Azure PaaS e Azure IaaS) e relativi elementi comuni.</span><span class="sxs-lookup"><span data-stu-id="78403-112">Microsoft's cloud offerings (SaaS, Azure PaaS, and Azure IaaS) and their common elements.</span></span>
     
-- [<span data-ttu-id="09567-113">Architettura di scenari basati su cloud ibrida Microsoft</span><span class="sxs-lookup"><span data-stu-id="09567-113">Architecture of Microsoft hybrid cloud scenarios</span></span>](architecture-of-microsoft-hybrid-cloud-scenarios.md)
+- [<span data-ttu-id="78403-113">Architettura di scenari basati su cloud ibrida Microsoft</span><span class="sxs-lookup"><span data-stu-id="78403-113">Architecture of Microsoft hybrid cloud scenarios</span></span>](architecture-of-microsoft-hybrid-cloud-scenarios.md)
     
-    <span data-ttu-id="09567-114">Un diagramma dell'architettura del cloud ibrido per offerte sul cloud Microsoft, che mostra i livelli comuni di infrastruttura, rete e identità locali.</span><span class="sxs-lookup"><span data-stu-id="09567-114">An architectural diagram of hybrid cloud for Microsoft's cloud offerings, showing the common layers of on-premises infrastructure, networking, and identity.</span></span>
+    <span data-ttu-id="78403-114">Un diagramma dell'architettura del cloud ibrido per offerte sul cloud Microsoft, che mostra i livelli comuni di infrastruttura, rete e identità locali.</span><span class="sxs-lookup"><span data-stu-id="78403-114">An architectural diagram of hybrid cloud for Microsoft's cloud offerings, showing the common layers of on-premises infrastructure, networking, and identity.</span></span>
     
-- [<span data-ttu-id="09567-115">Scenari per il cloud ibrido per SaaS Microsoft (Office 365)</span><span class="sxs-lookup"><span data-stu-id="09567-115">Hybrid cloud scenarios for Microsoft SaaS (Office 365)</span></span>](hybrid-cloud-scenarios-for-microsoft-saas-office-365.md)
+- [<span data-ttu-id="78403-115">Scenari per il cloud ibrido per SaaS Microsoft (Office 365)</span><span class="sxs-lookup"><span data-stu-id="78403-115">Hybrid cloud scenarios for Microsoft SaaS (Office 365)</span></span>](hybrid-cloud-scenarios-for-microsoft-saas-office-365.md)
     
-    <span data-ttu-id="09567-116">Architettura di scenari ibridi per SaaS e descrizioni delle principali configurazioni ibride per Skype for Business, SharePoint Server ed Exchange Server.</span><span class="sxs-lookup"><span data-stu-id="09567-116">The SaaS hybrid scenario architecture and descriptions of key hybrid configurations for Skype for Business, SharePoint Server, and Exchange Server.</span></span>
+    <span data-ttu-id="78403-116">Architettura di scenari ibridi per SaaS e descrizioni delle principali configurazioni ibride per Skype for Business, SharePoint Server ed Exchange Server.</span><span class="sxs-lookup"><span data-stu-id="78403-116">The SaaS hybrid scenario architecture and descriptions of key hybrid configurations for Skype for Business, SharePoint Server, and Exchange Server.</span></span>
     
-- [<span data-ttu-id="09567-117">Scenari basati su cloud ibrida per Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="09567-117">Hybrid cloud scenarios for Azure PaaS</span></span>](hybrid-cloud-scenarios-for-azure-paas.md)
+- [<span data-ttu-id="78403-117">Scenari basati su cloud ibrida per Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="78403-117">Hybrid cloud scenarios for Azure PaaS</span></span>](hybrid-cloud-scenarios-for-azure-paas.md)
     
-    <span data-ttu-id="09567-118">Architettura di scenari ibridi per PaaS di Azure, descrizione di un'applicazione ibrida per PaaS di Azure con esempio e descrizione di Estensione database di SQL Server 2016.</span><span class="sxs-lookup"><span data-stu-id="09567-118">The Azure PaaS hybrid scenario architecture, the description of an Azure PaaS hybrid application with an example, and the description of SQL Server 2016 Stretch Database.</span></span>
+    <span data-ttu-id="78403-118">Architettura di scenari ibridi per PaaS di Azure, descrizione di un'applicazione ibrida per PaaS di Azure con esempio e descrizione di Estensione database di SQL Server 2016.</span><span class="sxs-lookup"><span data-stu-id="78403-118">The Azure PaaS hybrid scenario architecture, the description of an Azure PaaS hybrid application with an example, and the description of SQL Server 2016 Stretch Database.</span></span>
     
-- [<span data-ttu-id="09567-119">Scenari cloud ibridi per IaaS di Azure</span><span class="sxs-lookup"><span data-stu-id="09567-119">Hybrid cloud scenarios for Azure IaaS</span></span>](hybrid-cloud-scenarios-for-azure-iaas.md)
+- [<span data-ttu-id="78403-119">Scenari cloud ibridi per IaaS di Azure</span><span class="sxs-lookup"><span data-stu-id="78403-119">Hybrid cloud scenarios for Azure IaaS</span></span>](hybrid-cloud-scenarios-for-azure-iaas.md)
     
-    <span data-ttu-id="09567-120">Architettura di scenari ibridi per IaaS di Azure e descrizione di un'applicazione line-of business (LOB) ospitata in IaaS di Azure.</span><span class="sxs-lookup"><span data-stu-id="09567-120">The Azure IaaS hybrid scenario architecture and the description of a line of business (LOB) application hosted in Azure IaaS.</span></span>
+    <span data-ttu-id="78403-120">Architettura di scenari ibridi per IaaS di Azure e descrizione di un'applicazione line-of business (LOB) ospitata in IaaS di Azure.</span><span class="sxs-lookup"><span data-stu-id="78403-120">The Azure IaaS hybrid scenario architecture and the description of a line of business (LOB) application hosted in Azure IaaS.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="09567-121">Questi articoli riflettono la versione di **giugno 2017** del poster sul cloud ibrido Microsoft per Enterprise Architects.</span><span class="sxs-lookup"><span data-stu-id="09567-121">These articles reflect the **June 2017** release of the Microsoft Hybrid Cloud for Enterprise Architects poster.</span></span>
+> <span data-ttu-id="78403-121">Questi articoli riflettono la versione di **giugno 2017** del poster sul cloud ibrido Microsoft per Enterprise Architects.</span><span class="sxs-lookup"><span data-stu-id="78403-121">These articles reflect the **June 2017** release of the Microsoft Hybrid Cloud for Enterprise Architects poster.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="09567-122">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="09567-122">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="78403-122">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="78403-122">See Also</span></span>
 
-[<span data-ttu-id="09567-123">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="09567-123">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="78403-123">Risorse sull'architettura IT del cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="78403-123">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[<span data-ttu-id="09567-124">Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT</span><span class="sxs-lookup"><span data-stu-id="09567-124">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="78403-124">Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT</span><span class="sxs-lookup"><span data-stu-id="78403-124">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
