@@ -9,16 +9,14 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Office_Other
-- PowerShell
+ms.custom: Ent_Office_Other, PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 'Riepilogo: utilizzare PowerShell di Office 365 per gestire Microsoft Exchange Online, inclusa la visualizzazione della configurazione della cassetta postale e la creazione di report avanzati.'
-ms.openlocfilehash: 984347207e3773887850620b6bc194cf5ff9705d
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 16237660b727df04656b3525c8e26f7a132ec4e3
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Gestire Exchange Online con PowerShell di Office 365
 
@@ -26,14 +24,11 @@ ms.lasthandoff: 01/11/2018
   
 Una delle attività principali di qualsiasi amministratore di Microsoft Exchange Online è la gestione delle cassette postali e la creazione di report su di esse. Anche se è possibile eseguire alcune di queste operazioni nell'interfaccia di amministrazione di Office 365, altre attività sono molto più rapide e semplici in PowerShell di Office 365. Per ulteriori informazioni, vedere i seguenti argomenti:
   
-- 
-  [Visualizzare informazioni sulla cassetta postale di Exchange Online con PowerShell di Office 365](https://technet.microsoft.com/en-us/library/mt771881%28v=exchg.160%29.aspx)
+- [Visualizzare informazioni sulla cassetta postale di Exchange Online con PowerShell di Office 365](https://technet.microsoft.com/it-IT/library/mt771881%28v=exchg.160%29.aspx)
     
-- 
-  [Visualizzare report di Exchange Online con PowerShell di Office 365](https://technet.microsoft.com/en-us/library/mt771882%28v=exchg.160%29.aspx)
+- [Visualizzare report di Exchange Online con PowerShell di Office 365](https://technet.microsoft.com/it-IT/library/mt771882%28v=exchg.160%29.aspx)
     
-- 
-  [Visualizzare i cmdlet disponibili per gli amministratori di Exchange Online con PowerShell di Office 365](https://technet.microsoft.com/en-us/library/mt771883%28v=exchg.160%29.aspx)
+- [Visualizzare i cmdlet disponibili per gli amministratori di Exchange Online con PowerShell di Office 365](https://technet.microsoft.com/it-IT/library/mt771883%28v=exchg.160%29.aspx)
     
 ## <a name="see-also"></a>Vedere anche
 

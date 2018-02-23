@@ -9,17 +9,14 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- PowerShell
-- O365ITProTrain
-- Ent_Office_Other
+ms.custom: PowerShell, O365ITProTrain, Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Riepilogo: Informazioni su come usare PowerShell di Office 365 con utenti e licenze di Office 365, Skype for Business online, SharePoint Online e Microsoft Exchange Online.'
-ms.openlocfilehash: 8732d8f6170608e76df25f521ac83feda62b2d2a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 2561c9f94d589ee58f35ac701d1c0f5ef6b9e63b
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Gestire Office 365 con PowerShell di Office 365
 
@@ -37,7 +34,7 @@ Selezionare l'argomento in base alle proprie esigenze:
     
     Iniziare da qui se i moduli di PowerShell di Office 365 sono stati installati e se si desiderano ulteriori informazioni sull'utilizzo dei comandi di automazione per gestire account utente e licenze.
     
-- [PowerShell di Office 365 per SharePoint Online]((https://technet.microsoft.com/it-IT/library/fp161362.aspx))
+- [PowerShell di Office 365 per SharePoint Online](https://technet.microsoft.com/it-IT/library/fp161362.aspx)
     
     Iniziare da qui se i moduli di PowerShell di Office 365 sono stati installati e si desidera utilizzare i comandi di automazione per eseguire la gestione di SharePoint Online.
     
@@ -57,7 +54,7 @@ Selezionare l'argomento in base alle proprie esigenze:
     
     Iniziare da qui se i moduli di PowerShell di Office 365 sono stati installati e si desidera utilizzare i comandi di automazione per eseguire la gestione di Skype for Business online.
     
-- [Skype for Business Online cmdlets]((http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx))
+- [Skype for Business Online cmdlets](http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx)
     
     Iniziare da qui se si ha familiarità con PowerShell di Office 365 e per ottenere ulteriori informazioni sui comandi specifici per gestire le impostazioni di conferenze telefoniche con accesso esterno, Cloud PBX e chiamate PSTN per l'organizzazione e utilizzare le funzionalità di creazione di report per monitorare e fornire informazioni sull'utilizzo di Skype for Business online.
     

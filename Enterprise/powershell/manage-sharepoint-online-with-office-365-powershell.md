@@ -9,16 +9,14 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- PowerShell
-- Ent_Office_Other
+ms.custom: PowerShell, Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: utilizzare PowerShell di Office 365 per gestire gli utenti, i gruppi e i gruppi di siti di SharePoint Online.'
-ms.openlocfilehash: 2caef048196a2ffdf1d481f728dae05c0c9b3ae9
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 4ebe4fb5b4824a0333a4220f81ee37510d164bd2
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Gestire SharePoint Online con PowerShell di Office 365
 
@@ -26,11 +24,11 @@ ms.lasthandoff: 01/11/2018
   
 Una delle attività principali di qualsiasi amministratore di SharePoint Online è la gestione di siti, gruppi di siti e utenti. Anche se è possibile eseguire alcune di queste operazioni nell'interfaccia di amministrazione di Office 365, altre attività sono molto più rapide e semplici in PowerShell di Office 365. Per ulteriori informazioni, vedere i seguenti argomenti:
   
-- [Creare siti di SharePoint Online e aggiungere utenti con PowerShell di Office 365]((http://technet.microsoft.com/library/c55d4ccf-ab36-481a-a285-c40234e11abd.aspx))
+- [Creare siti di SharePoint Online e aggiungere utenti con PowerShell di Office 365](http://technet.microsoft.com/library/c55d4ccf-ab36-481a-a285-c40234e11abd.aspx)
     
-- [Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Office 365]((http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx))
+- [Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Office 365](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
     
-- [Manage site groups]((http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx))
+- [Manage site groups](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
     
 ## <a name="see-also"></a>Vedere anche
 
