@@ -9,14 +9,16 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Other, PowerShell
+ms.custom:
+- Ent_Office_Other
+- PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 'Riepilogo: utilizzare PowerShell di Office 365 per gestire Microsoft Exchange Online, inclusa la visualizzazione della configurazione della cassetta postale e la creazione di report avanzati.'
-ms.openlocfilehash: 16237660b727df04656b3525c8e26f7a132ec4e3
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 5a4853a8dc5c597b8cdee5a1fbfe1ad130feff4b
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Gestire Exchange Online con PowerShell di Office 365
 

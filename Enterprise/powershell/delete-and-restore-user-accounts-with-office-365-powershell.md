@@ -9,14 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, Ent_Office_Other, O365ITProTrain
+ms.custom:
+- PowerShell
+- Ent_Office_Other
+- O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Informazioni su come usare PowerShell di Office 365 per eliminare e ripristinare gli account utente di Office 365.
-ms.openlocfilehash: 1f1212de342894f6ca9f478a0830c45458d27511
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 09f3595ed7cd5434efb2897a43ba1bbca5286c25
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Eliminare e ripristinare account utente con Office 365 PowerShell
 
