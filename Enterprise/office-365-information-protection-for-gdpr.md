@@ -1,34 +1,35 @@
 ---
-title: Protezione delle informazioni di Office 365 per PILR
+title: Information Protection di Office 365 per GDPR
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: overview
+ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 
-description: Questa soluzione viene illustrato come proteggere i dati riservati archiviato in servizi di Office 365.
-ms.openlocfilehash: 208134e78f7f5c40ee61d678b2f1b42bde738c68
-ms.sourcegitcommit: c5a12b35a475ef4a5a80085e1bb2829d115d7c4a
-ms.translationtype: MT
+description: Questa soluzione mostra come proteggere i dati riservati archiviati nei servizi di Office 365.
+ms.openlocfilehash: 235ff945fbc3f58c8bf102d41d89795ff4e1b64d
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/13/2018
 ---
-# <a name="office-365-information-protection-for-gdpr"></a>Protezione delle informazioni di Office 365 per PILR
+# <a name="office-365-information-protection-for-gdpr"></a>Information Protection di Office 365 per GDPR
 
- **Riepilogo:** Questa soluzione viene illustrato come proteggere i dati riservati archiviato in servizi di Office 365.
+ **Sintesi:** questa soluzione mostra come proteggere i dati riservati archiviati nei servizi di Office 365.
   
-Questa soluzione sono incluse indicazioni fornite per l'individuazione, la classificazione, protezione e il monitoraggio dei dati personali. Questa soluzione generale Data Protection norme (PILR) viene utilizzato come esempio, ma è possibile applicare lo stesso processo per garantire la conformità con molti altre normative.
+Questa soluzione include suggerimenti prescrittivi per individuare, classificare, proteggere e monitorare i dati personali. Questa soluzione utilizza l'RGPD come esempio, ma è possibile applicare lo stesso processo per raggiungere la conformità con molti altri regolamenti.
 
-[![Immagine in generale di Office 365 Information Protection per poster PILR.](images/InfoProtectGDPR_Poster/o365infoprotectforgdpr_thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.pdf)
+[![Immagine del cursore nel poster di Office 365 Information Protection per GDPR.](images/InfoProtectGDPR_Poster/o365infoprotectforgdpr_thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.pdf)
   
 [PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.pdf)  | [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.vsdx)
   
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vedere anche
 
 [Soluzioni di sicurezza](security-solutions.md)
   
