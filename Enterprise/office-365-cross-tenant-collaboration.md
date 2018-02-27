@@ -2,8 +2,9 @@
 title: Collaborazione tra tenant Office 365
 ms.author: deniseb
 author: denisebmsft
+ms.reviewer: chrfox
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -11,11 +12,11 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: 48a24184-2868-4bb2-866c-1907d1bad505
 description: Informazioni su come le organizzazioni possono collaborare in modo sicuro tra tenant di Office 365.
-ms.openlocfilehash: 24f8c52021dea073022be237474853335e5c81d3
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: b06435be6ad6b12c25dd49e42b5330125f993ffd
+ms.sourcegitcommit: fb14e6dd6ce36a7af32edadeba7e5f7251a72b39
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="office-365-cross-tenant-collaboration"></a>Collaborazione tra tenant Office 365
 
@@ -23,11 +24,6 @@ Informazioni su come le organizzazioni possono collaborare in modo sicuro tra te
   
 Le organizzazioni possono utilizzare Office 365 per collaborare ai progetti. Ad esempio Skype per le aziende consente agli utenti di incontrarsi in linea, condivisione file e chat tramite messaggistica immediata. In alternativa, gli utenti possono utilizzare gruppi di Office 365 per visualizzare le conversazioni, i file e gli elementi del calendario tutti in un unico sito.
   
-In alcuni casi, un'organizzazione ha un'azienda devono collaborare con un'altra organizzazione utilizzando un altro tenant di Office 365. Ad esempio: ___
+In alcuni casi, un'organizzazione ha un'azienda devono collaborare con un'altra organizzazione utilizzando un altro tenant di Office 365. Ad esempio la condivisione dei calendari con un'altra organizzazione, la condivisione siti e documenti con utenti esterni e collaborazione in Yammer.
   
-## <a name="what-is-office-365-cross-tenant-collaboration"></a>Che cos'è la collaborazione tra tenant Office 365?
-<a name="whatisctc"> </a>
-
-Collaborazione tra tenant Office 365 si riferisce a coloro che utilizza un tenant di Office 365 possibilità di collaborare in modo protetto con altri utenti che utilizza un altro tenant di Office 365. Si supponga ad esempio 
-  
-
+Per ulteriori informazioni, vedere [Office 365 tenant tra la collaborazione](https://support.office.com/en-us/article/Office-365-inter-tenant-collaboration-eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d).
