@@ -9,17 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
-- PowerShell
-- Ent_Office_Other
+ms.custom: O365ITProTrain, PowerShell, Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Sintesi: utilizzare PowerShell di Office 365 e il cmdlet Add-MsolRoleMember per assegnare ruoli agli account utente.'
-ms.openlocfilehash: dee9aede72a79a32f03c94a0793464e1393edd95
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 68e8be24f1581aa3430bca95206ecc1b2512f09a
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Assegnare i ruoli agli account utente con Office 365 PowerShell
 
@@ -133,5 +130,5 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 [Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
 #### 
 
-[Add-MsolRoleMember]((https://msdn.microsoft.com/library/dn194120.aspx))
+[Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
 

@@ -9,17 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
-- Ent_Office_Other
-- PowerShell
+ms.custom: O365ITProTrain, Ent_Office_Other, PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Viene spiegato come utilizzare PowerShell di Office 365 per visualizzare gli account utente con e senza licenza.
-ms.openlocfilehash: fe4f75d9d8dbc85efbc71856192dbaece3e84fbc
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e691ba7db96b34166f03ccd90d87fee0d2ee09f8
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Visualizzare gli utenti con e senza licenza con PowerShell di Office 365
 
@@ -57,17 +54,17 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>Versione estesa (istruzioni con spiegazioni dettagliate)
 
-Gli account utente di Office 365 e le licenze di Office 365 non necessitano di una corrispondenza uno a uno: è possibile che degli utenti di Office 365 non dispongano di una licenza di Office 365 come è possibile che esistano licenze di Office 365 che non sono state assegnate a un utente (in effetti, un singolo account utente può avere anche  *più*  licenze di Office 365). Quando si crea un nuovo account utente di Office 365 (per ulteriori informazioni in merito, consultare l'articolo [Concedere in licenza Office 365 agli utenti con Windows PowerShell]((http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx))) non si deve necessariamente assegnare a tale utente una licenza: il nuovo utente avrà un account valido, ma non potrà accedere a Office 365. Se proverà a effettuare l'accesso, vedrà qualcosa di simile a questo:
+Gli account utente di Office 365 e le licenze di Office 365 non necessitano di una corrispondenza uno a uno: è possibile che degli utenti di Office 365 non dispongano di una licenza di Office 365 come è possibile che esistano licenze di Office 365 che non sono state assegnate a un utente (in effetti, un singolo account utente può avere anche  *più*  licenze di Office 365). Quando si crea un nuovo account utente di Office 365 (per ulteriori informazioni in merito, consultare l'articolo [Concedere in licenza Office 365 agli utenti con Windows PowerShell](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx)) non si deve necessariamente assegnare a tale utente una licenza: il nuovo utente avrà un account valido, ma non potrà accedere a Office 365. Se proverà a effettuare l'accesso, vedrà qualcosa di simile a questo:
   
 ![Utente senza una licenza di Office 365 valida.](images/o365_powershell_no_license.png)
   
-Allo stesso modo, potrebbe esserci un utente che ha preso un periodo di assenza, ad esempio per un periodo sabbatico o un congedo di maternità/paternità. In un caso simile, potresti rimuovere la licenza dall'utente, ma lasciarne integro l'account (vale a dire, lasciare invariati tutti i valori proprietà, come indirizzo e numero di telefono). Facendolo, puoi assegnare tale licenza a qualcun altro (ad esempio, al sostituto della persona assente). Quando l'utente tornerà a lavoro potrai assegnargli una nuova licenza e potrà riprendere a lavorare come se non se ne fosse mai andato.
+Allo stesso modo, potrebbe esserci un utente che ha preso un periodo di assenza, ad esempio per un periodo sabbatico o un congedo di maternità/paternità. In un caso simile, è possibile rimuovere la licenza dall'utente, ma lasciarne integro l'account (vale a dire, lasciare invariati tutti i valori proprietà, come indirizzo e numero di telefono). Facendolo, è possibile assegnare tale licenza a qualcun altro (ad esempio, al sostituto della persona assente). Quando l'utente tornerà a lavoro sarà possibile assegnargli una nuova licenza e potrà riprendere a lavorare come se non se ne fosse mai andato.
   
-Questo per dire che sì, puoi avere utenti che hanno account, ma che non hanno licenze. O viceversa.
+Questo per dire che si possono avere utenti che hanno account, ma che non hanno licenze. O viceversa.
   
-Nell'articolo [Visualizzare le licenze e i servizi con PowerShell di Office 365](view-licenses-and-services-with-office-365-powershell.md) viene illustrato come è possibile determinare il numero di licenze di Office 365 acquistate dalla tua organizzazione nonché quante di quelle licenze sono state assegnate agli utenti. Sono informazioni importanti. Allo stesso modo, è importante sapere a quali dei tuoi utenti sono state assegnate le licenze e quali invece non ne hanno nessuna. E con questo articolo scoprirai come farlo.
+Nell'articolo [Visualizzare le licenze e i servizi con PowerShell di Office 365](view-licenses-and-services-with-office-365-powershell.md) viene illustrato come è possibile determinare il numero di licenze di Office 365 acquistate dalla propria organizzazione nonché quante di quelle licenze sono state assegnate agli utenti. Sono informazioni importanti. Allo stesso modo, è importante sapere a quali dei propri utenti sono state assegnate le licenze e quali invece non ne hanno nessuna. E con questo articolo è possibile scoprire come farlo.
   
-Come è già noto, il cmdlet **Get-MsolUser** fornisce informazioni su tutti i tuoi account utente di Office 365. Se si cercano informazioni rapide sugli utenti di Office 365, non si deve fare altro che eseguire questo comando in PowerShell di Office 365:
+Come è già noto, il cmdlet **Get-MsolUser** fornisce informazioni sui propri account utente di Office 365. Se si cercano informazioni rapide sugli utenti di Office 365, non si deve fare altro che eseguire questo comando in PowerShell di Office 365:
   
 ```
 Get-MsolUser
@@ -88,7 +85,7 @@ AlexD@litwareinc.com        Alex Darrow                     True
 
 Come è possibile vedere, uno dei valori proprietà ottenuti riguarda la proprietà **isLicensed**. Se **isLicensed** è uguale a `False` allora l'utente non possiede una licenza per Office 365. In altre parole, se si desidera, è possibile semplicemente scorrere l'elenco degli utenti e scegliere quelli la cui proprietà **isLicensed** è impostata su `False`.
   
-In ogni caso, scorrere un elenco di utenti per vedere quelli senza licenza può essere facile se hai un numero relativamente piccolo di utenti. Se invece hai un gran numero di utenti, tale operazione, nella migliore delle ipotesi, potrebbe essere decisamente noiosa (e, a seconda di come Windows PowerShell è stato configurato, potrebbe non essere possibile perché c'è un limite al numero di righe di output che possono essere visualizzate contemporaneamente nella console di Windows PowerShell).
+In ogni caso, scorrere un elenco di utenti per vedere quelli senza licenza può essere facile se si ha un numero relativamente piccolo di utenti. Se invece si ha un gran numero di utenti, tale operazione, nella migliore delle ipotesi, potrebbe essere decisamente noiosa (e, a seconda di come Windows PowerShell è stato configurato, potrebbe non essere possibile perché c'è un limite al numero di righe di output che possono essere visualizzate contemporaneamente nella console di Windows PowerShell).
   
 Tenendo a mente ciò, un modo migliore per elencare gli utenti senza licenza consiste nell'eseguire il seguente comando:
   
@@ -104,7 +101,7 @@ UserPrincipalName           DisplayName                     isLicensed
 BelindaN@litwareinc.com     Belinda Newman                  False
 ```
 
-Come puoi vedere, abbiamo un solo utente senza licenza. E se volessimo un elenco degli utenti  *con licenza*  ? Sarebbe leggermente più complicato:
+Come è evidente, c'è un solo utente senza licenza. E se volessimo un elenco degli utenti  *con licenza*  ? Sarebbe leggermente più complicato:
   
 ```
 Get-MsolUser | Where-Object {$_.isLicensed -eq $true}

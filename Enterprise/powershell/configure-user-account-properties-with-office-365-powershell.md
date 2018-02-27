@@ -9,17 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
-- Ent_Office_Other
-- PowerShell
+ms.custom: O365ITProTrain, Ent_Office_Other, PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: "Sintesi: utilizzare PowerShell di Office 365 per configurare le proprietà di uno o più account utente nel tenant di Office 365."
-ms.openlocfilehash: eac568d20d1b33e06c37e920f9fd31582c8bb648
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 65857511886534e18ba3e67b79ab4d74a0119568
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurare le proprietà degli account utente con Office 365 PowerShell
 
@@ -33,7 +30,7 @@ Le procedure descritte in questo argomento richiedono all'utente di connettersi 
   
 ## <a name="change-properties-for-a-specific-user-account"></a>Modificare le proprietà per un account utente specifico
 
-Per configurare le proprietà per un account utente specifico, utilizzare il cmdlet [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)) e specificare le proprietà da impostare o modificare. In questo esempio viene modificata la posizione di utilizzo di Belinda Newman in Francia:
+Per configurare le proprietà per un account utente specifico, utilizzare il cmdlet [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) e specificare le proprietà da impostare o modificare. In questo esempio viene modificata la posizione di utilizzo di Belinda Newman in Francia:
   
 ```
 Set-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" -UsageLocation "FR"
@@ -75,7 +72,7 @@ Identificare l'account con il parametro **-UserPrincipalName** e impostare o mod
     
     Si tratta del codice paese o area geografica a due lettere ISO 3166-1 alpha-2 (A2).
     
-Per ulteriori parametri, vedere [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)).
+Per ulteriori parametri, vedere [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).
   
 Per visualizzare i nomi principali di tutti gli utenti, eseguire il comando seguente.
   

@@ -9,17 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- PowerShell
-- Ent_Office_Other
-- O365ITProTrain
+ms.custom: PowerShell, Ent_Office_Other, O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Informazioni su come usare PowerShell di Office 365 per creare account utente in Office 365.
-ms.openlocfilehash: 97830f8158f84e6978cf3f2d168aa83d9fc551e6
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 58c4f6b1d75bb8b77cbf6616b8036dd753ddc3f3
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Creare account utente con Office 365 PowerShell
 
@@ -121,7 +118,7 @@ Per ulteriori informazioni sui cmdlet utilizzati in questa procedura, vedere i s
   
 - [Export-Csv](https://go.microsoft.com/fwlink/p/?LinkId=113299)
     
-- [Import-Csv]((https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv))
+- [Import-Csv](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv)
     
 - [New-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
     

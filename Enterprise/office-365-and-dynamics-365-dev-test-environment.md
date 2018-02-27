@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_TLGs
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: 'Riepilogo: Utilizzare questa guida del laboratorio di testing per aggiungere Dynamics 365 all''ambiente di sviluppo/test di Office 365.'
-ms.openlocfilehash: d903d9ba268eca27baaaf12a003896990447a620
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: f13cf81f989867e543439e1ccb6ecd7f8ba55cb6
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365 e Dynamics 365
 
@@ -30,7 +28,7 @@ Con le istruzioni disponibili in questo articolo, è possibile aggiungere una so
   
 - [Microsoft Dynamics 365 for Sales](https://www.microsoft.com/dynamics365/sales). Aumentare le vendite tramite l'automazione e l'intelligence digitale, consentendo ai venditori di restare concentrati e lavorare con maggiore efficienza.
     
-- [Microsoft Dynamics 365 for Customer Service](https://www.microsoft.com/dynamics365/customer-service). Conquista la fedeltà degli agenti fornendo loro le informazioni complete e l'intelligence digitale di cui hanno bisogno per offrire un servizio continuo.
+- [Microsoft Dynamics 365 for Customer Service](https://www.microsoft.com/dynamics365/customer-service). Conquistare la fedeltà degli agenti fornendo loro le informazioni complete e l'intelligence digitale di cui hanno bisogno per offrire un servizio continuo.
     
 - [Microsoft Dynamics 365 for Field Service](https://www.microsoft.com/dynamics365/field-service). Padroneggiare le chiamate del servizio, ottimizzando pianificazioni, equipaggiando i dipendenti e usando strumenti predittivi per aumentare il profitto.
     
