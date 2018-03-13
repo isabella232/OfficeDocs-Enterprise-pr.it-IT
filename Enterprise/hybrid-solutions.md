@@ -3,7 +3,7 @@ title: Soluzioni ibride
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 3/2/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Sintesi: utilizzare gli articoli per distribuire i carichi di lavoro di Office Server in Microsoft Azure.'
-ms.openlocfilehash: 0bc47f8f9b10d51d801973c719625247be39fa9b
-ms.sourcegitcommit: 38001ca323a60126fcf31667393c31322044cedc
+ms.openlocfilehash: 37294a80217b5aa99aa4589fe464ca92d2f2ab23
+ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="hybrid-solutions"></a>Soluzioni ibride
 
@@ -25,10 +25,12 @@ ms.lasthandoff: 02/11/2018
 Con Microsoft Azure, è ora possibile distribuire alcuni carichi di lavoro di Office Server in genere distribuiti in locale a servizi infrastruttura di Azure.
   
 Per l'infrastruttura di gestione delle identità di Office 365 di Azure:
+
+- [Utilizzare Azure AD per l'autenticazione di SharePoint Server](using-azure-ad-for-sharepoint-server-authentication.md)
+
+- [Distribuire la sincronizzazione della directory (DirSync) di Office 365 in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Connettere una rete locale a una rete virtuale di Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
-    
-- [Distribuire la sincronizzazione della directory (DirSync) di Office 365 in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
     
 - [Distribuire l'autenticazione federata ad alta visibilità per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
