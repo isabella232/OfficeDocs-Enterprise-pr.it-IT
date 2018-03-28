@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Riepilogo: Connettersi all'organizzazione Office 365 con Office 365 PowerShell per eseguire attività di Office 365 admin center dalla riga di comando."
-ms.openlocfilehash: a13fcc401a4d00f49dcc4eec2a5acba36075233f
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+ms.openlocfilehash: 7a76b0968ea5c3f214bf4e6c5b8e2e6f995386d6
+ms.sourcegitcommit: 5b194d3d1c1fffe9c33747dd0118298326970ce7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
@@ -30,9 +30,9 @@ Office 365 PowerShell consente di gestire le impostazioni di Office 365 dalla ri
 Notare che queste istruzioni di connessione sono identiche a quelle nell'argomento [Azure Active Directory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113).
   
 > [!TIP]
-> **Nuovo PowerShell?** Visualizzare una [Panoramica video di PowerShell](http://technet.microsoft.com/library/https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)per offerto da Learning LinkedIn. 
+> **Nuovo PowerShell?** Visualizzare una [Panoramica video di PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)per offerto da Learning LinkedIn. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni preliminari
 
 - Tempo stimato per il completamento: 5 minuti
     
