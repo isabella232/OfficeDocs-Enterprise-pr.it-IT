@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 'Riepilogo: utilizzare Windows PowerShell remoto per connettersi a Exchange Online tramite il parametro DelegatedOrg.'
-ms.openlocfilehash: 857c97e5d3374f293b98298419932af4ce2dfa19
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d8cbb6640419ba2f1de868ae88b0a273c3f71ae7
+ms.sourcegitcommit: f3f81d2c2e8290948d93f3f787a679c804840256
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Connettersi ai tenant Exchange Online con Windows PowerShell remoto per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
@@ -40,11 +40,11 @@ Windows PowerShell remoto consente di gestire le impostazioni di Exchange Online
     
   - Windows Server 2008 R2 SP1*
     
-    * È necessario installare NET Framework 4.5.1 o .NET Framework 4.5 e quindi Windows Management Framework 4.0 o Windows Management Framework 3.0 . Per ulteriori informazioni, vedere le risorse riportate di seguito:
+    \* È necessario installare NET Framework 4.5.1 o .NET Framework 4.5 e quindi Windows Management Framework 4.0 o Windows Management Framework 3.0 . Per ulteriori informazioni, vedere le risorse riportate di seguito:
     
-  - [Installazione di .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868)
+    - [Installazione di .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868)
     
-  - [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) o[Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)
+    - [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) o [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)
     
 - Per informazioni sui tasti di scelta rapida applicabili alle procedure in questo argomento, vedere [Tasti di scelta rapida nell'interfaccia di amministrazione di Exchange](https://go.microsoft.com/fwlink/p/?LinkId=534017).
     
