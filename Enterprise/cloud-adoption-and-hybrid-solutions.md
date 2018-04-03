@@ -1,11 +1,11 @@
 ---
 title: Soluzioni cloud aziendali
-description: "Risolvere i problemi aziendali utilizzando Microsoft Cloud. Informazioni sulle soluzioni cloud di sicurezza e ibride più recenti, sull'adozione cloud e altro."
+description: Risolvere i problemi aziendali utilizzando Microsoft Cloud. Informazioni sulle soluzioni cloud di sicurezza e ibride più recenti, sull'adozione cloud e altro.
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 layout: LandingPage
-ms.assetid: 
+ms.assetid: ''
 ms.service: o365-solutions
 ms.topic: hub-page
 localization_priority: Normal

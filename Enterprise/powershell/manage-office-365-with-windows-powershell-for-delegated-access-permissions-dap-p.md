@@ -9,7 +9,7 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 'Riepilogo: i Partner di Syndication e Cloud Solution Provider (CSP) possono utilizzare Windows PowerShell per gestire i tenant dei clienti di Office 365.'
 ms.openlocfilehash: 7920680f390b8a38f53386bd4af1efff895e4d6e
