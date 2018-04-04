@@ -73,7 +73,6 @@
 #### [Eliminare una posizione geografica](delete-a-geo-location.md)
 #### [Esperienza utente in un ambiente multi-geo](multi-geo-user-experience.md)
 ### [Configurare OneDrive per Business Multi-Geo](multi-geo-tenant-configuration.md)
-### [Configurare la ricerca di OneDrive per Business Multi-Geo](configure-search-for-multi-geo.md)
 ### [Spostare una raccolta di OneDrive in un'altra posizione geografica](move-onedrive-between-geo-locations.md)
 ## [Soluzioni di sicurezza](security-solutions.md)
 ### [Information Protection di Office 365 per GDPR](office-365-information-protection-for-gdpr.md)
