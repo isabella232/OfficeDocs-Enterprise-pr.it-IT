@@ -14,7 +14,7 @@ localization_priority: Priority
 ms.custom:
 - Strat_O365_Enterprise
 - GDPR
-ms.assetid: 
+ms.assetid: ''
 description: Panoramica su Information Protection di Office 365 per GDPR. Informazioni su come individuare, classificare, protegger e monitorare i dati personali.
 ms.openlocfilehash: b3af91608d545b221694b9e4a18db07b85d7541a
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
