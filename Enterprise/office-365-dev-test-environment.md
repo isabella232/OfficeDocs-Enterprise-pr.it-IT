@@ -3,7 +3,7 @@ title: Ambiente di sviluppo/test di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Riepilogo: Utilizzare questa guida dei laboratori di testing per creare una sottoscrizione di prova di Office 365 per la valutazione o sviluppo e di testing.'
-ms.openlocfilehash: b3c9e83dfab3aaf02ad598021e11965657e877bb
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365
 
@@ -56,11 +56,11 @@ Questa configurazione è costituita dalle macchine virtuali DC1, APP1 e CLIENT1 
 
 Per avviare la sottoscrizione di valutazione di Office 365 E5, è necessario innanzitutto un nome di società fittizia e un nuovo account Microsoft.
   
-1. È consigliabile che si utilizza un valore variant il nome di società Contoso per il nome della società è una società fittizia utilizzata nel contenuto di esempio di Microsoft, ma non obbligatorio. Registrare il proprio nome società fittizia: ___
+1. È consigliabile che si utilizza un valore variant il nome di società Contoso per il nome della società è una società fittizia utilizzata nel contenuto di esempio di Microsoft, ma non obbligatorio. Registrare il proprio nome società fittizia: ___.
     
 2. Per l'iscrizione per un nuovo account di Microsoft, passare a [https://outlook.com](https://outlook.com) e creare un account con un nuovo account di posta elettronica e l'indirizzo. Iscriviti a Office 365 si utilizzerà questo account.
     
-  - Registrare il nome e cognome del nuovo account qui: _______________________________
+  - Registrare il nome e il cognome del nuovo account qui: ___.
     
   - Registrare l'indirizzo e-mail del nuovo account qui: _____________________________@outlook.com
     
@@ -105,7 +105,7 @@ Stop-Process -Name Explorer -Force
     
     Annotare la password in un posto sicuro.
     
-    Registrare il nome della società fittizia per fare riferimento come **nome dell'organizzazione**, qui: ___
+    Registrare il nome della società fittizia per fare riferimento come **nome dell'organizzazione**, qui: ___.
     
 5. Fare clic su **Crea account personale**.
     
@@ -113,7 +113,7 @@ Stop-Process -Name Explorer -Force
     
 7. Digitare il codice di verifica dal messaggio di testo ricevuto e quindi fare clic su **Avanti**.
     
-8. Registrare l'URL della pagina di accesso qui (selezionare e copiare): ___________________________________________
+8. Registrare l'URL pagina di accesso di seguito (selezionare e copia): ___.
     
 9. Registrare l'ID utente qui (selezionare e copiare): ___________________________________________.onmicrosoft.com
     
@@ -259,17 +259,17 @@ Registrare questi valori per utilizzarli o distribuire altre guide di lab di tes
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - URL del sito di produzione: https://___.sharepoint.com/sites/production
+  - URL del sito di produzione:https://______________________________________________.sharepoint.com/sites/production
     
-  - URL del sito Vendite: https://______________________________________________.sharepoint.com/sites/sales
+  - URL del sito vendite:https://______________________________________________.sharepoint.com/sites/sales
     
-  - URL del sito Supporto tecnico: https://______________________________________________.sharepoint.com/sites/support
+  - URL del sito di supporto:https://______________________________________________.sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Passaggi successivi
 
 Utilizzare questi articoli aggiuntivi nell'ambiente di sviluppo/test di Office 365:
   
-- [DirSync per l'ambiente di sviluppo/test di Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Sincronizzazione delle directory per l'ambiente di sviluppo e di testing di Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
 - [Autenticazione a più fattori per l'ambiente di sviluppo e di testing di Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     

@@ -3,7 +3,7 @@ title: Connettersi a PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/02/2018
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Riepilogo: Connettersi all'organizzazione Office 365 con Office 365 PowerShell per eseguire attività di Office 365 admin center dalla riga di comando."
-ms.openlocfilehash: 7a76b0968ea5c3f214bf4e6c5b8e2e6f995386d6
-ms.sourcegitcommit: 5b194d3d1c1fffe9c33747dd0118298326970ce7
+ms.openlocfilehash: 1ba14628d765022309353fa8cecbeb56667bcf87
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
@@ -32,7 +32,7 @@ Notare che queste istruzioni di connessione sono identiche a quelle nell'argomen
 > [!TIP]
 > **Nuovo PowerShell?** Visualizzare una [Panoramica video di PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)per offerto da Learning LinkedIn. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni preliminari
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Tempo stimato per il completamento: 5 minuti
     
@@ -102,7 +102,7 @@ Se non vengono visualizzati errori, controllare i requisiti seguenti:
   
 - **Un problema comune è una password non corretta**. Eseguire di nuovo passaggio 3. e prestare particolare attenzione per il nome utente e la password che immessi.
     
-- **I Microsoft Azure Active Directory Module per Windows PowerShell è necessario Microsoft .NET Framework 3.5. _x_ è attivata nel computer in uso**. È probabile che il computer dispone di una versione più recente installata (ad esempio, 4 o 4.5. _x_), ma con le versioni precedenti la compatibilità con le versioni precedenti di .NET Framework può essere attivata o disattivata. Per ulteriori informazioni, vedere gli argomenti seguenti:
+- * *The Microsoft Azure Active Directory Module per Windows PowerShell è necessario Microsoft .NET Framework 3.5.* funzione x * è abilitata per il computer * *. È probabile che il computer sia installata una versione più recente (ad esempio, 4 o 4.5.* x *), ma con le versioni precedenti la compatibilità con le versioni precedenti di .NET Framework può essere attivata o disattivata. Per ulteriori informazioni, vedere gli argomenti seguenti:
     
   - Per Windows Server 2012 o Windows Server 2012 R2, vedere [abilitare .NET Framework 3.5 con l'aggiunta di ruoli e guidata funzionalità](https://go.microsoft.com/fwlink/p/?LinkId=532368)
     
@@ -125,7 +125,11 @@ Se non vengono visualizzati errori, controllare i requisiti seguenti:
 
 Comandi del modulo di Azure Active Directory V2 PowerShell hanno "AzureAD" nel loro nome del cmdlet.
 
-Per le procedure necessarie per i nuovi cmdlet nel [modulo di Azure Active Directory V2 PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory), utilizzare la procedura seguente per installare il modulo ed eseguire la connessione alla sottoscrizione Office 365.
+Per le procedure necessarie per i nuovi cmdlet nel modulo di Azure Active Directory V2 PowerShell, utilizzare la procedura seguente per installare il modulo ed eseguire la connessione alla sottoscrizione Office 365.
+
+>[!Note]
+>Per informazioni sul supporto per diverse versioni di Microsoft Windows, vedere [il modulo di Azure Active Directory V2 PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) .
+>
 
 ### <a name="step-1-install-required-software"></a>Passaggio 1: Installazione del software necessario
 
@@ -168,13 +172,9 @@ Dopo la connessione, è possibile utilizzare i cmdlet di nuovi il [modulo di Azu
   
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
-  
-[Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
-  
-[Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-
-[Ottieni credenziali](https://go.microsoft.com/fwlink/p/?LinkId=389618)
-  
-[Connettere-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
+- [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
+- [Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
+- [Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
+- [Ottieni credenziali](https://go.microsoft.com/fwlink/p/?LinkId=389618)
+- [Connettere-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
 
