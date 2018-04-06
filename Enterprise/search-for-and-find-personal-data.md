@@ -14,7 +14,7 @@ localization_priority: Priority
 ms.custom:
 - Strat_O365_Enterprise
 - GDPR
-ms.assetid: 
+ms.assetid: ''
 description: Informazioni su come cercare e trovare i dati personali dell'utente in Office 365.
 ms.openlocfilehash: f19aed534fe2bb4154edc31f0d1b0c82afcc1f04
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
