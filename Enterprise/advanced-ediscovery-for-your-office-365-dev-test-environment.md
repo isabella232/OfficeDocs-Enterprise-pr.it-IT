@@ -10,15 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- TLG-
+- TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
-description: 'Riepilogo: Configurare e illustrare eDiscovery avanzate di Office 365 con dati di esempio nell''ambiente di sviluppo e di testing di Office 365.'
-ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: "Riepilogo: Configurare e illustrare eDiscovery avanzate di Office 365 con dati di esempio nell'ambiente di sviluppo e di testing di Office 365."
+ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery per l'ambiente di sviluppo/test di Office 365
 
@@ -29,7 +29,7 @@ Office 365 eDiscovery avanzate consente di trovare rapidamente e analizzare le i
 Con le istruzioni disponibili in questo articolo, è possibile creare un insieme limitato di dati per una controversia fittizia relativa a un contratto e analizzarli con Advanced eDiscovery.
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi al Test Lab Guide di One Microsoft Cloud.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365
 

@@ -3,7 +3,7 @@ title: Connettersi a PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 04/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Riepilogo: Connettersi all'organizzazione Office 365 con Office 365 PowerShell per eseguire attività di Office 365 admin center dalla riga di comando."
-ms.openlocfilehash: 1ba14628d765022309353fa8cecbeb56667bcf87
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 95d1e5717d3fec7f0d3102beb65eebaef28bd6cf
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
@@ -45,7 +45,7 @@ Notare che queste istruzioni di connessione sono identiche a quelle nell'argomen
     > [!NOTE]
     >Utilizzare una versione a 64 bit di Windows. È stato rimosso il supporto per la versione a 32 bit di Microsoft Azure Active Directory Module per Windows PowerShell ottobre del 2014.
     
--  Office 365 di lavoro o scuola che l'account utilizzato per queste procedure esigenze per essere un membro di un ruolo di amministrazione di Office 365. Per ulteriori informazioni, vedere [ruoli di amministratore su Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+-  Queste procedure sono progettate per gli utenti che sono membri di un ruolo di amministrazione di Office 365. Per ulteriori informazioni, vedere [ruoli di amministratore su Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Connessione con il modulo di Microsoft Azure Active Directory per Windows PowerShell
 

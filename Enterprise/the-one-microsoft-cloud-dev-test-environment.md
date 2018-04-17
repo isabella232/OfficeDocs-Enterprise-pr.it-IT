@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Riepilogo: Utilizzare questa guida dei laboratori di testing per creare un ambiente di sviluppo e di testing che includa tutte le offerte cloud di Microsoft.'
-ms.openlocfilehash: 90f93b1050ec0c2b82f4ed42c76413d68b314b7c
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: c1d0e190e6d7e3871cf4289729b53cc0b4b5d04d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Ambiente di sviluppo/test One Microsoft Cloud
 
@@ -59,9 +58,9 @@ In questa fase, è possibile iscriversi per la sottoscrizione di valutazione di 
   
 1. Con un browser di uno computer desktop o da CLIENT1, accedere al portale di Office 365 in [https://portal.office.com](https://portal.office.com) con le credenziali dell'account di amministratore globale.
     
-2. Fare clic sul riquadro **Amministratore**.
+2. Scegliere il riquadro **Amministrazione**.
     
-3. Scheda di **interfaccia di amministrazione di Office** nel browser, nel riquadro di spostamento sinistra fare clic su **fatturazione > servizi di acquisto**.
+3. Nella scheda **Interfaccia di amministrazione di Office** del browser fare clic su **Fatturazione > Servizi di acquisto** nel riquadro di spostamento di sinistra.
     
 4. Nella pagina **servizi di acquisto** individuare l'elemento di **sicurezza E5 + mobilità aziendale** . Posizionare il puntatore del mouse su di esso e fare clic su **Start versione di valutazione gratuita**.
     
@@ -74,7 +73,7 @@ In questa fase, è possibile iscriversi per la sottoscrizione di valutazione di 
   
 Successivamente, attivare la licenza Enterprise Mobility + Security E5 per tutti gli account utente.
   
-1. Nella scheda **Centro di amministrazione di Office 365** nel browser, nel riquadro di spostamento sinistra fare clic su **utenti > utenti attivi**.
+1. Nella scheda **Interfaccia di amministrazione di Office 365** del browser fare clic su **Utenti > Utenti attivi** nel riquadro di spostamento di sinistra.
     
 2. Fare clic sull'account di amministratore globale e quindi fare clic su **Modifica** per **le licenze del prodotto**.
     

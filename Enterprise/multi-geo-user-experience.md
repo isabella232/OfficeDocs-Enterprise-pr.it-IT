@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Per conoscere l'esperienza utente di SharePoint e OneDrive in un ambiente multi-geo.
-ms.openlocfilehash: 91837883ef7c970674a500afa4fda9adfafc6d5b
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 42e384d3e93ca3f5a06a8ee07a37b10e21477038
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Esperienza utente in un ambiente multi-geo
 

@@ -3,7 +3,7 @@ title: Effettuare la connessione a tutti i servizi Office 365 in un'unica finest
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 04/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Riepilogo: Connessione di Windows PowerShell per tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell."
-ms.openlocfilehash: ccd8ed1dc53d306aa77d79ac0270f5bd24dd9298
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: ffa603ec50c95f5800315eee07b4d01e058852f3
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell
 
@@ -32,11 +32,7 @@ Quando si utilizza PowerShell per gestire Office 365, è possibile avere fino a 
   
 Questo non è ottimale per la gestione di Office 365 perché non è possibile scambiare dati tra i cinque windows per la gestione dei servizi tra. In questo argomento viene descritto come utilizzare una singola istanza di Windows PowerShell da cui è possibile gestire Office 365, Skype Online Business, Exchange Online, SharePoint Online e la sicurezza &amp; centro conformità.
 
->[!Note]
->In questo articolo è in fase di aggiornamento per l'utilizzo del modulo di Azure Active Directory V2 PowerShell e per l'autenticazione a più fattori (MFA).
->
-  
-## <a name="before-you-begin"></a>Operazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 <a name="BeforeYouBegin"> </a>
 
 Per poter gestire tutti di Office 365 da una singola istanza di Windows PowerShell, prendere in considerazione i prerequisiti seguenti:
@@ -74,8 +70,8 @@ Per poter gestire tutti di Office 365 da una singola istanza di Windows PowerShe
   Set-ExecutionPolicy RemoteSigned
   ```
 
-## <a name="connection-steps"></a>Passaggi di connessione
-<a name="BeforeYouBegin"> </a>
+## <a name="connection-steps-when-using-a-password"></a>Passaggi di connessione quando si utilizza una password
+<a name="ConnStepsPassword"> </a>
 
 Ecco la procedura per la connessione a tutti i servizi in un'unica finestra di PowerShell.
   
@@ -113,18 +109,16 @@ Ecco la procedura per la connessione a tutti i servizi in un'unica finestra di P
     
   ```
   $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-  Import-PSSession $exchangeSession -DisableNameChecking
+  Import-PSSession $exchangeSession
   ```
 
 7. Eseguire questi comandi per la connessione per la protezione &amp; centro conformità.
     
   ```
-  $ccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication Basic -AllowRedirection
-  Import-PSSession $ccSession -Prefix cc
+  $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+  Import-PSSession $SccSession
   ```
-> [!NOTE]
-> Il prefisso di testo "cc" viene aggiunto a *tutti i* sicurezza &amp; sono presenti più nomi di cmdlet centro conformità in modo che è possibile eseguire i cmdlet in Exchange Online e la sicurezza &amp; centro conformità nella stessa sessione di Windows PowerShell. Ad esempio, **Get-RoleGroup** diventa **Get-ccRoleGroup** nella protezione &amp; centro conformità.
-  
+
 Di seguito sono tutti i comandi in un unico blocco. Specificare il nome dell'host del dominio e quindi eseguire tutte contemporaneamente.
   
 ```
@@ -138,18 +132,45 @@ Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-Import-PSSession $exchangeSession -DisableNameChecking
-$ccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication Basic -AllowRedirection
-Import-PSSession $ccSession -Prefix cc
+Import-PSSession $exchangeSession
+$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+Import-PSSession $SccSession
 ```
 Quando è pronti per chiudere la finestra di Windows PowerShell, eseguire questo comando per rimuovere le sessioni attive per Skype per Business Online, Exchange Online, SharePoint Online e la sicurezza &amp; centro conformità:
   
 ```
-Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSession $ccSession ; Disconnect-SPOService
+Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSession $SccSession ; Disconnect-SPOService
 ```
 
+## <a name="connection-steps-when-using-multi-factor-authentication"></a>Passaggi di connessione quando si utilizza l'autenticazione a più fattori
+<a name="ConnStepsMFA"> </a>
+
+Di seguito sono tutti i comandi in un unico blocco a cui connettersi Azure Active Directory, SharePoint Online e Skype per Buiness con l'autenticazione a più fattori in un'unica finestra. Specificare il nome di utente nome principale (UPN) di un account amministratore globale e il nome host del dominio e quindi eseguire tutte contemporaneamente.
+
+````
+$acctName="<UPN of a global administrator account>"
+$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+#Azure Active Directory
+#If you are running Office 365 commands that contain "AzureAd" in their name, use this command:
+Connect-AzureAD
+#If you are running Office 365 commands that contain "Msol" in their name, comment the preceding command and un-comment the following command:
+#Connect-MsolService
+#SharePoint Online
+Connect-SPOService -Url https://$domainHost-admin.sharepoint.com
+#Skype for Business Online
+$sfboSession = New-CsOnlineSession -UserName $acctName
+Import-PSSession $sfboSession
+````
+
+Per Exchange Online e la sicurezza &amp; centro conformità, vedere gli argomenti seguenti per la connessione con l'autenticazione a più fattori:
+
+- [Connessione a Exchange Online PowerShell con l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).
+- [Connettersi alla sicurezza di Office 365 PowerShell centro conformità con l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
+ 
+Si noti che in entrambi i casi, è necessario connettersi utilizzando sessioni separate di Exchange Online Remote PowerShell Module.
+
+
 ## <a name="new-to-office-365"></a>Nuovo utente di Office 365?
-<a name="LongVersion"> </a>
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 

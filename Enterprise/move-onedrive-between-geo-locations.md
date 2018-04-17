@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Informazioni su come spostare un sito di OneDrive in un'altra posizione geografica.
-ms.openlocfilehash: a31f683170fdb83dac90e9d09884c3020d1a47b1
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 7ce9106fa7d8d144f0f8935713b4df926a73fb6b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Spostare un sito di OneDrive in un'altra posizione geografica 
 
@@ -76,9 +77,9 @@ Ad esempio, per spostare il OneDrive di matt@contosoenergy.onmicrosoft.com da EU
 
 Per pianificare uno spostamento geo per un secondo momento, utilizzare uno dei seguenti parametri:
 
--   _PreferredMoveBeginDate_ – move probabile iniziare attualmente specificato.
+-   _PreferredMoveBeginDate_ – move probabile iniziare attualmente specificato. È necessario specificare l'ora in base al formato UTC (Coordinated Universal Time Coordinated).
 
--   _PreferredMoveEndDate_ – probabile spostamento completate manualmente questo intervallo di tempo specificato singoli impegno maggiore.
+-   _PreferredMoveEndDate_ – probabile spostamento completate manualmente questo intervallo di tempo specificato singoli impegno maggiore. È necessario specificare l'ora in base al formato UTC (Coordinated Universal Time Coordinated). 
 
 ## <a name="cancel-a-onedrive-geo-move"></a>Annullare uno spostamento geo OneDrive 
 

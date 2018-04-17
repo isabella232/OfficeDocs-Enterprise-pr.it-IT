@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
-description: 'Riepilogo: Utilizzare questa guida del laboratorio di testing per aggiungere Dynamics 365 all''ambiente di sviluppo/test di Office 365.'
-ms.openlocfilehash: f13cf81f989867e543439e1ccb6ecd7f8ba55cb6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+description: "Riepilogo: Utilizzare questa guida del laboratorio di testing per aggiungere Dynamics 365 all'ambiente di sviluppo/test di Office 365."
+ms.openlocfilehash: 24f121c9e5f8a25bae61ce4a59b42d528ffbda17
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365 e Dynamics 365
 
@@ -32,7 +34,7 @@ Con le istruzioni disponibili in questo articolo, è possibile aggiungere una so
     
 - [Microsoft Dynamics 365 for Field Service](https://www.microsoft.com/dynamics365/field-service). Padroneggiare le chiamate del servizio, ottimizzando pianificazioni, equipaggiando i dipendenti e usando strumenti predittivi per aumentare il profitto.
     
-- [Microsoft Dynamics 365 for Project Service Automation](https://www.microsoft.com/it-IT/dynamics365/project-service-automation). Completare correttamente i progetti e creare relazioni redditizie con dipendenti produttivi e strumenti intelligenti.
+- [Microsoft Dynamics 365 for Project Service Automation](https://www.microsoft.com/en-us/dynamics365/project-service-automation). Completare correttamente i progetti e creare relazioni redditizie con dipendenti produttivi e strumenti intelligenti.
     
 Per la sottoscrizione di valutazione per 365 Dynamics, è possibile esplorare una o più delle soluzioni riportate.
   
@@ -56,7 +58,7 @@ In questa fase, è possibile iscriversi per la sottoscrizione di valutazione di 
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Iscriversi a  una sottoscrizione di valutazione Dynamics 365
 
-1. Utilizzando un browser sul computer desktop (configurazione leggera) o da CLIENT1 (configurazione aziendale simulata), accedere al portale di Office 365 su [https://portal.office.com](https://portal.office.com) con le credenziali dell'account di amministratore globale.
+1. Utilizzando un browser nel computer desktop (leggero) o da CLIENT1 (simulare enterprise), accedere al portale di Office 365 in [https://portal.office.com](https://portal.office.com) con le credenziali dell'account di amministratore globale.
     
 2. Fare clic sul riquadro **Amministratore**.
     

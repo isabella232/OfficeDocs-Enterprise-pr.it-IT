@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Informazioni su come configurare OneDrive per Business Multi-Geo.
-ms.openlocfilehash: 4ef31df802eeaedf2eecbdd295d2e359816e4909
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 56268acd319684ecb713e674b8accbe311d08dce
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive per la configurazione tenant Business Multi-Geo
 
@@ -23,7 +24,7 @@ Prima di configurare il tenant di OneDrive per Business Multi-Geo, è necessario
 
 Per utilizzare OneDrive per Business Multi-Geo, è necessario pianificare _Funzionalità Multi-Geo in Office 365_ . Lavorare con il team di account da aggiungere questo piano per il tenant. Il team di account verrà la connessione con lo specialista di licenze appropriato e ottenere il tenant configurato.
 
-Si noti che il piano di _Funzionalità Multi-Geo in Office 365_ è un piano di servizio a livello utente. È necessaria una licenza per ogni utente che si desidera ospitare in una posizione setellite. È possibile aggiungere altre licenze nel tempo mentre si aggiungono utenti nelle posizioni satellitari.
+Si noti che il piano di _Funzionalità Multi-Geo in Office 365_ è un piano di servizio a livello utente. È necessaria una licenza per ogni utente che si desidera ospitare in una posizione satellitare. È possibile aggiungere altre licenze nel tempo mentre si aggiungono utenti nelle posizioni satellitari.
 
 Una volta tenant è stato fornito con il piano di _Funzionalità Multi-Geo in Office 365_ , la scheda **percorsi Geo** diventerà disponibile nell' [interfaccia di amministrazione di OneDrive](https://admin.onedrive.com).
 
@@ -88,7 +89,7 @@ Per aggiungere una posizione geografica satellitari
 
 6. Fare clic su **Chiudi**.
 
-Una volta completato il provisioning di una posizione satellitare, si riceverà una conferma di posta elettronica. Quando viene visualizzata nella nuova posizione geografica in blu nella mappa nella scheda **percorsi Geo** nell'interfaccia di amministrazione OneDrive, è possibile procedere impostare il percorso preferito dati degli utenti a tale posizione geografica. 
+Provisioning potrebbero richiedere da pochi ore a 72 ore, a seconda delle dimensioni del tenant. Una volta completato il provisioning di una posizione satellitare, si riceverà una conferma di posta elettronica. Quando viene visualizzata nella nuova posizione geografica in blu nella mappa nella scheda **percorsi Geo** nell'interfaccia di amministrazione OneDrive, è possibile procedere impostare il percorso preferito dati degli utenti a tale posizione geografica. 
 
 > [!IMPORTANT]
 > La nuova posizione geografica satellitari configurerà con le impostazioni predefinite. In questo modo è possibile configurare tale posizione geografica in base alle proprie esigenze di conformità locale.
