@@ -11,16 +11,21 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Riepilogo: Informazioni su come creare un laboratorio di testing integrato che include un server che esegue Exchange Server 2013, un server che esegue Lync Server 2013 e un server che esegue SharePoint Server 2013.'
-ms.openlocfilehash: 4bc9c48782c7693368c304f5f9d5bae56242111d
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 636429a9cce04b982c1129dba601c6348deb9cdc
+ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guida del laboratorio di testing: Configurare un laboratorio di testing integrato di Exchange, Lync e SharePoint
 
  **Riepilogo:** Informazioni su come creare un laboratorio di testing integrato che include un server che esegue Exchange Server 2013, un server che esegue Lync Server 2013 e un server che esegue SharePoint Server 2013.
-  
+ 
+**Guardare la Exchange integrata, Lync e SharePoint video Cenni preliminari sulla Guida del laboratorio di testing**
+
+<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" ></iframe>
+
+ 
 Laboratorio di testing risultati da questa configurazione, che include l'autenticazione da server a server tra tutti i tre tipi di server, può essere utilizzato per preparare ed effettuare una dimostrazione multi-prodotto scenari e soluzioni che utilizzano un server che esegue Exchange Server 2013, un server che esegue Lync Server 2013 e un server che esegue SharePoint Server 2013.
   
 Questo documento contiene istruzioni per le operazioni seguenti:
@@ -43,10 +48,6 @@ Questo documento contiene istruzioni per le operazioni seguenti:
     
 9. Configurazione dell'integrazione tra EX1, LYNC1 e SP1.
     
-**Guardare la Exchange integrata, Lync e SharePoint video Cenni preliminari sulla Guida del laboratorio di testing**
-
-![Icona video (pulsante riproduzione)](images/mod_icon_video_M.png)
-  
 Per informazioni su come configurare questo laboratorio di testing di Hyper-V, vedere [Hosting di Exchange integrata, SharePoint e Lync, ambiente di test con Windows Server 2012 Hyper-V](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx).
   
 ## <a name="download-the-test-lab-guide"></a>Scaricare la guida del laboratorio di testing
