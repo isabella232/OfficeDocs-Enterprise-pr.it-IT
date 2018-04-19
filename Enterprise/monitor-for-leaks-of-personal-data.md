@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- Strat_O365_Enterprise
-- GDPR
-ms.assetid: 
-description: "Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali."
-ms.openlocfilehash: 04f5346a9c6554b75e9f360233c942907b826447
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.custom: ''
+ms.assetid: ''
+description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
+ms.openlocfilehash: 4f7e9b35f7e2da5254e98a9f1cf97d6a5e9e1a73
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
@@ -86,7 +85,8 @@ Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controll
 
 -   [Abilitare o disabilitare la ricerca nel log di controllo di Office 365](https://support.office.com/it-IT/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   
+  [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
