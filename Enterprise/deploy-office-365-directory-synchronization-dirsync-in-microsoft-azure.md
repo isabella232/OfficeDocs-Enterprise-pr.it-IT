@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Riepilogo: Distribuire Azure Connect Active Directory in una macchina virtuale in Azure per sincronizzare gli account tra la directory locale e il tenant Azure Active Directory la sottoscrizione a Office 365.'
-ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 31a72d027acd274c9908a7e63e83843bce9cec71
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Distribuire Office 365 la sincronizzazione delle Directory in Microsoft Azure
 
@@ -105,7 +105,7 @@ Di seguito sono riportate le scelte di progettazione effettuate per questa soluz
     
 - Nella rete locale, sono disponibili un controller di dominio e alcuni server DNS.
     
-- Connetti Azure Active Directory esegue la sincronizzazione delle password hash invece di single sign-on. Non è necessario distribuire un'infrastruttura di Active Directory Federation Services (ADFS). Per ulteriori informazioni sulla sincronizzazione hash password e le opzioni di single sign-on, vedere [determinare lo scenario di integrazione directory da utilizzare](https://go.microsoft.com/fwlink/p/?LinkId=393094).
+- Connetti Azure Active Directory esegue la sincronizzazione delle password hash invece di single sign-on. Non è necessario distribuire un'infrastruttura di Active Directory Federation Services (ADFS). Per ulteriori informazioni sulla sincronizzazione hash password e le opzioni di single sign-on, vedere [scelta del metodo di autenticazione appropriata per la soluzione di identità ibrido Azure Active Directory](http://aka.ms/auth-options).
     
 Quando si distribuisce la soluzione nel proprio ambiente, sono disponibili ulteriori opzioni di progettazione che è possibile considerare. Tale opzioni includono:
   
@@ -196,7 +196,7 @@ Azure AD Connect aggiunge account alla sottoscrizione a Office 365 da Windows Se
     
 7. Tornare al passaggio 3 per altri utenti.
     
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Concetti
 
 <a name="DeploymentRoadmap"> </a>
 

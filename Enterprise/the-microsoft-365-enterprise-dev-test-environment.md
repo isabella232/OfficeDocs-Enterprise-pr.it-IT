@@ -3,7 +3,7 @@ title: Ambiente di sviluppo e di testing di Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Riepilogo: Utilizzare questa guida dei laboratori di testing per creare un ambiente di sviluppo e di testing che include Office 365 E5, mobilità aziendale + E5 di sicurezza (EMS) e un computer che esegue Windows 10 Enterprise.'
-ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 9ef1c13d7ae194ff4ba31abaf379529220ffa14f
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Ambiente di sviluppo/test di Microsoft 365 Enterprise
 
@@ -29,11 +29,14 @@ In questo articolo vengono fornite istruzioni dettagliate per creare un ambiente
   
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>Fase 1: creare la sottoscrizione di Office 365 E5
 
-Seguire i passaggi della fase 2 e la fase 3 [dell'ambiente di sviluppo e di testing di Office 365](office-365-dev-test-environment.md) per creare un ambiente di sviluppo e di testing lightweight Office 365, come illustrato nella figura 1.
+Seguire i passaggi della fase 2 e la fase 3 dell' [ambiente di sviluppo e di testing di Office 365](office-365-dev-test-environment.md) per creare un ambiente di sviluppo e di testing lightweight Office 365, come illustrato nella figura 1.
   
 **Nella figura 1: La sottoscrizione di Office 365 E5 con il relativo account utente e tenant di Azure Active Directory (AD)**
 
 ![Fase 1 dell’ambiente di sviluppo/test Microsoft 3656 Enterprise](images/65bb027b-fb59-46eb-aec2-38c0af425168.png)
+
+> [!NOTE]
+> La sottoscrizione di valutazione di Office 365 E5 è 30 giorni, che possono essere facilmente esteso a 60 giorni. Per un ambiente di sviluppo e di testing permanente, creare una nuova con un numero limitato di licenze di sottoscrizione a pagamento. 
   
 ## <a name="phase-2-add-ems"></a>Fase 2: aggiungere EMS
 
@@ -66,7 +69,7 @@ Innanzitutto, aggiungere la sottoscrizione di prova EMS E5 e assegna una licenza
   
 A questo punto, l'ambiente di sviluppo/di testing dispone di:
   
-- Sottoscrizioni di valutazione di Office 365 E5 Enterprise ed EMS che condividono la stessa organizzazione e lo stesso tenant di Azure AD con l'elenco di account utente in uso.
+- Office 365 Enterprise E5 ed EMS E5 sottoscrizioni di valutazione condivisione stesso tenant di Azure Active Directory con l'elenco di account utente.
 - Tutti gli account utente appropriati (solo l'amministratore globale o tutti gli account utente cinque) sono abilitati all'utilizzo di Office 365 E5 ed EMS E5.
     
 La figura 2 mostra la configurazione risultante che consente di aggiungere EMS.
@@ -201,8 +204,9 @@ Utilizzare questi articoli aggiuntivi per esplorare le funzionalità di Microsof
     
 - [Configurare e testare avanzate Threat Protection](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Concetti
 
 - [Documentazione Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
 - [Distribuire Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [L'ambiente di sviluppo e di testing uno Cloud Microsoft](the-one-microsoft-cloud-dev-test-environment.md)
+- [Test Lab Guide (TLG) di adozione cloud ](cloud-adoption-test-lab-guides-tlgs.md)

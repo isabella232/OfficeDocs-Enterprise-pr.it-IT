@@ -3,7 +3,7 @@ title: Effettuare la connessione a tutti i servizi Office 365 in un'unica finest
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2018
+ms.date: 04/17/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Riepilogo: Connessione di Windows PowerShell per tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell."
-ms.openlocfilehash: ffa603ec50c95f5800315eee07b4d01e058852f3
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: b48caf9ab75b775995b9839325832c798da4d331
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell
 
@@ -57,10 +57,9 @@ Per poter gestire tutti di Office 365 da una singola istanza di Windows PowerShe
     
     È necessario utilizzare una versione a 64 bit di Windows per i requisiti per il Skype per la funzionalità di Business in linea e uno dei moduli di Office 365.
     
-- È necessario installare i moduli necessari per Office 365, SharePoint Online e Skype Business online:
+- È necessario installare i moduli che sono necessari per Azure Active Directory, SharePoint Online e Skype Business online:
     
-   - [Microsoft Online Services Assistente per l'accesso per i professionisti IT RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)
-   - Windows Azure Active Directory Module per Windows PowerShell (versione a 64 bit) con il comando **Install-modulo MSOnline** un prompt dei comandi PowerShell con privilegi elevati.
+   - [V2 Azure Active Directory](connect-to-office-365-powershell.md#ConnectV2)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype per le aziende in linea, modulo di Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
@@ -83,11 +82,10 @@ Ecco la procedura per la connessione a tutti i servizi in un'unica finestra di P
   $credential = Get-Credential
   ```
 
-3. Eseguire i comandi seguenti per connettersi a Office 365.
+3. Eseguire questo comando per la connessione di Azure Active Directory (AD).
     
   ```
-  Import-Module MsOnline
-  Connect-MsolService -Credential $credential
+   Connect-AzureAD -Credential $credential
   ```
 
 4. Eseguire questi comandi per la connessione a SharePoint Online. Sostituire _ \<domainhost >_ con il valore effettivo per il dominio. Ad esempio, per `litwareinc.onmicrosoft.com`, il _ \<domainhost >_ valore è `litwareinc`.
@@ -124,8 +122,7 @@ Di seguito sono tutti i comandi in un unico blocco. Specificare il nome dell'hos
 ```
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
-Import-Module MsOnline
-Connect-MsolService -Credential $credential
+Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$domainHost-admin.sharepoint.com -credential $credential
 Import-Module SkypeOnlineConnector
@@ -151,10 +148,7 @@ Di seguito sono tutti i comandi in un unico blocco a cui connettersi Azure Activ
 $acctName="<UPN of a global administrator account>"
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
-#If you are running Office 365 commands that contain "AzureAd" in their name, use this command:
 Connect-AzureAD
-#If you are running Office 365 commands that contain "Msol" in their name, comment the preceding command and un-comment the following command:
-#Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$domainHost-admin.sharepoint.com
 #Skype for Business Online
@@ -176,8 +170,7 @@ Si noti che in entrambi i casi, è necessario connettersi utilizzando sessioni s
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
-- [Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
+- [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md)
 - [Gestire SharePoint Online con PowerShell di Office 365](manage-sharepoint-online-with-office-365-powershell.md)
 - [Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Utilizzo di Windows PowerShell per creare rapporti in Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
