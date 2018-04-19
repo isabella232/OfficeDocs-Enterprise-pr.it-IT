@@ -1,9 +1,9 @@
 ---
-title: DirSync per l'ambiente di sviluppo/test di Office 365
+title: Sincronizzazione della directory per l'ambiente di sviluppo e di testing di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,31 +16,29 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
-description: 'Riepilogo: Configurare la sincronizzazione di directory per l''ambiente di sviluppo e di testing di Office 365.'
-ms.openlocfilehash: 8a656ea742af642a8b4dc3e096764f0e8cbde074
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: "Riepilogo: Configurare la sincronizzazione di directory per l'ambiente di sviluppo e di testing di Office 365."
+ms.openlocfilehash: 1363e7fd6a3afdbec85fd08790268ab186badbc8
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="dirsync-for-your-office-365-devtest-environment"></a>DirSync per l'ambiente di sviluppo/test di Office 365
+# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Sincronizzazione della directory per l'ambiente di sviluppo e di testing di Office 365
 
  **Riepilogo:** Configurare la sincronizzazione di directory per l'ambiente di sviluppo e di testing di Office 365.
   
-Molte organizzazioni usano Azure AD Connect e la sincronizzazione delle directory (DirSync) per sincronizzare il set di account della foresta Windows Server Active Directory (AD) locale per il set di account in Office 365. In questo articolo viene illustrato come aggiungere DirSync con la sincronizzazione delle password per l'ambiente di sviluppo e di testing di Office 365, determinando la configurazione seguente.
+Molte organizzazioni usano Azure AD Connect e la sincronizzazione delle directory per sincronizzare il set di account della foresta Windows Server Active Directory (AD) locale per il set di account in Office 365. In questo articolo viene illustrato come aggiungere la sincronizzazione della directory con la sincronizzazione hash delle password per l'ambiente di sviluppo e di testing di Office 365, determinando la configurazione seguente.
   
-![Ambiente di sviluppo e di testing Office 365 con DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Ambiente di sviluppo e di testing Office 365 con sincronizzazione della directory](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Questa configurazione è costituita da: 
   
 - Una sottoscrizione di valutazione di Office 365 E5 che scade dopo 30 giorni dalla creazione.
-    
 - Una intranet dell'organizzazione semplificata connessa a Internet e costituita da tre macchine virtuali in una sottorete di una rete virtuale Azure (DC1 APP1 e CLIENT1). AD Azure Connect viene eseguito su APP1 per sincronizzare il dominio di Windows Server AD con Office 365.
     
 Le fasi principali della configurazione dell'ambiente di sviluppo e di testing sono tre:
   
 1. Creare l'ambiente di sviluppo e di testing di Office 365 (le macchine virtuali DC1, APP1 e CLIENT1 in una rete virtuale Azure con una sottoscrizione di valutazione di Office 365 E5).
-    
 2. Installare e configurare Azure AD Connect su APP1.
     
 > [!TIP]
@@ -55,7 +53,6 @@ Seguire le istruzioni nelle fasi 1, 2 e 3 dell'articolo [Ambiente di sviluppo/te
 Questa configurazione è costituita da: 
   
 - Una sottoscrizione di valutazione di Office 365 E5.
-    
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure.
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>Fase 2: Installare Azure AD Connect su APP1
@@ -75,7 +72,7 @@ Stop-Process -Name Explorer -Force
 
   ```
 
-3. Dalla barra delle attività, fare clic su **Internet Explorer** e passare a [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+3. Dalla barra delle applicazioni, fare clic su **Internet Explorer** e accedere a [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
     
 4. Nella pagina Microsoft Azure Active Directory Connect, fare clic su **Download** e quindi su **Esegui**.
     
@@ -93,13 +90,13 @@ Stop-Process -Name Explorer -Force
     
 11. Nella pagina **Configurazione completata**, fare clic su **Esci**.
     
-12. In Internet Explorer, accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
+12. In Internet Explorer, accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e quindi alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
 13. Dalla pagina principale del portale, fare clic su **Admin**.
     
 14. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
-    Si noti l'account denominato **User1**. Questo account deriva dal dominio CORP di Windows Server Active Directory ed è la prova che DirSync ha funzionato.
+    Si noti l'account denominato **User1**. Questo account deriva dal dominio CORP di Windows Server Active Directory ed è la prova che la sincronizzazione della directory ha funzionato.
     
 15. Fare clic sull'account **User1**. Per le licenze di prodotti, fare clic su **Modifica**.
     
@@ -107,30 +104,24 @@ Stop-Process -Name Explorer -Force
     
 Di seguito è riportata la configurazione risultante.
   
-![Ambiente di sviluppo e di testing Office 365 con DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Ambiente di sviluppo e di testing Office 365 con sincronizzazione della directory](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Questa configurazione è costituita da: 
   
 - Una sottoscrizione di valutazione di Office 365 E5.
-    
 - Una intranet dell'organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. AD Azure Connect viene eseguito su APP1 per sincronizzare il dominio CORP di Windows Server AD con Office 365 ogni 30 minuti.
     
 ## <a name="next-step"></a>Passaggio successivo
 
-Quando si è pronti per distribuire DirSync nella propria organizzazione, vedere [Distribuire la sincronizzazione della directory (DirSync) di Office 365 in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
+Quando si è pronti per distribuire la sincronizzazione della directory nella propria organizzazione, vedere [Distribuire la sincronizzazione della directory di Office 365 in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 [Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
-  
-[Ambiente di sviluppo/test della configurazione di base](base-configuration-dev-test-environment.md)
-  
-[Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md)
-  
-[Cloud App Security per l'ambiente di sviluppo/test di Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[Protezione avanzata dalle minacce per l'ambiente di sviluppo/test di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
+[Ambiente di sviluppo e testing di configurazione di base](base-configuration-dev-test-environment.md)
+[Ambiente di sviluppo e testing di Office 365](office-365-dev-test-environment.md)
+[ Cloud App Security per l'ambiente di sviluppo e testing di Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Advanced Threat Protection per l'ambiente di sviluppo e testing di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 
 
