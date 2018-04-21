@@ -16,11 +16,11 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 description: Questo articolo viene illustrato come utilizzare Office 365 PowerShell assegna una licenza di Office 365 per gli utenti senza licenza.
-ms.openlocfilehash: 688e2775e7a028cd9dbe0c8ea27a7f3a453b5279
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: ce8e8c26e929132a8d4beb0f71e18c127064acbe
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Assegnare le licenze agli account utente con Office 365 PowerShell
 
@@ -66,7 +66,7 @@ Per assegnare una licenza a più utenti privi di licenza, utilizzare la sintassi
 $x = Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>]; $x | foreach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
 ```
 
- **Note**
+ 2^31 (****2 miliardi di termini)
   
 - Non è possibile assegnare più licenze a un utente dallo stesso piano di gestione delle licenze.
     
@@ -139,7 +139,7 @@ Set-MsolUserLicense -UserPrincipalName "BelindaN@litwareinc.com" -AddLicenses "l
   
 **Set-MsolUserLicense** termina quando in esecuzione, verrà visualizzato qualcosa di simile a questo sullo schermo:
   
- `PS C:\\windows\\system32>`
+ `PS C:\windows\system32>`
   
 In altre parole, non sembra lasciare viene spiegato. Per verificare che l'utente è stata assegnata una licenza, eseguire un comando simile al seguente:
   

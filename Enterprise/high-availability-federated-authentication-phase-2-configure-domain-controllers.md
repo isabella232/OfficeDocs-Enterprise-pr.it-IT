@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: "Riepilogo: Configurare il controller di dominio e il server di DirSync per l'autenticazione federata la disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: 80846025af82810f63087aafd1a3b3a1213212d1
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 9713e6b0f5241ece4e0f90aa5e0343582e38cdaa
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 dell'autenticazione federata a disponibilità elevata: configurare i controller di dominio
 
@@ -31,9 +31,9 @@ In questa fase di distribuzione di disponibilità elevata per l'autenticazione f
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Creare le macchine virtuali dei controller di dominio in Azure
 
-Innanzitutto, è necessario compilare la colonna **nome della macchina virtuale** di tabella M e modificare le dimensioni delle macchine virtuali in base alle esigenze nella colonna **dimensione minima** .
+Per prima cosa, è necessario compilare la colonna **Nome macchina virtuale** della tabella M e modificare le dimensioni della macchina virtuale secondo necessità nella colonna **Dimensioni minime**.
   
-|**Elemento**|**Nome della macchina virtuale**|**Galleria**|**Tipo di archiviazione**|**Dimensione minima**|
+|**Elemento**|**Nome macchina virtuale**|**Immagine della raccolta**|**Tipo di archiviazione**|**Dimensioni minime**|
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./images/Common_Images/TableLine.png)(primo controller di dominio, esempio DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./images/Common_Images/TableLine.png)(secondo controller di dominio, esempio DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
@@ -45,7 +45,7 @@ Innanzitutto, è necessario compilare la colonna **nome della macchina virtuale*
    
  **Tabella M - macchine virtuali per l'autenticazione federata la disponibilità elevata per Office 365 in Azure**
   
-Per l'elenco completo delle dimensioni delle macchine virtuali, vedere [dimensioni per le macchine virtuali](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
+Per l'elenco completo delle dimensioni delle macchine virtuali, vedere [Dimensioni delle macchine virtuali](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
   
 Il seguente blocco di comandi Azure PowerShell consente di creare le macchine virtuali per i controller di due dominio. Specificare i valori per le variabili, rimuovere il \< e > caratteri. Si noti che questo blocco di comandi Azure PowerShell utilizza valori dalle tabelle riportate di seguito:
   
@@ -64,7 +64,7 @@ Il seguente blocco di comandi Azure PowerShell consente di creare le macchine vi
 Richiamare una definite tabelle R, V, S, è possibile e A in [la disponibilità elevata federati autenticazione fase 1: configurare Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> Il seguente comando consente di utilizzare la versione più recente di Azure PowerShell. Vedere [iniziare a utilizzare i cmdlet PowerShell di Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Una volta forniti tutti i valori corretti, eseguire il blocco risultante nel prompt di Azure PowerShell oppure in PowerShell Integrated Script Environment (ISE) nel computer locale.
   
@@ -155,7 +155,7 @@ Successivamente, aggiungere il disco dati aggiuntivi per il primo controller di 
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-Quindi, verificare la connettività del primo controller di dominio nei percorsi della rete dell'organizzazione utilizzando il comando **ping** per eseguire il ping dei nomi e gli indirizzi IP delle risorse di rete dell'organizzazione.
+Successivamente, verificare la connettività del primo controller di dominio per i percorsi della rete aziendale tramite il comando **ping** per i nomi di ping e gli indirizzi IP delle risorse nella rete dell'organizzazione.
   
 Questa procedura assicura che la risoluzione dei nomi DNS funziona correttamente (che la macchina virtuale è configurata correttamente con i server DNS locali) e che possono essere inviati pacchetti da e verso la rete virtuale cross-premise. Se il test ha esito negativo, contattare il proprio reparto IT per risolvere i problemi relativi alla risoluzione del nome DNS e al recapito dei pacchetti.
   
@@ -165,7 +165,7 @@ Successivamente, dal prompt dei comandi di Windows PowerShell nel primo controll
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
 $cred = Get-Credential -Message "Enter credentials of an account with permission to join a new domain controller to the domain"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs" -Credential $cred
+Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 ```
 
 Verrà richiesto di fornire le credenziali di un account di amministratore del dominio. Il computer viene riavviato.
@@ -186,7 +186,7 @@ Quindi, eseguire i seguenti comandi:
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
 $cred = Get-Credential -Message "Enter credentials of an account with permission to join a new domain controller to the domain"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs" -Credential $cred
+Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 
 ```
 

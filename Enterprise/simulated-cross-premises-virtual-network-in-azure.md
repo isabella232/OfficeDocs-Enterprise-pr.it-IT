@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Riepilogo: Creare una rete virtuale simulato tra locali in Microsoft Azure come un ambiente di sviluppo e di testing.'
-ms.openlocfilehash: 41988e8201e896a7c1900b645e6c38357d0bfcd0
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rete virtuale tra più sedi simulata in Azure
 
@@ -76,7 +76,7 @@ In questa fase, viene creata e configurata la nuova rete virtuale XPrem, viene q
 Innanzitutto, avviare un prompt dei comandi di Azure PowerShell sul computer locale.
   
 > [!NOTE]
-> Il seguente comando consente di utilizzare la versione più recente di Azure PowerShell. Vedere [iniziare a utilizzare i cmdlet PowerShell di Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Accedere al proprio account Azure con il seguente comando.
   
@@ -85,7 +85,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Fare clic [qui](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) per ottenere un file di testo che contiene tutti i comandi di PowerShell in questo articolo.
+> [!SUGGERIMENTO] Per un file di testo contenente tutti i comandi di PowerShell riportati in questo articolo, fare clic [qui](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0).
   
 Ottenere il nome della sottoscrizione utilizzando il comando seguente.
   
@@ -173,7 +173,7 @@ Configurare quindi DC2 come controller di dominio di replica per il dominio corp
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -Credential (Get-Credential CORP\\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\\NTDS" -LogPath "F:\\Logs" -SysvolPath "F:\\SYSVOL"
+Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
 Si noti che viene richiesto di specificare sia il CORP\\User1 password e una password di ripristino servizi modalità (Directory) e il riavvio DC2. 

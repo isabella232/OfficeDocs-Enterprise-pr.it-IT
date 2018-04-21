@@ -3,7 +3,7 @@ title: Visualizzare la licenza dell'account e i dettagli di servizio con Office 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Questo articolo viene illustrato come utilizzare Office 365 PowerShell per determinare i servizi di Office 365 che sono stati assegnati agli utenti.
-ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 5286a581a67b39d5d5ca921b998d6ea14b3ff50f
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell
 
@@ -44,8 +44,8 @@ In Office 365, concede in licenza da Gestione licenze piani (anche denominato SK
     
 - Se si usa il cmdlet **Get-MsolUser** senza utilizzare il parametro _All_, vengono restituiti solo i primi 500 account.
     
-## <a name="the-short-version-instructions-without-explanations"></a>Versione breve (istruzioni senza spiegazioni)
 <a name="ShortVersion"> </a>
+## <a name="the-short-version-instructions-without-explanations"></a>Versione breve (istruzioni senza spiegazioni)
 
 Per visualizzare tutti i servizi di Office 365 PowerShell che un utente ha accesso, utilizzare la sintassi seguente:
   
@@ -89,8 +89,8 @@ In questo esempio restituisce tutti gli utenti con licenza non abilitati per Sky
 Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
-## <a name="the-long-version-instructions-with-detailed-explanations"></a>Versione estesa (istruzioni con spiegazioni dettagliate)
 <a name="LongVersion"> </a>
+## <a name="the-long-version-instructions-with-detailed-explanations"></a>Versione estesa (istruzioni con spiegazioni dettagliate)
 
 ### <a name="find-the-office-365-powershell-services-that-a-user-has-access-to"></a>Individuare i servizi di Office 365 PowerShell che un utente ha accesso a
 
@@ -124,7 +124,7 @@ System.Runtime... Microsoft.On...  litwarein... {Microsoft.Online.A...
 
 E quindi, espandendo la proprietà **ServiceStatus** possiamo ottenere ancora altre informazioni:
   
-|Servizio plan * * *|Descrizione * * *|
+|Servizio plan * * *|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -162,7 +162,7 @@ EXCHANGE_S_ENTERPRISE             Success
 
 Ed ecco anche una breve panoramica in una tabella in cui viene spiegato cosa questi piani di servizio strani rappresentano veramente:
   
-|Servizio plan * * *|Descrizione * * *|
+|Servizio plan * * *|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -190,7 +190,7 @@ In un articolo separato, sono state riscontrate come è possibile utilizzare Off
   
 Sono state speranza che un utente potrebbe richiedere che. Per rispondere a questa domanda, è opportuno esaminare la tabella dei servizi che viene per prima cosa nell'articolo [servizi con Office 365 PowerShell e le licenze di visualizzazione](view-licenses-and-services-with-office-365-powershell.md) per il piano di licenze disponibile solo `litwareinc:ENTERPRISEPACK`:
   
-|Servizio plan * * *|Descrizione * * *|
+|Servizio plan * * *|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -282,17 +282,21 @@ Ma non bisogna preoccuparsi troppo su come processo che potrebbe essere: l'impor
   
 Naturalmente, ovvero il motivo per cui si dispone di Windows PowerShell: Windows PowerShell aiuta a evitare attività lunghe e noiose come questa.
   
-Mentre è ora essere, ecco il comando finale per visualizzare informazioni sul servizio:
+Di seguito è riportato un esempio di un comando per la visualizzazione delle informazioni del servizio per un set specifico di servizi identificati dagli indici di licenze e ServiceStatus per una sottoscrizione a Office 365 E5:
   
 ```
-Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[0].ProvisioningStatus}}, @{Name="MDM";Expression={$_.Licenses[0].ServiceStatus[1].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[2].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[3].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[4].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[5].ProvisioningStatus}}, @{Name="OfficeWeb";Expression={$_.Licenses[0].ServiceStatus[6].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[8].ProvisioningStatus}} | ConvertTo-Html > "C:\\My Documents\\Service Info.html"
+Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[12].ProvisioningStatus}}, @{Name="Teams";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[20].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[19].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[21].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[22].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[24].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[23].ProvisioningStatus}} | ConvertTo-CSV > "C:\Service Info.csv"
 ```
 
-E si un comando molto sorta. Ma viene creato un file CSV con tutti gli utenti e tutto il relativo stato servizio.
+Questo comando consente di creare un file CSV che mostra tutti gli utenti e il relativo stato del servizio per un set di servizi (Team, Yammer, AD RMS, OfficePro, Skype, SharePoint ed Exchange) specificato.
+
+>[!Note]
+>È possibile ottenere l'elenco dei servizi in una sottoscrizione dal `(Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus` comando. Nell'output, iniziare la numerazione gli indici di servizio da 0. Il comando precedente è semplicemente un esempio. Numeri di indice per i servizi può cambiare nel tempo.
+>
 
   
-## <a name="see-also"></a>Vedere anche
 <a name="SeeAlso"> </a>
+## <a name="see-also"></a>Vedere anche
 
 Vedere i seguenti argomenti aggiuntivi sulla gestione degli utenti con Office 365 PowerShell:
   
