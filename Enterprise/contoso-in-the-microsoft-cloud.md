@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Riepilogo: modalità di adozione di un'infrastruttura IT con cloud da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale con le offerte cloud di Microsoft."
-ms.openlocfilehash: 7807a6b07179e695c28a923f744805558d83e690
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso nel Microsoft Cloud
 
@@ -33,7 +33,7 @@ In questo articolo sono disponibili dei collegamenti a un insieme di articoli in
   
 Vedere le seguenti sezioni:
   
-- [Panoramica del cloud ibrida](hybrid-cloud-overview.md)
+- [Panoramica di Contoso Corporation](overview-of-the-contoso-corporation.md)
     
     Contoso Corporation è un'azienda conglomerata di produzione, vendita e supporto con oltre 100.000 prodotti.
     
