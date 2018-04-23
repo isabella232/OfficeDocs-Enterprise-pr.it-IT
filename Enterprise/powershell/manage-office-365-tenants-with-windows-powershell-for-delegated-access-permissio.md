@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 'Riepilogo: utilizzare Windows PowerShell per gestire i tenancy dei propri clienti tramite Office 365.'
-ms.openlocfilehash: 3f0caeaa4a4e70ddb00ece2738f3a90720b5a52f
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: f4c6f1a0275e9b483a30b31564426b62241029bf
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestire tenant Office 365 con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
@@ -109,7 +109,7 @@ dove:
 In seguito alla creazione del file CSV, eseguire questo comando per creare account utente con password senza scadenza che l'utente deve modificare al primo accesso e con cui viene assegnata la licenza specificata. Sostituire il nome del file CSV corretto.
   
 ```
-Import-Csv .\\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
+Import-Csv .\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
 ```
 
 ## <a name="see-also"></a>Vedere anche
