@@ -23,17 +23,20 @@ ms.lasthandoff: 04/16/2018
 ---
 # <a name="search-for-and-find-personal-data"></a>Cercare e trovare i dati personali
 
-I dati personali sono definiti in modo molto ampio nell'RGPD, come qualsiasi dato relativo a una persona fisica identificata o identificabile residente nell'Unione Europea.
+L'RGPD definisce i dati personali in modo molto generico come qualsiasi dato relativo a una persona fisica identificata o identificabile residente nell'Unione Europea.
+
 
 Articolo 4 - Definizioni
 
-> con "dati personali" si intende qualsiasi informazione relativa a una persona fisica identificata o identificabile ("soggetto dei dati"); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente, in particolare in riferimento a un identificatore come un nome, un numero di identificazione, dati sulla posizione, un identificatore online o a uno o più fattori specifici per l'identità fisica, psicologica, genetica, mentale, economica, culturale o sociale della persona fisica;
+> Il termine "dati personali" si riferisce a qualsiasi informazione relativa a una persona fisica identificata o identificabile ("soggetto dei dati"); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente, tramite dati specifici come un nome, un numero di identificazione, dati sulla posizione, un identificatore online o uno o più fattori specifici per l'identità fisica, psicologica, genetica, mentale, economica, culturale o sociale della persona fisica;
+
 
 In questo articolo viene illustrato come trovare i dati personali archiviati in SharePoint Online e OneDrive for Business (che include i siti per tutti i gruppi di Office 365 e Microsoft Teams).
 
 L'individuazione dei dati personali soggetti all'RGPD si basa sull'utilizzo di tipi di informazioni riservate in Office 365. Queste definiscono il modo in cui il processo automatico riconosce tipi di informazione specifici come i numeri di previdenza sociale e di carta di credito. Al momento, tali informazioni non possono essere usate per trovare i dati nelle cassette postali di Exchange inattive. Tuttavia, i tipi di informazioni riservate possono essere usate con criteri di prevenzione della perdita dei dati per trovare dati personali nella posta elettronica in transito.
 
-Quindi, attualmente non è possibile usare Ricerca contenuto per trovare i dati personali archiviati nelle cassette postali di Exchange Online, ma è possibile utilizzare i tipi di informazioni riservate gestite per l'RGPD per trovare e proteggere le informazioni personali quando vengono inviate tramite posta elettronica.
+Quindi, attualmente non è possibile usare Ricerca contenuto per trovare i dati personali archiviati nelle cassette postali di Exchange Online, ma è possibile utilizzare le tipologie di informazioni sensibili definite per l'RGPD per trovare e proteggere le informazioni personali quando vengono inviate tramite posta elettronica.
+
 
 ## <a name="use-content-search-to-find-personal-data"></a>Usare Ricerca contenuto per trovare dati personali
 
@@ -42,19 +45,24 @@ Microsoft consiglia un approccio in tre fasi per la ricerca di dati personali de
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Passaggio</strong></th>
+<th align="left"><strong>Fase</strong>
+</th>
 <th align="left"><strong>Descrizione</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>1. Ricerca per tipi di informazioni riservate</p></td>
+<td align="left"><p>1. Cercare le tipologie di informazioni riservate
+</p></td>
 <td align="left"><p>Iniziare utilizzando tipi di informazioni riservate per trovare dati personali. Creare una query di Ricerca contenuto per ogni tipo di informazione riservata. Eseguire la query e analizzare i risultati.</p>
 Se necessario, è possibile aggiungere parametri alla query per ridurre i falsi positivi: <li>Numero istanze</li>
     <li>Intervallo di confidenza</li>
-    <li>Altre proprietà o gli operatori per query più complesse</li>
-<p>Se necessario, modificare un tipo di informazione riservata per migliorare l'accuratezza dell'organizzazione:</p>
-<p><li>Regolare il livello di probabilità direttamente nel file XML.</li></p>
+    <li>Altre proprietà od operatori per query più complesse
+</li>
+<p>Se necessario, modificare una tipologia di informazione sensibile per ottenere risultati più accurati:
+</p>
+<p><li>Modificare il livello di confidenza direttamente nel file XML.
+</li></p>
 <p><li>Aggiungere parole chiave.</li></p>
 <p><li>Modificare i requisiti di prossimità delle parole chiave.</li></p></td>
 </tr>
@@ -72,7 +80,8 @@ Se necessario, è possibile aggiungere parametri alla query per ridurre i falsi 
 
 A breve, sarà possibile creare e modificare i tipi di informazioni riservate in una nuova interfaccia utente in Centro sicurezza e conformità. Sarà possibile modificare in modo dinamico i risultati corrispondenti e ottimizzare i tipi di informazioni riservate in base alle proprie esigenze.
 
-## <a name="search-for-sensitive-information-types-using-content-search"></a>Ricerca per tipi di informazioni riservate tramite Ricerca contenuto
+## <a name="search-for-sensitive-information-types-using-content-search"></a>Cercare le tipologie di informazioni sensibili con Ricerca contenuto
+
 
 Iniziare la ricerca dei dati personali utilizzando i tipi di informazioni riservate inclusi in Office 365. Sono elencati nel Centro sicurezza e conformità in Classificazione.
 
@@ -80,16 +89,20 @@ Questo argomento include un elenco dei tipi di informazioni riservate correnti c
 
 Vedere anche l'articolo: [Elenco dei tipi di informazioni riservate e l'aspetto di ognuno di essi](https://support.office.com/it-IT/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
 
-I tipi di informazioni riservate definiscono il modo in cui il processo automatico riconosce tipi di informazioni specifici come numeri di conto bancario, numeri di previdenza sociale e di carta di credito. I tipi di informazioni riservate sono definiti anche condizioni. Una tipologia di informazioni riservate viene definita da un modello identificato da un'espressione regolare o da una funzione. Inoltre, è possibile utilizzare elementi probatori, ad esempio, parole chiave e checksum per identificare una tipologia di informazioni riservate. In questa procedura di valutazione vengono usati anche il livello di probabilità e la prossimità.
+Le tipologie di informazioni sensibili permettono di riconoscere in modo automatico informazioni specifiche come i numeri di previdenza sociale e di carta di credito. Le tipologie di informazioni sensibili sono chiamate anche condizioni. Una tipologia di informazioni sensibili corrisponde a un modello identificato da un'espressione regolare o da una funzione. Inoltre, è possibile utilizzare altri elementi come parole chiave e checksum per identificare una tipologia di informazioni sensibili. In questa procedura di valutazione vengono usati anche il livello di confidenza e la prossimità.
 
-In questo momento, tipi di informazioni riservate non sono utilizzabili per trovare i dati archiviati nelle cassette postali.
 
-### <a name="using-content-search-with-sensitive-information-types"></a>Utilizzo di Ricerca contenuto per tipi di informazioni riservate
+Attualmente le tipologie di informazioni sensibili non sono utilizzabili per trovare i dati conservati nelle cassette postali.
+
+
+### <a name="using-content-search-with-sensitive-information-types"></a>Utilizzo di Ricerca contenuto con le tipologie di informazioni sensibili
+
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Passaggio</strong></th>
+<th align="left"><strong>Fase</strong>
+</th>
 <th align="left"><strong>Ulteriori informazioni</strong></th>
 </tr>
 </thead>
@@ -102,7 +115,8 @@ In questo momento, tipi di informazioni riservate non sono utilizzabili per trov
 <td align="left"><p>Creare un nuovo elemento di ricerca per ogni tipo di informazioni riservate</p></td>
 <td align="left"><p>Utilizzare la sintassi seguente:</p>
 <blockquote>
-<p>SensitiveType:"&lt;type&gt;"</p>
+<p>SensitiveType:"&lt;tipologia&gt;"
+</p>
 </blockquote>
 <p>Ad esempio:</p>
 <blockquote>
@@ -115,7 +129,8 @@ In questo momento, tipi di informazioni riservate non sono utilizzabili per trov
 <td align="left"><p>Esaminare i risultati per ogni ricerca</p></td>
 <td align="left"><p>Cercare i tipi di problemi per determinare se la precisione della query viene rispettata:</p>
 <p><li>Molti falsi positivi</li></p>
-<p><li>Istanze dei dati note mancanti</li></p>
+<p><li>Mancano istanze note dei dati
+</li></p>
 <p>Vedere <a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Esportare i risultati di Ricerca contenuto dal Centro sicurezza e conformità di Office 365</a>.</p>
 <p>Nota: se si utilizza Mozilla Firefox o Chrome, è necessario prima scaricare i report utilizzando Internet Explorer o Edge per installare il componente aggiuntivo necessario.</p></td>
 </tr>
@@ -124,7 +139,8 @@ In questo momento, tipi di informazioni riservate non sono utilizzabili per trov
 
 ## <a name="sensitive-information-types-for-eu-citizen-data"></a>Tipi di informazioni riservate per i dati dei cittadini dell'Unione europea
 
-Iniziare con questi tipi di informazioni riservate. Molti altri tipi di informazioni riservate sono in fase di rilascio per i dati personali nei paesi dell'Unione europea.
+Iniziare con queste tipologie di informazioni sensibili. Molte altre tipologie saranno presto disponibili per i dati personali nei paesi dell'Unione europea.
+
 
 > Belgio - Numero nazionale
 >
@@ -202,11 +218,13 @@ Iniziare con questi tipi di informazioni riservate. Molti altri tipi di informaz
 
 -   Numero istanze - Consente di definire il numero di occorrenze di informazioni riservato che un documento deve contenere prima di essere incluso nei risultati della query.
 
--   Intervallo di confidenza - Consiste nel livello di confidenza con il quale il tipo di informazione riservata identificata rappresenta effettivamente una corrispondenza, ad esempio 85 (85%).
+-   Intervallo di confidenza - Indica il livello di confidenza secondo il quale la tipologia di informazione sensibile identificata rappresenta effettivamente una corrispondenza, ad esempio 85 (85%).
+
 
 Sintassi:
 
--   SensitiveType:”\<type\>|\<count range\>|\<confidence range\>”
+-   SensitiveType:”\<tipologia\>|\<numero istanze\>|\<intervallo confidenza\>”
+
 
 Esempi:
 

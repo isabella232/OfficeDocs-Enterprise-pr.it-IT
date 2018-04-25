@@ -29,23 +29,28 @@ Se si utilizzano le etichette per la protezione dei dati personali in Office 365
 
 Le etichette di Azure Information Protection al momento sono consigliate per l'applicazione di etichette ai file in locale e in altri servizi e provider cloud. Sono consigliate anche per i file in Office 365 che richiedono la crittografia di Azure Rights Management (Azure RMS) per la protezione dei dati, come file contenenti segreti commerciali.
 
-Al momento, l'uso di Azure Information Protection per applicare la crittografia di Azure RMS non è consigliabile per i file in Office 365 contenti dati soggetti all'RGPD. I servizi di Office 365 attualmente non possono leggere i file crittografati con RMS. Di conseguenza, il servizio non può trovare i dati riservati in questi file.
+Al momento, l'uso di Azure Information Protection per applicare la crittografia di Azure RMS non è consigliabile per i file in Office 365 contenti dati soggetti all'RGPD. I servizi di Office 365 attualmente non possono leggere i file crittografati con RMS. Di conseguenza, il servizio non può trovare i dati sensibili in questi file.
 
-Le etichette di Azure Information Protection possono essere applicate alla posta in Exchange Online e funzionano con la prevenzione della perdita di dati di Office 365. Presto, con il motore di classificazione e di creazione di etichette unificato, sarà possibile usare le stesse etichette per i messaggi di posta elettronica e i file, inclusa la creazione di etichette e la protezione della posta elettronica in transito.
+Le etichette di Azure Information Protection possono essere applicate alla posta in Exchange Online e funzionano con la prevenzione della perdita di dati di Office 365. Prossimamente, con il motore unificato per la classificazione e la creazione delle etichette, sarà possibile usare le stesse etichette per i messaggi di posta elettronica e i file; sarà anche possibile creare le etichette e proteggere i messaggi di posta elettronica in transito.
+
 
 ![Le etichette di Office 365 e di Azure Information Protection](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 Nella figura:
 
--   Uso delle etichette di Office 365 per i dati personali per i file con segreti commerciali e altamente regolamentati in SharePoint Online e OneDrive for Business.
+-   Uso delle etichette di Office 365 per i dati personali per i file con segreti commerciali e soggetti a normative in SharePoint Online e OneDrive for Business.
 
--   Utilizzare le etichette di Azure Information Protection (AIP) per i file con segreti commerciali e altamente regolamentati, la posta elettronica di Exchange Online, file in altri servizi SaaS, file in datacenter in locale e file in altri provider cloud.
 
--   A breve: entrambi i tipi di etichette convergeranno in un'unica esperienza di classificazione e creazione di etichette.
+-   Uso delle etichette di Azure Information Protection (AIP) per i file con segreti commerciali e soggetti a normative, la posta elettronica di Exchange Online, file in altri servizi SaaS, file in datacenter in locale e file in altri provider cloud.
+
+
+-   Prossimamente questi due tipi di etichette verranno consolidati per offrire un'unica esperienza di classificazione e creazione di etichette.
+
 
 ## <a name="use-office-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Usare le etichette di Office e i tipi di informazioni riservate in Microsoft 365 per la protezione delle informazioni
 
-La figura seguente mostra il modo in cui le etichette di Office e i tipi di informazioni riservate possono essere utilizzati nei criteri delle etichette, nei criteri di prevenzione della perdita di dati e con i criteri di Cloud App Security.
+La figura seguente mostra come le etichette e le tipologie di informazioni sensibili di Office possono essere utilizzati nei criteri delle etichette, nei criteri di prevenzione della perdita di dati e con i criteri di Cloud App Security.
+
 
 ![Etichette di Office e tipi di informazioni riservate](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
@@ -62,15 +67,18 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Etichette di Office. Esempi: Personale, Pubblico, Dati cliente, Dati risorse umano, Riservato, Estremamente riservato</td>
+<td align="left">Etichette di Office. Esempi: Personale, Pubblico, Dati cliente, Dati risorse umane, Riservato, Estremamente riservato
+</td>
 <td align="left"><p>Applicare automaticamente questa etichetta...</p>
-<p>Dati del cliente</p>
+<p>Dati cliente
+</p>
 <p>... ai documenti che corrispondono a questi tipi di informazioni riservate...</p>
 <p>&lt;elenco dei tipi di informazioni riservate&gt;</p></td>
 <td align="left"><p>Applicare la protezione...</p>
 <p>&lt;definire la protezione&gt;</p>
 <p>... ai documenti con questa etichetta...</p>
-<p>Dati del cliente</p></td>
+<p>Dati cliente
+</p></td>
 <td align="left"><p>Avvisa quando i file con questi attributi...</p>
 <p>&lt;Attributo PII predefinito oppure espressione personalizzata&gt;</p>
 <p>... in qualsiasi app SaaS approvata vengono condivisi all'esterno dell'organizzazione</p></td>
@@ -89,9 +97,11 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 </tbody>
 </table>
 
-## <a name="prioritize-auto-apply-label-policies"></a>Determinare la priorità per applicare automaticamente i criteri delle etichette
+## <a name="prioritize-auto-apply-label-policies"></a>Definire la priorità dei criteri per applicare automaticamente le etichette
 
-Per i dati personali soggetti all'RGPD, Microsoft consiglia di applicare automaticamente le etichette utilizzando i tipi di informazioni riservate creati per l'ambiente. È importante che i criteri applicati automaticamente siano ben progettati e testati per evitare problemi.
+
+Per i dati personali soggetti all'RGPD, Microsoft consiglia di applicare automaticamente le etichette utilizzando le tipologie di informazioni sensibili create per il proprio ambiente. I criteri che applicano automaticamente le etichette devono essere configurati correttamente e occorre testarli per verificare che producano i risultati previsti.
+
 
 L'ordine con cui vengono creati i criteri da applicare automaticamente e il fatto che gli utenti applichino o meno queste etichette influisce sul risultato. È quindi importante pianificare attentamente l'implementazione. Ecco cosa serve sapere.
 
@@ -99,25 +109,32 @@ L'ordine con cui vengono creati i criteri da applicare automaticamente e il fatt
 
 È possibile assegnare solo un'etichetta a un documento.
 
-### <a name="older-auto-apply-policies-win"></a>I criteri da applicare automaticamente meno recenti vincono
+### <a name="older-auto-apply-policies-win"></a>I criteri più vecchi hanno la precedenza
 
-Se sono presenti più regole che assegnano un'etichetta da applicare automaticamente e il contenuto soddisfa le condizioni di più regole, viene assegnata l'etichetta della regola meno recente. Per questo motivo, è importante pianificare con attenzione i criteri delle etichette prima di configurarli. Se un'organizzazione richiede una modifica alla priorità dei criteri delle etichette, questi dovranno essere eliminate e creati di nuovo.
 
-### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a>Le etichette applicate manualmente dall'utente battono quelle applicate automaticamente
+Se sono presenti più regole che assegnano un'etichetta da applicare automaticamente e il contenuto soddisfa le condizioni di più regole, viene assegnata l'etichetta della regola meno recente. Per questo motivo, è importante pianificare con attenzione i criteri delle etichette prima di configurarli. Se un'organizzazione ha l'esigenza di modificare la priorità dei criteri delle etichette, è necessario eliminarli e crearli di nuovo.
+
+
+### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a>Le etichette applicate manualmente dall'utente hanno la precedenza su quelle applicate automaticamente
+
 
 Le etichette applicate manualmente dall'utente battono quelle applicate automaticamente. I criteri di applicazione automatica non possono sostituire un'etichetta già applicata da un utente. Gli utenti possono sostituire le etichette applicate automaticamente.
 
 ### <a name="auto-assigned-labels-can-be-updated"></a>Le etichette assegnate automaticamente possono essere aggiornate
 
-Le etichette assegnate automaticamente possono essere aggiornate non nuovi criteri o aggiornando quelli esistenti.
+Le etichette assegnate automaticamente possono essere aggiornate creando nuovi criteri o aggiornando quelli esistenti.
+
 
 Assicurarsi che il piano di implementazione delle etichette includa:
 
--   Assegnare la priorità nell'ordine con cui vengono creati i criteri applicati automaticamente.
+-   Creare i criteri di applicazione automatica secondo l'ordine di priorità.
 
--   Concedere il tempo sufficiente alle etichette per essere applicate automaticamente prima di implementarle affinché gli utenti le applichino manualmente. Potrebbero essere necessari fino a 7 giorni affinché le etichette vengano applicate in tutti i contenuti che corrispondono alle condizioni.
 
-### <a name="example-priority-for-creating-the-auto-apply-policies"></a>Priorità di esempio per la creazione di criteri di applicazione automatica
+-   Allocare il tempo necessario all'applicazione automatica delle etichette prima di consentire agli utenti di applicarle manualmente. Potrebbe essere necessaria anche una settimana per applicare le etichette a tutti i contenuti che corrispondono alle condizioni.
+
+
+### <a name="example-priority-for-creating-the-auto-apply-policies"></a>Esempio di priorità per creare i criteri di applicazione automatica
+
 
 <table>
 <thead>
@@ -132,11 +149,13 @@ Assicurarsi che il piano di implementazione delle etichette includa:
 <td align="left">1</td>
 </tr>
 <tr class="even">
-<td align="left">Dati del cliente</td>
+<td align="left">Dati cliente
+</td>
 <td align="left">2</td>
 </tr>
 <tr class="odd">
-<td align="left">Highly Confidential (Riservatezza elevata)</td>
+<td align="left">Estremamente riservato
+</td>
 <td align="left">3</td>
 </tr>
 <tr class="even">
@@ -158,7 +177,8 @@ Assicurarsi che il piano di implementazione delle etichette includa:
 </tbody>
 </table>
 
-## <a name="create-labels-and-auto-apply-label-policies"></a>Creare le etichette i criteri delle etichette da applicare automaticamente
+## <a name="create-labels-and-auto-apply-label-policies"></a>Creare le etichette e i criteri per applicare le etichette automaticamente
+
 
 Creare le etichette e i criteri nel Centro sicurezza e conformità.
 
@@ -186,7 +206,8 @@ Creare le etichette e i criteri nel Centro sicurezza e conformità.
 </tbody>
 </table>
 
-La figura seguente mostra come creare un'etichetta da applicare automaticamente per l'etichetta Dati del cliente.
+La figura seguente mostra come creare un'etichetta Dati cliente da applicare automaticamente.
+
 
 ![Creare e applicare un'etichetta per i dati del cliente](Media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
