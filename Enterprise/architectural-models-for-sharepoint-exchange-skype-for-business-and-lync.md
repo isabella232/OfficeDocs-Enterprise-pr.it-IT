@@ -7,7 +7,7 @@ ms.date: 04/11/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: "Riepilogo: Ottenere i poster IT vengono descritti i modelli dell'architettura, distribuzione e le opzioni della piattaforma per SharePoint, Exchange, Skype per le aziende e Lync."
-ms.openlocfilehash: ac3ba3f8a0786ec28c9aa6099f288811802bd92d
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: 79831116df486e1a0ae87c07c01070a5ecd1c4b0
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync
 
@@ -187,7 +187,7 @@ Questi poster IT mostrano soluzioni basate su Azure con SharePoint Server 2013 i
 |:-----|:-----|
 |[![Processo di ripristino di emergenza di SharePoint per Azure](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![File PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![File Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![Visualizzare una pagina con le versioni in altre lingue](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Altre lingue](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |Questo poster IT illustra i principi di architettura per un ambiente di ripristino di emergenza in Azure. Per ottenere una versione di questo poster testo accessibile, vedere [il diagramma accessibile - ripristino di emergenza di SharePoint in Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).<br/><br/> Per ulteriori informazioni, vedere gli articoli seguenti:  <br/><br/> - [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>Concetti
+## <a name="see-also"></a>Vedere anche
 
 <a name="Lync2013_Options"> </a>
 
