@@ -24,6 +24,9 @@
 ### [Visualizzare gli account utente con Office 365 PowerShell](view-user-accounts-with-office-365-powershell.md)
 ### [Configurare le proprietà degli account utente con Office 365 PowerShell](configure-user-account-properties-with-office-365-powershell.md)
 ## [Gestire SharePoint Online con PowerShell di Office 365](manage-sharepoint-online-with-office-365-powershell.md)
+### [Creare siti di SharePoint Online e aggiungere gli utenti](create-sharepoint-sites-and-add-users-with-powershell.md)
+### [Gestire i gruppi di utenti e SharePoint Online](manage-sharepoint-users-and-groups-with-powershell.md)
+### [Gestire i gruppi del sito SharePoint Online](manage-sharepoint-site-groups-with-powershell.md)
 ## [Gestione di Exchange Online con Office 365 PowerShell](manage-exchange-online-with-office-365-powershell.md)
 ## [Usare PowerShell per la migrazione della posta elettronica a Office 365](use-powershell-for-email-migration-to-office-365.md)
 ### [Utilizzare PowerShell per eseguire una migrazione completa a Office 365](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
@@ -35,7 +38,7 @@
 ### [Connessione a Exchange Online tramite Windows PowerShell remoto per i partner l'accesso delegato](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [Recuperare analisi dati tramite Windows PowerShell dei report per i partner l'accesso delegato](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
 ### [Aggregazione analisi dati tramite Windows PowerShell dei report per i partner l'accesso delegato](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
-## [Gestire Skype for Business Online con PowerShell di Office 365](manage-skype-for-business-online-with-office-365-powershell.md)
+## [Gestire Skype for Business online con PowerShell di Office 365](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [Gestire criteri Skype for Business Online con PowerShell di Office 365](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [Assegnare criteri Skype for Business Online con PowerShell di Office 365](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
 
