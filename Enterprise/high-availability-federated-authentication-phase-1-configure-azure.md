@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Riepilogo: Configurare l'infrastruttura Microsoft Azure per la disponibilità elevata host l'autenticazione federata per Office 365."
-ms.openlocfilehash: aea4fb5b8645f18381b9b9391b91925ffed00aab
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 465c53efe8464ac823ebb3cd0e847a854eed82bb
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: Configurare Azure
 
@@ -42,9 +42,9 @@ Prima di iniziare la configurazione dei componenti Azure, del riempimento nelle 
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Nome VNet  <br/> |Un nome da assegnare alla VNet (ad esempio, FedAuthNet).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |2.  <br/> |Percorso VNet  <br/> |Data center di Azure regionale che conterrà la rete virtuale.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |Indirizzo IP del dispositivo VPN  <br/> |L'indirizzo IPv4 pubblico dell'interfaccia del dispositivo VPN su Internet.   <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|3.  <br/> |Indirizzo IP del dispositivo VPN  <br/> |L'indirizzo IPv4 pubblico dell'interfaccia del dispositivo VPN su Internet.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |4.  <br/> |Spazio di indirizzi della VNet  <br/> |Lo spazio di indirizzi della rete virtuale. Consultare il proprio reparto IT per determinare tale spazio di indirizzi.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |Chiave condivisa IPsec  <br/> |32 caratteri alfanumerici casuale stringa che verrà utilizzata per autenticare entrambi i lati della connessione VPN da sito. Lavorare con le IT o un reparto di sicurezza per determinare il valore della chiave. In alternativa, vedere [creazione di una stringa casuale per una chiave già condivisa IPsec](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|5.  <br/> |Chiave condivisa IPsec  <br/> |Una stringa con 32 caratteri alfanumerici casuali che verrà utilizzata per autenticare entrambi i lati della connessione VPN da sito a sito. Consultare il reparto IT o della sicurezza per determinare tale valore chiave. In alternativa, vedere [Creare una stringa casuale per una chiave già condivisa IPsec ](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
  **Tabella V: configurazione di una rete virtuale cross-premise**
   
@@ -71,7 +71,7 @@ Consultare il reparto IT per determinare tali spazi di indirizzi in base allo sp
   
 Successivamente, compilare la tabella I per gli indirizzi IP statici assegnati alle macchine virtuali e alle istanze del bilanciamento del carico.
   
-|**Elemento**|**Scopo**|**Indirizzo IP della subnet**|**Valore**|
+|**Elemento**|**Scopo**|**Indirizzo IP sulla subnet**|**Valore**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Indirizzo IP statico del primo controller di dominio  <br/> |Il quarto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 1 della tabella S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |2.  <br/> |Indirizzo IP statico del secondo controller di dominio  <br/> |Il quinto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 1 della tabella S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
@@ -82,7 +82,7 @@ Successivamente, compilare la tabella I per gli indirizzi IP statici assegnati a
 |7.  <br/> |Indirizzo IP statico del primo server proxy dell'applicazione Web  <br/> |Il quarto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 3 della tabella S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |8.  <br/> |Indirizzo IP statico del secondo server proxy dell'applicazione Web  <br/> |Il quinto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 3 della tabella S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
- **Indirizzi IP statici i: tabella nella rete virtuale**
+ **Tabella I: indirizzi IP statici nella rete virtuale**
   
 Per due server DNS (Domain Name System) nella rete locale che si desidera utilizzare durante la configurazione iniziale dei controller di dominio nella rete virtuale, compilare la tabella D. Consultare il reparto IT per determinare questo elenco.
   
@@ -108,7 +108,7 @@ Per l'insieme degli spazi di indirizzi della rete locale, compilare la tabella L
 Iniziamo a creare l'infrastruttura di Azure per ospitare l'autenticazione federata di Office 365.
   
 > [!NOTE]
-> Il seguente comando consente di utilizzare la versione più recente di Azure PowerShell. Vedere [iniziare a utilizzare i cmdlet PowerShell di Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Avviare un prompt dei comandi di Azure PowerShell e accedere al proprio account.
   
@@ -146,14 +146,14 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 Compilare la tabella seguente per il set di nomi dei gruppi di risorse univoci.
   
-|**Elemento**|**Nome del gruppo di risorse**|**Scopo**|
+|**Elemento**|**Nome dei gruppi di risorse**|**Scopo**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Controller di dominio  <br/> |
 |2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Server AD FS  <br/> |
 |3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Server proxy di applicazione Web  <br/> |
 |4.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Elementi dell'infrastruttura  <br/> |
    
- **Tabella r: gruppi di risorse**
+ **Tabella R: gruppi di risorse**
   
 Creare i nuovi gruppi di risorse con questi comandi.
   
@@ -198,7 +198,7 @@ New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $
 
 ```
 
-È quindi creare rete gruppi di sicurezza per ogni subnet che contiene le macchine virtuali. Per eseguire isolamento subnet, è possibile aggiungere regole per specifici tipi di traffico concesse o negate al gruppo di protezione di rete di una subnet.
+Successivamente, creare i gruppi di sicurezza di rete per ogni subnet contenente macchine virtuali. Per eseguire l'isolamento della subnet, è possibile aggiungere regole per i tipi specifici di traffico concesso o negato per il gruppo di sicurezza di rete di una subnet.
   
 ```
 # Create network security groups
@@ -259,25 +259,25 @@ Successivamente, registrare l'indirizzo IPv4 pubblico del gateway VPN di Azure p
 Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Configurare quindi il dispositivo VPN in locale per la connessione al gateway VPN Azure. Per ulteriori informazioni, vedere [configurare il dispositivo VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Successivamente, configurare il dispositivo VPN locale per stabilire una connessione con il gateway VPN di Azure. Per ulteriori informazioni, vedere [Configurare il dispositivo VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Per configurare il dispositivo VPN locale, è necessario quanto segue:
   
 - L'indirizzo IPv4 pubblico del gateway VPN di Azure.
     
-- Il tasto già condiviso IPsec per la connessione VPN da sito (colonna di tabella V - elemento 5 - valore).
+- La chiave già condivisa IPsec per la connessione VPN da sito a sito (Tabella V- Elemento 5 - Colonna Valore).
     
 Successivamente, assicurarsi che lo spazio di indirizzi della rete virtuale sia raggiungibile dalla rete locale. In genere è possibile aggiungere una route corrispondente allo spazio di indirizzi di rete virtuali al dispositivo VPN e quindi distribuire tale route al resto dell'infrastruttura di routing della rete dell'organizzazione. A tale scopo, consultare il proprio reparto IT.
   
 Successivamente, definire i nomi di tre set di disponibilità. Compilare la tabella A.  
   
-|**Elemento**|**Scopo**|**Nome del set di disponibilità**|
+|**Elemento**|**Scopo**|**Nome set di disponibilità**|
 |:-----|:-----|:-----|
 |1.  <br/> |Controller di dominio  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |2.  <br/> |Server AD FS  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |3.  <br/> |Server proxy di applicazione Web  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
- **Set di disponibilità a: tabella**
+ **Tabella A: set di disponibilità**
   
 Questi nomi sono necessari quando si creano le macchine virtuali nelle fasi 2, 3 e 4.
   
@@ -287,13 +287,13 @@ Creare i nuovi set di disponibilità con questi comandi di Azure PowerShell.
 $locName="<the Azure location for your new resource group>"
 $rgName="<Table R - Item 1 - Resource group name column>"
 $avName="<Table A - Item 1 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 2 - Resource group name column>"
 $avName="<Table A - Item 2 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 3 - Resource group name column>"
 $avName="<Table A - Item 3 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 ```
 
 Questa è la configurazione risultante dal completamento corretto di questa fase.

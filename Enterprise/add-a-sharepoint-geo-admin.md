@@ -8,11 +8,11 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: Informazioni su come aggiungere o rimuovere un amministratore geo in OneDrive per Business Multi-Geo.
-ms.openlocfilehash: 7630597654df9ad78619b94fedc9e18d5b0b721e
-ms.sourcegitcommit: 886b23f590f6187f7a98c1083a3b49359ec2a5c3
+ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Aggiungere o rimuovere un amministratore geo in OneDrive per Busniess Multi-Geo
 
@@ -49,6 +49,14 @@ Si noti che non tutti i gruppi di sicurezza abbiano un alias di gruppo. Se si de
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 Per rimuovere un gruppo utilizzando il parametro ObjectID, eseguire`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
+
+### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a>Accesso al centro di amministrazione per una determinata posizione geografica
+
+Per amministrare le impostazioni di OneDrive per la posizione geografica, gli amministratori devono accedere interfaccia di amministrazione di OneDrive direttamente utilizzando il formato di URL seguente:
+
+https://admin.onedrive.com/?geo=<*livello geografico*>
+
+Ad esempio, si trova all'interfaccia di amministrazione di OneDrive per Canada: https://admin.onedrive.com/?geo=CAN.
 
 ## <a name="see-also"></a>Vedere anche
 
