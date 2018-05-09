@@ -4,21 +4,24 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 ms.date: 5/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: ''
-ms.custom: ''
-ms.assetid: ''
+ms.service: Office 365 Administration
+localization_priority: None
+ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: Informazioni sui criteri client di Office 365 supportati da Android, browser, iOS, Mac OS X, Windows e Windows Mobile.'
-ms.openlocfilehash: 1da917ec40fb40d7a13dc5fb426f640b178877f4
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: 663d2e2a127b03524f7f402acee3d6249870321a
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="office-365-client-policies---client-and-app-view"></a>Criteri Client di Office 365 - Client e visualizzazione di App
+**Per modificare la visualizzazione di queste informazioni per? Selezionare un'altra visualizzazione riportata di seguito:**
+> [!div class="op_single_selector"] 
+> - [Client e visualizzazione di App](office-365-client-policies-app-view.md)
+> - [Visualizzazione dei criteri](office-365-client-policies-policy-view.md)
+
 Utilizzare gli elenchi seguenti per determinare i criteri client di Office 365 sono supportati per le singole applicazioni client di Microsoft.
 
 ## <a name="delve"></a>Delve

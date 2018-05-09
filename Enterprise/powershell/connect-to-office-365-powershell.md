@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Riepilogo: Connettersi all'organizzazione Office 365 con Office 365 PowerShell per eseguire attività di interfaccia di amministrazione da riga di comando."
-ms.openlocfilehash: 65ddb3c66d2cd69ad1ecb468ec762667a0b07a84
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
+ms.openlocfilehash: eac56ae28ab48bb53842725d703bf81fb37d31eb
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
@@ -120,7 +120,7 @@ Se non vengono visualizzati errori, controllare i requisiti seguenti:
 <a name="ConnectV2"> </a>
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Collegarsi con Azure Active Directory PowerShell modulo grafico
 
-Comandi del modulo di [Azure Active Directory PowerShell modulo grafico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) hanno "AzureAD" nel loro nome del cmdlet.
+Comandi del modulo di [Azure Active Directory PowerShell modulo grafico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) hanno **AzureAD** nel loro nome del cmdlet.
 
 Per le procedure necessarie per i nuovi cmdlet di Azure Active Directory PowerShell modulo grafico, utilizzare la procedura seguente per installare il modulo ed eseguire la connessione alla sottoscrizione Office 365.
 

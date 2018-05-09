@@ -16,13 +16,13 @@ ms.collection:
 - Ent_O365
 - Ent_O365_Hybrid
 ms.custom: Ent_Solutions
-ms.assetid: 
+ms.assetid: ''
 description: 'Riepilogo: Informazioni su come ignorare il servizio di controllo di accesso di Azure e utilizzo di SAML 1.1 per autenticare gli utenti di SharePoint Server con Azure Active Directory.'
-ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
-ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
+ms.openlocfilehash: 1ab0bb3215531ca8b2d0fda8d70874f966438759
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Utilizzo di Azure Active Directory per l'autenticazione di SharePoint Server
 
@@ -210,6 +210,22 @@ $cert= New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
 New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
+## <a name="configuring-one-trusted-identity-provider-for-multiple-web-applications"></a>Configurazione di un provider di identità attendibile per più applicazioni web
+La configurazione può essere utilizzato per una singola applicazione web, ma è necessario configurazione aggiuntiva se si intende utilizzare lo stesso provider di identità attendibile per più applicazioni web. Si supponga ad esempio si fosse estesa di un'applicazione web di utilizzare l'URL `https://portal.contoso.local` e si desidera eseguire l'autenticazione agli utenti di `https://sales.contoso.local` anche. A tale scopo, è necessario aggiornare il provider di identità per applicano il parametro WReply e aggiornare la registrazione dell'applicazione in Azure Active Directory per aggiungere un URL di risposta.
+
+1. Aprire la directory di Azure Active Directory nel portale di Azure. Fare clic su **registrazioni App**e quindi fare clic su **Visualizza tutte le applicazioni**. Fare clic sull'applicazione creato in precedenza (integrazione SAML con SharePoint).
+2. Fare clic su **Impostazioni**.
+3. In blade impostazioni, fare clic su **Rispondi URL**. 
+4. Aggiungere l'URL dell'applicazione web aggiuntivi (ad esempio `https://sales.contoso.local`) e fare clic su **Salva**. 
+5. Nel server di SharePoint, aprire **SharePoint 2016 Management Shell** ed eseguire i comandi seguenti, utilizzando il nome dell'emittente di token di identità attendibile è utilizzato in precedenza.
+
+```
+$t = Get-SPTrustedIdentityTokenIssuer "AzureAD"
+$t.UseWReplyParameter=$true
+$t.Update()
+```
+6. In Amministrazione centrale, passare all'applicazione web e abilitare il provider di identità attendibile. Ricordare inoltre configurare l'URL della pagina di accesso come una pagina di accesso personalizzata `/_trust/`.
+7. In Amministrazione centrale fare clic sull'applicazione web e scegliere **Criteri utente**. Aggiungere un utente con le autorizzazioni appropriate, come illustrato in precedenza in questo articolo.
 
 ## <a name="fixing-people-picker"></a>Correzione di selezione utenti
 Gli utenti possono ora accedere 2016 SharePoint utilizzando l'identità di Azure Active Directory, ma sono ancora presenti opportunità per analisi utilizzo software per l'esperienza utente. In selezione utenti, ad esempio, la ricerca di un utente presenta più risultati della ricerca. Non esiste un risultato di ricerca per ognuno dei tipi di 3 attestazione creati nel mapping delle attestazioni. Per scegliere un account utente utilizzando la selezione utenti, è necessario digitare esattamente il proprio nome utente e scegliere il **nome** di attestazione risultati.

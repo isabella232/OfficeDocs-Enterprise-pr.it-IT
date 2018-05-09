@@ -3,7 +3,7 @@ title: Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utent
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/07/2018
 ms.audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -14,20 +14,17 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Informazioni su come assegnare licenze ad account utente e disabilitare i piani di servizio specifici nello stesso momento usando PowerShell di Office 365.
-ms.openlocfilehash: 0ab1aea03099f6aae469699b1169af9e12b41d74
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+ms.openlocfilehash: 7567d84490cdb3db7c149a51c4f2f04d39cad9ce
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente
 
 **Sintesi**: Informazioni su come assegnare licenze ad account utente e disabilitare i piani di servizio specifici nello stesso momento usando PowerShell di Office 365.
   
 Le sottoscrizioni a Office 365 includono piani di servizio per i singoli servizi. Gli amministratori di Office 365 spesso devono disabilitare alcuni piani quando assegnano le licenze agli utenti. Con le istruzioni disponibili in questo articolo, è possibile assegnare una licenza di Office 365 durante la disabilitazione di piani di servizio specifici usando PowerShell per un singolo account utente o più account utente.
-  
-> [!NOTE]
-> Questo articolo è basato sul lavoro di Siddhartha Parmar, ingegnere escalation del supporto tecnico Microsoft. 
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -151,8 +148,6 @@ Blocco di comando di PowerShell:
 - Crea un file CSV con tutti gli utenti che sono stati elaborati e mostra il relativo stato della licenza.
     
 ## <a name="see-also"></a>Vedere anche
-
-#### 
 
 [Disattivare l'accesso ai servizi con PowerShell di Office 365](disable-access-to-services-with-office-365-powershell.md)
   
