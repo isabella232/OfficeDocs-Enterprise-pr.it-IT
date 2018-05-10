@@ -11,11 +11,11 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Espandere la presenza di Office 365 a più aree geografiche con funzionalità multi-geo in Exchange Online.
-ms.openlocfilehash: 6378f8a010b790674f07150aa39cbbc38c60b7fe
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: ea00ab52142e92e122273ab4ba718e98bd94b572
+ms.sourcegitcommit: 12d3223cc2d6bf39a8960409a923254e1790fd2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Funzionalità multi-Geo in Exchange Online
 
@@ -65,7 +65,7 @@ Exchange Online Sincronizza la proprietà **PreferredDataLocation** di Azure Act
 
 - Se non viene specificato alcun livello geografico, verrà effettuata la cassetta postale nel livello geografico predefinito.
 
-**Nota**: funzionalità Multi-Geo e Skype per le riunioni Online Business regionale ospitata utilizzare la proprietà **PreferredDataLocation** per gli oggetti utente per individuare i servizi. Se si configurano i valori **PreferredDataLocation** per gli oggetti utente per le riunioni regionale ospitate, la cassetta postale e OneDrive per gli utenti verranno automaticamente spostati in Geo specificato dopo Multi-Geo è abilitato nel tenant di Office 365.
+**Nota**: funzionalità Multi-Geo e Skype per le riunioni Online Business regionale ospitata utilizzare la proprietà **PreferredDataLocation** per gli oggetti utente per individuare i servizi. Se si configurano i valori **PreferredDataLocation** per gli oggetti utente per le riunioni regionale ospitate, la cassetta postale per gli utenti verrà automaticamente spostata nella Geo specificato dopo Multi-Geo è abilitato nel tenant di Office 365.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitazioni per le funzionalità per la Multi-Geo in Exchange Online
 1. Solo cassette postali degli utenti, cassette postali delle risorse (sale e attrezzature cassette postali) e le cassette postali condivise supportano funzionalità Multi-Geo. È possibile inserire le cassette postali di cartelle pubbliche e gruppi di Office 365 in geografica principale del cliente.
