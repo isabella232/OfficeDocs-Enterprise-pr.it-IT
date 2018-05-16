@@ -3,7 +3,7 @@ title: Distribuire un sito del team di SharePoint Online isolato
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Riepilogo: Distribuire un nuovo sito del team SharePoint Online isolato, con queste istruzioni dettagliate.'
-ms.openlocfilehash: 297681b688b43eb02ee4f99f983a0f796312e599
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: c4bb272cc96ca86fc8bffc99f7c3e50033c06755
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Distribuire un sito del team di SharePoint Online isolato
 
@@ -63,19 +63,21 @@ I visualizzatori del sito potrebbero includere la direzione esecutiva, i consule
     
 1. Nel browser, accedere al portale di Azure in [https://portal.azure.com](https://portal.azure.com) e accedere con le credenziali di un account assegnato con ruolo di amministratore Gestione utente o amministratore aziendale.
     
-2. Nel portale di Azure, fare clic su **Azure Active Directory > utenti e gruppi > tutti i gruppi di**.
+2. Nel portale di Azure, fare clic su **Azure Active Directory > gruppi**.
     
-3. Su blade **tutti i gruppi** , fare clic su **+ nuovo gruppo**.
+3. Su blade **gruppi: tutti i gruppi** , fare clic su **+ nuovo gruppo**.
     
-4. Su blade **gruppo** :
+4. Nel pannello **Gruppo**:
+    
+  - Selezionare **Office 365** nel **tipo di gruppo**.
     
   - Digitare il nome del gruppo nella **casella Nome**.
     
-  - In **appartenenza**, selezionare **assegnato** .
+  - Digitare una descrizione del gruppo nella **descrizione del gruppo**.
     
-  - Fare clic su **Sì** per **caratteristiche di attivare Office**.
+  - Selezionare **assegnata** nel **tipo di appartenenza**.
     
-5. Fare clic su **Crea**e quindi chiudere blade **gruppo** .
+5. Fare clic su **Crea** e quindi chiudere il pannello **Gruppo**.
     
 6. Ripetere i passaggi da 3 a 5 per i gruppi aggiuntivi.
     
@@ -160,11 +162,11 @@ Creare innanzitutto il sito del team di SharePoint Online seguendo questa proced
   
 1. Accedere al portale di Office 365 con un account che verrà utilizzato anche per amministrare il sito del team di SharePoint Online (un amministratore di SharePoint Online). Per ulteriori informazioni, vedere [la posizione in cui eseguire l'accesso a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Nell'elenco delle sezioni, fare clic su **SharePoint**.
+2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
 3. In una nuova scheda **SharePoint** del browser, fare clic su **Crea sito +**.
     
-4. Nella pagina **Crea sito** fare clic su **sito del Team**.
+4. Nella pagina **Crea un sito** fare clic su **Sito del team**.
     
 5. In **nome sito**digitare un nome per il sito del team. 
     
@@ -172,15 +174,15 @@ Creare innanzitutto il sito del team di SharePoint Online seguendo questa proced
     
 7. **Le impostazioni di Privacy**, selezionare **privato: solo membri possono accedere al sito**e quindi fare clic su **Avanti**.
     
-8. Nella **che si desidera aggiungere?** riquadro, fare clic su **Fine**.
+8. Nel riquadro **Who do you want to add?** (Chi si desidera aggiungere?) fare clic su **Fine**.
     
 Successivamente, dal nuovo sito del team di SharePoint Online configurare le autorizzazioni.
   
 1. Nella barra degli strumenti, fare clic sull'icona impostazioni e quindi fare clic su **autorizzazioni sito**.
     
-2. Nel riquadro **autorizzazioni sito** fare clic su **impostazioni di autorizzazioni avanzate**.
+2. Nel riquadro **Autorizzazioni sito** fare clic su **Advanced permissions settings** (Impostazioni autorizzazioni avanzate).
     
-3. Nella scheda **autorizzazioni** nuova del browser, fare clic su **Impostazioni richieste di accesso**.
+3. Nella nuova scheda **Autorizzazioni** del browser fare clic su **Impostazioni richieste di accesso**.
     
 4. Nella finestra di dialogo **Impostazioni di richieste di accesso** , deselezionare **Consenti membro per condividere il sito e i singoli file e cartelle** e **Consenti richieste di accesso** (in modo che tutti i tre caselle di controllo è deselezionate), quindi scegliere **OK**.
     
@@ -206,7 +208,7 @@ Successivamente, dal nuovo sito del team di SharePoint Online configurare le aut
     
 15. Nella finestra di dialogo **condivisione** digitare il nome del gruppo di accesso del sito visualizzatori, selezionarlo e fare clic su **Condividi**.
     
-16. Chiudere la scheda **autorizzazioni** della finestra del browser.
+16. Chiudere la scheda **Autorizzazioni** del browser.
     
 I risultati di queste impostazioni delle autorizzazioni sono i seguenti:
   

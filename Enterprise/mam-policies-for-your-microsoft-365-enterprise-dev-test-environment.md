@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: 'Riepilogo: Utilizzare questa guida dei laboratori di testing per aggiungere criteri di gestione (MAM) mobili applicazione EMS all''ambiente di sviluppo e di testing Microsoft 365.'
-ms.openlocfilehash: 9eb636fe14b2fbd1fe45fb7dac528a0d4e31be36
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: "Riepilogo: Utilizzare questa guida dei laboratori di testing per aggiungere criteri di gestione (MAM) mobili applicazione EMS all'ambiente di sviluppo e di testing Microsoft 365."
+ms.openlocfilehash: 1d4ede9b5757d4adce8909586790bcad51f7433f
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Criteri MAM per l'ambiente di sviluppo e di testing Microsoft 365 Enterprise
 
@@ -34,25 +34,25 @@ Seguire le istruzioni [nell'ambiente di sviluppo e di testing The Microsoft 365 
 
 In questa fase, è possibile creare e distribuire due diversi criteri MAM: uno per i dispositivi iOS e uno per i dispositivi Android.
   
-1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
+1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
     
-2. In una nuova scheda del browser, aprire il portale di Azure ([https://azure.portal.com](https://azure.portal.com)) e accedere utilizzando l'account amministratore globale di Office 365.
+2. In una nuova scheda del browser, aprire il portale di Azure ([https://azure.portal.com](https://azure.portal.com)) ed eseguire l'accesso utilizzando l'account amministratore globale di Office 365.
     
-3. Nella scheda Azure portale in Internet Explorer, nel riquadro di spostamento fare clic su **altri servizi** (o freccia destra), digitare **Intune**e quindi fare clic su **Intune**.
+3. Nella scheda Azure portale in Internet Explorer, nel riquadro di spostamento fare clic su **tutti i servizi**, digitare **Intune**e quindi fare clic su **Intune**.
     
 4. Nel riquadro di spostamento a sinistra fare clic su **Gruppi**.
     
-5. Su blade **utenti e gruppi di tutti i gruppi** , fare clic su **Aggiungi**.
+5. Su blade **gruppi a tutti i gruppi** , fare clic su **+ nuovo gruppo**.
     
-6. Su blade **gruppo** , digitare **gestiti gli utenti di dispositivi iOS** nella casella **nome**, selezionare **assegnato** nel **tipo di appartenenza**, selezionare **Sì** per **caratteristiche di attivare Office?**, quindi fare clic su **Crea**. 
+6. Su blade **gruppo** , selezionare **Office 365** per **gruppo tipo?**, digitare **gestiti gli utenti di dispositivi iOS** nella casella **nome**, selezionare **assegnato** nel **tipo di appartenenza**e quindi fare clic su **Crea**. 
     
 7. Chiudere e il **gruppo** .
     
-8. Su blade **utenti e gruppi di tutti i gruppi** , fare clic su **Aggiungi**.
+8. Su blade **gruppi a tutti i gruppi** , fare clic su **Aggiungi**.
     
-9. Su blade **gruppo** , digitare **gli utenti di dispositivi Android gestiti** in **nome**, selezionare **assegnato** nel **tipo di appartenenza**, selezionare **Sì** per **caratteristiche di attivare Office?**, quindi fare clic su **Crea**.
+9. Su blade **gruppo** , selezionare **Office 365** per **gruppo tipo?**, digitare **gestiti Android utente dispositivo** in **nome**, selezionare **assegnato** nel **tipo di appartenenza**e quindi fare clic su **Crea**.
     
-10. Chiudere blade **utenti e gruppi di tutti i gruppi** .
+10. Chiudere blade **gruppi a tutti i gruppi** .
     
 11. Su blade **Intune** , nell'elenco **attività veloce** , fare clic su **Crea un criterio di conformità**.
     
@@ -141,9 +141,9 @@ Ora si dispone di due criteri MAM, uno per i dispositivi iOS e uno per i disposi
   
 ## <a name="see-also"></a>Vedere anche
 
-[L'ambiente di sviluppo e di testing Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
+[Ambiente di sviluppo/test di Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[Registrare iOS e dispositivi Android nell'ambiente di sviluppo e di testing Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Registrazione dei dispositivi iOS e Android nell'ambiente di sviluppo/test di Office 365 ed EMS](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
 
