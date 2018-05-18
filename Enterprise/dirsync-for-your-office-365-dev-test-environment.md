@@ -16,11 +16,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: "Riepilogo: Configurare la sincronizzazione di directory per l'ambiente di sviluppo e di testing di Office 365."
-ms.openlocfilehash: 209b41e4d695a753867d989b8f27b96618a81303
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 826993bc01ee254dc96729c4631bd155ae59a540
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Sincronizzazione della directory per l'ambiente di sviluppo e di testing di Office 365
 
@@ -117,10 +117,15 @@ Quando si è pronti per distribuire la sincronizzazione della directory nella pr
 ## <a name="see-also"></a>Vedere anche
 
 [Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
-[Ambiente di sviluppo e testing di configurazione di base](base-configuration-dev-test-environment.md)
-[Ambiente di sviluppo e testing di Office 365](office-365-dev-test-environment.md)
-[ Cloud App Security per l'ambiente di sviluppo e testing di Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-[Advanced Threat Protection per l'ambiente di sviluppo e testing di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+
+[Ambiente di sviluppo/test della configurazione di base](base-configuration-dev-test-environment.md)
+
+[Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md)
+
+[Cloud App Security per l'ambiente di sviluppo/test di Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+
+[Protezione avanzata dalle minacce per l'ambiente di sviluppo/test di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 
 
