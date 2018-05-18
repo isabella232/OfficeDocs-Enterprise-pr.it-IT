@@ -87,6 +87,7 @@
 #### [Applicare la protezione di dati personali in Office 365](apply-protection-to-personal-data-in-office-365.md)
 #### [Monitor di perdite di dati personali](monitor-for-leaks-of-personal-data.md)
 ### [PILR per i server di Office in locale](gdpr-for-office-servers.md)
+#### [PILR per SharePoint Server](gdpr-for-sharepoint-server.md)
 #### [PILR per Exchange Server](gdpr-for-exchange-server.md)
 #### [PILR per Skype per Business Server](gdpr-for-skype-for-business-server.md)
 #### [PILR per Project Server](gdpr-for-project-server.md)
