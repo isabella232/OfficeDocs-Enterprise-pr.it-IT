@@ -10,65 +10,65 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.service: o365-solutions
-localization_priority: None
-ms.custom: Strat_O365_Enterprise
+localization_priority: Priority
+ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
-description: "Riepilogo: Creare Office 365 e mobilità aziendale + sottoscrizioni di valutazione di sicurezza (EMS) con gli utenti e gruppi per un ambiente di sviluppo e di testing politici campagne."
-ms.openlocfilehash: 25d03e0aa521c8fdbf20c2dc3ff2fc46e1aabe2f
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: MT
+description: 'Riepilogo: creare sottoscrizioni di valutazione di Office 365 ed Enterprise Mobility + Security (EMS) con utenti e gruppi per un ambiente di sviluppo/test di una campagna politica.'
+ms.openlocfilehash: 8556040a648937d4c1bc338292be121e5d290dd9
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
 
- **Riepilogo:** Creazione di Office 365 e mobilità aziendale + sottoscrizioni di valutazione di sicurezza (EMS) con gli utenti e gruppi per un ambiente di sviluppo e di testing politici campagne.
+ **Riepilogo:** creare sottoscrizioni di valutazione di Office 365 ed Enterprise Mobility + Security (EMS) con utenti e gruppi per un ambiente di sviluppo/test di una campagna politica.
   
-Utilizzare le istruzioni riportate in questo articolo per creare un ambiente di sviluppo e di testing che include gli account utente semplificata e gruppi per la soluzione [Microsoft Security Guidance for campagne politici, ricchi e altre organizzazioni Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) .
+Attenersi alle istruzioni in questo articolo per creare un ambiente di sviluppo/test che include account utente e gruppi semplificati per la soluzione [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md).
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365
 
-In questa fase per ottenere le sottoscrizioni di valutazione di Office 365 E5 e mobilità aziendale + E5 di sicurezza (EMS) per le organizzazioni che rappresenta una campagna politica fittizia.
+In questa fase si ottengono le sottoscrizioni di valutazione per Office 365 E5 ed Enterprise Mobility + Security (EMS) E5 per un'organizzazione fittizia che rappresenta una campagna politica.
   
-Per prima cosa, seguire le istruzioni nella **fase 2** dell' [ambiente di sviluppo e di testing di Office 365](office-365-dev-test-environment.md).
+Per prima cosa, seguire le istruzioni della **fase 2** nell'articolo relativo all'[ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md).
   
-Successivamente, Esegui l'iscrizione per la sottoscrizione di prova EMS E5 e come aggiungerla alla stessa organizzazione la sottoscrizione di prova di Office 365.
+Iscriversi quindi per la sottoscrizione di valutazione di EMS E5 e aggiungerla alla stessa organizzazione della sottoscrizione di prova di Office 365.
   
-1. Se necessario, accedere al portale di Office 365 con le credenziali dell'account amministratore globale della sottoscrizione di prova. Per ulteriori informazioni, vedere [la posizione in cui eseguire l'accesso a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, accedere al portale di Office 365 con le credenziali dell'account amministratore globale della sottoscrizione di valutazione. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Fare clic sul riquadro **Amministratore**.
     
-3. Scheda di **interfaccia di amministrazione di Office** nel browser, nel riquadro di spostamento sinistra fare clic su **fatturazione > servizi di acquisto**.
+3. Nella scheda **Interfaccia di amministrazione di Office** del browser fare clic su **Fatturazione > Servizi di acquisto** nel riquadro di spostamento di sinistra.
     
-4. Nella pagina **servizi di acquisto** individuare l'elemento di **sicurezza E5 + mobilità aziendale** . Posizionare il puntatore del mouse su di esso e fare clic su **Start versione di valutazione gratuita**.
+4. Nella pagina **Acquisto di servizi**, individuare la voce **Enterprise Mobility + Security E5**. Posizionare il puntatore del mouse su di essa e fare clic su **Avvia la versione di valutazione gratuita**.
     
 5. Nella pagina **Conferma l'ordine**, fare clic su **Prova adesso**.
     
 6. Nella pagina **Ricevuta ordine**, fare clic su **Continua**.
     
-Successivamente, abilitare la licenza E5 EMS per l'account amministratore globale.
+Abilitare quindi la licenza EMS E5 per l'account amministratore globale.
   
-1. Nella scheda **Centro di amministrazione di Office 365** nel browser, nel riquadro di spostamento sinistra fare clic su **utenti > utenti attivi**.
+1. Nella scheda **Interfaccia di amministrazione di Office 365** del browser fare clic su **Utenti > Utenti attivi** nel riquadro di spostamento di sinistra.
     
-2. Fare clic sull'account di amministratore globale e quindi fare clic su **Modifica** per **le licenze del prodotto**.
+2. Fare clic sull'account amministratore globale e quindi su **Modifica** per le **licenze del prodotto**.
     
-3. Nel riquadro di **licenze per i prodotti** , attivare la licenza del prodotto per la **mobilità aziendale + E5 di sicurezza** per **in**, fare clic su **Salva** e quindi fare doppio clic su **Chiudi** .
+3. Nel riquadro **Licenze per i prodotti**, impostare la licenza per i prodotti di **Enterprise Mobility + Security E5** su **Attiva**, fare clic su **Salva** e quindi fare doppio clic su **Chiudi**.
     
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>Fase 2: Creare e configurare i gruppi di Azure Active Directory (AD)
+## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>Fase 2: creare e configurare i gruppi di Azure Active Directory (AD)
 
 In questa fase, vengono creati e configurati i gruppi di Azure AD per la campagna.
   
-Creare innanzitutto un insieme di gruppi per una campagna politico tipica con il portale di Azure.
+Innanzitutto, creare un set di gruppi per una campagna politica tipica con il portale di Azure.
   
-1. In una scheda distinta nel browser, accedere al portale di Azure in [https://portal.azure.com](https://portal.azure.com). Se necessario, accedere con le credenziali dell'account amministratore globale per la sottoscrizione di valutazione di Office 365 E5.
+1. In una scheda separata nel browser, passare al portale di Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com). Se necessario, accedere con le credenziali dell'account amministratore globale della sottoscrizione di valutazione di Office 365 E5.
     
-2. Nel portale di Azure, fare clic su **Azure Active Directory > utenti e gruppi > tutti i gruppi di**.
+2. Nel portale di Azure fare clic su **Azure Active Directory > Utenti e gruppi > Tutti i gruppi**.
     
-3. Eseguire la procedura seguente per ogni nome di gruppo in questo elenco:
+3. Eseguire la procedura seguente per ciascun nome del gruppo nell'elenco riportato di seguito:
     
   - Personale senior e strategico
     
-  - Personale IT
+  - IT staff
     
   - Personale di analisi
     
@@ -78,33 +78,33 @@ Creare innanzitutto un insieme di gruppi per una campagna politico tipica con il
     
   - Personale di campo
     
-1. Su blade **tutti i gruppi** , fare clic su **+ nuovo gruppo**.
+1. Nel pannello **Tutti i gruppi** fare clic su **+ Nuovo gruppo**.
     
-2. Digitare il nome del gruppo dall'elenco **nome**.
+2. Digitare il nome del gruppo dall'elenco in **Nome**.
     
-3. Selezionare **utente dinamica** di **appartenenza**.
+3. Selezionare **Utente dinamico** in **Appartenenza**.
     
-4. Fare clic su **Sì** per **caratteristiche di attivare Office**.
+4. Selezionare **Sì** per **Abilitare le funzionalità di Office**.
     
-5. Fare clic su **Add query dinamica**.
+5. Fare clic su **Aggiungere query dinamica**.
     
-6. In **aggiungere gli utenti cui**, selezionare **reparto**.
+6. Selezionare **Reparto** in **Dove aggiungere utenti**
     
-7. Nel campo successivo, selezionare **è uguale a**.
+7. Nel campo successivo, selezionare **Uguale a**.
     
 8. Nel campo successivo, digitare il nome del gruppo dall'elenco.
     
-9. Fare clic su **Add query**e quindi fare clic su **Crea**.
+9. Fare clic su **Aggiungi query** e quindi su **Crea**.
     
-10. Fare clic su **utenti e gruppi: tutti i gruppi**.
+10. Fare clic su **Utenti e gruppi - Tutti i gruppi**.
     
-Punto, configurare i gruppi in modo che i membri vengono assegnati automaticamente le licenze di Office 365 E5 ed EMS E5.
+Quindi, configurare i gruppi in modo che ai membri vengano automaticamente assegnate licenze di Office 365 E5 e EMS E5.
   
-1. Nel portale di Azure, fare clic su **Azure Active Directory > licenze > tutti i prodotti**.
+1. Nel portale di Azure fare clic su **Azure Active Directory > Licenze > Tutti i prodotti**.
     
-2. Nell'elenco, selezionare **mobilità aziendale + sicurezza E5** e **Office 365 Enterprise E5**e quindi fare clic su **+ assegnare**.
+2. Nell'elenco, selezionare **Enterprise Mobility + Security E5** e **Office 365 Enterprise E5**, quindi fare clic su **Assegna**.
     
-3. In blade **assegnare licenze** , fare clic su **utenti e gruppi**.
+3. Nel pannello **Assegnare licenza** fare clic su **Utenti e gruppi**.
     
 4. Nell'elenco dei gruppi, selezionare quanto segue:
     
@@ -120,7 +120,7 @@ Punto, configurare i gruppi in modo che i membri vengono assegnati automaticamen
     
   - Personale senior e strategico
     
-5. Fare clic su **Seleziona**e quindi fare clic su **Assegna**.
+5. Fare clic su **Seleziona**, quindi su **Assegna**.
     
 6. Chiudere la scheda del portale di Azure nel browser.
     
@@ -128,7 +128,7 @@ Punto, configurare i gruppi in modo che i membri vengono assegnati automaticamen
 
 In questa fase, si aggiungono gli account utente di esempio per la campagna politica.
   
-Innanzitutto, si [Connetti con il modulo di Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).
+In primo luogo, è necessario [connettersi al modulo PowerShell di Azure Active Directory V2](https://go.microsoft.com/fwlink/?linkid=842218).
   
 Successivamente, inserire il nome dell'organizzazione, la posizione e una password comune; eseguire quindi questi comandi dal prompt dei comandi di PowerShell o Integrated Script Environment (ISE):
   
@@ -162,47 +162,47 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 ```
 
 > [!IMPORTANT]
-> L'utilizzo di una password di comune è per l'automazione e semplicità di configurazione per un ambiente di sviluppo e di testing. Ciò non è consigliata per le sottoscrizioni di produzione. Come si accede con ognuno di questi nuovi account utente, verrà richiesto di modificare la password. 
+> L'utilizzo di una password comune in questo caso è per rendere automatica e facile la configurazione per un ambiente di sviluppo/test. Non è una scelta consigliata per sottoscrizioni di produzione. Effettuando l'accesso con ognuno di questi nuovi account utente, verrà richiesto di modificare la password. 
   
 Seguire questi passaggi per verificare che l'appartenenza ai gruppi dinamici e le licenze basate su gruppi funzionino correttamente.
   
-1. Nella scheda **Home page di Microsoft Office** del browser, fare clic su tessera di **amministrazione** .
+1. Dalla scheda **Microsoft Office Home** del browser fare clic sul riquadro **Amministratore**.
     
-2. Dalla nuova scheda di **interfaccia di amministrazione di Office** del browser, fare clic su **utenti**.
+2. Dalla nuova scheda **Interfaccia di amministrazione di Office** del browser fare clic su **Utenti**.
     
-3. Nell'elenco di utenti, fare clic su **candidato**.
+3. Nell'elenco di utenti, fare clic su **Candidato**.
     
-4. Nel riquadro in cui sono elencati le proprietà dell'account utente **Candidate** , verificare che:
+4. Nel riquadro che elenca le proprietà dell'account utente **Candidato**, verificare che:
     
-  - È un membro del gruppo **Senior e personale strategico** (in **appartenenza a gruppi**).
+  - È un membro del gruppo **Personale senior e strategico** (in **Appartenenze a gruppi**).
     
-  - È stata assegnata la **mobilità aziendale + sicurezza E5** e **Office 365 Enterprise E5** licenze ( **licenze per i prodotti**).
+  - Dispone delle licenze **Enterprise Mobility + Security E5** e **Office 365 Enterprise E5** (in **Licenze per i prodotti**).
     
-5. Chiudere il riquadro di account utente **candidato** .
+5. Chiudere il riquadro dell'account utente **Candidato**.
     
 ## <a name="record-values-for-future-reference"></a>Registrare i valori per consultarli in futuro
 
 Registrare questi valori per utilizzarli con le sottoscrizioni di valutazione di Office 365 ed EMS per questo ambiente di sviluppo/test:
   
-- Nome dell'organizzazione della sottoscrizione di valutazione: _______________________________________________  
+- Nome dell'organizzazione della sottoscrizione di valutazione: _______________________________________________ 
     
     Ad esempio, per il nome di dominio della sottoscrizione di valutazione di contoso.onmicrosoft.com, il nome dell'azienda è "contoso".
     
-- Il nome di amministratore globale di Office 365: ___.onmicrosoft.com
+- Nome amministratore globale di Office 365: ____________________________________.onmicrosoft.com
     
-    Registrare la password per questo account e la password iniziale comune per gli altri account utente in un luogo sicuro.
+    Registrare la password per l'account e la password iniziale comune per gli altri account utente in un luogo sicuro.
     
 ## <a name="next-step"></a>Passaggio successivo
 
-Creare quattro diversi tipi di siti del team SharePoint Online in questo ambiente di sviluppo e di testing e [creare siti del team in un ambiente di sviluppo e di testing politici campagne](create-team-sites-in-a-political-campaign-dev-test-environment.md).
+Creare quattro tipi diversi di siti del team di SharePoint Online nell’ambiente di sviluppo/test con [Creare siti del team in un ambiente di sviluppo/test per la campagna politica](create-team-sites-in-a-political-campaign-dev-test-environment.md).
   
 ## <a name="see-also"></a>Vedere anche
 
 [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
-[Creare siti del team in un ambiente di sviluppo e di testing campagne politici](create-team-sites-in-a-political-campaign-dev-test-environment.md)
+[Creare siti del team in un ambiente di sviluppo/test per la campagna politica](create-team-sites-in-a-political-campaign-dev-test-environment.md)
   
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 

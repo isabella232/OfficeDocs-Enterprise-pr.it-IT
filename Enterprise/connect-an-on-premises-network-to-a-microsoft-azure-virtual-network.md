@@ -7,27 +7,27 @@ ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: 'Riepilogo: Informazioni su come configurare un Azure cross-premise rete virtuale per carichi di lavoro di Office server con una connessione VPN del sito per sito.'
-ms.openlocfilehash: 818e709c8177c6533bfa02da00170bf7fdb5a0ac
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
-ms.translationtype: MT
+description: 'Riepilogo: informazioni su come configurare una rete virtuale di Azure cross-premise per i carichi di lavoro del server di Office con una connessione VPN da sito a sito.'
+ms.openlocfilehash: de61603781009149c284701f749f42cfdd0881f6
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Connettere una rete locale a una rete virtuale di Microsoft Azure
 
  **Riepilogo:** informazioni su come configurare una rete virtuale di Azure cross-premise per i carichi di lavoro del server di Office.
   
-Esteso rete virtuale Azure è connesso alla rete locale, l'estensione della rete per includere le subnet e macchine virtuali ospitate in servizi di infrastruttura. Questa connessione consente ai computer sulla rete locale per accedere direttamente alle macchine virtuali di Azure e viceversa. 
+Una rete virtuale di Azure cross-premise è connessa alla rete locale, ampliando quest'ultima affinché includa subnet e macchine virtuali ospitate nei servizi dell'infrastruttura di Azure. Questa connessione consente ai computer su rete locale di accedere direttamente alle macchine virtuali in Azure e viceversa. 
 
-Ad esempio, un server di sincronizzazione della directory in esecuzione in una macchina virtuale Azure deve i controller di dominio locale per le modifiche agli account di query e sincronizzare le modifiche con la sottoscrizione a Office 365. In questo articolo viene illustrato come impostare una Azure cross-premise virtuale di rete utilizzando una connessione di rete privata virtuale (VPN) per siti che è pronta per ospitare macchine virtuali di Azure.
+Ad esempio, un server di sincronizzazione della directory in esecuzione su una macchina virtuale Azure deve eseguire una query sui controller di dominio locali per le modifiche agli account e sincronizzare tali modifiche con la sottoscrizione di Office 365. Questo articolo illustra come configurare una rete virtuale Azure cross-premise utilizzando una connessione VPN (Virtual Private Network) da sito a sito pronta per ospitare macchine virtuali in Azure.
 
 ## <a name="overview"></a>Panoramica
 
@@ -35,22 +35,22 @@ Le macchine virtuali in Azure non devono essere isolate rispetto all'ambiente lo
   
 ![Rete locale connessa a Microsoft Azure tramite una connessione VPN da sito a sito](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
   
-Nella figura, sono disponibili due reti connesse mediante una connessione VPN da sito: la rete locale e la rete virtuale Azure. La connessione VPN da sito è la seguente:
+Nel diagramma sono presenti due reti collegate tramite una connessione di rete privata virtuale (VPN) da sito a sito: la rete locale e la rete virtuale di Azure. La connessione VPN da sito a sito:
 
-- Tra due endpoint raggiungibile e disponibile su Internet pubblico.
-- Terminata da un dispositivo VPN nella rete locale e un gateway Azure VPN nella rete virtuale Azure.
+- È tra due punti finali raggiungibili e localizzati su Internet pubblico.
+- Viene terminata con un dispositivo VPN nella rete locale e un gateway VPN di Azure nella rete virtuale di Azure.
 
-La rete virtuale Azure ospita macchine virtuali. Il traffico di rete che hanno origine da macchine virtuali della rete virtuale Azure Ottiene inoltrato al gateway VPN, che quindi inoltra il traffico tra la connessione VPN da sito per il dispositivo VPN nella rete locale. L'infrastruttura di routing di rete locale inoltra quindi il traffico a quello di destinazione.
+La rete virtuale di Azure ospita macchine virtuali. Il traffico di rete proveniente da macchine virtuali sulla rete virtuale di Azure viene inoltrato al gateway VPN, attraverso il quale il traffico viene inoltrato tramite la connessione VPN da sito a sito al dispositivo VPN nella rete locale. A questo punto, l'infrastruttura di routing della rete locale inoltra il traffico alla relativa destinazione.
 
 >[!Note]
->È inoltre possibile utilizzare [ExpressRoute](https://azure.microsoft.com/services/expressroute/), ovvero una connessione diretta tra l'organizzazione e la rete di Microsoft. Il traffico di rete ExpressRoute non si spostano su Internet. In questo articolo vengono descritti l'utilizzo di ExpressRoute.
+>È inoltre possibile utilizzare [ExpressRoute](https://azure.microsoft.com/services/expressroute/), ovvero una connessione diretta tra l'organizzazione dell'utente e la rete Microsoft. Il traffico su ExpressRoute non viaggia su Internet pubblico. Questo articolo non descrive l'uso di ExpressRoute.
 >
   
 Per configurare la connessione VPN tra la rete virtuale di Azure e la rete locale, eseguire la procedura seguente: 
   
 1. **Locale:** definire e creare un route di rete locale per lo spazio degli indirizzi della rete virtuale di Azure che punta al dispositivo VPN locale.
     
-2. **Microsoft Azure:** Creare una rete virtuale Azure con una connessione VPN del sito per sito. 
+2. **Microsoft Azure:** creare una rete virtuale di Azure con una connessione VPN da sito a sito. 
     
 3. **Locale:** configurare il dispositivo VPN software o hardware locale per terminare la connessione VPN, che utilizza IPsec (Internet Protocol Security).
     
@@ -62,7 +62,7 @@ Dopo avere stabilito la connessione VPN da sito a sito, aggiungere le macchine v
 ### <a name="prerequisites"></a>Prerequisiti
 <a name="Prerequisites"></a>
 
-- Una sottoscrizione di Azure. Per informazioni sulle sottoscrizioni Azure, visitare la [pagina di modalità di acquisto di Azure](https://azure.microsoft.com/pricing/purchase-options/).
+- Una sottoscrizione di Azure. Per informazioni sulle sottoscrizioni di Azure, andare alla [pagina relativa all'acquisto di Azure](https://azure.microsoft.com/pricing/purchase-options/).
     
 - Uno spazio di indirizzi IPv4 privato disponibile da assegnare alla rete virtuale e alle relative subnet, con spazio sufficiente per adattarsi alla quantità di macchine virtuali necessarie ora e in futuro.
     
@@ -339,7 +339,7 @@ Di seguito è riportata la configurazione risultante.
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>Fase 3 (facoltativa): aggiungere macchine virtuali
 
-Creare le macchine virtuali che necessarie in Azure. Per ulteriori informazioni, vedere [creare una macchina virtuale di Windows con il portale di Azure](https://go.microsoft.com/fwlink/p/?LinkId=393098).
+Creare le macchine virtuali necessarie in Azure. Per ulteriori informazioni, vedere [Creare una macchina virtuale Windows nel portale di Azure](https://go.microsoft.com/fwlink/p/?LinkId=393098).
   
 Utilizzare le seguenti impostazioni:
   

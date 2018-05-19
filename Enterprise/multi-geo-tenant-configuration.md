@@ -1,5 +1,5 @@
 ---
-title: OneDrive per la configurazione tenant Business Multi-Geo
+title: Configurazione del tenant multi-geografico di OneDrive for Business
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,45 +7,46 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: Informazioni su come configurare OneDrive per Business Multi-Geo.
-ms.openlocfilehash: 56268acd319684ecb713e674b8accbe311d08dce
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+localization_priority: Priority
+ms.collection: Strat_SP_gtc
+description: Informazioni sulla configurazione di OneDrive for Business Multi-Geo
+ms.openlocfilehash: 29e69fa6e5a9715360b61024ee41dee4cd4b95b1
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive per la configurazione tenant Business Multi-Geo
+# <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configurazione del tenant multi-geografico di OneDrive for Business
 
-Prima di configurare il tenant di OneDrive per Business Multi-Geo, è necessario che leggere [Plan for OneDrive per Business Multi-Geo](plan-for-multi-geo.md). Per eseguire la procedura descritta in questo articolo, è necessario un elenco di utenti di test che si desidera eseguire il provisioning per i percorsi e i percorsi che si desidera abilitare.
+Prima di configurare il tenant di OneDrive for Business Multi-Geo, assicurarsi di aver letto [Pianificazione di OneDrive for Business Multi-Geo](plan-for-multi-geo.md). Per seguire al procedura descritta in questo articolo, è necessario un elenco di tutte le posizioni che si desidera abilitare e testare gli utenti per i quali effettuare il provisioning di tali posizioni.
 
-## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>Aggiungere la funzionalità Multi-Geo nel piano di Office 365 tenant di
+## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>Aggiungere la funzionalità Multi-Geo nel piano di Office 365 del tenant
 
-Per utilizzare OneDrive per Business Multi-Geo, è necessario pianificare _Funzionalità Multi-Geo in Office 365_ . Lavorare con il team di account da aggiungere questo piano per il tenant. Il team di account verrà la connessione con lo specialista di licenze appropriato e ottenere il tenant configurato.
+Per usare OneDrive for Business Multi-Geo, è necessario il piano _Funzionalità Multi-Geo in Office 365_. Lavorare con il team dell'account per aggiungere questo piano al tenant. Il team dell'account connetterà l'utente con lo specialista delle licenza appropriato per far configurare il tenant.
 
-Si noti che il piano di _Funzionalità Multi-Geo in Office 365_ è un piano di servizio a livello utente. È necessaria una licenza per ogni utente che si desidera ospitare in una posizione satellitare. È possibile aggiungere altre licenze nel tempo mentre si aggiungono utenti nelle posizioni satellitari.
+Tenere presente che il piano _Funzionalità Multi-Geo in Office 365_ è un piano di servizio a livello di utente. È necessaria una licenza per ogni utente da ospitare in una posizione satellite. È possibile aggiungere più licenze nel tempo man mano che si aggiungono utenti alle posizioni satellite.
 
-Una volta tenant è stato fornito con il piano di _Funzionalità Multi-Geo in Office 365_ , la scheda **percorsi Geo** diventerà disponibile nell' [interfaccia di amministrazione di OneDrive](https://admin.onedrive.com).
+Una volta che nel tenant è stato effettuato il provisioning del piano _Funzionalità Multi-Geo in Office 365_, la scheda **Posizioni geografiche** diventerà disponibile nell'[interfaccia di amministrazione di OneDrive](https://admin.onedrive.com).
 
-## <a name="set-the-allowed-data-locations-adl-to-your-tenant"></a>Impostare consentito dati posizioni (ADL) per il tenant
+## <a name="set-the-allowed-data-locations-adl-to-your-tenant"></a>Impostare i percorsi dati consentiti nel tenant
 
-È necessario impostare una posizione di dati consentita per SharePoint per ogni località geografica cui si desidera utilizzare OneDrive for Business. Località geografica disponibili sono illustrate nella tabella seguente:
+È necessario impostare un percorso dati consentito per SharePoint per ogni posizione geografica in cui si vuole usare OneDrive for Business. Le posizioni geografiche disponibili sono visualizzate nella tabella seguente:
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Percorso</strong></th>
+<th align="left"><strong>Posizione</strong></th>
 <th align="left"><strong>Codice</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">Nord America</td>
-<td align="left">NOME</td>
+<td align="left">NAM</td>
 </tr>
 <tr class="even">
-<td align="left">Europa / Allinea al centro est / Africa</td>
+<td align="left">Europa/Medio Oriente/Africa</td>
 <td align="left">EUR</td>
 </tr>
 <tr class="odd">
@@ -54,15 +55,15 @@ Una volta tenant è stato fornito con il piano di _Funzionalità Multi-Geo in Of
 </tr>
 <tr class="even">
 <td align="left">Australia</td>
-<td align="left">AUSTRALIA</td>
+<td align="left">AUS</td>
 </tr>
 <tr class="odd">
 <td align="left">Giappone</td>
-<td align="left">GIAPPONESE</td>
+<td align="left">JPN</td>
 </tr>
 <tr class="even">
 <td align="left">Canada</td>
-<td align="left">POSSIBILE</td>
+<td align="left">CAN</td>
 </tr>
 <tr class="odd">
 <td align="left">Regno Unito</td>
@@ -70,87 +71,87 @@ Una volta tenant è stato fornito con il piano di _Funzionalità Multi-Geo in Of
 </tr>
 <tr class="even">
 <td align="left">Corea</td>
-<td align="left">(COREANO)</td>
+<td align="left">KOR</td>
 </tr>
 </tbody>
 </table>
 
-Per aggiungere una posizione geografica satellitari
+Per aggiungere una posizione geografica satellite
 
-1. Aprire l' [interfaccia di amministrazione di OneDrive](https://admin.onedrive.com).
+1. Aprire l'[interfaccia di amministrazione di OneDrive](https://admin.onedrive.com).
 
-2. Passare alla scheda **Geo predefinite** .
+2. Andare alla scheda **Posizioni geografiche**.
 
 3. Fare clic su **Aggiungi percorso**.
 
-4. Selezionare il percorso che si desidera aggiungere e quindi fare clic su **Avanti**.
+4. Selezionare la posizione che si desidera aggiungere, quindi fare clic su **Avanti**.
 
-5. Digitare il dominio che si desidera utilizzare con la posizione geografica e quindi fare clic su **Aggiungi**.
+5. Digitare il dominio da usare con la posizione geografica, quindi fare clic su **Aggiungi**. 
 
 6. Fare clic su **Chiudi**.
 
-Provisioning potrebbero richiedere da pochi ore a 72 ore, a seconda delle dimensioni del tenant. Una volta completato il provisioning di una posizione satellitare, si riceverà una conferma di posta elettronica. Quando viene visualizzata nella nuova posizione geografica in blu nella mappa nella scheda **percorsi Geo** nell'interfaccia di amministrazione OneDrive, è possibile procedere impostare il percorso preferito dati degli utenti a tale posizione geografica. 
+Il provisioning potrebbe richiedere dalle poche alle 72 ore, a seconda delle dimensioni del tenant. Al termine del provisioning di una posizione satellite, verrà inviato un messaggio di posta elettronica di conferma. Quando la nuova posizione geografica diventa blu sulla mappa nella scheda **Posizioni geografiche** nell'interfaccia di amministrazione di OneDrive, è possibile procedere per impostare il percorso dati preferito dell'utente su tale posizione geografica. 
 
 > [!IMPORTANT]
-> La nuova posizione geografica satellitari configurerà con le impostazioni predefinite. In questo modo è possibile configurare tale posizione geografica in base alle proprie esigenze di conformità locale.
+> La nuova posizione geografica satellite sarà configurata con le impostazioni predefinite. In questo modo sarà possibile configurare tale posizione geografica in base alle proprie esigenze di conformità locale.
 
-## <a name="setting-users-preferred-data-location"></a>Impostazione della posizione preferita dati degli utenti
+## <a name="setting-users-preferred-data-location"></a>Impostazione del percorso dati preferito dell'utente
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
-Una volta che si abilita le posizioni dei dati necessarie, è possibile aggiornare gli account utente per utilizzare il percorso di dati appropriato. Si consiglia di impostare un percorso dati preferita per tutti gli utenti, anche se l'utente è soggiorno nel percorso dei dati predefinito.
+Dopo aver abilitato i percorsi dati necessari, è possibile aggiornare gli account utente per utilizzare il percorso dati appropriato. Si consiglia di impostare un percorso dati preferito per ogni utente, anche se l'utente si trova nel percorso dati predefinito.
 
 > [!TIP]
-> È consigliabile iniziare convalida con un utente di test o di un piccolo gruppo di utenti prima di implementare le funzionalità Multi-Geo nell'organizzazione più ampia.
+> Si consiglia di iniziare le convalide con un utente di test o con un gruppo limitato di utenti prima di distribuire le funzionalità Multi-Geo in tutta l'organizzazione.
 
-AAD sono disponibili due tipi di oggetti utente: cloud solo gli utenti e gli utenti sincronizzati. Seguire le istruzioni appropriate per il tipo di utente.
+In AAD sono disponibili due tipi di oggetti utente: gli utenti solo cloud e gli utenti sincronizzati. Seguire le istruzioni appropriate per il tipo di utente.
 
-### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Sincronizzazione preferito percorso dell'utente dati tramite la connessione Active Directory 
+### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Sincronizzare il percorso dati preferito dell'utente utilizzando AD Connect 
 
-Se gli utenti della società vengono sincronizzati da un sistema di Active Directory (AD) locale per Azure Active Directory (AAD), le PreferredDataLocation deve essere popolata in Active Directory e sincronizzati con AAD. Attenersi al processo di [sincronizzazione di Azure Active Directory Connect: apportare una modifica alla configurazione predefinita](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) configurare preferito della sincronizzazione di percorso dati in Active Directory locale per AAD.
+Se gli utenti dell'organizzazione vengono sincronizzati da un sistema Active Directory (AD) locale in Azure Active Directory (AAD), il relativo PreferredDataLocation deve essere popolato in Active Directory e sincronizzati in AAD. Seguire la procedura in [Sincronizzazione di Azure AD Connect: modificare la configurazione predefinita](https://docs.microsoft.com/it-IT/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) per configurare la sincronizzazione del percorso dati preferito da AD locale in AAD.
 
-È consigliabile includere l'impostazione percorso dati preferito dell'utente come parte del flusso di lavoro creazione utente standard.
+È consigliabile includere l'impostazione del percorso dati preferito dell'utente nel flusso di lavoro di creazione di un utente standard.
 
 > [!IMPORTANT]
-> Per i nuovi utenti con alcun OneDrive il provisioning, attendere almeno 24 ore dopo PDL dell'utente viene sincronizzato con AAD le modifiche di propagare prima che l'utente accede a OneDrive for Business. (Impostazione dei dati Preferiti percorso prima che l'utente accede a fornire loro OneDrive for Business assicura di cui eseguire il provisioning nuovo OneDrive dell'utente nella posizione corretta.)
+> Per i nuovi utenti per cui non è stato eseguito il provisioning di OneDrive, attendere almeno 24 ore dopo la sincronizzazione del percorso dati preferito di un utente in ADD affinché le modifiche si propaghino prima che l'utente possa accedere a OneDrive for Business. Impostare il percorso dati preferito prima che l'utente acceda a l provisioning del proprio OneDrive for Business garantisce che il provisionig del nuovo OneDrive utente avvenga nella posizione corretta).
 
-### <a name="setting-preferred-data-location-for-cloud-only-users"></a>L'impostazione percorso dati preferito per il cloud solo gli utenti 
+### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Impostazione del percorso dati preferito per utenti solo cloud 
 
-Se gli utenti della società non sono sincronizzati da un sistema di Active Directory (AD) locale per Azure Active Directory (AAD), vale a dire che vengono creati in Office 365 o AAD, quindi PDL deve essere impostata utilizzando PowerShell AAD.
+Se gli utenti dell'azienda non vengono sincronizzati da un sistema Active Directory (AD) locale ad Azure Active Directory (AAD), il che significa che sono stati creati in Office 365 o AAD, allora il percorso dati preferito deve essere impostato tramite AAD PowerShell.
 
-Le procedure descritte in questa sezione richiedono [Microsoft modulo Azure Active Directory Module per Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Se si dispone già di PowerShell AAD installati, accertarsi di aggiornare per la versione più recente.
+Le procedure descritte in questa sezione richiedono il [Modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell ](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Se AAD PowerShell è già installato, assicurarsi di effettuare l'aggiornamento alla versione più recente.
 
-1.  Aprire il modulo di Microsoft Azure Active Directory per Windows PowerShell.
+1.  Aprire il modulo Microsoft Azure Active Directory per Windows PowerShell.
 
-2.  Eseguire `Connect-MsolService` e immettere le credenziali di amministratore globale per il tenant.
+2.  Eseguire `Connect-MsolService` e inserire le credenziali dell'amministratore globale del tenant.
 
-3.  Utilizzare il cmdlet [Set-MsolUser](https://docs.microsoft.com/en-us/powershell/msonline/v1/set-msoluser) per impostare il percorso dei dati preferito per ogni utente. Per esempio:
+3.  Usare il cmdlet [Set-MsolUser](https://docs.microsoft.com/it-IT/powershell/msonline/v1/set-msoluser) per impostare il percorso dati preferito per ognuno degli utenti. Ad esempio:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
-    È possibile controllare per verificare che il percorso dei dati preferito sia stato aggiornato in modo corretto utilizzando il cmdlet Get-MsolUser. Per esempio:
+    È possibile controllare per verificare che il percorso dati preferito sia stato aggiornato correttamente con il cmdlet Get-MsolUser. Ad esempio:
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
 ![](media/multi-geo-tenant-configuration_image3.png)
 
-È consigliabile includere l'impostazione percorso dati preferito dell'utente come parte del flusso di lavoro creazione utente standard.
+È consigliabile includere l'impostazione del percorso dati preferito dell'utente nel flusso di lavoro di creazione di un utente standard.
 
 > [!IMPORTANT]
-> Per i nuovi utenti con alcun OneDrive il provisioning, attendere almeno 24 ore dopo aver impostato le modifiche di propagare prima che l'utente accede a SharePoint OneDrive PDL dell'utente. (Impostazione dei dati Preferiti percorso prima che l'utente accede a fornire loro OneDrive for Business assicura di cui eseguire il provisioning nuovo OneDrive dell'utente nella posizione corretta.)
+> Per i nuovi utenti per cui non è stato eseguito il provisioning di OneDrive, attendere almeno 24 ore dopo l'impostazione del percorso dati preferito di un utente affinché le modifiche si propaghino prima che l'utente possa accedere a SharePoint OneDrive. Impostare il percorso dati preferito prima che l'utente acceda a l provisioning del proprio OneDrive for Business garantisce che il provisionig del nuovo OneDrive utente avvenga nella posizione corretta).
 
-## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Il provisioning di tipo OneDrive e l'effetto di PDL
+## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Provisioning di OneDrive e l'effetto del percorso dati preferito
 
-Se l'utente dispone già di un sito di OneDrive creato nel tenant, l'impostazione loro PDL non passerà automaticamente loro OneDrive esistente. Per spostare OneDrive un utente, vedere [OneDrive for Business Geo spostare](move-onedrive-between-geo-locations.md) , segui le istruzioni in OneDrive lo spostamento tra le posizioni geo.
+Se l'utente ha già creato un sito OneDrive nel tenant, impostando il percorso dati preferito non verrà spostato automaticamente nel OneDrive esistente. Per spostare OneDrive di un utente, vedere [Spostamento geografico di OneDrive for Business](move-onedrive-between-geo-locations.md) e seguire le istruzioni sullo spostamento di OneDrive tra diverse posizioni geografiche.
 
-Se l'utente non dispone di un sito di OneDrive nel tenant, OneDrive eseguire il provisioning per essi in base al valore PDL supponendo che PDL per l'utente corrispondente a uno dei percorsi dei dati consentiti dell'azienda (ADLs).
+Se l'utente non dispone di un sito di OneDrive all'interno del tenant, il provisioning di OneDrive verrà eseguito in base al valore del percorso dati preferito, presupponendo che il percorso dati preferito dell'utente corrisponda a uno dei percorsi dati consentiti della società (ADL).
 
-## <a name="configuring-multi-geo-search"></a>Configurazione della ricerca Multi-Geo
+## <a name="configuring-multi-geo-search"></a>Configurazione della ricerca multi-geografica
 
-Tenant Multi-Geo avranno funzionalità di ricerca aggregazione che consente una query di ricerca per restituire risultati da qualsiasi posizione all'interno del tenant.
+Il tenant multi-geografico aggregherà le funzionalità di ricerca consentendo a una query di ricerca di restituire risultati da una qualsiasi posizione nel tenant.
 
-Per impostazione predefinita, le ricerche di questi punti di ingresso restituirà risultati aggregati, anche se ogni indice di ricerca si trova all'interno di posizione geografica pertinenti:
+Per impostazione predefinita, le ricerche da questi punti di ingresso restituiranno risultati aggregati, anche se ogni indice di ricerca si trova nella relativa posizione geografica rilevante:
 
-- OneDrive per aziende
+- OneDrive for Business
 
 - Delve
 
@@ -158,30 +159,30 @@ Per impostazione predefinita, le ricerche di questi punti di ingresso restituir�
 
 - Centro ricerche
 
-Inoltre, le funzionalità di ricerca Multi-Geo è possibile configurare per le applicazioni di ricerca personalizzate che utilizzano l'API di ricerca di SharePoint.
+Inoltre, le funzionalità della ricerca multi-geografica possono essere configurate per applicazioni di ricerca personalizzate che usano l'API Ricerca di SharePoint.
 
-Per istruzioni, incluse eventuali differenze e limitazioni, vedere [Configurare la ricerca di OneDrive per Business Multi-Geo](configure-search-for-multi-geo.md) .
+Consultare [Configurare la ricerca per OneDrive for Business Multi-Geo](configure-search-for-multi-geo.md) per istruzioni che includono limitazioni e differenze.
 
-## <a name="validating-the-onedrive-for-business-multi-geo-configuration"></a>Convalida di OneDrive for Business Multi-Geo configurazione
+## <a name="validating-the-onedrive-for-business-multi-geo-configuration"></a>Convalida della configurazione di OneDrive for Business Multi-Geo
 
-Di seguito sono alcuni casi di utilizzo di base da includere nel piano di convalida prima largamente distribuzione OneDrive per Business Multi-Geo alla società. Dopo aver completato questi test e qualsiasi casi di utilizzo aggiuntivi rilevanti per l'azienda, è possibile procedere con l'aggiunta di utenti nel gruppo pilota iniziale.
+Di seguito sono illustrati alcuni casi d'uso che si potrebbe voler includere nel piano di convalida prima di distribuire ampiamente OneDrive for Business Multi-Geo nell'azienda. Dopo aver completato questi test ed eventuali casi d'uso aggiuntivi rilevanti per la propria azienda, è possibile scegliere di continuare ad aggiungere utenti al gruppo pilota iniziale.
 
 **OneDrive for Business**
 
-Selezionare il servizio di avvio di applicazioni di Office 365 OneDrive e confermare che si verrà indirizzati automaticamente nella posizione geografica appropriata per l'utente, basato su PDL dell'utente. OneDrive for Business deve iniziare il provisioning in tale posizione. Una volta eseguito il, provare a caricare e scaricare alcuni documenti.
+Selezionare OneDrive dall'icona di avvio dell'app di Office 365 e verificare di essere automaticamente indirizzati alla posizione geografica appropriata per l'utente , in base al percorso dati preferito dell'utente. OneDrive for Business ora inizia il provisioning in tale posizione. Al termine, provare a caricare e a scaricare alcuni documenti.
 
-**Applicazione Mobile OneDrive**
+**App OneDrive per dispositivi mobili**
 
-Accedere a App per dispositivi mobili di OneDrive con le credenziali dell'account di test. Verificare che è possibile visualizzare il OneDrive per i file di business e possono interagire con essi dal dispositivo mobile.
+Accedere all'app per dispositivi mobili di OneDrive con le credenziali dell'account di prova. Verificare che sia possibile visualizzare i file di OneDrive for Business e di poterli usare dal dispositivo mobile.
 
-**Client di sincronizzazione OneDrive**
+**Client di sincronizzazione di OneDrive**
 
-Verificare che il client di sincronizzazione OneDrive rileva automaticamente le OneDrive for Business geo-percorso dopo l'accesso. Se è necessario scaricare il client di sincronizzazione, è possibile fare clic su **Sincronizza** nella libreria di OneDrive.
+Confermare che il client di sincronizzazione di OneDrive rilevi automaticamente la posizione geografica di OneDrive for Business all'accesso. Se serve scaricare il client di sincronizzazione, è possibile fare clic su **Sincronizza** nella raccolta di OneDrive.
 
 **Applicazioni di Office**
 
-Verificare di poter accedere a OneDrive for Business mediante l'accesso da un'applicazione di Office, ad esempio Word. Aprire Office dell'applicazione e seleziona "OneDrive- <TenantName>". Office rileva la posizione di OneDrive e visualizzare i file che è possibile aprire.
+Verificare di riuscire ad accedere a OneDrive for Business effettuando l'accesso da un'applicazione Office, come Word. Aprire l'applicazione Office e selezionare "OneDrive – <TenantName>". Office rileverà la posizione di OneDrive e mostrerà i file che possono essere aperti.
 
-**Sharing**
+**Condivisione**
 
-Provare a condividere i file di OneDrive. Verificare che la selezione utenti Mostra tutti gli utenti di online SharePoint indipendentemente dalla posizione geografica.
+Provare a condividere i file di OneDrive. Verificare che lo strumento di selezione delle  persone mostri tutti gli utenti online di SharePoint indipendentemente dalla loro posizione geografica.

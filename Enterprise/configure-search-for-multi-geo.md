@@ -1,5 +1,5 @@
 ---
-title: Configurare la ricerca di OneDrive per Business Multi-Geo
+title: Configurazione della ricerca per OneDrive for Business Multi-Geo
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
@@ -7,26 +7,27 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: Informazioni su come configurare la ricerca in un ambiente multi-geo.
-ms.openlocfilehash: 5cf155c2c5bd2e27a54d84c4d5411e5b1afce568
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: Informazioni su come configurare la ricerca in un ambiente multi-geografico.
+ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurare la ricerca di OneDrive per Business Multi-Geo
+# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurazione della ricerca per OneDrive for Business Multi-Geo
 
-In un ambiente Multi-Geo SharePoint Online (SPO), un'organizzazione può avere un tenant di Office 365, ma archiviare il contenuto di SharePoint in più posizioni geografiche - una posizione centrale e uno o più satellitare geo percorsi.
+In un ambiente SharePoint Online (SPO) multi-geografico, un'organizzazione può avere un tenant di Office 365, ma archiviare il proprio contenuto in più posizioni geografiche, una posizione centrale e una o più posizioni geografiche satellitari.
 
-Ogni località geografica ha indice di ricerca e Centro ricerche. Quando un utente esegue la ricerca, la query viene disposta a tutti gli indici e i risultati restituiti vengono uniti.
+Ogni posizione geografica ha un proprio indice di ricerca e un Centro ricerche. Quando un utente effettua una ricerca, la query viene inviata a tutti gli indici e i risultati restituiti vengono uniti.
 
-Ad esempio, un utente in un'unica posizione geografica può eseguire ricerche per contenuto archiviato in un'altra posizione geografica o per il contenuto in un sito di SharePoint che è limitato a una posizione geografica diversi. Se l'utente ha accesso a tale contenuto, ricerca verrà visualizzato il risultato.
+Ad esempio, un utente in una posizione geografica può cercare contenuto archiviato in un'altra posizione geografica o il contenuto di un sito di SharePoint che è limitato a una posizione geografica diversa. Se l'utente ha accesso a tale contenuto, la ricerca mostrerà il risultato.
 
-## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>Quale ricerca client funzioni correttamente in un ambiente Multi-Geo?
+## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>Quali client di ricerca funzionano in un ambiente multi-geografico?
 
-Questi client possono restituire risultati da tutti i percorsi geo:
+Questi client possono restituire risultati da tutte le posizioni geografiche:
 
 -   OneDrive for Business
 
@@ -36,74 +37,74 @@ Questi client possono restituire risultati da tutti i percorsi geo:
 
 -   Centro ricerche
 
--   Applicazioni di ricerca personalizzate che utilizzano l'API di ricerca di SharePoint
+-   Applicazioni di ricerca personalizzate che utilizzano l'API Ricerca di SharePoint
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-Come configurare l'ambiente Multi-Geo, gli utenti che la ricerca in OneDrive ottenere i risultati da tutti i percorsi geo.
+Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano in OneDrive ottengono risultati da tutte le posizioni geografiche.
 
 ### <a name="delve"></a>Delve
 
-Come configurare l'ambiente Multi-Geo, gli utenti che la ricerca in Delve ottenere i risultati da tutti i percorsi geo.
+Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano in Delve ottengono risultati da tutte le posizioni geografiche.
 
-Il feed Delve e la scheda profilo vengono visualizzate solo le anteprime dei file vengono archiviati nella posizione **centrale** . Per i file archiviati in percorsi geo satellitari, l'icona per il tipo di file verrà visualizzato.
+Il feed di Delve e la scheda profilo mostrano solo le anteprime dei file archiviati nella posizione **centrale**. Per i file archiviati in una posizione geografica satellitare, verrà invece visualizzata l'icona del tipo di file.
 
 ### <a name="the-sharepoint-home-page"></a>Home page di SharePoint
 
-Come configurare l'ambiente Multi-Geo, gli utenti visualizzeranno news, siti di recenti e seguiti da più posizioni geo nella loro home page di SharePoint. Se si utilizza la casella di ricerca nella home page di SharePoint, si otterranno risultati uniti da più posizioni geo.
+Non appena l'ambiente multi-geografico viene configurato, gli utenti possono vedere notizie, siti recenti e siti seguiti da più posizioni geografiche sulla propria home page di SharePoint. Se usano la casella di ricerca nella home page di SharePoint, otterranno risultati uniti di più posizioni geografiche.
 
 ### <a name="the-search-center"></a>Centro ricerche
 
-Dopo la Multi-Geo environment è stata impostata, ogni Centro ricerche continua a Mostra solo i risultati dalla posizione geografica. Gli amministratori devono [modificare le impostazioni di ogni Centro ricerche](#_Set_up_a_1) per ottenere i risultati da tutti i percorsi geo. Gli utenti che la ricerca nel sito Centro ricerche in un secondo momento, ottenere i risultati da tutti i percorsi geo.
+Dopo che l'ambiente multi-geografico viene configurato, ogni Centro ricerche continua a mostrare solo i risultati della relativa posizione geografica. Gli amministratori devono [modificare le impostazioni di ogni Centro ricerche](#_Set_up_a_1) per ottenere i risultati di tutte le posizioni geografiche. In seguito, gli utenti che effettuano ricerche nel Centro ricerche potranno ottenere risultati da tutte le posizioni geografiche.
 
 ### <a name="custom-search-applications"></a>Applicazioni di ricerca personalizzate
 
-Come di consueto, applicazioni di ricerca personalizzate interagiscono con gli indici di ricerca tramite l'API REST di ricerca di SharePoint esistente. Per ottenere i risultati da alcuni o tutti i percorsi di livello geografico, l'applicazione deve essere [chiamata l'API e includere i nuovi parametri di query Multi-Geo](#_Get_custom_search) nella richiesta. In questo modo viene attivata una ventola fuori la query per tutti i percorsi geo.
+In genere, le applicazioni di ricerca personalizzate interagiscono con le API REST Ricerca di SharePoint esistenti. Per ottenere risultati da tutti o da alcune posizioni geografiche, l'applicazione deve [chiamare l'API e includere i nuovi parametri di query Multi-Geo](#_Get_custom_search) nella richiesta. In questo modo, la query viene inviata a tutte le posizioni geografiche.
 
-## <a name="whats-different-about-search-in-a-multi-geo-environment"></a>Che cos'è diverse informazioni sulla ricerca in un ambiente Multi-Geo?
+## <a name="whats-different-about-search-in-a-multi-geo-environment"></a>In che modo la ricerca è diversa in un ambiente multi-geografico?
 
-Alcune funzionalità di ricerca è possibile acquisire familiarità con, funziona in modo diverso in un ambiente Multi-Geo.
+Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamente in un ambiente multi-geografico.
 
 <table>
 <thead>
 <tr class="header">
 <th align="left"><strong>Funzionalità</strong></th>
-<th align="left"><strong>Come funziona</strong></th>
+<th align="left"><strong>Funzionamento</strong></th>
 <th align="left"><strong>Soluzione</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">Risultati alzati di livello</td>
-<td align="left">È possibile creare le regole di query con risultati alzati di livello a diversi livelli: per l'intero tenant, per una raccolta siti o per un sito. In un ambiente Multi-Geo, definire i risultati alzati di livello a livello di <strong>tenant</strong> per alzare di livello i risultati ai siti Centro ricerche in <strong>tutte le</strong> posizioni geo. Se è <strong>solo</strong> scopo di ottenere risultati nel Centro ricerche nella posizione geografica della raccolta siti o del sito, definire i risultati a livello di <strong>raccolta siti</strong> o del <strong>sito</strong> .</td>
-<td align="left">Se non è necessario risultati alzati di livello diversi per ogni località geografica, ad esempio regole per i viaggi, è consigliabile definire alzati di livello i risultati a livello di tenant.</td>
+<td align="left">È possibile creare regole di query con risultati alzati di livello a diversi livelli: per l'intero tenant, per una raccolta siti o per un sito. In un ambiente multi-geografico, definire risultati alzati di livello a livello di <strong>tenant</strong> per alzare di livello i risultati dei Centri ricerche in <strong>tutte</strong> le posizioni geografiche. Se si desidera <strong>solo</strong> alzare di livello i risultati nel Centro ricerche che si trova nella posizione geografica della raccolta siti o del sito, definire i risultati a livello di <strong>raccolta siti</strong> o <strong>sito</strong>.</td>
+<td align="left">Se non sono necessari risultati alzati di livello diversi per ogni posizione geografica, ad esempio regole diverse per il viaggio, è consigliabile definire i risultati alzati di livello a livello di tenant.</td>
 </tr>
 <tr class="even">
 <td align="left">Criteri di affinamento ricerca</td>
-<td align="left">Ricerca restituisce i criteri di affinamento ricerca da tutti i percorsi geografica di un tenant e aggrega loro. L'aggregazione è tenterà, il che significa che il numero di criteri di affinamento ricerca potrebbe non essere precisi al 100%. Per la maggior parte degli scenari basate sulla ricerca, questa accuratezza è sufficiente.</td>
-<td align="left">Per le applicazioni basate sulla ricerca che dipendono dal livello di completezza criteri di affinamento ricerca, eseguire una query ogni località geografica in modo indipendente senza utilizzare Multi-Geo fanout.</td>
+<td align="left">La ricerca restituisce criteri di affinamento da tutte le posizioni geografiche di un tenant e poi le aggrega. L'aggregazione è un grande sforzo, il che significa che il criterio di affinamento potrebbe non essere completamente accurato. Per la maggior parte degli scenari basati sulla ricerca, questa precisione è sufficiente.</td>
+<td align="left">Per applicazioni basate sulla ricerca che dipendono dalla completezza del criterio di affinamento, inviare la query in modo indipendente a ogni posizione geografica senza usare il fan-out multi-geografico.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">Ricerca multi-Geo non supporta il bucket dinamico per criteri di affinamento ricerca numerici.</td>
-<td align="left">Utilizzare il <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "Discretize"</a> di criteri di affinamento ricerca numerici.</td>
+<td align="left">La ricerca multi-geografica non supporta il bucket di criteri di affinamento numerici.</td>
+<td align="left">Utilizzare il <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "Discretize"</a> per criteri di affinamento numerici.</td>
 </tr>
 <tr class="even">
-<td align="left">ID documento</td>
-<td align="left">Se si sta sviluppando un'applicazione basata sulla ricerca dipende dal documento ID, si noti che gli ID documento in un ambiente Multi-Geo non sono univoci tra diverse ubicazioni geo, sono univoci per ogni località geografica.</td>
-<td align="left">È stata aggiunta una colonna che identifica la posizione geografica. Utilizzare questa colonna per garantire l'univocità. Questa colonna è denominata "GeoLocationSource".</td>
+<td align="left">ID documenti</td>
+<td align="left">Se si sta sviluppando un'applicazione basata sulla ricerca che dipende dagli ID dei documenti, tenere presente che tali ID in un ambiente multi-geografico non sono univoci tra le diverse posizioni geografiche, ma solo all'interno di una posizione geografica.</td>
+<td align="left">È stata aggiunta una colonna che identifica la posizione geografica. Usare questa colonna per ottenere l'univocità. La colonna è denominata "GeoLocationSource".</td>
 </tr>
 <tr class="odd">
 <td align="left">Numero di risultati</td>
-<td align="left">Pagina dei risultati della ricerca vengono mostrati i risultati combinati dalle posizioni geo, ma non è possibile pagina oltre 500 risultati.</td>
+<td align="left">La pagina dei risultati della ricerca mostra i risultati combinati ottenuti dalle posizioni geografiche, ma non è possibile includere più di 500 risultati.</td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="whats-not-supported-for-search-in-a-multi-geo-environment"></a>Cosa non è supportata per la ricerca in un ambiente Multi-Geo?
+## <a name="whats-not-supported-for-search-in-a-multi-geo-environment"></a>Cosa non è supportato per la ricerca in un ambiente multi-geografico?
 
-Alcune delle funzionalità di ricerca è possibile acquisire familiarità con, non sono supportate in un ambiente Multi-Geo.
+Alcune delle funzionalità di ricerca già note non sono supportate in un ambiente multi-geografico.
 
 <table>
 <thead>
@@ -114,64 +115,64 @@ Alcune delle funzionalità di ricerca è possibile acquisire familiarità con, n
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Autenticazione di App</td>
-<td align="left">App sola autenticazione (accesso privilegiato da servizi) non è supportata in ricerca Multi-Geo.</td>
+<td align="left">Autenticazione solo app</td>
+<td align="left">L'autenticazione solo app (accesso con privilegi dai servizi) non è supportata nella ricerca multi-geografica.</td>
 </tr>
 <tr class="even">
 <td align="left">Utenti guest</td>
-<td align="left">Gli utenti guest risultati solo dalla posizione geografica esegue la ricerca da.</td>
+<td align="left">Gli utenti guest ottengono risultati solo dalla posizione geografica da cui effettuano la ricerca.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Funzionamento consente ricerche in un ambiente Multi-Geo?
+## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Come funziona la ricerca in un ambiente multi-geografico?
 
-**Tutti** i client di ricerca utilizzano l'API REST di ricerca di SharePoint esistente per interagire con gli indici di ricerca.
+**Tutti** i client di ricerca usano le API REST Ricerca di SharePoint per interagire con gli indici di ricerca.
 <img src="media/configure-search-for-multi-geo_image1-1.png" />
 
-1. Un client di ricerca chiama l'endpoint REST di ricerca con la proprietà query EnableMultiGeoSearch = true.
-2. La query viene inviata a tutti i percorsi geo nel tenant.
-3. Risultati di ricerca ogni località geografica vengono uniti e classificati.
-4. Il client ottiene risultati di ricerca unificata.
+1. Un client di ricerca chiama l'endpoint REST Ricerca con la proprietà di query EnableMultiGeoSearch= true.
+2. La query viene inviata a tutte le posizioni geografica nel tenant.
+3. I risultati della ricerca di ogni posizione geografica vengono uniti e classificati.
+4. Il client ottiene risultati della ricerca unificati.
 
 
 
-<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Si noti che è non unire i risultati della ricerca fino a quando non risultati abbiamo ricevuto da tutti i percorsi di livello geografico. Ciò significa che le ricerche Multi-Geo latenza aggiuntiva rispetto alle ricerche in un ambiente con una sola geo posizione.
+<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Tenere presente che Microsoft non unisce i risultati della ricerca fino a quando non sono stati ricevuti i risultati da tutte le posizioni geografiche. Questo significa che le ricerche multi-geografiche presentano latenza aggiuntiva rispetto alle ricerche in un ambiente con una sola posizione geografica.
 
 <span id="_Set_up_a_1" class="anchor"><span id="_Ref505252370" class="anchor"></span></span>
-## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a>Ottenere un centro ricerche per visualizzare i risultati da tutti i percorsi geo
+## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a>Fare in modo che un Centro ricerche mostri i risultati di tutte le posizioni geografiche
 
-È necessario impostare ogni verticale singolarmente ogni Centro ricerche ha diversi verticali.
+Ogni Centro ricerche dispone di diverse verticali ed è necessario configurare singolarmente ogni verticale.
 
-1.  Assicurarsi di eseguire la procedura seguente con un account che dispone dell'autorizzazione per modificare la pagina dei risultati di ricerca e la Web Part risultati di ricerca.
+1.  Assicurarsi di avere eseguito questi passaggi con un account che dispone dell'autorizzazione per modificare la pagina dei risultati della ricerca e la web part Risultati della ricerca.
 
-2.  Passare alla pagina dei risultati della ricerca (vedere l' [elenco](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) di ricerca pagine dei risultati)
+2.  Andare alla pagina dei risultati della ricerca (vedere l'[elenco](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) delle pagine di risultati della ricerca).
 
-3.  Selezionare il verticale di configurare, fare clic sull'icona ingranaggio **Impostazioni** nell'angolo in alto a destra e quindi fare clic su **Modifica pagina**. Verrà visualizzata la pagina dei risultati della ricerca in modalità di modifica.
+3.  Selezionare la verticale da configurare, fare clic sull'icona a forma di ingranaggio **Impostazioni** in alto a destra, quindi fare clic su **Modifica pagina**. La pagina dei risultati della ricerca si apre in modalità di modifica.
 
      ![](media/configure-search-for-multi-geo_image2.png)
-1.  Nella Web Part risultati di ricerca spostare il puntatore verso l'alto a destra della Web Part fare clic sulla freccia e quindi fare clic su **Modifica Web Part** dal menu. Riquadro degli strumenti della Web Part risultati ricerca verrà visualizzata sotto la barra multifunzione nella parte superiore destra della pagina.![](media/configure-search-for-multi-geo_image3.png)
+1.  Nella web part Risultati della ricerca, spostare il puntatore sull'angolo in alto a destra della web part, fare clic sulla freccia, quindi fare clic su **Modifica web part** nel menu. Si apre il riquadro degli strumenti della web part Risultati della ricerca sotto la barra multifunzione in alto a destra nella pagina. ![](media/configure-search-for-multi-geo_image3.png)
 
-1.  Nel riquadro strumenti Web Part, nella sezione **Impostazioni** in **risultati controllano le impostazioni**, selezionare **Mostra Multi-Geo risultati** per ottenere la Web Part risultati di ricerca per visualizzare i risultati da tutti i percorsi geo.
+1.  Nella riquadro degli strumenti della web part, nella sezione **Impostazioni**, in **Impostazioni controllo risultati**, selezionare **Mostra risultati Multi-Geo** affinché la web part Risultati della ricerca mostri i risultati di tutte le posizioni geografiche.
 
-2.  Fare clic su **OK** per salvare le modifiche e chiudere il riquadro strumenti della Web Part.
+2.  Fare clic su **OK** per salvare la modifica e chiudere il riquadro degli strumenti della web part.
 
-3.  Verificare le modifiche apportate a Web Part risultati di ricerca fare clic su **Archiviazione** nella scheda pagina del menu principale.
+3.  Verificare le modifiche apportate alla web part Risultati della ricerca facendo clic su **Controllo** nella scheda Pagina del menu principale.
 
-4.  Pubblicare le modifiche utilizzando il collegamento contenuto nella nota nella parte superiore della pagina.
+4.  Pubblicare le modifiche usando il collegamento fornito nella nota in alto nella pagina.
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
-## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Ottenere le applicazioni di ricerca personalizzate da visualizzare i risultati di alcuni o tutti i percorsi geo
+## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Fare in modo che le applicazioni di ricerca personalizzate mostrino risultati di tutte o di alcune posizioni geografiche
 
-Applicazioni di ricerca personalizzate ottenere i risultati da posizioni geo tutte o alcune, specificando i parametri di query con la richiesta per l'API REST di ricerca di SharePoint. In base ai parametri di query, la query viene disposta in tutti i percorsi geo o in alcuni percorsi geo. Ad esempio, se è necessario solo per un sottoinsieme delle posizioni geo per trovare le informazioni rilevanti di query, è possibile controllare la ventola fuori solo a queste. Se la richiesta ha esito positivo, l'API REST di ricerca di SharePoint restituisce i dati di risposta.
+Le applicazioni di ricerca personalizzate ricevono risultati da tutte o da alcune posizioni geografiche specificando i parametri di query con la richiesta all'API REST Ricerca di SharePoint. A seconda dei parametri di query, la query viene inviata a tutte le posizioni geografiche o solo ad alcune. Ad esempio, se serve solo inviare la query a un set secondario di posizioni geografiche per trovare informazioni pertinenti, è possibile controllare il fan-out solo per queste. Se la richiesta ha esito positivo, l'API REST Ricerca di SharePoint restituisce dati di risposta.
 
 ### <a name="query-parameters"></a>Parametri di query
 
-EnableMultiGeoSearch - questo è un valore Boolean che specifica se la query deve disposta per gli indici delle altre posizioni geo del tenant Multi-Geo. Impostare su **true** per estendere le query. **false** per non ventaglio la query. Il valore predefinito è **false**. Se non si include questo parametro, la query viene disposta **non** in altre posizioni geo. Se si utilizza il parametro in un ambiente che non è più Geo, il parametro viene ignorato.
+EnableMultiGeoSearch - Questo è un valore booleano che specifica se la query deve essere diffusa a tutti gli indici di altre posizioni geografiche del tenant multi-geografico. Impostarlo su **true** per estendere la query; su **false** per non estendere la query. Il valore predefinito è **false**. Se non si include questo parametro, la query **non** viene estesa a diverse posizioni geografiche. Se si usa il parametro in un ambiente non multi-geografico, il parametro viene ignorato.
 
-TipoClient - questa è una stringa. Immettere un nome di client univoci per ogni applicazione di ricerca. Se non si include questo parametro, la query viene disposta **non** in altre posizioni geo.
+ClientType - Si tratta di una stringa. Inserire un nome client univoco per ogni applicazione di ricerca. Se non si include questo parametro, la query **non** viene estesa ad altre posizioni geografiche.
 
-MultiGeoSearchConfiguration - si tratta di un elenco facoltativo di quali geo percorsi Multi-Geo tenant per ventaglio la query su quando **EnableMultiGeoSearch** è **true**. Se si non include questo parametro o lasciare vuoto, la query viene disposta in tutti i percorsi geo. Per ogni località geografica, immettere gli elementi seguenti nel formato JSON:
+MultiGeoSearchConfiguration - Si tratta di un elenco opzionale delle posizioni geografiche nel tenant multi-geografico a cui estendere la query quando **EnableMultiGeoSearch** è **true**. Se non si include questo parametro o lo si lascia vuoto, la query non viene estesa a tutte le posizioni geografiche. Per ogni posizione geografica, inserire i seguenti elementi, in formato JSON:
 
 <table>
 <thead>
@@ -182,25 +183,25 @@ MultiGeoSearchConfiguration - si tratta di un elenco facoltativo di quali geo pe
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">PercorsoDati</td>
-<td align="left">Posizione geografica, ad esempio nomi.</td>
+<td align="left">DataLocation</td>
+<td align="left">La posizione geografica, ad esempio NAM.</td>
 </tr>
 <tr class="even">
 <td align="left">EndPoint</td>
-<td align="left">L'endpoint a cui connettersi, ad esempiohttps://contoso.sharepoint.com</td>
+<td align="left">L'endpoint a cui connettersi, ad esempio https://contoso.sharepoint.com</td>
 </tr>
 <tr class="odd">
 <td align="left">SourceId</td>
-<td align="left">GUID dell'origine dei risultati, ad esempio B81EAB55-3140-4312-B0F4-9459D1B4FFEE.</td>
+<td align="left">Il GUID dell'origine dei risultati, ad esempio B81EAB55-3140-4312-B0F4-9459D1B4FFEE.</td>
 </tr>
 </tbody>
 </table>
 
-Se si omette PercorsoDati o EndPoint oppure un PercorsoDati viene duplicato, la richiesta ha esito negativo. [È possibile ottenere informazioni sul punto finale della località geografica del tenant utilizzando Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).
+Se si omette DataLocation o EndPoint oppure se DataLocation è duplicato, la richiesta ha esito negativo. [È possibile ottenere informazioni sull'endpoint delle posizioni geografiche di un tenant utilizzando Microsoft Graph](https://docs.microsoft.com/it-IT/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Dati di risposta
 
-MultiGeoSearchStatus – questa è una proprietà che restituisce l'API di ricerca di SharePoint in risposta alla richiesta. Il valore della proprietà corrisponde a una stringa e vengono fornite le informazioni seguenti relative ai risultati che restituisce l'API di ricerca di SharePoint:
+MultiGeoSearchStatus - Si tratta di una proprietà che restituisce l'API Ricerca di SharePoint in risposta a una richiesta. Il valore della proprietà è una stringa e fornisce le informazioni seguenti sui risultati restituiti dall'API Ricerca di SharePoint:
 
 <table>
 <thead>
@@ -211,47 +212,47 @@ MultiGeoSearchStatus – questa è una proprietà che restituisce l'API di ricer
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Completo</td>
-<td align="left">Completo dei risultati di <strong>tutti</strong> i percorsi geo.</td>
+<td align="left">Full</td>
+<td align="left">Risultati completi da <strong>tutte</strong> le posizioni di ricerca.</td>
 </tr>
 <tr class="even">
-<td align="left">Parziale</td>
-<td align="left">Risultati parziali da uno o più percorsi geo. I risultati sono incompleti a causa di un errore temporaneo.</td>
+<td align="left">Partial</td>
+<td align="left">Risultati parziali da una o più posizioni geografiche. I risultati non sono completi a causa di un errore temporaneo.</td>
 </tr>
 
 </tbody>
 </table>
 
-### <a name="query-using-the-rest-service"></a>Utilizzo del servizio REST di query
+### <a name="query-using-the-rest-service"></a>Query che usa il servizio REST
 
-Con una richiesta GET, specificare i parametri di query nell'URL. Con una richiesta POST è passare i parametri di query nel corpo in formato JavaScript Object Notation (JSON).
+Con una richiesta GET, si specificano i parametri di query nell'URL. Con una richiesta POST, i parametri della query vengono ignorati nel corpo nel formato JavaScript Object Notation (JSON).
 
-#### <a name="request-headers"></a>Intestazioni delle richieste
+#### <a name="request-headers"></a>Intestazioni di richiesta
 
 <table>
 <thead>
 <tr class="header">
-<th align="left">Nome</th>
+<th align="left">Name</th>
 <th align="left">Valore</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">Content-Type</td>
-<td align="left">applicazione/json; odata = verbose</td>
+<td align="left">application/json;odata=verbose</td>
 </tr>
 </tbody>
 </table>
 
-#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Esempio di convocazione GET che viene disposta in **tutti i** percorsi geo
+#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Esempio di richiesta GET estesa a **tutte** le posizioni geografiche
 
-https:// \<tenant\>/\_api/ricerca/query?querytext = proprietà & "sharepoint" = 'EnableMultiGeoSearch:true' & TipoClient =' personale\_client\_id'
+https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
 
-#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Esempio di convocazione GET a ventaglio **alcune** posizioni geo
+#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Esempio di richiesta GET estesa ad **alcune** posizioni geografiche
 
-https:// <tenant>/_api/search/query?querytext = 'sito' & TipoClient = 'my_client_id' & proprietà ='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration: [{PercorsoDati\:"Nome"\,Endpoint\:"https\: contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{PercorsoDati\:"Può"\,Endpoint\:" https\://contosoCAN.sharepoint-df.com "}]'
+https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'
 
-#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Esempio di convocazione di POST che viene disposta in **tutti i** percorsi geo
+#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Esempio di richiesta POST estesa a **tutte** le posizioni geografiche
 
     {
         "request": {
@@ -275,7 +276,7 @@ https:// <tenant>/_api/search/query?querytext = 'sito' & TipoClient = 'my_client
     }
 
 
-#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>Esempio di convocazione di POST che viene disposta in **alcuni** percorsi geo
+#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>Esempio di richiesta POST estesa ad **alcune** posizioni geografiche
 
 
     {
@@ -303,9 +304,9 @@ https:// <tenant>/_api/search/query?querytext = 'sito' & TipoClient = 'my_client
         }
     }
 
-### <a name="query-using-csom"></a>Query utilizza CSOM
+### <a name="query-using-csom"></a>Query che usa CSOM
 
-Ecco una query di esempio CSOM che viene disposta in **tutti i** percorsi geo:
+Esempio di query CSOM estesa a **tutte** le posizioni geografiche:
 
     var keywordQuery = new KeywordQuery(ctx);
     keywordQuery.QueryText = query.SearchQueryText;

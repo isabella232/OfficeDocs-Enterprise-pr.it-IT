@@ -1,5 +1,5 @@
 ---
-title: Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings
+title: Sottoscrizioni, licenze, account e tenant per offerte cloud di Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,41 +7,41 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: "Summary: Understand the relationships of organizations, subscriptions, licenses, user accounts, and tenants across Microsoft's cloud offerings."
-ms.openlocfilehash: ff4854bc66f9a500715bbcd2da696b9a4519aa82
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Riepilogo: comprendere le relazioni delle organizzazioni, le sottoscrizioni, le licenze, gli account utente e i tenant tra le offerte cloud di Microsoft.'
+ms.openlocfilehash: 889dbc376d3eb90af46bb281715ba391d7ee7712
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings
+# <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Sottoscrizioni, licenze, account e tenant per offerte cloud di Microsoft
 
- **Summary:** Understand the relationships of organizations, subscriptions, licenses, user accounts, and tenants across Microsoft's cloud offerings.
+ **Riepilogo:** comprendere le relazioni delle organizzazioni, le sottoscrizioni, le licenze, gli account utente e i tenant tra le offerte cloud di Microsoft.
   
-Microsoft provides a hierarchy of organizations, subscriptions, licenses, and user accounts for consistent use of identities and billing across its cloud offerings:
+Microsoft fornisce una gerarchia di organizzazioni, sottoscrizioni, licenze e account utente per garantire un utilizzo uniforme di identità e fatturazione tra le varie offerte cloud:
   
 - Microsoft Office 365
     
-    See [business plans and pricing](https://products.office.com/business/compare-office-365-for-business-plans) for more information.
+    Vedere i [piani e i prezzi per le aziende](https://products.office.com/business/compare-office-365-for-business-plans) per ulteriori informazioni.
     
 - Microsoft Azure
     
-    See [Azure pricing](https://azure.microsoft.com/pricing/) for more information.
+    Vedere i [prezzi per Azure](https://azure.microsoft.com/pricing/) per ulteriori informazioni.
     
-- Microsoft Intune and the Enterprise Mobility + Security (EMS)
+- Microsoft Intune ed Enterprise Mobility + Security (EMS)
     
-    See [Intune pricing](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing) for more information.
+    Vedere i [prezzi per Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing) per ulteriori informazioni.
     
 - Microsoft Dynamics 365
     
-    See [Dynamics 365 pricing](https://dynamics.microsoft.com/) for more information.
+    Vedere i [prezzi per Dynamics 365](https://dynamics.microsoft.com/) per ulteriori informazioni.
     
 ## <a name="elements-of-the-hierarchy"></a>Elementi della gerarchia
 
@@ -53,13 +53,13 @@ Un'organizzazione rappresenta un'entità aziendale che utilizza offerte cloud Mi
   
 ### <a name="subscriptions"></a>Sottoscrizioni
 
-A subscription is an agreement with Microsoft to use one or more Microsoft cloud platforms or services, for which charges accrue based on either a per-user license fee or on cloud-based resource consumption. Microsoft's Software as a Service (SaaS)-based cloud offerings (Office 365, Intune/EMS, and Dynamics 365) charge per-user license fees. Microsoft's Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) cloud offerings (Azure) charge based on cloud resource consumption.
+Una sottoscrizione è un contratto stipulato con Microsoft per utilizzare una o più piattaforme cloud oppure servizi di Microsoft pagando un costo stabilito su licenza utente o su consumo delle risorse cloud. Le offerte cloud SaaS di Microsoft (Office 365, Intune/EMS e Dynamics 365) vengono fatturate in base alla licenza per utente. Le offerte cloud PaaS e IaaS di Microsoft vengono fatturate in base al consumo di risorse.
   
 È anche possibile utilizzare una sottoscrizione di prova, che scade dopo un determinato periodo di tempo o dopo una soglia di consumo. È possibile convertire una sottoscrizione di prova in sottoscrizione a pagamento.
   
-Organizations can have multiple subscriptions for Microsoft's cloud offerings. Figure 1 shows an example.
+Le organizzazioni possono disporre di più sottoscrizioni per le offerte cloud di Microsoft. Nella figura 1 è riportato un esempio.
   
-**Figure 1: Example of multiple subscriptions for an organization**
+**Figura 1: esempio di più sottoscrizioni per un'organizzazione**
 
 ![Esempio di organizzazione con più sottoscrizioni per le offerte cloud di Microsoft.](images/Subscriptions/Subscriptions_Fig1.png)
 
@@ -68,9 +68,9 @@ Nella figura 1 viene mostrata una singola organizzazione che dispone di più sot
   
 ### <a name="licenses"></a>Licenze
 
-For Microsoft's SaaS cloud offerings, a license allows a specific user account to use the services of the cloud offering. You are charged a fixed monthly fee as part of your subscription. Administrators assign licenses to individual user accounts in the subscription. For the example in Figure 2, the Contoso Corporation has an Office 365 Enterprise E5 subscription with 100 licenses, which allows to up to 100 individual user accounts to use Enterprise E5 features and services.
+Per le offerte cloud SaaS di Microsoft, una licenza consente a un account utente specifico di utilizzare l'offerta cloud. Vengono effettuati addebiti mensili fissi come parte della sottoscrizione. Gli amministratori assegnano licenze a singoli account utente nella sottoscrizione. Ad esempio, nella figura 2, Contoso Corporation dispone di una sottoscrizione a Office 365 Enterprise E5 con 100 licenze, che consente a oltre 100 account utente singoli di usare le funzionalità e i servizi di Enterprise E5.
   
-**Figure 2: Licenses within the SaaS-based subscriptions for an organization**
+**Figura 2: licenze comprese nelle sottoscrizioni basate su SaaS di un'organizzazione**
 
 ![Un esempio di più licenze all'interno delle sottoscrizioni per le offerte cloud di Microsoft basate su SaaS.](images/Subscriptions/Subscriptions_Fig2.png)
   
@@ -82,11 +82,11 @@ Alcune immagini della macchina virtuale dispongono di versioni di prova delle ap
   
 ### <a name="user-accounts"></a>Account utente
 
-User accounts for all of Microsoft's cloud offerings are stored in an Azure Active Directory (AD) tenant, which contains user accounts and groups. An Azure AD tenant can be synchronized with your existing Windows Server AD accounts using Azure AD Connect, a Windows server-based service. This is known as directory synchronization (DirSync).
+Gli account utente per tutte le offerte cloud di Microsoft sono archiviati in un tenant di Azure Active Directory (AD) che include gli account utente e i gruppi. Un tenant di Azure AD può essere sincronizzato con gli account Windows Server AD esistenti tramite Azure AD Connect, un servizio basato su server di Windows. Si tratta della cosiddetta sincronizzazione della directory (DirSync).
   
 Nella figura 3 viene mostrato un esempio di più sottoscrizioni di un'organizzazione che usa un tenant Azure AD comune, il quale include gli account dell'organizzazione.
   
-**Figure 3: Multiple subscriptions of an organization that use the same Azure AD tenant**
+**Figura 3: più sottoscrizioni di un'organizzazione che utilizza lo stesso tenant di Azure AD**
 
 ![Esempio di organizzazione con più sottoscrizioni che utilizzano lo stesso tenant Azure AD.](images/Subscriptions/Subscriptions_Fig3.png)
   
@@ -128,13 +128,13 @@ Ecco un esempio di relazione di organizzazioni, sottoscrizioni, licenze e accoun
     
 Più sottoscrizioni alle offerte cloud di Microsoft sono in grado di usare lo stesso tenant Azure AD che si comporta come un provider di identità comune. Un tenant di Azure AD centrale che contiene gli account sincronizzati di Windows Server AD offre IDaaS basata su cloud per l'organizzazione. Questo è il contenuto della figura 4.
   
-**Figure 4: Synchronized on-premises accounts and IDaaS for an organization**
+**Figura 4: account sincronizzati in locale e IDaaS per un'organizzazione**
 
 ![IDaaS IaaS per l'organizzazione.](images/Subscriptions/Subscriptions_Fig4.png)
   
 La figura 4 mostra in che modo il tenant di Azure AD comune è utilizzato dalle offerte cloud SaaS di Microsoft, le app PaaS di Azure e le macchine virtuali IaaS di Azure che usa Azure AD Domain Services. Azure AD Connect sincronizza la foresta di Windows Server AD locale con il tenant di Azure AD.
   
-For more information about identity integration across Microsoft's cloud offerings, see [Microsoft Cloud Identity for Enterprise Architects](https://aka.ms/cloudarchidentity).
+Per ulteriori informazioni sull'integrazione dell'identità tra le offerte cloud di Microsoft, vedere [Identità cloud Microsoft per Enterprise Architects](https://aka.ms/cloudarchidentity).
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>Combinazione di sottoscrizioni per offerte cloud di Microsoft
 
@@ -143,29 +143,29 @@ La tabella descrive il modo in cui è possibile combinare più offerte cloud di 
 ||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Office 365** <br/> |ND  <br/> |È necessario aggiungere una sottoscrizione di Azure all'organizzazione dal portale di Azure.  <br/> |È necessario aggiungere una sottoscrizione di Intune/EMS all'organizzazione dal portale di Office 365.  <br/> |È necessario aggiungere una sottoscrizione di Dynamics 365 all'organizzazione dal portale di Office 365.  <br/> |
-|**Azure** <br/> |È necessario aggiungere una sottoscrizione di Office 365 all'organizzazione.   <br/> |ND  <br/> |È necessario aggiungere una sottoscrizione di Intune/EMS all'organizzazione.  <br/> |È necessario aggiungere una sottoscrizione di Dynamics 365 all'organizzazione.  <br/> |
-|**Intune/EMS** <br/> |È necessario aggiungere una sottoscrizione di Office 365 all'organizzazione.   <br/> |È necessario aggiungere una sottoscrizione di Azure all'organizzazione dal portale di Azure.  <br/> |ND  <br/> |È necessario aggiungere una sottoscrizione di Dynamics 365 all'organizzazione.  <br/> |
-|**Dynamics 365** <br/> |È necessario aggiungere una sottoscrizione di Office 365 all'organizzazione.   <br/> |È necessario aggiungere una sottoscrizione di Azure all'organizzazione dal portale di Azure.  <br/> |È necessario aggiungere una sottoscrizione di Intune/EMS all'organizzazione.  <br/> |ND  <br/> |
+|**Azure** <br/> |È necessario aggiungere una sottoscrizione di Office 365 all'organizzazione.  <br/> |ND  <br/> |È necessario aggiungere una sottoscrizione di Intune/EMS all'organizzazione.  <br/> |È necessario aggiungere una sottoscrizione di Dynamics 365 all'organizzazione.  <br/> |
+|**Intune/EMS** <br/> |È necessario aggiungere una sottoscrizione di Office 365 all'organizzazione.  <br/> |È necessario aggiungere una sottoscrizione di Azure all'organizzazione dal portale di Azure.  <br/> |ND  <br/> |È necessario aggiungere una sottoscrizione di Dynamics 365 all'organizzazione.  <br/> |
+|**Dynamics 365** <br/> |È necessario aggiungere una sottoscrizione di Office 365 all'organizzazione.  <br/> |È necessario aggiungere una sottoscrizione di Azure all'organizzazione dal portale di Azure.  <br/> |È necessario aggiungere una sottoscrizione di Intune/EMS all'organizzazione.  <br/> |ND  <br/> |
    
 Un metodo rapido per aggiungere sottoscrizioni all'organizzazione per i servizi basati su SaaS di Microsoft è quello di utilizzare l'interfaccia di amministrazione di Office 365.
   
-1. Sign in to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) with your global administrator account, and then click **Admin**.
+1. Accedere a Office 365 ([https://portal.office.com](https://portal.office.com)) con le credenziali dell'account di amministratore globale, quindi fare clic su **Amministratore**.
     
-2. From the left navigation of the **Admin center** home page, click **Billing**, and then **Purchase services**.
+2. Dal riquadro di navigazione a sinistra della home page dell'**interfaccia di amministrazione**, fare clic su **Fatturazione**, quindi su **Acquista servizi**.
     
-3. On the **Purchase services** page, purchase your new subscriptions.
+3. Nella pagina **Acquista servizi**, procedere all'acquisto delle nuove sottoscrizioni.
     
 L'interfaccia di amministrazione di Office 365 assegna l'organizzazione e il tenant Azure AD della sottoscrizione di Office 365 alle nuove sottoscrizioni per le offerte cloud basate su SaaS.
   
-Per aggiungere una sottoscrizione di Azure con la stessa organizzazione e il tenant di Azure AS della sottoscrizione di Office 365:
+Per aggiungere una sottoscrizione di Azure con la stessa organizzazione e il tenant di Azure AD della sottoscrizione di Office 365:
   
-1. Sign in to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) with your Office 365 global administrator account.
+1. Accedere al portale di Azure ([https://portal.azure.com](https://portal.azure.com)) con l'account di amministratore globale di Office 365.
     
-2. In the left navigation, click **Subscriptions**, and then click **Add**.
+2. Nella barra di spostamento a sinistra, fare clic su **Sottoscrizioni**, quindi su **Aggiungi**.
     
-3. On the **Add subscription** page, select an offer and complete the payment information and agreement.
+3. Nella pagina **Aggiungi sottoscrizione**, selezionare un'offerta e completare le informazioni di pagamento e il contratto.
     
-If you purchased Azure and Office 365 subscriptions separately and want to access the Office 365 Azure AD tenant from your Azure subscription, see the instructions in [Associate an Office 365 tenant with an Azure subscription](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription).
+Se sono state acquistate sottoscrizioni di Azure e Office 365 separate e si desidera accedere al tenant di Office 365 Azure AD dalla sottoscrizione di Azure, vedere le istruzioni riportate nell'articolo [Associare un tenant di Office 365 con una sottoscrizione di Azure](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription).
   
 ## <a name="see-also"></a>Vedere anche
 
