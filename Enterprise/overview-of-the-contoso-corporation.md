@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
-description: "Riepilogo: Informazioni sulla società Contoso Corporation e sulla struttura a livelli dei suoi uffici nel mondo."
-ms.openlocfilehash: 7dcbefc82591c4baf65a2b64127d547020109c59
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Riepilogo: Informazioni sulla società Contoso Corporation e sulla struttura a livelli dei suoi uffici nel mondo.'
+ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Panoramica di Contoso Corporation
 
@@ -71,7 +71,7 @@ Gli architetti IT di Contoso hanno identificato gli elementi seguenti durante la
     
     Contoso utilizza una foresta di Windows Server AD per i provider di identità interni e attua la federazione con provider di terze parti per clienti e partner. Contoso deve sfruttare il set di account interni per offerte cloud Microsoft. Anche l'accesso alle app basate su cloud per clienti e partner deve sfruttare i provider di identità di terze parti.
     
-    Per ulteriori informazioni, vedere il poster [Identità cloud Microsoft per Enterprise Architects](microsoft-cloud-identity-for-enterprise-architects.md).
+    Per ulteriori informazioni, vedere il poster [Identità cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Sicurezza
     

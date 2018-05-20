@@ -1,5 +1,5 @@
 ---
-title: Panoramica del cloud ibrida
+title: Panoramica del cloud ibrido
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,13 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Riepilogo: Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.'
-ms.openlocfilehash: 3cf828b8411605a9d0bdd338c3b6c16a5892f6b7
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
-# <a name="hybrid-cloud-overview"></a>Panoramica del cloud ibrida
+# <a name="hybrid-cloud-overview"></a>Panoramica del cloud ibrido
 
  **Riepilogo:** Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.
   
@@ -72,7 +72,7 @@ Scenari per il cloud ibrida con servizi cloud Microsoft variano con la piattafor
     
 - Identità
     
-    Identità per gli scenari ibridi SaaS e Azure PaaS può includere Azure Active Directory come provider di identità comuni, che possono essere sincronizzati con locale Windows Server Active Directory o federati con Windows Server Active Directory o altri provider di identità. È inoltre possibile estendere l'infrastruttura di identità in locale per Azure IaaS. Per ulteriori informazioni, vedere [Identità Cloud Microsoft per architetti Enterprise](microsoft-cloud-identity-for-enterprise-architects.md).
+    Identità per gli scenari ibridi SaaS e Azure PaaS può includere Azure Active Directory come provider di identità comuni, che possono essere sincronizzati con locale Windows Server Active Directory o federati con Windows Server Active Directory o altri provider di identità. È inoltre possibile estendere l'infrastruttura di identità in locale per Azure IaaS. Per ulteriori informazioni, vedere [Identità Cloud Microsoft per architetti Enterprise](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Sicurezza
     
