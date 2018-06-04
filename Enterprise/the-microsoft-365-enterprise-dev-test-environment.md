@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Riepilogo: Usare questa guida del laboratorio di testing per creare un ambiente di sviluppo e di testing che includa Office 365 E5, Enterprise Mobility + Security (EMS) E5 e un computer che esegue Windows 10 Enterprise.'
-ms.openlocfilehash: 5a4c23b3bde309a75a61e574e91823ecdd4629fe
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 03fa8e0a4e8d90fcb834eeb2491d3dd39b67ff05
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "19178648"
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Ambiente di sviluppo/testing di Microsoft 365 Enterprise
 
@@ -92,7 +93,7 @@ Creare una macchina virtuale utilizzando l'hypervisor scelto e installarvi Windo
   
 ### <a name="virtual-machine-in-azure"></a>Macchina virtuale in Azure
 
-Per creare una macchina virtuale con Windows 10 in Microsoft Azure, ***è necessario disporre di una sottoscrizione basata su Visual Studio***, che abbia accesso all'immagine per Windows 10 Enterprise. Altri tipi di sottoscrizioni di Azure, ad esempio le sottoscrizioni di valutazione e quelle a pagamento, non hanno accesso a tale immagine.
+Per creare una macchina virtuale con Windows 10 in Microsoft Azure, ***è necessario disporre di una sottoscrizione basata su Visual Studio***, che abbia accesso all'immagine per Windows 10 Enterprise. Altri tipi di sottoscrizioni di Azure, ad esempio le sottoscrizioni di valutazione e quelle a pagamento, non hanno accesso a tale immagine. Per le informazioni più aggiornate, vedere [Utilizzare un client Windows in Azure per gli scenari di sviluppo/test](https://docs.microsoft.com/azure/virtual-machines/windows/client-images).
   
 > [!NOTE]
 > I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Questi set di comandi creano una macchina virtuale con Windows 10 Enterprise denominata WIN10 e tutte le infrastrutture relative necessarie, tra cui un gruppo di risorse, un account di archiviazione e una rete virtuale. Se si ha già familiarità con i servizi di infrastruttura di Azure, si consiglia di adattare queste istruzioni all’infrastruttura attualmente implementata. 
@@ -174,7 +175,7 @@ Successivamente, aggiungere il computer WIN10 al tenant di Azure AD delle sottos
     
 6. Chiudere la finestra delle impostazioni.
     
-Successivamente, installare Office 2016 nel computer WIN10
+Successivamente, installare Office 365 ProPlus nel computer WIN10
   
 1. Aprire il browser Microsoft Edge e accedere al portale di Office 365 tramite le credenziali dell'account Administrator globale. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -184,11 +185,15 @@ Successivamente, installare Office 2016 nel computer WIN10
     
 4. Attendere che l’installazione di Office venga completata. Quando viene visualizzato **La configurazione è completata**, fare clic su **Chiudi** due volte.
     
-La Figura 3 mostra l'ambiente risultante, che include il computer WIN10 aggiunto al tenant di Azure AD delle sottoscrizioni di Office 365 ed EMS.
-  
-**Figura 3: aggiungere l'account del computer WIN10 al tenant di Azure AD**
+La figura 3 mostra l'ambiente risultante che include il computer WIN10 il quale:
 
-![Fase 4 dell'ambiente di sviluppo/testing Microsoft 3656 Enterprise](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
+- È entrato a far parte del tenant di Azure AD delle sottoscrizioni di Office 365 ed EMS.
+- Si è registrato come dispositivo Azure AD in Intune (EMS).
+- Ha Office 365 ProPlus installato.
+  
+**Figura 3: configurazione finale dell'ambiente di sviluppo/test di Microsoft 365**
+
+![Fase 4 dell'ambiente di sviluppo/test di Microsoft 365 Enterprise](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
   
 A questo punto è possibile sperimentare le funzionalità aggiuntive di [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   

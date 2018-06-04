@@ -9,15 +9,18 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni su come gestire i requisiti RGPD nei server locali di Office.
-ms.openlocfilehash: dc1150361db6a28f011e4890a2770f4a6b607a91
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: 598d4b0c3f4b7d4281383111f0891759f81d483f
+ms.sourcegitcommit: 53a57b0617b5bb22beea766e515873d14b3a4783
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "19183595"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>RGDP per server locali di Office
 
 L'RGDP presenta i requisiti delle organizzazioni per proteggere i dati personali e rispondere in modo appropriato alle richieste del soggetto dei dati. Questa serie di articoli fornisce i metodi consigliati per i carichi di lavoro locali:
+
+-   [SharePoint Server](gdpr-for-sharepoint-server.md)
 
 -   [Exchange Server](gdpr-for-exchange-server.md)
 
@@ -48,4 +51,4 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 |Proteggere||Regole di prevenzione della perdita dei dati di Exchange Server; autorizzazioni, protezione IRM per le raccolte|Regole di prevenzione della perdita dei dati di Exchange Server; integrazione IRM con Exchange Server|||
 |Monitorare|Integrazione di log con strumenti SIEM|Integrazione di log con strumenti SIEM|Integrazione di log con strumenti SIEM|Integrazione di log con strumenti SIEM|Integrazione di log con strumenti SIEM|
 
-*Per RGDP, applicare le etichette che non includono protezione. La protezione crittografa il file, di conseguenza, SharePoint Server non riesce a individuare tipi di informazioni riservate in questi file.
+*Si noti che la protezione crittografa il file, di conseguenza, SharePoint Server non riesce a individuare tipi di informazioni riservate nei file protetti.

@@ -3,7 +3,7 @@ title: Rete virtuale tra più sedi simulata in Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,40 +14,41 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
-description: 'Riepilogo: Creare una rete virtuale simulato tra locali in Microsoft Azure come un ambiente di sviluppo e di testing.'
-ms.openlocfilehash: 4a34126bba4561da621dc3faf37dd30d4dcc9ff3
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
-ms.translationtype: MT
+description: 'Riepilogo: creare una rete virtuale cross-premise simulata in Microsoft Azure come ambiente di sviluppo/test.'
+ms.openlocfilehash: 42ef04a92794c8df53d3de32970db78d4dcf3119
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193666"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rete virtuale tra più sedi simulata in Azure
 
- **Riepilogo:** Creare una rete virtuale simulato tra locali in Microsoft Azure come un ambiente di sviluppo e di testing.
+ **Riepilogo:** creare una rete virtuale cross-premise simulata in Microsoft Azure come ambiente di sviluppo/test.
   
 In questo articolo viene mostrato come creare un ambiente basato su cloud con Microsoft Azure usando due reti virtuali Azure. Di seguito è riportata la configurazione risultante.   
   
-![Fase 3 dell'ambiente di sviluppo/testing della rete virtuale cross-premise simulata, con la macchina virtuale DC2 nella rete virtuale XPrem](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Fase 3 dell'ambiente di sviluppo/test della rete virtuale cross-premise simulata, con la macchina virtuale DC2 nella rete virtuale XPrem](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Questa simula un ambiente di produzione cloud ibrido in IaaS di Azure ed è costituita da:
   
-- 	Una rete locale simulata e semplificata, ospitata in una rete virtuale di Azure (la rete virtuale TestLab).
+- Una rete locale simulata e semplificata, ospitata in una rete virtuale di Azure (la rete virtuale TestLab).
     
-- 	Una rete virtuale cross-premise simulata ospitata in Azure (XPrem).
+- Una rete virtuale cross-premise simulata ospitata in Azure (XPrem).
     
-- 	Una relazione peering di rete virtuale tra le due reti virtuali.
+- Una relazione peering di rete virtuale tra le due reti virtuali.
     
-- 	Un controller di dominio secondario nella rete virtuale XPrem.
+- Un controller di dominio secondario nella rete virtuale XPrem.
     
-Tale configurazione fornisce una base e un punto di partenza comune da cui è possibile:  
+Tale configurazione fornisce una base e un punto di partenza comune da cui è possibile: 
   
-- 	Sviluppare e testare applicazioni in un ambiente cloud ibrido simulato in IaaS di Azure.
+- Sviluppare e testare applicazioni in un ambiente cloud ibrido simulato in IaaS di Azure.
     
-- 	Creare configurazioni di test dei computer, alcune all'interno della rete virtuale TestLab e alcune all'interno della rete virtuale XPrem, per simulare carichi di lavoro IT basati su cloud ibridi.
+- Creare configurazioni di test dei computer, alcune all'interno della rete virtuale TestLab e alcune all'interno della rete virtuale XPrem, per simulare carichi di lavoro IT basati su cloud ibridi.
     
 Le fasi principali della configurazione dell'ambiente di sviluppo e testing sono tre:
   
-1. 	Configurare la rete virtuale TestLab.
+1. Configurare la rete virtuale TestLab.
     
 2. Creare la rete virtuale cross-premise.
     
@@ -56,27 +57,27 @@ Le fasi principali della configurazione dell'ambiente di sviluppo e testing sono
 > [!NOTE]
 > Questa configurazione richiede una sottoscrizione a pagamento di Azure. 
   
-![Guide dei laboratori di testing nel cloud Microsoft](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guide al lab test in Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test cloud di One Microsoft.
   
-## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fase 1: Configurare la rete virtuale TestLab
+## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fase 1: configurare la rete virtuale TestLab
 
-Utilizzare le istruzioni [nell'ambiente di sviluppo/test di configurazione di Base](base-configuration-dev-test-environment.md) per configurare i computer DC1, APP1 e CLIENT1 nella rete virtuale Azure denominata laboratorio di test.
+Utilizzare le istruzioni disponibili in [Configurazione base ambiente di sviluppo/test](base-configuration-dev-test-environment.md) per configurare i computer DC1, APP1 e CLIENT1 nella rete virtuale di Azure denominata TestLab.
   
 Questa è la configurazione corrente. 
   
 ![Fase 4 della configurazione base in Azure con la macchina virtuale CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-## <a name="phase-2-create-the-xprem-virtual-network"></a>Fase 2: Creare la rete virtuale XPrem
+## <a name="phase-2-create-the-xprem-virtual-network"></a>Fase 2: creare la rete virtuale XPrem
 
 In questa fase, viene creata e configurata la nuova rete virtuale XPrem, viene quindi eseguita la connessione alla rete virtuale TestLab con peering di rete virtuale.
   
 Innanzitutto, avviare un prompt dei comandi di Azure PowerShell sul computer locale.
   
 > [!NOTE]
-> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/it-IT/powershell/azureps-cmdlets-docs/). 
   
 Accedere al proprio account Azure con il seguente comando.
   
@@ -85,7 +86,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> [!SUGGERIMENTO] Per un file di testo contenente tutti i comandi di PowerShell riportati in questo articolo, fare clic [qui](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0).
+> Per un file di testo contenente tutti i comandi di PowerShell riportati in questo articolo, fare clic [qui](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0).
   
 Ottenere il nome della sottoscrizione utilizzando il comando seguente.
   
@@ -93,7 +94,7 @@ Ottenere il nome della sottoscrizione utilizzando il comando seguente.
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-Impostare la sottoscrizione di Azure. Sostituire tutte le virgolette, incluse le \< e > caratteri con i nomi corretti.
+Impostare la sottoscrizione di Azure. Sostituire tutto il testo racchiuso tra virgolette, compresi i caratteri \< e >, con il nome corretto.
   
 ```
 $subscrName="<subscription name>"
@@ -126,13 +127,13 @@ Add-AzureRmVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -Rem
 
 Questa è la configurazione corrente. 
   
-![Fase 2 dell'ambiente di sviluppo/testing della rete virtuale cross-premise simulata, con la relazione di peering della rete virtuale e la rete virtuale XPrem](images/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![Fase 2 dell'ambiente di sviluppo/test della rete virtuale cross-premise simulata, con la relazione di peering della rete virtuale e la rete virtuale XPrem](images/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
-## <a name="phase-3-configure-dc2"></a>Fase 3: Configurare DC2
+## <a name="phase-3-configure-dc2"></a>Fase 3: configurare DC2
 
 In questa fase, viene creata la macchina virtuale DC2 nella rete virtuale XPrem e viene configurata come controller di dominio di replica.
   
-Creare innanzitutto una macchina virtuale per DC2. Eseguire questi comandi al prompt dei comandi di Azure PowerShell nel computer locale.
+Innanzitutto, creare una macchina virtuale per DC2. Eseguire questi comandi al prompt dei comandi di Azure PowerShell nel computer locale.
   
 ```
 $rgName="<your resource group name>"
@@ -152,7 +153,7 @@ $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC2-DataDisk1" -CreateOption Attach -Ma
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-Collegare alla macchina virtuale DC2 nuova dal [portale di Azure](https://portal.azure.com) utilizzando il nome dell'account amministratore locale e la password.
+Successivamente, eseguire la connessione alla nuova macchina virtuale DC2 dal [portale Azure](https://portal.azure.com) tramite nome dell’account e password dell’amministratore locale. 
   
 Configurare quindi una regola di Windows Firewall per consentire la verifica di connettività di base del traffico. Eseguire questi comandi in DC2 al prompt dei comandi di Windows PowerShell a livello di amministratore.  
   
@@ -169,14 +170,14 @@ Successivamente, aggiungere un ulteriore disco dati come nuovo volume con letter
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-Configurare quindi DC2 come controller di dominio di replica per il dominio corp.contoso.com. Eseguire questi comandi in DC2 al prompt dei comandi di Windows PowerShell:
+Configurare quindi DC2 come controller di dominio di replica per il dominio corp.contoso.com. Eseguire questi comandi dal prompt dei comandi di Windows PowerShell su DC2.
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
-Si noti che viene richiesto di specificare sia il CORP\\User1 password e una password di ripristino servizi modalità (Directory) e il riavvio DC2. 
+Tenere presente che viene richiesto di fornire sia la password CORP\\User1 che una password per la modalità ripristino servizi directory, nonché di riavviare DC2.  
   
 Ora che la rete virtuale XPrem dispone di un proprio server DNS (DC2), è necessario configurare la rete virtuale XPrem per utilizzarlo. Eseguire questi comandi nel computer locale al prompt dei comandi di Azure PowerShell.
   
@@ -187,7 +188,7 @@ Set-AzureRmVirtualNetwork -VirtualNetwork $vnet
 Restart-AzureRmVM -ResourceGroupName $rgName -Name "DC2"
 ```
 
-Dal portale di Azure nel computer locale, la connessione a DC1 con la CORP\\credenziali User1. Per configurare il dominio in modo che gli utenti e computer utilizzano i controller di dominio locale per l'autenticazione, eseguire questi comandi dal prompt dei comandi di Windows PowerShell livello di amministratore in DC1.
+Utilizzare le credenziali CORP\\User1 per eseguire la connessione a DC1 dal portale di Azure sul computer locale. Per configurare il dominio CORP in modo che computer e utenti utilizzino il controller di dominio locale per l'autenticazione, eseguire questi comandi in DC1 al prompt dei comandi di Windows PowerShell a livello di amministratore.
   
 ```
 New-ADReplicationSite -Name "TestLab" 
@@ -198,13 +199,13 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 Questa è la configurazione corrente. 
   
-![Fase 3 dell'ambiente di sviluppo/testing della rete virtuale cross-premise simulata, con la macchina virtuale DC2 nella rete virtuale XPrem](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Fase 3 dell'ambiente di sviluppo/test della rete virtuale cross-premise simulata, con la macchina virtuale DC2 nella rete virtuale XPrem](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 L’ambiente cloud ibrido di Azure simulato è ora pronto per eseguire test.
   
 ## <a name="next-step"></a>Passaggio successivo
 
-Utilizzare l'ambiente di sviluppo e di testing per simulare una [farm di SharePoint Server 2016 intranet ospitate in Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
+Utilizzare l’ambiente di sviluppo/test per simulare un [Server di SharePoint Intranet 2016 nell'ambiente di sviluppo/test in Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
   
 ## <a name="see-also"></a>Vedere anche
 
