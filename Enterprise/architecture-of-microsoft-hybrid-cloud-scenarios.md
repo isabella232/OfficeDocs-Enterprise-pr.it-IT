@@ -1,5 +1,5 @@
 ---
-title: Architettura di scenari basati su cloud ibrida Microsoft
+title: Architettura degli scenari cloud ibridi Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
-description: 'Riepilogo: Comprendere l''architettura di ibrida offerte cloud di Microsoft.'
-ms.openlocfilehash: 33d98d88a10b18cdd357250f46c5414f1c1b6a75
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: "Riepilogo: Comprendere l'architettura di ibrida offerte cloud di Microsoft."
+ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631387"
 ---
-# <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architettura di scenari basati su cloud ibrida Microsoft
+# <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architettura degli scenari cloud ibridi Microsoft
 
  **Riepilogo:** Acquisire familiarità con l'architettura di ibrida offerte cloud di Microsoft.
   
@@ -38,7 +39,7 @@ Il livello applicazioni e gli scenari contiene gli scenari di cloud ibrida speci
     
 - Rete
     
-    Sono disponibili due opzioni per la connettività a Microsoft cloud piattaforme e servizi: il canale Internet esistente ed ExpressRoute. Utilizzare una connessione ExpressRoute se le prestazioni prevedibile sono importanti. È possibile utilizzare una connessione ExpressRoute per la connessione direttamente a Microsoft SaaS services (Office 365 e Dynamics 365), servizi di Azure PaaS e servizi PaaS Azure.
+    Sono disponibili due opzioni per la connettività a Microsoft cloud piattaforme e servizi: il canale Internet esistente ed ExpressRoute. Utilizzare una connessione ExpressRoute se le prestazioni prevedibile sono importanti. È possibile utilizzare una connessione ExpressRoute per la connessione direttamente a Microsoft SaaS services (Office 365 e Dynamics 365), servizi di Azure PaaS e servizi di Azure IaaS.
     
 - Identità
     
