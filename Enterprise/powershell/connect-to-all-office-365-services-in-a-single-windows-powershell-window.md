@@ -3,7 +3,7 @@ title: Effettuare la connessione a tutti i servizi Office 365 in un'unica finest
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2018
+ms.date: 06/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,11 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Riepilogo: Connessione di Windows PowerShell per tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell."
-ms.openlocfilehash: 7e3a3ecbb0526c88392848cf39b59b40f1f4c80c
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
+ms.openlocfilehash: ba23dde0fd79d13274244b52c5914d9249640570
+ms.sourcegitcommit: f496a401245240ec01754edcd4d44e7a0194d068
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "19907187"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell
 
@@ -53,7 +54,7 @@ Per poter gestire tutti di Office 365 da una singola istanza di Windows PowerShe
     
   - Windows Server 2008 R2 SP1*
     
-    * È necessario installare Microsoft .NET Framework 4.5. *x* e quindi su Windows Management Framework 3.0 o Windows Management Framework 4.0. Per ulteriori informazioni, vedere [installazione di .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) e [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) o [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
+    \*È necessario installare Microsoft .NET Framework 4.5. *x* e quindi su Windows Management Framework 3.0 o Windows Management Framework 4.0. Per ulteriori informazioni, vedere [installazione di .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) e [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) o [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
     
     È necessario utilizzare una versione a 64 bit di Windows per i requisiti per il Skype per la funzionalità di Business in linea e uno dei moduli di Office 365.
     
@@ -82,13 +83,19 @@ Ecco la procedura per la connessione a tutti i servizi in un'unica finestra di P
   $credential = Get-Credential
   ```
 
-3. Eseguire questo comando per la connessione di Azure Active Directory (AD).
+3. Eseguire questo comando per la connessione di Azure Active Directory (AD) con Azure Active Directory PowerShell modulo grafico.
     
   ```
    Connect-AzureAD -Credential $credential
   ```
+  
+  In alternativa, se si utilizza la funzionalità di Microsoft Azure Active Directory Module per Windows PowerShell, eseguire questo comando.
+      
+  ```
+   Connect-MsolService -Credential $credential
+ ```
 
-4. Eseguire questi comandi per la connessione a SharePoint Online. Sostituire _ \<domainhost >_ con il valore effettivo per il dominio. Ad esempio, per `litwareinc.onmicrosoft.com`, il _ \<domainhost >_ valore è `litwareinc`.
+4. Eseguire questi comandi per la connessione a SharePoint Online. Sostituire _ \<domainhost >_ con il valore effettivo per il dominio. Ad esempio, per "litwareinc.onmicrosoft.com", il _ \<domainhost >_ valore è "litwareinc".
     
   ```
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -117,7 +124,7 @@ Ecco la procedura per la connessione a tutti i servizi in un'unica finestra di P
   Import-PSSession $SccSession -Prefix cc
   ```
 
-Di seguito sono tutti i comandi in un unico blocco. Specificare il nome dell'host del dominio e quindi eseguire tutte contemporaneamente.
+Di seguito sono tutti i comandi in un unico blocco quando si utilizza Azure Active Directory PowerShell modulo grafico. Specificare il nome dell'host del dominio e quindi eseguire tutte contemporaneamente.
   
 ```
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
@@ -133,6 +140,24 @@ Import-PSSession $exchangeSession
 $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $SccSession -Prefix cc
 ```
+
+In alternativa, ecco tutti i comandi in un unico blocco quando si utilizza la funzionalità di Microsoft Azure Active Directory Module per Windows PowerShell. Specificare il nome dell'host del dominio e quindi eseguire tutte contemporaneamente.
+  
+```
+$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$credential = Get-Credential
+Connect-MsolService -Credential $credential
+Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
+Connect-SPOService -Url https://$domainHost-admin.sharepoint.com -credential $credential
+Import-Module SkypeOnlineConnector
+$sfboSession = New-CsOnlineSession -Credential $credential
+Import-PSSession $sfboSession
+$exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
+Import-PSSession $exchangeSession
+$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
+Import-PSSession $SccSession -Prefix cc
+```
+
 Quando è pronti per chiudere la finestra di Windows PowerShell, eseguire questo comando per rimuovere le sessioni attive per Skype per Business Online, Exchange Online, SharePoint Online e la sicurezza &amp; centro conformità:
   
 ```
@@ -149,6 +174,20 @@ $acctName="<UPN of a global administrator account>"
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
 Connect-AzureAD
+#SharePoint Online
+Connect-SPOService -Url https://$domainHost-admin.sharepoint.com
+#Skype for Business Online
+$sfboSession = New-CsOnlineSession -UserName $acctName
+Import-PSSession $sfboSession
+````
+
+In alternativa, ecco tutti i comandi quando si utilizza la funzionalità di Microsoft Azure Active Directory Module per Windows PowerShell.
+
+````
+$acctName="<UPN of a global administrator account>"
+$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+#Azure Active Directory
+Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$domainHost-admin.sharepoint.com
 #Skype for Business Online

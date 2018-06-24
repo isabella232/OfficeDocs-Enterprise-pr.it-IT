@@ -5,7 +5,6 @@
 ### [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md)
 ### [Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
 ### [Utilizzo di Windows PowerShell per creare rapporti in Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
-#### [Usare Excel per recuperare dati di report Office 365](using-excel-to-retrieve-office-365-reporting-data.md)
 ### [Riferimenti cmdlet per i servizi di Office 365](cmdlet-references-for-office-365-services.md)
 ### [Risorse della community di PowerShell di Office 365](office-365-powershell-community-resources.md)
 ## [Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
