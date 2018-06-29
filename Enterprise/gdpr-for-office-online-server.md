@@ -8,12 +8,13 @@ ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
-description: Informazioni su come gestire i requisiti RGPD nell'ambiente Exchange Server locale.
+description: Informazioni su come gestire i requisiti GDPR nell'ambiente Exchange Server locale.
 ms.openlocfilehash: 9ae7220573a4592314eb4ef4bd58e4ec09a94d77
 ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "19176331"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>RGDP per Server Office Web Apps e Office Online Server
 
