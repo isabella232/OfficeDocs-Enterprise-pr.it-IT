@@ -21,6 +21,7 @@ ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "18538762"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a><span data-ttu-id="c1a4e-104">Panoramica di Office 365 Information Protection per RGPD
 </span><span class="sxs-lookup"><span data-stu-id="c1a4e-104">Overview of Office 365 Information Protection for GDPR</span></span>
