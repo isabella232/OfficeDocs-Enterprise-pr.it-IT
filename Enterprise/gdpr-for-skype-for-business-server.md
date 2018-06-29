@@ -1,5 +1,5 @@
 ---
-title: RGPD per Skype for Business Server
+title: GDPR per Skype for Business Server
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,14 +8,15 @@ ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
-description: Informazioni su come gestire i requisiti RGPD nell'ambiente Skype for Business Server e Lync Server locale.
+description: Informazioni su come gestire i requisiti GDPR nell'ambiente Skype for Business Server e Lync Server locale.
 ms.openlocfilehash: eac57a7044a5eeb828857c7aabd15c5ca1443c96
 ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "19176328"
 ---
-# <a name="gdpr-for-skype-for-business-server-and-lync-server"></a>RGPD per Skype for Business Server e Lync Server
+# <a name="gdpr-for-skype-for-business-server-and-lync-server"></a>GDPR per Skype for Business Server e Lync Server
 
 La maggior parte dei dati di Skype for Business Server e Lync Server è archiviata in Exchange Server. Ad esempio:
 
@@ -25,7 +26,7 @@ La maggior parte dei dati di Skype for Business Server e Lync Server è archivia
 
 -   Inviti alle riunioni
 
-Seguire le procedure descritte per [RGPD per Exchange Server](gdpr-for-exchange-server.md) per trovare, esportare o eliminare questi tipi di dati per le richieste RGPD.
+Seguire le procedure descritte per [GDPR per Exchange Server](gdpr-for-exchange-server.md) per trovare, esportare o eliminare questi tipi di dati per le richieste GDPR.
 
 Gli elenchi contatti sono archiviati nel database di SQL Server. Possono essere esportati nei modi seguenti:
 
