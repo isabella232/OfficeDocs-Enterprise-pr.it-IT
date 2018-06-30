@@ -8,12 +8,13 @@ ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
-description: Informazioni su come gestire i requisiti RGPD nelle condivisioni file di Windows Server locale.
+description: Informazioni su come gestire i requisiti GDPR nelle condivisioni file di Windows Server locale.
 ms.openlocfilehash: d9d17f134d77ee03e11208744ba9a2e56d506b1f
 ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "19176327"
 ---
 # <a name="gdpr-for-on-premises-windows-server-file-shares"></a>Condivide l'RGDP per le condivisioni file di Windows Server locale
 
@@ -49,7 +50,7 @@ L'approccio consigliato per le condivisioni file include i seguenti passaggi:
 
 5.  **Per il monitoraggio, integrare i log di Windows Server con uno strumento informazioni di sicurezza e gestione degli eventi.**
 
-    -   Per trovare i dati personali per le richieste del soggetto dei dati, usare uno scanner di Azure Information Protection. È anche possibile configurare una ricerca per indicizzazione nelle condivisioni file di SharePoint Server.
+    -   Per trovare i dati personali per le richieste dell'interessato, usare uno scanner di Azure Information Protection. È anche possibile configurare una ricerca per indicizzazione nelle condivisioni file di SharePoint Server.
 
 Per ulteriori informazioni sull'uso dello scanner di Azure Information Protection per individuare ed etichettare dati personali, vedere Microsoft GDPR Data Discovery Toolkit in [http://aka.ms/gdprpartners](<http://aka.ms/gdprpartners>).
 
