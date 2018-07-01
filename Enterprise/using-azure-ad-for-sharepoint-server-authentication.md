@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di Azure Active Directory per l'autenticazione di SharePoint Server
+title: Utilizzare Azure AD per l'autenticazione di SharePoint Server
 ms.author: tracyp
 author: MSFTTracyP
 ms.reviewer:
@@ -18,13 +18,13 @@ ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 'Riepilogo: Informazioni su come ignorare il servizio di controllo di accesso di Azure e utilizzo di SAML 1.1 per autenticare gli utenti di SharePoint Server con Azure Active Directory.'
 ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
-ms.sourcegitcommit: b6c8b044963d8df24ea7d63917e0203ba40fb822
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19702986"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "19856271"
 ---
-# <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Utilizzo di Azure Active Directory per l'autenticazione di SharePoint Server
+# <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Utilizzare Azure AD per l'autenticazione di SharePoint Server
 
  **Riepilogo:** Informazioni su come eseguire l'autenticazione agli utenti di SharePoint Server 2016 con Azure Active Directory. 
 
@@ -94,7 +94,7 @@ Ogni server web front-end della farm di SharePoint richiederà la configurazione
     - Identificatore utente:`user.userprincipalname`</br>
     - Nota: È necessario modificare gli URL sostituendo *portal.contoso.local* con l'URL del sito di SharePoint che si desidera proteggere.</br>
 3. Impostare una tabella (simile a 1 nella tabella riportata di seguito) che include le righe seguenti:</br> 
-    - Area di autenticazione
+    - Realm
     - Percorso completo al file del certificato di firma SAML
     - SAML Single Sign-On URL del servizio (sostituendo */saml2* con */wsfed*)
     - ID dell'oggetto Application. </br>
@@ -109,7 +109,7 @@ Copiare il valore *dell'identificatore* nella proprietà *dell'area di autentica
 
 | Nella tabella 1: I valori acquisiti  |  |
 |---------|---------|
-|Area di autenticazione | `urn:sharepoint:portal.contoso.local` |
+|Realm | `urn:sharepoint:portal.contoso.local` |
 |Percorso completo al file del certificato di firma SAML | `C:/temp/SharePoint SAML Integration.cer`  |
 |URL del servizio single sign-on SAML (sostituire /saml2 con /wsfed) | `https://login.microsoftonline.com/b1726649-b616-460d-8d20-defab80d476c/wsfed` |
 |ID oggetto applicazione | `a812f48b-d1e4-4c8e-93be-e4808c8ca3ac` |
