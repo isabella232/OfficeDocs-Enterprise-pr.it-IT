@@ -31,7 +31,7 @@ Questa soluzione include suggerimenti prescrittivi per individuare, classificare
 
 [PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)
   
-Per informazioni sulle richieste DSR per l'RGPD, vedere [Richieste del soggetto dei dati per l'RGPD in Office 365](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json). 
+Per informazioni sulle richieste DSR per il GDPR, vedere [Richieste dell'interessato per il GDPR in Office 365](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json). 
 
 ## <a name="see-also"></a>Vedere anche
 

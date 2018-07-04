@@ -1,5 +1,5 @@
 ---
-title: Individuazione, protezione e creazione di report secondo l'RGPD nell'ambiente di sviluppo/test di Office 365
+title: Individuazione, protezione e creazione di report secondo il GDPR nell'ambiente di sviluppo/test di Office 365
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -13,7 +13,7 @@ ms.service: o365-solutions
 localization_priority: Priority
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
-description: Dimostrazione delle funzionalità correlate all'RGPD in Office 365.
+description: Dimostrazione delle funzionalità correlate al GDPR in Office 365.
 ms.openlocfilehash: d5be0967142725d3735eed0d97be581c8e40fee8
 ms.sourcegitcommit: 76643a1b3363624c1a0cc4b0f282e9f354652d77
 ms.translationtype: HT
@@ -21,11 +21,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/25/2018
 ms.locfileid: "19454847"
 ---
-# <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Individuazione, protezione e creazione di report secondo l'RGPD nell'ambiente di sviluppo/test di Office 365
+# <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Individuazione, protezione e creazione di report secondo il GDPR nell'ambiente di sviluppo/test di Office 365
 
- **Riepilogo:** dimostrazione delle funzionalità correlate all'RGPD in Office 365. 
+ **Riepilogo:** dimostrazione delle funzionalità correlate al GDPR in Office 365. 
   
-In questo articolo viene descritto come configurare e dimostrare l'individuazione, la protezione e la creazione di report per le informazioni personali secondo il Regolamento generale sulla protezione dei dati (RGPD) in un ambiente di sviluppo/test di Office 365.
+In questo articolo viene descritto come configurare e dimostrare l'individuazione, la protezione e la creazione di report per le informazioni personali secondo il Regolamento generale sulla protezione dei dati (GDPR) in un ambiente di sviluppo/test di Office 365.
   
 ## <a name="phase-1-create-and-configure-your-trial-office-365-subscription"></a>Fase 1: creare e configurare la sottoscrizione di valutazione di Office 365
 
@@ -203,7 +203,7 @@ In questa fase, viene creato un nuovo criterio DLP e viene dimostrato come appli
 21. Nella barra degli indirizzi digitare: **https://outlook.office365.com**
 22. Fare clic su **Nuovo** - **Messaggio di posta elettronica** e fornire quanto segue:  
     - **A:** \<un indirizzo e-mail personale\>  
-    - **Oggetto:** Test RGPD  
+    - **Oggetto:** Test GDPR  
     - **Corpo:** copiare la tabella dei valori riportata di seguito.
   
         |Numero  |Paese  |Codice |IBAN  |
@@ -232,6 +232,6 @@ In questa fase, viene dimostrata la creazione di report di Office 365 in base al
   
 ## <a name="see-also"></a>Vedere anche
 
-[Information Protection di Office 365 per RGPD](office-365-information-protection-for-gdpr.md)
+[Information Protection di Office 365 per GDPR](office-365-information-protection-for-gdpr.md)
 
-[RGPD per Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json)
+[GDPR per Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json)

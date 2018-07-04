@@ -1,5 +1,5 @@
 ---
-title: RGDP per Exchange Server
+title: GDPR per Exchange Server
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,14 +8,15 @@ ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
-description: Informazioni su come gestire i requisiti RGPD nell'ambiente Exchange Server locale.
+description: Informazioni su come gestire i requisiti GDPR nell'ambiente Exchange Server locale.
 ms.openlocfilehash: cf6d670134bd4aab60b97cd9f55e69a21ce06b19
 ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "19176330"
 ---
-# <a name="gdpr-for-exchange-server"></a>RGDP per Exchange Server
+# <a name="gdpr-for-exchange-server"></a>GDPR per Exchange Server
 
 Nell'ambito di protezione delle informazioni personali, si consiglia quanto segue:
 
@@ -34,7 +35,7 @@ Exchange fornisce anche le cassette postali condivise che consentono a uno o pi�
 
 Le cartelle pubbliche sono un'implementazione di archiviazione condivisa che non è associata a un utente specifico. Invece gli utenti possono accedere alle cartelle pubbliche per generare contenuto. L'implementazione delle cartelle pubbliche effettiva varia a seconda della versione di Exchange (Exchange Server 2010 utilizza un'implementazione diversa rispetto a Exchange Server 2013 e versioni successive). Per gestire il contenuto delle cartelle pubbliche sono disponibili strumenti limitati. Gli strumenti client (ad esempio Outlook) sono il meccanismo principale per la gestione dei contenuti nelle cartelle pubbliche. Sono disponibili i cmdlet per la gestione degli oggetti della cartella pubblica, ma non per la gestione dei singoli elementi contenuti nella cartella pubblica. Sarà probabilmente necessario uno script personalizzato che utilizza i Servizi Web Exchange o altri strumenti di terze parti per gestire gli elementi delle cartelle pubbliche.
 
-Il requisito principale probabilmente gestirà il contenuto della cassetta postale dell'utente individuale. Questo requisito verrà risolto facilmente utilizzando gli strumenti di grafica o basati su cmdlet usati regolarmente per gestire le cassette postali. Se è necessario elaborare il contenuto su più cassette postali o i tipi di risorse [eDiscovery](https://technet.microsoft.com/library/dd298021(v=exchg.160).aspx) è la soluzione migliore in Exchange per identificare il contenuto nell'ambito.
+Il requisito principale probabilmente gestirà il contenuto della cassetta postale dell'utente individuale. Questo requisito verrà risolto facilmente utilizzando gli strumenti di grafica o basati su cmdlet usati regolarmente per gestire le cassette postali. Se è necessario trattare il contenuto su più cassette postali o i tipi di risorse [eDiscovery](https://technet.microsoft.com/library/dd298021(v=exchg.160).aspx) è la soluzione migliore in Exchange per identificare il contenuto nell'ambito.
 
 ## <a name="deleted-item-retention"></a>Mantenimento elementi eliminati
 

@@ -1,5 +1,5 @@
 ---
-title: RGPD per SharePoint Server
+title: GDPR per SharePoint Server
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
-description: Informazioni su come gestire i requisiti RGPD nell'ambiente SharePoint Server locale.
+description: Informazioni su come gestire i requisiti GDPR nell'ambiente SharePoint Server locale.
 ms.openlocfilehash: 81ee339748923af835f88f73f5cf891d01212a17
 ms.sourcegitcommit: 53a57b0617b5bb22beea766e515873d14b3a4783
 ms.translationtype: HT
@@ -16,7 +16,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
 ms.locfileid: "19186620"
 ---
-# <a name="gdpr-for-sharepoint-server"></a>RGPD per SharePoint Server
+# <a name="gdpr-for-sharepoint-server"></a>GDPR per SharePoint Server
 
 Nell'ambito di protezione delle informazioni personali, si consiglia quanto segue:
 
@@ -66,7 +66,7 @@ L'approccio consigliato per le condivisioni file e per i siti e le raccolte di S
 
 Quando si applicano etichette a dati sensibili, assicurarsi di assegnare un'etichetta non configurata con la protezione. La protezione include la crittografia che impedisce ai servizi di rilevare i dati sensibili nei file.
 
-Per ulteriori informazioni sull'uso dello scanner di Azure Information Protection per individuare ed etichettare dati personali, vedere [Toolkit per l'individuazione di dati RGPD di Microsoft](http://aka.ms/gdprpartners) (http://aka.ms/gdprpartners).
+Per ulteriori informazioni sull'uso dello scanner di Azure Information Protection per individuare ed etichettare dati personali, vedere [Toolkit per l'individuazione di dati GDPR di Microsoft](http://aka.ms/gdprpartners) (http://aka.ms/gdprpartners).
 
 Per informazioni sulla configurazione dello scanner per le condizioni e l'utilizzo della prevenzione della perdita dei dati (DLP) di Office 365 con tipi di informazioni riservate, vedere [Come configurare le condizioni per la classificazione automatica e consigliata per Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification). Si noti che i nuovi tipi di informazioni riservate di Office 365 non saranno immediatamente disponibili per l'uso con lo scanner e che i tipi di informazioni riservate personalizzate non possono essere usati con lo scanner.
 
@@ -279,9 +279,9 @@ Oltre ad archiviare i file nell'indice, il componente aggiuntivo di FAST Search 
 
 Le azioni consigliate per le soluzioni di ricerca ibrida sono le stesse consigliate per la ricerca in SharePoint Server o SharePoint Online. Esistono due soluzioni di ricerca ibrida:
 
-**Soluzione di ricerca ibrida cloud -** Con la soluzione di ricerca ibrida cloud per SharePoint, è possibile inserire tutti i contenuti sottoposti a una ricerca per indicizzazione, compresi quelli locali, nell'indice di ricerca in Office 365. Quando gli utenti eseguono query dell'indice di ricerca in Office 365, ottengono risultati di ricerca sia dai contenuti locali sia da quelli di Office 365. Quando i documenti vengono eliminati dall'ambiente di SharePoint Server, saranno rimossi anche dall'indice di ricerca di Office 365. [Leggere ulteriori informazioni riguardanti la soluzione di ricerca ibrida cloud](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint) e su [come i componenti di ricerca e i database interagiscono nella ricerca ibrida cloud](https://docs.microsoft.com/sharepoint/hybrid/plan-cloud-hybrid-search-for-sharepoint) per comprendere meglio come l'RGPD influisce sull'ambiente ibrido.
+**Soluzione di ricerca ibrida cloud -** Con la soluzione di ricerca ibrida cloud per SharePoint, è possibile inserire tutti i contenuti sottoposti a una ricerca per indicizzazione, compresi quelli locali, nell'indice di ricerca in Office 365. Quando gli utenti eseguono query dell'indice di ricerca in Office 365, ottengono risultati di ricerca sia dai contenuti locali sia da quelli di Office 365. Quando i documenti vengono eliminati dall'ambiente di SharePoint Server, saranno rimossi anche dall'indice di ricerca di Office 365. [Leggere ulteriori informazioni riguardanti la soluzione di ricerca ibrida cloud](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint) e su [come i componenti di ricerca e i database interagiscono nella ricerca ibrida cloud](https://docs.microsoft.com/sharepoint/hybrid/plan-cloud-hybrid-search-for-sharepoint) per comprendere meglio come il GDPR influisce sull'ambiente ibrido.
 
-**Soluzione di ricerca federata ibrida -** Con la soluzione di ricerca federata ibrida, si utilizza sia l'indice in SharePoint Server sia quello in Office 365. Entrambi i servizi di ricerca di SharePoint Server e SharePoint Online possono eseguire una query sull'indice di ricerca nell'altro ambiente e restituire risultati federati. Quando gli utenti eseguono ricerche da un Centro ricerche, i risultati della ricerca provengono dall'indice di ricerca in SharePoint Server e dall'indice di ricerca in Office 365.[Leggere ulteriori informazioni riguardanti la soluzione di ricerca federata ibrida](https://docs.microsoft.com/sharepoint/hybrid/learn-about-hybrid-federated-search-for-sharepoint) per comprendere meglio come l'RGPD influisce sull'ambiente ibrido.
+**Soluzione di ricerca federata ibrida -** Con la soluzione di ricerca federata ibrida, si utilizza sia l'indice in SharePoint Server sia quello in Office 365. Entrambi i servizi di ricerca di SharePoint Server e SharePoint Online possono eseguire una query sull'indice di ricerca nell'altro ambiente e restituire risultati federati. Quando gli utenti eseguono ricerche da un Centro ricerche, i risultati della ricerca provengono dall'indice di ricerca in SharePoint Server e dall'indice di ricerca in Office 365.[Leggere ulteriori informazioni riguardanti la soluzione di ricerca federata ibrida](https://docs.microsoft.com/sharepoint/hybrid/learn-about-hybrid-federated-search-for-sharepoint) per comprendere meglio come il GDPR influisce sull'ambiente ibrido.
 
 ## <a name="on-prem-to-cloud-migrations"></a>Migrazioni da locale al cloud
 
