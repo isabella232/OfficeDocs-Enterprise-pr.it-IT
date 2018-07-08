@@ -1,5 +1,5 @@
 ---
-title: Criteri MAM per l'ambiente di sviluppo e di testing Microsoft 365 Enterprise
+title: Criteri MAM per l'ambiente di sviluppo e test di Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: "Riepilogo: Utilizzare questa guida dei laboratori di testing per aggiungere criteri di gestione (MAM) mobili applicazione EMS all'ambiente di sviluppo e di testing Microsoft 365."
-ms.openlocfilehash: 1d4ede9b5757d4adce8909586790bcad51f7433f
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 0a5c81665edf06631b8cebc57c9e715c78d3d85e
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188154"
 ---
-# <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Criteri MAM per l'ambiente di sviluppo e di testing Microsoft 365 Enterprise
+# <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Criteri MAM per l'ambiente di sviluppo e test di Microsoft 365 Enterprise
 
  **Riepilogo:** Utilizzare questa guida dei laboratori di testing per aggiungere criteri di gestione (MAM) mobili applicazione EMS all'ambiente di sviluppo e di testing Microsoft 365.
   
@@ -46,7 +47,7 @@ In questa fase, è possibile creare e distribuire due diversi criteri MAM: uno p
     
 6. Su blade **gruppo** , selezionare **Office 365** per **gruppo tipo?**, digitare **gestiti gli utenti di dispositivi iOS** nella casella **nome**, selezionare **assegnato** nel **tipo di appartenenza**e quindi fare clic su **Crea**. 
     
-7. Chiudere e il **gruppo** .
+7. Chiudere il pannello **Gruppo**.
     
 8. Su blade **gruppi a tutti i gruppi** , fare clic su **Aggiungi**.
     
@@ -54,41 +55,41 @@ In questa fase, è possibile creare e distribuire due diversi criteri MAM: uno p
     
 10. Chiudere blade **gruppi a tutti i gruppi** .
     
-11. Su blade **Intune** , nell'elenco **attività veloce** , fare clic su **Crea un criterio di conformità**.
+11. Nel pannello **Intune**, nell'elenco **Attività rapide** fare clic su **Crea nuovi criteri di conformità**.
     
-12. Su blade **Profili dei criteri di conformità** , fare clic su **Crea criterio**.
+12. Nel pannello **Profili dei criteri di conformità**, fare clic su **Crea criterio**.
     
-13. In **nome**blade **Creare criteri** , digitare **iOS**. Nella **piattaforma**, selezionare **iOS**, fare clic su blade **dei criteri di conformità iOS** **OK** e quindi fare clic su **Crea**.
+13. Nel pannello **Crea criterio**, in **Nome** digitare **iOS**. In **Piattaforma**, selezionare **iOS**, fare clic su **OK** nel pannello **Criteri di conformità di iOS**, quindi fare clic su **Crea**.
     
-14. Su blade **Profili dei criteri di conformità** , fare clic su **Crea criterio**.
+14. Nel pannello **Profili dei criteri di conformità**, fare clic su **Crea criterio**.
     
-15. In **nome**blade **Creare criteri** , digitare **Android**. Nella **piattaforma**, selezionare **Android**, fare clic su blade **criteri di conformità Android** **OK** e quindi fare clic su **Crea**.
+15. Nel pannello **Crea criterio**, in **Nome** digitare **Android**. In **Piattaforma**, selezionare **Android**, fare clic su **OK** nel pannello **Criteri di conformità di Android**, quindi fare clic su **Crea**.
     
-16. Scegliere il nome del criterio **Android** blade **Profili dei criteri di conformità** .
+16. Nel pannello **Profili dei criteri di conformità**, fare clic sul nome del criterio **Android**.
     
-17. Nel riquadro di spostamento sinistro della stessa e **Android - proprietà** , fare clic su **assegnazioni**e quindi fare clic su **Seleziona gruppi**.
+17. Nella barra di spostamento a sinistra del pannello **Android - Proprietà**, fare clic su **Assegnazioni**, quindi su **Seleziona gruppi**.
     
-18. Su blade **Selezionare gruppi** fare clic sul gruppo di **utenti di dispositivi Android gestiti** e quindi fare clic su **Seleziona**.
+18. Nel pannello **Seleziona gruppi**, fare clic sul gruppo **Utenti dei dispositivi Android gestiti**, quindi fare clic su **Seleziona**.
     
 19. Fare clic su **Salva**e quindi chiudere blade **Android - assegnazioni** .
     
-20. Scegliere il nome del criterio **iOS** blade **Profili dei criteri di conformità** .
+20. Nel pannello **Profili dei criteri di conformità**, fare clic sul nome del criterio **iOS**.
     
-21. Nel riquadro di spostamento sinistra di blade **iOS - proprietà** , fare clic su **assegnazioni**e quindi fare clic su **Seleziona gruppi**.
+21. Nella barra di spostamento a sinistra del pannello **iOS - Proprietà**, fare clic su **Assegnazioni**, quindi su **Seleziona gruppi**.
     
-22. Su blade **Selezionare gruppi** fare clic sul gruppo di **utenti di dispositivi iOS gestite** e quindi fare clic su **Seleziona**.
+22. Nel pannello **Seleziona gruppi**, fare clic sul gruppo **Utenti dei dispositivi iOS gestiti**, quindi fare clic su **Seleziona**.
     
 23. Fare clic su **Salva**e quindi chiudere blade **iOS - assegnazioni** .
     
-24. Chiudere blade **Profili dei criteri di conformità** .
+24. Chiudere il pannello **Profili dei criteri di conformità**.
     
-25. Su blade **Intune** , fare clic su **Gestione applicazioni** nel riquadro di spostamento sinistro.
+25. Nel pannello **Intune**, fare clic su **Gestisci app** nella barra di spostamento a sinistra.
     
-26. Su blade **App Mobile** , fare clic su **App**.
+26. Nel pannello **App mobili**, fare clic su **App**.
     
-27. Nell'elenco delle App, fare clic su **PowerPoint** 
+27. Nell'elenco delle app, fare clic su **PowerPoint**,  
     
-28. Su blade **Panoramica di PowerPoint** , fare clic su **assegnazioni > Seleziona gruppi > gestiti dispositivi iOS > selezionare**. In **tipo**selezionare **disponibile**e quindi fare clic su **Salva**.
+28. Nel pannello **Panoramica di PowerPoint**, fare clic su **Assegnazioni > Seleziona gruppi > Dispositivi iOS gestiti > Seleziona**. In **Tipo**, selezionare **Disponibile**, quindi fare clic su **Salva**.
     
 29. Ripetere il passaggio 28 per le app seguenti:
     
@@ -114,25 +115,25 @@ In questa fase, è possibile creare e distribuire due diversi criteri MAM: uno p
     
   - OneNote per iOS
     
-30. Chiudere blade **Mobile Apps - App** .
+30. Chiudere il pannello **App mobili - App**.
     
-31. Su blade **App Mobile** , fare clic su **Criteri di protezione delle App**.
+31. Nel pannello **App mobili**, fare clic su **Criteri di protezione delle app**.
     
-32. Su blade **Criteri di protezione delle App** , fare clic su **Aggiungi un criterio**.
+32. Nel pannello **Criteri di protezione delle app**, fare clic su **Aggiungi un criterio**.
     
-33. Su blade **Aggiungi un criterio** , digitare **iOS**e quindi fare clic su **Seleziona App necessari**.
+33. Nel pannello **Aggiungi un criterio**, digitare **iOS**, quindi fare clic su **Selezionare le app richieste**.
     
-34. Su blade **App** , fare clic su **PowerPoint** **Microsoft Dynamics CRM su iPhone**, **Excel**, **Microsoft Dynamics CRM su iPhone**, **Word**, **OneNote**, **Outlook**e quindi fare clic su **Seleziona**.
+34. Nel pannello **App**, fare clic su **PowerPoint**, **Microsoft Dynamics CRM su iPhone**, **Excel**, **Microsoft Dynamics CRM su iPhone**, **Word**, **OneNote** e **Outlook**, quindi fare clic su **Seleziona**.
     
-35. Su blade **Aggiungi un criterio** , fare clic su **Crea**.
+35. Nel pannello **Aggiungi un criterio**, fare clic su **Crea**.
     
-36. Su blade **Criteri di protezione delle App** , fare clic su **Aggiungi un criterio**.
+36. Nel pannello **Criteri di protezione delle app**, fare clic su **Aggiungi un criterio**.
     
-37. Su blade **Aggiungi un criterio** , digitare **Android**, selezionare **Android** nella **piattaforma**e quindi fare clic su **Seleziona App necessari**.
+37. Nel pannello **Aggiungi un criterio**, digitare **Android**, selezionare **Android** in **Piattaforma**, quindi fare clic su **Selezionare le app richieste**.
     
-38. Su blade **App** , fare clic su **PowerPoint**, **Dynamics CRM per Tablet**, **Excel**, **Word**, **Outlook**e **Dynamics CRM per i telefoni**e quindi fare clic su **Seleziona**.
+38. Nel pannello **App**, fare clic su **PowerPoint**, **Dynamics CRM per tablet**, **Excel**, **Word**, **Outlook** e **Dynamics CRM per cellulari**, quindi fare clic su **Seleziona**.
     
-39. Su blade **Aggiungi un criterio** , fare clic su **Crea**.
+39. Nel pannello **Aggiungi un criterio**, fare clic su **Crea**.
     
 Ora si dispone di due criteri MAM, uno per i dispositivi iOS e uno per i dispositivi Android, e sono pronti per essere utilizzati con le impostazioni di testing per le app selezionate.
   
@@ -143,7 +144,7 @@ Ora si dispone di due criteri MAM, uno per i dispositivi iOS e uno per i disposi
 
 [Ambiente di sviluppo/test di Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[Registrazione dei dispositivi iOS e Android nell'ambiente di sviluppo/test di Office 365 ed EMS](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Registrazione dei dispositivi iOS e Android nell'ambiente di sviluppo e test di Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
 

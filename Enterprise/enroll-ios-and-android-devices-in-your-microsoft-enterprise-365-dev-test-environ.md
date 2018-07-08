@@ -1,5 +1,5 @@
 ---
-title: Registrare iOS e dispositivi Android nell'ambiente di sviluppo e di testing Microsoft Enterprise 365
+title: Registrazione dei dispositivi iOS e Android nell'ambiente di sviluppo e test di Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: "Riepilogo: Utilizzare questa guida dei laboratori di testing per registrare i dispositivi nell'ambiente di sviluppo e di testing Microsoft 365 e gestirle in modalità remota."
-ms.openlocfilehash: 8765a7ffb1bff1f257d7cd1ce5181561c2cf0080
-ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
+ms.openlocfilehash: a5d43a0ef3ed090f84c8415de3ac26f53fdafe0a
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188104"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>Registrare iOS e dispositivi Android nell'ambiente di sviluppo e di testing Microsoft Enterprise 365
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-devtest-environment"></a>Registrazione dei dispositivi iOS e Android nell'ambiente di sviluppo e test di Microsoft 365 Enterprise
 
  **Riepilogo:** Utilizzare questa guida dei laboratori di testing per registrare i dispositivi nell'ambiente di sviluppo e di testing Microsoft 365 e gestirle in modalità remota.
   
@@ -50,37 +51,37 @@ Per bloccare un dispositivo iOS in remoto:
 
 2.  Dalla console di amministrazione di Microsoft Intune del browser, fare clic su **gruppi** nel riquadro di spostamento sinistro.
 
-3. Nel riquadro **gruppi** aprire **tutti i dispositivi > dispositivi mobili tutti > tutti i dispositivi gestiti diretto**.
+3. Nel riquadro **Gruppi**, aprire **Tutti i dispositivi > Tutti i dispositivi mobili > Tutti i dispositivi gestiti direttamente**.
     
-4. Nel riquadro di **Tutti i dispositivi con gestione diretta** , fare clic sulla scheda **dispositivi** .
+4. Nel riquadro **Tutti i dispositivi gestiti direttamente**, fare clic sulla scheda **Dispositivi**.
     
 5. Nell'elenco dei dispositivi, fare clic sul dispositivo iOS.  
     
 6. Dal dispositivo iOS, verificare che sia nella schermata principale.  
     
-7. Dal computer di amministrazione, sulla barra delle applicazioni, fare clic su **remoto attività > blocco remoto**. Guardare il dispositivo iOS quando attivata la sullo schermo del blocco.
+7. Dal computer di amministrazione, nella barra delle applicazioni fare clic su **Attività remote > Blocco remoto**. Verificare che il dispositivo iOS passi alla schermata di blocco.
     
 Per rimuovere il passcode:
   
-1. Dal computer di amministrazione, nel riquadro di **Tutti i dispositivi con gestione diretta** , fare clic sulla scheda **dispositivi** .
+1. Dal computer di amministrazione, nel riquadro **Tutti i dispositivi gestiti direttamente**, fare clic sulla scheda **Dispositivi**.
     
-2. Nell'elenco fare clic su dispositivo iOS. Nella barra delle applicazioni fare clic su **remoto attività > Passcode Reset**. Attendere un minuto.
+2. Nell'elenco, fare clic sul dispositivo iOS. Nella barra delle applicazioni fare clic su **Attività remote > Reimpostazione passcode**. Attendere un minuto.
     
-3. Dal dispositivo iOS sbloccarlo e si noti che non è più un passcode. Per modificare nuovamente il passcode, passare a **Impostazioni**, quindi **Passcode**.
+3. Dal dispositivo iOS, sbloccarlo e notare che non è più presente un passcode. Per modificare nuovamente il passcode, passare a **Impostazioni**, quindi a **Passcode**.
     
 Per bloccare un dispositivo Android in remoto:
   
 1. Dalla console di amministrazione di Microsoft Intune del browser, fare clic su **gruppi** nel riquadro di spostamento sinistro.
     
-2. Nel riquadro **gruppi** aprire **tutti i dispositivi > dispositivi mobili tutti > tutti i dispositivi gestiti diretto**.
+2. Nel riquadro **Gruppi**, aprire **Tutti i dispositivi > Tutti i dispositivi mobili > Tutti i dispositivi gestiti direttamente**.
     
-3. Nel riquadro di **Tutti i dispositivi con gestione diretta** , fare clic sulla scheda **dispositivi** .
+3. Nel riquadro **Tutti i dispositivi gestiti direttamente**, fare clic sulla scheda **Dispositivi**.
     
 4. Nell'elenco dei dispositivi, fare clic sul dispositivo Android.  
     
 5. Dal dispositivo Android, verificare che sia nella schermata principale.  
     
-6. Dal computer di amministrazione, sulla barra delle applicazioni, fare clic su **remoto attività > blocco remoto**. Quando richiesto, fare clic su **Sì**.
+6. Dal computer di amministrazione, nella barra delle applicazioni fare clic su **Attività remote > Blocco remoto**. Quando viene richiesto, fare clic su **Sì**.
     
 7. Verificare che il dispositivo Android passi alla schermata di blocco.
     
@@ -88,19 +89,19 @@ Quando si reimposta il passcode per i dispositivi Android, il portale di amminis
   
 Per reimpostare il passcode in remoto:
   
-1. Dal computer di amministrazione, nella scheda console Amministrazione Microsoft Intune del browser, nel riquadro di **Tutti i dispositivi con gestione diretta** , fare clic su dispositivo Android.
+1. Dal computer di amministrazione, nella scheda della console di amministrazione di Microsoft Intune del browser, nel riquadro **Tutti i dispositivi gestiti direttamente** fare clic sul dispositivo Android.
     
-2. Nella barra delle applicazioni fare clic su **remoto attività > Passcode Reset**.
+2. Nella barra delle applicazioni fare clic su **Attività remote > Reimpostazione passcode**.
     
-3. Nella **attività remota: Passcode Reset** prompt, fare clic su **Sì**. Attendere un minuto.
+3. Nel prompt **Attività remota: Reimpostazione passcode**, fare clic su **Sì**. Attendere un minuto.
     
-4. Nel riquadro di **Tutti i dispositivi con gestione diretta** , fare clic su **Visualizza proprietà**.
+4. Nel riquadro **Tutti i dispositivi gestiti direttamente**, fare clic su **Visualizza proprietà**.
     
-5. In **Passcode Reset**, si noti il nuovo codice.
+5. In **Reimpostazione passcode**, notare il nuovo passcode.
     
 6. Dal dispositivo Android, immettere il nuovo passcode nella schermata di blocco.  
     
-7. Per modificare nuovamente il passcode, passare a **Impostazioni**, scegliere **dispositivo**, scegliere **schermo Blocca**, immettere nuovamente il nuovo passcode, scegliere **blocco dello schermo**e la scelta per il passcode.
+7. Per modificare nuovamente il passcode, accedere a **Impostazioni**, toccare **Dispositivo**, **Schermata di blocco**, reimmettere il nuovo passcode, toccare **Blocco per lo schermo** e infine la scelta per il passcode.
     
 
 > [!TIP]
@@ -110,9 +111,9 @@ Per reimpostare il passcode in remoto:
 
 [Ambiente di sviluppo/test di Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[Criteri MAM per l’ambiente di sviluppo/test di Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Criteri MAM per l'ambiente di sviluppo e test di Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Test Lab Guide (TLG) per l’adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Sicurezza (EMS) + mobilità aziendale](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 

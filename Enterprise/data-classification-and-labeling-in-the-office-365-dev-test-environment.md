@@ -13,12 +13,13 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
-description: 'Riepilogo: configurare e dimostrare la classificazione e l''etichettatura dei dati tramite il client Azure Information Protection (AIP) nel proprio ambiente di sviluppo e testing di Office 365.'
-ms.openlocfilehash: 7243acecca0dd4c39ff6ef2aecd25091f25f2f53
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: "Riepilogo: configurare e dimostrare la classificazione e l'etichettatura dei dati tramite il client Azure Information Protection (AIP) nel proprio ambiente di sviluppo e testing di Office 365."
+ms.openlocfilehash: f9674f5e2bac804f5bd23b5f67e733580c50450f
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188094"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificazione e assegnazione di un'etichetta ai dati nell'ambiente di sviluppo/test di Office 365
 
@@ -41,7 +42,7 @@ Innanzitutto, registrarsi per la sottoscrizione di prova ad Azure Information Pr
   
 ### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Registrarsi per la sottoscrizione di prova ad Azure Information Protection
 
-1. Da Internet Explorer o dal browser, visitare [http://portal.office.com](http://portal.office.com) e accedere all'account di amministratore globale di Office 365.
+1. In Internet Explorer o browser, accedere a [http://portal.office.com](http://portal.office.com) e accedere con l'account amministratore globale di Office 365.
     
 2. Nella scheda **Microsoft Office Home**, fare clic sulla sezione **Amministrazione**.
     
@@ -79,7 +80,7 @@ Se si usa l'ambiente di sviluppo/testing di Office 365 simulato, è necessario i
     
 2. Fare clic su **Gruppi di risorse >** [nome del proprio gruppo di risorse] **> CLIENT1 > Connetti**.
     
-3. Da CLIENT1, eseguire Internet Explorer, visitare il portale di Office all'indirizzo [http://portal.office.com](http://portal.office.com), quindi accedere con il nome utente e la password dell'account User5.
+3. Da CLIENT1, eseguire Internet Explorer, accedere al portale di Office in [http://portal.office.com](http://portal.office.com)e quindi accedere con il nome dell'account User5 e la password.
     
 4. Nella scheda **Microsoft Office Home**, fare clic su **Installa Office 2016**.
     
@@ -147,9 +148,9 @@ In seguito, accedere con l'account User5 e caricare il documento con protezione 
   
 1. Nella **Microsoft Office Home** in alto a destra, fare clic sull'icona dell'utente e quindi fare clic su **Disconnetti**.
     
-2. Visitare [http://portal.office.com](http://portal.office.com).
+2. Accedere a [http://portal.office.com](http://portal.office.com).
     
-3. Nella pagina di ** accesso a Office 365 **, fare clic sul nome dell'account User5 e accedere.
+3. Nella pagina **Office 365 accedere** , fare clic sul nome di account User5 e accedere.
     
 4. Nella scheda **Microsoft Office Home**, fare clic su **SharePoint > Raccolta siti di supporto**.
     

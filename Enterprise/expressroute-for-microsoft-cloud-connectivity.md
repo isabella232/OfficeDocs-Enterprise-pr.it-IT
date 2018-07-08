@@ -1,9 +1,9 @@
 ---
-title: "ExpressRoute per la connettività cloud Microsoft"
+title: ExpressRoute per la connettività cloud Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/03/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
-description: "Riepilogo: Informazioni su come ExpressRoute grado di aiutarti con connessioni più veloci e affidabili a piattaforme e servizi cloud di Microsoft."
-ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Riepilogo: Informazioni su come ExpressRoute grado di aiutarti con connessioni più veloci e affidabili a piattaforme e servizi cloud di Microsoft.'
+ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188114"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute per la connettività cloud Microsoft
 
@@ -28,7 +29,7 @@ ExpressRoute fornisce una connessione di rete a elevata velocità effettiva, ded
 
 Di seguito è il percorso di rete per il cloud Microsoft senza una connessione ExpressRoute.
   
-**Nella figura 1: Il percorso di rete senza ExpressRoute**
+**Figura 1: Il percorso di rete senza ExpressRoute**
 
 ![Figura 1: Il percorso di rete senza ExpressRoute](images/Network_Poster/ExpressRoute.png)
   
@@ -42,13 +43,13 @@ Gli utenti su Internet, ad esempio gli utenti remoti o mobili, inviare traffico 
   
 Di seguito sono i percorsi di reti per il cloud Microsoft con una connessione ExpressRoute.
   
-**Figura 2: I percorsi di reti con ExpressRoute**
+**Figura 2: I percorsi di rete senza ExpressRoute**
 
 ![Figura 2: I percorsi di rete senza ExpressRoute](images/Network_Poster/ExpressRoute_post.png)
   
 Nella figura 2 sono riportati i due percorsi di reti. Il traffico a Microsoft Intune passa nello stesso percorso normale traffico Internet. Traffico a Office 365 e Azure Microsoft Dynamics 365 viaggia tra la connessione ExpressRoute, un percorso dedicato tra il bordo della rete locale e il bordo del cloud Microsoft.
   
-Con una connessione ExpressRoute, è ora dispongono del controllo tramite una relazione con il provider di servizi, sul percorso intero traffico tra il bordo di Microsoft cloud edge. La connessione può offrire prestazioni prevedibile e un SLA uptime 99,9%.
+Con una connessione ExpressRoute, è ora dispongono del controllo tramite una relazione con il provider di servizi, sul percorso intero traffico tra il bordo di Microsoft cloud edge. La connessione può offrire prestazioni prevedibile e un [SLA uptime 99,95%](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/).
   
 È ora possibile usufruire della prevedibile velocità effettiva e latenza, basata su connessione del provider di servizi, ai servizi di Office 365 e Azure Dynamics 365. Connessioni ExpressRoute a Microsoft Intune non sono supportate in questa fase.
   
@@ -84,7 +85,7 @@ Per i suggerimenti più recenti per l'utilizzo di ExpressRoute con Office 365, v
 
 Tabella 1 sono indicati i tre modelli di connettività principale per le connessioni ExpressRoute.
   
-|**Coesistente in uno scambio cloud**|**Scheda Ethernet punto-punto**|**Tutti a qualsiasi IP connessione VPN)**|
+|**Percorso condiviso in un exchange cloud**|**Scheda Ethernet punto-punto**|**Tutti a qualsiasi IP connessione VPN)**|
 |:-----|:-----|:-----|
 |![Modello di connettività ExpressRoute: Percorso condiviso in un exchange cloud](images/Network_Poster/ER_Conn1.png)|![Modello di connettività ExpressRoute: Ethernet punto a punto](images/Network_Poster/ER_Conn2.png)|![Modello di connettività ExpressRoute: Connessione punto a punto (VPN IP)](images/Network_Poster/ER_Conn3.png)|
 |Se i datacenter situati in una struttura con uno scambio cloud, è possibile ordinare una connessione tra virtuale nel cloud Microsoft tramite exchange Ethernet del provider posizione condivisa.  <br/> |Se il centro dati si trova il locale, è possibile utilizzare un collegamento di una scheda Ethernet da punto a punto per la connessione a Microsoft cloud.  <br/> |Se si utilizza già un provider di servizi VPN IP (MPLS) per connettere i siti dell'organizzazione, una connessione ExpressRoute nel cloud Microsoft funge da un'altra posizione sulla WAN privata.  <br/> |
@@ -95,7 +96,7 @@ Tabella 1 sono indicati i tre modelli di connettività principale per le conness
 
 Una singola connessione ExpressRoute supporta fino a tre diverse Border Gateway Protocol (BGP) peering relazioni in diverse parti del cloud Microsoft. BPG utilizza peering relazioni per stabilire una relazione di trust e scambiare informazioni di routing.
   
-**Figura 3: Le tre diverse BGP relazioni in una singola connessione ExpressRoute**
+**Figura 3: Le tre diverse relazioni BGP in una sola connessione ExpressRoute**
 
 ![Figura 3: Le tre diverse relazioni BGP in una sola connessione ExpressRoute](images/Network_Poster/ERPeering.png)
   
@@ -125,7 +126,7 @@ La relazione BGP peering privata:
 
 Come si sposti il traffico tra le connessioni ExpressRoute e all'interno di Microsoft cloud è una funzione di route all'hop del percorso tra l'origine e il comportamento di destinazione e l'applicazione. Di seguito è riportato un esempio di un'applicazione in esecuzione in una macchina virtuale Azure che accede a una farm di SharePoint locali tramite una connessione VPN da sito.
   
-**Figura 4: Un'applicazione in una macchina virtuale Azure accesso a una farm di SharePoint locale**
+**Figura 4: Un'applicazione in una macchina virtuale Azure che accede a una farm locale di SharePoint**
 
 ![Figura 4: Un'applicazione in una macchina virtuale Azure che accede a una farm locale di SharePoint](images/Network_Poster/ER_App_Flow1.png)
 
@@ -136,7 +137,7 @@ L'applicazione individua l'indirizzo IP della farm di SharePoint tramite il sist
   
 L'organizzazione migrati le farm di SharePoint locale in SharePoint Online in Office 365 e distribuzione di una connessione ExpressRoute.
   
-**Figura 5: Spostare la farm di SharePoint locale con SharePoint Online**
+**Figura 5: Spostamento dalla farm locale SharePoint a SharePoint Online**
 
 ![Figura 5: Spostamento dalla farm locale SharePoint a SharePoint Online](images/Network_Poster/Hairpin1.png)
   
@@ -154,7 +155,7 @@ Quando l'applicazione accede l'URL di SharePoint Online, inoltra il traffico tra
   
 Quando il server proxy individua l'indirizzo IP di SharePoint Online, inoltra il traffico back tramite la connessione ExpressRoute. Il traffico di risposta passa il percorso inverso.
   
-**Figura 6: Flusso di traffico durante la migrazione di farm di SharePoint è stata eseguita con SharePoint Online in Office 365**
+**Figura 6: Flusso del traffico quando la farm di SharePoint è stata migrata a SharePoint Online in Office 365**
 
 ![Figura 6: Flusso del traffico quando la farm di SharePoint è stata migrata a SharePoint Online in Office 365](images/Network_Poster/Hairpin2.png)
 
@@ -183,7 +184,7 @@ Quando si crea una connessione ExpressRoute in un percorso peering cloud Microso
   
 Ciò potrebbe causare recapito non ottimale di datacenter Microsoft locale per il modello a tutti per qualsiasi servizio di integrazione applicativa.
   
-**Figura 7: Esempio di un'organizzazione geograficamente distribuiti che utilizza una singola connessione ExpressRoute**
+**Figura 7: Esempio di un'organizzazione geograficamente distribuita che utilizza una sola connessione ExpressRoute**
 
 ![Figura 7: Esempio di un'organizzazione geograficamente distribuita che utilizza una sola connessione ExpressRoute](images/Network_Poster/MSNet1.png)
   
@@ -191,7 +192,7 @@ Figura 7 mostra un'organizzazione con due percorsi 1 località in Nord-Ovest deg
   
 Per il recapito ottimale, utilizzare più connessioni ExpressRoute per regionali Microsoft cloud peering percorsi. 
   
-**Figura 8: L'utilizzo di più connessioni ExpressRoute per il recapito ottimale datacenter internazionale**
+**Figura 8: L’uso di più connessioni ExpressRoute per una consegna ottimale ai datacenter dell’area**
 
 ![Figura 8: L’uso di più connessioni ExpressRoute per una consegna ottimale ai datacenter dell’area](images/Network_Poster/MSNet2.png)
   
