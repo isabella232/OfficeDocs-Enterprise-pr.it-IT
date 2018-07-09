@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Sintesi: utilizzare queste Test Lab Guide per l'adozione del cloud per configurare dimostrazioni o ambienti di sviluppo/test per i prodotti Office 365, Enterprise Mobility + \nSuite (EMS), Dynamics 365 e Office Server."
-ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193676"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188164"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Test Lab Guide (TLG) per l’adozione del cloud
 
@@ -98,11 +98,11 @@ Creare un ambiente di sviluppo/test per scenari [Microsoft 365 Enterprise](https
     
 - [Criteri MAM per l’ambiente di sviluppo/test di Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
-    Creare gruppi di utenti e criteri di gestione di applicazioni mobili per dispositivi iOS e Android.
+    Creare gruppi utente e criteri di gestione di applicazioni mobili per dispositivi iOS e Android.
     
-- [Registrazione dei dispositivi iOS e Android nell'ambiente di sviluppo/test di Office 365 ed EMS](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+- [Registrazione dei dispositivi iOS e Android nell'ambiente di sviluppo e test di Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
     
-    Registrare dispositivi iOS e Android per gestirli in remoto.
+    Registrare dispositivi iOS e Android e gestirli in remoto.
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Ambiente di sviluppo/testing di Office 365 e Dynamics 365
 
