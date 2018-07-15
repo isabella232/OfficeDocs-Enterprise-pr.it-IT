@@ -3,7 +3,7 @@ title: Cloud App Security per l'ambiente di sviluppo/test di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,17 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
-description: 'Riepilogo: Configurare ed effettuare una dimostrazione di sicurezza di Office 365 Cloud App nell''ambiente di sviluppo e di testing di Office 365.'
-ms.openlocfilehash: ac5f5c25ecb4d97ac1c8fe3b48096ee02da2ec3e
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: "Sintesi: configurazione e dimostrazione di Office 365 Cloud App Security nell'ambiente di sviluppo/test di Office 365."
+ms.openlocfilehash: d62524b6c4373c851a67b4039146ad8b6a610790
+ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "20215878"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security per l'ambiente di sviluppo/test di Office 365
 
- **Riepilogo:** Configurare ed effettuare una dimostrazione di sicurezza di Office 365 Cloud App nell'ambiente di sviluppo e di testing di Office 365.
+ **Sintesi:** configurazione e dimostrazione di Office 365 Cloud App Security nell'ambiente di sviluppo/test di Office 365.
   
 Protezione di Office 365 Cloud App, in precedenza noto come Office 365 Advanced Security Management, consente di creare i criteri che per monitorare e informano l'utente delle attività potenzialmente dannoso nella sottoscrizione a Office 365, in modo da poter analizzare e richiedere possibili azione di risoluzione dei problemi. Per ulteriori informazioni, vedere [Overview of Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
@@ -46,7 +47,7 @@ In questa procedura si dimostrano che prima di abilitare Cloud App sicurezza, la
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Testare il comportamento di notifica predefinito di Office 365
 
-1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
+1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
     
   - Se è in uso l'ambiente di sviluppo/test di Office 365 leggero, accedere dal computer locale.
     
@@ -56,13 +57,13 @@ In questa procedura si dimostrano che prima di abilitare Cloud App sicurezza, la
     
 3. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
-4. Fare clic sull'account **utente 4** .
+4. 	Fare clic sull'account **User 4**.
     
-5. Nella pagina **utente 4** , fare clic su **Modifica** per la riga di **ruoli** .
+5. Nella pagina **User 4**, fare clic su **Modifica** per la riga **Ruoli**.
     
-6. Nella pagina **Modifica ruoli utente** fare clic su **amministratore globale**, digitare l' **indirizzo di posta elettronica alternativi** **user4@contoso.com** e quindi fare clic su **Salva**. Fare doppio clic su **Chiudi** .
+6. Nella pagina **Modifica ruoli utente**, fare clic su **Amministratore globale**, digitare **user4@contoso.com** nell'**indirizzo di posta elettronica alternativo**, quindi fare clic su **Salva**. Fare doppio clic su **Chiudi**.
     
-7. Selezionare l'icona di avvio di app in alto a sinistra e scegliere **posta elettronica**.
+7. 	Selezionare l'icona di avvio delle app in alto a sinistra e scegliere **Posta**.
     
 8. Attendere 30 minuti. Si noti che non esiste alcun messaggio di posta elettronica in arrivo di notifica della modifica nel ruolo utente 4 come amministratore globale.
     
@@ -76,29 +77,29 @@ In questa procedura, viene abilitato Cloud App Security e viene creato un nuovo 
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Abilitare e configurare Cloud App Security
 
-1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
+1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
     
-2. Fare clic sul **protezione &amp; conformità** affiancate.
+2. Fare clic su tessera di **amministrazione** . Nella scheda di **interfaccia di amministrazione di Office** , fare clic su **Admin Center > sicurezza e conformità**.
     
-3. Nel riquadro di spostamento sinistra fare clic su **avvisi > Gestisci avanzate avvisi**.
+3. Nel riquadro di spostamento a sinistra fare clic su **Avvisi > Gestisci gli avvisi avanzati**.
     
-4. Nella pagina **Gestisci avvisi avanzate** fare clic **su Office 365 Cloud App protezione attiva**e quindi fare clic su **Vai alla protezione di Office 365 Cloud App**.
+4. Nella pagina **Gestisci gli avvisi avanzati**, fare clic su **Attiva Office 365 Cloud App Security**, quindi fare clic su **Vai a Office 365 Cloud App Security**.
     
-5. Nella scheda nuovo **Dashboard** , fare clic su **controllo > criteri**.
+5. Nella nuova scheda **Dashboard**, fare clic su **Controllo > Criteri**.
     
-6. Nella pagina **criteri** fare clic su **Crea un criterio**e quindi fare clic su **criteri di attività**.
+6. Nella pagina **Criterio**, fare clic su **Crea criterio**, quindi fare clic su **Criteri attività**.
     
-7. In **Nome criterio**digitare **attività amministrative**.
+7. In **Nome criterio**, digitare **Attività amministrativa**.
     
-8. **Gravità criteri**, fare clic su **High**.
+8. In **Gravità del criterio**, fare clic su **Elevata**.
     
-9. Nella **categoria**, fare clic su **account privilegiato**.
+9. In **Categoria**, fare clic su **Account con privilegi**.
     
-10. **Creare filtri per i criteri** **delle attività corrispondenti a tutte le condizioni seguenti**, fare clic **sull'attività amministrative**.
+10. In **Crea filtri per il criterio**, in **Attività corrispondenti a tutti gli elementi seguenti**, fare clic su **Attività amministrativa**.
     
-11. Negli **avvisi**, fare clic su **Invia avviso come messaggio di posta elettronica**. Nella casella **a**digitare l'indirizzo di posta elettronica dell'account di amministratore globale.
+11. In **Avvisi**, fare clic su **Invia l'avviso come messaggio di posta elettronica**. In **A**, digitare l'indirizzo di posta elettronica dell'account di amministratore globale.
     
-12. Nella parte inferiore della pagina, fare clic su **Crea**.
+12. Nella parte inferiore della pagina fare clic su **Crea**.
     
 ## <a name="phase-4-show-cloud-app-security-in-action"></a>Fase 4: Visualizzare Cloud App Security in azione
 
@@ -106,35 +107,35 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
   
 ### <a name="demonstrate-email-notification-for-a-change-in-user-account-roles"></a>Mostrare la notifica tramite posta elettronica per una modifica di ruoli degli account utente
 
-1. In alto a destra, fare clic sull'icona utente e quindi fare clic su **Esci**.
+1. In alto a destra, fare clic sull'icona dell'utente e quindi fare clic su **Disconnetti**.
     
-2. Passare al [https://portal.office.com](https://portal.office.com).
+2. Accedere a [https://portal.office.com](https://portal.office.com).
     
-3. Nella pagina di accesso di Office 365, fare clic su **utilizza un altro account**.
+3. Nella pagina di accesso di Office 365, fare clic su **Usa un altro account**.
     
-4. Digitare il nome dell'account utente 4 e la relativa password e quindi fare clic su **Accedi**.
+4. Digitare il nome dell'account di User 4 e la relativa password, quindi fare clic su **Accedi**.
     
-5. Se necessario, modificare la password dell'account utente 4 e quindi fare clic su **Aggiorna password ed effettuare l'accesso**.
+5. Se necessario, modificare la password dell'account User 4 e fare clic su **Aggiornare la password ed eseguire l'accesso**.
     
-6. Nella pagina del portale di Office 365, fare clic su **amministratore**.
+6. Nella pagina del portale di Office 365, fare clic su **Admin**.
     
-7. Se necessario, fare clic su **Annulla** quando viene richiesto di aggiornare le informazioni di contatto di amministrazione.
+7. Se necessario, fare clic su **Annulla** quando viene richiesto di aggiornare le informazioni di contatto di amministratore.
     
 8. Dalla pagina principale del portale, fare clic su **Admin**.
     
 9. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
-10. Fare clic sull'account **utente 5** .
+10. Fare clic sull'account **User 5**.
     
-11. Nella pagina **5 utente** fare clic su **Modifica** per la riga di **ruoli** .
+11. Nella pagina **User 5**, fare clic su **Modifica** per la riga **Ruoli**.
     
-12. Nella pagina **Modifica ruoli utente** fare clic su **amministratore personalizzato**, fare clic su **amministratore Gestione utenti**e **amministratore Password** , digitare l' **indirizzo di posta elettronica alternativi** **user5@contoso.com** e quindi fare clic su **Salvare**. Fare doppio clic su **Chiudi** .
+12. Nella pagina **Modifica ruoli utente**, fare clic su **Amministratore personalizzato**, selezionare **Amministratore password** e **Amministratore Gestione utenti**, digitare **user5@contoso.com** nell'**indirizzo di posta elettronica alternativo**, quindi fare clic su **Salva**. Fare doppio clic su **Chiudi**.
     
-13. Fare clic sull'icona utente in alto a destra e quindi fare clic su **Esci**. 
+13. Fare clic sull'icona dell'utente in alto a destra, quindi su **Disconnetti**. 
     
-14. Passare al [https://portal.office.com](https://portal.office.com).
+14. Accedere a [https://portal.office.com](https://portal.office.com).
     
-15. Scegliere il nome dell'account amministratore globale nella pagina **Office 365 accedere** .
+15. Nella pagina **Accesso a Office 365**, fare clic sul nome dell'account di amministratore globale.
     
 16. Digitare la password e quindi fare clic su **Accedi**.
     
@@ -142,15 +143,15 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
     
 18. Fare clic sul **protezione &amp; conformità** affiancate.
     
-19. Nel riquadro di spostamento sinistra fare clic su **avvisi > Gestisci avanzate avvisi**.
+19. Nel riquadro di spostamento a sinistra fare clic su **Avvisi > Gestisci gli avvisi avanzati**.
     
-20. Nella pagina **Gestisci avvisi avanzate** , fare clic su **Vai alla protezione di Office 365 Cloud App**.
+20. Nella pagina **Gestisci gli avvisi avanzati**, fare clic su **Vai a Office 365 Cloud App Security**.
     
-21. Nella scheda nuovo **Dashboard** , osservare le due nuovi avvisi per **l'attività di amministrazione**.
+21. Nella nuova scheda **Dashboard**, notare i due nuovi avvisi per **Attività amministrativa**.
     
-22. Nella scheda **Home page di Microsoft Office** , fare clic su **posta elettronica**. Attendere fino a 30 minuti. 
+22. Dalla scheda **Microsoft Office Home**, fare clic su **Posta**. Attendere fino a 30 minuti.  
     
-    Dovrebbe essere visibile due nuovi messaggi di posta elettronica nella posta in arrivo con il titolo del **Servizio di notifica di Microsoft Azure Active Directory**. Un messaggio indica che l'account utente 5 è stato aggiunto al ruolo **Amministratore Password** e un altro messaggio indica che l'account utente 5 è stato aggiunto al ruolo **Amministratore utenti** (uguale al ruolo di amministratore Gestione utente nel Office 365 Admin center).
+    Dovrebbero essere visualizzati due nuovi messaggi di posta elettronica nella Posta in arrivo con il titolo **Servizio di notifica di Microsoft Azure AD**. Un messaggio indica che l'account di User 5 è stato aggiunto al ruolo **Amministratore password** e l'altro messaggio indica che l'account di User 5 è stato aggiunto al ruolo **Amministratore utenti** (equivalente al ruolo Amministratore Gestione utenti nell'interfaccia di amministrazione di Office 365).
     
 È ora possibile utilizzare questo ambiente per creare nuovi criteri e sperimentare ulteriormente sicurezza App Cloud di Office 365. Per i collegamenti agli articoli per la configurazione aggiuntivi, vedere [prepararsi per la protezione di Office 365 Cloud App](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) .
   
