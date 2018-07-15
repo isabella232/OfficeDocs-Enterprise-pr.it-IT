@@ -16,11 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Viene illustrato come utilizzare Office 365 PowerShell per visualizzare informazioni sulle licenze piani, servizi e le licenze disponibili nell'organizzazione Office 365.
-ms.openlocfilehash: 400af224f7c74d72a173fa4ea45ede4d6057bbf7
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
+ms.openlocfilehash: 4ee4a5d0173f97520075f146e50bd234e767cc95
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319257"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Visualizzare le licenze e i servizi con PowerShell di Office 365
 
@@ -36,7 +37,7 @@ Ogni sottoscrizione a Office 365 sono disponibili i seguenti elementi:
     
 È possibile utilizzare Office 365 PowerShell per visualizzare i dettagli sui piani di gestione delle licenze disponibili, le licenze e servizi all'interno dell'organizzazione Office 365. Per ulteriori informazioni sui prodotti, funzionalità e i servizi disponibili in diverse sottoscrizioni a Office 365, vedere [Opzioni di pianificazione di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
     
@@ -66,7 +67,7 @@ Per visualizzare informazioni dettagliate sui servizi Office 365 sono disponibil
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-Nella tabella seguente vengono illustrati i piani di servizio di Office 365 e i relativi nomi descrittivi per i servizi più comuni. Elenco di piani di servizio potrebbe essere diverso. Per un elenco completo dei piani di servizio e i relativi nomi descrittivi, contattare [Il supporto di Office](https://support.office.com/home/contact).
+Nella tabella seguente vengono illustrati i piani di servizio di Office 365 e i relativi nomi descrittivi per i servizi più comuni. Elenco di piani di servizio potrebbe essere diverso. Per un elenco completo dei piani di servizio e i relativi nomi descrittivi, contattare [Opzioni di supporto per gli utenti aziendali](https://support.microsoft.com/gp/support-options-for-business).
   
 |**Piano di servizio**|**Descrizione**|
 |:-----|:-----|
@@ -96,7 +97,7 @@ In questo esempio vengono illustrati i servizi di Office 365 che sono disponibil
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>See also
 
 - [Visualizzare gli utenti con e senza licenza con PowerShell di Office 365](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
 - [Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md)
