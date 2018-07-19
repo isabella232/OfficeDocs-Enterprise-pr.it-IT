@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Sintesi: applicare le etichette di Office 365 e i criteri di prevenzione della perdita dei dati ai siti del team di SharePoint Online con vari livelli di protezione delle informazioni.'
-ms.openlocfilehash: 52617e43f5c1bcb2ab958e751734a2f948ceba37
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319267"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteggere i file di SharePoint Online con le etichette di Office 365 e la prevenzione della perdita dei dati
 
@@ -27,6 +28,13 @@ ms.lasthandoff: 04/27/2018
   
 Usare i passaggi descritti in questo articolo per progettare e implementare le etichette di Office 365 e i criteri di protezione della perdita dei dati (DLP) per i siti del team di SharePoint Online di base, riservati ed estremamente riservati. Per ulteriori informazioni su questi tre livelli di protezione, vedere [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md).
   
+## <a name="how-this-works"></a>Funzionamento
+1. Creare le etichette desiderate e pubblicarle. La pubblicazione può richiedere fino a 12 ore.
+2. Per i siti di SharePoint desiderati, modificare le impostazioni della raccolta documenti per applicare un'etichetta agli elementi della raccolta.
+3. Creare criteri di prevenzione della perdita dei dati per intervenire in base alle etichette.
+
+Quando gli utenti aggiungono un documento alla raccolta, al documento viene assegnata un'etichetta predefinita. È possibile modificare l'etichetta, se necessario. Quando un utente condivide un documento all'esterno dell'organizzazione, i criteri di prevenzione della perdita dei dati verificano se è assegnata un'etichetta e intervengono in caso di corrispondenza all'etichetta. Quindi cercano la corrispondenza anche ad altri criteri, ad esempio la protezione dei file con i numeri di carta di credito, se questo tipo di criterio è configurato. 
+
 ## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>Etichette di Office 365 per i siti di SharePoint Online
 
 Esistono tre fasi per creare e poi assegnare le etichette di Office 365 ai siti del team di SharePoint Online.
@@ -151,13 +159,14 @@ Seguire questa procedura per configurare un criterio della prevenzione della per
     
 13. Nel riquadro **What do you want to do if we detect sensitive info?** (Selezionare come procedere in caso di informazioni sensibili rilevate) fare clic su **Customize the tip and email** (Personalizza suggerimento e messaggio di posta elettronica).
     
-14. Nel riquadro **Customize policy tips and email notifications** (Personalizza i suggerimenti per i criteri e le notifiche tramite posta elettronica) fare clic su **Customize the policy tip text** (Personalizza testo suggerimento per criterio).
+14. Nel riquadro **Personalizza i suggerimenti per i criteri e le notifiche tramite posta elettronica** fare clic su **Personalizza il testo del suggerimento per i criteri**.
     
-15. Nella casella di testo digitare o incollare quanto segue:
+15. Nella casella di testo digitare o incollare uno dei suggerimenti riportati di seguito, a seconda se è stata implementato Azure Information Protection per proteggere i file estremamente riservati:
     
   - Per condividere con un utente esterno all'organizzazione, scaricare il file e quindi aprirlo. Fare clic su File, Proteggi documento, Crittografa con password, quindi specificare una password complessa. Inviare la password in un'e-mail separata o con altri mezzi di comunicazione.
+  - I file estremamente riservati sono protetti con crittografia. Solo gli utenti esterni che hanno ricevuto le autorizzazioni per questi file dal reparto IT possono leggerli.
     
-    In alternativa, digitare o incollare un suggerimento per i criteri che indica agli utenti come condividere un file all'esterno dell'organizzazione.
+    In alternativa, digitare o incollare un suggerimento per i criteri che indichi agli utenti come condividere un file all'esterno dell'organizzazione. Per ulteriori informazioni su come concedere autorizzazioni agli utenti esterni per i file protetti con Azure Information Protection, vedere l'articolo relativo all'aggiunta di autorizzazioni per gli utenti esterni.
     
 16. Fare clic su **OK**.
     

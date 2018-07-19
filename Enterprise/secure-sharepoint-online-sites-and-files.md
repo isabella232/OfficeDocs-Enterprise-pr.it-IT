@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Riepilogo: suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.'
-ms.openlocfilehash: 88ad010e10949c9ef4e761dbca95b7afd0e1f901
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319227"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteggere siti e file di SharePoint Online
 
@@ -46,9 +47,9 @@ Per altre informazioni su questi livelli e sulle funzionalità consigliate per o
 Suggerimenti per il disegno di siti del team di SharePoint Online su un'ampia gamma di funzionalità di Office 365. Per i siti con dati estremamente riservati, è consigliabile Protezione delle informazioni di Azure. Questo è incluso in Enterprise Mobility + Security (EMS). 
   
 La figura seguente mostra le configurazioni consigliate per quattro siti del team di SharePoint Online.
-  
-![Configurazione consigliata per i siti di SharePoint](images/ad0dcd70-f6f5-465c-8d16-1889481ca07a.png)
-  
+
+![Configurazione consigliata per i siti di SharePoint](Media/SharePoint-site-configuration-v2.png)
+
 Come illustrato nell'esempio:
   
 - la protezione di base include due opzioni per i siti del team di SharePoint Online, un sito pubblico e uno privato. I siti pubblici possono essere individuati e sono accessibili da chiunque nell'organizzazione. I siti privati possono essere individuati e sono accessibili solo dai membri del sito. Entrambe le configurazioni del sito consentono la condivisione all'esterno del gruppo. 
@@ -57,11 +58,11 @@ Come illustrato nell'esempio:
     
 - Le etichette di Office 365 permettono di classificare i dati in base al livello di protezione necessario. Tutti i siti del team di SharePoint Online sono configurati per assegnare automaticamente un'etichetta ai file nelle raccolte documenti con un'etichetta predefinita per il sito. Le etichette riportate nell'esempio sono Dati pubblici interni, Dati privati, Dati riservati e Dati estremamente riservati, in corrispondenza delle quattro configurazioni del sito. Gli utenti possono modificare le etichette, ma grazie a questa configurazione tutti i file ricevono un'etichetta predefinita.
     
-- Vengono configurati criteri di prevenzione della perdita di dati per le etichette Sensitive e Highly Confidential di Office 365 per avvisare o bloccare gli utenti quando tentano di inviare questi tipi di file all'esterno dell'organizzazione.
+- I criteri di prevenzione della perdita dei dati sono configurati affinché le etichette di Office 365 Riservati ed Estremamente riservati avvisino o impediscano agli utenti quando provano a inviare questi tipi di file all'esterno dell'organizzazione
     
-- Per i siti configurati con la protezione dei dati altamente riservati, Azure Information Protection crittografa e concede le autorizzazioni per i file.
+- Se necessario per lo scenario specifico, è possibile utilizzare Azure Information Protection per crittografare e concedere autorizzazioni ai file estremamente riservati. Questa possibilità non è consigliata per tutti i clienti.
     
-## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Impostazioni a livello di tenant per SharePoint Online e OneDrive for Business
+## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Impostazioni a livello di tenant per SharePoint Online e OneDrive for Business
 
 SharePoint Online e OneDrive for Business includono impostazioni a livello di tenant che influiscono su tutti i siti e gli utenti. Alcune di queste impostazioni possono essere modificate a livello di sito per essere più restrittive (ma non meno restrittive). In questa sezione vengono illustrate le impostazioni a livello di tenant che influiscono su sicurezza e collaborazione. 
   
@@ -155,7 +156,7 @@ Per la procedura di configurazione delle etichette di Office 365 e dei criteri d
   
 ## <a name="azure-information-protection"></a>Azure Information Protection
 
-Usare Azure Information Protection per applicare le etichette e le protezioni che seguono i file ovunque vanno. Per questa soluzione, si consiglia di usare criteri di Azure Information Protection con ambito e un'etichetta secondaria dell'etichetta Highly Confidential (Riservatezza elevata) per crittografare e concedere le autorizzazioni per i file che devono essere protetti con il massimo livello di sicurezza. 
+Se garantite per lo scenario di sicurezza, è possibile usare Azure Information Protection per applicare le etichette e le protezioni che seguono i file ovunque vanno. Le etichette di Azure Information Protection sono diverse da quelle di Office 365. Per questa soluzione, si consiglia di usare criteri di Azure Information Protection con ambito e un'etichetta secondaria dell'etichetta Highly Confidential (Riservatezza elevata) per crittografare e concedere le autorizzazioni per i file che devono essere protetti con il massimo livello di sicurezza. 
   
 Tenere presente che quando si applica la crittografia di Azure Information Protection ai file archiviati in Office 365, il servizio non è in grado di elaborare il contenuto di questi file. La creazione condivisa, eDiscovery, la ricerca, Delve e altre funzionalità di collaborazione non funzionano. I criteri DLP funzionano solo con i metadati, incluse le etichette di Office 365, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
   
