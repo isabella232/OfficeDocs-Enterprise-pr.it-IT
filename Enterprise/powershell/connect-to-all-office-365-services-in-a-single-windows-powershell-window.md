@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Riepilogo: Connessione di Windows PowerShell per tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell."
-ms.openlocfilehash: ba23dde0fd79d13274244b52c5914d9249640570
-ms.sourcegitcommit: f496a401245240ec01754edcd4d44e7a0194d068
+ms.openlocfilehash: bf5e81012eaa3e7e200f9b1984b3d3fe01c30799
+ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "19907187"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "20720372"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell
 
@@ -33,7 +33,7 @@ Quando si utilizza PowerShell per gestire Office 365, è possibile avere fino a 
   
 Questo non è ottimale per la gestione di Office 365 perché non è possibile scambiare dati tra i cinque windows per la gestione dei servizi tra. In questo argomento viene descritto come utilizzare una singola istanza di Windows PowerShell da cui è possibile gestire Office 365, Skype Online Business, Exchange Online, SharePoint Online e la sicurezza &amp; centro conformità.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 <a name="BeforeYouBegin"> </a>
 
 Per poter gestire tutti di Office 365 da una singola istanza di Windows PowerShell, prendere in considerazione i prerequisiti seguenti:
@@ -60,7 +60,7 @@ Per poter gestire tutti di Office 365 da una singola istanza di Windows PowerShe
     
 - È necessario installare i moduli che sono necessari per Azure Active Directory, SharePoint Online e Skype Business online:
     
-   - [V2 Azure Active Directory](connect-to-office-365-powershell.md#ConnectV2)
+   - [V2 Azure Active Directory](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype per le aziende in linea, modulo di Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
@@ -197,7 +197,7 @@ Import-PSSession $sfboSession
 
 Per Exchange Online e la sicurezza &amp; centro conformità, vedere gli argomenti seguenti per la connessione con l'autenticazione a più fattori:
 
-- [Connettersi a Exchange Online PowerShell con l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
+- [Connettersi a PowerShell di Exchange Online utilizzando l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
 - [Connettersi alla sicurezza di Office 365 PowerShell centro conformità con l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
  
 Si noti che in entrambi i casi, è necessario connettersi utilizzando sessioni separate di Exchange Online Remote PowerShell Module.

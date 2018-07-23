@@ -3,7 +3,7 @@ title: Connettersi a PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/18/2018
+ms.date: 07/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Riepilogo: Connettersi all'organizzazione Office 365 con Office 365 PowerShell per eseguire attività di interfaccia di amministrazione da riga di comando."
-ms.openlocfilehash: b603e019564f85d490dd560bda9967c9bb164d4b
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 96406fbc23adadbf77a3cd02f8c167081f908977
+ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319247"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "20720402"
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
@@ -32,7 +32,7 @@ Office 365 PowerShell consente di gestire le impostazioni di Office 365 dalla ri
 > [!TIP]
 > **Nuovo PowerShell?** Visualizzare una [Panoramica video di PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)per offerto da Learning LinkedIn. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Tempo stimato per il completamento: 5 minuti
     
@@ -47,6 +47,45 @@ Office 365 PowerShell consente di gestire le impostazioni di Office 365 dalla ri
     
 -  Queste procedure sono progettate per gli utenti che sono membri di un ruolo di amministrazione di Office 365. Per ulteriori informazioni, vedere [ruoli di amministratore su Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Collegarsi con Azure Active Directory PowerShell modulo grafico
+
+Comandi del modulo di [Azure Active Directory PowerShell di grafico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) hanno **AzureAD** nel loro nome del cmdlet.
+
+Per le procedure necessarie per i nuovi cmdlet di Azure Active Directory PowerShell modulo grafico, utilizzare la procedura seguente per installare il modulo ed eseguire la connessione alla sottoscrizione Office 365.
+
+>[!Note]
+>Per informazioni sul supporto per diverse versioni di Microsoft Windows, vedere [Azure Active Directory PowerShell modulo grafico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) .
+>
+
+### <a name="step-1-install-required-software"></a>Passaggio 1: Installazione del software necessario
+
+È sufficiente effettuare questa procedura solo una volta, non ogni volta che ci si connette. Tuttavia, probabilmente sarà necessario installare periodicamente le versioni più recenti del software.
+  
+1. Aprire un prompt dei comandi di Windows PowerShell con privilegi elevati (eseguire Windows PowerShell come amministratore).
+    
+2. Nella **amministratore: Windows PowerShell** finestra prompt dei comandi eseguita il comando seguente:
+    
+  ```
+  Install-Module -Name AzureAD
+  ```
+
+Se richiesto sull'installazione di un modulo da un archivio non attendibile, digitare **s** e premere INVIO.
+
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Passaggio 2: Connettersi a Azure Active Directory per la sottoscrizione a Office 365
+
+Per connettersi a Azure Active Directory per Office 365 sottoscrizione con un nome di account e una password o con *l'autenticazione a più fattori (MFA)* eseguire questo comando da un prompt dei comandi di Windows PowerShell (non è necessario essere con privilegi elevati):
+    
+```
+Connect-AzureAD
+```
+
+Nella finestra di dialogo **accesso all'account** , digitare il lavoro di Office 365 o nome utente dell'account scuola e la password e quindi fare clic su **OK**.
+
+Se si utilizza MFA, seguire le istruzioni nelle finestre di dialogo aggiuntive per fornire ulteriori informazioni di autenticazione, ad esempio un codice di verifica.
+    
+Dopo la connessione, è possibile utilizzare i cmdlet di nuovi per [Azure Active Directory PowerShell modulo grafico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
+  
+
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Connessione con il modulo di Microsoft Azure Active Directory per Windows PowerShell
 
 I comandi di Microsoft Azure Active Directory Module per Windows PowerShell dispongono **Msol** nel loro nome del cmdlet.
@@ -59,39 +98,23 @@ I comandi di Microsoft Azure Active Directory Module per Windows PowerShell disp
     
 2. Installare il Microsoft Azure Active Directory Module per Windows PowerShell con la procedura seguente:
     
-  - Aprire un prompt dei comandi di PowerShell di livello amministrativo.
+  - Aprire un prompt dei comandi di Windows PowerShell con privilegi elevati (eseguire Windows PowerShell come amministratore).
   - Eseguire il comando **Install-modulo MSOnline** .
   - Se viene richiesto di installare il provider NuGet, digitare **s** e premere INVIO.
   - Se viene richiesto di installare il modulo da PSGallery, digitare **s** e premere INVIO.
-  - Dopo l'installazione, chiudere la finestra di comando PowerShell.
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Passaggio 2: Connettersi a Azure Active Directory per la sottoscrizione a Office 365
 
-Per connettersi soltanto con *nome account e password*:
-  
-1. Eseguire un prompt dei comandi di Windows PowerShell.
-2. Nella finestra di comando **Windows PowerShell** , eseguire i comandi seguenti:
+Per connettersi a Azure Active Directory per la sottoscrizione a Office 365 con un nome di account e una password o con *l'autenticazione a più fattori (MFA)*, eseguire questo comando da un prompt dei comandi di Windows PowerShell (non è necessario essere con privilegi elevati):
     
-  ```
-  $UserCredential = Get-Credential
-  Connect-MsolService -Credential $UserCredential
+```
+Connect-MsolService
+```
 
-  ```
+Nella finestra di dialogo **accesso all'account** , digitare il lavoro di Office 365 o nome utente dell'account scuola e la password e quindi fare clic su **OK**.
 
-3. Nella finestra di dialogo **Richiesta credenziali di Windows PowerShell** digitare il lavoro di Office 365 o nome utente dell'account scuola e la password e quindi fare clic su **OK**.
-    
-Per la connessione con *l'autenticazione a più fattori (MFA)*:
-  
-1. Eseguire un prompt dei comandi di Windows PowerShell.
-2. Nella finestra di comando **Microsoft Azure Active Directory Module per Windows PowerShell** eseguire il comando seguente.
-    
-  ```
-  Connect-MsolService
-  ```
+Se si utilizza MFA, seguire le istruzioni nelle finestre di dialogo aggiuntive per fornire ulteriori informazioni di autenticazione, ad esempio un codice di verifica.
 
-3. Nella finestra di dialogo **Azure Active Directory PowerShell** digitare il lavoro di Office 365 o nome utente dell'account scuola e la password e quindi fare clic su **Accedi**.
-    
-4. Seguire le istruzioni riportate nella finestra di dialogo **Azure Active Directory PowerShell** al fine di fornire altre informazioni di autenticazione, ad esempio, un codice di verifica, quindi fare clic su **Accedi**.
     
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
@@ -108,7 +131,10 @@ Se non vengono visualizzati errori, controllare i requisiti seguenti:
   - Per Windows 8 o Windows 8.1, vedere [installazione di .NET Framework 3.5 in Windows 8 o 8.1](https://go.microsoft.com/fwlink/p/?LinkId=532369)
     
   - Per Windows 7 o Windows Server 2008 R2, vedere [non è possibile aprire il Azure Active Directory Module per Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370)
-    
+
+  - Per Windows 10, Windows 8.1 e Windows 8, vedere [installare .NET Framework 3.5 10 Windows, Windows 8.1, e Windows 8](https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10)
+
+  
 - **La versione del Microsoft Azure Active Directory Module per Windows PowerShell potrebbe non essere aggiornata.** Per controllare, eseguire il comando seguente in Office 365 PowerShell o il Microsoft Azure Active Directory Module per Windows PowerShell:
     
   ```
@@ -119,58 +145,8 @@ Se non vengono visualizzati errori, controllare i requisiti seguenti:
     
 - **Se si riceve un errore di connessione, vedere l'argomento:** ["Connect-MsolService: eccezione di tipo" errore](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-<a name="ConnectV2"> </a>
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Collegarsi con Azure Active Directory PowerShell modulo grafico
 
-Comandi del modulo di [Azure Active Directory PowerShell modulo grafico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) hanno **AzureAD** nel loro nome del cmdlet.
-
-Per le procedure necessarie per i nuovi cmdlet di Azure Active Directory PowerShell modulo grafico, utilizzare la procedura seguente per installare il modulo ed eseguire la connessione alla sottoscrizione Office 365.
-
->[!Note]
->Per informazioni sul supporto per diverse versioni di Microsoft Windows, vedere [Azure Active Directory PowerShell modulo grafico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) .
->
-
-### <a name="step-1-install-required-software"></a>Passaggio 1: Installazione del software necessario
-
-È sufficiente effettuare questa procedura solo una volta, non ogni volta che ci si connette. Tuttavia, probabilmente sarà necessario installare periodicamente le versioni più recenti del software.
-
-  
-1. Aprire un prompt dei comandi di Windows PowerShell con privilegi elevati (eseguire Windows PowerShell come amministratore).
-    
-2. Nella **amministratore: Windows PowerShell** finestra prompt dei comandi eseguita il comando seguente:
-    
-  ```
-  Install-Module -Name AzureAD 
-  ```
-
-Se richiesto sull'installazione di un modulo da un archivio non attendibile, digitare **s** e premere INVIO.
-
-
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Passaggio 2: Connettersi a Azure Active Directory per la sottoscrizione a Office 365
-
-Per connettersi alla sottoscrizione Office 365 con un *nome di account e password*:
-    
-```
-$UserCredential = Get-Credential
-Connect-AzureAD -Credential $UserCredential
-
-```
-
-Nella finestra di dialogo **Richiesta credenziali di Windows PowerShell** digitare il lavoro di Office 365 o nome utente dell'account scuola e la password e quindi fare clic su **OK**.
-    
-Per connettersi alla sottoscrizione Office 365 con *l'autenticazione a più fattori (MFA)*:
-
-```
-Connect-AzureAD
-```
-
-Nella finestra di dialogo **Azure Active Directory PowerShell** digitare il lavoro di Office 365 o nome utente dell'account scuola e la password e quindi fare clic su **Accedi**.
-    
-Seguire le istruzioni riportate nella finestra di dialogo **Azure Active Directory PowerShell** al fine di fornire altre informazioni di autenticazione, ad esempio, un codice di verifica, quindi fare clic su **Accedi**.
-    
-Dopo la connessione, è possibile utilizzare i cmdlet di nuovi per [Azure Active Directory PowerShell modulo grafico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
-  
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 - [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
 - [Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
