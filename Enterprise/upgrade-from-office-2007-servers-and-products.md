@@ -10,7 +10,6 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
-- MET150
 - LCC120
 - OFF120
 - OFF140
@@ -21,12 +20,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Supporto sta per scadere per applicazioni client e server di Office 2007, e accordi di supporto personalizzati non sono disponibili. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento a questo punto.
-ms.openlocfilehash: 6935fab5e91de05c427d2bb1c233f988dc13e8ce
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: 9318dd4f85d02673137498375e7ecdcfe2b4b553
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169858"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21548887"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Risorse che consentono di eseguire l'aggiornamento da Office 2007 ai server e client
 
@@ -52,13 +51,13 @@ Quando il supporto termina per un prodotto Microsoft, non esistono nuovi aggiorn
 Selezionare una delle opzioni seguenti:
 - **Spostare in Office 365**: per molti clienti, si tratta di una soluzione efficiente ed economica. Vedere [come si spostano a Office 365 per aziende?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)
     
-- **Aggiornare i server locali e le applicazioni.** Vedere [Exchange 2007](exchange-2007-end-of-support.md), [SharePoint Server 2007](sharepoint-2007-end-of-support.md), [Project Server 2007](project-server-2007-end-of-support.md), [Office Communications Server](/Skype/SfbServer/plan-your-deployment/upgrade.md)e pianificazione del contenuto di [PerformancePoint Server 2007](pps-2007-end-of-support.md) . 
+- **Aggiornare i server locali e le applicazioni.** Vedere [Exchange 2007](exchange-2007-end-of-support.md), [SharePoint Server 2007](sharepoint-2007-end-of-support.md), [Project Server 2007](project-server-2007-end-of-support.md), [Office Communications Server](https://docs.microsoft.com/Skype/SfbServer/plan-your-deployment/upgrade)e pianificazione del contenuto di [PerformancePoint Server 2007](pps-2007-end-of-support.md) . 
     
 - **Implementare una soluzione ibrida, tra cui Office 365** e il server locali e le applicazioni. Vedere [Cenni preliminari sulle soluzioni di Office 365 ibrida cloud.](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7.aspx)
     
 **Ha bisogno di assistenza?** Considerare l'utilizzo di un esperto delle licenze partner o volume. Vedere **[trovare un partner di Office 365 o rivenditori](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**. 
 > [!TIP]
-> Se l'acquisto di licenze di Office 365 50 o più, il nostro team FastTrack consentono tramite il processo di installazione di Office 365. Visita il sito Web [FastTrack.Microsoft.com](https://fasttrack.microsoft.com).
+> Se l'acquisto di licenze di Office 365 50 o più, il nostro team FastTrack consentono tramite il processo di installazione di Office 365. Visita il sito Web [FastTrack.Microsoft.com](https://www.microsoft.com/fasttrack/microsoft-365/office-365).
   
 Se l'organizzazione dispone di meno di 50 licenze di Office 365, vedere [Admins: aggiornare gli utenti per il client Office più recente con Office 365 per aziende](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb.aspx). 
   
@@ -81,14 +80,12 @@ Selezionare una delle opzioni seguenti:
 ## <a name="what-is-office-365"></a>Che cos'è Office 365?
 
 Office 365 è un'offerta di software-as-a-service (SaaS) che fa parte dello stack Microsoft Cloud. [Piani di Office 365 Enterprise](https://aka.ms/viirjv) includono Exchange Online per la posta elettronica aziendale, Skype per Business Online per la messaggistica immediata e conferenze in linea e OneDrive for Business per l'archiviazione in linea. La maggior parte dei piani aziendali includono software di Office che può essere installato nel computer (PC e Mac) Smartphone (Android, iOS e Windows) e Tablet (Android e iOS). Con Office 365, può essere produttivi dovunque e in un'ampia gamma di dispositivi. 
-  
+
 |**Risorsa**|**Descrizione**|
 |:-----|:-----|
-|**[Video: Che cos'è Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)** <br/> |Guarda il video per una panoramica di Office 365.  <br/> |
-|**[Come si sposta a Office 365 per aziende?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)** <br/> |In questo articolo viene fornita una panoramica generale di spostamenti di organizzazioni aziendali di Office 365.  <br/> |
 |**[Selezionare un piano](https://aka.ms/viirjv)** <br/> |Visitare questa pagina per informazioni sui piani aziendali di Office 365  <br/> |
 |**[Requisiti di sistema per Office](https://aka.ms/o365sysrequirements)** <br/> |Consente di visualizzare informazioni dettagliate sui requisiti di sistema nella sezione **piani Office 365 per aziende, education e amministrazione** .  <br/> |
-|**[Opzioni della piattaforma Microsoft Cloud](https://www.microsoft.com/download/details.aspx?id=54432)** <br/> |Scaricare questo poster per informazioni su Office 365 e lo stack Microsoft Cloud. Sarà possibile sulle caratteristiche di base dello stack Cloud Microsoft, tra cui Office 365 e le aree di responsabilità per è, i clienti e Microsoft. È possibile scaricare il poster in formato PDF o formati di Visio.  <br/> |
+|**[Risorse sull'architettura IT Cloud Microsoft](microsoft-cloud-it-architecture-resources.md)** <br/> |Scaricare uno o più poster per ulteriori informazioni sulle opzioni della piattaforma Microsoft Cloud e server. È possibile scaricare il poster in formato PDF o formati di Visio.  <br/> |
 |**[Domande frequenti su Office 365](https://aka.ms/office365faqs)** <br/> |Visitare questa pagina per visualizzare un elenco di domande frequenti su Office 365, con collegamenti a ulteriori informazioni.  <br/> |
    
 ## <a name="what-is-microsoft-365"></a>Che cos'è Microsoft 365?
