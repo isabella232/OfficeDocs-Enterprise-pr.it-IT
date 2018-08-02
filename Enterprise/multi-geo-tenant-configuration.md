@@ -11,11 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Informazioni sulla configurazione di OneDrive for Business Multi-Geo
-ms.openlocfilehash: 29e69fa6e5a9715360b61024ee41dee4cd4b95b1
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549967"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configurazione del tenant multi-geografico di OneDrive for Business
 
@@ -42,14 +43,6 @@ Una volta che nel tenant è stato effettuato il provisioning del piano _Funziona
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Nord America</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
-<td align="left">Europa/Medio Oriente/Africa</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
 <td align="left">Asia-Pacifico</td>
 <td align="left">APC</td>
 </tr>
@@ -57,21 +50,33 @@ Una volta che nel tenant è stato effettuato il provisioning del piano _Funziona
 <td align="left">Australia</td>
 <td align="left">AUS</td>
 </tr>
+<tr class="even">
+<td align="left">Canada</td>
+<td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">Europa/Medio Oriente/Africa</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="even">
+<td align="left">Francia</td>
+<td align="left">FRA</td>
+</tr>
 <tr class="odd">
 <td align="left">Giappone</td>
 <td align="left">JPN</td>
 </tr>
 <tr class="even">
-<td align="left">Canada</td>
-<td align="left">CAN</td>
+<td align="left">Corea</td>
+<td align="left">KOR</td>
+</tr>
+<tr class="odd">
+<td align="left">Nord America</td>
+<td align="left">NAM</td>
 </tr>
 <tr class="odd">
 <td align="left">Regno Unito</td>
 <td align="left">GBR</td>
-</tr>
-<tr class="even">
-<td align="left">Corea</td>
-<td align="left">KOR</td>
 </tr>
 </tbody>
 </table>
