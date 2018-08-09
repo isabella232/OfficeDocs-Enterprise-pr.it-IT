@@ -1,5 +1,5 @@
 ---
-title: Configurazione della ricerca per OneDrive for Business Multi-Geo
+title: Configurare la ricerca per OneDrive for Business Multi-Geo
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
@@ -16,18 +16,19 @@ ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "18908330"
 ---
-# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurazione della ricerca per OneDrive for Business Multi-Geo
+# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurare la ricerca per OneDrive for Business Multi-Geo
 
-In un ambiente SharePoint Online (SPO) multi-geografico, un'organizzazione può avere un tenant di Office 365, ma archiviare il proprio contenuto in più posizioni geografiche, una posizione centrale e una o più posizioni geografiche satellitari.
+In un ambiente SharePoint Online (SPO) multi-geografico, un'organizzazione può avere un tenant di Office 365, ma conservare il proprio contenuto in posizioni geografiche diverse di cui una funge da posizione centrale e le altre sono posizioni satellite.
 
-Ogni posizione geografica ha un proprio indice di ricerca e un Centro ricerche. Quando un utente effettua una ricerca, la query viene inviata a tutti gli indici e i risultati restituiti vengono uniti.
+Ogni posizione geografica ha un proprio indice di ricerca e un Centro ricerche. Quando un utente effettua una ricerca, la query viene inviata a tutti gli indici e i risultati restituiti vengono aggregati.
 
 Ad esempio, un utente in una posizione geografica può cercare contenuto archiviato in un'altra posizione geografica o il contenuto di un sito di SharePoint che è limitato a una posizione geografica diversa. Se l'utente ha accesso a tale contenuto, la ricerca mostrerà il risultato.
 
 ## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>Quali client di ricerca funzionano in un ambiente multi-geografico?
 
-Questi client possono restituire risultati da tutte le posizioni geografiche:
+Questi client possono restituire i risultati di tutte le posizioni geografiche:
 
 -   OneDrive for Business
 
@@ -37,29 +38,29 @@ Questi client possono restituire risultati da tutte le posizioni geografiche:
 
 -   Centro ricerche
 
--   Applicazioni di ricerca personalizzate che utilizzano l'API Ricerca di SharePoint
+-   Applicazioni di ricerca personalizzate che utilizzano l'API del servizio di ricerca di SharePoint
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano in OneDrive ottengono risultati da tutte le posizioni geografiche.
+Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano in OneDrive ottengono i risultati di tutte le posizioni geografiche.
 
 ### <a name="delve"></a>Delve
 
 Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano in Delve ottengono risultati da tutte le posizioni geografiche.
 
-Il feed di Delve e la scheda profilo mostrano solo le anteprime dei file archiviati nella posizione **centrale**. Per i file archiviati in una posizione geografica satellitare, verrà invece visualizzata l'icona del tipo di file.
+Il feed e la scheda profilo di Delve mostrano solo le anteprime dei file archiviati nella posizione **centrale**.Per i file archiviati in una posizione geografica satellite, verrà invece visualizzata l'icona del tipo di file.
 
 ### <a name="the-sharepoint-home-page"></a>Home page di SharePoint
 
-Non appena l'ambiente multi-geografico viene configurato, gli utenti possono vedere notizie, siti recenti e siti seguiti da più posizioni geografiche sulla propria home page di SharePoint. Se usano la casella di ricerca nella home page di SharePoint, otterranno risultati uniti di più posizioni geografiche.
+Non appena l'ambiente multi-geografico viene configurato, gli utenti possono vedere le notizie, i siti recenti e i siti seguiti di posizioni geografiche diverse nella propria home page di SharePoint. Se usano la casella di ricerca nella home page di SharePoint, aggregheranno tutti i risultati delle posizioni geografiche.
 
 ### <a name="the-search-center"></a>Centro ricerche
 
-Dopo che l'ambiente multi-geografico viene configurato, ogni Centro ricerche continua a mostrare solo i risultati della relativa posizione geografica. Gli amministratori devono [modificare le impostazioni di ogni Centro ricerche](#_Set_up_a_1) per ottenere i risultati di tutte le posizioni geografiche. In seguito, gli utenti che effettuano ricerche nel Centro ricerche potranno ottenere risultati da tutte le posizioni geografiche.
+Dopo che l'ambiente multi-geografico viene configurato, ogni Centro ricerche continua a mostrare solo i risultati della relativa posizione geografica. Gli amministratori devono [modificare le impostazioni di ogni Centro ricerche](#_Set_up_a_1) per generare i risultati di tutte le posizioni geografiche. Successivamente gli utenti che usano il Centro ricerche potranno ottenere i risultati aggregati di tutte le posizioni geografiche.
 
 ### <a name="custom-search-applications"></a>Applicazioni di ricerca personalizzate
 
-In genere, le applicazioni di ricerca personalizzate interagiscono con le API REST Ricerca di SharePoint esistenti. Per ottenere risultati da tutti o da alcune posizioni geografiche, l'applicazione deve [chiamare l'API e includere i nuovi parametri di query Multi-Geo](#_Get_custom_search) nella richiesta. In questo modo, la query viene inviata a tutte le posizioni geografiche.
+In genere, le applicazioni di ricerca personalizzate interagiscono con le API REST del servizio di ricerca di SharePoint esistenti. Per ottenere risultati di tutte le posizioni geografiche o solo di alcune, l'applicazione deve [chiamare l'API e includere i nuovi parametri di query Multi-Geo](#_Get_custom_search) nella richiesta. In questo modo, la query viene estesa a tutte le posizioni geografiche.
 
 ## <a name="whats-different-about-search-in-a-multi-geo-environment"></a>In che modo la ricerca è diversa in un ambiente multi-geografico?
 
@@ -75,14 +76,14 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Risultati alzati di livello</td>
-<td align="left">È possibile creare regole di query con risultati alzati di livello a diversi livelli: per l'intero tenant, per una raccolta siti o per un sito. In un ambiente multi-geografico, definire risultati alzati di livello a livello di <strong>tenant</strong> per alzare di livello i risultati dei Centri ricerche in <strong>tutte</strong> le posizioni geografiche. Se si desidera <strong>solo</strong> alzare di livello i risultati nel Centro ricerche che si trova nella posizione geografica della raccolta siti o del sito, definire i risultati a livello di <strong>raccolta siti</strong> o <strong>sito</strong>.</td>
-<td align="left">Se non sono necessari risultati alzati di livello diversi per ogni posizione geografica, ad esempio regole diverse per il viaggio, è consigliabile definire i risultati alzati di livello a livello di tenant.</td>
+<td align="left">Risultati evidenziati</td>
+<td align="left">È possibile creare regole di query con risultati evidenziati a diversi livelli: per l'intero tenant, per una raccolta siti o per un sito. In un ambiente multi-geografico, definire risultati evidenziati a livello di <strong>tenant</strong> per evidenziare i risultati dei Centri ricerche in <strong>tutte</strong> le posizioni geografiche. Se si desidera evidenziare <strong>solo</strong> i risultati nel Centro ricerche che si trova nella posizione geografica della raccolta siti o del sito, definire i risultati a livello di <strong>raccolta siti</strong> o <strong>sito</strong>.</td>
+<td align="left">Se non sono necessari diversi risultati evidenziati per ogni posizione geografica, ad esempio regole diverse per il viaggio, è consigliabile definire i risultati evidenziati a livello di tenant.</td>
 </tr>
 <tr class="even">
 <td align="left">Criteri di affinamento ricerca</td>
-<td align="left">La ricerca restituisce criteri di affinamento da tutte le posizioni geografiche di un tenant e poi le aggrega. L'aggregazione è un grande sforzo, il che significa che il criterio di affinamento potrebbe non essere completamente accurato. Per la maggior parte degli scenari basati sulla ricerca, questa precisione è sufficiente.</td>
-<td align="left">Per applicazioni basate sulla ricerca che dipendono dalla completezza del criterio di affinamento, inviare la query in modo indipendente a ogni posizione geografica senza usare il fan-out multi-geografico.</td>
+<td align="left">La ricerca restituisce i criteri di affinamento di tutte le posizioni geografiche di un tenant e poi li aggrega. L'aggregazione è approssimativa e viene eseguita secondo il principio "best effort", quindi i conteggi dei criteri di affinamento potrebbero non essere precisi. Per la maggior parte degli scenari di ricerca questo livello di approssimazione è sufficiente.</td>
+<td align="left">Per le applicazioni basate sulla ricerca che richiedono criteri di affinamento precisi, è necessario inviare la query separatamente a ogni posizione geografica senza estenderla all'intero ambiente multi-geografico.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -91,8 +92,8 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 </tr>
 <tr class="even">
 <td align="left">ID documenti</td>
-<td align="left">Se si sta sviluppando un'applicazione basata sulla ricerca che dipende dagli ID dei documenti, tenere presente che tali ID in un ambiente multi-geografico non sono univoci tra le diverse posizioni geografiche, ma solo all'interno di una posizione geografica.</td>
-<td align="left">È stata aggiunta una colonna che identifica la posizione geografica. Usare questa colonna per ottenere l'univocità. La colonna è denominata "GeoLocationSource".</td>
+<td align="left">Se si decide di sviluppare un'applicazione basata sulla ricerca che usa gli ID dei documenti, occorre tenere presente che tali ID non sono univoci nell'intero ambiente multi-geografico, ma solo all'interno di una singola posizione geografica.</td>
+<td align="left">Abbiamo aggiunto una colonna che identifica la posizione geografica. Usare questa colonna per ottenere dati univoci. La colonna è denominata "GeoLocationSource".</td>
 </tr>
 <tr class="odd">
 <td align="left">Numero di risultati</td>
@@ -120,29 +121,29 @@ Alcune delle funzionalità di ricerca già note non sono supportate in un ambien
 </tr>
 <tr class="even">
 <td align="left">Utenti guest</td>
-<td align="left">Gli utenti guest ottengono risultati solo dalla posizione geografica da cui effettuano la ricerca.</td>
+<td align="left">Gli utenti guest ottengono solo i risultati della posizione geografica dove effettuano la ricerca.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Come funziona la ricerca in un ambiente multi-geografico?
 
-**Tutti** i client di ricerca usano le API REST Ricerca di SharePoint per interagire con gli indici di ricerca.
+**Tutti** i client di ricerca usano le API REST del servizio di ricerca di SharePoint per interagire con gli indici di ricerca.
 <img src="media/configure-search-for-multi-geo_image1-1.png" />
 
 1. Un client di ricerca chiama l'endpoint REST Ricerca con la proprietà di query EnableMultiGeoSearch= true.
-2. La query viene inviata a tutte le posizioni geografica nel tenant.
-3. I risultati della ricerca di ogni posizione geografica vengono uniti e classificati.
+2. La query viene inviata a tutte le posizioni geografiche del tenant.
+3. I risultati della ricerca di ogni posizione geografica vengono aggregati e classificati.
 4. Il client ottiene risultati della ricerca unificati.
 
 
 
-<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Tenere presente che Microsoft non unisce i risultati della ricerca fino a quando non sono stati ricevuti i risultati da tutte le posizioni geografiche. Questo significa che le ricerche multi-geografiche presentano latenza aggiuntiva rispetto alle ricerche in un ambiente con una sola posizione geografica.
+<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Si tenga presente che aggreghiamo i risultati della ricerca solo dopo aver ricevuto i risultati di tutte le posizioni geografiche. Questo significa che le ricerche multi-geografiche presentano ulteriore latenza rispetto alle ricerche effettuate in un ambiente con una sola posizione geografica.
 
 <span id="_Set_up_a_1" class="anchor"><span id="_Ref505252370" class="anchor"></span></span>
 ## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a>Fare in modo che un Centro ricerche mostri i risultati di tutte le posizioni geografiche
 
-Ogni Centro ricerche dispone di diverse verticali ed è necessario configurare singolarmente ogni verticale.
+Ogni Centro ricerche dispone di diverse verticali ed è necessario configurarle singolarmente.
 
 1.  Assicurarsi di avere eseguito questi passaggi con un account che dispone dell'autorizzazione per modificare la pagina dei risultati della ricerca e la web part Risultati della ricerca.
 
@@ -164,11 +165,11 @@ Ogni Centro ricerche dispone di diverse verticali ed è necessario configurare s
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Fare in modo che le applicazioni di ricerca personalizzate mostrino risultati di tutte o di alcune posizioni geografiche
 
-Le applicazioni di ricerca personalizzate ricevono risultati da tutte o da alcune posizioni geografiche specificando i parametri di query con la richiesta all'API REST Ricerca di SharePoint. A seconda dei parametri di query, la query viene inviata a tutte le posizioni geografiche o solo ad alcune. Ad esempio, se serve solo inviare la query a un set secondario di posizioni geografiche per trovare informazioni pertinenti, è possibile controllare il fan-out solo per queste. Se la richiesta ha esito positivo, l'API REST Ricerca di SharePoint restituisce dati di risposta.
+Per ottenere i risultati di tutte o alcune posizioni geografiche nelle applicazioni di ricerca personalizzate, è necessario specificare i parametri di query con la richiesta all'API REST del servizio di ricerca di SharePoint. A seconda dei parametri della query, la query viene inviata a tutte le posizioni geografiche o solo ad alcune. Ad esempio, se serve inviare la query solo a un sottoinsieme di posizioni geografiche per trovare informazioni pertinenti, è possibile estendere la query solo ad esse. Se la richiesta ha esito positivo, l'API REST del servizio di ricerca di SharePoint restituisce i dati della risposta.
 
 ### <a name="query-parameters"></a>Parametri di query
 
-EnableMultiGeoSearch - Questo è un valore booleano che specifica se la query deve essere diffusa a tutti gli indici di altre posizioni geografiche del tenant multi-geografico. Impostarlo su **true** per estendere la query; su **false** per non estendere la query. Il valore predefinito è **false**. Se non si include questo parametro, la query **non** viene estesa a diverse posizioni geografiche. Se si usa il parametro in un ambiente non multi-geografico, il parametro viene ignorato.
+EnableMultiGeoSearch - Questo è un valore booleano che specifica se la query deve essere estesa agli indici di altre posizioni geografiche del tenant multi-geografico. Impostarlo su **true** per estendere la query; su **false** per non estendere la query. Il valore predefinito è **false**. Se non si include questo parametro, la query **non** viene estesa ad altre posizioni geografiche. Se si usa il parametro in un ambiente non multi-geografico, il parametro viene ignorato.
 
 ClientType - Si tratta di una stringa. Inserire un nome client univoco per ogni applicazione di ricerca. Se non si include questo parametro, la query **non** viene estesa ad altre posizioni geografiche.
 
