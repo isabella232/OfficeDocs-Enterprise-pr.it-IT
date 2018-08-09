@@ -3,7 +3,7 @@ title: Disattivare l'accesso ai servizi con PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2018
+ms.date: 08/08/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Questo articolo viene illustrato come utilizzare Office 365 PowerShell per disabilitare l'accesso ai servizi di Office 365 per gli utenti dell'organizzazione.
-ms.openlocfilehash: 61d92a1a0c55a381f10fedbb43403dd099fcb69b
-ms.sourcegitcommit: 07416472be80566370c30631aff740177b37b24c
+ms.openlocfilehash: 44b0ed84bb8fd098412c69258834194b2b1eeb2f
+ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "22196823"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Disattivare l'accesso ai servizi con PowerShell di Office 365
 
@@ -33,7 +34,7 @@ Quando un account Office 365 viene assegnato una licenza da un piano di licenze,
     
 - Tutti gli account nell'organizzazione.
     
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 <a name="RTT"> </a>
 
 - Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
@@ -62,7 +63,7 @@ Per disabilitare un set specifico di servizi di Office 365 per gli utenti da un 
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
   ```
 
-2. Utilizzare l'oggetto **LicenseOptions** dal passaggio 1 in uno o più utenti.
+2. Utilizzare l'oggetto **LicenseOptions** del passaggio 1 su uno o più utenti.
     
   - Per creare un nuovo account con i servizi disabilitati, utilizzare la sintassi seguente:
     
@@ -126,7 +127,7 @@ Per disabilitare un set specifico di servizi di Office 365 per gli utenti da un 
 
     In questo esempio il file di testo è c:\\documenti\\Accounts.txt.
     
-2. Eseguire il comando seguente:
+2. Eseguire il comando riportato di seguito:
     
   ```
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
@@ -151,9 +152,9 @@ for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
 
 2. Personalizzare i valori seguenti per il proprio ambiente:
     
-  -  _<UndesirableService>_In questo esempio, utilizzeremo Office Online e SharePoint Online.
+  -  _<UndesirableService>_ In questo esempio, utilizzeremo Office Online e SharePoint Online.
     
-  -  _<Account>_In questo esempio, utilizzeremo belindan@litwareinc.com.
+  -  _<Account>_ In questo esempio, utilizzeremo belindan@litwareinc.com.
     
     Lo script personalizzato avrà l'aspetto seguente:
     
@@ -177,20 +178,9 @@ for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
 > [!NOTE]
 > Per annullare gli effetti di una di queste procedure (vale a dire per abilitare di nuovo i servizi disattivati), eseguire di nuovo la procedura, ma utilizzare il valore `$null` per il parametro _DisabledPlans_ .
   
-[Torna all'inizio](disable-access-to-services-with-office-365-powershell.md#RTT)
+[Return to top](disable-access-to-services-with-office-365-powershell.md#RTT)
 
 
-## <a name="all-office-365-services-for-all-users-for-a-single-licensing-plan"></a>Tutti i servizi di Office 365 per tutti gli utenti per un singolo piano di licenze
- 
-Per disabilitare tutti i servizi di Office 365 per tutti gli utenti in un piano di licenze specifico, specificare il nome del piano delle licenze per $acctSKU (ad esempio **litwareinc: enterprisepack**) e quindi eseguire questi comandi nella finestra di comando PowerShell:
-
-```
-$acctSKU="<AccountSkuId>"
-$servicesList=(Get-MsolAccountSku | Select -ExpandProperty ServiceStatus).ServicePlan.ServiceName
-$lo = New-MsolLicenseOptions -AccountSkuId $acctSKU -DisabledPlans $servicesList
-$AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
-$AllLicensed | ForEach {Set-MsolUserLicense -ObjectID $_.ObjectID -LicenseOptions $lo}
-```
 
 ## <a name="new-to-office-365"></a>Nuovo utente di Office 365?
 <a name="LinkedIn"> </a>
