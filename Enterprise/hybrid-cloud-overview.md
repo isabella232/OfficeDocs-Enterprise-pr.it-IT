@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Riepilogo: Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.'
-ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915821"
 ---
 # <a name="hybrid-cloud-overview"></a>Panoramica del cloud ibrido
 
@@ -36,7 +39,7 @@ Cloud ibrida Microsoft è un insieme di scenari aziendali in cui combinare piatt
     
 **Figura 1: Componenti di Microsoft cloud ibrida**
 
-![Componenti del cloud ibrido Microsoft](images/Hybrid_Poster/MS_Hybrid_Cloud.png)
+![Componenti del cloud ibrido Microsoft](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
 Nella figura 1 vengono illustrati i componenti del cloud ibrida Microsoft, da una rete locale per il set di Office 365, piattaforma Azure come servizio PaaS () e l'infrastruttura di Azure come un servizio (IaaS) servizi disponibili tramite Internet o una connessione ExpressRoute.
   
