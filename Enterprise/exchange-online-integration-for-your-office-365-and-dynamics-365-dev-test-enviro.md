@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
-description: 'Riepilogo: Usare questa Guida del laboratorio di testing per attivare l''integrazione di Dynamics 365 per Exchange Online nella sottoscrizione di valutazione di Office 365.'
-ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: "Riepilogo: Usare questa Guida del laboratorio di testing per attivare l'integrazione di Dynamics 365 per Exchange Online nella sottoscrizione di valutazione di Office 365."
+ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915501"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Integrazione di Exchange Online per il proprio ambiente di sviluppo/test di Office 365 e Dynamics 365
 
@@ -39,13 +42,13 @@ Seguire le istruzioni riportate in [Ambiente di sviluppo/test di Office 365 e Dy
 
 Seguire questi passaggi per configurare la cassetta postale dell'amministratore globale per l'integrazione di Dynamics 365 ed Exchange Online:
   
-1. Usando una sessione privata del browser, passare a [http://portal.office.com](http://portal.office.com) e accedere con l'account di amministratore globale di Office 365.
+1. Mediante una sessione di private del browser, accedere a [http://portal.office.com](http://portal.office.com) e accedere utilizzando l'account amministratore globale di Office 365.
     
 2. Nella pagina **Microsoft Office Home**, fare clic sulla sezione **Posta di Outlook**.
     
 3. Nella nuova scheda **Posta di Outlook** nel browser, fare clic su **Nuovo** e notare come l'angolo inferiore del riquadro sotto la casella per digitare un messaggio contiene un'icona per modelli personali.
     
-     ![Un nuovo messaggio e-mail vuoto e privo d'integrazione con Dynamics 365.](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
+     ![Un nuovo messaggio e-mail vuoto e privo d'integrazione con Dynamics 365.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
 4. Fare clic su **Ignora** e lasciare la scheda **Posta di Outlook** aperta.
     
@@ -87,13 +90,13 @@ Seguire questi passaggi per installare l'App Dynamics 365 per Outlook e dimostra
     
 6. Nella nuova scheda **Posta di Outlook**, fare clic su **Nuovo**. Tenere presente che l'angolo inferiore del riquadro sotto la casella per digitare un messaggio ora contiene un'icona per Dynamics 365.
     
-     ![Un nuovo messaggio e-mail vuoto dotato d'integrazione con Dynamics 365; visualizzazione della nuova icona.](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
+     ![Un nuovo messaggio e-mail vuoto dotato d'integrazione con Dynamics 365; visualizzazione della nuova icona.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
 7. Fare clic sull'icona Dynamics 365. Verrà visualizzato un riquadro **Dynamics 365**, da cui è possibile tenere traccia della posta elettronica e accedere a modelli, documentazione di vendita o articoli.
     
 8. Nel campo **A** del messaggio di posta elettronica, digitare **alex.y.wu@outlook.com**, quindi fare clic su **Riprova** nel riquadro **Dynamics 365**. Verrà visualizzata una sezione **Destinatari** nel riquadro **Dynamics 365** con le informazioni su Alex Wu, un contatto dall'applicazione vendita fornito con i dati di esempio per la sottoscrizione di valutazione.
     
-     ![Riquadro informazioni di Dynamics 365 relativo a un contatto di vendita memorizzato in Dynamics 365.](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
+     ![Riquadro informazioni di Dynamics 365 relativo a un contatto di vendita memorizzato in Dynamics 365.](media/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. Fare clic su **Ignora**.
 

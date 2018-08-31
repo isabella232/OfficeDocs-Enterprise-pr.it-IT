@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Sintesi: creare e configurare siti del team di SharePoint Online per diversi livelli di protezione delle informazioni.'
-ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 6103675941802fcdee50c06ac3212d90f95c6d35
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631397"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915621"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Distribuire siti di SharePoint Online per tre livelli di protezione
 
@@ -54,7 +56,7 @@ Per creare un sito del team di SharePoint Online di base con accesso pubblico e 
     
 Di seguito è riportata la configurazione risultante.
   
-![Protezione di livello di base per un sito del team di SharePoint Online pubblico.](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![Protezione di livello di base per un sito del team di SharePoint Online pubblico.](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>Private
 
@@ -80,7 +82,7 @@ Per creare un sito del team di SharePoint Online di base con accesso privato e a
     
 Di seguito è riportata la configurazione risultante.
   
-![Protezione di livello di base per un sito del team di SharePoint Online privato.](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![Protezione di livello di base per un sito del team di SharePoint Online privato.](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>Siti del team di SharePoint Online sensibili
 
@@ -142,7 +144,7 @@ Successivamente, creare il sito del team di SharePoint Online seguendo questi pa
     
 Dal nuovo sito del team di SharePoint Online configurare quindi le autorizzazioni seguendo questa procedura.
   
-1. Determinare il Nome dell'entità utente (UPN) di cui l'amministratore IT o altra persona sarà responsabile per rispondere a e indirizzare le richieste di accesso al sito (un esempio di UPN è belindan@contoso.com). Scrivere l'UPN di seguito: ![](./images/Common_Images/TableLine.png).
+1. Determinare il Nome dell'entità utente (UPN) di cui l'amministratore IT o altra persona sarà responsabile per rispondere a e indirizzare le richieste di accesso al sito (un esempio di UPN è belindan@contoso.com). Scrivere l'UPN di seguito: ![](./media/Common-Images/TableLine.png).
     
 2. Nella barra degli strumenti fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
     
@@ -196,7 +198,7 @@ I risultati di queste impostazioni delle autorizzazioni sono i seguenti:
     
 Di seguito è riportata la configurazione risultante.
   
-![Protezione di livello riservato per un sito del team di SharePoint Online isolato.](images/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![Protezione di livello riservato per un sito del team di SharePoint Online isolato.](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 I membri del sito, attraverso l'appartenenza a uno dei gruppi di accesso, possono ora collaborare in modo sicuro alle risorse del sito.
   
@@ -256,7 +258,7 @@ I risultati di queste impostazioni delle autorizzazioni sono:
     
 Di seguito è riportata la configurazione risultante.
   
-![Protezione di livello estremamente riservato per un team di SharePoint Online isolato.](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![Protezione di livello estremamente riservato per un team di SharePoint Online isolato.](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 I membri del sito, attraverso l'appartenenza a uno dei gruppi di accesso, possono ora collaborare in modo sicuro alle risorse del sito.
   

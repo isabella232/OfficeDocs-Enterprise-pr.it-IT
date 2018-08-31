@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: "Riepilogo: Informazioni su architettura ibrida e gli scenari per l'infrastruttura di Microsoft come servizio (IaaS)-basato su cloud offerte in Azure."
-ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915031"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scenari cloud ibridi per Azure IaaS
 
@@ -28,9 +29,9 @@ Estendere l'infrastruttura di gestione delle identità e di calcolo locale nel c
 
 La figura 1 mostra l'architettura di scenari ibridi Microsoft basati su IaaS in Azure.
   
-**Nella figura 1: Scenari di ibrida basata su IaaS Microsoft in Azure**
+**Figura 1: Scenari ibridi Microsoft basati su IaaS in Azure**
 
-![Scenari ibridi Microsoft basati su IaaS in Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS.png)
+![Scenari ibridi Microsoft basati su IaaS in Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS.png)
   
 Per ogni livello dell'architettura:
   
@@ -54,9 +55,9 @@ Per ogni livello dell'architettura:
 
 L’esecuzione del server di sincronizzazione della directory (DirSync) da una rete virtuale di Azure, come illustrato nella figura 2, è un esempio di come estendere l'infrastruttura di identità e calcolo al cloud.
   
-**Figura 2: Server DirSync per Office 365 in Azure IaaS**
+**Figura 2: Server DirSync per Office 365 in IaaS di Azure**
 
-![Server DirSync per Office 365 in IaaS di Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_DirSync.png)
+![Server DirSync per Office 365 in IaaS di Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
 Nella figura 2, una rete locale ospita un'infrastruttura di Windows Server Active Directory, con un server proxy e un router in corrispondenza del bordo. Il router si connette a un gateway Azure in corrispondenza del bordo di un VNet Azure con una connessione VPN o ExpressRoute sito per sito. All'interno di VNet, un server di DirSync esegue Connetti Azure Active Directory.
   
@@ -66,19 +67,22 @@ Un server DirSync è un server basato su Windows che esegue Azure AD Connect. Pe
   
 Il server DirSync sonda Windows Server AD per le modifiche, quindi le sincronizza con l’abbonamento a Office 365.
   
-Per ulteriori informazioni, vedere [Distribuzione di Office 365 DirSync in Azure](https://technet.microsoft.com/library/dn635310.aspx).
+Per ulteriori informazioni, vedere [configurare la sincronizzazione delle directory per Office 365](set-up-directory-synchronization.md).
   
 ## <a name="line-of-business-lob-application"></a>Applicazione LOB (line-of-business)
 
 La figura 3 mostra la configurazione di un'applicazione LOB basata su server in esecuzione su IaaS di Azure.
   
-**Figura 3: Applicazione LOB in Azure IaaS**
+**Figura 3: Applicazione LOB in IaaS di Azure**
 
-![Applicazione line-of-business basata su server in Azure IaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_Ex.png)
+![Applicazione line-of-business basata su server in Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-Ex.png)
   
 Nella figura 3, una rete locale ospita un'infrastruttura di identità e utenti. È collegato a un gateway IaaS di Azure con una connessione VPN da sito a sito o ExpressRoute. IaaS di Azure ospita una rete virtuale contenente i server dell'applicazione LOB.
   
-È possibile creare le applicazioni LOB in esecuzione su macchine virtuali di Azure, che si trovano in subnet di un VNet Azure in un Data Center Azure (noto anche come posizione).
+È possibile creare applicazioni LOB in esecuzione su macchine virtuali di Azure, che risiedono nelle subnet di una rete virtuale di Azure all'interno di un datacenter di Azure (noto anche come posizione).  
+
+
+
   
 Dato che essenzialmente si sta estendendo l'infrastruttura locale ad Azure, è necessario assegnare uno spazio di indirizzi privato unico alle reti virtuali e aggiornare le tabelle di routing locali per garantire l'accessibilità a ogni rete virtuale.
   
@@ -86,7 +90,7 @@ Una volta stabilita la connessione, queste macchine virtuali possono essere gest
   
 Configurando le porte pubbliche, queste macchine virtuali sono accessibili anche da Internet per utenti remoti o mobili.
   
-Per una configurazione di prova, vedere [simulato tra locali reti virtuali di Azure](simulated-cross-premises-virtual-network-in-azure.md).
+Per una configurazione di prova, vedere [Simulated cross-premises virtual network in Azure](simulated-cross-premises-virtual-network-in-azure.md).
   
 Attributi di applicazioni LOB ospitate su macchine virtuali di Azure:
   
@@ -110,9 +114,9 @@ Attributi di applicazioni LOB ospitate su macchine virtuali di Azure:
 
 Un esempio di applicazione LOB altamente disponibile di più livelli in Azure è una farm di SharePoint Server 2016, come illustrato nella figura 4.
   
-**Figura 4: Una disponibilità elevata 2016 di SharePoint Server farm in Azure IaaS**
+**Figura 4: Una farm di SharePoint Server 2016 a disponibilità elevata in IaaS di Azure**
 
-![Una farm di SharePoint Server 2016 a disponibilità elevata in IaaS di Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_SP2016.png)
+![Una farm di SharePoint Server 2016 a disponibilità elevata in IaaS di Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-SP2016.png)
   
 Nella figura 4, una rete locale ospita un'infrastruttura di identità e utenti. È collegato a un gateway IaaS di Azure con una connessione VPN da sito a sito o ExpressRoute. La rete virtuale di Azure contiene i server della farm di SharePoint Server 2016, che include livelli separati per server front-end, server di applicazioni, cluster di SQL Server e controller di dominio.
   
@@ -120,7 +124,8 @@ Questa configurazione offre i seguenti attributi delle applicazioni LOB in Azure
   
 - Livelli
     
-    Server che eseguono diversi ruoli all'interno della farm crea i livelli e ogni livello ha una propria subnet.
+    Server che eseguono ruoli diversi all'interno della farm creano i livelli e ogni livello ha una propria subnet.
+
     
 - Disponibilità elevata
     
@@ -138,17 +143,17 @@ Seguire questo percorso per l’adozione:
   
 1. Valutare e sperimentare
     
-    Vedere [2016 di SharePoint Server in Microsoft Azure](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx) per acquisire familiarità con i vantaggi dell'esecuzione di SharePoint Server 2016 in Azure.
+    Vedere [2016 di SharePoint Server in Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) per acquisire familiarità con i vantaggi dell'esecuzione di SharePoint Server 2016 in Azure.
     
-    Vedere [Intranet SharePoint Server 2016 nell'ambiente di sviluppo e di testing Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx) per creare un ambiente di sviluppo e di testing simulate
+    Vedere [Intranet SharePoint Server 2016 nell'ambiente di sviluppo e di testing Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment) per creare un ambiente di sviluppo e di testing simulate
     
 2. Struttura
     
-    Vedere [Progettazione di una farm di SharePoint Server 2016 in Azure](https://technet.microsoft.com/library/mt779108%28v=office.16%29.aspx) per eseguire un processo per determinare il set di rete Azure IaaS, compute ed elementi di archiviazione per ospitare la farm e le relative impostazioni.
+    Vedere [Progettazione di una farm di SharePoint Server 2016 in Azure](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) per eseguire un processo per determinare il set di rete Azure IaaS, compute ed elementi di archiviazione per ospitare la farm e le relative impostazioni.
     
 3. Distribuzione
     
-    Vedere [distribuzione di SharePoint Server 2016 con SQL Server AlwaysOn Availability Groups in Azure](https://technet.microsoft.com/library/mt793552%28v=office.16%29.aspx) per eseguire la configurazione end-to-end della farm di disponibilità elevata in cinque fasi.
+    Vedere [distribuzione di SharePoint Server 2016 con SQL Server AlwaysOn Availability Groups in Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) per eseguire la configurazione end-to-end della farm di disponibilità elevata in cinque fasi.
     
 ## <a name="federated-identity-for-office-365-in-azure"></a>Identità federata per Office 365 in Azure
 
@@ -156,7 +161,7 @@ Un altro esempio di un'applicazione LOB a più livelli e altamente disponibile i
   
 **Figura 5: Un'infrastruttura di identità federata di disponibilità elevata per Office 365 in Azure IaaS**
 
-![La configurazione finale dell'infrastruttura di autenticazione federata di Office 365 con disponibilità elevata](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_ADFS.png)
+![La configurazione finale dell'infrastruttura di autenticazione federata di Office 365 con disponibilità elevata](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 Nella figura 5, una rete locale ospita un'infrastruttura di identità e degli utenti. Si connette a un gateway Azure IaaS con una connessione VPN o ExpressRoute sito per sito. VNet Azure contiene il server proxy web, server di Active Directory Federation Services (ADFS) e i controller di dominio Windows Server Active Directory (AD).
   

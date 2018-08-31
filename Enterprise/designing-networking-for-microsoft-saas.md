@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: "Riepilogo: Informazioni su come ottimizzare la rete per l'accesso ai servizi SaaS di Microsoft, tra cui Office 365, Microsoft Intune e Dynamics 365."
-ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 94118022b86a5e732467599632e30c058827468f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915471"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Progettazione di rete per Microsoft SaaS
 
@@ -28,7 +31,7 @@ L'ottimizzazione della rete per i servizi SaaS di Microsoft richiede un'analisi 
 
 Eseguire la procedura seguente per ottimizzare la rete per i servizi Microsoft SaaS:
   
-1. Passare attraverso la sezione **operazioni per preparare la rete di servizi cloud Microsoft** in [elementi comuni di integrazione applicativa di Microsoft cloud](common-elements-of-microsoft-cloud-connectivity.md).
+1. Consultare la sezione **Procedura per predisporre la rete per i servizi cloud Microsoft** in [Common elements of Microsoft cloud connectivity](common-elements-of-microsoft-cloud-connectivity.md).
     
 2. Ottimizzare l'uscita Internet per i servizi Microsoft SaaS utilizzando i consigli relativi al server proxy.
     
@@ -42,9 +45,9 @@ Eseguire la procedura seguente per ottimizzare la rete per i servizi Microsoft S
 
 Ecco alcuni aspetti da considerare ottimizzare il bordo di Internet e velocità effettiva ai servizi Microsoft SaaS.
   
-**Nella figura 1: Opzioni di connessione per i servizi Microsoft SaaS**
+**Figura 1: Opzioni di connessione per i servizi Microsoft SaaS**
 
-![Figura 1: Opzioni di connessione per i servizi Microsoft SaaS](images/Network_Poster/SaaS1.png)
+![Figura 1: Opzioni di connessione per i servizi Microsoft SaaS](media/Network-Poster/SaaS1.png)
   
 Una rete locale connettersi ai servizi Microsoft SaaS su una barra verticale Internet o ExpressRoute illustrato nella figura 1.
   
@@ -98,7 +101,7 @@ Innanzitutto configurare il gruppo di servizi che i client utilizzeranno, ad ese
   
 - Azure Active Directory
     
-- Office 365
+- Office 365
     
   - Applicazioni client di Office
     
@@ -180,7 +183,7 @@ Per ottimizzare la rete per la sincronizzazione in corso:
     
 Per ulteriori informazioni, vedere:
   
-- [Pianificazione per Office 365 e rete](https://aka.ms/tune)
+- [Pianificazione della rete e della migrazione per Office 365](https://aka.ms/tune)
     
 - [ExpressRoute per Office 365](https://aka.ms/expressrouteoffice365)
 
@@ -190,7 +193,7 @@ Per ulteriori informazioni, vedere:
     
 ## <a name="see-also"></a>Vedere anche
 
-[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete di Microsoft Cloud per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

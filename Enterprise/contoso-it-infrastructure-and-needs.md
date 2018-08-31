@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
 description: "Riepilogo: Comprendere la struttura di base di Contoso locale come la propria attività è necessario possono essere soddisfatti dall'offerte cloud di Microsoft e l'infrastruttura IT."
-ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: e500aa1f3105c1e605d0d3c1d5f66651acb82b34
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915731"
 ---
 # <a name="contosos-it-infrastructure-and-needs"></a>Infrastruttura IT ed esigenze di Contoso
 
@@ -30,7 +31,7 @@ Contoso utilizza un principalmente centralizzato sull'infrastruttura IT, con cen
   
 **Nella figura 1: Infrastruttura IT Contoso**
 
-![Infrastruttura IT esistente di Contoso](images/Contoso_Poster/Existing_IT.png)
+![Infrastruttura IT esistente di Contoso](media/Contoso-Poster/Existing-IT.png)
   
 Nella figura 1 viene illustrata una sede con centri dati applicazione, DMZ e Internet.
   

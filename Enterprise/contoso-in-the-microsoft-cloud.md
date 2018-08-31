@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Riepilogo: modalità di adozione di un'infrastruttura IT con cloud da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale con le offerte cloud di Microsoft."
-ms.openlocfilehash: d548301fdbd3b26d3de5ea0e279a379b7eea269f
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: afb1760d1c2fcfe7679d39a14e22f6abfcf0e80c
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161779"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915291"
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso nel Microsoft Cloud
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161779"
   
 In questo articolo sono disponibili dei collegamenti a un insieme di articoli in cui viene descritto il modo in cui Contoso Corporation, un complesso industriale globale con sede principale a Parigi, passa a un'infrastruttura IT con cloud e prende decisioni importanti sulla progettazione di rete, identità e sicurezza, oltre al modo in cui vengono implementati gli scenari cloud aziendali per risolvere i problemi aziendali. È possibile visualizzare queste informazioni anche come poster di 11 pagine e stamparlo in formato tabloid (noto anche come ledger, 11 x 17 o A3).
   
-[![Immagine cursore di Contoso nel poster di Microsoft Cloud.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![Immagine cursore di Contoso nel poster di Microsoft Cloud.](media/Contoso-Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | [Altre lingue](https://www.microsoft.com/download/details.aspx?id=54427)
   

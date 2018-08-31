@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Riepilogo: comprendere le relazioni delle organizzazioni, le sottoscrizioni, le licenze, gli account utente e i tenant tra le offerte cloud di Microsoft.'
-ms.openlocfilehash: 53d2f7f32402d8c05d22c0661a0f625c756da6d4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: ebddd97afb2c45821cd25eae5e8124459720df0b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319217"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915201"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Sottoscrizioni, licenze, account e tenant per offerte cloud di Microsoft
 
@@ -62,7 +64,7 @@ Le organizzazioni possono disporre di più sottoscrizioni per le offerte cloud d
   
 **Figura 1: esempio di più sottoscrizioni per un'organizzazione**
 
-![Esempio di organizzazione con più sottoscrizioni per le offerte cloud di Microsoft.](images/Subscriptions/Subscriptions_Fig1.png)
+![Esempio di organizzazione con più sottoscrizioni per le offerte cloud di Microsoft.](media/Subscriptions/Subscriptions-Fig1.png)
 
   
 Nella figura 1 viene mostrata una singola organizzazione che dispone di più sottoscrizioni di Office 365, una di Intune, una di Dynamics 365 e più sottoscrizioni di Azure.
@@ -73,7 +75,7 @@ Per le offerte cloud SaaS di Microsoft, una licenza consente a un account utente
   
 **Figura 2: licenze comprese nelle sottoscrizioni basate su SaaS di un'organizzazione**
 
-![Un esempio di più licenze all'interno delle sottoscrizioni per le offerte cloud di Microsoft basate su SaaS.](images/Subscriptions/Subscriptions_Fig2.png)
+![Un esempio di più licenze all'interno delle sottoscrizioni per le offerte cloud di Microsoft basate su SaaS.](media/Subscriptions/Subscriptions-Fig2.png)
   
 Per i servizi cloud basati su PaaS di Azure, le licenze software sono integrate nel prezzo del servizio.
   
@@ -89,7 +91,7 @@ Nella figura 3 viene mostrato un esempio di più sottoscrizioni di un'organizzaz
   
 **Figura 3: più sottoscrizioni di un'organizzazione che utilizza lo stesso tenant di Azure AD**
 
-![Esempio di organizzazione con più sottoscrizioni che utilizzano lo stesso tenant Azure AD.](images/Subscriptions/Subscriptions_Fig3.png)
+![Esempio di organizzazione con più sottoscrizioni che utilizzano lo stesso tenant Azure AD.](media/Subscriptions/Subscriptions-Fig3.png)
   
 ### <a name="tenants"></a>Tenant
 
@@ -131,7 +133,7 @@ Più sottoscrizioni alle offerte cloud di Microsoft sono in grado di usare lo st
   
 **Figura 4: account sincronizzati in locale e IDaaS per un'organizzazione**
 
-![IDaaS IaaS per l'organizzazione.](images/Subscriptions/Subscriptions_Fig4.png)
+![IDaaS IaaS per l'organizzazione.](media/Subscriptions/Subscriptions-Fig4.png)
   
 La figura 4 mostra in che modo il tenant di Azure AD comune è utilizzato dalle offerte cloud SaaS di Microsoft, le app PaaS di Azure e le macchine virtuali IaaS di Azure che usa Azure AD Domain Services. Azure AD Connect sincronizza la foresta di Windows Server AD locale con il tenant di Azure AD.
   

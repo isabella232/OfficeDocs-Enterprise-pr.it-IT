@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Riepilogo: creare sottoscrizioni di valutazione di Office 365 ed Enterprise Mobility + Security (EMS) con utenti e gruppi per un ambiente di sviluppo/test di una campagna politica.'
-ms.openlocfilehash: df737e3f745ba0fa4ab4752609e09e8af64ce6b0
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: c58782185d0638f7a6a9e14ee7e4516f1852908b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168510"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915691"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
 
@@ -185,11 +187,11 @@ Seguire questi passaggi per verificare che l'appartenenza ai gruppi dinamici e l
 
 Registrare questi valori per utilizzarli con le sottoscrizioni di valutazione di Office 365 ed EMS per questo ambiente di sviluppo/test:
   
-- Nome dell'organizzazione della sottoscrizione di valutazione: ![](./images/Common_Images/TableLine.png) 
+- Nome dell'organizzazione della sottoscrizione di valutazione: ![](./media/Common-Images/TableLine.png) 
     
     Ad esempio, per il nome di dominio della sottoscrizione di valutazione di contoso.onmicrosoft.com, il nome dell'azienda è "contoso".
     
-- Nome amministratore globale di Office 365: ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+- Nome amministratore globale di Office 365: ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Registrare la password per l'account e la password iniziale comune per gli altri account utente in un luogo sicuro.
     

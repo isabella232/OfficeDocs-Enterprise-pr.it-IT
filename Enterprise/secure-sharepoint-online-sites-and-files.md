@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Riepilogo: suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.'
-ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 5ee7ce0f5d52076ec27a3478a39b998a96e0e270
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319227"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915081"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteggere siti e file di SharePoint Online
 
@@ -138,7 +140,7 @@ Si consiglia di utilizzare le etichette di Office 365 per ambienti con dati rise
     
 - Gli utenti dell'organizzazione possono applicare manualmente un'etichetta al contenuto in Outlook sul web, Outlook 2010 e versioni successive, OneDrive for Business, SharePoint Online e gruppi di Office 365. Gli utenti, spesso, conoscono al meglio il tipo di contenuto cui stanno lavorando, pertanto possono classificarlo e applicarvi i criteri DLP appropriati.
     
-![Configurazione consigliata per i siti di SharePoint](images/7fed0126-ab4a-4480-922c-681970642339.png)
+![Configurazione consigliata per i siti di SharePoint](media/7fed0126-ab4a-4480-922c-681970642339.png)
   
 Come indica l'illustrazione, questa soluzione include la creazione delle etichette seguenti:
   
@@ -160,7 +162,7 @@ Se garantite per lo scenario di sicurezza, è possibile usare Azure Information 
   
 Tenere presente che quando si applica la crittografia di Azure Information Protection ai file archiviati in Office 365, il servizio non è in grado di elaborare il contenuto di questi file. La creazione condivisa, eDiscovery, la ricerca, Delve e altre funzionalità di collaborazione non funzionano. I criteri DLP funzionano solo con i metadati, incluse le etichette di Office 365, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
   
-![Azure Information Protection è configurato in Azure e le etichette vengono visualizzate nella barra degli strumenti del client](images/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
+![Azure Information Protection è configurato in Azure e le etichette vengono visualizzate nella barra degli strumenti del client](media/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
   
 Come illustrato nell'esempio:
   

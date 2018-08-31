@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: 'Sintesi: informazioni sul modo in cui Contoso ha mappato i propri requisiti di sicurezza per rientrare nelle offerte cloud di Microsoft e su come ha determinato un percorso per preparare la sicurezza cloud.'
-ms.openlocfilehash: f8df7f6437159aefe88851a22cc8da8b19c3838c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.openlocfilehash: 722c01995c95c36b9975b0682858c38063f79d2c
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914831"
 ---
 # <a name="security-for-the-contoso-corporation"></a>Sicurezza per Contoso Corporation
 

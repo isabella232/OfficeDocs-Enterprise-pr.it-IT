@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Riepilogo: usare la seguente guida al lab test per creare un ambiente di sviluppo/test che include tutte le offerte cloud di Microsoft.'
-ms.openlocfilehash: 29fcb1108ceac6aa488ca71d723789a7a2e6c409
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915631"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Ambiente di sviluppo/test One Microsoft Cloud
 
@@ -27,7 +30,7 @@ ms.lasthandoff: 04/27/2018
   
 Con le istruzioni disponibili in questo articolo, si crea una rete Intranet simulata in Servizi infrastruttura di Microsoft Azure e quindi si aggiungono gli abbonamenti di Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS) e Microsoft Dynamics 365. Il risultato è un'organizzazione semplificata che utilizza tutte le offerte cloud di Microsoft contemporaneamente in un singolo ambiente di sviluppo/test.  
   
-![Fase 3 dell'ambiente di sviluppo/test One Microsoft Cloud con Azure, Office 365, EMS e Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Fase 3 dell'ambiente di sviluppo/test One Microsoft Cloud con Azure, Office 365, EMS e Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 È possibile utilizzare la configurazione risultante per:
   
@@ -47,7 +50,7 @@ Nella figura 1 viene mostrata la configurazione risultante, che include Office 3
   
 **Figura 1: rete Intranet simulata in Azure con Office 365**
 
-![Ambiente di sviluppo/test Office 365 con DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Ambiente di sviluppo/test Office 365 con DirSync](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
 > La versione di valutazione di Azure è valida per 30 giorni. La sottoscrizione di valutazione Office 365 Enterprise E5 è valida per 30 giorni, ma può essere estesa per altri 30 giorni. Per un ambiente di sviluppo/test permanente, creare una nuova sottoscrizione a pagamento di Azure e una nuova sottoscrizione a pagamento di Office 365 Enterprise E5 con un numero limitato di licenze. 
@@ -93,7 +96,7 @@ La figura 2 mostra la configurazione risultante che consente di aggiungere EMS.
   
 **Figura 2: rete Intranet simulata in Azure con Office 365 ed EMS**
 
-![Fase 2 dell'ambiente di sviluppo/test One Microsoft Cloud con Azure, Office 365 ed EMS](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
+![Fase 2 dell'ambiente di sviluppo/test One Microsoft Cloud con Azure, Office 365 ed EMS](media/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
 ## <a name="phase-3-add-dynamics-365"></a>Fase 3: aggiungere Dynamics 365
 
@@ -171,7 +174,7 @@ Nella figura 3 è riportata la configurazione risultante.
   
 **Figura 3: rete Intranet simulata in Azure con Office 365, EMS e Dynamics 365**
 
-![Fase 3 dell'ambiente di sviluppo/test One Microsoft Cloud con Azure, Office 365, EMS e Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Fase 3 dell'ambiente di sviluppo/test One Microsoft Cloud con Azure, Office 365, EMS e Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 ## <a name="next-steps"></a>Passaggi successivi
 
