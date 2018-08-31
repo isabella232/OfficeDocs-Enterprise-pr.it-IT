@@ -1,5 +1,5 @@
 ---
-title: App integrata e Azure Active Directory per gli amministratori di Office 365
+title: Azure AD e app integrate per gli amministratori di Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,18 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:
+- MET150
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Informazioni su Office 365 l'integrazione di applicazioni vengono registrati e amministrate in Azure Active Directory
-ms.openlocfilehash: 666bfca5c2621d25f13dff7c5753c5ef47591b68
-ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
+ms.openlocfilehash: 0482271f15dc5e2b81e36fd265b49da6eba18702
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "22213120"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915001"
 ---
-# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>App integrata e Azure Active Directory per gli amministratori di Office 365
+# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Azure AD e app integrate per gli amministratori di Office 365
 
 Non esiste più alla gestione integrata app di appena [App integrata attivazione o disattivazione](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114). Con l'introduzione delle API di Office 365 REST, gli utenti possono concedere l'accesso apps ai propri dati di Office 365, ad esempio posta elettronica, calendari, contatti, utenti, gruppi, i file e cartelle. Per impostazione predefinita, gli utenti devono singolarmente concedere le autorizzazioni per ogni applicazione, ma questo non viene ridimensionato anche se si desidera autorizzare un'app una volta a livello di amministratore globale e distribuirlo per l'intera organizzazione attraverso il servizio di avvio di app. A tale scopo, è necessario registrare l'app in Azure Active Directory. Vi sono alcuni passaggi da seguire prima che è possibile registrare un'app in Azure Active Directory e alcune informazioni generali che è necessario conoscere che consentono di gestire le app nella propria organizzazione Office 365. In questo articolo fa riferimento a tali risorse.
   

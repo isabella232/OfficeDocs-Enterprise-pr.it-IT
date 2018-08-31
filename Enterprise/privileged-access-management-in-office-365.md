@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni sulla funzionalità di gestione con privilegi di accesso in Office 365
-ms.openlocfilehash: b2db3e16e53cca7deb2bf8fbff61b5b981f42fa6
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 22286d4f91ffa0bd3c49f028681d20e36d14283d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319207"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915391"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Accesso con privilegi management in Office 365
 
@@ -28,7 +30,7 @@ Accesso privilegiato management consente di controllare l'accesso granulare atti
 
 In questo argomento verrà informazioni utili per la procedura abilitazione e configurazione di gestione con privilegi di accesso nella propria organizzazione Office 365 e fungere da una Guida di riferimento per la richiesta, l'approvazione e gestione della caratteristica. 
 
-## <a name="before-you-begin"></a>L'utente con la cassetta postale principale locale deve disporre di un account utente nell'organizzazione di Office 365.
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 ### <a name="limited-functionality"></a>Funzionalità limitate
 Durante la versione beta pubblica di accesso privilegiato funzionalità di gestione sono disponibili solo tramite [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) in Office 365. Accesso con privilegi management vengono descritte le definizioni delle attività a livello di cmdlet di gestione di Exchange. In Office 365 versioni future, con privilegi di accesso funzionalità verrà reso disponibile tramite il portale di amministrazione e dovrà essere riferita altri servizi di carichi di lavoro di Office 365.
@@ -46,7 +48,7 @@ Eseguire la procedura descritta in [Connect to Exchange Online PowerShell con l'
 ### <a name="step-1---create-an-approvers-group"></a>Passaggio 1 - creare gruppo del revisore
 Dal portale di amministrazione di Office 365, selezionare **gruppi** > **Aggiungi gruppo**, quindi creare un gruppo di protezione abilitato alla posta per i responsabili di accesso predefinito con privilegiata. Al termine, scegliere **Aggiungi** per creare e salvare il gruppo responsabile approvazione.
 
-![Schermata di accesso privilegiato responsabili approvazione nel portale di amministrazione di Office 365](images/privileged-access-approvers-ui.png)
+![Schermata di accesso privilegiato responsabili approvazione nel portale di amministrazione di Office 365](media/privileged-access-approvers-ui.png)
 
 > [!NOTE] 
 > In questa fase, sono consentiti solo agli utenti l'accesso amministrativo approvare le richieste di accesso di Office 365 privilegiato. Qualsiasi utente che fa parte del gruppo dei responsabili approvazione in futuro sarà in grado di approvare le richieste di accesso.
@@ -140,7 +142,7 @@ Disable-ElevatedAccessControl
 ## <a name="managed-access-to-microsoft-graph-in-microsoft-azure"></a>Gestito l'accesso a Microsoft Graph in Microsoft Azure
 
 > [!IMPORTANT]
-> In questa sezione vengono illustrate informazioni aggiuntive di distribuzione e configurazione per una funzionalità di Microsoft Graph versione beta pubblica attualmente disponibile solo in Office 365 E5 e avanzate SKU di conformità.
+> In questa sezione vengono illustrate ulteriori informazioni sulla caratteristica disponibile solo in anteprima.
 
 Gestito l'accesso a Microsoft Graph in Microsoft Azure è un servizio che consente alle organizzazioni di esercitare un livello di granularità del controllo tramite i dati di Office 365. Questo sistema consente agli sviluppatori di applicazioni creare informativa con tali dati. 
 

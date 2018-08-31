@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ec3b08f0-288c-4ba3-b822-dbf6352fa761
 description: 'Riepilogo: Comprendere la struttura delle sottoscrizioni cloud di Contoso, le licenze, gli account utente e tenant.'
-ms.openlocfilehash: 6e62fbbc0f52019e5d233fc73992b000952344f5
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: cd196e0800f6a39973f4c5c82001ed3e9c330fee
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915511"
 ---
 # <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Sottoscrizioni, licenze e account utente per Contoso Corporation
 
@@ -44,9 +47,9 @@ Per garantire un utilizzo coerente di identità e fatturazione per tutte le offe
 
 Contoso ha determinato la struttura seguente per l'organizzazione e per le sottoscrizioni, licenze, account e tenant della stessa:
   
-**Nella figura 1: Del Contoso organizzazione, sottoscrizioni, licenze, gli account utente e tenant**
+**Figura1 : organizzazione di Contoso, sottoscrizioni, licenze, account utente e tenant**
 
-![Organizzazione di Contoso, sottoscrizioni, licenze, account utente e tenant](images/Contoso_Poster/Subscriptions.png)
+![Organizzazione di Contoso, sottoscrizioni, licenze, account utente e tenant](media/Contoso-Poster/Subscriptions.png)
   
 Nella figura 1 viene mostrato in che modo l'organizzazione Contoso include più sottoscrizioni ed è legata a un tenant di Azure AD, il quale comprende gli account utente sincronizzati dalla foresta Windows Server AD di contoso.com.
   
@@ -60,7 +63,8 @@ Nella figura 1 viene mostrato in che modo l'organizzazione Contoso include più 
     
   - Il prodotto EMS con 5.000 licenze
     
-  - Prodotto Dynamics 365 con 100 licenze
+  - Il prodotto Dynamics 365 con 100 licenze
+
     
   - Più sottoscrizioni Azure basate sulle aree geografiche
     
@@ -68,7 +72,8 @@ Nella figura 1 viene mostrato in che modo l'organizzazione Contoso include più 
     
 Per i tenant Contoso:
   
-- Per le offerte cloud SaaS, tenant è il percorso internazionale in cui si trova il server che offrono servizi basati su cloud. Contoso ha scelto la regione Europa per ospitare il tenant Office 365, EMS e Dynamics 365. 
+- Per le offerte cloud SaaS, il tenant rappresenta il percorso locale che ospita i server che forniscono i servizi cloud. Contoso ha scelto l'area dell'Europa per ospitare i tenant di Office 365, EMS e Dynamics 365.
+  
     
 - Azure PaaS servizi e applicazioni e carichi di lavoro IaaS IT possono avere tenancy in un Data Center Azure in tutto il mondo. Un tenant di Azure Active Directory è un'istanza specifica di Azure Active Directory contenente gli account e gruppi.
     
@@ -78,11 +83,14 @@ Per ulteriori informazioni, vedere [sottoscrizioni, le licenze, gli account util
   
 ## <a name="contosos-azure-subscriptions"></a>Sottoscrizioni Azure contoso
 
-Nella figura 2 viene illustrata la struttura gerarchica delle sottoscrizioni Azure Contoso:
-  
-**Figura 2: Struttura di Contoso per le sottoscrizioni di Azure**
+Nella figura 2 viene mostrata la struttura gerarchica delle sottoscrizioni Azure di Contoso: 
 
-![Struttura di Contoso per sottoscrizioni di Azure](images/Contoso_Poster/Subscriptions_Nested.png)
+
+
+  
+**Figura 2: struttura di Contoso per sottoscrizioni Azure**
+
+![Struttura di Contoso per sottoscrizioni di Azure](media/Contoso-Poster/Subscriptions-Nested.png)
   
 - Contoso è nella parte superiore, in base agli accordi aziendali con Microsoft.
     

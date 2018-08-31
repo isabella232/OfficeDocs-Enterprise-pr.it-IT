@@ -1,5 +1,5 @@
 ---
-title: Gestire i gruppi del sito SharePoint Online con Office 365 PowerShell
+title: Manage SharePoint Online site groups with Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,30 +14,31 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: Utilizzare Office 365 PowerShell per gestire i gruppi del sito SharePoint Online.'
-ms.openlocfilehash: 881e67b7eb2d8bb5e04f83e28569aa54341d16b9
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: a9fddf33b2f29e7b4e8ed6b86c2433c7ca19a9fc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915351"
 ---
-# <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Gestire i gruppi del sito SharePoint Online con Office 365 PowerShell
+# <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Manage SharePoint Online site groups with Office 365 PowerShell
 
  **Riepilogo:** Utilizzare Office 365 PowerShell per gestire i gruppi del sito SharePoint Online.
   
 Sebbene sia possibile utilizzare l'interfaccia di amministrazione di Office 365, è inoltre possibile utilizzare Office 365 PowerShell per gestire i gruppi del sito di SharePoint Online.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Le procedure descritte in questo articolo è necessario per la connessione a SharePoint Online. Per ulteriori informazioni, vedere [connettersi a PowerShell per SharePoint Online](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 ## <a name="view-sharepoint-online-with-office-365-powershell"></a>Visualizzazione SharePoint Online con Office 365 PowerShell
 
-Interfaccia di amministrazione di SharePoint Online include alcuni metodi da utilizzare per la gestione dei gruppi del sito. Ad esempio, si supponga che si desidera esaminare i gruppi e i membri del gruppo, per il protocollo https\://litwareinc.sharepoint.com/sites/finance sito. Ecco che cosa è necessario effettuare per:
+Interfaccia di amministrazione di SharePoint Online include alcuni metodi da utilizzare per la gestione dei gruppi del sito. Ad esempio, si supponga che si desidera esaminare i gruppi e i membri del gruppo, per il `https://litwareinc.sharepoint.com/sites/finance` sito. Ecco che cosa è necessario effettuare per:
 
 1. Dall'interfaccia di amministrazione di Office 365, fare clic su **risorse** > di**siti**e quindi fare clic sull'URL del sito.
 2. Nella finestra di dialogo raccolta siti, fare clic su **Vai a questo sito**.
 3. Nella pagina sito fare clic sull'icona **Impostazioni** (si trova nell'angolo superiore destro della pagina) e quindi fare clic su **Impostazioni sito**:</br>
-![Impostazioni del sito di SharePoint Online](images/spo-site-settings.png)</br>
+![Impostazioni del sito di SharePoint Online](media/spo-site-settings.png)</br>
 4. Nella pagina Impostazioni sito fare clic su **autorizzazioni di siti** in **utenti e autorizzazioni**.
 
 Ripetere quindi la procedura per il sito successivo.
@@ -66,9 +67,9 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 In entrambi i casi, verrà visualizzato qualcosa di simile alla seguente:
 
-![Gruppi di siti di SharePoint Online](images/SPO-site-groups.png)
+![Gruppi di siti di SharePoint Online](media/SPO-site-groups.png)
 
-Si tratta di tutti i gruppi che sono stati creati per i siti https\:/ / litwareinc.sharepoint.com/sites/finance, nonché tutti gli utenti assegnati a tali gruppi. I nomi dei gruppi sono di colore giallo che consentono di nomi di gruppi separati dai relativi membri.
+Si tratta di tutti i gruppi che sono stati creati per il sito `https://litwareinc.sharepoint.com/sites/finance`, così come tutti gli utenti assegnati a tali gruppi. I nomi dei gruppi sono di colore giallo che consentono di nomi di gruppi separati dai relativi membri.
 
 Come ulteriore esempio, di seguito è un set di comandi in cui sono elencati i gruppi e tutte le appartenenze a gruppi, per tutti i siti di SharePoint Online.
 
@@ -90,9 +91,9 @@ foreach ($y in $x)
     
 ## <a name="see-also"></a>Vedere anche
 
-[Connettersi a PowerShell per SharePoint Online](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Connettersi a PowerShell per SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Creare siti di SharePoint Online e aggiungere utenti a Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+[Creare siti di SharePoint Online e aggiungere utenti con PowerShell di Office 365](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Office 365](manage-sharepoint-users-and-groups-with-powershell.md)
 

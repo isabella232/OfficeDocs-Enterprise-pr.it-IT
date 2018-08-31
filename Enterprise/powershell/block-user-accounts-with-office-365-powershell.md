@@ -14,11 +14,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Questo articolo viene illustrato come utilizzare Office 365 PowerShell per bloccare e sbloccare l'accesso agli account di Office 365.
-ms.openlocfilehash: 34d144c982210ddc9d557b6094f71706f8edbb7f
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 748d24f95f9dca651158dae2fe15e9c655eb021e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915411"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Bloccare gli account utente con Office 365 PowerShell
 
@@ -26,11 +27,11 @@ ms.lasthandoff: 02/14/2018
   
 Bloccare l'accesso a un account di Office 365 consente di evitare di utilizzare l'account per l'accesso e accedere ai servizi e dati all'interno dell'organizzazione Office 365. Quando si blocca l'accesso all'account, l'utente riceve il messaggio di errore quando si tenta di effettuare l'accesso:
   
-![Account di Office 365 bloccato.](images/o365_powershell_account_blocked.png)
+![Account di Office 365 bloccato.](media/o365-powershell-account-blocked.png)
   
 È possibile utilizzare Office 365 PowerShell per bloccare l'accesso a singoli e più account utente.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
     
@@ -161,7 +162,6 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 ```
 
 ## <a name="see-also"></a>Vedere anche
-<a name="SeeAlso"> </a>
 
 Vedere i seguenti argomenti aggiuntivi sulla gestione degli utenti con Office 365 PowerShell:
   

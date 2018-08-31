@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità elevata federati proxy di applicazione web fase 4 configurare l'autenticazione"
+title: Disponibilità elevata federati proxy di applicazione web fase 4 configurare l'autenticazione
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: "Riepilogo: Configurare il server proxy applicazione web per l'autenticazione federata la disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: 3465281c6ba27c52cc7a991e400fb4f4a892b244
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 0f0299fe8fecdea608330eebc12aea01098f8cec
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915811"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 dell'autenticazione federata a disponibilità elevata: Configurare i proxy dell'applicazione Web
 
@@ -31,7 +32,7 @@ In questa fase di distribuzione di disponibilità elevata per l'autenticazione f
 È necessario creare un bilanciatore di carico per traffico Internet affinché Azure distribuisca il traffico di autenticazione del client in arrivo da Internet uniformemente tra i due server proxy dell'applicazione Web.
   
 > [!NOTE]
-> Il seguente comando consente di utilizzare la versione più recente di Azure PowerShell. Vedere [iniziare a utilizzare i cmdlet PowerShell di Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Una volta forniti i valori per i gruppi di risorse e il percorso, eseguire il blocco risultante nel prompt dei comandi di Azure PowerShell o in PowerShell ISE.
   
@@ -63,13 +64,13 @@ Write-Host (Get-AzureRMPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $
   
 Una volta ottenuto il nome di dominio completo del servizio federativo, creare un record di tipo A del dominio DNS pubblico per il nome di dominio completo che consente di determinare l'indirizzo IP pubblico del bilanciatore di carico per traffico Internet di Azure.
   
-|**Name**|**Tipo**|**TTL**|**Valore**|
+|**Nome**|**Tipo**|**TTL**|**Valore**|
 |:-----|:-----|:-----|:-----|
-|Nome di dominio completo del servizio federativo  <br/> |A  <br/> |3600  <br/> |indirizzo IP pubblico del bilanciamento del carico per Internet di Azure (visualizzato dal comando di **Write-Host** nella sezione precedente) <br/> |
+|Nome di dominio completo del servizio federativo  <br/> |A  <br/> |3600  <br/> |Indirizzo IP pubblico del bilanciatore di carico per traffico Internet di Azure (visualizzato dal comando **Write-Host** nella sezione precedente) <br/> |
    
 Ecco un esempio:
   
-|**Name**|**Tipo**|**TTL**|**Valore**|
+|**Nome**|**Tipo**|**TTL**|**Valore**|
 |:-----|:-----|:-----|:-----|
 |FS.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -149,17 +150,17 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Dal momento che queste macchine virtuali sono relative a un'applicazione intranet, non vengono assegnati un indirizzo IP pubblico o un'etichetta nome di dominio DNS ed esposti a Internet. Tuttavia, ciò significa inoltre che non è possibile connettersi a tali dal portale di Azure. Quando si visualizzano le proprietà della macchina virtuale non è disponibile l'opzione **Connetti** . Utilizzare accessorio connessione Desktop remoto o un altro strumento di Desktop remoto per la connessione alla macchina virtuale utilizzando il relativo privata indirizzo IP o intranet DNS nome e le credenziali dell'account di amministratore locale.
+> Poiché queste macchine virtuali sono per un'applicazione Intranet, non sono assegnate a un indirizzo IP pubblico o a un'etichetta del nome di dominio DNS ed esposte a Internet. Tuttavia, ciò significa anche che non è possibile connettersi a tali macchine virtuali dal portale di Azure. L'opzione **Connetti** non è disponibile quando si visualizzano le proprietà della macchina virtuale. Usare l'accessorio Connessione desktop remoto o un altro strumento Desktop remoto per connettersi alla macchina virtuale usando il relativo indirizzo IP privato o il nome DNS Intranet e le credenziali dell'account di amministratore locale.
   
 Di seguito è riportata la configurazione risultante dal completamento corretto di questa fase, con i nomi computer segnaposto.
   
-**Fase 4: Con connessione Internet carico bilanciamento e server proxy di applicazione web per l'infrastruttura di autenticazione federativa la disponibilità elevata in Azure**
+**Fase 4: il bilanciatore di carico per traffico Internet e i server proxy delle applicazioni Web per l'infrastruttura di autenticazione federata a disponibilità elevata in Azure**
 
-![Fase 4 dell'autenticazione federata di Office 365 con disponibilità elevata in Azure con i server proxy applicazione](images/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Fase 4 dell'autenticazione federata di Office 365 con disponibilità elevata in Azure con i server proxy applicazione](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>Passaggio successivo
 
-Utilizzare [la disponibilità elevata federati autenticazione fase 5: configurare l'autenticazione federata per Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) per continuare a configurare questo carico di lavoro.
+Utilizzare [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) per continuare a configurare il carico di lavoro.
   
 ## <a name="see-also"></a>Vedere anche
 
@@ -169,6 +170,6 @@ Utilizzare [la disponibilità elevata federati autenticazione fase 5: configurar
   
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 
-[Identità federata per Office 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[Opzioni di autenticazione federata](about-office-365-identity.md#federated-authentication-options)
 
 

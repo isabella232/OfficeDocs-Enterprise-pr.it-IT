@@ -9,13 +9,16 @@ ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Riepilogo: Informazioni su come creare un laboratorio di testing integrato che include un server che esegue Exchange Server 2013, un server che esegue Lync Server 2013 e un server che esegue SharePoint Server 2013.'
-ms.openlocfilehash: a15bdefe1749bca98933a8b9a4c4874130732eda
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: bb668dcaff53f37127f43551cb4b108589a39def
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915601"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guida del laboratorio di testing: Configurare un laboratorio di testing integrato di Exchange, Lync e SharePoint
 

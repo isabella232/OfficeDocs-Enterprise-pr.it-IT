@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Riepilogo: Informazioni su come ExpressRoute grado di aiutarti con connessioni più veloci e affidabili a piattaforme e servizi cloud di Microsoft.'
-ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188114"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915491"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute per la connettività cloud Microsoft
 
@@ -31,7 +33,7 @@ Di seguito è il percorso di rete per il cloud Microsoft senza una connessione E
   
 **Figura 1: Il percorso di rete senza ExpressRoute**
 
-![Figura 1: Il percorso di rete senza ExpressRoute](images/Network_Poster/ExpressRoute.png)
+![Figura 1: Il percorso di rete senza ExpressRoute](media/Network-Poster/ExpressRoute.png)
   
 Nella figura 1 viene visualizzato il percorso tipico tra una rete locali e cloud Microsoft. Perimetro della rete locale si connette a Internet tramite una rete WAN collegamento a un provider di servizi Internet. Il traffico passa quindi via Internet e il lato del cloud Microsoft. Offerte del cloud all'interno di Microsoft cloud includono Office 365, Microsoft Azure, Microsoft Intune e Dynamics 365. Gli utenti di un'organizzazione possono trovarsi nella rete locale o su Internet.
   
@@ -45,7 +47,7 @@ Di seguito sono i percorsi di reti per il cloud Microsoft con una connessione Ex
   
 **Figura 2: I percorsi di rete senza ExpressRoute**
 
-![Figura 2: I percorsi di rete senza ExpressRoute](images/Network_Poster/ExpressRoute_post.png)
+![Figura 2: I percorsi di rete senza ExpressRoute](media/Network-Poster/ExpressRoute-post.png)
   
 Nella figura 2 sono riportati i due percorsi di reti. Il traffico a Microsoft Intune passa nello stesso percorso normale traffico Internet. Traffico a Office 365 e Azure Microsoft Dynamics 365 viaggia tra la connessione ExpressRoute, un percorso dedicato tra il bordo della rete locale e il bordo del cloud Microsoft.
   
@@ -87,7 +89,7 @@ Tabella 1 sono indicati i tre modelli di connettività principale per le conness
   
 |**Percorso condiviso in un exchange cloud**|**Scheda Ethernet punto-punto**|**Tutti a qualsiasi IP connessione VPN)**|
 |:-----|:-----|:-----|
-|![Modello di connettività ExpressRoute: Percorso condiviso in un exchange cloud](images/Network_Poster/ER_Conn1.png)|![Modello di connettività ExpressRoute: Ethernet punto a punto](images/Network_Poster/ER_Conn2.png)|![Modello di connettività ExpressRoute: Connessione punto a punto (VPN IP)](images/Network_Poster/ER_Conn3.png)|
+|![Modello di connettività ExpressRoute: Percorso condiviso in un exchange cloud](media/Network-Poster/ER-Conn1.png)|![Modello di connettività ExpressRoute: Ethernet punto a punto](media/Network-Poster/ER-Conn2.png)|![Modello di connettività ExpressRoute: Connessione punto a punto (VPN IP)](media/Network-Poster/ER-Conn3.png)|
 |Se i datacenter situati in una struttura con uno scambio cloud, è possibile ordinare una connessione tra virtuale nel cloud Microsoft tramite exchange Ethernet del provider posizione condivisa.  <br/> |Se il centro dati si trova il locale, è possibile utilizzare un collegamento di una scheda Ethernet da punto a punto per la connessione a Microsoft cloud.  <br/> |Se si utilizza già un provider di servizi VPN IP (MPLS) per connettere i siti dell'organizzazione, una connessione ExpressRoute nel cloud Microsoft funge da un'altra posizione sulla WAN privata.  <br/> |
    
  **Tabella 1: Modelli di connettività ExpressRoute**
@@ -98,7 +100,7 @@ Una singola connessione ExpressRoute supporta fino a tre diverse Border Gateway 
   
 **Figura 3: Le tre diverse relazioni BGP in una sola connessione ExpressRoute**
 
-![Figura 3: Le tre diverse relazioni BGP in una sola connessione ExpressRoute](images/Network_Poster/ERPeering.png)
+![Figura 3: Le tre diverse relazioni BGP in una sola connessione ExpressRoute](media/Network-Poster/ERPeering.png)
   
 Nella figura 3 viene mostrata una connessione ExpressRoute da una rete locale. La connessione ExpressRoute include tre relazioni peering logiche. Una relazione di peering Microsoft passerà a servizi SaaS Microsoft, tra cui Office 365 e Dynamcs CRM Online. Una relazione di peering pubblica passerà a servizi di Azure PaaS. Una relazione di peering privata passa per Azure IaaS e un gateway di rete virtuale che ospita le macchine virtuali.
   
@@ -128,7 +130,7 @@ Come si sposti il traffico tra le connessioni ExpressRoute e all'interno di Micr
   
 **Figura 4: Un'applicazione in una macchina virtuale Azure che accede a una farm locale di SharePoint**
 
-![Figura 4: Un'applicazione in una macchina virtuale Azure che accede a una farm locale di SharePoint](images/Network_Poster/ER_App_Flow1.png)
+![Figura 4: Un'applicazione in una macchina virtuale Azure che accede a una farm locale di SharePoint](media/Network-Poster/ER-App-Flow1.png)
 
   
 Figura 4 viene illustrato il flusso di una farm di SharePoint locale, una connessione VPN da sito tra la rete locale e una rete virtuale in Azure IaaS, un server applicazioni in esecuzione come una macchina virtuale Azure IaaS e il traffico tra il server applicazioni e farm di SharePoint.
@@ -139,7 +141,7 @@ L'organizzazione migrati le farm di SharePoint locale in SharePoint Online in Of
   
 **Figura 5: Spostamento dalla farm locale SharePoint a SharePoint Online**
 
-![Figura 5: Spostamento dalla farm locale SharePoint a SharePoint Online](images/Network_Poster/Hairpin1.png)
+![Figura 5: Spostamento dalla farm locale SharePoint a SharePoint Online](media/Network-Poster/Hairpin1.png)
   
 Figura 5 viene illustrata l'aggiunta di una connessione ExpressRoute con relazioni di peering per Microsoft SaaS e Office 365 e Azure IaaS contenente il server applicazioni in una rete virtuale. Farm di SharePoint locale è stata eseguita la migrazione a Office 365.
   
@@ -157,7 +159,7 @@ Quando il server proxy individua l'indirizzo IP di SharePoint Online, inoltra il
   
 **Figura 6: Flusso del traffico quando la farm di SharePoint è stata migrata a SharePoint Online in Office 365**
 
-![Figura 6: Flusso del traffico quando la farm di SharePoint è stata migrata a SharePoint Online in Office 365](images/Network_Poster/Hairpin2.png)
+![Figura 6: Flusso del traffico quando la farm di SharePoint è stata migrata a SharePoint Online in Office 365](media/Network-Poster/Hairpin2.png)
 
   
 Figura 6 mostra come il traffico tra il server applicazioni e SharePoint Online in Office 365 copre la relazione di peering privata dal server applicazioni e il margine di rete locale e quindi dal bordo tramite la relazione peering Microsoft per Office 365.
@@ -186,7 +188,7 @@ Ciò potrebbe causare recapito non ottimale di datacenter Microsoft locale per i
   
 **Figura 7: Esempio di un'organizzazione geograficamente distribuita che utilizza una sola connessione ExpressRoute**
 
-![Figura 7: Esempio di un'organizzazione geograficamente distribuita che utilizza una sola connessione ExpressRoute](images/Network_Poster/MSNet1.png)
+![Figura 7: Esempio di un'organizzazione geograficamente distribuita che utilizza una sola connessione ExpressRoute](media/Network-Poster/MSNet1.png)
   
 Figura 7 mostra un'organizzazione con due percorsi 1 località in Nord-Ovest degli Stati Uniti e 2 posizione del nord-est. Sono connessi da un qualsiasi per qualsiasi provider WAN. L'organizzazione ha inoltre una connessione ExpressRoute in un percorso peering Microsoft costa occidentale. Il traffico proveniente da posizioni 2 in Nord-Est destinate a un datacenter costa orientale deve recarsi completamente WAN dell'organizzazione in costa occidentale del percorso peering Microsoft e quindi nuovamente in tutto il paese sulla rete cloud Microsoft per la zona est Data Center.
   
@@ -194,7 +196,7 @@ Per il recapito ottimale, utilizzare più connessioni ExpressRoute per regionali
   
 **Figura 8: L’uso di più connessioni ExpressRoute per una consegna ottimale ai datacenter dell’area**
 
-![Figura 8: L’uso di più connessioni ExpressRoute per una consegna ottimale ai datacenter dell’area](images/Network_Poster/MSNet2.png)
+![Figura 8: L’uso di più connessioni ExpressRoute per una consegna ottimale ai datacenter dell’area](media/Network-Poster/MSNet2.png)
   
 Figura 8 Mostra alla stessa organizzazione con due connessioni ExpressRoute, uno per ogni località nella regione locale posizioni peering Microsoft. In questa configurazione, il traffico proveniente da posizioni 2 in Nord-Est destinate a un datacenter costa orientale passa direttamente in una posizione peering costa orientale, alla rete cloud Microsoft e quindi al datacenter costa orientale.
   
@@ -224,7 +226,7 @@ Con più connessioni ExpressRoute Premium, è possibile disporre di:
   
 **Figura 9: Livello mondiale Microsoft cloud network**
 
-![Figura 9: Rete mondiale Microsoft Cloud](images/Network_Poster/MSNet3.png)
+![Figura 9: Rete mondiale Microsoft Cloud](media/Network-Poster/MSNet3.png)
   
 Figura 9 mostra un diagramma logico della rete mondiale Microsoft cloud, con le reti che includono il continenti e le aree di tutto il mondo e i collegamenti. Con una parte della rete Microsoft cloud in ogni continente, un'azienda globale crea ExpressRoute Premium connessioni sedi internazionali hub ai percorsi di peering Microsoft locali.
   
@@ -268,7 +270,7 @@ Vedere le risorse aggiuntive per ulteriori informazioni:
 
 ## <a name="see-also"></a>Vedere anche
 
-[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete di Microsoft Cloud per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

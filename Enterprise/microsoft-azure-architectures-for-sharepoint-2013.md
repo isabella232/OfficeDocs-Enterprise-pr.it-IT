@@ -1,5 +1,5 @@
 ---
-title: Microsoft Azure Architectures for SharePoint 2013
+title: Architetture di Microsoft Azure per SharePoint 2013
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Riepilogo: Soluzioni di SharePoint 2013 possono essere ospitate in macchine virtuali di Microsoft Azure. Informazioni su quali tipi di soluzioni sono utile e configurare Microsoft Azure per ospitare uno.'
-ms.openlocfilehash: 5156f3e8cabb3acabc7ad23a680a016c200c676e
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915381"
 ---
-# <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure Architectures for SharePoint 2013
+# <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architetture di Microsoft Azure per SharePoint 2013
 
  **Riepilogo:** Soluzioni di SharePoint 2013 possono essere ospitate in macchine virtuali di Microsoft Azure. Informazioni su quali tipi di soluzioni sono utile e configurare Microsoft Azure per ospitare uno.
   
@@ -55,7 +56,7 @@ Durante questo articolo vengono utilizzate le topologie di esempio SharePoint, �
   
 - [Progettazione dell'architettura per SharePoint 2013 per professionisti IT](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
     
-- [Pianificare le prestazioni e la gestione della capacità in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Pianificare la gestione delle prestazioni e della capacità in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Determinare il tipo di dominio Active Directory
 
@@ -76,7 +77,7 @@ Se si estende la rete locale in Azure tramite una connessione tra locali (necess
   
 **Nella figura 1: Ambiente locale con una rete virtuale in Azure**
 
-![Progettazione di una rete virtuale di Microsoft Azure per una soluzione SharePoint. Una subnet per il gateway di Azure. Una subnet per le macchine virtuali.](images/OPrrasconWA_AZarch.png)
+![Progettazione di una rete virtuale di Microsoft Azure per una soluzione SharePoint. Una subnet per il gateway di Azure. Una subnet per le macchine virtuali.](media/OPrrasconWA-AZarch.png)
   
 In questo diagramma:
   
@@ -92,7 +93,7 @@ Quando si pianifica una connessione tra locali, definire e creare un gateway Azu
   
 **Figura 2: Utilizzo di un gateway Azure e un dispositivo gateway locale per fornire la connettività da sito tra l'ambiente locale e Azure**
 
-![Ambiente locale connesso a una rete virtuale di Azure tramite una connessione tra sedi locale, che può essere una connessione VPN da sito a sito oppure ExpressRoute](images/AZarch_VPNgtwyconnct.png)
+![Ambiente locale connesso a una rete virtuale di Azure tramite una connessione tra sedi locale, che può essere una connessione VPN da sito a sito oppure ExpressRoute](media/AZarch-VPNgtwyconnct.png)
   
 In questo diagramma:
   
@@ -110,7 +111,7 @@ Ripristino di emergenza in Azure, distribuire Windows Server Active Directory e 
   
 **Figura 3: Configurazione del dominio ibrido Active Directory**
 
-![Le macchine virtuali STwo distribuite nella rete virtuale di Azure e la subnet farm di SharePoint sono controller di dominio di replica e server DNS](images/AZarch_HyADdomainConfig.png)
+![Le macchine virtuali STwo distribuite nella rete virtuale di Azure e la subnet farm di SharePoint sono controller di dominio di replica e server DNS](media/AZarch-HyADdomainConfig.png)
   
 In questo diagramma si basa sulle diagrammi precedenti mediante l'aggiunta di due macchine virtuali di Windows Server Active Directory e DNS subnet. Le macchine virtuali sono controller di dominio di replica e i server DNS. Si tratta di un'estensione dell'ambiente Windows Server Active Directory locale. 
   
@@ -134,7 +135,7 @@ Inserire le macchine virtuali nella farm di SharePoint nei livelli di subnet app
   
 **Figura 4: Posizionamento di macchine virtuali di SharePoint**
 
-![I server del database e i ruoli server di SharePoint aggiunti alla rete virtuale di Azure all'interno della subnet farm di SharePoint](images/AZarch_SPVMsinCloudSer.png)
+![I server del database e i ruoli server di SharePoint aggiunti alla rete virtuale di Azure all'interno della subnet farm di SharePoint](media/AZarch-SPVMsinCloudSer.png)
   
 In questo diagramma si basa sulle diagrammi precedenti aggiungendo i ruoli di server farm di SharePoint nel loro i rispettivi livelli.
   
@@ -150,7 +151,7 @@ Quando si progetta l'architettura di Azure per una farm di SharePoint, configura
   
 **Nella figura 5: Set di disponibilità utilizzare Azure per garantire la disponibilità elevata per i livelli di farm di SharePoint**
 
-![Configurazione dei set di disponibilità nell'infrastruttura di Azure per una soluzione di SharePoint 2013](images/AZenv_WinAzureAvailSetsHA.png)
+![Configurazione dei set di disponibilità nell'infrastruttura di Azure per una soluzione di SharePoint 2013](media/AZenv-WinAzureAvailSetsHA.png)
   
 In questo diagramma vengono indicati la configurazione del set di disponibilità all'interno dell'infrastruttura di Azure. Ognuno dei ruoli seguenti condividere un set di disponibilità separati:
   
@@ -170,7 +171,7 @@ Ecco un esempio in cui viene illustrata un'architettura di siti Internet standar
   
 **Figura 6: Pianificazione di esempio per gli obiettivi di capacità e prestazioni in una farm a tre livelli**
 
-![Architettura standard dei siti Internet di SharePoint 2013 con allocazioni dei componenti che soddisfano le esigenze di capacità e prestazioni](images/AZarch_CapPerfexmpArch.png)
+![Architettura standard dei siti Internet di SharePoint 2013 con allocazioni dei componenti che soddisfano le esigenze di capacità e prestazioni](media/AZarch-CapPerfexmpArch.png)
   
 In questo diagramma:
   
@@ -186,7 +187,7 @@ Di seguito vengono illustrate più vicina al livello di server applicazioni.
   
 **Figura 7: Livello di server applicazioni prima di ottimizzazione**
 
-![Esempio del livello server applicazione di SharePoint Server 2013 prima dell'ottimizzazione per i set di disponibilità di Microsoft Azure](images/AZarch_AppServtierBefore.png)
+![Esempio del livello server applicazione di SharePoint Server 2013 prima dell'ottimizzazione per i set di disponibilità di Microsoft Azure](media/AZarch-AppServtierBefore.png)
   
 In questo diagramma:
   
@@ -202,7 +203,7 @@ Determinare il numero di componenti gli obiettivi di prestazioni e capacità per
   
 **Figura 8: Livello di server applicazioni dopo l'ottimizzazione**
 
-![Esempio del livello server applicazione di SharePoint Server 2013 dopo l'ottimizzazione per i set di disponibilità di Microsoft Azure](images/AZarch_AppServtierAfter.png)
+![Esempio del livello server applicazione di SharePoint Server 2013 dopo l'ottimizzazione per i set di disponibilità di Microsoft Azure](media/AZarch-AppServtierAfter.png)
   
 Figura che mostra tutti i server applicazioni tre configurati in modo identico con gli stessi quattro componenti.
   
@@ -210,11 +211,11 @@ Quando si aggiungono set di disponibilità per i livelli della farm di SharePoin
   
 **Figura 9: Completate farm di SharePoint in servizi di infrastruttura**
 
-![Esempio di farm di SharePoint 2013 nei servizi infrastruttura di Azure con rete virtuale, connettività tra più sedi locali, subnet, macchine virtuali e set di disponibilità](images/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Esempio di farm di SharePoint 2013 nei servizi infrastruttura di Azure con rete virtuale, connettività tra più sedi locali, subnet, macchine virtuali e set di disponibilità](media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 Figura che mostra la farm di SharePoint implementata in servizi di infrastruttura, con set di disponibilità per fornire i domini di errore per i server in ogni livello.
   
-**Partecipare alla discussione**
+**Partecipa alla discussione**
 
 |**Contattaci**|**Descrizione**|
 |:-----|:-----|

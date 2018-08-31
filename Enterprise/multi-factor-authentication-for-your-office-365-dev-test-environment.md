@@ -1,24 +1,27 @@
 ---
-title: "Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365"
+title: Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/22/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "Riepilogo: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno smartphone in un ambiente di sviluppo e testing di Office 365."
-ms.openlocfilehash: 23c5aa4e205937899cac813b3b39780c989a1073
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+ms.openlocfilehash: 12458e2dd41518deb0b540e809a08c4df865a3df
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915661"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365
 
@@ -50,7 +53,7 @@ Se si desidera testare l'autenticazione a più fattori in un'azienda simulata, s
 
 Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel modo seguente:
   
-1. Aprire un'istanza separata del browser, accedere al Portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
+1. Aprire un'istanza separata del browser, accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e quindi effettuare l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
     
 2. Dalla pagina principale del portale, fare clic su **Admin**.
     
@@ -58,7 +61,7 @@ Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel mo
     
 4. Nel riquadro Utenti attivi, fare clic su **Altro > Configura autenticazione a più fattori Azure**.
     
-5. Nell'elenco, fare clic sull'account **User 2**.
+5. Nell'elenco, selezionare l'account **utente 2** .
     
 6. Nella sezione **User 2**, sotto **Azioni rapide**, fare clic su **Abilita**.
     
@@ -74,7 +77,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 1. Aprire una nuova istanza del browser.
     
-2. Andare al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso con l'account User 2 (user2@\<nome organizzazione>.onmicrosoft.com) e la password.
+2. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere con l'account utente 2 (user2 @\<nome organizzazione >. onmicrosoft.com) e una password.
     
 3. Dopo l'accesso, viene chiesto di configurare l'account per un'ulteriore convalida di sicurezza. Fare clic su **Configura ora**.
     
@@ -84,21 +87,17 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
   - Digitare il numero di telefono dello smartphone che riceverà i messaggi di testo.
     
-  - Selezionare **Invia un codice tramite messaggio di testo**.
+  - nel **metodo**, fare clic su **Invia automaticamente un codice di un messaggio**.
     
-5. Fare clic su **Contattami**.
+5. Fare clic su **Avanti**.
     
 6. Immettere il codice di verifica del messaggio di testo ricevuto sullo smartphone e quindi fare clic su **Verifica**.
     
 7. Nella pagina **Passaggio 3: Mantenere le applicazioni esistenti**, annotare la password dell'app visualizzata per l'account User 2 in una posizione sicura e fare clic su **Fine**.
     
-8. Tornare alla pagina di accesso, digitare la password per l'account User 2 e fare clic su **Accedi**.
+8. Se è la prima volta che si accede con l'account User 2, viene richiesto di modificare la password. Digitare la password originale e una nuova password due volte, quindi fare clic su **Aggiornare la password ed eseguire l'accesso**. Annotare nome e password in una posizione sicura.
     
-9. Immettere il codice di verifica riportato nel messaggio di testo ricevuto sullo smartphone, quindi fare clic su **Accedi**.
-    
-10. Se è la prima volta che si accede con l'account User 2, viene richiesto di modificare la password. Digitare la password originale e una nuova password due volte, quindi fare clic su **Aggiornare la password ed eseguire l'accesso**. Annotare nome e password in una posizione sicura.
-    
-    Verrà visualizzato il portale di Office 365 per User 2.
+    È consigliabile vedere portale di Office 365 per l'utente 2 nella scheda **Home page di Microsoft Office** del browser.
     
 ## <a name="see-also"></a>Vedere anche
 

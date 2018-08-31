@@ -1,5 +1,5 @@
 ---
-title: "Elementi comuni della connettività cloud Microsoft"
+title: Elementi comuni della connettività cloud Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
-description: 'Riepilogo: Informazioni su come preparare la rete e gli elementi comuni dell''infrastruttura di rete.'
-ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: "Riepilogo: Informazioni su come preparare la rete e gli elementi comuni dell'infrastruttura di rete."
+ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915651"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementi comuni della connettività cloud Microsoft
 
@@ -48,7 +51,7 @@ Utilizzare il canale Internet esistente o una connessione ExpressRoute a Office 
   
 **Figura 1: Opzioni per la connettività cloud Microsoft**
 
-![Figura 1:  Opzioni per la connettività di Microsoft Cloud](images/Network_Poster/CommonElements.png)
+![Figura 1:  Opzioni per la connettività di Microsoft Cloud](media/Network-Poster/CommonElements.png)
 
   
 Nella figura 1 viene illustrato come una rete locale può essere connesso a offerte cloud Microsoft utilizzando la propria pipe Internet esistente o ExpressRoute. Il canale Internet rappresenta una DMZ e può avere i seguenti componenti:
@@ -85,8 +88,8 @@ Nella figura 1 viene illustrato come una rete locale può essere connesso a offe
 
 <a name="steps"> </a>
 
-[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete di Microsoft Cloud per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 

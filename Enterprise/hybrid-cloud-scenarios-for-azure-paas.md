@@ -1,5 +1,5 @@
 ---
-title: Scenari basati su cloud ibrida per Azure PaaS
+title: Scenari cloud ibridi per Azure PaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: 'Riepilogo: Informazioni su architettura ibrida e gli scenari per la piattaforma Microsoft come servizio (PaaS)-basato su cloud offerte in Azure.'
-ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915011"
 ---
-# <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scenari basati su cloud ibrida per Azure PaaS
+# <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scenari cloud ibridi per Azure PaaS
 
  **Riepilogo:** Acquisire familiarità con l'architettura ibrida e gli scenari per la piattaforma Microsoft come servizio (PaaS)-basato su cloud offerte in Azure.
   
@@ -30,7 +31,7 @@ Nella figura 1 illustra l'architettura di scenari basati su PaaS ibridi Microsof
   
 **Nella figura 1: Scenari di ibrida basata su PaaS Microsoft in Azure**
 
-![Scenari ibridi Microsoft basati su PaaS in Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS.png)
+![Scenari ibridi Microsoft basati su PaaS in Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
 Per ogni livello dell'architettura:
   
@@ -56,7 +57,7 @@ Nella figura 2 viene illustrata la configurazione di un'applicazione ibrida in e
   
 **Nella figura 2: Applicazione ibrida basata su PaaS Azure**
 
-![Applicazione ibrida basta su PaaS di Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps.png)
+![Applicazione ibrida basta su PaaS di Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
 Nella figura 2, una rete locale ospita archiviazione o applicazioni server e una DMZ contenente un server proxy. Si connette ai servizi di Azure PaaS tramite Internet o con una connessione ExpressRoute.
   
@@ -78,7 +79,7 @@ Nella figura 3 viene mostrata un'applicazione di ibrida di esempio in esecuzione
   
 **Figura 3: Un esempio di un'applicazione basata su Azure PaaS ibrida**
 
-![Un esempio di applicazione ibrida di Azure basata su PaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_Ex.png)
+![Un esempio di applicazione ibrida di Azure basata su PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
 Nella figura 3, un host di rete locale un LOB App Azure PaaS ospita un'applicazione personalizzata per dispositivi mobili. Un dispositivo smartphone su Internet accede l'app personalizzata per dispositivi mobili in Azure, che invia le richieste di dati per l'applicazione LOB locale.
   
@@ -104,7 +105,7 @@ Database Ridimensiona con SQL Server 2016 illustrato nella figura 4.
   
 **Figura 4: Database esteso con SQL Server 2016**
 
-![Estensione database con SQL Server 2016](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_SQL.png)
+![Estensione database con SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
   
 Nella figura 4, una rete locale ospita un server che esegue SQL Server 2016 con un database locale di piccole dimensioni. Azure PaaS ospita un'istanza di Database Ridimensiona Azure SQL Server con la parte estesa del database. Query T-SQL da un utente locale inviati a SQL server in locale in modo sicuro vengono inoltrate al Database Ridimensiona SQL Azure, che restituisce i risultati all'utente richiedente.
   

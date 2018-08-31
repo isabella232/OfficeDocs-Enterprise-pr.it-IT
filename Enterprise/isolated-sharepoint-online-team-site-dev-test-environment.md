@@ -1,5 +1,5 @@
 ---
-title: Ambiente isolato di sviluppo e di testing di sito del team SharePoint Online
+title: Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,14 +13,15 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
-description: 'Riepilogo: Configurare un sito del team SharePoint Online isolato dal resto dell''organizzazione nell''ambiente di sviluppo e di testing di Office 365.'
-ms.openlocfilehash: c6115e48f1b2453aaf173b384a30c1cc34ce7b5a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: "Riepilogo: Configurare un sito del team SharePoint Online isolato dal resto dell'organizzazione nell'ambiente di sviluppo e di testing di Office 365."
+ms.openlocfilehash: d2a75f3a3a410116c454892c9ecf3747fb3da53d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915051"
 ---
-# <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Ambiente isolato di sviluppo e di testing di sito del team SharePoint Online
+# <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test
 
  **Riepilogo:** Configurare un sito del team di SharePoint Online isolato dal resto dell'organizzazione nell'ambiente di sviluppo e di testing di Office 365.
   
@@ -28,11 +29,11 @@ SharePoint Online siti dei team in Office 365 sono percorsi per la collaborazion
   
 Accesso ai siti dei team di SharePoint Online e operazioni eseguibili dagli utenti è controllato dai livelli di autorizzazione e gruppi di SharePoint. Per impostazione predefinita, i siti di SharePoint Online sono tre livelli di accesso:
   
-- **Membri**, che possono visualizzare, creare e modificare le risorse nel sito.
+- **Membri**, che possono visualizzare, creare e modificare le risorse sul sito.
     
-- **I proprietari**, che dispongono del controllo completo del sito, inclusa la possibilità di modificare le autorizzazioni.
+- **Proprietari**, che hanno il controllo completo del sito, compresa la possibilità di modificare le autorizzazioni.
     
-- **Visitatori**, che nel sito possono visualizzare solo le risorse.
+- **Visitatori**, che possono solo visualizzare le risorse sul sito.
     
 In questo articolo passaggi è la configurazione di un sito del team di SharePoint Online isolato per un progetto di ricerca segreta denominato ProjectX. I requisiti di accesso sono:
   
@@ -95,7 +96,7 @@ $userName= "designer@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Lead Designer" -FirstName Lead -LastName Designer -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
 
-Dalla visualizzazione del comando **New-MsolUser** , annotare la password generata per l'account di coordinare Designer e registrarlo in un percorso sicuro.
+Dalla visualizzazione del comando **New-MsolUser**, prendere nota della password generata per l'account Lead Designer e conservarla in una posizione sicura.
   
 Eseguire i comandi seguenti dal prompt Modulo Microsoft Azure Active Directory per Windows PowerShell:
   
@@ -104,7 +105,7 @@ $userName= "researcher@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Lead Researcher" -FirstName Lead -LastName Researcher -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
 
-Dalla visualizzazione del comando **New-MsolUser** , annotare la password generata per l'account di coordinare ricercatori e registrarlo in un percorso sicuro.
+Dalla visualizzazione del comando **New-MsolUser**, prendere nota della password generata per l'account Lead Researcher e conservarla in una posizione sicura.
   
 Eseguire i comandi seguenti dal prompt Modulo Microsoft Azure Active Directory per Windows PowerShell:
   
@@ -113,7 +114,7 @@ $userName= "devvp@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Development VP" -FirstName Development -LastName VP -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
 
-Dalla visualizzazione del comando **New-MsolUser** , annotare la password generata per l'account di sviluppo Vicepresidente e registrarlo in un percorso sicuro.
+Dalla visualizzazione del comando **New-MsolUser**, prendere nota della password generata per l'account Development VP e conservarla in una posizione sicura.
   
 Successivamente, per aggiungere i nuovi account per i nuovi gruppi di accesso, eseguire questi comandi di PowerShell dal prompt dei comandi di Windows Azure Active Directory Module per Windows PowerShell:
   
@@ -140,9 +141,9 @@ Risultati:
     
 Nella figura 1 vengono illustrati i gruppi di accesso e la propria appartenenza.
   
-**Nella figura 1**
+**Figura 1**
 
-![Gruppi di Office 365 e appartenenza a un sito di gruppi di SharePoint Online isolato](images/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![Gruppi di Office 365 e appartenenza a un sito di gruppi di SharePoint Online isolato](media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
   
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>Fase 3: Creare un nuovo sito del team ProjectX SharePoint Online e isolare l'attacco
 
@@ -150,37 +151,37 @@ Per creare un sito del team di SharePoint Online per ProjectX, eseguire le opera
   
 1. Utilizzando un browser in uno nel computer locale (configurazione semplificata) o su CLIENT1 (configurazione aziendale simulato), accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) utilizzando l'account amministratore globale.
     
-2. Nell'elenco delle sezioni, fare clic su **SharePoint**.
+2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
-3. Nella scheda SharePoint nuovo nel browser, fare clic su **Crea sito +**.
+3. Nella nuova scheda SharePoint del browser fare clic su + **Crea sito**.
     
 4. **Nome del sito del Team**, digitare **ProjectX**. **Le impostazioni di Privacy**, selezionare **privato: solo membri possono accedere al sito**.
     
-5. Nella **descrizione del sito del Team**, digitare **sito di SharePoint per ProjectX**e quindi fare clic su **Avanti**.
+5. In **Descrizione sito del team**, digitare **Sito di SharePoint per ProjectX**, quindi fare clic su **Avanti**.
     
 6. In **cui si desidera aggiungere**? riquadro, fare clic su **Fine**.
     
-7. Nella scheda **Home ProjectX** nuovo nel browser, nella barra degli strumenti, fare clic sull'icona impostazioni e quindi fare clic su **autorizzazioni sito**.
+7. Nella nuova scheda **ProjectX-Home** visualizzata nel browser, nella barra degli strumenti fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
     
-8. Nel riquadro **autorizzazioni sito** fare clic su **impostazioni di autorizzazioni avanzate**.
+8. Nel riquadro **Autorizzazioni sito** fare clic su **Advanced permissions settings** (Impostazioni autorizzazioni avanzate).
     
-9. Nella nuova **autorizzazioni: progetto X** schede nel browser, fare clic su **Impostazioni richieste di accesso**.
+9. Nella nuova scheda **Autorizzazioni: ProjectX** visualizzata nel browser, fare clic su **Impostazioni richieste di accesso**.
     
-10. Nella finestra di dialogo **Impostazioni di richieste di accesso** , deselezionare **Consenti ai membri di condividere il sito e i singoli file e cartelle** e **Consenti richieste di accesso** (in modo che tutti i tre caselle di controllo è deselezionate), quindi scegliere **OK**.
+10. Nella finestra di dialogo **Impostazioni richieste di accesso**, deselezionare **Consenti ai membri di condividere il sito e singoli file e cartelle** e **Consenti richieste di accesso** (le tre caselle di controllo devono essere deselezionate), quindi fare clic su **OK**.
     
-11. Fare clic su **ProjectX membri** nell'elenco.
+11. Fare clic su **Membri ProjectX** nell'elenco.
     
 12. Nella pagina **Utenti e gruppi** fare clic su **Nuovo**.
     
-13. Nella finestra di dialogo **Condividi** digitare **ProjectX membri**, selezionarlo e fare clic su **Condividi**.
+13. Nella finestra di dialogo **Condividi**, digitare **ProjectX-Members**, selezionarlo e quindi fare clic su **Condividi**.
     
 14. Fare clic sul pulsante Indietro del browser.
     
-15. Fare clic su **ProjectX proprietari** nell'elenco.
+15. Fare clic su **Proprietari ProjectX** nell'elenco.
     
 16. Nella pagina **Utenti e gruppi** fare clic su **Nuovo**.
     
-17. Nella finestra di dialogo **Condividi** digitare **ProjectX Admins**, selezionarlo e fare clic su **Condividi**.
+17. Nella finestra di dialogo **Condividi**, digitare **ProjectX-Admins**, selezionarlo e quindi fare clic su **Condividi**.
     
 18. Fare clic sul pulsante Indietro del browser.
     
@@ -188,9 +189,10 @@ Per creare un sito del team di SharePoint Online per ProjectX, eseguire le opera
     
 20. Nella pagina **Utenti e gruppi** fare clic su **Nuovo**.
     
-21. Nella finestra di dialogo **Condividi** digitare **ProjectX visualizzatori**, selezionarlo e quindi fare clic su **Condividi**.
+21. Nella finestra di dialogo **Condividi**, digitare **ProjectX-Viewers**, selezionarlo e quindi fare clic su **Condividi**.
     
-22. Chiudere la scheda **utenti e gruppi** nel browser, fare clic sulla scheda **Home ProjectX** nel browser e quindi chiudere il riquadro **autorizzazioni sito** .
+22. Chiudere la scheda **Utenti e gruppi** visualizzata nel browser, fare clic sulla scheda **ProjectX-Home**, quindi chiudere il riquadro **Autorizzazioni sito**.
+
     
 Ecco i risultati della configurazione delle autorizzazioni:
   
@@ -206,75 +208,78 @@ Ecco i risultati della configurazione delle autorizzazioni:
     
 Nella figura 2 vengono mostrati i gruppi di SharePoint e la relativa appartenenza.
   
-**Nella figura 2**
+**Figura 2**
 
-![Gruppi di SharePoint Online e appartenenza a un sito di gruppi di SharePoint Online isolato](images/595abff4-64f9-49de-a37a-c70c6856936b.png)
+![Gruppi di SharePoint Online e appartenenza a un sito di gruppi di SharePoint Online isolato](media/595abff4-64f9-49de-a37a-c70c6856936b.png)
   
 A questo punto possiamo illustrare l'accesso utilizzando l'account utente di coordinare Designer:
   
-1. Chiudere la scheda **Home ProjectX** nel browser e quindi fare clic sulla scheda **Home page di Microsoft Office** nel browser.
+1. Chiudere la scheda **ProjectX-Home** visualizzata nel browser, quindi fare clic sulla scheda **Microsoft Office Home** nel browser.
     
-2. Fare clic sul nome dell'amministratore globale e quindi fare clic su **Esci**.
+2. Fare clic sul nome dell'amministratore globale e quindi fare clic su **Disconnetti**.
     
 3. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) utilizzando il nome dell'account coordinare progettazione e la relativa password.
     
-4. Nell'elenco delle sezioni, fare clic su **SharePoint**.
+4. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
 5. Nella scheda **SharePoint** nuovo nel browser, digitare **ProjectX** nella casella di ricerca, attivare la ricerca e quindi fare clic su sito del team **ProjectX** . Una nuova scheda verrà visualizzato nel browser per il sito del team ProjectX.
     
-6. Fare clic sull'icona impostazioni. Si noti che è disponibile alcuna opzione le autorizzazioni dei **Siti**. In questo modo corretto solo i membri del gruppo Admins ProjectX possono modificare le autorizzazioni nel sito
+6. Fare clic sull'icona delle impostazioni. Si noti che non sono presenti opzioni per **Autorizzazioni sito**. È corretto perché solo i membri del gruppo ProjectX-Admins possono modificare le autorizzazioni sul sito
     
 7. Aprire il Blocco note o un editor di testo di propria scelta.
     
 8. Copiare l'URL del sito del team ProjectX e incollarlo in una nuova riga nel blocco note o l'editor di testo.
     
-9. Nella scheda **Home ProjectX** nuovo nel browser, fare clic su **documenti**.
+9. Nella nuova scheda **ProjectX-Home** visualizzata nel browser, fare clic su **Documenti**.
     
 10. Copiare l'URL della cartella dei documenti di ProjectX e incollarlo su una nuova riga nel Blocco note o nell'editor di testo.
     
-11. Nella scheda nuovo **ProjectX documenti** nel browser, fare clic su **Nuovo > documento di Word**.
+11. Nella nuova scheda **ProjectX-Documents** visualizzata nel browser, fare clic su **Nuovo > Documento Word**.
     
-12. Digitare il testo nella pagina **Word Online** , attendere che lo stato indicare **salvata**, fare clic sul pulsante Indietro nel browser e quindi aggiornare la pagina. Verrà visualizzato un nuovo **Document.docx** nella cartella **documenti** .
+12. Digitare del testo nella pagina **Word Online**, attendere che lo stato riporti **Salvato**, fare clic sul pulsante Indietro nel browser, quindi aggiornare la pagina. Viene visualizzato un nuovo file **Document.docx** nella cartella **Documenti**.
     
-13. Fare clic sui puntini di sospensione per il documento **Document.docx** e quindi fare clic su **, utilizzare il collegamento**.
+13. Fare clic sui puntini di sospensione del documento **Document.docx**, quindi fare clic su **Ottieni un collegamento**.
     
 14. Copiare l'URL della finestra di dialogo **Condividi 'Document.docx'** e incollarlo in una nuova riga nel blocco note o l'editor di testo e quindi chiudere la finestra di dialogo **Condividi 'Document.docx'** .
     
-15. Chiudere le schede **SharePoint** e **ProjectX documenti** nel browser e quindi fare clic sulla scheda **Home page di Microsoft Office** .
+15. Chiudere le schede **ProjectX-Documents** e **SharePoint** nel browser, quindi fare clic sulla scheda **Microsoft Office Home**.
     
-16. Fare clic sul nome di **Coordinare Designer** e fare clic su **Esci**.
+16. Fare clic sul nome **Lead Designer**, quindi su **Disconnetti**.
+
     
 A questo punto possiamo illustrare l'accesso utilizzando l'account utente Vicepresidente dello sviluppo:
   
 1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) utilizzando il nome dell'account Vicepresidente di sviluppo e la relativa password.
     
-2. Nell'elenco delle sezioni, fare clic su **SharePoint**.
+2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
 3. Nella scheda **SharePoint** nuovo nel browser, digitare **ProjectX** nella casella di ricerca, attivare la ricerca e quindi fare clic su sito del team **ProjectX** . Una nuova scheda verrà visualizzato nel browser per il sito del team ProjectX.
     
-4. Fare clic su **documenti**e quindi fare clic sul file **Document.docx** .
+4. Fare clic su **Documenti**, quindi sul file **Document.docx**.
     
-5. Nella scheda **Document.docx** nel browser, provare a modificare il testo. Verrà visualizzato un messaggio che informa **questo documento è di sola lettura.** È previsto dal momento che l'account utente di sviluppo Vicepresidente solo disponga delle autorizzazioni di visualizzazione per il sito.
+5. Nella scheda **Document.docx** nel browser, provare a modificare il testo. Viene visualizzato il messaggio **Documento di sola lettura.** Infatti, l'account utente Development VP può solo visualizzare le autorizzazioni per il sito.
     
-6. Chiudere le schede **Document.docx**, **ProjectX documenti**e **SharePoint** nel browser.
+6. Chiudere le schede **Document.docx**, **ProjectX-Documents** e **SharePoint** nel browser.
     
-7. Fare clic sulla scheda **Home page di Microsoft Office** , fare clic sul nome **Vicepresidente sviluppo** e quindi fare clic su **Esci**.
+7. Fare clic sulla scheda **Microsoft Office Home**, selezionare il nome **Development VP** e quindi fare clic su **Disconnetti**.
+
     
 A questo punto possiamo illustrare l'accesso con un account utente che non dispone delle autorizzazioni:
   
 1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) utilizzando il nome dell'account utente 3 e la relativa password.
     
-2. Nell'elenco delle sezioni, fare clic su **SharePoint**.
+2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
-3. Nella scheda **SharePoint** nuovo nel browser, digitare **ProjectX** nella casella di ricerca e quindi attivazione della ricerca. Verrà visualizzato il messaggio **Nothing qui corrisponde alla ricerca.**
+3. 	Nella nuova scheda **SharePoint** nel browser, digitare **ProjectX** nella casella di ricerca e quindi attivare la ricerca. Viene visualizzato il messaggio **Nessun elemento corrispondente alla ricerca.**
     
-4. L'istanza aperta del blocco note o l'editor di testo, copiare l'URL per il sito ProjectX nella barra degli indirizzi del browser e premere **INVIO**. Verrà visualizzata una pagina di **Accesso negato** .
+4. Dall'istanza aperta del Blocco note o dell'editor di testo, copiare l'URL per il sito di ProjectX nella barra degli indirizzi del browser e premere **Invio**. Viene visualizzata una pagina **Accesso negato**.
     
-5. Il blocco note o l'editor di testo, copiare l'URL per la cartella documenti ProjectX nella barra degli indirizzi del browser e premere **INVIO**. Verrà visualizzata una pagina di **Accesso negato** .
+5. Dal Blocco note o dall'editor di testo, copiare l'URL per la cartella dei documenti di ProjectX nella barra degli indirizzi del browser e premere **Invio**. Viene visualizzata una pagina **Accesso negato**.
     
-6. Il blocco note o l'editor di testo, copiare l'URL per il file Documents.docx nella barra degli indirizzi del browser e premere **INVIO**. Verrà visualizzata una pagina di **Accesso negato** .
+6. Dal Blocco note o dall'editor di testo, copiare l'URL per il file Documents.docx nella barra degli indirizzi del browser e premere **Invio**. Viene visualizzata una pagina **Accesso negato**.
     
-7. Chiudere la scheda **SharePoint** nel browser, fare clic sulla scheda **Home page di Microsoft Office** , fare clic sul nome **utente 3** e quindi fare clic su **Esci**.
+7. Chiudere la scheda **SharePoint** nel browser, fare clic sulla scheda **Microsoft Office Home**, fare clic sul nome **User 3** e quindi su **Disconnetti**.
+
     
 Nel sito di SharePoint Online isolato è pronto per le operazioni aggiuntive.
   

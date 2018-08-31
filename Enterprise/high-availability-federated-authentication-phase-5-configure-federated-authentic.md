@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "Riepilogo: Configurare Azure AD Connect per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: 93e872098b31326de67fb0557354e9f4fc1de9ed
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 797429e508a0a0c2b91d837e5475e840ca26b3d8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915361"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Fase 5 dell'autenticazione federata a disponibilità elevata: Configurare l'autenticazione federata per Office 365
 
@@ -64,7 +65,7 @@ Di seguito viene riportato un esempio per l'organizzazione Contoso:
   
 **Una configurazione di esempio per l'autenticazione federata con disponibilità elevata in Azure**
 
-![Una configurazione di esempio dell'autenticazione federata di Office 365 con disponibilità elevata in Azure](images/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Una configurazione di esempio dell'autenticazione federata di Office 365 con disponibilità elevata in Azure](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Eseguire Azure AD Connect per configurare l'autenticazione federata
 
@@ -134,7 +135,7 @@ Di seguito viene riportata la configurazione finale, con i nomi segnaposto per i
   
 **Fase 5: la configurazione finale dell'infrastruttura di autenticazione federata con disponibilità elevata in Azure**
 
-![La configurazione finale dell'infrastruttura di autenticazione federata di Office 365 con disponibilità elevata](images/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![La configurazione finale dell'infrastruttura di autenticazione federata di Office 365 con disponibilità elevata](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 L'infrastruttura di autenticazione federata con disponibilità elevata per Office 365 in Azure è completata.
   

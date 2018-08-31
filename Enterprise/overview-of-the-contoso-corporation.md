@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: 'Riepilogo: Informazioni sulla società Contoso Corporation e sulla struttura a livelli dei suoi uffici nel mondo.'
-ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 66171ee872f9b526860ae1436b0e8cb51de119de
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915861"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Panoramica di Contoso Corporation
 
@@ -30,7 +31,7 @@ L'organizzazione mondiale di Contoso dispone di uffici nelle seguenti posizioni:
   
 **Figura 1: Uffici di Contoso in tutto il mondo**
 
-![Sedi di Contoso Corporation nel mondo](images/Contoso_Poster/Contoso_WW_Org.png)
+![Sedi di Contoso Corporation nel mondo](media/Contoso-Poster/Contoso-WW-Org.png)
 
   
 Nella figura 1 viene mostrata la sede di Parigi e gli uffici secondari e gli hub regionali nei vari continenti.

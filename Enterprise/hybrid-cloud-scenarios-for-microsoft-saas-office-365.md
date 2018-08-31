@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
-description: 'Sintesi: Comprendere l''architettura ibrida e gli scenari delle offerte cloud basate sul software distribuito come servizio Microsoft (SaaS) in Office 365.'
-ms.openlocfilehash: 65b1841a155e286af8862c2fb7c37d0bfb61e1e8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: "Sintesi: Comprendere l'architettura ibrida e gli scenari delle offerte cloud basate sul software distribuito come servizio Microsoft (SaaS) in Office 365."
+ms.openlocfilehash: 53187d53b55eedf1fca4f0b98e34accf454c67df
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915591"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Scenari per il cloud ibrido per SaaS Microsoft (Office 365)
 
@@ -30,7 +31,7 @@ La figura 1 mostra l'architettura di scenari ibridi Microsoft basati su SaaS in 
   
 **Figura 1: scenari ibridi Microsoft basati su SaaS per Office 365**
 
-![Scenari ibridi Microsoft basati su SaaS per Office 365](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS.png)
+![Scenari ibridi Microsoft basati su SaaS per Office 365](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS.png)
   
 Per ogni livello dell'architettura:
   
@@ -66,7 +67,7 @@ Skype for Business 2015 ibrido consente di combinare una distribuzione locale es
   
 **Figura 2: configurazione ibrida di Skype for Business 2015**
 
-![Configurazione ibrida di Skype for Business 2015](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB.png)
+![Configurazione ibrida di Skype for Business 2015](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
 Nella figura 2 viene mostrata la configurazione ibrida di Skype for Business 2015, la quale comprende il pool Front End di Skype for Business 2015 locale e il server perimetrale che comunica con Skype for Business Online in Office 365.
   
@@ -84,7 +85,7 @@ Cloud PBX con Skype for Business Server consente di trasferire una distribuzione
   
 **Figura 3: cloud PBX con Skype for Business Server**
 
-![Cloud PBX con Skype for Business Server](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB_CloudPBX.png)
+![Cloud PBX con Skype for Business Server](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
 Nella figura 3 viene mostrata la configurazione di Cloud PBX con Skype for Business Server, che comprende un gateway PBX o Telco locale, uno Skype for Business Server e il PSTN connesso al Cloud PBX di Microsoft in Office 365, che include Skype for Business Online.
   
@@ -104,7 +105,7 @@ SharePoint ibrido combina SharePoint Online in Office 365 con la farm di SharePo
   
 **Figura 4: configurazione ibrida di SharePoint**
 
-![configurazione ibrida di SharePoint](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SP.png)
+![configurazione ibrida di SharePoint](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SP.png)
   
 Nella figura 4 viene mostrata la configurazione ibrida di SharePoint, che comprende una farm di SharePoint locale che comunica con SharePoint Online in Office 365.
   
@@ -138,7 +139,7 @@ Con Exchange Server 2016 ibrido, puoi ottenere i vantaggi di Exchange Online in 
   
 **Figura 5: configurazione ibrida di Exchange 2016**
 
-![Configurazione ibrida di Exchange 2016](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_EX.png)
+![Configurazione ibrida di Exchange 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-EX.png)
   
 La figura 5 mostra la configurazione ibrida di Exchange 2016, formata da server Cassette postali di Exchange che comunicano con Exchange Online Protection e con le cassette postali di Office 365.
   

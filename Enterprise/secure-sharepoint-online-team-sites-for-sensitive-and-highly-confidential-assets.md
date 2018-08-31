@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
-description: "Sintesi: informazioni su come Contoso ha implementato siti del team di SharePoint Online estremamente riservati e sensibili per una collaborazione più facile, ma comunque sicura, per i dirigenti e i rispettivi centri di ricerca."
-ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Sintesi: informazioni su come Contoso ha implementato siti del team di SharePoint Online estremamente riservati e sensibili per una collaborazione più facile, ma comunque sicura, per i dirigenti e i rispettivi centri di ricerca.'
+ms.openlocfilehash: 23511e4156bb04e8bacf970913b00ed36e8ff9c8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914861"
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Proteggere i siti del team di SharePoint Online per risorse estremamente riservate e sensibili
 
@@ -30,7 +33,7 @@ Gli amministratori della sicurezza e di SharePoint nel reparto IT di Contoso han
   
 **Figura 1: Confronto tra siti del team di SharePoint Online estremamente riservati e sensibili**
 
-![Siti del team di SharePoint Online estremamente riservati e sensibili](images/Contoso_Poster/SP_Solution.png)
+![Siti del team di SharePoint Online estremamente riservati e sensibili](media/Contoso-Poster/SP-Solution.png)
   
 Contoso ha utilizzato questa procedura per creare siti del team di SharePoint Online sicuri per i dirigenti e i team di ricerca:
   

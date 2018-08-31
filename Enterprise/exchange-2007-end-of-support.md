@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: In 11 aprile 2017, Exchange Server 2007 stata raggiunta la fine del supporto tecnico. Se non sono già iniziato la migrazione da Exchange 2007 a Office 365 o Exchange 2016, è ora per avviare la pianificazione.
-ms.openlocfilehash: 4bb8933977c280b4bfaa686e858fc818a1dc4ace
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: 674de8904d03e024a8a75b945b5ef94319214f92
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169808"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915571"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Guida sulla fine del supporto di Exchange 2007
 
@@ -189,9 +189,9 @@ Se un suoni di migrazione completa ibrida appropriata, esaminare le risorse segu
     
 - [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/en-us/library/jj200581%28v=exchg.150%29.aspx)
     
-- [Procedura guidata di configurazione ibrida](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
+- [Configurazione ibrida guidata](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
     
-- [Domande frequenti sulla procedura guidata di configurazione ibrida](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
+- [Domande frequenti sulla configurazione ibrida guidata](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
     
 - [Prerequisiti per la distribuzione ibrida](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
     

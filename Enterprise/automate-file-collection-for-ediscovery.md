@@ -1,5 +1,5 @@
 ---
-title: Automatizzare la raccolta di file di eDiscovery
+title: Automatizzare la raccolta file per eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,14 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
+search.appverid:
+- MET150
 description: 'Riepilogo: Informazioni su come automatizzare la raccolta di file dal computer degli utenti di eDiscovery.'
-ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915751"
 ---
-# <a name="automate-file-collection-for-ediscovery"></a>Automatizzare la raccolta di file di eDiscovery
+# <a name="automate-file-collection-for-ediscovery"></a>Automatizzare la raccolta file per eDiscovery
 
  **Riepilogo:** Informazioni su come automatizzare la raccolta di file dal computer degli utenti di eDiscovery.
   
@@ -37,21 +40,21 @@ Questa soluzione utilizza un gruppo, gruppo di protezione globale criteri e uno 
   
 Nel diagramma seguente illustra tutti i passaggi e gli elementi della soluzione.
   
-![Panoramica della soluzione per la raccolta automatica dei file](images/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
+![Panoramica della soluzione per la raccolta automatica dei file](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
   
 |Legenda * * *||
 |:-----|:-----|
-|![callout magenta 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Creare un oggetto Criteri di gruppo (GPO) e associarlo allo script di accesso della raccolta.  <br/> |
-|![callout magenta 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configurare il filtro di protezione oggetto Criteri di gruppo per l'oggetto Criteri di gruppo si applicano solo al gruppo depositari. <br/> |
-|![callout magenta 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Un depositaria accede e viene eseguito l'oggetto Criteri di gruppo, lo script di accesso raccolta la chiamata.  <br/> |
-|![callout magenta 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|Lo script di accesso raccolta inventario di tutte le unità collegate localmente nel computer depositari, cercare i file desiderato e relativo percorso di registrazione.  <br/> |
-|![callout magenta 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|Lo script di accesso raccolta copia i file di inventario in una condivisione file nascosto nel server di gestione temporanea.  <br/> |
-|![callout magenta 6](images/99589726-0c7e-406b-a276-44301a135768.png)| (Opzione A) Eseguire manualmente lo script di importazione file PST per importare i file PST raccolti in Exchange Server 2013. <br/> |
-|![callout magenta 7](images/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opzione B) Utilizzando lo strumento Office 365 importare e processo, importare i file PST raccolti in Exchange Online.  <br/> |
-|![callout magenta 8](images/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Spostare tutte le raccolti file a una condivisione file Azure per l'archiviazione a lungo termine con runbook MoveToColdStorage System Center agente di orchestrazione 2012 R2. <br/> |
-|![callout magenta 9](images/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indicizzare i file nella condivisione di file di archiviazione fredda con SharePoint 2013.  <br/> |
-|![callout magenta 10](images/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Eseguire eDiscovery sul contenuto in archiviazione fredda e in locale Exchange Server 2013.  <br/> |
-|![callout magenta 11](images/e59ab403-2f19-497a-92a5-549846dded66.png)|Eseguire eDiscovery sul contenuto in Office 365.  <br/> |
+|![callout magenta 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Creare un oggetto Criteri di gruppo (GPO) e associarlo allo script di accesso della raccolta.  <br/> |
+|![callout magenta 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configurare il filtro di protezione oggetto Criteri di gruppo per l'oggetto Criteri di gruppo si applicano solo al gruppo depositari. <br/> |
+|![callout magenta 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Un depositaria accede e viene eseguito l'oggetto Criteri di gruppo, lo script di accesso raccolta la chiamata.  <br/> |
+|![callout magenta 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|Lo script di accesso raccolta inventario di tutte le unità collegate localmente nel computer depositari, cercare i file desiderato e relativo percorso di registrazione.  <br/> |
+|![callout magenta 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|Lo script di accesso raccolta copia i file di inventario in una condivisione file nascosto nel server di gestione temporanea.  <br/> |
+|![callout magenta 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (Opzione A) Eseguire manualmente lo script di importazione file PST per importare i file PST raccolti in Exchange Server 2013. <br/> |
+|![callout magenta 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opzione B) Utilizzando lo strumento Office 365 importare e processo, importare i file PST raccolti in Exchange Online.  <br/> |
+|![callout magenta 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Spostare tutte le raccolti file a una condivisione file Azure per l'archiviazione a lungo termine con runbook MoveToColdStorage System Center agente di orchestrazione 2012 R2. <br/> |
+|![callout magenta 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indicizzare i file nella condivisione di file di archiviazione fredda con SharePoint 2013.  <br/> |
+|![callout magenta 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Eseguire eDiscovery sul contenuto in archiviazione fredda e in locale Exchange Server 2013.  <br/> |
+|![callout magenta 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Eseguire eDiscovery sul contenuto in Office 365.  <br/> |
    
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -59,7 +62,7 @@ La configurazione di questa soluzione richiede più molti elementi di cui probab
   
 ### <a name="base-configuration"></a>Configurazione di base
 
-|**Elemento**|**Collegamento**|
+|**Elemento**|**Collegamenti**|
 |:-----|:-----|
 |Dominio di Active Directory Domain Services (AD DS)  <br/> ||
 |Connettività Internet dalla rete locale  <br/> ||
@@ -327,7 +330,7 @@ $AllFiles | ForEach-Object {
 |**Riga #**|**Che cosa è necessario modificare**|**Facoltativo/necessari**|
 |:-----|:-----|:-----|
 |12  <br/> |**$FolderIdentifier** tag le cartelle delle cassette postali che vengono importati nel file pst. Modificare l'impostazione se necessario.<br/> |Facoltativo  <br/> |
-|17  <br/> |**$ConnectionUri** deve essere impostata al proprio server. <br/> > [!IMPORTANT]> Verificare che l' **$ConnectionUri** punta a un percorso http, https non. Non funzionerà con https:.          |Obbligatorio  <br/> |
+|17   <br/> |**$ConnectionUri** deve essere impostata al proprio server. <br/> > [!IMPORTANT]> Verificare che l' **$ConnectionUri** punta a un percorso http, https non. Non funzionerà con https:.          |Obbligatorio  <br/> |
    
 4. Verificare che l'account di Exchange Trusted Subsystem disponga delle autorizzazioni di lettura, scrittura ed esecuzione per il \\ \\Intermédiaire\\condivisione$ casi.
     

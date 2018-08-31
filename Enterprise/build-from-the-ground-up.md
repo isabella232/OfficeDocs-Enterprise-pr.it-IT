@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
-description: "Riepilogo: Ottenere informazioni dettagliate sul set di cloud blocchi predefiniti di archiviazione che è possibile utilizzare per creare una soluzione o il proprio servizio di archiviazione."
-ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Riepilogo: Visualizzare i dettagli sul set di blocchi predefiniti di archiviazione cloud che è possibile utilizzare per creare il proprio servizio o la propria soluzione di archiviazione.'
+ms.openlocfilehash: 8ef5d7a99c4e82d9a4fc3eb281a4af505887b792
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915681"
 ---
 # <a name="build-from-the-ground-up"></a>Creare da zero
 
- **Riepilogo:** Ottenere informazioni dettagliate sul set di cloud blocchi predefiniti di archiviazione che è possibile utilizzare per creare una soluzione o il proprio servizio di archiviazione.
+ **Riepilogo:** Visualizzare i dettagli sul set di blocchi predefiniti di archiviazione cloud che è possibile utilizzare per creare il proprio servizio o la propria soluzione di archiviazione.
   
 Soluzioni di archiviazione "Creare da zero":
   
@@ -70,7 +73,12 @@ Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/d
 
 ### <a name="features"></a>Funzionalità
 
-- Ogni account di archiviazione può contenere un massimo di 500 TB (una sottoscrizione può avere più account di archiviazione)
+- Ogni account di archiviazione può contenere fino a 500 TB (una sottoscrizione può avere più account di archiviazione)
+
+
+
+
+
     
 - Gli account di archiviazione sono organizzati in contenitori, a cui è applicata la sicurezza e che possono contenere BLOB
     
@@ -144,7 +152,8 @@ Per informazioni sui costi, fare clic [qui](http://azure.microsoft.com/pricing/d
     
 - Costo in genere inferiore rispetto a SQL tradizionale
     
-- Molto rapido se l'esecuzione di query per la chiave, lente se una query per valore
+- Molto rapido nella ricerca di chiavi, lento nella ricerca di valori
+
     
 - Ampiamente scalabile; qualsiasi quantità di tabelle entro i limiti dell'account di archiviazione
     

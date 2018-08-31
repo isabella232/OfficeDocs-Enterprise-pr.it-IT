@@ -2,27 +2,26 @@
 title: Utilizzare Azure AD per l'autenticazione di SharePoint Server
 ms.author: tracyp
 author: MSFTTracyP
-ms.reviewer:
-- kirke
-- josephd
-- kirks
+ms.reviewer: kirke, josephd, kirks
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Ent_O365_Hybrid
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 'Riepilogo: Informazioni su come ignorare il servizio di controllo di accesso di Azure e utilizzo di SAML 1.1 per autenticare gli utenti di SharePoint Server con Azure Active Directory.'
-ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
-ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.openlocfilehash: 465f333638401402c743dc66d3ebecc33be00749
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19856271"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915451"
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Utilizzare Azure AD per l'autenticazione di SharePoint Server
 
@@ -39,7 +38,7 @@ SharePoint Server 2016 offre la possibilità per autenticare gli utenti che util
 
 In questo articolo viene illustrato come utilizzare Azure Active Directory per autenticare gli utenti anziché locale di dominio Active Directory. In questa configurazione, Azure Active Directory diventa un provider di identità attendibile per SharePoint Server 2016. Questa configurazione viene aggiunto un metodo di autenticazione utente distinto dall'autenticazione di dominio Active Directory utilizzato per l'installazione di SharePoint Server 2016 stesso. Per trarre vantaggio da questo articolo, è consigliabile acquisire familiarità con WS-Federation. Per ulteriori informazioni, vedere [Understanding WS-Federation](https://go.microsoft.com/fwlink/p/?linkid=188052).
 
-![Utilizzo di Azure Active Directory per l'autenticazione di SharePoint](images/SAML11/fig1-architecture.png)
+![Utilizzo di Azure Active Directory per l'autenticazione di SharePoint](media/SAML11/fig1-architecture.png)
 
 In precedenza, questa configurazione avrebbe richiesto un servizio federativo, ad esempio Azure Access Control Service (ACS) nel cloud o in un ambiente che ospita Active Directory Federation Services (ADFS) trasformare token da 2.0 SAML da SAML 1.1. Questa trasformazione non è più necessaria in quanto consente di Azure Active Directory ora emittente token SAML 1.1. Nel diagramma precedente viene illustrato il funzionamento dell'autenticazione per gli utenti di SharePoint 2016 in questa configurazione, dimostrare che viene a mancare un requisito per intermediario per eseguire questa trasformazione.
 
@@ -66,7 +65,7 @@ Nelle sezioni seguenti viene descritto come eseguire queste attività.
 
 Nel portale di Azure ([https://portal.azure.com](https://portal.azure.com)), creare una nuova directory. Fornire il nome dell'organizzazione, il nome di dominio iniziale e il paese o regione.
 
-![Creazione di una directory](images/SAML11/fig2-createdirectory.png) 
+![Creazione di una directory](media/SAML11/fig2-createdirectory.png) 
 
  Se si dispone già di una directory, ad esempio quello utilizzato per la sottoscrizione di Microsoft Azure o Microsoft Office 365, è possibile utilizzare tale directory invece. È necessario disporre delle autorizzazioni per registrare le applicazioni nella directory.
 
@@ -76,17 +75,17 @@ In questo articolo è stato scritto tramite l'architettura di riferimento di [es
 
 Utilizzo di SAML, è necessario configurare l'applicazione per l'utilizzo di SSL. Se l'applicazione web di SharePoint non è configurato per l'utilizzo di SSL, utilizzare la procedura seguente per creare un nuovo certificato autofirmato per configurare l'applicazione web per SSL. Questa configurazione è solo a scopo di un ambiente di laboratorio e non è progettata per la produzione. Ambienti di produzione è consigliabile utilizzare un certificato firmato.
 
-1. Accedere ad **Amministrazione centrale** > **Gestione applicazioni** > **Gestisci applicazioni Web**e scegliere l'applicazione web che deve essere estesa per l'utilizzo di SSL. Selezionare l'applicazione web e fare clic sul pulsante **della barra multifunzione Extend** . Estendere l'applicazione web per utilizzare lo stesso URL mentre l'utilizzo di SSL per la porta 443.</br>![Estendere l'applicazione web a un altro sito IIS](images/SAML11/fig3-extendwebapptoiis.png)</br>
+1. Accedere ad **Amministrazione centrale** > **Gestione applicazioni** > **Gestisci applicazioni Web**e scegliere l'applicazione web che deve essere estesa per l'utilizzo di SSL. Selezionare l'applicazione web e fare clic sul pulsante **della barra multifunzione Extend** . Estendere l'applicazione web per utilizzare lo stesso URL mentre l'utilizzo di SSL per la porta 443.</br>![Estendere l'applicazione web a un altro sito IIS](media/SAML11/fig3-extendwebapptoiis.png)</br>
 2. In Gestione IIS, fare doppio clic su **Certificati del Server**.
 3. Nel riquadro **Azioni** fare clic su **Crea certificato autofirmato**. Digitare un nome descrittivo del certificato nella casella specificare un nome descrittivo per la casella di certificato e quindi fare clic su **OK**.
-4. Nella finestra di dialogo **Modifica Binding sito** verificare che il nome host è identico al nome descrittivo, come illustrato nella figura seguente.</br>![Modifica dei binding dei siti in IIS](images/SAML11/fig4-editsitebinding.png)</br>
+4. Nella finestra di dialogo **Modifica Binding sito** verificare che il nome host è identico al nome descrittivo, come illustrato nella figura seguente.</br>![Modifica dei binding dei siti in IIS](media/SAML11/fig4-editsitebinding.png)</br>
 
 Ogni server web front-end della farm di SharePoint richiederà la configurazione del certificato per l'associazione del sito in IIS.
 
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>Passaggio 3: Creare una nuova applicazione aziendale in Azure Active Directory
 
-1. Nel portale di Azure ([https://portal.azure.com](https://portal.azure.com)), aprire la directory di Azure Active Directory. Fare clic su **Applicazioni aziendali**e quindi fare clic su **nuova applicazione**. Scegliere **l'applicazione Non raccolta**. Specificare un nome, ad esempio *Integrazione SAML con SharePoint* e fare clic su **Aggiungi**.</br>![Aggiunta di una nuova applicazione non raccolta](images/SAML11/fig5-addnongalleryapp.png)</br>
+1. Nel portale di Azure ([https://portal.azure.com](https://portal.azure.com)), aprire la directory di Azure Active Directory. Fare clic su **Applicazioni aziendali**e quindi fare clic su **nuova applicazione**. Scegliere **l'applicazione Non raccolta**. Specificare un nome, ad esempio *Integrazione SAML con SharePoint* e fare clic su **Aggiungi**.</br>![Aggiunta di una nuova applicazione non raccolta](media/SAML11/fig5-addnongalleryapp.png)</br>
 2. Scegliere il collegamento Single sign-on nel riquadro di spostamento per configurare l'applicazione. Modificare l'elenco a discesa **modalità Single Sign-on** di **SAML-based Sign-on** per visualizzare le proprietà di configurazione di SAML per l'applicazione. Configurare le proprietà seguenti:</br>
     - Identificatore:`urn:sharepoint:portal.contoso.local`
     - URL di risposta:`https://portal.contoso.local/_trust/default.aspx`
@@ -100,10 +99,10 @@ Ogni server web front-end della farm di SharePoint richiederà la configurazione
     - ID dell'oggetto Application. </br>
 Copiare il valore *dell'identificatore* nella proprietà *dell'area di autenticazione* in una tabella (vedere tabella 1, sotto)
 4. Salvare le modifiche.
-5. Fare clic sul collegamento **Configura (nome app)** per accedere alla pagina Configura sign-on.</br>![Configurazione di un single sign-on pagina](images/SAML11/fig7-configssopage.png)</br> 
+5. Fare clic sul collegamento **Configura (nome app)** per accedere alla pagina Configura sign-on.</br>![Configurazione di un single sign-on pagina](media/SAML11/fig7-configssopage.png)</br> 
     -  Fare clic sul collegamento di **SAML certificato per la firma - non elaborati** per scaricare il certificato di firma SAML come file con estensione cer. Copiare e incollare il percorso completo per il file scaricato la tabella.
     - Copiare e incollare il collegamento SAML Single Sign-On URL del servizio nei, sostituendo parte */saml2* dell'URL con */wsfed*.</br>
-6.  Passare al riquadro delle **proprietà** per l'applicazione. Copiare e incollare il valore dell'ID oggetto nella tabella che impostare nel passaggio 3.</br>![Riquadro delle proprietà per l'applicazione](images/SAML11/fig8-propertiespane.png)</br>
+6.  Passare al riquadro delle **proprietà** per l'applicazione. Copiare e incollare il valore dell'ID oggetto nella tabella che impostare nel passaggio 3.</br>![Riquadro delle proprietà per l'applicazione](media/SAML11/fig8-propertiespane.png)</br>
 7. Utilizzando i valori che acquisite, verificare che la tabella che impostare nel passaggio 3 è analogo a 1 nella tabella riportata di seguito.
 
 
@@ -143,7 +142,7 @@ Successivamente, eseguire la procedura seguente per abilitare il provider di ide
 4. L'impostazione di URL pagina di accesso, selezionare **nella pagina di accesso personalizzata** e specificare il valore "/_trust/". 
 5. Fare clic su **OK**.
 
-![Configurazione di provider di autenticazione](images/SAML11/fig10-configauthprovider.png)
+![Configurazione di provider di autenticazione](media/SAML11/fig10-configauthprovider.png)
 
 > [!IMPORTANT]
 > È importante eseguire tutti i passaggi, tra cui l'impostazione di accesso personalizzata nella pagina "/_trust/" come indicato. La configurazione non funzionerà correttamente solo se tutti i passaggi.
@@ -162,19 +161,19 @@ L'utente dispone dell'autorizzazione in Azure Active Directory, ma anche deve es
 1. In Amministrazione centrale fare clic su **Gestione applicazioni**.
 2. Nella sezione **Applicazioni Web** della pagina **Gestione applicazioni** fare clic su **Gestisci applicazioni Web**.
 3. Fare clic sull'applicazione Web appropriata e quindi su **Criteri utenti**.
-4. In criteri per l'applicazione Web, fare clic su **Aggiungi utenti**.</br>![Cercare un utente dal proprio nome di attestazione](images/SAML11/fig11-searchbynameclaim.png)</br>
+4. In criteri per l'applicazione Web, fare clic su **Aggiungi utenti**.</br>![Cercare un utente dal proprio nome di attestazione](media/SAML11/fig11-searchbynameclaim.png)</br>
 5. Nella finestra di dialogo **Aggiunta utenti** fare clic sull'area appropriata in **Aree** e quindi fare clic su **Avanti**.
 6. Nella sezione **Selezione utenti** della finestra di dialogo **criteri per l'applicazione Web** fare clic sull'icona **Sfoglia** .
 7. Nella casella di testo **Trova** , digitare il nome di accesso per un utente nella directory e fare clic su **Cerca**. </br>Esempio: *demouser@blueskyabove.onmicrosoft.com*.
 8. Sotto l'intestazione AzureAD nella visualizzazione elenco, selezionare la proprietà name e fare clic su **Aggiungi** , quindi fare clic su **OK** per chiudere la finestra di dialogo.
-9. In autorizzazioni fare clic su **Controllo completo**.</br>![Concedere il controllo completo per un utente basata sulle attestazioni](images/SAML11/fig12-grantfullcontrol.png)</br>
+9. In autorizzazioni fare clic su **Controllo completo**.</br>![Concedere il controllo completo per un utente basata sulle attestazioni](media/SAML11/fig12-grantfullcontrol.png)</br>
 10. Fare clic su **Fine** e quindi su **OK**.
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>Passaggio 6: Aggiungere un criterio di emissione di token SAML 1.1 in Azure Active Directory
 
 Quando si crea l'applicazione di Azure Active Directory nel portale, l'impostazione predefinita all'utilizzo di SAML 2.0. SharePoint Server 2016 richiede il formato token SAML 1.1. Lo script seguente verrà rimosso il criterio di SAML 2.0 predefinito e aggiungere un nuovo criterio per i token SAML 1.1 problema. 
 
-> Il codice seguente è necessario scaricare gli [esempi che illustrano l'interazione con Azure Active Directory grafico](https://github.com/kaevans/spsaml11/tree/master/scripts). Se si scaricano gli script come file ZIP da GitHub a un desktop di Windows, verificare che sbloccare il `MSGraphTokenLifetimePolicy.psm1` file di script di modulo e la `Initialize.ps1` file di script (pulsante destro del mouse proprietà, scegliere Sblocca, fare clic su OK). ![Sblocco download file](images/SAML11/fig17-unblock.png)
+> Il codice seguente è necessario scaricare gli [esempi che illustrano l'interazione con Azure Active Directory grafico](https://github.com/kaevans/spsaml11/tree/master/scripts). Se si scaricano gli script come file ZIP da GitHub a un desktop di Windows, verificare che sbloccare il `MSGraphTokenLifetimePolicy.psm1` file di script di modulo e la `Initialize.ps1` file di script (pulsante destro del mouse proprietà, scegliere Sblocca, fare clic su OK). ![Sblocco download file](media/SAML11/fig17-unblock.png)
 
 Dopo aver scaricato lo script di esempio, creare uno script di PowerShell new utilizzando il codice seguente, sostituendo segnaposto con il percorso del file di scaricato `Initialize.ps1` sul computer locale. Sostituire i segnaposto ID oggetto applicazione con l'ID dell'applicazione che è stata immessa nella tabella 1. Una volta creato, eseguire lo script di PowerShell. 
 
@@ -227,15 +226,15 @@ Questi comandi di PowerShell di esempio sono riportati esempi di come eseguire q
 
 Aprire un browser per l'URL dell'applicazione web che è stato configurato nella procedura precedente. Si verrà reindirizzati per accedere a Azure Active Directory.
 
-![Accesso a Azure Active Directory configurato per la federazione](images/SAML11/fig13-examplesignin.png)
+![Accesso a Azure Active Directory configurato per la federazione](media/SAML11/fig13-examplesignin.png)
 
 Viene chiesto se si desidera restare connessi.
 
-![Restare connessi?](images/SAML11/fig14-staysignedin.png)
+![Restare connessi?](media/SAML11/fig14-staysignedin.png)
 
 Infine, è possibile accedere al sito connesso con un utente dal tenant di Azure Active Directory.
 
-![Utente effettuato l'accesso a SharePoint](images/SAML11/fig15-signedinsharepoint.png)
+![Utente effettuato l'accesso a SharePoint](media/SAML11/fig15-signedinsharepoint.png)
 
 ## <a name="managing-certificates"></a>Gestione dei certificati
 È importante tenere presente che il certificato di firma che è stato configurato per il provider di identità attendibile nel passaggio 4 è una data di scadenza e dover essere rinnovato. Vedere l'articolo [gestire certificati federati single sign - on in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-sso-certs) per informazioni sul rinnovo del certificato. Dopo che il certificato è stato rinnovato in Azure Active Directory, il download in un file locale e utilizzare lo script seguente per configurare il provider di identità attendibile con il certificato di firma rinnovato. 
@@ -266,7 +265,7 @@ $t.Update()
 ## <a name="fixing-people-picker"></a>Correzione di selezione utenti
 Gli utenti possono ora accedere 2016 SharePoint utilizzando l'identità di Azure Active Directory, ma sono ancora presenti opportunità per analisi utilizzo software per l'esperienza utente. In selezione utenti, ad esempio, la ricerca di un utente presenta più risultati della ricerca. Non esiste un risultato di ricerca per ognuno dei tipi di 3 attestazione creati nel mapping delle attestazioni. Per scegliere un account utente utilizzando la selezione utenti, è necessario digitare esattamente il proprio nome utente e scegliere il **nome** di attestazione risultati.
 
-![I risultati di ricerca basata sulle attestazioni](images/SAML11/fig16-claimssearchresults.png)
+![I risultati di ricerca basata sulle attestazioni](media/SAML11/fig16-claimssearchresults.png)
 
 Non esiste alcuna convalida sui valori ricerca, che possono causare errori di ortografia o all'attestazione agli utenti la scelta accidentale errato attestazione tipo da assegnare, ad esempio il **Cognome** . Ciò può impedire agli utenti di correttamente accedere alle risorse.
 

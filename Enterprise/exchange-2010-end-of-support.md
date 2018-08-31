@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 sta raggiungendo fine del supporto tecnico. Utilizzare questa Guida di orientamento pianificazione come guida per preparare l'aggiornamento a Exchange Online o una versione più recente di Exchange Server locale.
-ms.openlocfilehash: 240f93bfe27e3d564514626fc1d0f51ddeb7802d
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: e655edcc38723acd622fc6abc62a00d3f3e36738
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169888"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915191"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 fine del supporto roadmap
 
@@ -178,9 +178,9 @@ Se un suoni di migrazione completa ibrida appropriata, esaminare le risorse segu
     
 - [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/en-us/library/jj200581%28v=exchg.150%29.aspx)
     
-- [Procedura guidata di configurazione ibrida](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
+- [Configurazione ibrida guidata](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
     
-- [Domande frequenti sulla procedura guidata di configurazione ibrida](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
+- [Domande frequenti sulla configurazione ibrida guidata](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
     
 - [Prerequisiti per la distribuzione ibrida](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
     
