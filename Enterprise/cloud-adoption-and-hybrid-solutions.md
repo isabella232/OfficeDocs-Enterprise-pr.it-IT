@@ -9,13 +9,16 @@ ms.assetid: ''
 ms.service: o365-solutions
 ms.topic: hub-page
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 500c86c4fa0accf1c8fb98e6e639d8171ae9b0d4
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 52eb23707077151ae4876381a03db3e9a4bdb33b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915711"
 ---
 <h1>Soluzioni cloud aziendali</h1>
 <p>Risolvere i problemi aziendali utilizzando Microsoft Cloud. Informazioni sulle soluzioni cloud di sicurezza e ibride più recenti, sull'adozione cloud e altro.</p>
@@ -28,7 +31,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_cloud_it_architecture.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/cloud-architecture2.svg" alt="A cloud and a ruler" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -47,7 +50,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_architecture.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/process-flow.svg" alt="A flow chart" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -66,7 +69,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_test.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/cloud-devtest.svg" alt="A cloud with test tubes" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -85,7 +88,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_hybrid.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/hybrid.svg" alt="A building, a cloud, and two arrows" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -104,7 +107,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_cloud-security.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A padlock" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -122,7 +125,11 @@ ms.lasthandoff: 04/16/2018
 
 <h2>Contattaci</h2>
 <ul>
-    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">Ottenere la soluzione necessaria</a><br>Microsoft sta creando documenti contenenti soluzioni che fanno riferimento a numerosi prodotti e servizi. Fornire commenti e suggerimenti sulle soluzioni tra server proposte o richiedere una soluzione specifica inviando un'e-mail all'indirizzo MODAcontent@microsoft.com.</li><br>
-    <li><a href="https://aka.ms/caab">Partecipare alla discussione sulle soluzioni</a><br>Se si è appassionati di soluzioni basate sul cloud, prendere in considerazione l'idea di accedere al Cloud Adoption Advisory Board (CAAB) per connettersi con una community più ampia e vivace di sviluppatori di contenuti Microsoft, professionisti del settore e clienti di tutto il mondo. Per accedervi, diventare un membro dell'area CAAB (Cloud Adoption Advisory Board) della Community tecnica Microsoft e inviare una breve e-mail all'indirizzo <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>. Chiunque può leggere i contenuti correlati alla community nel <a href="https://blogs.technet.com/b/solutions_advisory_board/">blog di CAAB</a>. Tuttavia, i membri CAAB ricevono inviti a webinar privati che descrivono le nuove soluzioni e risorse relative all'adozione del cloud.</li><br>
-    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">Ottenere l'immagine visualizzata</a><br>Se si desidera una copia modificabile dell'immagine visualizzata in questo articolo, Microsoft si occuperà di inviarla. Inviare la propria richiesta tramite e-mail, includendo l'URL e il titolo dell'immagine, all'indirizzo cloudadopt@microsoft.com</li>
+    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">Ottenere la soluzione necessaria</a><br>Stiamo creando risorse per l'adozione del cloud relativi a varie piattaforme e servizi cloud Microsoft. Per inviare commenti sulle risorse relative all'adozione del cloud oppure per richiedere informazioni specifiche, inviare un'e-mail all'indirizzo cloudadopt@microsoft.com.
+</li><br>
+    <li><a href="https://aka.ms/caab">Partecipa alla discussione sull'adozione del cloud</a>
+<br>Gli appassionati di soluzioni cloud possono accedere al Cloud Adoption Advisory Board (CAAB) per entrare in contatto con una community attiva di sviluppatori di contenuti Microsoft, professionisti del settore e clienti di tutto il mondo. Per accedere, è necessario diventare un membro dell'area CAAB (Cloud Adoption Advisory Board) della Community tecnica Microsoft e inviare una breve e-mail all'indirizzo <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>. Chiunque può leggere i contenuti correlati alla community nel <a href="https://blogs.technet.com/b/solutions_advisory_board/">blog di CAAB</a>. Tuttavia, i membri CAAB ricevono inviti a webinar privati che descrivono le nuove soluzioni e risorse relative all'adozione del cloud.
+</li><br>
+    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">Ottenere l'immagine visualizzata</a><br>Se si desidera una copia modificabile dell'immagine nel presente articolo, saremo lieti di inviarla. Inviare la propria richiesta tramite e-mail, includendo l'URL e il titolo dell'immagine, all'indirizzo cloudadopt@microsoft.com
+</li>
 </ul>
