@@ -1,5 +1,5 @@
 ---
-title: "Identità per Contoso Corporation"
+title: Identità per Contoso Corporation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "Sintesi: informazioni su come Contoso trae vantaggio da una soluzione di gestione delle identità e degli accessi distribuita come servizio (IDaaS) e fornisce un'autenticazione ridondante e distribuita a livello geografico per i suoi utenti."
-ms.openlocfilehash: 7a6448969a90f1f646f70fee4c67a6da992dd2bc
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.openlocfilehash: 25e708147bda51fa8f8b4d0ea5e83eb4a9cd10b0
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915441"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identità per Contoso Corporation
 
@@ -30,7 +31,7 @@ Contoso usa una foresta di Windows Server Active Directory (AD) singola per cont
   
 **Figura 1: foresta di Contoso e domini a livello mondiale**
 
-![Domini e foresta di AD di Windows Server di Contoso nel mondo](images/Contoso_Poster/Contoso_WW_ID.png)
+![Domini e foresta di AD di Windows Server di Contoso nel mondo](media/Contoso-Poster/Contoso-WW-ID.png)
   
 Nella figura 1 viene mostrata la foresta di Contoso con domini regionali per le varie parti del mondo in cui sono presenti sedi centrali regionali.
   
@@ -46,7 +47,7 @@ Contoso consente:
     
 **Figura 2: Supporto di Contoso per l'autenticazione federata di clienti e partner**
 
-![Infrastruttura esistente di Contoso per supportare l'autenticazione federata di clienti e partner](images/Contoso_Poster/Federated_ID.png)
+![Infrastruttura esistente di Contoso per supportare l'autenticazione federata di clienti e partner](media/Contoso-Poster/Federated-ID.png)
   
 Nella figura 2 viene mostrata la rete perimetrale di Contoso contenente un sito Web pubblico, una rete extranet partner e un set di server AD FS. La rete perimetrale è connessa a Internet che contiene clienti, partner e servizi Internet.
   
@@ -60,7 +61,7 @@ Contoso ha distribuito lo strumento Azure AD Connect su un cluster di server nel
   
 **Figura 3: Infrastruttura di sincronizzazione della directory di Contoso**
 
-![Infrastruttura di sincronizzazione della directory di Contoso](images/Contoso_Poster/DirSync.png)
+![Infrastruttura di sincronizzazione della directory di Contoso](media/Contoso-Poster/DirSync.png)
   
 Nella figura 3 viene mostrato un cluster di server che eseguono Azure AD Connect per la sincronizzazione della foresta di Windows Server AD di Contoso con il tenant di Azure AD.
   
@@ -74,7 +75,7 @@ Per distribuire il carico delle richieste di autenticazione, Contoso ha configur
   
 **Figura 4: Distribuzione geografica del traffico di autenticazione per le sedi regionali**
 
-![Distribuzione geografica del traffico di autenticazione di Contoso per le sedi regionali](images/Contoso_Poster/Auth_GeoDist.png)
+![Distribuzione geografica del traffico di autenticazione di Contoso per le sedi regionali](media/Contoso-Poster/Auth-GeoDist.png)
   
 Nella figura 4 vengono mostrati i livelli dei computer client, Gestione traffico di Azure e i server di autenticazione nelle filiali regionali. Ogni filiale regionale usa proxy Web e server AD FS per autenticare le credenziali utente con i controller di dominio di Windows Server AD.
   
@@ -106,7 +107,7 @@ Per garantire la ridondanza a dipendenti remoti e mobili della sede di Parigi co
   
 **Figura 5: Infrastruttura di autenticazione ridondante in IaaS di Azure**
 
-![Infrastruttura di autenticazione ridondante in IaaS di Azure per la sede centrale di Parigi](images/Contoso_Poster/Paris_Auth_Redun.png)
+![Infrastruttura di autenticazione ridondante in IaaS di Azure per la sede centrale di Parigi](media/Contoso-Poster/Paris-Auth-Redun.png)
   
 Nella figura 5 vengono mostrati i proxy Web e i server AD FS nella rete perimetrale e un set aggiuntivo di ognuno di questi in una rete virtuale di Azure cross-premise.
   

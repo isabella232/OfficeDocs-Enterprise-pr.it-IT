@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 014b3710-e6e9-485c-8550-975d510eb2fc
-description: 'Riepilogo: Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.'
-ms.openlocfilehash: 1f023364c4b2e9c64af954ec9ba63a6197ebc01a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: "Riepilogo: Informazioni su un'infrastruttura di rete Contoso e la modalità da utilizzare ExpressRoute per accesso ottimizzato per le offerte cloud di Microsoft."
+ms.openlocfilehash: 89d4182d8a5ef44f936977ec51cc002b51f4b379
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915221"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Servizi di rete per Contoso Corporation
 
- **Riepilogo:** Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.
+ **Riepilogo:** Acquisire familiarità con l'infrastruttura di rete Contoso e come è possibile utilizzare ExpressRoute per accesso ottimizzato per le offerte cloud di Microsoft.
   
 Per adottare un'infrastruttura con cloud, gli ingegneri di rete Contoso hanno fatto un importante passo in avanti in merito al flusso del traffico di rete verso i servizi basati su cloud. Invece di ottimizzare solo il traffico verso server e data center locali, occorre prestare la stessa attenzione all'ottimizzazione del traffico verso Internet e in Internet.
   
@@ -30,7 +31,7 @@ Contoso dispone dell'infrastruttura di rete mostrata nella figura 1.
   
 **Figura 1: Infrastruttura WAN di Contoso**
 
-![Infrastruttura WAN di Contoso che collega sedi centrali, hub regionali e uffici secondari](images/Contoso_Poster/Contoso_WW_Net.png)
+![Infrastruttura WAN di Contoso che collega sedi centrali, hub regionali e uffici secondari](media/Contoso-Poster/Contoso-WW-Net.png)
   
 Nella figura 1 vengono illustrate le sedi Contoso nel mondo e la serie di collegamenti WAN delle sedi secondarie e regionali tra di esse.
   
@@ -54,7 +55,7 @@ Contoso ha ideato l'applicazione e l'infrastruttura del server per le operazioni
   
 **Figura 2: infrastruttura di Contoso per applicazioni interne**
 
-![Infrastruttura di Contoso per applicazioni interne](images/Contoso_Poster/App_Infra.png)
+![Infrastruttura di Contoso per applicazioni interne](media/Contoso-Poster/App-Infra.png)
   
 - Gli uffici secondari si avvalgono dei server di memorizzazione nella cache locale per archiviare documenti con accesso frequente e siti Web interni.
     
@@ -80,7 +81,7 @@ Con una connessione ExpressRoute, si è connessi alla rete cloud Microsoft e a t
   
 **Figura 3: rete mondiale Microsoft Cloud**
 
-![Rete mondiale Microsoft Cloud](images/Contoso_Poster/MS_WW_Cloud.png)
+![Rete mondiale Microsoft Cloud](media/Contoso-Poster/MS-WW-Cloud.png)
   
 Nella figura 3 viene mostrata la rete cloud Microsoft interconnessa per le varie aree geografiche nel mondo.
   

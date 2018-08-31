@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità elevata federati server ADFS fase 3 configurare l'autenticazione"
+title: Disponibilità elevata federati server ADFS fase 3 configurare l'autenticazione
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: "Riepilogo: Creare e configurare il server di Active Directory Federation Services (ADFS) per l'autenticazione federata la disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: a9daecddb572bf2432d68ae76ed8d81571ef4b79
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: "Riepilogo: creare e configurare i server Active Directory Federation Services (AD FS) per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
+ms.openlocfilehash: 93b2ed3c0935aee586d5aa236e79ab1e89a61b93
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915431"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Fase 3 dell'autenticazione federata a disponibilità elevata: Configurare i server AD FS
 
- **Riepilogo:** Creare e configurare il server di Active Directory Federation Services (ADFS) per l'autenticazione federata la disponibilità elevata per Office 365 in Microsoft Azure.
+ **Riepilogo:** creare e configurare i server Active Directory Federation Services (AD FS) per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure.
   
 In questa fase di distribuzione di disponibilità elevata per l'autenticazione federata di Office 365 nei servizi infrastruttura di Azure, viene creato un bilanciamento del carico interno e due server AD FS.
   
@@ -45,7 +46,7 @@ Utilizzare il seguente blocco di comandi di PowerShell per creare le macchine vi
 Richiamare una definite tabella M in [la disponibilità elevata federati autenticazione fase 2: configurare i controller di dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) e tabelle R, V, S, è possibile e A in [la disponibilità elevata federati autenticazione fase 1: configurare Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> Il seguente comando consente di utilizzare la versione più recente di Azure PowerShell. Vedere [iniziare a utilizzare i cmdlet PowerShell di Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Creare innanzitutto un servizio di bilanciamento del carico interno Azure per l'annuncio di due server ADFS. Specificare i valori per le variabili, rimuovere il \< e > caratteri. Quando vengono specificati tutti i valori appropriati, eseguire il blocco risultante al prompt dei comandi di PowerShell Azure o in PowerShell ISE.
   
@@ -128,7 +129,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Dal momento che queste macchine virtuali sono relative a un'applicazione intranet, non vengono assegnati un indirizzo IP pubblico o un'etichetta nome di dominio DNS ed esposti a Internet. Tuttavia, ciò significa inoltre che non è possibile connettersi a tali dal portale di Azure. Quando si visualizzano le proprietà della macchina virtuale non è disponibile l'opzione **Connetti** . Utilizzare accessorio connessione Desktop remoto o un altro strumento di Desktop remoto per la connessione alla macchina virtuale con privata IP address o intranet nome DNS.
+> Poiché queste macchine virtuali sono per un'applicazione Intranet, non sono assegnate a un indirizzo IP pubblico o a un'etichetta del nome di dominio DNS ed esposte a Internet. Tuttavia, ciò significa anche che non è possibile connettersi a tali macchine virtuali dal portale di Azure. L'opzione **Connetti** non è disponibile quando si visualizzano le proprietà della macchina virtuale. Usare l'accessorio Connessione desktop remoto o un altro strumento Desktop remoto per connettersi alla macchina virtuale usando il relativo indirizzo IP privato o il nome DNS Intranet.
   
 Per ogni macchina virtuale, usare il client desktop remoto di propria scelta e creare una connessione desktop remoto. Usare il nome DNS Intranet o il nome computer e le credenziali dell'account di amministratore locale.
   
@@ -143,13 +144,13 @@ Restart-Computer
 
 Di seguito è riportata la configurazione risultante dal completamento corretto di questa fase, con i nomi computer segnaposto.
   
-**Fase 3: Server AD FS e servizio di bilanciamento del carico interno per l'infrastruttura di autenticazione federativa la disponibilità elevata in Azure**
+**Fase 3: i server AD FS e il bilanciamento del carico interno per l'infrastruttura dell'autenticazione federata a disponibilità elevata in Azure**
 
-![Fase 3 dell'autenticazione federata di Office 365 con disponibilità elevata in Azure con server AD FS](images/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Fase 3 dell'autenticazione federata di Office 365 con disponibilità elevata in Azure con server AD FS](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Passaggio successivo
 
-Utilizzare [la disponibilità elevata federati autenticazione fase 4: configurare il proxy di applicazione web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) per continuare a configurare questo carico di lavoro.
+Utilizzare [High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) per continuare a configurare il carico di lavoro.
   
 ## <a name="see-also"></a>Vedere anche
 

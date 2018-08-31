@@ -1,5 +1,5 @@
 ---
-title: Spostamento dei dati di cronologia delle transazioni per il cloud
+title: Trasferimento dei dati cronologici delle transazioni nel cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: 'Riepilogo: Come Contoso ha implementato SQL Server estensione del database per ridurre le esigenze di archiviazione in locale e giornaliera in esecuzione i costi.'
-ms.openlocfilehash: 9d8d51aa1bc7a304d1148111aedd54916d9e8052
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 791b5d4f14ba7246221cf9b459c31c9ba1b54099
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915721"
 ---
-# <a name="moving-historical-transaction-data-to-the-cloud"></a>Spostamento dei dati di cronologia delle transazioni per il cloud
+# <a name="moving-historical-transaction-data-to-the-cloud"></a>Trasferimento dei dati cronologici delle transazioni nel cloud
 
  **Riepilogo:** Contoso ha implementato come database esteso di SQL Server per ridurre le esigenze di archiviazione in locale e giornaliera costi contenuti.
   
@@ -28,7 +31,7 @@ Durante il relativo esigenza aziendale di scalabilità orizzontale verso il bass
   
 **Nella figura 1: SQL Server stiramento Database**
 
-![Estensione database di SQL Server come soluzione di dati ibrida](images/Contoso_Poster/StretchDB01.png)
+![Estensione database di SQL Server come soluzione di dati ibrida](media/Contoso-Poster/StretchDB01.png)
   
 Nella figura 1 viene illustrato il modo in cui un client SQL invia query T-SQL per un server che esegue SQL Server 2016, che li inoltra a un Database Ridimensiona SQL Azure in Azure PaaS.
   
@@ -52,7 +55,7 @@ Di seguito è la configurazione per un server che esegue SQL Server 2016 nella s
   
 **Figura 2: Utilizzo di Database adatta per un server di datacenter di Contoso**
 
-![Configurazione di Contoso dell'Estensione database di SQL Server per un singolo computer che esegue SQL Server](images/Contoso_Poster/StretchDB02.png)
+![Configurazione di Contoso dell'Estensione database di SQL Server per un singolo computer che esegue SQL Server](media/Contoso-Poster/StretchDB02.png)
 
   
 Nella figura 2 viene illustrato come le query degli utenti a un server applicazioni nel centro dati di Contoso diventano query SQL che vengono passate a un Database Ridimensiona SQL Azure in Azure PaaS.

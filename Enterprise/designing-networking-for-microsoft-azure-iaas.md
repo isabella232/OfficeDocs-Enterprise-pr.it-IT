@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Riepilogo: Informazioni su come progettare la rete ottimizzata per carichi di lavoro in Microsoft Azure IaaS.'
-ms.openlocfilehash: 2430b62e04392ddd4266d37797b18ae7e890c092
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 0e7af14768aa1a21548b25a20a465b644b749f3e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915121"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Progettazione della rete per IaaS di Microsoft Azure
 
@@ -30,7 +33,7 @@ Seguire questa procedura per qualsiasi tipo di rete virtuale.
   
 ### <a name="step-1-prepare-your-intranet-for-microsoft-cloud-services"></a>Passaggio 1: Predisporre la rete Intranet per i servizi cloud Microsoft.
 
-Passare attraverso la sezione **operazioni per preparare la rete di servizi cloud Microsoft** in [elementi comuni di integrazione applicativa di Microsoft cloud](common-elements-of-microsoft-cloud-connectivity.md).
+Consultare la sezione **Procedura per predisporre la rete per i servizi cloud Microsoft** in [Common elements of Microsoft cloud connectivity](common-elements-of-microsoft-cloud-connectivity.md).
   
 ### <a name="step-2-optimize-your-internet-bandwidth"></a>Passaggio 2: Ottimizzare la larghezza di banda Internet.
 
@@ -40,34 +43,34 @@ Ottimizzare la larghezza di banda Internet utilizzando i passaggi da 2 a 4 della
 
 Una rete virtuale solo cloud non dispone di connessione a una rete locale. Ecco un esempio:
   
-**Nella figura 1: Un VNet di solo cloud**
+**Figura 1: una rete virtuale solo cloud**
 
-![Figura 1: Una rete virtuale basata solo su cloud in Azure](images/8be19104-02b3-4a7f-b0a0-30d6fcf8890b.png)
+![Figura 1: Una rete virtuale basata solo su cloud in Azure](media/8be19104-02b3-4a7f-b0a0-30d6fcf8890b.png)
   
 La figura 1 mostra un insieme di macchine virtuali all'interno di una rete virtuale solo cloud.
   
 Una rete virtuale locale dispone di una connessione S2S VPN o ExpressRoute da sito a sito a una rete locale mediante il gateway Azure. Ecco un esempio:
   
-**Figura 2: VNet tra locali**
+**Figura 2: una rete virtuale locale**
 
-![Figura 2: Una rete virtuale di Azure tra più sedi](images/caacf007-e0dc-45d3-9531-441109776d25.png)
+![Figura 2: Una rete virtuale di Azure tra più sedi](media/caacf007-e0dc-45d3-9531-441109776d25.png)
   
 La figura 2 mostra un insieme di macchine virtuali all'interno di una rete virtuale locale, connessa a una rete locale.
   
-Vedere le ulteriori [operazioni di pianificazione per un VNet cross-premise](designing-networking-for-microsoft-azure-iaas.md#cross_prem) sezione in questo articolo.
+Consultare la sezione [Operazioni di pianificazione per una rete virtuale locale](designing-networking-for-microsoft-azure-iaas.md#cross_prem) in questo articolo.
   
 ### <a name="step-4-determine-the-address-space-of-the-vnet"></a>Passaggio 4: Determinare lo spazio indirizzi della rete virtuale.
 
 La tabella 1 mostra gli spazi indirizzi per i vari tipi di rete virtuale.
   
-|**Tipo di VNet**|**Spazio degli indirizzi di rete virtuale**|
+|**Tipo di rete virtuale**|**Spazio degli indirizzi delle reti virtuali**|
 |:-----|:-----|
 |Solo cloud  <br/> |Spazio di indirizzi privato arbitrario  <br/> |
 |Solo cloud interconnesso  <br/> |Private arbitrarie, ma non la sovrapposizione con altre connessi VNets  <br/> |
 |Cross-premise  <br/> |Privato, ma non in sovrapposizione alle reti virtuali locali  <br/> |
 |Cross-premise interconnesso  <br/> |Privato, ma non in sovrapposizione ad altre reti virtuali locali e connesse  <br/> |
    
- **Tabella 1: Tipi di VNets e sul relativo spazio indirizzo**
+ **Tabella 1: tipi di reti virtuali e spazio indirizzi corrispondente**
   
 Le macchine virtuali sono assegnate a una configurazione di indirizzi dallo spazio di indirizzi della subnet da parte di DHCP:
   
@@ -85,9 +88,9 @@ Le macchine virtuali possono anche essere assegnate a un indirizzo IP pubblico, 
 
 Esistono due tipi di subnet in una rete virtuale, una subnet gateway e una subnet che ospita la macchina virtuale.
   
-**Figura 3: I due tipi di subnet in Azure**
+**Figura 3: Due tipi di subnet in Azure**
 
-![Figura 3: Due tipi di sottoreti in Azure](images/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
+![Figura 3: Due tipi di sottoreti in Azure](media/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
   
 La figura 3 mostra un rete virtuale contenente una subnet gateway che include un gateway Azure e un set di subnet che ospitano macchine virtuali.
   
@@ -116,9 +119,9 @@ Per ulteriori informazioni, vedere [la calcolatrice spazio indirizzo per le subn
   
 Nelle subnet che ospitano le macchine virtuali si inseriscono le macchine virtuali di Azure. È possibile effettuare questa operazione in base alle tipiche linee guide in locale, come un livello o ruolo comune di un'applicazione o per l'isolamento della subnet.
   
-Azure utilizza gli indirizzi prime 3 in ogni subnet. Di conseguenza, il numero di indirizzi possibili in una subnet Azure è 2<sup>n</sup> -5, dove n è il numero di bit host. Nella tabella 3 viene illustrato l'intervallo delle macchine virtuali necessarie, il numero di ospita bit necessari e le dimensioni di subnet corrispondenti.
+Azure utilizza gli indirizzi prime 3 in ogni subnet. Di conseguenza, il numero di indirizzi possibili in una subnet Azure è 2<sup>n</sup> - 5, dove n è il numero di bit host. Nella tabella 3 viene illustrato l'intervallo delle macchine virtuali necessarie, il numero di ospita bit necessari e le dimensioni di subnet corrispondenti.
   
-|**Macchine virtuali necessarie**|**Bit host**|**Dimensioni subnet**|
+|**Macchine virtuali necessarie**|**Bit dell'host**|**Dimensioni subnet**|
 |:-----|:-----|:-----|
 |1-3  <br/> |3  <br/> |/29  <br/> |
 |4-11  <br/> |4  <br/> |/28  <br/> |
@@ -126,7 +129,7 @@ Azure utilizza gli indirizzi prime 3 in ogni subnet. Di conseguenza, il numero d
 |28-59  <br/> |6  <br/> |/26  <br/> |
 |60-123  <br/> |7  <br/> |/25  <br/> |
    
- **Tabella 3: requisiti delle macchine virtuali e alle dimensioni di subnet**
+ **Tabella 3: Requisiti della macchina virtuale e dimensioni della subnet corrispondente**
   
 Per ulteriori informazioni sulla quantità massima di macchine virtuali in una subnet o VNet, vedere [Limiti di rete](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits).
   
@@ -142,12 +145,12 @@ Azure assegna alle macchine virtuali gli indirizzi dei server DNS da parte di DH
     
 La tabella 4 mostra le diverse configurazioni dei server DNS per ogni tipo di rete virtuale.
     
-|**Tipo di VNet**|**Server DNS**|
+|**Tipo di rete virtuale**|**Server DNS**|
 |:-----|:-----|
 |Solo cloud  <br/> |Fornito da Azure per la risoluzione dei nomi locali e Internet  <br/> Macchina virtuale di Azure per la risoluzione dei nomi locali e Internet (inoltro DNS)  <br/> |
 |Cross-premise  <br/> |Locale per le risoluzione dei nomi locali e Intranet  <br/> Macchina virtuale di Azure per la risoluzione dei nomi locali e Intranet (replica e inoltro DNS)  <br/> |
    
- **Tabella 4: Opzioni del server DNS per i due tipi diversi di VNets**
+ **Tabella 4: Opzioni server DNS per i due diversi tipi di rete virtuale**
   
 Per ulteriori informazioni, vedere [Risoluzione dei nomi per le macchine virtuali e istanze del ruolo](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances).
   
@@ -157,17 +160,17 @@ In alcuni casi, potrebbe essere necessario distribuire il traffico in arrivo in 
   
 Il bilanciamento del carico verso Internet di Azure distribuisce in ordine casuale il traffico in ingresso non richiesto da Internet ai membri di un set con carico bilanciato.
   
-**Figura 4: Un esterno bilanciamento del carico in Azure**
+**Figura 4: Un bilanciamento del carico esterno in Azure**
 
-![Figura 4: Un bilanciamento del carico esterno in Azure](images/eb5945e5-0c2b-40f1-b9ed-54bb2b0f9e59.png)
+![Figura 4: Un bilanciamento del carico esterno in Azure](media/eb5945e5-0c2b-40f1-b9ed-54bb2b0f9e59.png)
   
 Figura 4 viene illustrato un servizio di bilanciamento del carico esterno in Azure che distribuisce il traffico in ingresso in una regola NAT in entrata o endpoint per una serie di macchine virtuali in un set di bilanciamento del carico.
   
 Il bilanciamento del carico interno di Azure distribuisce in modo casuale il traffico in ingresso da altre macchine virtuali di Azure o da computer Intranet ai membri di un set con carico bilanciato.  
   
-**Figura 5: Un interno bilanciamento del carico in Azure**
+**Figura 5: Un bilanciamento del carico interno in Azure**
 
-![Figura 5: Un bilanciamento del carico interno in Azure](images/d1451b73-6465-449d-b3e6-22160ce51f35.png)
+![Figura 5: Un bilanciamento del carico interno in Azure](media/d1451b73-6465-449d-b3e6-22160ce51f35.png)
   
 Figura 5 viene illustrato un servizio di bilanciamento del carico interno in Azure che distribuisce il traffico in ingresso in una regola NAT in entrata o endpoint per una serie di macchine virtuali in un set di bilanciamento del carico.
   
@@ -177,9 +180,9 @@ Per ulteriori informazioni, vedere [Bilanciamento del carico di Azure](https://d
 
 Nel caso in cui fosse necessario inoltrare il traffico alle applicazioni virtuali della rete virtuale, è necessario aggiungere una o più route definite dall'utente a una subnet.
   
-**Nella figura 6: Dispositivi di rete e le route definite dall'utente in Azure**
+**Figura 6: Route definite dall’utente e dispositivi virtuali in Azure**
 
-![Figura 6: Route definite dall’utente e dispositivi virtuali in Azure](images/f181d0f4-ebf9-439e-9c98-dec17428c32b.png)
+![Figura 6: Route definite dall’utente e dispositivi virtuali in Azure](media/f181d0f4-ebf9-439e-9c98-dec17428c32b.png)
   
 La figura 6 mostra una rete virtuale cross-premise e una route definita dall'utente assegnate a una subnet che ospita una macchina virtuale che punta a un'applicazione virtuale.
   
@@ -198,11 +201,11 @@ Nella tabella 5 sono riportati i metodi per filtrare o esaminare il traffico in 
 |3. Bilanciamento del carico con accesso a Internet con regole NAT in ingresso  <br/> |Manager delle risorse  <br/> |
 |4. dispositivi di rete della protezione in Azure Marketplace (non visualizzata)  <br/> |Gestione risorse e classico  <br/> |
    
- **Tabella 5: Metodi di connessione per le macchine virtuali e dai modelli di distribuzione Azure corrispondenti**
+ **Tabella 5: Metodi per connettersi alle macchine virtuali e modelli di distribuzione di Azure corrispondenti**
   
-**Figura 7: La connessione alle macchine virtuali di Azure su Internet**
+**Figura 7: Connessione a macchine virtuali di Azure tramite Internet**
 
-![Figura 7: Connessione a macchine virtuali di Azure tramite Internet](images/c5e3531b-170a-4482-a6ff-fb8fbbe81b35.png)
+![Figura 7: Connessione a macchine virtuali di Azure tramite Internet](media/c5e3531b-170a-4482-a6ff-fb8fbbe81b35.png)
   
 La figura 7 mostra un computer connesso a Internet che stabilisce una connessione con una macchina virtuale in un servizio cloud tramite un endpoint, una macchina virtuale su una subnet utilizzando un gruppo di sicurezza di rete e una macchina virtuale su una subnet utilizzando un bilanciamento del carico esterno e le regole NAT in ingresso.
   
@@ -224,25 +227,25 @@ Le reti virtuali possono essere connesse tra loro mediante topologie simili a qu
   
 Una configurazione di collegamento in cascata connette le reti virtuali in serie.
   
-**Figura 8: Una concatenati daisy configurazione per VNets**
+**Figura 8: Una configurazione di collegamento in cascata per le reti virtuali**
 
-![Figura 8: Una configurazione di collegamento in cascata per le reti virtuali Azure](images/264d5dd4-06c5-483f-9428-a18cc1f68ac1.png)
+![Figura 8: Una configurazione di collegamento in cascata per le reti virtuali Azure](media/264d5dd4-06c5-483f-9428-a18cc1f68ac1.png)
   
 Figura 8 mostra cinque VNets connessi nella serie utilizzando una configurazione daisy concatenati.
   
 Una configurazione spoke e hub connette più reti virtuali a un set di reti virtuali centrali, che sono a loro connesse tra di loro.
   
-**Figura 9: Un hub e spoke configurazione per VNets**
+**Figura 9: Una configurazione hub-spoke per le reti virtuali**
 
-![Figura 9: Una configurazione hub-spoke per le reti virtuali di Azure](images/dd442a38-5b76-4ac5-b743-8fc7711a91ba.png)
+![Figura 9: Una configurazione hub-spoke per le reti virtuali di Azure](media/dd442a38-5b76-4ac5-b743-8fc7711a91ba.png)
   
 La figura 9 mostra 6 reti virtuali, 2 reti virtuali sono hub connessi a loro volta e anche 2 reti virtuali spoke.
   
 Una configurazione a maglia completa connette le reti virtuali tra di loro.
   
-**Figura 10: Un intero trama configurazione per VNets**
+**Figura 10: Una configurazione a maglia completa per le reti virtuali**
 
-![Figura 10: Una configurazione mesh per le reti virtuali di Azure](images/9dda0738-10db-4a63-95b3-79851a399b71.png)
+![Figura 10: Una configurazione mesh per le reti virtuali di Azure](media/9dda0738-10db-4a63-95b3-79851a399b71.png)
   
 La figura 10 mostra 4 reti virtuali che sono connesse a vicenda utilizzando 6 collegamenti da rete virtuale a rete virtuale.
   
@@ -252,7 +255,7 @@ La figura 10 mostra 4 reti virtuali che sono connesse a vicenda utilizzando 6 co
 Seguire questa procedura per una rete virtuale cross-premise.
   
 > [!TIP]
-> Per creare un ambiente di sviluppo e di testing simulato tra locali, vedere [simulato tra locali reti virtuali di Azure](simulated-cross-premises-virtual-network-in-azure.md). 
+> Per creare un ambiente di test/sviluppo cross-premise simulato, vedere [Simulated cross-premises virtual network in Azure](simulated-cross-premises-virtual-network-in-azure.md). 
   
 ### <a name="step-1-determine-the-cross-premises-connection-to-the-vnet-s2s-vpn-or-expressroute"></a>Passaggio 1: Determinare la connessione cross-premise alla rete virtuale (S2S VPN o ExpressRoute).
 
@@ -265,7 +268,7 @@ Nella tabella 6 sono elencati i vari di tipi di connessioni.
 |VPN da punto a punto (P2S)  <br/> |Connette un singolo computer alla rete virtuale.  <br/> |
 |Peering della rete virtuale o VPN da rete virtuale a rete virtuale (V2V)   <br/> |Connette una rete virtuale a un'altra rete virtuale.  <br/> |
    
- **Tabella 6: I tipi di connessioni per VNets tra locali**
+ **Tabella 6: Tipi di connessione per reti virtuali cross-premise**
   
 Per ulteriori informazioni sul numero massimo di connessioni, vedere [Limiti della rete](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits).
   
@@ -273,9 +276,9 @@ Per ulteriori informazioni sui dispositivi VPN, vedere [dispositivi VPN per le c
   
 Per ulteriori informazioni su VNet peering, vedere [VNet peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).
   
-**Figura 11: Le quattro modalità per connettersi a un VNet tra locali**
+**Figura 11: i quattro modi per connettersi a una rete virtuale cross-premise**
 
-![Figura 11: I tre modi per connettersi a una rete virtuale di Azure tra più sedi](images/d5d4a625-cfbd-4a77-9159-eaca69d07e93.png)
+![Figura 11: I tre modi per connettersi a una rete virtuale di Azure tra più sedi](media/d5d4a625-cfbd-4a77-9159-eaca69d07e93.png)
   
 Nella figura 11 viene VNet con quattro tipi di connessioni: connessione a un P2S da un computer, una connessione VPN S2S da una rete locale, una connessione ExpressRoute da una rete locale e una connessione VNet-VNet da un altro VNet. 
   
@@ -305,9 +308,9 @@ Il router o dispositivo VPN locale si comporta come:
     
 - Peer BPG e punto di terminazione per la connessione ExpressRoute con peer privato.
     
-**Figura 12: Router VPN locale o dispositivo**
+**Figura 12: Il router VPN locale o il dispositivo**
 
-![Figura 12: Il router VPN locale o il dispositivo](images/bd221468-a660-4730-aa55-0426986480b9.png)
+![Figura 12: Il router VPN locale o il dispositivo](media/bd221468-a660-4730-aa55-0426986480b9.png)
   
 La figura 12 mostra una rete virtuale cross-premise connessa a un router o a un dispositivo VPN locale.
   
@@ -321,9 +324,9 @@ Il routing verso le reti virtuali da ambiente locale comprende i seguenti elemen
     
 2. Una route per lo spazio indirizzo della rete virtuale sul dispositivo VPN che punta tra la connessione VPN S2S o ExpressRoute.
     
-**Figura 13: Route locale necessari per rendere un VNet raggiungibile**
+**Figura 13: Le route locali hanno dovuto rendere la rete virtuale raggiungibile**
 
-![Figura 13: Le route locali hanno dovuto rendere la rete virtuale di Azure raggiungibile](images/7a1e20c1-fbc4-4cb9-9961-735da4e23307.png)
+![Figura 13: Le route locali hanno dovuto rendere la rete virtuale di Azure raggiungibile](media/7a1e20c1-fbc4-4cb9-9961-735da4e23307.png)
   
 La figura 13 mostra le informazioni di routing richieste dai router locali, da quelli VPN o dal dispositivo che rappresenta lo spazio indirizzi della rete virtuale.
   
@@ -337,21 +340,21 @@ La figura 13 mostra le informazioni di routing richieste dai router locali, da q
     
 - Reti any-to-any (VPN IP)
     
-**Figura 14: Utilizzo ExpressRoute per connettersi a un VNet tra locali**
+**Figura 14: Uso di ExpressRoute per connettersi a una rete virtuale cross-premise**
 
-![Figura 14: Uso di ExpressRoute per connettersi a una rete virtuale Azure tra più sedi](images/7030bd39-69a6-4283-8567-3434e1ab6ba6.png)
+![Figura 14: Uso di ExpressRoute per connettersi a una rete virtuale Azure tra più sedi](media/7030bd39-69a6-4283-8567-3434e1ab6ba6.png)
   
 La figura 14 mostra una rete virtuale cross-premise e una connessione ExpressRoute da un router locale a Microsoft Azure.
   
-Per ulteriori informazioni, vedere [ExpressRoute per la connettività cloud Microsoft](expressroute-for-microsoft-cloud-connectivity.md).
+Per ulteriori informazioni, vedere [ExpressRoute for Microsoft cloud connectivity](expressroute-for-microsoft-cloud-connectivity.md).
   
 ### <a name="step-5-determine-the-local-network-address-space-for-the-azure-gateway"></a>Passaggio 5: Determinare lo spazio di indirizzi della rete locale per il gateway di Azure.
 
 Per il routing verso reti virtuali locali o di altro tipo, Azure inoltra il traffico mediante un gateway che corrisponde allo spazio di indirizzi della rete locale ad esso assegnato.
   
-**Figura 15: La rete locale spazio degli indirizzi per un VNet tra locali**
+**Figura 15: Lo spazio degli indirizzi di rete locale per una rete virtuale cross-premise**
 
-![Figura 15: Lo spazio degli indirizzi di rete locale per una rete virtuale di Azure tra più sedi](images/e3af2652-8b8e-4551-9a0b-b550e6e7e3c0.png)
+![Figura 15: Lo spazio degli indirizzi di rete locale per una rete virtuale di Azure tra più sedi](media/e3af2652-8b8e-4551-9a0b-b550e6e7e3c0.png)
   
 La figura 15 mostra una rete virtuale cross-premise e lo spazio indirizzi della rete locale sul gateway di Azure, che rappresenta lo spazio indirizzi raggiungibile sulla rete locale.  
   
@@ -363,9 +366,9 @@ La figura 15 mostra una rete virtuale cross-premise e lo spazio indirizzi della 
     
 Poiché il gateway di Azure non consente route riepilogate, devi definire lo spazio di indirizzi della rete locale per l'opzione 2 affinché non includa lo spazio di indirizzi della rete virtuale.
   
-**Figura 16: L'indirizzo spazio foro creato per lo spazio degli indirizzi VNet**
+**Figura 16: Hole dello spazio di indirizzi creato dallo spazio di indirizzi della rete virtuale**
 
-![Figura 16: Hole dello spazio di indirizzi creato dallo spazio di indirizzi della rete virtuale](images/e79c4840-f9e3-4741-9b72-59db6043aefa.png)
+![Figura 16: Hole dello spazio di indirizzi creato dallo spazio di indirizzi della rete virtuale](media/e79c4840-f9e3-4741-9b72-59db6043aefa.png)
   
 La figura 16 mostra una rappresentazione di uno spazio indirizzi, con lo spazio radice e lo spazio indirizzi della rete virtuale.
   
@@ -381,7 +384,7 @@ La tabella 7 mostra i passaggi e i prefissi risultanti che definiscono lo spazio
 |2. elenco i prefissi senza sovrapposizioni per variabile ottetti fino a ma non incluso l'ultimo ottetti utilizzati nello spazio di indirizzi VNet.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 prefissi, ignorando 10.100.0.0/16)  <br/> |
 |3. elenco i prefissi senza sovrapposizioni all'interno di ottetti utilizzato ultimo VNet spazio degli indirizzi.  <br/> |10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 prefissi, ignorando 10.100.100.0/24)  <br/> |
    
- **Tabella 7: Spazio di rete esempio indirizzi locali**
+ **Tabella 7: Spazio di rete con indirizzo locale di esempio**
   
 ### <a name="step-6-configure-on-premises-dns-servers-for-dns-replication-with-dns-servers-hosted-in-azure"></a>Passaggio 6: Configurare i server DNS locali per la replica DNS con i server DNS ospitati in Azure.
 
@@ -391,9 +394,9 @@ Per assicurarsi che i computer locali possano risolvere i nomi dei server basati
     
 - La replica DNS delle zone appropriate tra i server DNS in locale e nella rete virtuale
     
-**Figura 17: La replica DNS e inoltro per un server DNS in una VNet tra locali**
+**Figura 17: Replica DNS e inoltro per un server DNS in una rete virtuale cross-premise**
 
-![Figura 17: Replica DNS e inoltro per un server DNS in una rete virtuale di Azure tra più sedi](images/ab55e5ce-ccb0-49d4-a301-657a727f97b2.png)
+![Figura 17: Replica DNS e inoltro per un server DNS in una rete virtuale di Azure tra più sedi](media/ab55e5ce-ccb0-49d4-a301-657a727f97b2.png)
   
 La figura 17 mostra una rete virtuale cross-premise con server DNS nella rete locale e su una subnet della rete virtuale. La replica e l'inoltro DNS sono stati configurati tra due server DNS.
   
@@ -401,9 +404,9 @@ La figura 17 mostra una rete virtuale cross-premise con server DNS nella rete lo
 
 La route di sistema predefinito per le subnet Azure punta a Internet. Per garantire che tutto il traffico da macchine virtuali passa attraverso la connessione tra locali, creare una tabella di routing con la route predefinita che utilizza il gateway Azure come relativo indirizzo hop successivo. È quindi possibile associare la tabella di route con la subnet. Questo è noto come forzato tunnel. Per ulteriori informazioni, vedere [Configure forzato tunnel](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm).
   
-**Figura 18: Route definite dall'utente e tunnel forzato per un VNet tra locali**
+**Figura 18: Route definite dall'utente e tunnel forzata nella rete virtuale cross-premise**
 
-![Figura 18: Route definite dall'utente e tunnel forzata nella rete virtuale Azure tra più sedi](images/1e545ec6-c2d9-48d2-bb5e-e0a581fee004.png)
+![Figura 18: Route definite dall'utente e tunnel forzata nella rete virtuale Azure tra più sedi](media/1e545ec6-c2d9-48d2-bb5e-e0a581fee004.png)
   
 Figura 18 viene illustrata una VNet cross-premise a una route definita dall'utente per una subnet che punta al gateway di Azure.
   
@@ -412,9 +415,9 @@ Figura 18 viene illustrata una VNet cross-premise a una route definita dall'uten
 
 Un esempio di un carico di lavoro IT ospitata in Azure IaaS intranet è una farm di SharePoint Server 2016 altamente disponibili, a più livelli.
   
-**Figura 19: Una farm di SharePoint Server 2016 intranet a disponibilità elevata in Azure IaaS**
+**Figura 19: Una farm di SharePoint Server 2016 con Intranet a elevata disponibilità in IaaS di Azure**
 
-![Una farm di SharePoint Server 2016 a disponibilità elevata in IaaS di Azure](images/3a922e21-df91-455f-ba90-78abdd48d98d.png)
+![Una farm di SharePoint Server 2016 a disponibilità elevata in IaaS di Azure](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
   
 Figura 19 mostra i nove server di una farm di SharePoint Server 2016 distribuiti in un VNet cross-premise utilizzato da servizi di bilanciamento del carico interno per i livelli front-end e i dati. Per ulteriori informazioni, tra cui progettazione dettagliate e istruzioni di distribuzione, vedere [SharePoint Server 2016 in Microsoft Azure](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx).
   
@@ -427,7 +430,7 @@ Per ulteriori esempi di carichi di lavoro IT distribuiti nelle macchine virtuali
 
 <a name="cross_prem"> </a>
 
-[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete di Microsoft Cloud per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

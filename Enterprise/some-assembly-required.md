@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
-description: "Sintesi: visualizzare i dettagli sul set di opzioni di archiviazione cloud che è possibile utilizzare per creare la propria soluzione di archiviazione personalizzata."
-ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Sintesi: visualizzare i dettagli sul set di opzioni di archiviazione cloud che è possibile utilizzare per creare la propria soluzione di archiviazione personalizzata.'
+ms.openlocfilehash: 2c80b0cdf0829e80a7916133ee51a45c91b96efa
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915521"
 ---
 # <a name="some-assembly-required"></a>Alcuni assembly richiesti
 
@@ -138,11 +141,11 @@ Usare le risorse virtualmente illimitate del database SQL di Azure quando:
     
 Con il ridimensionamento verticale, è possibile modificare il livello/l'edizione delle prestazioni del database di Azure oppure tramite pool di database elastici.
   
-![Ridimensionamento verticale fornito dal database SQL di Azure.](images/Storage_Poster/CloudStor-VertScale.png)
+![Ridimensionamento verticale fornito dal database SQL di Azure.](media/Storage-Poster/CloudStor-VertScale.png)
   
 Con la scalabilità orizzontale, è possibile aggiungere nuovi database in base alle esigenze.
   
-![Ridimensionamento orizzontale fornito dal database SQL di Azure.](images/Storage_Poster/CloudStor-HorizScale.png)
+![Ridimensionamento orizzontale fornito dal database SQL di Azure.](media/Storage-Poster/CloudStor-HorizScale.png)
   
 Fare clic [qui](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) per ulteriori informazioni.
   
@@ -150,7 +153,7 @@ Fare clic [qui](https://docs.microsoft.com/azure/sql-database/sql-database-elast
 
 L'estensione database è una funzionalità di SQL Server 2016 che consente di spostare in modo sicuro e trasparente semplici dati, come dati aziendali chiusi in una tabella di grandi dimensioni contenente le informazioni sugli ordini dei clienti, in un'estensione database SQL in Azure. Quando estesi, i contenuti di un'istanza di SQL Server, un database o anche una singola tabella sono la combinazione dei dati locali nel server SQL Server 2016 e dei dati remoti in Azure. I dati che diventano idonei per l'estensione vengono spostati automaticamente in Azure mediante SQL Server 2016.
   
-![Estensione database con SQL Server 2016.](images/Storage_Poster/CloudStor-Stretch.png)
+![Estensione database con SQL Server 2016.](media/Storage-Poster/CloudStor-Stretch.png)
   
 Le query degli utenti che includono i dati cronologici vengono inoltrate in modo trasparente all'estensione database Azure SQL. Le query non devono essere riscritte, anche se la tabella viene estesa.
   
@@ -202,7 +205,7 @@ Attributi comuni di Cosmos DB, Archiviazione tabelle di Azure e Database SQL di 
     
 La tabella seguente mostra gli attributi non comuni di Azure Cosmos DB, Archiviazione tabelle di Azure e Database SQL di Azure.
   
-![Attributi non comuni di Cosmos DB rispetto a Tabelle di Azure rispetto a Database SQL di Azure](images/Storage_Poster/CloudStor-Table.png)
+![Attributi non comuni di Cosmos DB rispetto a Tabelle di Azure rispetto a Database SQL di Azure](media/Storage-Poster/CloudStor-Table.png)
   
 ### <a name="resources"></a>Risorse
 

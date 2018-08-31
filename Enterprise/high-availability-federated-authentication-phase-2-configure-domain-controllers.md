@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: "Riepilogo: Configurare i controller di dominio e il server DirSync per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: 3f898fea8fc92d4f7ea392bfe854425beafb1eb4
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: 1e66403348bc2cd9a6dfab56f32735d62c986035
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215868"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915151"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 dell'autenticazione federata a disponibilità elevata: configurare i controller di dominio
 
@@ -36,13 +36,13 @@ Per prima cosa, è necessario compilare la colonna **Nome macchina virtuale** de
   
 |**Elemento**|**Nome macchina virtuale**|**Immagine della raccolta**|**Tipo di archiviazione**|**Dimensioni minime**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)______________ (primo controller di dominio, ad esempio DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)______________ (secondo controller di dominio, ad esempio DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)(Server DirSync esempio DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./images/Common_Images/TableLine.png)(server di ADFS prima, esempio ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./images/Common_Images/TableLine.png)(secondo ADFS server esempio ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./images/Common_Images/TableLine.png)(prima applicazione server proxy web, esempio WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./images/Common_Images/TableLine.png)(seconda applicazione server proxy web, esempio WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)______________ (primo controller di dominio, ad esempio DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)______________ (secondo controller di dominio, ad esempio DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)(Server DirSync esempio DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)(server di ADFS prima, esempio ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./media/Common-Images/TableLine.png)(secondo ADFS server esempio ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png)(prima applicazione server proxy web, esempio WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png)(seconda applicazione server proxy web, esempio WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **Tabella M - macchine virtuali per l'autenticazione federata la disponibilità elevata per Office 365 in Azure**
   
@@ -245,7 +245,7 @@ Di seguito è riportata la configurazione risultante dal completamento corretto 
   
 **Fase 2: i controller di dominio e il server DirSync per l'infrastruttura dell'autenticazione federata a disponibilità elevata in Azure**
 
-![Fase 2 dell'autenticazione federata di Office 365 con disponibilità elevata in Azure con controller di dominio](images/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Fase 2 dell'autenticazione federata di Office 365 con disponibilità elevata in Azure con controller di dominio](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Passaggio successivo
 
@@ -259,6 +259,6 @@ Utilizzare [High availability federated authentication Phase 3: Configure AD FS 
   
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 
-[Identità federata per Office 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[Opzioni di autenticazione federata](about-office-365-identity.md#federated-authentication-options)
 
 

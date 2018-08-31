@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
-description: 'Riepilogo: Informazioni su come ottimizzare la rete per l''accesso a Microsoft Azure PaaS.'
-ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: "Riepilogo: Informazioni su come ottimizzare la rete per l'accesso a Microsoft Azure PaaS."
+ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915111"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Progettazione di rete per Microsoft Azure PaaS
 
@@ -26,7 +29,7 @@ L'ottimizzazione della rete per le app PaaS di Azure necessita di una larghezza 
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Passaggi di pianificazione per l'hosting di applicazioni PaaS organizzazione in Azure
 
-1. Passare attraverso la sezione **operazioni per preparare la rete di servizi cloud Microsoft** in [elementi comuni di integrazione applicativa di Microsoft cloud](common-elements-of-microsoft-cloud-connectivity.md).
+1. Consultare la sezione **Procedura per predisporre la rete per i servizi cloud Microsoft** in [Common elements of Microsoft cloud connectivity](common-elements-of-microsoft-cloud-connectivity.md).
     
 2. Ottimizzare la larghezza di banda Internet utilizzando i passaggi da 2 a 4 della sezione **passaggi per la preparazione della rete per i servizi Microsoft SaaS** nella [Progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md).
     
@@ -46,7 +49,7 @@ Organizzazione applicazioni ospitate in Azure PaaS richiedono larghezza di banda
     
 **Nella figura 1: Opzioni di connessione per la connessione di servizi di Azure PaaS**
 
-![Figura 1: Opzioni di connessione per i servizi PaaS di Azure](images/Network_Poster/PaaS1.png)
+![Figura 1: Opzioni di connessione per i servizi PaaS di Azure](media/Network-Poster/PaaS1.png)
   
 Una rete locale la connessione a servizi di Azure PaaS attraverso un canale Internet o ExpressRoute illustrato nella figura 1.
   
@@ -56,7 +59,7 @@ Livello di applicazione di routing e il bilanciamento del carico servizi che con
   
 **Figura 2: Applicazioni Azure Gateway**
 
-![Figura 2: Servizio Gateway di applicazioni Azure](images/Network_Poster/PaaS2.png)
+![Figura 2: Servizio Gateway di applicazioni Azure](media/Network-Poster/PaaS2.png)
   
 Nella figura 2 viene Azure Application Gateway e come utente richiede da Internet può essere instradate a Azure web App, servizi cloud o macchine virtuali.
   
@@ -84,9 +87,9 @@ Gestione del traffico vengono utilizzati i metodi di distribuzione seguenti:
     
 Di seguito è riportato un esempio di tre distribuiti geograficamente web app.
   
-**Figura 3: Azure Traffic Managerhttp**
+**Figura 3: Gestione traffico di Azure**
 
-![Figura 3: Gestione traffico di Azure](images/Network_Poster/PaaS3.png)
+![Figura 3: Gestione traffico di Azure](media/Network-Poster/PaaS3.png)
   
 Nella figura 3 viene illustrato il processo di base di gestione del traffico viene utilizzato per instradare le richieste per le applicazioni web diverse Azure tre negli Stati Uniti, Europa e Asia. Nell'esempio:
   
@@ -102,7 +105,7 @@ Per ulteriori informazioni, vedere [Gestione del traffico](https://docs.microsof
  
 ## <a name="see-also"></a>Vedere anche
 
-[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete di Microsoft Cloud per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

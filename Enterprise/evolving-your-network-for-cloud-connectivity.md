@@ -1,5 +1,5 @@
 ---
-title: "Evoluzione della rete per la connettività cloud"
+title: Trasformazione della rete per la connettività cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
-description: 'Riepilogo: Informazioni su come l''adozione cloud richiede un nuovo approccio agli investimenti nell''infrastruttura di rete.'
-ms.openlocfilehash: 1fe3b2cbacb0fff31de1c368fa36650adc7d570c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: "Riepilogo: Informazioni su come l'adozione cloud richiede un nuovo approccio agli investimenti nell'infrastruttura di rete."
+ms.openlocfilehash: 16dbbafe46e903fa41163e12c1741a45b47c5f45
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915141"
 ---
-# <a name="evolving-your-network-for-cloud-connectivity"></a>Evoluzione della rete per la connettività cloud
+# <a name="evolving-your-network-for-cloud-connectivity"></a>Trasformazione della rete per la connettività cloud
 
  **Riepilogo:** Informazioni su come l'adozione cloud richiede un nuovo approccio agli investimenti nell'infrastruttura di rete.
   
@@ -62,7 +65,7 @@ Per ottenere prestazioni ottimali e un contratto di servizio elevata, utilizzare
   
 ExpressRoute può utilizzare il provider di rete esistente per una connessione dedicata. Risorse connessione tramite ExpressRoute vengono visualizzate come se sono sulla WAN, anche per le organizzazioni geograficamente distribuita.
   
-Per ulteriori informazioni, vedere [ExpressRoute per la connettività cloud Microsoft](expressroute-for-microsoft-cloud-connectivity.md).
+Per ulteriori informazioni, vedere [ExpressRoute for Microsoft cloud connectivity](expressroute-for-microsoft-cloud-connectivity.md).
   
 ## <a name="scope-of-network-investments"></a>Ambito degli investimenti di rete
 
@@ -83,13 +86,13 @@ L'ambito degli investimenti rete variano a seconda della categoria del servizio 
    
 ## <a name="next-step"></a>Passaggio successivo
 
-[Elementi comuni della connettività cloud Microsoft](common-elements-of-microsoft-cloud-connectivity.md)
+[Elementi comuni della connettività cloud di Microsoft](common-elements-of-microsoft-cloud-connectivity.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete di Microsoft Cloud per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 
 
