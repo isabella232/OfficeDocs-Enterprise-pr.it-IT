@@ -3,7 +3,6 @@ title: Guida sulla fine del supporto di PerformancePoint Server 2007
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/23/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity e SharePoint Server 2007 sono stata raggiunta la fine del supporto tecnico. Leggere questo articolo per pianificare l'aggiornamento di soluzioni di Business Intelligence.
-ms.openlocfilehash: d03da4d05240e0f80b21f7a709d97cf2e9d1fa32
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 219349a85f14ddf10058c853d69b58a52bb0d1cc
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915101"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831911"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Guida sulla fine del supporto di PerformancePoint Server 2007
 
-Applicazioni e server di office 2007 hanno raggiunto il fine del supporto, inclusi i server e le applicazioni che è possibile utilizzare come parte delle soluzioni di business intelligence (BI).
+Applicazioni e server di office 2007 hanno raggiunto il fine del supporto, inclusi i server e le applicazioni che è possibile utilizzare come parte delle soluzioni di business intelligence (BI). Nella tabella seguente sono elencate le applicazioni di Business Intelligence interessati:
   
 |**Applicazioni di Business Intelligence di Microsoft**|**Supporto di data fine**|
 |:-----|:-----|

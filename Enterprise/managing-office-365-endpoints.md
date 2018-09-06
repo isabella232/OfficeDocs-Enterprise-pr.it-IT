@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Alcune reti sono progettati per limitare l'accesso a internet, per verificare che i computer nelle reti come queste possono accedere a Office 365, gli amministratori di rete e proxy necessarie per gestire l'elenco dei nomi di dominio completo, gli URL e gli indirizzi IP che costituiscono l'elenco degli endpoint di Office 365. Le necessità da aggiungere al firewall o proxy regole e PAC file per assicurare che le richieste di rete sono in grado di raggiungere Office 365.
-ms.openlocfilehash: 0396174719adc7794a1d6bb4b1f950bfe4603996
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 42613b45b8395c3f81064bbc2171866bc922a657
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541248"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831921"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestione di endpoint di Office 365
 
@@ -66,8 +66,8 @@ Utilizzare uno dei nostri file PAC come punto di partenza per determinare il tra
 Nel primo esempio è una dimostrazione di questo approccio consigliato per gestire gli endpoint su Internet solo. Ignora il proxy per le destinazioni di Office 365 in cui l'indirizzo IP viene pubblicato e invia rimanenti richieste di rete per il proxy.
   
 Frammento di codice:
-  
-```
+
+```javascript
 // JavaScript source code
 //July 2018 - Updates go live 1st August2018
 //This PAC file contains all FQDNs needed for all services and splits the traffic between those which Microsoft can provide IPs for (so can be sent through a managed firewall with conditional access if desired) and those which IPs cannot be provided for, so need to go to an unrestricted proxy or egress. 
@@ -187,7 +187,7 @@ function FindProxyForURL(url, host)
     || (shExpMatch(host, "weu-000.tasks.osi.office.net"))
     || (shExpMatch(host, "wus-000.tasks.osi.office.net"))
     || (shExpMatch(host, "www.office.com")))
-      
+
     {
         return "DIRECT";
     }
@@ -351,7 +351,7 @@ function FindProxyForURL(url, host)
         || (shExpMatch(host, "www.remoteapp.windowsazure.com"))
         || (shExpMatch(host, "www.youtube.com"))
         || (shExpMatch(host, "xsi.outlook.com")))
-        
+
     {
         return proxyserver;
     }
@@ -367,8 +367,8 @@ else return proxyserver;
 Nel secondo esempio è una dimostrazione di questo approccio consigliato per la gestione delle connessioni quando sono disponibili circuiti ExpressRoute e Internet. Invia ExpressRoute annunciato destinazioni a commutazione di circuito ExpressRoute e Internet solo annunciato destinazioni al proxy.
   
 Frammento di codice:
-  
-```
+
+```javascript
 // JavaScript source code
 //July 2018 Update
 // Consolidated FQDNs of URLS which are reachable via Microsoft peering over ExpressRoute. All other traffic sent to a proxy in this example. 
@@ -489,8 +489,8 @@ function FindProxyForURL(url, host)
 Nel terzo esempio viene illustrato l'invio di tutte le richieste di rete associate a Office 365 per una singola destinazione. Questo viene in genere utilizzato per ignorare tutti ispezione delle richieste di rete di Office 365 e offre un formato in cui tutti pubblicato endpoint è nell'elenco formato PAC da utilizzare per la personalizzazione.
   
 Frammento di codice:
-  
-```
+
+```javascript
 // JavaScript source code
 //July 2018 Update new URLS go live 1st August 2018 -
 //Consolidated FQDNs required to access Office 365 - All services including optional components covered and elements covered under wildcards removed. 
@@ -713,11 +713,10 @@ Ecco alcuni altri strumenti di community, se è stata creata qualcosa che si des
   <tenant-name>-my.sharepoint.com
   <tenant-name>-<app>.sharepoint.com
   *.Lync.com
-  
   ```
 
 - Verificare che le richieste di rete vengono inviate direttamente al firewall esiste una voce corrispondente nel firewall consentire la richiesta di elenco Consenti.
-    
+
 ## <a name="perimeter-network-integration"></a>Integrazione della rete perimetrale
 <a name="BKMK_Perimeter"> </a>
 
@@ -746,481 +745,7 @@ Per ulteriori indicazioni sulla pianificazione della configurazione di rete, ved
 Contattare il provider di soluzione o del servizio di rete se è possibile utilizzare Office 365 URL e le definizioni IP da XML a semplificare il carico di lavoro minimo locale (per utente), in uscita per Office 365 il traffico di rete, gestire la priorità rispetto alle altre applicazioni e regolare il percorso di rete per le connessioni di Office 365 nella rete Microsoft a seconda delle condizioni della rete. Alcune soluzioni di download e automatizzare la definizione di URL in Office 365 e IP XMLs in relativi stack.
   
 Sempre verificare che la soluzione implementata è necessario grado di resilienza, la ridondanza geo appropriata del percorso di rete per il traffico di Office 365 e supporta le modifiche apportate a Office 365 URL e indirizzi IP saranno pubblicati.
-  
-## <a name="web-service"></a>Servizio Web.
-<a name="webservice"> </a>
 
-Che consentono di identificare meglio e con distinguere il traffico di rete di Office 365, un nuovo servizio web pubblica gli endpoint di Office 365, semplificando valutare, configurare e mantenersi aggiornati con le modifiche. Questo nuovo servizio web (ora in anteprima), il tempo sostituiranno gli elenchi di endpoint nell'articolo [Office 365 URL e intervalli di indirizzi IP](urls-and-ip-address-ranges.md) , con le versioni RSS e XML di tali dati. Questi formato dei dati di endpoint sono stati pianificati per essere gradualmente su 2 ottobre 2018. 
-  
-Come un cliente o un fornitore del dispositivo di rete perimetrale, è possibile creare in base al nuovo servizio web basato su REST per le voci di nome di dominio completo e indirizzo IP di Office 365.
-  
-- Per la versione più recente di intervalli di indirizzi IP e gli URL di Office 365, utilizzare [https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
-    
-- Per i dati degli URL di Office 365 e pagina di intervalli di indirizzi IP per firewall e server proxy, utilizzare [https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
-    
-- Per ottenere le ultime modifiche, utilizzare [https://endpoints.office.com/changes/worldwide/0000000000](https://endpoints.office.com/changes/worldwide/0000000000?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
-    
-In qualità di un utente, è possibile utilizzare questo servizio web per: 
-  
-- Aggiornare gli script di PowerShell per ottenere i dati di endpoint di Office 365 e modificare la formattazione per i dispositivi di reti.
-    
-- Utilizzare queste informazioni per aggiornare i file PAC distribuiti nei computer client.
-    
-Come fornitore del dispositivo una rete perimetrale, è possibile utilizzare questo servizio web per: 
-  
-- Creare e testare il software di dispositivi per scaricare l'elenco per la configurazione automatica. 
-    
-- Verificare la versione corrente.
-    
-- È possibile ottenere le modifiche correnti.
-    
-Nelle sezioni seguenti viene descritto l'anteprima del servizio web, che può cambiare nel tempo fino a quando il servizio è in genere disponibile. 
-  
-I dati nel servizio web siano aggiornati e si restituzione schema dei dati prima del rilascio di disponibilità generale di questo servizio web o non si desidera apportare ulteriori modifiche per l'URL del servizio web.
-  
-Per ulteriori informazioni, vedere:
-  
-- [Post di blog annuncio in Office 365 Tech al Forum della Community](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
-    
-- [Forum di Community di Office 365 Tech a domande sull'utilizzo dei servizi web](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
-    
-### <a name="common-parameters"></a>Parametri comuni
-
-Questi parametri sono comuni a tutti i metodi del servizio web:
-  
-- formato **= CSV | JSON** -parametro stringa di Query. Per impostazione predefinita, il formato di dati restituiti è JSON. Includere questo parametro opzionale per restituire i dati con valori delimitati da virgole (CSV). 
-    
-- **ClientRequestId** - parametro stringa di Query. GUID obbligatorio che generano per l'associazione di sessione client. È necessario generare un GUID di tutti i computer client che chiama il servizio web. Non utilizzare i GUID illustrati negli esempi seguenti, dal momento che può essere bloccati dal servizio web in futuro. Formato del GUID è xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx, dove x rappresenta un numero esadecimale. Per generare un GUID, il comando [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell. 
-    
-### <a name="version-web-method"></a>Metodo web versione
-
-Microsoft aggiorna l'indirizzo IP di Office 365 e le voci FQDN alla fine di ogni mese e occasionalmente fuori ciclo per operativi o supportare i requisiti. I dati per ogni istanza pubblicato viene assegnati un numero di versione. Il metodo web versione consente di eseguire il polling per la versione più recente per ogni istanza del servizio Office 365. È consigliabile che è controllare la versione giornaliera, o al massimo, ogni ora.
-  
-Vi è un parametro per il metodo web version:
-  
-- **AllVersions = true** -parametro stringa di Query. Per impostazione predefinita, la versione restituita è più recenti. Includere questo parametro opzionale per richiedere che tutte le versioni pubblicate. 
-    
-- **Istanza** - parametro Route. Questo parametro opzionale specifica l'istanza per restituire la versione per. Se viene omesso, vengono restituite tutte le istanze. Istanze valide sono: tutto il mondo, Cina, Germania, USGovDoD, USGovGCCHigh 
-    
-Il risultato del metodo web versione può essere un singolo record o una matrice di record. Gli elementi di ogni record sono:
-  
-- istanza - nome breve dell'istanza del servizio Office 365.
-    
-- più recenti - la versione più recente per gli endpoint dell'istanza specificata.
-    
-- versioni: un elenco di tutte le versioni precedenti per l'istanza specificata. L'elemento è solo se il parametro AllVersions è true.
-   
-#### <a name="examples"></a>Esempi:
-  
-URI della richiesta con l'esempio 1: ** <span>https:</span>//endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-Questo URI restituisce l'ultima versione di ogni istanza del servizio Office 365. Risultati di esempio:
-  
-```
-[
- {
-  "instance": "Worldwide", 
-  "latest": "2018063000"
- },
- {
-  "instance": "USGovDoD", 
-  "latest": "2018063000"
- },
- {
-  "instance": "USGovGCCHigh",
-  "latest": "2018063000"
- },
- {
-  "instance": "China",
-  "latest": "2018063000"
- },
- {
-  "instance": "Germany",
-  "latest": "2018063000"
- }
-] 
-```
-
-> [!IMPORTANT]
-> Il GUID per il parametro ClientRequestID negli URI sono solo un esempio. Per provare web service URI fuori, generare il proprio GUID. I GUID illustrati negli esempi seguenti possono essere bloccati dal servizio web in futuro. 
-  
-URI della richiesta con l'esempio 2: ** <span>https:</span>//endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-Questo URI restituisce la versione più recente dell'istanza del servizio Office 365 specificato. Risultati di esempio:
-  
-```
-{
- "instance": "Worldwide",
- "latest": "2018063000"
-}
-```
-
-URI della richiesta con l'esempio 3: ** <span>https:</span>//endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId = b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-Questo URI viene illustrato l'output in formato CSV. Risultati di esempio:
-  
-```
-instance,latest
-Worldwide,2018063000
-```
-
-URI della richiesta con l'esempio 4: ** <span>https:</span>//endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId = b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-Questo URI Visualizza tutte le versioni precedenti che sono state pubblicate per l'istanza del servizio in tutto il mondo di Office 365. Risultati di esempio:
-  
-```
-{
-  "instance": "Worldwide",
-  "latest": "2018063000",
-  "versions": [
-    "2018063000",
-    "2018062000"
-  ]
-}
-```
-
-### <a name="endpoints-web-method"></a>Metodo web endpoint
-
-Il metodo web endpoint restituisce tutti i record per intervalli di indirizzi IP e gli URL che compongono il servizio Office 365. Parametri per il metodo web endpoint sono:
-  
-- **ServiceAreas** - parametro stringa di Query. Un elenco separato da virgole delle aree di servizio. Elementi validi sono comuni, Exchange, SharePoint, Skype. Poiché gli elementi di area comune servizio sono un prerequisito per tutte le altre aree del servizio, il servizio web verrà sempre includerli. Se non si include questo parametro, vengono restituite tutte le aree del servizio. 
-    
-- **TenantName** - parametro stringa di Query. Il nome del tenant Office 365. Il servizio web accetta il nome specificato e lo inserisce in alcune parti dell'URL che includono il nome del tenant. Se non si specifica un nome del tenant, le parti degli URL sono il carattere jolly (\*). 
-    
-- **NoIPv6** - parametro stringa di Query. Impostare questa opzione per impostare su true per gli indirizzi IPv6 Escludi dall'output, ad esempio, se non si utilizza IPv6 nella rete. 
-    
-- **Istanza** - parametro Route. Questo parametro obbligatorio specifica l'istanza per restituire l'endpoint per. Istanze valide sono: tutto il mondo, Cina, Germania, USGovDoD, USGovGCCHigh. 
-    
-Il risultato del metodo web endpoint è una matrice di record con ogni record che rappresenta un insieme di endpoint. Gli elementi per ogni record sono:
-  
-- ID - imposta il numero id immutabile dell'endpoint.
-    
-- serviceArea - area di servizio che fanno parte della: comune, Exchange, SharePoint o Skype.
-    
-- URL - impostare URL per l'endpoint. Una matrice JSON dei record DNS. Omesso se vuoto.
-    
-- tcpPorts - impostare le porte TCP per l'endpoint. Tutti gli elementi di porte vengono formattati come un elenco separato da virgole di porte o intervalli di porte separati con un carattere trattino (-). Porte applicano a tutti gli indirizzi IP e tutti gli URL di endpoint impostato per tale categoria. Omesso se vuoto.
-    
-- udpPorts - porte UDP per IP address gli intervalli di questa serie di endpoint. Omesso se vuoto.
-    
-- IP - intervalli di indirizzi IP associati a questo endpoint impostato come associate le porte TCP o UDP elencate. Omesso se vuoto.
-    
-- categoria - imposta la categoria di integrazione applicativa per l'endpoint. I valori validi sono Optimize, Consenti e predefinito. Obbligatorio.
-    
-- expressRoute - True o False se il set di endpoint viene instradato tramite ExpressRoute.
-    
-- obbligatorio - ha valore True se il set di endpoint è necessario disporre di connettività di Office 365 da supportare. Omesso se impostato su false.
-    
-- note - per gli endpoint facoltativi, tale testo descrive le funzionalità di Office 365 saranno disponibile se gli indirizzi IP o gli URL in endpoint set non è possibile accedere al livello di rete. Omesso se vuoto.
-    
-#### <a name="examples"></a>Esempi:
-  
-URI della richiesta con l'esempio 1: ** <span>https:</span>//endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-Questo URI Ottiene tutti gli endpoint per l'istanza di tutto il mondo di Office 365 per tutti i carichi di lavoro. Risultati di esempio che mostra un estratto dell'output:
-  
-```
-[ 
- { 
-  "id": 1, 
-  "serviceArea": "Exchange", 
-  "serviceAreaDisplayName": "Exchange Online", 
-  "urls": 
-   [ 
-    "*.protection.outlook.com" 
-   ], 
-  "ips": 
-   [ 
-    "2a01:111:f403::/48", "23.103.132.0/22", "23.103.136.0/21", "23.103.198.0/23", "23.103.212.0/22", "40.92.0.0/14", "40.107.0.0/17", "40.107.128.0/18", "52.100.0.0/14", "213.199.154.0/24", "213.199.180.128/26", "94.245.120.64/26", "207.46.163.0/24", "65.55.88.0/24", "216.32.180.0/23", "23.103.144.0/20", "65.55.169.0/24", "207.46.100.0/24", "2a01:111:f400:7c00::/54", "157.56.110.0/23", "23.103.200.0/22", "104.47.0.0/17", "2a01:111:f400:fc00::/54", "157.55.234.0/24", "157.56.112.0/24", "52.238.78.88/32" 
-   ], 
-  "tcpPorts": "443", 
-  "expressRoute": true, 
-  "category": "Allow" 
- }, 
- { 
-  "id": 2, 
-  "serviceArea": "Exchange", 
-  "serviceAreaDisplayName": "Exchange Online", 
-  "urls": 
-   [ 
-    "*.mail.protection.outlook.com" 
-   ],
-...
-```
-
-Set di altri endpoint non vengono inclusi in questo esempio.
-  
-URI della richiesta con l'esempio 2: ** <span>https:</span>//endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId = b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-In questo esempio viene ottenuto endpoint per l'istanza di tutto il mondo di Office 365 per Exchange Online e le dipendenze solo.
-  
-L'output, ad esempio 2 è simile all'esempio 1 con la differenza che i risultati non includeranno endpoint per SharePoint Online o Skype Business online.
-  
-### <a name="changes-web-method"></a>Metodo web modifiche
-
-Il metodo web modifiche restituisce gli aggiornamenti più recenti che sono stati pubblicati. Si tratta in genere le modifiche del mese precedente a URL e intervalli di indirizzi IP.
-  
-> [!NOTE]
-> Dati da modifiche API sono accurati nel riquadro di anteprima e devono essere utilizzato per lo sviluppo e testing solo. 
-  
-Il parametro per il metodo web modifiche è:
-  
-- **Versione** : parametro route URL necessari. La versione attualmente è stato implementato e si desidera visualizzare le modifiche apportate dopo tale versione. Il formato è YYYYMMDDNN. 
-    
-Il risultato del metodo web modifiche è una matrice di record con ogni record che rappresenta una modifica in una versione specifica l'endpoint. Gli elementi per ogni record sono:
-  
-- ID: l'id del record di modifica non modificabile.
-    
-- endpointSetId - l'ID dell'endpoint impostare record viene modificato. Obbligatorio.
-    
-- eliminazione - questo può essere di modifica, aggiungere o rimuovere e viene descritto cosa ha le modifiche al set di record endpoint.
-    
-- versione: la versione dell'endpoint pubblicato imposta in cui è stata introdotta la modifica. Numeri di versione sono nel formato YYYYMMDDNN, dove NN è un numero naturale incrementato se sono presenti più versioni necessarie per la pubblicazione in un singolo giorno.
-    
-- imposta una sottostruttura che descrive i valori precedenti degli elementi modificati nell'endpoint del precedente. Non sarà incluso per i set di endpoint appena aggiunto. Include tcpPorts, udpPorts, ExpressRoute, categoria, necessaria, note.
-    
-- corrente - una sottostruttura che descrive i valori degli elementi di modifiche nel endpoinset aggiornati. Include tcpPorts, udpPorts, ExpressRoute, categoria, necessaria, note.
-    
-- Add - una struttura del sito secondario che descrive gli elementi da aggiungere all'endpoint imposta raccolte. Omesso se sono non presenti le aggiunte.
-    
-  - effectiveDate - definisce i dati quando le aggiunte saranno live nel servizio.
-    
-  - IP - degli elementi da aggiungere alla matrice IP.
-    
-  - Elementi URL da aggiungere alla matrice URL.
-    
-- Remove - imposta una sottostruttura che descrive gli elementi da rimuovere dal punto finale. Omessi se non vengono rimosse non sono disponibili.
-    
-  - IP - degli elementi da rimuovere dalla matrice IP.
-    
-  - Elementi URL da rimuovere dalla matrice URL.
-    
- **Esempi:**
-  
-URI della richiesta con l'esempio 1: ** <span>https:</span>//endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-L'oggetto richiede tutte le modifiche precedenti per l'istanza del servizio in tutto il mondo di Office 365. Risultati di esempio:
-  
-```
-[ 
- { 
-  "id": 424, 
-  "endpointSetId": 32, 
-  "disposition": "Change", 
-  "version": "2018062700", 
-  "remove": 
-   { 
-    "urls": 
-     [ 
-      "*.api.skype.com", "skypegraph.skype.com" 
-     ] 
-   } 
- }, 
- { 
-  "id": 426, 
-  "endpointSetId": 31, 
-  "disposition": "Change", 
-  "version": "2018062700", 
-  "add": 
-   { 
-    "effectiveDate": "20180609", 
-    "ips": 
-     [ 
-      "51.140.203.190/32" 
-     ]
-   },
-  "remove": 
-   { 
-    "ips": 
-     [
-...
-
-```
-
-URI della richiesta con l'esempio 2: ** <span>https:</span>//endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-L'oggetto richiede modifiche rispetto alla versione specificata per l'istanza di tutto il mondo di Office 365. In questo caso, la versione specificata è più recenti. Risultati di esempio:
-  
-```
-[
-  {
-    "id":3,
-    "endpointSetId":33,
-    "changeDescription":"Removing old IP prefixes",
-    "disposition":"Change",
-    "version":"2018031301",
-    "remove":{
-      "ips":["65.55.127.0/24","66.119.157.192/26","66.119.158.0/25",
-      "111.221.76.128/25","111.221.77.0/26","207.46.5.0/24"]
-    }
-  },
-  {
-    "id":4,
-    "endpointSetId":45,
-    "changeDescription":"Removing old IP prefixes",
-    "disposition":"Change",
-    "version":"2018031301",
-    "remove":{
-      "ips":["13.78.93.8/32","40.113.87.220/32","40.114.149.220/32",
-      "40.117.100.83/32","40.118.214.164/32","104.208.31.113/32"]
-    }
-  }
-]
-
-```
-
-### <a name="example-powershell-script"></a>Script di PowerShell di esempio
-
-Di seguito è uno script di PowerShell che è possibile eseguire per verificare se esistono azioni da eseguire per i dati aggiornati. Questo script consente di controllare il numero di versione per l'endpoint istanza tutto il mondo di Office 365. Quando viene apportata una modifica, verranno scaricati gli endpoint e i filtri per gli endpoint di categoria "Consenti" e "Ottimizza". Inoltre, viene utilizzato un ClientRequestId univoco tra più chiamate e consente di salvare la versione più recente di un file temporaneo. È necessario chiamare questo script una volta all'ora per ricercare un aggiornamento di versione.
-  
-```
-# webservice root URL
-$ws = "https://endpoints.office.com"
-# path where client ID and latest version number will be stored
-$datapath = $Env:TEMP + "\endpoints_clientid_latestversion.txt"
-# fetch client ID and version if data file exists; otherwise create new file
-if (Test-Path $datapath) {
-    $content = Get-Content $datapath
-    $clientRequestId = $content[0]
-    $lastVersion = $content[1]
-}
-else {
-    $clientRequestId = [GUID]::NewGuid().Guid
-    $lastVersion = "0000000000"
-    @($clientRequestId, $lastVersion) | Out-File $datapath
-}
-# call version method to check the latest version, and pull new data if version number is different
-$version = Invoke-RestMethod -Uri ($ws + "/version/Worldwide?clientRequestId=" + $clientRequestId)
-if ($version.latest -gt $lastVersion) {
-    Write-Host "New version of Office 365 worldwide commercial service instance endpoints detected"
-    
-    # write the new version number to the data file
-    @($clientRequestId, $version.latest) | Out-File $datapath
-    # invoke endpoints method to get the new data
-    $endpointSets = Invoke-RestMethod -Uri ($ws + "/endpoints/Worldwide?clientRequestId=" + $clientRequestId)
-    # filter results for Allow and Optimize endpoints, and transform these into custom objects with port and category
-    $flatUrls = $endpointSets | ForEach-Object {
-        $endpointSet = $_
-        $urls = $(if ($endpointSet.urls.Count -gt 0) { $endpointSet.urls } else { @() })
-        $urlCustomObjects = @()
-        if ($endpointSet.category -in ("Allow", "Optimize")) {
-            $urlCustomObjects = $urls | ForEach-Object {
-                [PSCustomObject]@{
-                    category = $endpointSet.category;
-                    url      = $_;
-                    tcpPorts = $endpointSet.tcpPorts;
-                    udpPorts = $endpointSet.udpPorts;
-                }
-            }
-        }
-        $urlCustomObjects
-    }
-    $flatIps = $endpointSets | ForEach-Object {
-        $endpointSet = $_
-        $ips = $(if ($endpointSet.ips.Count -gt 0) { $endpointSet.ips } else { @() })
-        # IPv4 strings have dots while IPv6 strings have colons
-        $ip4s = $ips | Where-Object { $_ -like '*.*' }
-        
-        $ipCustomObjects = @()
-        if ($endpointSet.category -in ("Allow", "Optimize")) {
-            $ipCustomObjects = $ip4s | ForEach-Object {
-                [PSCustomObject]@{
-                    category = $endpointSet.category;
-                    ip = $_;
-                    tcpPorts = $endpointSet.tcpPorts;
-                    udpPorts = $endpointSet.udpPorts;
-                }
-            }
-        }
-        $ipCustomObjects
-    }
-    Write-Output "IPv4 Firewall IP Address Ranges"
-    ($flatIps.ip | Sort-Object -Unique) -join "," | Out-String
-    Write-Output "URLs for Proxy Server"
-    ($flatUrls.url | Sort-Object -Unique) -join "," | Out-String
-    # TODO Call Send-MailMessage with new endpoints data
-}
-else {
-    Write-Host "Office 365 worldwide commercial service instance endpoints are up-to-date"
-}
-```
-
-### <a name="example-python-script"></a>Script di esempio Python
-
-Di seguito è uno script Python, testato con Python 3.6.3 su 10 Windows, che è possibile eseguire per verificare se esistono azioni da eseguire per i dati aggiornati. Questo script consente di controllare il numero di versione per l'endpoint istanza tutto il mondo di Office 365. Quando viene apportata una modifica, verranno scaricati gli endpoint e i filtri per gli endpoint di categoria "Consenti" e "Ottimizza". Inoltre, viene utilizzato un ClientRequestId univoco tra più chiamate e consente di salvare la versione più recente di un file temporaneo. È necessario chiamare questo script una volta all'ora per ricercare un aggiornamento di versione.
-  
-```
-import json
-import os
-import urllib.request
-import uuid
-# helper to call the webservice and parse the response
-def webApiGet(methodName, instanceName, clientRequestId):
-    ws = "https://endpoints.office.com"
-    requestPath = ws + '/' + methodName + '/' + instanceName + '?clientRequestId=' + clientRequestId
-    request = urllib.request.Request(requestPath)
-    with urllib.request.urlopen(request) as response:
-        return json.loads(response.read().decode())
-# path where client ID and latest version number will be stored
-datapath = os.environ['TEMP'] + '\endpoints_clientid_latestversion.txt'
-# fetch client ID and version if data exists; otherwise create new file
-if os.path.exists(datapath):
-    with open(datapath, 'r') as fin:
-        clientRequestId = fin.readline().strip()
-        latestVersion = fin.readline().strip()
-else:
-    clientRequestId = str(uuid.uuid4())
-    latestVersion = '0000000000'
-    with open(datapath, 'w') as fout:
-        fout.write(clientRequestId + '\n' + latestVersion)
-# call version method to check the latest version, and pull new data if version number is different
-version = webApiGet('version', 'Worldwide', clientRequestId)
-if version['latest'] > latestVersion:
-    print('New version of Office 365 worldwide commercial service instance endpoints detected')
-    # write the new version number to the data file
-    with open(datapath, 'w') as fout:
-        fout.write(clientRequestId + '\n' + version['latest'])
-    # invoke endpoints method to get the new data
-    endpointSets = webApiGet('endpoints', 'Worldwide', clientRequestId)
-    # filter results for Allow and Optimize endpoints, and transform these into tuples with port and category
-    flatUrls = []
-    for endpointSet in endpointSets:
-        if endpointSet['category'] in ('Optimize', 'Allow'):
-            category = endpointSet['category']
-            urls = endpointSet['urls'] if 'urls' in endpointSet else []
-            tcpPorts = endpointSet['tcpPorts'] if 'tcpPorts' in endpointSet else ''
-            udpPorts = endpointSet['udpPorts'] if 'udpPorts' in endpointSet else ''
-            flatUrls.extend([(category, url, tcpPorts, udpPorts) for url in urls])
-    flatIps = []
-    for endpointSet in endpointSets:
-        if endpointSet['category'] in ('Optimize', 'Allow'):
-            ips = endpointSet['ips'] if 'ips' in endpointSet else []
-            category = endpointSet['category']
-            # IPv4 strings have dots while IPv6 strings have colons
-            ip4s = [ip for ip in ips if '.' in ip]
-            tcpPorts = endpointSet['tcpPorts'] if 'tcpPorts' in endpointSet else ''
-            udpPorts = endpointSet['udpPorts'] if 'udpPorts' in endpointSet else ''
-            flatIps.extend([(category, ip, tcpPorts, udpPorts) for ip in ip4s])
-    print('IPv4 Firewall IP Address Ranges')
-    print(','.join(sorted(set([ip for (category, ip, tcpPorts, udpPorts) in flatIps]))))
-    print('URLs for Proxy Server')
-    print(','.join(sorted(set([url for (category, url, tcpPorts, udpPorts) in flatUrls]))))
-    
-    # TODO send mail (e.g. with smtplib/email modules) with new endpoints data
-else:
-    print('Office 365 worldwide commercial service instance endpoints are up-to-date')
-```
-
-### <a name="web-service-interface-versioning"></a>Controllo delle versioni dell'interfaccia di servizio Web
-
-Aggiornamenti per i parametri o i risultati di questi metodi del servizio web potrebbero essere necessari in futuro. Dopo aver pubblicata la versione di disponibilità generale di questi servizi web, verranno resi a garantire preavviso di materiali aggiornamenti al servizio web. Quando Microsoft ritiene che un aggiornamento richiede delle modifiche ai client che utilizzano il servizio web, Microsoft manterrà la versione precedente (una versione back) del servizio web disponibile almeno dodici (12) mesi dopo il rilascio della nuova versione. I clienti che non esegue l'aggiornamento durante tale orario possono risultare impossibile accedere al servizio web e i relativi metodi. I clienti devono garantire che i client del servizio web di continuano a utilizzare senza errori se vengono apportate le modifiche seguenti alla firma dell'interfaccia di servizio web:
-  
-- Aggiunta di un nuovo parametro facoltativo a un metodo web esistente che non deve essere fornito da client precedenti e non influenzare il risultato riceve un client precedente.
-    
-- Aggiungere un nuovo attributo denominato in uno degli articoli REST risposta o delle colonne aggiuntive alla risposta CSV.
-    
-- Aggiunta di un nuovo metodo web con un nuovo nome non viene chiamato da client precedenti.
-    
 ## <a name="faq"></a>Domande frequenti
 
 Domande frequenti amministratore sulla connettività:
@@ -1247,19 +772,15 @@ Dopo la sottoscrizione al feed RSS, è possibile analizzare le informazioni manu
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |**Descrizione** <br/> |Numero  <br/> |Data dopo il quale è possibile ottenere le richieste di rete da inviare al punto finale.  <br/> |Descrizione di base o della caratteristica servizio che richieda l'endpoint.  <br/> |È possibile connettersi all'endpoint su un circuito ExpressRoute oltre a internet?  <br/> |**Sì** - è possibile connettersi all'endpoint su internet ed ExpressRoute.  <br/> **N** - è possibile connettersi solo a questo endpoint su internet.  <br/> |Nome di dominio completo o indirizzo IP intervallo di destinazione vengono aggiunti o rimossi.  <br/> |
 |**Esempio** <br/> |1 /  <br/> |[Efficace xx/xx/xxx.  <br/> |Richiesto: \<descrizione\>.  <br/> |ExpressRoute:  <br/> |\<Sì/No\>.  <br/> |\<FQDN/IP\>],  <br/> |
-   
+
 Alcuni altri aspetti da tenere presente che ogni voce è un set di delimitatori comuni:
   
-- **/**-Dopo il numero 
-    
-- **[** - per indicare la voce per il conteggio 
-    
-- **.** -utilizzare tra ogni sezione distinti della voce 
-    
-- **],** - per indicare il termine di una singola voce 
-    
-- **].** -Per indicare il termine di tutte le voci 
-    
+- **/**-Dopo il numero
+- **[** - per indicare la voce per il conteggio
+- **.** -utilizzare tra ogni sezione distinti della voce
+- **],** - per indicare il termine di una singola voce
+- **].** -Per indicare il termine di tutte le voci
+
 ### <a name="how-do-i-determine-the-location-of-my-tenant"></a>Come è possibile determinare la posizione del personale tenant?
 
  **Percorso tenant** dipende meglio utilizzando il [mapping datacenter](https://o365datacentermap.azurewebsites.net/).
@@ -1285,17 +806,12 @@ Nell'immagine riportata di seguito, è possibile visualizzare un esempio da una 
 Anche se entrambe riga 3 e 4 sono necessarie per utilizzare Office Online, è stato separati per indicare che la destinazione è diversa:
   
 1. \*. officeapps.live.com non rappresenta un CDN, le richieste di significato per questo spazio dei nomi verranno inoltrate direttamente a un datacenter Microsoft.
-    
 2. \*. officeapps.live.com è accessibile su circuiti ExpressRoute utilizzando Microsoft Peering.
-    
 3. Gli indirizzi IP associati a Office Online e \*. officeapps.live.com sono disponibili eseguendo questo collegamento.
-    
 4. \*. cdn.office.net rappresenta una rete CDN ospitate da Akamai, le richieste di significato per questo spazio dei nomi verranno inoltrate a un datacenter Akamai.
-    
 5. \*. cdn.office.net non è accessibile su circuiti ExpressRoute.
-    
 6. Gli indirizzi IP associati a Office Online e \*. cdn.office.net non sono disponibili.
-    
+
 ![Acquisizione schermo della pagina endpoint](media/42b487f3-24f3-48fe-9885-f97aae3194f3.png)
   
 ### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>È possibile visualizzare le richieste di rete per gli indirizzi IP non presenti nell'elenco pubblicato, è necessario fornire l'accesso a tali?
@@ -1306,11 +822,9 @@ Microsoft fornisce solo gli indirizzi IP per i server di Office 365 che si consi
 Visualizzare che un indirizzo IP associato a Office 365 che si desidera includere ulteriori informazioni?
   
 1. Controllare se l'indirizzo IP è inclusa in un intervallo pubblicato superiore con una [Calcolatrice CIDR](http://jodies.de/ipcalc).
-    
 2. Vedere se un partner proprietario IP con una [query whois](https://dnsquery.org/). Se si tratta di Microsoft e di proprietà, potrebbe essere un partner interno.
-    
-3. Verificare che il certificato, in un browser si connettono all'indirizzo IP tramite *HTTPS://\<indirizzo IP\> * , controllare i domini elencati sul certificato per acquisire familiarità con i domini associati l'indirizzo IP. Se si tratta di una proprietà dell'indirizzo IP di Microsoft e non presenti nell'elenco di indirizzi IP di Office 365, è probabile che l'indirizzo IP è associato un CDN Microsoft, ad esempio *MSOCDN.NET* o un altro dominio Microsoft senza informazioni pubblicate sul IP. Se che il dominio nel certificato è uno dove è attestazione visualizzare l'elenco indirizzi IP, inviaci i tuoi suggerimenti. 
-    
+3. Verificare che il certificato, in un browser si connettono all'indirizzo IP tramite *HTTPS://\<indirizzo IP\> * , controllare i domini elencati sul certificato per acquisire familiarità con i domini associati l'indirizzo IP. Se si tratta di una proprietà dell'indirizzo IP di Microsoft e non presenti nell'elenco di indirizzi IP di Office 365, è probabile che l'indirizzo IP è associato un CDN Microsoft, ad esempio *MSOCDN.NET* o un altro dominio Microsoft senza informazioni pubblicate sul IP. Se che il dominio nel certificato è uno dove è attestazione visualizzare l'elenco indirizzi IP, inviaci i tuoi suggerimenti.
+
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Il motivo per cui vengono visualizzati i nomi, ad esempio nsatc.net o akadns.net nei nomi di dominio Microsoft?
 <a name="bkmk_akamai"> </a>
 
@@ -1318,11 +832,11 @@ Office 365 e altri servizi Microsoft utilizzano diversi servizi di terze parti, 
   
 L'elenco dei servizi è soggetta a modifiche in qualsiasi momento. Alcuni dei servizi attualmente in uso:
   
-[MarkMonitor](https://www.markmonitor.com/) è in uso quando viene visualizzato richieste che includono * \*. nsatc.net* . Questo servizio fornisce la protezione dei nomi di dominio e il monitoraggio per proteggere il comportamento dannoso. 
+[MarkMonitor](https://www.markmonitor.com/) è in uso quando viene visualizzato richieste che includono * \*. nsatc.net* . Questo servizio fornisce la protezione dei nomi di dominio e il monitoraggio per proteggere il comportamento dannoso.
   
-[ExactTarget](https://www.marketingcloud.com/) è in uso quando viene visualizzato le richieste per * \*. exacttarget.com* . Questo servizio fornisce posta elettronica collegamento Gestione e monitoraggio con comportamento dannoso. 
+[ExactTarget](https://www.marketingcloud.com/) è in uso quando viene visualizzato le richieste per * \*. exacttarget.com* . Questo servizio fornisce posta elettronica collegamento Gestione e monitoraggio con comportamento dannoso.
   
-[Akamai](https://www.akamai.com/) è in uso quando viene visualizzato le richieste di includono uno dei seguenti FQDN. Questo servizio offre geo DNS e servizi di rete di distribuzione del contenuto. 
+[Akamai](https://www.akamai.com/) è in uso quando viene visualizzato le richieste di includono uno dei seguenti FQDN. Questo servizio offre geo DNS e servizi di rete di distribuzione del contenuto.
   
 ```
 *.akadns.net
@@ -1334,18 +848,15 @@ L'elenco dei servizi è soggetta a modifiche in qualsiasi momento. Alcuni dei se
 *.akamaized.net
 *.edgekey.net
 *.edgesuite.net
-
 ```
 
 ### <a name="what-are-the-three-types-of-office-365-endpoints"></a>Che cosa sono i tre tipi di endpoint di Office 365?
 <a name="bkmk_akamai"> </a>
 
 - Connettersi ai servizi di terze parti per recuperare base servizi internet, ad esempio le ricerche DNS e il recupero dei contenuti CDN. È inoltre possibile connettere ai servizi di terze parti per integrazioni, ad esempio all'incorporamento del video di YouTube nei blocchi appunti di OneNote.
-    
 - Connettersi ai servizi secondari ospitate ed eseguiti da Microsoft, ad esempio nodi edge che consentono la richiesta di rete immettere rete globale di Microsoft nel percorso internet più vicino al computer. Come rete terzo più grande del pianeta, in questo modo migliorano l'esperienza di integrazione applicativa. È inoltre possibile connettere ai servizi Microsoft Azure ad esempio servizi di supporto Azure che vengono utilizzate da una varietà di servizi di Office 365.
-    
 - Connettersi ai servizi di Office 365 principali, ad esempio server cassette postali di Exchange Online o il Skype per Online Business server in cui si trova dati univoci e proprietari. È possibile connettersi ai servizi di Office 365 principali dal nome di dominio completo o l'indirizzo IP e utilizzare internet o circuiti ExpressRoute. È possibile connettersi solo a terze parti e i servizi secondari con nomi di dominio completi su un circuito internet.
-    
+
 Nella figura seguente vengono illustrate le differenze tra tali aree del servizio. In questo diagramma, la rete locale cliente in basso a sinistra dispone di più dispositivi di rete per gestire la connettività di rete. Configurazioni simili sono comuni per le aziende. Se la rete ha solo un firewall tra i computer client e internet, che è supportata anche, è consigliabile verificare che il firewall può supportare FQDN e i caratteri jolly in regole dell'elenco Consenti.
   
 Leggere i [Principi di connettività di rete di Office 365](office-365-network-connectivity-principles.md) per ottenere ulteriori informazioni su Office 365 endpoint categorie e comprendere i principi di connettività per la gestione del traffico di Office 365 in modo sicuro e ottenere prestazioni ottimali. 
@@ -1371,11 +882,13 @@ Se si sta tentando di utilizzare Office 365 e si stanno scoprendo servizi di ter
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Come bloccare l'accesso ai servizi consumer di Microsoft
 <a name="bkmk_consumer"> </a>
 
-Limitazione dell'accesso ai servizi offerti consumer deve essere eseguita a proprio esclusivo rischio, l'unico modo affidabile ai servizi consumer blocco per limitare l'accesso a *login.live.com* nome di dominio completo. Questo FQDN viene utilizzato da un'ampia gamma di servizi, quali servizi professionali, ad esempio MSDN e TechNet altri utenti. Limitazione dell'accesso a questo FQDN può comportare la necessità di includere anche le eccezioni alla regola per le richieste di rete associati a questi servizi. 
+Limitazione dell'accesso ai servizi offerti consumer deve essere eseguita a proprio esclusivo rischio, l'unico modo affidabile ai servizi consumer blocco per limitare l'accesso a *login.live.com* nome di dominio completo. Questo FQDN viene utilizzato da un'ampia gamma di servizi, quali servizi professionali, ad esempio MSDN e TechNet altri utenti. Limitazione dell'accesso a questo FQDN può comportare la necessità di includere anche le eccezioni alla regola per le richieste di rete associati a questi servizi.
   
 Tenere presente che bloccando l'accesso ai servizi consumer Microsoft soli non impedisce la possibilità di una persona nella rete alle informazioni exfiltrate utilizzando un tenant di Office 365 o altri servizi.
   
 ## <a name="related-topics"></a>Argomenti correlati
+
+[Servizio Web di URL e indirizzi IP di Office 365](office-365-ip-web-service.md)
 
 [Intervalli IP di Datacenter Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
   
@@ -1390,5 +903,3 @@ Tenere presente che bloccando l'accesso ai servizi consumer Microsoft soli non i
 [Gestione di ExpressRoute per la connettività di Office 365](managing-expressroute-for-connectivity.md)
   
 [Principi della connettività di rete di Office 365](office-365-network-connectivity-principles.md)
-  
-
