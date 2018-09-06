@@ -3,7 +3,7 @@ title: Durante e dopo lo spostamento dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Spostamenti di dati sono un'operazione di back-end con un impatto minimo per gli utenti finali. Mentre Microsoft Sposta ogni servizio e dei dati associati per il tenant di un nuovo livello geografico datacenter, è necessaria alcuna azione. Il trasferimento dei dati e la convalida eseguita in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: 8813e73dcbce7b6ea24e497929ca6b8e0928e4e7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541273"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839604"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -165,4 +165,13 @@ Tutti gli utenti la disconnessione da Skype per il software client aziendale dur
 
 È spostare solo i dati dei clienti per Exchange Online, SharePoint Online e Skype per le aziende. Non è spostare i dati per altri servizi. Nessuna modifica o impatto è come un cliente o un utente di questi altri servizi. Il processo di spostamento non influenza la loro e il percorso dei propri dati personali rimane invariato.
   
+## <a name="related-topics"></a>Argomenti correlati 
+ 
+[Come richiedere lo spostamento dati](request-your-data-move.md)
+    
+[Domande frequenti sullo spostamento dati](data-move-faq.md)
+  
+[Nuova geos Data Center di Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Servizi di Azure dall'area](https://azure.microsoft.com/en-us/regions/)
 

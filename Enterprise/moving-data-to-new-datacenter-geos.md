@@ -3,7 +3,7 @@ title: Spostamento dei dati di base al nuovo Office 365 datacenter geos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: "Nuovo centro dati geos incrementare la capacità e calcolare le risorse necessarie per supportare la nostra crescita richiesta e l'utilizzo dei clienti in corso. Inoltre, il nuovo geos datacenter sono disponibili in geo residenza dati per i dati dei clienti core. Dati relativi ai clienti Core è un termine che fa riferimento a un sottoinsieme di dati relativi ai clienti definita nelle condizioni di Microsoft Online Services: Exchange Online contenuto delle cassette postali (corpo del messaggio di posta elettronica, le voci di calendario e il contenuto degli allegati di posta elettronica) e SharePoint Online di contenuto e i file di sito archiviati all'interno del sito e i file caricati in OneDrive for Business."
-ms.openlocfilehash: 1f3af15852b1221daf2e2d994653c8bb9cf697e4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541369"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839584"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Spostamento dei dati di base al nuovo Office 365 datacenter geos
 

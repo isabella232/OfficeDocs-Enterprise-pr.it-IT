@@ -3,7 +3,7 @@ title: Domande frequenti sullo spostamento dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Di seguito sono le risposte alle domande generali su spostamento dei dati di base in un nuovo geo datacenter.
-ms.openlocfilehash: 40f83ee94aaa7c919f08d91d888ff131da02df67
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fe2399afa81a189416c41e3acba67e53eb99c674
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541284"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839594"
 ---
 # <a name="data-move-general-faq"></a>Domande frequenti sullo spostamento dati
 
@@ -149,4 +149,12 @@ R. Sì.
   
 R. Sì. Microsoft gestisce una rete globale di grandi dimensioni con connessioni Internet pubblica nelle posizioni più di 50 23 paesi in tutto il mondo con peering accordi con più di 1.500 provider di servizi Internet (ISP). Gli utenti saranno in grado di accedere i Data Center da ovunque si trovino in Internet.
   
+## <a name="related-topics"></a>Argomenti correlati
 
+[Spostamento dei dati di base al nuovo Office 365 datacenter geos](moving-data-to-new-datacenter-geos.md)
+
+[Come richiedere lo spostamento dati](request-your-data-move.md)
+
+[Nuova geos Data Center di Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Servizi di Azure dall'area](https://azure.microsoft.com/en-us/regions/)

@@ -3,7 +3,7 @@ title: Come richiedere lo spostamento dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Saranno necessario inviare una richiesta prima della scadenza per i paesi affinché i dati dei clienti i servizi di Office 365 partecipanti spostati i nuovo geo clienti esistenti di Office 365.
-ms.openlocfilehash: 850a3a81b7e0405d47e36726e328ea078ae3f55c
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23222978"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839574"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
@@ -109,5 +109,15 @@ Prova tenant può essere combinato con il tenant esistente:
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notificare agli utenti di aggiornare le impostazioni di Exchange non aggiornate sui dispositivi mobili
 
 Se gli utenti dispongono di un dispositivo mobile con Exchange Server impostata **m.outlook.com** o **podxxxxx.outlook.com**, è consigliabile che questi server passano a **outlook.office365.com**seguendo le istruzioni in [Set di backup di un dispositivo mobile per la sincronizzazione con l'account](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Spostamento dei dati di base al nuovo Office 365 datacenter geos](moving-data-to-new-datacenter-geos.md)
+
+[Domande frequenti sullo spostamento dati](data-move-faq.md)
+
+[Nuova geos Data Center di Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Servizi di Azure dall'area](https://azure.microsoft.com/en-us/regions/)
   
 
