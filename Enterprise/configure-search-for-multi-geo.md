@@ -11,12 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su come configurare la ricerca in un ambiente multi-geografico.
-ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "18908330"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915061"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurare la ricerca per OneDrive for Business Multi-Geo
 
@@ -82,7 +82,7 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 </tr>
 <tr class="even">
 <td align="left">Criteri di affinamento ricerca</td>
-<td align="left">La ricerca restituisce i criteri di affinamento di tutte le posizioni geografiche di un tenant e poi li aggrega. L'aggregazione è approssimativa e viene eseguita secondo il principio "best effort", quindi i conteggi dei criteri di affinamento potrebbero non essere precisi. Per la maggior parte degli scenari di ricerca questo livello di approssimazione è sufficiente.</td>
+<td align="left">La ricerca restituisce i criteri di affinamento di tutte le posizioni geografiche di un tenant e poi li aggrega. L'aggregazione è approssimativa e viene eseguita secondo il principio "best effort", quindi i conteggi dei criteri di affinamento potrebbero non essere precisi. Per la maggior parte degli scenari di ricerca questo livello di approssimazione è sufficiente. </td>
 <td align="left">Per le applicazioni basate sulla ricerca che richiedono criteri di affinamento precisi, è necessario inviare la query separatamente a ogni posizione geografica senza estenderla all'intero ambiente multi-geografico.</td>
 </tr>
 <tr class="odd">
@@ -129,7 +129,8 @@ Alcune delle funzionalità di ricerca già note non sono supportate in un ambien
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Come funziona la ricerca in un ambiente multi-geografico?
 
 **Tutti** i client di ricerca usano le API REST del servizio di ricerca di SharePoint per interagire con gli indici di ricerca.
-<img src="media/configure-search-for-multi-geo_image1-1.png" />
+
+<img src="media/configure-search-for-multi-geo-image1-1.png" />
 
 1. Un client di ricerca chiama l'endpoint REST Ricerca con la proprietà di query EnableMultiGeoSearch= true.
 2. La query viene inviata a tutte le posizioni geografiche del tenant.
@@ -151,8 +152,8 @@ Ogni Centro ricerche dispone di diverse verticali ed è necessario configurarle 
 
 3.  Selezionare la verticale da configurare, fare clic sull'icona a forma di ingranaggio **Impostazioni** in alto a destra, quindi fare clic su **Modifica pagina**. La pagina dei risultati della ricerca si apre in modalità di modifica.
 
-     ![](media/configure-search-for-multi-geo_image2.png)
-1.  Nella web part Risultati della ricerca, spostare il puntatore sull'angolo in alto a destra della web part, fare clic sulla freccia, quindi fare clic su **Modifica web part** nel menu. Si apre il riquadro degli strumenti della web part Risultati della ricerca sotto la barra multifunzione in alto a destra nella pagina. ![](media/configure-search-for-multi-geo_image3.png)
+     ![](media/configure-search-for-multi-geo-image2.png)
+1.  Nella web part Risultati della ricerca, spostare il puntatore sull'angolo in alto a destra della web part, fare clic sulla freccia, quindi fare clic su **Modifica web part** nel menu. Si apre il riquadro degli strumenti della web part Risultati della ricerca sotto la barra multifunzione in alto a destra nella pagina. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  Nella riquadro degli strumenti della web part, nella sezione **Impostazioni**, in **Impostazioni controllo risultati**, selezionare **Mostra risultati Multi-Geo** affinché la web part Risultati della ricerca mostri i risultati di tutte le posizioni geografiche.
 
@@ -228,6 +229,7 @@ MultiGeoSearchStatus - Si tratta di una proprietà che restituisce l'API Ricerca
 
 Con una richiesta GET, si specificano i parametri di query nell'URL. Con una richiesta POST, i parametri della query vengono ignorati nel corpo nel formato JavaScript Object Notation (JSON).
 
+
 #### <a name="request-headers"></a>Intestazioni di richiesta
 
 <table>
@@ -251,7 +253,10 @@ https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='Enable
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Esempio di richiesta GET estesa ad **alcune** posizioni geografiche
 
-https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+
+> [!NOTE]
+> I due punti e le virgole nell'elenco delle posizioni geografiche per la proprietà di MultiGeoSearchConfiguration sono precedute da una **barra rovesciata**, poiché le richieste GET usano i due punti per separare le proprietà e le virgole per separare gli argomenti di proprietà. Senza la barra rovesciata come carattere di escape, la proprietà MultiGeoSearchConfiguration viene interpretata in modo errato.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Esempio di richiesta POST estesa a **tutte** le posizioni geografiche
 

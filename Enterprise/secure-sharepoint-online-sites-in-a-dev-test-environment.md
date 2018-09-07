@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Riepilogo: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati in un ambiente di sviluppo/test.'
-ms.openlocfilehash: fecb725999c7958dca1278c1236fcf251adc33cd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 49153a5c4256e7aa0e5ba5f6d2ac53c4e56b5bdc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193726"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915771"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test
 
@@ -27,7 +29,7 @@ ms.locfileid: "19193726"
   
 Questo articolo contiene istruzioni dettagliate per la creazione di un ambiente di sviluppo e test che includa i quattro tipi diversi di sito del team di SharePoint Online per la [soluzione di protezione di siti e file di SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
-![Tutti i quattro siti del team nell’ambiente di sviluppo/test protetto di SharePoint Online.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Tutti i quattro siti del team nell’ambiente di sviluppo/test protetto di SharePoint Online.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 Usare questo ambiente di sviluppo e test per sperimentare i comportamenti della protezione delle informazioni e ottimizzare le impostazioni in base alle esigenze specifiche prima di distribuire siti del team di SharePoint Online nell'ambiente di produzione.
   
@@ -270,7 +272,7 @@ Configurare quindi la cartella dei documenti del sito del team dell'intera organ
     
 Di seguito è riportata la configurazione risultante.
   
-![Protezione di livello di base per il sito del team di SharePoint Online pubblico a livello dell’organizzazione.](images/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
+![Protezione di livello di base per il sito del team di SharePoint Online pubblico a livello dell’organizzazione.](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
   
 ### <a name="project-1-team-site"></a>Sito del team Project 1
 
@@ -304,7 +306,7 @@ Configurare quindi la cartella dei documenti del sito del team Project 1 per l'e
     
 Di seguito è riportata la configurazione risultante.
   
-![Protezione di livello di base per il sito del team di SharePoint Online privato Project1.](images/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
+![Protezione di livello di base per il sito del team di SharePoint Online privato Project1.](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
   
 ### <a name="marketing-campaigns-team-site"></a>Sito del team delle campagne di marketing
 
@@ -420,7 +422,7 @@ Configurare quindi un criterio di prevenzione della perdita di dati che informa 
     
 Di seguito è riportata la configurazione risultante.
   
-![Protezione di livello sensibile per il sito del team di SharePoint Online isolato delle campagne di marketing.](images/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
+![Protezione di livello sensibile per il sito del team di SharePoint Online isolato delle campagne di marketing.](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>Sito del team di strategia aziendale
 
@@ -568,7 +570,7 @@ Successivamente, configurare Azure Information Protection con nuovi criteri e un
 
 16. Nel pannello **Azure Information Protection** fare clic su **Criteri > + Aggiungi un nuovo criterio**.
     
-17. Digitare **CompanyStrategy** in **Nome criterio** ed **Etichetta per i documenti nel sito del team di strategia aziendale** in **Descrizione**.
+17. Digitare **CompanyStrategy** in **Nome criterio** e **Documenti nel sito del team di strategia aziendale** in **Descrizione**.
     
 18. Fare clic su **Selezionare gli utenti o i gruppi a cui viene applicato il criterio > Utenti/Gruppi**, quindi selezionare **C-Suite**.
     
@@ -582,13 +584,13 @@ Per proteggere un documento con Azure Information Protection e la nuova etichett
   
 Di seguito è riportata la configurazione risultante.
   
-![Protezione di livello estremamente riservato per un sito del team di SharePoint Online isolato di strategia aziendale.](images/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
+![Protezione di livello estremamente riservato per un sito del team di SharePoint Online isolato di strategia aziendale.](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
 A questo punto si è pronti a creare documenti in questi quattro siti e a testare l'accesso ai siti usando diversi account utente della sottoscrizione di valutazione.
   
 Di seguito è riportata la configurazione completa per tutti i quattro siti del team di SharePoint Online.
   
-![Tutti i quattro siti del team nell’ambiente di sviluppo/test protetto di SharePoint Online.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Tutti i quattro siti del team nell’ambiente di sviluppo/test protetto di SharePoint Online.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 ## <a name="next-step"></a>Passaggio successivo
 

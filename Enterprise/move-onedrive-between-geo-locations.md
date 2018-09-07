@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su come spostare un sito OneDrive in un'altra posizione geografica
-ms.openlocfilehash: 80768d0838d1d5d072d3e221c4c2b4b1af78dae6
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: d951e42ba1881483438383719390c35d0227da7b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "19174902"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915331"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Spostare un sito OneDrive in un'altra posizione geografica 
 
@@ -39,6 +39,14 @@ Quando si effettua lo spostamento dei siti di OneDrive tra le posizioni geografi
 
 È necessario inviare agli utenti un'email nel momento in cui lo spostamento è stato completato correttamente informandoli della possibilità di riprendere a lavorare in OneDrive.
 
+## <a name="scheduling-onedrive-site-moves"></a>Pianificazione degli spostamenti dei siti di OneDrive
+
+È possibile pianificare gli spostamenti dei siti di OneDrive in anticipo (come descritto più avanti in questo articolo). È consigliabile iniziare con un numero limitato di utenti per convalidare i flussi di lavoro e le strategie di comunicazione. Una volta acquisita familiarità con la procedura, è possibile pianificare gli spostamenti nel modo seguente:
+
+- È possibile pianificare fino a 4.000 spostamenti alla volta.
+- Una volta iniziati gli spostamenti, è possibile pianificarne di nuovi, con un massimo di 4.000 spostamenti in sospeso in coda in qualsiasi momento.
+- È consigliabile pianificare un numero massimo di 4.000 spostamenti al mese.
+
 ## <a name="moving-a-onedrive-site"></a>Spostamento di un sito OneDrive
 
 Per eseguire uno spostamento geografico di OneDrive, l'amministratore del tenant deve innanzitutto impostare il percorso dati preferito dell'utente sulla posizione geografica appropriata. Dopo aver impostato il percorso dati preferito, attendere almeno 24 ore che l'aggiornamento del percorso dati preferito  si sincronizzi nelle posizioni geografiche prima di avviare lo spostamento geografico di OneDrive.
@@ -51,7 +59,7 @@ Ad esempio: per spostare OneDrive dell'utente "Matt@contosoenergy.onmicrosoft.co
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations_image1.png)
+![](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>Convalida dell'ambiente
 
@@ -86,7 +94,7 @@ Ad esempio, per spostare OneDrive di matt@contosoenergy.onmicrosoft.com da EUR a
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations_image2.png)
+![](media/move-onedrive-between-geo-locations-image2.png)
 
 Per pianificare lo spostamento geografica in un secondo momento, utilizzare uno dei parametri seguenti:
 
