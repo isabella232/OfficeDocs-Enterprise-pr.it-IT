@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 description: È necessario conoscere i passaggi da eseguire per identificare e correggere i ritardi, si blocca e un rallentamento delle prestazioni tra SharePoint Online, OneDrive for Business, Exchange Online o Skype Business online e i computer client? Prima di chiamare il supporto, in questo articolo consentono di risolvere i problemi relativi alle prestazioni di Office 365 e risolvere alcuni dei problemi più comuni.
-ms.openlocfilehash: c7eed9498920c601b3b345e8d1879ddbb16c56c3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 629e65fe6d35237f33ae06fdeec380c670cd5e62
+ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541279"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849369"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Piano di risoluzione dei problemi di prestazioni per Office 365
 
@@ -120,14 +120,14 @@ Dopo aver installato Netmon 3.4, aprire lo strumento ed eseguire la procedura se
   
  **Eseguire HTTPWatch e riprodurre il problema**
   
-1. HTTPWatch è un browser plug-in, in modo che lo strumento nel browser l'esposizione è leggermente diverso per ogni versione di Internet Explorer. In genere, è possibile trovare HTTPWatch sotto la barra dei comandi nel browser Internet Explorer.</br></br>Se il plug-in HTTPWatch non viene visualizzata nella finestra del browser, controllo della versione del browser con fare clic su Guida \> su, o versioni successive di Internet Explorer, fare clic sul simbolo di ingranaggio e informazioni su Internet Explorer. Per avviare la barra dei **comandi** , fare clic sulla barra dei menu in Internet Explorer e fare clic su **barra dei comandi**. In passato, HTTPWatch è stati associati con i comandi e le barre di Explorer, pertanto una volta si installa, se non è immediatamente visualizzata l'icona (anche dopo il riavvio) controllare **gli strumenti**e le barre degli strumenti per l'icona. Tenere presente che è possibile personalizzare le barre degli strumenti e le opzioni possono essere aggiunte loro.</br>
+1. HTTPWatch è un browser plug-in, in modo che lo strumento nel browser l'esposizione è leggermente diverso per ogni versione di Internet Explorer. In genere, è possibile trovare HTTPWatch sotto la barra dei comandi nel browser Internet Explorer.</br>Se il plug-in HTTPWatch non viene visualizzata nella finestra del browser, controllo della versione del browser con fare clic su Guida \> su, o versioni successive di Internet Explorer, fare clic sul simbolo di ingranaggio e informazioni su Internet Explorer. Per avviare la barra dei **comandi** , fare clic sulla barra dei menu in Internet Explorer e fare clic su **barra dei comandi**. In passato, HTTPWatch è stati associati con i comandi e le barre di Explorer, pertanto una volta si installa, se non è immediatamente visualizzata l'icona (anche dopo il riavvio) controllare **gli strumenti**e le barre degli strumenti per l'icona. Tenere presente che è possibile personalizzare le barre degli strumenti e le opzioni possono essere aggiunte loro.</br>
     ![Comando della barra degli strumenti Internet Explorer con l'icona HTTPWatch visualizzata.](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
 2. Sulla barra di avvio HTTPWatch in una finestra del browser Internet Explorer. Verrà visualizzato ancorato alla parte inferiore della finestra del browser. Fare clic su **Record**.
     
 3. Riprodurre la procedura esatta per il problema di prestazioni. Fare clic sul pulsante **Interrompi** HTTPWatch. 
     
-4. **Salvare** il HTTPWatch o **inviare tramite posta elettronica**. Ricordarsi di nome del file in modo che includa informazioni su data e ora e l'indicazione del fatto l'orologio contiene una dimostrazione delle prestazioni positivo o negativo.</br></br>![HTTPWatch che mostra la scheda Rete per il caricamento pagina della homepage di Office 365.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br></br>
+4. **Salvare** il HTTPWatch o **inviare tramite posta elettronica**. Ricordarsi di nome del file in modo che includa informazioni su data e ora e l'indicazione del fatto l'orologio contiene una dimostrazione delle prestazioni positivo o negativo.</br>![HTTPWatch che mostra la scheda Rete per il caricamento pagina della homepage di Office 365.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br>
     Questa schermata è dalla versione di HTTPWatch Professional. È possibile aprire le tracce attenzione la versione di base in un computer con una versione Professional e leggere disponibili. Informazioni aggiuntive potrebbero essere disponibile dalla traccia tramite il metodo.
     
 ## <a name="problem-steps-recorder"></a>Registrazione azioni
