@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Per identificare e differenziare meglio il traffico di rete di Office 365, un nuovo servizio Web pubblica gli endpoint di Office 365, consentendo agli utenti di valutare, configurare e rimanere aggiornati con le ultime modifiche. Questo nuovo servizio Web sostituisce i file scaricabili XML attualmente disponibili.
-ms.openlocfilehash: 3abd6a0692ae4d66c76f8c0d65653b83646c6e23
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23830890"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831901"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Servizio Web per URL e indirizzi IP di Office 365**
 
@@ -73,6 +73,8 @@ Il risultato ottenuto dal metodo Web per la versione potrebbe essere un singolo 
 - instance: il nome breve dell'istanza del servizio di Office 365.
 - latest: l'ultima versione degli endpoint dell'istanza specificata.
 - versions: un elenco di tutte le versioni precedenti dell'istanza specificata. Questo elemento è incluso solo se il parametro AllVersions è true.
+
+È possibile utilizzare Microsoft Flow per ricevere notifiche di posta elettronica delle modifiche agli URL e agli indirizzi IP. Vedere l'articolo sull'[uso di Microsoft Flow per ricevere un'e-mail per le modifiche agli URL e agli indirizzi IP di Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 
 ### <a name="examples"></a>**Esempi:**
 
@@ -487,24 +489,10 @@ In futuro potrebbero essere richiesti aggiornamenti ai parametri o ai risultati 
 
 [Connettività di rete con Office 365](network-connectivity.md)
   
-[Azure ExpressRoute per Office 365](azure-expressroute.md)
-  
-[Gestione di ExpressRoute per la connettività di Office 365](managing-expressroute-for-connectivity.md)
-  
-[Routing con ExpressRoute per Office 365](routing-with-expressroute.md)
-  
-[Implementazione di ExpressRoute per Office 365](implementing-expressroute.md)
-  
-[Uso delle community BGP in ExpressRoute per gli scenari di Office 365 (anteprima)](bgp-communities-in-expressroute.md)
-  
 [Qualità multimediale e prestazioni della connettività di rete in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [Ottimizzazione della rete per Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
-  
-[ExpressRoute e QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
-  
-[Flusso di chiamata con ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
-  
+
 [Ottimizzazione delle prestazioni di Office 365 mediante l'uso della cronologia delle prestazioni e delle previsioni](performance-tuning-using-baselines-and-history.md)
   
 [Piano di risoluzione dei problemi di prestazioni per Office 365](performance-troubleshooting-plan.md)
