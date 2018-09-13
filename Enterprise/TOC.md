@@ -1,4 +1,4 @@
-# Modelli di architettura cloud
+# [Modelli di architettura cloud](microsoft-cloud-it-architecture-resources.md)
 ## [Rete di Microsoft Cloud per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
 ### [Evoluzione della rete per la connettività cloud](evolving-your-network-for-cloud-connectivity.md)
 ### [Elementi comuni della connettività cloud di Microsoft](common-elements-of-microsoft-cloud-connectivity.md)
@@ -66,8 +66,8 @@
 #### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
 #### [Project Server 2007](project-server-2007-end-of-support.md)
 
-# Testare Office 365
-## [Ambiente di sviluppo/test della configurazione di base](base-configuration-dev-test-environment.md)
+# [Provare Office 365](cloud-adoption-test-lab-guides-tlgs.md)
+## [Configurazione di base dell’ambiente di sviluppo/test](base-configuration-dev-test-environment.md)
 ## [Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md)
 ### [Sincronizzazione della directory per l'ambiente di sviluppo/test di Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365. ](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
