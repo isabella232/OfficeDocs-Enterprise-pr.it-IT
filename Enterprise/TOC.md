@@ -120,7 +120,7 @@
 ## [Configurare le applicazioni e i servizi di Office 365 Enterprise](configure-services-and-applications.md)
 ### [Eseguire la migrazione dei dati a Office 365](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
-### [SharePoint Online](/sharepoint/sharepoint-online.md)
+### [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
 ### [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
 ### [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
 ### [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
