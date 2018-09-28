@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Spostamenti di dati sono un'operazione di back-end con un impatto minimo per gli utenti finali. Mentre Microsoft Sposta ogni servizio e dei dati associati per il tenant di un nuovo livello geografico datacenter, è necessaria alcuna azione. Il trasferimento dei dati e la convalida eseguita in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839604"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975174"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -96,8 +96,8 @@ Nella tabella seguente viene illustrato come accedere a eDiscovery e controllo t
   
 ||**Interfaccia di amministrazione di Exchange**|**Protezione &amp; centro conformità**|
 |:-----|:-----|:-----|
-|eDiscovery  <br/> | Accedere a https://portal.office.come quindi fare clic su tessera di **amministrazione** . </br> Fare clic su **Admin Center** \> **Exchange**. </br> Selezionare **gestione della conformità** \> **eDiscovery in locale &amp; attesa**. | Accedere a https://portal.office.come quindi fare clic su tessera di amministrazione. </br> Fare clic su **Admin Center** \> **protezione &amp; conformità**. </br> Selezionare **ricerca &amp; indagini** \> **eDiscovery**.|
-|Controllo  <br/> | Accedere a https://portal.office.come quindi fare clic su tessera di **amministrazione** . </br> Fare clic su **Admin Center** \> **Exchange**. Selezionare **gestione della conformità** \> **il controllo**. | Accedere a https://portal.office.come quindi fare clic su tessera di amministrazione. </br> Fare clic su **Admin Center** \> **protezione &amp; conformità**. </br> Selezionare **ricerca &amp; indagini** \> **ricerca dei registri di controllo**. |
+|eDiscovery  <br/> | Accedere a https://portal.office.come quindi fare clic su tessera di **amministrazione** . <br/> Fare clic su **Admin Center** \> **Exchange**. <br/> Selezionare **gestione della conformità** \> **eDiscovery in locale &amp; attesa**. | Accedere a https://portal.office.come quindi fare clic su tessera di amministrazione. <br/> Fare clic su **Admin Center** \> **protezione &amp; conformità**. <br/> Selezionare **ricerca &amp; indagini** \> **eDiscovery**.|
+|Controllo  <br/> | Accedere a https://portal.office.come quindi fare clic su tessera di **amministrazione** . <br/> Fare clic su **Admin Center** \> **Exchange**. Selezionare **gestione della conformità** \> **il controllo**. | Accedere a https://portal.office.come quindi fare clic su tessera di amministrazione. <br/> Fare clic su **Admin Center** \> **protezione &amp; conformità**. <br/> Selezionare **ricerca &amp; indagini** \> **ricerca dei registri di controllo**. |
    
 ### <a name="mailbox-migration"></a>Migrazione delle cassette postali
 
@@ -131,7 +131,7 @@ Dopo aver completato il passaggio di dati di SharePoint Online, è possibile vis
     
 - Si sta rimuovendo codificato transazioni dal centro dati precedenti e transcodifica li copia nuovamente nel nuovo centro dati.
     
-### <a name="search"></a>Ricerca
+### <a name="search"></a>Cerca
 
 Durante lo spostamento di dati di SharePoint Online, è eseguire la migrazione delle impostazioni di ricerca e di indice di ricerca in una nuova posizione. Fino a quando non è stato **completato** lo spostamento dei dati di SharePoint Online, è continua gestire gli utenti dall'indice nella posizione originale. Nel nuovo percorso ricerca avvia automaticamente la ricerca per indicizzazione del contenuto dopo aver completato il passaggio di dati di SharePoint Online. Da questo punto e in avanti è gestire gli utenti dall'indice di migrati. Modifiche al contenuto che si sono verificati dopo la migrazione non vengono inclusi nell'indice migrato fino a quando la ricerca per indicizzazione Seleziona. La maggior parte dei clienti non si noti che i risultati sono meno destra aggiornato dopo aver completato lo spostamento dei dati di SharePoint Online, ma alcuni clienti potrebbero verificarsi aggiornamento ridotta prima 48 24 ore 
   

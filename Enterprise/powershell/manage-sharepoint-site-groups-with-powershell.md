@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: Utilizzare Office 365 PowerShell per gestire i gruppi del sito SharePoint Online.'
-ms.openlocfilehash: a9fddf33b2f29e7b4e8ed6b86c2433c7ca19a9fc
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: c68e0905c0abcbea279829be7c841c31409db6cf
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915351"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975144"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Manage SharePoint Online site groups with Office 365 PowerShell
 
@@ -37,8 +37,8 @@ Interfaccia di amministrazione di SharePoint Online include alcuni metodi da uti
 
 1. Dall'interfaccia di amministrazione di Office 365, fare clic su **risorse** > di**siti**e quindi fare clic sull'URL del sito.
 2. Nella finestra di dialogo raccolta siti, fare clic su **Vai a questo sito**.
-3. Nella pagina sito fare clic sull'icona **Impostazioni** (si trova nell'angolo superiore destro della pagina) e quindi fare clic su **Impostazioni sito**:</br>
-![Impostazioni del sito di SharePoint Online](media/spo-site-settings.png)</br>
+3. Nella pagina sito fare clic sull'icona **Impostazioni** (si trova nell'angolo superiore destro della pagina) e quindi fare clic su **Impostazioni sito**:<br/>
+![Impostazioni del sito di SharePoint Online](media/spo-site-settings.png)<br/>
 4. Nella pagina Impostazioni sito fare clic su **autorizzazioni di siti** in **utenti e autorizzazioni**.
 
 Ripetere quindi la procedura per il sito successivo.
@@ -58,7 +58,7 @@ foreach ($y in $x)
 
 Esistono due modi per eseguire questo comando impostato nel prompt dei comandi di SharePoint Online Management Shell:
 
-- Copiare i comandi nel blocco note (o un altro editor di testo), modificare il valore della variabile **$siteURL** , selezionare i comandi e quindi incollarle al prompt dei comandi di SharePoint Online Management Shell. In questo caso, PowerShell verrà interrotta in una **>>** prompt dei comandi. Premere INVIO per eseguire il comando **foreach** .</br>
+- Copiare i comandi nel blocco note (o un altro editor di testo), modificare il valore della variabile **$siteURL** , selezionare i comandi e quindi incollarle al prompt dei comandi di SharePoint Online Management Shell. In questo caso, PowerShell verrà interrotta in una **>>** prompt dei comandi. Premere INVIO per eseguire il comando **foreach** .<br/>
 - Copiare i comandi nel blocco note (o un altro editor di testo), modificare il valore della variabile **$siteURL** e quindi salvare il file di testo con un nome e l'estensione ps1 in una cartella appropriata. Successivamente, eseguire lo script dal prompt dei comandi di SharePoint Online Management Shell specificando il percorso e nome file. Ecco un comando di esempio:
 
 ```

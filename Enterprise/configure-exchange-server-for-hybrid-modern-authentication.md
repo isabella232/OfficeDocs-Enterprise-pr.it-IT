@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Ibrida moderno autenticazione (alta), è un metodo di gestione delle identità che offre maggiore protezione l'autenticazione degli utenti e l'autorizzazione ed è disponibile per le distribuzioni ibride di Exchange server locale.
-ms.openlocfilehash: 871f03b8e776c694f7378f6905259d21516f7326
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541271"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975194"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida
 
@@ -81,7 +81,7 @@ Verificare che gli URL client possono connettersi a elencato come nomi delle ent
     
 Prendere nota delle (e cattura di schermata per un confronto successivo) l'output di questo comando, che deve includere un https:// * individuazione automatica. . com *NomeDominio* * e URL https:// *mail.yourdomain.com* , ma sono costituiti principalmente nomi dell'entità servizio che iniziano con 00000002-0000-0ff1-ce00-000000000000 /. Se sono presenti gli URL https:// da locale che risultano mancanti è necessario aggiungere i record specifici a questo elenco. 
   
-3. Se i record MAPI su HTTP, servizi Web Exchange, ActiveSync, della Rubrica offline e l'individuazione automatica interni ed esterni in questo elenco non viene visualizzata, è necessario aggiungerli tramite il comando riportato di seguito (nell'esempio gli URL sono '`mail.corp.contoso.com`'e'`owa.contoso.com`', ma è possibile **sostituire l'URL di esempio con il proprio** ) : </br>
+3. Se i record MAPI su HTTP, servizi Web Exchange, ActiveSync, della Rubrica offline e l'individuazione automatica interni ed esterni in questo elenco non viene visualizzata, è necessario aggiungerli tramite il comando riportato di seguito (nell'esempio gli URL sono '`mail.corp.contoso.com`'e'`owa.contoso.com`', ma è possibile **sostituire l'URL di esempio con il proprio** ) : <br/>
 ```
 - $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 - $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")

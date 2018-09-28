@@ -1,9 +1,8 @@
 ---
 title: Come verificare l'integrità dei servizi Office 365
-ms.author: kfollis
-author: kfollis
-manager: scotv
-ms.date: 6/15/2018
+ms.author: robmazz
+author: robmazz
+manager: laurawi
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -21,16 +20,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visualizzare lo stato di integrità dei servizi di Office 365 prima di chiamare il supporto per verificare se si verifica un'interruzione del servizio active
-ms.openlocfilehash: d01fe8e269ace922ab92cca779d6f8fea8b6802e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: f4bdc0f4b6faa7a3ae86580596e28e6391167340
+ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541179"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24976566"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Come verificare l'integrità dei servizi Office 365
 
-È possibile visualizzare l'integrità di Office 365, Yammer, Microsoft Dynamics CRM e servizi cloud Microsoft Intune in Office 365 * * dello stato del servizio * * pagina nell'interfaccia di amministrazione. Se si riscontrano problemi con un servizio cloud, è possibile controllare l'integrità dei servizi per determinare se si tratta di un problema noto con una risoluzione in corso prima di chiamare il supporto o dedicare tempo di risoluzione dei problemi. 
+È possibile visualizzare l'integrità di Office 365, Yammer, Microsoft Dynamics CRM e servizi cloud Microsoft Intune nella pagina interfaccia di amministrazione di Office 365 **dell'integrità del servizio** . Se si riscontrano problemi con un servizio cloud, è possibile controllare l'integrità dei servizi per determinare se si tratta di un problema noto con una risoluzione in corso prima di chiamare il supporto o dedicare tempo di risoluzione dei problemi. 
   
 ### <a name="how-to-check-service-health"></a>Come verificare l'integrità dei servizi
 
@@ -39,7 +38,7 @@ ms.locfileid: "22541179"
     > [!NOTE]
     > Persone che sono assegnate amministratore globale o il ruolo di amministratore del servizio possono visualizzare l'integrità dei servizi. Per consentire a Exchange, SharePoint e Skype per gli amministratori aziendali visualizzare l'integrità dei servizi, è necessario anche assegnare il ruolo di amministratore del servizio. 
   
-2. Per aprire l'integrità dei servizi, nell'interfaccia di amministrazione, passare a **integrità** \> **dell'integrità del servizio**oppure fare clic sull'integrità dei servizi di schede nel dashboard di Home. Nella scheda dashboard indica se esiste un problema di servizio active e collegamenti alla pagina dello stato dettagliato service.
+2. Per aprire l'integrità dei servizi, nell'interfaccia di amministrazione, passare a **integrità** > **integrità dei servizi**, oppure fare clic sulla **scheda dello stato del servizio** nel **dashboard di Home**. Nella scheda dashboard indica se esiste un problema di servizio active e collegamenti alla pagina dello stato dettagliato service.
     
     ![Scheda di dashboard per l'integrità dei servizi](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -94,16 +93,16 @@ La maggior parte dei servizi in verrà visualizzato come integra senza ulteriori
    
 ### <a name="status-definitions"></a>Definizioni di stato
 
-| |
 |**Stato**|**Definizione**|
 |:-----|:-----|
-|Analisi dei  <br/> |Si sia consapevole dell'esistenza di un problema potenziale e la raccolta di ulteriori informazioni sulle novità, e l'ambito dell'impatto.  <br/> |
-|Riduzione del servizio  <br/> |È stato confermato che esiste un problema che può influire sull'utilizzo di un servizio o una caratteristica. È possibile che questo stato se un servizio esegue rallentamento, sono disponibili le interruzioni intermittenti, o se una caratteristica non funziona, ad esempio.  <br/> |
-|Interruzione del servizio  <br/> |Verrà visualizzato questo stato viene determinato che un problema riguarda la possibilità per gli utenti di accedere al servizio. In questo caso, il problema è importante e può essere riprodotto in modo coerente.  <br/> |
-|Ripristino del servizio  <br/> |La causa del problema è stata individuata, è possibile sapere quale azione correttiva intraprendere e in fase di portare il servizio di uno stato integro.  <br/> |
-|Ripristino esteso  <br/> |Questo stato indica che un'azione correttiva è in corso per ripristinare il servizio per la maggior parte degli utenti, ma può richiedere tempo per raggiungere tutti i sistemi interessati. È possibile visualizzare lo stato se è stato reso una variabile temporanea correggere per ridurre l'impatto mentre è in attesa per applicare una correzione permanente.  <br/> |
-|Indagini in sospeso  <br/> |Se la ricerca condotta dettagliata di un problema potenziale dei risultati di una richiesta di informazioni aggiuntive dai clienti per consentire di eseguire un'analisi approfondita, verrà visualizzato questo stato. Se è necessario che funga, viene concesso all'utente sui dati e registri è necessario conoscere.  <br/> |
-|Servizio ripristinato.  <br/> |È stato confermato che un'azione correttiva ha risolto il problema e il servizio è stato ripristinato in uno stato integro. Per individuare i quali è stato un problema, visualizzare i dettagli del problema.  <br/> |
+|**Analisi dei** | Si sia consapevole dell'esistenza di un problema potenziale e la raccolta di ulteriori informazioni sulle novità, e l'ambito dell'impatto. |
+|**Riduzione del servizio** | È stato confermato che esiste un problema che può influire sull'utilizzo di un servizio o una caratteristica. È possibile che questo stato se un servizio esegue rallentamento, sono disponibili le interruzioni intermittenti, o se una caratteristica non funziona, ad esempio. |
+|**Interruzione del servizio** | Verrà visualizzato questo stato viene determinato che un problema riguarda la possibilità per gli utenti di accedere al servizio. In questo caso, il problema è importante e può essere riprodotto in modo coerente. |
+|**Ripristino del servizio** | La causa del problema è stata individuata, è possibile sapere quale azione correttiva intraprendere e in fase di portare il servizio di uno stato integro. |
+|**Ripristino esteso** | Questo stato indica che un'azione correttiva è in corso per ripristinare il servizio per la maggior parte degli utenti, ma può richiedere tempo per raggiungere tutti i sistemi interessati. È possibile visualizzare lo stato se è stato reso una variabile temporanea correggere per ridurre l'impatto mentre è in attesa per applicare una correzione permanente. |
+|**Indagini in sospeso** | Se la ricerca condotta dettagliata di un problema potenziale dei risultati di una richiesta di informazioni aggiuntive dai clienti per consentire di eseguire un'analisi approfondita, verrà visualizzato questo stato. Se è necessario che funga, viene concesso all'utente sui dati e registri è necessario conoscere. |
+|**Servizio ripristinato.** | È stato confermato che un'azione correttiva ha risolto il problema e il servizio è stato ripristinato in uno stato integro. Per individuare i quali è stato un problema, visualizzare i dettagli del problema. |
+|**Post-incidente report pubblicati** | È stato pubblicato un rapporto operazioni non consentite Post per un problema specifico che include informazioni sulla causa principale e passaggi successivi per garantire che un problema analogo non si ripresenta. |
    
 ## <a name="history"></a>Cronologia
 
