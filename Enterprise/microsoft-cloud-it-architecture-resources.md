@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Riepilogo: Acquisire informazioni su servizi cloud Microsoft e opzioni delle piattaforme. Rivedere la guida di orientamento del cloud aziendale, esplorare serie di architetture cloud e altro ancora.'
-ms.openlocfilehash: f6f390a493efe4f4155655cc6116e9fdd7ec5a9f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
+ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915741"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24022095"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 
@@ -40,7 +40,6 @@ Questi poster e strumenti dell'architettura forniscono informazioni su servizi e
     - [Sicurezza e mobilità Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#mobility)
     - [Archiviazione cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#storage)
     - [Cloud ibrido Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#hybrid)
-    - [Contoso nel Microsoft Cloud](microsoft-cloud-it-architecture-resources.md#contoso)
     - [Attacchi comuni e funzionalità di Microsoft che proteggono l'organizzazione](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Serie di soluzioni di Office 365 Enterprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
@@ -132,22 +131,13 @@ Cosa devono sapere gli architetti IT del cloud ibrido per i servizi cloud e le p
 |:-----|:-----|
 |[![Immagine di scorrimento per modello ibrido del cloud Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) \| [Articolo](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Il modello contiene le pagine seguenti: <ul><li> **Panoramica di cloud ibrido** Offerte di cloud Microsoft (SaaS, Azure PaaS e Azure IaaS) e relativi elementi comuni. </li><li> **Architettura di scenari sul cloud ibrido di Microsoft** Un diagramma dell'architettura del cloud ibrido per offerte sul cloud Microsoft, che mostra i livelli comuni di infrastruttura, rete e identità locali. </li><li> **Scenari di cloud ibrido per SaaS di Microsoft (Office 365)** Architettura di scenari ibridi per SaaS e descrizioni delle principali configurazioni ibride per Skype for Business, SharePoint Server ed Exchange Server. </li><li> **Scenari di cloud ibrido per PaaS di Azure** Architettura di scenari ibridi per PaaS di Azure, descrizione di un'applicazione ibrida per PaaS di Azure con esempio e descrizione di Estensione database di SQL Server 2016. </li><li> **Scenari di cloud ibridi per IaaS di Azure** Architettura di scenari ibridi per IaaS di Azure e descrizione di un'applicazione line-of business (LOB) ospitata in IaaS di Azure. </li></ul><br/>|
    
-<a name="contoso"> </a>
-### <a name="contoso-in-the-microsoft-cloud"></a>Contoso nel Microsoft Cloud
-
-Esempio di come un'organizzazione globale fittizia ma rappresentativa ha implementato offerte di cloud Microsoft, tra cui Office 365, Azure, Dynamics 365 e Intune.
-  
-|**Elemento**|**Descrizione**|
-|:-----|:-----|
-|[![Immagine cursore di Contoso nel poster di Microsoft Cloud.](media/63077617-b8f2-45b6-b772-bad6cd98721d.png)          ](https://www.microsoft.com/download/details.aspx?id=54427) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085) \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086) \| [Articolo](https://technet.microsoft.com/library/mt775341.aspx) <br/>[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54427) <br/> |Questo modello contiene: <ul><li>Panoramica di Contoso Corporation </li><li>Infrastruttura IT ed esigenze di Contoso </li><li>Risorse di rete sul cloud per Contoso</li><li>Identità sul cloud per Contoso</li><li>Sottoscrizioni, licenze e account utente di Contoso</li><li>Sicurezza sul cloud per Contoso</li><li>Scenari di cloud aziendale per Contoso</li></ul> <br/>|
-   
 <a name="attacks"> </a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Attacchi comuni e funzionalità di Microsoft che proteggono l'organizzazione
 Informazioni sugli attacchi informatici più comuni e su come Microsoft è in grado di supportare l'organizzazione in tutte le fasi di un attacco. 
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di scorrimento del poster sugli attacchi comuni.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) </br> | Questo poster illustra il percorso degli attacchi comuni e descrive le funzionalità che consentono di bloccare i pirati informatici in ogni fase di un attacco. <br/>|
+|[![Immagine di scorrimento del poster sugli attacchi comuni.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | Questo poster illustra il percorso degli attacchi comuni e descrive le funzionalità che consentono di bloccare i pirati informatici in ogni fase di un attacco. <br/>|
 
 
 <a name="santa"> </a>
