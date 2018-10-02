@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Per identificare e differenziare meglio il traffico di rete di Office 365, un nuovo servizio Web pubblica gli endpoint di Office 365, consentendo agli utenti di valutare, configurare e rimanere aggiornati con le ultime modifiche. Questo nuovo servizio Web sostituisce i file scaricabili XML attualmente disponibili.
-ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
+ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831901"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24961825"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Servizio Web per URL e indirizzi IP di Office 365**
 
@@ -183,7 +183,7 @@ Il risultato ottenuto dal metodo Web per gli endpoint è una matrice di record i
 - tcpPorts: le porte TCP per il set di endpoint. Tutti gli elementi delle porte sono formattati come elenco con valori separati da virgole di porte o intervalli di porte separati da un trattino (-). Le porte si applicano a tutti gli URL e indirizzi IP nel set di endpoint per quella categoria. Questo elemento viene omesso se non specificato.
 - udpPorts: le porte UDP degli intervalli di indirizzi IP nel set di endpoint. Questo elemento viene omesso se non specificato.
 - ips: gli intervalli di indirizzi IP associati al set di endpoint come associati alle porte UDP o TCP elencate. Una matrice JSON di intervalli di indirizzi IP. Questo elemento viene omesso se non specificato.
-- category: la categoria di connettività per il set di endpoint. I valori validi sono Optimize, Allow e Default. Questo elemento è obbligatorio.
+- categoria: la categoria di connettività per il set di endpoint. I valori validi sono Optimize, Allow e Default. Se si usano i dati di endpoint per cercare la categoria di un indirizzo IP o un URL, è possibile che la query restituisca più categorie. Esistono alcuni motivi per cui potrebbe verificarsi. In questi casi è necessario seguire i suggerimenti per la categoria con priorità più alta. Ad esempio, se viene visualizzato un endpoint sia su Optimize sia su Allow, seguire i requisiti per Optimize. Obbligatorio. 
 - expressRoute: True o False se il set di endpoint sfrutta la connessione ExpressRoute.
 - required: True se il set di endpoint deve avere una connettività per Office 365 che sia supportata. False se il set di endpoint è facoltativo.
 - notes: per gli endpoint facoltativi, questo testo descrive la funzionalità di Office 365 che non sarà presente se gli URL o gli indirizzi IP nel set di endpoint non sono accessibili al livello della rete. Questo elemento viene omesso se non specificato.

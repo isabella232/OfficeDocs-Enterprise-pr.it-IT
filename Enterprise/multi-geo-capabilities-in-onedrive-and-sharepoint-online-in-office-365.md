@@ -12,15 +12,16 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Con Multi-Geo Capabilities in SharePoint Online e OneDrive, l'organizzazione può espandere la presenza di Office 365 a più aree geografiche e/o paesi.
-ms.openlocfilehash: 939c12790c30172dc87f89fc1a91a92a40b1c219
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
+ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24012736"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Multi-Geo Capabilities in OneDrive e SharePoint Online in Office 365
 
-Con Multi-Geo Capabilities in SharePoint Online e OneDrive, l'organizzazione può espandere la presenza di Office 365 a più aree geografiche e/o paesi all'interno del tenant esistente. Invitare il team degli account Microsoft ad iscrivere la propria società multi-nazionale all'anteprima di OneDrive for Business Multi-Geo.
+Con le funzionalità Multi-Geo in SharePoint Online e OneDrive, l'organizzazione può espandere la presenza di Office 365 a più aree geografiche e/o paesi all'interno del tenant esistente. Invitare il team degli account Microsoft ad iscrivere la propria società multi-nazionale all'anteprima di OneDrive for Business Multi-Geo.
   
 Con OneDrive Multi-Geo, è possibile effettuare il provisioning e archiviare i dati a riposo nelle località geografiche scelte per soddisfare i requisiti di residenza dei dati e allo stesso tempo sbloccare lo sviluppo globale delle esperienze di produttività moderna per i dipendenti.
   
@@ -69,6 +70,8 @@ OneDrive Multi-Geo è attualmente disponibile in queste aree geografiche e paesi
 - Canada
     
 - Unione Europea (EMEA)
+
+- Francia
     
 - Giappone
     
@@ -78,9 +81,8 @@ OneDrive Multi-Geo è attualmente disponibile in queste aree geografiche e paesi
     
 - Corea
       
-Prossime località geografiche:
+Prossime posizioni geografiche:
   
-- Francia
 - India
     
 ## <a name="getting-started"></a>Introduzione

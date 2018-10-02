@@ -3,7 +3,7 @@ title: Altri indirizzi IP e URL di Office 365 non inclusi nei servizi Web
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/22/2018
+ms.date: 9/13/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Riepilogo: i nuovi servizi Web endpoint non includono un numero limitato di endpoint per scenari specifici.'
 hideEdit: true
-ms.openlocfilehash: b40fb1a40d2a815bfc6e02fa11204d10dde2af73
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 4711f9b9560b0fab6d18700fcf3e933150861946
+ms.sourcegitcommit: 0f98c342f80ffa21ec35bbf4ae5619b5e3271da5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22600510"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977351"
 ---
 # <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>Altri indirizzi IP e URL di Office 365 non inclusi nei servizi Web
 
@@ -52,10 +52,11 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 | 6  | Funzioni per coesistenza di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), come la condivisione di informazioni sulla disponibilità. | Server Exchange locale del cliente | Traffico del server in ingresso |
 | 7  | Autenticazione proxy di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | STS locale del cliente | Traffico del server in ingresso |
 | 8  | Consente di configurare [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), utilizzando la Configurazione ibrida guidata di Exchange. <br> Nota: gli endpoint sono necessari solo per configurare Exchange ibrido  | ```domains.live.com``` sulle porte TCP 80 e 443, necessarie solo per la configurazione ibrida guidata di Exchange 2010 SP3. | Solo traffico del server in uscita |
-| 9  | **FQDN di autenticazione e identità** <br> Il nome di dominio completo (FQDN) ```secure.aadcdn.microsoftonline-p.com``` deve essere situato nell'area siti attendibili di Edge o Internet Explorer (IE) del client per poter funzionare. |  | Siti attendibili |
-| 10  |  **FQDN di Microsoft Teams** <br> Se si usa Internet Explorer o Microsoft Edge, è necessario attivare i cookie dei siti Web visualizzati e di terze parti e aggiungere i nomi di dominio completo per Teams per i siti attendibili. Si tratta di un'aggiunta di FQDN, CDN e telemetrie all'intera famiglia di prodotti di cui sopra. Vedere [Problemi noti di Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) per ulteriori informazioni. |  | Siti attendibili |
-| 11  |  **FQDN di SharePoint Online e OneDrive for Business** <br> Tutti i nomi di dominio completo di ".sharepoint.com" con "\<tenant>" nel nome di dominio completo devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. Oltre a FQDN, CDN e telemetrie dell'intera famiglia di prodotti di cui sopra, è necessario aggiungere anche questi endpoint. |  | Siti attendibili |
-| 12  | **Yammer**  <br> Yammer è disponibile solo nel browser e necessita di un'autenticazione proxy da parte dell'utente. Tutti i FQDN di Yammer devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. |  | Siti attendibili |
+| 9  | Il servizio di rilevamento automatico è usato negli scenari di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) con [autenticazione moderna ibrida con Outlook per iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Server Exchange locale del cliente in TCP 443 | Traffico del server in ingresso |
+| 10  | **FQDN di autenticazione e identità** <br> Il nome di dominio completo (FQDN) ```secure.aadcdn.microsoftonline-p.com``` deve essere situato nell'area siti attendibili di Edge o Internet Explorer (IE) del client per poter funzionare. |  | Siti attendibili |
+| 11  |  **FQDN di Microsoft Teams** <br> Se si usa Internet Explorer o Microsoft Edge, è necessario attivare i cookie dei siti Web visualizzati e di terze parti e aggiungere i nomi di dominio completo per Teams per i siti attendibili. Si tratta di un'aggiunta di FQDN, CDN e telemetrie all'intera famiglia di prodotti di cui sopra. Vedere [Problemi noti di Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) per ulteriori informazioni. |  | Siti attendibili |
+| 12  |  **FQDN di SharePoint Online e OneDrive for Business** <br> Tutti i nomi di dominio completo di ".sharepoint.com" con "\<tenant>" nel nome di dominio completo devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. Oltre a FQDN, CDN e telemetrie dell'intera famiglia di prodotti di cui sopra, è necessario aggiungere anche questi endpoint. |  | Siti attendibili |
+| 13  | **Yammer**  <br> Yammer è disponibile solo nel browser e necessita di un'autenticazione proxy da parte dell'utente. Tutti i FQDN di Yammer devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. |  | Siti attendibili |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
