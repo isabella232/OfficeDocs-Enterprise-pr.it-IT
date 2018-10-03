@@ -1,5 +1,5 @@
 ---
-title: Gestione di endpoint di Office 365
+title: Gestione degli endpoint di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,14 +15,14 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Alcune reti sono progettati per limitare l'accesso a internet, per verificare che i computer nelle reti come queste possono accedere a Office 365, gli amministratori di rete e proxy necessarie per gestire l'elenco dei nomi di dominio completo, gli URL e gli indirizzi IP che costituiscono l'elenco degli endpoint di Office 365. Le necessità da aggiungere al firewall o proxy regole e PAC file per assicurare che le richieste di rete sono in grado di raggiungere Office 365.
-ms.openlocfilehash: 42613b45b8395c3f81064bbc2171866bc922a657
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: a1a658ff04bc7306cb953477798d3e32d894d695
+ms.sourcegitcommit: 854653f927c9515024a1c9e0a86fd5f2fadb92f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831921"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25359498"
 ---
-# <a name="managing-office-365-endpoints"></a>Gestione di endpoint di Office 365
+# <a name="managing-office-365-endpoints"></a>Gestione degli endpoint di Office 365
 
 ## <a name="office-365-network-connectivity"></a>Connettività di rete di Office 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "23831921"
   
 ## <a name="update-your-firewalls-outbound-allow-lists"></a>Aggiornamento del firewall in uscita consentono di elenchi
 
-È possibile ottimizzare la rete per l'invio di che tutte le attendibili le richieste di rete di Office 365 direttamente attraverso il firewall, escludendo tutti controllo livello dei pacchetti aggiuntivi o di elaborazione. Ciò consente di ridurre un rallentamento delle prestazioni di latenza e consente di ridurre i requisiti di capacità perimetrale. Il modo più semplice per scegliere di rete che le richieste di attendibilità consiste nell'utilizzare i file PAC predefiniti della scheda **proxy** . 
+È possibile ottimizzare la rete per l'invio di che tutte le attendibili le richieste di rete di Office 365 direttamente attraverso il firewall, escludendo tutti controllo livello dei pacchetti aggiuntivi o di elaborazione. Ciò consente di ridurre un rallentamento delle prestazioni di latenza e consente di ridurre i requisiti di capacità perimetrale. Il modo più semplice per scegliere di rete che le richieste di attendibilità consiste nell'utilizzare il [file PAC preesistenti](managing-office-365-endpoints.md#pacfiles). 
   
 Se il firewall blocchi il traffico in uscita, è consigliabile verificare che tutto l'indirizzo IP e nomi di dominio completo elencato come **necessario** nel [file XML](https://go.microsoft.com/fwlink/?LinkId=533185) sono presenti nell'elenco Consenti. Riconoscere che tutti i servizi richiedono l'utilizzo di alcune 3 ° servizi di terze parti. È non fornire gli indirizzi IP per questi servizi di terze parti 3, ad esempio provider di certificati provider, reti di distribuzione del contenuto, DNS e così via. Per funzionalità complete di Office 365, è necessario essere in grado di raggiungere tutte le destinazioni richieste da Office 365 indipendentemente dalla quantità di informazioni pubblicato sulla destinazione. 
   
@@ -888,9 +888,9 @@ Tenere presente che bloccando l'accesso ai servizi consumer Microsoft soli non i
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Servizio Web di URL e indirizzi IP di Office 365](office-365-ip-web-service.md)
+[Servizio Web per URL e indirizzi IP di Office 365](office-365-ip-web-service.md)
 
-[Intervalli IP di Datacenter Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
+[Intervalli IP del data center di Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
   
 [Spazio IP pubblico di Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)
   
