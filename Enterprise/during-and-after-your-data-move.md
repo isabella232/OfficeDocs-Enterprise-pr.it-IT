@@ -3,7 +3,7 @@ title: Durante e dopo lo spostamento dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Spostamenti di dati sono un'operazione di back-end con un impatto minimo per gli utenti finali. Mentre Microsoft Sposta ogni servizio e dei dati associati per il tenant di un nuovo livello geografico datacenter, è necessaria alcuna azione. Il trasferimento dei dati e la convalida eseguita in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 6975a2ea4a1f2b2ebabe5f64b12ae58657180903
+ms.sourcegitcommit: b745d570fd6691606d226f6232cfaafd2d875a2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975174"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25361504"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -34,7 +34,7 @@ Guardare interfaccia di Office 365 messaggio di conferma quando si sposta per og
 |Australia, Nuova Zelanda Figi  <br/> |31 ottobre 2017  <br/> |
 |Giappone  <br/> |31 ottobre 2018  <br/> |
 |India  <br/> |31 ottobre 2018  <br/> |
-|Canada  <br/> |31 ottobre 2018  <br/> |
+|Canada  <br/> |30 giugno 2019  <br/> |
 |Sud Corea  <br/> |31 ottobre 2018  <br/> |
 |Regno Unito  <br/> |15 settembre 2019  <br/> |
 |Francia  <br/> |15 settembre 2020  <br/> |
