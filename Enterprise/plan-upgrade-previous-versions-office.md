@@ -3,7 +3,7 @@ title: Pianificare l'aggiornamento dal server e client di Office 2007 o 2010
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/8/2018
+ms.date: 10/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: È opportuno pianificare l'aggiornamento da versioni precedenti dei prodotti Office e dei server. Utilizzare le risorse per iniziare a utilizzare il piano.
-ms.openlocfilehash: ea5af6a91a0977016eb9c90f7b1acb2def1dbd2f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: Se si utilizza Office 2007 o Office 2010, è necessario pianificare l'aggiornamento. Utilizzare le risorse per iniziare a utilizzare il piano.
+ms.openlocfilehash: a8d3c0aad4499e37e4fc0c36412c6830d5df4941
+ms.sourcegitcommit: 57deed1be7cd66528f39eb2504b9a271d3f6dfb4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915161"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363169"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Pianificare l'aggiornamento da client e server di Office 2007 o Office 2010
 
@@ -54,9 +54,11 @@ Le organizzazioni sono disponibili diverse opzioni da prendere in considerazione
 
 Se si utilizza Office 2007 o Office 2010 rete domestica, prendere in considerazione le opzioni seguenti:
 
+- **Utilizzo in Office Online gratuito**. Creare, visualizzare, modificare i file di Office nel browser e disporre dell'accesso a tali file praticamente qualsiasi dispositivo con l'accesso a internet. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) include [Online di Word](http://go.microsoft.com/fwlink/p/?linkid=746664), [Excel Online](http://go.microsoft.com/fwlink/p/?linkid=746665), [In linea di PowerPoint](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote Online](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [posta elettronica](http://go.microsoft.com/fwlink/p/?linkid=746676), [calendario](http://go.microsoft.com/fwlink/p/?linkid=746678)e [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679). Per iniziare, visita il sito Web [office.com](https://office.com) e accedere utilizzando l'account Microsoft. (Se non si dispone di un account Microsoft, è possibile creare uno all'indirizzo www.Office.com.)
+
 - **Prova Office 365 per uso domestico**. Scelta tra una sottoscrizione a [Office 365 casa](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) o [Office 365 personale](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) . e registrazione per una versione di valutazione. Iscriviti e installare la versione più recente di Office di Windows o Mac computer, l'iOS o Android smartphone e il iOS o tablet Android. Con Office 365, sarà possibile accedere archiviazione cloud con OneDrive, si otterranno 60 minuti di chiamate Skype per dispositivi mobili e i numeri di rete fissa ogni mese e si otterranno numerose altre funzionalità. [Piani di vedere Office 365 e i prezzi per uso domestico](https://products.office.com/explore-office-for-home).
     
-- **Home page di Office di acquisto &amp; 2016 Student**. Se si sceglie questa opzione, si verrà acquisto occasionale e quindi installare Office 2016 in [Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) o [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac). 
+- **Home page di Office di acquisto &amp; 2016 Student**. Se si sceglie questa opzione, si verrà acquisto occasionale e quindi installare Office 2016 in [Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) o [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac). Questo non è una sottoscrizione; si tratta di una licenza d'uso occasionale, perpetua per un singolo computer.
 
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Cosa succede se non esegue l'aggiornamento?
