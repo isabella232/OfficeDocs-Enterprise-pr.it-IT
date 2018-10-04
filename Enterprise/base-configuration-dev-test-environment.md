@@ -3,7 +3,7 @@ title: Ambiente di sviluppo/test della configurazione di base
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/09/2018
+ms.date: 10/01/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,23 +17,23 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Riepilogo: creare una intranet semplificata come ambiente di sviluppo e di testing in Microsoft Azure.'
-ms.openlocfilehash: f065f9fa31b6793933dc4eec0d840bd1320a8891
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9ffa35a6318d83d489ec51051547ce22c16b5b5f
+ms.sourcegitcommit: 9ce1da973b8c91b0926142a28c5b90f95f0422d8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915281"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353312"
 ---
 # <a name="base-configuration-devtest-environment"></a>Ambiente di sviluppo/test della configurazione di base
 
  **Riepilogo:** creare una intranet semplificata come ambiente di sviluppo e di testing in Microsoft Azure.
   
-In questo articolo vengono fornite istruzioni dettagliate per creare il seguente ambiente di sviluppo/test della configurazione di base in Azure:
+In questo articolo vengono fornite istruzioni per creare il seguente ambiente di sviluppo/test della configurazione di base in Azure:
+  
+![Configurazione di base in Azure](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 **Figura 1: ambiente di sviluppo/test della configurazione di base**
 
-![Fase 4 della configurazione base in Azure con la macchina virtuale CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
-  
 L'ambiente di sviluppo/test della configurazione di base nella figura 1 è costituito dalla subnet Corpnet in una rete virtuale di Azure basata solo su cloud denominata TestLab, che simula una intranet privata semplificata connessa a Internet. Contiene tre macchine virtuali Azure che eseguono Windows Server 2016:
   
 - DC1 è configurato come un controller di dominio intranet e server Domain Name System (DNS)
@@ -52,9 +52,41 @@ Questa configurazione consente a DC1 APP1, CLIENT1 e altri computer subnet Corpn
   
 - Per lo sviluppo di applicazioni e test.
     
-- Come la configurazione iniziale di un ambiente di testing esteso del progetto che include altre macchine virtuali, servizi di Azure o altre offerte cloud Microsoft, ad esempio Office 365 e Enterprise Security + Mobility (EMS).
+- Come la configurazione iniziale di un ambiente di testing esteso del progetto che include altre macchine virtuali, servizi di Azure o altre offerte cloud Microsoft, ad esempio Office 365 e Enterprise Mobility + Security (EMS).
     
-Esistono quattro fasi per configurare l'ambiente di testing di configurazione di base in Azure:
+Esistono due metodi per la creazione di questo ambiente:
+
+1. Un modello di Azure Resource Manager
+2. Azure Powershell
+
+## <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>Metodo 1: creare una rete intranet simulata con un modello di Azure Resource Manager
+
+Con questo metodo si utilizza un modello Azure Resource Manager (ARM) per creare la rete intranet simulata. I modelli ARM contengono tutte le istruzioni per creare e configurare l’infrastruttura di rete Azure e le macchine virtuali.
+
+Prima di distribuire il modello, consultare la [pagina Leggimi del modello](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm) e avere a disposizione le informazioni seguenti:
+
+- Il nome dell’abbonamento di Azure. È necessario immettere l'etichetta nel campo **Abbonamento** della pagina **Distribuzione personalizzata**.
+- Il nome del gruppo di risorse di Azure. È necessario immettere l'etichetta nel campo **Gruppo di risorse** della pagina **Distribuzione personalizzata**.
+- Un prefisso etichetta DNS per gli URL degli indirizzi IP pubblici delle macchine virtuali. È necessario immettere l'etichetta nel campo **Prefisso etichetta DNS** della pagina **Distribuzione personalizzata**.
+
+Dopo aver letto con le istruzioni, fare clic su **Distribuisci in Azure** nella [pagina Leggimi del modello](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm) per iniziare.
+
+>[!Note]
+>La rete intranet simulata creata dal modello ARM richiede una sottoscrizione a pagamento ad Azure.
+>
+
+Ecco la configurazione una volta completato il modello.
+
+![Configurazione di base in Azure](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+
+
+## <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>Metodo 2: creare la rete intranet simulata con Azure PowerShell
+
+Con questo metodo si utilizza Windows PowerShell e il modulo di Azure PowerShell per creare l'infrastruttura di rete, le macchine virtuali e la loro configurazione.
+
+Utilizzare questo metodo per acquisire esperienza nella creazione di elementi dell'infrastruttura di Azure un blocco comandi alla volta con PowerShell. È quindi possibile personalizzare i blocchi di comandi di PowerShell per una distribuzione personalizzata delle altre macchine virtuali in Azure.
+
+Esistono quattro passaggi per configurare l'ambiente di testing di configurazione di base con Azure PowerShell:
   
 1. Creare la rete virtuale.
     
@@ -72,9 +104,11 @@ Se non si dispone già di un abbonamento Azure, è possibile iscriversi per una 
 ![Test Lab Guide nel cloud Microsoft](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi al Test Lab Guide di One Microsoft Cloud.
   
-## <a name="phase-1-create-the-virtual-network"></a>Fase 1: Creare la rete virtuale
+### <a name="step-1-create-the-virtual-network"></a>Passaggio 1: creare la rete virtuale
+
+In questo passaggio, viene creata la rete virtuale TestLab in Azure.
 
 Per prima cosa, avviare un prompt di Azure PowerShell.
   
@@ -133,11 +167,14 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 
 Questa è la configurazione corrente.
   
-![Fase 1 della configurazione base in Azure con la rete virtuale e subnet](media/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
+![Passaggio 1 della configurazione di base in Azure con la rete virtuale e subnet](media/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
   
-## <a name="phase-2-configure-dc1"></a>Fase 2: Configurare DC1
+### <a name="step-2-configure-dc1"></a>Passaggio 2: configurare DC1
 
-Nella fase successiva verrà creata la macchina virtuale DC1 e verrà configurata come controller di dominio per il dominio di Windows Server Active Directory (AD) corp.contoso.com e un server DNS per le macchine virtuali della rete virtuale TestLab.
+In questo passaggio, verrà creata la macchina virtuale DC1 e verrà configurata come controller di dominio per il dominio di Windows Server Active Directory (AD) corp.contoso.com e un server DNS per le macchine virtuali della rete virtuale TestLab.
+
+> [!NOTE]
+> Prima di eseguire il blocco di comandi seguenti, verificare che l'area di Azure (posizione) scelta supporti le dimensioni della macchina virtuale di Azure, che per impostazione predefinita sono impostate su Standard_A1. Fare clic [qui](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines) per vedere le informazioni più recenti sulle dimensioni e posizioni della macchina virtuale di Azure.
   
 Inserire il nome del gruppo di risorse ed eseguire questi comandi al prompt dei comandi di Azure PowerShell nel computer locale per creare una macchina virtuale di Azure per DC1.
   
@@ -163,8 +200,6 @@ Verrà richiesto nome utente e password dell'account Administrator locale su DC1
   
 Eseguire quindi la connessione alla macchina virtuale DC1.
   
-### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>Connettersi a DC1 usando le credenziali dell'account Administrator locale
-
 1. Nel [Portale di Azure](https://portal.azure.com), fare clic su **Gruppi di risorse >** [nome del nuovo gruppo di risorse] **> DC1 > Connetti**.
     
 2. Nel riquadro aperto, fare clic su **Scarica file RDP**. Aprire il file DC1.rdp che viene scaricato e quindi fare clic su **Connetti**.
@@ -199,10 +234,8 @@ Sarà necessario specificare una password di amministratore in modalità provvis
   
 Si tenga presente che il completamento di questi comandi potrebbe richiedere alcuni minuti.
   
-Dopo il riavvio di DC1, riconnettersi al computer virtuale DC1.
+Dopo il riavvio di DC1, riconnettersi alla macchina virtuale DC1 con le credenziali del dominio.
   
-### <a name="connect-to-dc1-using-domain-credentials"></a>Connettersi a DC1 usando le credenziali di dominio
-
 1. Nel [Portale di Azure](https://portal.azure.com), fare clic su **Gruppi di risorse >** [nome del nuovo gruppo di risorse] **> DC1 > Connetti**.
     
 2. Eseguire il file DC1.rdp che viene scaricato e quindi fare clic su **Connetti**.
@@ -237,12 +270,15 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 Questa è la configurazione corrente.
   
-![Fase 2 della configurazione base in Azure con la macchina virtuale DC1](media/49069908-29c3-4d73-87f7-debbea067261.png)
+![Passaggio 2 della configurazione base in Azure con la macchina virtuale DC1](media/49069908-29c3-4d73-87f7-debbea067261.png)
   
-## <a name="phase-3-configure-app1"></a>Fase 3: Configurare APP1
+### <a name="step-3-configure-app1"></a>Passaggio 3: configurare APP1
 
-APP1 fornisce servizi Web e di condivisione file.
+In questo passaggio, si crea e configura APP1, che fornisce servizi di condivisione file e Web.
 
+> [!NOTE]
+> Prima di eseguire il blocco di comandi seguenti, verificare che l'area di Azure (posizione) scelta supporti le dimensioni della macchina virtuale di Azure, che per impostazione predefinita sono impostate su Standard_A1. Fare clic [qui](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines) per vedere le informazioni più recenti sulle dimensioni e posizioni della macchina virtuale di Azure.
+  
 Inserire il nome del gruppo di risorse ed eseguire questi comandi al prompt dei comandi di Azure PowerShell nel computer locale per creare una macchina virtuale di Azure per APP1.
   
 ```
@@ -291,14 +327,18 @@ New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 
 Questa è la configurazione corrente.
   
-![Fase 3 della configurazione base in Azure con la macchina virtuale APP1](media/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
+![Passaggio 3 della configurazione di base in Azure con la macchina virtuale APP1](media/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
   
-## <a name="phase-4-configure-client1"></a>Fase 4: Configurare CLIENT1
+### <a name="step-4-configure-client1"></a>Passaggio 4: configurare CLIENT1.
 
-CLIENT1 agisce come un portatile, tablet o computer desktop tipico sulla intranet Contoso.
+In questo passaggio, viene creato e configurato CLIENT1 che si comporta come un tipico portatile, tablet o computer desktop nella rete intranet di Contoso.
 
 > [!NOTE]  
 > Il seguente set di comandi crea CLIENT1 che esegue Windows Server 2016 Data Center. Tale operazione è possibile per tutti i tipi di sottoscrizioni di Azure. Se si dispone di una sottoscrizione di Azure basata su Visual Studio, è possibile creare CLIENT1 che esegue Windows 10 con il [Portale di Azure](https://portal.azure.com). 
+  
+
+> [!NOTE]
+> Prima di eseguire il blocco di comandi seguenti, verificare che l'area di Azure (posizione) scelta supporti le dimensioni della macchina virtuale di Azure, che per impostazione predefinita sono impostate su Standard_A1. Fare clic [qui](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines) per vedere le informazioni più recenti sulle dimensioni e posizioni della macchina virtuale di Azure.
   
 Inserire il nome del gruppo di risorse ed eseguire questi comandi al prompt dei comandi di Azure PowerShell nel computer locale per creare una macchina virtuale di Azure per CLIENT1.
   
@@ -334,8 +374,6 @@ Dopo il riavvio di CLIENT1, connettersi utilizzando nome e password dell'account
   
 Successivamente, verificare che sia possibile accedere alle risorse Web e di condivisione file in APP1 da CLIENT1.
   
-### <a name="verify-client-access-to-app1"></a>Verificare l'accesso CLIENT ad APP1
-
 1. In Server Manager, nel riquadro della struttura, fare clic su **Server locale**.
     
 2. In **Proprietà per CLIENT1**, fare clic su **Attiva** accanto a **Configurazione sicurezza avanzata IE**.
@@ -356,7 +394,7 @@ Successivamente, verificare che sia possibile accedere alle risorse Web e di con
     
 Questa è la configurazione finale.
   
-![Fase 4 della configurazione base in Azure con la macchina virtuale CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Fase 4 della configurazione di base in Azure con la macchina virtuale CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 La configurazione di base di Azure è ora pronta per lo sviluppo e test delle applicazioni o per la creazione di ulteriori ambienti di testing. 
   
