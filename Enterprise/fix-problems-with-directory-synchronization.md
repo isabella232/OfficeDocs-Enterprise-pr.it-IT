@@ -15,12 +15,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Vengono descritte le cause comuni dei problemi relativi alla sincronizzazione della directory in Office 365 e vengono forniti alcuni metodi per risolverli.
-ms.openlocfilehash: ad3b6e27439354a2ede9b1a4b100e0f9e06148d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
+ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541188"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25405129"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Risoluzione dei problemi relativi alla sincronizzazione della directory per Office 365
 
@@ -63,7 +63,7 @@ Per aggiornare di sincronizzazione di Azure Active Directory Connetti Azure Acti
 - [Sincronizzazione di directory di interruzioni di Azure Active Directory o si sta avvisati che sincronizzazione non è registrato in più di un giorno](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Non sono sincronizzare gli hash password o vengono visualizzati gli avvisi in interfaccia di amministrazione di Office 365 non è stata una sincronizzazione hash password recenti**
-- [Implementazione della sincronizzazione hash password con sincronizzazione di Azure Active Directory Connect](https://go.microsoft.com/fwlink/p/?LinkId=820600)
+- [Implementazione della sincronizzazione hash password con sincronizzazione di Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Vengono visualizzati un avviso di quota oggetto superato**
 - È disponibile una quota di un oggetto incorporato per proteggere il servizio. Se si dispone di un numero eccessivo di oggetti nella directory che è necessario eseguire la sincronizzazione a Office 365, è necessario a [contatti di supporto per i prodotti di business](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) per aumentare la quota.
