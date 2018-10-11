@@ -3,7 +3,7 @@ title: Supporto IPv6 nei servizi Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/12/2017
+ms.date: 10/10/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Riepilogo: Viene descritto il supporto di IPv6 nei componenti di Microsoft Office 365 e nelle offerte del governo di Office 365.'
-ms.openlocfilehash: 74752988803728ef4c319e368150b90f7e5d2599
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: ed06f1eac3c6a3d631445db1d623bd25c62a309c
+ms.sourcegitcommit: ae7f2087d51698d3c5ef371888278544a7046205
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223128"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25493831"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Supporto IPv6 nei servizi Office 365
 
@@ -79,7 +79,9 @@ Queste considerazioni potrebbero essere applicate alla rete:
 
 - IPv6 non supporta BlackBerry® Enterprise Server BES () perché BlackBerry non supporta IPv6.
 
-Questo è un collegamento breve che è possibile utilizzare il ritorno:[https://aka.ms/o365ip6](https://aka.ms/o365ip6)
+- Se si utilizza Active Directory Federation Services (ADFS) con Office 365, annunciare l'endpoint di rete di ADFS per Office 365 utilizza IPv6 non è supportato. Non includere record AAAA nella voce di Active Directory FS DNS quando si utilizza Exchange Online. 
+
+Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
 ## <a name="see-also"></a>Vedere anche
 
