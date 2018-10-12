@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 'Riepilogo: utilizzare Windows PowerShell per gestire i tenancy dei propri clienti tramite Office 365.'
-ms.openlocfilehash: f4c6f1a0275e9b483a30b31564426b62241029bf
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 86bf5f10862c7eb3f3b9e17e9d8431bb0602a090
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498246"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestire tenant Office 365 con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
@@ -41,7 +42,7 @@ Sono necessarie anche le credenziali di amministratore tenant del partner.
 Per elencare tutti gli ID tenant dei clienti ai quali si ha accesso, eseguire questo comando.
   
 ```
-Get-MsolPartnerContract -All | Select-Object -TenantId
+Get-MsolPartnerContract -All | Select-Object TenantId
 ```
 
 In questo modo verrà visualizzato un elenco di tutti i tenant dei clienti tramite **TenantId**.
@@ -51,7 +52,7 @@ In questo modo verrà visualizzato un elenco di tutti i tenant dei clienti trami
 Per ottenere il **TenantId** per il tenant di un cliente specifico per nome di dominio, eseguire questo comando. Sostituire _<nomedominio.onmicrosoft.com>_ con il nome di dominio effettivo del tenant del cliente desiderato.
   
 ```
-Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object -TenantId
+Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object TenantId
 ```
 
 ### <a name="list-all-domains-for-a-tenant"></a>Elencare tutti i domini per un tenant
