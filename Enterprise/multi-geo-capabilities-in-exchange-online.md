@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Espandere la presenza di Office 365 a più aree geografiche con funzionalità multi-geo in Exchange Online.
-ms.openlocfilehash: 9834b102365f11623a1decc00460f85f36552ccb
-ms.sourcegitcommit: d88307a32fd3439a09a87b260e0c0cf9074ebeb0
+ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "22914781"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498226"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Funzionalità multi-Geo in Exchange Online
 
@@ -52,7 +52,7 @@ Sono disponibili per l'utilizzo in una configurazione Multi-Geo Geos seguenti:
 - Stati Uniti
 
 ## <a name="prerequisite-configuration"></a>Configurazione dei prerequisiti
-Prima di iniziare a utilizzare funzionalità Multi-Geo di Exchange Online, Microsoft è necessario configurare il tenant di Exchange Online per il supporto Multi-Geo. Questo processo di configurazione occasionale viene attivato dopo aver ordinato che multi-Geo e le licenze visualizzata nel nostro tenant. Il processo di configurazione occasionale dovrebbe richiedere in genere meno di 30 giorni per il completamento.
+Prima di iniziare a utilizzare funzionalità Multi-Geo di Exchange Online, Microsoft è necessario configurare il tenant di Exchange Online per il supporto Multi-Geo. Questo processo di configurazione occasionale viene attivato dopo aver ordinato che multi-Geo e le licenze visualizzata nel tenant. Il processo di configurazione occasionale dovrebbe richiedere in genere meno di 30 giorni per il completamento. All'ordine Multi-Geo, contattare il rappresentante Microsoft. Per ulteriori informazioni, vedere https://aka.ms/Multi-Geo.
 
 Si riceverà le notifiche nel [Centro messaggi di Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) al termine della configurazione. Configurazione viene attivata automaticamente dopo le licenze Multi-Geo visualizzata nel tenant.
 
