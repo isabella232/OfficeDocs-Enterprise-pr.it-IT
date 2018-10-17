@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Riepilogo: comprendere il motivo per cui è necessario utilizzare PowerShell di Office 365 per gestire Office 365, in alcuni casi in modo più efficiente e in altri casi per necessità.'
-ms.openlocfilehash: 7149478efcbffcec56423a6c8ade5377992f3352
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 4dd10db4c27e6d9f28c3638bd8c732701c9dfeac
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915041"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575270"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Perché è necessario usare PowerShell di Office 365
 
@@ -43,12 +43,6 @@ Prima di iniziare, comprendere che PowerShell di Office 365 è un insieme di mod
   
 ```
 Get-Mailbox
-```
-
-È inoltre possibile eseguire il comando per calcolare il numero di elementi in tutti gli elenchi per tutti i siti per tutte le app Web in SharePoint Online:
-  
-```
-Get-SPOSite -Limit All | Get-SPWeb -Limit All | % {$_.Lists} | ? {$_ -is [Microsoft.SharePoint.SPDocumentLibrary]} | % {$total+= $_.ItemCount}; $total
 ```
 
 L'elenco delle cassette postali può essere ottenuto anche tramite interfaccia di amministrazione di Office 365. Tuttavia, non è possibile eseguire con facilità il conteggio del numero di elementi in tutti gli elenchi per tutti i siti per tutte le app Web.

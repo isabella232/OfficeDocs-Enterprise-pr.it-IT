@@ -3,7 +3,7 @@ title: Connettersi a PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/20/2018
+ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,26 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Riepilogo: Connettersi all'organizzazione Office 365 con Office 365 PowerShell per eseguire attività di interfaccia di amministrazione da riga di comando."
-ms.openlocfilehash: 96406fbc23adadbf77a3cd02f8c167081f908977
-ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
+ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "20720402"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575280"
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
  **Riepilogo:** Connettersi all'organizzazione Office 365 con Office 365 PowerShell per eseguire attività di amministrazione da riga di comando.
   
-Office 365 PowerShell consente di gestire le impostazioni di Office 365 dalla riga di comando. Connessione a Office 365 PowerShell è una semplice tre passaggi cui installare il software necessario, eseguire il software necessario e quindi connettersi all'organizzazione Office 365. 
+Office 365 PowerShell consente di gestire le impostazioni di Office 365 dalla riga di comando. Connessione a Office 365 PowerShell è una semplice procedura di cui si installa il software necessario e quindi connettersi all'organizzazione Office 365. 
 
-  
+Esistono due versioni del modulo di PowerShell utilizzabile per connettersi a Office 365 e amministrare le licenze, gruppi e gli account utente:
+
+- Azure Active Directory PowerShell di grafico (cmdlet includono **AzureAD** nel nome) 
+- Microsoft Azure Active Directory Module per Windows PowerShell (cmdlet includono **MSol** nel nome) 
+
+Alla data attuale di questo articolo, Azure Active Directory PowerShell modulo grafico non sostituisce completamente la funzionalità nei cmdlet della funzionalità di Microsoft Azure Active Directory Module per Windows PowerShell per utente, gruppo e amministrazione di licenza . In molti casi, è necessario utilizzare entrambe le versioni. È possibile installare correttamente entrambe le versioni nello stesso computer.
+
 > [!TIP]
 > **Nuovo PowerShell?** Visualizzare una [Panoramica video di PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)per offerto da Learning LinkedIn. 
   
@@ -38,14 +44,15 @@ Office 365 PowerShell consente di gestire le impostazioni di Office 365 dalla ri
     
 - È possibile utilizzare le seguenti versioni di Windows:
     
-  - 10 Windows, Windows 8.1, Windows 8 o Windows 7 Service Pack 1 (SP1) 
+  - Windows 10, Windows 8.1, Windows 8 o Windows 7 Service Pack 1 (SP1) 
     
-  - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2 SP1
+  - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2 SP1
     
     > [!NOTE]
     >Utilizzare una versione a 64 bit di Windows. È stato rimosso il supporto per la versione a 32 bit di Microsoft Azure Active Directory Module per Windows PowerShell ottobre del 2014.
     
 -  Queste procedure sono progettate per gli utenti che sono membri di un ruolo di amministrazione di Office 365. Per ulteriori informazioni, vedere [ruoli di amministratore su Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Collegarsi con Azure Active Directory PowerShell modulo grafico
 
@@ -73,7 +80,7 @@ Se richiesto sull'installazione di un modulo da un archivio non attendibile, dig
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Passaggio 2: Connettersi a Azure Active Directory per la sottoscrizione a Office 365
 
-Per connettersi a Azure Active Directory per Office 365 sottoscrizione con un nome di account e una password o con *l'autenticazione a più fattori (MFA)* eseguire questo comando da un prompt dei comandi di Windows PowerShell (non è necessario essere con privilegi elevati):
+Per connettersi a Azure Active Directory per la sottoscrizione a Office 365 con un nome di account e una password o con *l'autenticazione a più fattori (MFA)*, eseguire questo comando da un prompt dei comandi di Windows PowerShell (non è necessario essere con privilegi elevati):
     
 ```
 Connect-AzureAD
@@ -127,8 +134,6 @@ Se non vengono visualizzati errori, controllare i requisiti seguenti:
 - * *The Microsoft Azure Active Directory Module per Windows PowerShell è necessario Microsoft .NET Framework 3.5.* funzione x * è abilitata per il computer * *. È probabile che il computer sia installata una versione più recente (ad esempio, 4 o 4.5.* x *), ma con le versioni precedenti la compatibilità con le versioni precedenti di .NET Framework può essere attivata o disattivata. Per ulteriori informazioni, vedere gli argomenti seguenti:
     
   - Per Windows Server 2012 o Windows Server 2012 R2, vedere [abilitare .NET Framework 3.5 con l'aggiunta di ruoli e guidata funzionalità](https://go.microsoft.com/fwlink/p/?LinkId=532368)
-    
-  - Per Windows 8 o Windows 8.1, vedere [installazione di .NET Framework 3.5 in Windows 8 o 8.1](https://go.microsoft.com/fwlink/p/?LinkId=532369)
     
   - Per Windows 7 o Windows Server 2008 R2, vedere [non è possibile aprire il Azure Active Directory Module per Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370)
 
