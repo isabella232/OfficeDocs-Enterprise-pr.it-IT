@@ -3,7 +3,7 @@ title: Visualizzare le licenze e i servizi con PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/20/2018
+ms.date: 10/17/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Viene illustrato come utilizzare Office 365 PowerShell per visualizzare informazioni sulle licenze piani, servizi e le licenze disponibili nell'organizzazione Office 365.
-ms.openlocfilehash: 4ee4a5d0173f97520075f146e50bd234e767cc95
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 21dda5bfc1bf1fa975b4a94879435c1842c383ec
+ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319257"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25601630"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Visualizzare le licenze e i servizi con PowerShell di Office 365
 
@@ -37,7 +37,7 @@ Ogni sottoscrizione a Office 365 sono disponibili i seguenti elementi:
     
 È possibile utilizzare Office 365 PowerShell per visualizzare i dettagli sui piani di gestione delle licenze disponibili, le licenze e servizi all'interno dell'organizzazione Office 365. Per ulteriori informazioni sui prodotti, funzionalità e i servizi disponibili in diverse sottoscrizioni a Office 365, vedere [Opzioni di pianificazione di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
     
@@ -67,7 +67,7 @@ Per visualizzare informazioni dettagliate sui servizi Office 365 sono disponibil
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-Nella tabella seguente vengono illustrati i piani di servizio di Office 365 e i relativi nomi descrittivi per i servizi più comuni. Elenco di piani di servizio potrebbe essere diverso. Per un elenco completo dei piani di servizio e i relativi nomi descrittivi, contattare [Opzioni di supporto per gli utenti aziendali](https://support.microsoft.com/gp/support-options-for-business).
+Nella tabella seguente vengono illustrati i piani di servizio di Office 365 e i relativi nomi descrittivi per i servizi più comuni. Elenco di piani di servizio potrebbe essere diverso. 
   
 |**Piano di servizio**|**Descrizione**|
 |:-----|:-----|
@@ -79,8 +79,10 @@ Nella tabella seguente vengono illustrati i piani di servizio di Office 365 e i 
 | `MCOSTANDARD` <br/> |Skype for Business online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office Online  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
-| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online, piano 2  <br/> |
+| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Piano 2  <br/> |
    
+Per un elenco completo dei piani di licenza (noto anche come i nomi dei prodotti), i piani di servizio inclusi e i rispettivi nomi descrittivi corrispondenti, vedere [i nomi di prodotti e gli identificatori di piano di servizio per la gestione delle licenze](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+
 Per visualizzare informazioni dettagliate sui servizi Office 365 sono disponibili in un piano di licenze specifico, utilizzare la sintassi seguente.
   
 ```
@@ -97,7 +99,7 @@ In questo esempio vengono illustrati i servizi di Office 365 che sono disponibil
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 - [Visualizzare gli utenti con e senza licenza con PowerShell di Office 365](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
 - [Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md)
