@@ -1,5 +1,5 @@
 ---
-title: Informazioni sull'identità di Office 365 e Azure Active Directory
+title: Informazioni sulla gestione delle identità di Office 365 e Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Informazioni su come identità utente viene gestito in Office 365.
-ms.openlocfilehash: 0fb6e77aef4495b2284256c13cb21320e6292746
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 14d1ec8a3ebc4620a72f831c0ec80253f7b3072c
+ms.sourcegitcommit: dcb57859ad40090cf70586ac350472eb0fc8d9c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914981"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25639635"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Informazioni sull'identità di Office 365 e Azure Active Directory
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Informazioni sulla gestione delle identità di Office 365 e Azure Active Directory
 
 Office 365 utilizza utente basata su cloud identità e autenticazione servizio Azure Active Directory (Azure Active Directory) per gestire gli utenti. Scelta se è configurata la gestione delle identità tra l'organizzazione locale e Office 365 è una decisione anticipata tra la base dell'infrastruttura cloud. Poiché la modifica più avanti in questo configurazione può essere difficile, valutare attentamente le opzioni per determinare le soluzioni migliori per soddisfare le esigenze dell'organizzazione. È possibile scegliere tra due modelli di autenticazione principale in Office 365 per impostare e gestire account utente. **l'autenticazione cloud** e **l'autenticazione federata**.
   
