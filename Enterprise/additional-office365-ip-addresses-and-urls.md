@@ -1,9 +1,9 @@
 ---
-title: Altri indirizzi IP e URL di Office 365 non inclusi nei servizi Web
+title: Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 9/13/2018
+ms.date: 10/23/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,24 +20,24 @@ search.appverid:
 - MOM160
 - BCS160
 ms.assetid: ''
-description: 'Riepilogo: i nuovi servizi Web endpoint non includono un numero limitato di endpoint per scenari specifici.'
+description: 'Riepilogo: il nuovo servizio Web endpoint non include un numero limitato di endpoint per scenari specifici.'
 hideEdit: true
-ms.openlocfilehash: 4711f9b9560b0fab6d18700fcf3e933150861946
-ms.sourcegitcommit: 0f98c342f80ffa21ec35bbf4ae5619b5e3271da5
+ms.openlocfilehash: 1d551f8757464aa1336bc351de8689c103f0a54f
+ms.sourcegitcommit: d93f7a51e8cdefdfc9933cdf1f9e413b013bb367
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719010"
 ---
-# <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>Altri indirizzi IP e URL di Office 365 non inclusi nei servizi Web
+# <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365
 
-Alcuni endpoint di rete sono stati precedentemente pubblicati e non sono stati inclusi nei servizi Web. L'ambito dei servizi Web sono gli endpoint di rete necessari per la connettività di un utente finale di Office 365 in una rete perimetrale aziendale. Attualmente non sono inclusi:
+Alcuni endpoint di rete sono stati precedentemente pubblicati e non sono stati inclusi nel [servizio Web per URL e indirizzo IP di Office 365](office-365-ip-web-service.md). L'ambito dei servizi Web sono gli endpoint di rete necessari per la connettività di un utente di Office 365 in una rete perimetrale aziendale. Attualmente non sono inclusi:
 
-1. Connettività di rete da un data center Microsoft a una rete cliente (traffico di rete del server ibrido in ingresso)
-2. Connettività di rete dai server su una rete cliente all'interno del perimetro aziendale (traffico di rete del server ibrido in uscita)
-3. Scenari non comuni per i requisiti di connettività di rete di un utente
-4. Requisiti di connettività di risoluzione DNS (non elencati di seguito)
-5. Siti attendibili di Internet Explorer o Microsoft Edge
+1. Connettività di rete che potrebbe essere necessaria da un data center Microsoft a una rete cliente (traffico di rete del server ibrido in ingresso).
+2. Connettività di rete dai server in una rete cliente nella rete perimetrale (traffico di rete del server in uscita).
+3. Scenari non comuni per i requisiti di connettività di rete di un utente.
+4. Requisiti di connettività di risoluzione DNS (non elencati di seguito).
+5. Siti attendibili di Internet Explorer o Microsoft Edge.
 
 Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno che non sia necessario lo scenario specifico descritto.
 
@@ -53,10 +53,13 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 | 7  | Autenticazione proxy di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | STS locale del cliente | Traffico del server in ingresso |
 | 8  | Consente di configurare [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), utilizzando la Configurazione ibrida guidata di Exchange. <br> Nota: gli endpoint sono necessari solo per configurare Exchange ibrido  | ```domains.live.com``` sulle porte TCP 80 e 443, necessarie solo per la configurazione ibrida guidata di Exchange 2010 SP3. | Solo traffico del server in uscita |
 | 9  | Il servizio di rilevamento automatico è usato negli scenari di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) con [autenticazione moderna ibrida con Outlook per iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Server Exchange locale del cliente in TCP 443 | Traffico del server in ingresso |
-| 10  | **FQDN di autenticazione e identità** <br> Il nome di dominio completo (FQDN) ```secure.aadcdn.microsoftonline-p.com``` deve essere situato nell'area siti attendibili di Edge o Internet Explorer (IE) del client per poter funzionare. |  | Siti attendibili |
-| 11  |  **FQDN di Microsoft Teams** <br> Se si usa Internet Explorer o Microsoft Edge, è necessario attivare i cookie dei siti Web visualizzati e di terze parti e aggiungere i nomi di dominio completo per Teams per i siti attendibili. Si tratta di un'aggiunta di FQDN, CDN e telemetrie all'intera famiglia di prodotti di cui sopra. Vedere [Problemi noti di Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) per ulteriori informazioni. |  | Siti attendibili |
-| 12  |  **FQDN di SharePoint Online e OneDrive for Business** <br> Tutti i nomi di dominio completo di ".sharepoint.com" con "\<tenant>" nel nome di dominio completo devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. Oltre a FQDN, CDN e telemetrie dell'intera famiglia di prodotti di cui sopra, è necessario aggiungere anche questi endpoint. |  | Siti attendibili |
-| 13  | **Yammer**  <br> Yammer è disponibile solo nel browser e necessita di un'autenticazione proxy da parte dell'utente. Tutti i FQDN di Yammer devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. |  | Siti attendibili |
+| 10  | Skype for Business in Office 2016 include la condivisione dello schermo basata su video che utilizza le porte UDP. I precedenti client di Skype for Business in Office 2013 e versioni precedenti utilizzavano la porta RDP su TCP 443. | Porta TCP 443 aperta su 52.112.0.0/14 | Client precedenti di Skype for Business in Office 2013 e versioni precedenti |
+| 11  | Connettività server ibrida locale di Skype for Business per Skype for Business online | Porte UDP 50.000-59.999, 13.107.64.0/18, 52.112.0.0/14 <BR>  Porte TCP 50.000-59.999 | Connettività in uscita del server Skype for Business locale |
+| 12  | La rete PSTN cloud con connettività ibrida locale richiede la connettività di rete aperta agli host locali. Per ulteriori dettagli sulle configurazioni ibride di Skype for Business Online,  | vedere [Soluzioni ibride di Skype for Business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Ingresso ibrido locale di Skype for Business |
+| 13  | **FQDN di autenticazione e identità** <br> Il nome di dominio completo (FQDN) ```secure.aadcdn.microsoftonline-p.com``` deve essere situato nell'area siti attendibili di Edge o Internet Explorer (IE) del client per poter funzionare. |  | Siti attendibili |
+| 14  |  **FQDN di Microsoft Teams** <br> Se si usa Internet Explorer o Microsoft Edge, è necessario attivare i cookie dei siti Web visualizzati e di terze parti e aggiungere i nomi di dominio completo per Teams per i siti attendibili. Si tratta di un'aggiunta di FQDN, CDN e telemetrie all'intera famiglia di prodotti di cui sopra. Vedere [Problemi noti di Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) per ulteriori informazioni. |  | Siti attendibili |
+| 15  |  **FQDN di SharePoint Online e OneDrive for Business** <br> Tutti i nomi di dominio completo di ".sharepoint.com" con "\<tenant>" nel nome di dominio completo devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. Oltre a FQDN, CDN e telemetrie dell'intera famiglia di prodotti di cui sopra, è necessario aggiungere anche questi endpoint. |  | Siti attendibili |
+| 16  | **Yammer**  <br> Yammer è disponibile solo nel browser e necessita di un'autenticazione proxy da parte dell'utente. Tutti i FQDN di Yammer devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. |  | Siti attendibili |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
