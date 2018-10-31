@@ -8,11 +8,12 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: Informazioni su come aggiungere o rimuovere un amministratore geo in OneDrive per Business Multi-Geo.
-ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849812"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Aggiungere o rimuovere un amministratore geo in OneDrive per Busniess Multi-Geo
 
@@ -20,7 +21,7 @@ ms.lasthandoff: 05/03/2018
 
 Alcuni servizi, ad esempio l'archivio termini - vengono amministrati dalla posizione centrale e replicati località. Admin geografica relativo alla posizione centrale dispone dell'accesso a queste, mentre non geo admins per i percorsi satellitari.
 
-Gli amministratori globali e gli amministratori di SharePoint Online continuano ad accedere alle impostazioni in tutte le posizioni geo.
+Gli amministratori globali e gli amministratori di SharePoint Online continuano ad accedere alle impostazioni in tutti i percorsi satellitare e la posizione centrale.
 
 ## <a name="configuring-geo-administrators"></a>Configurazione geografica amministratori
 
@@ -40,9 +41,9 @@ Per rimuovere un utente come un Admin geografica di una posizione, eseguire`Remo
 
 È possibile aggiungere un gruppo di protezione o un gruppo di protezione abilitati alla posta elettronica come un amministratore geo. (Office 365 gruppi e i gruppi di distribuzione non sono supportati).
 
-Per aggiungere un gruppo come un amministratore di livello geografico, eseguire`Add-SPOGeoAdministrator -GroupAlias <alias>`
+Per aggiungere un gruppo come amministratore di livello geografico, eseguire`Add-SPOGeoAdministrator -GroupAlias <alias>`
 
-Per rimuovere un gruppo come un amministratore di livello geografico, eseguire`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+Per rimuovere un gruppo come amministratore di livello geografico, eseguire`Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
 Si noti che non tutti i gruppi di sicurezza abbiano un alias di gruppo. Se si desidera aggiungere un gruppo di protezione che non dispone di un alias, eseguire [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) per recuperare un elenco dei gruppi, trovare ObjectID del gruppo di sicurezza e quindi eseguire:
 

@@ -10,26 +10,26 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Espandere la presenza di Office 365 a più aree geografiche con funzionalità multi-geo in Exchange Online.
-ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
-ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
+ms.openlocfilehash: 5f34a2da47b9767aa9dfe22c6be7237951128960
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498226"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849922"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Funzionalità multi-Geo in Exchange Online
 
-Le funzionalità multi-Geo in Office 365 consentono di un singolo tenant possono estendersi su più aree geografiche (Geos). Quando è abilitata la Multi-Geo, i clienti possono selezionare il percorso del contenuto delle cassette postali Exchange Online (dati statici) singoli per ogni utente.
+Le funzionalità multi-Geo in Office 365 consentono di un singolo tenant possono estendersi su più aree geografiche. Quando è abilitata la multi-geo, i clienti possono selezionare il percorso del contenuto delle cassette postali Exchange Online (dati statici) singoli per ogni utente.
 
-La posizione di tenant iniziale (noto come "predefinita" o "centralmente") è determinata in base all'indirizzo fatturazione. Quando è abilitata la Multi-Geo, è possibile effettuare le cassette postali in percorsi aggiuntivi "satellitari" da:
+La posizione di tenant iniziale (noto come posizione centrale) è determinata in base all'indirizzo fatturazione. Quando è abilitata la multi-geo, è possibile effettuare le cassette postali nelle posizioni satellitari aggiuntive per:
 
-- Creazione di una nuova cassetta postale di Exchange Online direttamente in un satellitari.
+- Creazione di una nuova cassetta postale di Exchange Online direttamente in una posizione satellitare.
 
-- Spostamento di una cassetta postale di Exchange Online in una satellitari.
+- Spostamento di una cassetta postale di Exchange Online in una posizione satellitare.
 
-- Onboarding una cassetta postale da un'organizzazione di Exchange locale direttamente in un satellitari.
+- Onboarding una cassetta postale da un'organizzazione di Exchange locale direttamente in una posizione satellitare.
 
-Sono disponibili per l'utilizzo in una configurazione Multi-Geo Geos seguenti:
+Sono disponibili per l'utilizzo in una configurazione Multi-Geo geo posizioni seguenti:
 
 - Asia Pacifico
 
@@ -52,45 +52,45 @@ Sono disponibili per l'utilizzo in una configurazione Multi-Geo Geos seguenti:
 - Stati Uniti
 
 ## <a name="prerequisite-configuration"></a>Configurazione dei prerequisiti
-Prima di iniziare a utilizzare funzionalità Multi-Geo di Exchange Online, Microsoft è necessario configurare il tenant di Exchange Online per il supporto Multi-Geo. Questo processo di configurazione occasionale viene attivato dopo aver ordinato che multi-Geo e le licenze visualizzata nel tenant. Il processo di configurazione occasionale dovrebbe richiedere in genere meno di 30 giorni per il completamento. All'ordine Multi-Geo, contattare il rappresentante Microsoft. Per ulteriori informazioni, vedere https://aka.ms/Multi-Geo.
+Prima di iniziare a utilizzare funzionalità Multi-Geo di Exchange Online, Microsoft è necessario configurare il tenant di Exchange Online per il supporto multi-geo. Questo processo di configurazione occasionale viene attivato dopo aver ordinato che multi-Geo di Office 365 e le licenze visualizzata nel tenant. Il processo di configurazione occasionale dovrebbe richiedere in genere meno di 30 giorni per il completamento. Per ordinare Office 365 Multi-Geo, contattare il rappresentante Microsoft. Per ulteriori informazioni, vedere https://aka.ms/Multi-Geo.
 
-Si riceverà le notifiche nel [Centro messaggi di Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) al termine della configurazione. Configurazione viene attivata automaticamente dopo le licenze Multi-Geo visualizzata nel tenant.
+Si riceverà le notifiche nel [Centro messaggi di Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) al termine della configurazione. Configurazione viene attivata automaticamente dopo le licenze multi-geo visualizzata nel tenant.
 
 ## <a name="mailbox-placement-and-moves"></a>Spostamenti e la posizione della cassetta postale
-Al termine di prerequisito passaggi di configurazione di Multi-Geo, Microsoft Exchange Online rispetta l'attributo **PreferredDataLocation** per gli oggetti utente in Azure Active Directory.
+Al termine di operazioni di configurazione preliminari multi-geo, Microsoft Exchange Online rispetta l'attributo **PreferredDataLocation** per gli oggetti utente in Azure Active Directory.
 
-Exchange Online Sincronizza la proprietà **PreferredDataLocation** di Azure Active Directory nella proprietà **MailboxRegion** nel servizio directory di Exchange Online. Il valore di **MailboxRegion** determina geografica in cui verranno inserite cassette postali degli utenti e le cassette postali di archiviazione associato. Non è possibile configurare principale delle cassette postali e archivi cassette postali dell'utente di cui si trovano in Geos diversi. È possibile configurare un solo livello geografico per ogni oggetto utente.
+Exchange Online Sincronizza la proprietà **PreferredDataLocation** di Azure Active Directory nella proprietà **MailboxRegion** nel servizio directory di Exchange Online. Il valore di **MailboxRegion** determina geografica in cui verranno inserite cassette postali degli utenti e le cassette postali di archiviazione associato. Non è possibile configurare primario della cassetta postale e archiviazione cassette postali un utente di cui si trovano in sedi diverse geo. Una sola posizione geografica può essere configurata per ogni oggetto utente.
 
-- Quando **PreferredDataLocation** è configurato su un utente con una cassetta postale esistente, la cassetta postale verrà inserite in una coda di trasferimento e automaticamente spostati nella Geo specificato. 
+- Quando **PreferredDataLocation** è configurato su un utente con una cassetta postale esistente, la cassetta postale verrà inserite in una coda di trasferimento e automaticamente spostati nella posizione geografica specificato. 
 
-- Quando **PreferredDataLocation** è configurato su un utente senza una cassetta postale esistente, la cassetta postale di cui eseguire il provisioning in Geo specificato. 
+- Quando **PreferredDataLocation** è configurato su un utente senza una cassetta postale esistente, la cassetta postale di cui eseguire il provisioning in una posizione geografica specificato. 
 
-- Quando **PreferredDataLocation** non viene specificato un utente, verrà effettuata la cassetta postale nel livello geografico predefinito.
+- Quando si **PreferredDataLocation** non viene specificato un utente, la cassetta postale verrà effettuata nella posizione centrale.
 
-- Se il codice **PreferredDataLocation** non corretto (ad esempio un tipo di NAN anziché nomi), verrà effettuata la cassetta postale nel livello geografico predefinito.
+- Se il codice **PreferredDataLocation** non corretto (ad esempio un tipo di NAN anziché nomi), verrà effettuata la cassetta postale nella posizione centrale.
 
-**Nota**: funzionalità Multi-Geo e Skype per le riunioni Online Business regionale ospitata utilizzare la proprietà **PreferredDataLocation** per gli oggetti utente per individuare i servizi. Se si configurano i valori **PreferredDataLocation** per gli oggetti utente per le riunioni regionale ospitate, la cassetta postale per gli utenti verrà automaticamente spostata nella Geo specificato dopo Multi-Geo è abilitato nel tenant di Office 365.
+**Nota**: funzionalità multi-geo e Skype per le riunioni Online Business regionale ospitata utilizzare la proprietà **PreferredDataLocation** per gli oggetti utente per individuare i servizi. Se si configurano i valori **PreferredDataLocation** per gli oggetti utente per le riunioni regionale ospitate, la cassetta postale per gli utenti verrà automaticamente spostata nella posizione specificata geo dopo multi-geo è abilitato nel tenant di Office 365.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitazioni per le funzionalità per la Multi-Geo in Exchange Online
-1. Solo cassette postali degli utenti, cassette postali delle risorse (sale e attrezzature cassette postali) e le cassette postali condivise supportano funzionalità Multi-Geo. Pubblica cassette postali delle cartelle e i gruppi di Office 365 rimanere in geografica principale del cliente.
+1. Solo cassette postali degli utenti, cassette postali delle risorse (sale e attrezzature cassette postali) e le cassette postali condivise supportano funzionalità multi-geo. Pubblica cassette postali delle cartelle e i gruppi di Office 365 rimanere nella posizione centrale.
  
-2. Sicurezza e conformità caratteristiche (ad esempio, il controllo ed eDiscovery) disponibili nell'interfaccia di amministrazione di Exchange (EAC) non sono disponibili nelle organizzazioni con più Geo. In realtà, è necessario utilizzare [centro conformità e sicurezza di Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) per configurare le caratteristiche di sicurezza e conformità.
+2. Sicurezza e conformità caratteristiche (ad esempio, il controllo ed eDiscovery) disponibili nell'interfaccia di amministrazione di Exchange (EAC) non sono disponibili nelle organizzazioni con più geo. In realtà, è necessario utilizzare [centro conformità e sicurezza di Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) per configurare le caratteristiche di sicurezza e conformità.
 
-3. Outlook per gli utenti Mac potrebbero verificarsi una perdita temporanea di accesso alla cartella di archivio Online durante lo spostamento delle relative cassette postali in un nuovo Geo. Questa condizione si verifica quando il primario dell'utente e cassette postali di archiviazione si trovano nella Geos diversi, perché spostamenti delle cassette postali tra Geo possono completare in momenti diversi.
+3. Outlook per gli utenti Mac potrebbero verificarsi una perdita temporanea di accesso alla cartella di archivio Online durante lo spostamento delle relative cassette postali in una nuova posizione geografica. Questa condizione si verifica quando il primario dell'utente e cassette postali di archiviazione si trovano nei percorsi geo diversi, perché spostamenti delle cassette postali tra Geo possono completare in momenti diversi.
 
-4. Gli utenti non possono condividere *cartelle delle cassette postali* tra Geos in Outlook sul web (precedentemente noto come Outlook Web App o OWA). Ad esempio, un utente nell'Unione europea non può utilizzare Outlook sul web per aprire una cartella condivisa in una cassetta postale che si trova negli Stati Uniti. Tuttavia, Outlook sul Web users possibile aprire *altre cassette postali* in Geos diversi utilizzando una finestra separata del browser, come descritto in [aprire la cassetta postale di un'altra persona in una finestra separata del browser in Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
+4. Gli utenti non possono condividere *cartelle delle cassette postali* tra diverse ubicazioni geo in Outlook sul web (precedentemente noto come Outlook Web App o OWA). Ad esempio, un utente nell'Unione europea non può utilizzare Outlook sul web per aprire una cartella condivisa in una cassetta postale che si trova negli Stati Uniti. Tuttavia, Outlook sul Web users possibile aprire *altre cassette postali* in Geos diversi utilizzando una finestra separata del browser, come descritto in [aprire la cassetta postale di un'altra persona in una finestra separata del browser in Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
 
-    **Nota**: la condivisione delle cartelle delle cassette postali tra Geo è supportata in Outlook in Windows.
+    **Nota**: la condivisione delle cartelle delle cassette postali tra geo è supportata in Outlook in Windows.
 
 ## <a name="administration"></a>Amministrazione 
-Per visualizzare e configurare le proprietà correlate Geo nell'ambiente Office 365, è necessario remote PowerShell. Per ulteriori informazioni sui vari moduli PowerShell utilizzati per gestire Office 365, vedere [gestione di Office 365 ed Exchange Online con Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6).
+Per visualizzare e configurare le proprietà geo multi nell'ambiente Office 365, è necessario remote PowerShell. Per ulteriori informazioni sui vari moduli PowerShell utilizzati per gestire Office 365, vedere [gestione di Office 365 ed Exchange Online con Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6).
 
 - È necessario il [Modulo di PowerShell di Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o versioni successive in V1. x per visualizzare la proprietà **PreferredDataLocation** per gli oggetti utente. Gli oggetti utente sincronizzati da connettere AAD in AAD non possono avere i valori **PreferredDataLocation** modificati direttamente tramite PowerShell AAD. Gli oggetti utente solo cloud possono essere modificati tramite PowerShell AAD. Per connettersi a PowerShell di Azure Active Directory, vedere [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell). 
 
 - Per connettersi a Exchange Online PowerShell, vedere [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). 
 
 ### <a name="connect-directly-to-a-specific-geo-using-exchange-online-powershell"></a>Connettersi direttamente a un livello geografico specifico tramite Exchange Online PowerShell
-In genere, Exchange Online PowerShell si connetterà a livello geografico predefinito. Tuttavia, è inoltre possibile connettere direttamente a Geos non predefinito. A causa dei miglioramenti delle prestazioni, è consigliabile la connessione direttamente a Geo non predefinito quando si gestiscono solo gli utenti di tale livello geografico.
+In genere, Exchange Online PowerShell si connetterà alla posizione geografica predefinita. Tuttavia, è inoltre possibile connettere direttamente in posizioni non predefinite geo. A causa dei miglioramenti delle prestazioni, è consigliabile connettersi direttamente alla posizione geografica non predefinito quando si gestiscono solo gli utenti in tale posizione geografica.
 
 Per connettersi a un determinato livello geografico, il parametro *ConnectionUri* è diverso da quello istruzioni connessione regolari. Il resto dei comandi e i valori sono gli stessi. I passaggi sono:
 
@@ -101,7 +101,7 @@ Per connettersi a un determinato livello geografico, il parametro *ConnectionUri
     ```
    Nella finestra di dialogo **Richiesta credenziali di Windows PowerShell** digitare il lavoro o scuola account e la password e quindi fare clic su **OK**.
     
-2. Sostituire `<emailaddress>` con l'indirizzo di posta elettronica di **qualsiasi** cassetta postale di destinazione Geo e utilizzare il seguente comando. Le autorizzazioni per la cassetta postale e relazione con le proprie credenziali nel passaggio 1 non sono un fattore; l'indirizzo di posta elettronica semplicemente indica a Exchange Online where per la connessione.
+2. Sostituire `<emailaddress>` con l'indirizzo di posta elettronica di **qualsiasi** cassetta postale nella posizione geografica di destinazione e utilizzare il seguente comando. Le autorizzazioni per la cassetta postale e relazione con le proprie credenziali nel passaggio 1 non sono un fattore; l'indirizzo di posta elettronica semplicemente indica a Exchange Online where per la connessione.
   
    ```
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
@@ -177,11 +177,11 @@ NAM
 
 
 ### <a name="find-the-geo-location-of-a-mailbox"></a>Individuare la posizione geografica di una cassetta postale
-Il cmdlet **Get-Mailbox** in Exchange Online PowerShell vengono visualizzate le proprietà relative al livello geografico seguenti per le cassette postali:
+Il cmdlet **Get-Mailbox** in Exchange Online PowerShell viene visualizzato il seguente multi-geo relative proprietà per le cassette postali:
 
 - **Database**: le prime 3 lettere del nome del database corrispondono al codice Geo, che fornisce le informazioni della cassetta postale in cui attualmente si trova. Proprietà deve essere utilizzata per cassette postali di archiviazione Online **ArchiveDatabase** .
 
-- **MailboxRegion**: specificare il codice Geo è stato impostato dall'amministratore (sincronizzato da **PreferredDataLocation** in Azure Active Directory).
+- **MailboxRegion**: Specifica il codice di ubicazione geografica che è stato impostato dall'amministratore (sincronizzato da **PreferredDataLocation** in Azure Active Directory).
 
 - **MailboxRegionLastUpdateTime**: indica MailboxRegion dell'ultimo aggiornamento (automaticamente o manualmente).
 
@@ -205,7 +205,7 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM 
 ```
 
-> **Nota:** Se il codice Geo nel nome del database non corrisponde a quello **MailboxRegion** , la cassetta postale sarà verrà automaticamente inserito in una coda di trasferimento e spostati Geo specificato dal valore **MailboxRegion** (Exchange Online Cerca un disallineamento valori delle proprietà).
+> **Nota:** Se il codice di posizione geografica nel nome del database non corrisponde a quello **MailboxRegion** , la cassetta postale sarà verrà automaticamente inserito in una coda di trasferimento e spostata la posizione geografica specificato dal parametro valore **MailboxRegion** (Exchange Online Cerca un mancata corrispondenza tra i valori delle proprietà).
 
 ### <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo"></a>Spostare una cassetta postale solo cloud esistente a un livello geografico specifico
 Un utente solo cloud è un utente non syncrhonized al tenant tramite la connessione AAD. L'utente è stato creato direttamente in Azure Active Directory. Utilizzare il cmdlet **Get-MsolUser** e **Set-MsolUser** nel modulo Azure Active Directory per Windows PowerShell per visualizzare o specificare geografica in cui verrà archiviata un solo cloud cassetta postale dell'utente.
@@ -245,7 +245,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 - Come spiegato in precedenza è possibile utilizzare questa procedura per gli oggetti utente sincronizzato da Active Directory locale. È necessario modificare il valore **PreferredDataLocation** utilizzando AAD Connect. Per ulteriori informazioni, vedere [connettersi Azure Active Directory sync: configurare la posizione dei dati preferito per le risorse di Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation). 
 
-- Il tempo necessario per spostare un mailboxfrom che relativa geo corrente per il nuovo geo desiderata dipende da diversi fattori:
+- Il tempo necessario per spostare un mailboxfrom che relativa geo corrente nella nuova posizione geografica desiderata dipende da diversi fattori:
  
   - La dimensione e tipo di cassetta postale.
  
@@ -260,10 +260,10 @@ Disabilitate le cassette postali conservazione per controversia legale che vengo
 
 2. Modificare **PreferredDataLocation**.
 
-3. Rimuovere la licenza dalla cassetta postale dopo che è stata spostata in Geo selezionato per rimetterlo in stato disabilitato.
+3. Rimuovere la licenza dalla cassetta postale dopo che è stata spostata nella posizione geografica selezionato in rimetterlo in stato disabilitato.
 
 ### <a name="create-new-cloud-mailboxes-in-a-specific-geo"></a>Creare nuove cassette postali cloud in un determinato livello geografico 
-Per creare una nuova cassetta postale in un determinato livello geografico, è necessario eseguire una della procedura seguente:
+Per creare una nuova cassetta postale in una posizione geografica specifici, è necessario eseguire una della procedura seguente:
 
 - Configurare il valore **PreferredDataLocation** come descritto nella precedente sezione *prima* che cassetta postale viene creata in Exchange Online. Ad esempio, è possibile configurare il valore **PreferredDataLocation** su un utente prima di assegnare una licenza. 
 
@@ -303,7 +303,7 @@ Per ulteriori informazioni sulla creazione di nuovi account utente e la ricerca 
 
 Il primo passaggio consiste nel verificare che un oggetto utente esiste per ciascuna cassetta postale essere onboarded e verificare che il valore **PreferredDataLocation** corretto è configurato in Azure Active Directory. Gli strumenti di on-boarding rispettano il valore **PreferredDataLocation** e verranno eseguita la migrazione di cassette postali direttamente a Geo specificato.
 
-In alternativa, è possibile utilizzare la procedura seguente per le cassette postali incorporate direttamente in un Geo specifico utilizzando il cmdlet [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) in Exchange Online PowerShell.
+In alternativa, è possibile utilizzare la procedura seguente per le cassette postali incorporate direttamente in una posizione geografica specifico utilizzando il cmdlet [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) in Exchange Online PowerShell.
 
 1. Verificare l'oggetto utente per ciascuna cassetta postale da onboarded e che **PreferredDataLocation** sia impostata sul valore desiderato in Azure Active Directory. Il valore di **PreferredDataLocation** verrà sincronizzato con l'attributo **MailboxRegion** dell'oggetto utente di posta elettronica corrispondente in Exchange Online.
 
@@ -321,9 +321,9 @@ In alternativa, è possibile utilizzare la procedura seguente per le cassette po
     New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
     ```
 
-5. Ripetere il passaggio #4 per ogni cassetta postale che è necessario eseguire la migrazione di Exchange locale a satellitari Geo attualmente si è connessi.
+5. Ripetere il passaggio #4 per ogni cassetta postale che è necessario eseguire la migrazione da Exchange locale al percorso satellitari che attualmente si è connessi.
 
-6. Se è necessario eseguire la migrazione di cassette postali aggiuntive a un altro satellitari Geo, ripetere i passaggi da 2 a 4 per ogni satellitari specifico Geo.
+6. Se è necessario eseguire la migrazione di cassette postali aggiuntive in un percorso diverso satellitari, ripetere i passaggi da 2 a 4 per ogni località satellitari specifico.
 
 ### <a name="multi-geo-reporting"></a>Creazione di report multi-Geo
-**Report di utilizzo della Multi-Geo** nell'interfaccia di amministrazione di Office 365 viene visualizzato il numero di utenti da Geo. Il rapporto viene visualizzato distribuzione degli utenti per il mese corrente e vengono forniti dati cronologici per gli ultimi 6 mesi.
+**Report di utilizzo della Multi-Geo** nell'interfaccia di amministrazione di Office 365 viene visualizzato il numero di utenti dalla posizione geografica. Il rapporto viene visualizzato distribuzione degli utenti per il mese corrente e vengono forniti dati cronologici per gli ultimi 6 mesi.
