@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni sull'esperienza utente riguardo SharePoint e OneDrive in ambiente multi-geografico.
-ms.openlocfilehash: 3c7e4b6802bddc78db016c9c282f5add0c71c491
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 951efb636ce00f59393f624687d44a406fcf3fc0
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849832"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Esperienza utente in ambiente multi-geografico.
 
@@ -39,7 +40,7 @@ Il client di sincronizzazione OneDrive for Business (versione 17.3.6943.0625 e s
 
 #### <a name="office-365-app-launcher"></a>Avvio app di Office 365
 
-Il servizio avvio app ha funzionalità Multi-Geo e indirizzerà direttamente ciascun riquadro alla corretta posizione geografica del carico di lavoro. I riquadri di OneDrive indicano la corretta posizione geografica in cui si trova la raccolta OneDrive dell'utente, mentre il riquadro di SharePoint indicherà a tutti gli utenti la posizione centrale, poiché ancora ospita i siti del team.
+Il servizio avvio app ha funzionalità multi-geo e indirizzerà direttamente ciascun riquadro alla corretta posizione geografica del carico di lavoro. I riquadri di OneDrive indicano la corretta posizione geografica in cui si trova la raccolta OneDrive dell'utente, mentre il riquadro di SharePoint indicherà a tutti gli utenti la posizione centrale, poiché ancora ospita i siti del team.
 
 #### <a name="delve-user-profiles"></a>Profili utente Delve
 
