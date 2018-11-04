@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "Riepilogo: Informazioni su come preparare la rete e gli elementi comuni dell'infrastruttura di rete."
-ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
+ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915651"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25897029"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementi comuni della connettività cloud Microsoft
 
@@ -82,7 +82,7 @@ Nella figura 1 viene illustrato come una rete locale può essere connesso a offe
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[ExpressRoute per la connettività cloud Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
+[ExpressRoute per la connettività cloud di Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
 
 ## <a name="see-also"></a>Vedere anche
 

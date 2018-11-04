@@ -3,7 +3,7 @@ title: Endpoint di Office 365 DoD gli Stati Uniti
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/13/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: 'Riepilogo: Office 365 richiede la connettività a Internet. Endpoint riportata di seguito devono essere raggiungibili per i clienti che utilizzano solo i piani di Office 365 US Government DoD.'
 hideEdit: true
-ms.openlocfilehash: 3faca62176b1467829f0333b76a57ce0d5124a96
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 769830741e2444a9a2caeaaef50d95ae7defc6f6
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541132"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933103"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Endpoint di Office 365 DoD gli Stati Uniti
 
@@ -31,31 +31,31 @@ ms.locfileid: "22541132"
  **Riepilogo:** Office 365 richiede la connettività a Internet. Endpoint riportata di seguito devono essere raggiungibili per i clienti che utilizzano solo i piani di Office 365 US Government DoD.
   
 > [!NOTE]
-> Microsoft sta sviluppando un servizio web basato su REST per l'indirizzo IP e le voci FQDN in questa pagina. Questo nuovo servizio consentono di configurare e aggiornare i dispositivi di rete perimetrale, ad esempio firewall e server proxy. È possibile scaricare l'elenco di endpoint, la versione corrente dell'elenco o modifiche specifiche. Questo servizio in futuro sostituirà il documento XML, feed RSS e l'indirizzo IP e le voci FQDN in questa pagina. Per provare a utilizzare questo nuovo servizio, accedere al [servizio Web](managing-office-365-endpoints.md#webservice).
+> Microsoft ha rilasciato un servizio web basato su REST per l'indirizzo IP e le voci FQDN in questa pagina. Questo nuovo servizio consentono di configurare e aggiornare i dispositivi di rete perimetrale, ad esempio firewall e server proxy. È possibile scaricare l'elenco di endpoint, la versione corrente dell'elenco o modifiche specifiche. Questo servizio sostituisce il documento XML correlato a questa pagina, il 2 ottobre 2018 è diventato obsoleto. Per provare a utilizzare questo nuovo servizio, accedere al [servizio Web](office-365-ip-web-service.md).
   
- **Endpoint di office 365:** [Tutto il mondo (inclusi GCC)](urls-and-ip-address-ranges.md)  |  [Office 365 gestito dal 21 Vianet](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Germania](office-365-germany-endpoints.md) | *DoD governo di Office 365 US* | [Le governo di Office 365 US ad alta](office-365-u-s-government-gcc-high-endpoints.md) |
+ **Endpoint di Office 365:** [Worldwide (compreso GCC)](urls-and-ip-address-ranges.md) | [Office 365 gestito da 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Germany](office-365-germany-endpoints.md) | *Office 365 U.S. Government DoD* | [Office 365 U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|
-|**Ultimo aggiornamento:** 8/1/2018 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [sottoscrizione registro modifiche](https://aka.ms/dodendpointrss) <br/> |**Download:** per un elenco completo in [formato XML](https://aka.ms/usdodendpoints) <br/> |
+|**Ultimo aggiornamento:** 11/1/2018 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [sottoscrizione registro modifiche](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** per un elenco completo nel [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
- Iniziare con [gli endpoint di gestione di Office 365](managing-office-365-endpoints.md) acquisire familiarità con i suggerimenti per la gestione di connettività di rete con questi dati. Aggiornamento dei dati di endpoint all'inizio di ogni mese, nuovi indirizzi IP e gli URL pubblicati 30 giorni prima fase attiva. In questo modo per i clienti che non sono ancora automazione degli aggiornamenti per eseguire i processi prima è necessaria una nuova connessione. È anche possibile aggiornare gli endpoint nel corso del mese se necessari per la risoluzione di supporto, problemi di protezione o altri requisiti operativi immediati. I dati riportati in questa pagina riportata di seguito viene generati dai servizi web basato su REST. Se si utilizza un dispositivo di rete o di uno script di accedere a tali dati, deve accedere direttamente al [servizio Web](managing-office-365-endpoints.md#webservice) .
+ Iniziare con [gli endpoint di gestione di Office 365](managing-office-365-endpoints.md) acquisire familiarità con i suggerimenti per la gestione di connettività di rete con questi dati. Aggiornamento dei dati di endpoint all'inizio di ogni mese, nuovi indirizzi IP e gli URL pubblicati 30 giorni prima fase attiva. In tal modo gli utenti che hanno ancora non si dispongono automatica degli aggiornamenti per eseguire i processi prima è necessaria una nuova connessione. È anche possibile aggiornare gli endpoint nel corso del mese se necessari per la risoluzione di supporto, problemi di protezione o altri requisiti operativi immediati. I dati riportati in questa pagina riportata di seguito viene generati dai servizi web basato su REST. Se si utilizza un dispositivo di rete o di uno script di accedere a tali dati, deve accedere direttamente al [servizio Web](office-365-ip-web-service.md) .
 
-Dati di endpoint riportata di seguito sono elencati i requisiti per la connettività dal computer dell'utente a Office 365. Non include le connessioni di rete da Microsoft in una rete di clienti, detta ibrido o connessioni di rete in ingresso.
+I dati degli endpoint riportati di seguito elencano i requisiti di connessione del computer di un utente a Office 365. Non sono incluse le connessioni di rete da Microsoft a una rete cliente, a volte chiamate connessioni di rete ibride o in ingresso.
 
-I punti finali sono raggruppati nelle quattro aree del servizio. Le aree del tre servizio prima è possibile selezionare in modo indipendente per la connettività. L'area servizio quarto una dipendenza comuni (denominato Office Online e Microsoft 365 comuni) e deve disporre sempre di connettività di rete.
+Gli endpoint sono raggruppati in quattro aree del servizio. Le prime tre aree del servizio possono essere selezionate in modo indipendente per la connessione. La quarta area del servizio è una dipendenza comune (denominata Microsoft 365 Common e Office Online) e deve avere sempre la connessione di rete.
 
-Vengono illustrate le colonne di dati:
+Le colonne di dati visualizzate sono le seguenti:
 
-- **ID**: numero di ID della riga, nota anche come un insieme di endpoint. Questo ID è uguale a quello restituito dal servizio web per il set di endpoint.
+- **ID**: il numero ID della riga, noto anche come set di endpoint. Questo ID è uguale a quello restituito dal servizio Web per il set di endpoint.
 
-- **Categoria**: visualizza se l'insieme di endpoint è categorizzato come "Ottimizza", "Consenti" o "Default". Per ulteriori informazioni su queste categorie e le istruzioni per la gestione di essi in [http://aka.ms/pnc](http://aka.ms/pnc). Questa colonna vengono inoltre elencati i set di endpoint è necessario disporre di connettività di rete. Per i set di endpoint che non devono disporre di connettività di rete, offriamo note in questo campo per indicare quali funzionalità saranno mancante se il set di endpoint è bloccato. Se si esclusione di un'area intero servizio, gli insiemi di endpoint elencati in base alle esigenze non richiedono la connettività.
+- **Categoria**: indica se il set di endpoint è categorizzato come "Optimize", "Allow" o "Default". Sono disponibili informazioni su queste categorie e linee guida per la loro gestione nell'articolo [http://aka.ms/pnc](http://aka.ms/pnc). Inoltre, in questa colonna sono elencati i set di endpoint necessari per la connessione di rete. Per i set di endpoint non necessari per la connessione di rete, in questo campo sono fornite delle note che indicano quale funzionalità non sarebbe disponibile se il set di endpoint fosse bloccato. Se si esclude un'intera area del servizio, i set di endpoint elencati come necessari non richiedono la connessione.
 
 - **ER**: questo è **Sì** se il set di endpoint è supportato su Azure ExpressRoute con Office 365 route prefissi. Community BGP che include i prefissi route riportati risulti allineato con l'area servizio elencato. Una volta ER **No**, ciò significa che ExpressRoute non è supportato per questo set di endpoint. Tuttavia, è necessario non considerare che le route non sono annunciate per un set di endpoint dove ER è **No**. Se si prevede di utilizzare la connessione di Azure Active Directory, consultare la [sezione Considerazioni speciali](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud) per verificare di disporre di appropriata configurazione Connetti Azure Active Directory.
 
-- **Gli indirizzi**: sono elencati i nomi FQDN o nomi di dominio con caratteri jolly e intervalli di indirizzi IP per il set di endpoint. Si noti che un intervallo di indirizzi IP nel formato CIDR e può includere molti singoli indirizzi IP nella rete specificata.
+- **Indirizzi**: sono elencati i nomi di dominio completo (FQDN) o con caratteri jolly e gli intervalli di indirizzi IP per il set di endpoint. Tenere presente che un intervallo di indirizzi IP è in formato CIDR e potrebbe includere più indirizzi IP nella rete specificata.
  
-- **Porte**: vengono elencati le porte TCP o UDP vengono combinate con gli indirizzi per creare l'endpoint di rete. È possibile notare alcune la duplicazione di intervalli di indirizzi IP in cui sono elencate le porte diverse.
+- **Porte**: sono elencate le porte TCP o UDP combinate con gli indirizzi per formare l'endpoint di rete. Si potrebbero notare dei duplicati negli intervalli di indirizzi IP in cui sono presenti diverse porte.
  
 [!INCLUDE [Office 365 U.S. Government DoD endpoints](./includes/office-365-u.s.-government-dod-endpoints.md)]
   
