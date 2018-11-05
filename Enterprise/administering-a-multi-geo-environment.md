@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni sull'amministrazione di servizi SharePoint e OneDrive in un ambiente multi-geo.
-ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 0113c20eab59e4d0a3122344346d31ae9f0a35a8
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21550059"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849882"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Amministrare un ambiente multi-geo
 
@@ -27,11 +27,11 @@ L'[Interfaccia di amministrazione di OneDrive](https://admin.onedrive.com) è un
 
 #### <a name="taxonomy"></a>Tassonomia
 
-Microsoft offre supporto per una [tassonomia](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) unificata per i metadati gestiti dell'organizzazione tra più posizioni geografiche, ospitando la scheda nella posizione centrale dell'azienda. È consigliabile gestire la tassonomia globale da una posizione centrale e aggiungere solo termini specifici sulla posizione alla tassonomia delle posizioni geografiche satelliti. I termini di tassonomia globale verranno sincronizzati con la posizione geografica satellite.
+Microsoft offre supporto per una [tassonomia](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) unificata per i metadati gestiti dell'organizzazione tra più posizioni geografiche, ospitando la scheda nella posizione centrale dell'azienda. È consigliabile gestire la tassonomia globale da una posizione centrale e aggiungere solo termini specifici sulla posizione alla tassonomia delle posizioni satellite. I termini di tassonomia globale verranno sincronizzati con le posizioni satellite.
 
 #### <a name="sharing"></a>Condivisione
 
-Gli amministratori possono impostare e gestire criteri di condivisione per ognuna delle posizioni. I siti di OneDrive in ogni posizione geografica rispetteranno solo le impostazioni di condivisione specifiche per posizioni geografiche corrispondenti. Ad esempio, è possibile consentire la [condivisione esterna](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) per la posizione centrale, ma non per la posizione satellite o viceversa.) Si noti che le impostazioni di condivisione non consentono la configurazione delle limitazioni per la condivisione tra le posizioni geografiche.
+Gli amministratori possono impostare e gestire criteri di condivisione per ognuna delle posizioni. I siti di OneDrive in ogni posizione geografica rispetteranno solo le impostazioni di condivisione specifiche per posizioni geografiche corrispondenti. Ad esempio, è possibile consentire la [condivisione esterna](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) per la posizione centrale, ma non per la posizione satellite o viceversa. Si noti che le impostazioni di condivisione non consentono la configurazione delle limitazioni per la condivisione tra le posizioni geografiche.
 
 Per OneDrive Multi-Geo, è necessario gestire le impostazioni di condivisione in tutte le posizioni geografiche, poiché queste non sono sincronizzate tra tenant. Per gestire la condivisione, visitare la pagina relativa alle [impostazioni di condivisione dell'interfaccia di amministrazione di OneDrive](https://admin.onedrive.com/?v=SharingSettings). Per impostazione predefinita la condivisione esterna è disponibile per qualunque utente in ogni posizione satellitare.
 
@@ -43,7 +43,7 @@ Se si dispone di proprietà personalizzate del profilo, è consigliabile usare l
 
 #### <a name="bcs-secure-store-apps"></a>BCS, Archiviazione sicura, App
 
-Tutti i servizi BCS, Archiviazione sicura e App presentano istanze geografiche separate, pertanto l'amministratore di SharePoint Online deve gestirli e configurarli da ogni istanza geografica in cui desidera che siano presenti.
+Tutti i servizi BCS, Archiviazione sicura e App presentano istanze separate in ogni posizione satellite, pertanto l'amministratore di SharePoint Online deve gestirli e configurarli separatamente da ogni posizione satellite.
 
 #### <a name="security-and-compliance-admin-center"></a>Centro sicurezza e conformità
 
@@ -63,10 +63,10 @@ Per impostazione predefinita, un manager o amministratore di eDiscovery di un te
 
 L'amministratore globale di Office 365 deve assegnare le autorizzazioni di manager di eDiscovery per consentire ad altri di eseguire eDiscovery e assegnare un parametro "Area" nel filtro di sicurezza e conformità applicabile per specificare l'area per l'esecuzione di eDiscovery come posizione satellite, in caso contrario nessuna istanza di eDiscovery verrà eseguita per la posizione geografica satellite.
 
-Quando è impostato il ruolo di manager o amministratore di eDiscovery per una posizione geografica specifica, sarà possibile eseguire operazioni di ricerca eDiscovery solo per i siti di SharePoint e OneDrive che si trovano in tale posizione geografica. Se un manager o amministratore di eDiscovery tenta di cercare siti di SharePoint o OneDrive all'esterno dell'area specificata, non visualizzerà alcun risultato. Inoltre, quando il manager o amministratore di eDiscovery di un'area attiva un'esportazione, i dati vengono esportati nell'istanza di Azure di quest'area. Ciò consente alle organizzazioni di rimanere conformi, non permettendo di esportare contenuti oltre i confini controllati.
+Quando è impostato il ruolo di manager o amministratore di eDiscovery per una posizione satellite specifica, sarà possibile eseguire operazioni di ricerca eDiscovery solo per i siti di SharePoint e OneDrive che si trovano in tale posizione satellite. Se un manager o amministratore di eDiscovery tenta di cercare siti di SharePoint o OneDrive all'esterno della posizione satellite specificata, non visualizzerà alcun risultato. Inoltre, quando il manager o amministratore di eDiscovery di una posizione satellite attiva un'esportazione, i dati vengono esportati nell'istanza di Azure di quest'area. Ciò consente alle organizzazioni di rimanere conformi, non permettendo di esportare contenuti oltre i confini controllati.
 
 > [!NOTE]
-> Tuttavia, se dovesse essere necessario per un manager di eDiscovery effettuare una ricerca in più aree di SharePoint, sarà necessario creare un altro account utente per il manager di eDiscovery, specificando l'area alternativa in cui si trovano i siti di OneDrive o SharePoint.
+> Tuttavia, se dovesse essere necessario per un manager di eDiscovery effettuare una ricerca in più posizioni satellite di SharePoint, sarà necessario creare un altro account utente per il manager di eDiscovery, specificando la posizione satellite alternativa in cui si trovano i siti di OneDrive o SharePoint.
 
 <table>
 <thead>
@@ -122,7 +122,7 @@ Per impostare il filtro di sicurezza di conformità per un'area geografica:
 2.  Immettere  
     $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $a = Import-PSSession $s -AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
 3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
@@ -132,4 +132,4 @@ Vedere l’articolo [New-ComplianceSecurityFilter](https://technet.microsoft.com
 
 #### <a name="audit-log-search"></a>Ricerca dei log di controllo
 
-Un [log di controllo](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) per tutte le posizioni geografiche è disponibile dalla pagina di ricerca dei log di controllo di Office 365. Sono disponibili tutte le voci di log di controllo tra le varie aree geografiche, ad esempio, attività di utenti dell'area geografica NAM e EUR verranno visualizzate in un'unica vista dell'organizzazione e sarà possibile applicarvi i filtri esistenti per vedere le attività di un utente specifico.
+Un [log di controllo](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) per tutte le posizioni satellite è disponibile dalla pagina di ricerca dei log di controllo di Office 365. Sono disponibili tutte le voci di log di controllo tra le varie aree geografiche, ad esempio, attività di utenti dell'area geografica NAM e EUR verranno visualizzate in un'unica vista dell'organizzazione e sarà possibile applicarvi i filtri esistenti per vedere le attività di un utente specifico.
