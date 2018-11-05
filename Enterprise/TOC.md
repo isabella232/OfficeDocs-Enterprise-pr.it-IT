@@ -45,7 +45,7 @@
 ### [Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida](configure-exchange-server-for-hybrid-modern-authentication.md)
 ### [Come configurare Skype for Business locale per utilizzare l'autenticazione moderna ibrida](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
 ### [Rimozione o disabilitazione dell'autenticazione moderna ibrida da Skype for Business ed Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
-## [Pianificare l'aggiornamento dai prodotti di Office 2007 o 2010](plan-upgrade-previous-versions-office.md)
+## [Eseguire l'aggiornamento di Office](plan-upgrade-previous-versions-office.md)
 ### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
 #### [Desktop di Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 #### [Exchange 2010](exchange-2010-end-of-support.md)
