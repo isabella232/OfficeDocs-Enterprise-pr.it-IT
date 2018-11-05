@@ -11,26 +11,26 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su OneDrive for Business Multi-Geo, come funziona il tenant multi-geografico e quali posizioni geografiche sono disponibili per l'archiviazione dei dati.
-ms.openlocfilehash: 26dc9d1b0f0f78e1740088036be4b77bea3ce176
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: d40f84ea3636b4eca2711a48bd9d70c73a242cfd
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21549987"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849862"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>Preparare l'implementazione di OneDrive for Business Multi-Geo
 
 Questa guida è utile agli amministratori di società multinazionali che stanno preparando l'espansione del tenant di SharePoint Online in altre aree geografiche in conformità con la presenza dell'azienda per soddisfare i requisiti di residenza dei dati.
 
-Nella configurazione OneDrive Multi-Geo, Office 365 è costituito da una posizione centralizzata (nota anche come posizione predefinita) e una o più posizioni geografiche satellite. Si tratta di un singolo tenant che comprende diverse posizioni geografiche. In OneDrive Multi-Geo, le informazioni del tenant, incluse le posizioni geografiche, vengono gestite in Azure Active Directory (AAD). 
+Nella configurazione OneDrive Multi-Geo, Office 365 è costituito da una posizione centralizzata e una o più posizioni geografiche satellite. Si tratta di un singolo tenant che comprende diverse posizioni geografiche. In OneDrive Multi-Geo, le informazioni del tenant, incluse le posizioni geografiche, vengono gestite in Azure Active Directory (AAD). 
 
 Ecco un glossario dei termini principali per facilitare la comprensione della configurazione multi-geografica:
 
--   **Tenant**: rappresentazione di un'organizzazione nel cloud di Office 365 che in genere contiene uno o più domini associati (ad esempio http://contoso.sharepoint.com). 
+-   **Tenant**: rappresentazione di un'organizzazione nel cloud di Office 365 che in genere contiene uno o più domini associati (ad esempio http://contoso.sharepoint.com). 
 
--   **Posizioni geografiche**: le posizioni geografiche in cui sono ospitati i dati del tenant. I tenant multi-geografici coprono più di un luogo geografico, ad esempio il Nord America e l'Europa.
+-   **Posizioni geografiche**: le posizioni geografiche disponibili per ospitare i dati in un tenant di Office 365.
 
--   **Posizioni dati consentite (ADL)**: le posizioni geografiche per cui il tenant è stato configurato per ospitare dati di OneDrive e SharePoint.
+-   **Posizioni satellite**: le posizioni geografiche configurate per ospitare i dati nel tenant di Office 365. I tenant multi-geografici coprono più di una posizione geografica, ad esempio Nord America ed Europa.
 
 -   **Posizione dati preferita (PDL)**: la posizione geografica in cui sono archiviati i dati di OneDrive di un singolo utente. Questa funzione può essere impostata dall'amministratore a una delle posizioni dati consentite configurate per il tenant. Se si cambia la PDL di un utente che ha già un sito di OneDrive, i dati di OneDrive non vengono spostati automaticamente nella nuova posizione geografica. Per ulteriori informazioni vedere [Spostare un sito di OneDrive in un'altra posizione geografica](move-onedrive-between-geo-locations.md).
 
@@ -38,18 +38,18 @@ Per abilitare Multi-Geo sono necessarie quattro attività:
 
 1.  Collaborare con il team responsabile dell'account per aggiungere il piano servizi _Multi-Geo Capabilities in Office 365 _.
 
-2.  Scegliere le posizioni geografiche satellite e aggiungerle al tenant.
+2.  Scegliere le posizioni satellite desiderate e aggiungerle al tenant.
 
-3.  Impostare la posizione dati preferita dell'utente nella posizione geografica satellite desiderata. Quando viene eseguito il provisioning di un nuovo sito di OneDrive per un utente, viene eseguito il provisioning sulla relativa PDL.
+3.  Impostare la posizione dati preferita dell'utente nella posizione satellite desiderata. Quando viene eseguito il provisioning di un nuovo sito di OneDrive per un utente, viene eseguito il provisioning sulla relativa PDL.
 
-4.  Eseguire la migrazione dei siti di OneDrive esistenti degli utenti dal percorso principale alla posizione dati preferita in base alle esigenze.
+4.  Eseguire la migrazione dei siti di OneDrive esistenti dalla posizione centrale alla posizione dati preferita in base alle esigenze.
 
 Vedere [Configurare OneDrive for Business Multi-Geo](multi-geo-tenant-configuration.md) per informazioni dettagliate su ognuno di questi passaggi.
 
 > [!IMPORTANT]
-> Le funzionalità Multi-Geo di Office 365 non sono progettate per i casi di ottimizzazione delle prestazioni, ma per soddisfare i requisiti di residenza dei dati. Per informazioni sull'ottimizzazione delle prestazioni per Office 365, vedere [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) o contattare il servizio di supporto tecnico.
+> Office 365 Multi-Geo non è progettato per i casi di ottimizzazione delle prestazioni, ma per soddisfare i requisiti di residenza dei dati. Per informazioni sull'ottimizzazione delle prestazioni per Office 365, vedere [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) o contattare il servizio di supporto tecnico.
 
-Quando si prepara l'implementazione del tenant multi-geografico, è opportuno creare un elenco delle posizioni che si desidera aggiungere al tenant di Office 365. È consigliabile iniziare con uno o due posizioni satellite e poi aggiungere gradualmente altre posizioni geografiche, se necessario.
+È possibile configurare una delle posizioni seguenti come posizione satellite in cui ospitare i file di OneDrive. Nella pianificazione multi-geografica, è opportuno creare un elenco delle posizioni che si desidera aggiungere al tenant di Office 365. È consigliabile iniziare con una o due posizioni satellite e poi aggiungere gradualmente altre posizioni geografiche, se necessario.
 
 <table>
 <thead>
@@ -106,15 +106,15 @@ Quando si configura un tenant multi-geografico, valutare l'opportunità di conso
 
 ## <a name="best-practices"></a>Procedure consigliate
 
-È consigliabile creare un utente test in Office 365 per eseguire alcuni test iniziali. Verranno eseguiti alcuni passaggi di verifica con questo utente prima di procedere di caricare utenti della produzione nella funzionalità OneDrive Multi-Geo.
+È consigliabile creare un utente test in Office 365 per eseguire alcuni test iniziali. Verranno eseguiti alcuni passaggi di verifica con questo utente prima di procedere di caricare utenti della produzione in OneDrive Multi-Geo.
 
 Dopo aver completato la verifica con l'utente test, selezionare un gruppo pilota, magari dal proprio reparto IT, per utilizzare OneDrive in una nuova posizione geografica per la prima volta. Per questo primo gruppo, selezionare gli utenti che non hanno ancora OneDrive. È consigliabile inserire non più di cinque persone in questo gruppo iniziale e aumentare gradualmente il numero, seguendo un approccio di implementazione a fasi.
 
-Ogni utente deve avere una *posizione dati preferita* (PDL) impostata in modo che Office 365 possa determinare in quale posizione geografica effettuare il provisioning di OneDrive. La posizione dati preferita dell'utente deve corrispondere alla località satellite selezionata o alla posizione centrale. Il campo PDL non è obbligatorio ma è consigliabile impostare una PDL per tutti gli utenti. Verrà eseguito il provisioning in posizione centrale dei carichi di lavoro di un utente senza una PDL in base alla logica Multi-Geo.   
+Ogni utente deve avere una *posizione dati preferita* (PDL) impostata in modo che Office 365 possa determinare in quale posizione geografica effettuare il provisioning di OneDrive. La posizione dati preferita dell'utente deve corrispondere alla località satellite selezionata o alla posizione centrale. Il campo PDL non è obbligatorio ma è consigliabile impostare una PDL per tutti gli utenti. Verrà eseguito il provisioning in posizione centrale dei carichi di lavoro di un utente senza una PDL.   
 
 Creare un elenco degli utenti e includere il nome dell'entità utente (UPN) e il codice di posizione per la posizione dati preferita appropriata. Includere l'utente test e il gruppo pilota iniziale per cominciare. Tale elenco è necessario per le procedure di configurazione.
 
-Se gli utenti vengono sincronizzati da un sistema di Active Directory locale (AD) per Azure Active Directory (AAD), è necessario impostare la posizione dati preferita per gli utenti sincronizzati tramite la connessione di Azure Active Directory. È possibile configurare direttamente la posizione dati preferita per gli utenti sincronizzati con Azure Active Directory PowerShell. I passaggi per configurare la PDL in AD e sincronizzarla sono trattati in [Sincronizzazione di Azure Active Directory Connect: configurare la posizione dati preferita per le risorse di Office 365](https://docs.microsoft.com/it-IT/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Se gli utenti vengono sincronizzati da un sistema di Active Directory locale per Azure Active Directory, è necessario impostare la posizione dati preferita per gli utenti sincronizzati tramite la connessione di Azure Active Directory. È possibile configurare direttamente la posizione dati preferita per gli utenti sincronizzati con Azure Active Directory PowerShell. I passaggi per configurare la PDL in AD e sincronizzarla sono trattati in [Sincronizzazione di Azure Active Directory Connect: configurare la posizione dati preferita per le risorse di Office 365](https://docs.microsoft.com/it-IT/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 L'amministrazione di un tenant multi-geografico può essere diverso da un tenant non multi-geografico, dal momento che la maggior parte delle impostazioni SharePoint e OneDrive e i servizi hanno funzionalità multi-geo. È consigliabile consultare [Amministrazione di un ambiente multi-geografico](administering-a-multi-geo-environment.md) prima di procedere con la configurazione.
 
