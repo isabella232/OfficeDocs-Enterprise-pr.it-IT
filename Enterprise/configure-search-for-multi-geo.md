@@ -11,16 +11,16 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su come configurare la ricerca in un ambiente multi-geografico.
-ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915061"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849912"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurare la ricerca per OneDrive for Business Multi-Geo
 
-In un ambiente SharePoint Online (SPO) multi-geografico, un'organizzazione può avere un tenant di Office 365, ma conservare il proprio contenuto in posizioni geografiche diverse di cui una funge da posizione centrale e le altre sono posizioni satellite.
+In un ambiente OneDrive for Business Multi-Geo, un'organizzazione può avere un tenant di Office 365, ma conservare il proprio contenuto di OneDrive in posizioni geografiche diverse di cui una funge da posizione centrale e le altre sono posizioni satellite.
 
 Ogni posizione geografica ha un proprio indice di ricerca e un Centro ricerche. Quando un utente effettua una ricerca, la query viene inviata a tutti gli indici e i risultati restituiti vengono aggregati.
 
@@ -48,7 +48,7 @@ Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano
 
 Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano in Delve ottengono risultati da tutte le posizioni geografiche.
 
-Il feed e la scheda profilo di Delve mostrano solo le anteprime dei file archiviati nella posizione **centrale**.Per i file archiviati in una posizione geografica satellite, verrà invece visualizzata l'icona del tipo di file.
+Il feed e la scheda profilo di Delve mostrano solo le anteprime dei file archiviati nella posizione **centrale**. Per i file archiviati in una posizione satellite, verrà invece visualizzata l'icona del tipo di file.
 
 ### <a name="the-sharepoint-home-page"></a>Home page di SharePoint
 
