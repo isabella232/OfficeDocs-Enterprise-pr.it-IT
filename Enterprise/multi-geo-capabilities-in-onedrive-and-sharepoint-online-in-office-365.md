@@ -12,12 +12,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Con Multi-Geo Capabilities in SharePoint Online e OneDrive, l'organizzazione può espandere la presenza di Office 365 a più aree geografiche e/o paesi.
-ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
-ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
+ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24012736"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849822"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Multi-Geo Capabilities in OneDrive e SharePoint Online in Office 365
 
@@ -43,7 +43,7 @@ Ecco come l'organizzazione può trarre vantaggio dalle funzionalità di Multi-Ge
     
 - Consolidare i dati in locale dell’area nel tenant multi-geo di Office 365.
     
-In una configurazione multi-geo, il tenant di Office 365 è costituito da una località centrale (anche nota come località predefinita) e una o più località geografiche satellite. Il concetto chiave di multi-geo è che un singolo tenancy includerà più località geografiche. In un tenant Multi-Geo, le informazioni su località geografiche, gruppi e le informazioni utente, vengono acquisite in Azure Active Directory (AAD). Poiché le informazioni del tenant sono acquisite in modo centralizzato e sincronizzate in ogni località geografica, la condivisione e le esperienze coinvolgono tutti gli utenti della società.
+In una configurazione multi-geo, il tenant di Office 365 è costituito da una località centrale (in cui l’abbonamento a Office 365 è stato originariamente fornito) e una o più località geografiche satellite. Il concetto chiave di multi-geo è che un singolo tenancy includerà più località geografiche. In un tenant multi-geo, le informazioni su località geografiche, gruppi e le informazioni utente, vengono acquisite in Azure Active Directory (AAD). Poiché le informazioni del tenant sono acquisite in modo centralizzato e sincronizzate in ogni località geografica, la condivisione e le esperienze coinvolgono tutti gli utenti della società.
 
 ## <a name="video-introducing-office-365-multi-geo"></a>Video: Introduzione a Office 365 Multi-Geo
 

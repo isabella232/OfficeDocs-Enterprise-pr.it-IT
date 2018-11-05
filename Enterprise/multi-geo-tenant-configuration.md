@@ -11,16 +11,16 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Informazioni sulla configurazione di OneDrive for Business Multi-Geo
-ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915251"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849872"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configurazione del tenant di OneDrive for Business Multi-Geo
 
-Prima di configurare il tenant di OneDrive for Business Multi-Geo, è consigliabile leggere [Preparare l'implementazione di OneDrive for Business Multi-Geo](plan-for-multi-geo.md). Per seguire la procedura descritta in questo articolo, è necessario un elenco di tutte le posizioni che si desidera abilitare e degli utenti di prova da usare per il provisioning di tali posizioni.
+Prima di configurare il tenant di OneDrive for Business Multi-Geo, è consigliabile leggere [Preparare l'implementazione di OneDrive for Business Multi-Geo](plan-for-multi-geo.md). Per seguire la procedura descritta in questo articolo, è necessario un elenco di tutte le posizioni geografiche che si desidera abilitare come posizioni satellite e degli utenti di prova da usare per il provisioning di tali posizioni.
 
 ## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>Aggiungere Multi-Geo Capabilities nel piano di Office 365 del tenant
 
@@ -30,9 +30,9 @@ Tenere presente che il piano _Multi-Geo Capabilities in Office 365_ è un piano 
 
 Una volta che nel tenant è stato effettuato il provisioning del piano _Multi-Geo Capabilities in Office 365_, la scheda **Posizioni geografiche** diventerà disponibile nell'[interfaccia di amministrazione di OneDrive](https://admin.onedrive.com).
 
-## <a name="set-the-allowed-data-locations-adl-to-your-tenant"></a>Impostare le posizioni dati consentite nel tenant
+## <a name="add-satellite-locations-to-your-tenant"></a>Aggiungere posizioni satellite al tenant
 
-È necessario impostare una posizione dati consentita per SharePoint per ogni posizione geografica in cui si vuole usare OneDrive for Business. Le posizioni geografiche disponibili sono visualizzate nella tabella seguente:
+È necessario aggiungere una posizione satellite per ciascuna posizione geografica in cui si desidera usare OneDrive for Business. Le posizioni geografiche disponibili sono visualizzate nella tabella seguente:
 
 <table>
 <thead>
@@ -81,7 +81,7 @@ Una volta che nel tenant è stato effettuato il provisioning del piano _Multi-Ge
 </tbody>
 </table>
 
-Per aggiungere una posizione geografica satellite
+Per aggiungere una posizione satellite
 
 1. Aprire l'[interfaccia di amministrazione di OneDrive](https://admin.onedrive.com).
 
@@ -98,32 +98,32 @@ Per aggiungere una posizione geografica satellite
 Il provisioning può durare da alcune ore fino a 72 ore, a seconda delle dimensioni del tenant. Al termine del provisioning di una posizione satellite, verrà inviato un messaggio di posta elettronica di conferma. Quando la nuova posizione geografica diventa blu sulla mappa nella scheda **Posizioni geografiche** nell'interfaccia di amministrazione di OneDrive, è possibile procedere per impostare la posizione dati preferita dell'utente su tale posizione geografica. 
 
 > [!IMPORTANT]
-> La nuova posizione geografica satellite sarà configurata con le impostazioni predefinite. In questo modo sarà possibile configurare tale posizione geografica in base alle proprie esigenze di conformità locale.
+> La nuova posizione satellite sarà configurata con le impostazioni predefinite. In questo modo sarà possibile configurare tale posizione satellite in base alle proprie esigenze di conformità locale.
 
 ## <a name="setting-users-preferred-data-location"></a>Impostazione della posizione dati preferita dell'utente
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
-Dopo aver abilitato i percorsi dati necessari, è possibile aggiornare gli account utente per utilizzare il percorso dati appropriato. Si consiglia di impostare una posizione dati preferita per ogni utente, anche se l'utente si trova nel percorso dati predefinito.
+Dopo aver abilitato le posizioni satellite necessarie, è possibile aggiornare gli account utente per utilizzare il percorso dati preferito appropriato. Si consiglia di impostare una posizione dati preferita per ogni utente, anche se l'utente si trova in una posizione centrale.
 
 > [!TIP]
-> Si consiglia di iniziare le convalide con un utente di test o con un gruppo limitato di utenti prima di distribuire Multi-Geo Capabilities in tutta l'organizzazione.
+> Si consiglia di iniziare le convalide con un utente di test o con un gruppo limitato di utenti prima di distribuire le funzionalità multi-geografiche in tutta l'organizzazione.
 
 In AAD sono disponibili due tipi di oggetti utente: gli utenti solo cloud e gli utenti sincronizzati. Seguire le istruzioni appropriate per il tipo di utente.
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Sincronizzare la posizione dati preferita dell'utente utilizzando AD Connect 
 
-Se gli utenti dell'organizzazione vengono sincronizzati da un sistema Active Directory (AD) locale in Azure Active Directory (AAD), il relativo PreferredDataLocation deve essere popolato in Active Directory e sincronizzato in AAD. Seguire la procedura in [Sincronizzazione di Azure AD Connect: modificare la configurazione predefinita](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) per configurare la sincronizzazione della posizione dati preferita da AD locale in AAD.
+Se gli utenti dell'organizzazione vengono sincronizzati da un sistema Active Directory locale in Azure Active Directory, il relativo PreferredDataLocation deve essere popolato in Active Directory e sincronizzato in AAD. Seguire la procedura in [Sincronizzazione di Azure AD Connect: modificare la configurazione predefinita](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) per configurare la sincronizzazione della posizione dati preferita da Active Directory locale in Azure Active Directory.
 
 È consigliabile includere l'impostazione della posizione dati preferita dell'utente nel processo standard di creazione degli utenti.
 
 > [!IMPORTANT]
-> Per i nuovi utenti per cui non è stato eseguito il provisioning di OneDrive, attendere almeno 24 ore dopo la sincronizzazione della posizione dati preferita di un utente in ADD affinché le modifiche si propaghino prima che l'utente possa accedere a OneDrive for Business. Se si imposta la posizione dati preferita prima che l'utente acceda per completare il provisioning del proprio OneDrive for Business, il provisionig del nuovo OneDrive utente avviene sicuramente nella posizione corretta.
+> Per i nuovi utenti per cui non è stato eseguito il provisioning di OneDrive, attendere almeno 24 ore dopo la sincronizzazione della posizione dati preferita di un utente in Azure Active Directory affinché le modifiche si propaghino prima che l'utente possa accedere a OneDrive for Business. Se si imposta la posizione dati preferita prima che l'utente acceda per completare il provisioning del proprio OneDrive for Business, il provisionig del nuovo OneDrive utente avviene sicuramente nella posizione corretta.
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Impostazione della posizione dati preferita per utenti solo cloud 
 
-Se gli utenti dell'azienda non vengono sincronizzati da un sistema Active Directory (AD) locale ad Azure Active Directory (AAD), significa che sono stati creati in Office 365 o AAD e quindi la posizione dati preferita deve essere impostata tramite AAD PowerShell.
+Se gli utenti dell'azienda non vengono sincronizzati da un sistema Active Directory locale ad Azure Active Directory, significa che sono stati creati in Office 365 o Azure Active Directory e quindi la posizione dati preferita deve essere impostata tramite Azure Active Directory PowerShell.
 
-Le procedure descritte in questa sezione richiedono il [Modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell ](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Se AAD PowerShell è già installato, assicurarsi di effettuare l'aggiornamento alla versione più recente.
+Le procedure descritte in questa sezione richiedono il [Modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell ](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Se Azure Active Directory PowerShell è già installato, assicurarsi di effettuare l'aggiornamento alla versione più recente.
 
 1.  Aprire il modulo Microsoft Azure Active Directory per Windows PowerShell.
 
@@ -142,13 +142,13 @@ Le procedure descritte in questa sezione richiedono il [Modulo di Microsoft Azur
 È consigliabile includere l'impostazione della posizione dati preferita dell'utente nel processo standard di creazione degli utenti.
 
 > [!IMPORTANT]
-> Per i nuovi utenti per cui non è stato eseguito il provisioning di OneDrive, attendere almeno 24 ore dopo l'impostazione della posizione dati preferita di un utente affinché le modifiche si propaghino prima che l'utente possa accedere a SharePoint OneDrive. Se si imposta la posizione dati preferita prima che l'utente acceda per completare il provisioning del proprio OneDrive for Business, il provisionig del nuovo OneDrive utente avviene sicuramente nella posizione corretta.
+> Per i nuovi utenti per cui non è stato eseguito il provisioning di OneDrive, attendere almeno 24 ore dopo l'impostazione della posizione dati preferita di un utente affinché le modifiche si propaghino prima che l'utente possa accedere a OneDrive. Se si imposta la posizione dati preferita prima che l'utente acceda per completare il provisioning del proprio OneDrive for Business, il provisionig del nuovo OneDrive utente avviene sicuramente nella posizione corretta.
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Provisioning di OneDrive e l'effetto della posizione dati preferita
 
 Se l'utente ha già creato un sito OneDrive nel tenant, impostando la posizione dati preferita non verrà spostato automaticamente nel OneDrive esistente. Per spostare OneDrive di un utente, vedere [Spostamento geografico di OneDrive for Business](move-onedrive-between-geo-locations.md) e seguire le istruzioni sullo spostamento di OneDrive tra diverse posizioni geografiche.
 
-Se l'utente non dispone di un sito di OneDrive all'interno del tenant, il provisioning di OneDrive verrà eseguito in base al valore della posizione dati preferita, presupponendo che la posizione dati preferita dell'utente corrisponda a una delle posizioni dati consentite della società (ADL).
+Se l'utente non dispone di un sito di OneDrive all'interno del tenant, il provisioning di OneDrive verrà eseguito in base al valore della posizione dati preferita, presupponendo che la posizione dati preferita dell'utente corrisponda a una delle posizioni satellite della società.
 
 ## <a name="configuring-multi-geo-search"></a>Configurazione della ricerca multi-geografica
 
@@ -164,7 +164,7 @@ Per impostazione predefinita, le ricerche da questi punti di ingresso restituira
 
 - Centro ricerche
 
-Inoltre, le funzionalità della ricerca multi-geografica possono essere configurate per applicazioni di ricerca personalizzate che utilizzano l'API del servizio di ricerca di SharePoint
+Inoltre, le funzionalità della ricerca multi-geografica possono essere configurate per applicazioni di ricerca personalizzate che utilizzano l'API del servizio di ricerca di SharePoint.
 
 Consultare [Configurare la ricerca per OneDrive for Business Multi-Geo](configure-search-for-multi-geo.md) per ottenere maggiori informazioni, comprese le limitazioni e un confronto delle funzionalità.
 
@@ -174,7 +174,7 @@ Ecco alcuni casi d'uso che è consigliabile includere nelle verifiche da effettu
 
 **OneDrive for Business**
 
-Selezionare OneDrive dall'icona di avvio dell'app di Office 365 e verificare di essere automaticamente indirizzati alla posizione geografica appropriata per l'utente , in base alla posizione dati preferita dell'utente. OneDrive for Business ora inizia il provisioning in tale posizione. Al termine, provare a caricare e a scaricare alcuni documenti.
+Selezionare OneDrive dall'icona di avvio dell'app di Office 365 e verificare di essere automaticamente indirizzati alla posizione geografica appropriata per l'utente, in base alla posizione dati preferita dell'utente. OneDrive for Business ora inizia il provisioning in tale posizione. Al termine, provare a caricare e a scaricare alcuni documenti.
 
 **App OneDrive per dispositivi mobili**
 
