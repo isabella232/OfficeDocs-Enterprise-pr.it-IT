@@ -81,13 +81,13 @@
 ## [Distribuire Office 365 Enterprise per l'organizzazione](setup-overview-for-enterprises.md)
 ### [Elenco di controllo per la pianificazione della distribuzione di Office 365](deployment-planning-checklist.md)
 ### [Procedure consigliate per la sicurezza per Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
-## Configurare la rete
+## [Configurare la rete](set-up-network-for-office-365.md)
 ### [Informazioni generali sulla connettività di rete di Office 365](office-365-networking-overview.md)
 ### [Principi della connettività di rete di Office 365](office-365-network-connectivity-principles.md)
 ### [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](network-planning-and-performance.md)
 ### [Connettività di rete con Office 365](network-connectivity.md)
 ### [Office 365 Networking Partner Program](office-365-networking-partner-program.md)
-### Indirizzi IP e URL di Office 365
+### [URL e indirizzi IP di Office 365](office-365-endpoints.md)
 #### [Gestione degli endpoint di Office 365](managing-office-365-endpoints.md)
 #### [Endpoint in tutto il mondo](urls-and-ip-address-ranges.md)
 #### [Endpoint del U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)
