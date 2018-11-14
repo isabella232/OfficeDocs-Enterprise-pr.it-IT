@@ -15,21 +15,23 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: Utilizzare la diagnostica di pagina per lo strumento di SharePoint per analizzare le pagine classiche con le procedure consigliate per SharePoint Online.
-ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 1524befc0003006cfab9100aafc7d3deda2a37d2
+ms.sourcegitcommit: 5be99683fb2de87f723264c8a1123451d31ea43b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975164"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26253617"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>Utilizzare lo strumento di diagnostica di pagina per SharePoint Online
 
 In questo articolo viene descritto come è possibile utilizzare lo strumento di diagnostica di pagina per analizzare le pagine di pubblicazione classiche e pagine nei siti di team classico, con un sottoinsieme delle procedure consigliate in **SharePoint Online**. 
   
 Siti del team che non dispongono di pubblicazione abilitata non possono avvalersi dei CDN ma tutte le altre regole sono applicabili. Pubblicazione viene aggiunto un overhead aggiuntivo in modo che non è attiva la pubblicazione solo per ottenere la funzionalità di rete CDN come impatto negativo caricamenti delle pagine.
+
+**Nota che è stato rilasciato V1.05 per effettuare l'aggiornamento dell'estensione se si è già installato**. In caso di dubbi sulla versione è necessario quindi fare clic sul collegamento "Informazioni su" per verificare.
   
 > [!IMPORTANT]
-> Lo strumento di diagnostica di pagina non verrà eseguito su raccolte documenti o pagine di sistema, come lo strumento è progettato per controllare le pagine del sito di SharePoint. Una pagina *AllItems* è una pagina di sistema. Se si tenta di eseguire lo strumento in una pagina di sistema, si riceverà un messaggio indicante, "questa applicazione deve essere eseguita solo in pagine di SharePoint."<br/> ![Deve essere eseguito su una pagina di SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>Non si tratta di un errore nello strumento di quando è presente alcun valore per la valutazione raccolte o le pagine di sistema. Passare a una pagina di SharePoint non di sistema per utilizzare lo strumento. Se lo si desidera fornire commenti e suggerimenti sullo strumento, fare clic sulla scheda dettagli e seguire [fornire il collegamento commenti e suggerimenti](https://go.microsoft.com/fwlink/?linkid=874109). 
+> Lo strumento di diagnostica di pagina non verrà eseguito su raccolte documenti o pagine di sistema, come lo strumento è progettato per controllare le pagine del sito di SharePoint. Una pagina *AllItems* è una pagina di sistema. Se si tenta di eseguire lo strumento in una pagina di sistema, si riceverà un messaggio indicante, "questa applicazione deve essere eseguita solo in pagine di SharePoint."<br/> ![Deve essere eseguito su una pagina di SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>Non si tratta di un errore nello strumento di quando è presente alcun valore per la valutazione raccolte o le pagine di sistema. Passare a una pagina di SharePoint non di sistema per utilizzare lo strumento. Se questa operazione viene eseguita in una pagina di SharePoint, controllare la pagina master come abbiamo visto clienti rimuovere SharePoint MetaTags e quindi la pagina non è più una pagina di SharePoint. Se lo si desidera fornire commenti e suggerimenti sullo strumento, fare clic sulla scheda dettagli e seguire [fornire il collegamento commenti e suggerimenti](https://go.microsoft.com/fwlink/?linkid=874109). 
   
 ## <a name="install-the-page-diagnostic-tool"></a>Installare lo strumento di diagnostica di pagina
 

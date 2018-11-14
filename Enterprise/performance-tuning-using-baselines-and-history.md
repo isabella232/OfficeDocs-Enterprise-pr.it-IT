@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1492cb94-bd62-43e6-b8d0-2a61ed88ebae
 description: Sono disponibili alcuni modi semplici per controllare le prestazioni di connessione tra Office 365 e l'azienda che consente di stabilire una base approssimativa della connettività. Conoscenza dei collegamenti al computer la cronologia delle prestazioni del client consentono di individuare gli eventuali problemi emergenti all'inizio, identificare e prevedere problemi.
-ms.openlocfilehash: bb1fe1e1450798e43c15a07610e27450bce6ea5b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 30a0903d95ccfcd2018d8971c74c7f80223c005d
+ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541275"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "26024688"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ottimizzazione delle prestazioni di Office 365 mediante l'uso della cronologia delle prestazioni e delle previsioni
 
@@ -196,7 +196,7 @@ L'obiettivo di questi metodi semplici consiste nel richiedere, comprendere ed ar
 ![Rete di base con client, proxy e cloud e i suggerimenti di strumenti PSPing, TraceTCP e le tracce di rete.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP è incluso in questa schermata perché è uno strumento utile per la visualizzazione delle, in millisecondi, una richiesta di tempo per processo e quante hop di rete o connessioni da un solo computer alla successiva, che accetta la richiesta di raggiungere una destinazione. TraceTCP possono anche assegnare i nomi dei server utilizzati durante l'hop, che può essere utile per una risoluzione dei problemi di Microsoft Office 365 in supporto. > Comandi TraceTCP possono essere molto semplici, ad esempio: > `tracetcp.exe outlook.office365.com:443`> ricordarsi di includere il numero di porta nel comando! > [TraceTCP](https://simulatedsimian.github.io/tracetcp.mdl) è disponibile come download gratuito, ma si basa su Wincap. Wincap è uno strumento che viene inoltre utilizzato e installato in Netmon. È inoltre possibile utilizzare Netmon nella sezione metodi avanzati. 
+> TraceTCP è incluso in questa schermata perché è uno strumento utile per la visualizzazione delle, in millisecondi, una richiesta di tempo per processo e quante hop di rete o connessioni da un solo computer alla successiva, che accetta la richiesta di raggiungere una destinazione. TraceTCP possono anche assegnare i nomi dei server utilizzati durante l'hop, che può essere utile per una risoluzione dei problemi di Microsoft Office 365 in supporto. > Comandi TraceTCP possono essere molto semplici, ad esempio: > `tracetcp.exe outlook.office365.com:443`> ricordarsi di includere il numero di porta nel comando! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) è disponibile come download gratuito, ma si basa su Wincap. Wincap è uno strumento che viene inoltre utilizzato e installato in Netmon. È inoltre possibile utilizzare Netmon nella sezione metodi avanzati. 
   
  Se si dispone di più uffici, è necessario mantenere un blocco di dati da un client di ciascuno di questi percorsi anche. Questo test misure di latenza, che, in questo caso, è un valore numerico che descrive la quantità di tempo tra un client invia una richiesta a Office 365 e Office 365 risponde alla richiesta. Il test viene creato il dominio in un computer client e Cerca per misurare un round trip dall'interno della rete tramite un punto di uscita via Internet a Office 365 ed eseguire il. 
   
@@ -322,5 +322,5 @@ Per affrontare i problemi di prestazioni, *direttamente* , è necessario avere u
   
 ## <a name="see-also"></a>Vedere anche
 
-[Gestione di endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
 

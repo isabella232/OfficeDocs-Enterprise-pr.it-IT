@@ -1,9 +1,9 @@
 ---
-title: Richieste di rete in Office 2016 per Mac
+title: Richieste di rete in Office per Mac
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/13/2018
+ms.date: 11/9/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -12,17 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: 2016 di Office per le applicazioni Mac offrono un'esperienza di app nativo nella piattaforma Mac OS. Ogni app è progettato per funzionare in una vasta gamma di scenari, tra cui stati quando è disponibile alcun accesso alla rete. Quando un computer è collegato a una rete, le applicazioni di connettono automaticamente a una serie di servizi basati sul web per fornire le funzionalità avanzate. Questo white paper vengono descritti i endpoint e le applicazioni tentano di raggiungere gli URL e i servizi forniti. Queste informazioni sono utili durante la risoluzione dei problemi di rete problemi di configurazione e l'impostazione di un criterio per i server proxy di rete. I dettagli in questo articolo sono destinati a complemento l'URL in Office 365 e articolo gli intervalli di indirizzi.
-ms.openlocfilehash: b94b77a0ff8cd37b0fa1c881ba590853615bfe93
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Applicazioni Office per Mac offrono un'esperienza di app nativo nella piattaforma Mac OS. Ogni app è progettato per funzionare in una vasta gamma di scenari, tra cui stati quando è disponibile alcun accesso alla rete. Quando un computer è collegato a una rete, le applicazioni di connettono automaticamente a una serie di servizi basati sul web per fornire le funzionalità avanzate. Questo white paper vengono descritti i endpoint e le applicazioni di prova per raggiungere gli URL e i servizi forniti. Queste informazioni sono utili durante la risoluzione dei problemi di rete problemi di configurazione e l'impostazione di un criterio per i server proxy di rete. I dettagli in questo articolo sono destinati a complemento l'URL in Office 365 e articolo gli intervalli di indirizzi.
+ms.openlocfilehash: 929b93433f5d990952b540a1b28fe2ac74edfb5d
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541371"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219896"
 ---
-# <a name="network-requests-in-office-2016-for-mac"></a>Richieste di rete in Office 2016 per Mac
+# <a name="network-requests-in-office-for-mac"></a>Richieste di rete in Office per Mac
 
-2016 di Office per le applicazioni Mac offrono un'esperienza di app nativo nella piattaforma Mac OS. Ogni app è progettato per funzionare in una vasta gamma di scenari, tra cui stati quando è disponibile alcun accesso alla rete. Quando un computer è collegato a una rete, le applicazioni di connettono automaticamente a una serie di servizi basati sul web per fornire le funzionalità avanzate. Questo white paper vengono descritti i endpoint e le applicazioni tentano di raggiungere gli URL e i servizi forniti. Queste informazioni sono utili per risolvere i problemi di configurazione di rete e impostazione dei criteri per i server proxy di rete. I dettagli in questo articolo sono destinati a complemento l' [URL in Office 365 e l'indirizzo articolo intervalli](urls-and-ip-address-ranges.md), che include gli endpoint per computer che eseguono Microsoft Windows.
+Applicazioni Office per Mac offrono un'esperienza di app nativo nella piattaforma Mac OS. Ogni app è progettato per funzionare in una vasta gamma di scenari, tra cui stati quando è disponibile alcun accesso alla rete. Quando un computer è collegato a una rete, le applicazioni di connettono automaticamente a una serie di servizi basati sul web per fornire le funzionalità avanzate. Le informazioni seguenti vengono descritti i endpoint e le applicazioni di prova per raggiungere gli URL e i servizi forniti. Queste informazioni sono utili per risolvere i problemi di configurazione di rete e impostazione dei criteri per i server proxy di rete. I dettagli in questo articolo sono destinati a complemento l' [URL in Office 365 e l'indirizzo articolo intervalli](urls-and-ip-address-ranges.md), che include gli endpoint per computer che eseguono Microsoft Windows. Se non specificato diversamente, le informazioni contenute in questo articolo si applicano anche a 2019 di Office per Mac e 2016 di Office per Mac, sono disponibili come un fornitore occasionale presso un rivenditore o tramite un contratto multilicenza. 
+
   
 La maggior parte di questo articolo è tabelle che descrive gli URL di rete, type e descrizione del servizio o la funzione forniti da tale endpoint. Ognuna delle applicazioni Office può variare in relativo utilizzo endpoint e del servizio. Le applicazioni seguenti vengono definite nelle tabelle riportate di seguito:
   
@@ -39,12 +40,13 @@ Il tipo di URL è definito come segue:
 - SS: Semi-statica-URL viene codificato come parte di una pagina web o di reindirizzamento.
     
 - CS: Config Service - URL viene restituito come parte del servizio di configurazione di Office.
+
     
-## <a name="office-2016-for-mac-default-configuration"></a>2016 di Office per la configurazione predefinita Mac
+## <a name="office-for-mac-default-configuration"></a>Office per la configurazione predefinita Mac
 
  **Installazione e aggiornamenti**
   
-Gli endpoint di rete seguenti vengono utilizzati per scaricare 2016 Office Mac del programma di installazione dai contenuti rete (CDN).
+Gli endpoint di rete seguenti vengono utilizzati per scaricare Office Mac del programma di installazione dai contenuti rete (CDN).
   
 |**URL**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -127,7 +129,7 @@ Gli endpoint di rete seguenti si applicano solo a sottoscrizione a Office 365.
    
  **Strumento ricerche**
   
-Gli endpoint di rete seguenti si applicano a entrambi sottoscrizione a Office 365.
+Gli endpoint di rete seguenti si applicano solo a sottoscrizione a Office 365.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
@@ -171,7 +173,7 @@ Gli endpoint di rete seguenti sono valide per le attivazioni di sottoscrizione a
 |:-----|:-----|:-----|:-----|
 |```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |CS  <br/> |Invio di un servizio Smile  <br/> |
    
- **contatta il supporto tecnico**
+ **Contattare il supporto tecnico**
   
 Gli endpoint di rete seguenti sono valide per le attivazioni di sottoscrizione a Office 365 sia Retail/Volume License.
   
@@ -220,7 +222,7 @@ Gli endpoint di rete seguenti si applicano a sottoscrizione a Office 365 sia Ret
    
  **Collegamenti sicuri**
   
-Endpoint di rete seguenti valide per le applicazioni Office 2016.
+Endpoint di rete seguenti si applica a tutte le applicazioni di Office per la sottoscrizione a Office 365 solo.
   
 |**URL**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -228,7 +230,7 @@ Endpoint di rete seguenti valide per le applicazioni Office 2016.
    
  **Bloccarsi reporting**
   
-Endpoint di rete seguenti si applica a tutte le applicazioni Office 2016 e tipi di licenze. Quando un processo si blocca in modo imprevisto, un report viene generato e inviato al servizio Watson.
+Endpoint di rete seguenti si applica a tutte le applicazioni di Office per le attivazioni di sottoscrizione a Office 365 sia Retail/Volume License. Quando un processo si blocca in modo imprevisto, un report viene generato e inviato al servizio Watson.
   
 |**URL**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -237,7 +239,7 @@ Endpoint di rete seguenti si applica a tutte le applicazioni Office 2016 e tipi 
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>Opzioni per la riduzione delle richieste di rete e del traffico
 
-La configurazione predefinita di 2016 di Office per Mac offre la migliore esperienza utente, sia in termini di funzionalità e l'aggiornamento del computer. In alcuni scenari, si desidera impedire alle applicazioni di comunicazione con gli endpoint di rete. In questa sezione vengono illustrate le opzioni per farlo.
+La configurazione predefinita di Office per Mac offre la migliore esperienza utente, sia in termini di funzionalità e l'aggiornamento del computer. In alcuni scenari, si desidera impedire alle applicazioni di comunicazione con gli endpoint di rete. In questa sezione vengono illustrate le opzioni per farlo.
   
  ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>Disattivazione Cloud accesso e Office componenti aggiuntivi
   
@@ -249,7 +251,7 @@ I clienti con contratto multilicenza potrebbero essere vincolati criteri informa
 
 - ```defaults write com.microsoft.Powerpoint UseOnlineContent -integer 0```
 
-Se gli utenti tentano di accedere alla funzione di accesso, si verrà visualizzato un errore di una connessione di rete non è presente. Poiché questa preferenza blocca anche l'attivazione del prodotto in linea, deve utilizzato solo per le installazioni di licenza Volume License. In particolare, utilizzando la preferenza impedirà alle applicazioni di Office di accedere agli endpoint per le operazioni seguenti:
+Se l'utente tenta di accedere alla funzione di accesso, visualizzeranno un errore di una connessione di rete non è presente. Poiché questa preferenza blocca anche l'attivazione del prodotto in linea, deve utilizzato solo per le installazioni di licenza Volume License. In particolare, utilizzando la preferenza impedirà alle applicazioni di Office di accedere agli endpoint per le operazioni seguenti:
   
 - ```https://odc.officeapps.live.com```
     
@@ -266,11 +268,11 @@ Se gli utenti tentano di accedere alla funzione di accesso, si verrà visualizza
 Per ristabilire la la funzionalità per l'utente, impostare la preferenza a "2" o rimuoverlo.
   
 > [!NOTE]
-> Tale preferenza richiede 2016 di Office per Mac build 15.25 [160726] o versione successiva. 
+> Tale preferenza richiede Office per creare Mac 15.25 [160726] o versione successiva. 
   
 ### <a name="telemetry"></a>Telemetria
   
-2016 di Office per Mac invia telemetria informazioni a Microsoft a intervalli regolari. Caricamento di dati per l'endpoint 'Del nodo'. I dati di telemetria contribuiscono il team di progettazione di valutare l'integrità e qualsiasi comportamenti imprevisti di ogni applicazione di Office. Sono disponibili due categorie di telemetria:
+Office per Mac invia telemetria informazioni a Microsoft a intervalli regolari. Caricamento di dati per l'endpoint 'Del nodo'. I dati di telemetria contribuiscono il team di progettazione di valutare l'integrità e qualsiasi comportamenti imprevisti di ogni applicazione di Office. Sono disponibili due categorie di telemetria:
   
 - **Heartbeat** contiene informazioni sulla versione e licenza. Questi dati viene inviati immediatamente all'avvio di app. 
     
@@ -307,7 +309,7 @@ In alcuni casi, il contenuto di un documento fa sì che l'applicazione in modo a
   
 ### <a name="updates"></a>Aggiornamenti
   
-Microsoft rilascia 2016 di Office per gli aggiornamenti Mac a intervalli regolari (in genere una volta al mese). Si consiglia agli utenti e agli amministratori IT di mantenere macchine aggiornati per verificare le correzioni della protezione più recenti installati. Nei casi in cui gli amministratori IT desiderano strettamente controllo e la gestione degli aggiornamenti automatica, è possono impostare le preferenze seguenti per evitare che il processo di aggiornamento automatico da automaticamente il rilevamento e che offre gli aggiornamenti dei prodotti:
+Microsoft rilascia Office per gli aggiornamenti Mac a intervalli regolari (in genere una volta al mese). Si consiglia agli utenti e agli amministratori IT di mantenere macchine aggiornati per verificare le correzioni della protezione più recenti installati. Nei casi in cui gli amministratori IT desiderano strettamente controllo e la gestione degli aggiornamenti automatica, è possono impostare le preferenze seguenti per evitare che il processo di aggiornamento automatico da automaticamente il rilevamento e che offre gli aggiornamenti dei prodotti:
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
@@ -315,7 +317,7 @@ Microsoft rilascia 2016 di Office per gli aggiornamenti Mac a intervalli regolar
   
 Se i blocchi di organizzazione richiede agli URL tramite un firewall o il server proxy è necessario configurare gli URL elencati in questo documento come consentito o bloccare nell'elenco da una risposta X 40 (ad esempio 403 o 404). Una risposta X 40 che consente le applicazioni di Office per la corretta accettare l'impossibilità di accedere alla risorsa e offrirà un'esperienza utente più veloce, più semplicemente eliminare la connessione, che a sua volta determinerà il client tentativi.
   
-Se il server proxy richiede l'autenticazione, una risposta 407 verrà restituiti al client. Per risultati ottimali, assicurarsi che si sta utilizzando Office 2016 build 15.27 o versioni successive, come sono inclusi correzioni specifiche per l'utilizzo di server NTLM e Kerberos.
+Se il server proxy richiede l'autenticazione, una risposta 407 verrà restituiti al client. Per risultati ottimali, assicurarsi che si sta utilizzando Office per le build Mac 15.27 o versioni successive, come sono inclusi correzioni specifiche per l'utilizzo di server NTLM e Kerberos.
   
   
 ## <a name="see-also"></a>Vedere anche

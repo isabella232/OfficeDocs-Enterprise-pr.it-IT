@@ -13,27 +13,18 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: In questo articolo viene illustrato quali aspetti specifici, è necessario prendere in considerazione durante la progettazione di pagine per ottimizzare le prestazioni di SharePoint Online.
-ms.openlocfilehash: 96aeec19a6b582d0dc8701cd2e99329ec8ce156b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 07938770d711477126f78fc583e8d2533ba5c1d1
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541125"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219876"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introduzione all'ottimizzazione delle prestazioni per SharePoint Online
 
 In questo articolo viene illustrato quali aspetti specifici, è necessario prendere in considerazione durante la progettazione di pagine per ottimizzare le prestazioni di SharePoint Online.
-  
-## <a name="in-this-article"></a>In questo articolo
-
-- [Metriche di SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md#spometrics) e [le conclusioni raggiunto causa dei dati](introduction-to-performance-tuning-for-sharepoint-online.md#data)
-    
-- [Utilizzare un account utente standard per il controllo delle prestazioni](introduction-to-performance-tuning-for-sharepoint-online.md#standuser)
-    
-- [Categorie di connessione per l'ottimizzazione delle prestazioni](introduction-to-performance-tuning-for-sharepoint-online.md#connect): [connessione al Server](introduction-to-performance-tuning-for-sharepoint-online.md#server), [connessioni di rete](introduction-to-performance-tuning-for-sharepoint-online.md#network)e [connessione del Browser](introduction-to-performance-tuning-for-sharepoint-online.md#browser)
-    
+     
 ## <a name="sharepoint-online-metrics"></a>Metriche di SharePoint Online
-<a name="spometrics"> </a>
 
 Le seguenti metriche generali per SharePoint Online forniscono dati reali sulle prestazioni:
   
@@ -46,7 +37,6 @@ Le seguenti metriche generali per SharePoint Online forniscono dati reali sulle 
 - Altri aspetti che causano la riduzione delle prestazioni
     
 ### <a name="conclusions-reached-because-of-the-data"></a>Conclusioni in base ai dati
-<a name="data"> </a>
 
 I dati dicono:
   
@@ -61,7 +51,6 @@ I dati dicono:
 È possibile utilizzare un semplice test di benchmark per misurare le prestazioni confrontando il tempo di caricamento del proprio portale con il tempo di caricamento della home page di OneDrive for Business, perché utilizza alcune funzionalità personalizzate. Questo spesso sarà il primo passaggio che il supporto chiederà di completare durante la risoluzione dei problemi relativi alle prestazioni di rete.
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>Utilizzare un account utente standard per il controllo delle prestazioni
-<a name="standuser"> </a>
 
 Un amministratore della raccolta siti, proprietario del sito, Editor o collaboratore appartengono a gruppi di sicurezza aggiuntive, disporre di autorizzazioni aggiuntive e pertanto sono elementi aggiuntivi che SharePoint viene caricato in una pagina.
   
@@ -70,15 +59,14 @@ Questa opzione è disponibile per SharePoint Online e SharePoint locale, ma in u
 Per valutare correttamente come una pagina verrà eseguite per gli utenti, è consigliabile utilizzare un account utente standard per evitare di caricare la creazione di controlli e un aumento del traffico relative ai gruppi di sicurezza.
   
 ## <a name="connection-categories-for-performance-tuning"></a>Categorie di connessione per l'ottimizzazione delle prestazioni
-<a name="connect"> </a>
 
 È possibile classificare le connessioni tra il server e l'utente in tre componenti principali. Prendere in considerazione tali componenti durante la progettazione delle pagine di SharePoint Online per comprendere i tempi di caricamento.
   
-- **Server.** I server che ospita Microsoft nei Data Center.
+- **Server** I server che ospita Microsoft nei Data Center.
     
-- **Network.** Microsoft network, Internet e la rete locale tra i Data Center e gli utenti.
+- **Rete** Microsoft network, Internet e la rete locale tra i Data Center e gli utenti.
     
-- **Browser.** Dove viene caricata la pagina.
+- **Browser** Dove viene caricata la pagina.
     
 All'interno di queste tre connessioni in genere esistono cinque motivi che causano il 95% delle pagine lente. Ciascuna di queste situazioni è illustrata in questo articolo:
   
@@ -93,19 +81,18 @@ All'interno di queste tre connessioni in genere esistono cinque motivi che causa
 - Elaborazione di Web Part
     
 ### <a name="server-connection"></a>Connessione al server
-<a name="server"> </a>
 
 Molti dei problemi che influiscono sulle prestazioni di SharePoint locale valgono anche per SharePoint Online.
   
 Come previsto, è necessario prestare maggiore controllo sul funzionamento dei server con SharePoint locale. Con SharePoint Online le cose sono leggermente diverse. Più lavoro si fa fare al server, maggiore sarà il tempo necessario per il rendering di una pagina. Con SharePoint, la causa principale a questo proposito sono le pagine complesse con più web part.
   
+SharePoint Server in locale
+  
+![Schermata del server in locale](media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
+  
 SharePoint Online
   
-![Schermata del server online](media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
-  
-SharePoint
-  
-![Schermata del server in locale](media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
+![Schermata del server online](media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
 Con SharePoint Online, alcune richieste di pagine potrebbero effettivamente finire per chiamare più server. Si potrebbe finire con una matrice di richieste tra i server per una singola richiesta. Tali interazioni sono costose da una prospettiva di caricamento della pagina e rendono le operazioni lente.
   
@@ -118,7 +105,6 @@ Esempi di tali interazioni da server a server sono:
 L'altra operazione che può rallentare le interazioni del server è la mancanza della cache. A differenza di SharePoint locale, esiste una possibilità molto piccola di raggiungere lo stesso server di una pagina visitata in precedenza. Ciò rende la memorizzazione degli oggetti nella cache obsoleta.
   
 ### <a name="network-connection"></a>Connessione di rete
-<a name="network"> </a>
 
 Con SharePoint locale che non utilizzano una rete WAN, è possibile utilizzare una connessione ad alta velocità tra Data Center e gli utenti finali. In generale, aspetti sono facile da gestire da un punto di vista di rete.
   
@@ -138,12 +124,11 @@ Indipendentemente dalla versione di SharePoint (e di rete) utilizzata, le operaz
     
 - Grande distanza fisica con il server
     
-Una funzionalità che è possibile utilizzare in SharePoint Online è Microsoft CDN (rete CDN). Una rete CDN è fondamentalmente una raccolta distribuita dei server distribuiti tra più centri dati. Con una rete CDN, il contenuto delle pagine può essere ospitato in un server all'incirca il client anche se il client è lontana dal Server di origine SharePoint. Microsoft utilizzerà questo più in futuro per archiviare le istanze locali di pagine che non possono essere personalizzate, ad esempio SharePoint Online admin home page. Per ulteriori informazioni su CDN, vedere [reti di distribuzione del contenuto](https://support.office.com/article/Content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f).
+Una funzionalità che è possibile utilizzare in SharePoint Online è Microsoft CDN (rete CDN). Una rete CDN è fondamentalmente una raccolta distribuita dei server distribuiti tra più centri dati. Con una rete CDN, il contenuto delle pagine può essere ospitato in un server all'incirca il client anche se il client è lontana dal Server di origine SharePoint. Microsoft utilizzerà questo più in futuro per archiviare le istanze locali di pagine che non possono essere personalizzate, ad esempio SharePoint Online admin home page. Per ulteriori informazioni su CDN, vedere [reti di distribuzione del contenuto](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks).
   
 Un elemento che è necessario tenere presente ma sul quale potrebbe non essere possibile agire, è la velocità della connessione del provider di servizi Internet. Uno strumento di test di velocità semplice indica la velocità della connessione.
   
 ### <a name="browser-connection"></a>Connessione del browser
-<a name="browser"> </a>
 
 Esistono alcuni fattori da considerare con il browser Web dal punto di vista delle prestazioni.
   
