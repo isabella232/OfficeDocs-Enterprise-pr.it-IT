@@ -3,7 +3,7 @@ title: Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Off
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/23/2018
+ms.date: 11/06/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Riepilogo: il nuovo servizio Web endpoint non include un numero limitato di endpoint per scenari specifici.'
 hideEdit: true
-ms.openlocfilehash: 1d551f8757464aa1336bc351de8689c103f0a54f
-ms.sourcegitcommit: d93f7a51e8cdefdfc9933cdf1f9e413b013bb367
+ms.openlocfilehash: 65b425c7a94374e80fb9069ab831e7ab92de8313
+ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25719010"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "26024668"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365
 
@@ -49,17 +49,18 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 | 3  | Azure AD Connect (opzione con SSO) – WinRM e sessione remota di PowerShell | Ambiente STS del cliente (server AD FS e proxy AD FS) \| porte TCP 80 e 443 | Traffico del server in ingresso |
 | 4  | STS come server proxy AD FS (solo per clienti federati) | STS del cliente (come proxy AD FS) \| porte TCP 443 o TCP 49443 con ClientTLS | Traffico del server in ingresso |
 | 5  | [Messaggistica unificata di Exchange Online/integrazione SBC](https://technet.microsoft.com/library/jj673565.aspx) | Bidirezionale tra session border controller locale e *.um.outlook.com | Solo traffico del server in uscita |
-| 6  | Funzioni per coesistenza di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), come la condivisione di informazioni sulla disponibilità. | Server Exchange locale del cliente | Traffico del server in ingresso |
-| 7  | Autenticazione proxy di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | STS locale del cliente | Traffico del server in ingresso |
-| 8  | Consente di configurare [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), utilizzando la Configurazione ibrida guidata di Exchange. <br> Nota: gli endpoint sono necessari solo per configurare Exchange ibrido  | ```domains.live.com``` sulle porte TCP 80 e 443, necessarie solo per la configurazione ibrida guidata di Exchange 2010 SP3. | Solo traffico del server in uscita |
-| 9  | Il servizio di rilevamento automatico è usato negli scenari di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) con [autenticazione moderna ibrida con Outlook per iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Server Exchange locale del cliente in TCP 443 | Traffico del server in ingresso |
-| 10  | Skype for Business in Office 2016 include la condivisione dello schermo basata su video che utilizza le porte UDP. I precedenti client di Skype for Business in Office 2013 e versioni precedenti utilizzavano la porta RDP su TCP 443. | Porta TCP 443 aperta su 52.112.0.0/14 | Client precedenti di Skype for Business in Office 2013 e versioni precedenti |
-| 11  | Connettività server ibrida locale di Skype for Business per Skype for Business online | Porte UDP 50.000-59.999, 13.107.64.0/18, 52.112.0.0/14 <BR>  Porte TCP 50.000-59.999 | Connettività in uscita del server Skype for Business locale |
-| 12  | La rete PSTN cloud con connettività ibrida locale richiede la connettività di rete aperta agli host locali. Per ulteriori dettagli sulle configurazioni ibride di Skype for Business Online,  | vedere [Soluzioni ibride di Skype for Business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Ingresso ibrido locale di Skype for Business |
-| 13  | **FQDN di autenticazione e identità** <br> Il nome di dominio completo (FQDN) ```secure.aadcdn.microsoftonline-p.com``` deve essere situato nell'area siti attendibili di Edge o Internet Explorer (IE) del client per poter funzionare. |  | Siti attendibili |
-| 14  |  **FQDN di Microsoft Teams** <br> Se si usa Internet Explorer o Microsoft Edge, è necessario attivare i cookie dei siti Web visualizzati e di terze parti e aggiungere i nomi di dominio completo per Teams per i siti attendibili. Si tratta di un'aggiunta di FQDN, CDN e telemetrie all'intera famiglia di prodotti di cui sopra. Vedere [Problemi noti di Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) per ulteriori informazioni. |  | Siti attendibili |
-| 15  |  **FQDN di SharePoint Online e OneDrive for Business** <br> Tutti i nomi di dominio completo di ".sharepoint.com" con "\<tenant>" nel nome di dominio completo devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. Oltre a FQDN, CDN e telemetrie dell'intera famiglia di prodotti di cui sopra, è necessario aggiungere anche questi endpoint. |  | Siti attendibili |
-| 16  | **Yammer**  <br> Yammer è disponibile solo nel browser e necessita di un'autenticazione proxy da parte dell'utente. Tutti i FQDN di Yammer devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. |  | Siti attendibili |
+| 6  | Migrazione della cassetta postale. Quando viene avviata la migrazione della cassetta postale da [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) locale a Office 365, Office 365 si connette al server pubblicato di Servizi Web Exchange (EWS) / Servizi di replica delle cassette postali (MRS). Se sono necessari gli indirizzi IP NAT utilizzati dai server di Exchange Online per limitare le connessioni in ingresso da specifici intervalli IP di origine, questi sono elencati in [URL e intervalli IP di Office 365](urls-and-ip-address-ranges.md) nell'area dei servizi "Exchange Online". Occorre verificare che non sia influenzato l'accesso agli endpoint EWS pubblicati come OWA, assicurandosi che il proxy MRS si risolve in un FQDN e indirizzo IP pubblico separati prima di limitare i collegamenti TCP 443 da specifici intervalli IP di origine. | Proxy EWS/MRS locale del cliente<br> Porta TCP 443 | Traffico del server in ingresso |
+| 7  | Funzioni per coesistenza di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), come la condivisione di informazioni sulla disponibilità. | Server Exchange locale del cliente | Traffico del server in ingresso |
+| 8  | Autenticazione proxy di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | STS locale del cliente | Traffico del server in ingresso |
+| 9  | Consente di configurare [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), utilizzando la Configurazione ibrida guidata di Exchange. <br> Nota: gli endpoint sono necessari solo per configurare Exchange ibrido  | ```domains.live.com``` sulle porte TCP 80 e 443, necessarie solo per la configurazione ibrida guidata di Exchange 2010 SP3. | Solo traffico del server in uscita |
+| 10  | Il servizio di rilevamento automatico è usato negli scenari di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) con [autenticazione moderna ibrida con Outlook per iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Server Exchange locale del cliente in TCP 443 | Traffico del server in ingresso |
+| 11  | Skype for Business in Office 2016 include la condivisione dello schermo basata su video che utilizza le porte UDP. I precedenti client di Skype for Business in Office 2013 e versioni precedenti utilizzavano la porta RDP su TCP 443. | Porta TCP 443 aperta su 52.112.0.0/14 | Client precedenti di Skype for Business in Office 2013 e versioni precedenti |
+| 12  | Connettività server ibrida locale di Skype for Business per Skype for Business online | Porte UDP 50.000-59.999, 13.107.64.0/18, 52.112.0.0/14 <BR>  Porte TCP 50.000-59.999 | Connettività in uscita del server Skype for Business locale |
+| 13  | La rete PSTN cloud con connettività ibrida locale richiede la connettività di rete aperta agli host locali. Per ulteriori dettagli sulle configurazioni ibride di Skype for Business Online,  | vedere [Soluzioni ibride di Skype for Business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Ingresso ibrido locale di Skype for Business |
+| 14  | **FQDN di autenticazione e identità** <br> Il nome di dominio completo (FQDN) ```secure.aadcdn.microsoftonline-p.com``` deve essere situato nell'area siti attendibili di Edge o Internet Explorer (IE) del client per poter funzionare. |  | Siti attendibili |
+| 15  |  **FQDN di Microsoft Teams** <br> Se si usa Internet Explorer o Microsoft Edge, è necessario attivare i cookie dei siti Web visualizzati e di terze parti e aggiungere i nomi di dominio completo per Teams per i siti attendibili. Si tratta di un'aggiunta di FQDN, CDN e telemetrie all'intera famiglia di prodotti di cui sopra. Vedere [Problemi noti di Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) per ulteriori informazioni. |  | Siti attendibili |
+| 16  |  **FQDN di SharePoint Online e OneDrive for Business** <br> Tutti i nomi di dominio completo di ".sharepoint.com" con "\<tenant>" nel nome di dominio completo devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. Oltre a FQDN, CDN e telemetrie dell'intera famiglia di prodotti di cui sopra, è necessario aggiungere anche questi endpoint. |  | Siti attendibili |
+| 17  | **Yammer**  <br> Yammer è disponibile solo nel browser e necessita di un'autenticazione proxy da parte dell'utente. Tutti i FQDN di Yammer devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. |  | Siti attendibili |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
