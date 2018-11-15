@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Riepilogo: Informazioni su come ExpressRoute grado di aiutarti con connessioni più veloci e affidabili a piattaforme e servizi cloud di Microsoft.'
-ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1cd78372d37e40a53ba7725ff3653ef01daa48b0
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915491"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525837"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute per la connettività cloud Microsoft
 
@@ -102,7 +102,7 @@ Una singola connessione ExpressRoute supporta fino a tre diverse Border Gateway 
 
 ![Figura 3: Le tre diverse relazioni BGP in una sola connessione ExpressRoute](media/Network-Poster/ERPeering.png)
   
-Nella figura 3 viene mostrata una connessione ExpressRoute da una rete locale. La connessione ExpressRoute include tre relazioni peering logiche. Una relazione di peering Microsoft passerà a servizi SaaS Microsoft, tra cui Office 365 e Dynamcs CRM Online. Una relazione di peering pubblica passerà a servizi di Azure PaaS. Una relazione di peering privata passa per Azure IaaS e un gateway di rete virtuale che ospita le macchine virtuali.
+Nella figura 3 viene mostrata una connessione ExpressRoute da una rete locale. La connessione ExpressRoute ha tre relazioni peering logiche. Una relazione di peering Microsoft passerà a servizi SaaS Microsoft, tra cui Office 365 e Dynamcs CRM Online. Una relazione di peering pubblica passerà a servizi di Azure PaaS. Una relazione di peering privata passa per Azure IaaS e un gateway di rete virtuale che ospita le macchine virtuali.
   
 La relazione BGP peering Microsoft: 
   
@@ -186,9 +186,9 @@ Quando si crea una connessione ExpressRoute in un percorso peering cloud Microso
   
 Ciò potrebbe causare recapito non ottimale di datacenter Microsoft locale per il modello a tutti per qualsiasi servizio di integrazione applicativa.
   
-**Figura 7: Esempio di un'organizzazione geograficamente distribuita che utilizza una sola connessione ExpressRoute**
+**Figura 7: Esempio di un'organizzazione geograficamente distribuiti che utilizza una sola connessione ExpressRoute**
 
-![Figura 7: Esempio di un'organizzazione geograficamente distribuita che utilizza una sola connessione ExpressRoute](media/Network-Poster/MSNet1.png)
+![Figura 7: Esempio di un'organizzazione geograficamente distribuiti che utilizza una sola connessione ExpressRoute](media/Network-Poster/MSNet1.png)
   
 Figura 7 mostra un'organizzazione con due percorsi 1 località in Nord-Ovest degli Stati Uniti e 2 posizione del nord-est. Sono connessi da un qualsiasi per qualsiasi provider WAN. L'organizzazione ha inoltre una connessione ExpressRoute in un percorso peering Microsoft costa occidentale. Il traffico proveniente da posizioni 2 in Nord-Est destinate a un datacenter costa orientale deve recarsi completamente WAN dell'organizzazione in costa occidentale del percorso peering Microsoft e quindi nuovamente in tutto il paese sulla rete cloud Microsoft per la zona est Data Center.
   
@@ -236,7 +236,7 @@ Per un ufficio regionale appropriato per il traffico di Office 365:
     
 - Centri dati di Office 365 in un altro continente passa attraverso la rete cloud Microsoft intercontinental.
     
-Per ulteriori informazioni, vedere:
+Per altre informazioni, vedere:
   
 - [ExpressRoute Azure per la formazione su Office 365](https://channel9.msdn.com/series/aer/)
     
