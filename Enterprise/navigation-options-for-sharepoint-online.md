@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: In questo articolo vengono descritti lo spostamento opzioni siti con pubblicazione di SharePoint abilitati in SharePoint Online. La configurazione della struttura di spostamento e la scelta influisce sulle notevolmente le prestazioni e scalabilità dei siti di SharePoint Online.
-ms.openlocfilehash: 08790dcee343e9e69bbaab149cce8a390470e7d6
-ms.sourcegitcommit: 5731dce2440e5a7a261f6360e8e2e9639d339d4e
+ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23957451"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547178"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opzioni di spostamento per SharePoint Online
 
@@ -193,7 +193,7 @@ Questo approccio prevede la creazione di una pagina master personalizzata e sost
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. I risultati vengono assegnati alla matrice self.nodes e viene creata una gerarchia dagli oggetti utilizzando linq.js assegnazione l'output a una matrice self.heirarchy. Questa matrice è l'oggetto che viene associato al codice HTML. Questa operazione viene eseguita nella funzione toggleView() passando l'oggetto self-alla funzione ko.applyBinding().<br/>In questo modo quindi la matrice di gerarchia per l'associazione ai HTML seguenti:<br/>
+8. I risultati vengono assegnati alla matrice self.nodes e viene creata una gerarchia dagli oggetti utilizzando linq.js assegnazione l'output a una matrice self.hierarchy. Questa matrice è l'oggetto che viene associato al codice HTML. Questa operazione viene eseguita nella funzione toggleView() passando l'oggetto self-alla funzione ko.applyBinding().<br/>In questo modo quindi la matrice di gerarchia per l'associazione ai HTML seguenti:<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>

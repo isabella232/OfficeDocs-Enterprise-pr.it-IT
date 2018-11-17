@@ -3,7 +3,7 @@ title: Come configurare Exchange Server locale per utilizzare l'autenticazione m
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 09/28/2018
+ms.date: 11/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Ibrida moderno autenticazione (alta), è un metodo di gestione delle identità che offre maggiore protezione l'autenticazione degli utenti e l'autorizzazione ed è disponibile per le distribuzioni ibride di Exchange server locale.
-ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
-ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
+ms.openlocfilehash: df5ea03b06ee1c101b03e19c7acb445c9543586b
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347606"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547158"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida
 
@@ -72,7 +72,9 @@ Get-OABVirtualDirectory | FL server,*url*
     
 Verificare che gli URL client possono connettersi a elencato come nomi delle entità servizio HTTPS in AAD.
   
-1. Innanzitutto, connettersi a AAD con [le relative istruzioni](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell).
+1. Innanzitutto, connettersi a AAD con [le relative istruzioni](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell). 
+
+ **Nota** È necessario utilizzare l'opzione Connect-MsolService da questa pagina per poter utilizzare il comando riportato di seguito. 
     
 2. Per lo scambio correlati URL, digitare il comando seguente:
     
@@ -148,7 +150,7 @@ Se si abilita alta, successivo account di accesso del client utilizzerà il nuov
   
 È inoltre deve tenere premuto il tasto CTRL contemporaneamente a destra fare clic sull'icona per il client di Outlook (anche nella barra delle applicazioni Windows Notifications) e fare clic su 'stato di connessione. Cercare l'indirizzo SMTP del client in base a un tipo di 'Uso' del ' portanti\*", che rappresenta il token portanti utilizzato in OAuth.
   
- **Nota** È necessario configurare Skype for Business con alta? È necessario due articoli: uno che elenca [topologie supportate](https://technet.microsoft.com/en-us/library/mt803262.aspx)e uno che viene illustrato [come eseguire la configurazione](configure-skype-for-business-for-hybrid-modern-authentication.md).
+ **Nota** È necessario configurare Skype for Business con alta? È necessario due articoli: uno che elenca [topologie supportate](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)e uno che viene illustrato [come eseguire la configurazione](configure-skype-for-business-for-hybrid-modern-authentication.md).
   
 
 ## <a name="related-topics"></a>Argomenti correlati
