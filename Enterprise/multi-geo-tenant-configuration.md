@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Informazioni sulla configurazione di OneDrive for Business Multi-Geo
-ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: e6a4ee9bd933b3f0db278ca2a7b04661bf123184
+ms.sourcegitcommit: 444efa9e5ea6c0102bb7611d2a9a6b9e072e8a48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849872"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539138"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configurazione del tenant di OneDrive for Business Multi-Geo
 
@@ -112,7 +112,7 @@ In AAD sono disponibili due tipi di oggetti utente: gli utenti solo cloud e gli 
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Sincronizzare la posizione dati preferita dell'utente utilizzando AD Connect 
 
-Se gli utenti dell'organizzazione vengono sincronizzati da un sistema Active Directory locale in Azure Active Directory, il relativo PreferredDataLocation deve essere popolato in Active Directory e sincronizzato in AAD. Seguire la procedura in [Sincronizzazione di Azure AD Connect: modificare la configurazione predefinita](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) per configurare la sincronizzazione della posizione dati preferita da Active Directory locale in Azure Active Directory.
+Se gli utenti dell'organizzazione vengono sincronizzati da un sistema Active Directory locale in Azure Active Directory, il relativo PreferredDataLocation deve essere popolato in Active Directory e sincronizzato in AAD. Seguire la procedura in [Sincronizzazione di Azure AD Connect: configurare la posizione dei dati preferita per le risorse di Office 365](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) per configurare la sincronizzazione della posizione dati preferita da Active Directory locale in Azure Active Directory.
 
 È consigliabile includere l'impostazione della posizione dati preferita dell'utente nel processo standard di creazione degli utenti.
 
