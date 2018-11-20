@@ -133,6 +133,7 @@
 ##### [Eliminare una posizione geografica](delete-a-geo-location.md)
 ##### [Esperienza utente in un ambiente multi-geo](multi-geo-user-experience.md)
 #### [Configurare OneDrive for Business Multi-Geo](multi-geo-tenant-configuration.md)
+##### [Configurare la posizione dei dati preferita](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### [Configurare la ricerca per OneDrive for Business Multi-Geo](configure-search-for-multi-geo.md)
 #### [Spostare una libreria OneDrive in un'altra posizione geo](move-onedrive-between-geo-locations.md)
 ### [Funzionalità Multi-Geo in Exchange Online](multi-geo-capabilities-in-exchange-online.md)
