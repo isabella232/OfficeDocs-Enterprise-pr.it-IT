@@ -3,7 +3,6 @@ title: Integrazione di Azure con Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -16,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: La sottoscrizione di Office 365 include una sottoscrizione per Azure Active Directory. Integrazione di Office 365 con Azure Active Directory se si desidera sincronizzazione delle password o single sign-on con l'ambiente locale.
-ms.openlocfilehash: 276243b953d18953ef3ea8f1189d1af8292dca6a
-ms.sourcegitcommit: b1cd20300a616ebef2f00668f42ba14e8aa5fcab
+ms.openlocfilehash: 8b7af5ba8d5106900384369a3e6548af40f9e201
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531839"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674420"
 ---
 # <a name="azure-integration-with-office-365"></a>Integrazione di Azure con Office 365
 
@@ -57,7 +56,7 @@ Per ulteriori informazioni su Office 365 e Azure Active Directory, vedere [Under
    
 Per altre risorse su Office 365 e Microsoft Cloud, consultare queste risorse:
   
-- [Identità di Microsoft Cloud per Enterprise Architects](https://go.microsoft.com/fwlink/p/?LinkId=828642)
+- [Identità di Microsoft Cloud per Enterprise Architects](https://go.microsoft.com/fwlink/p/?LinkId=524586)
     
 - [Distribuire la sincronizzazione della directory (DirSync) di Office 365 in Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     
