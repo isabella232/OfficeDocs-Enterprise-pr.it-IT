@@ -3,7 +3,7 @@ title: Elementi comuni della connettività cloud Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "Riepilogo: Informazioni su come preparare la rete e gli elementi comuni dell'infrastruttura di rete."
-ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
-ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
+ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25897029"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872217"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementi comuni della connettività cloud Microsoft
 
@@ -62,7 +62,7 @@ Nella figura 1 viene illustrato come una rete locale può essere connesso a offe
     
 - **Server proxy:** Gestisce le richieste di contenuto web per conto degli utenti intranet. Un proxy inverso consente le richieste in ingresso non richiesto.
     
-- **Firewall esterno:** Consente il traffico in uscita e il traffico in ingresso specificato. Consente di eseguire conversione degli indirizzi.
+- **Firewall esterno:** Consente il traffico in uscita e il traffico in ingresso specificato. Possono eseguire conversione degli indirizzi, controllo dei pacchetti, interrompere SSL e Inspect o prevenzione della perdita di dati.
     
 - **Connessione WAN al provider di servizi Internet:** Una connessione basata su gestore di telefonia per un provider di servizi Internet, che peer per il routing e la connettività Internet.
     
