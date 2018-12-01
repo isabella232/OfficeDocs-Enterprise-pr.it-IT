@@ -3,7 +3,7 @@ title: Panoramica del cloud ibrido
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Riepilogo: Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.'
-ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915821"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123313"
 ---
 # <a name="hybrid-cloud-overview"></a>Panoramica del cloud ibrido
 
@@ -55,7 +55,7 @@ Scenari per il cloud ibrida con servizi cloud Microsoft variano con la piattafor
   
 - SaaS
     
-    Servizi Microsoft SaaS includono Office 365, Microsoft Intune e Microsoft Dynamics 365. Scenari basati su cloud ibrida con Microsoft SaaS combinano questi servizi con applicazioni o servizi locali. Ad esempio, Exchange Online in esecuzione in Office 365 può essere integrata con Skype per 2015 Business che viene distribuito in locale.
+    Servizi Microsoft SaaS includono Office 365, Microsoft Intune e Microsoft Dynamics 365. Scenari basati su cloud ibrida con Microsoft SaaS combinano questi servizi con applicazioni o servizi locali. Ad esempio, Exchange Online in esecuzione in Office 365 può essere integrata con Skype per 2019 Business che viene distribuito in locale.
     
 - PaaS di Azure
     
@@ -90,8 +90,4 @@ Scenari per il cloud ibrida con servizi cloud Microsoft variano con la piattafor
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
- 
-
 

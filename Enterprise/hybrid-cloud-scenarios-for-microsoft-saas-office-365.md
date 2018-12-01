@@ -3,7 +3,7 @@ title: Scenari per il cloud ibrido per SaaS Microsoft (Office 365)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: "Sintesi: Comprendere l'architettura ibrida e gli scenari delle offerte cloud basate sul software distribuito come servizio Microsoft (SaaS) in Office 365."
-ms.openlocfilehash: 53187d53b55eedf1fca4f0b98e34accf454c67df
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 063cbd03a2cc65a6cd278ab2efcea235079f801b
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915591"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123413"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Scenari per il cloud ibrido per SaaS Microsoft (Office 365)
 
@@ -43,7 +43,7 @@ Per ogni livello dell'architettura:
     
   - Skype for Business Server combinato con Skype for Business Online e i nuovi scenari con Cloud PBX e la versione del connettore cloud
     
-  - SharePoint Server 2016 o SharePoint Server 2013 combinati con SharePoint Online (scenari multipli)
+  - SharePoint Server 2019, 2016 Server SharePoint o SharePoint Server 2013 combinato con SharePoint Online (in diverse situazioni)
     
     Esiste anche Exchange Online con Skype for Business Server locale, uno scenario ibrido di prodotto incrociato.
     
@@ -59,29 +59,23 @@ Per ogni livello dell'architettura:
     
     Può essere costituito da server esistenti di Exchange, SharePoint e Skype for Business, che devono essere aggiornati alle versioni più recenti. È quindi possibile combinarli con le rispettive controparti in Office 365 per gli scenari ibridi.
     
-Impostare l'[Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md).
+Configurare il proprio ambiente di sviluppo e di testing di Office 365, vedere [Guide dei laboratori di testing di Office 365](cloud-adoption-test-lab-guides-tlgs.md).
   
-## <a name="skype-for-business-2015-hybrid"></a>Skype for Business 2015 ibrido
+## <a name="skype-for-business-hybrid"></a>Versione ibrida di Skype for Business
 
-Skype for Business 2015 ibrido consente di combinare una distribuzione locale esistente con Skype for Business Online. Alcuni utenti sono ospitati in locale e alcuni sono ospitati online; tuttavia, condividono lo stesso dominio SIP (Session Initiation Protocol), come contoso.com. Puoi usare questa configurazione ibrida per migrare dall'ambiente locale a Office 365 in base alle esigenze di pianificazione. È possibile integrare Skype for Business 2015 con Exchange Online.
+Skype per l'ambiente ibrido Business consente di combinare una distribuzione locale esistente con Skype Business online. Alcuni utenti sono ospitati in locale e alcuni utenti ospitati in linea, ma gli utenti condividono lo stesso dominio protocollo SIP (Session Initiation), ad esempio contoso.com. È possibile utilizzare questa configurazione ibrida per eseguire la migrazione da locale a Office 365 nel tempo, al calendario. Skype per le aziende può inoltre essere integrata con [Exchange Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint).
   
-**Figura 2: configurazione ibrida di Skype for Business 2015**
+**Figura 2: Skype per la configurazione ibrida Business**
 
-![Configurazione ibrida di Skype for Business 2015](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
+![Skype per la configurazione ibrida Business](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
-Nella figura 2 viene mostrata la configurazione ibrida di Skype for Business 2015, la quale comprende il pool Front End di Skype for Business 2015 locale e il server perimetrale che comunica con Skype for Business Online in Office 365.
+Nella figura 2 viene Skype per la configurazione ibrida Business, costituito da un Skype locale per pool front end di Business ed edge server per comunicare con Skype Business online in Office 365.
   
-Per ulteriori informazioni, vedere:
-  
-- [Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business Online](https://technet.microsoft.com/library/jj205403.aspx)
-    
-- [Configurazione ibride supportate per Skype for Business Server 2015](https://technet.microsoft.com/library/jj945633.aspx)
-    
-- [Versione ibrida di Skype for Business](http://hybrid.office.com/skype-for-business/)
+Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype per Business Server e Skype Business online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a>Cloud PBX con Skype for Business Server
 
-Cloud PBX con Skype for Business Server consente di trasferire una distribuzione locale di Skype for Business Server esistente in una topologia con connettività PSTN (Public Switched Telephone Network).  
+Cloud PBX con Skype per Business Server, è possibile effettuare la transizione di un Skype esistente per la distribuzione locale Business Server in una topologia con connettività PSTN Public Switched Telephone Network () locale. 
   
 **Figura 3: cloud PBX con Skype for Business Server**
 
@@ -91,13 +85,14 @@ Nella figura 3 viene mostrata la configurazione di Cloud PBX con Skype for Busin
   
 Gli utenti nell'organizzazione ospitati nel cloud possono ricevere servizi PBX (Private Branch eXchange) dal cloud Microsoft che includono segnalazione e segreteria telefonica; tuttavia, la connettività PSTN (segnale di linea) viene fornita mediante VoIP aziendale dalla distribuzione di Skype for Business Server locale.
   
-È un ottimo esempio di configurazione ibrida che permette di effettuare gradualmente la migrazione a un servizio basato sul cloud. È possibile mantenere le funzionalità vocali degli utenti non appena vengono trasferiti su Skype for Business Online. È possibile trasferire gli utenti al proprio ritmo, sapendo che le funzionalità vocali saranno comunque disponibili a prescindere da dove sono ospitate. 
+Si tratta di un ottimo esempio una configurazione ibrida che consente di eseguire gradualmente la migrazione a un servizio basato su cloud. È possibile mantenere funzionalità vocali degli utenti quando si inizia a spostarli Skype Business online. È possibile spostare gli utenti al proprio ritmo sapere che le funzionalità vocali continuerà no materia cui sono ospitati. 
   
-Per ulteriori informazioni, vedere [Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business Online o Lync Server 2013](https://technet.microsoft.com/library/jj205403.aspx).
+Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype per Business Server e Skype Business online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
   
 Se non disponi già di una distribuzione di Lync Server o Skype for Business Server esistente, puoi usare la versione del connettore cloud di Skype for Business, un set di macchine virtuali in pacchetto che implementano la connettività PSTN locale con Cloud PBX.
   
-Per ulteriori informazioni, vedere [Piano per Skype for Business Cloud Connector Edition](https://technet.microsoft.com/library/mt605227.aspx).
+Per ulteriori informazioni, vedere [Piano per Skype for Business Cloud Connector Edition](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
+
   
 ## <a name="sharepoint-hybrid"></a>Ambiente ibrido di SharePoint
 
@@ -111,27 +106,23 @@ Nella figura 4 viene mostrata la configurazione ibrida di SharePoint, che compre
   
 Scenari ibridi di SharePoint:
   
-- [Versione ibrida di OneDrive for Business](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
+- [Versione ibrida di OneDrive for Business](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap)
     
-- [Versione ibrida dei siti del team](https://technet.microsoft.com/library/mt346110%28v=office.16%29.aspx)
+- [Soluzione Extranet B2B ibrida](https://docs.microsoft.com/sharepoint/create-b2b-extranet)
     
-- [Soluzione Extranet B2B ibrida](https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037)
+- [Ricerca ibrida](https://docs.microsoft.com/SharePoint/hybrid/configure-cloud-hybrid-searchroadmap)
     
-- [Ricerca ibrida](https://technet.microsoft.com/library/dn720906%28v=office.16%29.aspx)
+- [Profili ibridi](https://docs.microsoft.com/SharePoint/hybrid/plan-hybrid-profiles)
     
-- [Profili ibridi](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
-    
-- [Selezione ibrida](https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c)
+- [Selezione ibrida](https://docs.microsoft.com/SharePoint/hybrid/hybrid-picker-in-the-sharepoint-online-admin-center)
     
     È facile abilitare gli scenari ibridi con le procedure guidate che rendono automatica la configurazione ibrida, disponibili dall'interfaccia di amministrazione di SharePoint Online in Office 365.
     
-- [Icona di avvio delle app estendibile ibrida](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
+- [Icona di avvio delle app estendibile ibrida](https://docs.microsoft.com/SharePoint/hybrid/the-extensible-hybrid-app-launcher)
     
     Consente agli utenti di visualizzare e usare i video in Office 365 e le app e le esperienze Delve nelle pagine della relativa farm di SharePoint locale.
     
 Tutti questi scenari ibridi di SharePoint, ad eccezione dell'icona di avvio delle app ibrida estensibile, sono disponibili per gli utenti di SharePoint 2016 e SharePoint 2013.
-  
-Per ulteriori informazioni, vedere [SharePoint ibrido](http://hybrid.office.com/sharepoint/).
   
 ## <a name="exchange-server-2016-hybrid"></a>Exchange Server 2016 ibrido
 
@@ -157,15 +148,11 @@ Questa configurazione ibrida:
     
 Puoi anche integrare questa configurazione ibrida con altre applicazioni di Microsoft Office 365, tra cui Skype for Business Online e SharePoint Online.
   
-Per ulteriori informazioni, vedere [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) e [Versione ibrida di Exchange](http://hybrid.office.com/exchange/).
+Per ulteriori informazioni, vedere [Distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
   
 ## <a name="see-also"></a>Vedere anche
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

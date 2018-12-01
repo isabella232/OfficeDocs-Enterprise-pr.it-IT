@@ -3,7 +3,7 @@ title: Scenari cloud ibridi per Azure PaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: 'Riepilogo: Informazioni su architettura ibrida e gli scenari per la piattaforma Microsoft come servizio (PaaS)-basato su cloud offerte in Azure.'
-ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915011"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123333"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scenari cloud ibridi per Azure PaaS
 
@@ -95,33 +95,9 @@ In questo esempio Azure PaaS ibrida applicazione sia un'app per dispositivi mobi
     
 Dal momento che il provider di identità locale è stato sincronizzato con Azure Active Directory, l'app per dispositivi mobili personalizzato e le applicazioni LOB possano convalidare il richiedente nome dell'account utente.
   
-## <a name="stretch-database-with-sql-server-2016"></a>Estensione database con SQL Server 2016
-
-Estensione database è una funzionalità di SQL Server 2016 che consente di spostare in modo sicuro e in modo trasparente freddi dati, ad esempio dati business chiuso in una tabella di grandi dimensioni che contiene informazioni sugli ordini, a un database SQL adatta in Azure.
-  
-Quando estesa, il contenuto di un'istanza di SQL Server, un database o anche una singola tabella è la combinazione di dati locali nel server SQL Server 2016 e dati remoti in Azure. Dati diventa idonei per Ridimensiona vengono automaticamente spostati Azure da SQL Server 2016.
-  
-Database Ridimensiona con SQL Server 2016 illustrato nella figura 4.
-  
-**Figura 4: Database esteso con SQL Server 2016**
-
-![Estensione database con SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
-  
-Nella figura 4, una rete locale ospita un server che esegue SQL Server 2016 con un database locale di piccole dimensioni. Azure PaaS ospita un'istanza di Database Ridimensiona Azure SQL Server con la parte estesa del database. Query T-SQL da un utente locale inviati a SQL server in locale in modo sicuro vengono inoltrate al Database Ridimensiona SQL Azure, che restituisce i risultati all'utente richiedente.
-  
- Le query degli utenti che includono i dati cronologici vengono inoltrate in modo trasparente all'estensione database Azure SQL. Le query non devono essere riscritte, anche se la tabella viene estesa.
-  
-Il database esteso fornisce un'opzione conveniente per l'archiviazione a lungo termine e l'accesso trasparente ai dati cronologici. Consente inoltre di risolvere problemi relativi a prestazioni e disponibilità che si verificano quando le tabelle diventano molto grandi.
-  
-Per ulteriori informazioni, vedere [Database adatta](https://msdn.microsoft.com/library/dn935011.aspx).
-  
 ## <a name="see-also"></a>Vedere anche
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

@@ -3,7 +3,7 @@ title: Architettura degli scenari cloud ibridi Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Riepilogo: Comprendere l'architettura di ibrida offerte cloud di Microsoft."
-ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914921"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123393"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architettura degli scenari cloud ibridi Microsoft
 
@@ -33,7 +33,7 @@ Utilizzare un approccio dell'architettura per pianificare e implementare scenari
   
 Nella figura 1 viene illustrato lo stack di cloud Microsoft ibrida e il relativo livello, che comprendono locale, rete, identità, applicazioni e gli scenari e la categoria del servizio cloud (SaaS Microsoft Azure PaaS e Azure PaaS).
   
-Il livello applicazioni e gli scenari contiene gli scenari di cloud ibrida specifica che sono descritti negli articoli aggiuntivi di questo modello. L'identità, rete e locali livelli possono essere comuni per le categorie di servizio cloud (SaaS, PaaS o PaaS).
+Il livello applicazioni e gli scenari ha di scenari basati su cloud ibrida specifica che sono descritti negli articoli aggiuntivi di questo modello. L'identità, rete e locali livelli possono essere comuni per le categorie di servizio cloud (SaaS, PaaS o PaaS).
   
 - Locale
     
@@ -68,8 +68,4 @@ Molte aziende, tra cui Microsoft, utilizzano un approccio tre fasi per adottando
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
