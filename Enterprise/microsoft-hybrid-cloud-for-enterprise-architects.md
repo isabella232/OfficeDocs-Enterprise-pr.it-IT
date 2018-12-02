@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 'Riepilogo: Cosa devono sapere gli architetti IT degli scenari ibridi che utilizzano i servizi cloud e le piattaforme Microsoft.'
-ms.openlocfilehash: a2859d6ce677a37541948d481530aee8f46adf7b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915551"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872247"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Cloud ibrido Microsoft per Enterprise Architects
 
@@ -36,7 +36,7 @@ In questo articolo è disponibile il collegamento a una serie di articoli in cui
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
 [Altre lingue](https://www.microsoft.com/download/details.aspx?id=54424)
   
-È inoltre possibile visualizzare tutti i modelli nelle [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e consultare la [Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://aka.ms/cloudarchitecture).
+È anche possibile vedere tutti i modelli nelle [risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).
   
 Vedere le seguenti sezioni:
   
