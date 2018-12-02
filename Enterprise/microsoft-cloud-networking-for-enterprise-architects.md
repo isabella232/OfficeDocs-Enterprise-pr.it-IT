@@ -3,7 +3,7 @@ title: Rete cloud Microsoft per Enterprise Architects
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Riepilogo: Progettare una rete per i servizi cloud e le piattaforme Microsoft.'
-ms.openlocfilehash: ac499dde3db65d3594704d13e40aad6e6bd45f94
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5ee0df6442795a8ec440a0c56fa23dfd10448e0d
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915401"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872227"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Rete cloud Microsoft per Enterprise Architects
 
@@ -35,7 +35,7 @@ In questo articolo è disponibile il collegamento a una serie di articoli in cui
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [Altre lingue](https://www.microsoft.com/download/details.aspx?id=54425)
   
-È inoltre possibile visualizzare tutti i modelli nelle [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md) e consultare la [Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://aka.ms/cloudarchitecture).
+È anche possibile vedere tutti i modelli nelle [risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).
   
 Vedere le seguenti sezioni:
   
@@ -53,7 +53,7 @@ Vedere le seguenti sezioni:
     
 - [Progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md)
     
-    L'ottimizzazione della rete per i servizi SaaS di Microsoft richiede un'analisi approfondita della connessione Internet, dei dispositivi client e delle operazioni IT tipiche.
+    Ottimizzare la rete per servizi SaaS Microsoft richiede la configurazione di dispositivi interni e periferici per instradare le diverse categorie di traffico ai servizi SaaS Microsoft.
     
 - [Progettazione di rete per Microsoft Azure PaaS](designing-networking-for-microsoft-azure-paas.md)
     
@@ -66,13 +66,9 @@ Vedere le seguenti sezioni:
 Per un riepilogo di 30 minuti relativo ai punti principali del poster, vedere il corso [Optimize Your Network for Microsoft Cloud Offerings (Ottimizzare la rete per le offerte cloud di Microsoft)](https://mva.microsoft.com/it-IT/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) della Microsoft Virtual Academy.
   
 > [!NOTE]
-> Questi articoli riflettono il rilascio di **giugno 2017** della rete cloud Microsoft per Enterprise Architects.
+> Questi articoli riflettono il rilascio di **dicembre 2018** della rete cloud Microsoft per Enterprise Architects.
   
 ## <a name="see-also"></a>Vedere anche
 
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
