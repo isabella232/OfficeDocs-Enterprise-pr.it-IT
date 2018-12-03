@@ -3,7 +3,7 @@ title: Cloud ibrido Microsoft per Enterprise Architects
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 'Riepilogo: Cosa devono sapere gli architetti IT degli scenari ibridi che utilizzano i servizi cloud e le piattaforme Microsoft.'
-ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 40a46c6d289011a0e0c6065573a5b67a3ac66756
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872247"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123373"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Cloud ibrido Microsoft per Enterprise Architects
 
@@ -33,8 +33,7 @@ In questo articolo è disponibile il collegamento a una serie di articoli in cui
 [![Immagine di scorrimento per modello ibrido del cloud Microsoft](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
-[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54424)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)
   
 È anche possibile vedere tutti i modelli nelle [risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).
   
@@ -61,13 +60,9 @@ Vedere le seguenti sezioni:
     Architettura di scenari ibridi per IaaS di Azure e descrizione di un'applicazione line-of business (LOB) ospitata in IaaS di Azure.
     
 > [!NOTE]
-> Questi articoli riflettono la versione di **giugno 2017** del poster sul cloud ibrido Microsoft per Enterprise Architects.
+> Questi articoli riflettono la versione di **dicembre 2018** del poster sul cloud ibrido Microsoft per Enterprise Architects.
   
 ## <a name="see-also"></a>Vedere anche
 
 [Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Guida di orientamento del cloud aziendale Microsoft: risorse per i decision maker del settore IT](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

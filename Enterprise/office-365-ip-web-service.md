@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Per identificare e differenziare meglio il traffico di rete di Office 365, un nuovo servizio Web pubblica gli endpoint di Office 365, consentendo agli utenti di valutare, configurare e rimanere aggiornati con le ultime modifiche. Questo nuovo servizio Web sostituisce i file scaricabili XML attualmente disponibili.
-ms.openlocfilehash: 1765a35e961d6aa3da42c36e5a04333e57ae010b
-ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
+ms.openlocfilehash: 8a9b3981f833705b0d77e87a6f0588730b9fb170
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25697982"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985771"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Servizio Web per URL e indirizzi IP di Office 365**
 
@@ -68,7 +68,7 @@ Microsoft aggiorna le voci FQDN e gli indirizzi IP di Office 365 alla fine di og
 - **Format=JSON** | **CSV** | **RSS**: oltre ai formati JSON e CSV, il metodo Web per la versione supporta anche RSS. È possibile utilizzarlo insieme con il parametro allVersions=true per richiedere un feed RSS da utilizzare con Outlook o altri lettori RSS.
 - **Instance**: parametro di route. Questo parametro opzionale specifica l'istanza per cui restituire la versione. Se si omette, vengono restituite tutte le istanze. Le istanze valide sono: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
-Il risultato ottenuto dal metodo Web per la versione potrebbe essere un singolo record o una matrice di record. Gli elementi di ogni record sono:
+Il metodo Web per la versione non ha limiti di frequenza e non restituisce mai codici di risposta HTTP 429. La risposta al metodo Web per la versione include un’intestazione di controllo cache che consiglia la memorizzazione dei dati nella cache per un'ora. Il risultato del metodo Web per la versione può essere un singolo record o una matrice di record. Gli elementi di ogni record sono:
 
 - instance: il nome breve dell'istanza del servizio di Office 365.
 - latest: l'ultima versione degli endpoint dell'istanza specificata.
@@ -168,12 +168,14 @@ Questo URI mostra un feed RSS delle versioni pubblicate che includono collegamen
 
 ## <a name="endpoints-web-method"></a>**Metodo Web per gli endpoint**
 
-Il metodo Web per gli endpoint restituisce tutti i record per gli URL e gli intervalli di indirizzi IP che formano il servizio di Office 365. Gli ultimi dati ottenuti dal metodo Web per gli endpoint devono essere usati per la configurazione dei dispositivi di rete, ma i dati possono essere raccolti per un massimo di 30 giorni dopo la loro pubblicazione a causa del preavviso fornito per le aggiunte. I parametri del metodo Web per gli endpoint sono:
+Il metodo Web per gli endpoint restituisce tutti i record per gli URL e gli intervalli di indirizzi IP che formano il servizio di Office 365. Gli ultimi dati ottenuti dal metodo Web per gli endpoint devono essere usati per la configurazione dei dispositivi di rete, ma i dati possono essere raccolti per un massimo di 30 giorni dopo la loro pubblicazione a causa del preavviso fornito per le aggiunte. Consigliamo di chiamare nuovamente il metodo Web per gli endpoint quando il metodo Web per la versione indica che è disponibile una nuova versione dei dati. I parametri del metodo Web per gli endpoint sono:
 
 - **ServiceAreas**: parametro stringa di query. Un elenco di aree del servizio con valori separati da virgole. Gli elementi validi sono Common, Exchange, SharePoint, Skype. Poiché gli elementi dell'area del servizio Common sono un prerequisito per tutte le altre aree del servizio, tali elementi devono essere sempre inclusi nel servizio Web. In caso contrario, vengono restituite tutte le aree del servizio.
 - **TenantName**: parametro stringa di query. Il nome del tenant di Office 365 dell'utente. Il servizio Web prende il nome fornito dall'utente e lo inserisce nelle parti degli URL che includono il nome del tenant. Se non si fornisce il nome del tenant, quelle parti degli URL hanno il carattere jolly (\*).
 - **NoIPv6**: parametro stringa di query. Impostare questo parametro su true per escludere gli indirizzi IPv6 dall'output, ad esempio, se non si usa il protocollo IPv6 nella propria rete.
 - **Instance**: parametro di route. Questo parametro obbligatorio specifica l'istanza per cui restituire gli endpoint. Le istanze valide sono: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
+
+Quando si chiama il metodo Web per gli endpoint un numero irragionevole di volte dallo stesso indirizzo IP del client, si potrebbe ricevere un codice di risposta HTTP 429 Troppe richieste. La maggior parte degli utenti non lo visualizzerà mai. Se si ottiene questo codice di risposta, è necessario attendere un'ora prima di chiamare nuovamente il metodo. Pianificare di chiamare il metodo Web per gli endpoint solo quando il metodo Web per la versione indica che è disponibile una nuova versione. 
 
 Il risultato ottenuto dal metodo Web per gli endpoint è una matrice di record in cui ogni record rappresenta un set di endpoint. Gli elementi per ogni record sono:
 
@@ -239,11 +241,22 @@ Il parametro del metodo Web per le modifiche è il seguente:
 
 - **Version**: parametro di route dell'URL obbligatorio. Indica la versione attualmente implementata dall'utente, che desidera verificare le modifiche apportate a partire da quella versione. Il formato è _YYYYMMDDNN_.
 
+Il metodo Web per le modifiche ha gli stessi limiti di frequenza del metodo Web per gli endpoint. Se si riceve un codice di risposta HTTP 429, è necessario attendere 1 ora prima di chiamare di nuovo. 
+
 Il risultato ottenuto dal metodo Web per le modifiche è una matrice di record in cui ogni record rappresenta una modifica in una versione specifica degli endpoint. Gli elementi per ogni record sono:
 
 - id: l'ID non modificabile del record della modifica.
 - endpointSetId: l'ID del record del set di endpoint cui è stata apportata la modifica. Questo elemento è obbligatorio.
 - disposition: può trattarsi di una modifica, un'aggiunta o una rimozione e descrive l'effetto della modifica apportata sul record del set di endpoint. Questo elemento è obbligatorio.
+- impact: non tutte le modifiche avranno la stessa importanza per ogni ambiente. Descrive l'impatto previsto per un ambiente di rete perimetrale dell’organizzazione in seguito a questa modifica. Questo attributo è incluso solo nei record di modifica della versione 2018112800 e versioni successive. Le opzioni di impact sono:
+  - AddedIp: un indirizzo IP è stato aggiunto a Office 365 e sarà presto live nel servizio. Rappresenta una modifica che è necessario impostare in un firewall o un altro dispositivo di rete perimetrale di livello 3. Se non si aggiunge prima che iniziamo a usarlo, potrebbe verificarsi un'interruzione del servizio.
+  - AddedUrl: un URL è stato aggiunto a Office 365 e sarà presto live nel servizio. Rappresenta una modifica che è necessario impostare in un server proxy o un dispositivo di rete perimetrale di analisi di URL. Se non si aggiunge prima che iniziamo a usarlo, potrebbe verificarsi un'interruzione del servizio.
+  - AddedIpAndUrl: sono stati aggiunti sia un indirizzo IP sia un URL. Rappresenta una modifica da eseguire su un dispositivo firewall di livello 3, un server proxy o un dispositivo di analisi di URL. Se non si aggiunge prima che iniziamo a usarlo, potrebbe verificarsi un'interruzione del servizio.
+  - RemovedIpOrUrl: da Office 365 è stato rimosso almeno un indirizzo IP o un URL. È consigliabile rimuovere gli endpoint di rete dai dispositivi perimetrali, ma non c'è nessuna scadenza per eseguire questa operazione.
+  - ChangedIsExpressRoute: l'attributo di supporto ExpressRoute è stato modificato. Se si utilizza ExpressRoute potrebbe essere necessario intervenire in base alla configurazione.
+  - MovedIpOrUrl: abbiamo spostato un indirizzo IP o un Url da questo set di endpoint a un altro. In genere, non è necessario alcun intervento.
+  - RemovedDuplicateIpOrUrl: abbiamo rimosso un indirizzo IP o URL duplicato ma questo è ancora pubblicato per Office 365. In genere, non è necessario alcun intervento.
+  - OtherNonPriorityChanges: abbiamo modificato qualcosa di meno critico rispetto a tutte le altre opzioni, ad esempio un campo della nota
 - version: la versione del set di endpoint pubblicato in cui è stata introdotta la modifica. I numeri di versione hanno il formato _YYYYMMDDNN_, dove NN è un numero naturale incrementato se sono presenti più versioni da pubblicare in un unico giorno.
 - previous: una sottostruttura che descrive nel dettaglio i valori precedenti degli elementi modificati sul set di endpoint. Questo elemento non è incluso per i set di endpoint aggiunti di recente. Include tcpPorts, udpPorts, ExpressRoute, category, required, notes.
 - current: una sottostruttura che descrive nel dettaglio i valori aggiornati degli elementi modificati sul set di endpoint. Include tcpPorts, udpPorts, ExpressRoute, category, required, notes.
