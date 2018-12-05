@@ -3,7 +3,6 @@ title: Risorse sull'architettura IT del cloud Microsoft
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,68 +15,75 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: 'Riepilogo: Acquisire informazioni su servizi cloud Microsoft e opzioni delle piattaforme. Rivedere la guida di orientamento del cloud aziendale, esplorare serie di architetture cloud e altro ancora.'
-ms.openlocfilehash: 8a95cb5904907984b393c5e4c67840bd7c0b0311
-ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
+description: "Riepilogo: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft. Informazioni su come implementare un desktop protetto e moderno con Windows 10 e Office ProPlus."
+ms.openlocfilehash: 88ff136002ea1a5a580d5d03e4e64aa7dd81d368
+ms.sourcegitcommit: bd50d505b134da4e46606c9580d67f34f6199ecb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26985761"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "27118169"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 
- **Riepilogo:** Acquisire informazioni su servizi cloud Microsoft e opzioni delle piattaforme. Rivedere la guida di orientamento del cloud aziendale, esplorare serie di architetture cloud e altro ancora.
+ **Riepilogo:** informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft. Informazioni su come implementare un desktop protetto e moderno con Windows 10 e Office ProPlus.
   
-Questi poster e strumenti dell'architettura forniscono informazioni su servizi e piattaforme Microsoft Cloud, tra cui Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics 365, datacenter cloud privato e soluzioni cloud e locali ibride. Progettisti e architetti IT possono usare queste risorse per determinare le soluzioni ideali per i propri carichi di lavoro e prendere decisioni sulla base di componenti dell'infrastruttura, quali sicurezza e identità. 
+Questi poster e strumenti dell'architettura forniscono informazioni sui servizi cloud Microsoft, tra cui Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 e soluzioni cloud e locali ibride. Decision maker ed esperti IT possono usare queste risorse per determinare le soluzioni ideali per i propri carichi di lavoro e prendere decisioni sulla base di componenti dell'infrastruttura, quali sicurezza e identità. 
   
-- **[Guida di orientamento del cloud aziendale Microsoft](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway)
+<!---**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) --->
     
-- **[Microsoft Cloud per Enterprise Architects Series](microsoft-cloud-it-architecture-resources.md#cloudarch)** 
-    - [Servizi cloud Microsoft e opzioni della piattaforma](microsoft-cloud-it-architecture-resources.md#platformoptions)
-    - [Identità di Microsoft Cloud per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity)
+- **[Microsoft Cloud per Enterprise Architects Series](microsoft-cloud-it-architecture-resources.md#cloudarch)** <!--- [Microsoft Cloud Services and Platform Options](microsoft-cloud-it-architecture-resources.md#platformoptions) --->
+    - [Identità cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity)
     - [Sicurezza cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#security)
     - [Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#networking)
-    - [Sicurezza e mobilità Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#mobility)
-    - [Cloud ibrido di Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#hybrid)
+    - [Cloud ibrido Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Attacchi comuni e funzionalità di Microsoft che proteggono l'organizzazione](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
-- **[Serie di soluzioni di Office 365 Enterprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
-    - [Information Protection per Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_infoprotect)
+- **[Serie di soluzioni di Office 365 Enterprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:   <!--- [Information Protection for Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_infoprotect) --->
     - [Protezione di dispositivi e identità per Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     - [Soluzioni per la protezione dei file in Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
-    - [Modificare la gestione dei client di Office 365](microsoft-cloud-it-architecture-resources.md#changemgmt)
     - [Distribuire un desktop protetto e moderno con Microsoft](microsoft-cloud-it-architecture-resources.md#msd)
     
-> [!TIP]
-> La maggior parte dei poster in questa pagina è disponibile in più lingue, tra cui cinese, inglese, francese, tedesco, italiano, giapponese, coreano, portoghese, russo e spagnolo. Per scaricare un poster in una di queste lingue, scegliere il collegamento **Altre lingue**.
+
   
 Inviare commenti e suggerimenti all'indirizzo [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
-  
+
+<!---
 <a name="roadmap"> </a>
-## <a name="microsofts-enterprise-cloud-roadmap"></a>Guida di orientamento del cloud aziendale Microsoft
+## Microsoft's Enterprise Cloud Roadmap
 
-Visualizzare poster, set di icone, spazio community e altre risorse che descrivono la soluzione cloud più completa del settore.
+See the posters, icon sets, community venues, and other resources that describe the industry's most complete cloud solution.
   
-|**Elemento**|**Descrizione**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Anteprima della guida di orientamento del cloud aziendale](media/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Guida di orientamento del cloud aziendale Microsoft](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Scorrere rapidamente questa esperienza Sway per le risorse che descrivono la soluzione cloud più completa del settore.  <br/> |
-   
-<a name="cloudarch"> </a>
-## <a name="microsoft-cloud-for-enterprise-architects-series"></a>Microsoft Cloud per Enterprise Architects Series
-
-Questi poster dell'architettura cloud forniscono informazioni su servizi e piattaforme Microsoft Cloud, tra cui Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics CRM Online, datacenter cloud privato e soluzioni cloud e locali ibride. Progettisti e architetti IT possono usare queste risorse per determinare le soluzioni ideali per i propri carichi di lavoro e prendere decisioni sulla base di componenti dell'infrastruttura, quali sicurezza e identità.
+|[![Thumbnail for Enterprise Cloud Roadmap](media/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft's Enterprise Cloud Roadmap](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Swipe through this Sway experience for the resources that describe the industry's most complete cloud solution.  <br/> |
+--->
   
+<a name="cloudarch">
+
+
+ </a>
+## Microsoft Cloud per Entrerprise Architects Series
+
+Questi poster e strumenti dell'architettura forniscono informazioni sui servizi cloud Microsoft, tra cui Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online e soluzioni cloud e locali ibride. decision maker ed esperti IT possono usare queste risorse per determinare le soluzioni ideali per i propri carichi di lavoro e prendere decisioni sulla base di componenti dell'infrastruttura, quali sicurezza e identità.
+
+<!---  
 <a name="platformoptions"> </a>
-### <a name="microsoft-cloud-services-and-platform-options"></a>Servizi cloud Microsoft e opzioni della piattaforma
+### Microsoft Cloud Services and Platform Options
 
-Informazioni sulle differenze principali tra i servizi cloud Microsoft e le offerte della piattaforma. Trovare la soluzione ottimale.
+Learn key differences between Microsoft cloud services and platform offerings. Find the best fit for your solution.
   
-|**Elemento**|**Descrizione**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Immagine di scorrimento del modello di architettura cloud con opzioni dei servizi](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | Questo modello illustra: <ul><li>  Offerte SaaS (Software come servizio), tra cui Office 365 </li><li>  Funzioni PaaS (Piattaforma come servizio) in Microsoft Azure </li><li>  Funzioni IaaS (Infrastruttura come servizio) in Microsoft Azure </li><li>  Funzionalità di datacenter cloud privati tramite Windows Server e System Center </li><li>  Informazioni su come il reparto IT Microsoft esegue la migrazione a questi servizi cloud, creando il proprio cloud ibrido. </li></ul><br/>|
+|[![Thumb image of cloud architecture model with service options](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | This model describes: <ul><li>  Software as a Service (SaaS) offerings, including Office 365 </li><li>  Platform as a Service (PaaS) features in Microsoft Azure </li><li>  Infrastructure as a Service (IaaS) features in Microsoft Azure </li><li>  Private cloud datacenter capabilities using Windows Server and System Center </li><li>  Learn how Microsoft's own IT department is migrating to these cloud services and building its hybrid cloud. </li></ul><br/>|
+--->
+
    
-<a name="identity"> </a>
-### <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Identità cloud Microsoft per Enterprise Architects
+<a name="identity">
+
+
+
+ </a>
+### Identità cloud Microsoft per Enterprise Architects
 
 Cosa devono sapere gli architetti IT sulla progettazione di identità per le organizzazioni che utilizzano i servizi cloud e le piattaforme Microsoft.
   
@@ -103,14 +109,6 @@ Cosa devono sapere gli architetti IT della rete per i servizi cloud e le piattaf
 |:-----|:-----|
 |[![Immagine di scorrimento per modello di rete del cloud Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) \| [Articolo](https://technet.microsoft.com/library/mt733214.aspx) <br/>[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Il modello contiene le pagine seguenti: <ul><li> **Trasformazione della tua rete per la connettività cloud** La migrazione cloud cambia il volume e la natura dei flussi del traffico all'interno e all'esterno di una rete aziendale. Influisce, inoltre, sugli approcci finalizzati alla mitigazione dei rischi per la sicurezza.</li><li> **Elementi comuni della connettività cloud Microsoft** L'integrazione della rete con il cloud di Microsoft consente di accedere facilmente a una vasta gamma di servizi. </li><li> **ExpressRoute per la connettività cloud Microsoft** ExpressRoute fornisce una connessione di rete a elevata velocità effettiva, dedicata e privata per il cloud Microsoft. </li><li> **Progettazione della rete per Microsoft SaaS (Office 365, Microsoft Intune e Dynamics CRM Online)** L'ottimizzazione della rete per i servizi SaaS di Microsoft richiede un'analisi approfondita della connessione Internet, dei dispositivi client e delle operazioni IT tipiche. </li><li> **Progettazione della rete per Azure PaaS** L'ottimizzazione della rete per le app PaaS di Azure necessita di una larghezza di banda Internet adeguata e può richiedere la distribuzione del traffico di rete in più siti o app. </li><li> **Progettazione della rete per Azure IaaS** Passaggi del processo di progettazione per creare una rete virtuale Azure ottimale (VNet) per l'hosting di carichi di lavoro IT basati su server, tra cui sottoreti, spazi di indirizzi, routing, DNS, bilanciamento del carico e connettività di rete locale, altri VNet e Internet. </li></ul><br/>  Partecipare al nuovo corso [Ottimizzare la rete per le offerte cloud di Microsoft](https://aka.ms/optimizecloudnetworkingmva) della Microsoft Virtual Academy, basato su questo poster sull'architettura.  <br/>|
    
-<a name="mobility"> </a>
-### <a name="microsoft-mobility-and-security-for-enterprise-architects"></a>Sicurezza e mobilità Microsoft per Enterprise Architects
-
-Cosa devono sapere gli architetti IT riguardo alla mobilità con i servizi cloud e le piattaforme Microsoft.
-  
-|**Elemento**|**Descrizione**|
-|:-----|:-----|
-|[![Immagine del cursore nel poster di Office 365 Information Protection](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076) \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | Questo modello contiene: <ul><li>Principali app per dispositivi mobili per le aziende </li><li>Piattaforma, servizi e risorse per lo sviluppo di app per dispositivi mobili </li><li>Gestione dell'accesso alle applicazioni basate su cloud e ai dati provenienti dai dispositivi mobili </li><li>Confronto delle funzionalità e la piattaforma di supporto per Office 365 MDM e Azure Active Directory Premium e Intune </li></ul><br/> |
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Cloud ibrido Microsoft per Enterprise Architects
@@ -133,7 +131,7 @@ Informazioni sugli attacchi informatici più comuni e su come Microsoft è in gr
 <a name="santa"> </a>
 ### <a name="the-santa-cloud"></a>Cloud Babbo Natale
 
-Esempio di come Babbo Natale e gli elfi utilizzano offerte di cloud Microsoft per effettuare le consegne annuali.
+Esempio di come Babbo Natale e gli elfi utilizzano offerte del cloud Microsoft per effettuare le consegne annuali.
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
@@ -143,18 +141,22 @@ Esempio di come Babbo Natale e gli elfi utilizzano offerte di cloud Microsoft pe
 ## <a name="office-365-enterprise-solution-series"></a>Serie di soluzioni di Office 365 Enterprise
 
 Le serie di soluzioni di Office 365 Enterprise forniscono indicazioni per l'implementazione delle funzionalità di Office 365, in particolare quando si combinano funzionalità e tecnologie.
-  
-<a name="BKMK_infoprotect"> </a>
-### <a name="information-protection-for-office-365"></a>Information Protection per Office 365
 
-Funzionalità per le organizzazioni aziendali finalizzate alla protezione degli asset aziendali.
+<!---  
+<a name="BKMK_infoprotect"> </a>
+### Information Protection for Office 365
+
+Capabilities for enterprise organizations to protect corporate assets.
   
-|**Elemento**|**Descrizione**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Funzionalità di protezione delle informazioni per Office 365](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft fornisce il set più completo di funzionalità per proteggere gli asset aziendali. Questo modello consente alle organizzazioni di adottare un approccio metodico durante la pianificazione delle funzionalità da implementare.  <br/>|
+|[![Information protection capabilities for Office 365](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft provides the most complete set of capabilities to protect your corporate assets. This model helps organizations take a methodical approach when planning which capabilities to implement.  <br/>|
+--->
    
-<a name="BKMK_O365IDP"> </a>
-### <a name="identity-and-device-protection-for-office-365"></a>Identity and Device Protection per Office 365
+<a name="BKMK_O365IDP">
+
+ </a>
+### Protezione di dispositivi e identità per Office 365
 
 Funzionalità consigliate per proteggere le identità e i dispositivi che accedono a Office 365, ad altri servizi SaaS e ad applicazioni locali pubblicate con proxy di applicazione Azure AD.
   
@@ -165,20 +167,12 @@ Funzionalità consigliate per proteggere le identità e i dispositivi che accedo
 <a name="BKMK_O365fileprotect"> </a>
 ### <a name="file-protection-solutions-in-office-365"></a>Soluzioni per la protezione dei file in Office 365
 
-Funzionalità consigliate per la protezione dei file in Office 365 in base a tre livelli di sicurezza diversi.
+Funzionalità consigliate per la protezione dei file in Office 365 in base a tre livelli di riservatezza diversi.
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
 |[![Anteprima per il set di mini poster Soluzioni di protezione file in Office 365](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320) \| [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |È importante utilizzare livelli di protezione coerenti tra dati, identità e dispositivi. Questo documento illustra quali funzionalità sono confrontabili con ulteriori informazioni sulle capacità per proteggere file in Office 365.  <br/> |
    
-<a name="changemgmt"> </a>
-### <a name="change-management-for-office-365-clients"></a>Modificare la gestione dei client di Office 365
-
-Cosa devono sapere gli architetti IT sulla gestione di rilasci per le applicazioni client di Office 365 e Windows 10. 
-  
-|**Elemento**|**Descrizione**|
-|:-----|:-----|
-|[![Poster di modello: modificare la gestione dei client di Office 365](media/fd0705af-5103-438f-9e1a-fa38eb1af2cc.png)          ](https://www.microsoft.com/download/details.aspx?id=49141) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=626681)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=626680)| Questo modello contiene: <ul><li>Il modello di manutenzione per Windows 10 e le applicazioni client di Office 365 </li><li>  Opzioni di rilascio </li><li>  Frequenza dei rilasci </li><li>  Tipi di modifiche </li><li>  Ruoli e responsabilità </li><li>  Gestire le distribuzioni degli aggiornamenti </li></ul><br/>  Visualizzare le informazioni nel modulo dell'articolo: [Modificare la gestione dei client di Office 365](https://docs.microsoft.com/DeployOffice/change-management-for-office-365-clients).  <br/> |
    
 <a name="msd"> </a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Distribuire un desktop protetto e moderno con Microsoft
