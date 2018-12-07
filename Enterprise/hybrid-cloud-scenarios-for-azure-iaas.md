@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: "Riepilogo: Informazioni su architettura ibrida e gli scenari per l'infrastruttura di Microsoft come servizio (IaaS)-basato su cloud offerte in Azure."
-ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 441565adae46d50ad1b7139525ff3146c5f88ca3
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123243"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181037"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scenari cloud ibridi per Azure IaaS
 
@@ -51,21 +51,21 @@ Per ogni livello dell'architettura:
     
     Contiene identità server che vengono sincronizzate con il server di identità in Azure. Può inoltre contenere risorse cui possono accedere le macchine virtuali in esecuzione in Azure, ad esempio la risorsa di archiviazione e l’infrastruttura di gestione dei sistemi.
     
-## <a name="dirsync-server-for-office-365"></a>Server DirSync per Office 365
+## <a name="directory-synchronization-server-for-office-365"></a>Server di sincronizzazione delle directory per Office 365
 
-L’esecuzione del server di sincronizzazione della directory (DirSync) da una rete virtuale di Azure, come illustrato nella figura 2, è un esempio di come estendere l'infrastruttura di identità e calcolo al cloud.
+Esegue il server di sincronizzazione della directory da un VNet Azure, come illustrato nella figura 2 è un esempio di estensione di un'infrastruttura di elaborazione e identità per il cloud.
   
-**Figura 2: Server DirSync per Office 365 in IaaS di Azure**
+**Figura 2: Server di sincronizzazione di Directory per Office 365 in Azure IaaS**
 
-![Server DirSync per Office 365 in IaaS di Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
+![Server di sincronizzazione delle directory per Office 365 in Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-Nella figura 2, una rete locale ospita un'infrastruttura di Windows Server Active Directory, con un server proxy e un router in corrispondenza del bordo. Il router si connette a un gateway Azure in corrispondenza del bordo di un VNet Azure con una connessione VPN o ExpressRoute sito per sito. All'interno di VNet, un server di DirSync esegue Connetti Azure Active Directory.
+Nella figura 2, una rete locale ospita un'infrastruttura di Windows Server Active Directory, con un server proxy e un router in corrispondenza del bordo. Il router si connette a un gateway Azure in corrispondenza del bordo di un VNet Azure con una connessione VPN o ExpressRoute sito per sito. All'interno di VNet, un server di sincronizzazione della directory esegue Connetti Azure Active Directory.
   
-Un server DirSync per Office 365 sincronizza l'elenco degli account in Windows Server AD con il tenant di Azure AD di un abbonamento a Office 365.
+Un server di sincronizzazione della directory per Office 365 consente di sincronizzare l'elenco di account in Windows Server Active Directory con il tenant di Azure Active Directory di una sottoscrizione a Office 365.
   
-Un server DirSync è un server basato su Windows che esegue Azure AD Connect. Per un provisioning più veloce o per ridurre il numero di server in locale nell'organizzazione, distribuire il server DirSync in una rete virtuale (VNet) in Azure IaaS.
+Un server di sincronizzazione delle directory è un server basato su Windows che esegue Connetti Azure Active Directory. Per il provisioning di più veloci o per ridurre il numero di server locali all'interno dell'organizzazione, distribuire il server di sincronizzazione della directory in una rete virtuale (VNet) in Azure IaaS.
   
-Il server DirSync sonda Windows Server AD per le modifiche, quindi le sincronizza con l’abbonamento a Office 365.
+Il server di sincronizzazione della directory esegue il polling Windows Server Active Directory per le modifiche e quindi si sincronizza con la sottoscrizione a Office 365.
   
 Per ulteriori informazioni, vedere [Distribuzione di Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   

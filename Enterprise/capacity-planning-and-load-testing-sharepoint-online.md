@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: In questo articolo viene descritto come distribuire in SharePoint Online senza eseguire il test di carico tradizionale poiché non è consentito.
-ms.openlocfilehash: 490d05598c42cd5d94f61dd21ee5a11701d4b4a7
-ms.sourcegitcommit: 033156d46ac0fb5f05d2b1a594d5ef368b93b893
+ms.openlocfilehash: 6a22ee089adc0817f5c52bbfee5f2b41d7e5d80c
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "27134671"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181027"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Capacità di pianificazione test di carico e SharePoint Online
 
-In questo articolo viene descritto come distribuire in SharePoint Online senza eseguire il test di carico tradizionale poiché è sconsigliata.
+In questo articolo viene descritto come distribuire in SharePoint Online senza test di carico tradizionale, poiché si tratta di test di carico sconsigliato.
   
 Anche se active load test su SharePoint Online è sconsigliata, esistono altri modi che è possibile verificare che un sito non genererà un'esperienza utente scadente quando si avvia il sito. 
   
