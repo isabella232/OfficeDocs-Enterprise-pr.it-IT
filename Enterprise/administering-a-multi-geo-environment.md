@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni sull'amministrazione di servizi SharePoint e OneDrive in un ambiente multi-geo.
-ms.openlocfilehash: 09f8816fc0ba748ced5bd104710677829d893198
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+ms.openlocfilehash: 823b3a4c1d063a4d398b7f734c2171e856ee1244
+ms.sourcegitcommit: 4a1d6c43da44b559136f2bf422a531bea5f48dbb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200701"
+ms.lasthandoff: 12/09/2018
+ms.locfileid: "27210124"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Amministrare un ambiente multi-geo
 
@@ -102,7 +102,7 @@ Quando è impostato il ruolo di manager o amministratore di eDiscovery per una p
 </tr>
 <tr class="even">
 <td align="left"><strong>IND</strong></td>
-<td align="left">Datacenter Asia orientale o sudorientale</td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>KOR</strong></td>
