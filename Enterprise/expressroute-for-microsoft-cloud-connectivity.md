@@ -3,7 +3,7 @@ title: ExpressRoute per la connettività cloud Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 12/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Riepilogo: Informazioni su come ExpressRoute grado di aiutarti con connessioni più veloci e affidabili a piattaforme e servizi cloud di Microsoft.'
-ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872327"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213973"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute per la connettività cloud Microsoft
 
@@ -222,11 +222,11 @@ Con più connessioni ExpressRoute Premium, è possibile disporre di:
     
 - Maggiore disponibilità per il cloud Microsoft globale quando non è disponibile una connessione ExpressRoute locale.
     
-È necessario per le connessioni basate su Office 365 ExpressRoute ExpressRoute Premium. Non esiste tuttavia costi aggiuntivi per le grandi aziende con più concessa in licenza o 500 utenti.
+È necessario per le connessioni basate su Office 365 ExpressRoute ExpressRoute Premium.
   
 **Figura 9: Livello mondiale Microsoft cloud network**
 
-![Figura 9: Rete mondiale Microsoft Cloud](media/Network-Poster/MSNet3.png)
+![Figura 9: Livello mondiale Microsoft cloud network](media/Network-Poster/MSNet3.png)
   
 Figura 9 mostra un diagramma logico della rete mondiale Microsoft cloud, con le reti che includono il continenti e le aree di tutto il mondo e i collegamenti. Con una parte della rete Microsoft cloud in ogni continente, un'azienda globale crea ExpressRoute Premium connessioni sedi internazionali hub ai percorsi di peering Microsoft locali.
   
@@ -270,7 +270,7 @@ Vedere le risorse aggiuntive per ulteriori informazioni:
 
 ## <a name="see-also"></a>Vedere anche
 
-[Rete di Microsoft Cloud per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
