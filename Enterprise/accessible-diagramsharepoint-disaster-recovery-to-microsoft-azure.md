@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
-description: "In questo articolo è una versione testo accessibile del diagramma denominata SharePoint il ripristino di emergenza in Microsoft Azure."
+description: In questo articolo è una versione testo accessibile del diagramma denominata SharePoint il ripristino di emergenza in Microsoft Azure.
 ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503549"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagramma accessibile - ripristino di emergenza di SharePoint in Microsoft Azure
 

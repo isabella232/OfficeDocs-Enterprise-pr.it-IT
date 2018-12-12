@@ -20,6 +20,7 @@ ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "17552779"
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Eliminare e ripristinare account utente con Office 365 PowerShell
 

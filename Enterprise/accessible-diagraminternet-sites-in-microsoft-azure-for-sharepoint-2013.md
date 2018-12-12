@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
-description: "In questo articolo è una versione testo accessibile del diagramma denominato siti Internet in Microsoft Azure per SharePoint 2013."
+description: In questo articolo è una versione testo accessibile del diagramma denominato siti Internet in Microsoft Azure per SharePoint 2013.
 ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503049"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagramma accessibile - siti Internet in Microsoft Azure per SharePoint 2013
 

@@ -9,12 +9,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
-description: "In questo articolo è una versione testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Lync 2013, disponibile all'indirizzo Technical Diagrams."
+description: In questo articolo è una versione testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Lync 2013, disponibile all'indirizzo Technical Diagrams.
 ms.openlocfilehash: 4a660df4bfacad2a00f5d9fbb5e1b668840e3b9f
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504089"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>Diagramma accessibile - opzioni della piattaforma Microsoft Lync 2013
 

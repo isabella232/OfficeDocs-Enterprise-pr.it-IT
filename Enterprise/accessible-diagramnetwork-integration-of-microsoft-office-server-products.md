@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
-description: "In questo articolo è una versione testo accessibile del diagramma denominato rete integrazione di prodotti Microsoft Office Server."
+description: In questo articolo è una versione testo accessibile del diagramma denominato rete integrazione di prodotti Microsoft Office Server.
 ms.openlocfilehash: 3fa27b99bf0babf00c536057b9d21da784b6d94f
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504429"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>Diagramma accessibile - rete integrazione di prodotti Microsoft Office Server
 

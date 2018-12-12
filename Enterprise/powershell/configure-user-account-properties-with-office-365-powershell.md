@@ -1,5 +1,5 @@
 ---
-title: "Configurare le proprietà degli account utente con Office 365 PowerShell"
+title: Configurare le proprietà degli account utente con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: "Sintesi: utilizzare PowerShell di Office 365 per configurare le proprietà di uno o più account utente nel tenant di Office 365."
+description: 'Sintesi: utilizzare PowerShell di Office 365 per configurare le proprietà di uno o più account utente nel tenant di Office 365.'
 ms.openlocfilehash: 60b3c1d91df0cb28f19f60a285093de7337904a9
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "17552689"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurare le proprietà degli account utente con Office 365 PowerShell
 

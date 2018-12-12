@@ -9,12 +9,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
-description: "In questo articolo è una versione testo accessibile del diagramma denominato opzioni della piattaforma di Microsoft Exchange 2013, disponibile all'indirizzo Technical Diagrams."
+description: In questo articolo è una versione testo accessibile del diagramma denominato opzioni della piattaforma di Microsoft Exchange 2013, disponibile all'indirizzo Technical Diagrams.
 ms.openlocfilehash: c54e223645cebfa56347a273e61d70afaf33ce05
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503409"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Diagramma accessibile - Server di SharePoint, Exchange, Lync, Office Web Apps - The Mobile orizzontale
 

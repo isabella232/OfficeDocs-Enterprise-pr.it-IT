@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
-description: "In questo articolo è una versione testo accessibile del diagramma denominato eDiscovery locale flusso."
+description: In questo articolo è una versione testo accessibile del diagramma denominato eDiscovery locale flusso.
 ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503059"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagramma accessibile - eDiscovery locale flusso
 

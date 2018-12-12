@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "18812107"
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>Aggregare i dati di report dei clienti tramite Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
