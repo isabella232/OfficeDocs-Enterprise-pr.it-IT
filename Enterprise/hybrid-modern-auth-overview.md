@@ -4,19 +4,19 @@ ms.author: tracyp
 ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
-ms.date: 8/27/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 description: Autenticazione moderno è un metodo di gestione delle identità che offre maggiore protezione l'autenticazione degli utenti e autorizzazioni. È disponibile per le distribuzioni ibride di Skype per Business server locali e di Exchange server in locale, nonché Skype dominio diviso per ibridi Business. In questo articolo include collegamenti a relativi documenti sui prerequisiti, il programma di installazione/disabilitazione dell'autenticazione moderno e di alcune delle informazioni correlate client (ad esempio Outlook e Skype i client).
-ms.openlocfilehash: 3d510c6d3e9f8ff885279dc008eeefb5d1014639
-ms.sourcegitcommit: 2ffe998e58ce1466366d697d99f0dd3e85b0605c
+ms.openlocfilehash: c10e5660d43ccce50497fccfd9d830d31ac07d55
+ms.sourcegitcommit: c5761d3c41aa2d26815f0d24c73dbcd53ab37957
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23240591"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27371110"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Cenni preliminari sull'autenticazione moderno ibrida e prerequisiti per l'utilizzo con Skype locale per Business ed Exchange Server
 
@@ -51,7 +51,8 @@ Gestione delle identità utente con autenticazione moderno offre agli amministra
   
 Tenere presente che, poiché Skype per le aziende collabora con Exchange, il comportamento di accesso Skype per client Business verrà visualizzato dagli utenti sarà interessato dallo stato di autenticazione moderno di Exchange. Verranno applicate anche nel caso di Skype per l'ambiente ibrido dominio diviso Business. Inoltre, il tipo di Skype per l'ambiente ibrido di Business che supporta l'utilizzo dell'autenticazione moderno spesso viene chiamato 'split-dominio' (in un dominio diviso, sono disponibili sia Skype Business online e Skype per Business nel-% beni e gli utenti sono ospitati in entrambe le posizioni).
   
- **Importante** Non tutti sanno che, a partire da agosto 2017 tutti i nuovi tenant di Office 365 che includono Skype per le aziende online ed Exchange online avrà moderno attivata per impostazione predefinita l'autenticazione. Tenant esistente non sarà necessario modifiche allo stato di agente di gestione predefinito, ma tutti i nuovi tenant supporta automaticamente il set di caratteristiche identità che viene visualizzato sopra elencate espanso. Per verificare lo stato dell'agente di gestione Skype for Business in linea, è possibile utilizzare Skype per PowerShell online Business con le credenziali di amministratore globale. Eseguire 'Get-CsOAuthConfiguration' per controllare l'output di - ClientADALAuthOverride. Se ClientADALAuthOverride-'ha' l'autenticazione moderno è attivato. 
+> [!IMPORTANT]
+> Non tutti sanno che, a partire da agosto 2017 tutti i nuovi tenant di Office 365 che includono Skype per le aziende online ed Exchange online avrà moderno attivata per impostazione predefinita l'autenticazione. Tenant esistente non sarà necessario modifiche allo stato di agente di gestione predefinito, ma tutti i nuovi tenant supporta automaticamente il set di caratteristiche identità che viene visualizzato sopra elencate espanso. Per verificare lo stato dell'agente di gestione Skype for Business in linea, è possibile utilizzare Skype per PowerShell online Business con le credenziali di amministratore globale. Eseguire `Get-CsOAuthConfiguration` per controllare l'output di - ClientADALAuthOverride. Se ClientADALAuthOverride-'ha' l'autenticazione moderno è attivato. 
   
 ## <a name="what-changes-when-i-use-modern-authentication"></a>Quali modifiche quando utilizza l'autenticazione moderno?
 <a name="BKMK_WhatChanges"> </a>
@@ -66,12 +67,13 @@ Significa che anche se il server di Exchange e Skype per gli ambienti aziendali 
   
 Cosa non modifica? Se si è in una dominio diviso ibrida o con Skype per Business ed Exchange server in locale, tutti gli utenti devono prima autenticarsi *locale* . In un'implementazione ibrida di autenticazione moderno, Lyncdiscovery e il rilevamento automatico selezionare il server locale. 
   
- **Importante** Se è necessario conoscere specifico Skype per le topologie aziendali supportate con agente di gestione, che è [descritte di seguito a destra](https://technet.microsoft.com/en-us/library/mt803262.aspx).
+> [!IMPORTANT]
+> Se è necessario conoscere specifico Skype per le topologie aziendali supportate con agente di gestione, che è [descritte di seguito a destra](https://technet.microsoft.com/en-us/library/mt803262.aspx).
   
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>Controllare lo stato di autenticazione moderno dell'ambiente locale
 <a name="BKMK_CheckStatus"> </a>
 
-Dal momento che l'autenticazione moderno cambia il server di autorizzazione utilizzato quando i servizi di sfruttano OAuth/S2S, è necessario sapere se l'autenticazione moderno è attivato o disattivato per il Skype per ambiente aziendale ed Exchange. È possibile controllare lo stato all'Exchange o Skype per i server aziendali, in locale, eseguendo il comando Get-CSOAuthConfiguration in PowerShell. Se il comando restituisce una proprietà 'OAuthServers' vuota, autenticazione moderno è disattivata.
+Dal momento che l'autenticazione moderno cambia il server di autorizzazione utilizzato quando i servizi di sfruttano OAuth/S2S, è necessario sapere se l'autenticazione moderno è attivato o disattivato per il Skype per ambiente aziendale ed Exchange. È possibile controllare lo stato all'Exchange o Skype per i server aziendali, in locale, eseguendo il `Get-CSOAuthConfiguration` comando PowerShell. Se il comando restituisce una proprietà 'OAuthServers' vuota, autenticazione moderno è disattivata.
   
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>Siano soddisfatti i prerequisiti di autenticazione moderno?
 
@@ -85,35 +87,28 @@ Verificare e verificare tali elementi disattivato nell'elenco prima di continuar
     
   - Il dominio SIP viene aggiunto come un dominio federato in Office 365
     
-  - Tutti i SFB Front end server deve disporre di connessioni in uscita a internet, per l'autenticazione degli URL (TCP 443) di Office 365 e noto certificato radice CRL (TCP 80) elencate nelle righe 1 e 2 della sezione "Office 365 autenticazione e identità" di [Office 365 URL e IP intervalli di indirizzi](https://www.bing.com/search?q=%22Office+365+URLs+and+IP+address+ranges%22&amp;src=IE-SearchBox&amp;FORM=IESR3N&amp;redir=5&amp;itrid=96B6C7422F9F4019B37C1B7FDAF8831E).
+  - Tutti i SFB Front end server deve disporre di connessioni in uscita a internet, per l'autenticazione degli URL (TCP 443) di Office 365 e noto certificato principale CRL (TCP 80) elencate nelle righe 56 e 125 della sezione "Microsoft 365 comuni e Office Online" di [IP e gli URL di Office 365 intervalli di indirizzi](urls-and-ip-address-ranges.md).
     
  **Nota** Se il Skype per i server front-end Business utilizza un server proxy per l'accesso a Internet, il proxy server IP e numero di porta utilizzato deve essere immesso nella sezione Configurazione del file Web. config per ogni front-end. 
   
-- c:\Programmi\Microsoft files\Skype per Business Server 2015\Web Components\Web ticket\int\web.config
+- C:\Programmi\Microsoft Files\Skype per Business Server 2015\Web Components\Web ticket\int\web.config
     
-- c:\Programmi\Microsoft files\Skype per Business Server 2015\Web Components\Web ticket\ext\web.config
+- C:\Programmi\Microsoft Files\Skype per Business Server 2015\Web Components\Web ticket\ext\web.config
     
-- \</System.identityModel.Services\>
+```xml
+<system.identityModel.services>
+  <system.net>
+    <defaultProxy>
+      <proxy
+        proxyaddress="http://192.168.100.60:8080"
+        bypassonlocal="true" />
+    </defaultProxy>
+  </system.net>
+</system.identityModel.services>
+```
     
-     \<System.NET\> 
-    
-     \<defaultProxy\> 
-    
-     \<proxy 
-    
-     ProxyAddress = "http://192.168.100.60:8080" 
-    
-     BypassOnLocal = "true" 
-    
-     /\> 
-    
-     \</defaultProxy\> 
-    
-     \</ System.NET\> 
-    
-    \</ Configuration\>
-    
- **Importante** Assicurarsi di sottoscrivere i feed RSS per [Office 365 URL e intervalli di indirizzi IP](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) essere sempre aggiornati con gli elenchi di URL necessari più recenti. 
+> [!IMPORTANT]
+> Assicurarsi di sottoscrivere i feed RSS per [Office 365 URL e intervalli di indirizzi IP](urls-and-ip-address-ranges.md) essere sempre aggiornati con gli elenchi di URL necessari più recenti. 
   
 - **Specifica di Exchange Server**
     
