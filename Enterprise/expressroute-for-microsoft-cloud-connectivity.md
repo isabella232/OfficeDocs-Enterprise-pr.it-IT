@@ -3,7 +3,7 @@ title: ExpressRoute per la connettività cloud Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 01/02/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Riepilogo: Informazioni su come ExpressRoute grado di aiutarti con connessioni più veloci e affidabili a piattaforme e servizi cloud di Microsoft.'
-ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
-ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
+ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
+ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "27213973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27470168"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute per la connettività cloud Microsoft
 
@@ -96,25 +96,19 @@ Tabella 1 sono indicati i tre modelli di connettività principale per le conness
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>Relazioni di peering ExpressRoute ai servizi cloud Microsoft
 
-Una singola connessione ExpressRoute supporta fino a tre diverse Border Gateway Protocol (BGP) peering relazioni in diverse parti del cloud Microsoft. BPG utilizza peering relazioni per stabilire una relazione di trust e scambiare informazioni di routing.
+Una singola connessione ExpressRoute supporta fino a due diverse Border Gateway Protocol (BGP) peering relazioni in diverse parti del cloud Microsoft. BPG utilizza peering relazioni per stabilire una relazione di trust e scambiare informazioni di routing.
   
-**Figura 3: Le tre diverse relazioni BGP in una sola connessione ExpressRoute**
+**Figura 3: Due diversi BGP relazioni in una singola connessione ExpressRoute**
 
-![Figura 3: Le tre diverse relazioni BGP in una sola connessione ExpressRoute](media/Network-Poster/ERPeering.png)
+![Figura 3: Due diversi BGP relazioni in una singola connessione ExpressRoute](media/Network-Poster/ERPeering.png)
   
-Nella figura 3 viene mostrata una connessione ExpressRoute da una rete locale. La connessione ExpressRoute ha tre relazioni peering logiche. Una relazione di peering Microsoft passerà a servizi SaaS Microsoft, tra cui Office 365 e Dynamcs CRM Online. Una relazione di peering pubblica passerà a servizi di Azure PaaS. Una relazione di peering privata passa per Azure IaaS e un gateway di rete virtuale che ospita le macchine virtuali.
+Nella figura 3 viene mostrata una connessione ExpressRoute da una rete locale. La connessione ExpressRoute ha due relazioni peering logiche. Una relazione di peering Microsoft viene inoltrata ai servizi Microsoft SaaS, inclusi servizi di Office 365, Dynamcs 365 e Azure PaaS. Una relazione di peering privata passa per Azure IaaS e un gateway di rete virtuale che ospita le macchine virtuali.
   
 La relazione BGP peering Microsoft: 
   
-- Ha origine dal router la DMZ gli indirizzi pubblici di servizi di Office 365 e Dynamics 365. 
+- Ha origine dal router la DMZ gli indirizzi pubblico di Office 365, Dynamics 365 e servizi di Azure. 
     
 - Supporta le comunicazioni avviate bidirezionale.
-    
-La relazione BGP peering pubblica:
-  
-- È compreso un router la DMZ e gli indirizzi IP pubblici di servizi di Azure.
-    
-- Supporta la comunicazione unidirezionale avviate da solo sistemi locali. La relazione peering non supporta le comunicazioni avviate da servizi di Azure PaaS.
     
 La relazione BGP peering privata:
   
@@ -123,6 +117,10 @@ La relazione BGP peering privata:
 - Supporta le comunicazioni avviate bidirezionale.
     
 - È un'estensione della rete dell'organizzazione per il cloud Microsoft, utilizzando l'indirizzamento internamente coerente e il routing.
+
+>[!Note]
+>La relazione BGP peering pubblica descritta nelle versioni precedenti di questo articolo è stata deprecata.
+>
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>Esempio di flusso di distribuzione e il traffico di applicazione con ExpressRoute
 
@@ -250,7 +248,7 @@ La distribuzione ExpressRoute inoltre è possibile incorporare le opzioni seguen
   
 - **Protezione in corrispondenza del bordo:** Per garantire la sicurezza avanzata per il traffico inviato e ricevuto tramite la connessione ExpressRoute, ad esempio l'ispezione di traffico o il rilevamento delle intrusioni/malware, effettuare le apparecchiature di sicurezza nel percorso di traffico all'interno del DMZ o il bordo della rete intranet.
     
-    Il traffico Internet per le macchine virtuali per impedire che si avvia il traffico direttamente con i percorsi Internet e macchine virtuali di Azure annunciare la route predefinita a Microsoft. Il traffico verso Internet viene instradato attraverso la connessione ExpressRoute e tramite i server proxy in locale. Il traffico proveniente da macchine virtuali Azure per Office 365 o i servizi di Azure PaaS viene instradato nuovamente attraverso la connessione ExpressRoute.
+- **Il traffico Internet per le macchine virtuali:** Per impedire che si avvia il traffico direttamente con i percorsi Internet macchine virtuali di Azure, annunciare la route predefinita a Microsoft. Il traffico verso Internet viene instradato attraverso la connessione ExpressRoute e tramite i server proxy in locale. Il traffico proveniente da macchine virtuali Azure per Office 365 o i servizi di Azure PaaS viene instradato nuovamente attraverso la connessione ExpressRoute.
     
 - **Ottimizzatori WAN:** È possibile distribuire ottimizzatori WAN su entrambi i lati di una connessione peering privata per un Azure cross-premise reti virtuali (VNet). All'interno di VNet Azure, utilizzare un dispositivo di rete WAN optimizer Azure marketplace e routing definite dall'utente per instradare il traffico attraverso il dispositivo.
     
