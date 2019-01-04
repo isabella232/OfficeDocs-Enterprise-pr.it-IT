@@ -16,18 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: "Riepilogo: vengono descritti i certificati SSL necessari per distribuzioni locali e ibride di Exchange, l'accesso SSO tramite ADFS, servizi di Exchange Online e Servizi Web Exchange."
-ms.openlocfilehash: 82e37ebb058b8a6b4b618649bea31a4137897690
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975214"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546517"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Pianificazione dei certificati SSL di terze parti per Office 365
 
  **Riepilogo:** Vengono descritti i certificati SSL necessari per Exchange in locale e ibrido, SSO tramite ADFS, servizi Exchange Online e servizi Web Exchange. 
   
-Per crittografare le comunicazioni tra i client e Office 365Office 365 ambiente, è necessario installare i certificati di terze parti Secure Socket Layer (SSL) sui server dell'infrastruttura.
+Per crittografare le comunicazioni tra i client e l'ambiente Office 365, è necessario installare i certificati di terze parti Secure Socket Layer (SSL) sui server dell'infrastruttura.
 
 ||
 |:-----|

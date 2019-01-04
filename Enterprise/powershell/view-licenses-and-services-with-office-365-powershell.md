@@ -3,7 +3,7 @@ title: Visualizzare le licenze e i servizi con PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/31/2018
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Viene illustrato come utilizzare Office 365 PowerShell per visualizzare informazioni sulle licenze piani, servizi e le licenze disponibili nell'organizzazione Office 365.
-ms.openlocfilehash: dab6b8f1828c6be4d32bb2432437d23328653560
-ms.sourcegitcommit: 6dd4ac5808d72406578fcc7be6590dd7a99cebea
+ms.openlocfilehash: e4c4a0570cafd3d9cb775dd99c5f75da613715e3
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2018
-ms.locfileid: "27466875"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546537"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Visualizzare le licenze e i servizi con PowerShell di Office 365
 
@@ -37,15 +37,75 @@ Ogni sottoscrizione a Office 365 sono disponibili i seguenti elementi:
     
 È possibile utilizzare Office 365 PowerShell per visualizzare i dettagli sui piani di gestione delle licenze disponibili, le licenze e servizi all'interno dell'organizzazione Office 365. Per ulteriori informazioni sui prodotti, funzionalità e i servizi disponibili in diverse sottoscrizioni a Office 365, vedere [Opzioni di pianificazione di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
-    
-- È disponibile uno script di PowerShell che consente di automatizzare le procedure descritte in questo argomento. In particolare, lo script consente di visualizzare e disabilitare i servizi nella propria organizzazione Office 365, tra cui oscillazione. Per ulteriori informazioni, vedere [disattivare l'accesso a oscillazione con Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
-    
-## <a name="view-information-about-licensing-plans-and-the-available-licenses"></a>Visualizzare informazioni sui piani di gestione delle licenze e sulle licenze disponibili
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilizzare grafico modulo di Azure Active Directory PowerShell
 
-Per visualizzare le informazioni di riepilogo sui piani di licenza correnti e le licenze disponibili per ciascun piano, eseguire il comando seguente in Office 365 PowerShell:
+Primo, [la connessione al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+  
+Per visualizzare le informazioni di riepilogo sui piani di licenza correnti e le licenze disponibili per ciascun piano, eseguire il comando seguente:
+  
+```
+Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
+```
+
+I risultati contengono le seguenti informazioni:
+  
+- **SkuPartNumber:** Mostra i piani di gestione delle licenze disponibili per l'organizzazione >, ad esempio `ENTERPRISEPACK` è il nome del sistema per Office 365 Enterprise E3.
+    
+- **Abilitato:** Numero di licenze acquistate per un piano di licenze specifico.
+    
+- **ConsumedUnits:** Numero di licenze assegnate agli utenti di un piano di licenze specifico.
+    
+Per visualizzare informazioni dettagliate sui servizi Office 365 sono disponibili in tutti i piani di licenza, prima di visualizzare un elenco di piani di licenza.
+
+````
+Get-AzureADSubscribedSku | Select SkuPartNumber
+````
+
+Successivamente, memorizzare le informazioni di piani di licenza in una variabile.
+
+````
+$licenses = Get-AzureADSubscribedSku
+````
+
+Successivamente, visualizzare i servizi in un piano di licenza specifici.
+
+````
+$licenses[<index>].ServicePlan
+````
+
+\<indice > è un numero intero che specifica il numero della riga del piano di licenza dalla visualizzazione del `Get-AzureADSubscribedSku | Select SkuPartNumber` command meno 1.
+
+Ad esempio, se la visualizzazione del `Get-AzureADSubscribedSku | Select SkuPartNumber` si tratta di comando:
+
+````
+SkuPartNumber
+-------------
+WIN10_VDA_E5
+EMSPREMIUM
+ENTERPRISEPREMIUM
+FLOW_FREE
+````
+
+Quindi il comando per visualizzare i servizi per il piano di licenza ENTERPRISEPREMIUM è la seguente:
+
+````
+$licenses[2].ServicePlan
+````
+
+ENTERPRISEPREMIUM è la terza riga. Di conseguenza, il valore di indice è (3 - 1) o 2.
+
+Per un elenco completo dei piani di licenza (noto anche come i nomi dei prodotti), i piani di servizio inclusi e i rispettivi nomi descrittivi corrispondenti, vedere [i nomi di prodotti e gli identificatori di piano di servizio per la gestione delle licenze](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilizzare il modulo di Microsoft Azure Active Directory per Windows PowerShell
+
+Primo, [la connessione al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+>[!Note]
+>È disponibile uno script di PowerShell che consente di automatizzare le procedure descritte in questo argomento. In particolare, lo script consente di visualizzare e disabilitare i servizi nella propria organizzazione Office 365, tra cui oscillazione. Per ulteriori informazioni, vedere [disattivare l'accesso a oscillazione con Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
+>
+    
+Per visualizzare le informazioni di riepilogo sui piani di licenza correnti e le licenze disponibili per ciascun piano, eseguire il comando seguente:
   
 ```
 Get-MsolAccountSku
@@ -55,7 +115,7 @@ I risultati contengono le seguenti informazioni:
   
 - **AccountSkuId:** Mostra i piani di gestione delle licenze disponibili per l'organizzazione utilizzando la sintassi `<CompanyName>:<LicensingPlan>`.  _<CompanyName>_ è il valore fornito al momento è registrato in Office 365 ed è univoco per l'organizzazione. Il _<LicensingPlan>_ valore è lo stesso per tutti gli utenti. Ad esempio, nel valore `litwareinc:ENTERPRISEPACK`, è il nome della società `litwareinc`e il nome del piano delle licenze `ENTERPRISEPACK`, ovvero il nome del sistema per Office 365 Enterprise E3.
     
-- **ActiveUnits:** Numero di licenze che hai gli acquisti per un piano di licenze specifico.
+- **ActiveUnits:** Numero di licenze acquistate per un piano di licenze specifico.
     
 - **WarningUnits:** Numero di licenze di un piano di licenze che non sono rinnovato e che scadranno dopo il periodo di prova di 30 giorni.
     
@@ -95,13 +155,16 @@ In questo esempio vengono illustrati i servizi di Office 365 che sono disponibil
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
+
 ## <a name="new-to-office-365"></a>Nuovo utente di Office 365?
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
 ## <a name="see-also"></a>Vedere anche
 
-- [Visualizzare gli utenti con e senza licenza con PowerShell di Office 365](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-- [Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md)
-- [Get-MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
 
+[Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+  
+[Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
+  
+[Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
