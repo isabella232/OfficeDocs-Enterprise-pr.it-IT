@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Viene illustrato come utilizzare Office 365 PowerShell per visualizzare informazioni sulle licenze piani, servizi e le licenze disponibili nell'organizzazione Office 365.
-ms.openlocfilehash: e4c4a0570cafd3d9cb775dd99c5f75da613715e3
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: f673ac984e504a740dfac474821366d34de5ccbc
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546537"
+ms.locfileid: "27730331"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Visualizzare le licenze e i servizi con PowerShell di Office 365
 
@@ -50,7 +50,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 I risultati contengono le seguenti informazioni:
   
-- **SkuPartNumber:** Mostra i piani di gestione delle licenze disponibili per l'organizzazione >, ad esempio `ENTERPRISEPACK` è il nome del sistema per Office 365 Enterprise E3.
+- **SkuPartNumber:** Visualizza i piani di gestione delle licenze disponibili per l'organizzazione. Ad esempio `ENTERPRISEPACK` è il nome del sistema per Office 365 Enterprise E3.
     
 - **Abilitato:** Numero di licenze acquistate per un piano di licenze specifico.
     
