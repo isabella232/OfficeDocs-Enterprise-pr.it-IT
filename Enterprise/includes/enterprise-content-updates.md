@@ -3,68 +3,12 @@
 
 
 
-## <a name="week-of-november-26-2018"></a>Settimana del 26 novembre 2018
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 26/11/2018 | [Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificato |
-| 26/11/2018 | [Risorse sull'architettura IT del cloud Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificato |
-| 26/11/2018 | [Integrazione di Azure con Office 365](/Office365/Enterprise/azure-integration) | modificato |
-| 26/11/2018 | [Installare ed eseguire lo strumento IdFix di Office 365](/Office365/Enterprise/install-and-run-idfix) | modificato |
-| 26/11/2018 | [Preparare un dominio non instradabili per la sincronizzazione delle directory](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | modificato |
-| 27/11/2018 | [Configurare la ricerca per OneDrive for Business Multi-Geo](/Office365/Enterprise/configure-search-for-multi-geo) | modificato |
-| 27/11/2018 | [Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | modificato |
-| 28/11/2018 | [Elementi comuni della connettività cloud Microsoft](/Office365/Enterprise/common-elements-of-microsoft-cloud-connectivity) | modificato |
-| 28/11/2018 | [Progettazione della rete per IaaS di Microsoft Azure](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | modificato |
-| 28/11/2018 | [Progettazione di rete per Microsoft Azure PaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-paas) | modificato |
-| 28/11/2018 | [Progettazione di rete per Microsoft SaaS](/Office365/Enterprise/designing-networking-for-microsoft-saas) | modificato |
-| 28/11/2018 | [Evoluzione della rete per la connettività cloud](/Office365/Enterprise/evolving-your-network-for-cloud-connectivity) | modificato |
-| 28/11/2018 | [ExpressRoute per la connettività cloud Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificato |
-| 28/11/2018 | [Rete cloud Microsoft per Enterprise Architects](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | modificato |
-| 28/11/2018 | [Cloud ibrido di Microsoft per Enterprise Architects](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | modificato |
-| 28/11/2018 | [Endpoint di Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | modificato |
-| 28/11/2018 | [Endpoint di Office 365 DoD gli Stati Uniti](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificato |
-| 28/11/2018 | [Endpoint US Government le elevata di Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificato |
-| 28/11/2018 | [URL e intervalli di indirizzi IP per Office 365 gestito da 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | modificato |
-| 28/11/2018 | [URL e intervalli di indirizzi IP per Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificato |
-| 29/11/2018 | [Risorse sull'architettura IT del cloud Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificato |
-| 29/11/2018 | [Servizio Web per URL e indirizzi IP di Office 365](/Office365/Enterprise/office-365-ip-web-service) | modificato |
-| 30/11/2018 | [Risorse sull'architettura IT del cloud Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificato |
-| 30/11/2018 | [Architettura di scenari basati su cloud ibrida Microsoft](/Office365/Enterprise/architecture-of-microsoft-hybrid-cloud-scenarios) | modificato |
-| 30/11/2018 | [Panoramica del cloud ibrida](/Office365/Enterprise/hybrid-cloud-overview) | modificato |
-| 30/11/2018 | [Scenari cloud ibridi per IaaS di Azure](/Office365/Enterprise/hybrid-cloud-scenarios-for-azure-iaas) | modificato |
-| 30/11/2018 | [Scenari basati su cloud ibrida per Azure PaaS](/Office365/Enterprise/hybrid-cloud-scenarios-for-azure-paas) | modificato |
-| 30/11/2018 | [Scenari per il cloud ibrido per SaaS Microsoft (Office 365)](/Office365/Enterprise/hybrid-cloud-scenarios-for-microsoft-saas-office-365) | modificato |
-| 30/11/2018 | [Rete cloud Microsoft per Enterprise Architects](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | modificato |
-| 30/11/2018 | [Cloud ibrido di Microsoft per Enterprise Architects](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | modificato |
-| 30/11/2018 | [Assegnare le licenze agli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificato |
-| 30/11/2018 | [Rimuovere le licenze dagli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | modificato |
-| 30/11/2018 | [Visualizzare gli utenti con e senza licenza con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | modificato |
-| 30/11/2018 | [Visualizzare gli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificato |
-
-
-## <a name="week-of-december-03-2018"></a>Settimana del 03 dicembre 2018
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 3/12/2018 | [Capacità di pianificazione test di carico e SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | modificato |
-| 5/12/2018 | [Capacità di pianificazione test di carico e SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | modificato |
-| 5/12/2018 | [Scenari cloud ibridi per IaaS di Azure](/Office365/Enterprise/hybrid-cloud-scenarios-for-azure-iaas) | modificato |
-| 12/7/2018 | [Multi-Geo Capabilities in OneDrive e SharePoint Online in Office 365](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | modificato |
-| 12/7/2018 | [Amministrare un ambiente multi-geo](/Office365/Enterprise/administering-a-multi-geo-environment) | modificato |
-| 12/7/2018 | [Funzionalità multi-Geo in Exchange Online](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | modificato |
-| 12/7/2018 | [Configurazione del tenant di OneDrive for Business Multi-Geo](/Office365/Enterprise/multi-geo-tenant-configuration) | modificato |
-| 12/7/2018 | [Pianificazione per OneDrive for Business Multi-Geo](/Office365/Enterprise/plan-for-multi-geo) | modificato |
-
-
 ## <a name="week-of-december-10-2018"></a>Settimana del 10 dicembre 2018
 
 
 | Data di pubblicazione |Titolo dell'argomento | Modifica |
 |------|------------|--------|
-| 10/12/2018 | [ExpressRoute per la connettività cloud Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificato |
+| 10/12/2018 | [ExpressRoute per la connettività cloud di Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificato |
 | 10/12/2018 | [Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | modificato |
 
 
@@ -87,3 +31,40 @@
 
 | Data di pubblicazione |Titolo dell'argomento | Modifica |
 |------|------------|--------|
+
+
+## <a name="week-of-december-31-2018"></a>Settimana del 31 dicembre 2018
+
+
+| Data di pubblicazione |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 1/2/2019 | [ExpressRoute per la connettività cloud di Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificato |
+| 1/3/2019 | [Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | modificato |
+| 1/3/2019 | [Pianificare per i certificati SSL di terze parti per Office 365](/Office365/Enterprise/plan-for-third-party-ssl-certificates) | modificato |
+| 1/3/2019 | [Bloccare gli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/block-user-accounts-with-office-365-powershell) | modificato |
+| 1/3/2019 | [Configurare le proprietà degli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/configure-user-account-properties-with-office-365-powershell) | modificato |
+| 1/3/2019 | [Creare account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/create-user-accounts-with-office-365-powershell) | modificato |
+| 1/3/2019 | [Eliminare account utente con PowerShell di Office 365](/Office365/Enterprise/powershell/delete-and-restore-user-accounts-with-office-365-powershell) | modificato |
+| 1/3/2019 | [Visualizzare gli utenti con e senza licenza con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | modificato |
+| 1/3/2019 | [Visualizzare le licenze e i servizi con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | modificato |
+| 1/3/2019 | [Visualizzare gli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificato |
+| 4/1/2019 | [Creare account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/create-user-accounts-with-office-365-powershell) | modificato |
+| 4/1/2019 | [Visualizzare gli utenti con e senza licenza con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | modificato |
+| 4/1/2019 | [Visualizzare le licenze e i servizi con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | modificato |
+| 4/1/2019 | [Visualizzare gli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificato |
+
+
+## <a name="week-of-january-07-2019"></a>Settimana del 07 gennaio 2019
+
+
+| Data di pubblicazione |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 1/7/2019 | [Office 365 Enterprise](/Office365/Enterprise/index) | modificato |
+| 1/7/2019 | [Endpoint di Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | modificato |
+| 1/7/2019 | [Endpoint di Office 365 DoD gli Stati Uniti](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificato |
+| 1/7/2019 | [Endpoint US Government le elevata di Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificato |
+| 1/7/2019 | [URL e intervalli di indirizzi IP per Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificato |
+| 1/8/2019 | [Configurare la sincronizzazione della directory per Office 365](/Office365/Enterprise/set-up-directory-synchronization) | modificato |
+| 9/1/2019 | [Visualizzare le licenze e i servizi con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | modificato |
+| 1/11/2019 | [Gestione degli endpoint di Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificato |
+| 1/11/2019 | [Endpoint di Office 365 DoD gli Stati Uniti](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificato |
