@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Riepilogo: Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.'
-ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123313"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327348"
 ---
 # <a name="hybrid-cloud-overview"></a>Panoramica del cloud ibrido
 
@@ -79,7 +79,7 @@ Scenari per il cloud ibrida con servizi cloud Microsoft variano con la piattafor
     
 - Sicurezza
     
-    Protezione di scenari basati su cloud ibrida include gestione per le identità, la protezione dei dati, gestione di privilegi amministrativi, la consapevolezza delle minacce e l'implementazione della governance e criteri di sicurezza e protezione. Per ulteriori informazioni, vedere [Microsoft Security Cloud per architetti Enterprise](https://technet.microsoft.com/library/dn919927.aspx#security).
+    Protezione di scenari basati su cloud ibrida include gestione per le identità, la protezione dei dati, gestione di privilegi amministrativi, la consapevolezza delle minacce e l'implementazione della governance e criteri di sicurezza e protezione. Per ulteriori informazioni, vedere [Microsoft Security Cloud per architetti Enterprise](microsoft-cloud-it-architecture-resources.md#security).
     
 - Gestione
     
