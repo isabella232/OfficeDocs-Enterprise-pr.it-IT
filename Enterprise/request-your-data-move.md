@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Saranno necessario inviare una richiesta prima della scadenza per i paesi affinché i dati dei clienti i servizi di Office 365 partecipanti spostati i nuovo geo clienti esistenti di Office 365.
-ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839574"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604507"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
@@ -80,7 +80,7 @@ Dopo la richiesta di spostamento, non è possibile modificare la selezione non a
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Teams Microsoft non supporta la migrazione del contenuto dei clienti inattivi nell'area in nazionale data center in cui è disponibile residenza dati per Microsoft Teams ancora.  Di conseguenza, saranno necessario solo i nuovi clienti tutti i dati memorizzati nel paese di nuove aree in cui Microsoft Teams supporta residenza dati.  Ulteriori informazioni su Office 365 residenza dati per la propria sede aziendale in [dove sono i dati si trova?](https://office/com/datamaps)   
+Teams Microsoft non supporta la migrazione del contenuto dei clienti inattivi nell'area in nazionale data center in cui è disponibile residenza dati per Microsoft Teams ancora.  Di conseguenza, saranno necessario solo i nuovi clienti tutti i dati memorizzati nel paese di nuove aree in cui Microsoft Teams supporta residenza dati.  Ulteriori informazioni su Office 365 residenza dati per la propria sede aziendale in [dove sono i dati si trova?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Azioni facoltative prima richiesta di spostamento
 

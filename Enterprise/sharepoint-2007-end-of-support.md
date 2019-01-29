@@ -3,7 +3,7 @@ title: Guida sulla fine del supporto di SharePoint Server 2007
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +32,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: In 10 ottobre 2017, supporto terminata per SharePoint Server 2007. In questo articolo per conoscere le opzioni di aggiornamento, risoluzione dei problemi, procedure consigliate, i requisiti di sistema, operazioni di aggiornamento e come ottenere assistenza da Microsoft Partners.
-ms.openlocfilehash: b548e7623a72d57793c18409a80506bb832df858
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: b0d3eda690733b45ee82054e145642a5c76125d5
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169798"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604517"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Guida sulla fine del supporto di SharePoint Server 2007
 
@@ -60,7 +60,7 @@ Tuttavia la farm di SharePoint Server 2007 saranno ancora funzionante dopo ottob
 > [!TIP]
 > Se non sono già pianificato per l'aggiornamento o la migrazione, vedere: [Opzioni di migrazione di SharePoint 2007 da considerare](sharepoint-2007-migration-options.md)per alcuni esempi di cui iniziare. È inoltre possibile cercare [Partner Microsoft](https://go.microsoft.com/fwlink/?linkid=841249) che possono essere utili per l'aggiornamento o la migrazione di Office 365 (o entrambe). 
   
-Per ulteriori informazioni sui server di Office 2007 sta per raggiungere la fine del supporto tecnico, vedere [pianificare l'aggiornamento per i server di Office 2007](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx).
+Per ulteriori informazioni sui server di Office 2007 sta per raggiungere la fine del supporto tecnico, vedere [le risorse che consentono di eseguire l'aggiornamento da Office 2007 ai server e client](upgrade-from-office-2007-servers-and-products.md).
   
 ## <a name="what-are-my-options"></a>Che cosa sono le opzioni disponibili.
 
@@ -122,7 +122,7 @@ Non è possibile eseguire la migrazione da SharePoint 2007 a SharePoint Online, 
    
 Se si è deciso di creare un nuovo sito di Office 365 e verranno manualmente migrare dati è sufficiente, è possibile esaminare il diritto di opzioni di Office 365:
   
-[Opzioni di piani di Office 365](https://go.microsoft.com/fwlink/?linkid=843151)
+[Opzioni dei piani di Office 365](https://go.microsoft.com/fwlink/?linkid=843151)
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>Aggiornamento di SharePoint Server in locale
 
