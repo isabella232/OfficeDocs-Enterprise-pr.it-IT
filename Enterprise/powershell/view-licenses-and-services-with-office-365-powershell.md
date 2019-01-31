@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Viene illustrato come utilizzare Office 365 PowerShell per visualizzare informazioni sulle licenze piani, servizi e le licenze disponibili nell'organizzazione Office 365.
-ms.openlocfilehash: 8efc123e2820560b4bd8547f4c99bccae242956f
-ms.sourcegitcommit: 96313c3c812bae47819f603af995839f4da034c5
+ms.openlocfilehash: bce181445523a2f043caa932f3d4e0ddd81d89cc
+ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "27786152"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29651210"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Visualizzare le licenze e i servizi con PowerShell di Office 365
 
@@ -50,7 +50,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 I risultati contengono le seguenti informazioni:
   
-- **SkuPartNumber:** Visualizza i piani di gestione delle licenze disponibili per l'organizzazione. Ad esempio `ENTERPRISEPACK` è il nome del sistema per Office 365 Enterprise E3.
+- **SkuPartNumber:** Visualizza i piani di gestione delle licenze disponibili per l'organizzazione. Ad esempio `ENTERPRISEPACK` è il nome del piano di licenza per Office 365 Enterprise E3.
     
 - **Abilitato:** Numero di licenze acquistate per un piano di licenze specifico.
     
@@ -74,7 +74,7 @@ Successivamente, visualizzare i servizi in un piano di licenza specifici.
 $licenses[<index>].ServicePlans
 ````
 
-\<indice > è un numero intero che specifica il numero della riga del piano di licenza dalla visualizzazione del `Get-AzureADSubscribedSku | Select SkuPartNumber` command meno 1.
+\<index> è un numero intero che specifica il numero della riga del piano di licenza dalla visualizzazione del `Get-AzureADSubscribedSku | Select SkuPartNumber` command meno 1.
 
 Ad esempio, se la visualizzazione del `Get-AzureADSubscribedSku | Select SkuPartNumber` si tratta di comando:
 
@@ -136,7 +136,7 @@ Nella tabella seguente vengono illustrati i piani di servizio di Office 365 e i 
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
-| `MCOSTANDARD` <br/> |Skype for Business online  <br/> |
+| `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office Online  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online, piano 2  <br/> |

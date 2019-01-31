@@ -3,7 +3,7 @@ title: Rimuovere le licenze dagli account utente con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/29/2018
+ms.date: 01/29/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,30 +16,59 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Viene illustrato come per rimuovere licenze di Office 365 che sono stati precedentemente assegnate agli utenti di Office 365 PowerShell.
-ms.openlocfilehash: a993737f4bd1186a7fb5beb7fa0f6a2ae6782618
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 5b5f4550a5fade7f95669ad455aebd5d5f7fbf34
+ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123303"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29651220"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Rimuovere le licenze dagli account utente con Office 365 PowerShell
 
 **Riepilogo:** Viene illustrato come per rimuovere licenze di Office 365 che sono stati precedentemente assegnate agli utenti di Office 365 PowerShell.
-  
-## <a name="before-you-begin"></a>Prima di iniziare
 
-- Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
-    
-- Per visualizzare le informazioni sulla licenza piano (**AccountSkuID** ) nella propria organizzazione, vedere gli argomenti seguenti:
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
+
+Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+  
+
+Successivamente, elencare i piani di licenza per il tenant con questo comando.
+
+```
+Get-AzureADSubscribedSku | Select SkuPartNumber
+```
+
+Successivamente, ottenere il nome di accesso dell'account per cui si desidera rimuovere una licenza, noto anche come il nome principale (UPN).
+
+Infine, specificare l'accesso e la licenza per pianificare i nomi utente, rimuovere i caratteri lt"e gt _" ed eseguire questi comandi.
+
+```
+$userUPN="<user sign-in name (UPN)>"
+$planName="<license plan name from the list of license plans>"
+$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
+$licenses.AddLicenses = $license
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+$Licenses.AddLicenses = @()
+$Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+```
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il modulo di Microsoft Azure Active Directory per Windows PowerShell
+
+Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+   
+Per visualizzare le informazioni sulla licenza piano (**AccountSkuID** ) nella propria organizzazione, vedere gli argomenti seguenti:
     
   - [Visualizzare le licenze e i servizi con PowerShell di Office 365](view-licenses-and-services-with-office-365-powershell.md)
     
   - [Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md)
     
-- Se si usa il cmdlet **Get-MsolUser** senza utilizzare il parametro _-All_, vengono restituiti solo i primi 500 account.
+Se si usa il cmdlet **Get-MsolUser** senza utilizzare il parametro _-All_, vengono restituiti solo i primi 500 account.
     
-## <a name="removing-licenses-from-user-accounts"></a>Rimozione di licenze dall'account utente
+### <a name="removing-licenses-from-user-accounts"></a>Rimozione di licenze dall'account utente
 
 Per rimuovere le licenze da un account utente esistente, utilizzare la sintassi seguente:
   
@@ -109,27 +138,12 @@ Un altro modo per liberare una licenza è eliminando l'account utente. Per ulter
   
 ## <a name="see-also"></a>Vedere anche
 
-Vedere i seguenti argomenti aggiuntivi sulla gestione degli utenti con Office 365 PowerShell:
+[Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-- [Creare account utente con Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
-    
-- [Eliminare e ripristinare account utente con Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Bloccare gli account utente con Office 365 PowerShell](block-user-accounts-with-office-365-powershell.md)
-    
-- [Assegnare le licenze agli account utente con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-Per ulteriori informazioni sui cmdlet utilizzati in questa procedura, vedere i seguenti argomenti:
+[Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
   
-- [Get-Content](https://go.microsoft.com/fwlink/p/?LinkId=289917)
-    
-- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
-    
-- [Set-MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
-    
-- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
-    
-- [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
+[Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
+
     
 ## <a name="new-to-office-365"></a>Nuovo utente di Office 365?
 
