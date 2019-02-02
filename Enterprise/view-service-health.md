@@ -20,12 +20,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visualizzare lo stato di integrità dei servizi di Office 365 prima di chiamare il supporto per verificare se si verifica un'interruzione del servizio active
-ms.openlocfilehash: 7e04e1309c990ccced67663576285f7276603ccc
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
+ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651189"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29696353"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Come verificare l'integrità dei servizi di Office 365
 
@@ -108,7 +108,7 @@ La maggior parte dei servizi è visualizzata come integra senza ulteriori inform
    
 ## <a name="history"></a>Cronologia
 
-Integrità dei servizi consente di controllare lo stato di integrità corrente e di visualizzare la cronologia di tutti gli eventi imprevisti e gli avvisi relativi ai servizi riscontrati negli ultimi 30 giorni. Per visualizzare le informazioni passate sull'integrità di tutti i servizi, selezionare **Visualizza cronologia** nella pagina **Integrità dei servizi**. 
+Integrità dei servizi consente di esaminare lo stato di integrità corrente e visualizzare la cronologia di tutti gli avvisi di servizio e risolte che hanno interessato tenant negli ultimi 30 giorni. Per visualizzare l'integrità di tutti i servizi precedente, selezionare **Visualizza cronologia** nella pagina **integrità dei servizi** . 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
