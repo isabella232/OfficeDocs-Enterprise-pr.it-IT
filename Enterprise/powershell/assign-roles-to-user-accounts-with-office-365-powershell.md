@@ -3,7 +3,7 @@ title: Assegnare i ruoli agli account utente con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/31/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,24 +14,58 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 'Sintesi: utilizzare PowerShell di Office 365 e il cmdlet Add-MsolRoleMember per assegnare ruoli agli account utente.'
-ms.openlocfilehash: 2af4409020cc4a4e3dd6ff3b8bfcf5f1138f26cd
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
+description: 'Sintesi: usare Office 365 PowerShell per assegnare ruoli agli account utente.'
+ms.openlocfilehash: 702c7358ccca9bb36bd106d742b5c454283ee8b4
+ms.sourcegitcommit: d0c870c7a487eda48b11f649b30e4818fd5608aa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690437"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Assegnare i ruoli agli account utente con Office 365 PowerShell
 
- **Sintesi:** utilizzare PowerShell di Office 365 e il cmdlet **Add-MsolRoleMember** per assegnare ruoli agli account utente.
-  
-È possibile rapidamente e facilmente assegnare ruoli agli account utente tramite PowerShell di Office 365 identificando il nome visualizzato dell'account utente e il nome del ruolo.
-  
-## <a name="before-you-begin"></a>Prima di iniziare
+Per assegnare ruoli agli account utente in modo semplice e rapido, è possibile usare Office 365 PowerShell.
 
-Le procedure descritte in questo argomento richiedono all'utente di connettersi a PowerShell di Office 365 utilizzando un account amministratore globale. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
+
+In primo luogo, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) con un account amministratore globale.
   
-## <a name="for-a-single-role-change"></a>Per una singola modifica del ruolo
+Determinare quindi il nome di accesso dell'account utente da aggiungere a un ruolo (ad esempio mario@contoso.com). Questo nome di accesso è noto anche come nome dell'entità utente (UPN).
+
+Determinare il nome del ruolo. Usare questo comando per elencare i ruoli che è possibile assegnare con PowerShell.
+
+````
+Get-AzureADDirectoryRole
+````
+
+Immettere quindi i nomi di accesso e di ruolo ed eseguire questi comandi.
+  
+```
+$userName="<sign-in name of the account>"
+$roleName="<role name>"
+Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+```
+
+Ecco un esempio di un set di comandi completato:
+  
+```
+$userName="belindan@contoso.com"
+$roleName="Lync Service Administrator"
+Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+```
+
+Per visualizzare l'elenco dei nomi utente per un ruolo specifico, usare questi comandi.
+
+```
+$roleName="<role name>"
+Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+```
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
+
+In primo luogo, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) con un account amministratore globale.
+  
+### <a name="for-a-single-role-change"></a>Per una singola modifica del ruolo
 
 Determinare quanto segue:
   
@@ -77,7 +111,7 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-## <a name="for-multiple-role-changes"></a>Per più modifiche di ruoli
+### <a name="for-multiple-role-changes"></a>Per più modifiche di ruoli
 
 Determinare quanto segue:
   
@@ -99,13 +133,13 @@ Determinare quanto segue:
     
 - Ruoli che si desidera assegnare a ogni account utente.
     
-    Per visualizzare l'elenco dei ruoli disponibili che è possibile assegnare agli account utente, usare il comando:
+    Per visualizzare l'elenco dei ruoli disponibili che è possibile assegnare agli account utente, usare questo comando:
     
   ```
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Successivamente, creare un file CSV che includa i campi Nome visualizzato e Nome del ruolo. Ecco un esempio:
+Creare quindi un file CSV che include i campi Nome visualizzato e Nome del ruolo. Ecco un esempio:
   
 ```
 DisplayName,RoleName
@@ -114,10 +148,10 @@ DisplayName,RoleName
 "Alice Smithers","Lync Service Administrator"
 ```
 
-Successivamente, immettere il percorso del file CSV ed eseguire i comandi risultanti nel prompt dei comandi di PowerShell.
+Immettere infine il percorso del file CSV ed eseguire i comandi risultanti al prompt dei comandi di PowerShell.
   
 ```
-$fileName="<path and file name of the input CSV file that contains the role changes, example: C:\admin\RoleUpdates.CSV>"
+$fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
 $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $_.DisplayName).UserPrincipalName -RoleName $_.RoleName }
 
 ```
@@ -127,4 +161,3 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 - [Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
 - [Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
-- [Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
