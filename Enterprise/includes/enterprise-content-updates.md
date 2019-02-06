@@ -3,13 +3,6 @@
 
 
 
-## <a name="week-of-december-24-2018"></a>Settimana del 24 dicembre 2018
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-
-
 ## <a name="week-of-december-31-2018"></a>Settimana del 31 dicembre 2018
 
 
@@ -73,3 +66,23 @@
 | 25/1/2019 | [Spostare un sito OneDrive in un'altra posizione geografica](/Office365/Enterprise/move-onedrive-between-geo-locations) | modificato |
 | 25/1/2019 | [Utilizzare la rete di distribuzione del contenuto di Office 365 con SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | modificato |
 | 25/1/2019 | [Configurare la sincronizzazione della directory per Office 365](/Office365/Enterprise/set-up-directory-synchronization) | modificato |
+
+
+## <a name="week-of-january-28-2019"></a>Settimana del 28 gennaio 2019
+
+
+| Data di pubblicazione |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 28/1/2019 | [Assistenti distribuzione per i servizi di Office 365](/Office365/Enterprise/deployment-advisors-for-office-365) | modificato |
+| 28/1/2019 | [Come richiedere lo spostamento dati](/Office365/Enterprise/request-your-data-move) | modificato |
+| 28/1/2019 | [Guida sulla fine del supporto di SharePoint Server 2007](/Office365/Enterprise/sharepoint-2007-end-of-support) | modificato |
+| 29/1/2019 | [Endpoint di Office 365 DoD gli Stati Uniti](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificato |
+| 29/1/2019 | [Endpoint US Government le elevata di Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificato |
+| 29/1/2019 | [URL e intervalli di indirizzi IP per Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificato |
+| 30/1/2019 | [Preparare l'organizzazione per Office 365 Enterprise](/Office365/Enterprise/get-your-organization-ready-for-office-365) | modificato |
+| 30/1/2019 | [Assegnare le licenze agli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificato |
+| 30/1/2019 | [Rimuovere le licenze dagli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | modificato |
+| 30/1/2019 | [Visualizzare le licenze e i servizi con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | modificato |
+| 30/1/2019 | [Come verificare l'integrità dei servizi di Office 365](/Office365/Enterprise/view-service-health) | modificato |
+| 31/1/2019 | [Assegnare i ruoli agli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modificato |
+| 1/2/2019 | [Come verificare l'integrità dei servizi di Office 365](/Office365/Enterprise/view-service-health) | modificato |

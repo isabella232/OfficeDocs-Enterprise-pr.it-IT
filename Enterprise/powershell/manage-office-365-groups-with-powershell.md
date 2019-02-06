@@ -1,8 +1,8 @@
 ---
-title: Gestire i gruppi di Office 365 PowerShell
-ms.author: dianef
-author: dianef77
-manager: scotv
+title: Gestire Gruppi di Office 365 con PowerShell
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -17,14 +17,14 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Ultimo aprile 18 aggiornato, 2018
-ms.openlocfilehash: 8def3b304a19ad57887c992aa6342ea2cf14ba28
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 518f845099a72d9addac13388d1b281ca63ee408
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541468"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741219"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>Gestire i gruppi di Office 365 PowerShell
+# <a name="manage-office-365-groups-with-powershell"></a>Gestire Gruppi di Office 365 con PowerShell
 
  *Ultimo aprile 18 aggiornato, 2018* 
   
@@ -32,11 +32,11 @@ In questo articolo viene illustrato come eseguire attività di gestione comuni p
   
 ## <a name="common-tasks-for-managing-office-365-groups"></a>Attività comuni per la gestione dei gruppi di Office 365
 
-- [Aggiornamento liste di distribuzione per Office 365 gruppi in Outlook](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
+- [Aggiornare le liste di distribuzione a Gruppi di Office 365 in Outlook](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
     
-- [Gestione di utenti autorizzati a creare gruppi di Office 365](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618)
+- [Gestire chi può creare gruppi di Office 365](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618)
     
-- [Gestire l'accesso guest ai gruppi di Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96)
+- [Gestire l'accesso degli utenti guest ai gruppi di Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96)
     
 - [Gestire i gruppi in modo dinamico in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632)
     
@@ -126,7 +126,7 @@ Oppure creare un nuovo gruppo con una classificazione.
 New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -AccessType <Public> 
 ```
 
-Per ulteriori informazioni sull'utilizzo di Exchange Online PowerShell, verificare [l'Utilizzo di PowerShell con Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) e [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) . 
+Per altri dettagli sull'uso di PowerShell di Exchange Online vedere [Uso di PowerShell con Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) e [Connettersi a PowerShell di Exchange Online](https://go.microsoft.com/fwlink/?LinkID=722415). 
   
 Dopo che queste impostazioni sono abilitate, il proprietario del gruppo saranno in grado di scegliere una classificazione da Outlook sul Web e Outlook dal menu a discesa e salvarlo nella pagina **Modifica** gruppo. 
   
@@ -224,7 +224,7 @@ I cmdlet seguenti sono stati recentemente rese disponibili per gruppi di Office 
 
 - [Utilizzo di PowerShell](https://technet.microsoft.com/en-us/library/cc482986.aspx)
     
-- [Applicare o rimuovere un criterio cassetta postale di Outlook Web App in una cassetta postale](https://technet.microsoft.com/en-us/library/dd876884%28v=exchg.150%29.aspx)
+- [Applicazione o rimozione di un criterio cassetta postale di Outlook Web App in una cassetta postale](https://technet.microsoft.com/en-us/library/dd876884%28v=exchg.150%29.aspx)
     
 - [Criterio di assegnazione dei gruppi di Office 365](https://support.office.com/article/6ceca4d3-cad1-4532-9f0f-d469dfbbb552)
     
