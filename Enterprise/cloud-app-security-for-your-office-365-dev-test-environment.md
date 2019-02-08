@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "Sintesi: configurazione e dimostrazione di Office 365 Cloud App Security nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: 089b9771d0600f8c74bc7b4c30ff2a4931c93ae6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 2c29e650233348e44bf72adcb8b18580e1de8802
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915761"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897059"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security per l'ambiente di sviluppo/test di Office 365
 
  **Sintesi:** configurazione e dimostrazione di Office 365 Cloud App Security nell'ambiente di sviluppo/test di Office 365.
   
-Protezione di Office 365 Cloud App, in precedenza noto come Office 365 Advanced Security Management, consente di creare i criteri che per monitorare e informano l'utente delle attività potenzialmente dannoso nella sottoscrizione a Office 365, in modo da poter analizzare e richiedere possibili azione di risoluzione dei problemi. Per ulteriori informazioni, vedere [Overview of Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Protezione di Office 365 Cloud App, in precedenza noto come Office 365 Advanced Security Management, consente di creare criteri per monitorare e informano l'utente delle attività potenzialmente dannoso nella sottoscrizione a Office 365, in modo da poter analizzare e richiedere possibili correzione dei problemi azione. Per ulteriori informazioni, vedere [Overview of Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Con le istruzioni disponibili in questo articolo, è possibile abilitare e testare Cloud App Security nella sottoscrizione di valutazione di Office 365.
   
@@ -81,7 +81,7 @@ In questa procedura, viene abilitato Cloud App Security e viene creato un nuovo 
 
 1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
     
-2. Fare clic su tessera di **amministrazione** . Nella scheda di **interfaccia di amministrazione di Office** , fare clic su **Admin Center > sicurezza e conformità**.
+2. Fare clic su tessera di **amministrazione** . Nella scheda di **interfaccia di amministrazione di Office** , fare clic su **Admin Center gt _ sicurezza & conformità**.
     
 3. Nel riquadro di spostamento a sinistra fare clic su **Avvisi > Gestisci gli avvisi avanzati**.
     
@@ -111,7 +111,7 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
 
 1. In alto a destra, fare clic sull'icona dell'utente e quindi fare clic su **Disconnetti**.
     
-2. Accedere a [https://portal.office.com](https://portal.office.com).
+2. Passare a [https://portal.office.com](https://portal.office.com).
     
 3. Nella pagina di accesso di Office 365, fare clic su **Usa un altro account**.
     
@@ -135,7 +135,7 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
     
 13. Fare clic sull'icona dell'utente in alto a destra, quindi su **Disconnetti**. 
     
-14. Accedere a [https://portal.office.com](https://portal.office.com).
+14. Passare a [https://portal.office.com](https://portal.office.com).
     
 15. Nella pagina **Accesso a Office 365**, fare clic sul nome dell'account di amministratore globale.
     
@@ -159,7 +159,7 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
   
 ## <a name="see-also"></a>Vedere anche
 
-[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md)
   

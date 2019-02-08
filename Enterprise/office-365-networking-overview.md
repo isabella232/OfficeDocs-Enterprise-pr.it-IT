@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Viene descritta la perché è importante per i servizi SaaS, l'obiettivo della rete di Office 365, ottimizzazione della rete e modalità SaaS richiede una rete diversa da altri carichi di lavoro.
-ms.openlocfilehash: ebd7410ec5fe421561543f1223e455377e99e625
-ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
+ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25002355"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897209"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Panoramica di connettività di rete Office 365
 
@@ -84,7 +84,7 @@ L'architettura di uscita locale presenta i vantaggi seguenti per il traffico di 
 > [!NOTE]
 > L'infrastruttura di _ingresso servizio distribuita_ è edge rete elevata disponibilità e scalabilità di rete globale Microsoft con posizioni geografiche. Che supporta le connessioni utente finale e instrada in modo efficiente all'interno della rete globale di Microsoft. Sono disponibili ulteriori su Microsoft Network globale in [modo Microsoft si basa la rete globale veloce e affidabile](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
-Per ulteriori informazioni sulle indicazioni e applicare i principi di connettività di rete Office 365, vedere [Principi di connettività di rete di Office 365](office-365-network-connectivity-principles#office-365-connectivity-principles).
+Per ulteriori informazioni sulle indicazioni e applicare i principi di connettività di rete Office 365, vedere [Principi di connettività di rete di Office 365](office-365-network-connectivity-principles.md).
 
 ## <a name="conclusion"></a>Conclusione
 

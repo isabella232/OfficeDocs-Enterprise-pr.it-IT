@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Riepilogo: comprendere il motivo per cui è necessario utilizzare PowerShell di Office 365 per gestire Office 365, in alcuni casi in modo più efficiente e in altri casi per necessità.'
-ms.openlocfilehash: 4dd10db4c27e6d9f28c3638bd8c732701c9dfeac
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575270"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897469"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Perché è necessario usare PowerShell di Office 365
 
@@ -65,7 +65,7 @@ interfaccia di amministrazione di Office 365 rende disponibili molte informazion
   
 ![Esempio di visualizzazione di utenti e gruppi nell'interfaccia di amministrazione di Office 365.](media/o365-powershell-users-and-groups.png)
   
-Per diversi scopi, verranno visualizzate le informazioni necessarie. Tuttavia, in alcuni casi sono necessarie informazioni aggiuntive. Ad esempio, la licenza di Office 365 (nonché le funzionalità di Office 365 disponibili per un utente) dipende in parte dalla posizione geografica dell'utente. I criteri e le funzionalità che è possibile estendere a un utente che vive negli Stati Uniti potrebbero non essere gli stessi per un utente che risiede in India o Belgio. È possibile utilizzare interfaccia di amministrazione di Office 365 per determinare la posizione geografica dell'utente attenendosi alla seguente procedura:
+Per diversi scopi, consente di visualizzare le informazioni che necessarie. Esistono, tuttavia, se è necessario più volte. Ad esempio, licenze di Office 365 (e le caratteristiche di Office 365 disponibili per un utente) dipendono in parte dalla posizione geografica dell'utente. I criteri e caratteristiche è possibile estendere a un utente che risiede negli Stati Uniti potrebbero non essere lo stesso come i criteri e caratteristiche è possibile estendere a un utente che si trova in India o Belgio. È possibile utilizzare l'interfaccia di amministrazione di Office 365 per determinare la posizione geografica di un utente con la procedura seguente:
   
 1. Fare doppio clic sul **Nome visualizzato** dell'utente.
     
@@ -329,7 +329,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>PowerShell di Office 365 facilita la stampa e il salvataggio dei dati
 
-interfaccia di amministrazione di Office 365 consente di visualizzare elenchi di dati. Ecco un esempio dell'interfaccia di amministrazione di Skype for Business online che mostra un elenco di utenti che sono stati abilitati per Skype for Business online:
+Interfaccia di amministrazione di Office 365, è possibile visualizzare gli elenchi dei dati. Di seguito è riportato un esempio di Skype per interfaccia di amministrazione in linea aziendale di visualizzazione di un elenco di utenti che sono stati abilitati per Skype Business online:
   
 ![Esempio di interfaccia di amministrazione di Skype for Business online che mostra un elenco di utenti abilitati a Skype for Business online.](media/o365-powershell-lync-users.png)
   

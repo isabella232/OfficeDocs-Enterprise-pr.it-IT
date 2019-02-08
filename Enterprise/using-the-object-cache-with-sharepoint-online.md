@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: In questo articolo illustra la differenza tra la cache degli oggetti in SharePoint Server 2013 in locale e SharePoint Online.
-ms.openlocfilehash: 8aa505645bb5f39c65684412ddebbd2b02baa13f
-ms.sourcegitcommit: 7cd210c44622ea2de5fb0e8e91c7be4839c80205
+ms.openlocfilehash: 59f3a69199893cb367d4d28c0c545ebd9dfd1236
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24056165"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25769855"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Utilizzo della cache oggetti con SharePoint Online
 
@@ -34,7 +34,7 @@ Una volta SharePoint Server 2013 locale ospitati, il cliente può server web fro
   
 Di conseguenza, la seconda volta che un utente visita una pagina, il tempo di caricamento della pagina migliora. Dopo un minimo di quattro caricamenti della stessa pagina, la pagina è memorizzata nella cache su tutti i server Web front-end.
   
-Al contrario, in SharePoint Online sono disponibili molte più server, ma anche molti altri siti. Ogni utente può connettersi a un server web front-end diverse che non dispone di cache popolata. O, magari ottenere popolata nella cache per un server, ma l'utente successivo per il server web front-end richiede una pagina a un sito diverso. In alternativa, anche se l'utente successivo richiede la stessa pagina in base alla loro visita precedente, sono con bilanciamento del carico a un server web front-end diverse che non dispone di tale pagina nella relativa cache. In quest'ultimo caso, la memorizzazione nella cache non consentire agli utenti di affatto.
+Al contrario, in SharePoint Online sono disponibili molte più server, ma anche molti altri siti. Ogni utente può connettersi a un server web front-end diverse che non dispone di cache popolata. In alternativa, ad esempio la cache sono popolata per un server, ma l'utente successivo per le richieste vengano server web front-end una pagina da un altro sito. In alternativa, anche se l'utente successivo richiede la stessa pagina in base alla loro visita precedente, sono con bilanciamento del carico a un server web front-end diverse che non dispone di tale pagina nella relativa cache. In quest'ultimo caso, la memorizzazione nella cache non consentire agli utenti di affatto.
   
 Nella figura seguente, ogni punto rappresenta una pagina che richiede un utente e la cache in cui è memorizzato. Colori diversi rappresentano diversi clienti che condividono l'infrastruttura SaaS.
   

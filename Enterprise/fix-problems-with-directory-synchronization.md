@@ -3,7 +3,6 @@ title: Risoluzione dei problemi relativi alla sincronizzazione della directory p
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Vengono descritte le cause comuni dei problemi relativi alla sincronizzazione della directory in Office 365 e vengono forniti alcuni metodi per risolverli.
-ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
-ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
+ms.openlocfilehash: 2d567daa370d651a6eb9180db2f729d09b380226
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25405129"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897309"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Risoluzione dei problemi relativi alla sincronizzazione della directory per Office 365
 
@@ -54,12 +53,12 @@ Per aggiornare di sincronizzazione di Azure Active Directory Connetti Azure Acti
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**Oggetti sincronizzati non vengono visualizzate o si aggiorna in linea o ricezione di segnalazioni di errori di sincronizzazione dal servizio.**
 
-- [Resilienza dei attributo duplicati e sincronizzazione delle identità](https://go.microsoft.com/fwlink/p/?LinkID=798300)
+- [Resilienza dei attributo duplicati e sincronizzazione delle identità](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
 ### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Si dispone di un avviso nell'interfaccia di amministrazione di Office 365 o riceve automatizzate messaggi di posta elettronica non è stato un evento di sincronizzazione di recente**
-- [Risoluzione dei problemi di connettività di Azure Active Directory Connect](https://go.microsoft.com/fwlink/p/?LinkId=820597)
+- [Risoluzione dei problemi di connettività di Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Autorizzazioni e gli account di Active Directory connettersi Azure](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Sincronizzazione di Active Directory Connetti Azure: come gestire l'account del servizio di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=820599)
+- [Sincronizzazione di Active Directory Connetti Azure: come gestire l'account del servizio di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [Sincronizzazione di directory di interruzioni di Azure Active Directory o si sta avvisati che sincronizzazione non è registrato in più di un giorno](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Non sono sincronizzare gli hash password o vengono visualizzati gli avvisi in interfaccia di amministrazione di Office 365 non è stata una sincronizzazione hash password recenti**
@@ -79,7 +78,7 @@ Per aggiornare di sincronizzazione di Azure Active Directory Connetti Azure Acti
    
 ## <a name="other-resources"></a>Altre risorse
 
-- [Script per risolvere i nomi delle entità utente duplicati](https://go.microsoft.com/fwlink/p/?LinkId=396725)
+- [Script per correggere i nomi dell'entità utente duplicati](https://go.microsoft.com/fwlink/p/?LinkId=396725)
     
 - [Come preparare un dominio non instradabili (ad esempio domain Local) per la sincronizzazione delle directory](prepare-a-non-routable-domain-for-directory-synchronization.md)
     

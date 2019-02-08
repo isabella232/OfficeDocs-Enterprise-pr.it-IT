@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "Riepilogo: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno smartphone in un ambiente di sviluppo e testing di Office 365."
-ms.openlocfilehash: 12458e2dd41518deb0b540e809a08c4df865a3df
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 6e2aefa9309e7e268c937055f7fe59600f8c87da
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915661"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897449"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365
 
  **Riepilogo:** Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno smartphone in un ambiente di sviluppo e testing di Office 365.
   
-Per un ulteriore livello di sicurezza per l'accesso alla propria sottoscrizione di Office 365, è possibile abilitare l'autenticazione a più fattori di Azure, che richiede più di nome utente e password per la verifica di un account. Con l'autenticazione a più fattori per Office 365, agli utenti viene richiesto di confermare telefonate, digitare un codice di verifica inviato in un messaggio di testo oppure specificare una password di un'app sullo smartphone dopo aver immesso correttamente la password. L'accesso è consentito solo dopo che un secondo fattore di autenticazione viene soddisfatto. 
+Per un livello aggiuntivo di protezione per l'accesso alla sottoscrizione Office 365, è possibile abilitare l'autenticazione multifattore Azure, che richiede più di solo un nome utente e password per l'autenticazione di un account. Con l'autenticazione a più fattori per Office 365, sono necessari per confermare una telefonata, digitare un codice di verifica inviato un messaggio di testo o specificare una password di app per i telefoni smart dopo aver immesso correttamente le password degli utenti. È possibile accedere solo dopo che è state soddisfatte questo secondo fattore di autenticazione. 
   
 In questo articolo viene illustrato come abilitare e testare l'autenticazione basata su messaggi di testo per uno specifico account di Office 365.
   
@@ -77,7 +77,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 1. Aprire una nuova istanza del browser.
     
-2. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere con l'account utente 2 (user2 @\<nome organizzazione >. onmicrosoft.com) e una password.
+2. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere con l'account utente 2 (user2 @\<name>.onmicrosoft.com organizzazione) e una password.
     
 3. Dopo l'accesso, viene chiesto di configurare l'account per un'ulteriore convalida di sicurezza. Fare clic su **Configura ora**.
     

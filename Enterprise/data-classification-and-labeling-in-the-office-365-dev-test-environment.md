@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "Riepilogo: configurare e dimostrare la classificazione e l'etichettatura dei dati tramite il client Azure Information Protection (AIP) nel proprio ambiente di sviluppo e testing di Office 365."
-ms.openlocfilehash: 91d3b40f43eed750bd33065faa1c57d74179cf58
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914851"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897439"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificazione e assegnazione di un'etichetta ai dati nell'ambiente di sviluppo/test di Office 365
 
  **Riepilogo:** configurare e dimostrare la classificazione e l'etichettatura dei dati tramite il client Azure Information Protection (AIP) nel proprio ambiente di sviluppo e testing di Office 365.
   
-Il client Azure Information Protection consente di classificare un documento prima di caricarlo in una cartella di SharePoint Online in Office 365. Con le istruzioni disponibili in questo articolo, si installa il client Azure Information Protection e si esegue la classificazione dei dati. Per ulteriori informazioni, vedere [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
+Il client di Azure Information Protection consente di classificare un documento prima di caricare una cartella di SharePoint Online in Office 365. Con le istruzioni riportate in questo articolo, installare il client per la protezione delle informazioni di Azure e illustrare classificazione dei dati. Per ulteriori informazioni, vedere [La protezione delle informazioni di Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
 > Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
@@ -126,7 +126,7 @@ Successivamente, eseguire la classificazione dei documenti.
     
 9. Fare clic su **Esplora File** sulla barra delle applicazioni, quindi aprire la cartella **Documenti**.
     
-    Annotare le differenti dimensioni dei file dei documenti **BeforeAIP** e **AfterAIP**. Il documento AfterAIP è più grande perché contiene le informazioni di classificazione.
+    Nota le dimensioni dei documenti **BeforeAIP** e **AfterAIP** file diverso. Il documento AfterAIP è più grande perché sono disponibili le informazioni di classificazione.
     
 Successivamente, consentire a tutti gli utenti di accedere alla raccolta siti di supporto.
   
@@ -150,7 +150,7 @@ In seguito, accedere con l'account User5 e caricare il documento con protezione 
   
 1. Nella **Microsoft Office Home** in alto a destra, fare clic sull'icona dell'utente e quindi fare clic su **Disconnetti**.
     
-2. Accedere a [http://portal.office.com](http://portal.office.com).
+2. Passare a [http://portal.office.com](http://portal.office.com).
     
 3. Nella pagina **Office 365 accedere** , fare clic sul nome di account User5 e accedere.
     

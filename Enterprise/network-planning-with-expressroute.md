@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute per Office 365 fornisce la connettività di livello 3 tra la rete e Data Center di Microsoft. Parte del circuito utilizzare annunci route Border Gateway Protocol (BGP) del server front-end di Office 365. Dal punto di vista dei dispositivi in locale, quando è necessario selezionare il percorso corretto TCP/IP per Office 365, ExpressRoute Azure è visualizzato come alternativa a Internet.
-ms.openlocfilehash: 79cad16a619f048d1ba98b6058127f901211344d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7a2c9cb8ee562c0527416aa83184de90cd204476
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541366"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897229"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Pianificazione della rete con ExpressRoute per Office 365
 
@@ -34,7 +34,7 @@ Nella tabella seguente vengono evidenziate alcune differenze tra le connessioni 
 |**Differenze nella pianificazione della rete**|**Connessione a Internet**|**Connessione di rete ExpressRoute**|
 |:-----|:-----|:-----|
 | Accesso ai servizi internet necessari, incluse;  <br/>  Risoluzione dei nomi DNS  <br/>  Verifica della revoca dei certificati  <br/>  Reti per la distribuzione di contenuti  <br/> |Sì  <br/> |Le richieste a Microsoft di proprietà dell'infrastruttura DNS e/o CDN può utilizzare la rete ExpressRoute.  <br/> |
-| Accesso ai servizi di Office 365, inclusi;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office Online  <br/>  L'autenticazione e portale di office 365  <br/> |Sì, tutte le applicazioni e caratteristiche  <br/> |Sì, [applicazioni e funzionalità specifiche](https://aka.ms/o365endpoints) <br/> |
+| Accesso ai servizi di Office 365, inclusi;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business online  <br/>  Office Online  <br/>  L'autenticazione e portale di office 365  <br/> |Sì, tutte le applicazioni e caratteristiche  <br/> |Sì, [applicazioni e funzionalità specifiche](https://aka.ms/o365endpoints) <br/> |
 |Sicurezza nel perimetro in locale.  <br/> |Sì  <br/> |Sì  <br/> |
 |Pianificazione della disponibilità elevata.  <br/> |Failover su una connessione di rete internet alternativo  <br/> |Failover su una connessione ExpressRoute alternativo  <br/> |
 |Connessione diretta con un profilo di rete prevedibile.  <br/> |No  <br/> |Sì  <br/> |
@@ -106,7 +106,7 @@ Woodgrove Bank sta valutando l'implementazione di Azure ExpressRoute e dopo la p
   
 Per Woodgrove, un'organizzazione multinazionale con posizioni in più continenti, sicurezza deve estendersi su perimetri tutti. L'opzione di integrazione applicativa ottimale per Woodgrove è una connessione multipunto con più posizioni peering in tutto il mondo per soddisfare le esigenze dei propri dipendenti in ogni continente. Ogni continente include circuiti Azure ExpressRoute ridondanti all'interno di continente e sicurezza deve estendersi su tutti i componenti.
   
-Infrastruttura esistente della Woodgrove è affidabile e in grado di gestire le operazioni aggiuntive, di conseguenza, Woodgrove Bank è in grado di utilizzare l'infrastruttura di protezione perimetrale ExpressRoute Azure e internet. Se ciò non il caso, Woodgrove può scegliere di acquistare apparecchiature aggiuntive per integrare le apparecchiature esistente o per gestire un altro tipo di connessione.
+Infrastruttura esistente della Woodgrove è affidabile e in grado di gestire le operazioni aggiuntive, di conseguenza, Woodgrove Bank è in grado di utilizzare l'infrastruttura per la protezione perimetrale ExpressRoute Azure e internet. Se ciò non il caso, Woodgrove può scegliere di acquistare apparecchiature aggiuntive per integrare le apparecchiature esistente o per gestire un altro tipo di connessione.
   
 ## <a name="high-availability-and-failover-with-azure-expressroute"></a>Disponibilità elevata e failover con Azure ExpressRoute
 <a name="BKMK_high-availability"> </a>
@@ -185,7 +185,7 @@ Scegliere le posizioni del circuito basato sulla larghezza di banda, latenza, si
   
 Collaborare con il provider o a un provider per selezionare le opzioni di integrazione applicativa best, Point, multipunto o ospitata. Tenere presente che è possibile combinare e soddisfa i criteri del servizio di integrazione applicativa purché la larghezza di banda e altri componenti ridondanti supportano la progettazione di routing e l'elevata disponibilità.
   
-Questo è un collegamento breve che è possibile utilizzare il ritorno:[https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
 ## <a name="related-topics"></a>Argomenti correlati
 <a name="BKMK_high-availability"> </a>
@@ -200,15 +200,15 @@ Questo è un collegamento breve che è possibile utilizzare il ritorno:[https://
   
 [Implementazione di ExpressRoute per Office 365](implementing-expressroute.md)
   
-[Utilizzo della caratteristica community BGP in ExpressRoute per gli scenari di Office 365 (preview)](bgp-communities-in-expressroute.md)
+[Uso delle community BGP in ExpressRoute per gli scenari di Office 365 (anteprima)](bgp-communities-in-expressroute.md)
   
-[Qualità multimediale e le prestazioni di connettività di rete in Skype for Business in linea](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Qualità multimediale e prestazioni della connettività di rete in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Ottimizzazione della rete per Skype Business online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Ottimizzazione della rete per Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute e QoS in Skype for Business in linea](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute e QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Flusso di chiamate tramite ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Flusso di chiamata con ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Ottimizzazione delle prestazioni di Office 365 mediante l'uso della cronologia delle prestazioni e delle previsioni](performance-tuning-using-baselines-and-history.md)
   
@@ -216,6 +216,6 @@ Questo è un collegamento breve che è possibile utilizzare il ritorno:[https://
   
 [URL e intervalli di indirizzi IP per Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Ottimizzazione delle prestazioni e rete di Office 365](network-planning-and-performance.md)
+[Ottimizzazione delle prestazioni e della rete di Office 365](network-planning-and-performance.md)
   
 [Domande frequenti sugli endpoint di Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

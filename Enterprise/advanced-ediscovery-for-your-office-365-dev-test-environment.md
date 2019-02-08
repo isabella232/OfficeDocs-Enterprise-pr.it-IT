@@ -13,16 +13,17 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
-description: "Riepilogo: Configurare e illustrare eDiscovery avanzate di Office 365 con dati di esempio nell'ambiente di sviluppo e di testing di Office 365."
-ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+description: "Riepilogo: configurazione e dimostrazione di Office 365 Advanced eDiscovery con dati di esempio nell'ambiente di sviluppo/test di Office 365."
+ms.openlocfilehash: c93900e07b8b9adbe0f1120eca77019b9dcc1eda
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897509"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery per l'ambiente di sviluppo/test di Office 365
 
- **Riepilogo:** Configurare e dimostrare l'utilizzo di Office 365 avanzate eDiscovery con dati di esempio nell'ambiente di sviluppo e di testing di Office 365.
+ **Riepilogo:** configurazione e dimostrazione di Office 365 Advanced eDiscovery con dati di esempio nell'ambiente di sviluppo/test di Office 365.
   
 Office 365 eDiscovery avanzate consente di trovare rapidamente e analizzare le informazioni pertinenti attraverso i dati archiviati in Office 365, inclusi documenti e posta elettronica. Questo può salvare un'elevata quantità di tempo e denaro, soprattutto nelle situazioni di conservazione per controversia. Per ulteriori informazioni, vedere [eDiscovery avanzate di Office 365](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4).
   
@@ -50,59 +51,59 @@ In questa procedura, è possibile creare messaggi di posta elettronica che in se
     
   - Se si utilizza l'ambiente di sviluppo e di testing enterprise simulato, utilizzare il portale di Azure ([https://portal.azure.com](https://portal.azure.com)) per connettersi alla macchina virtuale CLIENT1 e quindi effettuare l'accesso da CLIENT1.
     
-2. Nella scheda **Posta elettronica di Outlook** fare clic su **Nuovo**.
+2. Nella scheda **Posta di Outlook**, fare clic su **Nuovo**.
     
 3. Nella casella **a**digitare l'indirizzo di posta elettronica dell'account User6 dell'abbonamento valutazione ( **user6 @.** <organization name> **. onmicrosoft.com**).
     
-4. Per l'oggetto, digitare **1 e-mail di prova**.
+4. Per l'oggetto, digitare **Messaggio di posta elettronica di prova 1**.
     
-5. Nel corpo, digitare **bozza contratto Tailspin**e quindi fare clic su **Invia**.
+5. Nel corpo del messaggio, digitare **Bozza contratto Tailspin**, quindi fare clic su **Invia**.
     
-6. Nella scheda **Posta elettronica di Outlook** fare clic su **Nuovo**.
+6. Nella scheda **Posta di Outlook**, fare clic su **Nuovo**.
     
-7. Nella casella **a**digitare l'indirizzo di posta elettronica dell'account User6 della sottoscrizione di prova.
+7. In **A**, digitare l'indirizzo di posta elettronica dell'account di User6 della sottoscrizione di valutazione.
     
-8. Per l'oggetto, digitare **Test e-mail 2**.
+8. Per l'oggetto, digitare **Messaggio di posta elettronica di prova 2**.
     
-9. Nel corpo, digitare **convocazione di riunione pranzo Tailspin**e quindi fare clic su **Invia**.
+9. Nel corpo del messaggio, digitare **Riunione pranzo Tailspin**, quindi fare clic su **Invia**.
     
-10. Nella scheda **Posta elettronica di Outlook** fare clic su **Nuovo**.
+10. Nella scheda **Posta di Outlook**, fare clic su **Nuovo**.
     
-11. Nella casella **a**digitare l'indirizzo di posta elettronica dell'account User6 della sottoscrizione di prova.
+11. In **A**, digitare l'indirizzo di posta elettronica dell'account di User6 della sottoscrizione di valutazione.
     
-12. Per l'oggetto, digitare **3 e-mail di prova**.
+12. Per l'oggetto, digitare **Messaggio di posta elettronica di prova 3**.
     
-13. Nel corpo, digitare **disaccordo contratto Tailspin**e quindi fare clic su **Invia**.
+13. Nel corpo del messaggio, digitare **Divergenze sul contratto Tailspin**, quindi fare clic su **Invia**.
     
 14. Fare clic sull'icona utente nell'angolo superiore destro e quindi fare clic su **Esci**.
     
 15. Aprire una nuova scheda e accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) con il nome dell'account e la password dell'account User6 della sottoscrizione di prova.
     
-16. Nella scheda **portale di Office 365** , fare clic su **posta elettronica**.
+16. Nella scheda **Portale di Office 365**, fare clic su **Posta**.
     
 17. Nella scheda **- User6 - posta elettronica Outlook** , verificare che User6 ricevuto tutti i messaggi di posta tre elettronica dall'account di posta elettronica di Outlook.
     
-18. Passare alla **scheda portale Office 365** per User6.
+18. Tornare alla **scheda del portale di Office 365** per User6.
     
-19. Fare clic sull'icona utente nell'angolo superiore destro e quindi fare clic su **disconnettersi.**
+19. Fare clic sull'icona dell'utente nell'angolo in alto a destra, quindi su **Disconnetti.**
     
 In questa procedura, è possibile creare due documenti Word che in seguito verranno analizzati in un caso di Advanced eDiscovery.
   
-1. Nella pagina **Office** , fare clic su **Accedi,** accedere con le credenziali dell'account di amministratore globale.
+1. Nella pagina **Office**, fare click su **Accedi,** effettuare l'accesso con le credenziali dell'account di amministratore globale.
     
 2. Accedere all'URL del sito di SharePoint di produzione in una nuova scheda: **https://** <fictional organization name> **.sharepoint.com/sites/production**
     
-3. Nella scheda **raccolta siti di produzione** , in **documenti**, fare clic su **Nuovo > documento di Word**.
+3. Nella scheda **Raccolta siti di produzione**, in **Documenti**, fare clic su **Nuovo > Documento Word**.
     
-4. Nella pagina **Word Online** digitare **Tailspin bozza di contratto**, attendere finché non viene visualizzato **Saved** del titolo e quindi chiudere la scheda pagina **Word Online** .
+4. Nella pagina **Word Online**, digitare **Bozza contratto Tailspin**, attendere finché non compare **Salvato** nel titolo, quindi chiudere la scheda della pagina **Word Online**.
     
-5. Nella scheda **raccolta siti di produzione** , in **documenti**, fare clic su **Nuovo > documento di Word**.
+5. Nella scheda **Raccolta siti di produzione**, in **Documenti**, fare clic su **Nuovo > Documento Word**.
     
-6. Nella scheda **Word Online** digitare **Tailspin contratto controversia note**, attendere finché non viene visualizzato **Saved** del titolo e quindi chiudere la scheda **Word Online** .
+6. 	Nella scheda **Word Online**, digitare **Note su divergenze relative al contratto Tailspin**, attendere finché non compare **Salvato** nel titolo, quindi chiudere la scheda **Word Online**.
     
-7. Nella scheda **raccolta siti di produzione** , si dovrebbero essere visualizzati **documento** e **Documento1** nell'elenco dei documenti.
+7. Nella scheda **Raccolta siti di produzione**, viene visualizzato **Documento** e **Documento1** nell'elenco dei documenti.
     
-8. Chiudere la scheda **raccolta siti di produzione** .
+8. Chiudere la scheda **Raccolta siti di produzione**.
     
 ## <a name="phase-3-use-advanced-ediscovery-for-a-legal-dispute"></a>Fase 3: Utilizzare eDiscovery avanzate per una controversia legale
 
@@ -116,65 +117,65 @@ La procedura per l'uso di Advanced eDiscovery è la seguente:
     
 In questa procedura si crea una ricerca per la protezione &amp; conformità center per "Contratto Tailspin", consultare i risultati e quindi preparare i risultati eDiscovery avanzate.
   
-1. Nella scheda **portale di Office 365** , fare clic su **amministratore**.
+1. Dalla scheda **Portale di Office 365**, fare clic su **Admin**.
     
-2. Nel riquadro di spostamento sinistro della scheda centro di amministrazione, fare clic su **Admin Center > conformità**.
+2. Nella barra di spostamento a sinistra della scheda dell'interfaccia di amministrazione, fare clic su **Interfacce di amministrazione > Conformità**.
     
 3. Nella **protezione &amp; conformità** fare clic su **autorizzazioni**.
     
-4. Nella casella **autorizzazioni** fare doppio clic su **Gestione organizzazione**.
+4. Nell'elenco **Autorizzazioni**, fare doppio click su **Gestione organizzazione**.
     
-5. Nella finestra **Gruppo di ruoli** in **membri**, fare clic sul segno più.
+5. Nella finestra **Gruppo di ruoli**, in **Membri** fare clic sul segno più.
     
-6. Nella finestra **Selezione membri** , fare doppio clic sul nome dell'account di amministratore e quindi fare clic su **OK**.
+6. Nella finestra **Seleziona membri**, fare doppio clic sul nome dell'account di amministratore, quindi fare clic su **OK**.
     
-7. Nella finestra di **Gruppo di ruoli** , fare clic su **Salva**.
+7. Nella finestra **Gruppo di ruoli**, fare clic su **Salva**.
     
-8. Nella casella **autorizzazioni** fare doppio clic su **eDiscovery Manager**.
+8. Nell'elenco **Autorizzazioni**, fare doppio clic su **Responsabile di eDiscovery**.
     
-9. Nella finestra del **Gruppo di ruoli** **amministratore di eDiscovery**, fare clic sull'icona più.
+9. Nella finestra **Gruppo di ruoli**, in **Amministratore di eDiscovery**, fare clic sull'icona più.
     
-10. Nella finestra **Selezione membri** , fare doppio clic sul nome dell'account di amministratore e quindi fare clic su **OK**.
+10. Nella finestra **Seleziona membri**, fare doppio clic sul nome dell'account di amministratore, quindi fare clic su **OK**.
     
-11. Nella finestra di **Gruppo di ruoli** , fare clic su **Salva**.
+11. Nella finestra **Gruppo di ruoli**, fare clic su **Salva**.
     
-12. Nel riquadro di spostamento sinistra fare clic su **ricerca &amp; indagini > ricerca contenuto**.
+12. Nel riquadro di spostamento sinistra fare clic su **ricerca &amp; ricerca contenuto indagini gt _**.
     
 13. Fare clic sull'icona più per aggiungere una ricerca.
     
-14. Nella finestra della **nuova ricerca** , digitare **ricerca contratto Tailspin** nella **casella Nome**.
+14. Nella finestra **Nuova ricerca**, digitare **Ricerca contratto Tailspin** in **Nome**.
     
-15. In **dove si desidera di aspetto?**, fare clic su **ovunque, di ricerca** selezionare **Exchange**, **SharePoint**e **Le cartelle pubbliche**e quindi fare clic su **successivo.**
+15. In **Dove vuoi effettuare la ricerca?**, fare clic su **Cerca ovunque,** selezionare **Exchange**, **SharePoint** e **Cartelle pubbliche**, quindi fare clic su **Avanti.**
     
-16. In **scegliere un'opzione di cercare?**digitare **contratto Tailspin**, fare clic su **Cerca**.
+16. In **Cosa vuoi cercare?**, digitare **Contratto Tailspin**, quindi fare clic su **Cerca**.
     
-17. Nell'elenco delle ricerche, fare clic sul nome di **ricerca contratto Tailspin** .
+17. Nell'elenco delle ricerche, fare clic sul nome **Ricerca contratto Tailspin**.
     
 18. Nel riquadro **Tailspin contratto ricerca** , fare clic su **Anteprima risultati di ricerca** **nell'area risultati della**. Verrà visualizzata una finestra che elenca i due documenti nel sito di SharePoint di produzione ( **documenti** e **Documento1**) e sui messaggi di **posta elettronica Test 1** e **3 e-mail di prova** a User6. Chiudere la finestra.
     
-19. Nel riquadro di **ricerca del contenuto** , **i risultati di analisi con eDiscovery avanzate**, fare clic su **Anteprima risultati per l'analisi**.
+19. Nel riquadro **Ricerca contenuto**, in **Analizza i risultati con Advanced eDiscovery**, fare clic su **Anteprima risultati per analisi**.
     
-20. Nella finestra **dei risultati di preparare la ricerca per la ricerca contratto Tailspin** fare clic su **Prepara** e attendere che venga completato.
+20. Nella finestra **Prepara i risultati della ricerca per ricerca contratto Tailspin**, fare clic su **Prepara** e attendere il completamento dell'operazione.
     
 In questa procedura, è possibile creare un nuovo caso di Advanced eDiscovery e analizzare i risultati della ricerca relativa al contratto Tailspin.
   
 1. Nel riquadro di spostamento sinistra fare clic su **eDiscovery** in **ricerca &amp; indagini**.
     
-2. Nel riquadro di **eDiscovery** , fare clic su **Vai a eDiscovery avanzate**.
+2. Nel riquadro **eDiscovery**, fare clic su **Vai ad Advanced eDiscovery**.
     
-3. Nella scheda **Impostazioni avanzate di eDiscovery** , fare clic sull'icona del segno più per aggiungere un nuovo caso.
+3. Nella scheda **Advanced eDiscovery**, fare clic sull'icona più per aggiungere un nuovo caso.
     
-4. Nel riquadro **Add case** digitare **controversia contratto Tailspin** nella **casella Nome**e quindi fare clic su **OK**. Attendere il caso da creare.
+4. 	Nel riquadro **Aggiungi caso**, digitare **Controversia relativa al contratto Tailspin** in **Nome**, quindi fare clic su **OK**. Attendere che il caso venga creato.
     
-5. Fare doppio clic sul caso di **controversia contratto Tailspin** nell'elenco.
+5. Fare doppio clic sul caso **Controversia relativa al contratto Tailspin** nell'elenco. 
     
 6. Nell'elenco del **contenitore** , fare clic sul contenitore **ricerca contratto Tailspin** e quindi fare clic su **processo**. Attendere il completamento dell'elaborazione.
     
-7. Quando si **processo: completato** viene visualizzata nella parte inferiore della finestra, fare clic su **processo riepilogo** nel riquadro di spostamento sinistro per visualizzare un riepilogo.
+7. Quando nella parte inferiore della finestra viene visualizzato **Elaborazione completata**, fare clic su **Riepilogo elaborazione** nella barra di spostamento a sinistra per visualizzare un riepilogo.
     
-8. Nel riquadro di spostamento superiore fare clic su **Analyze**.
+8. Nella barra di spostamento superiore, fare clic su **Analizza**.
     
-9. Nella pagina **installazione** con **i temi**, digitare **3** **numero Max di temi**.
+9. Nella pagina **Configurazione**, in **Temi** digitare **3** in **Numero massimo di temi**.
     
 10. Fare clic su **Analyze** e attendere che l'analisi per il completamento. Dovrebbe essere visibile una serie di grafici a torta con analisi della popolazione target, documenti, messaggi di posta elettronica e allegati. Per ulteriori informazioni, vedere [visualizzazione di analizzare i risultati](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e).
     
@@ -194,6 +195,6 @@ In questa procedura, è possibile creare un nuovo caso di Advanced eDiscovery e 
   
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 
-[EDiscovery avanzate di Office 365](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
+[Office 365 Advanced eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
 
 

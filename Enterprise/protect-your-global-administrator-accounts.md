@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteggere l'accesso di amministratore globale per la sottoscrizione a Office 365 con i tre passaggi successivi.
-ms.openlocfilehash: 7260e903ea007735c87ab8aa826e3b97e7bd28c1
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 41168643fb8867017865860624c8b436460fa0b8
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541370"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897519"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteggere gli account di amministrazione globale di Office 365.
 
@@ -92,11 +92,11 @@ Dal momento in poi, si accede con gli account di amministratore globale dedicati
 
 L'autenticazione a più fattori (MFA) per gli account di amministratore globale richiede informazioni aggiuntive oltre il nome dell'account e la password. Office 365 supporta questi metodi di verifica:
   
-- Una chiamata telefonica
+- Una telefonata
     
 - Un passcode generato casualmente
     
-- Una smart card (virtuali o fisiche)
+- Una smart card virtuale o fisica
     
 - Un dispositivo biometrico
     

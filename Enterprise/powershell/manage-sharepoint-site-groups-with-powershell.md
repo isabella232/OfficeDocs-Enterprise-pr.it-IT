@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: Utilizzare Office 365 PowerShell per gestire i gruppi del sito SharePoint Online.'
-ms.openlocfilehash: c68e0905c0abcbea279829be7c841c31409db6cf
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 62643cabb2377c07117299dc25314cd515a06791
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975144"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897159"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Manage SharePoint Online site groups with Office 365 PowerShell
 
@@ -27,7 +27,7 @@ ms.locfileid: "23975144"
   
 Sebbene sia possibile utilizzare l'interfaccia di amministrazione di Office 365, è inoltre possibile utilizzare Office 365 PowerShell per gestire i gruppi del sito di SharePoint Online.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Le procedure descritte in questo articolo è necessario per la connessione a SharePoint Online. Per ulteriori informazioni, vedere [connettersi a PowerShell per SharePoint Online](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
@@ -69,7 +69,7 @@ In entrambi i casi, verrà visualizzato qualcosa di simile alla seguente:
 
 ![Gruppi di siti di SharePoint Online](media/SPO-site-groups.png)
 
-Si tratta di tutti i gruppi che sono stati creati per il sito `https://litwareinc.sharepoint.com/sites/finance`, così come tutti gli utenti assegnati a tali gruppi. I nomi dei gruppi sono di colore giallo che consentono di nomi di gruppi separati dai relativi membri.
+Si tratta di tutti i gruppi che sono stati creati per il sito `https://litwareinc.sharepoint.com/sites/finance`e tutti gli utenti assegnati a tali gruppi. I nomi dei gruppi sono di colore giallo che consentono di nomi di gruppi separati dai relativi membri.
 
 Come ulteriore esempio, di seguito è un set di comandi in cui sono elencati i gruppi e tutte le appartenenze a gruppi, per tutti i siti di SharePoint Online.
 

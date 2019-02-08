@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Viene descritto l'utilizzo incorporati contenuto rete di Office 365 (CDN) per velocizzare il recapito delle risorse di SharePoint Online per tutti gli utenti indipendentemente dalla posizione in cui si trova o dalla modalità di accesso ai contenuti.
-ms.openlocfilehash: 958f01419a74e4b8cd007b2627585884496bdfdf
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fd118e8df404961e1c35c6297a788397f810d1a2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541148"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29547114"
 ---
 # <a name="use-the-office-365-content-delivery-network-with-sharepoint-online"></a>Utilizzare la rete di distribuzione del contenuto di Office 365 con SharePoint Online
 
@@ -138,6 +138,9 @@ Origini pubbliche predefinite:
 - \*/MasterPage
     
 - \*raccolta /Style
+
+> [!NOTE]
+> Clientsideassets è un'origine pubblica predefinita che è state aggiunte Dec di 2017 in modo che, se sono CDN pubblico prima di quel momento, si non visualizzata la voce aggiunta automaticamente, ma se è stato creato in un secondo momento, è possibile visualizzare questa modifica automaticamente. Se si desidera leggere un esempio dell'utilizzo di questa origine di rete CDN, vedere: [Host sul lato client web part da Office 365 CDN (Hello World parte 4)](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)
     
 ## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a>Impostare e configurare la rete CDN di Office 365 con SharePoint Online Management Shell
 

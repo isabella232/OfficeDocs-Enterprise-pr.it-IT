@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "Riepilogo: Usare questa Guida del laboratorio di testing per attivare l'integrazione di Dynamics 365 per Exchange Online nella sottoscrizione di valutazione di Office 365."
-ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915501"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897119"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Integrazione di Exchange Online per il proprio ambiente di sviluppo/test di Office 365 e Dynamics 365
 
@@ -46,7 +46,7 @@ Seguire questi passaggi per configurare la cassetta postale dell'amministratore 
     
 2. Nella pagina **Microsoft Office Home**, fare clic sulla sezione **Posta di Outlook**.
     
-3. Nella nuova scheda **Posta di Outlook** nel browser, fare clic su **Nuovo** e notare come l'angolo inferiore del riquadro sotto la casella per digitare un messaggio contiene un'icona per modelli personali.
+3. Nella scheda **posta** nuova nel browser, fare clic su **Nuovo** e osservare come l'angolo inferiore del riquadro sotto la casella per digitare un messaggio con un'icona per modelli personali.
     
      ![Un nuovo messaggio e-mail vuoto e privo d'integrazione con Dynamics 365.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -88,7 +88,7 @@ Seguire questi passaggi per installare l'App Dynamics 365 per Outlook e dimostra
     
 5. Fare clic sulla scheda **Microsoft Office Home** visualizzata nel browser, quindi fare clic sulla sezione **Posta di Outlook**.
     
-6. Nella nuova scheda **Posta di Outlook**, fare clic su **Nuovo**. Tenere presente che l'angolo inferiore del riquadro sotto la casella per digitare un messaggio ora contiene un'icona per Dynamics 365.
+6. Nella scheda **Stampa** nuovo nel browser fare clic su **Nuovo**. Si noti che l'angolo inferiore del riquadro sotto la casella per digitando il messaggio adesso è un'icona per Dynamics 365.
     
      ![Un nuovo messaggio e-mail vuoto dotato d'integrazione con Dynamics 365; visualizzazione della nuova icona.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   

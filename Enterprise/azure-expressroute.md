@@ -3,7 +3,7 @@ title: Azure ExpressRoute per Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Informazioni su come ExpressRoute Azure viene utilizzato con Office 365 e come pianificare il progetto di implementazione di rete che verrà richiesto se si sta distribuendo ExpressRoute Azure per l'utilizzo con Office 365.
-ms.openlocfilehash: 5a82576b541e27c70bca490ff8dfe887ee879c83
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: c8cff4ef85c4383ba04829cf3cf8da3a1bc36715
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541154"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25911400"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute per Office 365
 
-Informazioni su come ExpressRoute Azure viene utilizzato con Office 365 e come pianificare il progetto di implementazione di rete che verrà richiesto se si sta distribuendo ExpressRoute Azure per l'utilizzo con Office 365. Piattaforma e all'infrastruttura servizi in esecuzione in Azure utilizzeranno spesso risolvendo considerazioni sull'architettura e le prestazioni di rete. In questi casi è consigliabile ExpressRoute per Azure. Software come le offerte di servizi come in Office 365 e Dynamics 365 sono stati realizzati per essere utilizzate in modo sicuro e affidabile tramite Internet. Di conseguenza, è consigliabile solo ExpressRoute per tali applicazioni in scenari specifici. È possibile leggere sulla sicurezza e prestazioni di Internet e se può essere opportuno ExpressRoute Azure per Office 365 nell'articolo della [connettività di rete per Office 365](network-connectivity.md).
+Informazioni su come ExpressRoute Azure viene utilizzato con Office 365 e come pianificare il progetto di implementazione di rete che verrà richiesto se si sta distribuendo ExpressRoute Azure per l'utilizzo con Office 365. Piattaforma e all'infrastruttura servizi in esecuzione in Azure utilizzeranno spesso risolvendo considerazioni sull'architettura e le prestazioni di rete. In questi casi è consigliabile ExpressRoute per Azure. Software come le offerte di servizi come in Office 365 e Dynamics 365 sono stati realizzati per essere utilizzate in modo sicuro e affidabile tramite Internet. È possibile leggere sulla sicurezza e prestazioni di Internet e se può essere opportuno ExpressRoute Azure per Office 365 nell'articolo della [connettività di rete per Office 365](network-connectivity.md).
 
 > [!NOTE]
-> Avvio del 31 luglio 2017, è possibile abilitare Peering Microsoft direttamente dalla console di amministrazione di Azure o utilizzo di PowerShell. Dopo aver abilitato Peering Microsoft, è possibile creare filtri di route per la ricezione di annunci di route BGP specifici. È necessario autorizzazione alla creazione di filtri per Office 365 e creare filtri di applicazioni (precedentemente note come CRM Online) Dynamics 365 Engagement per i clienti in qualsiasi momento. Parlare con il team di Account Microsoft sul processo per ottenere l'autorizzazione per creare filtri di route di Office 365. Sottoscrizioni non autorizzate tenta di creare filtri di route per Office 365 verranno visualizzato un [messaggio di errore](https://support.microsoft.com/kb/3181709)
+> Autorizzazione di Microsoft è necessario utilizzare ExpressRoute per Office 365. Microsoft esamina tutte le richieste dei clienti e autorizza ExpressRoute per l'utilizzo di Office 365 quando i requisiti normativi del cliente impone la connessione diretta. Se si devono soddisfare questi requisiti, forniscono il collegamento testo estratto e web alla normativa che interpretare per indicare che è necessaria una connessione diretta in [ExpressRoute di modulo di richiesta di Office 365](https://aka.ms/O365ERReview) per iniziare una revisione di Microsoft. Sottoscrizioni non autorizzate tenta di creare filtri di route per Office 365 verranno visualizzato un [messaggio di errore](https://support.microsoft.com/kb/3181709). 
 
 È ora possibile aggiungere una connessione diretta alla rete a Office 365 per il traffico di rete di Office 365 selezionato. ExpressRoute Azure offre una connessione diretta, le prestazioni prevedibile e con un tempo di attività SLA di 99,95% per i componenti di rete di Microsoft. È ancora sarà necessaria una connessione internet per i servizi che non sono supportati su Azure ExpressRoute.
 
@@ -96,14 +96,13 @@ Per ulteriori informazioni, utilizzare la [Guida alla distribuzione](https://sup
 
 Per acquistare ExpressRoute per Office 365, è necessario per l'utilizzo con uno o più [approvato provider](https://azure.microsoft.com/documentation/articles/expressroute-locations/) per fornire il numero desiderato e circuiti dimensioni con una sottoscrizione ExpressRoute Premium. Non esistono licenze aggiuntive per l'acquisto di Office 365.
 
-Questo è un collegamento breve che è possibile utilizzare il ritorno:[https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
+Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
 
 Prepararsi per l'abbonamento a per [ExpressRoute per Office 365](https://aka.ms/ert)?
 
 ([ExpressRoute azure per Office 365](azure-expressroute.md#BKMK_HOME))
 
 ## <a name="related-topics"></a>Argomenti correlati
-<a name="BKMK_End"> </a>
 
 [Connettività di rete con Office 365](network-connectivity.md)
 
@@ -115,14 +114,14 @@ Prepararsi per l'abbonamento a per [ExpressRoute per Office 365](https://aka.ms/
 
 [Implementazione di ExpressRoute per Office 365](implementing-expressroute.md)
 
-[Utilizzo della caratteristica community BGP in ExpressRoute per gli scenari di Office 365 (preview)](bgp-communities-in-expressroute.md)
+[Uso delle community BGP in ExpressRoute per gli scenari di Office 365 (anteprima)](bgp-communities-in-expressroute.md)
 
-[Qualità multimediale e le prestazioni di connettività di rete in Skype for Business in linea](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Qualità multimediale e prestazioni della connettività di rete in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 
 [Ottimizzazione delle prestazioni di Office 365 mediante l'uso della cronologia delle prestazioni e delle previsioni](performance-tuning-using-baselines-and-history.md)
 
 [Piano di risoluzione dei problemi di prestazioni per Office 365](performance-troubleshooting-plan.md)
 
-[URL e intervalli di indirizzi IP per Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
-[Ottimizzazione delle prestazioni e rete di Office 365](network-planning-and-performance.md)
+[Ottimizzazione delle prestazioni e della rete di Office 365](network-planning-and-performance.md)

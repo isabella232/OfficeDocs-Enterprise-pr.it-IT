@@ -3,7 +3,7 @@ title: Connettività di rete con Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 è progettato per consentire ai clienti in tutto il mondo per la connessione al servizio utilizzando una connessione internet. Con il servizio evoluzione, la sicurezza, prestazioni e affidabilità di Office 365 sono stati migliorati basata sui clienti che utilizzano internet per stabilire una connessione al servizio.
-ms.openlocfilehash: b72b0a4584542e4c8673c7cf009c66aa97c6b81c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: da086aa3fcd23ccb4a82cde2a1f7d812c111071a
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541360"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25911390"
 ---
 # <a name="network-connectivity-to-office-365"></a>Connettività di rete con Office 365
 
@@ -31,12 +31,12 @@ I clienti prevede di utilizzare Office 365 necessario valutare le esigenze di co
   
 Valutazioni di rete possono essere eseguite da molte diverse persone e organizzazioni in base alle dimensioni e preferenze dell'utente. L'ambito di rete della valutazione inoltre può variare a seconda di dove si è nel processo di distribuzione. Che consentono di ottenere una migliore comprensione delle necessario per eseguire una valutazione della rete, è stata generata una Guida alla valutazione di rete che consentono di acquisire familiarità con le opzioni disponibili per l'utente. Questa valutazione consente di determinare quali passaggi e le risorse devono essere aggiunti al progetto di distribuzione per consentire la corretta adottano Office 365.
   
-Una valutazione completa di rete, ad esempio quelle fce prescritto [Skype Operations Framework](https://www.skypeoperationsframework.com/) fornirà le possibili soluzioni a problemi di progettazione rete e i dettagli di implementazione. La maggior parte delle valutazioni di rete indicherà la connettività di rete per Office 365 può essere sistemata in [configurazione secondarie o le modifiche di progettazione](https://aka.ms/manageo365endpoints) per l'infrastruttura dei servizi esterni internet e di rete esistenti.
+Una valutazione completa di rete, come quelle indicate nella [Skype Operations Framework](https://www.skypeoperationsframework.com/) fornirà le possibili soluzioni a problemi di progettazione e i dettagli di implementazione di rete. La maggior parte delle valutazioni di rete indicherà la connettività di rete per Office 365 può essere sistemata in [configurazione secondarie o le modifiche di progettazione](https://aka.ms/manageo365endpoints) per l'infrastruttura dei servizi esterni internet e di rete esistenti.
 
 Alcune valutazioni indicherà la connettività di rete per Office 365 richiederà ulteriori investimenti in componenti di rete. Ad esempio, a livello di larghezza di banda WAN o infrastruttura routing ottimizzata per supportare la connettività internet a Office 365. In alcuni casi una valutazione indicherà la connettività di rete per Office 365 è influenzata dalle disposizioni o le prestazioni requisiti per gli scenari, ad esempio [Skype per Business Online della qualità multimediale](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917). Per gli investimenti in infrastruttura per la connettività internet, ottimizzazione routing e la connessione diretta specializzata possono causare questi requisiti aggiuntivi.
   
 > [!NOTE]
-> Microsoft ha modificato come viene esaminato il dominio di routing Peering Microsoft per Azure ExpressRoute. Avvio del 31 luglio 2017, tutti i clienti di Azure ExpressRoute consentono Peering Microsoft direttamente dalla console di amministrazione di Azure o tramite PowerShell. Dopo aver attivato Microsoft Peering, ai clienti possono creare filtri di route per la ricezione di annunci route BGP per le applicazioni di Engagement per i clienti Dynamics 365 (precedentemente note come CRM Online). Clienti che necessitano di ExpressRoute Azure per Office 365 devono ottenere la revisione da Microsoft poter creare filtri di route per Office 365. Rivolgersi al team di Account Microsoft per informazioni su come richiedere un esame per l'attivazione di Office 365 ExpressRoute. Sottoscrizioni non autorizzate tenta di creare filtri di route per Office 365 verranno visualizzato un [messaggio di errore](https://support.microsoft.com/kb/3181709).
+> Autorizzazione di Microsoft è necessario utilizzare ExpressRoute per Office 365. Microsoft vengono esaminati ogni richiesta dei clienti e autorizza solo ExpressRoute per l'utilizzo di Office 365 quando i requisiti normativi del cliente impone la connessione diretta. Se si devono soddisfare questi requisiti, forniscono il collegamento testo estratto e web alla normativa che interpretare per indicare che è necessaria una connessione diretta in [ExpressRoute di modulo di richiesta di Office 365](https://aka.ms/O365ERReview) per iniziare una revisione di Microsoft. Sottoscrizioni non autorizzate tenta di creare filtri di route per Office 365 verranno visualizzato un [messaggio di errore](https://support.microsoft.com/kb/3181709).
   
 I punti chiave da considerare quando si pianifica la valutazione della rete per Office 365:
   
@@ -54,11 +54,11 @@ Questo è un collegamento breve è possibile utilizzare il ritorno: [ https://ak
   
 ## <a name="see-also"></a>Vedere anche
 
-[Gestione di endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Domande frequenti sugli endpoint di Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
   
-[Ottimizzazione delle prestazioni e rete di Office 365](network-planning-and-performance.md)
+[Ottimizzazione delle prestazioni e della rete di Office 365](network-planning-and-performance.md)
   
 [Azure ExpressRoute per Office 365](azure-expressroute.md)
   
@@ -66,9 +66,9 @@ Questo è un collegamento breve è possibile utilizzare il ritorno: [ https://ak
   
 [Pianificazione della rete con ExpressRoute per Office 365](network-planning-with-expressroute.md)
   
-[Utilizzo della caratteristica community BGP in ExpressRoute per gli scenari di Office 365 (preview)](bgp-communities-in-expressroute.md)
+[Uso delle community BGP in ExpressRoute per gli scenari di Office 365 (anteprima)](bgp-communities-in-expressroute.md)
   
-[Qualità multimediale e le prestazioni di connettività di rete in Skype for Business in linea](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Qualità multimediale e prestazioni della connettività di rete in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [URL e intervalli di indirizzi IP per Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
