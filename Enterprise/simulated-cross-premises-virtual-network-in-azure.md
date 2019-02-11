@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Riepilogo: creare una rete virtuale cross-premise simulata in Microsoft Azure come ambiente di sviluppo/test.'
-ms.openlocfilehash: 0aee14af136e0874c259faac26d83d85b188a7c7
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 7341c8cc412636e633001882edfdfc661cce9a11
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915341"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897139"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rete virtuale tra più sedi simulata in Azure
 
@@ -81,7 +81,7 @@ Innanzitutto, avviare un prompt dei comandi di Azure PowerShell sul computer loc
 > [!NOTE]
 > I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/it-IT/powershell/azureps-cmdlets-docs/). 
   
-Accedere al proprio account Azure con il seguente comando.
+Accedere al proprio account di Azure con questo comando.
   
 ```
 Login-AzureRMAccount
@@ -90,7 +90,7 @@ Login-AzureRMAccount
 > [!TIP]
 > Per un file di testo contenente tutti i comandi di PowerShell riportati in questo articolo, fare clic [qui](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0).
   
-Ottenere il nome della sottoscrizione utilizzando il comando seguente.
+Ottenere il nome della sottoscrizione con questo comando.
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name

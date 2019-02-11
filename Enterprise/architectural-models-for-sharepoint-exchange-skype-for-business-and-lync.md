@@ -17,12 +17,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Riepilogo: ottenere i poster IT in cui vengono descritti i modelli architetturali, la distribuzione e le opzioni delle piattaforme per SharePoint, Exchange, Skype for Business e Lync.'
-ms.openlocfilehash: 0965a4389ef61c981e30aeec8dd3b3dcff90d20e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 28cfc1073d54a46976224f115cce43315c7c43fb
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915541"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897529"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync
 
@@ -138,7 +138,7 @@ In questi poster IT per SharePoint 2013, Exchange 2013 e Lync 2013 è disponibil
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di anteprima delle opzioni della piattaforma SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Destinato ai decision maker aziendali (BDM) e agli architetti, questo modello illustra le opzioni della piattaforma per SharePoint 2013, SharePoint in Office 365, ibrido locale con Office 365, Azure e distribuzioni solo locali. Include una panoramica di ogni architettura, suggerimenti, requisiti di licenze e un elenco di attività per architetti e professionisti IT per ogni piattaforma. Sono evidenziate diverse soluzioni SharePoint in Azure. <br/><br/>Per una versione accessibile del testo di questo poster, vedere [Diagramma accessibile - opzioni della piattaforma Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
+|[![Immagine di anteprima delle opzioni della piattaforma SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Destinato ai decision maker aziendali (BDM) e agli architetti, questo modello illustra le opzioni della piattaforma per SharePoint 2013, SharePoint in Office 365, ibrido locale con Office 365, Azure e distribuzioni solo locali. Include una panoramica di ogni architettura, suggerimenti, requisiti di licenze e un elenco di attività per architetti e professionisti IT per ogni piattaforma. Sono evidenziate diverse soluzioni SharePoint in Azure. <br/><br/>Per una versione accessibile del testo di questo poster, vedere [Diagramma accessibile - opzioni della piattaforma Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Opzioni della piattaforma Exchange 2013
@@ -188,7 +188,7 @@ In questi poster IT vengono illustrate le soluzioni basate su Azure che utilizza
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Processo di ripristino di emergenza di SharePoint in Azure](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |In questo poster IT vengono illustrati i principi di architettura per un ambiente di ripristino di emergenza in Azure. Per accedere a una versione in testo di questo poster, vedere [Diagramma accessibile - Ripristino di emergenza di SharePoint in Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).  <br/><br/> Per ulteriori informazioni, vedere gli articoli seguenti:  <br/><br/> - [Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Architetture di Microsoft Azure per SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Processo di ripristino di emergenza di SharePoint in Azure](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |In questo poster IT vengono illustrati i principi di architettura per un ambiente di ripristino di emergenza in Azure. Per accedere a una versione in testo di questo poster, vedere [Diagramma accessibile - Ripristino di emergenza di SharePoint in Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).  <br/><br/> Per ulteriori informazioni, vedere gli articoli seguenti:  <br/><br/> - [Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Architetture di Microsoft Azure per SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 <a name="Lync2013_Options"> </a>
 ## <a name="see-also"></a>Vedere anche

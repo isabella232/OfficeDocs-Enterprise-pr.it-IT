@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Riepilogo: comprendere le relazioni delle organizzazioni, le sottoscrizioni, le licenze, gli account utente e i tenant tra le offerte cloud di Microsoft.'
-ms.openlocfilehash: 5f434fef42777034d32970dd55e15be35b76961e
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: 4705e8315b2ff0943749518034d63bad58ba178f
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022075"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897319"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Sottoscrizioni, licenze, account e tenant per offerte cloud di Microsoft
 
@@ -135,7 +135,7 @@ Più sottoscrizioni alle offerte cloud di Microsoft sono in grado di usare lo st
 
 ![IDaaS IaaS per l'organizzazione.](media/Subscriptions/Subscriptions-Fig4.png)
   
-La figura 4 mostra in che modo il tenant di Azure AD comune è utilizzato dalle offerte cloud SaaS di Microsoft, le app PaaS di Azure e le macchine virtuali IaaS di Azure che usa Azure AD Domain Services. Azure AD Connect sincronizza la foresta di Windows Server AD locale con il tenant di Azure AD.
+La figura 4 mostra in che modo il tenant di Azure AD comune viene usato dalle offerte cloud SaaS di Microsoft, le app PaaS di Azure e le macchine virtuali IaaS di Azure che usano Azure AD Domain Services. Azure AD Connect sincronizza la foresta di Windows Server AD locale con il tenant di Azure AD.
   
 Per ulteriori informazioni sull'integrazione dell'identità tra le offerte cloud di Microsoft, vedere [Identità cloud Microsoft per Enterprise Architects](https://aka.ms/cloudarchidentity).
   

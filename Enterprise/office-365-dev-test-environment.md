@@ -3,11 +3,13 @@ title: Ambiente di sviluppo/test di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/11/2018
+ms.date: 08/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Riepilogo: usare la seguente guida al lab test per creare una sottoscrizione di valutazione di Office 365 per valutazione o sviluppo/test.'
-ms.openlocfilehash: 57fdf66f11d9c71faf81e2a88482093f8f17dfbd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 1606f30e28a482e60610d15b2f1643b9dd5b3240
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897269"
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365
 
@@ -38,7 +41,7 @@ ms.lasthandoff: 05/19/2018
 > [!NOTE]
 > Si consiglia di stampare questo articolo per registrare i valori specifici necessari per questo ambiente nei 30 giorni della sottoscrizione di valutazione di Office 365. È possibile estendere la sottoscrizione di valutazione per altri 30 giorni. Per un ambiente di sviluppo/test permanente, creare una nuova sottoscrizione a pagamento con un numero limitato di licenze. 
   
-![Guide al lab test in Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guide al lab test in Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di One Microsoft Cloud.
@@ -51,7 +54,7 @@ Seguire le istruzioni riportate in [Ambiente di sviluppo/test della configurazio
   
 Di seguito è riportata la configurazione risultante.
   
-![Ambiente di sviluppo/test della configurazione di base in Azure](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Ambiente di sviluppo/test della configurazione di base in Azure](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
 
 
   
@@ -61,13 +64,13 @@ Questa configurazione è costituita dalle macchine virtuali DC1, APP1 e CLIENT1 
 
 Per avviare la sottoscrizione di valutazione di Office 365 E5, è necessario innanzitutto un nome di società fittizia e un nuovo account Microsoft.
   
-1. Si consiglia di utilizzare una variante del nome aziendale Contoso per il nome dell'azienda, che è un nome aziendale fittizio utilizzato nel contenuto di esempio di Microsoft, ma non è obbligatorio. Registrare il nome della società fittizia qui: ![](./images/Common_Images/TableLine.png)
+1. Si consiglia di utilizzare una variante del nome aziendale Contoso per il nome dell'azienda, che è un nome aziendale fittizio utilizzato nel contenuto di esempio di Microsoft, ma non è obbligatorio. Registrare il nome della società fittizia qui: ![](./media/Common-Images/TableLine.png)
     
 2. Per registrare un nuovo account Microsoft, andare su [https://outlook.com](https://outlook.com) e creare un account con un nuovo account di posta elettronica e indirizzo. Utilizzare questo account per iscriversi a Office 365.
     
-  - Registrare il nome e cognome del nuovo account qui: ![](./images/Common_Images/TableLine.png)
+  - Registrare il nome e cognome del nuovo account qui: ![](./media/Common-Images/TableLine.png)
     
-  - Registrare l'indirizzo e-mail del nuovo account qui: ![](./images/Common_Images/TableLine.png)@outlook.com
+  - Registrare l'indirizzo e-mail del nuovo account qui: ![](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrare una sottoscrizione di valutazione di Office 365 E5
 
@@ -97,7 +100,7 @@ Per avviare la sottoscrizione di valutazione di Office 365 E5, è necessario inn
     
     Annotare la password in un posto sicuro.
     
-    Registrare il nome della società fittizia, a cui fare riferimento con **nome dell'organizzazione**, qui: ![](./images/Common_Images/TableLine.png)
+    Registrare il nome della società fittizia, a cui fare riferimento con **nome dell'organizzazione**, qui: ![](./media/Common-Images/TableLine.png)
     
 5. Fare clic su **Crea account**.
     
@@ -105,9 +108,9 @@ Per avviare la sottoscrizione di valutazione di Office 365 E5, è necessario inn
     
 7. Immettere il codice di verifica del messaggio di testo ricevuto, quindi fare clic su **Avanti**.
     
-8. Registrare l'URL della pagina di accesso qui (selezionare e copiare): ![](./images/Common_Images/TableLine.png)
+8. Registrare l'URL della pagina di accesso qui (selezionare e copiare): ![](./media/Common-Images/TableLine.png)
     
-9. Registrare l'ID utente qui (selezionare e copiare): ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+9. Registrare l'ID utente qui (selezionare e copiare): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Questo valore verrà denominato **Nome amministratore globale di Office 365**.
     
@@ -119,7 +122,7 @@ Dovrebbe essere visualizzata la pagina principale del portale di Office 365 dall
   
 Per l'ambiente di sviluppo/test di Office 365 dell'azienda simulata, ecco la configurazione risultante.
   
-![Ambiente di sviluppo/test di Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Ambiente di sviluppo/test di Office 365](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 Questa configurazione è costituita da: 
   
@@ -184,8 +187,10 @@ Dalla visualizzazione del comando **New-MsolUser**, prendere nota della password
   
 Successivamente, creare tre nuovi siti del team di SharePoint Online per i reparti Vendite, Produzione e Supporto tecnico.
   
-### <a name="create-three-new-sharepoint-online-team-sites"></a>Creare tre nuovi siti del team di SharePoint Online
+## <a name="phase-4-create-three-new-sharepoint-online-team-sites-optional"></a>Fase 4: Creare tre nuovi siti del team di SharePoint Online (facoltativo)
 
+In questa fase configurare un set di siti del team di SharePoint Online.
+  
 1. Installare [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251) (versione x64).
     
 2. Nella schermata **Start** digitare **sharepoint**, quindi fare clic su **SharePoint Online Management Shell**.
@@ -223,11 +228,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 Registrare questi valori per utilizzarli o distribuire altre guide al lab test nell'ambiente di test di distribuzione:
   
-- Nome amministratore globale di Office 365: ![](./images/Common_Images/TableLine.png).onmicrosoft.com (dal passaggio 9 della fase 2)
+- Nome amministratore globale di Office 365: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (dal passaggio 9 della fase 2)
     
     Annotare anche la password dell'account in una posizione sicura.
     
-- Nome dell'organizzazione della sottoscrizione di valutazione: ![](./images/Common_Images/TableLine.png) onmicrosoft.com (dal passaggio 4 della fase 2)
+- Nome dell'organizzazione della sottoscrizione di valutazione: ![](./media/Common-Images/TableLine.png) onmicrosoft.com (dal passaggio 4 della fase 2)
     
 - Per elencare gli account di User 2, User 3, User 4, e User 5, eseguire i comandi seguenti dal modulo di Microsoft Azure Active Directory per il prompt di Windows PowerShell:
     
@@ -237,27 +242,27 @@ Registrare questi valori per utilizzarli o distribuire altre guide al lab test n
 
     Registrare i nomi degli account qui:
     
-  - Nome account utente User 2: user2@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Nome account utente User 2: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nome account utente User 3: user3@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Nome account utente User 3: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nome account utente User 4: user4@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Nome account utente User 4: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nome account utente User 5: user5@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Nome account utente User 5: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Annotare anche le password degli account in una posizione sicura.
     
-- Per elencare gli URL dei siti dei team Vendite, Produzione e Supporto tecnico, eseguire il comando seguente dal prompt di SharePoint Online Management Shell:
+- (Facoltativo) Per elencare gli URL dei siti dei team Vendite, Produzione e Supporto tecnico, eseguire il comando seguente dal prompt di SharePoint Online Management Shell:
     
   ```
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - URL del sito Produzione: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
+  - URL del sito Produzione: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/production
     
-  - URL del sito Vendite: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
+  - URL del sito Vendite: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/sales
     
-  - URL del sito Supporto tecnico: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
+  - URL del sito Supporto tecnico: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Passaggi successivi
 

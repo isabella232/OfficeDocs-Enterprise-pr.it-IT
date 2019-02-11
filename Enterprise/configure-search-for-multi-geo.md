@@ -11,12 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su come configurare la ricerca in un ambiente multi-geografico.
-ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: c56e7d310dd6ece53fdea36df4ad94e2ebbc64cb
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849912"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "26705460"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurare la ricerca per OneDrive for Business Multi-Geo
 
@@ -167,6 +167,9 @@ Ogni Centro ricerche dispone di diverse verticali ed è necessario configurarle 
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Fare in modo che le applicazioni di ricerca personalizzate mostrino risultati di tutte o di alcune posizioni geografiche
 
 Per ottenere i risultati di tutte o alcune posizioni geografiche nelle applicazioni di ricerca personalizzate, è necessario specificare i parametri di query con la richiesta all'API REST del servizio di ricerca di SharePoint. A seconda dei parametri della query, la query viene inviata a tutte le posizioni geografiche o solo ad alcune. Ad esempio, se serve inviare la query solo a un sottoinsieme di posizioni geografiche per trovare informazioni pertinenti, è possibile estendere la query solo ad esse. Se la richiesta ha esito positivo, l'API REST del servizio di ricerca di SharePoint restituisce i dati della risposta.
+
+#### <a name="requirement"></a>Requisito #### 
+Per ogni posizione geografica è necessario verificare che a tutti gli utenti dell'organizzazione sia stato concesso il livello di autorizzazioni **Lettura** per il sito Web radice, ad esempio contoso**APAC**.sharepoint.com/ e contoso**EU**.sharepoint.com/. [Informazioni sulle autorizzazioni](https://support.office.com/it-IT/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parametri di query
 

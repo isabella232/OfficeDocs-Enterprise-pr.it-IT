@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Riepilogo: usare la seguente guida al lab test per creare un ambiente di sviluppo/test che include tutte le offerte cloud di Microsoft.'
-ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 51899ceb0cceef0248f6dc10cb21f5353e774cea
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915631"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897149"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Ambiente di sviluppo/test One Microsoft Cloud
 

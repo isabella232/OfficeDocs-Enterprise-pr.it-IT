@@ -3,7 +3,7 @@ title: Connettere una rete locale a una rete virtuale di Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2018
+ms.date: 11/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Riepilogo: informazioni su come configurare una rete virtuale di Azure cross-premise per i carichi di lavoro del server di Office con una connessione VPN da sito a sito.'
-ms.openlocfilehash: 640db506ec49d468dcb09ce3804c76c1f4562f13
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 145c7a082aff436ee3c3bb873f299f9706db72df
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915321"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25976712"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Connettere una rete locale a una rete virtuale di Microsoft Azure
 
@@ -36,8 +36,8 @@ Ad esempio, un server di sincronizzazione della directory in esecuzione su una m
 
 Le macchine virtuali in Azure non devono essere isolate rispetto all'ambiente locale. Per connettere le macchine virtuali di Azure alle risorse di rete locali, è necessario configurare una rete virtuale di Azure cross-premise. Nel diagramma seguente vengono mostrati i componenti necessari per distribuire una rete virtuale di Azure cross-premise con una macchina virtuale in Azure.
   
-![Rete locale connessa a Microsoft Azure tramite una connessione VPN da sito a sito](media/CP-ConnectOnPremisesNetworkToAzureVPN.png)
-  
+![Rete locale connessa a Microsoft Azure tramite una connessione VPN da sito a sito](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+ 
 Nel diagramma sono presenti due reti collegate tramite una connessione di rete privata virtuale (VPN) da sito a sito: la rete locale e la rete virtuale di Azure. La connessione VPN da sito a sito:
 
 - È tra due punti finali raggiungibili e localizzati su Internet pubblico.
@@ -174,7 +174,7 @@ Per i server DNS locali DNS che devono essere utilizzati dalle macchine virtuali
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
-Per instradare pacchetti dalla rete virtuale di Azure alla propria rete aziendale tramite la connessione VPN da sito a sito, è necessario configurare la rete virtuale con una rete locale. Tale rete locale contiene un elenco degli spazi di indirizzi (in formato CIDR) per tutti i percorsi nella rete locale aziendale che le macchine virtuali nella rete virtuale devono raggiungere. Può trattarsi di tutti i percorsi nella rete locale o di un subset. L'elenco degli spazi di indirizzi che definiscono la rete locale deve essere univoco e non deve sovrapporsi con gli spazi di indirizzi utilizzati per questa rete virtuale o per altre reti virtuali cross-premise.
+Per instradare pacchetti dalla rete virtuale di Azure alla propria rete aziendale tramite la connessione VPN da sito a sito, è necessario configurare la rete virtuale con una rete locale. Tale rete locale contiene un elenco degli spazi di indirizzi (in formato CIDR) per tutti i percorsi nella rete locale aziendale che le macchine virtuali nella rete virtuale devono raggiungere. Può trattarsi di tutti i percorsi nella rete locale o di una subnet. L'elenco degli spazi di indirizzi che definiscono la rete locale deve essere univoco e non deve sovrapporsi con gli spazi di indirizzi utilizzati per questa rete virtuale o per altre reti virtuali cross-premise.
   
 Per l'insieme degli spazi di indirizzi della rete locale, compilare la tabella L. Sono elencate tre voci vuote, ma sarà necessario aggiungerne altre. Consultare il proprio reparto IT per determinare tale elenco.
   
@@ -246,27 +246,6 @@ $rgName="<resource group name>"
 $locName="<Table V - Item 2 - Value column>"
 New-AzureRMResourceGroup -Name $rgName -Location $locName
 
-```
-
-Le macchine virtuali basate su Resource Manager richiedono un account di archiviazione basato su Resource Manager. È necessario selezionare un nome univoco globale per l'account di archiviazione che contiene solo numeri e lettere minuscole. È possibile utilizzare questo comando per creare un elenco degli account di archiviazione esistenti.
-  
-```
-Get-AzureRMStorageAccount | Sort Name | Select Name
-```
-
-Utilizzare questo comando per verificare se un nome dell'account di archiviazione proposto è univoco.
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-Per creare un nuovo account di archiviazione, eseguire questi comandi.
-  
-```
-$rgName="<your new resource group name>"
-$locName="<the location of your new resource group>"
-$saName="<unique storage account name>"
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
 ```
 
 Successivamente, creare la rete virtuale di Azure.
@@ -346,11 +325,9 @@ Creare le macchine virtuali necessarie in Azure. Per ulteriori informazioni, ved
   
 Utilizzare le seguenti impostazioni:
   
-- Nel riquadro **Impostazioni di base**, selezionare la stessa sottoscrizione e lo stesso gruppo di risorse della rete virtuale. Registrare nome utente e password in un percorso sicuro. Saranno necessari più avanti per accedere alla macchina virtuale.
+- Nella scheda **Generale** selezionare la stessa sottoscrizione e lo stesso gruppo di risorse della rete virtuale. Saranno necessari più avanti per accedere alla macchina virtuale. Nella sezione **Dettagli istanza** scegliere le dimensioni appropriate della macchina virtuale. Registrare il nome utente e la password dell'account amministratore in un posto sicuro. 
     
-- Nel riquadro **Dimensioni**, scegliere la dimensione appropriata.
-    
-- Nel riquadro **Impostazioni**, nella sezione **Archiviazione**, selezionare il tipo di archiviazione **Standard** e l'account di archiviazione configurato con la rete virtuale in uso. Nella sezione **Rete**, selezionare il nome della rete virtuale e della subnet per ospitare le macchine virtuali (non GatewaySubnet). Lasciare i valori predefiniti per tutte le altre impostazioni.
+- Nella scheda **Rete** selezionare il nome della rete virtuale e della subnet per ospitare le macchine virtuali (non GatewaySubnet). Lasciare i valori predefiniti per tutte le altre impostazioni.
     
 Verificare che la macchina virtuale utilizzi DNS correttamente controllando il DNS interno in uso per assicurarsi che i record Address (A) siano stati aggiunti per la nuova macchina virtuale. Per accedere a Internet, le macchine virtuali di Azure devono essere configurate per l'utilizzo del server proxy della rete locale. Contattare l'amministratore di rete per visualizzare ulteriori procedure di configurazione da eseguire sul server.
   
