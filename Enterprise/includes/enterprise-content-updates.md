@@ -3,27 +3,6 @@
 
 
 
-## <a name="week-of-december-31-2018"></a>Settimana del 31 dicembre 2018
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 1/2/2019 | [ExpressRoute per la connettività cloud di Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificato |
-| 1/3/2019 | [Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | modificato |
-| 1/3/2019 | [Pianificare per i certificati SSL di terze parti per Office 365](/Office365/Enterprise/plan-for-third-party-ssl-certificates) | modificato |
-| 1/3/2019 | [Bloccare gli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/block-user-accounts-with-office-365-powershell) | modificato |
-| 1/3/2019 | [Configurare le proprietà degli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/configure-user-account-properties-with-office-365-powershell) | modificato |
-| 1/3/2019 | [Creare account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/create-user-accounts-with-office-365-powershell) | modificato |
-| 1/3/2019 | [Eliminare account utente con PowerShell di Office 365](/Office365/Enterprise/powershell/delete-and-restore-user-accounts-with-office-365-powershell) | modificato |
-| 1/3/2019 | [Visualizzare gli utenti con e senza licenza con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | modificato |
-| 1/3/2019 | [Visualizzare le licenze e i servizi con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | modificato |
-| 1/3/2019 | [Visualizzare gli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificato |
-| 4/1/2019 | [Creare account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/create-user-accounts-with-office-365-powershell) | modificato |
-| 4/1/2019 | [Visualizzare gli utenti con e senza licenza con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | modificato |
-| 4/1/2019 | [Visualizzare le licenze e i servizi con PowerShell di Office 365](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | modificato |
-| 4/1/2019 | [Visualizzare gli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificato |
-
-
 ## <a name="week-of-january-07-2019"></a>Settimana del 7 gennaio 2019
 
 
@@ -76,9 +55,9 @@
 | 28/1/2019 | [Assistenti distribuzione per i servizi di Office 365](/Office365/Enterprise/deployment-advisors-for-office-365) | modificato |
 | 28/1/2019 | [Come richiedere lo spostamento dati](/Office365/Enterprise/request-your-data-move) | modificato |
 | 28/1/2019 | [Guida sulla fine del supporto di SharePoint Server 2007](/Office365/Enterprise/sharepoint-2007-end-of-support) | modificato |
-| 29/1/2019 | [Endpoint di Office 365 DoD gli Stati Uniti](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificato |
-| 29/1/2019 | [Endpoint US Government le elevata di Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificato |
-| 29/1/2019 | [URL e intervalli di indirizzi IP per Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificato |
+| 29/01/2019 | [Endpoint di Office 365 DoD gli Stati Uniti](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificato |
+| 29/01/2019 | [Endpoint US Government le elevata di Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificato |
+| 29/01/2019 | [URL e intervalli di indirizzi IP per Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificato |
 | 30/1/2019 | [Preparare l'organizzazione per Office 365 Enterprise](/Office365/Enterprise/get-your-organization-ready-for-office-365) | modificato |
 | 30/1/2019 | [Assegnare le licenze agli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificato |
 | 30/1/2019 | [Rimuovere le licenze dagli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | modificato |
@@ -86,3 +65,19 @@
 | 30/1/2019 | [Come verificare l'integrità dei servizi di Office 365](/Office365/Enterprise/view-service-health) | modificato |
 | 31/1/2019 | [Assegnare i ruoli agli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modificato |
 | 1/2/2019 | [Come verificare l'integrità dei servizi di Office 365](/Office365/Enterprise/view-service-health) | modificato |
+
+
+## <a name="week-of-february-04-2019"></a>Settimana del 04 febbraio 2019
+
+
+| Data di pubblicazione |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 5/2/2019 | [Gestire Gruppi di Office 365 con PowerShell](/Office365/Enterprise/manage-office-365-groups-with-powershell) | modificato |
+| 5/2/2019 | [Risorse sull'architettura IT del cloud Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificato |
+| 5/2/2019 | [Gestire Gruppi di Office 365 con PowerShell](/Office365/Enterprise/powershell/manage-office-365-groups-with-powershell) | modificato |
+| 6/2/2019 | Gestire Gruppi di Office 365 con PowerShell | rimuovere |
+| 6/2/2019 | [Gestire Gruppi di Office 365 con PowerShell](/Office365/Enterprise/powershell/manage-office-365-groups-with-powershell) | modificato |
+| 2/7/2019 | [Gestione degli endpoint di Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificato |
+| 2/7/2019 | [Supporto per applicazioni Client Office 365 - accesso condizionale](/Office365/Enterprise/office-365-client-support-conditional-access) | modificato |
+| 2/7/2019 | [Supporto per applicazioni Client Office 365 - Gestione applicazioni per dispositivi mobili](/Office365/Enterprise/office-365-client-support-mobile-application-management) | modificato |
+| 2/7/2019 | [Supporto per applicazioni Client Office 365 - autenticazione moderno](/Office365/Enterprise/office-365-client-support-modern-authentication) | modificato |
