@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: "Riepilogo: vengono descritti i certificati SSL necessari per distribuzioni locali e ibride di Exchange, l'accesso SSO tramite ADFS, servizi di Exchange Online e Servizi Web Exchange."
-ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: 1746cf5059ba83e225e4a2d55c8eebc082366362
+ms.sourcegitcommit: bdd0083dc9dc62994de29421a1f4056ebe27f15f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546517"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29952472"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Pianificazione dei certificati SSL di terze parti per Office 365
 
@@ -49,7 +49,7 @@ Per una panoramica sull'utilizzo dei certificati digitali per rendere sicure le 
   
 ## <a name="certificates-for-single-sign-on"></a>Certificati per Single Sign-On
 
-Per fornire agli utenti di single sign-on funzionalità semplificate che include l'infrastruttura di protezione, i certificati illustrati nella tabella seguente sono necessari nei server federativi o i server federativi. Nella tabella seguente è incentrata su Active Directory Federation Services (ADFS), è necessario anche ulteriori informazioni [sull'utilizzo di provider di identità di terze parti](https://go.microsoft.com/fwlink/?LinkId=532869).
+Per fornire agli utenti di single sign-on funzionalità semplificate che include l'infrastruttura di protezione, i certificati illustrati nella tabella seguente sono necessari nei server federativi o i server federativi. Nella tabella seguente è incentrata su Active Directory Federation Services (ADFS), è necessario anche ulteriori informazioni [sull'utilizzo di provider di identità di terze parti](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
   
 ||||
 |:-----|:-----|:-----|
