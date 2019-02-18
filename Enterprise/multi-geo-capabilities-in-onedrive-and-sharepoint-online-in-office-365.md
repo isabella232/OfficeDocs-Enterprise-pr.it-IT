@@ -1,5 +1,5 @@
 ---
-title: Multi-Geo Capabilities in OneDrive e SharePoint Online in Office 365
+title: Multi-Geo Capabilities in OneDrive in Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,17 +10,17 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: Con Multi-Geo Capabilities in SharePoint Online e OneDrive, l'organizzazione può espandere la presenza di Office 365 a più aree geografiche e/o paesi.
-ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+description: Con Multi-Geo Capabilities in OneDrive Online l'organizzazione può espandere la propria presenza Office 365 a più paesi/aree geografiche.
+ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
+ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200729"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30052990"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Multi-Geo Capabilities in OneDrive e SharePoint Online in Office 365
+# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a>Multi-Geo Capabilities in OneDrive in Office 365
 
-Con le funzionalità Multi-Geo in SharePoint Online e OneDrive, l'organizzazione può espandere la presenza di Office 365 a più aree geografiche e/o paesi all'interno del tenant esistente. Invitare il team degli account Microsoft ad iscrivere la propria società multi-nazionale all'anteprima di OneDrive for Business Multi-Geo.
+Con Multi-Geo Capabilities in OneDrive Online, l'organizzazione può espandere la propria presenza Office 365 a più paesi/aree geografiche all'interno del tenant esistente. Chiedere al team degli account Microsoft di iscrivere la propria società multi-nazionale alle funzionalità Multi-Geo di OneDrive for Business.
   
 Con OneDrive Multi-Geo, è possibile effettuare il provisioning e archiviare i dati a riposo nelle località geografiche scelte per soddisfare i requisiti di residenza dei dati e allo stesso tempo sbloccare lo sviluppo globale delle esperienze di produttività moderna per i dipendenti.
   
