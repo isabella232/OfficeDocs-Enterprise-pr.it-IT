@@ -1,5 +1,5 @@
 ---
-title: Registro delle transazioni IdFix di Office 365
+title: Registro delle transazioni di Office 365 IdFix
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,33 +9,36 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: Viene fornito un esempio e descrive la convenzione di denominazione e il livello di registrazione predefinito del log delle transazioni IdFix di Office 365.
-ms.openlocfilehash: 016318c7e771ec6c5f90336e11c5dd011144d12e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Viene fornito un esempio e vengono descritti la convenzione di denominazione e il livello di registrazione predefinito del registro delle transazioni di Office 365 IdFix.
+ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541268"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085065"
 ---
-# <a name="office-365-idfix-transaction-log"></a><span data-ttu-id="fad54-103">Registro delle transazioni IdFix di Office 365</span><span class="sxs-lookup"><span data-stu-id="fad54-103">Office 365 IdFix transaction log</span></span>
+# <a name="office-365-idfix-transaction-log"></a><span data-ttu-id="3d6b7-103">Registro delle transazioni di Office 365 IdFix</span><span class="sxs-lookup"><span data-stu-id="3d6b7-103">Office 365 IdFix transaction log</span></span>
 
-<span data-ttu-id="fad54-104">Viene fornito un esempio e descrive la convenzione di denominazione e il livello di registrazione predefinito del log delle transazioni IdFix di Office 365.</span><span class="sxs-lookup"><span data-stu-id="fad54-104">Provides an example and describes the naming convention and default log level of the Office 365 IdFix transaction log.</span></span>
+<span data-ttu-id="3d6b7-104">Viene fornito un esempio e vengono descritti la convenzione di denominazione e il livello di registrazione predefinito del registro delle transazioni di Office 365 IdFix.</span><span class="sxs-lookup"><span data-stu-id="3d6b7-104">Provides an example and describes the naming convention and default log level of the Office 365 IdFix transaction log.</span></span>
   
-## <a name="idfix-transaction-log-location"></a><span data-ttu-id="fad54-105">Posizione del registro delle transazioni IdFix</span><span class="sxs-lookup"><span data-stu-id="fad54-105">IdFix transaction log location</span></span>
+## <a name="idfix-transaction-log-location"></a><span data-ttu-id="3d6b7-105">Posizione del registro delle transazioni IdFix</span><span class="sxs-lookup"><span data-stu-id="3d6b7-105">IdFix transaction log location</span></span>
 
-<span data-ttu-id="fad54-p101">Lo strumento IdFix di Office 365 consente di creare un nuovo registro delle transazioni ogni volta che si fare clic su **Applica** in IdFix e applicano le modifiche apportate alla foresta di Active Directory. Registro delle transazioni viene salvato nella stessa cartella in cui è installato IdFix. Per impostazione predefinita, questa cartella è C:\Deployment Tools\IDFix. Il nome del file di registro delle transazioni viene utilizzato un formato di indicatore data e ora, ad esempio, dettagliato 6-1-2018 6-17-22 PM indica un file che è stato generato in 1 giugno 2018 a 6:17:22 PM Verbose indica il livello di registrazione.</span><span class="sxs-lookup"><span data-stu-id="fad54-p101">The Office 365 IdFix tool creates a new transaction log each time you click **Apply** in IdFix and apply changes to the Active Directory forest. The transaction log is saved in the same folder where you installed IdFix. By default, this folder is C:\Deployment Tools\IDFix. The transaction log file name uses a date and time stamp format, for example, Verbose 6-1-2018 6-17-22 PM indicates a file that was generated at June 1, 2018 at 6:17:22 PM. Verbose indicates the logging level.</span></span> 
+<span data-ttu-id="3d6b7-p101">Lo strumento Office 365 IdFix crea un nuovo log delle transazioni ogni volta che si fa clic su **applica** in IdFix e si applicano modifiche alla foresta di Active Directory. Il registro delle transazioni viene salvato nella stessa cartella in cui è stato installato IdFix. Per impostazione predefinita, questa cartella è C:\Deployment Tools\IDFix. Il nome del file del registro delle transazioni utilizza un formato di data e ora, ad esempio, verbose 6-1-2018 6-17-22 PM indica che un file generato al 1 ° giugno 2018 a 6:17:22 PM. Verbose indica il livello di registrazione.</span><span class="sxs-lookup"><span data-stu-id="3d6b7-p101">The Office 365 IdFix tool creates a new transaction log each time you click **Apply** in IdFix and apply changes to the Active Directory forest. The transaction log is saved in the same folder where you installed IdFix. By default, this folder is C:\Deployment Tools\IDFix. The transaction log file name uses a date and time stamp format, for example, Verbose 6-1-2018 6-17-22 PM indicates a file that was generated at June 1, 2018 at 6:17:22 PM. Verbose indicates the logging level.</span></span> 
   
-## <a name="idfix-transaction-log-logging-level"></a><span data-ttu-id="fad54-111">Il livello di registrazione del registro delle transazioni IdFix</span><span class="sxs-lookup"><span data-stu-id="fad54-111">IdFix transaction log logging level</span></span>
+## <a name="idfix-transaction-log-logging-level"></a><span data-ttu-id="3d6b7-111">Il livello di registrazione del registro delle transazioni IdFix</span><span class="sxs-lookup"><span data-stu-id="3d6b7-111">IdFix transaction log logging level</span></span>
 
-<span data-ttu-id="fad54-p102">La parola Dettagli nel file di registro della transazione indica il livello di registrazione nel file. "Dettagli" significa che la quantità massima delle informazioni viene acquisita nel registro. Questo è il livello di registrazione predefinito. In questo momento, non puoi cambiare il livello di registrazione.</span><span class="sxs-lookup"><span data-stu-id="fad54-p102">The word verbose in the transaction log file name indicates the level of logging in the file. Verbose means that the maximum amount of information is captured in the log. This is the default logging level. At this time, you cannot change the logging level.</span></span>
+<span data-ttu-id="3d6b7-p102">La parola Dettagli nel file di registro della transazione indica il livello di registrazione nel file. "Dettagli" significa che la quantità massima delle informazioni viene acquisita nel registro. Questo è il livello di registrazione predefinito. In questo momento, non puoi cambiare il livello di registrazione.</span><span class="sxs-lookup"><span data-stu-id="3d6b7-p102">The word verbose in the transaction log file name indicates the level of logging in the file. Verbose means that the maximum amount of information is captured in the log. This is the default logging level. At this time, you cannot change the logging level.</span></span>
   
-## <a name="idfix-transaction-log-format"></a><span data-ttu-id="fad54-116">Formato del registro delle transazioni IdFix</span><span class="sxs-lookup"><span data-stu-id="fad54-116">IdFix transaction log format</span></span>
+## <a name="idfix-transaction-log-format"></a><span data-ttu-id="3d6b7-116">Formato del registro delle transazioni IdFix</span><span class="sxs-lookup"><span data-stu-id="3d6b7-116">IdFix transaction log format</span></span>
 
-<span data-ttu-id="fad54-117">IdFix scrive i risultati di ciascuna azione di **aggiornamento** di un log delle transazioni, come illustrato nell'esempio seguente:</span><span class="sxs-lookup"><span data-stu-id="fad54-117">IdFix writes the results of each **UPDATE** action to a transaction log as shown in the following example:</span></span>
+<span data-ttu-id="3d6b7-117">In IdFix i risultati di ogni azione di **aggiornamento** vengono scritti in un log delle transazioni, come illustrato nell'esempio seguente:</span><span class="sxs-lookup"><span data-stu-id="3d6b7-117">IdFix writes the results of each **UPDATE** action to a transaction log as shown in the following example:</span></span>
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant
