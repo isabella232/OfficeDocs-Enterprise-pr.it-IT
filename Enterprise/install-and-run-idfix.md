@@ -10,67 +10,70 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
-description: Come installare ed eseguire lo strumento IdFix di Office 365 per pulitura di active directory prima della sincronizzazione a Office 365.
-ms.openlocfilehash: c485d8397aa32005a34b77f886b9bc8f4e857f1b
-ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
+description: Informazioni su come installare ed eseguire lo strumento Office 365 IdFix per la pulizia di Active Directory prima di sincronizzarlo con Office 365.
+ms.openlocfilehash: a35b2a476f2b30eccc955b980eda6315b146af27
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "26674430"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085405"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>Installazione ed esecuzione dello strumento IDFix di Office 365
 
-IdFix identifica gli errori, ad esempio duplicati e problemi di formattazione della directory prima della sincronizzazione a Office 365. 
+IdFix identifica gli errori quali i duplicati e i problemi di formattazione nella directory prima di eseguire la sincronizzazione con Office 365. 
   
-Per completare correttamente questa attività, è necessario avere familiarità con l'utente, gruppo e gli oggetti contatto di Active Directory.
+Per completare correttamente l'attività, è consigliabile utilizzare gli oggetti utente, gruppo e contatto in Active Directory.
   
-Se non è possibile completare questa attività, sono disponibili due di altre operazioni da eseguire. Questi metodi potrebbero essere più facile, ma che potrebbero inoltre richiedere più tempo o presentano altri inconvenienti. Sono:
+[! Importante] se non è possibile completare questa attività, esistono un paio di altre operazioni da eseguire. Questo metodo potrebbe essere più facile, ma potrebbe anche richiedere più tempo o altri svantaggi. Sono:
   
-- **Eseguire la sincronizzazione delle directory senza eseguire lo strumento IdFix.** È possibile sincronizzare le directory senza eseguire lo strumento IdFix, ma non è consigliabile. Correzione degli errori prima della sincronizzazione impiegherà meno tempo e spesso fornisce una transizione più uniforme nel cloud. 
+- **Eseguire la sincronizzazione della directory senza eseguire IdFix.** È possibile sincronizzare la directory senza eseguire lo strumento IdFix, ma non è consigliabile. La correzione degli errori prima della sincronizzazione richiede meno tempo e spesso fornisce una transizione più agevole al cloud. 
 - **Contattare un consulente.** Richiedere l'assistenza di un esperto può consentire ai tuoi utenti di diventare operativi in modo rapido, nonché di sincronizzare la directory. 
     
 ## <a name="what-you-need-to-run-idfix"></a>Requisiti per eseguire IDFix
 
-Più semplice tornare IdFix e in esecuzione viene installato in un computer appartenente al dominio. Se si desidera, ma non è necessario, è possibile eseguire lo nel controller di dominio.
+Il modo più semplice per ottenere IdFix è installarlo su un computer aggiunto al dominio. È possibile eseguirlo nel controller di dominio, se lo si desidera, ma non è necessario.
   
 ### <a name="idfix-hardware-requirements"></a>Requisiti hardware di IDFix
 
-Computer in cui è installato lo strumento IdFix deve soddisfare questi requisiti hardware minimi:
+Il computer in cui si installa IdFix deve soddisfare questi requisiti hardware minimi:
   
 - 4 GB di RAM
 - 2 GB di spazio su disco rigido
     
 ### <a name="idfix-software-requirements"></a>Requisiti software di IDFix
 
-Computer in cui è installato lo strumento IdFix deve essere aggiunto allo stesso dominio di Active Directory da cui si desidera sincronizzare gli utenti a Office 365. Il computer deve inoltre disporre installato .NET Framework 4.0. 
+Il computer in cui viene installato IdFix deve essere aggiunto allo stesso dominio di Active Directory da cui si desidera sincronizzare gli utenti con Office 365. È inoltre necessario che nel computer sia installato .NET Framework 4,0. 
   
-Se si esegue Windows Server 2008 o Windows Server 2012, è probabile che già installato .NET Framework. Se non, è possibile [scaricare .NET 4.0 dall'area download](https://go.microsoft.com/fwlink/p/?LinkId=400475) o tramite Windows Update. 
+Se si esegue Windows Server 2008 o Windows Server 2012, è probabile che .NET Framework sia già installato. In caso contrario, è possibile [scaricare .net 4,0 dall'area download](https://go.microsoft.com/fwlink/p/?LinkId=400475) o tramite Windows Update. 
   
 ### <a name="idfix-permissions-requirements"></a>Requisiti di autorizzazione per lo strumento IDFix
 
 L'account utente che usi per eseguire lo strumento IDFix deve disporre di accesso in lettura/scrittura alla directory.
   
-Se non si è certi che l'account utente soddisfa questi requisiti e non si è certi come controllare, è comunque possibile installare ed eseguire IdFix. Se l'account utente non dispone delle autorizzazioni appropriate, IdFix verrà semplicemente visualizzato un errore quando si tenta di eseguirlo.
+Se non si è certi che l'account utente soddisfi questi requisiti e non si è sicuri di come controllare, è comunque possibile installare ed eseguire IdFix. Se l'account utente non dispone delle autorizzazioni appropriate, in IdFix verrà visualizzato un messaggio di errore quando si tenta di eseguirlo.
   
 ## <a name="install-idfix"></a>Installazione di IDFix
 
-Per installare lo strumento IdFix, scarica e decomprimere **IdFix.exe**: 
+Per installare IdFix, scaricare e decomprimere **IdFix. exe**: 
   
 1. Accedi al computer nel quale desideri installare lo strumento IDFix.
     
-2. Passare al sito di download Microsoft per lo [Strumento di risoluzione dei problemi di IdFix DirSync errore](https://go.microsoft.com/fwlink/?linkid=867219).
+2. Accedere al sito di download Microsoft per lo [strumento di correzione degli errori di IdFix DirSync](https://go.microsoft.com/fwlink/?linkid=867219).
     
 3. Scegliere **Download**.
     
 4. Quando richiesto, scegliere **Esegui**.
     
-5. Nella casella di testo **Unzip alla cartella** della finestra di dialogo **WinZip Self-Extractor** digitare o selezionare il percorso in cui si desidera installare lo strumento IdFix. Per impostazione predefinita, lo strumento IdFix viene installato nel `C:\Deployment Tools\`. 
+5. Nella casella **di testo Unzip to Folder** della finestra di dialogo **WinZip Self-Extractor** Digitare o passare al percorso in cui si desidera installare lo strumento IdFix. Per impostazione predefinita, IdFix viene installato `C:\Deployment Tools\`in. 
     
-6. Scegliere **Unzip**.
+6. Scegliere **unzip**.
     
 ## <a name="run-the-idfix-tool"></a>Eseguire lo strumento IDFix
 
@@ -78,25 +81,25 @@ Dopo aver installato lo strumento IDFix, eseguilo per rilevare i problemi presen
   
 1. Usando un account che dispone di accesso in lettura/scrittura alla directory, accedi al computer in cui è installato IDFix.
     
-2. In Esplora File, passare alla cartella in cui è installato IdFix. Se si sceglie la cartella predefinita durante l'installazione, vedere `C:\Deployment Tools\IdFix`.
+2. In Esplora file passare al percorso in cui è stato installato IdFix. Se si è scelto la cartella predefinita durante l'installazione, `C:\Deployment Tools\IdFix`andare a.
     
 3. Fai doppio clic su **IdFix.exe**. 
     
-    ![Selezionare il file IdFix.exe.](media/a9387bbc-991f-41c2-a500-45e3ce574285.JPG)
+    ![Scegliere il file IdFix. exe.](media/a9387bbc-991f-41c2-a500-45e3ce574285.JPG)
   
-4. Per impostazione predefinita, lo strumento IdFix utilizza multi-Tenant set di regole per testare le voci nella directory. Si tratta della regola destra impostato per la maggior parte dei clienti di Office 365. Tuttavia, se si è un cliente ITAR che offre (traffico internazionale in rami normative) o dedicati di Office 365, è possibile configurare IdFix per l'utilizzo in realtà set di regole dedicato. Se non si è certi di che tipo di cliente è, in modo sicuro è possibile ignorare questo passaggio. Per impostare il set di regole per dedicate, fare clic sull'icona dell'ingranaggio nella barra dei menu e quindi fare clic su **dedicate**.
+4. Per impostazione predefinita, in IdFix viene utilizzato il set di regole multi-tenant per testare le voci nella directory. Si tratta del set di regole appropriato per la maggior parte dei clienti di Office 365. Tuttavia, se si è un cliente di Office 365 dedicato o ITAR (International Traffic on Arms Regulations), è possibile configurare IdFix per utilizzare il set di regole dedicato. Se non si è certi del tipo di cliente, è possibile ignorare questo passaggio. Per impostare il set di regole su dedicato, fare clic sull'icona ingranaggio sulla barra dei menu e quindi scegliere **dedicato**.
     
-5. Scegliere **Query**.
+5. Scegliere **query**.
     
     ![Scegliere query in IdFix.](media/a07a7aa7-d0ac-4817-8757-946019813a57.JPG)
   
 6. Per impostazione predefinita, lo strumento IDFix effettua la ricerca di errori nell'intera directory.
     
-    A seconda delle dimensioni della directory, l'esecuzione della query può richiedere un po' di tempo. È possibile controllare lo stato di avanzamento nella parte inferiore della finestra principale dello strumento. Se si sceglie **Annulla**, sarà necessario riavviare dall'inizio.
+    A seconda delle dimensioni della directory, l'esecuzione della query può richiedere un po' di tempo. È possibile guardare lo stato di avanzamento nella parte inferiore della finestra principale dello strumento. Se si fa clic su **Annulla**, sarà necessario riavviare dall'inizio.
     
-    ![Numero di query e di errore IdFix.](media/da0198a0-7d4d-4afe-a256-e82f1330ada5.JPG)
+    ![Conteggio delle query e degli errori di IdFix.](media/da0198a0-7d4d-4afe-a256-e82f1330ada5.JPG)
   
-7. Una volta IdFix completata la query, è possibile proseguire e sincronizzare le directory se non sono presenti errori. Se sono presenti errori nella directory, è consigliabile risolverli prima della sincronizzazione. Se si desidera che le informazioni più specifiche relative ai tipi di errori e suggerimenti sul modo migliore per correggere ognuno di essi, vedere i collegamenti alla fine di questo argomento. 
+7. Dopo che IdFix ha completato la query, è possibile procedere e sincronizzare la directory se non sono presenti errori. Se nella directory sono presenti errori, è consigliabile correggerli prima di eseguire la sincronizzazione. Se si desiderano informazioni più specifiche sui tipi di errori e sui suggerimenti relativi al modo migliore per risolvere ognuno di essi, vedere i collegamenti alla fine di questo argomento. 
     
     Sebbene non sia obbligatorio correggere gli errori prima della sincronizzazione, ti consigliamo almeno di esaminare tutti quelli restituiti dallo strumenti IDFix.
     
@@ -104,24 +107,24 @@ Dopo aver installato lo strumento IDFix, eseguilo per rilevare i problemi presen
     
 8. Se accetti la modifica consigliata nella colonna **UPDATE**, nella colonna **ACTION** seleziona l'operazione che desidera che lo strumento IDFix esegua per implementare la modifica, quindi fai clic su **Applica**. Quando fai clic su **Applica**, lo strumento apporta le modifiche nella directory.
     
-    Non è necessario fare clic su **Applica** dopo ogni aggiornamento. In realtà, è possibile risolvere diversi errori prima che si fa clic su **Applica** e IdFix verrà modificato tutti alla stessa ora. È possibile ordinare gli errori dal tipo di errore facendo clic su **errori** nella parte superiore della colonna in cui sono elencati i tipi di errore. 
+    Non è necessario fare clic su **applica** dopo ogni aggiornamento. In alternativa, è possibile correggere alcuni errori prima di fare clic su **applica** e IdFix li modificherà contemporaneamente. È possibile ordinare gli errori per tipo di errore facendo clic su **errore** nella parte superiore della colonna in cui sono elencati i tipi di errore. 
     
-    Una strategia consiste nel correggere tutti gli errori dello stesso tipo. ad esempio, eliminare innanzitutto tutti i duplicati e applicarle. Successivamente, correggere gli errori di formato del carattere e così via. Ogni volta che si applicano le modifiche, lo strumento IdFix consente di creare un file di registro distinto che è possibile utilizzare per annullare le modifiche nel caso in cui si effettua un errore. Il [registro delle transazioni](idfix-transaction-log.md) viene archiviato nella cartella in cui è installato IdFix in.  _C:\Deployment Tools\IdFix_ per impostazione predefinita. 
+    Una strategia consiste nel correggere tutti gli errori dello stesso tipo. ad esempio, per prima cosa correggere tutti i duplicati e applicarli. Successivamente, correggere gli errori relativi al formato dei caratteri e così via. Ogni volta che si applicano le modifiche, lo strumento IdFix crea un file di registro separato che può essere utilizzato per annullare le modifiche nel caso in cui si commette un errore. Il [registro delle transazioni](idfix-transaction-log.md) è archiviato nella cartella in cui è installato IdFix.  _C:\Deployment Tools\IdFix_ per impostazione predefinita. 
     
     ![Correzione degli errori in IdFix.](media/5f051070-652c-4be7-98bf-312295e32371.png)
   
-9. Dopo tutto delle modifiche apportate alla directory, eseguire lo strumento IdFix per verificare che le correzioni apportate non introducano nuovi errori. È possibile ripetere questi passaggi più volte è necessario. È buona norma passare attraverso il processo più volte prima della sincronizzazione.
+9. Dopo aver apportato tutte le modifiche alla directory, eseguire di nuovo IdFix per assicurarsi che le correzioni apportate non introducano nuovi errori. È possibile ripetere questi passaggi tutte le volte che è necessario. È consigliabile passare un paio di volte al processo prima di eseguire la sincronizzazione.
     
 ## <a name="i-want-to-refine-my-search-or-dig-deeper-into-the-errors-what-else-can-i-do-with-idfix"></a>Voglio ridefinire la mia ricerca o approfondire gli errori, quale altra operazione posso effettuare con lo strumento IDFix?
 
 In questi argomenti, sono disponibili informazioni più approfondite:
   
-- [Attributi di directory di preparazione per la sincronizzazione con Office 365 tramite lo strumento IdFix](prepare-directory-attributes-for-synch-with-idfix.md) . Dopo aver installato lo strumento ponticello a questo argomento per istruzioni dettagliate su come eseguire lo strumento, si verificheranno gli errori più comuni suggerito correzioni, esempi e procedure consigliate per operazioni da eseguire quando presente un numero elevato di errori. 
+- [Preparare gli attributi della directory per la sincronizzazione con Office 365 utilizzando lo strumento IdFix](prepare-directory-attributes-for-synch-with-idfix.md) . Dopo aver installato lo strumento, passare a questo argomento per istruzioni più dettagliate sull'esecuzione dello strumento, errori comuni che si verificheranno, correzioni consigliate, esempi e procedure consigliate per le operazioni da eseguire quando si dispone di un numero elevato di errori. 
 - [Riferimenti: Oggetti e attributi sclusi e supportati IdFix](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [Riferimento: Registro delle transazioni IdFix di Office 365](idfix-transaction-log.md)
     
 ## <a name="video-training"></a>Video di formazione
 
-Per ulteriori informazioni, vedere la lezione, [installare e utilizzare lo strumento IDFix](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US), per offerto da Learning LinkedIn.
+Per ulteriori informazioni, vedere la lezione [installare e utilizzare lo strumento IDFix](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US), portato all'utente da LinkedIn Learning.
   
 

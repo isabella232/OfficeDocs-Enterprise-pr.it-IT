@@ -1,46 +1,46 @@
 ---
-title: Supporto per applicazioni Client Office 365 - Gestione applicazioni per dispositivi mobili
+title: Supporto delle app client di Office 365-gestione di applicazioni mobili
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
-localization_priority: None
+localization_priority: Normal
+ms.collection: Strat_O365_Enterprise
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Acquisire familiarità con il supporto di app client di Office 365 per la gestione delle applicazioni per dispositivi mobili
-ms.openlocfilehash: 8a6894f0b8cc99820507d1224966ffe41ed9febe
-ms.sourcegitcommit: df40eb730e416f206ca8387ef9e6f559c4e4b8a5
+description: Informazioni sul supporto delle app client di Office 365 per la gestione delle applicazioni mobili
+ms.openlocfilehash: c5cfe356e9c25fd23df298b52100e38b4064655c
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29887582"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085045"
 ---
-# <a name="office-365-client-app-support---mobile-application-management"></a>Supporto per applicazioni Client Office 365 - Gestione applicazioni per dispositivi mobili
+# <a name="office-365-client-app-support---mobile-application-management"></a>Supporto delle app client di Office 365-gestione di applicazioni mobili
 
-Ottimizzare la famiglia di prodotti delle funzionalità di gestione Intune, la gestione delle applicazioni per dispositivi mobili (MAM) consente di pubblicare, push, configurare, proteggere, monitorare e aggiornare le applicazioni per dispositivi mobili per gli utenti. MAM può proteggere i dati dell'organizzazione in un'applicazione per tutti i dispositivi, se partecipano Intune o non.
+Sfruttando la famiglia di funzionalità di gestione di Intune, la gestione delle applicazioni mobili (MAM) consente di pubblicare, premere, configurare, proteggere, monitorare e aggiornare le app per dispositivi mobili per gli utenti. MAM è in grado di proteggere i dati di un'organizzazione all'interno di un'applicazione per tutti i dispositivi, indipendentemente dal fatto che vengano registrati in Intune o meno.
 
-Informazioni su [Gestione applicazioni per dispositivi mobili](https://docs.microsoft.com/intune/mam-faq) e [MAM multi-identity](https://docs.microsoft.com/intune/app-protection-policy).
+Per ulteriori informazioni, vedere [gestione di applicazioni mobili](https://docs.microsoft.com/intune/mam-faq) e [multi-Identity Mam](https://docs.microsoft.com/intune/app-protection-policy).
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
  - Android
  - iOS<sup>1</sup>
 
-Per ulteriori informazioni sul supporto della piattaforma Office 365, vedere [requisiti di sistema per Office 365](https://products.office.com/office-system-requirements).
+Per ulteriori informazioni sul supporto delle piattaforme in Office 365, vedere [requisiti di sistema per office 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Client supportati
 
-Le versioni più recenti dei client seguenti supportano la gestione delle applicazioni per dispositivi mobili:
+Le versioni più recenti dei client seguenti supportano la gestione delle applicazioni mobili:
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Icona Dynamics 365](media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) | ![Icona di Edge](media/o365-edge-64x64.png) <br> [Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Icona Excel](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Icona Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![OneDrive per icona Business](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage)
-| ![Icona di OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Icona di Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Icona di pianificazione](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Icona PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![Icona PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) |
-| ![Icona di SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Skype per icona Business](media/o365-skypeforbusiness-64x64.png) <br> [Skype per <br> Business](https://www.skype.com/business/) | ![Icona StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software) | ![Icona di flusso](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Icona sway](media/o365-sway-64x64.png) <br> [Sway<sup>1</sup>](https://sway.com)
-| ![Icona di team](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Icona Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Icona Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) |![Icona di Yammer](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
+| ![Icona Dynamics 365](media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) | ![Icona del server perimetrale](media/o365-edge-64x64.png) <br> [Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Icona Excel](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Icona Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Icona di OneDrive for business](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage)
+| ![Icona di OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Icona di Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Icona Planner](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Icona PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![Icona PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) |
+| ![Icona di SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Icona di Skype for business](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> business](https://www.skype.com/business/) | ![Icona StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software) | ![Icona flusso](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Icona ondeggiamento](media/o365-sway-64x64.png) <br> [Ondeggiamento<sup>1</sup>](https://sway.com)
+| ![Icona Teams](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Icona Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Icona Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) |![Icona Yammer](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
 
 > [!NOTE]
-> <sup>1</sup> il supporto per oscillazione su iOS saranno presto disponibili.
+> <sup>1</sup> supporto per Sway su iOS prossimamente.

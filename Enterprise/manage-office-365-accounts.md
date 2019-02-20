@@ -9,75 +9,78 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: 'Informazioni su quali sono gli strumenti da utilizzare per gestire gli utenti di Office 365 e in che modo è possibile utilizzare dipende sulla gestione delle identità utente. '
-ms.openlocfilehash: 24a7dd72603b881ea0810d0712900bc78dc34a81
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: "Informazioni sugli strumenti da utilizzare per la gestione degli utenti di Office 365 e sul modo in cui è possibile utilizzare dipende dalla modalità di gestione delle identità dell'utente. "
+ms.openlocfilehash: 0fa515d89afa3abe4b0fe936b297156b20890b0f
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541127"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085365"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Strumenti per gestire gli account di Office 365
 
-È possibile gestire gli utenti di Office 365 in diversi modi, a seconda della configurazione. È possibile gestire gli utenti in Office 365 interfaccia di amministrazione di Windows PowerShell, la directory locale, o nel portale di amministrazione di Azure Active Directory. Non appena si acquistare Office 365, l'interfaccia di amministrazione e Windows PowerShell utilizzabile per gestire gli account. Durante la gestione delle identità cloud tutte le persone all'interno dell'organizzazione hanno un ID utente separate e una password per Office 365. Se si desidera integrare con l'infrastruttura locale e dispongono di account utente sincronizzato con Office 365, è possibile utilizzare la connessione di Azure Active Directory per la sincronizzazione delle identità e se lo si desidera fornire la sincronizzazione delle password o completa funzionalità Single sign-on.
+È possibile gestire gli utenti di Office 365 in diversi modi, a seconda della configurazione. È possibile gestire gli utenti nell'interfaccia di amministrazione di Office 365, Windows PowerShell, la directory locale o nel portale di amministrazione di Azure Active Directory. Non appena si acquista Office 365, è possibile utilizzare l'interfaccia di amministrazione e Windows PowerShell per gestire gli account. Quando si gestiscono le identità cloud ogni persona dell'organizzazione dispone di un ID utente e di una password distinti per Office 365. Se si desidera eseguire l'integrazione con l'infrastruttura locale e fare in modo che gli account utente siano sincronizzati con Office 365, è possibile utilizzare Azure Active Directory Connect per fornire la sincronizzazione delle identità e facoltativamente fornire la sincronizzazione delle password o la versione completa funzionalità Single Sign-on.
   
-## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>Pianificare dove e come gestire gli account utente
+## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>Pianificare la posizione e la modalità di gestione degli account utente
 
-Dove e come è possibile gestire gli account utente dipende dal modello di identità da utilizzare per Office 365. I due modelli globali sono cloud autenticazione e l'autenticazione federata.
+Il percorso e la modalità di gestione degli account utente dipendono dal modello di identità che si desidera utilizzare per Office 365. I due modelli complessivi sono autenticazione del cloud e autenticazione federata.
   
-### <a name="cloud-authentication"></a>Autenticazione cloud
+### <a name="cloud-authentication"></a>Autenticazione del cloud
 
-- [Autenticazione cloud](about-office-365-identity.md#cloud-authentication) - creare e gestire gli utenti nell'interfaccia di amministrazione di Office 365, è inoltre possibile utilizzare Windows PowerShell o Azure Active Directory per gestire gli utenti. 
+- [Autenticazione cloud](about-office-365-identity.md#cloud-authentication) : creare e gestire gli utenti nell'interfaccia di amministrazione di Office 365, è anche possibile utilizzare Windows PowerShell o Azure Active Directory per gestire gli utenti. 
     
-- [Sincronizzare il valore hash password con single sign-on agevole](about-office-365-identity.md) - il modo più semplice per abilitare l'autenticazione per gli oggetti directory locale in Azure Active Directory. Con sincronizzazione delle hash password (PHS), sincronizzare gli oggetti di account utente di Active Directory locale con Office 365 e gestire gli utenti locale. 
+- [Sincronizzazione hash delle password con Single Sign-on senza soluzione di continuità](about-office-365-identity.md) : il modo più semplice per abilitare l'autenticazione per gli oggetti directory locali in Azure ad. Con la sincronizzazione degli hash delle password (pH), è possibile sincronizzare gli oggetti dell'account utente di Active Directory locale con Office 365 e gestire gli utenti in locale. 
     
-- [Autenticazione pass-through con single sign-on agevole](about-office-365-identity.md) - fornisce una convalida password semplice per i servizi di autenticazione Azure AD utilizzando un agente di software in esecuzione su uno o più server locali per convalidare gli utenti direttamente con i Active Directory locale. 
+- [Autenticazione pass-through con Single Sign-on senza soluzione di continuità](about-office-365-identity.md) -fornisce una semplice convalida delle password per i servizi di autenticazione di Azure ad utilizzando un agente software in esecuzione su uno o più server locali per convalidare gli utenti direttamente con il proprio Active Directory locale. 
     
 ### <a name="federated-authentication"></a>Autenticazione federata
 
-- [Opzioni di autenticazione federata](about-office-365-identity.md#federated-authentication-options) - principalmente per le organizzazioni di grandi imprese con requisiti di autenticazione più complessi, locale oggetti directory sono sincronizzati con Office 365 e gli account utente sono gestiti in locale. 
+- [Opzioni di autenticazione federata](about-office-365-identity.md#federated-authentication-options) -principalmente per organizzazioni di grandi dimensioni con requisiti di autenticazione più complessi, gli oggetti directory locali vengono sincronizzati con Office 365 e gli account utente vengono gestiti in locale. 
     
-- [Provider di autenticazione e identità di terze parti](about-office-365-identity.md) -nella directory locale oggetti possono essere sincronizzati con Office 365 e l'accesso alle risorse cloud principalmente gestito da un provider di identità di terze parti (IdP). 
+- [Autenticazione di terze parti e provider di identità](about-office-365-identity.md) -gli oggetti directory locali possono essere sincronizzati con Office 365 e l'accesso alle risorse cloud è gestito principalmente da un provider di identità di terze parti. 
     
 ## <a name="managing-accounts"></a>Gestione degli account
 
-Prima di decidere quale modo in cui l'organizzazione verrà creare e gestire gli account, considerare quanto segue:
+Quando si decide in che modo l'organizzazione creerà e gestirà gli account, prendere in considerazione quanto segue:
   
-- Il software di sincronizzazione della directory deve essere installato nei server all'interno dell'ambiente locale per connettere le identità tra Office 365 e le directory locale.
+- Il software di sincronizzazione della directory deve essere installato nei server all'interno dell'ambiente locale per connettere le identità tra Office 365 e la directory locale.
     
-- Qualsiasi opzione di sincronizzazione della directory, incluse le opzioni SSO, è necessario che soddisfino agli attributi di directory locale. Vengono descritte le specifiche per gli attributi utilizzati nella directory e quali pulitura (se esistenti) è necessario in [Prepare to provision utenti mediante la sincronizzazione delle directory per Office 365](prepare-for-directory-synchronization.md). Per istruzioni su come utilizzare lo strumento IdFix per automatizzare la pulitura directory, vedere [installare ed eseguire lo strumento IdFix di Office 365](install-and-run-idfix.md) . 
+- Qualsiasi opzione di sincronizzazione della directory, incluse le opzioni SSO, richiede che gli attributi di directory locali soddisfino gli standard. Le specifiche di quali attributi vengono utilizzate nella directory e quali operazioni di pulizia (se presenti) sono necessarie sono descritte in [prepararsi a eseguire il provisioning degli utenti tramite la sincronizzazione della directory con Office 365](prepare-for-directory-synchronization.md). Per istruzioni su come utilizzare IdFix per automatizzare la pulizia della directory, vedere [Install and Run the Office 365 IdFix Tool](install-and-run-idfix.md) . 
     
-- Pianificare come si intende creare gli account di Office 365.
+- Pianificare il modo in cui si intende creare gli account di Office 365.
     
-    Nella tabella seguente sono elencati gli strumenti di gestione account diversi.
+    Nella tabella seguente sono elencati i diversi strumenti di gestione degli account.
     
 |**Opzione**|**Note**|
 |:-----|:-----|
-|interfaccia di amministrazione di Office 365  <br/> |[Aggiungere utenti singolarmente o in massa a Office 365 - della Guida di amministrazione](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) <br/>  Offre un'interfaccia web semplice per aggiungere e modificare gli account utente.  <br/>  Non può essere utilizzato per modificare gli utenti se la sincronizzazione delle directory è abilitata (può essere impostato posizione e assegnazione di licenze).  <br/>  Non può essere utilizzato con le opzioni SSO.  <br/> |
-|Windows PowerShell  <br/> |[Gestire Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  Consente di aggiungere gli utenti in utenti in blocco tramite uno script di Windows PowerShell.  <br/>  Può essere utilizzato per assegnare posizione e licenze agli account, indipendentemente dalla modalità di creazione di account.  <br/> |
+|Office 365 admin center  <br/> |[Aggiungere utenti singolarmente o in blocco a Office 365 - Guida per l'amministratore](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) <br/>  Fornisce una semplice interfaccia Web per aggiungere e modificare gli account utente.  <br/>  Non può essere utilizzato per modificare gli utenti se la sincronizzazione della directory è abilitata (è possibile impostare il percorso e l'assegnazione delle licenze).  <br/>  Non può essere utilizzato con le opzioni SSO.  <br/> |
+|Windows PowerShell  <br/> |[Gestire Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  Consente di aggiungere utenti in blocco tramite uno script di Windows PowerShell.  <br/>  Può essere utilizzato per assegnare posizioni e licenze agli account, indipendentemente dal modo in cui vengono creati gli account.  <br/> |
 |Importazione in blocco  <br/> |[Aggiungere più utenti contemporaneamente a Office 365 - Guida per amministratore](add-several-users-at-the-same-time.md) <br/>  Consente di importare un file CSV per aggiungere un gruppo di utenti a Office 365.  <br/>  Non può essere utilizzato con le opzioni SSO.  <br/> |
-|Azure Active Directory  <br/> |Viene generata una versione gratuita di Azure Active Directory con la sottoscrizione a Office 365. È possibile eseguire funzioni come self-service la reimpostazione della password per gli utenti di cloud e la personalizzazione delle pagine di accesso e Pannello di accesso utilizzando l'edizione libero. Per ottenere maggiori funzionalità, è possibile aggiornare l'edizione di base o l'edizione premium. Per l'elenco delle caratteristiche supportate, vedere [le edizioni di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=698465) .<br/> |
-|Sincronizzazione della directory  <br/> |[Le identità locale l'integrazione con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  Sincronizzazione della directory con o senza la sincronizzazione delle password, utilizzare la [connessione AD Azure con impostazioni express](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br/>  Per più foreste e le opzioni SSO, utilizzare la [connessione Active Directory di installazione personalizzata di Azure](https://go.microsoft.com/fwlink/p/?LinkId=698430).  <br/>  Fornisce l'infrastruttura necessaria abilitare SSO.  <br/>  Necessario per molti scenari ibridi:  <br/>  Migrazione in fasi  <br/>  Distribuzione ibrida di Exchange  <br/>  Sincronizza protezione e gruppi abilitati per la posta dalla directory locale.  <br/> |
+|Azure Active Directory  <br/> |Si ottiene una versione gratuita di Azure Active Directory con l'abbonamento a Office 365. È possibile eseguire funzioni quali la reimpostazione della password in modalità self-service per gli utenti cloud e la personalizzazione delle pagine di accesso e del riquadro di Access tramite la versione gratuita. Per ottenere funzionalità avanzate, è possibile eseguire l'aggiornamento alla versione di base o all'edizione Premium. Vedere [edizioni di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=698465) per l'elenco delle funzionalità supportate.<br/> |
+|Sincronizzazione della directory  <br/> |[Integrazione delle identità locali con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  Per la sincronizzazione della directory con o senza la sincronizzazione delle password, utilizzare [Azure ad Connect with Express Settings](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br/>  Per più foreste e opzioni SSO, utilizzare l' [installazione personalizzata di Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).  <br/>  Fornisce l'infrastruttura necessaria per abilitare SSO.  <br/>  Necessario per molti scenari ibridi:  <br/>  Migrazione a fasi  <br/>  Exchange ibrido  <br/>  Sincronizza protezione e gruppi abilitati per la posta dalla directory locale.  <br/> |
    
-- Indipendentemente dal modo si intende aggiungere gli account utente a Office 365, è necessario gestire molte funzionalità di account, ad esempio assegnazione delle licenze, che specifica la posizione e così via. Tali caratteristiche possono essere gestite a lungo termine dall'interfaccia di amministrazione di Office 365 o è inoltre possibile [creare account utente con Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=717083).
+- Indipendentemente dal modo in cui si intende aggiungere gli account utente a Office 365, è necessario gestire diverse funzionalità dell'account, ad esempio l'assegnazione di licenze, la specifica del percorso e così via. Queste funzionalità possono essere gestite a lungo termine dall'interfaccia di amministrazione di Office 365 oppure è anche possibile [creare account utente con Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=717083).
     
-    Se si sceglie di aggiungere e gestire tutti gli utenti tramite l'interfaccia di amministrazione di Office 365, si verrà specificare il percorso e assegnare licenze contemporaneamente come la creazione dell'account di Office 365. Di conseguenza, è necessaria non quantità di pianificazione.
+    Se si sceglie di aggiungere e gestire tutti gli utenti tramite l'interfaccia di amministrazione di Office 365, è possibile specificare il percorso e assegnare le licenze contemporaneamente alla creazione dell'account di Office 365. Di conseguenza, non è necessaria una pianificazione eccessiva.
     
     > [!IMPORTANT]
-    > Creazione di account in Office 365 senza assegnazione di una licenza (per SharePoint Online, ad esempio) significa che il proprietario dell'account può visualizzare lo, ma il portale Office 365 non possono accedere a tutti i servizi all'interno di sottoscrizione della società. Dopo aver assegnato un percorso e la licenza, l'account viene replicato i servizi che è assegnato. L'utente può accedere al proprio account e utilizzare i servizi assegnati a loro. 
+    > La creazione di account in Office 365 senza assegnare una licenza (ad esempio a SharePoint Online) significa che il proprietario dell'account può visualizzare il portale di Office 365 ma non può accedere ad alcuno dei servizi all'interno della sottoscrizione dell'azienda. Dopo aver assegnato un percorso e la licenza, l'account viene replicato nel servizio o nei servizi assegnati. L'utente può accedere al proprio account e utilizzare i servizi assegnati. 
   
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Integrazione di Office 365 con ambienti locali](office-365-integration.md)
+[Usare il dominio per integrare la posta elettronica locale, ad esempio, tramite servizi directory](office-365-integration.md)
   
 ## <a name="see-also"></a>Vedere anche
 
-[Gestione degli account utente in Office 365](https://support.office.com/article/3204162b-0b6c-4838-8a11-394b9bfd31de.aspx)
+[Gestire gli account utente in Office 365](https://support.office.com/article/3204162b-0b6c-4838-8a11-394b9bfd31de.aspx)
   
 

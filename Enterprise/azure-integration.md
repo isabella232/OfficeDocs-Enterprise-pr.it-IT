@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -14,54 +17,54 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
-description: La sottoscrizione di Office 365 include una sottoscrizione per Azure Active Directory. Integrazione di Office 365 con Azure Active Directory se si desidera sincronizzazione delle password o single sign-on con l'ambiente locale.
-ms.openlocfilehash: 8b7af5ba8d5106900384369a3e6548af40f9e201
-ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
+description: La sottoscrizione di Office 365 include una sottoscrizione ad Azure AD. Integrazione di Office 365 con Azure AD se si desidera sincronizzare la password o l'accesso Single Sign-on con l'ambiente locale.
+ms.openlocfilehash: 0ad1c064d2ffe29f0f06e1368cd728d8b3bd630b
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "26674420"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085475"
 ---
 # <a name="azure-integration-with-office-365"></a>Integrazione di Azure con Office 365
 
-Office 365 utilizza Azure Active Directory (Azure Active Directory) per gestire le identità degli utenti in background. La sottoscrizione di Office 365 include una sottoscrizione gratuita per Azure Active Directory in modo che è possibile integrare Office 365 con Azure Active Directory, se si desidera sincronizzare le password o configurare single sign-on con l'ambiente locale. È anche possibile acquistare funzionalità avanzate per gestire meglio gli account.
+Office 365 utilizza Azure Active Directory (Azure AD) per gestire le identità degli utenti dietro le quinte. La sottoscrizione di Office 365 include una sottoscrizione gratuita ad Azure AD in modo che sia possibile integrare Office 365 con Azure AD se si desidera sincronizzare le password o configurare Single Sign-on con l'ambiente locale. È inoltre possibile acquistare funzionalità avanzate per gestire al meglio gli account.
   
-Azure sono inoltre disponibili altre funzionalità, ad esempio Gestione App integrato, che è possibile utilizzare per estendere e personalizzare le sottoscrizioni a Office 365.
+Azure offre anche altre funzionalità, ad esempio la gestione delle app integrate, che è possibile utilizzare per estendere e personalizzare le sottoscrizioni di Office 365.
   
-È possibile utilizzare i consulenti distribuzione Azure Active Directory per un'esperienza di installazione e la configurazione guidata:
- - [Azure Active Directory Connetti advisor](https://aka.ms/aadconnectpwsync)
- - [Preparazione di Active Directory FS distribuzione](https://aka.ms/adfsguidance)
- - [Distribuzione guidata di RMS Azure](https://aka.ms/azuremsguidance)
- - [Guida all'installazione di Azure Active Directory Premium](https://aka.ms/aadpguidance)
+È possibile utilizzare i consulenti per la distribuzione di Azure AD per un'esperienza di installazione e configurazione guidata:
+ - [Advisor di Azure AD Connect](https://aka.ms/aadconnectpwsync)
+ - [Advisor per la distribuzione di ADFS](https://aka.ms/adfsguidance)
+ - [Distribuzione guidata di Azure RMS](https://aka.ms/azuremsguidance)
+ - [Guida alla configurazione di Azure AD Premium](https://aka.ms/aadpguidance)
   
-## <a name="azure-ad-editions-and-office-365-identity-management"></a>Edizioni di Azure Active Directory e gestione delle identità Office 365
+## <a name="azure-ad-editions-and-office-365-identity-management"></a>Azure AD Editions e gestione delle identità di Office 365
 
-Se si dispone di una sottoscrizione a pagamento per Office 365, è necessario anche un abbonamento gratuito per Azure Active Directory. È possibile utilizzare Azure Active Directory per creare e gestire account utenti e gruppi. Per attivare la sottoscrizione che è necessario eseguire una registrazione occasionale. In seguito, è possibile accedere Azure Active Directory dal portale di amministrazione di Office 365. Per ulteriori informazioni, vedere [registrare il gratuito sottoscrizione Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=617127). 
+Se si dispone di un abbonamento a pagamento a Office 365, si dispone anche di un abbonamento gratuito ad Azure AD. È possibile utilizzare Azure AD per creare e gestire gli account utente e di gruppo. Per attivare l'abbonamento, è necessario completare una registrazione singola. Successivamente, è possibile accedere AD Azure AD dal portale di amministrazione di Office 365. Per istruzioni, vedere [registrare la sottoscrizione gratuita ad Azure ad](https://go.microsoft.com/fwlink/p/?LinkId=617127). 
   
 > [!TIP]
-> Seguire le istruzioni sopra alla sottoscrizione register Azure AD gratuito fornito con la sottoscrizione a Office 365. Non passare direttamente alla azure.microsoft.com effettuare l'iscrizione o otterrà una sottoscrizione di prova o a pagamento per Microsoft Azure distinto da quello disponibile per Office 365. 
+> Seguire le istruzioni riportate di seguito per registrare la sottoscrizione gratuita ad Azure AD fornita con l'abbonamento a Office 365. Non andare direttamente a azure.microsoft.com per iscriversi o finire con un abbonamento di valutazione o pagato a Microsoft Azure che è separato da quello gratuito per Office 365. 
   
-Con sottoscrizione libera che è possibile sincronizzare le directory locali, impostare single sign-on e sincronizzazione con molti software come applicazioni di servizio, ad esempio addetto alle vendite, dell'area di sincronizzazione e molto altro ancora.
+Con l'abbonamento gratuito, è possibile eseguire la sincronizzazione con le directory locali, configurare Single Sign-on e sincronizzarlo con molti software come applicazioni di servizio, ad esempio Salesforce, DropBox e molte altre.
   
-Se si desidera maggiori funzionalità di dominio Active Directory, la sincronizzazione bidirezionale e altre funzionalità di gestione, è possibile aggiornare la sottoscrizione gratuita per una sottoscrizione a pagamento premium. Per ulteriori informazioni, vedere [le edizioni di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
+Se si desidera migliorare la funzionalità di servizi di dominio Active Directory, la sincronizzazione bi-direzionale e altre funzionalità di gestione, è possibile aggiornare l'abbonamento gratuito a un abbonamento Premium a pagamento. Per informazioni dettagliate, vedere [edizioni di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
   
-Per ulteriori informazioni su Office 365 e Azure Active Directory, vedere [Understanding Office 365 identità e Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
+Per ulteriori informazioni su Office 365 e Azure AD, vedere [understandIng office 365 Identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
   
-## <a name="extend-the-capabilities-of-your-office-365-tenant"></a>Estendere le funzionalità di Office 365 tenant
+## <a name="extend-the-capabilities-of-your-office-365-tenant"></a>Estendere le funzionalità del tenant di Office 365
 
 |**Funzionalità**|**Descrizione**|
 |:-----|:-----|
-|App integrata  <br/> |È possibile concedere singole applicazioni accesso ai dati di Office 365, ad esempio posta elettronica, calendari, contatti, utenti, gruppi, i file e cartelle. È inoltre possibile autorizzare queste applicazioni a livello di amministratore globale e renderle disponibili per l'intera azienda tramite la registrazione delle App in Azure Active Directory. Per ulteriori informazioni, vedere [Apps integrata e Azure Active Directory per gli amministratori di Office 365](https://support.office.com/article/cb2250e3-451e-416f-bf4e-363549652c2a).<br/> Vedere anche [raccolta dell'applicazione di Azure Active Directory e single sign-on](https://go.microsoft.com/fwlink/p/?LinkId=698604).  <br/> |
-|PowerApps  <br/> | App Power sono mirate App per dispositivi mobili che possono connettersi a dati esistenti origini quali elenchi di SharePoint e altri dati applicazioni. Per informazioni dettagliate, vedere [Create PowerApp per un elenco di SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) e [pagina PowerApps](https://powerapps.microsoft.com/) .<br/> |
+|App integrate  <br/> |È possibile concedere alle singole app l'accesso ai dati di Office 365, ad esempio la posta, i calendari, i contatti, gli utenti, i gruppi, i file e le cartelle. È inoltre possibile autorizzare tali applicazioni a livello di amministratore globale e renderle disponibili per l'intera società registrando le app in Azure AD. Per informazioni dettagliate [, vedere Integrated Apps and Azure ad per Office 365 Administrators](https://support.office.com/article/cb2250e3-451e-416f-bf4e-363549652c2a).<br/> Vedere anche [Azure ad Application Gallery e Single-Sign-on](https://go.microsoft.com/fwlink/p/?LinkId=698604).  <br/> |
+|PowerApps  <br/> | Le app di alimentazione sono applicazioni mirate per i dispositivi mobili che possono connettersi alle origini dati esistenti come gli elenchi di SharePoint e altre app di dati. Per informazioni dettagliate, vedere [creare un PowerApp per un elenco in SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) e [PowerApps](https://powerapps.microsoft.com/) .<br/> |
    
-Per altre risorse su Office 365 e Microsoft Cloud, consultare queste risorse:
+Per altre risorse su Microsoft Cloud e Office 365, vedere le risorse seguenti:
   
 - [Identità di Microsoft Cloud per Enterprise Architects](https://go.microsoft.com/fwlink/p/?LinkId=524586)
     
 - [Distribuire la sincronizzazione della directory (DirSync) di Office 365 in Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     
 
-Ulteriori informazioni, vedere [Apps integrata e Azure Active Directory per gli amministratori di Office 365](integrated-apps-and-azure-ads.md) e [raccolta dell'applicazione di Azure Active Directory e single sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
+Per ulteriori informazioni, vedere [Integrated Apps and Azure ad per Office 365 Administrators](integrated-apps-and-azure-ads.md) e [Azure ad Application Gallery e Single-Sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
 
-### <a name="power-apps"></a>App Power
-App Power sono mirate App per dispositivi mobili che possono connettersi a dati esistenti origini quali elenchi di SharePoint e altri dati applicazioni. Per informazioni dettagliate, vedere [Create PowerApp per un elenco di SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) e [pagina PowerApps](https://powerapps.microsoft.com/) .
+### <a name="power-apps"></a>Applicazioni di alimentazione
+Le app di alimentazione sono applicazioni mirate per i dispositivi mobili che possono connettersi alle origini dati esistenti come gli elenchi di SharePoint e altre app di dati. Per informazioni dettagliate, vedere [creare un PowerApp per un elenco in SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) e [PowerApps](https://powerapps.microsoft.com/) .
