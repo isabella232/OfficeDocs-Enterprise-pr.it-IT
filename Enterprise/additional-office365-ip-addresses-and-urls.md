@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Riepilogo: il nuovo servizio Web endpoint non include un numero limitato di endpoint per scenari specifici.'
 hideEdit: true
-ms.openlocfilehash: 2e25ed32a6e88654f583b4bdca2ff04e6a4c96ff
-ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
+ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
+ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723373"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242088"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365
 
@@ -56,7 +56,7 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 | 10  | Il servizio di rilevamento automatico è usato negli scenari di [Exchange ibrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) con [autenticazione moderna ibrida con Outlook per iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Server Exchange locale del cliente in TCP 443 | Traffico del server in ingresso |
 | 11  | Skype for Business in Office 2016 include la condivisione dello schermo basata su video che utilizza le porte UDP. I precedenti client di Skype for Business in Office 2013 e versioni precedenti utilizzavano la porta RDP su TCP 443. | Porta TCP 443 aperta su 52.112.0.0/14 | Client precedenti di Skype for Business in Office 2013 e versioni precedenti |
 | 12  | Connettività server ibrida locale di Skype for Business per Skype for Business online | Porte UDP 50.000-59.999, 13.107.64.0/18, 52.112.0.0/14 <BR>  Porte TCP 50.000-59.999 | Connettività in uscita del server Skype for Business locale |
-| 13  | La rete PSTN cloud con connettività ibrida locale richiede la connettività di rete aperta agli host locali. Per ulteriori dettagli sulle configurazioni ibride di Skype for Business Online,  | vedere [Soluzioni ibride di Skype for Business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Ingresso ibrido locale di Skype for Business |
+| 13  | La rete PSTN cloud con connettività ibrida locale richiede la connettività di rete aperta agli host locali. Per ulteriori dettagli sulle configurazioni ibride di Skype for Business Online,  | Vedere [Pianificare la connettività ibrida tra Skype for Business Server e Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity) | Ingresso ibrido locale di Skype for Business |
 | 14  | **FQDN di autenticazione e identità** <br> Il nome di dominio completo (FQDN) ```secure.aadcdn.microsoftonline-p.com``` deve essere situato nell'area siti attendibili di Edge o Internet Explorer (IE) del client per poter funzionare. |  | Siti attendibili |
 | 15  |  **FQDN di Microsoft Teams** <br> Se si usa Internet Explorer o Microsoft Edge, è necessario attivare i cookie dei siti Web visualizzati e di terze parti e aggiungere i nomi di dominio completo per Teams per i siti attendibili. Si tratta di un'aggiunta all'intera famiglia di FQDN, CDN e telemetrie elencata in riga 14. Vedere [Problemi noti di Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) per ulteriori informazioni. |  | Siti attendibili |
 | 16  |  **FQDN di SharePoint Online e OneDrive for Business** <br> Tutti i nomi di dominio completo di ".sharepoint.com" con "\<tenant>" nel nome di dominio completo devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. Oltre all’intera famiglia di FQDN, CDN e telemetria elencata in riga 14, è necessario aggiungere anche questi endpoint. |  | Siti attendibili |
