@@ -11,18 +11,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Riepilogo: vedere questi articoli per gli endpoint di Internet dei vari cloud di Office 365.'
-ms.openlocfilehash: 24e1e79beba1dd3457b50b2cbfd9cc6101dae144
-ms.sourcegitcommit: b94bd747d0797a5889294f4794e8cfc0310f5539
+ms.openlocfilehash: 1312dd80130d99dba24b0c99f7570a57e70982ac
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26036702"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341927"
 ---
 # <a name="office-365-endpoints"></a>Endpoint di Office 365
 
@@ -39,8 +39,8 @@ Esistono attualmente cinque cloud di Office 365 diversi. Questa tabella consente
 |||
 |:-------|:-----|
 | [Endpoint in tutto il mondo](urls-and-ip-address-ranges.md) | Gli endpoint per abbonamenti a Office 365 nel mondo, tra cui US Government Community Cloud (GCC). |
-| [Endpoint di US Government DoD](office-365-u-s-government-dod-endpoints.md) | Gli endpoint per gli abbonamenti del Dipartimento della Difesa degli Stati Uniti (DoD). |
-| [Endpoint di US Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) | Gli endpoint per gli abbonamenti di US Government Community Cloud High (GCC High). |
+| [Endpoint del U.S. Government DoD](office-365-u-s-government-dod-endpoints.md) | Gli endpoint per gli abbonamenti del Dipartimento della Difesa degli Stati Uniti (DoD). |
+| [Endpoint del U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) | Gli endpoint per gli abbonamenti di US Government Community Cloud High (GCC High). |
 | [Office 365 gestito dagli endpoint di 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Gli endpoint di Office 365 gestiti da 21Vianet, progettato per soddisfare le esigenze di Office 365 in Cina. |
 | [Endpoint di Office 365 Germany](office-365-germany-endpoints.md) | Gli endpoint di un cloud separato in Europa per i clienti più regolamentati in Germania, l’Unione Europea (UE) e l'Associazione europea di libero scambio (EFTA). |
 |||
