@@ -15,20 +15,20 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Alcune reti aziendali limitano l'accesso a percorsi Internet generici o includono una sostanziale backhaul o l'elaborazione del traffico di rete. Per garantire che i computer su reti come queste possano accedere a Office 365, gli amministratori di rete e proxy devono gestire l'elenco di nomi FQDN, URL e indirizzi IP che compongono l'elenco degli endpoint di Office 365. Queste necessità devono essere aggiunte alla route diretta, al bypass proxy e/o alle regole del firewall e ai file PAC per garantire che le richieste di rete siano in grado di raggiungere Office 365.
-ms.openlocfilehash: d9138dd5d583b684c82d525001faee4d06e0fbe5
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341987"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458356"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestione degli endpoint di Office 365
 
-La maggior parte delle organizzazioni aziendali che dispongono di più percorsi di Office e di una rete WAN di connessione dovrà richiedere la configurazione di Office 365. È possibile ottimizzare la rete inviando tutte le richieste di rete di Office 365 attendibili direttamente tramite il firewall, ignorando tutti i controlli o l'elaborazione del livello di pacchetti aggiuntivi. Questo riduce la latenza e i requisiti di capacità del perimetro. Identificare il traffico di rete di Office 365 è il primo passaggio per garantire prestazioni ottimali per gli utenti. Per ulteriori informazioni sulla connettività di rete di Office 365, vedere [principi di connettività di rete di office 365](office-365-network-connectivity-principles.md)
+La maggior parte delle organizzazioni aziendali che dispongono di più percorsi di Office e di una rete WAN di connessione dovrà richiedere la configurazione di Office 365. È possibile ottimizzare la rete inviando tutte le richieste di rete di Office 365 attendibili direttamente tramite il firewall, ignorando tutti i controlli o l'elaborazione del livello di pacchetti aggiuntivi. Questo riduce la latenza e i requisiti di capacità del perimetro. Identificare il traffico di rete di Office 365 è il primo passaggio per garantire prestazioni ottimali per gli utenti. Per ulteriori informazioni sulla connettività di rete di Office 365, vedere [principi di connettività di rete di office 365](office-365-network-connectivity-principles.md).
 
-Microsoft consiglia di accedere agli endpoint di rete di Office 365 e le modifiche apportate tramite l' [indirizzo IP e il servizio Web URL di office 365](office-365-ip-web-service.md)
+Microsoft consiglia di accedere agli endpoint di rete di Office 365 e di modificarli utilizzando l' [indirizzo IP e il servizio Web URL di office 365](office-365-ip-web-service.md).
 
-Indipendentemente da come gestire il traffico di rete vitale di Office 365, Office 365 richiede la connettività Internet. Gli altri endpoint di rete in cui è richiesta la connettività sono elencati in altri [endpoint non inclusi nel servizio Web indirizzo IP e URL di Office 365](additional-office365-ip-addresses-and-urls.md)
+Indipendentemente da come gestire il traffico di rete vitale di Office 365, Office 365 richiede la connettività Internet. Gli altri endpoint di rete in cui è richiesta la connettività sono elencati in altri [endpoint non inclusi nel servizio Web indirizzo IP e URL di Office 365](additional-office365-ip-addresses-and-urls.md).
 
 La modalità di utilizzo degli endpoint di rete di Office 365 dipenderà dall'architettura di rete dell'organizzazione aziendale. In questo articolo vengono illustrati diversi modi in cui le architetture di rete aziendale possono essere integrate con gli URL e gli indirizzi IP di Office 365. Il modo più semplice per scegliere quali richieste di rete è attendibile consiste nell'utilizzare i dispositivi di SDWAN che supportano la configurazione automatizzata di Office 365 in ognuna delle posizioni di Office.
 
@@ -77,7 +77,7 @@ Sono disponibili diversi parametri che è possibile passare allo script:
 |**TenantName** <br/> |Nome del tenant di Office 365. Passata al servizio Web e utilizzata come parametro sostitutivo in alcuni URL di Office 365. <br/> |
 |**Tipo** <br/> |Tipo di file PAC del proxy che si desidera generare. <br/> |
 
-Di seguito è riportato un altro esempio di chiamata dello script PowerShell con parametri aggiuntivi.
+Di seguito è riportato un altro esempio di chiamata dello script PowerShell con parametri aggiuntivi:
 
 ```powershell
 Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
@@ -112,7 +112,7 @@ L'indirizzo IP e il servizio Web URL di Office 365 offrono un feed RSS che è po
 
 Si capisce che potrebbe essere ancora necessario l'elaborazione manuale per le modifiche all'endpoint di rete che passano ogni mese. È possibile utilizzare Microsoft Flow per creare un flusso che invia una notifica tramite posta elettronica e, facoltativamente, esegue un processo di approvazione per le modifiche apportate agli endpoint di rete di Office 365. Dopo aver completato la revisione, è possibile fare in modo che il flusso invii automaticamente le modifiche al team di gestione del firewall e del server proxy.
 
-Per informazioni su un modello e un esempio di flusso Microsoft, vedere [use Microsoft Flow to receive an mail for changes to Office 365 IP address and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)
+Per informazioni su un modello e un esempio di flusso Microsoft, vedere [use Microsoft Flow to receive an mail for changes to Office 365 IP address and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>DOMANDE frequenti sugli endpoint di rete di Office 365
@@ -185,7 +185,7 @@ Office 365 e altri servizi Microsoft utilizzano diversi servizi di terze parti, 
 ### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>È necessario avere la connettività minima possibile per Office 365
 <a name="bkmk_thirdparty"> </a>
 
-Office 365 è una serie di servizi creati per funzionare tramite Internet, le promesse di affidabilità e disponibilità si basano su numerosi servizi Internet standard disponibili. Ad esempio, i servizi Internet standard quali DNS, CRL e reti CDN devono essere raggiungibili per l'utilizzo di Office 365 così come devono essere raggiungibili per utilizzare i servizi Internet più moderni.
+Poiché Office 365 è una famiglia di servizi creata per funzionare tramite Internet, le promesse di affidabilità e disponibilità si basano su numerosi servizi Internet standard disponibili. Ad esempio, i servizi Internet standard quali DNS, CRL e reti CDN devono essere raggiungibili per l'utilizzo di Office 365 così come devono essere raggiungibili per utilizzare i servizi Internet più moderni.
 
 La famiglia di prodotti Office 365 è suddivisa in aree di servizio principali. Questi possono essere abilitati in modo selettivo per la connettività ed è presente un'area comune che è una dipendenza per tutti ed è sempre necessaria.
 
@@ -203,7 +203,7 @@ Se si sta tentando di utilizzare Office 365 e i servizi di terze parti non sono 
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Come si blocca l'accesso ai servizi consumer di Microsoft?
 <a name="bkmk_consumer"> </a>
 
-La limitazione dell'accesso ai servizi consumer dovrebbe essere fatta a proprio rischio, l'unico modo affidabile per bloccare i servizi consumer è limitare l'accesso all'FQDN di *login.Live.com* . Questo nome di dominio completo viene utilizzato da un ampio insieme di servizi, tra cui servizi non consumer quali MSDN, TechNet e altri. Questo FQDN è utilizzato anche dal programma di Exchange file sicuro del supporto tecnico Microsoft ed è necessario trasferire i file per semplificare la risoluzione dei problemi per i prodotti Microsoft.  La limitazione dell'accesso a questo FQDN può comportare la necessità di includere anche eccezioni alla regola per le richieste di rete associate a questi servizi.
+La limitazione dell'accesso ai servizi consumer dovrebbe essere condotta a proprio rischio. L'unico modo affidabile per bloccare i servizi consumer è limitare l'accesso all'FQDN di *login.Live.com* . Questo nome di dominio completo viene utilizzato da un ampio insieme di servizi, tra cui servizi non consumer quali MSDN, TechNet e altri. Questo FQDN è utilizzato anche dal programma di Exchange file sicuro del supporto tecnico Microsoft ed è necessario trasferire i file per semplificare la risoluzione dei problemi per i prodotti Microsoft.  La limitazione dell'accesso a questo FQDN può comportare la necessità di includere anche eccezioni alla regola per le richieste di rete associate a questi servizi.
   
 Tenere presente che bloccare l'accesso solo ai servizi consumer di Microsoft non impedirà la possibilità per gli utenti della rete di exfiltrate le informazioni utilizzando un tenant di Office 365 o un altro servizio.
   

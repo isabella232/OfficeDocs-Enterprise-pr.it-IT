@@ -3,7 +3,7 @@ title: Reti per la distribuzione di contenuti
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: 3/5/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,75 +15,89 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
-description: Utilizzare queste informazioni per informazioni sulle reti di distribuzione del contenuto (CDN) e come Office 365 in cui le utilizza. CDN assicurano Office 365 veloce e affidabile per gli utenti finali. Con CDN, servizi cloud quali Office 365 rapidamente scaricare contenuto generico, quali icone, al browser degli utenti quando si utilizzano il servizio attraverso un client web.
-ms.openlocfilehash: bcbab3256a0c1ce601abaf3f8b80e998db4bcece
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Utilizzare queste informazioni per conoscere le reti di distribuzione del contenuto (reti CDN) e il modo in cui Office 365 li utilizza. La Guida di reti CDN consente di mantenere Office 365 veloce e affidabile per gli utenti finali. Con reti CDN, i servizi cloud come Office 365 scaricano rapidamente contenuto generico, come icone, nel browser degli utenti quando utilizzano il servizio tramite un client Web.
+ms.openlocfilehash: c38b4c1fae2a40ff702c4d2222ed534e11fa2fc3
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541377"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458336"
 ---
 # <a name="content-delivery-networks"></a>Reti per la distribuzione di contenuti
 
-Utilizzare queste informazioni per informazioni sulle reti di distribuzione del contenuto (CDN) e come Office 365 in cui le utilizza. CDN assicurano Office 365 veloce e affidabile per gli utenti finali. Con CDN, servizi cloud quali Office 365 rapidamente scaricare contenuto generico, quali icone, al browser degli utenti quando si utilizzano il servizio attraverso un client web.
+Utilizzare queste informazioni per conoscere le reti di distribuzione del contenuto (reti CDN) e il modo in cui Office 365 li utilizza. La Guida di reti CDN consente di mantenere Office 365 veloce e affidabile per gli utenti finali. Con reti CDN, i servizi cloud come Office 365 scaricano rapidamente contenuto generico, come icone, nel browser degli utenti quando utilizzano il servizio tramite un client Web.
   
- **Per eseguire il titolo** [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://aka.ms/tune).
+ **Tornare alla** pagina [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://aka.ms/tune).
   
-## <a name="how-should-i-set-up-my-network-so-that-cdns-work-best-with-office-365"></a>Come devono configurare la rete in modo che le reti CDN funzionino al meglio con Office 365?
+## <a name="how-should-i-set-up-my-network-so-that-cdns-work-best-with-office-365"></a>Come è possibile configurare la rete in modo che reti CDN funzioni meglio con Office 365?
 
-Se si sta pianificando [la connettività di rete per Office 365](network-connectivity.md), è utile comprendere il funzionamento CDN. È inoltre importante tenere presente che non è possibile filtrare la connettività a CDN in base all'indirizzo IP. Offriamo un elenco di sforzo maggiore degli indirizzi IP per i servizi in Office 365, ad esempio Exchange Online. Acquisire familiarità con i suggerimenti per la [gestione di Office 365 endpoint](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
+Se si sta pianificando la [connettività di rete a Office 365](network-connectivity.md), è utile comprendere la modalità di funzionamento di reti CDN. È inoltre importante comprendere che non è possibile filtrare la connettività al reti CDN in base all'indirizzo IP. Viene fornito un elenco di indirizzi IP ottimale per i servizi all'interno di Office 365, ad esempio Exchange Online. Per ulteriori informazioni, vedere consigli per la [gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
   
 ## <a name="how-do-cdns-make-services-work-faster"></a>In che modo le reti per la distribuzione dei contenuti velocizzano l'esecuzione dei servizi?
 
-Il download in modo continuativo operazioni comuni come icone può richiedere una larghezza di banda di rete che può essere utilizzato meglio per il download dei contenuti personali importanti, come messaggio di posta elettronica o documenti. Perché Office 365 utilizza un'architettura che include CDN la forma di icone, script e altro contenuto generico può essere scaricato dal server più vicino ai computer client, velocizzando i download. Ciò significa un più rapido accesso al contenuto personale, in modo sicuro archiviati nei Data Center di Office 365.
+Il download di cose comuni come icone più e più volte può occupare la larghezza di banda della rete che può essere utilizzata per il download di contenuti personali importanti, come la posta elettronica o i documenti. Poiché Office 365 utilizza un'architettura che include reti CDN, le icone, gli script e altri contenuti generici possono essere scaricati da server più vicini ai computer client, rendendo più veloce il download. Questo significa un accesso più rapido ai contenuti personali, che sono archiviati in modo sicuro nei data center di Office 365.
   
 ## <a name="what-exactly-is-a-cdn"></a>Esattamente, che cos'è esattamente una rete per la distribuzione dei contenuti?
 
-CDN vengono utilizzate per la maggior parte dei servizi cloud dell'organizzazione. Servizi cloud quali Office 365 sono milioni di clienti download una combinazione di proprietario (ad esempio, messaggi di posta elettronica) e di contenuto generico (ad esempio, le icone) alla volta. È più efficiente per inserire immagini che tutti gli utenti vengono utilizzati, come icone, all'incirca nel computer dell'utente possibile. Tuttavia, non validi per ogni servizio cloud creare datacenter CDN cui sono archiviati contenuto generico in ogni area metropolitane o anche in ogni hub Internet principali in tutto il mondo, in modo che alcuni di questi CDN condivisi.
+Reti CDN vengono utilizzati dalla maggior parte dei servizi cloud aziendali. I servizi cloud come Office 365 dispongono di milioni di clienti che scaricano una combinazione di contenuto proprietario (ad esempio messaggi di posta elettronica) e di contenuto generico (ad esempio le icone) contemporaneamente. È più efficiente inserire immagini, come icone, come il più vicino possibile al computer dell'utente. Tuttavia, non è pratico per tutti i servizi cloud creare datacenter della rete CDN che archiviano questo contenuto generico in ogni area metropolitana o anche in tutti i principali hub Internet di tutto il mondo, quindi alcuni di questi reti CDN sono condivisi.
   
-CDN può essere pubblica o privata. CDN private sono proprietà e gestite da una singola società e possono utilizzare solo dell'azienda applicazioni e servizi. Pubblica CDN vengono eseguite dalle organizzazioni che hanno il lease dell'utilizzo di più società. A seconda di dove ti trovi, potrebbe risultare più efficiente per Office 365 scaricare immagini generiche automaticamente da un CDN proprietaria di Office 365 e viene eseguito, CDN pubblico o una combinazione delle due configurazioni. Indipendentemente dal tipo di rete CDN viene utilizzato, la procedura seguente per recuperare i dati sono gli stessi.
+Le reti per la distribuzione dei contenuti possono essere di tipo privato o pubblico. Le reti CDN private sono possedute e gestite da una singola società e solo le applicazioni e i servizi di tale società possono utilizzarlo. Quelle pubbliche sono gestite da aziende che ne offrono l'utilizzo in lease ad altre aziende. A seconda della posizione in cui si trova, potrebbe essere più efficiente per Office 365 scaricare le immagini generiche per l'utente da una rete CDN che Office 365 possiede e gestisce, una rete CDN pubblica o una combinazione dei due. Indipendentemente dal tipo di rete CDN utilizzata, la procedura per recuperare i dati è la stessa.
   
 1. Il client richiede i dati da Office 365.
 
-2. Office 365 restituisce i dati direttamente al client o indirizza i client di una rete CDN.
+2. Office 365 restituisce i dati direttamente al client o indirizza il client a una rete CDN.
 
-3. Se i dati sono già presente nella cache la rete CDN, il client scarica i dati direttamente dal percorso di rete CDN più vicino al client in internet.
+3. Se i dati sono già memorizzati nella cache nella rete CDN, il client Scarica i dati direttamente dal percorso CDN più vicino al client su Internet.
 
-4. Se i dati non viene memorizzato nella cache la rete CDN, il nodo CDN richiede i dati di Office 365 e quindi della cache di dati per un periodo di tempo dopo il download del client per i dati.
+4. Se i dati non vengono memorizzati nella cache della rete CDN, il nodo CDN richiede i dati da Office 365 e quindi memorizza nella cache i dati per un determinato periodo di tempo dopo che il client ha eseguito il download dei dati.
 
-CDN estrarre i file e le immagini da più vicino datacenter di Office 365 e a sua volta, il client utilizza i file e le immagini da CDN più vicino. Quando gli utenti accedono a un servizio cloud, ad esempio la lettura di posta elettronica in Outlook Web App, il browser dell'utente tenta di recuperare i file e le immagini da datacenter Office 365. Anziché impiegando una larghezza di banda recapitare i file e l'ora, Office 365 reindirizza il browser per la rete CDN. La rete CDN fascicolazione datacenter più vicino al browser dell'utente e utilizzo del reindirizzamento degli, consente di scaricare le immagini generiche da quest'ultimo. Utilizzando il reindirizzamento CDN è rapido e consente agli utenti un notevole risparmio del tempo di download.
+Il reti CDN estrae i file e le immagini dal Data Center di Office 365 più vicino e, a sua incirca, il client estrae i file e le immagini dalla rete CDN più vicina. Quando gli utenti accedono a un servizio cloud, ad esempio la lettura della posta elettronica in Outlook Web App, il browser dell'utente tenta di recuperare i file e le immagini dal Data Center di Office 365. Invece di passare il tempo e la larghezza di banda per la distribuzione dei file, Office 365 reindirizza il browser alla rete CDN. La rete CDN calcola il data center più vicino al browser dell'utente e, tramite il reindirizzamento, Scarica le immagini generiche da qui. L'utilizzo del reindirizzamento della rete per la distribuzione dei contenuti consiste in un'operazione rapida e fa risparmiare molto tempo per il download.
   
-## <a name="is-there-a-list-of-all-the-fqdns-that-leverage-cdns"></a>Esiste un elenco di tutti i nomi FQDN su CDN?
+## <a name="is-there-a-list-of-all-the-fqdns-that-leverage-cdns"></a>È presente un elenco di tutti i nomi FQDN che sfruttano reti CDN?
 
-L'elenco di nomi di dominio completo e come vengono sfruttare CDN cambia nel tempo, vedere il nostro pubblicata [pagina endpoint di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744) in base al aggiornati i nomi FQDN dei più recenti su CDN.
+L'elenco dei nomi FQDN e la modalità di utilizzo di reti CDN cambiano nel tempo, fare riferimento alla nostra [pagina di Office 365 endpoint](https://go.microsoft.com/fwlink/p/?LinkID=293744) pubblicati per essere sempre aggiornati sugli ultimi FQDN che sfruttano reti CDN.
   
-## <a name="is-there-a-list-of-all-the-cdns-that-office-365-uses"></a>Esiste un elenco di tutte le reti CDN utilizzati da Office 365?
+## <a name="is-there-a-list-of-all-the-cdns-that-office-365-uses"></a>È presente un elenco di tutti i reti CDN utilizzati da Office 365?
 
-CDN utilizzato da Office 365 sono sempre soggetta a modifiche e in molti casi non vi sono più CDN partner configurate nel caso in cui uno non è disponibile. Due CDN più comuni in uso sono [incluse Akamai](https://www.akamai.com/us/en/cdn.jsp) e [Microsoft Azure](https://azure.microsoft.com/documentation/services/cdn/). Entrambe queste soluzioni CDN avere un unico globale migliorando la portata del servizio da più angoli del mondo. Il contenuto archiviato non vi sono inclusi script di Office 365 generale, i file e immagini. Ad esempio, quando si accede portal.office.com, le immagini vengono estratti dalla rete CDN più vicino per velocizzare i caricamenti delle pagine. Altri esempi Office 365 ProPlus archiviazione i bit di installazione in una rete CDN per velocizzare la quantità di tempo che necessario per scaricare la versione più recente di Office. È inoltre disponibile parte proprietario del contenuto archiviato nel CDN, ad esempio i file video per Office 365 Video. Dopo aver caricato i video, i file sono crittografati e memorizzati nel formato crittografato con Azure Media Services. Quando il lettore video di Office 365 consente di recuperare il video viene innanzitutto nella cache per la rete CDN più vicina prima di essere scaricato per accelerare la quantità di tempo che necessario per scaricare il video.
-  
-## <a name="does-office-365-offer-a-cdn-that-i-can-use-for-my-own-files"></a>Office 365 offre un CDN utilizzabili per i propri file?
+Le reti CDN in uso da Office 365 sono sempre soggette a modifiche e in molti casi vi sono più partner della rete CDN configurati nell'evento uno non è disponibile. Le reti CDN primarie in uso sono le seguenti:
 
-Sì! A questo punto la sottoscrizione di Office 365 include un CDN distinto dai Azure che è possibile utilizzare in modo specifico per le risorse di SharePoint Online. Per informazioni su come utilizzare la rete CDN di Office 365, vedere [utilizzo della rete di distribuzione del contenuto di Office 365 con SharePoint Online](use-office-365-cdn-with-spo.md).
-  
-## <a name="can-i-use-my-own-cdn-and-cache-content-on-my-local-network"></a>È possibile utilizzare i propri contenuti CDN e della cache della rete locale?
++ [Office 365 (in particolare per il contenuto di SharePoint Online)](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
++ [Microsoft Azure](https://azure.microsoft.com/documentation/services/cdn/)
++ [Akamai](https://www.akamai.com/us/en/cdn.jsp)
 
-Si sta cercando continuamente nuovi modi supportare le esigenze di clienti ed esplorazione di utilizzo della memorizzazione nella cache delle soluzioni di proxy e altre soluzioni CDN locale.
+Queste soluzioni CDN hanno una portata globale che aumenta la portata del servizio a più angoli del mondo. Il contenuto memorizzato include gli script, i file e le immagini generali di Office 365. Ad esempio, quando si effettua l'accesso a portal.office.com, le immagini vengono estratte dalla rete CDN più vicina per velocizzare i tempi di caricamento delle pagine. Altri esempi includono Office 365 ProPlus per l'archiviazione dei bit di installazione su una rete CDN per velocizzare il tempo necessario per scaricare la versione più recente di Office.
+
+Sono presenti anche contenuti proprietari archiviati in reti CDN, ad esempio i file video per il video di Office 365. Dopo aver caricato i video, i file vengono crittografati e quindi archiviati nel formato crittografato con i servizi di Azure Media. Quando il lettore video di Office 365 Recupera il video, viene prima memorizzato nella cache della rete CDN più vicina prima di essere scaricato per velocizzare la quantità di tempo necessaria per scaricare il video.
+
+Per informazioni su come utilizzare la rete CDN di Office 365, vedere [use the office 365 Content Delivery Network with SharePoint Online](use-office-365-cdn-with-spo.md).
+
+## <a name="can-i-use-my-own-cdn-and-cache-content-on-my-local-network"></a>È possibile utilizzare la rete CDN personale e il contenuto della cache nella propria network locale?
+
+Siamo sempre alla ricerca di nuovi modi per supportare le esigenze dei clienti e stiamo esplorando l'utilizzo delle soluzioni proxy di memorizzazione nella cache e di altre soluzioni CDN locali.
   
 ## <a name="is-my-data-safe"></a>I dati sono protetti?
 
-È necessario prestare attenzione grande per contribuire a garantire che vengono protetti i dati che esegue un'azienda. Gli elementi memorizzati in partner network distribuzione dei contenuti sia viene crittografato. ad esempio con [Office 365 Video](https://support.office.com/article/2bed67a1-4052-49ff-a4ce-b7e6530eb98e)o non specifico, del cliente ad esempio i file di installazione di Office 365 ProPlus. Testa su [Centro protezione di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=397383) per acquisire familiarità con il prodotto approfondito per proteggere la privacy degli utenti e dei dati.
-  
-## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Come proteggere la rete con questi servizi parte 3
+Viene fatto tutto il possibile per proteggere i dati eseguiti dalla azienda dei clienti. I dati specifici del cliente archiviati in reti CDN vengono crittografati sia in transito che a riposo ed è protetto dalle stesse autorizzazioni a livello di file dei dati non archiviati in una rete CDN.
 
-Sfruttamento di un'ampia gamma di servizi partner consente a Office 365 implementare la scalabilità e soddisfare i requisiti di disponibilità e su come migliorare l'esperienza utente quando si utilizza Office 365. I servizi di terze parti 3 che utilizza Office 365 sono entrambi gli elenchi di revoche; ad esempio crl.microsoft.com o sa.symcb.com e CDN; ad esempio r3.res.outlook.com. Ogni CDN FQDN Office 365 utilizza è un FQDN personalizzato per Office 365, se sta inviato a un nome di dominio completo su richiesta di Office 365 è possibile essere certi che è controllare il nome di dominio completo e di sottostante contenuto in tale posizione.
-  
-Per i clienti che ancora da separare i richieste destinate a un datacenter Microsoft o di Office 365 dalle richieste destinati a una parte 3 abbiamo scritto di informazioni aggiuntive sugli [endpoint di gestione di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
-  
-## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>Utilizzo di ExpressRoute Azure per Office 365, che modifica aspetti?
+I provider della rete CDN possono avere standard di privacy e conformità che differiscono dagli impegni delineati dal centro protezione di Office 365. I dati memorizzati nella cache tramite il servizio CDN potrebbero non essere conformi ai termini di elaborazione dati di Microsoft e potrebbero essere esterni ai limiti di conformità di Office 365 Trust Center.
 
-[ExpressRoute Azure per Office 365](azure-expressroute.md) fornisce una connessione dedicata a infrastruttura di Office 365 è suddivisi da internet pubblico. Ciò significa che sarà ancora necessario client si connettono tramite connessioni non ExpressRoute a cui connettersi CDN e altre un'infrastruttura Microsoft che non è incluso in modo esplicito nell'elenco dei servizi supportati da ExpressRoute. Per ulteriori informazioni su come instradare il traffico specifico, ad esempio le richieste destinate CDN, vedere [la gestione del traffico di rete di Office 365](routing-with-expressroute.md).
+Per informazioni approfondite sulla privacy e la protezione dei dati per i provider di servizi di rete CDN di Office 365, visitare i seguenti elementi:  
+
++ Ulteriori informazioni sulla protezione dei dati e sulla privacy di Office 365 in [office 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkId=397383)
++ Per ulteriori informazioni sulla privacy e la protezione dei dati di Azure, vedere il Centro sicurezza di [Azure](https://azure.microsoft.com/en-us/overview/trusted-cloud/)
++ Per ulteriori informazioni sulla privacy e la protezione dei dati di Akamai, vedere [Akamai privacy Trust Center](https://www.akamai.com/us/en/about/compliance/data-protection-at-akamai.jsp)
+
+## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Come è possibile proteggere la rete con tutti i servizi di terze parti?
+
+L'utilizzo di una vasta gamma di servizi partner consente a Office 365 di scalare e soddisfare i requisiti di disponibilità, nonché di migliorare l'esperienza utente quando si utilizza Office 365. I servizi di terze parti Office 365 leverages includono entrambi gli elenchi di revoche di certificati. ad esempio crl.microsoft.com o sa.symcb.com e reti CDN; ad esempio R3.res.Outlook.com. Ogni CDN FQDN Office 365 utilizza un FQDN personalizzato per Office 365, se viene inviato a un FQDN su richiesta di Office 365, è possibile essere certi di controllare il nome di dominio completo e il contenuto sottostante in tale percorso.
   
-Questo è un collegamento breve che è possibile utilizzare il ritorno:[https://aka.ms/o365cdns](https://aka.ms/o365cdns)
+Per i clienti che ancora desiderano separare le richieste destinate a un datacenter Microsoft o Office 365 dalle richieste destinate a terze parti, sono state scritte linee guida per la [gestione degli endpoint di office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
+  
+## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>Sto usando Azure ExpressRoute per Office 365, che cambia le cose?
+
+[Azure ExpressRoute per office 365](azure-expressroute.md) fornisce una connessione dedicata all'infrastruttura di Office 365 che è stata segregata dalla rete Internet pubblica. Questo significa che i client dovranno comunque connettersi tramite connessioni non ExpressRoute per connettersi a reti CDN e ad altre infrastrutture Microsoft che non sono esplicitamente incluse nell'elenco dei servizi supportati da ExpressRoute. Per ulteriori informazioni su come instradare il traffico specifico, ad esempio le richieste destinate a reti CDN, fare riferimento alla [gestione del traffico di rete di Office 365](routing-with-expressroute.md).
+  
+Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
   
 ## <a name="see-also"></a>Vedere anche
 
