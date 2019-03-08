@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su come spostare un sito OneDrive in un'altra posizione geografica.
-ms.openlocfilehash: 4d55ce087b475b9364a4e1584a1ac4947cc1ba85
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 13210d354c45c2d4927ac3de34512bc75a09c14b
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29547134"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458326"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Spostare un sito OneDrive in un'altra posizione geografica 
 
@@ -68,6 +68,8 @@ Prima di iniziare uno spostamento geografico di OneDrive, consigliamo di convali
 Per assicurarsi che tutte le posizioni geografiche siano compatibili, eseguire:
 
 `Get-SPOGeoMoveCrossCompatibilityStatus`
+
+Verrà visualizzato un elenco delle posizioni geografiche e, se lo spostamento del contenuto tra tali posizioni è consentito, verrà visualizzata la dicitura "Compatibile". Se il comando restituisce "Incompatibile", provare a ripetere la convalida dello stato in un secondo momento.
 
 Se OneDrive è sottoposto a blocco a fini giudiziari o se contiene un sito secondario, non può essere spostato. È possibile utilizzare il cmdlet Start-SPOUserAndContentMove con il parametro -ValidationOnly per verificare che OneDrive possa essere spostato:
 
