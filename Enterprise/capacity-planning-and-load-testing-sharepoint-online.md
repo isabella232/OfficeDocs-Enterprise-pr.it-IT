@@ -1,5 +1,5 @@
 ---
-title: Capacità di pianificazione test di carico e SharePoint Online
+title: Pianificazione della capacità e test di carico di SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,58 +12,47 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
-description: In questo articolo viene descritto come distribuire in SharePoint Online senza eseguire il test di carico tradizionale poiché non è consentito.
-ms.openlocfilehash: 6a22ee089adc0817f5c52bbfee5f2b41d7e5d80c
-ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
+description: In questo articolo viene descritto come distribuire SharePoint Online senza eseguire il test di carico tradizionale, poiché non è consentito.
+ms.openlocfilehash: ef5d6c043b4be2e8c5358a9c060459b4c6a92156
+ms.sourcegitcommit: 468c8e8d2f951e08cf50301445ad650ef17328aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27181027"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512721"
 ---
-# <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Capacità di pianificazione test di carico e SharePoint Online
+# <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Pianificazione della capacità e test di carico di SharePoint Online.
 
-In questo articolo viene descritto come distribuire in SharePoint Online senza test di carico tradizionale, poiché si tratta di test di carico sconsigliato.
+In questo articolo viene descritto come eseguire la distribuzione in SharePoint Online senza il test di carico tradizionale, in quanto i test di carico non sono consentiti in SharePoint Online. SharePoint Online è un servizio cloud le funzionalità di carico, integrità e bilanciamento del carico generale del servizio sono gestite da Microsoft.
   
-Anche se active load test su SharePoint Online è sconsigliata, esistono altri modi che è possibile verificare che un sito non genererà un'esperienza utente scadente quando si avvia il sito. 
+L'approccio migliore per garantire il successo del lancio del sito consiste nel seguire i principi, le procedure e i suggerimenti di base riportati di seguito.
   
-Con SharePoint Online non è necessario eseguire la pianificazione della capacità, come questa operazione viene eseguita automaticamente come parte di questo servizio. Con ambienti locali, il test di carico consente di convalidare i presupposti scala e infine individuare il punto di interruzione di una farm. per la saturazione a carico. Con SharePoint Online è necessario eseguire operazioni in modo diverso. Da un ambiente multi-tenant, è necessario proteggere tenant tutti nella stessa farm in modo che si verranno automaticamente limitare i test di carico. In questo modo si riceverà deludente e potenzialmente fuorvianti risultati se si tenta di caricare l'ambiente di testing.
+Con gli ambienti locali, il test di carico viene utilizzato per convalidare il presupposto della scala e infine individuare il punto di interruzione di una farm. saturando il carico. Con SharePoint Online, è necessario eseguire le operazioni in modo diverso. Poiché si tratta di un ambiente multi-tenant, è necessario proteggere tutti i tenant della stessa farm, in modo da limitare automaticamente eventuali test di carico. Questo significa che si riceveranno risultati deludenti e potenzialmente detestabili se si tenta di caricare il test dell'ambiente.
   
-Uno dei principali vantaggi di SharePoint Online in una distribuzione locale è la flessibilità della cloud. Ambiente su larga scala è configurato per servizio milioni di utenti a intervalli giornalieri pertanto importante è gestire in modo efficace della capacità, espandendo automaticamente le farm come e quando necessario. In questo articolo viene illustrato come si prevede di aumento di capacità e la scala con sul posto. L'articolo vengono inoltre illustrate approcci per l'utilizzo che non coinvolgono il test di carico.
+Uno dei principali vantaggi di SharePoint online in una distribuzione locale è l'elasticità del cloud. L'ambiente su larga scala è configurato per il servizio di milioni di utenti su base giornaliera, pertanto è importante gestire efficacemente la capacità mediante l'equilibratura e l'espansione delle farm. L'articolo include anche gli approcci per l'utilizzo che non coinvolgono i test di carico, ma implicano le linee guida seguenti che consentiranno di eseguire correttamente il lancio. 
   
-## <a name="how-office-365-predicts-load-and-expands-capacity"></a>Modalità di Office 365 stima del carico e si espande la capacità
+Anche se la crescita è imprevedibile per qualsiasi tenant in una farm, la somma aggregata delle richieste è prevedibile nel tempo. Identificando le tendenze di sviluppo in SharePoint Online, è possibile pianificare la futura espansione.
+  
+Al fine di utilizzare in modo efficiente la capacità e gestire la crescita imprevista, in qualsiasi farm, è presente un'automazione che consente di tenere traccia del carico front-end e di eseguire la scalabilità verticale, se necessario. Sono disponibili più metriche con uno dei principali carichi di CPU che vengono utilizzati come segnale per la scalabilità verticale dei Front End Server. In aggiunta a questo e come si noterà ulteriormente nell'articolo, è consigliabile un approccio graduale/Wave come gli ambienti SQL verranno scalati in base al carico e alla domanda e seguendo le fasi e le onde consentono la corretta distribuzione del carico e della crescita. 
+  
+## <a name="how-do-i-plan-for-a-site-launch"></a>Come si pianifica un avvio del sito?
 
-SharePoint Online lavoro gestione della capacità del server viene eseguita utilizzando due metodi:
-  
-- Previsione della capacità
-    
-- Bilanciamento del carico nelle farm di server singolo
-    
-A differenza di pianificazione per un ambiente locale, per la previsione della capacità in SharePoint Online, è in grado di compilare le statistiche e grafico potenziali requisiti di qualsiasi gruppo di server specificato. Potrebbe essere simile le richieste di domanda di aggregazione nell'area (in un'area è un gruppo di farm di SharePoint) linea crescita nell'immagine riportata di seguito:
-  
-![Grafico della capacità predittiva: previsione](media/ca800cb6-cc59-451f-98bd-55e035489af3.png)
-  
-Mentre si trova in una farm di qualsiasi imprevisto la crescita, la somma aggregata delle richieste in un'area è prevedibile. Identificare le tendenze di crescita in SharePoint Online, è possibile pianificare l'espansione futura.
-  
-Per poter utilizzare la capacità in modo efficiente e in relazione ai fattori di crescita imprevisti, qualsiasi farm, si dispone di automazione che tiene traccia del carico front-end e garantisce la scalabilità verticale sul posto, quando necessario. La metrica principale che viene utilizzato come un segnale per implementare la scalabilità di front end server è il carico della CPU. L'obiettivo è mantenere il carico della CPU di picco in 40%. Si tratta per avere sufficiente buffer di assorbire picchi imprevisti. Come carico approcci 40% stabile, si aggiungere server front-end alla farm.
-  
-![Grafico della capacità predittiva: gestione delle farm](media/6b2a8c63-24c1-4504-b7a3-3d3b3be2583a.png)
-  
-Ulteriori server è possibile aggiungere rapidamente a una farm con quelli che sono stati aggiunti in precedenza all'area tramite l'utilizzo di previsione. 
-  
-## <a name="how-do-i-plan-for-a-site-launch"></a>Come pianificare avvia un sito?
+### <a name="optimize-pages-by-following-recommended-guidelines"></a>Ottimizzare le pagine seguendo le linee guida consigliate
+Le pagine di una distribuzione locale non devono essere semplicemente eseguite come sono su SharePoint Online senza verificarle in base alle linee guida consigliate per SharePoint Online.
 
-È necessario attendere che la farm in cui viene aperto il nuovo sito verrà automaticamente monitorata in modo che vengano aggiunti nuovi server front-end, come descritto in precedenza. Per questo motivo, non è necessario alcuna notifica per il lancio del nuovo sito.
+Alcuni fattori chiave devono essere considerati:
+- Le distribuzioni in locale possono sfruttare le tradizionali cache sul fianco del server, come la cache degli oggetti, ma con le differenze di topologia nel cloud, queste opzioni non sono disponibili.
+- Tutte le pagine/caratteristiche/personalizzazioni utilizzate per il consumo di cloud devono essere ottimizzate per più posizioni in modo che gli utenti in aree geografiche diverse abbiano un'esperienza coerente. Cloud offre ottimizzazioni come la rete per la distribuzione dei contenuti (CDN) per ottimizzare la base di utenti distribuiti.
+
+Per le pagine di pubblicazione classiche di SharePoint Online, è possibile utilizzare l'estensione Chrome dello [strumento di diagnostica di pagina](https://aka.ms/perftool) , che consentirà di analizzare le pagine di destinazione principali utilizzate dagli utenti.
+Gli strumenti di sviluppo F12 nel browser o [Fiddler](https://www.telerik.com/download/fiddler) possono essere utilizzati per esaminare il peso della pagina e il numero di chiamate e gli elementi che influiscono sul caricamento generale della pagina devono essere esaminati e ottimizzati. Un elenco di suggerimenti, tra cui l'utilizzo di reti di distribuzione del contenuto e altre ottimizzazioni, può essere esaminato nell'articolo [Tune SharePoint Online performance](https://aka.ms/spoperformance) .
+
+### <a name="wave--phase-approach"></a>Approccio Wave/Phase
+L'approccio tradizionale del Big Bang per i lanci dei siti non consente in modo efficace la verifica che le personalizzazioni, le origini esterne, i servizi o i processi siano stati testati sulla scala giusta. SharePoint come servizio bilancia anche la capacità in base all'utilizzo e all'utilizzo previsto e sebbene non sia necessario inviare una notifica del lancio del sito, è consigliabile seguire le linee guida riportate di seguito per garantire il successo.
   
-In seguito altre procedure consigliate per una singola pagina di SharePoint Online è improbabile che avvia un sito nuovo in anche 100.000 utenti avrà effetto alla farm.
-  
-Esistono alcune strategie per la pianificazione per una versione di un nuovo sito di SharePoint Online. Come illustrato nella figura seguente, spesso la quantità di utenti che sono invitati è significativamente superiore a quelle che utilizzano effettivamente il sito. In questa immagine viene illustrata una strategia su come distribuire una versione precedente. Questo metodo non solo utile durante il caricamento delle prestazioni, ma consente inoltre di identificare informazioni su come migliorare il sito di SharePoint prima di grandi dimensioni dalla maggior parte degli utenti vederla.
+Come illustrato nella figura seguente, spesso il numero di utenti invitati è significativamente più elevato rispetto a quelli che utilizzano effettivamente il sito. In questa immagine viene illustrata una strategia su come eseguire il rollback di una versione. Questo metodo consente di identificare i modi per migliorare il sito di SharePoint prima che la maggior parte degli utenti lo veda. Inoltre, consente di sospendere l'implementazione se si riscontrano problemi in una delle fasi/onde che limitano il potenziale numero di utenti interessati.
   
 ![Grafico degli utenti invitati e attivi](media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
   
-Nella fase pilota, è consigliabile ottenere commenti e suggerimenti degli utenti che l'organizzazione considera attendibile e SA will essere impegnati. In questo modo è possibile misurare come il sistema viene utilizzato, nonché alle prestazioni.
+Nella fase pilota, è opportuno ottenere commenti e suggerimenti da parte degli utenti che l'organizzazione ha fiducia e sa che verranno coinvolti. In questo modo è possibile valutare la modalità di utilizzo del sistema, nonché la modalità di esecuzione.
   
-A questo punto, inizia un (in inglese) fuori a tutti gli utenti nelle onde; come ottenere commenti ed esaminare periodicamente le prestazioni. Il vantaggio di presentazione del sistema e apportare miglioramenti come sistema ottenuto utilizzo più lentamente. In questo modo di reagire all'aumento del carico come è stato implementato il sito a più utenti.
-  
-Infine, durante i test di carico sono consentiti, i clienti possibile impostare periodica ping al servizio misura disponibilità e latenza. Si identifica una linea di base per il proprio sito. Tuttavia, queste devono essere conservate a bassa frequenza per evitare problemi descritti in precedenza di limitazione.
-  
-
+Durante ciascuna delle onde, raccogliere i commenti degli utenti in merito alle caratteristiche e le prestazioni durante ogni ondata di distribuzione. Questo ha il vantaggio di introdurre lentamente il sistema e apportare miglioramenti man mano che il sistema viene utilizzato. In questo modo, è possibile reagire anche all'aumento del carico quando il sito viene implementato per un numero sempre maggiore di utenti.
