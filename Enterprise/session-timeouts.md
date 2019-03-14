@@ -1,5 +1,5 @@
 ---
-title: Timeout sessione per Office 365
+title: Timeout della sessione per Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
@@ -16,31 +16,33 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
-description: Timeout sessione vengono utilizzati per bilanciare protezione e semplicità di accesso in applicazioni client di Office 365.
-ms.openlocfilehash: 4ef50b876fd97e2de2449d324464b466243a6691
-ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
+ms.collection:
+- M365-security-compliance
+description: I timeout di sessione vengono utilizzati per bilanciare la Securtiy e la facilità di accesso nelle app client di Office 365.
+ms.openlocfilehash: 05e0ddbfb569f476986567e55bbf93428125b3af
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "27378492"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372883"
 ---
-# <a name="session-timeouts-for-office-365"></a>Timeout sessione per Office 365
+# <a name="session-timeouts-for-office-365"></a>Timeout della sessione per Office 365
 
-La durata della sessione è una parte importante di autenticazione per Office 365 e un aspetto importante di bilanciamento del carico di protezione e il numero di volte in cui gli utenti vengono richiesto per le proprie credenziali.
+La durata della sessione è una parte importante dell'autenticazione per Office 365 e costituisce un componente importante per l'equilibratura della sicurezza e il numero di volte in cui gli utenti vengono richieste per le proprie credenziali.
   
-## <a name="session-times-for-office-365-services"></a>Tempi di sessione per servizi di Office 365
+## <a name="session-times-for-office-365-services"></a>Orari della sessione per i servizi di Office 365
 
-Quando gli utenti autenticati in le applicazioni web di Office 365 o App per dispositivi mobili, viene stabilita una sessione. Per la durata della sessione, gli utenti non devono eseguire nuovamente l'autenticazione. Sessioni possono scadere quando gli utenti sono inattivi, quando si chiude il browser o scheda o scadenza i token di autenticazione per altri motivi, ad esempio quando è stata ripristinata la propria password. I servizi di Office 365 sono i timeout di sessione diverse in modo che corrispondano con l'utilizzo tipico di ogni servizio.
+Quando gli utenti eseguono l'autenticazione in una qualsiasi delle app Web o app per dispositivi mobili di Office 365, viene stabilita una sessione. Per tutta la durata della sessione, gli utenti non dovranno rieseguire l'autenticazione. Le sessioni possono scadere quando gli utenti sono inattivi, quando chiudono il browser o la scheda oppure quando il token di autenticazione scade per altri motivi, ad esempio quando la password è stata reimpostata. I servizi di Office 365 dispongono di timeout di sessione diversi per corrispondere all'utilizzo tipico di ogni servizio.
   
-Nella tabella seguente sono elencati la durata della sessione di servizi di Office 365:
+Nella tabella seguente sono elencate le durata della sessione per i servizi di Office 365:
   
 |**Servizio Office 365**|**Timeout sessione**|
 |:-----|:-----|
-|Interfaccia di amministrazione di Office 365  <br/> |Viene chiesto di specificare le credenziali per l'interfaccia di amministrazione ogni 8 ore.  <br/> |
-|SharePoint Online  <br/> |5 giorni di inattività fino a quando gli utenti sceglie **Mantieni connesso**. Se l'utente accede a SharePoint Online nuovamente dopo che sono trascorsi più di 24 ore dalla precedente sign-in, il valore di timeout viene reimpostato su 5 giorni.<br/> |
+|Interfaccia di amministrazione di Office 365  <br/> |Viene richiesto di fornire le credenziali per l'interfaccia di amministrazione ogni 8 ore.  <br/> |
+|SharePoint Online  <br/> |5 giorni di inattività finché gli utenti scelgono di **tenermi connesso**. Se l'utente accede nuovamente a SharePoint Online dopo che sono passate 24 o più ore dall'accesso precedente, il valore di timeout viene reimpostato su 5 giorni.  <br/> |
 |Outlook Web App  <br/> |6 ore.  <br/> È possibile modificare questo valore utilizzando il parametro _ActivityBasedAuthenticationTimeoutInterval_ nel cmdlet [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) .  <br/> |
-|Azure Active Directory  <br/> (Utilizzato dai client Office 2013 Windows con attivata l'autenticazione moderno)  <br/> | Autenticazione moderno utilizza i token di accesso e l'aggiornamento dei token per concedere l'accesso degli utenti alle risorse di Office 365 con Azure Active Directory. Un token di accesso è JSON Web Token fornito dopo che l'autenticazione ha esito positivo ed è valido per 1 ora. È inoltre disponibile un aggiornamento di token con una durata. Quando scade, token di accesso client di Office usare un token di aggiornamento valido per ottenere un nuovo token di accesso. Questo exchange ha esito positivo se è ancora valida autenticazione iniziale dell'utente.  <br/>  Aggiornamento dei token sono validi per 90 giorni e con un utilizzo continuo, può essere valide fino a quando non revocato.  <br/>  Aggiornare i token possono essere invalidati da diversi eventi, ad esempio:  <br/>  Password dell'utente è stato modificato dopo il token di aggiornamento è stato rilasciato.  <br/>  Un amministratore può applicare criteri di accesso condizionale che limitano l'accesso alla risorsa che l'utente sta cercando di accedere.  <br/> |
-|App per dispositivi mobili SharePoint e OneDrive per Android, iOS e Windows 10  <br/> |La durata predefinita dei token di accesso è 1 ora. Il tempo di inattività massimo predefinito del token di aggiornamento è 90 giorni.<br/> [Ulteriori informazioni su come configurare le durate dei token e token](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> Per revocare l'aggiornamento dei token, è possibile reimpostare la password dell'utente Office 365  <br/> |
-|Yammer con accesso di Office 365  <br/> |Durata del browser. Se gli utenti chiudere il browser e accedere Yammer in un nuovo browser, Yammer verranno nuovamente autenticati li con Office 365. Se gli utenti utilizzano browser di terze parti che i cookie di cache, potrebbe non necessario eseguire nuovamente l'autenticazione quando si riaprire il browser.<br/> > [!NOTE]> Ciò è valido solo per le reti utilizzando Sign-In Office 365 per Yammer.           |
+|Azure Active Directory  <br/> (Utilizzato da Office 2013 client Windows con autenticazione moderna abilitata)  <br/> | L'autenticazione moderna utilizza i token di accesso e aggiorna i token per concedere agli utenti l'accesso alle risorse di Office 365 utilizzando Azure Active Directory. Un token di accesso è un token Web JSON fornito dopo una corretta autenticazione ed è valido per 1 ora. Viene fornito anche un token di aggiornamento con una durata più lunga. Quando i token di accesso scadono, i client di Office utilizzano un token di aggiornamento valido per ottenere un nuovo token di accesso. Questo Exchange ha esito positivo se l'autenticazione iniziale dell'utente è ancora valida.  <br/>  I token di aggiornamento sono validi per 90 giorni e, con utilizzo continuativo, possono essere validi fino alla revoca.  <br/>  I token di aggiornamento possono essere invalidati da diversi eventi, ad esempio:  <br/>  La password dell'utente è cambiata dopo che è stato emesso il token di aggiornamento.  <br/>  Un amministratore può applicare criteri di accesso condizionale che limitano l'accesso alla risorsa che l'utente sta cercando di accedere.  <br/> |
+|App per dispositivi mobili di SharePoint e OneDrive per Android, iOS e Windows 10  <br/> |La durata predefinita per il token di accesso è di 1 ora. La durata massima inattiva predefinita del token di aggiornamento è di 90 giorni.  <br/> [Ulteriori informazioni sui token e su come configurare le durata dei token](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> Per revocare il token di aggiornamento, è possibile reimpostare la password di Office 365 dell'utente  <br/> |
+|Yammer con l'accesso di Office 365  <br/> |Durata del browser. Se gli utenti chiudono il browser e accedono a Yammer in un nuovo browser, Yammer li rieseguirà nuovamente con Office 365. Se gli utenti utilizzano browser di terze parti che memorizzano nella cache i cookie, potrebbero non essere in grado di eseguire nuovamente l'autenticazione quando riaprono il browser.  <br/> > [!NOTE]> questo è valido solo per le reti che utilizzano Office 365 per l'accesso a Yammer.           |
    
 

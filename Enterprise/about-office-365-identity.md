@@ -1,5 +1,5 @@
 ---
-title: Informazioni sull'identità di Office 365 e Azure Active Directory
+title: Informazioni sulla gestione delle identità di Office 365 e Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
+- M365-security-compliance
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -17,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Informazioni sul modo in cui l'identità dell'utente viene gestita in Office 365.
-ms.openlocfilehash: 0b0dd133979a5f94f7f8322c532c61fd24719359
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085425"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372893"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Informazioni sull'identità di Office 365 e Azure Active Directory
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Informazioni sulla gestione delle identità di Office 365 e Azure Active Directory
 
 Office 365 utilizza l'identità utente basata sul cloud e il servizio di autenticazione Azure Active Directory (Azure AD) per gestire gli utenti. Scegliere se la gestione delle identità è configurata tra l'organizzazione locale e Office 365 è una decisione iniziale che rappresenta uno dei fondamenti dell'infrastruttura cloud. Poiché la modifica di questa configurazione in un secondo momento può essere difficile, prendere in considerazione le opzioni per determinare cosa funziona meglio per le esigenze dell'organizzazione. È possibile scegliere tra due modelli di autenticazione principali di Office 365 per configurare e gestire gli account utente. **autenticazione del cloud** e **autenticazione federata**.
   

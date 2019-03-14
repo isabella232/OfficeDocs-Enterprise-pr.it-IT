@@ -8,29 +8,31 @@ ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: SPO160
+search.appverid:
+- MET150
+- SPO160
 ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
-description: Include collegamenti ad altri articoli in cui informazioni utili migliorare le prestazioni dei tempi di download delle pagine di SharePoint Online.
-ms.openlocfilehash: 95bccd6fd8024afde8863a4795e3279f9d77756c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Contiene collegamenti ad altri articoli che illustrano come migliorare le prestazioni dei tempi di download delle pagine per SharePoint Online.
+ms.openlocfilehash: 8c4f3c0545408457b2c0b5150ea062b9666f7e44
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541189"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492936"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Ottimizzare le prestazioni di SharePoint Online
 
-In questo articolo vengono forniti collegamenti ad altri articoli in cui informazioni utili migliorare le prestazioni dei tempi di download delle pagine di SharePoint Online. In questo articolo fa parte del progetto di [pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://aka.ms/tune) .
+In questo articolo sono riportati i collegamenti ad altri articoli che illustrano come migliorare le prestazioni dei tempi di download delle pagine per SharePoint Online. Questo articolo fa parte del progetto di [pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://aka.ms/tune) .
    
-## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Articoli relativi alle prestazioni di regolazione del SharePoint Online
+## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Articoli su come ottimizzare le prestazioni di SharePoint Online
 
 Utilizzare questi articoli per ottimizzare le prestazioni di SharePoint Online.
   
 - [Introduzione all'ottimizzazione delle prestazioni per SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
     
-- [Utilizzare lo strumento di diagnostica di pagina per SharePoint Online](page-diagnostics-for-spo.md)
+- [Utilizzare lo strumento di diagnostica delle pagine per SharePoint Online](page-diagnostics-for-spo.md)
     
 - [Opzioni di spostamento per SharePoint Online](navigation-options-for-sharepoint-online.md)
     
@@ -42,11 +44,11 @@ Utilizzare questi articoli per ottimizzare le prestazioni di SharePoint Online.
     
 - [Utilizzo delle reti di distribuzione del contenuto](using-content-delivery-networks-with-sharepoint-online.md)
     
- - [Disponibilità generale di Office 365 CDN](https://dev.office.com/blogs/general-availability-of-office-365-cdn)
+ - [Disponibilità generale della rete CDN di Office 365](https://dev.office.com/blogs/general-availability-of-office-365-cdn)
     
-- [Utilizzo di Web Part ricerca contenuto invece di Web Part Query contenuto per migliorare le prestazioni di SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [Utilizzo della web part Ricerca contenuto anziché della web part Query contenuto per migliorare le prestazioni in SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
-- [Capacità di pianificazione test di carico e SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
+- [Pianificazione della capacità e test di carico di SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
     
 - [Diagnosi dei problemi delle prestazioni con SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
     

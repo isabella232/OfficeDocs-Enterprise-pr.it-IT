@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilizzare queste informazioni per conoscere le reti di distribuzione del contenuto (reti CDN) e il modo in cui Office 365 li utilizza. La Guida di reti CDN consente di mantenere Office 365 veloce e affidabile per gli utenti finali. Con reti CDN, i servizi cloud come Office 365 scaricano rapidamente contenuto generico, come icone, nel browser degli utenti quando utilizzano il servizio tramite un client Web.
-ms.openlocfilehash: c38b4c1fae2a40ff702c4d2222ed534e11fa2fc3
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 0c44cb1a17b64f1b2f14cc34e1207f450dbd5bbf
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458336"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492956"
 ---
 # <a name="content-delivery-networks"></a>Reti per la distribuzione di contenuti
 
@@ -77,7 +77,7 @@ Siamo sempre alla ricerca di nuovi modi per supportare le esigenze dei clienti e
   
 ## <a name="is-my-data-safe"></a>I dati sono protetti?
 
-Viene fatto tutto il possibile per proteggere i dati eseguiti dalla azienda dei clienti. I dati specifici del cliente archiviati in reti CDN vengono crittografati sia in transito che a riposo ed è protetto dalle stesse autorizzazioni a livello di file dei dati non archiviati in una rete CDN.
+Viene fatto tutto il possibile per proteggere i dati eseguiti dalla azienda dei clienti. I dati specifici del cliente archiviati in reti CDN vengono crittografati sia in transito che a riposo.
 
 I provider della rete CDN possono avere standard di privacy e conformità che differiscono dagli impegni delineati dal centro protezione di Office 365. I dati memorizzati nella cache tramite il servizio CDN potrebbero non essere conformi ai termini di elaborazione dati di Microsoft e potrebbero essere esterni ai limiti di conformità di Office 365 Trust Center.
 
@@ -89,7 +89,7 @@ Per informazioni approfondite sulla privacy e la protezione dei dati per i provi
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Come è possibile proteggere la rete con tutti i servizi di terze parti?
 
-L'utilizzo di una vasta gamma di servizi partner consente a Office 365 di scalare e soddisfare i requisiti di disponibilità, nonché di migliorare l'esperienza utente quando si utilizza Office 365. I servizi di terze parti Office 365 leverages includono entrambi gli elenchi di revoche di certificati. ad esempio crl.microsoft.com o sa.symcb.com e reti CDN; ad esempio R3.res.Outlook.com. Ogni CDN FQDN Office 365 utilizza un FQDN personalizzato per Office 365, se viene inviato a un FQDN su richiesta di Office 365, è possibile essere certi di controllare il nome di dominio completo e il contenuto sottostante in tale percorso.
+L'utilizzo di una vasta gamma di servizi partner consente a Office 365 di scalare e soddisfare i requisiti di disponibilità, nonché di migliorare l'esperienza utente quando si utilizza Office 365. I servizi di terze parti Office 365 leverages includono entrambi gli elenchi di revoche di certificati. ad esempio crl.microsoft.com o sa.symcb.com e reti CDN; ad esempio R3.res.Outlook.com. Ogni rete CDN FQDN Office 365 utilizza un nome di dominio completo personalizzato per Office 365. Se si è inviati a un FQDN su richiesta di Office 365, è possibile garantire che il provider CDN controlli il nome di dominio completo e il contenuto sottostante in tale percorso.
   
 Per i clienti che ancora desiderano separare le richieste destinate a un datacenter Microsoft o Office 365 dalle richieste destinate a terze parti, sono state scritte linee guida per la [gestione degli endpoint di office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
   

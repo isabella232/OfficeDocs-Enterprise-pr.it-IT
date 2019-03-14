@@ -3,7 +3,7 @@ title: Perché è necessario usare PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 03/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Riepilogo: comprendere il motivo per cui è necessario utilizzare PowerShell di Office 365 per gestire Office 365, in alcuni casi in modo più efficiente e in altri casi per necessità.'
-ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 32110b56f1123e404b1eb7996a9af5d244874377
+ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897469"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30538994"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Perché è necessario usare PowerShell di Office 365
 
@@ -33,7 +33,7 @@ In questo articolo verranno illustrati i modi in cui è possibile utilizzare Pow
     
 - PowerShell di Office 365 è ideale per l'esecuzione di operazioni di massa
     
-- PowerShell di Office 365 è molto utile per il filtro dei dati
+- PowerShell di Office 365 è ottimo per filtrare i dati
     
 - PowerShell di Office 365 facilita la stampa e il salvataggio dei dati
     
@@ -65,7 +65,7 @@ interfaccia di amministrazione di Office 365 rende disponibili molte informazion
   
 ![Esempio di visualizzazione di utenti e gruppi nell'interfaccia di amministrazione di Office 365.](media/o365-powershell-users-and-groups.png)
   
-Per diversi scopi, consente di visualizzare le informazioni che necessarie. Esistono, tuttavia, se è necessario più volte. Ad esempio, licenze di Office 365 (e le caratteristiche di Office 365 disponibili per un utente) dipendono in parte dalla posizione geografica dell'utente. I criteri e caratteristiche è possibile estendere a un utente che risiede negli Stati Uniti potrebbero non essere lo stesso come i criteri e caratteristiche è possibile estendere a un utente che si trova in India o Belgio. È possibile utilizzare l'interfaccia di amministrazione di Office 365 per determinare la posizione geografica di un utente con la procedura seguente:
+Per diversi scopi, verranno visualizzate le informazioni necessarie. Tuttavia, in alcuni casi sono necessarie informazioni aggiuntive. Ad esempio, le licenze di Office 365 (e le funzionalità di Office 365 disponibili per un utente) dipendono in parte dalla posizione geografica dell'utente. I criteri e le funzionalità che è possibile estendere a un utente che vive negli Stati Uniti potrebbero non essere gli stessi per un utente che risiede in India o Belgio. È possibile utilizzare interfaccia di amministrazione di Office 365 per determinare la posizione geografica dell'utente attenendosi alla seguente procedura:
   
 1. Fare doppio clic sul **Nome visualizzato** dell'utente.
     
@@ -93,7 +93,6 @@ Ecco un esempio di visualizzazione:
 ```
 DisplayName                               UsageLocation
 -----------                               -------------
-Zrinka Makovac                            US
 Bonnie Kearney                            GB
 Fabrice Canel                             BR
 Brian Johnson (TAILSPIN)                  US
@@ -122,7 +121,6 @@ Bonnie Kearney                              GB
 Alex Darrow                                 US
 Anne Wallace                                US
 Brian Johnson (TAILSPIN)                    US
-Zrinka Makovac                              US
 ```
 
 > [!TIP]
@@ -274,7 +272,6 @@ Alex Darrow                              San Diego
 Bonnie Kearney                           San Diego
 Julian Isla                              Bloomington
 Rob Young                                Bloomington
-Zrinka Makovac                           San Diego
 ```
 
 > [!TIP]
@@ -329,7 +326,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>PowerShell di Office 365 facilita la stampa e il salvataggio dei dati
 
-Interfaccia di amministrazione di Office 365, è possibile visualizzare gli elenchi dei dati. Di seguito è riportato un esempio di Skype per interfaccia di amministrazione in linea aziendale di visualizzazione di un elenco di utenti che sono stati abilitati per Skype Business online:
+L'interfaccia di amministrazione di Office 365 consente di visualizzare gli elenchi di dati. Ecco un esempio dell'interfaccia di amministrazione di Skype for Business online che mostra un elenco di utenti che sono stati abilitati per Skype for Business online:
   
 ![Esempio di interfaccia di amministrazione di Skype for Business online che mostra un elenco di utenti abilitati a Skype for Business online.](media/o365-powershell-lync-users.png)
   
@@ -407,7 +404,6 @@ Ecco un esempio di visualizzazione:
 ```
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
 -----------             ----------   ----------------   --------------
-Zrinka Makovac          True         True               True
 Bonnie Kearney          True         True               True
 Fabrice Canel           True         True               True
 Brian Johnson           False        True               False
