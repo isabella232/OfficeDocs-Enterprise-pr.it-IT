@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "Sintesi: configurazione e dimostrazione di Office 365 Cloud App Security nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: 2c29e650233348e44bf72adcb8b18580e1de8802
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: f8630f1666286c2f3cced9323eccbe1f73203fdb
+ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897059"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573680"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security per l'ambiente di sviluppo/test di Office 365
 
  **Sintesi:** configurazione e dimostrazione di Office 365 Cloud App Security nell'ambiente di sviluppo/test di Office 365.
   
-Protezione di Office 365 Cloud App, in precedenza noto come Office 365 Advanced Security Management, consente di creare criteri per monitorare e informano l'utente delle attività potenzialmente dannoso nella sottoscrizione a Office 365, in modo da poter analizzare e richiedere possibili correzione dei problemi azione. Per ulteriori informazioni, vedere [Overview of Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Office 365 cloud app Security, precedentemente noto come Office 365 Advanced Security Management, consente di creare criteri che controllano e informano le attività sospette nell'abbonamento a Office 365, in modo da poter esaminare e intraprendere possibili correzioni azione. Per ulteriori informazioni, vedere [Overview of cloud app Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Con le istruzioni disponibili in questo articolo, è possibile abilitare e testare Cloud App Security nella sottoscrizione di valutazione di Office 365.
   
@@ -36,24 +36,24 @@ Con le istruzioni disponibili in questo articolo, è possibile abilitare e testa
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365 aziendale leggero o simulato
 
-Se si desidera testare Cloud App sicurezza in un modo semplice con i requisiti minimi, seguire le istruzioni in fasi 2 e 3 [dell'ambiente di sviluppo e di testing di Office 365](office-365-dev-test-environment.md).
+Se si desidera semplicemente testare la sicurezza delle app cloud con i requisiti minimi, seguire le istruzioni riportate nelle fasi 2 e 3 dell' [ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md).
   
-Se si desidera testare Cloud App protezione in un'azienda simulata, seguire le istruzioni in [DirSync per l'ambiente di sviluppo e di testing di Office 365](dirsync-for-your-office-365-dev-test-environment.md).
+Se si desidera testare la sicurezza delle app cloud in un'azienda simulata, seguire le istruzioni in [dirsync per l'ambiente di sviluppo/test di Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
 > Il test di Cloud App Security non richiede l'ambiente di sviluppo/test aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di Windows Server AD. Qui viene fornito come un'opzione in modo da poter testare Cloud App Security e sperimentarlo in un ambiente che rappresenta un'organizzazione tipica. 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>Fase 2: prima di abilitare Cloud App Security e creare un criterio
 
-In questa procedura si dimostrano che prima di abilitare Cloud App sicurezza, la modifica ruolo dell'utente non fornisce alcuna notifica tramite posta elettronica all'amministratore globale.
+In questa procedura si dimostra che, prima di abilitare cloud app Security, la modifica del ruolo di un utente non fornisce alcuna notifica tramite posta elettronica all'amministratore globale.
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Testare il comportamento di notifica predefinito di Office 365
 
-1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)() e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
   - Se è in uso l'ambiente di sviluppo/test di Office 365 leggero, accedere dal computer locale.
     
-  - Se si utilizza l'ambiente di sviluppo e di testing di Office 365 enterprise simulato, utilizzare il [portale Azure](https://portal.azure.com) per connettersi alla macchina virtuale CLIENT1 e quindi effettuare l'accesso da CLIENT1.
+  - Se si utilizza l'ambiente di sviluppo/test di Office 365 per l'organizzazione simulata, utilizzare il [portale di Azure](https://portal.azure.com) per connettersi alla macchina virtuale CLIENT1 e quindi eseguire l'accesso da CLIENT1.
     
 2. Dalla pagina principale del portale, fare clic su **Admin**.
     
@@ -67,7 +67,7 @@ In questa procedura si dimostrano che prima di abilitare Cloud App sicurezza, la
     
 7. 	Selezionare l'icona di avvio delle app in alto a sinistra e scegliere **Posta**.
     
-8. Attendere 30 minuti. Si noti che non esiste alcun messaggio di posta elettronica in arrivo di notifica della modifica nel ruolo utente 4 come amministratore globale.
+8. Attendere 30 minuti. Si noti che nella posta in arrivo non è presente alcun messaggio di posta elettronica in cui viene inviata una notifica della modifica del ruolo di utente 4 come amministratore globale.
     
 ## <a name="phase-3-enable-cloud-app-security-and-create-a-policy"></a>Fase 3: abilitare Cloud App Security e creare un criterio
 
@@ -79,9 +79,9 @@ In questa procedura, viene abilitato Cloud App Security e viene creato un nuovo 
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Abilitare e configurare Cloud App Security
 
-1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)() e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
-2. Fare clic su tessera di **amministrazione** . Nella scheda di **interfaccia di amministrazione di Office** , fare clic su **Admin Center gt _ sicurezza & conformità**.
+2. Fare clic sul riquadro **Amministratore**. Nella scheda dell'interfaccia di **amministrazione di Office** , fare clic su interfaccia di **amministrazione di _GT_ sicurezza & conformità**.
     
 3. Nel riquadro di spostamento a sinistra fare clic su **Avvisi > Gestisci gli avvisi avanzati**.
     
@@ -111,7 +111,7 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
 
 1. In alto a destra, fare clic sull'icona dell'utente e quindi fare clic su **Disconnetti**.
     
-2. Passare a [https://portal.office.com](https://portal.office.com).
+2. Passare a [https://www.office.com](https://www.office.com).
     
 3. Nella pagina di accesso di Office 365, fare clic su **Usa un altro account**.
     
@@ -135,15 +135,15 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
     
 13. Fare clic sull'icona dell'utente in alto a destra, quindi su **Disconnetti**. 
     
-14. Passare a [https://portal.office.com](https://portal.office.com).
+14. Passare a [https://www.office.com](https://www.office.com).
     
 15. Nella pagina **Accesso a Office 365**, fare clic sul nome dell'account di amministratore globale.
     
 16. Digitare la password e quindi fare clic su **Accedi**.
     
-17. Dalla pagina principale del portale, fare clic su **Admin**.
+17. Dalla pagina portale di Office 365, fare clic su **amministratore**.
     
-18. Fare clic sul **protezione &amp; conformità** affiancate.
+18. Fare clic sul riquadro **sicurezza &amp; e conformità** .
     
 19. Nel riquadro di spostamento a sinistra fare clic su **Avvisi > Gestisci gli avvisi avanzati**.
     
@@ -155,16 +155,16 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
     
     Dovrebbero essere visualizzati due nuovi messaggi di posta elettronica nella Posta in arrivo con il titolo **Servizio di notifica di Microsoft Azure AD**. Un messaggio indica che l'account di User 5 è stato aggiunto al ruolo **Amministratore password** e l'altro messaggio indica che l'account di User 5 è stato aggiunto al ruolo **Amministratore utenti** (equivalente al ruolo Amministratore Gestione utenti nell'interfaccia di amministrazione di Office 365).
     
-È ora possibile utilizzare questo ambiente per creare nuovi criteri e sperimentare ulteriormente sicurezza App Cloud di Office 365. Per i collegamenti agli articoli per la configurazione aggiuntivi, vedere [prepararsi per la protezione di Office 365 Cloud App](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) .
+È ora possibile utilizzare questo ambiente per creare nuovi criteri e sperimentare ulteriormente Office 365 Cloud App Security. Vedere prepararsi [per Office 365 cloud app Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) per i collegamenti ad altri articoli di configurazione.
   
 ## <a name="see-also"></a>Vedere anche
 
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md)
   
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 
-[Panoramica della protezione App Cloud in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
+[Panoramica della sicurezza delle app cloud in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 
 
