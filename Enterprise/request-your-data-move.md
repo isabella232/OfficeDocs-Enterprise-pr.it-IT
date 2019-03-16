@@ -1,9 +1,9 @@
 ---
-title: Come richiedere lo spostamento dati
+title: Come richiedere lo spostamento dei dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -11,113 +11,112 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
-description: Saranno necessario inviare una richiesta prima della scadenza per i paesi affinché i dati dei clienti i servizi di Office 365 partecipanti spostati i nuovo geo clienti esistenti di Office 365.
-ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
-ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
+description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico.
+ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604507"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650079"
 ---
-# <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
+# <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dei dati
 
 > [!NOTE]
-> Le informazioni in questa pagina si applicano solo ai clienti che hanno tenant di Office 365 esistente prima di datacenter nuovo nella loro geo avviati. 
+> Le informazioni contenute in questa pagina sono valide solo per i clienti che avevano già inquilini di Office 365 prima che i nuovi datacenter venissero avviati in Geo. 
   
-Saranno necessario inviare una richiesta prima della scadenza per i paesi affinché i dati dei clienti i servizi di Office 365 partecipanti spostati i nuovo geo clienti esistenti di Office 365. 
+Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico. 
   
-Ci sono in grado di accettare le richieste verrà spostato dopo la scadenza di ogni livello geografico. 
+Non è possibile accettare le richieste da spostare dopo la data di scadenza di ogni Geo. 
   
-## <a name="when-can-i-request-a-move"></a>Se è possibile richiedere l'uno spostamento?
+## <a name="when-can-i-request-a-move"></a>Quando è possibile richiedere un trasferimento?
 
-|**Clienti con indirizzo di fatturazione**|**Inizio periodo richiesta**|**Richiesta di scadenza**|
+|**Clienti con indirizzo di fatturazione in**|**Inizio del periodo di richiesta**|**Scadenza richieste**|
 |:-----|:-----|:-----|
-|Giappone  <br/> |1 agosto 2016  <br/> |31 ottobre 2016  <br/> |
-|Australia, Nuova Zelanda Figi  <br/> |1 agosto 2016  <br/> |31 ottobre 2016  <br/> |
-|India  <br/> |1 agosto 2016  <br/> |31 ottobre 2016  <br/> |
-|Canada  <br/> |1 agosto 2016  <br/> |31 ottobre 2016  <br/> |
+|Giappone  <br/> |2016 agosto 1  <br/> |31 ottobre 2016  <br/> |
+|Australia, Nuova Zelanda, Figi  <br/> |2016 agosto 1  <br/> |31 ottobre 2016  <br/> |
+|India  <br/> |2016 agosto 1  <br/> |31 ottobre 2016  <br/> |
+|Canada  <br/> |2016 agosto 1  <br/> |31 ottobre 2016  <br/> |
 |Regno Unito  <br/> |15 marzo 2017  <br/> |15 settembre 2017  <br/> |
 |Sud Corea  <br/> |1 maggio 2017  <br/> |31 ottobre 2017  <br/> |
 |Francia  <br/> |14 marzo 2018  <br/> |15 settembre 2018  <br/> |
+|Emirati Arabi Uniti  <br/> |Pianificata  <br/> |Pianificata  <br/> |
+|Sudafrica  <br/> |Pianificata  <br/> |Pianificata  <br/> |
    
-## <a name="how-to-request-a-move"></a>Per la richiesta di spostamento
+## <a name="how-to-request-a-move"></a>Come richiedere uno spostamento
 
-> [!NOTE]
-> Questa opzione è disponibile solo in interfaccia di amministrazione di Office 365 Preview. Per istruzioni su come accedere a questa, vedere [Office 365 per aziende - della Guida di amministrazione](https://aka.ms/365admin). Tutte le richieste per gli spostamenti devono essere effettuate tramite l'interfaccia di amministrazione di Office 365. Supporto non sarà in grado di effettuare questa selezione o ignorare la selezione. 
+I clienti idonei vedranno una pagina nell'interfaccia di [amministrazione di Office 365](https://aka.ms/365admin), che consentirà loro di richiedere di spostare i dati di base dei clienti nella nuova area del datacenter.  
   
-Clienti idonei verranno visualizzata una pagina nel loro [Interfaccia di amministrazione di Office 365](https://aka.ms/365admin), per consentire loro di richiedere che i dati relativi ai clienti core spostati loro nuova area di datacenter.  
-  
-Per accedere alla pagina nell'interfaccia di amministrazione di Office 365 nel riquadro di spostamento a sinistra, espandere **Impostazioni**e fare clic su **Profilo dell'organizzazione**.
+Per accedere alla pagina nell'interfaccia di amministrazione di Office 365, nel riquadro di spostamento a sinistra espandere **Impostazioni**e quindi fare clic su **profilo organizzazione**.
   
 ![Menu Impostazioni con il profilo aziendale evidenziato](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
   
-Nella pagina **Profilo societario** scorrere fino alla sezione **Opzione residenza dati** . 
+Nella pagina **profilo organizzazione** scorrere verso il basso fino alla sezione **opzione di residenza dei dati** . 
   
 ![Scheda di residenza dati](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
   
-**Potrebbe non essere visualizzato in questa sezione se una delle seguenti condizioni**:
-- Tenant non è idoneo per il programma di spostamento. 
-- Tutti i dati si trova già nel nuovo geo (vedere la sezione posizione dei dati della pagina). 
+**È possibile che questa sezione non venga visualizzata se si applica una delle opzioni seguenti**:
+- Il tenant non è idoneo per il programma di spostamento. 
+- Tutti i dati sono già presenti nel nuovo Geo (vedere la sezione relativa alla posizione dei dati della pagina). 
   
 > [!IMPORTANT]
-> **Si sta per effettuare una scelta importante per l'organizzazione. Una volta confermato l'opzione riportata di seguito, è possibile annullare l'operazione. Supporto non consente di invertire anche questa decisione.**
+> **Si sta per fare una scelta importante per la propria organizzazione. Dopo aver confermato l'opzione seguente, non è possibile annullarla. Il supporto non è in grado di invertire la decisione.**
   
-Se l'organizzazione prevede requisiti di residenza dati ed è necessario richiedere uno spostamento, fare clic su **Modifica** nella parte superiore destra della sezione. Verrà visualizzata una nuova sezione sul lato destro dello schermo che spiega i dettagli del programma di spostamento. Selezionare il pulsante accanto al testo che informa che **Sì, la mia organizzazione presenta requisiti di residenza dati**. Quindi, fare clic su **Salva**.
+Se l'organizzazione dispone di requisiti di residenza dei dati ed è necessario richiedere uno spostamento, fare clic su **modifica** in alto a destra della sezione. Sul lato destro dello schermo viene visualizzata una nuova sezione in cui vengono illustrati i dettagli del programma di spostamento. Selezionare il pulsante Toggle accanto al testo che indica **Sì, l'organizzazione ha requisiti di residenza dei dati**. Fare quindi clic su **Salva**.
   
 ![Schermata di operazione di consenso per il datacenter](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
   
-Verrà visualizzato il testo nella modifica sezione **Dati residenza opzione** per indicare **l'organizzazione ha richiesto per spostare i dati dei clienti core.** Nel centro messaggio, è necessario anche un messaggio di conferma. Conferma che è stato richiesto correttamente uno spostamento. 
+Verrà visualizzato il testo nella sezione **opzione di residenza dei dati** cambiare per indicare che **l'organizzazione ha chiesto di spostare i dati di base dei clienti.** Nel centro messaggi verrà visualizzato anche un messaggio di conferma. Questo conferma che la richiesta di spostamento è stata eseguita correttamente. 
 
 
   
-## <a name="what-happens-after-requesting-a-move"></a>Che cosa accade dopo la richiesta di uno spostamento?
+## <a name="what-happens-after-requesting-a-move"></a>Cosa succede dopo aver richiesto uno spostamento?
 
-Dopo la richiesta di spostamento, viene descritto come pianificare spostare le rapidamente i vincoli operativi consentano. A causa della natura imprevisto di molti dei vincoli, è possibile condividere una data specifica o tempistica per gli spostamenti. Viene verrà visualizzata una notifica al termine dello spostamento.
+Dopo aver richiesto uno spostamento, si prevede di spostarla rapidamente come i vincoli operativi lo consentono. A causa della natura imprevedibile di molti vincoli, non è possibile condividere una data o un intervallo di tempo specifico per gli spostamenti. Dopo aver completato lo spostamento, verrà visualizzata una notifica.
   
-Spostamenti potrebbero richiedere fino a 24 mesi dalla scadenza richiesta per il proprio paese per il completamento.
+Gli spostamenti possono richiedere fino a 24 mesi dalla data di scadenza richiesta per il completamento del paese.
   
-Dopo la richiesta di spostamento, non è possibile modificare la selezione non appena si inizia a elaborare il viene spostato dopo aver effettuato la richiesta.
+Dopo aver richiesto uno spostamento, non è possibile modificare la selezione Man mano che si inizia a elaborare gli spostamenti dopo aver effettuato la richiesta.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Teams Microsoft non supporta la migrazione del contenuto dei clienti inattivi nell'area in nazionale data center in cui è disponibile residenza dati per Microsoft Teams ancora.  Di conseguenza, saranno necessario solo i nuovi clienti tutti i dati memorizzati nel paese di nuove aree in cui Microsoft Teams supporta residenza dati.  Ulteriori informazioni su Office 365 residenza dati per la propria sede aziendale in [dove sono i dati si trova?](https://products.office.com/where-is-your-data-located)   
+Microsoft teams non supporta ancora la migrazione del contenuto dei clienti a riposo dall'interno ai data center nazionali in cui è disponibile la residenza dei dati per Microsoft teams.  Di conseguenza, solo i nuovi clienti disporranno di tutti i dati archiviati all'interno di un paese nelle nuove aree geografiche in cui Microsoft teams supporta la residenza dei dati.  Per ulteriori informazioni sulla residenza dei dati di Office 365 per la posizione dell'azienda in [cui si trovano i dati?](https://products.office.com/where-is-your-data-located)   
 
-## <a name="optional-actions-before-you-request-a-move"></a>Azioni facoltative prima richiesta di spostamento
+## <a name="optional-actions-before-you-request-a-move"></a>Azioni facoltative prima di richiedere uno spostamento
 
-Eseguire la procedura seguente nel modo appropriato.
+Eseguire i passaggi seguenti in base alle esigenze.
   
-### <a name="if-you-use-an-ip-based-firewall-add-allow-rules-for-the-new-ip-addresses"></a>Se si utilizza un firewall basato su IP, aggiungere consentire le regole per i nuovi indirizzi IP
+### <a name="if-you-use-an-ip-based-firewall-add-allow-rules-for-the-new-ip-addresses"></a>Se si utilizza un firewall basato su IP, aggiungere le regole Consenti per i nuovi indirizzi IP
 
-È consigliabile utilizzare il filtro per i firewall anziché gli indirizzi IP DNS. Non sono presenti nuove voci DNS necessari.
+È consigliabile utilizzare il filtro DNS per i firewall anziché gli indirizzi IP. Non sono necessarie nuove voci DNS.
   
-Se si utilizza un firewall basato su IP per la connettività Internet, è necessario aggiungere consentire le regole per i nuovi indirizzi IP per il livello geografico datacenter di destinazione. Indirizzi IP per la nuova data center geos, oltre ai nuovi server vengono aggiunti in modo continuo a [Office 365 URL e gli intervalli di indirizzi IP](https://go.microsoft.com/fwlink/p/?LinkId=229631).
+Se si utilizza un firewall basato su IP per la connettività Internet, è necessario aggiungere le regole Allow per i nuovi indirizzi IP per il datacenter di destinazione Geo. Gli indirizzi IP per il nuovo datacenter GEOS oltre ai nuovi server vengono continuamente aggiunti agli [intervalli di indirizzi IP e URL di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=229631).
   
-Consultare la documentazione del firewall per informazioni su come aggiungere Consenti regole (note anche come whitelist).
+Consultare la documentazione del firewall per informazioni su come aggiungere regole di autorizzazione (note anche come whitelist).
   
-Dopo aver aggiunto gli indirizzi IP, si desidera testare la connettività per la nuova geo datacenter. A tale scopo, è consigliabile creare un [Nuovo prova di 30 giorni](https://go.microsoft.com/fwlink/?LinkId=522463) tenant non appena il nuovo livello geografico datacenter è disponibile. 
+Dopo aver aggiunto gli indirizzi IP, potrebbe essere necessario testare la connettività al nuovo Data Center Geo. A tale scopo, si consiglia di creare un nuovo tenant di [prova gratuito di 30 giorni](https://go.microsoft.com/fwlink/?LinkId=522463) non appena il nuovo datacenter Geo è disponibile. 
   
-### <a name="test-using-a-new-tenant"></a>Utilizzo di un nuovo tenant di testing
+### <a name="test-using-a-new-tenant"></a>Verificare l'utilizzo di un nuovo tenant
 
-Se si desidera testare la connettività prima dello spostamento, configurare un [Nuovo GRATUITO tenant prova 30 giorni](https://go.microsoft.com/fwlink/?LinkId=522463) dopo che il nuovo livello geografico datacenter è disponibile e utilizzarlo per provare Office 365 ospitati nel nuovo geo di Data Center. 
+Se si desidera testare la connettività prima dello spostamento, è possibile configurare un [nuovo tenant di prova gratuito di 30 giorni](https://go.microsoft.com/fwlink/?LinkId=522463) dopo che è disponibile il nuovo Data Center Geo e utilizzarlo per l'esperienza di Office 365 ospitato nel nuovo datacenter Geo. 
   
-Prova tenant può essere combinato con il tenant esistente:
+Il tenant di valutazione non può essere combinato con il tenant esistente:
   
-- Gli utenti devono utilizzare un account di prova distinto per i test.
+- Gli utenti devono utilizzare un account di prova separato per il testing.
     
-- Non è possibile spostare i dati tra tenant.
+- Non esiste alcun modo per spostare i dati tra i tenant.
     
-### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notificare agli utenti di aggiornare le impostazioni di Exchange non aggiornate sui dispositivi mobili
+### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notificare agli utenti di aggiornare le impostazioni di Exchange obsolete nei dispositivi mobili
 
-Se gli utenti dispongono di un dispositivo mobile con Exchange Server impostata **m.outlook.com** o **podxxxxx.outlook.com**, è consigliabile che questi server passano a **outlook.office365.com**seguendo le istruzioni in [Set di backup di un dispositivo mobile per la sincronizzazione con l'account](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+Se gli utenti dispongono di un dispositivo mobile con il server Exchange impostato su **m.Outlook.com** o **podxxxxx.Outlook.com**, è consigliabile passare a **Outlook.office365.com**, seguendo le istruzioni riportate in [configurare un dispositivo mobile per la sincronizzazione con il tuo account](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Spostamento dei dati di base al nuovo Office 365 datacenter geos](moving-data-to-new-datacenter-geos.md)
+[Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS](moving-data-to-new-datacenter-geos.md)
 
-[Domande frequenti sullo spostamento dati](data-move-faq.md)
+[FAQ generale sullo spostamento dei dati](data-move-faq.md)
 
-[Nuova geos Data Center di Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servizi di Azure dall'area](https://azure.microsoft.com/en-us/regions/)
+[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/en-us/regions/)
   
 
