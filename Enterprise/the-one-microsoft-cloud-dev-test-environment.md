@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Riepilogo: usare la seguente guida al lab test per creare un ambiente di sviluppo/test che include tutte le offerte cloud di Microsoft.'
-ms.openlocfilehash: 51899ceb0cceef0248f6dc10cb21f5353e774cea
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
+ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897149"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573660"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Ambiente di sviluppo/test One Microsoft Cloud
 
@@ -59,7 +59,7 @@ Nella figura 1 viene mostrata la configurazione risultante, che include Office 3
 
 In questa fase, è possibile iscriversi per la sottoscrizione di valutazione di EMS e aggiungerla alla stessa organizzazione della sottoscrizione di prova di Office 365.
   
-1. Utilizzando un browser sul computer desktop o da CLIENT1, accedere al portale di Office 365 su [https://portal.office.com](https://portal.office.com) con le credenziali dell'account di amministratore globale.
+1. Utilizzando un browser sul computer desktop o da CLIENT1, accedere al portale di Office 365 su [https://www.office.com](https://www.office.com) con le credenziali dell'account di amministratore globale.
     
 2. Fare clic sul riquadro **Amministratore**.
     
@@ -102,11 +102,11 @@ La figura 2 mostra la configurazione risultante che consente di aggiungere EMS.
 
 In questa fase, è possibile iscriversi per la sottoscrizione di valutazione di Dynamics 365 e aggiungerla alla stessa organizzazione delle sottoscrizioni di prova di Office 365 ed EMS.
   
-1. Utilizzando un browser sul computer desktop o da CLIENT1, accedere al portale di Office 365 su [https://portal.office.com](https://portal.office.com) con le credenziali dell'account di amministratore globale.
+1. Utilizzando un browser sul computer desktop o da CLIENT1, accedere al portale di Office 365 su [https://www.office.com](https://www.office.com) con le credenziali dell'account di amministratore globale.
     
 2. Fare clic sul riquadro **Amministratore**.
     
-3. Nella scheda dell' **interfaccia di amministrazione di Office**, nella barra di spostamento sinistra, fare clic su **Fatturazione > Acquisto di servizi**.
+3. Nella scheda dell'**interfaccia di amministrazione di Microsoft 365** fare clic su **Fatturazione > Acquisto di servizi** nella barra di spostamento sinistra.
     
 4. Nella pagina **Acquisto di servizi**, individuare la voce **Dynamics 365 Plan 1 Enterprise Edition**. Posizionare il puntatore del mouse su di essa e fare clic su **Avvia la versione di valutazione gratuita**.
     
@@ -119,7 +119,7 @@ In questa fase, è possibile iscriversi per la sottoscrizione di valutazione di 
   
 Utilizzare questa procedura per assegnare le licenze Dynamics 365 all'amministratore globale e agli account User 2 e User 3 e renderli amministratori di sistema.
   
-1. Nella scheda dell'**interfaccia di amministrazione di Office**, fare clic su **Utenti > Utenti attivi**.
+1. Nella scheda dell'**interfaccia di amministrazione di Microsoft 365** fare clic su **Utenti > Utenti attivi**.
     
 2. Nell'elenco di utenti attivi, fare clic sull'account dell'amministratore globale, quindi su **Modifica** per **Licenze per i prodotti**.
     
@@ -127,7 +127,7 @@ Utilizzare questa procedura per assegnare le licenze Dynamics 365 all'amministra
     
 4. Eseguire i passaggi 2 e 3 per gli account User 2 e User 3.
     
-5. Chiudere la scheda dell' **interfaccia di amministrazione di Office**.
+5. Chiudere la scheda dell'**interfaccia di amministrazione di Microsoft 365**.
     
 Seguire questi passaggi per configurare gli account User 2 e User 3 come amministratori di sistema di Dynamics 365.
   
