@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti sullo spostamento dati
+title: FAQ generale sullo spostamento dei dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -11,150 +11,148 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
-description: Di seguito sono le risposte alle domande generali su spostamento dei dati di base in un nuovo geo datacenter.
-ms.openlocfilehash: fe2399afa81a189416c41e3acba67e53eb99c674
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+description: Di seguito sono riportate le risposte alle domande generali su come spostare i dati di base in un nuovo datacenter Geo.
+ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839594"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "30665239"
 ---
-# <a name="data-move-general-faq"></a>Domande frequenti sullo spostamento dati
+# <a name="data-move-general-faq"></a>FAQ generale sullo spostamento dei dati
 
-Di seguito sono le risposte alle domande generali su spostamento dei dati di base in un nuovo geo datacenter.
+Di seguito sono riportate le risposte alle domande generali su come spostare i dati di base in un nuovo datacenter Geo.
   
- **D. come è verificare che i dati dei clienti sono sicuro durante lo spostamento e che è possibile non verificarsi tempi di inattività?**
+## <a name="what-customers-are-eligible-to-request-a-move"></a>Quali clienti sono idonei a richiedere una mossa?
   
-Spostamenti di dati r. sono un'operazione di servizio back-end con un impatto minimo per gli utenti finali. Sono elencate le funzionalità che possono essere influenzate in [durante e dopo la migrazione dei dati](during-and-after-your-data-move.md). È conforme a [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) per garantire la disponibilità in modo che i clienti necessari per preparare o per monitorare durante lo spostamento. 
+Gli attuali clienti commerciali di Office 365 che hanno selezionato un paese idoneo per il nuovo datacenter Geo potranno richiedere uno spostamento.  Il programma esiste solo per i tenant che dispongono di un codice paese idoneo assegnato al tenant di Office 365 per eseguire la migrazione dei dati del cliente di base a REST per i carichi di lavoro idonei per il datacenter geografico di Office 365 corrispondente.  Fare riferimento alla pagina [come richiedere lo spostamento dei dati](request-your-data-move.md) per confermare l'idoneità del paese.   
+
+## <a name="how-do-we-define-core-customer-data"></a>Come definire i dati di base dei clienti
+ 
+I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle [condizioni dei servizi online Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
+- Contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica)
+- Contenuto del sito di SharePoint Online e file archiviati all'interno del sito
+- File caricati in OneDrive for business 
+
+## <a name="at-what-point-is-my-migration-complete-so-that-my-tenants-core-customer-data-is-being-stored-at-rest-in-my-new-geo"></a>A che punto viene completata la migrazione in modo che i dati del cliente principale del tenant vengano archiviati a riposo nel nuovo geografico?
+
+A causa delle dipendenze condivise tra Exchange Online e SharePoint Online/OneDrive for business, qualsiasi migrazione non può essere considerata completata finché non vengono migrati entrambi i servizi.  Exchange Online e SharePoint Online/OneDrive for business spesso migrano in momenti separati e indipendentemente gli uni dagli altri.  Gli amministratori dei tenant ricevono la conferma nel centro messaggi quando ogni migrazione del servizio è completata e può visualizzare la scheda percorso dati nell'interfaccia di amministrazione in qualsiasi momento per confermare i dati del cliente di base in posizione Rest per ogni servizio.
+
+## <a name="will-my-tenant-automatically-be-moved-to-the-new-datacenter-geo"></a>Il tenant verrà spostato automaticamente nel nuovo datacenter Geo?
+ 
+Sono disponibili due azioni che è possibile eseguire come amministratore tenant.
+
+- Opt-in.Iscriversi al programma di spostamento di Office 365 e ricevere una scadenza impegnata per i servizi per eseguire la migrazione dei dati del cliente di base a rest nel nuovo datacenter Geo.Per istruzioni su come effettuare l'opt-in, vedere la pagina [come richiedere lo spostamento dei dati](request-your-data-move.md) .
+- Nessuna operazione.Non eseguire alcuna azione, in cui Microsoft è in grado di spostare i dati dei clienti di base a riposo nel nuovo Data Center Geo nel tempo come parte della gestione e dell'ottimizzazione del servizio.I dati possono essere spostati solo sul nuovo datacenter Geo, non su qualsiasi altro geografico.Notificheremo tramite il centro messaggi quando tale spostamento di gestione del servizio è stato completato.
+
+## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a>In che modo è possibile verificare che i dati dei clienti siano al sicuro durante lo spostamento e che non si verifichino tempi di inattività?
   
-Tutti i servizi di Office 365 eseguono le stesse versioni nei Data Center, in modo che è possibile essere certi di funzionalità coerente. Il servizio è completamente supportato nel corso del processo.
+Gli spostamenti di dati rappresentano un'operazione del servizio back-end con un impatto minimo sugli utenti finali. Le caratteristiche che possono essere influenzate sono elencate [durante e dopo lo spostamento dei dati](during-and-after-your-data-move.md). Il contratto di servizio di [Microsoft Online Services (SLA, Service Level Agreement)](https://go.microsoft.com/fwlink/p/?LinkId=523897) per la disponibilità è pertanto insufficiente per consentire ai clienti di prepararsi o monitorarli durante lo spostamento. 
   
- **D: qual è l'impatto di avere diversi servizi che si trovano in diverse geos?**
+Tutti i servizi di Office 365 eseguono le stesse versioni nei data center, pertanto è possibile garantire la coerenza delle funzionalità. Il servizio è supportato completamente nel corso del processo.
   
-R. per alcuni clienti esistenti e clienti nel corso del processo di spostamento, alcuni dei servizi di Office 365 può trovarsi in geos diversi. I servizi eseguiti dalle altre e sono disponibili Nessun impatto sugli utenti se questo fosse il caso.
+## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>Quali sono le conseguenze dell'utilizzo di servizi diversi in GEOS?
+
+Alcuni dei servizi di Office 365 possono trovarsi in diversi GEOS per alcuni clienti esistenti e per i clienti che si trovano al centro del processo di spostamento.  I nostri servizi vengono eseguiti indipendentemente l'uno dall'altro e non vi è alcun impatto sull'esperienza utente, se questo è il caso.Tuttavia, a fini di residenza dei dati, una migrazione tenant non può essere considerata completa finché sia Exchange Online che SharePoint Online/OneDrive for business non verranno migrati nello stesso datacenter Geo.
   
- **D. nuovi clienti di Office 365 eseguire il provisioning automatico nel nuovo geos di datacenter?**
+## <a name="will-new-office-365-customers-be-automatically-provisioned-in-the-new-datacenter-geos"></a>I nuovi clienti di Office 365 verranno automaticamente provisionati nel nuovo datacenter GEOS?
   
-R. Sì. Una volta è disponibile un nuovo livello geografico datacenter, nuovo Office 365 per i clienti aziendali che selezionare un paese idoneo per il nuovo livello geografico come proprio paese durante l'abbonamento avranno i dati di base ospitati il nuovo livello geografico datacenter.
+Sì. Una volta che un nuovo datacenter geografico è disponibile, nuovi clienti di Office 365 per le aziende che selezionano un paese idoneo per il nuovo Geo come paese durante l'iscrizione avranno i dati di base dei clienti archiviati a riposo nel nuovo datacenter Geo.
   
- **D. dove sono i dati si trova?**
+ ## <a name="where-is-my-core-customer-data-is-located"></a>Dove si trovano i dati dei clienti di base?
+
+Gli amministratori tenant possono visualizzare la scheda percorso dati nell'interfaccia di amministrazione in qualsiasi momento per confermare i dati del cliente di base nel percorso REST per ogni servizio, in particolare per il tenant.Inoltre, viene pubblicata la posizione del centro dati GEOS, dei datacenter e la posizione di Office 365 clienti sui mapping del datacenter interattivi di [ office 365](https://office.com/datamaps) come riferimento per i dati dei clienti di base predefiniti correnti nelle posizioni REST per i nuovi tenant.  È possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Office 365.  
+ 
+## <a name="when-will-i-be-able-to-request-a-move"></a>Quando sarà possibile richiedere una mossa?
   
-Si pubblica il percorso di datacenter geos, centri dati e la posizione dei dati dei clienti nella [mappa datacenter interattiva di Office 365 ](https://o365datacentermap.azurewebsites.net). A partire da 1 agosto, sarà possibile verificare il percorso dei dati dei clienti statici tramite la sezione posizione dei dati del profilo dell'organizzazione nell'interfaccia di amministrazione di Office 365.
+Per ulteriori informazioni, vedere la sezione come richiedere la pagina di [spostamento dei dati](request-your-data-move.md) per i calendari supportati per il datacenter Geo.
   
- **D. spostare i clienti esistenti di Office 365 per il nuovo geos datacenter?**
+## <a name="how-can-i-request-to-be-moved"></a>Come si può richiedere di essere spostati?
   
-A. idonei Office 365 i clienti possono chiedere disporre i dati di base spostati geos nuovo. Gli utenti devono inviare una richiesta prima della scadenza per i geo per partecipare. 
+I clienti idonei vedranno una pagina nel [portale di amministrazione di Office 365](https://portal.office.com/). Per istruzioni su come richiedere uno spostamento, vedere [come richiedere lo spostamento dei dati](request-your-data-move.md) . 
   
- **D. quali sono quindi idonei per richiedere uno spostamento?**
+## <a name="can-i-change-my-selection-after-requesting-a-move"></a>È possibile modificare la selezione dopo aver richiesto uno spostamento?
   
-Office 365 esistente A. commerciali ai clienti che ha selezionato un paese idoneo per il nuovo livello geografico datacenter saranno in grado di richiedere uno spostamento. 
+Non è possibile per noi rimuovere il processo dopo aver inviato la richiesta.
   
- **D. quando sarà in grado di richiedere uno spostamento?**
+## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>Cosa succede se non si richiede una mossa prima della scadenza?
   
-R. il periodo di richiesta verrà annunciato nella pagina [come richiedere la migrazione dei dati](request-your-data-move.md) . 
+ Potremmo essere in grado di accettare la richiesta su base eccezione per concedere al tenant una scadenza impegnativa per completare lo spostamento.  Contattare il [supporto di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) per eseguire la richiesta.  Tenere presente che alcuni carichi di lavoro possono passare al nuovo geografico anche senza una richiesta di opt-in poiché non è stato possibile spostare i dati dei clienti di base nel nuovo datacenter Geo nel tempo come parte della gestione e dell'ottimizzazione del servizio.I dati possono essere spostati solo sul nuovo datacenter Geo, non su qualsiasi altro geografico.  Notificheremo tramite il centro messaggi quando tale spostamento di gestione del servizio è stato completato.
   
- **D. come è possibile richiedere verrà spostato?**
+ ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>Che cosa fare se si desidera spostare i dati in modo da ottenere prestazioni di rete migliori?
   
-R. clienti idonei verranno visualizzata una pagina nel proprio [Portale di amministrazione di Office 365](https://portal.office.com/). Per istruzioni su come richiedere uno spostamento, vedere [come richiedere la migrazione dei dati](request-your-data-move.md) . 
+Essere vicini a un datacenter di Office 365 non è una garanzia per una migliore prestazione di rete. Esistono numerosi fattori e componenti che influiscono sulle prestazioni di rete tra l'utente finale e il servizio Office 365. Per ulteriori informazioni su questo e sull'ottimizzazione delle prestazioni, vedere [pianificazione della rete e ottimizzazione delle prestazioni per Office 365](network-planning-and-performance.md).
   
- **D. è possibile modificare la selezione dopo la richiesta di uno spostamento?**
+ ## <a name="do-all-the-services-move-their-data-on-the-same-day"></a>I dati vengono spostati nello stesso giorno da tutti i servizi?
+ 
+Ogni servizio viene spostato in modo indipendente e probabilmente sposta i dati in momenti diversi.
   
-R. It non è possibile per noi rimuovere il processo dopo avere inviato la richiesta.
+ ## <a name="can-i-choose-when-i-want-my-data-to-be-moved"></a>È possibile scegliere quando si desidera spostare i dati?
+ 
+ I clienti non sono in grado di selezionare una data specifica, non possono posticiparne lo spostamento e non è possibile condividere una data o un intervallo di tempo specifico per gli spostamenti.
   
- **D: cosa accade se non è possibile richiedere uno spostamento prima della scadenza.**
+ ## <a name="can-you-share-when-my-data-will-be-be-moved"></a>È possibile condividere quando i dati verranno spostati?
   
-R. sono in grado di accettare le richieste verrà spostato dopo la scadenza di ogni livello geografico.
+Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. La complessità, la precisione e la scalabilità in cui è necessario eseguire lo spostamento dei dati in un ambiente automatizzato e gestito a livello globale impediscono la condivisione quando si prevede che lo spostamento dei dati venga completato per il tenant o per qualsiasi altro tenant. I clienti riceveranno una conferma nel centro messaggi per ogni servizio di partecipazione quando il relativo spostamento dei dati è stato completato. 
   
- **Q. se desidera spostare i dati per ottenere migliori prestazioni di rete?**
+ ## <a name="what-happens-if-users-access-services-while-the-data-is-being-moved"></a>Cosa succede se gli utenti accedono ai servizi durante lo spostamento dei dati?
+
+Vedere [durante e dopo lo spostamento dei dati](during-and-after-your-data-move.md) per un elenco completo delle caratteristiche che possono essere limitate durante le parti dello spostamento dei dati per ogni servizio. 
   
-Per un datacenter di Office 365 non è una garanzia per migliorare le prestazioni di rete. Esistono molti componenti che influiscono sulle prestazioni della rete tra l'utente finale e il servizio Office 365 e fattori. Per ulteriori informazioni su questa e ottimizzazione delle prestazioni, vedere [pianificazione della rete e ottimizzazione delle prestazioni per Office 365](network-planning-and-performance.md).
+ ## <a name="how-do-i-know-the-move-is-complete"></a>Come si fa a sapere se lo spostamento è stato completato?
   
- **D tutti i servizi di spostare i dati nello stesso giorno?**
+Guardare il centro messaggi di Office 365 per confermare che lo spostamento dei dati di ogni servizio è stato completato. Quando i dati di ogni servizio vengono spostati, verrà visualizzato un avviso di completamento per ottenere tre notifiche di completamento: una per Exchange Online, SharePoint Online e Skype for business online.  È inoltre possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Office 365.  
   
-R. i servizi non spostano i dati alla stessa ora. Ogni servizio verrà spostato in modo indipendente e sarà probabilmente spostare i dati in momenti diversi.
+## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Sono un cliente di Office 365 in uno dei nuovi datacenter GEOS, ma al momento dell'iscrizione, ho selezionato un paese diverso. Come si può essere spostati nel nuovo datacenter Geo?
+
+Non è possibile modificare il paese di iscrizione associato al tenant. Al contrario, è necessario creare un nuovo tenant di Office 365 con un nuovo abbonamento e spostare manualmente gli utenti e i dati nel nuovo tenant.
   
- **D. è possibile scegliere se desidero che i dati da spostare?**
+## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-office-365-during-the-exchange-online-move"></a>Cosa succede se si è in fase di migrazione dei dati di posta elettronica a Office 365 durante lo spostamento di Exchange Online?
+
+Si tratta di uno scenario molto comune ed è completamente supportato.  La migrazione cloud tra i datacenter GEOS non interferisce con le migrazioni delle cassette postali di premisis su cloud.
   
-R. i clienti non sono possibile selezionare una data specifica, è possibile posticipare il passaggio ed è possibile condividere una data specifica o tempistica per gli spostamenti.
+ ## <a name="can-i-pilot-some-users"></a>È possibile pilotare alcuni utenti?
   
- **D. è possibile condividere quando i dati verranno essere spostate?**
+È possibile creare un tenant di prova separato per testare la connettività, ma il tenant di prova non può essere combinato in alcun modo con il tenant esistente.
+
+## <a name="i-dont-want-to-wait-for-microsoft-to-move-my-data-can-i-just-create-a-new-tenant-and-move-myself"></a>Non si desidera attendere la trasferimento dei dati da Microsoft. È possibile creare un nuovo tenant e spostarmi?
   
-Spostamenti di dati r. sono un'operazione di back-end con un impatto minimo per gli utenti finali. La complessità, precisione e scala in cui è necessario eseguire gli spostamenti di dati all'interno di un ambiente gestito a livello globale e automatizzato ci impediscono condivisione quando uno spostamento di dati è previsto per il completamento per il tenant o qualsiasi altro tenant singolo. Clienti riceveranno una conferma nell'interfaccia di messaggio per ogni servizio partecipano quando è completata la migrazione dei dati. 
+Sì, tuttavia, il processo non sarà così semplice come se Microsoft stesse per eseguire lo spostamento dei dati.
   
- **D: cosa succede se gli utenti accedono servizi mentre si muove i dati?**
+Se si crea un nuovo tenant dopo che è disponibile il nuovo datacenter Geo, il nuovo tenant sarà ospitato nel nuovo Geo. Questo nuovo tenant è completamente separato dal tenant precedente e sarebbe responsabile dello spostamento di tutte le cassette postali degli utenti, il contenuto del sito, i nomi di dominio e qualsiasi altro dato. Si noti che non è possibile spostare il nome del tenant da un tenant a un altro. È consigliabile attendere il programma di spostamento fornito da Microsoft come si occuperà di spostare tutte le impostazioni, i dati e le sottoscrizioni per gli utenti.
   
-R. vedere [durante e dopo la migrazione dei dati](during-and-after-your-data-move.md) per un elenco completo delle funzionalità che potrebbe essere limitato durante parti dello spostamento dei dati per ogni servizio. 
+ ## <a name="im-not-ready-to-be-moved-can-i-pick-a-specific-move-date"></a>Non sono pronto per essere spostato, è possibile scegliere una data di spostamento specifica?
   
- **D. come è possibile verificare se che lo spostamento è stato completo?**
+No, non è possibile modificare il momento in cui verranno spostati i dati del cliente principale di ogni servizio.
   
-R. guardare l'interfaccia di Office 365 messaggio di conferma che lo spostamento dei dati del servizio ogni è stato completo. Quando vengono spostati i dati di ogni servizio, verranno inviati un avviso di completamento in modo che si otterranno tre notifiche di completamento: 1 per Exchange Online, SharePoint Online e Skype Business online.
+ ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a>I dati dei clienti sono già stati spostati in un nuovo datacenter Geo. È possibile spostarsi di nuovo?
+ 
+No, non è possibile. I clienti che sono stati spostati in nuovi datacenter geografici non possono essere spostati indietro. Come cliente in qualsiasi ambiente geografico, si verificherà lo stesso livello di qualità del servizio, delle prestazioni e dei controlli di sicurezza come in precedenza.  [Office 365 multi Geo](https://aka.ms/multi-geo) è disponibile per alcuni clienti come componente aggiuntivo e consente a un singolo tenant di creare più satelliti GEOS e spostare i dati degli utenti in tali GEOS con gli impegni di residenza dei dati.
   
-Se viene visualizzata eventuali problemi dopo lo spostamento, contattare il [Supporto per Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) per ottenere assistenza. 
+ ## <a name="do-the-new-datacenter-geos-use-the-same-versions-of-office-365-services-as-the-current-datacenter-geos"></a>Il nuovo datacenter GEOS utilizza le stesse versioni dei servizi di Office 365 come centro dati GEOS corrente?
+
+Sì.
   
- **D. quali dati per Office 365 vengono archiviati nel nuovo geos di datacenter?**
+## <a name="will-office-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>I tenant di Office 365 ospitati nei nuovi datacenter saranno disponibili per gli utenti esterni al paese?
   
-R. Se disposizioni un cliente il tenant in una nuova geos di Data Center, Microsoft archivia i dati dei clienti seguenti statici all'interno di geo:
-  
-- Contenuto delle cassette postali Exchange Online (corpo del messaggio di posta elettronica, le voci di calendario e il contenuto degli allegati di posta elettronica)
-    
-- Contenuto del sito SharePoint Online e i file archiviati all'interno del sito, incluso il contenuto di Project Online e l'accesso in linea.
-    
-Inoltre, questi dati non vengono replicati di fuori di geo.
-  
- **D: perché un cliente di Office 365 in uno dei nuovi geos di Data Center, ma quando è iscritti, è possibile selezionare un paese diverso. Come posso essere spostato nei nuovi geo di datacenter?**
-  
-R. non è purtroppo possibile modificare il paese associato il tenant. In realtà, è necessario creare un nuovo tenant di Office 365 con una nuova sottoscrizione e spostare manualmente gli utenti e i dati al nuovo tenant.
-  
- **D. esserci le modifiche apportate in pagamento?**
-  
-R. nella maggior parte dei casi sono state apportate modifiche che i clienti verranno visualizzato sul proprio istruzione fatturazione.
-  
-Microsoft verrà addebitare tutti i clienti australiani di Office 365 un importo aggiuntivo uguale a GST australiano per servizi di Office 365 ed emetteranno fatture fiscali. Poiché GST australiano a soggetto di forniture e servizi forniti e offerte in Australia, si verificherà la modifica.
-  
- **D: cosa succede se si è in corso la migrazione dei dati di posta elettronica durante lo spostamento di Exchange Online per Office 365?**
-  
-R. Se migrazione della posta elettronica sono in corso, verranno annullate qualsiasi delle singole cassette postali che attualmente vengono migrate durante lo spostamento tenant completa e la migrazione delle cassette postali si riavvierà automaticamente dopo aver aggiunto il tenant i datacenter di destinazione.
-  
- **D. dopo i dati vengono spostati da geo di datacenter precedenti, questa viene rimossa da tali centri dati?**
-  
-R. Sì, i dati precedenti verranno eliminati dopo un periodo di tempo.
-  
- **D. è pilota alcuni utenti?**
-  
-R. quando il tenant di Office 365 viene spostato in un nuovo livello geografico datacenter, tutti gli utenti vengono spostati in una sola volta. È possibile creare un tenant di prova separato per verificare la connettività, ma non è possibile combinare il tenant di prova in alcun modo con tenant esistente.
-  
- **Verrà inviata una notifica Q. come utente viene avvisato sullo spostamento e gli utenti alla propria azienda?**
-  
-R. utilizzeremo il centro messaggi di Office 365, è visibile a tutti gli utenti con le autorizzazioni di amministratore in Office 365.
-  
- **D: non desidero attendere Microsoft spostare i dati. È possibile solo crea un tenant nuovo e spostare personale?**
-  
-R. Sì, tuttavia il processo non saranno come semplice come se fosse Microsoft per eseguire lo spostamento dei dati.
-  
-Se si crea un tenant nuovo dopo il nuovo livello geografico datacenter è disponibile, il nuovo tenant verrà ospitato in geo nuovo. Questo nuovo tenant è completamente separato dalla precedente tenant e è responsabile per spostare tutte le cassette postali utente, il contenuto del sito, i nomi di dominio e altri dati. Si noti che non è possibile spostare il nome del tenant dal uno tenant a altro. È consigliabile attendere il programma di spostamento fornito da Microsoft come si verrà occuparsi di spostamento di tutte le impostazioni, dati e sottoscrizioni per gli utenti.
-  
- **D: l'utente non è pronto per essere spostato, è possibile selezionare una data move specifici?**
-  
-R. It non è possibile per modificare quando verranno spostati i dati dei clienti di ciascun servizio. Spostamenti di dati sono un'operazione di back-end con un impatto minimo per gli utenti finali.
-  
- **D. la mia dati relativi ai clienti già è stata spostata in un nuovo livello geografico datacenter. Spostarsi all'indietro?**
-  
-R. questo non è possibile. I clienti che siano stati spostati su nuovi centri dati geo non possono essere spostati. Come cliente in qualsiasi livello geografico, si verificherà la stessa qualità del servizio, prestazioni e controlli di sicurezza come descritto in precedenza.
-  
- **D il nuovo geos datacenter utilizzare le stesse versioni di servizi di Office 365 come il geos datacenter corrente?**
-  
-R. Sì.
-  
- **Tenant verrà Office 365 d: ospitate in datacenter nuovo essere disponibili per gli utenti di fuori del paese?**
-  
-R. Sì. Microsoft gestisce una rete globale di grandi dimensioni con connessioni Internet pubblica nelle posizioni più di 50 23 paesi in tutto il mondo con peering accordi con più di 1.500 provider di servizi Internet (ISP). Gli utenti saranno in grado di accedere i Data Center da ovunque si trovino in Internet.
+R. Sì. Microsoft mantiene una rete globale di grandi dimensioni con connessioni Internet pubbliche in più di 130 posizioni in 35 paesi di tutto il mondo con contratti di peering con più di 2.700 provider di servizi Internet (ISP). Gli utenti saranno in grado di accedere ai Data Center ovunque si trovino su Internet.
+
+## <a name="my-tenant-is-configured-for-office-365-multi-geohttpsakamsmulti-geo--can-i-still-enroll-in-my-tenant-in-the-office-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>My tenant è configurato per [Office 365 multi Geo](https://aka.ms/multi-geo).  È possibile continuare a iscriversi al tenant nel programma di spostamento di Office 365 per modificare il mio account geografico predefinito e spostare tutti gli utenti non presenti in un'area satellite per il nuovo valore geografico predefinito?
+
+Sì, il tenant è idoneo per la registrazione.  Sposteremo tutte le cassette postali EXO dall'attuale Geo predefinito al nuovo Data Center geografico locale.  Non verranno spostate le cassette postali EXO configurate nelle diverse aree geoGrafiche satelliti per continuare a rispettare la residenza dei dati delle aree satellite come previsto.  SharePoint Online e OneDrive for business non possono eseguire la migrazione al nuovo datacenter Geo come parte del programma Move, anche se è possibile configurare le condivisioni di OneDrive for business per spostarsi in qualsiasi area desiderata tramite il programma multi Geo.
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Spostamento dei dati di base al nuovo Office 365 datacenter geos](moving-data-to-new-datacenter-geos.md)
+[Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS](moving-data-to-new-datacenter-geos.md)
 
-[Come richiedere lo spostamento dati](request-your-data-move.md)
+[Come richiedere lo spostamento dei dati](request-your-data-move.md)
 
-[Nuova geos Data Center di Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Office 365 multi Geo](https://aka.ms/multi-geo)
+
+[Mappa di datacenter interattivi di Office 365](https://office.com/datamaps)
+
+[Supporto di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459)
+
+[Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servizi di Azure dall'area](https://azure.microsoft.com/en-us/regions/)
+[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/en-us/regions/)
