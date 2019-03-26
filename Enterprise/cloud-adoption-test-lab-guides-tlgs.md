@@ -3,7 +3,7 @@ title: Testare Office 365 con le guide al lab di test (TLG) per l'adozione del c
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/23/2018
+ms.date: 03/13/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Riepilogo: utilizzare queste guide al lab di test (TLG) per l'adozione del cloud per configurare dimostrazioni, modelli di verifica o ambienti di sviluppo/test per i prodotti di Office 365, Dynamics 365 e Office Server."
-ms.openlocfilehash: df4729c93f3665bdfe072102f2952d7432ad22f0
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 9d3423c1dadf95cd744a393c08b4303bc5cb8832
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897239"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573750"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Testare Office 365 con le guide al lab di test (TLG) per l'adozione del cloud
 
@@ -34,11 +34,7 @@ Queste guide permettono di creare anche ambienti appositi per lo sviluppo e per 
   
 ![Test Lab Guide nel cloud Microsoft](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-Consultare queste risorse aggiuntive prima di procedere:
-  
-- Visualizzare l’[esperienza Microsoft Cloud con Cloud Adoption Test Lab Guide](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881 ) sessione di Microsoft Virtual Academy (solo 22 minuti).
-    
-- Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi al Test Lab Guide di One Microsoft Cloud.
+Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi al Test Lab Guide di One Microsoft Cloud.
     
 ## <a name="office-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365
 

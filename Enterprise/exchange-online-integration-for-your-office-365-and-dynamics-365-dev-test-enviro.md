@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "Riepilogo: Usare questa Guida del laboratorio di testing per attivare l'integrazione di Dynamics 365 per Exchange Online nella sottoscrizione di valutazione di Office 365."
-ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897119"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574020"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Integrazione di Exchange Online per il proprio ambiente di sviluppo/test di Office 365 e Dynamics 365
 
@@ -42,11 +42,11 @@ Seguire le istruzioni riportate in [Ambiente di sviluppo/test di Office 365 e Dy
 
 Seguire questi passaggi per configurare la cassetta postale dell'amministratore globale per l'integrazione di Dynamics 365 ed Exchange Online:
   
-1. Mediante una sessione di private del browser, accedere a [http://portal.office.com](http://portal.office.com) e accedere utilizzando l'account amministratore globale di Office 365.
+1. Utilizzando una sessione privata del browser, passare a [http://admin.microsoft.com](http://admin.microsoft.com) e accedere con l'account di amministratore globale di Office 365.
     
 2. Nella pagina **Microsoft Office Home**, fare clic sulla sezione **Posta di Outlook**.
     
-3. Nella scheda **posta** nuova nel browser, fare clic su **Nuovo** e osservare come l'angolo inferiore del riquadro sotto la casella per digitare un messaggio con un'icona per modelli personali.
+3. Nella nuova scheda **posta elettronica** del browser, fare clic su **nuovo** e notare come l'angolo inferiore del riquadro sotto la casella per la digitazione di un messaggio abbia un'icona per i modelli personali.
     
      ![Un nuovo messaggio e-mail vuoto e privo d'integrazione con Dynamics 365.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -88,7 +88,7 @@ Seguire questi passaggi per installare l'App Dynamics 365 per Outlook e dimostra
     
 5. Fare clic sulla scheda **Microsoft Office Home** visualizzata nel browser, quindi fare clic sulla sezione **Posta di Outlook**.
     
-6. Nella scheda **Stampa** nuovo nel browser fare clic su **Nuovo**. Si noti che l'angolo inferiore del riquadro sotto la casella per digitando il messaggio adesso è un'icona per Dynamics 365.
+6. Nella nuova scheda **Posta di Outlook**, fare clic su **Nuovo**. Si noti che l'angolo inferiore del riquadro sotto la casella per la digitazione di un messaggio ha ora un'icona per Dynamics 365.
     
      ![Un nuovo messaggio e-mail vuoto dotato d'integrazione con Dynamics 365; visualizzazione della nuova icona.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   

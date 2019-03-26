@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "Riepilogo: configurare e dimostrare la classificazione e l'etichettatura dei dati tramite il client Azure Information Protection (AIP) nel proprio ambiente di sviluppo e testing di Office 365."
-ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: ff8533cc6f1a5a34335f6ea469f7a8ec0a6be4da
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897439"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573960"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificazione e assegnazione di un'etichetta ai dati nell'ambiente di sviluppo/test di Office 365
 
  **Riepilogo:** configurare e dimostrare la classificazione e l'etichettatura dei dati tramite il client Azure Information Protection (AIP) nel proprio ambiente di sviluppo e testing di Office 365.
   
-Il client di Azure Information Protection consente di classificare un documento prima di caricare una cartella di SharePoint Online in Office 365. Con le istruzioni riportate in questo articolo, installare il client per la protezione delle informazioni di Azure e illustrare classificazione dei dati. Per ulteriori informazioni, vedere [La protezione delle informazioni di Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
+Il client Azure Information Protection consente di classificare un documento prima di caricarlo in una cartella di SharePoint online in Office 365. Con le istruzioni disponibili in questo articolo, si installa il client Azure Information Protection e si esegue la classificazione dei dati. Per ulteriori informazioni, vedere [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
 > Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
@@ -44,7 +44,7 @@ Innanzitutto, registrarsi per la sottoscrizione di prova ad Azure Information Pr
   
 ### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Registrarsi per la sottoscrizione di prova ad Azure Information Protection
 
-1. In Internet Explorer o browser, accedere a [http://portal.office.com](http://portal.office.com) e accedere con l'account amministratore globale di Office 365.
+1. Da Internet Explorer o dal browser, visitare [http://admin.microsoft.com](http://admin.microsoft.com) e accedere all'account di amministratore globale di Office 365.
     
 2. Nella scheda **Microsoft Office Home**, fare clic sulla sezione **Amministrazione**.
     
@@ -58,7 +58,7 @@ Innanzitutto, registrarsi per la sottoscrizione di prova ad Azure Information Pr
     
 Successivamente, attivare la licenza di Azure Information Protection per tutti gli account utente.
   
-1. Nella scheda dell'interfaccia di amministrazione di Office 365, fare clic su **Utenti**.
+1. Nella scheda dell'interfaccia di amministrazione di Microsoft 365 fare clic su **utenti**.
     
 2.  Nell'elenco di account utente, selezionare l'account dell'amministratore globale, quindi su **Modifica** per **Licenze per i prodotti**.
     
@@ -82,7 +82,7 @@ Se si usa l'ambiente di sviluppo/testing di Office 365 simulato, è necessario i
     
 2. Fare clic su **Gruppi di risorse >** [nome del proprio gruppo di risorse] **> CLIENT1 > Connetti**.
     
-3. Da CLIENT1, eseguire Internet Explorer, accedere al portale di Office in [http://portal.office.com](http://portal.office.com)e quindi accedere con il nome dell'account User5 e la password.
+3. Da CLIENT1, eseguire Internet Explorer, visitare il portale di Office all'indirizzo [http://admin.microsoft.com](http://admin.microsoft.com), quindi accedere con il nome utente e la password dell'account User5.
     
 4. Nella scheda **Microsoft Office Home**, fare clic su **Installa Office 2016**.
     
@@ -126,7 +126,7 @@ Successivamente, eseguire la classificazione dei documenti.
     
 9. Fare clic su **Esplora File** sulla barra delle applicazioni, quindi aprire la cartella **Documenti**.
     
-    Nota le dimensioni dei documenti **BeforeAIP** e **AfterAIP** file diverso. Il documento AfterAIP è più grande perché sono disponibili le informazioni di classificazione.
+    Annotare le differenti dimensioni dei file dei documenti **BeforeAIP** e **AfterAIP**. Il documento AfterAIP è più grande perché contiene le informazioni di classificazione.
     
 Successivamente, consentire a tutti gli utenti di accedere alla raccolta siti di supporto.
   
@@ -150,9 +150,9 @@ In seguito, accedere con l'account User5 e caricare il documento con protezione 
   
 1. Nella **Microsoft Office Home** in alto a destra, fare clic sull'icona dell'utente e quindi fare clic su **Disconnetti**.
     
-2. Passare a [http://portal.office.com](http://portal.office.com).
+2. Visitare [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. Nella pagina **Office 365 accedere** , fare clic sul nome di account User5 e accedere.
+3. Nella pagina di **accesso a Office 365** fare clic sul nome dell'account User5 e accedere.
     
 4. Nella scheda **Microsoft Office Home**, fare clic su **SharePoint > Raccolta siti di supporto**.
     
@@ -162,7 +162,7 @@ In seguito, accedere con l'account User5 e caricare il documento con protezione 
     
 ## <a name="see-also"></a>Vedere anche
 
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Ambiente di sviluppo/test di Office 365 ed EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   

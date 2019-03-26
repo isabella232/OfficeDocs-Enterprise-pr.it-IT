@@ -16,102 +16,100 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: Contiene collegamenti a informazioni sulla pianificazione della rete e il testing e la migrazione a Office 365.
-ms.openlocfilehash: e2434a65b48c12f38d7371a569ba8e0bc282ae06
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+description: Contiene collegamenti a informazioni sulla pianificazione e il testing della rete e sulla migrazione a Office 365.
+ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223058"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574040"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Pianificazione della rete e della migrazione per Office 365
 
-In questo articolo contiene collegamenti a informazioni sulla pianificazione e test di rete e la migrazione a Office 365.
+In questo articolo sono inclusi collegamenti a informazioni sulla pianificazione e il testing della rete e sulla migrazione a Office 365.
   
-Prima di eseguire la distribuzione o la migrazione per la prima volta in Office 365, è possibile utilizzare le informazioni in questi argomenti per stimare la larghezza di banda necessaria, per poi testare e verificare di disporre di larghezza di banda sufficiente per distribuire o migrare in Office 365.
+Prima di eseguire la distribuzione per la prima volta o la migrazione a Office 365, è possibile utilizzare le informazioni contenute in questi argomenti per valutare la larghezza di banda necessaria e quindi verificare se si dispone di una larghezza di banda sufficiente per la distribuzione o la migrazione a Office 365.
 
 ||
 |:-----|
-| In questo articolo fa parte della [pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://aka.ms/tune).|
+| Questo articolo fa parte della [pianificazione della rete e dell'ottimizzazione delle prestazioni per Office 365](https://aka.ms/tune).|
 
 |||
 |:-----|:-----|
-|![Vedere Cloud Microsoft Networking per poster architetti Enterprise](media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)|Per le procedure ottimizzare la rete per Office 365 e altre piattaforme Microsoft cloud e servizi, vedere il poster [Microsoft Cloud di rete per architetti Enterprise](https://aka.ms/cloudarchnetworking) . |
+|![Vedere il poster di Microsoft Cloud Networking for Enterprise Architects](media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)|Per la procedura per ottimizzare la rete per Office 365 e altre piattaforme e servizi cloud Microsoft, vedere il poster di [Microsoft Cloud Networking for Enterprise Architects](https://aka.ms/cloudarchnetworking) . |
    
-## <a name="estimate-network-bandwidth-requirements"></a>Stimare i requisiti di larghezza di banda di rete
+## <a name="estimate-network-bandwidth-requirements"></a>Stima dei requisiti di larghezza di banda della rete
 <a name="EstimateBandwidthRequirements"> </a>
 
-Utilizzo di Office 365 può aumentare l'utilizzo di circuito internet dell'organizzazione. È importante determinare se la quantità di larghezza di banda disponibile attualmente è sufficiente per gestire l'aumento stimato dopo aver distribuito Office 365 lasciando almeno 20% della capacità di gestire più occupata dei giorni.
+L'utilizzo di Office 365 può aumentare l'utilizzo del circuito Internet dell'organizzazione. È importante determinare se la quantità di larghezza di banda attualmente disponibile è sufficiente per gestire l'aumento stimato dopo che Office 365 è stato distribuito completamente, lasciando almeno il 20% di capacità per gestire i giorni più trafficati.
   
-Per calcolare la larghezza di banda, utilizzare la procedura seguente:
+Per stimare la larghezza di banda, attenersi alla procedura seguente:
   
-1. Valutare il numero di client che verrà utilizzata ogni uscita Internet. Consentono di gestire le informazioni sulla connessione possibile la nostra rete terabit al multi. 
+1. Valutare il numero di client che utilizzeranno ogni uscita Internet. La gestione della rete multi-terabit può essere la maggior parte della connessione possibile. 
     
-2. Determinare i servizi di Office 365 e le funzionalità saranno disponibili per i client da utilizzare. Sarà probabilmente necessario gruppi di utenti con diversi servizi o i profili di utilizzo.
+2. Determinare quali servizi e funzionalità di Office 365 saranno disponibili per i client da utilizzare. È probabile che vi siano gruppi di persone con servizi o profili di utilizzo diversi.
     
-3. Misurare l'utilizzo di rete per un gruppo pilota dei client. Verificare i client pilota rappresentante dei profili diversi di utenti nell'organizzazione, nonché le posizioni geografiche diverse. È possibile cross-controllo i risultati con i vecchi calcolatori per [Exchange ](https://go.microsoft.com/fwlink/p/?LinkId=321550)e [Skype per le aziende](https://go.microsoft.com/fwlink/p/?LinkId=321551) o [case study](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) che viene eseguite la propria rete. 
+3. Misurare l'utilizzo della rete per un gruppo pilota di client. Assicurarsi che i client pilota siano rappresentativi dei diversi profili degli utenti dell'organizzazione e delle diverse posizioni geografiche. È possibile eseguire una verifica incrociata dei risultati nei confronti dei vecchi calcolatori per [Exchange ](https://go.microsoft.com/fwlink/p/?LinkId=321550)e [Skype for business](https://go.microsoft.com/fwlink/p/?LinkId=321551) o nel [caso di studio](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) eseguito nella propria rete. 
     
-4. Utilizzare le misure dal gruppo pilota estrapolare alle esigenze dell'intera organizzazione e nuovamente test per convalidare le stime prima di apportare modifiche alla rete.
+4. Utilizzare le misure del gruppo pilota per estrapolare le esigenze dell'intera organizzazione e ripetere la verifica per convalidare le stime prima di apportare eventuali modifiche alla rete.
     
-## <a name="test-your-existing-network"></a>Test della rete esistente
+## <a name="test-your-existing-network"></a>Testare la rete esistente
 <a name="calculators"> </a>
 
- **Strumenti di rete.** Testare e convalidare la larghezza di banda Internet per determinare il download, caricamento e latenza dei vincoli. Questi strumenti consentono di determinare le funzionalità della rete per la migrazione e dopo che ha completato la distribuzione. 
+ **Strumenti di rete.** Testare e convalidare la larghezza di banda Internet per determinare i vincoli di download, caricamento e latenza. Questi strumenti consentono di determinare le funzionalità della rete per la migrazione e dopo essere stati completamente distribuiti. 
   
-- [Microsoft messaggio Analyzer](https://technet.microsoft.com/library/jj649776.aspx): messaggio Analyzer è uno strumento efficace per la risoluzione dei problemi di rete. Messaggio Analyzer acquisisce, viene visualizzato e consente di analizzare il traffico di messaggistica basato su protocollo e messaggi di sistema. Messaggio Analyzer consente inoltre di importare, aggregare e analizzare i dati dai file di registro e di traccia.
+- [Microsoft Message Analyzer](https://technet.microsoft.com/library/jj649776.aspx): Message Analyzer è uno strumento efficace per la risoluzione dei problemi relativi alla rete. Analizzatore dei messaggi acquisisce, Visualizza e analizza il traffico di messaggistica e i messaggi di sistema basati sul protocollo. Analizzatore dei messaggi consente inoltre di importare, aggregare e analizzare i dati dai file di log e di traccia.
     
-- [Analizzatore connettività remota di Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=517243): verificata la connettività nell'ambiente Exchange Online.
+- [AnalizzaTore connettività remota Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=517243): verifica la connettività nell'ambiente di Exchange Online.
     
-- Utilizzare l' [Assistente di ripristino per Office 365 e supporto tecnico clienti Microsoft](https://diagnostics.office.com/#/Download?env=SOC) per risolvere i problemi di Outlook e Office 365. 
+- Utilizzare l' [Assistente di supporto e ripristino di Microsoft per office 365](https://diagnostics.office.com/#/Download?env=SOC) per risolvere i problemi di Outlook e Office 365. 
     
-## <a name="best-practices-for-network-planning-and-improving-migration-performance-for-office-365"></a>Best practices for network planning and improving migration performance for Office 365
+## <a name="best-practices-for-network-planning-and-improving-migration-performance-for-office-365"></a>Procedure consigliate per la pianificazione della rete e il miglioramento delle prestazioni di migrazione per Office 365
 <a name="BestPractices"> </a>
 
-Approfondire in queste procedure consigliate per ulteriori informazioni su come migliorare l'esperienza di Office 365.
+Per ulteriori informazioni sul miglioramento dell'esperienza di Office 365, è consigliabile approfondire le procedure consigliate.
   
-1. Se si desidera iniziare a come consentire agli utenti subito? Per suggerimenti sull'utilizzo di Office 365, tra cui SharePoint Online, Exchange Online e Lync Online, la rete non è semplicemente collaborazione, vedere [procedure consigliate per l'utilizzo di Office 365 con reti lente](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) . In questo articolo viene collegato alle carichi di contenuto su TechNet e Support.office.com fuori per ottimizzare l'esperienza di Office 365 e sono incluse informazioni su modi semplici per personalizzare le pagine web e su come configurare le impostazioni di Internet Explorer per un'esperienza ottimale di Office 365. 
+1. Si desidera iniziare ad aiutare gli utenti subito? Vedere [procedure consigliate per l'utilizzo di office 365 in una rete lenta](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) per suggerimenti sull'utilizzo di Office 365, tra cui SharePoint Online, Exchange Online e Lync Online, quando la rete non è in fase di collaborazione. In questo articolo vengono forniti collegamenti a carichi di contenuto su TechNet e Support.office.com per ottimizzare l'esperienza di Office 365 e vengono fornite informazioni su come personalizzare le pagine Web e su come impostare le impostazioni di Internet Explorer per la migliore esperienza di Office 365. 
     
-2. Leggere i [Principi di connettività di rete di Office 365](https://aka.ms/o365networkingprinciples) per comprendere i principi di connettività per la gestione del traffico di Office 365 in modo sicuro e ottenere prestazioni ottimali. In questo articolo consentono di acquisire familiarità con le indicazioni più recenti per l'ottimizzazione in modo sicuro la connettività di rete di Office 365. 
+2. Leggere i [principi di connettività di rete di office 365](https://aka.ms/o365networkingprinciples) per comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e ottenere le migliori prestazioni possibili. In questo articolo vengono fornite informazioni utili per comprendere le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365. 
     
-3. Migliorare le prestazioni di migrazione della posta gestendo con attenzione la pianificazione per gli aggiornamenti di Windows. È possibile aggiornare i computer client in batch e verificare che tutti i computer client vengono aggiornati prima della migrazione a Office 365 per definire quali l'utilizzo della larghezza di banda di rete. Per ulteriori informazioni, vedere [manualmente l'aggiornamento e configurazione manuale dei desktop per Office 365 per gli aggiornamenti più recenti](https://support.microsoft.com/gp/office-2013-365-update).
+3. Migliorare le prestazioni della migrazione della posta gestendo accuratamente la pianificazione per gli aggiornamenti di Windows. È possibile aggiornare i computer client in batch e assicurarsi che tutti i computer client vengano aggiornati prima di eseguire la migrazione a Office 365 per regolare l'utilizzo della larghezza di banda della rete. Per ulteriori informazioni, vedere [aggiornamento e configurazione manuale dei desktop per Office 365 per gli aggiornamenti più recenti](https://support.microsoft.com/gp/office-2013-365-update).
     
-4. Il traffico di rete di Office 365 offre le prestazioni migliori quando è considerato come un servizio Internet attendibile e consentiti per ignorare la maggior parte del filtro tradizionali e analisi che alcune organizzazioni archiviare il traffico di rete di servizi Internet non attendibili. In genere include la rimozione in uscita, ad esempio l'autenticazione utente proxy e controllo dei pacchetti di elaborazione, nonché verifica uscita locale su Internet con corretto Network Address Translation (NAT) e sufficiente capacità della larghezza di banda per gestire l'aumento richieste di rete. Per ulteriori informazioni sulla configurazione della rete per gestire Office 365 come servizio Internet attendibile della rete, fare riferimento agli [endpoint di gestione di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
+4. Il traffico di rete di Office 365 risulta ottimale quando viene trattato come un servizio Internet attendibile e consente di ignorare gran parte del filtro tradizionale e dell'analisi che alcune organizzazioni dispongono sul traffico di rete per i servizi Internet non attendibili. In genere è inclusa la rimozione dell'elaborazione in uscita, ad esempio l'autenticazione degli utenti proxy e l'ispezione dei pacchetti, oltre a garantire l'uscita locale su Internet con la corretta NAT (Network Address Translation) e la capacità di larghezza di banda sufficiente per gestire la maggiore richieste di rete. Fare riferimento a [gestione degli endpoint di office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)per ulteriori informazioni sulla configurazione della rete per gestire Office 365 come servizio Internet attendibile sulla rete.
     
-1. Verificare che [gli endpoint di gestione di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a). Il traffico aggiuntivo continui a Office 365 comporta un aumento delle connessioni in uscita proxy, nonché un aumento del traffico protetto tramite TLS/SSL.
+1. Garantire la [gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a). Il traffico aggiuntivo diretto a Office 365 comporta un aumento delle connessioni proxy in uscita e un aumento del traffico sicuro su TLS/SSL.
     
-2. Se il proxy in uscita richiede l'autenticazione degli utenti che si verifichi una perdita di funzionalità o la connettività lenta. Ignorare il requisito di autenticazione per i domini di Office 365 per ridurre il sovraccarico.
+2. Se i proxy in uscita richiedono l'autenticazione dell'utente, è possibile che si verifichi una connettività lenta o una perdita di funzionalità. Se si ignora il requisito di autenticazione per i domini di Office 365, è possibile ridurre il sovraccarico.
     
 3. Se il numero di calendari e cassette postali condivisi è elevato, è possibile che si verifichi un aumento del numero di connessioni da Outlook a Exchange. Ad esempio, il client Outlook potrebbe aprirsi a due connessioni aggiuntive per ciascun calendario condiviso in uso. In tal caso, verificare che il proxy in uscita sia in grado di gestire le connessioni oppure escludere il proxy per le connessioni a Office 365 relative a Outlook.
     
-4. Determinare il numero massimo di dispositivi supportati per un indirizzo IP pubblico e come bilanciare il carico tra più indirizzi IP. Per ulteriori informazioni, vedere [supporto di NAT con Office 365](nat-support-with-office-365.md).
+4. Determinare il numero massimo di dispositivi supportati per un indirizzo IP pubblico e la modalità di bilanciamento del carico tra più indirizzi IP. Per ulteriori informazioni, vedere [NAT support with Office 365](nat-support-with-office-365.md).
     
-5. Se si sta controllare le connessioni in uscita dal computer nella rete, ignorare questo filtro per i domini di Office 365 migliorare la connettività e le prestazioni. Inoltre, ignorando spesso l'ispezione in uscita consente di rimuovere la necessità di un singolo uscita Internet e consente locale uscita Internet per le richieste di rete di Office 365 destinate a.
+5. Se si controllano le connessioni in uscita dai computer della rete, ignorare questo filtro nei domini di Office 365 migliorerà la connettività e le prestazioni. Inoltre, ignorare l'ispezione in uscita spesso rimuove la necessità di una singola uscita Internet e consente l'uscita Internet locale per le richieste di rete destinate a Office 365.
     
-6. Alcuni clienti trovare le impostazioni di rete interna possono influire sulle prestazioni. Impostazioni, ad esempio dimensione unità (Maximum Transmission Unit) di trasmissione massima, in rete la negoziazione automatica o il rilevamento automatico e route ottimale per Internet sono aree comuni da cercare.
+6. Alcuni clienti trovano le impostazioni di rete interne possono influire sulle prestazioni. Le impostazioni quali la dimensione massima delle unità di trasmissione (MTU), la negoziazione automatica di rete o il rilevamento automatico e le route ottimali per Internet sono luoghi comuni da cercare.
     
-## <a name="network-planning-reference-for-office-365"></a>Riferimenti per la pianificazione della rete per Office 365
+## <a name="network-planning-reference-for-office-365"></a>Informazioni di riferimento sulla pianificazione della rete per Office 365
 <a name="NetReference"> </a>
 
-In questi argomenti contengono informazioni dettagliate sulla informazioni di riferimento di rete di Office 365.
+In questi argomenti sono contenute informazioni dettagliate sulla rete di Office 365.
   
-- [Gestione di endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+- [Gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
 - [Connettività client](client-connectivity.md)
     
 - [Reti per la distribuzione di contenuti](content-delivery-networks.md)
     
-- [Record esterno (Domain Name System) per Office 365](external-domain-name-system-records.md)
+- [Record Domain Name System (DNS) esterni per Office 365](external-domain-name-system-records.md)
     
 - [Supporto IPv6 nei servizi Office 365](ipv6-support.md)
     
 - [Principi della connettività di rete di Office 365](https://aka.ms/o365networkingprinciples)
     
-- [Microsoft Virtual Academy: Gestione delle prestazioni Office 365](https://mva.microsoft.com/en-us/training-courses/office-365-performance-management-8416)
+- [Domande frequenti sulle reti video di Office 365](office-365-video-networking-faq.md)
     
-- [Rete video di Office 365 domande frequenti (FAQ)](office-365-video-networking-faq.md)
+- [Pianificare i dispositivi di rete che si connettono ai servizi di Office 365](plan-for-network-devices.md)
     
-- [Pianificare per i dispositivi di rete che si connettono ai servizi di Office 365](plan-for-network-devices.md)
-    
-- [Assistenti distribuzione per i servizi di Office 365](deployment-advisors-for-office-365.md)
+- [Consulenti per la distribuzione per i servizi di Office 365](deployment-advisors-for-office-365.md)
     
 

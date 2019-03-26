@@ -3,7 +3,7 @@ title: Rete cloud Microsoft per Enterprise Architects
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 03/12/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Riepilogo: Progettare una rete per i servizi cloud e le piattaforme Microsoft.'
-ms.openlocfilehash: 4864e92fd9a916c1aa15a8b921b9e64b486486fb
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 6b224ce2db0d247c553428a2e4bfd6ba475fc89a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123353"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573900"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Rete cloud Microsoft per Enterprise Architects
 
@@ -63,8 +63,6 @@ Vedere le seguenti sezioni:
     
     Passaggi del processo di progettazione per creare una rete virtuale Azure ottimale (VNet) per l'hosting di carichi di lavoro IT basati su server, tra cui sottoreti, spazi di indirizzi, routing, DNS, bilanciamento del carico e connettività di rete locale, altri VNet e Internet.
     
-Per un riepilogo di 30 minuti relativo ai punti principali del poster, vedere il corso [Optimize Your Network for Microsoft Cloud Offerings (Ottimizzare la rete per le offerte cloud di Microsoft)](https://mva.microsoft.com/it-IT/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) della Microsoft Virtual Academy.
-  
 > [!NOTE]
 > Questi articoli riflettono il rilascio di **dicembre 2018** della rete cloud Microsoft per Enterprise Architects.
   

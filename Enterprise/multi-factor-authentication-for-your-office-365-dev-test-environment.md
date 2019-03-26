@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "Riepilogo: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno smartphone in un ambiente di sviluppo e testing di Office 365."
-ms.openlocfilehash: 453dbc6bda3cfbc6806159d53c9a805c4c6cac97
-ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
+ms.openlocfilehash: 13dc02cc23d12f6eb6e2898d34271685badd9f5a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242078"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573980"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365
 
  **Riepilogo:** Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno smartphone in un ambiente di sviluppo e testing di Office 365.
   
-Per un ulteriore livello di sicurezza per l'accesso all'abbonamento a Office 365, è possibile abilitare l'autenticazione a più fattori di Azure, che richiede più di un semplice nome utente e password per l'autenticazione di un account. Con l'autenticazione a più fattori per Office 365, agli utenti viene richiesto di riconoscere una telefonata, digitare un codice di verifica inviato in un messaggio di testo oppure specificare una password per l'app negli Smart Phone dopo aver inserito correttamente le password. Sono in grado di accedere solo dopo che questo secondo fattore di autenticazione è stato soddisfatto. 
+Per un ulteriore livello di sicurezza per l'accesso all'abbonamento a Office 365, è possibile abilitare l'autenticazione a più fattori di Azure, che richiede più di un semplice nome utente e password per l'autenticazione di un account. Con l'autenticazione a più fattori per Office 365, agli utenti viene richiesto di confermare telefonate, digitare un codice di verifica inviato in un messaggio di testo oppure specificare una password di un'app sullo smartphone dopo aver immesso correttamente la password. L'accesso è consentito solo dopo che un secondo fattore di autenticazione viene soddisfatto. 
   
 In questo articolo viene illustrato come abilitare e testare l'autenticazione basata su messaggi di testo per uno specifico account di Office 365.
   
@@ -53,7 +53,7 @@ Se si desidera testare l'autenticazione a più fattori in un'azienda simulata, s
 
 Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel modo seguente:
   
-1. Aprire un'istanza separata del browser, accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e quindi accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
+1. Aprire un'istanza separata del browser, accedere al Portale di Office 365 ([https://www.office.com](https://www.office.com)) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
 2. Dalla pagina principale del portale, fare clic su **Admin**.
     
@@ -77,7 +77,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 1. Aprire una nuova istanza del browser.
     
-2. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso con l'account User 2 (User2\<@ Organization name>. onmicrosoft. com) e la password.
+2. Accedere al portale di Office 365 ([https://www.office.com](https://www.office.com)) ed eseguire l'accesso con l'account User 2 (User2\<@ Organization name>. onmicrosoft. com) e la password.
     
 3. Dopo l'accesso, viene chiesto di configurare l'account per un'ulteriore convalida di sicurezza. Fare clic su **Configura ora**.
     
@@ -101,7 +101,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
 ## <a name="see-also"></a>Vedere anche
 
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente di sviluppo/test della configurazione di base](base-configuration-dev-test-environment.md)
   

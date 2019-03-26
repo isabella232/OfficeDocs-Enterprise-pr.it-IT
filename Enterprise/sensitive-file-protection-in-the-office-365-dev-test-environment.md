@@ -15,17 +15,17 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
-description: 'Riepilogo: Configurare e illustrare come Information Rights Management di Office 365 consente di proteggere i file riservati, anche quando vengono registrate per la raccolta siti di SharePoint Online non corretto.'
-ms.openlocfilehash: d866c8ef9d81ec3a80c466040dab34de8af2c1de
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: 'Riepilogo: configurare e illustrare in che modo Office 365 Information Rights Management protegge i file sensibili, anche quando vengono pubblicati nella raccolta siti di SharePoint Online errata.'
+ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915701"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574070"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protezione dei file sensibili nell’ambiente di sviluppo/test di Office 365
 
- **Riepilogo:** Configurare e illustrare come Information Rights Management di Office 365 consente di proteggere i file riservati, anche quando vengono registrate per la raccolta siti di SharePoint Online non corretto.
+ **Riepilogo:** Configurare e illustrare in che modo Office 365 Information Rights Management protegge i file sensibili, anche quando vengono inseriti nella raccolta siti di SharePoint Online errata.
   
 Information Rights Management (IRM) in Office 365 è un set di funzionalità per proteggere i documenti che vengono scaricati dalle raccolte e dagli elenchi di SharePoint Online. I file scaricati vengono crittografati e includono le autorizzazioni per aprire, copiare, salvare e stampare che riflettono la raccolta di SharePoint Online in cui sono stati salvati.
   
@@ -49,7 +49,7 @@ In questa fase si dimostra che un utente può scaricare un documento da un sito 
   
 È innanzitutto necessario aggiungere tre nuovi account utente che rappresentano i dirigenti e assegnare loro le licenze di Office 365 E5.
   
-Utilizzare le istruzioni riportate in [connessione a Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) per installare i moduli di PowerShell (se necessario) e connettersi a tua nuova sottoscrizione di Office 365 da:
+Utilizzare le istruzioni in [Connect to office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) per installare i moduli di PowerShell (se necessario) e connettersi alla nuova sottoscrizione di Office 365 da:
   
 - Dal computer (per l'ambiente di sviluppo/test di Office 365 leggero).
     
@@ -92,7 +92,7 @@ Dalla visualizzazione del comando **New-MsolUser**, prendere nota della password
   
 Successivamente, si crea un gruppo di dirigenti privato e vi si aggiungono i nuovi account dirigente.
   
-1. Nel browser, accedere al portale di Office in [http://portal.office.com](http://portal.office.com) ed effettuare l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
+1. Nel browser, accedere al portale di Office [http://admin.microsoft.com](http://admin.microsoft.com) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
   - Se è in uso l'ambiente di sviluppo/test di Office 365 leggero, aprire una sessione privata di Internet Explorer o del proprio browser e accedere dal computer locale.
     
@@ -126,39 +126,39 @@ Successivamente, creare una raccolta siti dirigenti e consentire solo ai membri 
   
 1. Nella scheda **Microsoft Office Home**, fare clic sulla sezione **Amministrazione**.
     
-2. Nella scheda di **interfaccia di amministrazione di Office** , fare clic su **Admin Center > SharePoint**.
+2. Nella scheda dell'interfaccia di **amministrazione di Office** , fare clic su interfaccia di **amministrazione di > SharePoint**.
     
-3. Nella scheda di **interfaccia di amministrazione di SharePoint** , fare clic su **Nuovo > raccolta siti privata**.
+3. Nella scheda dell'interfaccia di **amministrazione di SharePoint** , fare clic su **nuova raccolta siti privati di >**.
     
-4. Nel nuovo riquadro di raccolta siti, digitare **dirigenti** **titolo**, dirigenti nella casella URL specificare il nome dell'account di amministratore globale di **amministratore**e quindi fare clic su **OK**.
+4. Nel riquadro nuovo raccolta siti, digitare **dirigenti** in **titolo**, dirigenti nella casella URL, specificare il nome dell'account di amministratore globale in **Administrator**e quindi fare clic su **OK**.
     
-5. Attendere che la nuova raccolta siti è stata creata. Al termine, copiare l'URL della nuova raccolta di siti dirigenti e incollarlo in una nuova scheda del browser.
+5. Attendere che la nuova raccolta siti sia stata creata. Al termine dell'operazione, copiare l'URL della nuova raccolta siti dirigenti e incollarlo in una nuova scheda del browser.
     
 6. In alto a destra della raccolta siti **Dirigenti**, fare clic sull'icona Impostazioni, quindi selezionare **Condiviso con**.
     
-7. In **condivisione "Executives"** fare clic su **Avanzate**.
+7. In **Condividi "dirigenti"**, fare clic su **Avanzate**.
     
 8. Nell'elenco dei gruppi di SharePoint, fare clic su **Membri dirigenti**.
     
 9. Nella pagina **Utenti e gruppi** fare clic su **Nuovo**.
     
-10. In **condivisione "Executives"**, digitare **dirigenti**, fare clic sul gruppo **dirigenti** e fare clic su **Condividi**.
+10. In **Condividi "dirigenti"**, digitare **dirigenti**, fare clic sul gruppo **dirigenti** , quindi fare clic su **Condividi**.
     
 11. Chiudere la scheda **utenti e gruppi** .
     
 Successivamente, consentire a tutti gli utenti di accedere alla raccolta siti vendite.
   
-1. Dalla scheda di **interfaccia di amministrazione di SharePoint** , copiare l'URL della raccolta siti di vendita e incollarlo in una nuova scheda del browser..
+1. Nella scheda dell'interfaccia di **amministrazione di SharePoint** , copiare l'URL della raccolta siti di vendita e incollarlo in una nuova scheda del browser.
     
-2. In alto a destra, fare clic sull'icona impostazioni e quindi fare clic su **condiviso con**.
+2. In alto a destra, fare clic sull'icona Impostazioni, quindi selezionare **Condiviso con**.
     
-3. In **condivisione "Collection sito vendite"**, fare clic su **Avanzate**.
+3. In **Condividi "raccolta siti vendite"**, fare clic su **Avanzate**.
     
 4. Nell'elenco dei gruppi di SharePoint, fare clic su **Membri raccolta siti vendite**.
     
 5. Nella pagina **Utenti e gruppi** fare clic su **Nuovo**.
     
-6. In **condivisione "Collection sito vendite"**, digitare **tutti**, fare clic su **tutti tranne agli utenti esterni**e quindi fare clic su **Condividi**.
+6. In **Condividi "raccolta siti vendite"**, digitare **tutti**, fare clic su **tutti tranne gli utenti esterni**, quindi fare clic su **Condividi**.
     
 7. Chiudere le schede **Raccolta siti vendite** e **SharePoint**.
     
@@ -166,15 +166,15 @@ Successivamente, accedere con un account dirigente e creare un documento nella r
   
 1. Nella scheda **Microsoft Office Home** fare clic sull'icona dell'account utente in alto a destra, quindi fare clic su **Disconnetti**.
     
-2. Accedere a [http://portal.office.com](http://portal.office.com).
+2. Passare a [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. Nella pagina **Office 365 accedere** , fare clic su **utilizza un altro account**.
+3. Nella pagina di **accesso di Office 365**, fare clic su **Usa un altro account**.
     
 4. Digitare il nome dell'account **CEO** e la relativa password, quindi fare clic su **Accedi**.
     
-5. In una nuova scheda del browser, digitare l'URL della raccolta siti dirigenti ( **https://**\<nome organizzazione >**.sharepoint.com/sites/executives**).
+5. in una nuova scheda del browser, digitare l'URL della raccolta siti dirigenti ( **https://**\<organization name>**. sharepoint.com/sites/executives**).
     
-6. Fare clic su **documenti**, fare clic su **Nuovo** e quindi fare clic su **Documenti di Word**.
+6. Fare clic su **documenti**, fare clic su **nuovo** e quindi su **documento di Word**.
     
 7. Fare clic nella barra del titolo e digitare **SensitiveData-BeforeIRM**.
     
@@ -184,13 +184,13 @@ Successivamente, accedere con un account dirigente e creare un documento nella r
     
 Quindi scaricare una copia locale del documento SensitiveData-BeforeIRM.docx e quindi pubblicarla accidentalmente nella raccolta siti vendite.
   
-1. Creare una nuova cartella nel computer locale (ad esempio, c\\laboratori\\SensitiveDataTestFiles).
+1. Nel computer locale, creare una nuova cartella (ad esempio, C:\\TLG\\SensitiveDataTestFiles).
     
 2. Nella scheda **Documenti** del browser, selezionare il documento **SensitiveData-BeforeIRM.docx**, fare clic sui puntini di sospensione, quindi fare clic su **Scarica**.
     
 3. Archiviare il documento **SensitiveData-BeforeIRM.docx** nella cartella creata nel passaggio 1.
     
-4. In una nuova scheda del browser, digitare l'URL della raccolta siti di vendite ( **https://**\<nome organizzazione >**.sharepoint.com/sites/sales**).
+4. in una nuova scheda del browser, digitare l'URL della raccolta siti di vendita ( **https://**\<organization name>**. sharepoint.com/sites/sales**).
     
 5. Fare clic sulla cartella **Documenti** della **Raccolta siti vendite**.
     
@@ -204,13 +204,13 @@ Successivamente, accedere come User5 e provare ad aprire il documento SensitiveD
   
 1. Nella scheda **Microsoft Office Home** fare clic sull'icona dell'account utente in alto a destra, quindi fare clic su **Disconnetti**.
     
-2. Accedere a [http://portal.office.com](http://portal.office.com).
+2. Passare a [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. Nella pagina **Office 365 accedere** , fare clic su **utilizza un altro account**.
+3. Nella pagina di **accesso di Office 365**, fare clic su **Usa un altro account**.
     
 4. Digitare il nome dell'account di User5 e la relativa password, quindi fare clic su **Accedi**.
     
-5. In una nuova scheda del browser, digitare l'URL della raccolta siti di Sales.
+5. In una nuova scheda del browser, digitare l'URL della raccolta siti di vendita.
     
 6. Nella cartella **Documenti** della **Raccolta siti vendite**, fare clic sul documento **SensitiveData-BeforeIRM.docx**. 
     
@@ -224,7 +224,7 @@ Per preparare Office 365 per le fasi 3 e 4, abilitare IRM per SharePoint Online.
   
 1. Nella scheda **Microsoft Office Home** fare clic sull'icona dell'account utente in alto a destra, quindi fare clic su **Disconnetti**.
     
-2. Accedere a [http://portal.office.com](http://portal.office.com).
+2. Passare a [http://admin.microsoft.com](http://admin.microsoft.com).
     
 3. Nella pagina **Accesso a Office 365**, fare clic sul nome dell'account di amministratore globale, digitare la relativa password, quindi fare clic su **Accedi**.
     
@@ -276,11 +276,11 @@ Successivamente, agendo da CEO, si carica un nuovo documento nella cartella docu
     
 3. Fare clic con il pulsante destro del mouse sulla cartella, quindi scegliere **Incolla**.
     
-4. Rinominare il nuovo file **SensitiveData-BeforeIRM - Copy.docx** a **SensitiveData AfterIRM.docx**.
+4. Rinominare il nuovo file **SensitiveData-BeforeIRM-Copy. docx** in **SensitiveData-AfterIRM. docx**.
     
 5. Nella scheda **Microsoft Office Home** nel browser, fare clic sull'icona utente in alto a destra, quindi fare clic su **Disconnetti**.
     
-6. Accedere a [http://portal.office.com](http://portal.office.com).
+6. Passare a [http://admin.microsoft.com](http://admin.microsoft.com).
     
 7. Nella pagina **Accesso a Office 365**, fare clic sul nome dell'account CEO, digitare la relativa password, quindi fare clic su **Accedi**.
     
@@ -294,7 +294,7 @@ Successivamente, agendo da CEO, si carica un nuovo documento nella cartella docu
     
 12. Chiudere la scheda per la pagina **Documenti**.
     
-13. In una nuova scheda del browser, digitare l'URL della raccolta siti di Sales.
+13. In una nuova scheda del browser, digitare l'URL della raccolta siti di vendita.
     
 14. Fare clic su **Documenti**.
     
@@ -306,11 +306,11 @@ Successivamente, agendo da utente normale, provare ad accedere al documento **Se
   
 1. Nella scheda **Microsoft Office Home** nel browser, fare clic sull'icona utente in alto a destra, quindi fare clic su **Disconnetti**.
     
-2. Accedere a [http://portal.office.com](http://portal.office.com).
+2. Passare a [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. Nella pagina **Office 365 accedere** fare clic sul nome di account User5, digitare la password e quindi fare clic su **Accedi**.
+3. Nella pagina di **accesso a Office 365** fare clic sul nome dell'account User5, digitare la relativa password, quindi fare clic su **Accedi**.
     
-4. In una nuova scheda del browser, digitare l'URL della raccolta siti di Sales.
+4. In una nuova scheda del browser, digitare l'URL della raccolta siti di vendita.
     
 5. Fare clic su **Documenti**.
     
@@ -332,7 +332,7 @@ Un altro modo per visualizzare la protezione IRM consiste nell'esaminare i file 
   
 ## <a name="see-also"></a>Vedere anche
 
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente di sviluppo/test della configurazione di base](base-configuration-dev-test-environment.md)
   

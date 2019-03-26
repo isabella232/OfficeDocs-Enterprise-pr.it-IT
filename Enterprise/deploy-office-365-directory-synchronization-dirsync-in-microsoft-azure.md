@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Riepilogo: informazioni su come distribuire Azure AD Connect in una macchina virtuale in Azure per eseguire la sincronizzazione degli account tra la directory locale e il tenant di Azure AD della sottoscrizione a Office 365.'
-ms.openlocfilehash: c2aba481f789e52d027ccd8f5a91217e825ed8bf
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 4b248dd0a5f6fc775fca322b696703545a1ef465
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25976702"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574030"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Distribuire la sincronizzazione della directory di Office 365 in Microsoft Azure
 
@@ -119,9 +119,11 @@ La distribuzione di Azure AD Connect in una macchina virtuale in Azure è costit
 - Fase 3: Installare e configurare Azure AD Connect
     
 Dopo la distribuzione, è necessario assegnare percorsi e licenze ai nuovi account utente in Office 365.
-  
+
+<!--  
 > [!TIP]
-> Il [Server di sincronizzazione delle directory in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) contiene tutti i blocchi di Azure PowerShell che consentono di creare questa soluzione, i diagrammi in formato Microsoft PowerPoint e Visio e una cartella di lavoro per la configurazione di Microsoft Excel, che genera i blocchi di comandi di Azure PowerShell personalizzati in base alle impostazioni dell'utente.
+> The [Directory Synchronization Server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) has all of the Azure PowerShell blocks to build out this solution, the diagrams in Microsoft PowerPoint and Visio format, and a Microsoft Excel configuration workbook that generates Azure PowerShell command blocks customized for your settings.
+-->
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Fase 1: Creare e configurare la rete virtuale di Azure
 
@@ -176,7 +178,7 @@ Nella figura viene illustrato il server di sincronizzazione della directory con 
 
 Azure AD Connect aggiunge account alla sottoscrizione a Office 365 da Windows Server AD locale, ma per consentire agli utenti di accedere a Office 365 e utilizzarne i servizi, gli account devono essere configurati con un percorso e le licenze. Seguire questi passaggi per aggiungere il percorso e attivare le licenze per gli account utente appropriati:
   
-1. Accedere alla [pagina del portale di Office 365](https://portal.office.com), quindi fare clic su **Admin**.
+1. Accedere alla [pagina del portale di Office 365](https://www.office.com), quindi fare clic su **Admin**.
     
 2. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
@@ -200,7 +202,8 @@ Azure AD Connect aggiunge account alla sottoscrizione a Office 365 da Windows Se
   
 [Configurare la sincronizzazione della directory per Office 365](set-up-directory-synchronization.md)
   
-[Server di sincronizzazione della directory in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
-
+<!--
+[Directory Synchronization server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
+-->
 
 

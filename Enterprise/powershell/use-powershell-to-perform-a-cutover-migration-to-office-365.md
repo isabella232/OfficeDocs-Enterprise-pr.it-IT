@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 'Riepilogo: informazioni su come utilizzare Windows PowerShell per eseguire una migrazione completa a Office 365.'
-ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193686"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574080"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Utilizzare PowerShell per eseguire una migrazione completa a Office 365
 
@@ -75,7 +75,7 @@ Per un elenco completo dei comandi di migrazione, vedere [Cmdlet di spostamento 
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Assegnare un account utente locali le autorizzazioni necessarie per accedere alle cassette postali nell'organizzazione di Exchange.** L'account utente locale utilizzato per connettersi all'organizzazione di Exchange locale, denominato anche all'amministratore di migrazione, è necessario disporre delle autorizzazioni necessarie per accedere alle cassette postali in locale che si desiderano eseguire la migrazione a Office 365. Questo account utente viene utilizzato per creare un endpoint di migrazione per l'organizzazione locale.
+- **Assegnare a un account utente locale le autorizzazioni necessarie per accedere alle cassette postali nella propria organizzazione di Exchange.** L'account utente locale utilizzato per la connessione all'organizzazione di Exchange locale (denominato anche amministratore della migrazione) deve disporre delle autorizzazioni necessarie per accedere alle cassette postali locali di cui si desidera eseguire la migrazione a Office 365. Questo account utente viene utilizzato per creare un endpoint di migrazione per la propria organizzazione locale.
     
     Nel seguente elenco vengono mostrati i privilegi amministrativi necessari per migrare le cassette postali tramite una migrazione completa. Esistono tre opzioni possibili.
     
@@ -195,7 +195,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>Sezione 7: assegnare licenze utente
 <a name="BK_Step7"> </a>
 
- **Attivare gli account utente di Office 365 per gli account migrati tramite l'assegnazione delle licenze.** Se non si assegna una licenza, la cassetta postale viene disabilitata al termine del periodo di prova (30 giorni). Per assegnare una licenza in interfaccia di amministrazione di Office 365, vedere[Assegnare licenze per Office 365 per le aziende o annullarne l'assegnazione](https://go.microsoft.com/fwlink/?LinkId=536681).
+ **Attivare gli account utente di Office 365 per gli account migrati tramite l'assegnazione delle licenze.** Se non si assegna una licenza, la cassetta postale viene disabilitata al termine del periodo di prova (30 giorni). Per assegnare una licenza nell'interfaccia di amministrazione di Microsoft 365, vedere[assegnare o annullare l'assegnazione delle licenze per Office 365 for business](https://go.microsoft.com/fwlink/?LinkId=536681).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Passaggio 8: completare le attività successive alla migrazione
 <a name="BK_Step8"> </a>
