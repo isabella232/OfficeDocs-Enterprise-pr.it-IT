@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: "Riepilogo: informazioni sull'utilizzo di Windows PowerShell per eseguire una migrazione a fasi a Office 365."
-ms.openlocfilehash: d30bb27700199379ea96b157051110af49bf95fa
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 3e390502e239573f1b3c93f5e3d46c0aa0f4579a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17504369"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574110"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Utilizzare PowerShell per eseguire una migrazione a fasi a Office 365
 
@@ -236,7 +236,7 @@ Per ulteriori informazioni sul cmdlet **Get-MigrationBatch**, vedere[Get-Migrati
 ### <a name="step7-assign-licenses-to-office-365-users"></a>Passaggio 7: assegnare le licenze agli utenti di Office 365
 <a name="BK_Endpoint"> </a>
 
-Attivare gli account utente di Office 365 per gli account migrati tramite l'assegnazione delle licenze. Se non si assegna una licenza, la cassetta postale viene disabilitata al termine del periodo di prova (30 giorni). Per assegnare una licenza nell'interfaccia di amministrazione di Office 365, vedere [Assegnare licenze per Office 365 per le aziende o annullarne l'assegnazione](https://go.microsoft.com/fwlink/?LinkId=536681).
+Attivare gli account utente di Office 365 per gli account migrati tramite l'assegnazione delle licenze. Se non si assegna una licenza, la cassetta postale viene disabilitata allo scadere del periodo di prova (30 giorni). Per assegnare una licenza nell'interfaccia di amministrazione di Microsoft 365, vedere [Assegnare licenze per Office 365 per le aziende o annullarne l'assegnazione](https://go.microsoft.com/fwlink/?LinkId=536681).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Passaggio 8: completare le attività successive alla migrazione
 <a name="BK_Postmigration"> </a>

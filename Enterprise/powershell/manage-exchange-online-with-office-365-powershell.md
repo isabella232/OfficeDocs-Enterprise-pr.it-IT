@@ -14,17 +14,18 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 'Riepilogo: utilizzare PowerShell di Office 365 per gestire Microsoft Exchange Online, inclusa la visualizzazione della configurazione della cassetta postale e la creazione di report avanzati.'
-ms.openlocfilehash: 5a4853a8dc5c597b8cdee5a1fbfe1ad130feff4b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 93eb2ca11544139f3904126c0ec04fc1ab02ec1b
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573930"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Gestire Exchange Online con PowerShell di Office 365
 
  **Sintesi:** Utilizzare PowerShell di Office 365 per gestire Microsoft Exchange Online, inclusa la visualizzazione della configurazione della cassetta postale e la creazione di report avanzati.
   
-Una delle attività principali di qualsiasi amministratore di Microsoft Exchange Online è la gestione delle cassette postali e la creazione di report su di esse. Anche se è possibile eseguire alcune di queste operazioni nell'interfaccia di amministrazione di Office 365, altre attività sono molto più rapide e semplici in PowerShell di Office 365. Per ulteriori informazioni, vedere i seguenti argomenti:
+Una delle attività principali di qualsiasi amministratore di Microsoft Exchange Online è la gestione delle cassette postali e la creazione di report su di esse. Anche se è possibile eseguire alcune di queste operazioni nell'interfaccia di amministrazione di Microsoft 365, altre attività sono molto più rapide e semplici in PowerShell di Office 365. Per ulteriori informazioni, vedere i seguenti argomenti:
   
 - [Visualizzare informazioni sulla cassetta postale di Exchange Online con PowerShell di Office 365](https://technet.microsoft.com/it-IT/library/mt771881%28v=exchg.160%29.aspx)
     
