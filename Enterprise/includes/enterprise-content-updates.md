@@ -19,10 +19,10 @@
 | 3/4/2019 | [Timeout della sessione per Office 365](/Office365/Enterprise/session-timeouts) | modificato |
 | 3/4/2019 | [Ottimizzare le prestazioni di Exchange Online](/Office365/Enterprise/tune-exchange-online-performance) | modificato |
 | 3/4/2019 | [Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificato |
-| 3/6/2019 | [Reti per la distribuzione di contenuti](/Office365/Enterprise/content-delivery-networks) | modificato |
-| 3/6/2019 | [Panoramica dell'autenticazione moderna ibrida e prerequisiti per l'utilizzo con i server Skype for business e Exchange locali](/Office365/Enterprise/hybrid-modern-auth-overview) | modificato |
-| 3/6/2019 | [Gestione degli endpoint di Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificato |
-| 3/6/2019 | [Spostare un sito OneDrive in un'altra posizione geografica](/Office365/Enterprise/move-onedrive-between-geo-locations) | modificato |
+| 06/03/2019 | [Reti per la distribuzione di contenuti](/Office365/Enterprise/content-delivery-networks) | modificato |
+| 06/03/2019 | [Panoramica dell'autenticazione moderna ibrida e prerequisiti per l'utilizzo con i server Skype for business e Exchange locali](/Office365/Enterprise/hybrid-modern-auth-overview) | modificato |
+| 06/03/2019 | [Gestione degli endpoint di Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificato |
+| 06/03/2019 | [Spostare un sito OneDrive in un'altra posizione geografica](/Office365/Enterprise/move-onedrive-between-geo-locations) | modificato |
 | 3/7/2019 | [Rimuovere le licenze dagli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | modificato |
 | 3/8/2019 | [Configurare la sincronizzazione della directory per Office 365](/Office365/Enterprise/set-up-directory-synchronization) | modificato |
 | 3/8/2019 | [Ottimizzare le prestazioni di SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | modificato |
@@ -44,7 +44,7 @@
 | 3/13/2019 | [Cloud App Security per l'ambiente di sviluppo/test di Office 365](/Office365/Enterprise/cloud-app-security-for-your-office-365-dev-test-environment) | modificato |
 | 3/13/2019 | [Classificazione e assegnazione di etichette ai dati nell'ambiente di sviluppo/test di Office 365 ](/Office365/Enterprise/data-classification-and-labeling-in-the-office-365-dev-test-environment) | modificato |
 | 3/13/2019 | [Distribuire la sincronizzazione della directory di Office 365 in Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | modificato |
-| 3/13/2019 | [Sincronizzazione della directory per l'ambiente di sviluppo e di testing di Office 365](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | modificato |
+| 3/13/2019 | [Sincronizzazione della directory per l'ambiente di sviluppo/test di Office 365](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | modificato |
 | 3/13/2019 | [Integrazione di Exchange Online per il proprio ambiente di sviluppo/test di Office 365 e Dynamics 365](/Office365/Enterprise/exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro) | modificato |
 | 3/13/2019 | [ExpressRoute per la connettività cloud Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificato |
 | 3/13/2019 | [Identità federata per l'ambiente di sviluppo/test di Office 365](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | modificato |
@@ -84,19 +84,16 @@
 | 3/15/2019 | [Rete virtuale cross-premise simulata in Azure](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | modificato |
 
 
-## <a name="week-of-february-11-2019"></a>Settimana dell'11 febbraio 2019
+## <a name="week-of-march-18-2019"></a>Settimana del 18 marzo 2019
 
 
 | Data di pubblicazione |Titolo dell'argomento | Modifica |
 |------|------------|--------|
-| 2/11/2019 | [Supporto delle app client di Office 365-accesso condizionale](/Office365/Enterprise/office-365-client-support-conditional-access) | modificato |
-| 2/11/2019 | [Supporto delle app client di Office 365-gestione di applicazioni mobili](/Office365/Enterprise/office-365-client-support-mobile-application-management) | modificato |
-| 2/11/2019 | [Supporto delle app client di Office 365-autenticazione moderna](/Office365/Enterprise/office-365-client-support-modern-authentication) | modificato |
-| 2/12/2019 | [Pianificare i certificati SSL di terze parti per Office 365](/Office365/Enterprise/plan-for-third-party-ssl-certificates) | modificato |
-| 2/14/2019 | [Gestione degli endpoint di Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificato |
-| 2/14/2019 | [Multi-Geo Capabilities in OneDrive in Office 365](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | modificato |
-| 2/14/2019 | [Principi della connettività di rete di Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | modificato |
-| 2/14/2019 | [Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | modificato |
+| 3/18/2019 | [FAQ generale sullo spostamento dei dati](/Office365/Enterprise/data-move-faq) | modificato |
+| 3/18/2019 | [Durante e dopo lo spostamento dei dati](/Office365/Enterprise/during-and-after-your-data-move) | modificato |
+| 3/18/2019 | [Pianificazione della capacità e test di carico di SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | modificato |
+| 3/18/2019 | [Collaborazione tra tenant di Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | modificato |
+| 3/19/2019 | [Visualizzare gli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificato |
 
 
 ## <a name="week-of-february-18-2019"></a>Settimana del 18 febbraio 2019
