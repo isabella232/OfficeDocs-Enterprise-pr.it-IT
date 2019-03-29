@@ -6,65 +6,57 @@ manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-description: Informazioni su come aggiungere o rimuovere un amministratore geo in OneDrive per Business Multi-Geo.
-ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
-ms.translationtype: MT
+localization_priority: Priority
+description: Informazioni su come aggiungere o rimuovere un amministratore geografico in Office 365 multi-geo.
+ms.openlocfilehash: 28af776f3afe4e3cc666817eb2d5faff846aa1af
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849812"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931665"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a><span data-ttu-id="c5731-103">Aggiungere o rimuovere un amministratore geo in OneDrive per Busniess Multi-Geo</span><span class="sxs-lookup"><span data-stu-id="c5731-103">Add or remove a geo administrator in OneDrive for Busniess Multi-Geo</span></span>
+# <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a><span data-ttu-id="83f10-103">Aggiungere o rimuovere un amministratore geografico in Office 365 multi-geo.</span><span class="sxs-lookup"><span data-stu-id="83f10-103">Add or remove a geo administrator in Office 365 Multi-Geo</span></span>
 
-<span data-ttu-id="c5731-p101">È possibile configurare gli amministratori separati per ogni località geografica contenenti nel tenant. Gli amministratori potranno accedere alle impostazioni di SharePoint Online e OneDrive specifici di posizione geografica.</span><span class="sxs-lookup"><span data-stu-id="c5731-p101">You can configure separate administrators for each geo location that you have in your tenant. These administrators will have access to the SharePoint Online and OneDrive settings that are specific to their geo location.</span></span>
+<span data-ttu-id="83f10-104">È possibile configurare amministratori separati per ogni posizione geografica disponibili nel tenant.</span><span class="sxs-lookup"><span data-stu-id="83f10-104">You can configure separate administrators for each geo location that you have in your tenant.</span></span> <span data-ttu-id="83f10-105">Questi amministratori avranno accesso alle impostazioni SharePoint Online e OneDrive specifiche per la posizione geografica.</span><span class="sxs-lookup"><span data-stu-id="83f10-105">These administrators will have access to the SharePoint Online and OneDrive settings that are specific to their geo location.</span></span>
 
-<span data-ttu-id="c5731-p102">Alcuni servizi, ad esempio l'archivio termini - vengono amministrati dalla posizione centrale e replicati località. Admin geografica relativo alla posizione centrale dispone dell'accesso a queste, mentre non geo admins per i percorsi satellitari.</span><span class="sxs-lookup"><span data-stu-id="c5731-p102">Some services - such as the term store - are administered from the central location and replicated to satellite locations. The geo admin for the central location has access to these, whereas geo admins for satellite locations don’t.</span></span>
+<span data-ttu-id="83f10-106">Alcuni servizi, ad esempio l'archivio termini, sono gestiti dalla posizione centrale e replicati nelle posizioni satellitari.</span><span class="sxs-lookup"><span data-stu-id="83f10-106">Some services - such as the term store - are administered from the central location and replicated to satellite locations.</span></span> <span data-ttu-id="83f10-107">L’amministratore geografico della sede centrale può accedere a questi criteri, mentre gli amministratori geografici per località satellitari non possono.</span><span class="sxs-lookup"><span data-stu-id="83f10-107">The geo admin for the central location has access to these, whereas geo admins for satellite locations don't.</span></span>
 
-<span data-ttu-id="c5731-108">Gli amministratori globali e gli amministratori di SharePoint Online continuano ad accedere alle impostazioni in tutti i percorsi satellitare e la posizione centrale.</span><span class="sxs-lookup"><span data-stu-id="c5731-108">Global administrators and SharePoint Online administrators continue to have access to settings in the central location and all satellite locations.</span></span>
+<span data-ttu-id="83f10-108">Gli amministratori globali e di SharePoint Online continuano ad avere accesso alle impostazioni nella posizione centrale e in tutte le località satellitari.</span><span class="sxs-lookup"><span data-stu-id="83f10-108">Global administrators and SharePoint Online administrators continue to have access to settings in the central location and all satellite locations.</span></span>
 
-## <a name="configuring-geo-administrators"></a><span data-ttu-id="c5731-109">Configurazione geografica amministratori</span><span class="sxs-lookup"><span data-stu-id="c5731-109">Configuring geo administrators</span></span>
+## <a name="configuring-geo-administrators"></a><span data-ttu-id="83f10-109">Configurazione gli amministratori geografici</span><span class="sxs-lookup"><span data-stu-id="83f10-109">Configuring geo administrators</span></span>
 
-<span data-ttu-id="c5731-110">Configurazione geografica admins richiede il modulo di PowerShell per SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="c5731-110">Configuring geo admins requires SharePoint Online PowerShell module.</span></span>
+<span data-ttu-id="83f10-110">Per configurare gli amministratori geografici è necessario il modulo di PowerShell per SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="83f10-110">Configuring geo admins requires SharePoint Online PowerShell module.</span></span>
 
-<span data-ttu-id="c5731-111">Utilizzare [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) per la connessione all'interfaccia di amministrazione della località geografica cui si desidera aggiungere l'amministratore geo. (Ad esempio Connect-SPOServicehttps://ContosoEUR-admin.sharepoint.com.)</span><span class="sxs-lookup"><span data-stu-id="c5731-111">Use [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) to connect to the admin center of the geo location where you want to add the geo admin. (For example, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)</span></span>
+<span data-ttu-id="83f10-111">Utilizzare [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) per connettersi all'interfaccia di amministrazione della posizione geografica in cui si vuole aggiungere l'amministratore geografico. (Ad esempio Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)</span><span class="sxs-lookup"><span data-stu-id="83f10-111">Use [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) to connect to the admin center of the geo location where you want to add the geo admin. (For example, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)</span></span>
 
-<span data-ttu-id="c5731-112">Per visualizzare gli amministratori geo esistente di una posizione, eseguire`Get-SPOGeoAdministrator`</span><span class="sxs-lookup"><span data-stu-id="c5731-112">To view the existing geo admins of a location, run `Get-SPOGeoAdministrator`</span></span>
+<span data-ttu-id="83f10-112">Per visualizzare gli amministratori geografici esistenti in una posizione, eseguire `Get-SPOGeoAdministrator`</span><span class="sxs-lookup"><span data-stu-id="83f10-112">To view the existing geo admins of a location, run `Get-SPOGeoAdministrator`</span></span>
 
-### <a name="adding-a-user-as-a-geo-admin"></a><span data-ttu-id="c5731-113">Aggiunta di un utente come un amministratore geo</span><span class="sxs-lookup"><span data-stu-id="c5731-113">Adding a user as a geo admin</span></span>
+### <a name="adding-a-user-as-a-geo-admin"></a><span data-ttu-id="83f10-113">Aggiunta di un utente come amministratore geografico</span><span class="sxs-lookup"><span data-stu-id="83f10-113">Adding a user as a geo admin</span></span>
 
-<span data-ttu-id="c5731-114">Per aggiungere un utente come un amministratore di livello geografico, eseguire`Add-SPOGeoAdministrator -UserPrincipalName <UPN>`</span><span class="sxs-lookup"><span data-stu-id="c5731-114">To add a user as a geo admin, run `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`</span></span>
+<span data-ttu-id="83f10-114">Per aggiungere un utente come amministratore geografico, eseguire `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`</span><span class="sxs-lookup"><span data-stu-id="83f10-114">To add a user as a geo admin, run `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`</span></span>
 
-<span data-ttu-id="c5731-115">Per rimuovere un utente come un Admin geografica di una posizione, eseguire`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`</span><span class="sxs-lookup"><span data-stu-id="c5731-115">To remove a user as a Geo Admin of a location, run  `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`</span></span>
+<span data-ttu-id="83f10-115">Per rimuovere un utente da amministratore geografico di una posizione, eseguire  `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`</span><span class="sxs-lookup"><span data-stu-id="83f10-115">To remove a user as a Geo Admin of a location, run  `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`</span></span>
 
-### <a name="adding-a-group-as-a-geo-admin"></a><span data-ttu-id="c5731-116">Aggiunta di un gruppo come un amministratore geo</span><span class="sxs-lookup"><span data-stu-id="c5731-116">Adding a group as a geo admin</span></span>
+### <a name="adding-a-group-as-a-geo-admin"></a><span data-ttu-id="83f10-116">Aggiunta di un gruppo come amministratore geografico</span><span class="sxs-lookup"><span data-stu-id="83f10-116">Adding a group as a geo admin</span></span>
 
-<span data-ttu-id="c5731-117">È possibile aggiungere un gruppo di protezione o un gruppo di protezione abilitati alla posta elettronica come un amministratore geo. (Office 365 gruppi e i gruppi di distribuzione non sono supportati).</span><span class="sxs-lookup"><span data-stu-id="c5731-117">You can add a security group or a mail-enabled security group as a geo admin. (Distribution groups and Office 365 Groups are not supported.)</span></span>
+<span data-ttu-id="83f10-117">È possibile aggiungere un gruppo di sicurezza o un gruppo di sicurezza abilitato alla posta elettronica come amministratore geografico. (I gruppi di distribuzione e i Gruppi di Office 365 non sono supportati).</span><span class="sxs-lookup"><span data-stu-id="83f10-117">You can add a security group or a mail-enabled security group as a geo admin. (Distribution groups and Office 365 Groups are not supported.)</span></span>
 
-<span data-ttu-id="c5731-118">Per aggiungere un gruppo come amministratore di livello geografico, eseguire`Add-SPOGeoAdministrator -GroupAlias <alias>`</span><span class="sxs-lookup"><span data-stu-id="c5731-118">To add a group as a geo administrator, run `Add-SPOGeoAdministrator -GroupAlias <alias>`</span></span>
+<span data-ttu-id="83f10-118">Per aggiungere un gruppo come amministratore geografico, eseguire `Add-SPOGeoAdministrator -GroupAlias <alias>`</span><span class="sxs-lookup"><span data-stu-id="83f10-118">To add a group as a geo administrator, run `Add-SPOGeoAdministrator -GroupAlias <alias>`</span></span>
 
-<span data-ttu-id="c5731-119">Per rimuovere un gruppo come amministratore di livello geografico, eseguire`Remove-SPOGeoAdministrator -GroupAlias <alias>`</span><span class="sxs-lookup"><span data-stu-id="c5731-119">To remove a group as a geo administrator, run `Remove-SPOGeoAdministrator -GroupAlias <alias>`</span></span>
+<span data-ttu-id="83f10-119">Per rimuovere un gruppo da amministratore geografico, eseguire `Remove-SPOGeoAdministrator -GroupAlias <alias>`</span><span class="sxs-lookup"><span data-stu-id="83f10-119">To remove a group as a geo administrator, run `Remove-SPOGeoAdministrator -GroupAlias <alias>`</span></span>
 
-<span data-ttu-id="c5731-p103">Si noti che non tutti i gruppi di sicurezza abbiano un alias di gruppo. Se si desidera aggiungere un gruppo di protezione che non dispone di un alias, eseguire [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) per recuperare un elenco dei gruppi, trovare ObjectID del gruppo di sicurezza e quindi eseguire:</span><span class="sxs-lookup"><span data-stu-id="c5731-p103">Note that not all security groups have a group alias. If you want to add a security group that does not have an alias, run [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) to retrieve a list of groups, find your security group's ObjectID, and then run:</span></span>
+<span data-ttu-id="83f10-120">Si noti che non tutti i gruppi di sicurezza un alias di gruppo.</span><span class="sxs-lookup"><span data-stu-id="83f10-120">Note that not all security groups have a group alias.</span></span> <span data-ttu-id="83f10-121">Per aggiungere un gruppo di sicurezza che non dispone di un alias, eseguire [Get-MsolGroup](https://docs.microsoft.com/it-IT/powershell/module/msonline/get-msolgroup) per recuperare un elenco dei gruppi, trovare il valore del proprio gruppo di sicurezza e quindi eseguire:</span><span class="sxs-lookup"><span data-stu-id="83f10-121">If you want to add a security group that does not have an alias, run [Get-MsolGroup](https://docs.microsoft.com/it-IT/powershell/module/msonline/get-msolgroup) to retrieve a list of groups, find your security group's ObjectID, and then run:</span></span>
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
-<span data-ttu-id="c5731-122">Per rimuovere un gruppo utilizzando il parametro ObjectID, eseguire`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`</span><span class="sxs-lookup"><span data-stu-id="c5731-122">To remove a group by using the ObjectID, run `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`</span></span>
+<span data-ttu-id="83f10-122">Per rimuovere un gruppo usando il valore di ObjectID, eseguire `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`</span><span class="sxs-lookup"><span data-stu-id="83f10-122">To remove a group by using the ObjectID, run `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`</span></span>
 
-### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a><span data-ttu-id="c5731-123">Accesso al centro di amministrazione per una determinata posizione geografica</span><span class="sxs-lookup"><span data-stu-id="c5731-123">Accessing the admin center for a specific geo-location</span></span>
+## <a name="see-also"></a><span data-ttu-id="83f10-123">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="83f10-123">See Also</span></span>
 
-<span data-ttu-id="c5731-124">Per amministrare le impostazioni di OneDrive per la posizione geografica, gli amministratori devono accedere interfaccia di amministrazione di OneDrive direttamente utilizzando il formato di URL seguente:</span><span class="sxs-lookup"><span data-stu-id="c5731-124">To administer OneDrive settings for their geo location, admins must access the OneDrive admin center directly using the following URL format:</span></span>
+[<span data-ttu-id="83f10-124">Add-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="83f10-124">Add-SPOGeoAdministrator</span></span>](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 
-<span data-ttu-id="c5731-125">https://admin.onedrive.com/?geo=<*livello geografico*></span><span class="sxs-lookup"><span data-stu-id="c5731-125">https://admin.onedrive.com/?geo=<*geo*></span></span>
+[<span data-ttu-id="83f10-125">Get-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="83f10-125">Get-SPOGeoAdministrator</span></span>](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
 
-<span data-ttu-id="c5731-126">Ad esempio, si trova all'interfaccia di amministrazione di OneDrive per Canada: https://admin.onedrive.com/?geo=CAN.</span><span class="sxs-lookup"><span data-stu-id="c5731-126">For example, the OneDrive admin center for Canada is located at: https://admin.onedrive.com/?geo=CAN.</span></span>
+[<span data-ttu-id="83f10-126">Remove-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="83f10-126">Remove-SPOGeoAdministrator</span></span>](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-## <a name="see-also"></a><span data-ttu-id="c5731-127">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="c5731-127">See Also</span></span>
-
-[<span data-ttu-id="c5731-128">Aggiungere SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="c5731-128">Add-SPOGeoAdministrator</span></span>](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
-
-[<span data-ttu-id="c5731-129">Get-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="c5731-129">Get-SPOGeoAdministrator</span></span>](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
-
-[<span data-ttu-id="c5731-130">Remove-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="c5731-130">Remove-SPOGeoAdministrator</span></span>](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
-
-[<span data-ttu-id="c5731-131">Impostare un alias (MailNickName) per un gruppo di sicurezza</span><span class="sxs-lookup"><span data-stu-id="c5731-131">Set an alias (MailNickName) for a security group</span></span>](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
+[<span data-ttu-id="83f10-127">Impostare un alias (MailNickName) per un gruppo di sicurezza</span><span class="sxs-lookup"><span data-stu-id="83f10-127">Set an alias (MailNickName) for a security group</span></span>](https://docs.microsoft.com/it-IT/powershell/module/azuread/set-azureadgroup)
