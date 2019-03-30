@@ -3,7 +3,6 @@ title: Automatizzare la raccolta file per eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,117 +12,117 @@ ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
-description: 'Riepilogo: Informazioni su come automatizzare la raccolta di file dal computer degli utenti di eDiscovery.'
-ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: 'Riepilogo: informazioni su come automatizzare la raccolta di file dai computer degli utenti per eDiscovery.'
+ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915751"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001609"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizzare la raccolta file per eDiscovery
 
- **Riepilogo:** Informazioni su come automatizzare la raccolta di file dal computer degli utenti di eDiscovery.
+ **Riepilogo:** Informazioni su come automatizzare la raccolta di file dai computer degli utenti per eDiscovery.
   
-Tutte le aziende devono affrontare la possibilità di azioni legali o altri tipi di azioni legali. Mentre è possibile utilizzare i reparti legali per riduzione dell'esposizione, conservazione per controversia è un fatto del ciclo di vita di business. Quando una società con un'azione legale, sono necessari passaggi del processo di esibizione, per fornire tutte le prime documentali rilevanti per il corso e del consulente opposto. 
+Tutte le aziende affrontano le potenzialità di azioni legali o di altro tipo. Mentre i reparti legali lavorano per ridurre tale esposizione, la controversia legale è una realtà aziendale. Quando una società affronta un'azione legale, è necessario, tramite il processo di individuazione legale, fornire tutti i materiali documentario rilevanti alla Corte e opporsi ai consulenti legali. 
   
-eDiscovery è il processo di cui società inventario, di ricerca, identificano, conservare, filtrare e rendere disponibile il materiale documentale esistenti in formato elettronico. SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online ed Exchange Online può contenere grandi quantità di contenuto documentale. A seconda della versione, questi prodotti può supportare eDiscovery e dell'archiviazione sul posto (Lync tramite Exchange Server), renderla più semplice per i team legali indicizzare, identificano, premere e filtrare il contenuto per un determinato caso più pertinente.
+eDiscovery è il processo in base al quale le aziende inventario, ricerca, identificare, preservare, filtrare e rendere disponibili i materiali documentario rilevanti che esistono in formato elettronico. SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online ed Exchange Online possono contenere grandi quantità di contenuto documentario. A seconda della versione, questi prodotti possono supportare eDiscovery e sul posto (Lync tramite Exchange Server), rendendo più semplice per i team legali indicizzare, identificare, conservare e filtrare i contenuti più rilevanti per un determinato caso.
   
-Numero di documenti viene archiviati in degli utenti (depositari) computer locale, non in una posizione centralizzata. In questo modo essenzialmente impedisce per SharePoint 2013 per la ricerca e se non possono essere ricercata, non possono essere incluse nel eDiscovery. Questa soluzione viene illustrato come utilizzare gli script di accesso, System Center agente di orchestrazione 2012 R2 e Windows PowerShell per Exchange Server per automatizzare l'identificazione e l'insieme di materiale documentali dai computer degli utenti.
+Molti documenti vengono archiviati nei computer locali degli utenti (depositari), non in una posizione centralizzata. Ciò rende sostanzialmente impossibile per SharePoint 2013 per la ricerca e, se non è possibile eseguire una ricerca, non può essere incluso in eDiscovery. Questa soluzione illustra come utilizzare gli script di accesso, l'orchestratore di sistema System Center 2012 R2 e Windows PowerShell per Exchange Server per automatizzare l'identificazione e la raccolta dei materiali documentari dai computer degli utenti.
   
-## <a name="what-this-solution-does"></a>Questa soluzione non
+## <a name="what-this-solution-does"></a>Cosa fa questa soluzione
 
-Questa soluzione utilizza un gruppo, gruppo di protezione globale criteri e uno script di Windows PowerShell per individuare, preparare un inventario e raccogliere contenuto e i file di archivio personale (PST) di Outlook dal computer locale di utenti in una condivisione file nascosti. Da quest'ultimo, è possibile importare i file PST in Exchange Server 2013 o Exchange Online. Tutti i file vengono spostati utilizzando un runbook di System Center agente di orchestrazione 2012 R2 in un altro condivisione di file in Microsoft Azure per indicizzazione da SharePoint 2013 e l'archiviazione a lungo termine. Utilizzare quindi centri eDiscovery della distribuzione di SharePoint 2013 in locale o in SharePoint Online come regolarmente per eseguire eDiscovery. 
+Questa soluzione utilizza un gruppo di sicurezza globale, criteri di gruppo e uno script di Windows PowerShell per individuare, inventariare e raccogliere contenuto e file PST (Outlook Personal Store) dagli utenti dei computer locali a una condivisione di file nascosta. Da qui, i file PST possono essere importati in Exchange Server 2013 o Exchange Online. Tutti i file vengono quindi spostati utilizzando un orchestratore di System Center 2012 R2 Runbook in un'altra condivisione file in Microsoft Azure per l'archiviazione a lungo termine e l'indicizzazione da parte di SharePoint 2013. È quindi possibile utilizzare i centri di eDiscovery nella distribuzione di SharePoint 2013 locale o in SharePoint Online come si farebbe regolarmente per eseguire eDiscovery. 
   
 > [!IMPORTANT]
-> Questa soluzione utilizza robocopy per copiare i file dai computer del depositaria in una condivisione file centralizzata. Poiché robocopy non vengono copiati file aperto o bloccato, i file, inclusi i file PST, che il depositaria sia aperto non saranno raccolti. È necessario raccolgono i dati manualmente. Questa soluzione fornire un elenco che identifica in modo esplicito i file che non può copiare e il percorso completo di tutti i file. 
+> Questa soluzione utilizza Robocopy per copiare i file dai computer di custode in una condivisione file centralizzata. Poiché Robocopy non copia i file aperti o bloccati, tutti i file, inclusi i file PST, che il custode ha aperto non verranno raccolti. Sarà necessario raccoglierli manualmente. Questa soluzione fornisce un elenco che identifica in modo esplicito i file che non è in grado di copiare e il percorso completo di ogni file. 
   
-Nel diagramma seguente illustra tutti i passaggi e gli elementi della soluzione.
+Nel diagramma seguente vengono illustrati tutti i passaggi e gli elementi della soluzione.
   
-![Panoramica della soluzione per la raccolta automatica dei file](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
+![Panoramica della soluzione di raccolta di file automatizzata](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
   
-|Legenda * * *||
+|Legenda * * * *||
 |:-----|:-----|
-|![callout magenta 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Creare un oggetto Criteri di gruppo (GPO) e associarlo allo script di accesso della raccolta.  <br/> |
-|![callout magenta 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configurare il filtro di protezione oggetto Criteri di gruppo per l'oggetto Criteri di gruppo si applicano solo al gruppo depositari. <br/> |
-|![callout magenta 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Un depositaria accede e viene eseguito l'oggetto Criteri di gruppo, lo script di accesso raccolta la chiamata.  <br/> |
-|![callout magenta 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|Lo script di accesso raccolta inventario di tutte le unità collegate localmente nel computer depositari, cercare i file desiderato e relativo percorso di registrazione.  <br/> |
-|![callout magenta 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|Lo script di accesso raccolta copia i file di inventario in una condivisione file nascosto nel server di gestione temporanea.  <br/> |
-|![callout magenta 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (Opzione A) Eseguire manualmente lo script di importazione file PST per importare i file PST raccolti in Exchange Server 2013. <br/> |
-|![callout magenta 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opzione B) Utilizzando lo strumento Office 365 importare e processo, importare i file PST raccolti in Exchange Online.  <br/> |
-|![callout magenta 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Spostare tutte le raccolti file a una condivisione file Azure per l'archiviazione a lungo termine con runbook MoveToColdStorage System Center agente di orchestrazione 2012 R2. <br/> |
-|![callout magenta 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indicizzare i file nella condivisione di file di archiviazione fredda con SharePoint 2013.  <br/> |
-|![callout magenta 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Eseguire eDiscovery sul contenuto in archiviazione fredda e in locale Exchange Server 2013.  <br/> |
-|![callout magenta 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Eseguire eDiscovery sul contenuto in Office 365.  <br/> |
+|![callout Magenta 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Creare un oggetto Criteri di gruppo e associarlo allo script di accesso all'insieme.  <br/> |
+|![callout Magenta 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configurare il filtro di sicurezza per l'oggetto Criteri di gruppo per applicare solo il criterio di associazione ai gruppi depositari. <br/> |
+|![callout Magenta 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Un custode accede e l'oggetto Criteri di gruppo viene eseguito, chiamando lo script di accesso all'insieme.  <br/> |
+|![callout Magenta 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|Lo script di accesso all'insieme consente di inventariare tutte le unità collegate localmente nel computer dei depositari, cercando i file desiderati e registrando la propria posizione.  <br/> |
+|![callout Magenta 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|Lo script di accesso all'insieme copia i file inventariati in una condivisione file nascosta nel server di gestione temporanea.  <br/> |
+|![chiamata Magenta verso l'esterno 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (Opzione A) Eseguire manualmente lo script di importazione PST per importare i file PST raccolti in Exchange Server 2013. <br/> |
+|![callout magenta 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opzione B) Utilizzando lo strumento di importazione di Office 365 e il processo, importare i file PST raccolti in Exchange Online.  <br/> |
+|![callout Magenta 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Spostare tutti i file raccolti in una condivisione di file di Azure per l'archiviazione a lungo termine con l'orchestratore di MoveToColdStorage System Center 2012 R2 Runbook. <br/> |
+|![callout magenta 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indicizzare i file nella condivisione file di archiviazione frigorifera con SharePoint 2013.  <br/> |
+|![callout Magenta 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Eseguire eDiscovery sul contenuto nell'archiviazione frigorifera e nel server Exchange locale 2013.  <br/> |
+|![callout Magenta 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Eseguire eDiscovery sul contenuto di Office 365.  <br/> |
    
 ## <a name="prerequisites"></a>Prerequisiti
 
-La configurazione di questa soluzione richiede più molti elementi di cui probabile che in vigore e configurato se si sta valutando eDiscovery. Per gli elementi che non si dispone o caratteri che richiedono una configurazione specifica, si verrà fornire i collegamenti è necessario creare fuori la configurazione di base. Prima di configurare la soluzione stessa, è necessario disporre la configurazione di base sul posto.
+La configurazione di questa soluzione richiede molti elementi, la maggior parte dei quali è probabile che sia sul posto e configurati se si pensa a eDiscovery. Per gli elementi che non possono essere presenti o che richiedono una configurazione specifica, verranno forniti i collegamenti necessari per creare la configurazione di base. Prima di configurare la soluzione, è necessario disporre della configurazione di base.
   
 ### <a name="base-configuration"></a>Configurazione di base
 
 |**Elemento**|**Collegamenti**|
 |:-----|:-----|
-|Dominio di Active Directory Domain Services (AD DS)  <br/> ||
+|Dominio di servizi di dominio Active Directory (AD DS)  <br/> ||
 |Connettività Internet dalla rete locale  <br/> ||
-|SQL Server 2012 per il supporto di SharePoint 2013 e System Center agente di orchestrazione 2012 R2  <br/> |[Distribuzione di agente di orchestrazione - System Center 2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
-| Locali o Azure basato su SharePoint 2013 per eDiscovery (necessario per l'opzione A) <br/> ||
-|Server di condivisione di file locale per la gestione temporanea  <br/> ||
-|Exchange Server 2013 in locale per l'importazione dei file PST A opzione  <br/> |CU5 (15.913.22) è disponibile all'indirizzo [CU5](https://go.microsoft.com/fwlink/p/?LinkId=613426).  <br/> |
-|System Center Orchestrator 2012 R2  <br/> |[Distribuzione di agente di orchestrazione - System Center 2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
-|Office 365 (piano E3) con Exchange Online e SharePoint Online (necessario per l'opzione B)  <br/> |Per l'iscrizione per una sottoscrizione a Office 365 E3, vedere [sottoscrizione a Office 365 E3](https://go.microsoft.com/fwlink/p/?LinkId=613504).  <br/> |
-|Sottoscrizione Azure con una macchina virtuale  <br/> |Per l'iscrizione per un Azure, vedere [Subscribe to Windows Azure](https://go.microsoft.com/fwlink/p/?LinkId=512010) <br/> |
-|Una connessione VPN tra la rete locale e la sottoscrizione di Azure  <br/> |Per configurare un tunnel VPN tra la sottoscrizione Azure e la rete locale, vedere [Connect una rete locale a una rete virtuale Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=613507).  <br/> |
-|Configurata la ricerca tra SharePoint e quindi fare clic su Exchange Server 2013 e facoltativamente Lync Server 2013 eDiscovery di SharePoint 2013  <br/> |Per configurare eDiscovery in questo modo, vedere [Configure eDiscovery in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=613508) e[Guida del laboratorio di testing: configurare eDiscovery per un Exchange, Lync, SharePoint e laboratorio di testing di condivisioni di File Windows](https://go.microsoft.com/fwlink/p/?LinkId=393130).  <br/> |
-|eDiscovery in Office 365 per Exchange Online e SharePoint Online  <br/> |Per configurare eDiscovery in Office 365, vedere [configurare un centro eDiscovery in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=613628).  <br/> |
+|SQL Server 2012 per il supporto di SharePoint 2013 e dell'orchestratore di System Center 2012 R2  <br/> |[Distribuzione di orchestratore di System Center-2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
+| SharePoint 2013 locale o basato su Azure per eDiscovery (obbligatorio per l'opzione A) <br/> ||
+|Server di condivisione file locale per la gestione temporanea  <br/> ||
+|Exchange Server 2013 locale per l'opzione A PST Import  <br/> |CU5 (15.913.22) è disponibile su [CU5](https://go.microsoft.com/fwlink/p/?LinkId=613426).  <br/> |
+|System Center Orchestrator 2012 R2  <br/> |[Distribuzione di orchestratore di System Center-2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
+|Office 365 (Piano E3) con Exchange Online e SharePoint Online (obbligatorio per l'opzione B)  <br/> |Per iscriversi a un abbonamento a Office 365 E3, vedere [abbonamento a office 365 E3](https://go.microsoft.com/fwlink/p/?LinkId=613504).  <br/> |
+|Sottoscrizione di Azure con una macchina virtuale  <br/> |Per iscriversi a un Azure, vedere [Subscribe to Windows Azure](https://go.microsoft.com/fwlink/p/?LinkId=512010) <br/> |
+|Una connessione VPN tra la rete locale e la sottoscrizione di Azure  <br/> |Per impostare un tunnel VPN tra la sottoscrizione di Azure e la rete locale, vedere [connettere una rete locale a una rete virtuale di Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=613507).  <br/> |
+|SharePoint 2013 eDiscovery configurata per la ricerca in SharePoint e Exchange Server 2013 e, facoltativamente, Lync Server 2013  <br/> |Per configurare eDiscovery in questo modo, vedere [Configure eDiscovery in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=613508) and[Test Lab guide: Configure eDiscovery for an Exchange, Lync, SharePoint and Windows file Shares Lab test](https://go.microsoft.com/fwlink/p/?LinkId=393130).  <br/> |
+|eDiscovery in Office 365 per SharePoint Online ed Exchange Online  <br/> |Per configurare eDiscovery in Office 365, vedere [configurare un centro eDiscovery in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=613628).  <br/> |
    
 ## <a name="configure-the-environment"></a>Configurare l'ambiente
 
-Dopo aver creato la configurazione di base sul posto, possono passare direttamente alla configurazione della soluzione stesso. 
+Dopo aver posizionato la configurazione di base, è possibile procedere alla configurazione della soluzione. 
   
-### <a name="staging-file-share"></a>Condivisione di file di gestione temporanea
+### <a name="staging-file-share"></a>Condivisione file di gestione temporanea
 
-1. Creare un gruppo di protezione globale denominato depositari nel dominio locale.
+1. Nel dominio locale, creare un gruppo di sicurezza globale denominato depositari.
     
-2. Creare una condivisione file nascosto per i file che vengono raccolti dal computer depositari. Tale indirizzo deve corrispondere in un server locale. Ad esempio, in un server denominato gestione temporanea, creare una condivisione file denominata $ casi. Il **$** è necessario impostare tale una condivisione nascosta.
+2. Creare una condivisione file nascosta per i file raccolti dai computer depositari. Deve trovarsi in un server locale. Ad esempio, in un server denominato staging, creare una condivisione file denominata Cases $. L' **$** è necessario per renderla una condivisione nascosta.
     
 3. Impostare le autorizzazioni di condivisione seguenti:
     
-  - Depositari: Modifica, lettura
+  - Depositari: modifica, lettura
     
   - Amministratori: controllo completo
     
-  - Sottosistema Trusted di Exchange: Modifica, lettura
+  - Sottosistema attendibile di Exchange: modifica, lettura
     
-4. Aprire la scheda **protezione** , aggiungere il gruppo depositari e fare clic su **Avanzate**. Impostare le autorizzazioni per il gruppo depositari seguenti:
+4. Aprire la scheda **sicurezza** , aggiungere il gruppo depositari e fare clic su **Avanzate**. Impostare le autorizzazioni seguenti per il gruppo depositari:
     
-  - **Tipo: Nega**
+  - **Digitare: Deny**
     
-  - **Si applica a: questa cartella, sottocartelle e file**
+  - **Si applica a: cartella, sottocartelle e file**
     
-5. Fare clic su **Autorizzazioni avanzate** e selezionare le opzioni seguenti:
+5. Fare clic su **autorizzazioni avanzate** e selezionare le opzioni seguenti:
     
-  - **Leggere gli attributi**
+  - **Attributi di lettura**
     
-  - **Leggi attributi estesi**
+  - **Leggere gli attributi estesi**
     
   - **Autorizzazioni di lettura**
     
-6. Verificare l'accesso alla condivisione di file $ casi eseguendo le operazioni seguenti:
+6. Verificare l'accesso ai casi $ condivisione file eseguendo le operazioni seguenti:
     
 1. Aggiungere un utente al gruppo depositari.
     
-2. Inserire un file nella cartella dei casi.
+2. Inserire un file nella cartella Cases $.
     
-3. Quello dell'utente, passare al server di gestione temporanea, ad esempio passare il \\ \\Condividi per vedere le condivisioni disponibili di gestione temporanea. Si non deve vedere condivisione di **$ casi** elencata.
+3. Come utente, passare al server di gestione temporanea, ad esempio passare alla \\ \\condivisione di gestione temporanea per vedere quali condivisioni sono disponibili. Non dovrebbero essere visualizzati i **casi $** Share elencato.
     
-4. Digitare il percorso completo per la condivisione di $ casi manualmente in Esplora. Verrà aperto la condivisione di $ casi.
+4. Digitare manualmente il percorso completo per la condivisione dei casi $ in Esplora. Questo dovrebbe aprire la condivisione dei casi $.
     
-5. Provare ad aprire i file che precedentemente inseriti nella condivisione. Si verificherà un errore.
+5. Provare ad aprire il file precedentemente inserito nella condivisione. Questo errore dovrebbe essere esito negativo.
     
 ### <a name="logon-script"></a>Script di accesso
 
-1. Copiare e incollare questo script di Windows PowerShell nel blocco note:
+1. Copiare e incollare lo script di Windows PowerShell nel blocco note:
     
   ```
   # Automated file collection script
@@ -265,27 +264,27 @@ Write-Host -ForegroundColor Cyan "Finished."
 
   ```
 
-2. Salvare lo script precedente come CollectionScript.ps1 in un percorso facile da trovare, ad esempio, c:\\AFCScripts.
+2. Salvare lo script sopra riportato come CollectionScript. ps1 in una posizione facile da trovare, ad esempio C:\\AFCScripts.
     
-3. Utilizzare la funzionalità Vai a nel blocco note. Apportare le modifiche seguenti, in base alle esigenze:
+3. Utilizzare la funzionalità Vai a in blocco note. Apportare le modifiche seguenti, in base alle esigenze:
     
-|**Riga #**|**Che cosa è necessario modificare**|**Facoltativo/necessari**|
+|**Riga #**|**Operazioni necessarie per la modifica**|**Obbligatorio/facoltativo**|
 |:-----|:-----|:-----|
-|71  <br/> |Variabile **$FileTypes** . Include tutte le estensioni di file che si desidera che lo script per preparare un inventario e raccogliere nella variabile di matrice.<br/> |Facoltativo  <br/> |
-|76 e 77  <br/> |Modificare il modo in cui la variabile **$CaseNo** si basa adatto alle proprie esigenze. Lo script acquisisce la data e ora correnti e aggiunge il nome dell'utente.<br/> |Facoltativo  <br/> |
-|80  <br/> |Condividono **$CaseRootLocation** esigenze variabili da impostare per i file della raccolta server gestione temporanea, ad esempio ** \\ \\di gestione temporanea\\casi$**. <br/> |Obbligatorio  <br/> |
+|71  <br/> |Variabile **$FileTypes** . Includere tutte le estensioni di file che si desidera vengano inventariate dallo script e che vengano raccolte nella variabile di tipo Array. <br/> |Facoltativo  <br/> |
+|76 e 77  <br/> |Modificare il modo in cui viene creata la variabile **$CaseNo** in base alle proprie esigenze. Lo script acquisisce la data e l'ora correnti e aggiunge il nome dell'utente. <br/> |Facoltativo  <br/> |
+|80  <br/> |**$CaseRootLocation** variabile deve essere impostata sulla condivisione file della raccolta dei server di gestione temporanea, ad esempio ** \\ \\per i casi di gestione temporanea\\$**. <br/> |Obbligatorio  <br/> |
    
-4. Inserire il file CollectionScript.ps1 nella condivisione di file Netlogon nei controller di dominio. 
+4. Inserire il file CollectionScript. ps1 nella condivisione file Netlogon in un controller di dominio. 
     
-### <a name="configure-gpo-for-the-logon-script-and-custodians-group"></a>Configurare l'oggetto Criteri di gruppo per uno script di accesso e il gruppo depositari
+### <a name="configure-gpo-for-the-logon-script-and-custodians-group"></a>Configurare l'oggetto Criteri di gruppo per lo script di accesso e i gruppi di depositari
 
-1. Configurare uno script di accesso per il gruppo depositari, consultare la sezione "Come assegnare script di accesso" nell'argomento [tramite avvio, arresto, accesso e script di disconnessione in Criteri di gruppo](https://go.microsoft.com/fwlink/p/?LinkId=614844).
+1. Configurare uno script di accesso per il gruppo depositari seguendo la sezione "come assegnare gli script di accesso degli utenti" nell'argomento [utilizzo degli script di avvio, arresto, accesso e disconnessione in criteri di gruppo](https://go.microsoft.com/fwlink/p/?LinkId=614844).
     
-2. Rimuovere gli utenti autenticati da **Filtri di protezione**e aggiungere il gruppo depositari.
+2. Rimuovere gli utenti autenticati dai **filtri di sicurezza**e aggiungere il gruppo depositari.
     
-### <a name="pst-import-option-a-script-for-exchange-server-2013"></a>PST importare opzione A, lo script per Exchange Server 2013
+### <a name="pst-import-option-a-script-for-exchange-server-2013"></a>Opzione di importazione PST A, script per Exchange Server 2013
 
-1.  Copiare e incollare il seguente script di Windows PowerShell nel blocco note:
+1.  Copiare e incollare lo script di Windows PowerShell seguente nel blocco note:
     
   ```
   # Script to import all PSTs in a given folder to a target mailbox
@@ -323,132 +322,132 @@ $AllFiles | ForEach-Object {
 }
   ```
 
-2. Salvare lo script come PSTImportScript.ps1 in un percorso facile da trovare. Ad esempio e la facilità di utilizzo, creare una cartella nel server temporaneo denominato \\ \\di gestione temporanea\\AFCScripts e salvarlo disponibili.
+2. Salvare lo script come PSTImportScript. ps1 in una posizione facile da trovare. Ad esempio, per semplificare l'utilizzo, creare una cartella nel server di gestione \\ \\temporanea\\denominato staging AFCScripts e salvarla.
     
-3. Utilizzare la funzionalità Vai a nel blocco note e apportare le modifiche seguenti, in base alle esigenze:
+3. Utilizzare la funzionalità Vai a in blocco note e apportare le modifiche seguenti, in base alle esigenze:
     
-|**Riga #**|**Che cosa è necessario modificare**|**Facoltativo/necessari**|
+|**Riga #**|**Operazioni necessarie per la modifica**|**Obbligatorio/facoltativo**|
 |:-----|:-----|:-----|
-|12  <br/> |**$FolderIdentifier** tag le cartelle delle cassette postali che vengono importati nel file pst. Modificare l'impostazione se necessario.<br/> |Facoltativo  <br/> |
-|17   <br/> |**$ConnectionUri** deve essere impostata al proprio server. <br/> > [!IMPORTANT]> Verificare che l' **$ConnectionUri** punta a un percorso http, https non. Non funzionerà con https:.          |Obbligatorio  <br/> |
+|12  <br/> |**$FolderIdentifier** tag le cartelle di cassette postali in cui vengono importati PST. Se necessario, modificare l'operazione. <br/> |Facoltativo  <br/> |
+|17   <br/> |**$ConnectionURI** necessario impostare il proprio server. <br/> > [!IMPORTANT]> verificare che il **$ConnectionURI** punti a una posizione http, non a HTTPS. Non funzionerà con https:.          |Obbligatorio  <br/> |
    
-4. Verificare che l'account di Exchange Trusted Subsystem disponga delle autorizzazioni di lettura, scrittura ed esecuzione per il \\ \\Intermédiaire\\condivisione$ casi.
+4. Verificare che l'account di sottosistema attendibile di Exchange disponga delle autorizzazioni di lettura, scrittura \\ \\ed\\esecuzione per i casi di gestione temporanea $ share.
     
-5. Lo script di importazione file PST richiede due parametri di input seguenti:
+5. Lo script di importazione PST richiede i due parametri di input seguenti:
     
-  - **$SourcePath** Il percorso dei file PST da importare, ad esempio \\ \\Intermédiaire\\casi$.
+  - **$SourcePath** La posizione dei file PST da importare, ad esempio \\ \\i casi di\\gestione temporanea $.
     
-  - **$MailboxAlias** Alias della cassetta postale di destinazione che verrà visualizzati gli elementi di posta elettronica importati.
+  - **$MailboxAlias** L'alias della cassetta postale di destinazione che riceverà gli elementi di posta elettronica importati.
     
-6. Ad esempio, se si desidera importare tutti i file PST dal percorso \\$ Staging\Cases in una cassetta postale con eDiscoveryMailbox alias, eseguire lo script simile al seguente `\\staging\AFCscripts\PSTImportScript.ps1 \\Staging\cases$ eDiscoveryMailbox`.
+6. Ad esempio, se si desidera importare tutti i file PST dal percorso \\Staging\Cases $ in una cassetta postale con l'alias eDiscoveryMailbox, è necessario eseguire lo script in questo `\\staging\AFCscripts\PSTImportScript.ps1 \\Staging\cases$ eDiscoveryMailbox`modo.
     
-### <a name="pst-import-option-b-for-exchange-online"></a>Opzione di importazione di file PST B, per Exchange Online
+### <a name="pst-import-option-b-for-exchange-online"></a>Opzione di importazione PST B, per Exchange Online
 
--  Creare la struttura delle cassette postali per inserire i file PST importati in. Per ulteriori informazioni su come creare una cassetta postale utente in Exchange Online, vedere[Creazione di cassette postali utente in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
+-  Creare la struttura delle cassette postali in cui inserire i file PST importati. Per ulteriori informazioni su come creare una cassetta postale utente in Exchange Online, vedere[creare cassette postAli utente in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
     
-### <a name="cold-storage"></a>Archiviazione fredda
+### <a name="cold-storage"></a>Archiviazione frigorifera
 
-1. Creare una condivisione file in Azure Virtual Machine, in cui verranno memorizzati tutti i file raccolti, ad esempio \\ \\AZFile1\\ContentColdStorage.
+1. Creare una condivisione file nella macchina virtuale di Azure, in cui verranno posizionati tutti i file raccolti, ad esempio \\ \\AZFile1\\ContentColdStorage.
     
-2. Concedere all'account di accesso al contenuto predefinito almeno autorizzazioni di lettura per la condivisione e tutte le sottocartelle e i file. Per ulteriori informazioni sulla configurazione di ricerca di SharePoint 2013, vedere [creare e configurare un'applicazione di servizio di ricerca in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940).
+2. Concedere all'account di accesso al contenuto predefinito almeno le autorizzazioni di lettura per la condivisione e tutte le sottocartelle e i file. Per ulteriori informazioni sulla configurazione della ricerca di SharePoint 2013, vedere [creare e configurare un'applicazione del servizio di ricerca in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940).
     
-3. Se si prevede che l'importazione di file PST da \\ \\AZFile1\\ContentColdStorage, concedere Exchange Trusted Subsystem leggere, scrivere ed eseguire delle autorizzazioni per la condivisione.
+3. Se si prevede di importare i file pst \\ \\da\\AZFile1 ContentColdStorage, concedere al sottosistema attendibile di Exchange le autorizzazioni di lettura, scrittura ed esecuzione per la condivisione.
     
-### <a name="orchestrator"></a>Agente di orchestrazione
+### <a name="orchestrator"></a>Orchestrator
 
-1. Scaricare[ runbook MoveToColdStorage](https://go.microsoft.com/fwlink/?LinkId=616095) da Microsoft Download Center.
+1. Scaricare la[ Runbook di MoveToColdStorage](https://go.microsoft.com/fwlink/?LinkId=616095) dall'area download Microsoft.
     
-2. Aprire la **Finestra di progettazione Runbook**, nel riquadro **connessioni** fare clic su cartella che si desidera importare runbook in. Fare clic su dal menu **Azioni** e quindi su **Importa**. Viene visualizzata la finestra di dialogo **Importa** .
+2. Aprire la **finestra di progettazione di Runbook**, nel riquadro **connessioni** , fare clic sulla cartella in cui si desidera importare i Runbook. Fare clic sul menu **azioni** e fare clic su **Importa**. Verrà visualizzata la finestra di dialogo **Importa** .
     
-3. Nella casella **Percorso** digitare il percorso e il nome di runbook che si desidera importare o fare clic sui puntini di sospensione ( **...**) per individuare il file da importare. 
+3. Nella casella **percorso file** Digitare il percorso e il nome del file di Runbook che si desidera importare oppure fare clic sui puntini di sospensione ( **...**) per passare al file che si desidera importare. 
     
-4. Selezionare **manuali operativi di importazione** e **l'agente di orchestrazione Importa i dati crittografati**. Deselezionare **contatori**, **pianificazioni**, **variabili**, **Gruppi di Computer**, **le configurazioni globale di importazione**e **configurazioni globale esistente Sovrascrivi**.
+4. Selezionare **Importa Runbook** e **importare i dati crittografati**dell'orchestratore. Cancellare **contatori**, **pianificazioni**, **variabili**, **gruppi di computer**, **importare configurazioni globali**e **sovrascrivere le configurazioni globali esistenti**.
     
 5. Fare clic su **Fine**.
     
-6. Modificare runbook **MoveFilesToColdStorage** come indicato di seguito:
+6. Modificare la runbook di **MoveFilesToColdStorage** come indicato di seguito:
     
-1. **Spostare File** - set di attività il percorso del **File di origine** per la condivisione di file insieme, ad esempio \\ \\Intermédiaire\\casi$. Condividere la **Cartella di destinazione** per il file di archivio fredda in Azure, ad esempio set \\ \\AZFile1\\ContentColdStorage. Selezionare **Crea un file con un nome univoco**.
+1. **Spostamento attività file** : impostare il percorso del **file di origine** per la condivisione file di raccolta \\ \\,\\ad esempio i casi di gestione temporanea $. Impostare la **cartella di destinazione** sulla condivisione file di archiviazione fredda in Azure, ad \\ \\esempio\\AZFile1 ContentColdStorage. Selezionare **Crea un file con un nome univoco**.
     
-2. Set di attività **Elimina cartella** - il **percorso:** all'insieme condivisione file, ad esempio \\ \\Intermédiaire\\casi$\\* e selezionare **Elimina tutti i file e sottocartelle**. 
+2. **Elimina attività cartella** -impostare il **percorso:** per la condivisione file di raccolta, ad \\ \\esempio\\per i\\casi di gestione temporanea $ *, e selezionare **Elimina tutti i file e**le sottocartelle. 
     
-7. Distribuire runbook **MoveToColdStorage** utilizzando le procedure descritte in[Deploying manuali operativi](https://go.microsoft.com/fwlink/p/?LinkId=615120).
+7. Distribuire la runbook di **MoveToColdStorage** utilizzando le procedure descritte in[Deploying Runbook](https://go.microsoft.com/fwlink/p/?LinkId=615120).
     
-### <a name="sharepoint-on-premises-search-for-cold-storage"></a>Ricerca di SharePoint locale per l'archiviazione fredda
+### <a name="sharepoint-on-premises-search-for-cold-storage"></a>Ricerca di SharePoint locale per l'archiviazione frigorifera
 
-1. Creare una nuova origine di contenuto in una farm di SharePoint 2013 per la condivisione di archiviazione fredda in Azure, ad esempio \\ \\AZFile1\\ContentColdStorage. Per ulteriori informazioni sulla gestione di origini di contenuto, vedere [aggiungere, modificare o eliminare un'origine contenuto in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
+1. creare una nuova origine di contenuto nella farm di SharePoint 2013 per la condivisione di archiviazione frigorifera in Azure \\ \\,\\ad esempio AZFile1 ContentColdStorage. Per ulteriori informazioni sulla gestione delle origini di contenuto, vedere [aggiungere, modificare o eliminare un'origine di contenuto in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
     
-2. Avviare una ricerca per indicizzazione completa. Per ulteriori informazioni, vedere [Start, sospendere, riprendere o interrompere una ricerca per indicizzazione in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+2. Avviare una ricerca per indicizzazione completa. Per ulteriori informazioni, vedere, [avviare, sospendere, riprendere o interrompere una ricerca per indicizzazione in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     
 ## <a name="using-the-solution"></a>Utilizzo della soluzione
 
-Sono disponibili cinque passaggi principali di questa soluzione, supponendo che non si desidera importare i file PST in Exchange Server 2013 ed Exchange Online. In questa sezione vengono con le procedure per tutti gli elementi. L'interazione con la soluzione principale saranno nel modo seguente:
+Sono disponibili cinque passaggi principali per l'utilizzo di questa soluzione, presupponendo che non si desideri importare i file PST in Exchange Server 2013 ed Exchange Online. In questa sezione vengono fornite le procedure per tutti. L'interazione principale con la soluzione consiste nell'eseguire le operazioni seguenti:
   
-1. Gestire l'appartenenza utente al gruppo depositari.
+1. Gestire l'appartenenza degli utenti al gruppo depositari.
     
-2. Esaminare i file di registro generati dallo script di accesso. Il FileCopyErrors.log Elenca tutti i file che non sono stati copiati. È necessario decidere quali si desidera eseguire con loro
+2. Esaminare i file di registro generati dallo script di accesso. FileCopyErrors. log elenca tutti i file che non sono stati copiati correttamente. È necessario decidere cosa si vuole fare con loro
     
-3. Gestione del processo di importazione file PST.
+3. Gestione del processo di importazione PST.
     
-4. Spostamento dei file di raccolta in un archivio fredda.
+4. Spostamento dei file di raccolta nell'archiviazione frigorifera.
     
-Tutti gli altri passaggi non sono specifici per la soluzione. Sono standard attività amministrative da eseguire in SharePoint 2013 e Office 365 e Azure. Sono disponibili gli elementi che questa soluzione non fornisce le informazioni che è necessario eseguire in base alle esigenze della propria azienda, ad esempio:
+Tutti gli altri passaggi non sono specifici di questa soluzione. Si tratta di attività amministrative standard eseguite in SharePoint 2013 e Office 365 e Azure. Vi sono elementi che questa soluzione non fornisce indicazioni che è necessario risolvere in base alle esigenze dell'azienda, ad esempio:
   
-1. Verifica i casi di eDiscovery e che sono associati a qual caso depositari.
+1. Verifica dei casi di eDiscovery e quali custodi sono associati a questo caso.
     
-2. Verifica che gli insiemi degli insiemi di file sono associa con qual caso di eDiscovery.
+2. Verifica dei set di raccolte di file associate a un caso di eDiscovery.
     
-3. Coordinamento della scadenza dell'importazione e spostamento nell'archiviazione fredda passaggi.
+3. Coordinando la tempistica dei passaggi di importazione e spostamento a freddo.
     
-4. Gestione dello spazio i file utilizzati per Azure.
+4. Gestione dello spazio dei file utilizzato in Azure.
     
-5. Gestione delle cassette postali che vengono importati nel file pst.
+5. Gestione delle cassette postali in cui vengono importati PST.
     
-6. Backup e ripristino dei dati in locale.
+6. Backup e ripristino di tutti i dati locali.
     
-### <a name="custodian-management"></a>Gestione depositaria
+### <a name="custodian-management"></a>Gestione dei depositari
 
-- Per avviare il processo di raccolta di file automatico per un singolo utente, aggiungerli al gruppo depositari. Al successivo accesso dell'utente, verrà eseguito lo script di accesso assegnato al gruppo depositari tramite criteri di gruppo. 
+- Per avviare il processo di raccolta automatica dei file per un singolo utente, aggiungerli al gruppo depositari. La volta successiva che l'utente accede, viene eseguito lo script di accesso assegnato al gruppo depositari tramite criteri di gruppo. 
     
-### <a name="monitor-collected-files-and-review-log-files"></a>Monitorare i file raccolti ed esaminare i file di registro
+### <a name="monitor-collected-files-and-review-log-files"></a>Monitorare i file raccolti e controllare i file di registro
 
-1. Guarda il file della raccolta di condividere, ad esempio \\ \\Intermédiaire\\casi$\\*, per la cartella di raccolta da parte dell'utente. Il nome della cartella verrà formattato simile alla seguente: *yyyyMMddHHmm_UserName* .
+1. Guardare la condivisione file di raccolta, ad \\ \\esempio\\i casi\\di gestione temporanea $ *, per la cartella dell'insieme dall'utente. Il nome della cartella verrà formattato in questo modo: *yyyyMMddHHmm_UserName* .
     
-2. Al termine dell'insieme, aprire la cartella di raccolta e passare alla cartella _Log. Nella cartella _Log, verrà visualizzato quanto segue:
+2. Al termine dell'insieme, aprire la cartella della raccolta e passare alla cartella _Log. Nella cartella _Log verranno visualizzati gli elementi seguenti:
     
-  - Un file XML per ogni unità locale nel computer dell'utente, ad esempio **nella cartella**, **C.xml**. Questi file contengono le unità di inventario vengono denominati dopo che vengono utilizzati per l'operazione robocopy.
+  - Un file XML per ogni unità locale nel computer dell'utente, ad esempio **a. XML**, **C. XML**. Questi file contengono le unità inventariali che sono denominate dopo e vengono utilizzate per l'operazione Robocopy.
     
     > [!NOTE]
-    > Lo script insieme creerà solo una voce nel file di inventario per i tipi di file definito nello script stesso. Non creerà una voce di inventario per ogni file nel computer dell'utente. 
+    > Lo script di raccolta creerà solo una voce nel file di inventario per i tipi di file definiti nello script stesso. Non verrà creata una voce di inventario per ogni file nel computer dell'utente. 
   
-  - Un file di log denominato FileCopyErrors.log per ogni esecuzione della raccolta. Questo file è riportato un elenco dei file che robocopy potrebbe non copia all'insieme di file condividere, ad esempio \\ \\Intermédiaire\\casi$\\*. È necessario leggere questo e decidere le azioni da intraprendere per questi file senza risposta. In genere è uno necessario raccolgono i dati manualmente se si desidera, oppure è possibile decidere che non sono necessarie e pertanto può essere omesso dall'insieme.
+  - Un file di registro denominato FileCopyErrors. log per ogni esecuzione della raccolta. Questo file contiene un elenco dei file che Robocopy non è stato in grado di copiare nella condivisione di raccolta file, \\ \\ad\\esempio i\\casi di gestione temporanea $ *. Sarà necessario esaminare questo e decidere quali azioni eseguire per questi file mancanti. In genere, è necessario raccoglierli manualmente se lo si desidera oppure è possibile decidere che non sono obbligatori e pertanto possono essere omessi dall'insieme.
     
-### <a name="pst-import-option-a-for-exchange-server-2013"></a>Opzione di importazione di file PST A per Exchange Server 2013
+### <a name="pst-import-option-a-for-exchange-server-2013"></a>Opzione di importazione PST A per Exchange Server 2013
 
-1. Accedere al server che ospita la condivisione di file insieme, ad esempio **gestione temporanea**e aprire Windows PowerShell. Per ulteriori informazioni sull'avvio di Windows PowerShell, vedere[Avvio di Windows PowerShell in Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
+1. Accedere al server che ospita la condivisione file di raccolta, ad esempio la **gestione temporanea**e l'apertura di Windows PowerShell. Per ulteriori informazioni sull'avvio di Windows PowerShell, vedere[avvio di Windows PowerShell su Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
     
-2. Impostare il criterio su senza restrizioni. Tipo `Set-ExecutionPolicy Unrestricted -Scope Process` in Windows PowerShell e premere INVIO.
+2. Impostare il criterio di esecuzione su Unrestricted. Digita `Set-ExecutionPolicy Unrestricted -Scope Process` in Windows PowerShell e premi INVIO.
     
-3. Eseguire il file PSTImportScript.ps1 e specificare i parametri **$SourcePath** e **$MailboxAlias** . Per ulteriori informazioni sull'esecuzione di script di Windows PowerShell, vedere[Esecuzione di script](https://go.microsoft.com/fwlink/p/?LinkID=615117).
+3. Eseguire il file PSTImportScript. ps1 e fornire i parametri **$SourcePath** e **$MailboxAlias** . Per ulteriori informazioni sull'esecuzione di script di Windows PowerShell, vedere[Running scripts](https://go.microsoft.com/fwlink/p/?LinkID=615117).
     
-4. Rivedere l'output di errori.
+4. Esaminare l'output per individuare eventuali errori.
     
-5. Prima di tentare di importare un file PST omonimo nella stessa cassetta postale, è necessario rimuovere la richiesta di importazione delle cassette postali. Eseguire il comando seguente per ottenere questo risultato: `Get-MailboxImportRequest | Remove-MailboxImportRequest`. Verrà chiesto di rimuovere ogni singola richiesta dalla coda. Rispondere in base alle esigenze.
+5. Prima di tentare di importare un file PST con nome identico nella stessa cassetta postale, è necessario rimuovere la richiesta di importazione delle cassette postali. Eseguire il seguente comando per eseguire le operazioni `Get-MailboxImportRequest | Remove-MailboxImportRequest`seguenti:. Verrà richiesto di rimuovere ogni singola richiesta dalla coda. Rispondere in base alle esigenze.
     
-### <a name="pst-import-option-b-for-exchange-online"></a>Opzione di importazione di file PST B, per Exchange Online
+### <a name="pst-import-option-b-for-exchange-online"></a>Opzione di importazione PST B, per Exchange Online
 
-- Per inserire i file PST raccolti in Exchange Online, eseguire le procedure illustrate nei file di importazione in Office 365 tramite la sezione per il caricamento di rete del [Servizio di importazione di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=614938).
+- Per inserire i file PST raccolti in Exchange Online, seguire le procedure riPortate nella sezione Import files into Office 365 through the network upload section of [office 365 Import Service](https://go.microsoft.com/fwlink/p/?LinkId=614938).
     
-### <a name="move-to-cold-storage"></a>Spostare in un archivio fredda
+### <a name="move-to-cold-storage"></a>Passare a archiviazione frigorifera
 
-1. Eseguire runbook **MoveToColdStorage** utilizzando le procedure descritte in[Manuali operativi in esecuzione](https://go.microsoft.com/fwlink/p/?LinkId=615123).
+1. Eseguire la runbook di **MoveToColdStorage** utilizzando le procedure descritte in[Running Runbook](https://go.microsoft.com/fwlink/p/?LinkId=615123).
     
-2. Guardare la condivisione file Azure in uso per l'archiviazione di termini di tempo, ad esempio \\ \\AZFile1\\ContentColdStorage e il file della raccolta locale condividere, ad esempio \\ \\Intermédiaire\\casi$. È consigliabile visualizzare i file e cartelle vengono visualizzate nella condivisione di file di archiviazione fredda e vengono rimosse dalla condivisione di file della raccolta.
+2. Guardare la condivisione di file di Azure in uso per l'archiviazione a lungo termine \\ \\,\\ad esempio AZFile1 ContentColdStorage e la condivisione di file di raccolta locale \\ \\,\\ad esempio i casi di gestione temporanea $. I file e le cartelle devono essere visualizzati nella condivisione file di archiviazione frigorifera e scompaiono dalla condivisione file di raccolta.
     
 ### <a name="ediscovery"></a>eDiscovery
 
-1. Consentire la ricerca per indicizzazione completa nella condivisione di file fredda archiviazione deve essere eseguito pianificazioni o avviare una ricerca per indicizzazione. Per ulteriori informazioni su come avviare le ricerche per indicizzazione complete o incrementale, vedere [avviare, sospendere, riprendere o interrompere una ricerca per indicizzazione in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+1. Consente di eseguire la ricerca per indicizzazione completa della condivisione file di archiviazione frigorifera come pianificazioni oppure di avviare una ricerca per indicizzazione. Per ulteriori informazioni sull'avvio di ricerche per indicizzazione complete o incrementali, vedere [avviare, sospendere, riprendere o interrompere una ricerca per indicizzazione in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     
-2. Creare un caso eDiscovery in SharePoint 2013 se è stata utilizzata l'opzione A per l'importazione file PST o creare un caso eDiscovery in SharePoint Online, se è stata utilizzata l'opzione B.
+2. Creare un caso di eDiscovery in SharePoint 2013 se è stata utilizzata l'opzione A per un file PST Import o creare un caso di eDiscovery in SharePoint Online se è stata utilizzata l'opzione B.
     
 

@@ -1,5 +1,5 @@
 ---
-title: Informazioni sulla gestione delle identità di Office 365 e Azure Active Directory
+title: Informazioni sull'identità di Office 365 e Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Informazioni sul modo in cui l'identità dell'utente viene gestita in Office 365.
-ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372893"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001559"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Informazioni sulla gestione delle identità di Office 365 e Azure Active Directory
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Informazioni sull'identità di Office 365 e Azure Active Directory
 
 Office 365 utilizza l'identità utente basata sul cloud e il servizio di autenticazione Azure Active Directory (Azure AD) per gestire gli utenti. Scegliere se la gestione delle identità è configurata tra l'organizzazione locale e Office 365 è una decisione iniziale che rappresenta uno dei fondamenti dell'infrastruttura cloud. Poiché la modifica di questa configurazione in un secondo momento può essere difficile, prendere in considerazione le opzioni per determinare cosa funziona meglio per le esigenze dell'organizzazione. È possibile scegliere tra due modelli di autenticazione principali di Office 365 per configurare e gestire gli account utente. **autenticazione del cloud** e **autenticazione federata**.
   
@@ -37,7 +37,7 @@ Se si dispone o non si dispone di un ambiente Active Directory esistente in loca
   
 ### <a name="cloud-only"></a>Solo cloud
 
-Con il modello solo cloud, è possibile gestire gli account utente solo in Office 365. Non sono necessari server locali. è tutto gestito nel cloud da Azure AD. È possibile creare e gestire gli utenti nell'interfaccia di amministrazione di Office 365 o utilizzando i [cmdlet di PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) di Windows PowerShell e l'identità e l'autenticazione vengono gestiti completamente nel cloud da Azure ad. Il modello solo cloud è in genere una buona scelta se: 
+Con il modello solo cloud, è possibile gestire gli account utente solo in Office 365. Non sono necessari server locali. è tutto gestito nel cloud da Azure AD. È possibile creare e gestire gli utenti nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) o utilizzando i [cmdlet di PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) di Windows PowerShell e l'identità e l'autenticazione vengono gestiti completamente nel cloud da Azure ad. Il modello solo cloud è in genere una buona scelta se: 
   
 - Non si dispone di altre directory degli utenti locali.
     

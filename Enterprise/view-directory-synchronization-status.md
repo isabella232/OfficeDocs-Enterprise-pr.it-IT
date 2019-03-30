@@ -3,7 +3,6 @@ title: Visualizzare lo stato di sincronizzazione della directory in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,27 +17,29 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Informazioni su come disattivare la sincronizzazione della directory. È anche possibile visualizzarne lo stato.
-ms.openlocfilehash: 4803cbadd17dbc1ee23d019f39144ff1ffaefd9a
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085055"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001569"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Visualizzare lo stato di sincronizzazione della directory in Office 365
+
 Se è stata integrata Active Directory locale con Azure AD sincronizzando l'ambiente locale con Office 365, è anche possibile controllare lo stato della sincronizzazione.
   
 ## <a name="view-directory-synchronization-status"></a>Visualizzazione dello stato di sincronizzazione della directory
-- Accedere all'interfaccia di amministrazione di Office 365 e scegliere **stato dirsync** nella Home page. 
+
+- Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) e scegliere **stato dirsync** nella Home page.
 - In alternativa, è possibile **** \> accedere agli utenti **attivi**degli utenti, quindi nella pagina **utenti attivi** scegliere **altre** \> **sincronizzazione della directory**. Nel riquadro di **sincronizzazione della directory** scegliere **Vai a gestione dirsync**.
-    
+
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Informazioni sulla pagina Gestisci sincronizzazione directory
 
 Nella tabella seguente sono elencate le funzionalità che consentono di ottenere informazioni sulla pagina.
   
 Se si verifica un problema con la sincronizzazione della directory, anche gli errori sono elencati in questa pagina. Per ulteriori informazioni sui diversi errori che potrebbero verificarsi, vedere [identificare gli errori di sincronizzazione della directory in Office 365](identify-directory-synchronization-errors.md).
   
-|**Elemento**|**Funzione**|
+|**Elemento**|**Scopo**|
 |:-----|:-----|
 |**Domini verificati** | Numero di domini del tenant di Office 365 che sono stati verificati. |
 |**Domini non verificati** | Domini che sono stati aggiunti, ma non sono stati verificati. |

@@ -23,16 +23,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visualizzare lo stato di integrità dei servizi di Office 365 prima di contattare il supporto per verificare se è presente un'interruzione del servizio attiva
-ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 483ff0ff6507010c9a81f0774fc8c3e8820395cb
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085295"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001579"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Come verificare l'integrità dei servizi di Office 365
 
-È possibile visualizzare l'integrità dei servizi cloud di Office 365, Yammer, Microsoft Dynamics CRM e Microsoft Intune nella pagina integrità del **servizio** di Office 365 nell'interfaccia di amministrazione. Se si verificano problemi con un servizio cloud, è possibile verificare l'integrità del servizio per determinare se si tratta di un problema noto con una risoluzione in corso prima di chiamare il supporto o di passare la risoluzione dei problemi relativi al tempo. 
+È possibile visualizzare l'integrità dei servizi cloud di Office 365, Yammer, Microsoft Dynamics CRM e Microsoft Intune nella pagina integrità del **servizio** di Office 365 nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting. 
 
 Se non si è in grado di accedere al portale del servizio, è possibile utilizzare la [pagina stato del servizio](https://status.office365.com) per verificare la disponibilità di problemi noti che impediscono l'accesso al tenant.
   
@@ -43,7 +43,7 @@ Se non si è in grado di accedere al portale del servizio, è possibile utilizza
     > [!NOTE]
     > Gli utenti a cui è assegnato il ruolo di amministratore globale o amministratore del servizio possono visualizzare le informazioni sull'integrità dei servizi. Per consentire agli amministratori di Exchange, SharePoint e Skype for Business di visualizzare tali informazioni, è necessario assegnare anche a loro il ruolo di amministratore del servizio.
   
-2. Per aprire integrità dei servizi, nell'interfaccia di amministrazione passare a integrità del**servizio** **integrità** > oppure fare clic sulla **scheda integrità del servizio** nel **dashboard principale**. La scheda del dashboard indica se esiste un problema del servizio attivo e si collega alla pagina di integrità del servizio dettagliato.
+2. Per aprire integrità dei servizi, nell'interfaccia di amministrazione passare a integrità del**servizio** **integrità** > oppure fare clic sulla **scheda integrità del servizio** nel **dashboard principale**. La scheda del dashboard indica se è presente un problema relativo ai servizi attivi e include i collegamenti alla pagina delle informazioni dettagliate sull'integrità dei servizi.
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -54,7 +54,7 @@ Se non si è in grado di accedere al portale del servizio, è possibile utilizza
   
 ### <a name="view-details-of-posted-service-health"></a>Visualizzare i dettagli delle informazioni pubblicate sull'integrità dei servizi
 
-Nella visualizzazione predefinita, vengono visualizzati tutti i servizi e lo stato di integrità corrente. Per filtrare la visualizzazione per i servizi che stanno vivendo un incidente, selezionare **incidenti** dalla barra ombreggiata a sinistra. Se si selezionano gli **avvisi** , verranno visualizzati solo i servizi a cui è attualmente inviato un avviso. Nella visualizzazione **tutti i servizi** , facendo clic sullo stato del servizio visualizzato, verrà aperta una visualizzazione di riepilogo dell'avviso o dell'evento imprevisto. 
+Nella visualizzazione predefinita vengono visualizzati tutti i servizi e le relative informazioni sullo stato di integrità corrente. Per filtrare la visualizzazione per i servizi che stanno vivendo un incidente, selezionare **incidenti** dalla barra ombreggiata a sinistra. Se si selezionano gli **avvisi** , verranno visualizzati solo i servizi a cui è attualmente inviato un avviso. Nella visualizzazione **tutti i servizi** , facendo clic sullo stato del servizio visualizzato, verrà aperta una visualizzazione di riepilogo dell'avviso o dell'evento imprevisto. 
   
 ![View of current issues in service health](media/f829a3af-1aca-4dc2-97eb-15d805349b24.png)
   
@@ -111,7 +111,7 @@ La maggior parte dei servizi è visualizzata come integra senza ulteriori inform
    
 ## <a name="history"></a>Cronologia
 
-L'integrità del servizio consente di esaminare lo stato di integrità corrente e di visualizzare la cronologia di eventuali avvisi e incidenti di servizio che hanno avuto un impatto sul tenant negli ultimi 30 giorni. Per visualizzare l'integrità passata di tutti i servizi, selezionare **Visualizza cronologia** nella pagina **integrità del servizio** . 
+L'integrità del servizio consente di esaminare lo stato di integrità corrente e di visualizzare la cronologia di eventuali avvisi e incidenti di servizio che hanno avuto un impatto sul tenant negli ultimi 30 giorni. Per visualizzare le informazioni passate sull'integrità di tutti i servizi, selezionare **Visualizza cronologia** nella pagina **Integrità dei servizi**. 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -119,7 +119,7 @@ Viene visualizzato un elenco di tutti i messaggi di integrità dei servizi pubbl
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-È possibile visualizzare la cronologia dell'integrità negli ultimi 7 giorni o negli ultimi 30 giorni. Selezionare una riga per visualizzare ulteriori dettagli sul problema.
+È possibile visualizzare la cronologia dell'integrità relativa agli ultimi sette giorni o agli ultimi 30 giorni. Selezionare una riga per visualizzare ulteriori dettagli sul problema.
   
 Per ulteriori informazioni sul nostro impegno per il tempo di attività, vedere transParent [Operations from Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
   
@@ -127,9 +127,6 @@ Per ulteriori informazioni sul nostro impegno per il tempo di attività, vedere 
 
 Obiettivo di Microsoft è garantire che le informazioni fornite agli utenti su un problema riscontrato siano accurate, tempestive e utili. Per comunicare a Microsoft il proprio gradimento, è possibile inviare una valutazione. Oltre ad assegnare un punteggio da 1 a 5 stelle, è possibile fornire feedback su aspetti specifici. Il feedback inviato verrà usato da Microsoft per ottimizzare il sistema di integrità dei servizi.
   
-![Feedback form for service health issues](media/fd083fdb-fde8-47b4-9136-b90d1d003864.png)
-  
 ## <a name="see-also"></a>Vedere anche
 
-[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-
+[Report attività nell'interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)

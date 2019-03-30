@@ -3,11 +3,10 @@ title: Distribuire Office 365 Enterprise per l'organizzazione
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Questa procedura generica ha lo scopo di aiutare a distribuire Office 365, a connettersi ad Active Directory e a migrare i dati; inoltre, consente alle persone nell'organizzazione di iniziare a utilizzare l'ultima versione di Office 2016.
-ms.openlocfilehash: 76421a7870358e48798f21866d69672509084c6a
-ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
+ms.openlocfilehash: a49d57978faabfac7131db3178cbff02b500667f
+ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30303600"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004407"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Distribuire Office 365 Enterprise per l'organizzazione
 Se si è pronti a distribuire e integrare Office 365 Enterprise con l'infrastruttura locale, consultare questa procedura generica che ha lo scopo di aiutare a connettersi alla propria directory e a migrare i dati; inoltre, consente alle persone nell'organizzazione di iniziare a utilizzare l'ultima versione di Office 2016.
