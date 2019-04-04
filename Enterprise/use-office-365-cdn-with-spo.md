@@ -3,7 +3,7 @@ title: Usare la rete per la distribuzione di contenuti di Office 365 con SharePo
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 4/3/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: In questo articolo viene descritto come utilizzare la rete di distribuzione del contenuto (CDN) di Office 365 per velocizzare il recapito delle risorse di SharePoint Online a tutti gli utenti, indipendentemente dal luogo in cui si trovano o dal modo in cui accedono al contenuto.
-ms.openlocfilehash: a718c30a40209a8ee0c8e78700ed3eae72c8347c
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
+ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039503"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31396924"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online
 
@@ -288,7 +288,7 @@ Utilizzare il cmdlet **Add-SPOTenantCdnOrigin** per definire un'origine. È poss
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-Il valore di _path_ è il percorso della raccolta o della cartella che contiene le risorse. È possibile utilizzare i caratteri jolly oltre ai percorsi relativi. Origins supporta i caratteri jolly anteposti all'URL. In questo modo è possibile creare origini che si estendono su più siti. Ad esempio, per includere tutti i cespiti nella cartella masterpages per tutti i siti come origine pubblica all'interno della rete CDN, digitare il comando seguente:
+Il valore di _path_ è il percorso relativo alla raccolta o alla cartella che contiene le risorse. È possibile utilizzare i caratteri jolly oltre ai percorsi relativi. Origins supporta i caratteri jolly anteposti all'URL. In questo modo è possibile creare origini che si estendono su più siti. Ad esempio, per includere tutti i cespiti nella cartella masterpages per tutti i siti come origine pubblica all'interno della rete CDN, digitare il comando seguente:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -297,18 +297,18 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 - Il modificatore di**/** caratteri jolly * può essere utilizzato solo all'inizio del percorso e deve corrispondere a tutti i segmenti di URL sotto l'URL specificato.
 - Il percorso può puntare a una raccolta documenti, una cartella o un sito. Ad esempio, il percorso _*/site1_ corrisponderà a tutte le raccolte documenti del sito.
 
-È possibile aggiungere un'origine a un percorso specifico utilizzando un percorso relativo o un percorso completo.
+È possibile aggiungere un'origine con un percorso relativo specifico. Non è possibile aggiungere un'origine utilizzando il percorso completo.
 
-In questo esempio viene aggiunta un'origine privata della raccolta siteassets in un sito specifico utilizzando un percorso relativo:
+In questo esempio viene aggiunta un'origine privata della raccolta siteassets in un sito specifico:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-In questo esempio viene aggiunta un'origine privata della cartella _folder1_ nella raccolta di risorse del sito dell'insieme di siti utilizzando il percorso completo:
+In questo esempio viene aggiunta un'origine privata della cartella _folder1_ nella raccolta di risorse del sito dell'insieme di siti:
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “https://contoso.sharepoint.com/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
 ```
 
 Per ulteriori informazioni su questo comando e sulla relativa sintassi, vedere [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
@@ -469,7 +469,7 @@ Per informazioni sulle origini di cui è possibile eseguire il provisioning per 
 
 ### <a name="add-an-office-365-cdn-origin"></a>Aggiungere un'origine della rete CDN di Office 365
 
-> [!NOTE]
+> [!IMPORTANT]
 > Non è consigliabile inserire mai risorse considerate sensibili all'organizzazione in una raccolta documenti di SharePoint configurata come origine pubblica.
 
 Utilizzare il comando [Aggiungi origine](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) della rete CDN per definire un'origine della rete CDN. È possibile definire origini multiple. L'origine è un URL che punta a una raccolta o a una cartella di SharePoint che contiene le risorse che si desidera ospitare dalla rete CDN.
@@ -478,7 +478,7 @@ Utilizzare il comando [Aggiungi origine](https://pnp.github.io/office365-cli/cmd
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-Dove `path` è il percorso della cartella che contiene le risorse. È possibile utilizzare i caratteri jolly oltre ai percorsi relativi.
+Dove `path` è il percorso relativo alla cartella che contiene le risorse. È possibile utilizzare i caratteri jolly oltre ai percorsi relativi.
 
 Per includere tutte le risorse nella **raccolta pagine master** di tutti i siti come origine pubblica, eseguire le operazioni seguenti:
 
