@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: "Riepilogo: configurazione e dimostrazione di Office 365 Advanced eDiscovery con dati di esempio nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: 6c52c7c7fdc31616e58f186484d2d8c4506b7ea6
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573820"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038020"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery per l'ambiente di sviluppo/test di Office 365
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery consente di trovare e analizzare rapidamente le i
 Con le istruzioni disponibili in questo articolo, è possibile creare un insieme limitato di dati per una controversia fittizia relativa a un contratto e analizzarli con Advanced eDiscovery.
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test cloud di One Microsoft.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365
 
@@ -39,7 +39,7 @@ Se si desidera semplicemente testare Advanced eDiscovery con i requisiti minimi,
 Se si desidera testare Advanced eDiscovery in un'azienda simulata, seguire le istruzioni in [dirsync per l'ambiente di sviluppo/test di Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Il test di Advanced eDiscovery non richiede l'ambiente aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di Windows Server AD. Viene fornito come opzione in modo che sia possibile eseguire test e sperimentazione in un ambiente che rappresenta un'organizzazione tipica. 
+> Testing Advanced eDiscovery non richiede l'ambiente aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Viene fornito come opzione in modo che sia possibile eseguire test e sperimentazione in un ambiente che rappresenta un'organizzazione tipica. 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>Fase 2: creare dati di esempio per Advanced eDiscovery
 
@@ -183,7 +183,7 @@ In questa procedura, è possibile creare un nuovo caso di Advanced eDiscovery e 
   
 ## <a name="see-also"></a>Vedere anche
 
-[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente di sviluppo/test della configurazione di base](base-configuration-dev-test-environment.md)
   

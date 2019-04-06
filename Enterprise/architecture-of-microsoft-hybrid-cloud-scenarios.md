@@ -13,55 +13,55 @@ search.appverid:
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
-description: "Riepilogo: Comprendere l'architettura di ibrida offerte cloud di Microsoft."
-ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+description: "Riepilogo: informazioni sull'architettura delle offerte cloud ibride di Microsoft."
+ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123393"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038010"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architettura degli scenari cloud ibridi Microsoft
 
- **Riepilogo:** Acquisire familiarità con l'architettura di ibrida offerte cloud di Microsoft.
+ **Riepilogo:** Comprendere l'architettura delle offerte cloud ibride di Microsoft.
   
-Utilizzare un approccio dell'architettura per pianificare e implementare scenari basati su cloud ibrida con servizi cloud Microsoft e piattaforme.
+Utilizzare un approccio architettonico per pianificare e implementare scenari basati su cloud ibrido con i servizi cloud e le piattaforme Microsoft.
   
-**Nella figura 1: Microsoft ibrida cloud stack**
+**Figura 1: stack cloud ibrido Microsoft**
 
-![Stack cloud ibrido Microsoft](media/Hybrid-Poster/Hybrid-Cloud-Stack.png)
+![Stack del cloud ibrido Microsoft](media/Hybrid-Poster/Hybrid-Cloud-Stack.png)
   
-Nella figura 1 viene illustrato lo stack di cloud Microsoft ibrida e il relativo livello, che comprendono locale, rete, identità, applicazioni e gli scenari e la categoria del servizio cloud (SaaS Microsoft Azure PaaS e Azure PaaS).
+Nella figura 1 viene mostrato lo stack del cloud ibrido Microsoft e il relativo layer, che include i locali, la rete, l'identità, le app e gli scenari e la categoria del servizio cloud (Microsoft SaaS, Azure PaaS e Azure PaaS).
   
-Il livello applicazioni e gli scenari ha di scenari basati su cloud ibrida specifica che sono descritti negli articoli aggiuntivi di questo modello. L'identità, rete e locali livelli possono essere comuni per le categorie di servizio cloud (SaaS, PaaS o PaaS).
+Il livello Apps and Scenarios contiene gli scenari specifici del cloud ibrido descritti in dettaglio negli articoli aggiuntivi di questo modello. I livelli Identity, Network e on-premises possono essere comuni alle categorie del servizio cloud (SaaS, PaaS o PaaS).
   
 - Locale
     
-    Infrastruttura locale per gli scenari ibridi può includere i server per SharePoint, Exchange, Skype per le aziende e applicazioni line of business. Inoltre possibile includere archivi dati (database, elenchi, i file). Senza connessioni ExpressRoute, è necessario consentire l'accesso per gli archivi dati locali tramite un proxy inverso o rendere il server o i dati accessibile nella DMZ o extranet.
+    L'infrastruttura locale per gli scenari ibridi può includere server per SharePoint, Exchange, Skype for business e applicazioni line-of-business. È inoltre possibile includere archivi dati (database, elenchi, file). Senza le connessioni di ExpressRoute, è necessario consentire l'accesso agli archivi dati locali tramite un proxy inverso o rendendo il server o i dati accessibili nella DMZ o nell'Extranet.
     
 - Rete
     
-    Sono disponibili due opzioni per la connettività a Microsoft cloud piattaforme e servizi: il canale Internet esistente ed ExpressRoute. Utilizzare una connessione ExpressRoute se le prestazioni prevedibile sono importanti. È possibile utilizzare una connessione ExpressRoute per la connessione direttamente a Microsoft SaaS services (Office 365 e Dynamics 365), servizi di Azure PaaS e servizi di Azure IaaS.
+    Sono disponibili due opzioni per la connettività alle piattaforme e ai servizi cloud Microsoft: la tubazione Internet esistente e la ExpressRoute. Utilizzare una connessione ExpressRoute se sono importanti le prestazioni prevedibili. È possibile utilizzare una connessione ExpressRoute per connettersi direttamente ai servizi SaaS di Microsoft (Office 365 e Dynamics 365), ai servizi di PaaS di Azure e ai servizi di IaaS di Azure.
     
 - Identità
     
-    Per l'infrastruttura di identità cloud, esistono due modi per accedere, a seconda della piattaforma Microsoft cloud. Per SaaS e Azure PaaS, integrare l'infrastruttura di identità in locale con Azure Active Directory o la federazione con i provider di identità locale dell'infrastruttura o di terze parti dell'identità. Per le macchine virtuali in esecuzione in Azure, è possibile estendere l'infrastruttura di identità in locale, ad esempio Windows Server Active Directory, per le reti virtuali (VNets) in cui si trovano nelle macchine virtuali.
+    Per l'infrastruttura di identità cloud, esistono due modi per andare, a seconda della piattaforma cloud Microsoft. Per SaaS e Azure PaaS, integrare l'infrastruttura di identità locale con Azure AD o con la Federazione con l'infrastruttura di identità locale o con i provider di identità di terze parti. Per le macchine virtuali in esecuzione in Azure, è possibile estendere l'infrastruttura di identità locale, ad esempio servizi di dominio Active Directory, alle reti virtuali (reti virtuali) in cui risiedono le macchine virtuali.
     
-## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>Scenari basati su cloud ibrida per il processo di adozione cloud tre fasi
+## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>Scenari di cloud ibridi per il processo di adozione di cloud in tre fasi
 
-Molte aziende, tra cui Microsoft, utilizzano un approccio tre fasi per adottando nel cloud. Scenari basati su cloud ibrida possono avere un ruolo di ogni fase.
+Molte imprese, tra cui quelle di Microsoft, utilizzano un approccio trifasico per l'adozione del cloud. Gli scenari di cloud ibridi possono svolgere un ruolo in ogni fase.
   
-1. Spostare i carichi di lavoro per la produttività SaaS
+1. Spostamento dei carichi di lavoro di produttività in SaaS
     
-    Per la produttività dei carichi di lavoro che sono attualmente o deve rimanere in locale, scenari ibridi consentono loro di essere integrate con le relative controparti cloud.
+    Per i carichi di lavoro di produttività che attualmente sono o devono rimanere in locale, gli scenari ibridi consentono di integrarli con le rispettive controparti cloud.
     
 2. Sviluppare applicazioni nuove e moderne in Azure PaaS
     
-    Applicazioni ibrida PaaS Azure in modo sicuro utilizzo delle risorse di archiviazione o server locale.
+    Le applicazioni ibride di PaaS di Azure possono sfruttare in modo sicuro il server locale o le risorse di archiviazione.
     
-3. Spostare le applicazioni esistenti per Azure IaaS
+3. Spostare le applicazioni esistenti in Azure IaaS
     
-    Per scenari ascensore MAIUSC e compilazione nel cloud, le applicazioni basate su server in esecuzione su macchine virtuali di Azure offrono il provisioning di tipo semplice e la scala.
+    Per gli scenari di Lift-and-Shift e Build-in-the-cloud, le applicazioni basate su server in esecuzione nelle macchine virtuali di Azure offrono un semplice provisioning e ridimensionamento.
     
 ## <a name="see-also"></a>Vedere anche
 

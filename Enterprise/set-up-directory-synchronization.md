@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Informazioni su come configurare la sincronizzazione della directory tra Office 365 e Active Directory locale.
-ms.openlocfilehash: 03f824da6feb41791e12818d8da2e298dc633f4e
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 6d635dbcacb5a1c6c6c9c202f2ece4fac35558a4
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492946"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001749"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Configurare la sincronizzazione della directory per Office 365
 
@@ -56,7 +56,7 @@ Per il server locale in cui si installa Azure AD Connect, è necessario il softw
 |**Windows Server 2008** | -La versione più recente supportata di PowerShell è disponibile in Windows Management Framework 3,0, disponibile nell' [area download Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.NET 4.5.1 e versioni successive sono disponibili nell' [area download Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 
 > [!NOTE]
-> Se si utilizza Azure Active Directory DirSync, il numero massimo di membri del gruppo di distribuzione che è possibile sincronizzare da Active Directory locale ad Azure Active Directory è 15.000. Per Azure AD Connect, il numero è 50.000. 
+> Se si utilizza Azure Active Directory DirSync, il numero massimo di membri del gruppo di distribuzione che è possibile sincronizzare da Active Directory locale ad Azure Active Directory è 15.000. Per Azure AD Connect, il numero è 50.000.
   
 Per esaminare più accuratamente i requisiti hardware, software, account e autorizzazioni, i requisiti per i certificati SSL e i limiti degli oggetti per Azure AD Connect, leggere [i prerequisiti per Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
   
@@ -64,8 +64,8 @@ Per esaminare più accuratamente i requisiti hardware, software, account e autor
 
 ## <a name="to-set-up-directory-synchronization"></a>Per configurare la sincronizzazione della directory
 
-1. accedere all'interfaccia di amministrazione di Office 365 e scegliere **** \> utenti **attivi** per gli utenti sulla barra di spostamento a sinistra.
-2. nell'interfaccia di amministrazione di Office 365, nella pagina **utenti attivi** , scegliere **altre** \> **sincronizzazione della Directory**.
+1. accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) e scegliere **gli** \> utenti **attivi** degli utenti sulla barra di spostamento a sinistra.
+2. Nell'interfaccia di amministrazione, nella pagina **utenti attivi** , scegliere **altre** \> **sincronizzazione della directory**.
 
     ![Nel menu altro, scegliere sincronizzazione directory](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   

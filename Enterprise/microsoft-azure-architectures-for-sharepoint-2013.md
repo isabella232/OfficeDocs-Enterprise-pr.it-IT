@@ -1,5 +1,5 @@
 ---
-title: Architetture di Microsoft Azure per SharePoint 2013
+title: Microsoft Azure Architectures for SharePoint 2013
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,187 +11,187 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: 'Riepilogo: Soluzioni di SharePoint 2013 possono essere ospitate in macchine virtuali di Microsoft Azure. Informazioni su quali tipi di soluzioni sono utile e configurare Microsoft Azure per ospitare uno.'
-ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: 'Riepilogo: le soluzioni di SharePoint 2013 possono essere ospitate nelle macchine virtuali di Microsoft Azure. Informazioni sul tipo di soluzione adatta e su come configurare Microsoft Azure per ospitarne uno.'
+ms.openlocfilehash: 7e40b7c4d37e5646d44a14f12a80a9c6cd25834b
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915381"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038070"
 ---
-# <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architetture di Microsoft Azure per SharePoint 2013
+# <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure Architectures for SharePoint 2013
 
- **Riepilogo:** Soluzioni di SharePoint 2013 possono essere ospitate in macchine virtuali di Microsoft Azure. Informazioni su quali tipi di soluzioni sono utile e configurare Microsoft Azure per ospitare uno.
+ **Riepilogo:** Le soluzioni di SharePoint 2013 possono essere ospitate nelle macchine virtuali di Microsoft Azure. Informazioni sul tipo di soluzione adatta e su come configurare Microsoft Azure per ospitarne uno.
   
-Azure è un ambiente ottimale per l'hosting di una soluzione di SharePoint Server 2013. Nella maggior parte dei casi, è consigliabile Office 365, ma una farm di SharePoint Server ospitata in Azure può essere una buona scelta relativi a specifiche soluzioni. In questo articolo viene descritto come per l'architettura delle soluzioni in modo che siano un buon adattamento della piattaforma Azure SharePoint. Come esempi vengono utilizzate due soluzioni specifiche seguenti:
+Azure è un buon ambiente per ospitare una soluzione di SharePoint Server 2013. Nella maggior parte dei casi, è consigliabile Office 365, ma una farm di SharePoint Server ospitata in Azure può essere una buona opzione per soluzioni specifiche. In questo articolo viene descritto come progettare soluzioni SharePoint in modo che siano adatte alla piattaforma di Azure. Di seguito sono illustrate le due soluzioni specifiche seguenti:
   
 - [Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
 - [Siti Internet in Microsoft Azure che utilizzano SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
     
-## <a name="recommended-sharepoint-solutions-for-azure-infrastructure-services"></a>Soluzioni SharePoint consigliate per servizi di infrastruttura di Azure
+## <a name="recommended-sharepoint-solutions-for-azure-infrastructure-services"></a>Soluzioni di SharePoint consigliate per i servizi di infrastruttura di Azure
 
-Servizi di infrastruttura è un'opzione interessante per l'hosting di soluzioni SharePoint. Alcune soluzioni sono la più adatta a questa piattaforma rispetto ad altri. Nella tabella seguente sono le soluzioni consigliate.
+Servizi di infrastruttura di Azure è un'opzione interessante per ospitare le soluzioni di SharePoint. Alcune soluzioni sono una soluzione più adatta per questa piattaforma rispetto ad altre. Nella tabella seguente vengono illustrate le soluzioni consigliate.
   
 |**Soluzione**|**Perché questa soluzione è consigliata per Azure**|
 |:-----|:-----|
-|Ambienti di sviluppo e testing  <br/> |È semplice creare e gestire questi ambienti.  <br/> |
-|Ripristino di emergenza di farm di SharePoint locale in Azure  <br/> |**Hosted datacenter secondario** Utilizzare Azure anziché investire in un centro dati secondario in un'area diversa. <br/> **Ambienti di ripristino di emergenza a costo inferiore** Gestire e pagare meno risorse di un ambiente di ripristino di emergenza locale. Il numero di risorse dipende dall'ambiente di ripristino di emergenza si sceglie: Data Center con cold standby, con warm standby o hot standby.<br/> **Piattaforma più flessibile** In caso di emergenza con facilità con scalabilità orizzontale della farm di SharePoint di ripristino per soddisfare requisiti di carico. Implementare la scalabilità quando non è più necessario le risorse.<br/> Vedere [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Siti Internet che utilizzano funzionalità e scala non è disponibile in Office 365  <br/> |**Concentrare l'attenzione** Concentrarsi sulla creazione di un sito di grande piuttosto che la creazione di infrastruttura. <br/> **Possibilità di sfruttare la flessibilità in Azure** Dimensioni della farm per la richiesta mediante l'aggiunta di nuovi server e verrà solo per le risorse che necessarie. Allocazione macchina dinamiche non è supportata (ridimensionamento automatico).<br/> **Utilizzo di Azure Active Directory (AD)** Trai vantaggio di Azure Active Directory per gli account dei clienti. <br/> **Funzionalità di SharePoint aggiungere non è disponibile in Office 365** Aggiungere informazioni sui report e analitica web. <br/> Visualizzare [I siti Internet in Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
-|Farm di App per il supporto di ambienti locali o di Office 365  <br/> |**Build, test e ospitare le applicazioni** in Azure per supportare sia in locale e del cloud ambienti. <br/> **Host questo ruolo** in Azure anziché acquistare nuovi componenti hardware per gli ambienti locali. <br/> |
+|Ambienti di sviluppo e di testing  <br/> |È facile creare e gestire questi ambienti.  <br/> |
+|Ripristino di emergenza di farm di SharePoint locali in Azure  <br/> |**Datacenter secondario ospitato** Utilizzare Azure anziché investire in un centro dati secondario in un'area diversa. <br/> **Ambienti di ripristino di emergenza con costi inferiori** Mantenere e pagare meno risorse rispetto a un ambiente di ripristino di emergenza locale. Il numero di risorse dipende dall'ambiente di ripristino di emergenza scelto: Cold standby, warm standby o hot standby. <br/> **Piattaforma più elastica** In caso di emergenza, è possibile eseguire la scalabilità orizzontale della farm di SharePoint di ripristino per soddisfare i requisiti di carico. Ridurre quando la risorsa non è più necessaria. <br/> Vedere [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
+|Siti con connessione Internet che utilizzano caratteristiche e scala non disponibili in Office 365  <br/> |**Concentrare gli sforzi** Concentrarsi sulla creazione di un sito fantastico anziché sull'infrastruttura di costruzione. <br/> **Trarre vantaggio dall'elasticità in Azure** Ridimensiona la farm per la richiesta aggiungendo nuovi server e pagando solo le risorse di cui hai bisogno. La distribuzione dinamica del computer non è supportata (scala automatica). <br/> **Utilizzo di Azure Active Directory (ad)** Trarre vantaggio da Azure AD per gli account dei clienti. <br/> **Aggiungere la funzionalità di SharePoint non disponibile in Office 365** Aggiungere rapporti profondi e analisi Web. <br/> Per ulteriori informazioni, vedere [Internet Sites in Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|Farm di app per supportare ambienti Office 365 o locali  <br/> |**Creare, testare e ospitare app** in Azure per supportare ambienti locali e cloud. <br/> **Ospitare questo ruolo** in Azure anziché acquistare nuovo hardware per ambienti locali. <br/> |
    
-Per intranet e soluzioni di collaborazione e carichi di lavoro, prendere in considerazione le opzioni seguenti:
+Per le soluzioni e i carichi di lavoro per Intranet e collaborazione, prendere in considerazione le seguenti opzioni:
   
-- Determinare se Office 365 soddisfi i requisiti aziendali o può far parte della soluzione. Office 365 offre un'ampia gamma di funzionalità che è sempre aggiornato.
+- Determinare se Office 365 soddisfa i requisiti aziendali o può far parte della soluzione. Office 365 fornisce un set di funzionalità RTF sempre aggiornato.
     
-- Se Office 365 non soddisfa tutti i requisiti aziendali, prendere in considerazione un'implementazione standard di SharePoint 2013 in locale da Microsoft Consulting Services (MCS). Un'architettura standard può essere una soluzione più rapida, meno costose e più semplice per poter supportare quella personalizzata. 
+- Se Office 365 non soddisfa tutti i requisiti aziendali, prendere in considerazione un'implementazione standard di SharePoint 2013 in locale da Microsoft Consulting Services (MCS). Un'architettura standard può essere una soluzione più rapida, economica e semplice da supportare rispetto a quella personalizzata. 
     
-- Se un'implementazione standard non soddisfa i requisiti aziendali, è consigliabile una soluzione personalizzata in locale.
+- Se un'implementazione standard non soddisfa i requisiti aziendali, prendere in considerazione una soluzione locale personalizzata.
     
-- Se utilizza una piattaforma cloud è importante per i requisiti aziendali, prendere in considerazione un'implementazione standard o personalizzata di SharePoint 2013 ospitate in servizi di infrastruttura. Soluzioni di SharePoint sono molto più semplice per il supporto di altre piattaforme di cloud pubblici Microsoft non nativo in Azure.
+- Se l'utilizzo di una piattaforma cloud è importante per i requisiti aziendali, prendere in considerazione un'implementazione standard o personalizzata di SharePoint 2013 ospitata nei servizi di infrastruttura di Azure. Le soluzioni di SharePoint sono molto più facili da supportare in Azure rispetto ad altre piattaforme cloud pubbliche Microsoft non native.
     
-## <a name="before-you-design-the-azure-environment"></a>Prima progettare l'ambiente Azure
+## <a name="before-you-design-the-azure-environment"></a>Prima di progettare l'ambiente di Azure
 
-Durante questo articolo vengono utilizzate le topologie di esempio SharePoint, è possibile utilizzare questi concetti di progettazione con qualsiasi topologia della farm di SharePoint. Prima di progettare l'ambiente Azure, utilizzare le informazioni della topologia, architettura, capacità e prestazioni seguenti per progettare la farm di SharePoint:
+Anche se in questo articolo vengono utilizzati esempi di topologie di SharePoint, è possibile utilizzare questi concetti di progettazione con qualsiasi topologia della farm di SharePoint. Prima di progettare l'ambiente di Azure, utilizzare le seguenti linee guida per la topologia, l'architettura, la capacità e le prestazioni per la progettazione della farm di SharePoint:
   
-- [Progettazione dell'architettura per SharePoint 2013 per professionisti IT](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
+- [Progettazione dell'architettura per SharePoint 2013 professionisti IT](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
     
 - [Pianificare la gestione delle prestazioni e della capacità in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Determinare il tipo di dominio Active Directory
 
-Ogni farm di SharePoint Server si basa su Active Directory per fornire gli account amministrativi per l'installazione di farm. In questa fase sono disponibili due opzioni per le soluzioni SharePoint in Azure. Descritti nella tabella seguente.
+Ogni farm di SharePoint Server si basa su Active Directory per fornire account amministrativi per il programma di installazione della farm. In questo momento, sono disponibili due opzioni per le soluzioni SharePoint in Azure. Questi sono descritti nella tabella seguente.
   
 |**Opzione**|**Descrizione**|
 |:-----|:-----|
-|Dominio dedicato  <br/> |È possibile distribuire un dominio di Active Directory dedicato e isolato in Azure per supportare la farm di SharePoint. Si tratta di una buona scelta per siti Internet pubblico.  <br/> |
-|Estendere il dominio locale tramite una connessione tra locali  <br/> |Quando si estende il dominio locale tramite una connessione tra locali, gli utenti accedere alla farm di SharePoint tramite la rete intranet come se fosse ospitati in locale. È possibile sfruttare nell'implementazione locale di Active Directory e DNS.  <br/> Una connessione tra locali è necessaria per la creazione di un ambiente di ripristino di emergenza in Azure per eseguire il failover della farm locale.  <br/> |
+|Dominio dedicato  <br/> |È possibile distribuire un dominio Active Directory dedicato e isolato in Azure per supportare la farm di SharePoint. Questa è una buona scelta per i siti Internet di pubblico dominio.  <br/> |
+|Estendere il dominio locale tramite una connessione tra sedi locali  <br/> |Quando si estende il dominio locale tramite una connessione tra sedi locali, gli utenti accedono alla farm di SharePoint tramite la rete Intranet come se fossero ospitati in locale. È possibile trarre vantaggio dall'implementazione di Active Directory e DNS locale.  <br/> È necessaria una connessione tra sedi locali per la creazione di un ambiente di ripristino di emergenza in Azure per il failover dalla farm locale.  <br/> |
    
-In questo articolo include concetti di programmazione per estendere il dominio locale tramite una connessione tra locali. Se la soluzione utilizza un dominio dedicato, non è necessario una connessione tra locali.
+In questo articolo sono inclusi i concetti relativi alla progettazione per l'estensione del dominio locale tramite una connessione tra sedi locali. Se la soluzione utilizza un dominio dedicato, non è necessaria una connessione tra sedi locali.
   
 ## <a name="design-the-virtual-network"></a>Progettare la rete virtuale
 
-È necessario innanzitutto una rete virtuale in Azure, che include la subnet in cui verranno collocati delle macchine virtuali. La rete virtuale è necessario uno spazio di indirizzi IP privato, che parti di cui si assegna alle subnet.
+Per prima cosa, è necessaria una rete virtuale in Azure, che include le subnet su cui verranno posizionate le macchine virtuali. La rete virtuale ha bisogno di uno spazio di indirizzi IP privato, porzioni di cui si assegnano le subnet.
   
-Se si estende la rete locale in Azure tramite una connessione tra locali (necessaria per un ambiente di ripristino di emergenza), è necessario scegliere uno spazio degli indirizzi privati che non sia già in uso in un' posizione nella rete dell'organizzazione, può includere l'ambiente locale e altre reti virtuali Azure. 
+Se si sta estendendo la rete locale a Azure tramite una connessione tra sedi locali (necessaria per un ambiente di ripristino di emergenza), è necessario scegliere uno spazio di indirizzi privato non già in uso altrove nella rete dell'organizzazione, che può includere l'ambiente locale e altre reti virtuali di Azure. 
   
-**Nella figura 1: Ambiente locale con una rete virtuale in Azure**
+**Figura 1: ambiente locale con una rete virtuale in Azure**
 
-![Progettazione di una rete virtuale di Microsoft Azure per una soluzione SharePoint. Una subnet per il gateway di Azure. Una subnet per le macchine virtuali.](media/OPrrasconWA-AZarch.png)
+![Progettazione della rete virtuale di Microsoft Azure per una soluzione di SharePoint. Una subnet per il gateway di Azure. Una subnet per le macchine virtuali.](media/OPrrasconWA-AZarch.png)
   
 In questo diagramma:
   
-- Una rete virtuale in Azure è illustrata side-by-side nell'ambiente locale. Entrambi gli ambienti non sono ancora connessi tramite una connessione tra locali, che può essere una connessione VPN per siti o ExpressRoute.
+- Una rete virtuale in Azure è illustrata in modo affiancato all'ambiente locale. I due ambienti non sono ancora connessi tramite una connessione tra sedi locali, che può essere una connessione VPN da sito a sito o ExpressRoute.
     
-- A questo punto, la rete virtuale sono incluse solo le subnet e non altri elementi dell'architettura. Una subnet ospiterà gateway Azure e altre subnet ospitare i livelli della farm di SharePoint, con un'altra aggiuntiva per Active Directory e DNS.
+- A questo punto, la rete virtuale include solo le subnet e non altri elementi architettonici. Una subnet ospiterà il gateway di Azure e altre subnet che ospitano i livelli della farm di SharePoint, con un ulteriore per Active Directory e DNS.
     
-## <a name="add-cross-premises-connectivity"></a>Aggiungere la connettività tra locali
+## <a name="add-cross-premises-connectivity"></a>Aggiungere la connettività cross-premise
 
-Il passaggio di distribuzione successivo consiste nel creare la connessione tra locali (se ciò è valido per la soluzione). Per le connessioni tra locali, un gateway Azure si trova in una subnet gateway separato, che è necessario creare e assegnare uno spazio degli indirizzi. 
+Il passaggio successivo consiste nel creare la connessione cross-premise (se applicabile alla soluzione). Per le connessioni cross-premise, un gateway di Azure risiede in una subnet del gateway distinta, che è necessario creare e assegnare uno spazio di indirizzi. 
   
-Quando si pianifica una connessione tra locali, definire e creare un gateway Azure e la connessione a un dispositivo gateway locale.
+Quando si pianifica una connessione tra sedi locali, è possibile definire e creare un gateway di Azure e una connessione a un dispositivo gateway locale.
   
-**Figura 2: Utilizzo di un gateway Azure e un dispositivo gateway locale per fornire la connettività da sito tra l'ambiente locale e Azure**
+**Figura 2: utilizzo di un gateway di Azure e di un dispositivo gateway locale per fornire la connettività da sito a sito tra l'ambiente locale e Azure**
 
-![Ambiente locale connesso a una rete virtuale di Azure tramite una connessione tra sedi locale, che può essere una connessione VPN da sito a sito oppure ExpressRoute](media/AZarch-VPNgtwyconnct.png)
+![Ambiente locale connesso a una rete virtuale di Azure tramite una connessione tra sedi locali, che può essere una connessione VPN da sito a sito o ExpressRoute](media/AZarch-VPNgtwyconnct.png)
   
 In questo diagramma:
   
-- Aggiunta al diagramma precedente, l'ambiente locale è connesso alla rete virtuale Azure per una connessione tra locali, che può essere una connessione VPN per siti o ExpressRoute.
+- Aggiungendo al diagramma precedente, l'ambiente locale è connesso alla rete virtuale di Azure tramite una connessione tra sedi locali, che può essere una connessione VPN da sito a sito o ExpressRoute.
     
-- Un gateway Azure è in una subnet di gateway.
+- Un gateway di Azure si trova su una subnet del gateway.
     
 - L'ambiente locale include un dispositivo gateway, ad esempio un router o un server VPN.
     
-Per ulteriori informazioni su come pianificare e creare una rete virtuale cross-premise, vedere [connessione di una rete locale a una rete virtuale Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
+Per ulteriori informazioni su come pianificare e creare una rete virtuale cross-premise, vedere [connettere una rete locale a una rete virtuale di Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
   
-## <a name="add-windows-server-active-directory-ad-and-dns"></a>Aggiungere Windows Server Active Directory (AD) e DNS
+## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Aggiungere servizi di dominio Active Directory (AD DS) e DNS
 
-Ripristino di emergenza in Azure, distribuire Windows Server Active Directory e DNS in uno scenario ibrido in Windows Server Active Directory è distribuito sia in locale e nelle macchine virtuali Azure.
+Per il ripristino di emergenza in Azure, è necessario distribuire Windows Server AD e DNS in uno scenario ibrido in cui Windows Server AD è distribuito sia in locale che nelle macchine virtuali di Azure.
   
-**Figura 3: Configurazione del dominio ibrido Active Directory**
+**Figura 3: configurazione del dominio di Active Directory ibrido**
 
 ![Le macchine virtuali STwo distribuite nella rete virtuale di Azure e la subnet farm di SharePoint sono controller di dominio di replica e server DNS](media/AZarch-HyADdomainConfig.png)
   
-In questo diagramma si basa sulle diagrammi precedenti mediante l'aggiunta di due macchine virtuali di Windows Server Active Directory e DNS subnet. Le macchine virtuali sono controller di dominio di replica e i server DNS. Si tratta di un'estensione dell'ambiente Windows Server Active Directory locale. 
+Questo diagramma si basa sui diagrammi precedenti aggiungendo due macchine virtuali a un Windows Server AD e a una subnet DNS. Queste macchine virtuali sono controller di dominio di replica e server DNS. Si tratta di un'estensione dell'ambiente Windows Server AD locale. 
   
-Nella tabella seguente vengono fornite indicazioni di configurazione per le macchine virtuali di Azure. Utilizzare questi come punto di partenza per la progettazione al proprio ambiente, anche per un dominio dedicato in cui l'ambiente Azure non comunica con l'ambiente locale.
+Nella tabella seguente vengono forniti suggerimenti per la configurazione di queste macchine virtuali in Azure. Utilizzarli come punto di partenza per la progettazione di un ambiente personalizzato, anche per un dominio dedicato in cui l'ambiente di Azure non comunica con l'ambiente locale.
   
 |**Elemento**|**Configurazione**|
 |:-----|:-----|
-|Dimensioni di macchine virtuali di Azure  <br/> |Dimensioni a1 o A2 nel livello Standard  <br/> |
+|Dimensioni delle macchine virtuali in Azure  <br/> |Dimensioni a1 o a2 nel livello standard  <br/> |
 |Sistema operativo  <br/> |Windows Server 2012 R2  <br/> |
-|Ruolo di Active Directory  <br/> |Controller di dominio di dominio Active directory Active Directory designato come server di catalogo globale. Questa configurazione consente di ridurre il traffico in uscita attraverso la connessione tra locali.  <br/> In un ambiente più domini un'elevata quantità di modifica (non scelta comune), configurare i controller di dominio in locale non eseguire la sincronizzazione con i server di catalogo globale in Azure per ridurre il traffico di replica.  <br/> |
-|Ruolo di DNS  <br/> |Installare e configurare il servizio Server DNS nei controller di dominio.  <br/> |
-|Dischi dati  <br/> |Posizionare il database Active Directory, log e SYSVOL su dischi dati aggiuntivi Azure. Non collocare questi del disco di sistema operativo o i dischi temporanei forniti da Azure.  <br/> |
-|Indirizzi IP  <br/> |Utilizzare indirizzi IP statici e configurare la rete virtuale per assegnare questi indirizzi per le macchine virtuali della rete virtuale dopo che sono stati configurati i controller di dominio.  <br/> |
+|Ruolo di Active Directory  <br/> |Controller di dominio AD DS designato come server di catalogo globale. Questa configurazione riduce il traffico in uscita attraverso la connessione cross-premise.  <br/> In un ambiente con più domini con alti tassi di variazione (non comune), configurare i controller di dominio in locale per non sincronizzarsi con i server di catalogo globale in Azure, per ridurre il traffico di replica.  <br/> |
+|Ruolo DNS  <br/> |Installare e configurare il servizio server DNS sui controller di dominio.  <br/> |
+|Dischi di dati  <br/> |Inserire il database, i registri e SYSVOL di Active Directory in ulteriori dischi di dati di Azure. Non posizionarli sul disco del sistema operativo o sui dischi temporanei forniti da Azure.  <br/> |
+|Indirizzi IP  <br/> |Utilizzare gli indirizzi IP statici e configurare la rete virtuale per assegnare tali indirizzi alle macchine virtuali nella rete virtuale dopo la configurazione dei controller di dominio.  <br/> |
    
 > [!IMPORTANT]
-> Prima di distribuire Active Directory in Azure, leggere [le linee guida per la distribuzione di Windows Server Active Directory nelle macchine virtuali Azure](https://go.microsoft.com/fwlink/p/?linkid=392681). Queste consentono di determinare se sono necessari per la soluzione di un'architettura differente o le impostazioni di configurazione diverso. 
+> Prima di distribuire Active Directory in Azure, vedere [linee guida per la distribuzione di Windows Server Active Directory in macchine virtuali di Azure](https://go.microsoft.com/fwlink/p/?linkid=392681). Queste informazioni consentono di determinare se è necessaria un'architettura diversa o impostazioni di configurazione diverse per la soluzione. 
   
 ## <a name="add-the-sharepoint-farm"></a>Aggiungere la farm di SharePoint
 
-Inserire le macchine virtuali nella farm di SharePoint nei livelli di subnet appropriate.
+Posizionare le macchine virtuali della farm di SharePoint in livelli nelle subnet appropriate.
   
-**Figura 4: Posizionamento di macchine virtuali di SharePoint**
+**Figura 4: posizionamento delle macchine virtuali di SharePoint**
 
-![I server del database e i ruoli server di SharePoint aggiunti alla rete virtuale di Azure all'interno della subnet farm di SharePoint](media/AZarch-SPVMsinCloudSer.png)
+![Server di database e ruoli di SharePoint Server aggiunti alla rete virtuale di Azure all'interno della subnet della farm di SharePoint](media/AZarch-SPVMsinCloudSer.png)
   
-In questo diagramma si basa sulle diagrammi precedenti aggiungendo i ruoli di server farm di SharePoint nel loro i rispettivi livelli.
+Questo diagramma si basa sui diagrammi precedenti aggiungendo i ruoli del server della farm di SharePoint nei rispettivi livelli.
   
-- Due macchine virtuali di database che esegue SQL Server creare il livello di database.
+- Due macchine virtuali di database in cui è in esecuzione SQL Server creano il livello di database.
     
-- Due macchine virtuali che eseguono SharePoint Server 2013 per ciascuno dei seguenti livelli: front end server, server di cache distribuita e server back-end.
+- Due macchine virtuali che eseguono SharePoint Server 2013 per ognuno dei seguenti livelli: Front End Server, server cache distribuita e server back-end.
     
-## <a name="design-and-fine-tune-server-roles-for-availability-sets-and-fault-domains"></a>Progettare e ottimizzare i ruoli del server per set di disponibilità e domini di errore
+## <a name="design-and-fine-tune-server-roles-for-availability-sets-and-fault-domains"></a>Progettare e perfezionare i ruoli del server per i set di disponibilità e i domini di errore
 
-Un dominio di errore è un raggruppamento dei componenti hardware in cui istanze del ruolo eseguire. Macchine virtuali all'interno dello stesso dominio di errore può essere aggiornate per l'infrastruttura contemporaneamente. In alternativa, può non riuscire contemporaneamente quanto condividono lo stesso rack. Per evitare il rischio di avere due macchine virtuali nello stesso dominio di errore, è possibile configurare le macchine virtuali come un set di disponibilità, quale viene garantito che ogni macchina virtuale in un dominio diverso. Se tre macchine virtuali sono configurate come un set di disponibilità, Azure garantisce che non più di due delle macchine virtuali si trovano nello stesso dominio di errore.
+Un dominio di errore è un raggruppamento di componenti hardware in cui vengono eseguite le istanze di ruolo. Le macchine virtuali nello stesso dominio di errore possono essere aggiornate dall'infrastruttura di Azure nello stesso momento. In alternativa, possono avere esito negativo contemporaneamente perché condividono lo stesso rack. Per evitare il rischio di avere due macchine virtuali nello stesso dominio di errore, è possibile configurare le macchine virtuali come set di disponibilità, garantendo che ogni macchina virtuale si trovi in un dominio di errore diverso. Se tre macchine virtuali sono configurate come set di disponibilità, Azure garantisce che non più di due delle macchine virtuali si trovano nello stesso dominio di errore.
   
-Quando si progetta l'architettura di Azure per una farm di SharePoint, configurare i ruoli del server identici per far parte di un set di disponibilità. In questo modo che le macchine virtuali sono suddivisi in più domini di errore.
+Quando si progetta l'architettura di Azure per una farm di SharePoint, configurare i ruoli del server identici in modo che facciano parte di un set di disponibilità. Questo garantisce che le macchine virtuali siano distribuite su più domini di errore.
   
-**Nella figura 5: Set di disponibilità utilizzare Azure per garantire la disponibilità elevata per i livelli di farm di SharePoint**
+**Figura 5: utilizzare i set di disponibilità di Azure per garantire la disponibilità elevata per i livelli della farm di SharePoint**
 
 ![Configurazione dei set di disponibilità nell'infrastruttura di Azure per una soluzione di SharePoint 2013](media/AZenv-WinAzureAvailSetsHA.png)
   
-In questo diagramma vengono indicati la configurazione del set di disponibilità all'interno dell'infrastruttura di Azure. Ognuno dei ruoli seguenti condividere un set di disponibilità separati:
+Questo diagramma richiama la configurazione dei set di disponibilità all'interno dell'infrastruttura di Azure. Ognuno dei ruoli seguenti condivide un set di disponibilità separato:
   
-- DNS e active Directory
+- Active Directory e DNS
     
 - Database
     
-- Server back-end
+- Back-end
     
-- Distribuzione della cache
+- Distribuire la cache
     
 - Front-end
     
-Farm di SharePoint potrebbe essere necessario è adeguata ottimizzato piattaforma Azure. Per garantire la disponibilità elevata di tutti i componenti, verificare che il server ruoli configurati in modo identico.
+Potrebbe essere necessario ottimizzare la farm di SharePoint nella piattaforma di Azure. Per garantire la disponibilità elevata di tutti i componenti, verificare che i ruoli del server siano tutti configurati in modo identico.
   
-Ecco un esempio in cui viene illustrata un'architettura di siti Internet standard che soddisfi gli obiettivi di prestazioni e capacità specifiche. In questo esempio è disponibile nelle applicazioni seguenti modello di architettura: [Architetture di ricerca di Internet Sites per SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=261519).
+Di seguito è riportato un esempio in cui viene illustrata un'architettura di siti Internet standard che soddisfa specifici obiettivi di capacità e prestazioni. Questo esempio è incluso nel modello di architettura seguente: [architetture di ricerca di siti Internet per SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=261519).
   
-**Figura 6: Pianificazione di esempio per gli obiettivi di capacità e prestazioni in una farm a tre livelli**
+**Figura 6: pianificazione di esempio per gli obiettivi di capacità e prestazioni in una farm a tre livelli**
 
-![Architettura standard dei siti Internet di SharePoint 2013 con allocazioni dei componenti che soddisfano le esigenze di capacità e prestazioni](media/AZarch-CapPerfexmpArch.png)
+![Architettura dei siti Internet di SharePoint 2013 standard con allocazioni di componenti che soddisfano obiettivi di capacità e prestazioni specifici](media/AZarch-CapPerfexmpArch.png)
   
 In questo diagramma:
   
-- È rappresentata una farm a tre livelli: server web, server applicazioni e server di database.
+- È rappresentata una farm A tre livelli: server Web, server applicazioni e server di database.
     
-- I server tre web devono essere configurati in modo identico con più componenti.
+- I tre server Web sono configurati in modo identico con più componenti.
     
-- Due server di database vengono configurate in modo identico.
+- I due server di database sono configurati in modo identico.
     
-- Le tre applicazioni non sono configurati in modo identico. Questi ruoli del server richiedono ottimizzazione per la disponibilità viene impostata in Azure.
+- I tre server applicazioni non sono configurati in modo identico. Questi ruoli del server richiedono l'ottimizzazione per i set di disponibilità in Azure.
     
-Di seguito vengono illustrate più vicina al livello di server applicazioni.
+Si osserverà più da vicino il livello di server applicazioni.
   
-**Figura 7: Livello di server applicazioni prima di ottimizzazione**
+**Figura 7: livello server applicazioni prima dell'ottimizzazione**
 
-![Esempio del livello server applicazione di SharePoint Server 2013 prima dell'ottimizzazione per i set di disponibilità di Microsoft Azure](media/AZarch-AppServtierBefore.png)
+![Esempio di livello server applicazioni SharePoint Server 2013 prima dell'ottimizzazione dei set di disponibilità di Microsoft Azure](media/AZarch-AppServtierBefore.png)
   
 In questo diagramma:
   
-- Tre server sono inclusi nel livello dell'applicazione.
+- Nel livello applicazione sono inclusi tre server.
     
 - Il primo server include quattro componenti.
     
@@ -199,28 +199,28 @@ In questo diagramma:
     
 - Il terzo server include due componenti.
     
-Determinare il numero di componenti gli obiettivi di prestazioni e capacità per la farm. Per adattare questa architettura per Azure, si verranno replicare i quattro componenti in tutti i tre server. In questo modo aumenta il numero di componenti oltre quanto necessario per le prestazioni e capacità. Lo svantaggio è che questa struttura garantisce la disponibilità elevata di tutti i quattro componenti della piattaforma Azure quando questi tre macchine virtuali vengono assegnate a un set di disponibilità.
+È possibile determinare il numero di componenti in base agli obiettivi di prestazioni e capacità per la farm. Per adattare questa architettura per Azure, è possibile replicare i quattro componenti in tutti e tre i server. Questo aumenta il numero di componenti oltre ciò che è necessario per le prestazioni e la capacità. Il compromesso è che questa struttura garantisce una disponibilità elevata di tutti e quattro i componenti della piattaforma di Azure quando queste tre macchine virtuali vengono assegnate a un set di disponibilità.
   
-**Figura 8: Livello di server applicazioni dopo l'ottimizzazione**
+**Figura 8: livello server applicazioni dopo l'ottimizzazione**
 
-![Esempio del livello server applicazione di SharePoint Server 2013 dopo l'ottimizzazione per i set di disponibilità di Microsoft Azure](media/AZarch-AppServtierAfter.png)
+![Esempio di livello server applicazioni SharePoint Server 2013 dopo l'ottimizzazione dei set di disponibilità di Microsoft Azure](media/AZarch-AppServtierAfter.png)
   
-Figura che mostra tutti i server applicazioni tre configurati in modo identico con gli stessi quattro componenti.
+Questo diagramma consente di visualizzare tutti e tre i server applicazioni configurati in modo identico con gli stessi quattro componenti.
   
-Quando si aggiungono set di disponibilità per i livelli della farm di SharePoint, l'implementazione è completo.
+Quando si aggiungono i set di disponibilità ai livelli della farm di SharePoint, l'implementazione viene completata.
   
-**Figura 9: Completate farm di SharePoint in servizi di infrastruttura**
+**Figura 9: la farm di SharePoint completata nei servizi di infrastruttura di Azure**
 
-![Esempio di farm di SharePoint 2013 nei servizi infrastruttura di Azure con rete virtuale, connettività tra più sedi locali, subnet, macchine virtuali e set di disponibilità](media/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Esempio di farm di SharePoint 2013 nei servizi di infrastruttura di Azure con la rete virtuale, la connettività cross-premise, le subnet, le macchine virtuali e i set di disponibilità](media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
-Figura che mostra la farm di SharePoint implementata in servizi di infrastruttura, con set di disponibilità per fornire i domini di errore per i server in ogni livello.
+Nel diagramma seguente viene illustrata la farm di SharePoint implementata nei servizi di infrastruttura di Azure, con set di disponibilità per fornire i domini di errore per i server in ogni livello.
   
-**Partecipa alla discussione**
+**Partecipare alla discussione**
 
 |**Contattaci**|**Descrizione**|
 |:-----|:-----|
 |**Ottenere la soluzione necessaria** <br/> |Microsoft sta creando documenti contenenti soluzioni che fanno riferimento a numerosi prodotti e servizi. Fornire commenti e suggerimenti sulle soluzioni tra server proposte o richiedere una soluzione specifica inviando un'e-mail all'indirizzo [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Partecipare alla discussione sulle soluzioni** <br/> |Se si è appassionati di soluzioni basate sul cloud, prendere in considerazione l'idea di accedere al Cloud Adoption Advisory Board (CAAB) per connettersi con una community più ampia e vivace di sviluppatori di contenuti Microsoft, professionisti del settore e clienti di tutto il mondo. Per accedervi, diventare un membro dell'[area CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) della Community tecnica Microsoft e inviare una breve e-mail all'indirizzo [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Chiunque può leggere i contenuti correlati alla community nel [blog di CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Tuttavia, i membri CAAB ricevono inviti a webinar privati che descrivono le nuove soluzioni e risorse relative all'adozione del cloud.  <br/> |
+|**Partecipare alla discussione sulle soluzioni** <br/> |If you are passionate about cloud-based solutions, consider joining the Cloud Adoption Advisory Board (CAAB) to connect with a larger, vibrant community of Microsoft content developers, industry professionals, and customers from around the globe. To join, add yourself as a member of the [CAAB (Cloud Adoption Advisory Board) space](https://aka.ms/caab) of the Microsoft Tech Community and send us a quick email at[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Anyone can read community-related content on the [CAAB blog](https://blogs.technet.com/b/solutions_advisory_board/). However, CAAB members get invitations to private webinars that describe new cloud adoption resources and solutions.  <br/> |
 |**Ottenere l'immagine visualizzata** <br/> |Se si desidera una copia modificabile dell'immagine visualizzata in questo articolo, Microsoft si occuperà di inviarla. Inviare la propria richiesta tramite e-mail, includendo l'URL e il titolo dell'immagine, all'indirizzo [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
    
 ## <a name="see-also"></a>Vedere anche

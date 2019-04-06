@@ -3,7 +3,7 @@ title: Protezione dei file sensibili nell’ambiente di sviluppo/test di Office 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Riepilogo: configurare e illustrare in che modo Office 365 Information Rights Management protegge i file sensibili, anche quando vengono pubblicati nella raccolta siti di SharePoint Online errata.'
-ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574070"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037970"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protezione dei file sensibili nell’ambiente di sviluppo/test di Office 365
 
@@ -232,7 +232,7 @@ Per preparare Office 365 per le fasi 3 e 4, abilitare IRM per SharePoint Online.
     
 5. Nella scheda **Interfaccia di amministrazione di SharePoint**, fare clic su **Impostazioni**.
     
-6. Nella pagina **Impostazioni**, nella sezione **Information Rights Management (IRM)**, selezionare **Usa il servizio IRM specificato nella configurazione**, quindi selezionare **Aggiorna impostazioni IRM**.
+6. Nella sezione **Information Rights Management (IRM)** della pagina selezionare **Usa il servizio IRM specificato nella configurazione**e quindi selezionare **Aggiorna impostazioni IRM**.
     
 7. Chiudere la scheda **Interfaccia di amministrazione di SharePoint**.
     
@@ -264,7 +264,7 @@ Innanzitutto, abilitare e configurare IRM per la raccolta documenti della raccol
     
 8. In **Configura diritti di accesso al documento**, selezionare **Consenti ai visualizzatori di stampare** e **Consenti ai visualizzatori di scrivere in una copia del documento scaricato**.
     
-9. In **Imposta protezione gruppo e intervallo credenziali**selezionare **Consenti protezione gruppo** e per **Gruppo predefinito**, digitare **Dirigenti**.
+9. In **Imposta intervallo di protezione e credenziali di gruppo**selezionare **Consenti protezione gruppo. Gruppo predefinito**e quindi digitare **dirigenti**.
     
 10. Fare clic su **OK**.
     
@@ -332,7 +332,7 @@ Un altro modo per visualizzare la protezione IRM consiste nell'esaminare i file 
   
 ## <a name="see-also"></a>Vedere anche
 
-[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente di sviluppo/test della configurazione di base](base-configuration-dev-test-environment.md)
   

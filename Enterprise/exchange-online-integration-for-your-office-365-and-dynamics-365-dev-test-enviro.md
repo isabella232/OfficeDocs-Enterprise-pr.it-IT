@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "Riepilogo: Usare questa Guida del laboratorio di testing per attivare l'integrazione di Dynamics 365 per Exchange Online nella sottoscrizione di valutazione di Office 365."
-ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 47153f9321284d0bb30f59645dfe56ab40cb7982
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574020"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038000"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Integrazione di Exchange Online per il proprio ambiente di sviluppo/test di Office 365 e Dynamics 365
 
@@ -36,7 +36,7 @@ Usare questa Guida del laboratorio di testing per configurare e dimostrare come 
 Seguire le istruzioni riportate in [Ambiente di sviluppo/test di Office 365 e Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md) per creare una versione aziendale leggera o simulata di un ambiente di sviluppo/test di Office 365 e Dynamics 365.
   
 > [!NOTE]
-> La configurazione riportata in questo articolo non richiede l'ambiente di sviluppo/test aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di Windows Server Active Directory (AD). Qui viene fornito come un'opzione in modo da poter sperimentare Office 365 e Dynamics 365 in un ambiente che rappresenta un'organizzazione tipica 
+> La configurazione di questo articolo non richiede l'ambiente di sviluppo/testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Qui viene fornito come un'opzione in modo da poter sperimentare Office 365 e Dynamics 365 in un ambiente che rappresenta un'organizzazione tipica 
   
 ## <a name="phase-2-configure-and-demonstrate-dynamics-365-integration-in-exchange-online"></a>Fase 2: Configurare e dimostrare l0integrazione di Dynamics 365 in Exchange Online
 
