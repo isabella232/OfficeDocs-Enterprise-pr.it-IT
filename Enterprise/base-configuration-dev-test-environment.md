@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Riepilogo: creare una intranet semplificata come ambiente di sviluppo e di testing in Microsoft Azure.'
-ms.openlocfilehash: a38fc04ffe4ffa9a76430cf44543174570d398bc
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: b232372654d6244589bf1f10c3d76d4b7558aa23
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948617"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037980"
 ---
 # <a name="base-configuration-devtest-environment"></a>Ambiente di sviluppo/test della configurazione di base
 
@@ -121,10 +121,8 @@ Accedere al proprio account Azure con il seguente comando.
 Connect-AzAccount
 ```
 
-<!--
 > [!TIP]
-> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) to get a text file that has all the PowerShell commands in this article.
--->
+> Per un file di testo contenente tutti i comandi di PowerShell riportati in questo articolo, fare clic [qui](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d).
 
 Ottenere il nome della sottoscrizione utilizzando il comando seguente.
   
@@ -173,7 +171,7 @@ Questa è la configurazione corrente.
   
 ### <a name="step-2-configure-dc1"></a>Passaggio 2: configurare DC1
 
-In questo passaggio, verrà creata la macchina virtuale DC1 e verrà configurata come controller di dominio per il dominio di Windows Server Active Directory (AD) corp.contoso.com e un server DNS per le macchine virtuali della rete virtuale TestLab.
+In questo passaggio, verrà creata la macchina virtuale DC1 e verrà configurata come controller di dominio per il dominio di Windows Server Active Directory (AD DS) corp.contoso.com e un server DNS per le macchine virtuali della rete virtuale TestLab.
 
 > [!NOTE]
 > Prima di eseguire il blocco di comandi seguenti, verificare che l'area di Azure (posizione) scelta supporti le dimensioni della macchina virtuale di Azure, che per impostazione predefinita sono impostate su Standard_A1. Fare clic [qui](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines) per vedere le informazioni più recenti sulle dimensioni e posizioni della macchina virtuale di Azure.

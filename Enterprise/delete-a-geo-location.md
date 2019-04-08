@@ -3,33 +3,34 @@ title: Eliminare una posizione satellite
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Informazioni su come eliminare una posizione satellite in OneDrive for Business Multi-Geo.
-ms.openlocfilehash: d13de1b10cfc087337d22f9103afc33057bc40c1
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+description: Informazioni su come eliminare una posizione satellite in Office 365 Multi-Geo.
+ms.openlocfilehash: 68152d24c68ad31375cf882340460428424931cb
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849842"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931745"
 ---
-# <a name="delete-a-satellite-location-in-onedrive-for-business-multi-geo"></a>Eliminare una posizione satellite in OneDrive for Business Multi-Geo
+# <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>Eliminare una posizione satellite in Office 365 Multi-Geo
 
-Se non è più necessaria una posizione satellite, è possibile eliminarla dal tenant dall'[interfaccia di amministrazione di OneDrive](https://admin.onedrive.com)
+Se una posizione satellite non è più necessaria, è possibile eliminarla dal tenant dall'interfaccia di amministrazione di SharePoint.
 
 > [!WARNING]
-> Tutti i dati degli utenti nella posizione satellite verranno eliminati definitivamente. Sono inclusi tutti i contenuti di OneDrive for Business, i siti di SharePoint e i siti del gruppo. È necessario eseguire la migrazione di tutti i dati in un'altra posizione satellite o nella posizione centrale prima di eliminare la posizione satellite. Questa azione non può essere annullata.
+> Tutti i dati degli utenti nella posizione satellite verranno eliminati definitivamente. Sono inclusi tutto il contenuto di OneDrive for Business, i siti di SharePoint e le cassette postali di Exchange, tra cui cassette postali di gruppo di Office 365. Prima di eliminare la posizione satellite, è necessario migrare i dati a un'altra posizione satellitare o centrale. Questa azione non può essere annullata.
 
 Solo gli amministratori globali possono eliminare le posizioni satellite.
 
+![Schermata dell’interfaccia di amministrazione multi-geo che mostra l’eliminazione di una posizione geografica nell'interfaccia utente](media/multi-geo-delete-satellite-location.png)
+
 Per eliminare una posizione satellite
 
-1. Aprire l'[interfaccia di amministrazione di OneDrive](https://admin.onedrive.com).
+1. Aprire l'interfaccia di amministrazione di SharePoint
 
 2. Andare alla scheda **Posizioni geografiche**.
 
@@ -40,6 +41,3 @@ Per eliminare una posizione satellite
 5. Confermare l'eliminazione selezionando le caselle di controllo di conferma.
 
 6. Fare clic su **Elimina**.
-
-
-

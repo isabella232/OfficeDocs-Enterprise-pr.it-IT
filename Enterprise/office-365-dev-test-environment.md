@@ -3,7 +3,7 @@ title: Ambiente di sviluppo/test di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/09/2018
+ms.date: 04/02/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Riepilogo: usare la seguente guida al lab test per creare una sottoscrizione di valutazione di Office 365 per valutazione o sviluppo/test.'
-ms.openlocfilehash: 7a7b12038acf914667655decee52993286faab1e
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: a49ba10ab9ddded36f21ca9cc92f0482cbe7a4fb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574000"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038031"
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365
 
@@ -132,11 +132,9 @@ Questa configurazione è costituita da:
     
 ## <a name="phase-3-configure-your-office-365-trial-subscription"></a>Fase 3: configurazione di una sottoscrizione di valutazione di Office 365
 
-In questa fase, configurare la sottoscrizione a Office 365 con altri utenti e i siti del team di SharePoint Online.
+In questa fase, configurare la sottoscrizione a Office 365 con altri utenti e i assegnare loro le licenze di Office 365 E5.
   
-Innanzitutto, aggiungere quattro nuovi utenti e assegnare loro le licenze E5.
-  
-Utilizzare le istruzioni fornite in [Connettersi a Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) per installare i moduli di PowerShell e connettersi alla nuova sottoscrizione di Office 365 da:
+Seguire le istruzioni in [Connettersi a Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) per connettersi all'abbonamento a Office 365 con Azure Active Directory PowerShell per il modulo grafico da:
   
 - Dal computer (per l'ambiente di sviluppo/test di Office 365 leggero).
     
@@ -144,50 +142,45 @@ Utilizzare le istruzioni fornite in [Connettersi a Office 365 PowerShell](https:
     
  Nella finestra di dialogo Richiesta credenziali di Windows PowerShell, digitare il nome dell'amministratore globale Office 365 (ad esempio: jdoe@contosotoycompany.onmicrosoft.com) e la password.
   
-Immettere il nome dell'organizzazione (ad esempio: contosotoycompany), il prefisso internazionale a due caratteri e quindi eseguire i comandi seguenti dal prompt Modulo Microsoft Azure Active Directory per Windows PowerShell:
-  
+Immettere il nome dell'organizzazione (ad esempio: contosotoycompany), il prefisso internazionale a due caratteri, una password comune di account e quindi eseguire i comandi seguenti dal prompt di PowerShell:
+
 ```
 $orgName="<organization name>"
 $loc="<two-character country code, such as US>"
-$licAssignment= $orgName + ":ENTERPRISEPREMIUM"
-$userName= "user2@" + $orgName + ".onmicrosoft.com"
-New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
+$commonPW="<common user account password>"
+$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+$PasswordProfile.Password=$commonPW
+
+$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+
+$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+
+$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
+
 <!--
 > [!TIP]
 > Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) to get a text file that has all the PowerShell commands in this article.
 -->
 
-Dalla visualizzazione del comando **New-MsolUser**, prendere nota della password generata per l'account User 2 e conservarla in una posizione sicura.
-  
-Eseguire i comandi seguenti dal prompt Modulo Microsoft Azure Active Directory per Windows PowerShell:
-  
-```
-$userName= "user3@" + $orgName + ".onmicrosoft.com"
-New-MsolUser -DisplayName "User 3" -FirstName User -LastName 3 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
-```
-
-Dalla visualizzazione del comando **New-MsolUser**, prendere nota della password generata per l'account User 3 e conservarla in una posizione sicura.
-  
-Eseguire i comandi seguenti dal prompt Modulo Microsoft Azure Active Directory per Windows PowerShell:
-  
-```
-$userName= "user4@" + $orgName + ".onmicrosoft.com"
-New-MsolUser -DisplayName "User 4" -FirstName User -LastName 4 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
-```
-
-Dalla visualizzazione del comando **New-MsolUser**, prendere nota della password generata per l'account User 4 e conservarla in una posizione sicura.
-  
-Eseguire i comandi seguenti dal prompt Modulo Microsoft Azure Active Directory per Windows PowerShell:
-  
-```
-$userName= "user5@" + $orgName + ".onmicrosoft.com"
-New-MsolUser -DisplayName "User 5" -FirstName User -LastName 5 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
-```
-
-Dalla visualizzazione del comando **New-MsolUser**, prendere nota della password generata per l'account User 5 e conservarla in una posizione sicura.
-  
-Successivamente, creare tre nuovi siti del team di SharePoint Online per i reparti Vendite, Produzione e Supporto tecnico.
   
 ## <a name="phase-4-create-three-new-sharepoint-online-team-sites-optional"></a>Fase 4: Creare tre nuovi siti del team di SharePoint Online (facoltativo)
 
@@ -239,7 +232,7 @@ Registrare questi valori per utilizzarli o distribuire altre guide al lab test n
 - Per elencare gli account di User 2, User 3, User 4, e User 5, eseguire i comandi seguenti dal modulo di Microsoft Azure Active Directory per il prompt di Windows PowerShell:
     
   ```
-  Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName
+  Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
   ```
 
     Registrare i nomi degli account qui:

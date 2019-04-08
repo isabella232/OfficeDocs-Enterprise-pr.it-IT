@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su come spostare un sito OneDrive in un'altra posizione geografica.
-ms.openlocfilehash: 13210d354c45c2d4927ac3de34512bc75a09c14b
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 1197d23bdf94fe38ba24138ddde7c1f1fb92b41f
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458326"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931825"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Spostare un sito OneDrive in un'altra posizione geografica 
 
@@ -59,7 +59,7 @@ Ad esempio: per spostare OneDrive dell'utente "Matt@contosoenergy.onmicrosoft.co
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations-image1.png)
+![Screenshot della finestra di PowerShell con il cmdlet connect-sposervice](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>Convalida dell'ambiente
 
@@ -71,7 +71,7 @@ Per assicurarsi che tutte le posizioni geografiche siano compatibili, eseguire:
 
 Verrà visualizzato un elenco delle posizioni geografiche e, se lo spostamento del contenuto tra tali posizioni è consentito, verrà visualizzata la dicitura "Compatibile". Se il comando restituisce "Incompatibile", provare a ripetere la convalida dello stato in un secondo momento.
 
-Se OneDrive è sottoposto a blocco a fini giudiziari o se contiene un sito secondario, non può essere spostato. È possibile utilizzare il cmdlet Start-SPOUserAndContentMove con il parametro -ValidationOnly per verificare che OneDrive possa essere spostato:
+Se un OneDrive contiene un sito secondario, ad esempio, non può essere spostato. È possibile utilizzare il cmdlet Start-SPOUserAndContentMove con il parametro -ValidationOnly per verificare che OneDrive possa essere spostato:
 
 `Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly`
 
@@ -96,7 +96,7 @@ Ad esempio, per spostare OneDrive di matt@contosoenergy.onmicrosoft.com da EUR a
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations-image2.png)
+![Screenshot della finestra di PowerShell con il cmdlet Start-SPOUserAndContentMove](media/move-onedrive-between-geo-locations-image2.png)
 
 Per pianificare lo spostamento geografica in un secondo momento, utilizzare uno dei parametri seguenti:
 
