@@ -3,29 +3,30 @@ title: Aggiungere un dominio a un tenancy client con Windows PowerShell per i pa
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Riepilogo: utilizzare Windows PowerShell per Office 365 per aggiungere un nome di dominio alternativo al tenant di un cliente esistente.'
-ms.openlocfilehash: f99039ffa9f921b33829767a08f33db500a5d2ed
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 85cddd28b72a3b03e9157a28c3fd1dc101a167e0
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "17114695"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001779"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Aggiungere un dominio a un tenancy client con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
  **Sintesi:** Utilizzare Windows PowerShell per Office 365 per aggiungere un nome di dominio alternativo al tenant di un cliente esistente.
   
-È possibile creare e associare nuovi domini al tenancy del cliente con Windows PowerShell per Office 365 in modo più rapido rispetto a interfaccia di amministrazione di Office 365.
+È possibile creare e associare nuovi domini al tenancy del cliente con Windows PowerShell per Office 365 in modo più rapido rispetto all’interfaccia di amministrazione di Microsoft 365.
   
-I partner di autorizzazione accesso delegato (DAP, Delegated Access Permission) sono partner di Syndication e Cloud Solution Provider (CSP). Di solito, rappresentano fornitori di rete o telecomunicazioni di altre aziende. Consentono di raggruppare le sottoscrizioni Office 365 nelle offerte di servizio per i clienti. Quando vendono una sottoscrizione a Office 365, ricevono automaticamente le autorizzazioni Amministra per conto terzi per itenancy cliente, al fine di gestire ed eseguire segnalazioni per tutti i tenancy dei clienti.
+I partner di autorizzazione accesso delegato (DAP, Delegated Access Permission) sono partner di Syndication e Cloud Solution Provider (CSP). Di solito, rappresentano fornitori di rete o telecomunicazioni di altre aziende. Consentono di raggruppare le sottoscrizioni Office 365 nelle offerte di servizio per i clienti. Quando vendono un abbonamento a Office 365, vengono loro concesse automaticamente le autorizzazioni Amministra per conto terzi ai tenancy dei clienti in modo che possano amministrare ed effettuare report sui tenancy dei clienti.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 UNRESOLVED_TOKEN_VAL(GENL_O365_PowerShell_BeforeYouBegin)
@@ -76,7 +77,7 @@ Si otterrà quanto segue:
   
 ### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a>Aggiungere un record TXT per l'area DNS registrata pubblicamente
 
-Prima che Office 365 inizi ad accettare il traffico diretto al nome di dominio registrato pubblicamente, è necessario provare di essere proprietari e di disporre delle autorizzazioni di amministratore per il dominio.A tale scopo, creare un record TXT nel dominio. Un record TXT non agisce in alcun modo nel dominio e può essere eliminato dopo aver dimostrato di essere proprietari del dominio. Per creare record TXT, seguire le procedure illustrate in [Creare record DNS presso un provider di hosting DNS per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532542). Se queste procedure non funzionano, è necessario trovare quelle adatte al proprio registrar di DNS.
+Prima che Office 365 inizi ad accettare il traffico diretto al nome di dominio registrato pubblicamente, è necessario dimostrare di essere il proprietario e disporre delle autorizzazioni di amministratore per il dominio. È possibile dimostrare di essere il proprietario del dominio creando un record TXT nel dominio. Un record TXT non produce alcun effetto sul dominio e può essere eliminato dopo aver confermato la proprietà del dominio. Per creare il record TXT, seguire le procedure descritte in [Creare record DNS presso un provider di hosting DNS per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532542). Se queste procedure non funzionano, è necessario trovare quelle adatte al proprio registrar DNS.
   
 Confermare la creazione del record TXT tramite nslookup. Seguire questa sintassi:
   

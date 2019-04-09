@@ -1,9 +1,8 @@
 ---
-title: Configurare la ricerca per OneDrive for Business Multi-Geo
+title: Configurare la ricerca di Office 365 Multi-Geo
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,18 +10,16 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su come configurare la ricerca in un ambiente multi-geografico.
-ms.openlocfilehash: c56e7d310dd6ece53fdea36df4ad94e2ebbc64cb
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "26705460"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931835"
 ---
-# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurare la ricerca per OneDrive for Business Multi-Geo
+# <a name="configure-search-for-office-365-multi-geo"></a>Configurare la ricerca di Office 365 Multi-Geo
 
-In un ambiente OneDrive for Business Multi-Geo, un'organizzazione può avere un tenant di Office 365, ma conservare il proprio contenuto di OneDrive in posizioni geografiche diverse di cui una funge da posizione centrale e le altre sono posizioni satellite.
-
-Ogni posizione geografica ha un proprio indice di ricerca e un Centro ricerche. Quando un utente effettua una ricerca, la query viene inviata a tutti gli indici e i risultati restituiti vengono aggregati.
+In un ambiente multi-geo, ogni posizione geografica ha un proprio indice di ricerca e un Centro ricerche. Quando un utente effettua una ricerca, la query viene inviata a tutti gli indici e i risultati restituiti vengono aggregati.
 
 Ad esempio, un utente in una posizione geografica può cercare contenuto archiviato in un'altra posizione geografica o il contenuto di un sito di SharePoint che è limitato a una posizione geografica diversa. Se l'utente ha accesso a tale contenuto, la ricerca mostrerà il risultato.
 
@@ -48,7 +45,7 @@ Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano
 
 Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano in Delve ottengono risultati da tutte le posizioni geografiche.
 
-Il feed e la scheda profilo di Delve mostrano solo le anteprime dei file archiviati nella posizione **centrale**. Per i file archiviati in una posizione satellite, verrà invece visualizzata l'icona del tipo di file.
+Il feed di Delve e la scheda profilo mostra solo le anteprime dei file archiviati in una posizione centrale. Per i file archiviati in una località, verrà visualizzata l'icona del tipo di file.
 
 ### <a name="the-sharepoint-home-page"></a>Home page di SharePoint
 
@@ -69,7 +66,7 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Funzionalità</strong></th>
+<th align="left"><strong>Caratteristica</strong></th>
 <th align="left"><strong>Funzionamento</strong></th>
 <th align="left"><strong>Soluzione</strong></th>
 </tr>
@@ -77,13 +74,13 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 <tbody>
 <tr class="odd">
 <td align="left">Risultati evidenziati</td>
-<td align="left">È possibile creare regole di query con risultati evidenziati a diversi livelli: per l'intero tenant, per una raccolta siti o per un sito. In un ambiente multi-geografico, definire risultati evidenziati a livello di <strong>tenant</strong> per evidenziare i risultati dei Centri ricerche in <strong>tutte</strong> le posizioni geografiche. Se si desidera evidenziare <strong>solo</strong> i risultati nel Centro ricerche che si trova nella posizione geografica della raccolta siti o del sito, definire i risultati a livello di <strong>raccolta siti</strong> o <strong>sito</strong>.</td>
+<td align="left">È possibile creare regole di query con risultati alzati di livello a diversi livelli: per l'intero tenant, per una raccolta siti o per un sito. In un ambiente multi-geo definire i risultati alzati di livello a livello di tenant, per promuovere i risultati ai Centri Ricerca in tutte le località geografiche. Se si desidera soltanto convertire i risultati nel Centro ricerche che si trova nella posizione geografica della raccolta siti o siti, definire i risultati alzati di livello nella raccolta siti o a livello del sito. Questi risultati non sono alzati di livello in altre posizioni geografiche.</td>
 <td align="left">Se non sono necessari diversi risultati evidenziati per ogni posizione geografica, ad esempio regole diverse per il viaggio, è consigliabile definire i risultati evidenziati a livello di tenant.</td>
 </tr>
 <tr class="even">
 <td align="left">Criteri di affinamento ricerca</td>
 <td align="left">La ricerca restituisce i criteri di affinamento di tutte le posizioni geografiche di un tenant e poi li aggrega. L'aggregazione è approssimativa e viene eseguita secondo il principio "best effort", quindi i conteggi dei criteri di affinamento potrebbero non essere precisi. Per la maggior parte degli scenari di ricerca questo livello di approssimazione è sufficiente. </td>
-<td align="left">Per le applicazioni basate sulla ricerca che richiedono criteri di affinamento precisi, è necessario inviare la query separatamente a ogni posizione geografica senza estenderla all'intero ambiente multi-geografico.</td>
+<td align="left">Per le applicazioni basate sulla ricerca che richiedono criteri di affinamento precisi, è necessario inviare la query separatamente a ogni posizione geografica.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -93,11 +90,16 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 <tr class="even">
 <td align="left">ID documenti</td>
 <td align="left">Se si decide di sviluppare un'applicazione basata sulla ricerca che usa gli ID dei documenti, occorre tenere presente che tali ID non sono univoci nell'intero ambiente multi-geografico, ma solo all'interno di una singola posizione geografica.</td>
-<td align="left">Abbiamo aggiunto una colonna che identifica la posizione geografica. Usare questa colonna per ottenere dati univoci. La colonna è denominata "GeoLocationSource".</td>
+<td align="left">È stata aggiunta una colonna che identifica la posizione geografica. Usare questa colonna per ottenere l'univocità. Questa colonna è denominata "GeoLocationSource".</td>
 </tr>
 <tr class="odd">
 <td align="left">Numero di risultati</td>
 <td align="left">La pagina dei risultati della ricerca mostra i risultati combinati ottenuti dalle posizioni geografiche, ma non è possibile includere più di 500 risultati.</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Ricerca ibrida</td>
+<td align="left">In un ambiente SharePoint ibrido con <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">Ricerca ibrida nel cloud</a>, il contenuto locale viene aggiunto all'indice di Office 365 della posizione centrale.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -128,7 +130,7 @@ Alcune delle funzionalità di ricerca già note non sono supportate in un ambien
 
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Come funziona la ricerca in un ambiente multi-geografico?
 
-**Tutti** i client di ricerca usano le API REST del servizio di ricerca di SharePoint per interagire con gli indici di ricerca.
+Tutti i client di ricerca usano le API REST del servizio di ricerca di SharePoint per interagire con gli indici di ricerca.
 
 <img src="media/configure-search-for-multi-geo-image1-1.png" />
 
@@ -139,7 +141,7 @@ Alcune delle funzionalità di ricerca già note non sono supportate in un ambien
 
 
 
-<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Si tenga presente che aggreghiamo i risultati della ricerca solo dopo aver ricevuto i risultati di tutte le posizioni geografiche. Questo significa che le ricerche multi-geografiche presentano ulteriore latenza rispetto alle ricerche effettuate in un ambiente con una sola posizione geografica.
+<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Si noti che Microsoft non unisce i risultati della ricerca fino a quando non si ricevono i risultati da tutte le località geografiche. Questo significa le ricerche multi-geo hanno una latenza aggiuntiva rispetto alle ricerche in un ambiente con una sola posizione geografica.
 
 <span id="_Set_up_a_1" class="anchor"><span id="_Ref505252370" class="anchor"></span></span>
 ## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a>Fare in modo che un Centro ricerche mostri i risultati di tutte le posizioni geografiche
@@ -153,7 +155,7 @@ Ogni Centro ricerche dispone di diverse verticali ed è necessario configurarle 
 3.  Selezionare la verticale da configurare, fare clic sull'icona a forma di ingranaggio **Impostazioni** in alto a destra, quindi fare clic su **Modifica pagina**. La pagina dei risultati della ricerca si apre in modalità di modifica.
 
      ![](media/configure-search-for-multi-geo-image2.png)
-1.  Nella web part Risultati della ricerca, spostare il puntatore sull'angolo in alto a destra della web part, fare clic sulla freccia, quindi fare clic su **Modifica web part** nel menu. Si apre il riquadro degli strumenti della web part Risultati della ricerca sotto la barra multifunzione in alto a destra nella pagina. ![](media/configure-search-for-multi-geo-image3.png)
+1.  Nella web part Risultati della ricerca, spostare il puntatore sull'angolo in alto a destra della web part, fare clic sulla freccia, quindi fare clic su **Modifica web part** nel menu.   Si apre il riquadro degli strumenti della web part Risultati della ricerca sotto la barra multifunzione in alto a destra nella pagina. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  Nella riquadro degli strumenti della web part, nella sezione **Impostazioni**, in **Impostazioni controllo risultati**, selezionare **Mostra risultati Multi-Geo** affinché la web part Risultati della ricerca mostri i risultati di tutte le posizioni geografiche.
 
@@ -168,16 +170,17 @@ Ogni Centro ricerche dispone di diverse verticali ed è necessario configurarle 
 
 Per ottenere i risultati di tutte o alcune posizioni geografiche nelle applicazioni di ricerca personalizzate, è necessario specificare i parametri di query con la richiesta all'API REST del servizio di ricerca di SharePoint. A seconda dei parametri della query, la query viene inviata a tutte le posizioni geografiche o solo ad alcune. Ad esempio, se serve inviare la query solo a un sottoinsieme di posizioni geografiche per trovare informazioni pertinenti, è possibile estendere la query solo ad esse. Se la richiesta ha esito positivo, l'API REST del servizio di ricerca di SharePoint restituisce i dati della risposta.
 
-#### <a name="requirement"></a>Requisito #### 
+**Requisito**
+
 Per ogni posizione geografica è necessario verificare che a tutti gli utenti dell'organizzazione sia stato concesso il livello di autorizzazioni **Lettura** per il sito Web radice, ad esempio contoso**APAC**.sharepoint.com/ e contoso**EU**.sharepoint.com/. [Informazioni sulle autorizzazioni](https://support.office.com/it-IT/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parametri di query
 
-EnableMultiGeoSearch - Questo è un valore booleano che specifica se la query deve essere estesa agli indici di altre posizioni geografiche del tenant multi-geografico. Impostarlo su **true** per estendere la query; su **false** per non estendere la query. Il valore predefinito è **false**. Se non si include questo parametro, la query **non** viene estesa ad altre posizioni geografiche. Se si usa il parametro in un ambiente non multi-geografico, il parametro viene ignorato.
+EnableMultiGeoSearch - questo è un valore Booleano che specifica se la query debba essere estesa agli indici di altre posizioni geografiche del tenant multi-geo. Impostare su**Vero** per estendere la query. **Falso** per non estendere la query. Il valore predefinito è **False**. Se non si include questo parametro, la query non viene estesa a diverse posizioni geografiche. Se si usa questo parametro in un ambiente non multi-geografica, il parametro viene ignorato.
 
-ClientType - Si tratta di una stringa. Inserire un nome client univoco per ogni applicazione di ricerca. Se non si include questo parametro, la query **non** viene estesa ad altre posizioni geografiche.
+TipoClient - Questa è una stringa. Immettere un nome univoco di client per ogni applicazione di ricerca. Se non si include questo parametro, la query non viene estesa a diverse posizioni geografiche.
 
-MultiGeoSearchConfiguration - Si tratta di un elenco opzionale delle posizioni geografiche nel tenant multi-geografico a cui estendere la query quando **EnableMultiGeoSearch** è **true**. Se non si include questo parametro o lo si lascia vuoto, la query non viene estesa a tutte le posizioni geografiche. Per ogni posizione geografica, inserire i seguenti elementi, in formato JSON:
+MultiGeoSearchConfiguration - Questo è un elenco facoltativo di quali posizioni geografiche devono essere estese alla query quando **EnableMultiGeoSearch** è impostato su **Vero**. Se non si include questo parametro o lo si lascia vuoto, la query non viene estesa a diverse posizioni geografiche. Per ogni posizione geografica, immettere quanto segue, in formato JSON:
 
 <table>
 <thead>
@@ -259,7 +262,7 @@ https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='Enable
 https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
 
 > [!NOTE]
-> I due punti e le virgole nell'elenco delle posizioni geografiche per la proprietà di MultiGeoSearchConfiguration sono precedute da una **barra rovesciata**, poiché le richieste GET usano i due punti per separare le proprietà e le virgole per separare gli argomenti di proprietà. Senza la barra rovesciata come carattere di escape, la proprietà MultiGeoSearchConfiguration viene interpretata in modo errato.
+> Virgole e due punti nell'elenco di località geografiche per la proprietà MultiGeoSearchConfiguration sono preceduti dalla **barra rovesciata**. Questo perché le richieste GET usano i due punti per separare le proprietà e le virgole per separare gli argomenti delle proprietà. Senza la barra rovesciata come carattere di escape, la proprietà MultiGeoSearchConfiguration viene interpretata in modo errato.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Esempio di richiesta POST estesa a **tutte** le posizioni geografiche
 
