@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Riepilogo: configurare e illustrare in che modo Office 365 Information Rights Management protegge i file sensibili, anche quando vengono pubblicati nella raccolta siti di SharePoint Online errata.'
-ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037970"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741302"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protezione dei file sensibili nell’ambiente di sviluppo/test di Office 365
 
@@ -32,7 +32,7 @@ Information Rights Management (IRM) in Office 365 è un set di funzionalità per
 Con le istruzioni disponibili in questo articolo, è possibile abilitare e testare Information Rights Management in Office 365 per i file contenenti possibili informazioni riservate nella sottoscrizione di valutazione di Office 365.
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui](http://aka.ms/catlgstack) per visualizzare una mappa di tutti gli articoli della guida del laboratorio di testing di Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/testing di Office 365
 
@@ -41,7 +41,7 @@ Se si desidera semplicemente testare la protezione dei file sensibili con i requ
 Se si desidera testare la protezione dei file sensibili in un'azienda simulata, seguire le istruzioni in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Il test della protezione dei file sensibili non richiede l'ambiente di sviluppo/testing aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione directory per una foresta di Windows Server AD. Questo test viene fornito qui come opzione in modo per consentire di testare la protezione dei file sensibili e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
+> La verifica della protezione dei file sensibili non richiede l'ambiente di sviluppo/testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Questo test viene fornito qui come opzione in modo per consentire di testare la protezione dei file sensibili e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
   
 ## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>Fase 2: dimostrare in che modo i documenti dei siti protetti possono andare persi
 
@@ -55,7 +55,7 @@ Utilizzare le istruzioni in [Connect to office 365 PowerShell](https://technet.m
     
 - Dalla macchina virtuale CLIENT1 (per l'ambiente di sviluppo/test di Office 365 aziendale simulato).
     
-Nella finestra di dialogo **Richiesta credenziali di Windows PowerShell**, digitare il nome dell'amministratore globale Office 365 (ad esempio: jdoe@contosotoycompany.onmicrosoft.com) e la password della sottoscrizione di valutazione di Office 365.
+Nella finestra di dialogo **richiesta credenziali di Windows PowerShell** , digitare il nome dell'amministratore globale di Office 365 jdoe@contosotoycompany.onmicrosoft.com(esempio:) e la password della sottoscrizione di valutazione di Office 365.
   
 Immettere il nome dell'organizzazione (ad esempio: contosotoycompany) e il prefisso internazionale a due caratteri, quindi eseguire i comandi seguenti dal prompt Modulo Microsoft Azure Active Directory per Windows PowerShell:
   

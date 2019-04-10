@@ -14,76 +14,76 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Riepilogo: Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.'
-ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327348"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741432"
 ---
 # <a name="hybrid-cloud-overview"></a>Panoramica del cloud ibrido
 
  **Riepilogo:** Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.
   
-Cloud ibrida utilizza le risorse di archiviazione o compute nella rete locale e nel cloud. Cloud ibrida è possibile utilizzare un percorso di migrazione nel cloud le esigenze aziendali e il relativo IT o integrare le piattaforme cloud e i servizi esistenti locali dell'infrastruttura come parte della strategia IT generale.
+Il cloud ibrido utilizza risorse di calcolo o di archiviazione sulla rete locale e nel cloud. È possibile utilizzare il cloud ibrido come percorso per eseguire la migrazione dell'azienda e il relativo fabbisogno nel cloud o integrare piattaforme e servizi cloud con l'infrastruttura locale esistente nell'ambito della strategia IT complessiva.
   
-## <a name="microsoft-hybrid-cloud"></a>Cloud ibrida Microsoft
+## <a name="microsoft-hybrid-cloud"></a>Cloud ibrido Microsoft
 
-Cloud ibrida Microsoft è un insieme di scenari aziendali in cui combinare piattaforma Microsoft cloud con un componente locale, ad esempio: 
+Microsoft Hybrid Cloud è una serie di scenari aziendali che combinano una piattaforma Microsoft Cloud con un componente locale, ad esempio: 
   
-- Ottenere risultati di ricerca di contenuti in una farm di SharePoint locale e in SharePoint Online in Office 365.
+- Ottenere risultati di ricerca dal contenuto sia in una farm di SharePoint locale sia in SharePoint online in Office 365.
     
-- App per dispositivi mobili in esecuzione in Azure che esegue la query su un archivio dati locale.
+- Un'app per dispositivi mobili in esecuzione in Azure che esegue una query in un archivio dati locale.
     
-- Una rete intranet IT carico di lavoro in esecuzione su macchine virtuali di Azure.
+- Un carico di lavoro IT Intranet in esecuzione su macchine virtuali di Azure.
     
-**Figura 1: Componenti di Microsoft cloud ibrida**
+**Figura 1: componenti del cloud ibrido Microsoft**
 
 ![Componenti del cloud ibrido Microsoft](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
-Nella figura 1 vengono illustrati i componenti del cloud ibrida Microsoft, da una rete locale per il set di Office 365, piattaforma Azure come servizio PaaS () e l'infrastruttura di Azure come un servizio (IaaS) servizi disponibili tramite Internet o una connessione ExpressRoute.
+Nella figura 1 vengono illustrati i componenti del cloud ibrido Microsoft, da una rete locale all'insieme dei servizi di Office 365, Azure Platform as a Service (PaaS) e Azure Infrastructure as a Service (IaaS) disponibili su Internet o in una connessione di ExpressRoute.
   
-Poiché Microsoft ha la soluzione cloud più completa sul mercato, incluso il Software come servizio (SaaS), PaaS e IaaS, è possibile:
+Poiché Microsoft ha la soluzione cloud più completa sul mercato, tra cui il software come servizio (SaaS), PaaS e IaaS, è possibile:
   
-- Sfruttare gli investimenti locali esistenti quando si esegue la migrazione dei carichi di lavoro e le applicazioni nel cloud.
+- Sfruttare gli investimenti locali esistenti durante la migrazione dei carichi di lavoro e delle applicazioni nel cloud.
     
-- Incorporare scenari basati su cloud ibrida i piani IT a lungo termine, ad esempio, quando le regole o i criteri non consentono lo spostamento dei carichi di lavoro o dati specifici nel cloud.
+- Includere scenari di cloud ibridi nei piani IT a lungo termine, ad esempio quando le normative o i criteri non consentono lo spostamento di dati o carichi di lavoro specifici nel cloud.
     
-- Creare uno scenario ibrido aggiuntive che includono più servizi cloud Microsoft e piattaforme.
+- Creare ulteriori scenari ibridi che includono più servizi cloud e piattaforme Microsoft.
     
-Scenari per il cloud ibrida con servizi cloud Microsoft variano con la piattaforma.
+Gli scenari per il cloud ibrido con i servizi cloud Microsoft variano a seconda della piattaforma.
   
 - SaaS
     
-    Servizi Microsoft SaaS includono Office 365, Microsoft Intune e Microsoft Dynamics 365. Scenari basati su cloud ibrida con Microsoft SaaS combinano questi servizi con applicazioni o servizi locali. Ad esempio, Exchange Online in esecuzione in Office 365 può essere integrata con Skype per 2019 Business che viene distribuito in locale.
+    I servizi SaaS di Microsoft includono Office 365, Microsoft Intune e Microsoft Dynamics 365. Gli scenari con cloud ibrido con Microsoft SaaS uniscono questi servizi a servizi o applicazioni locali. Ad esempio, Exchange online in esecuzione in Office 365 può essere integrato con Skype for business 2019 distribuito in locale.
     
 - PaaS di Azure
     
-    I servizi Microsoft Azure PaaS consentono di creare applicazioni basate su cloud. Scenari basati su cloud ibrida con i servizi di Azure PaaS combinano un'app PaaS Azure con risorse locali o applicazioni. Ad esempio, un'app di Azure PaaS potrebbe in modo sicuro interrogare un archivio dati locale per le informazioni necessarie per visualizzare agli utenti di app per dispositivi mobili.
+    I servizi di PaaS di Microsoft Azure consentono di creare applicazioni basate su cloud. Gli scenari con cloud ibrido con i servizi di Azure PaaS uniscono un'app PaaS di Azure con risorse o applicazioni locali. Ad esempio, un'app di Azure PaaS potrebbe eseguire una query sicura su un archivio dati locale per ottenere informazioni necessarie per la visualizzazione agli utenti di app per dispositivi mobili.
     
 - IaaS di Azure
     
-    Servizi di Azure IaaS consentono di creare ed eseguire carichi di lavoro basate su server IT nel cloud, anziché nel centro dati in locale. Scenari basati su cloud ibrida con i servizi di Azure IaaS include in genere di un carico di lavoro IT che viene eseguito su macchine virtuali in modo trasparente connesso alla rete locale. Gli utenti locali non si noteranno la differenza.
+    I servizi di IaaS di Azure consentono di creare e gestire carichi di lavoro IT basati su server nel cloud, anziché in un datacenter locale. Gli scenari con cloud ibrido con i servizi di IaaS di Azure in genere sono costituiti da un carico di lavoro IT eseguito su macchine virtuali collegate in modo trasparente alla rete locale. Gli utenti locali non osserveranno la differenza.
     
-## <a name="elements-of-hybrid-cloud"></a>Elementi del cloud ibrida
+## <a name="elements-of-hybrid-cloud"></a>Elementi del cloud ibrido
 
-È necessario considerare gli elementi seguenti durante la pianificazione e l'implementazione di scenari basati su cloud ibrida con Microsoft cloud piattaforme e servizi.
+È necessario tenere conto degli elementi seguenti durante la pianificazione e l'implementazione di scenari basati su cloud ibrido con i servizi e le piattaforme cloud di Microsoft.
   
 - Rete
     
-    La rete per scenari basati su cloud ibrida include la connettività per la piattaforma Microsoft cloud e dei servizi e larghezza di banda sufficiente per essere ad alte prestazioni con carichi di picco. Per ulteriori informazioni, vedere [Microsoft Cloud di rete per architetti Enterprise](microsoft-cloud-networking-for-enterprise-architects.md).
+    La rete per gli scenari di cloud ibrido include la connettività a piattaforme e servizi cloud Microsoft e larghezza di banda sufficiente per essere eseguita in carichi di picco. Per ulteriori informazioni, vedere [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md).
     
 - Identità
     
-    Identità per gli scenari ibridi SaaS e Azure PaaS può includere Azure Active Directory come provider di identità comuni, che possono essere sincronizzati con locale Windows Server Active Directory o federati con Windows Server Active Directory o altri provider di identità. È inoltre possibile estendere l'infrastruttura di identità in locale per Azure IaaS. Per ulteriori informazioni, vedere [Identità Cloud Microsoft per architetti Enterprise](microsoft-cloud-it-architecture-resources.md#identity).
+    Identity for SaaS and Azure PaaS gli scenari ibridi possono includere Azure AD come provider di identità comune, che può essere sincronizzato con i servizi di dominio Active Directory locali (AD DS) o federati con AD DS o con altri provider di identità. È inoltre possibile estendere l'infrastruttura di identità locale a Azure IaaS. Per ulteriori informazioni, vedere [identità cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Sicurezza
     
-    Protezione di scenari basati su cloud ibrida include gestione per le identità, la protezione dei dati, gestione di privilegi amministrativi, la consapevolezza delle minacce e l'implementazione della governance e criteri di sicurezza e protezione. Per ulteriori informazioni, vedere [Microsoft Security Cloud per architetti Enterprise](microsoft-cloud-it-architecture-resources.md#security).
+    La sicurezza per gli scenari di cloud ibridi include la protezione e la gestione delle identità, la protezione dei dati, la gestione dei privilegi amministrativi, la sensibilizzazione alle minacce e l'implementazione di criteri di governance e sicurezza. Per ulteriori informazioni, vedere [sicurezza cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#security).
     
 - Gestione
     
-    Gestione di scenari basati su cloud ibrida include la possibilità di gestire le impostazioni, dati, account, criteri e le autorizzazioni e per monitorare lo stato in corso degli elementi dello scenario e le prestazioni. È inoltre possibile utilizzare il set di strumenti stesso, ad esempio Systems Management Server per la gestione delle macchine virtuali di Azure IaaS.
+    La gestione degli scenari di cloud ibridi include la possibilità di gestire le impostazioni, i dati, gli account, i criteri e le autorizzazioni e di monitorare l'integrità continua degli elementi dello scenario e le relative prestazioni. È inoltre possibile utilizzare lo stesso set di strumenti, ad esempio Systems Management Server, per la gestione delle macchine virtuali in Azure IaaS.
     
 ## <a name="see-also"></a>Vedere anche
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "Riepilogo: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno smartphone in un ambiente di sviluppo e testing di Office 365."
-ms.openlocfilehash: 13dc02cc23d12f6eb6e2898d34271685badd9f5a
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 091b82132b407cfd25b18c3ba8e424e29df58910
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573980"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741222"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365
 
@@ -38,7 +38,7 @@ Le fasi di configurazione dell’autenticazione a più fattori per Office 365 in
 2. Abilitare e testare l'autenticazione a più fattori per l'account User 2.
     
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui](http://aka.ms/catlgstack) per visualizzare una mappa di tutti gli articoli della guida del laboratorio di testing di Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365 aziendale leggero o simulato
 
@@ -47,7 +47,7 @@ Se si desidera semplicemente testare l'autenticazione a più fattori con i requi
 Se si desidera testare l'autenticazione a più fattori in un'azienda simulata, seguire le istruzioni in [DirSync per l'ambiente di sviluppo/test di Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Il test dell’autenticazione a più fattori non richiede l'ambiente di sviluppo/testing aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione directory per una foresta di Windows Server AD. Questo test viene fornito qui come opzione in modo per consentire di testare l’autenticazione a più fattori e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
+> Se si verifica l'autenticazione a più fattori, non è necessario l'ambiente di sviluppo/testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Questo test viene fornito qui come opzione in modo per consentire di testare l’autenticazione a più fattori e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>Fase 2: Abilitare e testare l'autenticazione a più fattori per l'account User 2
 
@@ -101,7 +101,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
 ## <a name="see-also"></a>Vedere anche
 
-[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente di sviluppo/test della configurazione di base](base-configuration-dev-test-environment.md)
   

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "Riepilogo: configurare e dimostrare la classificazione e l'etichettatura dei dati tramite il client Azure Information Protection (AIP) nel proprio ambiente di sviluppo e testing di Office 365."
-ms.openlocfilehash: ff8533cc6f1a5a34335f6ea469f7a8ec0a6be4da
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 66bdbb74ae88e10d5aa4fce2173f9a2b88a15e9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573960"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741352"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificazione e assegnazione di un'etichetta ai dati nell'ambiente di sviluppo/test di Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "30573960"
 Il client Azure Information Protection consente di classificare un documento prima di caricarlo in una cartella di SharePoint online in Office 365. Con le istruzioni disponibili in questo articolo, si installa il client Azure Information Protection e si esegue la classificazione dei dati. Per ulteriori informazioni, vedere [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui](http://aka.ms/catlgstack) per visualizzare una mappa di tutti gli articoli della guida del laboratorio di testing di Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/testing di Office 365
 
@@ -162,7 +162,7 @@ In seguito, accedere con l'account User5 e caricare il documento con protezione 
     
 ## <a name="see-also"></a>Vedere anche
 
-[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Ambiente di sviluppo/test di Office 365 ed EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   

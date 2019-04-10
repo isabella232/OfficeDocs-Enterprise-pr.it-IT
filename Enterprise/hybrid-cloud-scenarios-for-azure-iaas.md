@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: "Riepilogo: informazioni sull'architettura ibrida e sugli scenari per le offerte cloud di Microsoft Infrastructure as a Service (IaaS) in Azure."
-ms.openlocfilehash: 5d125780e8baf3dbbe71b0878f6bf57cbeb5740f
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037930"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741362"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scenari cloud ibridi per Azure IaaS
 
@@ -41,7 +41,7 @@ Per ogni livello dell'architettura:
     
 - Identità
     
-    Aggiunge server di identità, come i controller di dominio di AD di Windows Server, al set di server in esecuzione sulle reti virtuali di Azure per l'autenticazione locale.
+    Aggiungere server di identità, ad esempio controller di dominio di servizi di dominio Active Directory, al set di server in esecuzione in Azure reti virtuali per l'autenticazione locale.
     
 - Rete
     
@@ -59,13 +59,13 @@ L'esecuzione del server di sincronizzazione della directory da una rete virtuale
 
 ![Server di sincronizzazione della directory per Office 365 in IaaS di Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-Nella figura 2, una rete locale ospita un'infrastruttura di Windows Server AD, con un server proxy e router al lato. Il router si connette a un gateway di Azure sul bordo di una rete virtuale di Azure con una connessione VPN da sito a sito o ExpressRoute. All'interno di rete virtuale, un server di sincronizzazione della directory esegue Azure AD Connect.
+Nella figura 2, una rete locale ospita un'infrastruttura di servizi di dominio Active Directory, con un server proxy e un router ai suoi margini. Il router si connette a un gateway di Azure sul bordo di una rete virtuale di Azure con una connessione VPN da sito a sito o ExpressRoute. All'interno di rete virtuale, un server di sincronizzazione della directory esegue Azure AD Connect.
   
-Un server di sincronizzazione della directory per Office 365 sincronizza l'elenco di account in Windows Server AD con il tenant di Azure AD di una sottoscrizione a Office 365.
+Un server di sincronizzazione della directory per Office 365 sincronizza l'elenco degli account in AD DS con il tenant di Azure AD di una sottoscrizione a Office 365.
   
 Un server di sincronizzazione della directory è un server basato su Windows che esegue Azure AD Connect. Per il provisioning più rapido o per ridurre il numero di server locali nell'organizzazione, distribuire il server di sincronizzazione della directory in una rete virtuale (rete virtuale) in IaaS di Azure.
   
-Il server di sincronizzazione della directory esegue il polling di Windows Server AD per le modifiche e quindi li sincronizza con la sottoscrizione di Office 365.
+Il server di sincronizzazione della directory esegue il polling di AD DS per le modifiche e quindi li sincronizza con la sottoscrizione di Office 365.
   
 Per ulteriori informazioni, vedere [Deploy Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
@@ -163,7 +163,7 @@ Nella figura 5, una rete locale ospita un'infrastruttura di identità e gli uten
   
 Questa configurazione offre i seguenti attributi delle applicazioni LOB in Azure: 
   
-- **Livelli:** Esistono livelli per i server proxy Web, per i server AD FS e per i controller di dominio di Windows Server AD.
+- **Livelli:** Esistono livelli per i server proxy Web, per i server AD FS e per i controller di dominio AD DS.
     
 - **Distribuzione del carico:** Un bilanciamento del carico di Azure esterno distribuisce le richieste di autenticazione del client in arrivo ai proxy Web e un bilanciamento del carico di Azure interno distribuisce le richieste di autenticazione ai server ADFS.
     

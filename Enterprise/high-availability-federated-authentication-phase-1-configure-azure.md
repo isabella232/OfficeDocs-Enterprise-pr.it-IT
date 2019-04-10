@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Riepilogo: Configurare l'infrastruttura Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Office 365."
-ms.openlocfilehash: 1c9cfeaf930997c30671e5bbaed92d7dde2542e1
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037960"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741312"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: Configurare Azure
 
@@ -254,7 +254,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> L'autenticazione federata di singoli utenti non fa affidamento ad alcuna risorsa locale. Tuttavia, se la connessione VPN da sito a sito non è disponibile, i controller di dominio in rete virtuale non riceveranno aggiornamenti per gli account utente e i gruppi effettuati nell'ambiente Windows Server AD locale. Per evitare che ciò accada, è possibile configurare la disponibilità elevata per la connessione VPN da sito a sito. Per maggiori informazioni, vedere [Connettività cross-premise e da rete virtuale a rete virtuale a disponibilità elevata](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> L'autenticazione federata di singoli utenti non fa affidamento ad alcuna risorsa locale. Tuttavia, se la connessione VPN da sito a sito non è disponibile, i controller di dominio in rete virtuale non riceveranno aggiornamenti per gli account utente e i gruppi effettuati nei servizi di dominio Active Directory locali. Per evitare che ciò accada, è possibile configurare la disponibilità elevata per la connessione VPN da sito a sito. Per maggiori informazioni, vedere [Connettività cross-premise e da rete virtuale a rete virtuale a disponibilità elevata](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Successivamente, registrare l'indirizzo IPv4 pubblico del gateway VPN di Azure per la rete virtuale visualizzato con questo comando:
   

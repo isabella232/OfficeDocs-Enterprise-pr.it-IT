@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: "Riepilogo: configurazione e dimostrazione di Office 365 Advanced eDiscovery con dati di esempio nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038020"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741453"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery per l'ambiente di sviluppo/test di Office 365
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery consente di trovare e analizzare rapidamente le i
 Con le istruzioni disponibili in questo articolo, è possibile creare un insieme limitato di dati per una controversia fittizia relativa a un contratto e analizzarli con Advanced eDiscovery.
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
+> Fare clic [qui](http://aka.ms/catlgstack) per visualizzare una mappa di tutti gli articoli della guida del laboratorio di testing di Office 365.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365
 
@@ -53,7 +53,7 @@ In questa procedura, è possibile creare messaggi di posta elettronica che in se
     
 2. Nella scheda **Posta di Outlook**, fare clic su **Nuovo**.
     
-3. In **a**, digitare l'indirizzo di posta elettronica dell'account di USER6 della sottoscrizione di valutazione ( **USER6 @.**<organization name> **. onmicrosoft.com**).
+3. In **a**, digitare l'indirizzo di posta elettronica dell'account di USER6 della sottoscrizione di valutazione ( ** user6@.**<organization name> **. onmicrosoft.com**).
     
 4. Per l'oggetto, digitare **Messaggio di posta elettronica di prova 1**.
     

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: "Riepilogo: Configurare i controller di dominio e il server DirSync per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: 5ca31f33ef75aeb00dee724dfc6bc86df51cbfef
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: bda22a1df0165724f660019e28a9f088280fea4f
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650129"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741252"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 dell'autenticazione federata a disponibilità elevata: configurare i controller di dominio
 
@@ -26,7 +26,7 @@ ms.locfileid: "30650129"
 In questa fase di distribuzione di disponibilità elevata per l'autenticazione federata di Office 365 nei servizi dell'infrastruttura di Azure, si configurano due controller di dominio e il server DirSync nella rete virtuale Azure. Le richieste Web client per l'autenticazione possono quindi essere autenticate nella rete virtuale di Azure, anziché inviare tale traffico di autenticazione tramite la connessione VPN da sito a sito alla rete locale.
   
 > [!NOTE]
-> In Active Directory Federation Services (AD FS) non è possibile utilizzare Azure Active Directory Domain Services al posto dei controller di dominio di Windows Server AD. 
+> Active Directory Federation Services (AD FS) non è in grado di utilizzare i servizi di dominio di Azure Active Directory come sostituto dei controller di dominio di servizi di dominio Active Directory. 
   
 È necessario completare questa fase prima di passare a [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Vedere [Distribuire l'autenticazione federata ad alta visibilità per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) per tutte le fasi.
   
@@ -36,13 +36,13 @@ Per prima cosa, è necessario compilare la colonna **Nome macchina virtuale** de
   
 |**Elemento**|**Nome macchina virtuale**|**Immagine della raccolta**|**Tipo di archiviazione**|**Dimensioni minime**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)______________ (primo controller di dominio, ad esempio DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)______________ (secondo controller di dominio, ad esempio DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)(Server DirSync, esempio DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png)(primo server AD FS, esempio ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./media/Common-Images/TableLine.png)(secondo server AD FS, ad esempio ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./media/Common-Images/TableLine.png)(primo server proxy di applicazione Web, esempio WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./media/Common-Images/TableLine.png)(secondo server proxy di applicazione Web, ad esempio App2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png) ______________ (primo controller di dominio, ad esempio DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png) ______________ (secondo controller di dominio, ad esempio DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png) (Server DirSync, esempio DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png) (primo server AD FS, esempio ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./media/Common-Images/TableLine.png) (secondo server AD FS, ad esempio ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png) (primo server proxy di applicazione Web, esempio WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png) (secondo server proxy di applicazione Web, ad esempio App2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **Tabella M-macchine virtuali per l'autenticazione federata a disponibilità elevata per Office 365 in Azure**
   
@@ -95,7 +95,7 @@ $vmName="<Table M - Item 1 - Virtual machine name column>"
 $vmSize="<Table M - Item 1 - Minimum size column>"
 $staticIP="<Table I - Item 1 - Value column>"
 $diskStorageType="<Table M - Item 1 - Storage type column>"
-$diskSize=<size of the extra disk for Windows Server AD data in GB>
+$diskSize=<size of the extra disk for Active Directory Domain Services (AD DS) data in GB>
 
 $nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
@@ -114,7 +114,7 @@ $vmName="<Table M - Item 2 - Virtual machine name column>"
 $vmSize="<Table M - Item 2 - Minimum size column>"
 $staticIP="<Table I - Item 2 - Value column>"
 $diskStorageType="<Table M - Item 2 - Storage type column>"
-$diskSize=<size of the extra disk for Windows Server AD data in GB>
+$diskSize=<size of the extra disk for AD DS data in GB>
 
 $nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
@@ -234,10 +234,10 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 Utilizzare il client desktop remoto di propria scelta e creare una connessione Desktop remoto alla macchina virtuale del server DirSync. Usare il nome DNS Intranet o il nome computer e le credenziali dell'account di amministratore locale.
   
-Successivamente, aggiungerlo al dominio di Windows Server AD appropriato con questi comandi nel prompt dei comandi di Windows PowerShell.
+Successivamente, aggiungerlo al dominio AD DS appropriato con questi comandi nel prompt di Windows PowerShell.
   
 ```
-$domName="<Windows Server AD domain name to join, such as corp.contoso.com>"
+$domName="<AD DS domain name to join, such as corp.contoso.com>"
 $cred=Get-Credential -Message "Type the name and password of a domain acccount."
 Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer

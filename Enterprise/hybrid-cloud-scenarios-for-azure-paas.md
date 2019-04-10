@@ -11,89 +11,89 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
-description: 'Riepilogo: Informazioni su architettura ibrida e gli scenari per la piattaforma Microsoft come servizio (PaaS)-basato su cloud offerte in Azure.'
-ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+description: "Riepilogo: comprendere l'architettura ibrida e gli scenari per le offerte cloud di Microsoft come servizio (PaaS) in Azure."
+ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123333"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741372"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scenari cloud ibridi per Azure PaaS
 
- **Riepilogo:** Acquisire familiarità con l'architettura ibrida e gli scenari per la piattaforma Microsoft come servizio (PaaS)-basato su cloud offerte in Azure.
+ **Riepilogo:** Comprendere l'architettura ibrida e gli scenari per le offerte cloud basate su PaaS (Platform as a Service) di Microsoft in Azure.
   
-Combinare dati locali o le risorse di elaborazione con nuove o convertire applicazioni in esecuzione in Azure PaaS, che possono trarre vantaggio cloud prestazioni, l'affidabilità e la scala e fornire supporto migliorato per gli utenti mobili. 
+Combinare dati locali o risorse di elaborazione con applicazioni nuove o convertite in esecuzione in PaaS di Azure, che possono sfruttare le prestazioni, l'affidabilità e la scalabilità del cloud e fornire un supporto migliore per gli utenti di dispositivi mobili. 
   
-## <a name="azure-paas-hybrid-scenario-architecture"></a>Architettura di uno scenario ibrido PaaS Azure
+## <a name="azure-paas-hybrid-scenario-architecture"></a>Architettura di scenari ibridi di PaaS di Azure
 
-Nella figura 1 illustra l'architettura di scenari basati su PaaS ibridi Microsoft in Azure.
+Nella figura 1 viene illustrata l'architettura di scenari ibridi basati su Microsoft PaaS in Azure.
   
-**Nella figura 1: Scenari di ibrida basata su PaaS Microsoft in Azure**
+**Figura 1: scenari ibridi basati su Microsoft PaaS in Azure**
 
-![Scenari ibridi Microsoft basati su PaaS in Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
+![Scenari ibridi basati su Microsoft PaaS in Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
 Per ogni livello dell'architettura:
   
 - App e scenari
     
-    Un ambiente ibrido applicazione PaaS viene eseguito in Azure e utilizza risorse compute o l'archiviazione in locale.
+    Un'applicazione PaaS ibrida viene eseguita in Azure e utilizza risorse di calcolo o di archiviazione locali.
     
 - Identità
     
-    È costituita dalla sincronizzazione delle directory o la federazione con un provider di identità di terze parti.
+    È costituito dalla sincronizzazione della directory o dalla Federazione con un provider di identità di terze parti.
     
 - Rete
     
-    È costituita dal canale Internet esistente o una connessione ExpressRoute con peering pubblica per Azure PaaS. È necessario includere un modo per l'applicazione PaaS Azure accedere alla risorsa compute o l'archiviazione in locale.
+    È costituito dalla pipe Internet esistente o da una connessione ExpressRoute con peering pubblico a Azure PaaS. È necessario includere un metodo per l'applicazione di Azure PaaS per accedere alla risorsa di archiviazione o computo locale.
     
 - Locale
     
-    È costituita da identità e la protezione dell'infrastruttura e line-of business (LOB) applicazioni o server di database, un'applicazione di Azure PaaS può accedere in modo sicuro esistenti.
+    È costituito da un'infrastruttura di identità e sicurezza e da applicazioni line-of-business (LOB) esistenti o da server di database, che un'applicazione di PaaS di Azure può accedere in modo sicuro.
     
-## <a name="azure-paas-hybrid-application"></a>Applicazione di ibrida PaaS Azure
+## <a name="azure-paas-hybrid-application"></a>Applicazione ibrida di PaaS di Azure
 
 Nella figura 2 viene illustrata la configurazione di un'applicazione ibrida in esecuzione in Azure.
   
-**Nella figura 2: Applicazione ibrida basata su PaaS Azure**
+**Figura 2: applicazione ibrida basata su PaaS di Azure**
 
-![Applicazione ibrida basta su PaaS di Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
+![Applicazione ibrida basata su PaaS di Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
-Nella figura 2, una rete locale ospita archiviazione o applicazioni server e una DMZ contenente un server proxy. Si connette ai servizi di Azure PaaS tramite Internet o con una connessione ExpressRoute.
+Nella figura 2, una rete locale ospita l'archiviazione o le app nei server e una DMZ contenente un server proxy. È collegato ai servizi di PaaS di Azure su Internet o con una connessione ExpressRoute.
   
-Un'organizzazione, è possibile effettuare le relative risorse compute o l'archiviazione disponibili per l'applicazione ibrida PaaS Azure per:
+Un'organizzazione può rendere disponibili le proprie risorse di calcolo o di archiviazione per l'applicazione ibrida di Azure PaaS per:
   
-- Hosting delle risorse nei server DMZ.
+- Hosting della risorsa nei server della DMZ.
     
-- Hosting di un server proxy inverso nella DMZ, che consente le richieste di utenti autenticate, in ingresso, basato su HTTPS per la risorsa che si trova in locale.
+- Hosting di un server proxy inverso nella DMZ, che consente le richieste autenticate, in ingresso e basate su HTTPS alla risorsa che si trova in locale.
     
-L'app Azure è possibile utilizzare le credenziali da:
+L'app di Azure può utilizzare le credenziali da:
   
-- Azure Active Directory, che possono essere sincronizzati con il provider di identità in locale, ad esempio Windows Server Active Directory.
+- Azure AD, che può essere sincronizzato con il provider di identità locale, ad esempio servizi di dominio Active Directory (AD DS).
     
 - Un provider di identità di terze parti.
     
-### <a name="example-azure-paas-hybrid-application"></a>Applicazione di esempio Azure PaaS ibrida
+### <a name="example-azure-paas-hybrid-application"></a>Esempio di applicazione ibrida di Azure PaaS
 
-Nella figura 3 viene mostrata un'applicazione di ibrida di esempio in esecuzione in Azure.
+Nella figura 3 viene mostrato un esempio di applicazione ibrida in esecuzione in Azure.
   
-**Figura 3: Un esempio di un'applicazione basata su Azure PaaS ibrida**
+**Figura 3: un'applicazione ibrida basata su Azure PaaS di esempio**
 
-![Un esempio di applicazione ibrida di Azure basata su PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
+![Esempio di un doma ibrido basato su Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
-Nella figura 3, un host di rete locale un LOB App Azure PaaS ospita un'applicazione personalizzata per dispositivi mobili. Un dispositivo smartphone su Internet accede l'app personalizzata per dispositivi mobili in Azure, che invia le richieste di dati per l'applicazione LOB locale.
+Nella figura 3, una rete locale ospita un'app LOB. Azure PaaS ospita un'app per dispositivi mobili personalizzata. Uno smartphone su Internet accede all'app per dispositivi mobili personalizzata in Azure, che invia le richieste di dati all'app LOB locale.
   
-In questo esempio Azure PaaS ibrida applicazione sia un'app per dispositivi mobili personalizzata che fornisce informazioni aggiornate sui contatti sui dipendenti. Lo scenario ibrido end-to-end è costituito da:
+In questo esempio, l'applicazione ibrida di Azure PaaS è un'app per dispositivi mobili personalizzata che fornisce informazioni di contatto aggiornate sui dipendenti. Lo scenario ibrido end-to-end è costituito da:
   
-- Una smartphone app che richiede la convalida, le credenziali locali per l'esecuzione.
+- App per smartphone che richiede l'esecuzione di credenziali convalidate e locali.
     
-- Un'applicazione personalizzata per dispositivi mobili in esecuzione in Azure PaaS, che richiede informazioni sui dipendenti specifici in base alle query da app smartphone dell'utente.
+- Un'app per dispositivi mobili personalizzata in esecuzione in Azure PaaS, che richiede informazioni su specifici dipendenti in base alle query provenienti dall'app smartphone di un utente.
     
-- Un server proxy inverso nella DMZ che convalida l'app per dispositivi mobili personalizzato e inoltra la richiesta.
+- Un server proxy inverso nella DMZ che convalida l'app per dispositivi mobili personalizzata e inoltra la richiesta.
     
-- Una farm di server applicazioni LOB che gestisce la richiesta di contatto, soggette alle autorizzazioni dell'account dell'utente.
+- Una farm di server applicazioni LOB che assiste la richiesta di contatto, in base alle autorizzazioni dell'account dell'utente.
     
-Dal momento che il provider di identità locale è stato sincronizzato con Azure Active Directory, l'app per dispositivi mobili personalizzato e le applicazioni LOB possano convalidare il richiedente nome dell'account utente.
+Poiché il provider di identità locale è stato sincronizzato con Azure AD, sia l'app per dispositivi mobili personalizzata che l'app LOB possono convalidare il nome dell'account dell'utente che richiede la richiesta.
   
 ## <a name="see-also"></a>Vedere anche
 
