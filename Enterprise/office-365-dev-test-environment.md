@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Riepilogo: usare la seguente guida al lab test per creare una sottoscrizione di valutazione di Office 365 per valutazione o sviluppo/test.'
-ms.openlocfilehash: a49ba10ab9ddded36f21ca9cc92f0482cbe7a4fb
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 3e7aafc847b28ad7a81373539c2ea30ce304725a
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038031"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741242"
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365
 
@@ -41,10 +41,10 @@ ms.locfileid: "31038031"
 > [!NOTE]
 > Si consiglia di stampare questo articolo per registrare i valori specifici necessari per questo ambiente nei 30 giorni della sottoscrizione di valutazione di Office 365. È possibile estendere la sottoscrizione di valutazione per altri 30 giorni. Per un ambiente di sviluppo/test permanente, creare una nuova sottoscrizione a pagamento con un numero limitato di licenze. 
   
-![Guide al lab test in Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guide dei laboratori di testing nel cloud Microsoft](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di One Microsoft Cloud.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
   
 ## <a name="phase-1-create-the-base-configuration-in-azure"></a>Fase 1: creare la configurazione di base in Azure
 
@@ -70,7 +70,7 @@ Per avviare la sottoscrizione di valutazione di Office 365 E5, è necessario inn
     
   - Registrare il nome e cognome del nuovo account qui: ![](./media/Common-Images/TableLine.png)
     
-  - Registrare l'indirizzo e-mail del nuovo account qui: ![](./media/Common-Images/TableLine.png)@outlook.com
+  - Registrare l'indirizzo di posta elettronica del nuovo account qui: ![](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrare una sottoscrizione di valutazione di Office 365 E5
 
@@ -197,7 +197,7 @@ $spURL="https://" + $orgName + "-admin.sharepoint.com"
 Connect-SPOService -Url $spURL
 ```
 
-4. Nella finestra di dialogo **SharePoint Online Management Shell di Microsoft**, digitare il nome dell'amministratore globale di Office 365 (ad esempio: jdoe@contosotoycompany.onmicrosoft.com) e la password, quindi fare clic su **Accedi**.
+4. Nella finestra di dialogo **Microsoft SharePoint Online Management Shell** digitare il nome dell'amministratore globale di Office 365 (ad esempio: jdoe@contosotoycompany.onmicrosoft.com) e la password, quindi fare clic su **Accedi**.
     
 5. Per creare tre nuovi siti del team (Vendite, Produzione e Supporto tecnico), inserire il nome di un amministratore globale di Office 365, quindi eseguire i comandi seguenti dal prompt di SharePoint Online Management Shell:
     
@@ -265,33 +265,25 @@ Utilizzare questi articoli aggiuntivi nell'ambiente di sviluppo/test di Office 3
   
 - [Sincronizzazione della directory per l'ambiente di sviluppo/test di Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
-- [Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365. ](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
 - [Identità federata per l'ambiente di sviluppo/test di Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
 - [Cloud App Security per l'ambiente di sviluppo/test di Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-- [Protezione avanzata dalle minacce per l'ambiente di sviluppo/test di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Advanced Threat Protection per l'ambiente di sviluppo/test di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
 - [Advanced eDiscovery per l'ambiente di sviluppo/test di Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-- [Protezione dei file sensibili nell’ambiente di sviluppo/test di Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
+- [Protezione dei file sensibili nell'ambiente di sviluppo/test di Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
 - [Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
-- [Classificazione e assegnazione di etichette ai dati nell'ambiente di sviluppo/test di Office 365 ](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
-    
-Estendere l'ambiente di sviluppo/test di Office 365 per includere ulteriori offerte cloud di Microsoft:
-  
-- [Ambiente di sviluppo/test di Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
-    
-- [Ambiente di sviluppo/test di Office 365 e Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+- [Classificazione e assegnazione di un'etichetta ai dati nell'ambiente di sviluppo/test di Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
 ## <a name="see-also"></a>Vedere anche
 
-- [Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
-  
-- [Ambiente di sviluppo/test di Office 365 e Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+- [Guide dei lab di test per l'adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 

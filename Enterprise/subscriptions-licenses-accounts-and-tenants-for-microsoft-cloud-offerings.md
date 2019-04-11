@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Riepilogo: comprendere le relazioni delle organizzazioni, le sottoscrizioni, le licenze, gli account utente e i tenant tra le offerte cloud di Microsoft.'
-ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 55d13e55b597f398189efbafb6b3426609f2d41d
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574050"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741322"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Sottoscrizioni, licenze, account e tenant per offerte cloud di Microsoft
 
@@ -62,7 +62,7 @@ Una sottoscrizione è un contratto stipulato con Microsoft per utilizzare una o 
   
 Le organizzazioni possono disporre di più sottoscrizioni per le offerte cloud di Microsoft. Nella figura 1 è riportato un esempio.
   
-**Figura 1: esempio di più sottoscrizioni per un'organizzazione**
+**Figura 1: Esempio di più sottoscrizioni per un'organizzazione**
 
 ![Esempio di organizzazione con più sottoscrizioni per le offerte cloud di Microsoft.](media/Subscriptions/Subscriptions-Fig1.png)
 
@@ -73,7 +73,7 @@ Nella figura 1 viene mostrata una singola organizzazione che dispone di più sot
 
 Per le offerte cloud SaaS di Microsoft, una licenza consente a un account utente specifico di utilizzare l'offerta cloud. Vengono effettuati addebiti mensili fissi come parte della sottoscrizione. Gli amministratori assegnano licenze a singoli account utente nella sottoscrizione. Ad esempio, nella figura 2, Contoso Corporation dispone di una sottoscrizione a Office 365 Enterprise E5 con 100 licenze, che consente a oltre 100 account utente singoli di usare le funzionalità e i servizi di Enterprise E5.
   
-**Figura 2: licenze comprese nelle sottoscrizioni basate su SaaS di un'organizzazione**
+**Figura 2: Licenze comprese nelle sottoscrizioni basate su SaaS di un'organizzazione**
 
 ![Un esempio di più licenze all'interno delle sottoscrizioni per le offerte cloud di Microsoft basate su SaaS.](media/Subscriptions/Subscriptions-Fig2.png)
   
@@ -85,7 +85,7 @@ Alcune immagini della macchina virtuale dispongono di versioni di prova delle ap
   
 ### <a name="user-accounts"></a>Account utente
 
-Gli account utente per tutte le offerte cloud di Microsoft sono archiviati in un tenant di Azure Active Directory (AD) che include gli account utente e i gruppi. Un tenant di Azure AD può essere sincronizzato con gli account Windows Server AD esistenti tramite Azure AD Connect, un servizio basato su server di Windows. Si tratta della cosiddetta sincronizzazione della directory (DirSync).
+Gli account utente per tutte le offerte cloud di Microsoft sono archiviati in un tenant di Azure Active Directory (AD) che include gli account utente e i gruppi. Un tenant di Azure AD può essere sincronizzato con gli account Active Directory Domain Services esistenti tramite Azure AD Connect, un servizio basato su server di Windows. Si tratta della cosiddetta sincronizzazione della directory (DirSync).
   
 Nella figura 3 viene mostrato un esempio di più sottoscrizioni di un'organizzazione che usa un tenant Azure AD comune, il quale include gli account dell'organizzazione.
   
@@ -129,15 +129,15 @@ Ecco un esempio di relazione di organizzazioni, sottoscrizioni, licenze e accoun
     
   - Gli account utente dell'organizzazione in un tenant Azure AD comune.
     
-Più sottoscrizioni alle offerte cloud di Microsoft sono in grado di usare lo stesso tenant Azure AD che si comporta come un provider di identità comune. Un tenant di Azure AD centrale che contiene gli account sincronizzati di Windows Server AD offre IDaaS basata su cloud per l'organizzazione. Questo è il contenuto della figura 4.
+Più sottoscrizioni alle offerte cloud Microsoft possono usare lo stesso tenant di Azure AD che agisce da provider di identità comune. Un tenant di Azure AD centrale che contiene gli account sincronizzati di Active Directory Domain Services locale fornisce IDaaS basata su cloud per l'organizzazione. Questo è il contenuto della figura 4.
   
-**Figura 4: account sincronizzati in locale e IDaaS per un'organizzazione**
+**Figura 4: Account locali sincronizzati e IDaaS per un'organizzazione**
 
 ![IDaaS IaaS per l'organizzazione.](media/Subscriptions/Subscriptions-Fig4.png)
   
-La figura 4 mostra in che modo il tenant di Azure AD comune viene usato dalle offerte cloud SaaS di Microsoft, le app PaaS di Azure e le macchine virtuali IaaS di Azure che usano Azure AD Domain Services. Azure AD Connect sincronizza la foresta di Windows Server AD locale con il tenant di Azure AD.
+La figura 4 mostra in che modo il tenant di Azure AD comune viene usato dalle offerte cloud SaaS di Microsoft, dalle app PaaS di Azure e dalle macchine virtuali IaaS di Azure che usano Azure AD Domain Services. Azure AD Connect sincronizza la foresta di Active Directory Domain Services locale con il tenant di Azure AD.
   
-Per ulteriori informazioni sull'integrazione dell'identità tra le offerte cloud di Microsoft, vedere [Identità cloud Microsoft per Enterprise Architects](https://aka.ms/cloudarchidentity).
+Per ulteriori informazioni sull'integrazione dell'identità tra le offerte cloud di Microsoft, vedere [Identità cloud Microsoft per Enterprise Architect](https://aka.ms/cloudarchidentity).
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>Combinazione di sottoscrizioni per offerte cloud di Microsoft
 
@@ -172,9 +172,9 @@ Se sono state acquistate sottoscrizioni di Azure e Office 365 separate e si desi
   
 ## <a name="see-also"></a>Vedere anche
 
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guide dei lab di test per l'adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

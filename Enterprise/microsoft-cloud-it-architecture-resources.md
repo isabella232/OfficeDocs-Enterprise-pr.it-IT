@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Riepilogo: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft. Informazioni su come implementare un desktop protetto e moderno con Windows 10 e Office ProPlus."
-ms.openlocfilehash: ff184f8a805977a081b533ff33d662ac181646f5
-ms.sourcegitcommit: d182d93f7a6906bf132876288d6ee79139cf5a35
+ms.openlocfilehash: d1fe60610d83fe7ee9c0cf088c15e83ad695f0ea
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536368"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741412"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 
@@ -31,24 +31,25 @@ Questi poster e strumenti dell'architettura forniscono informazioni sui servizi 
   
 <!--**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) -->
     
-- **[Microsoft Cloud per Enterprise Architects Series](microsoft-cloud-it-architecture-resources.md#cloudarch)** <!-- [Microsoft Cloud Services and Platform Options](microsoft-cloud-it-architecture-resources.md#platformoptions) -->
-    - [Identità cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity)
-    - [Sicurezza cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#security)
-    - [Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#networking)
-    - [Cloud ibrido Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#hybrid)
-    - [Attacchi comuni e funzionalità di Microsoft che proteggono l'organizzazione](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
+- **[Serie Microsoft Cloud per Enterprise Architect](microsoft-cloud-it-architecture-resources.md#cloudarch)** 
+    <!-- [Microsoft Cloud Services and Platform Options](microsoft-cloud-it-architecture-resources.md#platformoptions) -->
+    - [Identità cloud Microsoft per Enterprise Architect](microsoft-cloud-it-architecture-resources.md#identity)
+    - [Sicurezza cloud Microsoft per Enterprise Architect](microsoft-cloud-it-architecture-resources.md#security)
+    - [Rete cloud Microsoft per Enterprise Architect](microsoft-cloud-it-architecture-resources.md#networking)
+    - [Cloud ibrido Microsoft per Enterprise Architect](microsoft-cloud-it-architecture-resources.md#hybrid)
+    - [Attacchi comuni e funzionalità Microsoft che proteggono l'organizzazione](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Serie di soluzioni di Microsoft 365 Enterprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Protezione di dispositivi e identità per Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     - [Soluzioni per la protezione dei file in Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
-    - [Information Protection di Office 365 per il GDPR](#office-365-information-protection-for-gdpr)
-    - [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
+    - [Protezione delle informazioni di Office 365 per il GDPR](#office-365-information-protection-for-gdpr)
+    - [Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazioni Agile](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
     - [Soluzioni di telefonia Microsoft](#microsoft-telephony-solutions) 
     - [Distribuire un desktop protetto e moderno con Microsoft](microsoft-cloud-it-architecture-resources.md#msd)
     
 
   
-Inviare commenti e suggerimenti all'indirizzo [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
+Inviare commenti e suggerimenti all'indirizzo [ cloudadopt@microsoft.com ](mailto:cloudadopt@microsoft.com). 
 
 <!--
 <a name="roadmap"></a>
@@ -63,7 +64,7 @@ See the posters, icon sets, community venues, and other resources that describe 
   
 <a name="cloudarch">
 </a>
-## Microsoft Cloud per Enterprise Architects Series
+## Serie Microsoft Cloud per Enterprise Architect
 
 Questi poster e strumenti dell'architettura forniscono informazioni sui servizi cloud Microsoft, tra cui Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online e soluzioni cloud e locali ibride. decision maker ed esperti IT possono usare queste risorse per determinare le soluzioni ideali per i propri carichi di lavoro e prendere decisioni sulla base di componenti dell'infrastruttura, quali sicurezza e identità.
 
@@ -82,13 +83,13 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 <a name="identity">
 
 </a>
-### Identità cloud Microsoft per Enterprise Architects
+### Identità cloud Microsoft per Enterprise Architect
 
 Cosa devono sapere gli architetti IT sulla progettazione di identità per le organizzazioni che utilizzano i servizi cloud e le piattaforme Microsoft.
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di scorrimento per modello di identità del cloud Microsoft](media/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) \| [Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Questo modello contiene: <ul><li>Introduzione all'identità con il cloud di Microsoft </li><li>Funzionalità IDaaS di Azure AD </li><li>Integrazione di account Active Directory Domain Services locali con Microsoft Azure Active Directory </li><li>Inserimento di componenti di directory in Azure </li><li>Opzioni dei servizi di dominio per i carichi di lavoro in IaaS di Azure </li></ul><br/>|
+|[![Immagine di anteprima del modello di identità cloud Microsoft](media/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) \| [Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Questo modello contiene: <ul><li>Introduzione all'identità con il cloud di Microsoft </li><li>Funzionalità IDaaS di Azure AD </li><li>Integrazione di account Active Directory Domain Services locali con Microsoft Azure Active Directory </li><li>Inserimento di componenti di directory in Azure </li><li>Opzioni dei servizi di dominio per i carichi di lavoro in IaaS di Azure </li></ul><br/>|
    
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Sicurezza cloud Microsoft per Enterprise Architects
@@ -97,7 +98,7 @@ Cosa devono sapere gli architetti IT sulla sicurezza dei servizi e delle piattaf
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di scorrimento per modello di protezione del cloud Microsoft](media/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Questo modello contiene: <ul><li>Ruolo di Microsoft nell'offerta di servizi e piattaforme sicuri</li><li>Responsabilità del cliente per ridurre i rischi per la sicurezza</li><li>Certificazioni di sicurezza principali </li><li>Offerte sulla sicurezza proposte da servizi di consulenza Microsoft </ul><br/>|
+|[![Immagine di anteprima del modello di sicurezza cloud Microsoft](media/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Questo modello contiene: <ul><li>Ruolo di Microsoft nell'offerta di servizi e piattaforme sicuri</li><li>Responsabilità del cliente per ridurre i rischi per la sicurezza</li><li>Certificazioni di sicurezza principali </li><li>Offerte sulla sicurezza proposte da servizi di consulenza Microsoft </ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Rete cloud Microsoft per Enterprise Architects
@@ -106,7 +107,7 @@ Cosa devono sapere gli architetti IT della rete per i servizi cloud e le piattaf
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di scorrimento per modello di rete del cloud Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) \| [Articolo](https://technet.microsoft.com/library/mt733214.aspx) <br/>[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Il modello contiene le pagine seguenti: <ul><li> **Trasformazione della tua rete per la connettività cloud** La migrazione cloud cambia il volume e la natura dei flussi del traffico all'interno e all'esterno di una rete aziendale. Influisce, inoltre, sugli approcci finalizzati alla mitigazione dei rischi per la sicurezza.</li><li> **Elementi comuni della connettività cloud Microsoft** L'integrazione della rete con il cloud di Microsoft consente di accedere facilmente a una vasta gamma di servizi. </li><li> **ExpressRoute per la connettività cloud Microsoft** ExpressRoute fornisce una connessione di rete a elevata velocità effettiva, dedicata e privata per il cloud Microsoft. </li><li> **Progettazione della rete per Microsoft SaaS (Office 365, Microsoft Intune e Dynamics CRM Online)** L'ottimizzazione della rete per i servizi SaaS di Microsoft richiede un'analisi approfondita della connessione Internet, dei dispositivi client e delle operazioni IT tipiche. </li><li> **Progettazione della rete per Azure PaaS** L'ottimizzazione della rete per le app PaaS di Azure necessita di una larghezza di banda Internet adeguata e può richiedere la distribuzione del traffico di rete in più siti o app. </li><li> **Progettazione della rete per Azure IaaS** Passaggi del processo di progettazione per creare una rete virtuale Azure ottimale (VNet) per l'hosting di carichi di lavoro IT basati su server, tra cui sottoreti, spazi di indirizzi, routing, DNS, bilanciamento del carico e connettività di rete locale, altri VNet e Internet. </li></ul><br/>  Partecipare al nuovo corso [Ottimizzare la rete per le offerte cloud di Microsoft](https://aka.ms/optimizecloudnetworkingmva) della Microsoft Virtual Academy, basato su questo poster sull'architettura.  <br/>|
+|[![Immagine di anteprima del modello di rete cloud Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) \| [Articolo](https://technet.microsoft.com/library/mt733214.aspx) <br/>[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Il modello contiene le pagine seguenti: <ul><li> **Trasformazione della tua rete per la connettività cloud** La migrazione cloud cambia il volume e la natura dei flussi del traffico all'interno e all'esterno di una rete aziendale. Influisce, inoltre, sugli approcci finalizzati alla mitigazione dei rischi per la sicurezza.</li><li> **Elementi comuni della connettività cloud Microsoft** L'integrazione della rete con il cloud di Microsoft consente di accedere facilmente a una vasta gamma di servizi. </li><li> **ExpressRoute per la connettività cloud Microsoft** ExpressRoute fornisce una connessione di rete a elevata velocità effettiva, dedicata e privata per il cloud Microsoft. </li><li> **Progettazione della rete per Microsoft SaaS (Office 365, Microsoft Intune e Dynamics CRM Online)** L'ottimizzazione della rete per i servizi SaaS di Microsoft richiede un'analisi approfondita della connessione Internet, dei dispositivi client e delle operazioni IT tipiche. </li><li> **Progettazione della rete per Azure PaaS** L'ottimizzazione della rete per le app PaaS di Azure necessita di una larghezza di banda Internet adeguata e può richiedere la distribuzione del traffico di rete in più siti o app. </li><li> **Progettazione della rete per Azure IaaS** Passaggi del processo di progettazione per creare una rete virtuale Azure ottimale (VNet) per l'hosting di carichi di lavoro IT basati su server, tra cui sottoreti, spazi di indirizzi, routing, DNS, bilanciamento del carico e connettività di rete locale, altri VNet e Internet. </li></ul><br/>  <br/>|
    
    
 <a name="hybrid"></a>
@@ -116,7 +117,7 @@ Cosa devono sapere gli architetti IT del cloud ibrido per i servizi cloud e le p
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di scorrimento per modello ibrido del cloud Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) \| [Articolo](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Il modello contiene le pagine seguenti: <ul><li> **Panoramica di cloud ibrido** Offerte di cloud Microsoft (SaaS, Azure PaaS e Azure IaaS) e relativi elementi comuni. </li><li> **Architettura di scenari sul cloud ibrido di Microsoft** Un diagramma dell'architettura del cloud ibrido per offerte sul cloud Microsoft, che mostra i livelli comuni di infrastruttura, rete e identità locali. </li><li> **Scenari di cloud ibrido per SaaS di Microsoft (Office 365)** Architettura di scenari ibridi per SaaS e descrizioni delle principali configurazioni ibride per Skype for Business, SharePoint Server ed Exchange Server. </li><li> **Scenari di cloud ibrido per PaaS di Azure** Architettura di scenari ibridi per PaaS di Azure, descrizione di un'applicazione ibrida per PaaS di Azure con esempio e descrizione di Estensione database di SQL Server 2016. </li><li> **Scenari di cloud ibridi per IaaS di Azure** Architettura di scenari ibridi per IaaS di Azure e descrizione di un'applicazione line-of business (LOB) ospitata in IaaS di Azure. </li></ul><br/>|
+|[![Immagine di anteprima del modello di cloud ibrido Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Articolo](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Altre lingue](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Il modello contiene le pagine seguenti: <ul><li> **Panoramica di cloud ibrido** Offerte di cloud Microsoft (SaaS, Azure PaaS e Azure IaaS) e relativi elementi comuni. </li><li> **Architettura di scenari sul cloud ibrido di Microsoft** Un diagramma dell'architettura del cloud ibrido per offerte sul cloud Microsoft, che mostra i livelli comuni di infrastruttura, rete e identità locali. </li><li> **Scenari di cloud ibrido per SaaS di Microsoft (Office 365)** Architettura di scenari ibridi per SaaS e descrizioni delle principali configurazioni ibride per Skype for Business, SharePoint Server ed Exchange Server. </li><li> **Scenari di cloud ibrido per PaaS di Azure** Architettura di scenari ibridi per PaaS di Azure, descrizione di un'applicazione ibrida per PaaS di Azure con esempio e descrizione di Estensione database di SQL Server 2016. </li><li> **Scenari di cloud ibridi per IaaS di Azure** Architettura di scenari ibridi per IaaS di Azure e descrizione di un'applicazione line-of business (LOB) ospitata in IaaS di Azure. </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Attacchi comuni e funzionalità di Microsoft che proteggono l'organizzazione
@@ -124,7 +125,7 @@ Informazioni sugli attacchi informatici più comuni e su come Microsoft è in gr
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di scorrimento del poster sugli attacchi comuni.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | Questo poster illustra il percorso degli attacchi comuni e descrive le funzionalità che consentono di bloccare i pirati informatici in ogni fase di un attacco. <br/>|
+|[![ThImmagine di anteprima del poster sugli attacchi comuni.media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | Questo poster illustra il percorso degli attacchi comuni e descrive le funzionalità che consentono di bloccare i pirati informatici in ogni fase di un attacco. <br/>|
 
 
 <!--<a name="santa"></a>
@@ -168,16 +169,16 @@ Funzionalità consigliate per la protezione dei file in Office 365 in base a tre
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Anteprima per il set di mini poster Soluzioni di protezione file in Office 365](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320) \| [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |È importante usare livelli di protezione coerenti tra dati, identità e dispositivi. Questo documento illustra quali funzionalità sono confrontabili con ulteriori informazioni sulle capacità per proteggere file in Office 365.  <br/> |
+|[![Anteprima del set di mini poster Soluzioni per la protezione file in Office 365](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320)  \| [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |È importante usare livelli di protezione coerenti tra dati, identità e dispositivi. Questo documento illustra quali funzionalità sono confrontabili con ulteriori informazioni sulle capacità per proteggere file in Office 365.  <br/> |
    
 
-### <a name="office-365-information-protection-for-gdpr"></a>Information Protection di Office 365 per il GDPR
+### <a name="office-365-information-protection-for-gdpr"></a>Protezione delle informazioni di Office 365 per il GDPR
 
 Suggerimenti normativi per individuare, classificare, proteggere e monitorare i dati personali. Questa soluzione usa come esempio il GDPR, ma è possibile applicare lo stesso processo per raggiungere la conformità con molti altri regolamenti.
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|![Anteprima per Information Protection Office 365 per GDPR](media/o365infoprotectforgdpr-thumb.png)  <br/> [PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf) \| [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)    |Per visualizzare il contenuto sotto forma di articolo, vedere [Information Protection di Office 365 per GDPR](https://docs.microsoft.com/it-IT/Office365/SecurityCompliance/office-365-information-protection-for-gdpr).      |
+|![Anteprima di Protezione delle informazioni di Office 365 per il GDPR](media/o365infoprotectforgdpr-thumb.png)  <br/> [PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf) \| [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)    |Per visualizzare il contenuto sotto forma di articolo, vedere [Protezione delle informazioni di Office 365 per il GDPR](https://docs.microsoft.com/it-IT/Office365/SecurityCompliance/office-365-information-protection-for-gdpr).      |
 
 ### <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile 
 
@@ -186,8 +187,8 @@ Questa guida descrive come implementare un ambiente cloud protetto. Può essere 
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|**Guida alla sicurezza Microsoft per le campagne politiche** <br/> [![Anteprima per il set di poster ridotto.](media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) \| [Visio](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx) <br/> |La seguente guida utilizza un esempio di organizzazione della campagna politica. Utilizzare questa guida come punto di partenza per qualsiasi ambiente.  <br/> |
-|**Guida alla sicurezza Microsoft per le organizzazioni no profit** <br/> [![Immagine di anteprima per file scaricabile](media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) \| [Visio](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx) <br/> |Questa guida è stata leggermente modificata per le organizzazioni no profit. Ad esempio, fa riferimento ai piani di Office 365 Nonprofit. Le indicazioni tecniche sono identiche a quelle fornite nella guida alle soluzioni per le campagne politiche.  <br/> |
+|**Guida sulla sicurezza Microsoft per campagne politiche** <br/> [![ThAnteprima del set di mini poster.media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf)  \| [Visio](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx) <br/> |La seguente guida utilizza un esempio di organizzazione della campagna politica. Utilizzare questa guida come punto di partenza per qualsiasi ambiente.  <br/> |
+|**Guida alla sicurezza Microsoft per le organizzazioni no profit** <br/> [![Immagine di anteprima per file scaricabile](media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) \| [Visio](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx) <br/> |Questa guida è stata leggermente modificata per le organizzazioni no profit. Ad esempio, fa riferimento ai piani di Office 365 Nonprofit. Le indicazioni tecniche sono identiche a quelle fornite nella guida alle soluzioni per le campagne politiche.  <br/> |
 
 Questa guida include le guide al lab di test (TLG). Per altre informazioni, vedere [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile](https://docs.microsoft.com/it-IT/Office365/SecurityCompliance/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o).
 
@@ -195,7 +196,7 @@ Questa guida include le guide al lab di test (TLG). Per altre informazioni, vede
 
 Microsoft supporta diverse opzioni per iniziare il viaggio verso l'implementazione di Teams nel cloud Microsoft. Questo poster è utile per decidere la soluzione di telefonia Microsoft (Sistema telefonico nel cloud o VoIP aziendale in locale) più adatta per gli utenti dell'organizzazione e per stabilire in che modo l'organizzazione si connetterà alla rete PSTN (Public Switched Telephone Network).
 
-![Anteprima del poster di Soluzioni di telefonia Microsoft](media/microsoft-telephony-solutions-thumb.png) <br/>
+![Anteprima del poster Soluzioni di telefonia Microsoft](media/microsoft-telephony-solutions-thumb.png) <br/>
 [PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) 
 
 Per altre informazioni, vedere l'articolo correlato a questo poster: [Soluzioni di telefonia Microsoft](https://docs.microsoft.com/it-IT/SkypeForBusiness/hybrid/msft-telephony-solutions).
@@ -207,13 +208,13 @@ Cosa devono sapere gli architetti IT della distribuzione e della gestione degli 
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Miniatura per il modello Distribuire un desktop protetto e moderno con Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](http://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf) \| [Visio](http://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Questo modello contiene: <ul><li>  Distribuzione di Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Distribuzione di Windows 10 e Office ProPlus con System Center Configuration Manager </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus con System Center Configuration Manager </li><li>  Funzionalità di protezione predefinite e aggiuntive di Windows 10 </li></ul><br/> |
+|[![Anteprima del modello Distribuire un desktop protetto e moderno con Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](http://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf) \| [Visio](http://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Questo modello contiene: <ul><li>  Distribuzione di Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Distribuzione di Windows 10 e Office ProPlus con System Center Configuration Manager </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus con System Center Configuration Manager </li><li>  Funzionalità di protezione predefinite e aggiuntive di Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Vedere anche
 
 [Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guide dei lab di test per l'adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Soluzioni di sicurezza](security-solutions.md)
   
