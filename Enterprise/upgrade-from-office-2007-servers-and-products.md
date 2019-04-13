@@ -1,5 +1,5 @@
 ---
-title: Risorse che consentono di eseguire l'aggiornamento da Office 2007 ai server e client
+title: Risorse utili per l'aggiornamento da server e client di Office 2007
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -20,45 +20,46 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: Supporto sta per scadere per applicazioni client e server di Office 2007, e accordi di supporto personalizzati non sono disponibili. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento a questo punto.
-ms.openlocfilehash: 1a8747e15c9b4051a457deb75e61d02c0c6d73f6
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+description: Il supporto si concluderà presto per i server e le applicazioni client di Office 2007 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
+ms.openlocfilehash: d717688e5eb0baefd73cf70914aa378400820c0c
+ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933083"
+ms.lasthandoff: 04/13/2019
+ms.locfileid: "31838208"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Risorse che consentono di eseguire l'aggiornamento da Office 2007 ai server e client
+# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2007
 
-Se si sta utilizzando servizi e prodotti di Office 2007, il supporto per tali applicazioni terminata. Mentre si prevede l'aggiornamento, questo è il momento giusto da prendere in considerazione lo spostamento nel cloud Microsoft, a partire da Office 365. Utilizzare questo articolo come punto di partenza per esaminare le opzioni e pianificare l'aggiornamento.
+Se si utilizzano i prodotti e i servizi di Office 2007, il supporto per queste applicazioni è terminato. Durante la pianificazione dell'aggiornamento, questo è il momento ideale per passare al cloud Microsoft, a partire da Office 365. Utilizzare questo articolo come punto di partenza per esaminare le opzioni e pianificare l'aggiornamento.
       
 ## <a name="office-2007-planning-roadmaps"></a>Roadmap di pianificazione di Office 2007
   
-Supporto terminata per servizi e prodotti di Office 2007. Le guide di orientamento seguente può semplificare la pianificazione dell'aggiornamento a questo punto.
+Il supporto è terminato per i prodotti e i servizi di Office 2007. Le seguenti roadmap consentono di pianificare l'aggiornamento.
 
-|**Pianificazione del contenuto**|**Supporto di data fine**|
+|**Pianificazione del contenuto**|**Data di fine del supporto**|
 |:-----|:-----|
-|[Office 2007 fine del supporto roadmap](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 ottobre 2017  <br/> |
+|[Guida di orientamento alla fine del supporto di Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 ottobre 2017  <br/> |
 |[Exchange 2007 end of support roadmap](exchange-2007-end-of-support.md) <br/> |11 aprile 2017  <br/> |
-|[Guida sulla fine del supporto di SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 ottobre 2017  <br/> |
+|
+  [Roadmap di fine supporto di SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 ottobre 2017  <br/> |
 |[Guida sulla fine del supporto di Project Server 2007](project-server-2007-end-of-support.md) <br/> |10 ottobre 2017  <br/> |
 |[Eseguire l'aggiornamento da Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 gennaio 2018  <br/> |
 |[Guida sulla fine del supporto di PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |9 gennaio 2018  <br/> |
    
-Quando il supporto termina per un prodotto Microsoft, non esistono nuovi aggiornamenti di sicurezza, gli aggiornamenti non correlati alla sicurezza, le opzioni di supporto assistito gratuita o a pagamento (inclusi i contratti di servizi di supporto personalizzati) o aggiornamenti del contenuto tecnici online. Se si è un'organizzazione o un singolo utente privato, sono disponibili diverse opzioni da prendere in considerazione:
+Quando il supporto termina per un prodotto Microsoft, non sono disponibili nuovi aggiornamenti della sicurezza, aggiornamenti non relativi alla sicurezza, opzioni di supporto tecnico gratuite o a pagamento (inclusi i contratti di supporto personalizzati) o aggiornamenti tecnici online. Se si è un'organizzazione aziendale o un singolo utente di casa, sono disponibili diverse opzioni per prendere in considerazione quanto segue:
 
-## <a name="im-a-home-user-what-do-i-do"></a>Perché gli utenti privati. Come è possibile procedere?
+## <a name="im-a-home-user-what-do-i-do"></a>Sono un utente di casa. What do I do?
 
-Se si sta utilizzando prodotti Office 2010 e le applicazioni di rete domestica, vedere [queste informazioni](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
+Se si utilizzano i prodotti e le applicazioni di Office 2007 a casa, vedere [queste informazioni](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
      
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Gruppo pensionistico per Office (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Gruppo di pensionamento di Office (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
   
-[Video: Che cos'è Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Video: che cos'è Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Ciclo di vita del Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Criterio del ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Pianificare l'aggiornamento da client e server di Office 2007 o Office 2010](plan-upgrade-previous-versions-office.md)
+[Pianificare l'aggiornamento da Office 2007 o Office 2010 Server e client](plan-upgrade-previous-versions-office.md)
   
 
