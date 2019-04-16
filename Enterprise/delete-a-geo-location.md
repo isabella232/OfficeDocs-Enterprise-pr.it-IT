@@ -22,7 +22,7 @@ ms.locfileid: "30931745"
 Se una posizione satellite non è più necessaria, è possibile eliminarla dal tenant dall'interfaccia di amministrazione di SharePoint.
 
 > [!WARNING]
-> Tutti i dati degli utenti nella posizione satellite verranno eliminati definitivamente. Sono inclusi tutto il contenuto di OneDrive for Business, i siti di SharePoint e le cassette postali di Exchange, tra cui cassette postali di gruppo di Office 365. Prima di eliminare la posizione satellite, è necessario migrare i dati a un'altra posizione satellitare o centrale. Questa azione non può essere annullata.
+> Tutti i dati degli utenti nella posizione satellite verranno eliminati definitivamente. I dati eliminati comprendono tutto il contenuto di OneDrive for Business, i siti di SharePoint e le cassette postali di Exchange, tra cui le cassette postali dei gruppi di Office 365. Prima di eliminare la posizione satellite, è necessario migrare i dati a un'altra posizione satellitare o centrale. Questa azione non può essere annullata.
 
 Solo gli amministratori globali possono eliminare le posizioni satellite.
 

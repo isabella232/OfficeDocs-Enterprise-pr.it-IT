@@ -83,7 +83,7 @@ Nel seguente elenco vengono riportate le scelte di progettazione effettuate in m
     
 - È possibile utilizzare il servizio Routing e Accesso remoto (Routing and Remote Access, RRAS) in Windows Server 2016 oppure Windows Server 2012 per stabilire una connessione VPN da sito a sito con IPsec tra la rete locale e la rete virtuale di Azure. È inoltre possibile utilizzare altre opzioni, come i dispositivi VPN Cisco o Juniper Networks.
     
-- La rete locale potrebbe ancora disporre di servizi di rete quali Windows Server Active Directory (AD DS), Domain Name System (DNS) e server proxy. In base alle proprie esigenze, può risultare utile posizionare alcune di queste risorse di rete nella rete virtuale di Azure.
+- La rete locale potrebbe ancora disporre di servizi di rete quali Active Directory Domain Services (AD DS), Domain Name System (DNS) e server proxy. A seconda delle proprie esigenze, può risultare utile aggiungere alcune di queste risorse di rete alla rete virtuale di Azure.
     
 Per una rete virtuale di Azure esistente con una o più subnet, determinare se è presente uno spazio di indirizzi sufficiente per una subnet aggiuntiva per ospitare le macchine virtuali necessarie, in base alle proprie esigenze. Se non si dispone di uno spazio di indirizzi rimanente per una subnet aggiuntiva, creare un'ulteriore rete virtuale che disponga di una propria connessione VPN da sito a sito.
   
@@ -212,7 +212,7 @@ Di seguito è riportata la configurazione risultante.
 Per prima cosa, aprire un prompt di Azure PowerShell. Se Azure PowerShell non è installato, vedere [Panoramica di Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
 
 > [!TIP]
-> Per un file di testo contenente tutti i comandi di PowerShell riportati in questo articolo, fare clic [qui](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
+> Per ottenere un file di testo con tutti i comandi di PowerShell citati in questo articolo, fare clic [qui](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
   
 Successivamente, accedere al proprio account di Azure con questo comando.
   
