@@ -19,25 +19,25 @@ ms.locfileid: "31025190"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Abilitazione di SharePoint Multi-Geo in una posizione geografica satellite
 
-Questo articolo è rivolto agli amministratori globali o di SharePoint che hanno creato una località satellite Multi-Geo **prima** che la funzionalità di SharePoint diventasse disponibile il 27 marzo 2019 e che non hanno abilitato SharePoint Multi-Geo nella/e posizione/i geografica/che satellite. 
+Questo articolo è diretto agli amministratori globali o di SharePoint che hanno creato una posizione satellite Multi-Geo **prima** che la funzionalità di SharePoint diventasse disponibile il 27 marzo 2019 e che non hanno abilitato SharePoint Multi-Geo nella posizione o nelle posizioni satellite. 
 
 >[!Note]
->Se è stata aggiunta una nuova posizione geografica **dopo il 27 marzo**, non è necessario eseguire queste istruzioni, poiché la nuova posizione sarà stata già attivata per Multi-Geo di OneDrive e SharePoint.
+>Se è stata aggiunta una nuova posizione geografica **dopo il 27 marzo**, non è necessario seguire queste istruzioni, poiché la nuova posizione sarà stata già attivata per Multi-Geo di OneDrive e SharePoint.
 
 Queste istruzioni consentono di abilitare SharePoint nella posizione satellite, per consentire agli utenti di Multi-Geo di usufruire della funzionalità di OneDrive e SharePoint in O365. 
 
 >[!IMPORTANT]
->Tenere presente che si tratta di un'abilitazione unidirezionale. Dopo aver impostato la modalità SPO, non sarà più possibile ripristinare il tenant in modalità Multi-Geo solo per OneDrive senza il ricorso all’assistenza. 
+>Si tenga presente che si tratta di un processo non reversibile in modo autonomo. Dopo aver impostato la modalità SPO, non sarà più possibile ripristinare il tenant in modalità Multi-Geo solo per OneDrive senza richiedere assistenza. 
 
 ## <a name="to-set-a-geo-location-into-spo-mode"></a>Impostare una posizione geografica in modalità SPO
 
-Per impostare una posizione geografica in modalità SPO, connettersi alla posizione geografica che si vuole impostare:
+Per impostare una posizione geografica in modalità SPO, connettersi alla posizione geografica scelta:
 
 1.  Aprire SharePoint Online Management Shell. 
 2.  Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com"-Credential $credential
 3.  Set-SPOMultiGeoExperience</br></br>
 ![Set-SPOMultiGeoExperience](media/Set-SPO-MultiGeo.jpg)
-4.  Questa operazione in genere richiede circa un'ora, mentre si eseguono varie pubblicazioni nel servizio e viene ricopiato il tenant. Dopo circa 1 ora, eseguire un Get-SPOMultiGeoExperience.  Servirà per visualizzare se la posizione geografica è in modalità di SharePoint Online.</br></br>
+4.  Questa operazione in genere richiede circa un'ora. Durante questo intervallo di tempo eseguiamo alcune operazioni in background nel servizio e nel tenant. Dopo circa 1 ora, eseguire il comando Get-SPOMultiGeoExperience.  Servirà per visualizzare se la posizione geografica è in modalità di SharePoint Online.</br></br>
 ![Set-SPOMultiGeoExperience](media/Get-SPO-MultiGeo.jpg)
 
  
