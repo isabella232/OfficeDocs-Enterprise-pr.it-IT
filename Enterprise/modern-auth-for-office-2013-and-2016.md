@@ -1,5 +1,5 @@
 ---
-title: Funzionamento dell'autenticazione moderna per le app client di Office 2013 e Office 2016
+title: Funzionamento dell'autenticazione moderna per le applicazioni client di Office 2013 e Office 2016
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -21,17 +21,20 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come l'autenticazione moderna di Office 365 funziona in modo diverso per le app client di Office 2013 e 2016.
-ms.openlocfilehash: 0e7b1a91a13fdd1ea5bb5fd3b42fcda60c704d6f
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: 5e42ec2fcf8f27990af187e4ad26ba65909ac709
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957697"
 ---
-# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funzionamento dell'autenticazione moderna per le app client di Office 2013 e Office 2016
+# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funzionamento dell'autenticazione moderna per le applicazioni client di Office 2013 e Office 2016
 
 Leggere questo articolo per informazioni su come le app client di Office 2013 e Office 2016 utilizzano le funzionalità di autenticazione moderne in base alla configurazione dell'autenticazione nel tenant di Office 365 per Exchange Online, SharePoint Online e Skype for business online.
-  
+
+> [!NOTE]
+> Le app client legacy, come Office 2010 e Office per Mac 2011, non supportano l'autenticazione moderna e possono essere utilizzate solo con l'autenticazione di base.
+
 ## <a name="availability-of-modern-authentication-for-office-365-services"></a>Disponibilità dell'autenticazione moderna per i servizi di Office 365
 
 Per i servizi di Office 365, lo stato predefinito dell'autenticazione moderna è il seguente:
@@ -56,7 +59,7 @@ Fare clic sui collegamenti riportati di seguito per vedere come funziona l'auten
     
 - [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
-- [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
+- [Skype for Business online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -67,8 +70,8 @@ Nella tabella seguente viene descritto il comportamento di autenticazione per le
 |Office 2016  <br/> |No, o EnableADAL = 1  <br/> |Sì  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |
 |Office 2016  <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |
 |Office 2016  <br/> |Sì, EnableADAL = 0  <br/> |No  <br/> |Autenticazione di base  <br/> |Autenticazione di base  <br/> |
-| Office 2013   <br/> |No  <br/> |No  <br/> |Autenticazione di base  <br/> |Autenticazione di base  <br/> |
-| Office 2013   <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |
+|Office 2013  <br/> |No  <br/> |No  <br/> |Autenticazione di base  <br/> |Autenticazione di base  <br/> |
+|Office 2013  <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |
    
 ### <a name="sharepoint-online"></a>SharePoint Online
 <a name="BK_SharePointOnline"> </a>
@@ -80,8 +83,8 @@ Nella tabella seguente viene descritto il comportamento di autenticazione per le
 |Office 2016  <br/> |No, o EnableADAL = 1  <br/> |Sì  <br/> |Solo autenticazione moderna.  <br/> |Errore di connessione.  <br/> |
 |Office 2016  <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |Solo autenticazione moderna.  <br/> |Errore di connessione.  <br/> |
 |Office 2016  <br/> |Sì, EnableADAL = 0  <br/> |No  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |
-| Office 2013   <br/> |No  <br/> |No  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |
-| Office 2013   <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |Solo autenticazione moderna.  <br/> |Errore di connessione.  <br/> |
+|Office 2013  <br/> |No  <br/> |No  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |
+|Office 2013  <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |Solo autenticazione moderna.  <br/> |Errore di connessione.  <br/> |
    
 ### <a name="skype-for-business-online"></a>Skype for Business online
 <a name="BK_SFBO"> </a>
@@ -93,8 +96,8 @@ Nella tabella seguente viene descritto il comportamento di autenticazione per le
 |Office 2016  <br/> |No, o EnableADAL = 1  <br/> |Sì  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzato l'assistente per l'accesso di Microsoft online. Server rifiuta l'autenticazione moderna quando i tenant di Skype for business online non sono abilitati.  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzato l'assistente per l'accesso di Microsoft online. Server rifiuta l'autenticazione moderna quando i tenant di Skype for business online non sono abilitati.  <br/> |
 |Office 2016  <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzato l'assistente per l'accesso di Microsoft online. Server rifiuta l'autenticazione moderna quando i tenant di Skype for business online non sono abilitati.  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzato l'assistente per l'accesso di Microsoft online. Server rifiuta l'autenticazione moderna quando i tenant di Skype for business online non sono abilitati.  <br/> |
 |Office 2016  <br/> |Sì, EnableADAL = 0  <br/> |No  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |
-| Office 2013   <br/> |No  <br/> |No  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |
-| Office 2013   <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzato l'assistente per l'accesso di Microsoft online. Server rifiuta l'autenticazione moderna quando i tenant di Skype for business online non sono abilitati.  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |
+|Office 2013  <br/> |No  <br/> |No  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |
+|Office 2013  <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzato l'assistente per l'accesso di Microsoft online. Server rifiuta l'autenticazione moderna quando i tenant di Skype for business online non sono abilitati.  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |
    
 ## <a name="see-also"></a>Vedere anche
 
