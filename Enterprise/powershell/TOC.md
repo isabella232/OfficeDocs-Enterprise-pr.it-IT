@@ -37,7 +37,6 @@
 ### [Aggiungere un dominio a un tenancy client con Windows PowerShell per i partner con accesso delegato](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [Connettersi a Exchange Online tramite Windows PowerShell remoto per i partner con accesso delegato](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [Recuperare i dati di report dei clienti tramite Windows PowerShell per i partner con accesso delegato](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
-### [Aggregare i dati di report dei clienti tramite Windows PowerShell per i partner con accesso delegato](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
 ## [Gestire Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [Gestire i criteri di Skype for Business Online](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [Assegnare i criteri di Skype for Business Online per utente](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)

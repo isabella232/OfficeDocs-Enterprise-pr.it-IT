@@ -3,60 +3,6 @@
 
 
 
-## <a name="week-of-march-11-2019"></a>Settimana dell'11 marzo 2019
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 3/11/2019 | [Risorse sull'architettura IT del cloud Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificato |
-| 3/11/2019 | [Visualizzare gli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificato |
-| 3/11/2019 | [Perché è necessario usare PowerShell di Office 365](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | modificato |
-| 3/13/2019 | [Advanced eDiscovery per l'ambiente di sviluppo/test di Office 365](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | modificato |
-| 3/13/2019 | [Protezione avanzata dalle minacce per l'ambiente di sviluppo/test di Office 365](/Office365/Enterprise/advanced-threat-protection-for-your-office-365-dev-test-environment) | modificato |
-| 3/13/2019 | [Test Office 365 con le guide dei laboratori di test (TLG) per l'adozione del cloud](/Office365/Enterprise/cloud-adoption-test-lab-guides-tlgs) | modificato |
-| 3/13/2019 | [Cloud App Security per l'ambiente di sviluppo/test di Office 365](/Office365/Enterprise/cloud-app-security-for-your-office-365-dev-test-environment) | modificato |
-| 3/13/2019 | [Classificazione e assegnazione di etichette ai dati nell'ambiente di sviluppo/test di Office 365 ](/Office365/Enterprise/data-classification-and-labeling-in-the-office-365-dev-test-environment) | modificato |
-| 3/13/2019 | [Distribuire la sincronizzazione della directory di Office 365 in Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | modificato |
-| 3/13/2019 | [Sincronizzazione della directory per l'ambiente di sviluppo/test di Office 365](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | modificato |
-| 3/13/2019 | [Integrazione di Exchange Online per il proprio ambiente di sviluppo/test di Office 365 e Dynamics 365](/Office365/Enterprise/exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro) | modificato |
-| 3/13/2019 | [ExpressRoute per la connettività cloud di Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificato |
-| 3/13/2019 | [Identità federata per l'ambiente di sviluppo/test di Office 365](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | modificato |
-| 3/13/2019 | [Rete di Microsoft Cloud per Enterprise Architects](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | modificato |
-| 3/13/2019 | [Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365. ](/Office365/Enterprise/multi-factor-authentication-for-your-office-365-dev-test-environment) | modificato |
-| 3/13/2019 | [Pianificazione della rete e della migrazione per Office 365](/Office365/Enterprise/network-and-migration-planning) | modificato |
-| 3/13/2019 | [Ambiente di sviluppo/test di Office 365 e Dynamics 365](/Office365/Enterprise/office-365-and-dynamics-365-dev-test-environment) | modificato |
-| 3/13/2019 | [Ambiente di sviluppo/test di Office 365](/Office365/Enterprise/office-365-dev-test-environment) | modificato |
-| 3/13/2019 | [Effettuare la connessione a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | modificato |
-| 3/13/2019 | [Gestire Exchange Online con PowerShell di Office 365](/Office365/Enterprise/powershell/manage-exchange-online-with-office-365-powershell) | modificato |
-| 3/13/2019 | [Gestire SharePoint Online con PowerShell di Office 365](/Office365/Enterprise/powershell/manage-sharepoint-online-with-office-365-powershell) | modificato |
-| 3/13/2019 | [Manage SharePoint Online site groups with Office 365 PowerShell](/Office365/Enterprise/powershell/manage-sharepoint-site-groups-with-powershell) | modificato |
-| 3/13/2019 | [Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Office 365](/Office365/Enterprise/powershell/manage-sharepoint-users-and-groups-with-powershell) | modificato |
-| 3/13/2019 | [Gestire gli account utente e le licenze con Office 365 PowerShell](/Office365/Enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell) | modificato |
-| 3/13/2019 | [Usare PowerShell per eseguire una migrazione completa a Office 365](/Office365/Enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365) | modificato |
-| 3/13/2019 | [Usare PowerShell per eseguire una migrazione a fasi a Office 365](/Office365/Enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365) | modificato |
-| 3/13/2019 | [Perché è necessario usare PowerShell di Office 365](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | modificato |
-| 3/13/2019 | [Proteggere gli account di amministrazione globale di Office 365.](/Office365/Enterprise/protect-your-global-administrator-accounts) | modificato |
-| 3/13/2019 | [Protezione dei file sensibili nell’ambiente di sviluppo/test di Office 365](/Office365/Enterprise/sensitive-file-protection-in-the-office-365-dev-test-environment) | modificato |
-| 3/13/2019 | [Abbonamenti, licenze, account e tenant per offerte cloud di Microsoft](/Office365/Enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) | modificato |
-| 3/13/2019 | [Ambiente di sviluppo/test di One Microsoft Cloud](/Office365/Enterprise/the-one-microsoft-cloud-dev-test-environment) | modificato |
-| 3/14/2019 | [Reti per la distribuzione di contenuti](/Office365/Enterprise/content-delivery-networks) | modificato |
-| 3/14/2019 | [Domande frequenti su Office 365 networking video](/Office365/Enterprise/office-365-video-networking-faq) | modificato |
-| 3/15/2019 | [Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | modificato |
-| 3/15/2019 | [Durante e dopo lo spostamento dati](/Office365/Enterprise/during-and-after-your-data-move) | modificato |
-| 3/15/2019 | [Ambiente di sviluppo/test della configurazione di base](/Office365/Enterprise/base-configuration-dev-test-environment) | modificato |
-| 3/15/2019 | [Connettere una rete locale a una rete virtuale di Microsoft Azure](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | modificato |
-| 3/15/2019 | [Distribuire l'autenticazione federata a disponibilità elevata per Office 365 in Azure](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | modificato |
-| 3/15/2019 | [Distribuire la sincronizzazione della directory di Office 365 in Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | modificato |
-| 3/15/2019 | [Identità federata per l'ambiente di sviluppo/test di Office 365](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | modificato |
-| 3/15/2019 | [Fase 1 di autenticazione federata a disponibilità elevata configurare Azure](/Office365/Enterprise/high-availability-federated-authentication-phase-1-configure-azure) | modificato |
-| 3/15/2019 | [Fase 2 dell'autenticazione federata a disponibilità elevata configurare i controller di dominio](/Office365/Enterprise/high-availability-federated-authentication-phase-2-configure-domain-controllers) | modificato |
-| 3/15/2019 | [Fase 3 dell'autenticazione federata a disponibilità elevata configurare i server AD FS](/Office365/Enterprise/high-availability-federated-authentication-phase-3-configure-ad-fs-servers) | modificato |
-| 3/15/2019 | [Fase 4 dell'autenticazione federata a disponibilità elevata configurare i proxy dell'applicazione Web](/Office365/Enterprise/high-availability-federated-authentication-phase-4-configure-web-application-pro) | modificato |
-| 3/15/2019 | [Ambiente di sviluppo/test di Office 365](/Office365/Enterprise/office-365-dev-test-environment) | modificato |
-| 3/15/2019 | [Come richiedere lo spostamento dati](/Office365/Enterprise/request-your-data-move) | modificato |
-| 3/15/2019 | [Rete virtuale cross-premise simulata in Azure](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | modificato |
-
-
 ## <a name="week-of-march-18-2019"></a>Settimana del 18 marzo 2019
 
 
@@ -197,3 +143,15 @@
 | 4/12/2019 | [Risorse sull'architettura IT del cloud Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificato |
 | 4/12/2019 | [Pianificare l'aggiornamento da server e client di Office 2007 o 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | modificato |
 | 4/12/2019 | [Risorse utili per l'aggiornamento da server e client di Office 2007](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | modificato |
+
+
+## <a name="week-of-april-15-2019"></a>Settimana del 15 aprile 2019
+
+
+| Data di pubblicazione |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 4/18/2019 | [Funzionamento dell'autenticazione moderna per le applicazioni client di Office 2013 e Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | modificato |
+| 4/18/2019 | [Assegnare le licenze agli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificato |
+| 4/18/2019 | [Assegnare i ruoli agli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modificato |
+| 4/18/2019 | [Routing con ExpressRoute per Office 365](/Office365/Enterprise/routing-with-expressroute) | modificato |
+| 4/18/2019 | [Usare i cmdlet di PowerShell della distribuzione centralizzata per gestire i componenti aggiuntivi](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | modificato |
