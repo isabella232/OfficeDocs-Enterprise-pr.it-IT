@@ -13,99 +13,99 @@ search.appverid:
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
-description: "Riepilogo: Informazioni su come ottimizzare la rete per l'accesso a Microsoft Azure PaaS."
+description: "Riepilogo: informazioni su come ottimizzare la rete per l'accesso a Microsoft Azure PaaS."
 ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872237"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491370"
 ---
-# <a name="designing-networking-for-microsoft-azure-paas"></a><span data-ttu-id="e65f5-103">Progettazione di rete per Microsoft Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="e65f5-103">Designing networking for Microsoft Azure PaaS</span></span>
+# <a name="designing-networking-for-microsoft-azure-paas"></a><span data-ttu-id="9addd-103">Progettazione di rete per Microsoft Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="9addd-103">Designing networking for Microsoft Azure PaaS</span></span>
 
- <span data-ttu-id="e65f5-104">**Riepilogo:** Informazioni su come ottimizzare la rete per l'accesso a Microsoft Azure PaaS.</span><span class="sxs-lookup"><span data-stu-id="e65f5-104">**Summary:** Understand how to optimize your network for access to Microsoft Azure PaaS.</span></span>
+ <span data-ttu-id="9addd-104">**Riepilogo:** Informazioni su come ottimizzare la rete per l'accesso a Microsoft Azure PaaS.</span><span class="sxs-lookup"><span data-stu-id="9addd-104">**Summary:** Understand how to optimize your network for access to Microsoft Azure PaaS.</span></span>
   
-<span data-ttu-id="e65f5-105">L'ottimizzazione della rete per le app PaaS di Azure necessita di una larghezza di banda Internet adeguata e può richiedere la distribuzione del traffico di rete in più siti o app.</span><span class="sxs-lookup"><span data-stu-id="e65f5-105">Optimizing networking for Azure PaaS apps requires adequate Internet bandwidth and can require the distribution of network traffic across multiple sites or apps.</span></span>
+<span data-ttu-id="9addd-105">L'ottimizzazione della rete per le app PaaS di Azure necessita di una larghezza di banda Internet adeguata e può richiedere la distribuzione del traffico di rete in più siti o app.</span><span class="sxs-lookup"><span data-stu-id="9addd-105">Optimizing networking for Azure PaaS apps requires adequate Internet bandwidth and can require the distribution of network traffic across multiple sites or apps.</span></span>
   
-## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a><span data-ttu-id="e65f5-106">Passaggi di pianificazione per l'hosting di applicazioni PaaS organizzazione in Azure</span><span class="sxs-lookup"><span data-stu-id="e65f5-106">Planning steps for hosting organization PaaS applications in Azure</span></span>
+## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a><span data-ttu-id="9addd-106">Procedura di pianificazione per l'hosting di applicazioni PaaS dell'organizzazione in Azure</span><span class="sxs-lookup"><span data-stu-id="9addd-106">Planning steps for hosting organization PaaS applications in Azure</span></span>
 
-1. <span data-ttu-id="e65f5-107">Consultare la sezione **Procedura per predisporre la rete per i servizi cloud Microsoft** in [Common elements of Microsoft cloud connectivity](common-elements-of-microsoft-cloud-connectivity.md).</span><span class="sxs-lookup"><span data-stu-id="e65f5-107">Go through the **Steps to prepare your network for Microsoft cloud services** section in [Common elements of Microsoft cloud connectivity](common-elements-of-microsoft-cloud-connectivity.md).</span></span>
+1. <span data-ttu-id="9addd-107">Consultare la sezione **Procedura per predisporre la rete per i servizi cloud Microsoft** in [Common elements of Microsoft cloud connectivity](common-elements-of-microsoft-cloud-connectivity.md).</span><span class="sxs-lookup"><span data-stu-id="9addd-107">Go through the **Steps to prepare your network for Microsoft cloud services** section in [Common elements of Microsoft cloud connectivity](common-elements-of-microsoft-cloud-connectivity.md).</span></span>
     
-2. <span data-ttu-id="e65f5-108">Ottimizzare la larghezza di banda Internet utilizzando i passaggi da 2 a 4 della sezione **passaggi per la preparazione della rete per i servizi Microsoft SaaS** nella [Progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md).</span><span class="sxs-lookup"><span data-stu-id="e65f5-108">Optimize your Internet bandwidth using steps 2 - 4 of the **Steps to prepare your network for Microsoft SaaS services** section in [Designing networking for Microsoft SaaS](designing-networking-for-microsoft-saas.md).</span></span>
+2. <span data-ttu-id="9addd-108">Ottimizzare la larghezza di banda Internet utilizzando i passaggi 2-4 della **procedura per preparare la rete per i servizi SaaS di Microsoft** nella sezione [progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md).</span><span class="sxs-lookup"><span data-stu-id="9addd-108">Optimize your Internet bandwidth using steps 2 - 4 of the **Steps to prepare your network for Microsoft SaaS services** section in [Designing networking for Microsoft SaaS](designing-networking-for-microsoft-saas.md).</span></span>
     
-3. <span data-ttu-id="e65f5-109">Stabilire se sono necessari una connessione ExpressRoute in Azure.</span><span class="sxs-lookup"><span data-stu-id="e65f5-109">Determine whether you need an ExpressRoute connection to Azure.</span></span>
+3. <span data-ttu-id="9addd-109">Determinare se è necessaria una connessione di ExpressRoute a Azure.</span><span class="sxs-lookup"><span data-stu-id="9addd-109">Determine whether you need an ExpressRoute connection to Azure.</span></span>
     
-4. <span data-ttu-id="e65f5-110">Per carichi di lavoro basate sul web, determinare se è necessario Azure Application Gateway.</span><span class="sxs-lookup"><span data-stu-id="e65f5-110">For web-based workloads, determine whether you need the Azure Application Gateway.</span></span>
+4. <span data-ttu-id="9addd-110">Per i carichi di lavoro basati sul Web, determinare se è necessario il gateway dell'applicazione Azure.</span><span class="sxs-lookup"><span data-stu-id="9addd-110">For web-based workloads, determine whether you need the Azure Application Gateway.</span></span>
     
-5. <span data-ttu-id="e65f5-111">Per la distribuzione del traffico agli endpoint diversi nel centro dati diversi, determinare se è necessario Azure Traffic Managerhttp.</span><span class="sxs-lookup"><span data-stu-id="e65f5-111">For distribution of traffic to different endpoints in different data centers, determine whether you need Azure Traffic Manager.</span></span>
+5. <span data-ttu-id="9addd-111">Per la distribuzione del traffico verso endpoint diversi in diversi Data Center, determinare se è necessario Azure Traffic Manager.</span><span class="sxs-lookup"><span data-stu-id="9addd-111">For distribution of traffic to different endpoints in different data centers, determine whether you need Azure Traffic Manager.</span></span>
     
-## <a name="internet-bandwidth-for-organization-paas-applications"></a><span data-ttu-id="e65f5-112">Larghezza di banda Internet per le applicazioni PaaS organizzazione</span><span class="sxs-lookup"><span data-stu-id="e65f5-112">Internet bandwidth for organization PaaS applications</span></span>
+## <a name="internet-bandwidth-for-organization-paas-applications"></a><span data-ttu-id="9addd-112">Larghezza di banda Internet per le applicazioni di PaaS dell'organizzazione</span><span class="sxs-lookup"><span data-stu-id="9addd-112">Internet bandwidth for organization PaaS applications</span></span>
 
-<span data-ttu-id="e65f5-p101">Organizzazione applicazioni ospitate in Azure PaaS richiedono larghezza di banda Internet per gli utenti intranet. Sono disponibili due opzioni:</span><span class="sxs-lookup"><span data-stu-id="e65f5-p101">Organization applications hosted in Azure PaaS require Internet bandwidth for intranet users. There are two options:</span></span>
+<span data-ttu-id="9addd-113">Le applicazioni dell'organizzazione ospitate in Azure PaaS richiedono la larghezza di banda Internet per gli utenti Intranet.</span><span class="sxs-lookup"><span data-stu-id="9addd-113">Organization applications hosted in Azure PaaS require Internet bandwidth for intranet users.</span></span> <span data-ttu-id="9addd-114">Esistono due opzioni:</span><span class="sxs-lookup"><span data-stu-id="9addd-114">There are two options:</span></span>
   
-- <span data-ttu-id="e65f5-p102">**Opzione 1:** Utilizzare la pipe esistente, ottimizzata per il traffico Internet con la capacità di gestire i carichi di picco. Vedere[Progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md) per edge Internet, l'utilizzo di client e considerazioni sulle operazioni IT.</span><span class="sxs-lookup"><span data-stu-id="e65f5-p102">**Option 1:** Use your existing pipe, optimized for Internet traffic with the capacity to handle peak loads. See[Designing networking for Microsoft SaaS](designing-networking-for-microsoft-saas.md) for Internet edge, client usage, and IT operations considerations.</span></span>
+- <span data-ttu-id="9addd-115">**Opzione 1:** Utilizzare la tubazione esistente, ottimizzata per il traffico Internet con la capacità di gestire i carichi di picco.</span><span class="sxs-lookup"><span data-stu-id="9addd-115">**Option 1:** Use your existing pipe, optimized for Internet traffic with the capacity to handle peak loads.</span></span> <span data-ttu-id="9addd-116">Vedere[progettazione della rete per](designing-networking-for-microsoft-saas.md) le considerazioni relative a Microsoft SaaS per Internet Edge, utilizzo client e operazioni it.</span><span class="sxs-lookup"><span data-stu-id="9addd-116">See[Designing networking for Microsoft SaaS](designing-networking-for-microsoft-saas.md) for Internet edge, client usage, and IT operations considerations.</span></span>
     
-- <span data-ttu-id="e65f5-117">**Opzione 2:** Per ampia larghezza di banda o bassa latenza delle esigenze, utilizzare una connessione ExpressRoute in Azure.</span><span class="sxs-lookup"><span data-stu-id="e65f5-117">**Option 2:** For high-bandwidth or low latency needs, use an ExpressRoute connection to Azure.</span></span>
+- <span data-ttu-id="9addd-117">**Opzione 2:** Per le esigenze di bassa latenza e larghezza di banda elevata, utilizzare una connessione ExpressRoute a Azure.</span><span class="sxs-lookup"><span data-stu-id="9addd-117">**Option 2:** For high-bandwidth or low latency needs, use an ExpressRoute connection to Azure.</span></span>
     
-<span data-ttu-id="e65f5-118">**Nella figura 1: Opzioni di connessione per la connessione di servizi di Azure PaaS**</span><span class="sxs-lookup"><span data-stu-id="e65f5-118">**Figure 1: Connection options for connecting the Azure PaaS services**</span></span>
+<span data-ttu-id="9addd-118">**Figura 1: opzioni di connessione per la connessione dei servizi di PaaS di Azure**</span><span class="sxs-lookup"><span data-stu-id="9addd-118">**Figure 1: Connection options for connecting the Azure PaaS services**</span></span>
 
-![Figura 1: Opzioni di connessione per i servizi PaaS di Azure](media/Network-Poster/PaaS1.png)
+![Figura 1: opzioni di connessione per i servizi di PaaS di Azure](media/Network-Poster/PaaS1.png)
   
-<span data-ttu-id="e65f5-120">Una rete locale la connessione a servizi di Azure PaaS attraverso un canale Internet o ExpressRoute illustrato nella figura 1.</span><span class="sxs-lookup"><span data-stu-id="e65f5-120">Figure 1 shows an on-premises network connecting to Azure PaaS services over an Internet pipe or ExpressRoute.</span></span>
+<span data-ttu-id="9addd-120">Nella figura 1 viene illustrata una rete locale che si connette ai servizi di PaaS di Azure su una pipe Internet o ExpressRoute.</span><span class="sxs-lookup"><span data-stu-id="9addd-120">Figure 1 shows an on-premises network connecting to Azure PaaS services over an Internet pipe or ExpressRoute.</span></span>
   
-## <a name="azure-application-gateway"></a><span data-ttu-id="e65f5-121">Azure Application Gateway</span><span class="sxs-lookup"><span data-stu-id="e65f5-121">Azure Application Gateway</span></span>
+## <a name="azure-application-gateway"></a><span data-ttu-id="9addd-121">Gateway dell'applicazione di Azure</span><span class="sxs-lookup"><span data-stu-id="9addd-121">Azure Application Gateway</span></span>
 
-<span data-ttu-id="e65f5-122">Livello di applicazione di routing e il bilanciamento del carico servizi che consentono di creare un soluzione scalabile e altamente disponibile front-end web in Azure per applicazioni web, servizi cloud e macchine virtuali.</span><span class="sxs-lookup"><span data-stu-id="e65f5-122">Application-level routing and load balancing services that let you build a scalable and highly-available web front end in Azure for web apps, cloud services, and virtual machines.</span></span> 
+<span data-ttu-id="9addd-122">Servizi di routing a livello di applicazione e di bilanciamento del carico che consentono di creare un front-end Web scalabile e a disponibilità elevata in Azure per le applicazioni Web, i servizi cloud e le macchine virtuali.</span><span class="sxs-lookup"><span data-stu-id="9addd-122">Application-level routing and load balancing services that let you build a scalable and highly-available web front end in Azure for web apps, cloud services, and virtual machines.</span></span> 
   
-<span data-ttu-id="e65f5-123">**Figura 2: Applicazioni Azure Gateway**</span><span class="sxs-lookup"><span data-stu-id="e65f5-123">**Figure 2: Azure Application Gateway**</span></span>
+<span data-ttu-id="9addd-123">**Figura 2: gateway di applicazioni di Azure**</span><span class="sxs-lookup"><span data-stu-id="9addd-123">**Figure 2: Azure Application Gateway**</span></span>
 
-![Figura 2: Servizio Gateway di applicazioni Azure](media/Network-Poster/PaaS2.png)
+![Figura 2: servizio gateway dell'applicazione Azure](media/Network-Poster/PaaS2.png)
   
-<span data-ttu-id="e65f5-125">Nella figura 2 viene Azure Application Gateway e come utente richiede da Internet può essere instradate a Azure web App, servizi cloud o macchine virtuali.</span><span class="sxs-lookup"><span data-stu-id="e65f5-125">Figure 2 shows the Azure Application Gateway and how user requests from the Internet can be routed to Azure web apps, cloud services, or virtual machines.</span></span>
+<span data-ttu-id="9addd-125">Nella figura 2 viene mostrato il gateway dell'applicazione di Azure e come le richieste degli utenti da Internet possono essere instradate a Azure Web Apps, servizi cloud o macchine virtuali.</span><span class="sxs-lookup"><span data-stu-id="9addd-125">Figure 2 shows the Azure Application Gateway and how user requests from the Internet can be routed to Azure web apps, cloud services, or virtual machines.</span></span>
   
-<span data-ttu-id="e65f5-126">Application Gateway attualmente supporta il recapito di livello applicazione 7 per le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="e65f5-126">Application Gateway currently supports layer 7 application delivery for the following:</span></span>
+<span data-ttu-id="9addd-126">Il gateway applicazione supporta attualmente il recapito delle applicazioni Layer 7 per gli elementi seguenti:</span><span class="sxs-lookup"><span data-stu-id="9addd-126">Application Gateway currently supports layer 7 application delivery for the following:</span></span>
   
-- <span data-ttu-id="e65f5-127">Bilanciamento del carico HTTP</span><span class="sxs-lookup"><span data-stu-id="e65f5-127">HTTP load balancing</span></span>
+- <span data-ttu-id="9addd-127">Bilanciamento del carico HTTP</span><span class="sxs-lookup"><span data-stu-id="9addd-127">HTTP load balancing</span></span>
     
-- <span data-ttu-id="e65f5-128">Affinità basata sui cookie di sessione</span><span class="sxs-lookup"><span data-stu-id="e65f5-128">Cookie-based session affinity</span></span>
+- <span data-ttu-id="9addd-128">Affinità di sessione basata su cookie</span><span class="sxs-lookup"><span data-stu-id="9addd-128">Cookie-based session affinity</span></span>
     
-- <span data-ttu-id="e65f5-129">Offload SSL</span><span class="sxs-lookup"><span data-stu-id="e65f5-129">SSL offload</span></span>
+- <span data-ttu-id="9addd-129">Offload SSL</span><span class="sxs-lookup"><span data-stu-id="9addd-129">SSL offload</span></span>
     
-<span data-ttu-id="e65f5-130">Per ulteriori informazioni, vedere [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).</span><span class="sxs-lookup"><span data-stu-id="e65f5-130">For more information, see [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).</span></span>
+<span data-ttu-id="9addd-130">Per ulteriori informazioni, vedere [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).</span><span class="sxs-lookup"><span data-stu-id="9addd-130">For more information, see [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).</span></span>
   
-## <a name="azure-traffic-manager"></a><span data-ttu-id="e65f5-131">Azure Traffic Manager</span><span class="sxs-lookup"><span data-stu-id="e65f5-131">Azure Traffic Manager</span></span>
+## <a name="azure-traffic-manager"></a><span data-ttu-id="9addd-131">Azure Traffic Manager</span><span class="sxs-lookup"><span data-stu-id="9addd-131">Azure Traffic Manager</span></span>
 
-<span data-ttu-id="e65f5-132">Distribuzione del traffico a endpoint distinti, che può includere servizi cloud o applicazioni web Azure in datacenter diversi oppure endpoint esterno.</span><span class="sxs-lookup"><span data-stu-id="e65f5-132">Distribution of traffic to different endpoints, which can include cloud services or Azure web apps located in different data centers or external endpoints.</span></span>
+<span data-ttu-id="9addd-132">Distribuzione del traffico verso endpoint diversi, che possono includere servizi cloud o Azure Web Apps ubicati in diversi Data Center o endpoint esterni.</span><span class="sxs-lookup"><span data-stu-id="9addd-132">Distribution of traffic to different endpoints, which can include cloud services or Azure web apps located in different data centers or external endpoints.</span></span>
   
-<span data-ttu-id="e65f5-133">Gestione del traffico vengono utilizzati i metodi di distribuzione seguenti:</span><span class="sxs-lookup"><span data-stu-id="e65f5-133">Traffic Manager uses the following routing methods:</span></span>
+<span data-ttu-id="9addd-133">Traffic Manager utilizza i seguenti metodi di routing:</span><span class="sxs-lookup"><span data-stu-id="9addd-133">Traffic Manager uses the following routing methods:</span></span>
   
-- <span data-ttu-id="e65f5-134">**Failover:** I punti finali sono nei data center Azure uguali o diversi e si desidera utilizzare un endpoint principale per tutto il traffico, ma fornisce backup nel caso in cui l'endpoint backup o il primario non sono disponibili.</span><span class="sxs-lookup"><span data-stu-id="e65f5-134">**Failover:** The endpoints are in the same or different Azure datacenters and you want to use a primary endpoint for all traffic, but provide backups in case the primary or the backup endpoints are unavailable.</span></span>
+- <span data-ttu-id="9addd-134">**Failover:** Gli endpoint sono nello stesso datacenter di Azure o in altri centri dati e si desidera utilizzare un endpoint primario per tutto il traffico, ma fornire backup nel caso in cui gli endpoint primari o di backup non siano disponibili.</span><span class="sxs-lookup"><span data-stu-id="9addd-134">**Failover:** The endpoints are in the same or different Azure datacenters and you want to use a primary endpoint for all traffic, but provide backups in case the primary or the backup endpoints are unavailable.</span></span>
     
-- <span data-ttu-id="e65f5-135">**Round robin:** Si desidera distribuire il carico in una serie di endpoint nello stesso datacenter o tra i datacenter diversi.</span><span class="sxs-lookup"><span data-stu-id="e65f5-135">**Round robin:** You want to distribute load across a set of endpoints in the same datacenter or across different datacenters.</span></span>
+- <span data-ttu-id="9addd-135">**Round Robin:** Si desidera distribuire il carico in un set di endpoint nello stesso datacenter o in diversi datacenter.</span><span class="sxs-lookup"><span data-stu-id="9addd-135">**Round robin:** You want to distribute load across a set of endpoints in the same datacenter or across different datacenters.</span></span>
     
-- <span data-ttu-id="e65f5-136">**Prestazioni:** Sono presenti endpoint in posizioni geografiche diverse e si desidera richiedente ai client di utilizzare l'endpoint "più vicino" in termini di più bassa latenza.</span><span class="sxs-lookup"><span data-stu-id="e65f5-136">**Performance:** You have endpoints in different geographic locations and you want requesting clients to use the "closest" endpoint in terms of the lowest latency.</span></span>
+- <span data-ttu-id="9addd-136">**Prestazioni:** Si dispone di endpoint in diverse posizioni geografiche e si desidera richiedere ai client di utilizzare l'endpoint "più vicino" in termini di latenza più bassa.</span><span class="sxs-lookup"><span data-stu-id="9addd-136">**Performance:** You have endpoints in different geographic locations and you want requesting clients to use the "closest" endpoint in terms of the lowest latency.</span></span>
     
-<span data-ttu-id="e65f5-137">Di seguito è riportato un esempio di tre distribuiti geograficamente web app.</span><span class="sxs-lookup"><span data-stu-id="e65f5-137">Here is an example for three geographically-distributed web apps.</span></span>
+<span data-ttu-id="9addd-137">Di seguito è riportato un esempio per tre app Web geograficamente distribuite.</span><span class="sxs-lookup"><span data-stu-id="9addd-137">Here is an example for three geographically-distributed web apps.</span></span>
   
-<span data-ttu-id="e65f5-138">**Figura 3: Gestione traffico di Azure**</span><span class="sxs-lookup"><span data-stu-id="e65f5-138">**Figure 3: Azure Traffic Manager**</span></span>
+<span data-ttu-id="9addd-138">**Figura 3: gestione traffico di Azure**</span><span class="sxs-lookup"><span data-stu-id="9addd-138">**Figure 3: Azure Traffic Manager**</span></span>
 
-![Figura 3: Gestione traffico di Azure](media/Network-Poster/PaaS3.png)
+![Figura 3: gestione traffico di Azure](media/Network-Poster/PaaS3.png)
   
-<span data-ttu-id="e65f5-p103">Nella figura 3 viene illustrato il processo di base di gestione del traffico viene utilizzato per instradare le richieste per le applicazioni web diverse Azure tre negli Stati Uniti, Europa e Asia. Nell'esempio:</span><span class="sxs-lookup"><span data-stu-id="e65f5-p103">Figure 3 shows the basic process that Traffic Manager uses to route requests to three different Azure web apps in United States, Europe, and Asia. In the example:</span></span>
+<span data-ttu-id="9addd-140">Nella figura 3 viene illustrato il processo di base utilizzato da Traffic Manager per instradare le richieste a tre diverse app Web di Azure in Stati Uniti, Europa e Asia.</span><span class="sxs-lookup"><span data-stu-id="9addd-140">Figure 3 shows the basic process that Traffic Manager uses to route requests to three different Azure web apps in United States, Europe, and Asia.</span></span> <span data-ttu-id="9addd-141">Nell'esempio seguente:</span><span class="sxs-lookup"><span data-stu-id="9addd-141">In the example:</span></span>
   
-1. <span data-ttu-id="e65f5-142">Una query DNS utente per un sito web che URL Ottiene indirizzati a Azure Traffic Managerhttp, che restituisce il nome di un'app web regionali, in base il metodo di routing delle prestazioni.</span><span class="sxs-lookup"><span data-stu-id="e65f5-142">A user DNS query for a web site URL gets directed to Azure Traffic Manager, which returns the name of a regional web app, based on the performance routing method.</span></span>
+1. <span data-ttu-id="9addd-142">Una query DNS dell'utente per l'URL di un sito Web viene indirizzata a Azure Traffic Manager, che restituisce il nome di un'app web regionale, in base al metodo di routing delle prestazioni.</span><span class="sxs-lookup"><span data-stu-id="9addd-142">A user DNS query for a web site URL gets directed to Azure Traffic Manager, which returns the name of a regional web app, based on the performance routing method.</span></span>
     
-2. <span data-ttu-id="e65f5-143">L'utente avvia il traffico con l'app web internazionali in Europa.</span><span class="sxs-lookup"><span data-stu-id="e65f5-143">The user initiates traffic with the regional web app in Europe.</span></span>
+2. <span data-ttu-id="9addd-143">L'utente avvia il traffico con l'app web regionale in Europa.</span><span class="sxs-lookup"><span data-stu-id="9addd-143">The user initiates traffic with the regional web app in Europe.</span></span>
     
-<span data-ttu-id="e65f5-144">Per ulteriori informazioni, vedere [Gestione del traffico](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).</span><span class="sxs-lookup"><span data-stu-id="e65f5-144">For more information, see [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).</span></span>
+<span data-ttu-id="9addd-144">Per ulteriori informazioni, vedere [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).</span><span class="sxs-lookup"><span data-stu-id="9addd-144">For more information, see [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="e65f5-145">Passaggio successivo</span><span class="sxs-lookup"><span data-stu-id="e65f5-145">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="9addd-145">Passaggio successivo</span><span class="sxs-lookup"><span data-stu-id="9addd-145">Next step</span></span>
 
-[<span data-ttu-id="e65f5-146">Progettazione di rete per Microsoft Azure IaaS</span><span class="sxs-lookup"><span data-stu-id="e65f5-146">Designing networking for Microsoft Azure IaaS</span></span>](designing-networking-for-microsoft-azure-iaas.md)
+[<span data-ttu-id="9addd-146">Progettazione di rete per Microsoft Azure IaaS</span><span class="sxs-lookup"><span data-stu-id="9addd-146">Designing networking for Microsoft Azure IaaS</span></span>](designing-networking-for-microsoft-azure-iaas.md)
  
-## <a name="see-also"></a><span data-ttu-id="e65f5-147">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="e65f5-147">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9addd-147">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="9addd-147">See also</span></span>
 
-[<span data-ttu-id="e65f5-148">Rete di Microsoft Cloud per Enterprise Architects</span><span class="sxs-lookup"><span data-stu-id="e65f5-148">Microsoft Cloud Networking for Enterprise Architects</span></span>](microsoft-cloud-networking-for-enterprise-architects.md)
+[<span data-ttu-id="9addd-148">Rete di Microsoft Cloud per Enterprise Architects</span><span class="sxs-lookup"><span data-stu-id="9addd-148">Microsoft Cloud Networking for Enterprise Architects</span></span>](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[<span data-ttu-id="e65f5-149">Risorse sull'architettura IT di Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="e65f5-149">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="9addd-149">Risorse sull'architettura IT di Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="9addd-149">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
