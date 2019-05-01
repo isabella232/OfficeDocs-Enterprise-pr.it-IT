@@ -16,21 +16,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: Viene fornito un esempio e vengono descritti la convenzione di denominazione e il livello di registrazione predefinito del registro delle transazioni di Office 365 IdFix.
+description: Fornisce un esempio e descrive la convenzione di denominazione e il livello di registrazione predefinito del registro delle transazioni IdFix di Office 365.
 ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085065"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490942"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Registro delle transazioni di Office 365 IdFix
 
-Viene fornito un esempio e vengono descritti la convenzione di denominazione e il livello di registrazione predefinito del registro delle transazioni di Office 365 IdFix.
+Fornisce un esempio e descrive la convenzione di denominazione e il livello di registrazione predefinito del registro delle transazioni IdFix di Office 365.
   
 ## <a name="idfix-transaction-log-location"></a>Posizione del registro delle transazioni IdFix
 
-Lo strumento Office 365 IdFix crea un nuovo log delle transazioni ogni volta che si fa clic su **applica** in IdFix e si applicano modifiche alla foresta di Active Directory. Il registro delle transazioni viene salvato nella stessa cartella in cui è stato installato IdFix. Per impostazione predefinita, questa cartella è C:\Deployment Tools\IDFix. Il nome del file del registro delle transazioni utilizza un formato di data e ora, ad esempio, verbose 6-1-2018 6-17-22 PM indica che un file generato al 1 ° giugno 2018 a 6:17:22 PM. Verbose indica il livello di registrazione. 
+Lo strumento Office 365 IdFix crea un nuovo log delle transazioni ogni volta che si fa clic su **applica** in IdFix e si applicano modifiche alla foresta di Active Directory. Il registro delle transazioni viene salvato nella stessa cartella in cui è stato installato IdFix. Per impostazione predefinita, questa cartella è C:\Deployment Tools\IDFix. Il nome del file del registro delle transazioni utilizza un formato di data e ora, ad esempio, verbose 6-1-2018 6-17-22 PM indica un file che è stato generato al 1 ° giugno 2018 alle 6:17:22 PM. Dettagli indica il livello di registrazione. 
   
 ## <a name="idfix-transaction-log-logging-level"></a>Il livello di registrazione del registro delle transazioni IdFix
 

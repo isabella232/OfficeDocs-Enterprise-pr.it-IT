@@ -12,31 +12,31 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: In questo articolo viene illustrato come è possibile ridurre i tempi di caricamento delle pagine di SharePoint Online mediante l'utilizzo di JavaScript per ritardare il caricamento delle immagini e caricando JavaScript non essenziali fino a dopo caricamento della pagina.
+description: In questo articolo viene descritto come ridurre il tempo di caricamento per le pagine di SharePoint Online utilizzando JavaScript per ritardare il caricamento delle immagini e anche in attesa di caricare JavaScript non essenziale fino al caricamento della pagina.
 ms.openlocfilehash: b8b052d85c99e51dff4b0fc747b3b52c17de8d8b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541353"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490294"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Ritardo caricamento immagini e JavaScript in SharePoint Online
 
-In questo articolo viene illustrato come è possibile ridurre i tempi di caricamento delle pagine di SharePoint Online mediante l'utilizzo di JavaScript per ritardare il caricamento delle immagini e caricando JavaScript non essenziali fino a dopo caricamento della pagina. 
+In questo articolo viene descritto come ridurre il tempo di caricamento per le pagine di SharePoint Online utilizzando JavaScript per ritardare il caricamento delle immagini e anche in attesa di caricare JavaScript non essenziale fino al caricamento della pagina. 
   
 Le immagini possono influenzare negativamente la velocità di caricamento della pagina in SharePoint Online. Per impostazione predefinita, i browser Internet più moderni pre-recuperano immagini durante il caricamento di una pagina HTML. Ciò può far sì che la pagina si carichi lentamente senza motivo se le immagini non sono visibili sullo schermo fino a quando l'utente scorre verso il basso. Le immagini possono impedire al browser di caricare la parte visibile della pagina. Per risolvere questo problema, è possibile utilizzare JavaScript per ignorare prima il caricamento delle immagini. Inoltre, anche il caricamento di JavaScript non essenziale può rallentare i tempi di caricamento delle pagine di SharePoint. In questo argomento vengono descritti alcuni metodi utilizzabili per migliorare i tempi di caricamento delle pagine con JavaScript in SharePoint Online. 
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Migliorare i tempi di caricamento delle immagini nelle pagine caricando le pagine di SharePoint Online tramite JavaScript
 
-È possibile utilizzare JavaScript per impedire a un web browser da immagini pre-recupero. Ciò consente di velocizzare rendering documento globale. Per ottenere questo risultato si rimuove il valore dell'attributo src dal \<img\> tag e sostituirlo con il percorso di un file in un attributo di dati ad esempio: dati src. Per esempio:
+È possibile utilizzare JavaScript per impedire a un browser Web di pre-recuperare le immagini. Ciò consente di velocizzare il rendering complessivo del documento. A tale scopo, è necessario rimuovere il valore dell'attributo src dal \<tag\> IMG e sostituirlo con il percorso di un file in un attributo data, ad esempio data-src. Per esempio:
   
 ```
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
-Con questo metodo, il browser non scaricare le immagini immediatamente. Se l'immagine è già nel riquadro di visualizzazione, JavaScript indica al browser per recuperare l'URL dall'attributo di dati e inserire come valore dell'attributo src. L'immagine viene caricata solo come l'utente scorre e si tratta nella visualizzazione.
+Se si utilizza questo metodo, il browser non scaricherà immediatamente le immagini. Se l'immagine è già nel riquadro di visualizzazione, JavaScript indica al browser di recuperare l'URL dall'attributo dati e di inserirlo come valore per l'attributo src. L'immagine viene caricata solo quando l'utente scorre e arriva all'immagine.
   
-Per effettuare tutte queste accadrebbe, sarà necessario utilizzare JavaScript.
+Per rendere tutto questo possibile, è necessario utilizzare JavaScript.
   
 In un file di testo, definire la funzione **isElementInViewport()** per controllare se un elemento fa o meno parte del browser visibile all'utente. 
   
@@ -81,7 +81,7 @@ $(window).on("scroll", function () {
 
 ```
 
-SharePoint Online, è necessario collegare la funzione seguente viene associata all'evento scorrimento #s4-workspace \<div\> tag. Ciò avviene perché gli eventi della finestra vengono sottoposto a override per garantire che la barra multifunzione rimane connessa alla parte superiore della pagina.
+Per SharePoint Online, è necessario collegare la funzione seguente all'evento Scroll sul tag div \<\> #s4-Workspace. Questo perché gli eventi della finestra vengono ignorati per garantire che la barra multifunzione rimanga collegata alla parte superiore della pagina.
   
 ```
 //Keep the ribbon at the top of the page
@@ -92,9 +92,9 @@ $('#s4-workspace').on("scroll", function () {
 
 Salvare il file di testo come un file JavaScript con estensione js, ad esempio delayLoadImages.js.
   
-Dopo aver terminato la scrittura delayLoadImages.js, è possibile aggiungere il contenuto del file a una pagina master di SharePoint Online. Ottenere questo risultato aggiungendo un collegamento di script per l'intestazione della pagina master. Una volta che si trova in una pagina master, il codice JavaScript verrà applicato a tutte le pagine del sito di SharePoint Online che utilizzano tale layout di pagina master. In alternativa, se si intende utilizzare solo questo in una pagina del sito, utilizzare l'editor dello script Web Part per incorporare JavaScript nella pagina. Vedere i seguenti argomenti per ulteriori informazioni:
+Dopo aver completato la scrittura di delayLoadImages. js, è possibile aggiungere il contenuto del file a una pagina master in SharePoint Online. È possibile farlo aggiungendo un link di script all'intestazione nella pagina master. Una volta che si trova in una pagina master, il codice JavaScript verrà applicato a tutte le pagine del sito di SharePoint online in cui viene utilizzato il layout di pagina master. In alternativa, se si prevede di utilizzarlo solo in una pagina del sito, è possibile utilizzare l'editor di script Web Part per incorporare JavaScript nella pagina. Per ulteriori informazioni, vedere i seguenti argomenti:
   
-- [Procedura: applicare una pagina master a un sito di SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+- [Procedura: applicazione di una pagina master a un sito in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
     
 - [Procedura: Create a page layout in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
     
@@ -112,13 +112,13 @@ Ritardare il caricamento delle immagini tramite JavaScript può essere una tecni
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>Esempio di codice GitHub: inserimento di JavaScript per migliorare le prestazioni
 
-Non perdere l'articolo ed esempio di codice in [JavaScript injection](https://go.microsoft.com/fwlink/p/?LinkId=524759) forniti su GitHub. 
+Non perdetevi l'articolo e il codice di esempio su [JavaScript Injection](https://go.microsoft.com/fwlink/p/?LinkId=524759) fornito su GitHub. 
   
 ## <a name="see-also"></a>Vedere anche
 
 [Browser supportati in Office 2013 e Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[Procedura: applicare una pagina master a un sito di SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+[Procedura: applicazione di una pagina master a un sito in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   
 [Procedura: Create a page layout in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 

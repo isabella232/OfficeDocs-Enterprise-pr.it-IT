@@ -13,71 +13,71 @@ search.appverid:
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
-description: "Riepilogo: Informazioni su come preparare la rete e gli elementi comuni dell'infrastruttura di rete."
+description: "Riepilogo: informazioni sugli elementi comuni dell'infrastruttura di rete e su come preparare la rete."
 ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872217"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490198"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementi comuni della connettività cloud Microsoft
 
- **Riepilogo:** Informazioni su come preparare la rete e gli elementi comuni dell'infrastruttura di rete.
+ **Riepilogo:** Comprendere gli elementi comuni dell'infrastruttura di rete e come preparare la rete.
   
 L'integrazione della rete con il cloud di Microsoft consente di accedere facilmente a una vasta gamma di servizi.
   
-## <a name="steps-to-prepare-your-network-for-microsoft-cloud-services"></a>Passaggi per preparare la rete di servizi cloud Microsoft
+## <a name="steps-to-prepare-your-network-for-microsoft-cloud-services"></a>Passaggi per preparare la rete per i servizi cloud Microsoft
 <a name="steps"> </a>
 
 Per la rete locale:
   
-1. Analizzare i computer client e ottimizzare per l'hardware di rete, driver software, le impostazioni del protocollo e browser Internet.
+1. Analizzare i computer client e ottimizzare l'hardware di rete, i driver software, le impostazioni del protocollo e i browser Internet.
     
-2. Analisi della rete locale per il traffico latenza e il routing ottimale per il dispositivo edge Internet.
+2. Analizzare la rete locale per la latenza del traffico e il routing ottimale per il dispositivo perimetrale Internet.
     
-3. Analizzare le capacità e prestazioni del dispositivo edge Internet e ottimizzare per più alti livelli di traffico.
+3. Analizzare la capacità e le prestazioni del dispositivo perimetrale Internet e ottimizzare i livelli di traffico più alti.
     
 Per la connessione a Internet:
   
-1. Analizzare la latenza tra il dispositivo edge Internet (ad esempio, il firewall esterno) e i percorsi regionali del servizio cloud Microsoft a cui si effettua la connessione.
+1. Analizzare la latenza tra il dispositivo perimetrale Internet (ad esempio il firewall esterno) e le posizioni internazionali del servizio cloud Microsoft a cui ci si connette.
     
-2. Analizzare le capacità e l'utilizzo della connessione Internet corrente e, se necessario, aggiungere capacità. In alternativa, aggiungere una connessione ExpressRoute.
+2. Analizzare la capacità e l'utilizzo della connessione Internet corrente e aggiungere capacità, se necessario. In alternativa, aggiungere una connessione ExpressRoute.
     
-## <a name="microsoft-cloud-connectivity-options"></a>Opzioni di integrazione applicativa Microsoft cloud
+## <a name="microsoft-cloud-connectivity-options"></a>Opzioni di connettività cloud Microsoft
 <a name="steps"> </a>
 
-Utilizzare il canale Internet esistente o una connessione ExpressRoute a Office 365 e Azure Dynamics 365.
+Utilizzare la pipe Internet esistente o una connessione ExpressRoute a Office 365, Azure e Dynamics 365.
   
-**Figura 1: Opzioni per la connettività cloud Microsoft**
+**Figura 1: opzioni per la connettività cloud Microsoft**
 
-![Figura 1:  Opzioni per la connettività di Microsoft Cloud](media/Network-Poster/CommonElements.png)
+![Figura 1: opzioni per la connettività cloud Microsoft](media/Network-Poster/CommonElements.png)
 
   
-Nella figura 1 viene illustrato come una rete locale può essere connesso a offerte cloud Microsoft utilizzando la propria pipe Internet esistente o ExpressRoute. Il canale Internet rappresenta una DMZ e può avere i seguenti componenti:
+Nella figura 1 viene illustrato come è possibile connettere una rete locale a offerte cloud di Microsoft utilizzando la propria pipe Internet o ExpressRoute esistente. La pipe Internet rappresenta una DMZ e può disporre dei componenti seguenti:
   
-- **Firewall interno:** Barriera tra la rete attendibile e uno non attendibile. Esegue il traffico filtro (in base alle regole) e il monitoraggio.
+- **Firewall interno:** Una barriera tra la rete attendibile e quella non attendibile. Esegue il filtraggio del traffico (in base alle regole) e il monitoraggio.
     
-- **Il carico di lavoro esterno:** Siti Web o altri carichi di lavoro rese disponibili per gli utenti esterni su Internet.
+- **Carico di lavoro esterno:** Siti Web o altri carichi di lavoro resi disponibili per gli utenti esterni su Internet.
     
-- **Server proxy:** Gestisce le richieste di contenuto web per conto degli utenti intranet. Un proxy inverso consente le richieste in ingresso non richiesto.
+- **Server proxy:** Richieste di servizi per il contenuto Web per conto di utenti Intranet. Un proxy inverso consente richieste inbound indesiderate.
     
-- **Firewall esterno:** Consente il traffico in uscita e il traffico in ingresso specificato. Possono eseguire conversione degli indirizzi, controllo dei pacchetti, interrompere SSL e Inspect o prevenzione della perdita di dati.
+- **Firewall esterno:** Consente il traffico in uscita e il traffico in ingresso specificato. È in grado di eseguire la conversione degli indirizzi, l'ispezione dei pacchetti, la rottura SSL e il controllo o la prevenzione della perdita di
     
-- **Connessione WAN al provider di servizi Internet:** Una connessione basata su gestore di telefonia per un provider di servizi Internet, che peer per il routing e la connettività Internet.
+- **Connessione WAN a ISP:** Una connessione basata su portatore a un ISP, che si occupa di peer con Internet per la connettività e il routing.
     
-## <a name="areas-of-networking-common-to-all-microsoft-cloud-services"></a>Aree di rete comune a tutti i servizi cloud Microsoft
+## <a name="areas-of-networking-common-to-all-microsoft-cloud-services"></a>Aree di rete comuni a tutti i servizi cloud Microsoft
 <a name="steps"> </a>
 
-È necessario prendere in considerazione queste aree di rete adottando uno dei servizi cloud Microsoft.
+È necessario prendere in considerazione queste aree di networking quando si adotta uno dei servizi cloud di Microsoft.
   
-- **Delle prestazioni di rete intranet:** Per le risorse basate su Internet rallentamento delle prestazioni se la rete intranet, tra cui i computer client, non è ottimizzata.
+- **Prestazioni Intranet:** Le prestazioni alle risorse basate su Internet soffriranno se la rete Intranet, compresi i computer client, non è ottimizzata.
     
-- **Dispositivi di server perimetrali:** Dispositivi in corrispondenza del bordo della rete sono i punti di uscita e possono includere (Network Address Translator), server proxy (inclusi i proxy inversi), i firewall, i dispositivi di rilevamento delle intrusioni o una combinazione.
+- **Dispositivi perimetrali:** I dispositivi ai margini della rete sono punti di uscita e possono includere i NAT (Network Address Translator), i server proxy (inclusi i proxy inversi), i firewall, i dispositivi di rilevamento delle intrusioni o una combinazione.
     
-- **Connessione Internet:** Connessione WAN al provider di servizi Internet e Internet dovrebbe avere sufficiente capacità per gestire i carichi di picco. È inoltre possibile utilizzare una connessione ExpressRoute.
+- **Connessione Internet:** La connessione WAN all'ISP e a Internet deve disporre di capacità sufficiente per gestire i carichi di picco. È inoltre possibile utilizzare una connessione ExpressRoute.
     
-- **Internet DNS:** A, AAAA, CNAME, MX, PTR e altri record per individuare Microsoft cloud o i servizi ospitati nel cloud. Ad esempio, si potrebbe essere necessario un record CNAME per l'app ospitate in Azure PaaS.
+- **DNS Internet:** A, AAAA, CNAME, MX, PTR e altri record per individuare Microsoft Cloud o i servizi ospitati nel cloud. Ad esempio, potrebbe essere necessario un record CNAME per l'app ospitata in Azure PaaS.
     
 
 ## <a name="next-step"></a>Passaggio successivo

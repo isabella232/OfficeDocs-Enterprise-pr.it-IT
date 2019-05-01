@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: "Riepilogo: informazioni sull'architettura ibrida e sugli scenari per le offerte cloud di Microsoft Infrastructure as a Service (IaaS) in Azure."
 ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741362"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487642"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scenari cloud ibridi per Azure IaaS
 
@@ -182,6 +182,6 @@ Seguire questo percorso per l’adozione:
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 

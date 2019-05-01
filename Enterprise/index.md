@@ -1,6 +1,6 @@
 ---
 title: Office 365 Enterprise
-description: Microsoft Office 365 fornisce servizi cloud online potenti che consentono la collaborazione, sicurezza e conformità, dispositivi mobili e intellgence e analitica. In questa pagina vengono fornite indicazioni per gli amministratori e i professionisti IT che la distribuzione, configurazione e gestione dei servizi di Office 365 nelle organizzazioni aziendali.
+description: Microsoft Office 365 offre potenti servizi cloud online che consentono collaborazione, sicurezza e conformità, mobilità e intellgence e analisi. In questa pagina vengono fornite indicazioni per gli amministratori e i professionisti IT che distribuiscono, configurano e gestiscono i servizi di Office 365 nelle organizzazioni aziendali.
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -15,14 +15,14 @@ ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
 ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "27745320"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487132"
 ---
 <h1>Office 365 Enterprise</h1>
-<p>Microsoft Office&nbsp;365 fornisce servizi cloud online potenti che consentono la collaborazione, sicurezza e conformità, dispositivi mobili e intellgence e analitica. In questa pagina vengono forniti collegamenti a informazioni aggiuntive per i professionisti IT che la distribuzione, configurazione e gestione di Office e gli amministratori&nbsp;365 servizi in organizzazioni aziendali.</p>
+<p>Microsoft Office&nbsp;365 offre potenti servizi cloud online che consentono collaborazione, sicurezza e conformità, mobilità e intellgence e analisi. In questa pagina vengono forniti collegamenti alle linee guida per gli amministratori e i professionisti IT che distribuiscono, configurano e gestiscono i servizi di Office&nbsp;365 nelle organizzazioni dell'organizzazione.</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
@@ -36,7 +36,7 @@ ms.locfileid: "27745320"
                     </div>
                     <div class="cardText">
                         <h3>Distribuzione guidata con FastTrack</h3>
-                <p>Utilizzare il vantaggio di centro FastTrack per Office&nbsp;per interattiva, informazioni sulla pianificazione, distribuzione e l'adozione di Office 365&nbsp;365 servizi per l'organizzazione.</p>
+                <p>Utilizzare FastTrack Center benefit per Office&nbsp;365 per l'assistenza guidata per la pianificazione, la distribuzione e la guida dell'&nbsp;adozione dei servizi di Office 365 per la propria organizzazione.</p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ ms.locfileid: "27745320"
                     </div>
                     <div class="cardText">
                         <h3>Eseguire la migrazione a Office 365</h3>
-                <p>Eseguire la migrazione dell'infrastruttura locale esistente in Office&nbsp;365 e Microsoft cloud.</p>
+                <p>Eseguire la migrazione dell'infrastruttura locale esistente a Office&nbsp;365 e Microsoft Cloud.</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ ms.locfileid: "27745320"
                     </div>
                     <div class="cardText">
                         <h3>Distribuire Office 365</h3>
-                <p>Distribuzione di Office&nbsp;365, inclusi l'impostazione del tenant, la configurazione della rete e provisioning degli utenti.</p>
+                <p>Distribuire Office&nbsp;365, inclusa l'impostazione del tenant, la configurazione della rete e il provisioning degli utenti.</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ ms.locfileid: "27745320"
                     </div>
                     <div class="cardText">
                         <h3>Distribuzioni ibride</h3>
-                <p>Configurare e gestire una distribuzione ibrida tra l'infrastruttura locale e Office esistenti&nbsp;365.</p>
+                <p>Configurare e gestire una distribuzione ibrida tra l'infrastruttura locale esistente e Office&nbsp;365.</p>
                     </div>
                 </div>
             </div>
@@ -130,8 +130,8 @@ ms.locfileid: "27745320"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Formazione su Office 365</h3>
-                <p>Migliorare l'ufficio&nbsp;365 amministrazione conoscenze e competenze con Office&nbsp;365 corsi di formazione per professionisti IT.</p>
+                        <h3>Formazione di Office 365</h3>
+                <p>Migliorare le conoscenze&nbsp;e le competenze di amministrazione di Office&nbsp;365 con i corsi di formazione di Office 365 per professionisti IT.</p>
                     </div>
                 </div>
             </div>
@@ -185,7 +185,7 @@ ms.locfileid: "27745320"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online">Skype for Business online</a></h3>
+                        <h3><a href="https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online">Skype for Business Online</a></h3>
                     </div>
                 </div>
             </div>
@@ -243,7 +243,7 @@ ms.locfileid: "27745320"
 </ul>
 
 <hr>
-<h2>Ulteriori risorse</h2>
+<h2>Altre risorse</h2>
 
 <ul class="panelContent cardsF">
     <li>
@@ -256,8 +256,8 @@ ms.locfileid: "27745320"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Community di Office 365 Tech</h3>
-                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Informazioni sulle procedure consigliate, news e le ultime tendenze e contenuti argomenti relativi a Office&nbsp;365.</a></p>
+                        <h3>Office 365 Tech community</h3>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Informazioni sulle procedure consigliate, le notizie e le tendenze e gli argomenti più recenti&nbsp;relativi a Office 365.</a></p>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ ms.locfileid: "27745320"
                     </div>
                     <div class="cardText">
                         <h3>Ottenere supporto</h3>
-                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Contattare il supporto per informazioni su Office&nbsp;365.</a></p>
+                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Contattare il supporto tecnico per assistenza&nbsp;con Office 365.</a></p>
                     </div>
                 </div>
             </div>
@@ -291,7 +291,7 @@ ms.locfileid: "27745320"
                     </div>
                     <div class="cardText">
                         <h3>Microsoft 365</h3>
-                        <p><a href="https://docs.microsoft.com/microsoft-365">Ulteriori informazioni su Microsoft 365.</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365">Per ulteriori informazioni, vedere Microsoft 365.</a></p>
                     </div>
                 </div>
             </div>

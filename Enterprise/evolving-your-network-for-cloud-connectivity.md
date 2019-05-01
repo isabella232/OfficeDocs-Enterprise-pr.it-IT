@@ -1,5 +1,5 @@
 ---
-title: Trasformazione della rete per la connettività cloud
+title: Trasformazione della tua rete per la connettività cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,78 +13,78 @@ search.appverid:
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
-description: "Riepilogo: Informazioni su come l'adozione cloud richiede un nuovo approccio agli investimenti nell'infrastruttura di rete."
+description: "Riepilogo: informazioni su come l'adozione del cloud richiede un nuovo approccio agli investimenti dell'infrastruttura di rete."
 ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872257"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487242"
 ---
-# <a name="evolving-your-network-for-cloud-connectivity"></a>Trasformazione della rete per la connettività cloud
+# <a name="evolving-your-network-for-cloud-connectivity"></a>Trasformazione della tua rete per la connettività cloud
 
- **Riepilogo:** Informazioni su come l'adozione cloud richiede un nuovo approccio agli investimenti nell'infrastruttura di rete.
+ **Riepilogo:** Comprendere in che modo l'adozione del cloud richiede un nuovo approccio agli investimenti dell'infrastruttura di rete.
   
 La migrazione cloud cambia il volume e la natura dei flussi del traffico all'interno e all'esterno di una rete aziendale. Influisce, inoltre, sugli approcci finalizzati alla mitigazione dei rischi per la sicurezza.
   
-- Prima di nel cloud
+- Prima del cloud
     
-    La maggior parte degli investimenti nell'infrastruttura di rete sono state dedicate a garantire disponibili e affidabile e la connettività ad alte prestazioni a centri dati locali. Per molte organizzazioni, la connettività Internet non è stato critica per le operazioni aziendali interne. I confini della rete sono state principale difesa contro le violazioni della protezione.
+    La maggior parte degli investimenti dell'infrastruttura di rete è stata spesa per garantire la connettività disponibile, affidabile e performante ai datacenter locali. Per molte organizzazioni, la connettività Internet non è stata critica per le operazioni aziendali interne. I limiti di rete sono stati le difese primarie rispetto alle violazioni della sicurezza.
     
-- Dopo aver nel cloud
+- Dopo il cloud
     
-    Con carichi di lavoro IT in esecuzione nel cloud e produttività nuove e sottoposti a migrazione, gli investimenti vengono spostate dall'infrastruttura locale centri dati per la connettività Internet, che ora è fondamentale per operazioni aziendali interne. Connettività federati Sposta strategia di protezione per proteggere le identità e dati quando circolano attraverso la rete e i punti di connettività ai servizi cloud Microsoft.
+    Con la produttività e i carichi di lavoro IT nuovi e migrati in esecuzione nel cloud, gli investimenti nell'infrastruttura si spostano dai data center locali alla connettività Internet, che ora è fondamentale per le operazioni aziendali interne. La connettività federata consente di spostare la strategia di protezione per proteggere le identità e i dati che scorrono attraverso la rete e i punti di connettività ai servizi cloud Microsoft.
     
-Gli investimenti nell'infrastruttura di rete iniziano con la connettività. Ulteriori investimenti variano a seconda della categoria del servizio cloud.
+Gli investimenti dell'infrastruttura di rete iniziano con la connettività. Gli investimenti aggiuntivi dipendono dalla categoria del servizio cloud.
   
-- **Software come servizio (SaaS)** Servizi Microsoft SaaS includono Office 365, Microsoft Intune e Microsoft Dynamics 365. Un'adozione dei servizi SaaS dagli utenti dipende dalla disponibilità elevata e la connettività ad alte prestazioni a Internet o direttamente a servizi cloud Microsoft.
+- **Software come servizio (SaaS)** I servizi SaaS di Microsoft includono Office 365, Microsoft Intune e Microsoft Dynamics 365. Un'adozione soddisfacente dei servizi SaaS da parte degli utenti dipende da una connettività a Internet efficiente e ad elevata disponibilità o direttamente ai servizi cloud di Microsoft.
     
-    Architettura di rete è incentrata su connettività affidabile e ridondanti e la larghezza di banda ampio. Costante investimento include monitoraggio e ottimizzazione delle prestazioni.
+    L'architettura di rete è incentrata su connettività affidabile e ridondante e larghezza di banda ampia. Gli investimenti in esecuzione includono il monitoraggio delle prestazioni e l'ottimizzazione.
     
-- **Piattaforma Azure as a Service (PaaS)** Oltre che per i servizi Microsoft SaaS gli investimenti multisite o geograficamente distribuite applicazioni PaaS potrebbe essere necessario architettura Azure Traffic Managerhttp per distribuire il traffico client. Costante investimento include le prestazioni e monitoraggio del traffico di distribuzione e test di failover.
+- **Piattaforma di Azure come servizio (PaaS)** Oltre agli investimenti per i servizi SaaS di Microsoft, le applicazioni di PaaS multi-site o geograficamente distribuite potrebbero richiedere a Architecting Azure Traffic Manager la distribuzione del traffico client. Gli investimenti in esecuzione includono il monitoraggio delle prestazioni e della distribuzione del traffico e il test di failover.
     
-- **Infrastruttura come servizio (IaaS)** Oltre a investimenti per i servizi Microsoft SaaS e PaaS, l'esecuzione di carichi di lavoro IT in IaaS richiede la progettazione e configurazione di Azure virtual reti di ospitare macchine virtuali, la connettività protetta per le applicazioni in esecuzione su di essi, routing, IP risoluzione DNS e bilanciamento del carico. Costante investimento include il monitoraggio e risoluzione dei problemi di protezione e le prestazioni.
+- **Infrastruttura di Azure come servizio (IaaS)** Oltre agli investimenti per i servizi SaaS e PaaS di Microsoft, l'esecuzione dei carichi di lavoro IT in IaaS richiede la progettazione e la configurazione di reti virtuali di Azure che ospitano macchine virtuali, la connettività sicura per le applicazioni in esecuzione su di essi, routing, IP indirizzamento, DNS e bilanciamento del carico. Gli investimenti in esecuzione includono il monitoraggio delle prestazioni e della sicurezza e la risoluzione dei problemi.
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) è una combinazione di Office 365, gestione aziendale + sicurezza (EMS) e Windows 10. Microsoft 365 combina più SaaS e servizi di Azure per una soluzione completa e intelligente che consente agli tutti si trovino creative e collaborare in modo protetto.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) è una combinazione di Office 365, Enterprise Management + Security (EMS) e Windows 10. Microsoft 365 combina più servizi SaaS e Azure per una soluzione completa e intelligente che consenta a tutti di essere creativi e di lavorare insieme in modo sicuro.
     
-## <a name="areas-of-networking-investment-for-success-in-the-cloud"></a>Aree di rete investimento per il successo nel cloud
+## <a name="areas-of-networking-investment-for-success-in-the-cloud"></a>Aree di investimento di rete per il successo nel cloud
 
-Le organizzazioni aziendali può risultare vantaggiosa un approccio metodico per ottimizzare velocità effettiva della rete attraverso una rete intranet e Internet. È possibile traggono vantaggio da una connessione ExpressRoute.
+Le organizzazioni aziendali traggono vantaggio dall'adozione di un approccio metodico per ottimizzare la velocità effettiva di rete in tutta la Intranet e Internet. Si potrebbe anche trarre vantaggio da una connessione ExpressRoute.
   
-### <a name="optimize-intranet-connectivity-to-your-edge-network"></a>Ottimizzare la connettività di rete intranet alla rete perimetrale
+### <a name="optimize-intranet-connectivity-to-your-edge-network"></a>Ottimizzare la connettività Intranet alla rete perimetrale
 
-Nel corso degli anni, molte organizzazioni sono ottimizzate intranet connettività e le prestazioni per le applicazioni in esecuzione in locale datacenter. Con la produttività e IT carichi di lavoro in esecuzione nel cloud Microsoft, ulteriori investimenti devono garantire la disponibilità elevata connettività e che le prestazioni del traffico tra la rete perimetrale e gli utenti intranet sono ottimale.
+Nel corso degli anni, molte organizzazioni hanno ottimizzato la connettività Intranet e le prestazioni per le applicazioni in esecuzione nei data center locali. Con la produttività e i carichi di lavoro IT in esecuzione nel cloud Microsoft, ulteriori investimenti devono garantire una disponibilità elevata della connettività e che le prestazioni del traffico tra la rete perimetrale e gli utenti Intranet siano ottimali.
   
-### <a name="optimize-throughput-at-your-edge-network"></a>Ottimizzazione della velocità effettiva alla rete perimetrale
+### <a name="optimize-throughput-at-your-edge-network"></a>Ottimizzare la velocità effettiva sulla rete perimetrale
 
-Come più il traffico di produttività quotidiane viaggia nel cloud, è necessario esaminare l'insieme di sistemi strettamente nella rete perimetrale per verificare che siano corrente, garantire una disponibilità elevata e avere sufficiente capacità per soddisfare i carichi di picco.
+Man mano che il traffico di produttività giornaliero si sposta sul cloud, è necessario esaminare attentamente il set di sistemi della rete perimetrale per assicurarsi che siano correnti, fornire disponibilità elevata e avere una capacità sufficiente per raggiungere i carichi di picco.
   
-### <a name="for-a-high-sla-to-azure-office-365-and-dynamics-365-use-expressroute"></a>Per un contratto di servizio elevata Dynamics 365, Office 365 e Azure, utilizzare ExpressRoute
+### <a name="for-a-high-sla-to-azure-office-365-and-dynamics-365-use-expressroute"></a>Per un livello di SLA elevato a Azure, Office 365 e Dynamics 365, utilizzare ExpressRoute
 
-Sebbene sia possibile utilizzare la connessione a Internet corrente dalla rete perimetrale, il traffico da e verso servizi cloud Microsoft deve condividere pipe con altri del traffico intranet in Internet. Inoltre, il traffico ai servizi cloud Microsoft è soggetto a congestione traffico Internet.
+Anche se è possibile utilizzare la connessione Internet corrente dalla rete perimetrale, il traffico da e verso i servizi cloud di Microsoft deve condividere la pipe con altri traffici Intranet che vanno su Internet. Inoltre, il traffico verso i servizi cloud Microsoft è soggetto alla congestione del traffico Internet.
   
-Per ottenere prestazioni ottimali e un contratto di servizio elevata, utilizzare ExpressRoute, una singola connessione WAN tra la rete e Azure, Office 365, Dynamics 365 o tutti e tre. 
+Per un elevato livello di SLA e le prestazioni ottimali, utilizzare ExpressRoute, una connessione WAN dedicata tra la rete e Azure, Office 365, Dynamics 365 o tutti e tre. 
   
-ExpressRoute può utilizzare il provider di rete esistente per una connessione dedicata. Risorse connessione tramite ExpressRoute vengono visualizzate come se sono sulla WAN, anche per le organizzazioni geograficamente distribuita.
+ExpressRoute può sfruttare il provider di rete esistente per una connessione dedicata. Le risorse connesse da ExpressRoute vengono visualizzate come se fossero presenti sulla rete WAN, anche per le organizzazioni geograficamente distribuite.
   
 Per ulteriori informazioni, vedere [ExpressRoute for Microsoft cloud connectivity](expressroute-for-microsoft-cloud-connectivity.md).
   
 ## <a name="scope-of-network-investments"></a>Ambito degli investimenti di rete
 
-L'ambito degli investimenti rete variano a seconda della categoria del servizio cloud. Investire in cloud Microsoft ingrandita gli investimenti del team di rete. Gli investimenti per i servizi IaaS, ad esempio, si applicano a tutte le aree di investimento.
+L'ambito degli investimenti di rete dipende dalla categoria del servizio cloud. Investire nel cloud di Microsoft massimizza gli investimenti dei team di networking. Ad esempio, gli investimenti per i servizi di IaaS si applicano a tutte le aree di investimento.
   
 |||||
 |:-----|:-----|:-----|:-----|
-|Aree di investimento  <br/> |SaaS  <br/> |PaaS  <br/> |IaaS  <br/> |
-|Progettare la connettività Internet affidabile e ridondante con larghezza di banda ampio  <br/> |Si applica  <br/> |Si applica  <br/> |Si applica  <br/> |
-|Monitorare e ottimizzare la velocità effettiva Internet per le prestazioni  <br/> |Si applica  <br/> |Si applica  <br/> |Si applica  <br/> |
-|Risoluzione dei problemi di connettività e la velocità effettiva Internet  <br/> |Si applica  <br/> |Si applica  <br/> |Si applica  <br/> |
-|Gestione del traffico Azure progettazione per il carico del traffico bilanciare agli endpoint diversi  <br/> ||Si applica  <br/> |Si applica  <br/> |
-|Connettività architetto affidabile e ridondante e ad alte prestazioni a Azure virtual Network  <br/> |||Si applica  <br/> |
-|Progettare la connettività protetta per macchine virtuali di Azure  <br/> |||Si applica  <br/> |
-|Progettare e implementare il routing tra le posizioni in locale e reti virtuali  <br/> |||Si applica  <br/> |
-|Progettare e implementare il bilanciamento del carico per carichi di lavoro IT interni e con connessione Internet  <br/> |||Si applica  <br/> |
-|Risoluzione dei problemi di connettività e velocità effettiva delle macchine virtuali  <br/> |||Si applica  <br/> |
+|Area di investimento  <br/> |SaaS  <br/> |PaaS  <br/> |IaaS  <br/> |
+|Architetto affidabile, connettività Internet ridondante con larghezza di banda ampia  <br/> |Applica  <br/> |Applica  <br/> |Applica  <br/> |
+|Monitorare e ottimizzare la velocità effettiva Internet per le prestazioni  <br/> |Applica  <br/> |Applica  <br/> |Applica  <br/> |
+|Risoluzione dei problemi relativi a connettività Internet e velocità effettiva  <br/> |Applica  <br/> |Applica  <br/> |Applica  <br/> |
+|Progettare Azure Traffic Manager per il bilanciamento del carico del traffico verso endpoint diversi  <br/> ||Applica  <br/> |Applica  <br/> |
+|Architetto connettività affidabile, ridondante ed eseguibile per le reti virtuali di Azure  <br/> |||Applica  <br/> |
+|Progettare la connettività sicura alle macchine virtuali di Azure  <br/> |||Applica  <br/> |
+|Progettare e implementare il routing tra le posizioni locali e le reti virtuali  <br/> |||Applica  <br/> |
+|Architetto e implementazione del bilanciamento del carico per i carichi di lavoro IT interni e con accesso a Internet  <br/> |||Applica  <br/> |
+|Risoluzione dei problemi di connettività e velocità effettiva della macchina virtuale  <br/> |||Applica  <br/> |
    
 ## <a name="next-step"></a>Passaggio successivo
 

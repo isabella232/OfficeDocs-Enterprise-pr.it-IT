@@ -13,66 +13,66 @@ search.appverid:
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
-description: "Riepilogo: Informazioni su come ottimizzare la rete per l'accesso ai servizi SaaS di Microsoft, tra cui Office 365, Microsoft Intune e Dynamics 365."
+description: "Riepilogo: informazioni su come ottimizzare la rete per l'accesso ai servizi SaaS di Microsoft, tra cui Office 365, Microsoft Intune e Dynamics 365."
 ms.openlocfilehash: 3d47c53de1bc1121ef72eb519c51c0ad9423fff9
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872267"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487298"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Progettazione di rete per Microsoft SaaS
 
  **Riepilogo:** Informazioni su come ottimizzare la rete per l'accesso ai servizi SaaS di Microsoft, tra cui Office 365, Microsoft Intune e Dynamics 365.
   
-Ottimizzazione della rete per i servizi Microsoft SaaS richiede la configurazione di interno e ai dispositivi di indirizzare le diverse categorie di traffico ai servizi Microsoft SaaS edge.
+Ottimizzare la rete per servizi SaaS Microsoft richiede la configurazione di dispositivi interni e periferici per instradare le diverse categorie di traffico ai servizi SaaS Microsoft.
   
-## <a name="steps-to-prepare-your-network-for-microsoft-saas-services"></a>Passaggi di preparazione della rete per i servizi Microsoft SaaS
+## <a name="steps-to-prepare-your-network-for-microsoft-saas-services"></a>Passaggi per preparare la rete per i servizi SaaS di Microsoft
 
-Eseguire la procedura seguente per ottimizzare la rete per i servizi Microsoft SaaS:
+Seguire questa procedura per ottimizzare la rete per i servizi SaaS di Microsoft:
   
 1. Consultare la sezione **Procedura per predisporre la rete per i servizi cloud Microsoft** in [Common elements of Microsoft cloud connectivity](common-elements-of-microsoft-cloud-connectivity.md).
     
 2. Aggiungere una connessione Internet a ciascuno degli uffici.
     
-3. Verificare che il provider di servizi Internet per tutte le connessioni Internet utilizzare un server DNS con un indirizzo IP locale.
+3. Verificare che gli ISP per tutte le connessioni Internet utilizzino un server DNS con un indirizzo IP locale.
     
-4. Esaminare i hairpins di rete, intermedie destinazioni, ad esempio servizi di protezione basato su cloud ed eliminarle se possibile.
+4. Esaminare i tornanti di rete, le destinazioni intermedie, ad esempio i servizi di sicurezza basati sul cloud, ed eliminarli se possibile.
     
-5. Configurare i dispositivi edge per ignorare l'elaborazione per l'ottimizzazione e consentire le categorie di traffico SaaS Microsoft.
+5. Configurare i dispositivi perimetrali in modo da ignorare l'elaborazione per le categorie ottimizzazione e Consenti del traffico SaaS di Microsoft.
 
-## <a name="optimizing-traffic-to-microsofts-saas-services"></a>Ottimizzare il traffico ai SaaS servizi di Microsoft    
+## <a name="optimizing-traffic-to-microsofts-saas-services"></a>Ottimizzazione del traffico per i servizi SaaS di Microsoft    
 
 Esistono tre categorie di traffico SaaS Microsoft:
 
 - Ottimizzazione
 
-  Necessario per la connettività a ogni servizio Microsoft SaaS e rappresentano oltre il 75% di larghezza di banda SaaS Microsoft, le connessioni e volume di dati.
+  Necessario per la connettività a tutti i servizi SaaS di Microsoft e rappresentare oltre il 75% della larghezza di banda, delle connessioni e del volume di dati di Microsoft SaaS.
 
 - Consenti
 
-  Necessari per la connettività a specifici SaaS Microsoft dei servizi e funzionalità ma non sono i cursori sensibili alle prestazioni di rete e latenza a quelli della categoria Ottimizza.
+  Necessario per la connettività a specifici servizi e caratteristiche di Microsoft SaaS, ma non sono sensibili alle prestazioni e alla latenza di rete come quelli della categoria optimize.
 
 - Predefinita
 
-  Rappresentano SaaS Microsoft services e le dipendenze esistenti che non richiedono alcun ottimizzazione. È inoltre possibile considerare il traffico di categoria predefinita come normale traffico Internet.
+  Rappresentano i servizi e le dipendenze di Microsoft SaaS che non richiedono alcuna ottimizzazione. È possibile gestire il traffico di categoria predefinito come il traffico Internet normale.
 
 
-**Nella figura 1: Configurazione consigliata per il traffico SaaS Microsoft per tutti gli uffici**
+**Figura 1: configurazione consigliata per il traffico SaaS di Microsoft per tutte le sedi**
 
-![Nella figura 1: Configurazione consigliata per il traffico SaaS Microsoft per tutti gli uffici](media/Network-Poster/SaaS1.png)
+![Figura 1: configurazione consigliata per il traffico SaaS di Microsoft per tutte le sedi](media/Network-Poster/SaaS1.png)
 
-Nella figura 1 viene illustrata la configurazione consigliata di tutti gli uffici, incluse le succursali e quelle regionale o centrale, in cui:
+Nella figura 1 viene illustrata la configurazione consigliata di tutti gli uffici, tra cui le succursali e quelle regionali o centrali, in cui:
 
-- Categorie **predefinite** e generale traffico Internet viene indirizzato a sedi che utilizzano i server proxy e ad altri dispositivi edge per garantire la protezione contro i rischi di sicurezza basato su Internet.
-- **Ottimizza** e **Consenti** traffico categoria viene inoltrato direttamente al bordo del Microsoft network front-end più vicina office contenente l'utente connesso, ignorando proxy server e altri dispositivi edge.
+- La categoria **predefinita** e il traffico Internet generale vengono instradati agli uffici che dispongono di server proxy e di altri dispositivi perimetrali per garantire la protezione contro i rischi di sicurezza basati su Internet.
+- **Ottimizzare** e **consentire** il traffico delle categorie viene inoltrato direttamente al server perimetrale di Microsoft Network front-end più vicino all'ufficio che contiene l'utente che esegue la connessione, ignorando il proxy e altri dispositivi perimetrali.
 
-Dispositivi di rete (WAN SD) definito software WAN nelle succursali separano il traffico in modo che: 
+I dispositivi di rete wide area (SD-WAN) definiti dal software nelle succursali distaccano il traffico in modo che: 
 
-- Categorie **predefinite** e generale Internet del traffico a un ufficio centrale o internazionale tramite backbone WAN. 
-- Traffico categoria **Ottimizza** e **Consenti** passa al provider di servizi Internet che fornisce la connessione a Internet locale.
+- La categoria **predefinita** e il traffico Internet generale passano a un ufficio centrale o regionale sulla backbone WAN. 
+- **Ottimizzare** e **consentire** il traffico di categoria passa all'ISP che fornisce la connessione Internet locale.
   
-Per altre informazioni, vedere:
+Per ulteriori informazioni, vedere:
   
 - [Principi di connettività di rete](https://aka.ms/expressrouteoffice365)
 

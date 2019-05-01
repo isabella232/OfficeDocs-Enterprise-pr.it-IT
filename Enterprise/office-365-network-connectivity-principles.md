@@ -1,5 +1,5 @@
 ---
-title: Principi di connettività di rete di Office 365
+title: Principi della connettività di rete di Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Prima di iniziare a pianificare la rete per la connettività di rete di Office 365, è importante comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e ottenere le migliori prestazioni possibili. In questo articolo vengono fornite informazioni utili per comprendere le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365.
 ms.openlocfilehash: 3dfb0732ff15c7d8f3c20ac659f94b8d807afa07
-ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30303620"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492348"
 ---
-# <a name="office-365-network-connectivity-principles"></a>Principi di connettività di rete di Office 365
+# <a name="office-365-network-connectivity-principles"></a>Principi della connettività di rete di Office 365
 
 Prima di iniziare a pianificare la rete per la connettività di rete di Office 365, è importante comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e ottenere le migliori prestazioni possibili. In questo articolo vengono fornite informazioni utili per comprendere le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365.
   
@@ -204,7 +204,7 @@ Microsoft offre una vasta gamma di funzionalità di sicurezza di Office 365 e fo
 
 - **Configurare la prevenzione della perdita di dati (DLP)** DLP consente di identificare i dati sensibili e creare criteri che consentono di impedire agli utenti di condividere accidentalmente o intenzionalmente i dati. DLP è compatibile con Office 365 incluso Exchange Online, SharePoint Online e OneDrive in modo che gli utenti possano rimanere conformi senza interrompere il flusso di lavoro.
 
-- **Utilizzo dell'archivio protetto dei clienti** In qualità di amministratore di Office 365, è possibile utilizzare l'archivio protetto dei clienti per controllare il modo in cui un tecnico del supporto Microsoft accede ai dati durante una sessione della guida. Nei casi in cui il tecnico richiede l'accesso ai dati per la risoluzione dei problemi e per risolvere un problema, il servizio di archivio clienti consente di approvare o rifiutare la richiesta di accesso.
+- **Utilizzo dell'archivio protetto dei clienti** In qualità di amministratore di Office 365, è possibile utilizzare l'archivio protetto dei clienti per controllare il modo in cui un tecnico del supporto Microsoft accede ai dati durante una sessione della guida. Nei casi in cui il tecnico richiede l'accesso ai dati dell'utente per risolvere e correggere un problema, Customer Lockbox consente di approvare o rifiutare la richiesta di accesso.
 
 - **Utilizzare Office 365 Secure Score** Secure Score è uno strumento di analisi della sicurezza che consiglia le operazioni che è possibile eseguire per ridurre ulteriormente i rischi. Secure Score analizza le impostazioni e le attività di Office 365 e le confronta con una linea di base stabilita da Microsoft. Si otterrà un punteggio in base al modo in cui si è allineati con le migliori procedure di sicurezza.
 

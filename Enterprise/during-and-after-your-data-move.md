@@ -1,5 +1,5 @@
 ---
-title: Durante e dopo lo spostamento dei dati
+title: Durante e dopo lo spostamento dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
 ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647994"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487232"
 ---
-# <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dei dati
+# <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
 Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
   
@@ -129,9 +129,9 @@ Si muovono solo i dati dei clienti per Exchange Online, SharePoint Online e Skyp
   
 ## <a name="related-topics"></a>Argomenti correlati 
  
-[Come richiedere lo spostamento dei dati](request-your-data-move.md)
+[Come richiedere lo spostamento dati](request-your-data-move.md)
     
-[FAQ generale sullo spostamento dei dati](data-move-faq.md)
+[Domande frequenti sullo spostamento dati](data-move-faq.md)
   
 [Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

@@ -3,18 +3,6 @@
 
 
 
-## <a name="week-of-march-18-2019"></a>Settimana del 18 marzo 2019
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 3/18/2019 | [Domande frequenti sullo spostamento dati](/Office365/Enterprise/data-move-faq) | modificato |
-| 3/18/2019 | [Durante e dopo lo spostamento dati](/Office365/Enterprise/during-and-after-your-data-move) | modificato |
-| 3/18/2019 | [Pianificazione della capacità e test di carico di SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | modificato |
-| 3/18/2019 | [Collaborazione tra tenant di Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | modificato |
-| 3/19/2019 | [Visualizzare gli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificato |
-
-
 ## <a name="week-of-march-25-2019"></a>Settimana del 25 marzo 2019
 
 
@@ -155,3 +143,15 @@
 | 4/18/2019 | [Assegnare i ruoli agli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modificato |
 | 4/18/2019 | [Routing con ExpressRoute per Office 365](/Office365/Enterprise/routing-with-expressroute) | modificato |
 | 4/18/2019 | [Usare i cmdlet di PowerShell della distribuzione centralizzata per gestire i componenti aggiuntivi](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | modificato |
+
+
+## <a name="week-of-april-22-2019"></a>Settimana del 22 aprile 2019
+
+
+| Data di pubblicazione |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 4/22/2019 | [Multi-Geo Capabilities in OneDrive e SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | modificato |
+| 4/22/2019 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | modificato |
+| 4/22/2019 | Aggregare i dati di report dei clienti tramite Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission) | rimosso |
+| 4/22/2019 | [Gestire Office 365 con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | modificato |
+| 4/22/2019 | [Recuperare i dati di report dei tenant dei clienti con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | modificato |

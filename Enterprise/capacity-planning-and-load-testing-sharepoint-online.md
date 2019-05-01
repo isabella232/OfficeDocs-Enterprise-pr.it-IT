@@ -14,11 +14,11 @@ search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: In questo articolo viene descritto come distribuire SharePoint Online senza eseguire il test di carico tradizionale, poiché non è consentito.
 ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765058"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490218"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Pianificazione della capacità e test di carico di SharePoint Online.
 

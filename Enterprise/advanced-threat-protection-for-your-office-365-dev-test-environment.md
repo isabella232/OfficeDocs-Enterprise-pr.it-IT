@@ -17,13 +17,13 @@ ms.custom:
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: "Riepilogo: configurazione e dimostrazione di Office 365 Advanced Threat Protection nell'ambiente di sviluppo/test di Office 365."
 ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741342"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490152"
 ---
-# <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Protezione avanzata dalle minacce per l'ambiente di sviluppo/test di Office 365
+# <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection per l'ambiente di sviluppo/test di Office 365
 
  **Riepilogo:** configurazione e dimostrazione di Office 365 Advanced Threat Protection nell'ambiente di sviluppo/test di Office 365.
   
@@ -156,7 +156,7 @@ In questa fase, viene mostrato come ATP si occupa dei messaggi di posta elettron
 È ora possibile utilizzare questo ambiente per creare nuovi criteri e sperimentare ATP.
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per visualizzare una mappa di tutti gli articoli della guida del laboratorio di testing di Office 365.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
   
 ## <a name="see-also"></a>Vedere anche
 

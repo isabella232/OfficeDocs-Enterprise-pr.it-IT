@@ -1,5 +1,5 @@
 ---
-title: Reti di distribuzione del contenuto
+title: Reti per la distribuzione di contenuti
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilizzare queste informazioni per scoprire in che modo Office 365 utilizza le reti di distribuzione del contenuto (reti CDN) per migliorare le prestazioni.
 ms.openlocfilehash: 5d02b28fad0e47473cc6a75948c9dd27e6728bb5
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039483"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490436"
 ---
 # <a name="content-delivery-networks-cdns"></a>Reti di distribuzione del contenuto (reti CDN)
 
@@ -186,7 +186,7 @@ Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/o365cdns](ht
 
 [Gestione degli endpoint di Office 365](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 
-[URL e intervalli di indirizzi IP di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
+[URL e intervalli di indirizzi IP per Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
 [Utilizzare la rete di distribuzione dei contenuti di Office 365 con SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 

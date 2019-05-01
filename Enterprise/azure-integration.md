@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: La sottoscrizione di Office 365 include una sottoscrizione ad Azure AD. Integrazione di Office 365 con Azure AD se si desidera sincronizzare la password o l'accesso Single Sign-on con l'ambiente locale.
 ms.openlocfilehash: 0ad1c064d2ffe29f0f06e1368cd728d8b3bd630b
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085475"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490142"
 ---
 # <a name="azure-integration-with-office-365"></a>Integrazione di Azure con Office 365
 
@@ -52,10 +52,10 @@ Per ulteriori informazioni su Office 365 e Azure AD, vedere [understandIng offic
   
 ## <a name="extend-the-capabilities-of-your-office-365-tenant"></a>Estendere le funzionalità del tenant di Office 365
 
-|**Funzionalità**|**Descrizione**|
+|**Caratteristica**|**Descrizione**|
 |:-----|:-----|
-|App integrate  <br/> |È possibile concedere alle singole app l'accesso ai dati di Office 365, ad esempio la posta, i calendari, i contatti, gli utenti, i gruppi, i file e le cartelle. È inoltre possibile autorizzare tali applicazioni a livello di amministratore globale e renderle disponibili per l'intera società registrando le app in Azure AD. Per informazioni dettagliate [, vedere Integrated Apps and Azure ad per Office 365 Administrators](https://support.office.com/article/cb2250e3-451e-416f-bf4e-363549652c2a).<br/> Vedere anche [Azure ad Application Gallery e Single-Sign-on](https://go.microsoft.com/fwlink/p/?LinkId=698604).  <br/> |
-|PowerApps  <br/> | Le app di alimentazione sono applicazioni mirate per i dispositivi mobili che possono connettersi alle origini dati esistenti come gli elenchi di SharePoint e altre app di dati. Per informazioni dettagliate, vedere [creare un PowerApp per un elenco in SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) e [PowerApps](https://powerapps.microsoft.com/) .<br/> |
+|App integrate  <br/> |È possibile concedere alle singole app l'accesso ai dati di Office 365, ad esempio la posta, i calendari, i contatti, gli utenti, i gruppi, i file e le cartelle. È inoltre possibile autorizzare tali applicazioni a livello di amministratore globale e renderle disponibili per l'intera società registrando le app in Azure AD. Per informazioni dettagliate [, vedere Integrated Apps and Azure ad per Office 365 Administrators](https://support.office.com/article/cb2250e3-451e-416f-bf4e-363549652c2a).  <br/> Vedere anche [Azure ad Application Gallery e Single-Sign-on](https://go.microsoft.com/fwlink/p/?LinkId=698604).  <br/> |
+|PowerApps  <br/> | Le app di alimentazione sono applicazioni mirate per i dispositivi mobili che possono connettersi alle origini dati esistenti come gli elenchi di SharePoint e altre app di dati. Per informazioni dettagliate, vedere [creare un PowerApp per un elenco in SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) e [PowerApps](https://powerapps.microsoft.com/) .  <br/> |
    
 Per altre risorse su Microsoft Cloud e Office 365, vedere le risorse seguenti:
   

@@ -13,11 +13,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "Riepilogo: Configurare Azure AD Connect per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
 ms.openlocfilehash: e5a4381b6795a1159c1398f4155b059998a30818
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741402"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487934"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Fase 5 dell'autenticazione federata a disponibilità elevata: Configurare l'autenticazione federata per Office 365
 

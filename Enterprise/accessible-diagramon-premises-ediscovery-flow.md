@@ -1,5 +1,5 @@
 ---
-title: Diagramma accessibile - eDiscovery locale flusso
+title: Diagramma accessibile-flusso eDiscovery locale
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,170 +10,170 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
-description: In questo articolo è una versione testo accessibile del diagramma denominato eDiscovery locale flusso.
+description: Questo articolo è una versione di testo accessibile del diagramma denominato flusso eDiscovery locale.
 ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17503059"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487702"
 ---
-# <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagramma accessibile - eDiscovery locale flusso
+# <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagramma accessibile-flusso eDiscovery locale
 
-**Riepilogo:** In questo articolo è una versione testo accessibile del diagramma denominato eDiscovery locale flusso.
+**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato flusso eDiscovery locale.
   
-Questo poster fornisce informazioni dettagliate sull'architettura e flusso di dati tra i prodotti server. 
+Questo poster fornisce informazioni dettagliate sull'architettura e sul flusso dei dati tra i prodotti server. 
   
-## <a name="across-sharepoint-exchange-lync-and-file-shares"></a>In SharePoint, Exchange, Lync e condivisioni di file
+## <a name="across-sharepoint-exchange-lync-and-file-shares"></a>Condivisioni di SharePoint, Exchange, Lync e file
 
-Il diagramma mostra un utente che invia una query che accede a due server farm, una Farm di SharePoint 2013 Enterprise App e una Farm di servizi di SharePoint 2013. Farm di servizi di SharePoint 2013 comunica con una Farm di SharePoint 2013 il contenuto, Exchange Server 2013 (che comunica con Lync 2013) e le condivisioni di File di Windows. 
+Nel diagramma viene visualizzato un utente che invia una query che accede a due server farm, una farm di app SharePoint 2013 Enterprise e una farm di servizi di SharePoint 2013. La farm di SharePoint 2013 Services comunica con una farm di contenuto di SharePoint 2013, Exchange Server 2013 (che comunica con Lync 2013) e condivisioni file di Windows. 
   
-EDiscovery flusso elenco vengono descritti il flusso di dati e l'ordine in cui eDisovery azioni di query si verificano in SharePoint, Exchange, Lync e condivisioni di file. 
+L'elenco di flusso di eDiscovery descrive il flusso di dati e l'ordine in cui si verificano le azioni di query di eDisovery tra SharePoint, Exchange, Lync e le condivisioni di file. 
   
-Nell'elenco di flusso di eDiscovery è descritto dettagliatamente in primo luogo, seguito da una descrizione dettagliata delle caratteristiche illustrato nel diagramma. 
+L'elenco di flusso di eDiscovery viene descritto in dettaglio per primo, seguito da una descrizione dettagliata delle caratteristiche descritte nel diagramma. 
   
-### <a name="ediscovery-flow-list"></a>eDiscovery flusso elenco
+### <a name="ediscovery-flow-list"></a>Elenco dei flussi di eDiscovery
 
-I numeri per ognuno dei passaggi descritti in questo elenco sono relativi a un passaggio illustrato nel diagramma. Nel diagramma è descritto in dettaglio più avanti in questo documento. 
+I numeri per ogni procedura descritta in questo elenco sono relativi a un passaggio illustrato nel diagramma. Il diagramma è descritto in dettaglio più avanti in questo documento. 
   
-1. casi di eDiscovery vengono creati, gestiti e utilizzati in eDiscovery center (EDC). Il EDC è una raccolta siti di SharePoint 2013. Si tratta di cui vengono definiti i casi, vengono identificate origini per tenere traccia, query vengono inviate, vengono esaminati i risultati delle query ed esenzioni contenuti vengono inseriti o rimossi. 
+1. i casi di eDiscovery vengono creati, gestiti e utilizzati in eDiscovery Center (EDC). EDC è una raccolta siti di SharePoint 2013. Di seguito vengono definiti i casi, vengono identificate le fonti da tenere presenti, vengono rilasciate le query, vengono esaminati i risultati delle query e il contenuto viene inserito o rimosso. 
     
-2. La query di eDiscovery o azione, ad esempio posto un'esenzione, ReleaseHold o GetStatus, viene inoltrata dal EDC al proxy di applicazione di servizio di ricerca (SSA) nella Farm di applicazione Enterprise. Il proxy SSA inoltra quindi il traffico per l'esecuzione dell'applicazione nella Farm di servizi di App. In questo esempio, la richiesta deve posizionerà nulla nella Farm di contenuto di SharePoint con "CONTOSO" nel nome del file in attesa. 
+2. La query o l'azione eDiscovery, ad esempio Place a Hold, ReleaseHold o GetStatus, viene inoltrata dall'EDC al proxy dell'applicazione del servizio di ricerca (SSA) nella farm di app Enterprise. Il proxy SSA inoltra quindi il traffico all'SSA nella farm di applicazioni dei servizi. In questo esempio, la richiesta è quella di inserire qualsiasi elemento nella farm del contenuto di SharePoint con "CONTOSO" nel nome del file in attesa. 
     
-3. Se la richiesta di un caso di query, l'esecuzione dell'applicazione consulta l'indice di ricerca. Quindi, il set di risultati di query eDiscovery restituisce all'utente tramite il EDC. 
+3. Se la richiesta è quella di eseguire una query su un caso, il SSA consulterà l'indice di ricerca. Successivamente, il set di risultati di query di eDiscovery torna all'utente tramite EDC. 
     
-4. Se la richiesta di un'azione, ad esempio luogo una conservazione o ReleaseHold, tale azione viene scritta in Actions_Table nel database di amministrazione di esecuzione dell'applicazione. In questo esempio viene scritto il Actions_Table una richiesta di attesa per qualsiasi nella Farm di contenuto di SharePoint con "CONTOSO". 
+4. Se la richiesta è un'azione, ad esempio un blocco o un ReleaseHold, tale azione viene scritta in Actions_Table nel database amministrativo SSA. In questo esempio, una richiesta di archiviazione per qualsiasi elemento nella farm del contenuto di SharePoint con "CONTOSO" viene scritta in Actions_Table. 
     
-5. A intervalli regolari il Farm di contenuto eDiscovery sul posto archiviazione processo timer riattiva e genera una richiesta di azioni in sospeso e invia gli aggiornamenti dello stato attraverso il proxy di esecuzione dell'applicazione per l'esecuzione dell'applicazione. 
+5. A intervalli regolari la farm di contenuto eDiscovery il processo timer del blocco sul posto viene riattivato e genera una richiesta per le azioni in sospeso e invia gli aggiornamenti dello stato tramite il proxy SSA al SSA. 
     
-6. La query per azioni in sospeso viene inoltrata per l'esecuzione dell'applicazione centrale, che consulta il Action_Table per le azioni per la Farm di contenuto in sospeso. Il processo timer di archiviazione sul posto di Farm di contenuto invia inoltre gli aggiornamenti di stato per gli oggetti e le azioni ha ricevuto, che vengono scritti i ActionsTable. 
+6. La query per le azioni in sospeso viene inoltrata al SSA centrale, che consulta l'Action_Table per tutte le azioni in sospeso per la farm di contenuto. Il processo timer della farm di contenuto consente inoltre di inviare gli aggiornamenti di stato per gli oggetti e le azioni ricevuti, scritti in ActionsTable. 
     
-7. La richiesta di attesa per qualsiasi contenuto con "CONTOSO" nel nome della Farm di SharePoint 2013 il contenuto viene inviata per l'esecuzione dell'applicazione per il processo timer di archiviazione sul posto di eDiscovery della farm di contenuto. 
+7. La richiesta di archiviazione per qualsiasi contenuto con "CONTOSO" nel nome nella farm di contenuto di SharePoint 2013 viene inviata da SSA al processo timer di archiviazione sul posto di eDiscovery nella farm di contenuto. 
     
-8. Archiviazione la eDiscovery sul posto timer posizioni processo il "CONTOSO sito" e "CONTOSO contenuto" in attesa. 
+8. Il processo timer di archiviazione sul posto di eDiscovery inserisce in attesa il "sito CONTOSO" e il "contenuto CONTOSO". 
     
-9. Il processo timer di archiviazione sul posto di eDiscovery viene eseguito periodicamente nella Farm di applicazione Enterprise per verificare lo stato delle azioni di individuazione e per aggiornare lo stato. 
+9. Il processo timer per il blocco sul posto di eDiscovery viene eseguito periodicamente nella farm dell'applicazione Enterprise per controllare lo stato delle azioni di individuazione e per aggiornare lo stato. 
     
-10. La query di stato viene inoltrata attraverso il proxy di esecuzione dell'applicazione Enterprise App Farm per l'esecuzione dell'applicazione Farm di servizi di SharePoint. 
+10. La query di stato viene inoltrata tramite il proxy SSA farm dell'applicazione Enterprise all'SSA farm di SharePoint Services. 
     
-11. L'esecuzione dell'applicazione viene recuperato lo stato dalla tabella azioni e restituisce il processo timer nella Farm di applicazione Enterprise, che inserisce gli aggiornamenti di stato per il EDC. 
+11. Il SSA recupera lo stato dalla tabella Actions e lo restituisce al processo timer nella farm Enterprise app, che inserisce gli aggiornamenti dello stato in EDC. 
     
-12. Quando l'utente di eDiscovery è la ricerca (o eseguendo un'azione) per le origini di Exchange, ad esempio una cassetta postale o contenuto archiviato Lync, l'esecuzione dell'applicazione centrale viene utilizzato il proxy di servizi Web Exchange (EWS) per eseguire una query servizi Web Exchange. Exchange è disponibile il proprio infrastruttura di ricerca ed eDiscovery e gestisce tutte le chiamate di eDiscovery internamente. 
+12. Quando l'utente di eDiscovery esegue la ricerca o l'esecuzione di un'azione per le origini di Exchange, ad esempio una cassetta postale o un contenuto Lync archiviato, la SSA centrale utilizza il proxy di servizi Web Exchange (EWS) per eseguire query sui servizi Web di Exchange. Exchange dispone di un'infrastruttura di ricerca e di eDiscovery e gestisce tutte le chiamate di eDiscovery internamente. 
     
-13. Servizi Web Exchange risponde a esecuzione dell'applicazione con i risultati della ricerca eDiscovery o una risposta a una richiesta di stato per un'esenzione basata su query, che a sua volta, ottiene inoltrata al EDC. 
+13. Servizi Web Exchange risponde a SSA con i risultati della ricerca di eDiscovery o una risposta a una richiesta di stato per un blocco basato su query, che, a sua sua, viene inoltrato all'EDC. 
     
 #### <a name="prerequisites"></a>Prerequisiti
 
-- Nell'indice di ricerca contenuti organizzazione SharePoint deve essere configurato correttamente si verificano ricerche per indicizzazione su origini di contenuto (SharePoint e Windows condivisioni di file), e tutte le origini di contenuto. 
+- La ricerca di SharePoint Enterprise deve essere configurata, le ricerche per indicizzazione nelle origini di contenuto (condivisioni di file di SharePoint e di Windows) sono state eseguite correttamente e tutte le origini di contenuto sono nell'indice. 
     
-- Necessario configurare l'autenticazione e la relazione di trust da server a server tra Farm di SharePoint Services ed Exchange e anche tra Exchange e Lync. 
+- L'attendibilità da server a server e l'autenticazione devono essere configurate tra la farm di SharePoint Services e Exchange e anche tra Exchange e Lync. 
     
-### <a name="description-of-components-in-the-diagram"></a>Descrizione dei componenti del diagramma
+### <a name="description-of-components-in-the-diagram"></a>Descrizione dei componenti nel diagramma
 
-Il diagramma mostra un utente che invia una query, che accede a due server farm, una Farm di SharePoint 2013 Enterprise App e una Farm di servizi di SharePoint 2013. Interfacce di Farm di servizi di SharePoint con una Farm di SharePoint 2013 il contenuto, Exchange Server 2013 (in cui si interfaccia con Lync 2013) e le condivisioni di File di Windows. 
+Nel diagramma viene visualizzato un utente che invia una query, che accede a due server farm, una farm di SharePoint 2013 Enterprise app e una farm di servizi di SharePoint 2013. La farm di SharePoint Services si interfaccia con una farm di contenuto di SharePoint 2013, Exchange Server 2013 (che si interfaccia con Lync 2013) e condivisioni file di Windows. 
   
-#### <a name="sharepoint-2013-enterprise-app-farm"></a>Farm di SharePoint 2013 Enterprise App
+#### <a name="sharepoint-2013-enterprise-app-farm"></a>Farm delle app di SharePoint 2013 Enterprise
 
-Farm di SharePoint 2013 Enterprise App include i componenti seguenti: 
+La farm delle app di SharePoint 2013 Enterprise contiene i componenti seguenti: 
   
 - EDC
     
-- Proxy di esecuzione dell'applicazione 
+- Proxy SSA 
     
 - Processo timer 
     
-Una query o azione inviati dall'utente viene inviato a EDC nella Farm di applicazione Enterprise. Si verifica quanto segue: 
+Una query o un'azione inviata dall'utente viene inviata all'EDC nella farm dell'applicazione Enterprise. Si verificano le seguenti azioni: 
   
-- La query o l'azione viene inoltrata al proxy di esecuzione dell'applicazione. 
+- La query o l'azione passa al proxy SSA. 
     
-- Il proxy dell'esecuzione dell'applicazione invia una query sullo stato o una risposta per il processo Timer della farm di applicazioni Enterprise e consente inoltre di inviare una query sullo stato o una risposta al servizio di esecuzione dell'applicazione nella Farm di servizi di SharePoint. Azioni risultanti da ciò sono descritte nella sezione sulla Farm di servizi di SharePoint. 
+- Il proxy SSA invia una query di stato o una risposta al processo timer nella farm di app Enterprise e invia anche una query di stato o una risposta al servizio SSA nella farm di SharePoint Services. Le azioni che derivano da questa operazione sono descritte nella sezione relativa alla farm di SharePoint Services. 
     
-- Quando riceve una risposta, il processo Timer invia la risposta per il proxy dell'esecuzione dell'applicazione e il EDC. 
+- Quando riceve una risposta, il processo timer Invia la risposta al proxy SSA e all'EDC. 
     
-- Risultati di query o azione vengono inviati all'utente dal EDC. 
+- Tutti i risultati della query o dell'azione vengono inviati all'utente dall'EDC. 
     
-#### <a name="sharepoint-2013-services-farm"></a>Farm di servizi di SharePoint 2013
+#### <a name="sharepoint-2013-services-farm"></a>Farm di SharePoint 2013 Services
 
-Farm di servizi di SharePoint 2013 include i componenti seguenti: 
+La farm di SharePoint 2013 Services contiene i componenti seguenti: 
   
-- Esecuzione dell'applicazione servizio 
+- Servizio SSA 
     
-- Database di indice di ricerca 
+- Database degli indici di ricerca 
     
-- Database admin_db esecuzione dell'applicazione. Contiene la tabella azioni nel database: archiviazione versione attesa GetStatus 
+- Database SSA admin_db. La tabella Actions del database contiene: Hold Release Hold GetStatus 
     
-- Proxy di servizi Web Exchange 
+- Proxy EWS 
     
-Quando il proxy dell'esecuzione dell'applicazione nella Farm di SharePoint Enterprise App invia una query di stato per l'esecuzione dell'applicazione nella Farm di servizi di SharePoint, si verificano le seguenti operazioni: 
+Quando il proxy SSA nella farm di app di SharePoint Enterprise invia una query di stato al SSA nella farm di SharePoint Services, si verificano le seguenti azioni: 
   
-- Se la richiesta di una query, l'esecuzione dell'applicazione consulta l'indice di ricerca. La risposta di individuazione verrà restituita per l'esecuzione dell'applicazione e quindi all'utente tramite il EDC. 
+- Se la richiesta è una query, la SSA consulterà l'indice di ricerca. La risposta di individuazione viene restituita al SSA e quindi all'utente tramite EDC. 
     
-- Se la richiesta è un'operazione di scrittura, il servizio SSA invia l'azione di scrittura per l'esecuzione dell'applicazione admin_db. 
+- Se la richiesta è un'azione di scrittura, il servizio SSA invia l'azione di scrittura al admin_db SSA. 
     
-- Una ricerca per indicizzazione e risponde risultati richiesta viene inviata dall'esecuzione dell'applicazione per la Farm di contenuto di SharePoint 2013 e viene restituita una risposta per l'esecuzione dell'applicazione. 
+- Una richiesta di ricerca per indicizzazione e risposta viene inviata da SSA alla farm di contenuto di SharePoint 2013 e viene restituita una risposta al SSA. 
     
-- Una ricerca per indicizzazione e risponde risultati richiesta viene inviata dall'esecuzione dell'applicazione per le condivisioni di File di Windows e viene restituita una risposta per l'esecuzione dell'applicazione. 
+- Una richiesta di ricerca per indicizzazione e risposta viene inviata dal SSA alle condivisioni file di Windows e una risposta viene restituita al SSA. 
     
-- Invio di una query per le azioni, le risposte o gli aggiornamenti dello stato in sospeso dall'esecuzione dell'applicazione per il proxy dell'esecuzione dell'applicazione nella Farm di contenuto di SharePoint e viene restituita una risposta per l'esecuzione dell'applicazione. 
+- Una query per le azioni, le risposte o gli aggiornamenti di stato in sospeso viene inviata dal SSA al proxy SSA nella farm del contenuto di SharePoint e viene restituita una risposta al SSA. 
     
-- Viene inviata una richiesta di stato dell'azione/Exchange dall'esecuzione dell'applicazione per il proxy di servizi Web Exchange, che invia una richiesta di stato dell'azione/Exchange Query al servizio Web di Exchange sul server Exchange 2013. 
+- Una richiesta di azione/stato di Exchange viene inviata dal SSA al proxy EWS, che invia una richiesta di azione/stato di query di Exchange al servizio Web di Exchange sul server Exchange 2013. 
     
-- Una query/risposta sullo stato viene inviata dall'esecuzione dell'applicazione a admin_db esecuzione dell'applicazione e vengono restituita per l'esecuzione dell'applicazione. 
+- Una query di stato/risposta viene inviata dal SSA al ssa admin_db e viene restituita al SSA. 
     
-- Un'operazione in sospeso query/risposta inviata dall'esecuzione dell'applicazione per l'esecuzione dell'applicazione admin_db e viene restituita per l'esecuzione dell'applicazione. 
+- Una query o una risposta di azione in sospeso viene inviata dal SSA al ssa admin_db e viene restituita al SSA. 
     
 #### <a name="sharepoint-2013-content-farm"></a>Farm di contenuto di SharePoint 2013
 
-Farm di contenuto di SharePoint 2013 include i componenti seguenti: 
+La farm di contenuto di SharePoint 2013 contiene i componenti seguenti: 
   
-- Proxy di esecuzione dell'applicazione 
+- Proxy SSA 
     
 - Processo timer 
     
-- Sito di contoso SharePoint 
+- Sito di SharePoint di contoso 
     
-- Contenuto di contoso SharePoint 
+- Contenuto di SharePoint di contoso 
     
-Durante l'esecuzione dell'applicazione nella Farm di SharePoint Services invia una query di stato per il Proxy dell'esecuzione dell'applicazione nella Farm di contenuto di SharePoint, si verificano le seguenti operazioni: 
+Quando la farm di SharePoint Services viene inviata una query di stato al proxy SSA nella farm di contenuto di SharePoint, si verificano le seguenti azioni: 
   
-- Il proxy dell'esecuzione dell'applicazione nella Farm di contenuto di SharePoint invia una query in attesa di risposta di azioni/stato processo Timer. 
+- Il proxy SSA nella farm del contenuto di SharePoint invia una query per le azioni in sospeso/la risposta dello stato al processo timer. 
     
-- Il processo Timer invia una richiesta al sito di SharePoint di Contoso, che viene esaminato il contenuto di SharePoint di Contoso. 
+- Il processo timer invia una richiesta al sito di SharePoint contoso, che esamina il contenuto di SharePoint contoso. 
     
-- Viene inviata la risposta alla query azioni/dello stato in sospeso provenienti dal processo Timer per il proxy dell'esecuzione dell'applicazione nella Farm di contenuto di SharePoint e quindi viene inviato al servizio di esecuzione dell'applicazione nella Farm di servizi di SharePoint 
+- La risposta alla query relativa alle azioni o allo stato in sospeso viene inviata dal processo timer al proxy SSA nella farm del contenuto di SharePoint e quindi viene inviata al servizio SSA nella farm di SharePoint Services. 
     
 #### <a name="exchange-2013"></a>Exchange 2013
 
-Il componente server Exchange 2013 contiene il servizio Web di Exchange e fornisce le operazioni seguenti: 
+Il componente server di Exchange 2013 contiene il servizio Web di Exchange e fornisce quanto segue: 
   
-- Relazione di Trust da server a server/OAuth viene gestita tra la Farm di contenuto di SharePoint 2013 ed Exchange 2013. 
+- La relazione di trust tra server/OAuth viene gestita tra la farm di contenuto di SharePoint 2013 e Exchange 2013. 
     
-- Relazione di Trust da server a server/OAuth viene gestita tra Exchange 2013 e Lync 2013. 
+- La relazione di trust tra server/OAuth viene gestita tra Exchange 2013 e Lync 2013. 
     
 #### <a name="lync-2013"></a>Lync 2013
 
-Il componente di Lync 2013 archivia Lync contenuto di Exchange 2013. 
+Il componente Lync 2013 archivia il contenuto di Lync in Exchange 2013. 
   
-#### <a name="windows-file-shares"></a>Condivisioni di File di Windows
+#### <a name="windows-file-shares"></a>Condivisioni file di Windows
 
-Il componente di condivisioni di File Windows fornisce i risultati di ricerca per indicizzazione per l'esecuzione dell'applicazione nella Farm di servizi di SharePoint. 
+Il componente Condivisione file di Windows fornisce i risultati della ricerca per indicizzazione all'SSA nella farm di SharePoint Services. 
   
 ### <a name="legend"></a>Legenda
 
-La legenda figura mostra graficamente i diversi tipi di traffico riportato tra i componenti nelle diverse righe colorate come indicato di seguito: 
+La legenda per questo diagramma Visualizza graficamente i diversi tipi di traffico rappresentati tra i componenti in linee colorate diverse, come indicato di seguito: 
   
-- Linea di colore blu chiaro: Query/azione: dati di query o l'azione di eDiscovery 
+- Riga blu chiaro: query/azione-eDiscovery di query o dati di azione 
     
-- Linea arancione: risposta eDisovery - dati risposta delle query di eDiscovery 
+- Linea arancione: eDisovery Response-eDiscovery query Response data 
     
-- Verde linea: stato query/risposta - dati di query/risposta lo stato di eDiscovery 
+- Linea verde: Status query/Response-eDiscovery Status query/dati di risposta 
     
-- Viola riga: Exchange/stato dell'azione richiesta - eDiscovery per stato dell'azione per il traffico di Exchange. 
+- Linea viola: Exchange Action/Status Request-eDiscovery Request for Action Status per il traffico di Exchange. 
     
-- Linea rossa: Exchange risposta/lo stato dei dati - risposta lo stato o query di eDiscovery da Exchange. 
+- Linea rossa: Exchange Data/status Response-eDiscovery query o la risposta dello stato da Exchange. 
     
-- Riga nero con punti: Trust da Server a Server/Oauth 
+- Riga nera punteggiata: attendibilità da server a server/OAuth 
     
-- Linea continua nero: risultati di ricerca per indicizzazione / 
+- Linea nera massiccia: ricerca per inDicizzazione/risultati 
     
 

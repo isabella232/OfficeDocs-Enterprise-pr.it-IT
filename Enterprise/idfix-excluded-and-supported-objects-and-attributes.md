@@ -1,5 +1,5 @@
 ---
-title: Oggetti e attributi esclusi e supportati di IdFix
+title: Oggetti e attributi esclusi e supportati da
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,24 +18,24 @@ ms.collection:
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: Elenca gli attributi che sono esclusi e supportati dallo strumento IdFix.
 ms.openlocfilehash: d6b7aac023e9fe96b8308483322e718937ab1355
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085085"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487182"
 ---
-# <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Oggetti e attributi esclusi e supportati di IdFix
+# <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Oggetti e attributi esclusi e supportati da
 Sono disponibili due insiemi di regole mantenute da IdFix; Multi-tenant e Dedicati/ITAR. A questo punto, le due regole impostate escludono gli stessi oggetti, attributi e valori di attributi dalla ricerca. Ciò potrebbe cambiare nelle versioni future.
   
 ## <a name="multi-tenant-and-dedicated-error-exclusions-used-by-idfix"></a>Esclusione errori Multi-tenant e Dedicati utilizzate da IdFix
-In questa sezione vengono elencati gli oggetti, gli attributi e i valori che IdFix esclude dalla ricerca della directory. L'asterisco (\*) è un carattere jolly che può essere sostituito da altri caratteri.
+Questa sezione elenca oggetti, attributi e valori esclusi da IdFix dalla propria ricerca della directory. L'asterisco (\*) è un carattere jolly che può essere sostituito da altri caratteri.
   
 ### <a name="objects-attributes-and-values-excluded-during-an-idfix-search"></a>Oggetti, attributi e valori esclusi durante una ricerca IdFix
 
 |**Esclusione**|**Esempio**|
 |:-----|:-----|
 |Scelta\* |Amministratore |
-|CAS_ {\*  |CAS_{fe35fc98e69e4d08} |
+|CAS_ {\*  |CAS_ {fe35fc98e69e4d08} |
 |DiscoverySearchMailbox\*  |DiscoverySearchMailbox  |
 |FederatedEmail\* |FederatedEmail. *GUID* |
 |Guest\* ||

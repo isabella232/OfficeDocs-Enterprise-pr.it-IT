@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "Sintesi: configurazione e dimostrazione di Office 365 Cloud App Security nell'ambiente di sviluppo/test di Office 365."
 ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741262"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490122"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security per l'ambiente di sviluppo/test di Office 365
 
@@ -32,7 +32,7 @@ Office 365 cloud app Security, precedentemente noto come Office 365 Advanced Sec
 Con le istruzioni disponibili in questo articolo, è possibile abilitare e testare Cloud App Security nella sottoscrizione di valutazione di Office 365.
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per visualizzare una mappa di tutti gli articoli della guida del laboratorio di testing di Office 365.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365 aziendale leggero o simulato
 
@@ -63,9 +63,9 @@ In questa procedura si dimostra che, prima di abilitare cloud app Security, la m
     
 5. Nella pagina **User 4**, fare clic su **Modifica** per la riga **Ruoli**.
     
-6. Nella pagina **Modifica ruoli utente** fare clic su **amministratore globale**, digitare **user4@contoso.com** l' **indirizzo di posta elettronica alternativo**e quindi fare clic su **Salva**. Fare doppio clic su **Chiudi**.
+6. Nella pagina **Modifica ruoli utente**, fare clic su **Amministratore globale**, digitare **user4@contoso.com** nell'**indirizzo di posta elettronica alternativo**, quindi fare clic su **Salva**. Fare doppio clic su **Chiudi**.
     
-7. Selezionare l'icona di avvio delle app in alto a sinistra e scegliere **Posta**.
+7. 	Selezionare l'icona di avvio delle app in alto a sinistra e scegliere **Posta**.
     
 8. Attendere 30 minuti. Si noti che nella posta in arrivo non è presente alcun messaggio di posta elettronica in cui viene inviata una notifica della modifica del ruolo di utente 4 come amministratore globale.
     
@@ -81,7 +81,7 @@ In questa procedura, viene abilitato Cloud App Security e viene creato un nuovo 
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)() e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
-2. Fare clic sul riquadro **Amministratore**. Nella scheda dell'interfaccia di **amministrazione di Office** , fare clic su interfaccia di **amministrazione di _GT_ sicurezza & conformità**.
+2. Scegliere il riquadro **Amministrazione**. Nella scheda dell'interfaccia di **amministrazione di Office** , fare clic su interfaccia di **amministrazione di _GT_ sicurezza & conformità**.
     
 3. Nel riquadro di spostamento a sinistra fare clic su **Avvisi > Gestisci gli avvisi avanzati**.
     
@@ -131,7 +131,7 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
     
 11. Nella pagina **User 5**, fare clic su **Modifica** per la riga **Ruoli**.
     
-12. Nella pagina **Modifica ruoli utente** fare clic su **amministratore personalizzato**, fare clic su amministratore **password** e **amministratore Gestione utenti**, digitare **user5@contoso.com** l' **indirizzo di posta elettronica alternativo**e quindi fare clic su **Salva**. Fare doppio clic su **Chiudi**.
+12. Nella pagina **Modifica ruoli utente**, fare clic su **Amministratore personalizzato**, selezionare **Amministratore password** e **Amministratore Gestione utenti**, digitare **user5@contoso.com** nell'**indirizzo di posta elettronica alternativo**, quindi fare clic su **Salva**. Fare doppio clic su **Chiudi**.
     
 13. Fare clic sull'icona dell'utente in alto a destra, quindi su **Disconnetti**. 
     
@@ -159,7 +159,7 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
   
 ## <a name="see-also"></a>Vedere anche
 
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md)
   

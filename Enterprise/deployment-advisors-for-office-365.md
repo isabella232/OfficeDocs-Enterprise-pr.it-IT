@@ -1,5 +1,5 @@
 ---
-title: Assistenti distribuzione per i servizi di Office 365
+title: Assistenti per la distribuzione dei servizi di Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -19,13 +19,13 @@ search.appverid:
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: I consulenti per la distribuzione di Office 365 offrono supporto self-guided per la configurazione di Office 365.
 ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741473"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490082"
 ---
-# <a name="deployment-advisors-for-office-365-services"></a>Assistenti distribuzione per i servizi di Office 365
+# <a name="deployment-advisors-for-office-365-services"></a>Assistenti per la distribuzione dei servizi di Office 365
 
 I consulenti per la distribuzione di Office 365 offrono supporto self-guided per la configurazione di Office 365 per la propria organizzazione. Basta selezionare una guida all'installazione o un consulente e accedere a Office 365. 
 

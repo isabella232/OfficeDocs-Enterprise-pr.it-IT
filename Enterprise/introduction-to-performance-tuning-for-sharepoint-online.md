@@ -12,17 +12,17 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
-description: In questo articolo viene illustrato quali aspetti specifici, è necessario prendere in considerazione durante la progettazione di pagine per ottimizzare le prestazioni di SharePoint Online.
+description: In questo articolo vengono illustrati gli aspetti specifici che è necessario prendere in considerazione durante la progettazione delle pagine per ottimizzare le prestazioni in SharePoint Online.
 ms.openlocfilehash: 07938770d711477126f78fc583e8d2533ba5c1d1
-ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26219876"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487164"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introduzione all'ottimizzazione delle prestazioni per SharePoint Online
 
-In questo articolo viene illustrato quali aspetti specifici, è necessario prendere in considerazione durante la progettazione di pagine per ottimizzare le prestazioni di SharePoint Online.
+In questo articolo vengono illustrati gli aspetti specifici che è necessario prendere in considerazione durante la progettazione delle pagine per ottimizzare le prestazioni in SharePoint Online.
      
 ## <a name="sharepoint-online-metrics"></a>Metriche di SharePoint Online
 
@@ -50,23 +50,23 @@ I dati dicono:
     
 È possibile utilizzare un semplice test di benchmark per misurare le prestazioni confrontando il tempo di caricamento del proprio portale con il tempo di caricamento della home page di OneDrive for Business, perché utilizza alcune funzionalità personalizzate. Questo spesso sarà il primo passaggio che il supporto chiederà di completare durante la risoluzione dei problemi relativi alle prestazioni di rete.
   
-## <a name="use-a-standard-user-account-when-checking-performance"></a>Utilizzare un account utente standard per il controllo delle prestazioni
+## <a name="use-a-standard-user-account-when-checking-performance"></a>Utilizzo di un account utente standard per il controllo delle prestazioni
 
-Un amministratore della raccolta siti, proprietario del sito, Editor o collaboratore appartengono a gruppi di sicurezza aggiuntive, disporre di autorizzazioni aggiuntive e pertanto sono elementi aggiuntivi che SharePoint viene caricato in una pagina.
+L'amministratore di una raccolta siti, il proprietario del sito, l'editor o il collaboratore appartengono a gruppi di sicurezza aggiuntivi, dispongono di autorizzazioni aggiuntive e pertanto dispongono di elementi aggiuntivi caricati da SharePoint in una pagina.
   
-Questa opzione è disponibile per SharePoint Online e SharePoint locale, ma in uno scenario in locale differenze saranno la stessa facilità inosservate come SharePoint Online.
+Questo è applicabile a SharePoint locale e SharePoint Online, ma in uno scenario locale le differenze non saranno facilmente riscontrabili come in SharePoint Online.
   
-Per valutare correttamente come una pagina verrà eseguite per gli utenti, è consigliabile utilizzare un account utente standard per evitare di caricare la creazione di controlli e un aumento del traffico relative ai gruppi di sicurezza.
+Per valutare correttamente la modalità di esecuzione di una pagina per gli utenti, è consigliabile utilizzare un account utente standard per evitare il caricamento dei controlli di creazione e del traffico aggiuntivo relativo ai gruppi di sicurezza.
   
 ## <a name="connection-categories-for-performance-tuning"></a>Categorie di connessione per l'ottimizzazione delle prestazioni
 
 È possibile classificare le connessioni tra il server e l'utente in tre componenti principali. Prendere in considerazione tali componenti durante la progettazione delle pagine di SharePoint Online per comprendere i tempi di caricamento.
   
-- **Server** I server che ospita Microsoft nei Data Center.
+- **Server** I server ospitati da Microsoft nei data center.
     
-- **Rete** Microsoft network, Internet e la rete locale tra i Data Center e gli utenti.
+- **Rete** La rete Microsoft, Internet e la rete locale tra il Data Center e gli utenti.
     
-- **Browser** Dove viene caricata la pagina.
+- **Browser** In cui viene caricata la pagina.
     
 All'interno di queste tre connessioni in genere esistono cinque motivi che causano il 95% delle pagine lente. Ciascuna di queste situazioni è illustrata in questo articolo:
   
@@ -86,7 +86,7 @@ Molti dei problemi che influiscono sulle prestazioni di SharePoint locale valgon
   
 Come previsto, è necessario prestare maggiore controllo sul funzionamento dei server con SharePoint locale. Con SharePoint Online le cose sono leggermente diverse. Più lavoro si fa fare al server, maggiore sarà il tempo necessario per il rendering di una pagina. Con SharePoint, la causa principale a questo proposito sono le pagine complesse con più web part.
   
-SharePoint Server in locale
+SharePoint Server locale
   
 ![Schermata del server in locale](media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
@@ -106,7 +106,7 @@ L'altra operazione che può rallentare le interazioni del server è la mancanza 
   
 ### <a name="network-connection"></a>Connessione di rete
 
-Con SharePoint locale che non utilizzano una rete WAN, è possibile utilizzare una connessione ad alta velocità tra Data Center e gli utenti finali. In generale, aspetti sono facile da gestire da un punto di vista di rete.
+Con SharePoint locale che non utilizza una rete WAN, è possibile utilizzare una connessione ad alta velocità tra i datacenter e gli utenti finali. In genere, le operazioni sono facili da gestire da un punto di vista della rete.
   
 Con SharePoint Online, esistono alcuni ulteriori fattori da considerare; ad esempio:
   
@@ -124,7 +124,7 @@ Indipendentemente dalla versione di SharePoint (e di rete) utilizzata, le operaz
     
 - Grande distanza fisica con il server
     
-Una funzionalità che è possibile utilizzare in SharePoint Online è Microsoft CDN (rete CDN). Una rete CDN è fondamentalmente una raccolta distribuita dei server distribuiti tra più centri dati. Con una rete CDN, il contenuto delle pagine può essere ospitato in un server all'incirca il client anche se il client è lontana dal Server di origine SharePoint. Microsoft utilizzerà questo più in futuro per archiviare le istanze locali di pagine che non possono essere personalizzate, ad esempio SharePoint Online admin home page. Per ulteriori informazioni su CDN, vedere [reti di distribuzione del contenuto](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks).
+Una funzionalità da sfruttare in SharePoint Online è Microsoft CDN (CDN, rete per la distribuzione di contenuti). Una rete CDN è fondamentalmente un insieme di server distribuiti su più datacenter. Con una rete CDN, il contenuto delle pagine può essere ospitato su un server più vicino al client anche se il client è lontano dal server di SharePoint di origine. Microsoft utilizzerà ancora questa funzionalità in futuro per l'archiviazione locale di istanze di pagine che non possono essere personalizzate, ad esempio la home page di amministrazione di SharePoint Online. Per ulteriori informazioni su reti CDN, vedere [Content Delivery Networks](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks).
   
 Un elemento che è necessario tenere presente ma sul quale potrebbe non essere possibile agire, è la velocità della connessione del provider di servizi Internet. Uno strumento di test di velocità semplice indica la velocità della connessione.
   
@@ -132,15 +132,15 @@ Un elemento che è necessario tenere presente ma sul quale potrebbe non essere p
 
 Esistono alcuni fattori da considerare con il browser Web dal punto di vista delle prestazioni.
   
-Visitare pagine complesse inciderà sulle prestazioni. La maggior parte dei browser hanno a disposizione una cache di piccole dimensioni (circa 90MB), mentre la media pagina web viene in genere circa 1.6 MB. Non richiedere tempo che deve ottenere esaurite.
+L'esplorazione pagine complesse influisce sulle prestazioni. La maggior parte dei browser presentano solo una piccola cache (circa 90 MB), mentre la media delle pagina Web in genere è di circa 1,6 MB. Questo non richiede molto tempo per essere utilizzato.
   
-Larghezza di banda può essere anche un problema. Ad esempio, se un utente è la riproduzione di video in un'altra sessione, si inciderà sulle prestazioni della pagina di SharePoint. Quando si non possono impedire agli utenti di flussi multimediali, è possibile controllare il modo in cui che carica una pagina per gli utenti.
+Anche la larghezza di banda potrebbe essere un problema. Ad esempio, se un utente sta guardando video in un'altra sessione, ciò influirà sulle prestazioni della pagina SharePoint. Anche se non è possibile impedire agli utenti di trasmettere flussi multimediali, puoi controllare la modalità di caricamento di una pagina per gli utenti.
   
-Vedere gli articoli seguenti per diverse tecniche di personalizzazione di pagina SharePoint Online e altre procedure consigliate per ottenere prestazioni ottimali.
+Consultare gli articoli seguenti per diverse tecniche di personalizzazione della pagina di SharePoint Online e altre procedure consigliate per ottenere prestazioni ottimali.
   
 - [Opzioni di spostamento per SharePoint Online](navigation-options-for-sharepoint-online.md)
     
-- [Utilizzare lo strumento di diagnostica di pagina per SharePoint Online](page-diagnostics-for-spo.md)
+- [Utilizzare lo strumento di diagnostica delle pagine per SharePoint Online](page-diagnostics-for-spo.md)
     
 - [Ottimizzazione delle immagini per SharePoint Online](image-optimization-for-sharepoint-online.md)
     
@@ -150,9 +150,9 @@ Vedere gli articoli seguenti per diverse tecniche di personalizzazione di pagina
     
 - [Utilizzo delle reti di distribuzione del contenuto](using-content-delivery-networks-with-sharepoint-online.md)
     
-- [Utilizzo di Web Part ricerca contenuto invece di Web Part Query contenuto per migliorare le prestazioni di SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [Utilizzo della web part Ricerca contenuto anziché della web part Query contenuto per migliorare le prestazioni in SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
-- [Capacità di pianificazione test di carico e SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
+- [Pianificazione della capacità e test di carico di SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
     
 - [Diagnosi dei problemi delle prestazioni con SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
     

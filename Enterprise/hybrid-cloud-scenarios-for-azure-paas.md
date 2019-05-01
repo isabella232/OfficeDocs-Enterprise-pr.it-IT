@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "Riepilogo: comprendere l'architettura ibrida e gli scenari per le offerte cloud di Microsoft come servizio (PaaS) in Azure."
 ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741372"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491200"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scenari cloud ibridi per Azure PaaS
 
@@ -99,5 +99,5 @@ Poiché il provider di identità locale è stato sincronizzato con Azure AD, sia
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

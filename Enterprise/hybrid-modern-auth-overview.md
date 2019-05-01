@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: L'autenticazione moderna è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure. È disponibile per le distribuzioni ibride di Skype for Business Server locale ed Exchange Server locale, nonché per gli ibridi di Skype for business suddivisi in domini. In questo articolo vengono forniti collegamenti a documenti correlati relativi ai prerequisiti, all'installazione e alla disabilitazione dell'autenticazione moderna e ad alcuni client correlati (es. Informazioni su Outlook e client Skype).
-ms.openlocfilehash: 26efa77e3c98c0395188e6ca7a2f65cd3b8b939e
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: d8d06a3e2d178f68bcb130228ed1834f4eb878f8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458346"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491402"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Panoramica dell'autenticazione moderna ibrida e prerequisiti per l'utilizzo con i server Skype for business e Exchange locali
 
@@ -90,6 +90,18 @@ Verificare e controllare questi elementi dall'elenco prima di continuare:
   - Il dominio SIP viene aggiunto come dominio federato in Office 365
     
   - Tutti i front-end di questo devono disporre di connessioni in uscita su Internet, per gli URL di autenticazione di Office 365 (TCP 443) e per i CRL radice del certificato (TCP 80) elencati nelle righe 56 e 125 della sezione ' Microsoft 365 Common and Office Online ' di [office 365 URLs and IP intervalli di indirizzi](urls-and-ip-address-ranges.md).
+  
+- **Skype for business locale in un ambiente ibrido di Office 365**
+  - Una distribuzione di Skype for Business Server 2019 con tutti i server che eseguono Skype for Business Server 2019.
+  
+  - Una distribuzione di Skype for Business Server 2015 con tutti i server che eseguono Skype for Business Server 2015.
+  
+  - Una distribuzione con un massimo di due versioni server diverse, come elencato di seguito:
+  
+     - Skype for Business Server 2015 e Skype for Business Server 2019
+     
+  - Tutti i server Skype for business devono avere gli aggiornamenti di cummulative più recenti installati, vedere [aggiornamenti di Skype for Business Server](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates) per trovare e gestire tutti gli aggiornamenti disponibili.
+  - Non esiste alcun Lync Server 2010 o 2013 nell'ambiente ibrido.
     
  **Note** Se i server front-end Skype for business utilizzano un server proxy per l'accesso a Internet, l'indirizzo IP del server proxy e il numero di porta utilizzati devono essere immessi nella sezione configurazione del file Web. config per ogni front-end. 
   
@@ -120,7 +132,17 @@ Verificare e controllare questi elementi dall'elenco prima di continuare:
     
   - La ripartizione del carico di SSL non è configurata. La terminazione SSL e la ricrittografia sono supportate.
     
-  - Nel caso in cui l'ambiente utilizzi un'infrastruttura del server proxy per consentire ai server di connettersi a Internet, assicurarsi che tutti i server di Exchange dispongano del server proxy definito nella proprietà [InternetWebProxy](https://technet.microsoft.com/en-us/library/bb123716%28v=exchg.160%29.aspx) .
+  - Nel caso in cui l'ambiente utilizzi un'infrastruttura del server proxy per consentire ai server di connettersi a Internet, assicurarsi che tutti i server di Exchange dispongano del server proxy definito nella proprietà [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) .
+  
+- **Exchange Server locale in un ambiente ibrido di Office 365**
+
+  - Se si utilizza Exchange Server 2013, è necessario che almeno un server disponga dei ruoli del server Accesso client e cassette postali installati. Anche se è possibile installare i ruoli cassette postali e accesso client su server distinti, è consigliabile installare entrambi i ruoli in ogni server per offrire maggiore affidabilità e prestazioni migliorate.
+  
+  - Se si utilizza Exchange Server 2016 o versione successiva, almeno un server deve disporre del ruolo del server cassette postali installato.
+  
+  - Non è presente alcun server Exchange 2007 o 2010 nell'ambiente ibrido.
+  
+  - Per tutti i server di Exchange devono essere installati gli aggiornamenti più recenti di cummulative, vedere [Upgrade Exchange to the più recenti cumulative updates](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) to find and manage all available updates.
     
 - **Requisiti del protocollo e del client di Exchange**
   
@@ -164,6 +186,6 @@ Verificare e controllare questi elementi dall'elenco prima di continuare:
     
 - [Come configurare Skype for business in locale per l'utilizzo dell'autenticazione moderna](configure-skype-for-business-for-hybrid-modern-authentication.md)
     
-- [Rimozione o disabilitazione dell'autenticazione moderna ibrida da Skype for business ed Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
+- [Rimozione o disabilitazione dell'autenticazione moderna ibrida da Skype for Business ed Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
     
 

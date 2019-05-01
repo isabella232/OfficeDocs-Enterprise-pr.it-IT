@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: 'Sintesi: consultare questi articoli per distribuire soluzioni di sicurezza con le offerte cloud di Microsoft.'
 ms.openlocfilehash: 17bb89553b97d1a15c076d9bb4ce9acca19e62d2
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915271"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487212"
 ---
 # <a name="security-solutions"></a>Soluzioni di sicurezza
 
@@ -27,9 +27,9 @@ ms.locfileid: "22915271"
   
 Di seguito sono riportate alcune soluzioni per proteggere l'accesso, la collaborazione e i dati di Microsoft Office 365, Microsoft Azure, Microsoft Dynamics 365 e la suite Microsoft Enterprise Mobility + Security (EMS):
 
-- [Information Protection di Office 365 per GDPR](office-365-information-protection-for-gdpr.md)
+- [Information Protection di Office 365 per il GDPR](office-365-information-protection-for-gdpr.md)
   
-- [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+- [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
     
 - [Protezione di file e siti di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
     

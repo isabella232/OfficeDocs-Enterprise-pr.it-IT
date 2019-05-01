@@ -1,5 +1,5 @@
 ---
-title: FAQ generale sullo spostamento dei dati
+title: Domande frequenti sullo spostamento dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Di seguito sono riportate le risposte alle domande generali su come spostare i dati di base in un nuovo datacenter Geo.
 ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665239"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490068"
 ---
-# <a name="data-move-general-faq"></a>FAQ generale sullo spostamento dei dati
+# <a name="data-move-general-faq"></a>Domande frequenti sullo spostamento dati
 
 Di seguito sono riportate le risposte alle domande generali su come spostare i dati di base in un nuovo datacenter Geo.
   
@@ -145,7 +145,7 @@ Sì, il tenant è idoneo per la registrazione.  Sposteremo tutte le cassette pos
 
 [Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS](moving-data-to-new-datacenter-geos.md)
 
-[Come richiedere lo spostamento dei dati](request-your-data-move.md)
+[Come richiedere lo spostamento dati](request-your-data-move.md)
 
 [Office 365 multi Geo](https://aka.ms/multi-geo)
 

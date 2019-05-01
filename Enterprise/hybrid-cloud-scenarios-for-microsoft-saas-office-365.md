@@ -1,5 +1,5 @@
 ---
-title: Scenari per il cloud ibrido per SaaS Microsoft (Office 365)
+title: Scenari cloud ibridi per Microsoft SaaS (Office 365)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: "Sintesi: Comprendere l'architettura ibrida e gli scenari delle offerte cloud basate sul software distribuito come servizio Microsoft (SaaS) in Office 365."
 ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741392"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487512"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Scenari per il cloud ibrido per SaaS Microsoft (Office 365)
 
@@ -106,7 +106,7 @@ Nella figura 4 viene mostrata la configurazione ibrida di SharePoint, che compre
   
 Scenari ibridi di SharePoint:
   
-- [OneDrive for Business ibrido](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap)
+- [Versione ibrida di OneDrive for Business](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap)
     
 - [Soluzione Extranet B2B ibrida](https://docs.microsoft.com/sharepoint/create-b2b-extranet)
     
@@ -118,7 +118,7 @@ Scenari ibridi di SharePoint:
     
     È facile abilitare gli scenari ibridi con le procedure guidate che rendono automatica la configurazione ibrida, disponibili dall'interfaccia di amministrazione di SharePoint Online in Office 365.
     
-- [Icona di avvio delle app ibride estensibile](https://docs.microsoft.com/SharePoint/hybrid/the-extensible-hybrid-app-launcher)
+- [Icona di avvio delle app estendibile ibrida](https://docs.microsoft.com/SharePoint/hybrid/the-extensible-hybrid-app-launcher)
     
     Consente agli utenti di visualizzare e usare i video in Office 365 e le app e le esperienze Delve nelle pagine della relativa farm di SharePoint locale.
     
@@ -126,7 +126,7 @@ Tutti questi scenari ibridi di SharePoint, ad eccezione dell'icona di avvio dell
   
 ## <a name="exchange-server-2016-hybrid"></a>Exchange Server 2016 ibrido
 
-Con Exchange Server 2016 ibrido, puoi ottenere i vantaggi di Exchange Online in Office 365 per gli utenti online, mentre gli utenti locali continuano a usare l'infrastruttura di Exchange Server esistente.  
+Con Exchange Server 2016 ibrido, puoi ottenere i vantaggi di Exchange Online in Office 365 per gli utenti online, mentre gli utenti locali continuano a usare l'infrastruttura di Exchange Server esistente. 
   
 **Figura 5: configurazione ibrida di Exchange 2016**
 
@@ -154,5 +154,5 @@ Per ulteriori informazioni, vedere [distribuZioni ibride di Exchange Server](htt
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

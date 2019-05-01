@@ -1,5 +1,5 @@
 ---
-title: Diagramma accessibile - rete integrazione di prodotti Microsoft Office Server
+title: Diagramma accessibile-integrazione di rete dei prodotti di Microsoft Office Server
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,320 +10,320 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
-description: In questo articolo è una versione testo accessibile del diagramma denominato rete integrazione di prodotti Microsoft Office Server.
+description: Questo articolo è una versione di testo accessibile del diagramma denominato Network Integration of Microsoft Office Server Products.
 ms.openlocfilehash: 3fa27b99bf0babf00c536057b9d21da784b6d94f
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17504429"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487772"
 ---
-# <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>Diagramma accessibile - rete integrazione di prodotti Microsoft Office Server
+# <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>Diagramma accessibile-integrazione di rete dei prodotti di Microsoft Office Server
 
-**Riepilogo:** In questo articolo è una versione testo accessibile del diagramma denominato rete integrazione di prodotti Microsoft Office Server.
+**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato Network Integration of Microsoft Office Server Products.
   
-Questo poster fornisce un'illustrazione generale di un ambiente di rete che include Lync Server 2013, SharePoint 2013 ed Exchange Server 2013. Viene inoltre i seguenti elementi di reti che sono comuni a questi prodotti: access interni e remoti, autenticazione, il traffico client e instradare il traffico dispositivi condivisi. 
+In questo poster è illustrata in generale l'ambiente di rete che include Lync Server 2013, SharePoint 2013 ed Exchange Server 2013. Vengono illustrati anche gli elementi di rete seguenti che sono comuni tra questi prodotti: accesso remoto e interno, autenticazione, traffico client e routing del traffico tramite dispositivi condivisi. 
   
-## <a name="high-level-concepts-for-lync-exchange-sharepoint-server-and-office-web-apps"></a>Concetti generali relativi a Lync, Exchange, SharePoint Server e Office Web Apps
+## <a name="high-level-concepts-for-lync-exchange-sharepoint-server-and-office-web-apps"></a>Concetti di alto livello per Lync, Exchange, SharePoint Server e Office Web Apps
 
-### <a name="about-the-design"></a>Sulla progettazione
+### <a name="about-the-design"></a>Informazioni sulla progettazione
 
-#### <a name="streamlined-network-design"></a>Struttura della rete semplificate
+#### <a name="streamlined-network-design"></a>Progettazione della rete semplificata
 
-Questa topologia viene illustrata una distribuzione di rete locale di SharePoint 2013, Exchange Server 2013 e Lync Server 2013. Viene inoltre illustrato l'utilizzo del servizio di basata sul cloud Microsoft, Exchange Online Protection, che offre una protezione da posta indesiderata e malware per il traffico in ingresso Simple Mail Transfer Protocol (SMTP) da Internet. 
+Questa topologia illustra una distribuzione di rete locale di SharePoint 2013, Exchange Server 2013 e Lync Server 2013. Viene inoltre illustrato l'utilizzo del servizio basato sul cloud Microsoft, Exchange Online Protection, che fornisce protezione da posta indesiderata e malware per il traffico SMTP (Simple Mail Transfer Protocol) in ingresso da Internet. 
   
-Semplificata la progettazione di rete a un insieme minimo di funzionalità della rete. La progettazione non tiene conto protezione o infrastruttura funzionalità aggiuntive che potrebbero richiedere alcune organizzazioni. 
+La progettazione della rete è semplificata per un insieme minimo di funzionalità di rete. La progettazione non tiene conto di altre funzionalità di sicurezza o infrastruttura che potrebbero essere necessarie per alcune organizzazioni. 
   
-Figura: 
+Diagramma seguente: 
   
-- Fornisce una topologia di rete di esempio che illustrano il traffico in ingresso e in uscita tramite un gateway router e il bilanciamento del carico di sessione il traffico client (interno ed esterno) per i livelli appropriati di SharePoint, Exchange e Lync server. 
+- Viene fornita una topologia di rete di esempio che illustra il traffico in ingresso e in uscita attraverso un router gateway e il bilanciamento del carico del traffico delle sessioni client (esterno e interno) ai livelli di SharePoint, Exchange e Lync Server appropriato. 
     
-- Viene illustrato l'utilizzo dei server di accesso remoto facoltativo, ad esempio un gateway VPN di terze parti o un server DirectAccess, per la comunicazione protetta per i dipendenti remoti o mobili. 
+- Viene illustrato l'utilizzo di server di accesso remoto opzionali, ad esempio un gateway VPN di terze parti o un server DirectAccess, per fornire comunicazioni sicure per i dipendenti in roaming o in remoto. 
     
-- Vengono illustrati il SharePoint, Exchange e Lync flusso di traffico da client a ogni livello di piattaforma server. 
+- Informazioni dettagliate sul flusso di traffico di SharePoint, Exchange e Lync dal client al livello di ogni server della piattaforma. 
     
-- Identifica il tipo di connessione di accesso remoto o interno basato su client (ad esempio partner o dipendenti) e il metodo di autenticazione utilizzato. 
+- Identifica il tipo di connessione di accesso remoto o interno basato sul client (ad esempio, un partner o un dipendente) e il metodo di autenticazione utilizzato. 
     
-- Suddivide le piattaforme di SharePoint, Exchange e Lync per ruoli del server richiesti, che identifica il front-end, applicazione, database e altri livelli. 
+- Suddivide le piattaforme SharePoint, Exchange e Lync in base ai ruoli del server necessari, identificando il front-end, l'applicazione, il database e altri livelli. 
     
-L'architettura utilizzato qui per SharePoint, Lync ed Exchange non suggerisce un modo migliore per l'implementazione di queste piattaforme. Fornisce un esempio come topologie variano in base alle esigenze di rete univoco e considerazioni sulla protezione. 
+L'architettura utilizzata in questo articolo per SharePoint, Lync e Exchange non suggerisce un modo preferito per implementare queste piattaforme. Questo è un semplice esempio, in quanto le topologie differiscono in base ai requisiti di rete e alle considerazioni di sicurezza univoci. 
   
 #### <a name="gateway-router"></a>Router gateway
 
-Per questa topologia router gateway si trova in corrispondenza del bordo della rete e il routing di tutto il traffico in ingresso e in uscita da e verso la rete intranet. In alternativa, si potrebbe essere anche altri componenti di collegano la distanza tra il router gateway e il servizio di bilanciamento del carico indicato, ad esempio più livelli di firewall. Questa topologia rappresenta semplicemente un modo per distribuire la rete tra molti. In questa configurazione, il gateway è configurato con elenchi di controllo di accesso (ACL) per consentire molto specifico traffico in ingresso e in uscita basati su IP nelle interfacce router. ACL, ispezione avanzata o Network Address Translation (NAT) può anche essere eseguito su altri dispositivi, ad esempio firewall attraverso la rete. 
+Per questa topologia, il router del gateway si trova al bordo della rete e instrada tutto il traffico in ingresso e in uscita da e verso la Intranet. In alternativa, possono essere presenti anche altri componenti che colmano la distanza tra il router gateway e il bilanciamento del carico visualizzato, ad esempio più livelli di firewall. Questa topologia rappresenta un solo modo per distribuire la rete da molti. In questa configurazione, il gateway è configurato con gli elenchi di controllo di accesso (ACL, Access Control List) per consentire il traffico IP in ingresso e in uscita molto specifico sulle interfacce del router. Gli elenchi ACL, controllo avanzato o NAT (Network Address Translation) possono essere eseguiti anche su altri dispositivi, ad esempio i firewall, in tutta la rete. 
   
-#### <a name="load-balancer-and-reverse-proxy-devices"></a>Carico bilanciamento e dispositivi proxy inverso
+#### <a name="load-balancer-and-reverse-proxy-devices"></a>Dispositivi di bilanciamento del carico e proxy inversi
 
-È possibile utilizzare soluzioni di bilanciamento del carico di hardware o software per reindirizzare il traffico per i segmenti inclusi i server web front-end SharePoint e server Accesso Client di Exchange (classi). In alcuni casi è preferibile utilizzare il bilanciamento del carico basata su hardware livello 7 per i requisiti di persistenza come è possibile eseguire meglio utilizzando informazioni nella richiesta, ad esempio i cookie o intestazioni. Tuttavia, quali fattori di costo e l'aumento dell'utilizzo e carico di lavoro da questa soluzione non può essere preferibile per specifiche esigenze. Tenere presente quanto segue per il bilanciamento del carico in SharePoint, Exchange e Lync: 
+È possibile utilizzare soluzioni di bilanciamento del carico hardware o software per reindirizzare il traffico per i segmenti, inclusi i server Web front-end di SharePoint e i server Accesso client di Exchange (CASs). In alcuni casi, è consigliabile utilizzare un dispositivo di bilanciamento del carico basato su hardware Layer 7 per i requisiti di persistenza, in quanto è possibile ottenere risultati migliori utilizzando le informazioni contenute nella richiesta, ad esempio cookie o intestazioni. Tuttavia, fattori quali costo e aumento dell'utilizzo e del carico di lavoro da una soluzione di questo tipo potrebbero non essere auspicabili per le specifiche esigenze. Tenere in considerazione i seguenti punti per il bilanciamento del carico tra SharePoint, Exchange e Lync: 
   
-- SharePoint - per SharePoint 2013, è necessario abilitare l'affinità per i server web front-end. In genere, questo verrà utilizzato per la creazione di sessioni permanenti ed evitando più richieste di autenticazione da client a ogni server web front-end. Il nuovo servizio Cache distribuita in SharePoint 2013 archivia e distribuisce i token di accesso tra i server web nella farm di SharePoint. 
+- SharePoint-per SharePoint 2013, non è necessario abilitare l'affinità per i server Web front-end. In genere, questo verrebbe utilizzato per creare sessioni adesive ed evitare più richieste di autenticazione dai client a ogni server Web front-end. Il nuovo servizio di cache distribuita in SharePoint 2013 archivia e distribuisce i token di accesso tra i server Web della farm di SharePoint. 
     
-- Exchange - In Exchange 2013, il ruolo del server accesso client è progettato per utilizzare il bilanciamento del carico di livello 4, la distribuzione richieste il livello di trasporto. Utilizzo del servizio di bilanciamento del carico e il carico di lavoro può ridurre notevolmente. 
+- Exchange-in Exchange 2013, il ruolo CAS è stato creato per l'utilizzo del bilanciamento del carico Layer 4, distribuendo le richieste a livello di trasporto. Questo può ridurre significativamente l'utilizzo del bilanciamento del carico e il carico di lavoro. 
     
-- Lync - bilanciamento del carico del sistema DNS (Domain Name) è consigliata per il traffico di Strumentazione gestione Windows (SIP, Session Initiation Protocol) per i pool di Lync. (Bilanciamento del carico hardware) di bilanciamento del carico hardware è necessaria per il traffico di Lync Web (HTTPS). 
+- Il bilanciamento del carico DNS (Domain Name System) di Lync è consigliato per il traffico SIP (Session Initiation Protocol) per i pool Lync. Il bilanciamento del carico hardware (HLB) è necessario per il traffico di Lync Web (HTTPS). 
     
 ### <a name="remote-access-options"></a>Opzioni di accesso remoto
 
-Sono disponibili diverse opzioni che è possono pubblicare risorse della rete intranet per i partner su Internet o fornire l'accesso remoto protetto per i dipendenti remoti o mobili. Quali ad esempio i proxy inversi, DirectAccess e gateway VPN di terze parti. Le soluzioni di accesso remoto descritte più avanti in questa sezione sono le possibilità di SharePoint, Lync ed Exchange o una combinazione di questi server in una distribuzione locale. Tuttavia, alcune opzioni remote potrebbero non funzionare con una particolare soluzione. 
+Sono disponibili diverse opzioni che consentono di pubblicare risorse Intranet per i partner su Internet o di fornire un accesso remoto sicuro per i dipendenti remoti o in roaming. Esempi di questo tipo sono proxy inversi, DirectAccess e gateway VPN di terze parti. Le soluzioni di accesso remoto descritte più avanti in questa sezione sono possibili per SharePoint, Lync ed Exchange oppure per qualsiasi combinazione di questi server in una distribuzione locale. Tuttavia, alcune opzioni remote potrebbero non funzionare con una soluzione specifica. 
   
-Proxy inverso - proxy inverso supporta la crittografia del traffico, ad esempio Secure Sockets Layer (SSL) e con che è possibile pubblicare le applicazioni intranet e risorse web per l'autenticazione utenti e partner in Internet. Un esempio è Microsoft Forefront Unified Access Gateway (UAG). Molti bilanciamento del carico hardware supporta anche la funzionalità di proxy inverso. Esistono, tuttavia, gli scenari ancora validi per l'utilizzo di una soluzione autonoma in base alle esigenze e i requisiti, ad esempio l'ottimizzazione delle prestazioni, il contesto di sicurezza e isolamento di traffico. 
+Proxy inverso-un proxy inverso supporta la crittografia del traffico, ad esempio SSL (Secure Sockets Layer) e con essa è possibile pubblicare applicazioni Intranet e risorse Web per utenti e partner autenticati su Internet. Un esempio è Microsoft Forefront Unified Access Gateway (UAG). Molti dispositivi di bilanciamento del carico hardware supportano anche la funzionalità proxy inverso. Tuttavia, esistono ancora scenari validi per l'utilizzo di una soluzione autonoma in base alle esigenze e ai requisiti, ad esempio l'isolamento del traffico, la sicurezza compartimentazione e l'ottimizzazione delle prestazioni. 
   
-Considerazioni e vantaggi relativi proxy inverso: 
+Considerazioni e vantaggi del proxy inverso: 
   
-- Consente l'accesso autenticato e protetta per i partner o utenti che accedono a risorse della rete intranet (utilizza SSL (TCP 443) tra il client e server proxy inverso). 
+- Fornisce l'accesso protetto e autenticato per i partner o gli utenti che accedono alle risorse Intranet (utilizza SSL (TCP 443) tra il client e il server proxy inverso). 
     
-- Per Exchange, un vantaggio dell'utilizzo di un proxy inverso, ad esempio Forefront UAG è preautenticazione prima di accedere al server Accesso Client di Exchange. Gli utenti remoti mediante pubblicati applicazioni come Outlook Web Access (OWA) possono eseguire l'autenticazione di base, NTLM o Kerberos metodi prima che raggiungano la rete interna. 
+- Per Exchange, un vantaggio dell'utilizzo di un proxy inverso, ad esempio Forefront UAG, è la preautenticazione prima di accedere al server Accesso client di Exchange. Gli utenti di accesso remoto che utilizzano applicazioni pubblicate come Outlook Web Access (OWA) sono in grado di eseguire l'autenticazione con i metodi di base, NTLM o Kerberos prima che raggiungano la rete interna. 
     
-- Per Exchange e SharePoint soluzioni come Forefront UAG possono terminare le connessioni SSL e ridurre il carico del server di risorse intranet fornendo un singolo punto di gestione per i certificati. 
+- Per Exchange e SharePoint, le soluzioni come Forefront UAG possono terminare le connessioni SSL e ridurre il carico del server delle risorse Intranet fornendo un unico punto di gestione per i certificati. 
     
-- Per Lync, il traffico Web (HTTPS) passa attraverso il proxy inverso (TCP 443) per la comunicazione client. I proxy di proxy inverso il protocollo HTTPS connessione a servizi Web di Lync, accesso client di Exchange e Office Web Apps. Lync Server 2013 non supporta UAG. 
+- Per Lync, il traffico Web (HTTPS) passa attraverso il proxy inverso (TCP 443) per la comunicazione client. Il proxy inverso inoltra la connessione HTTPS ai servizi Web Lync, alle autorità di certificazione di Exchange e a Office Web Apps. Lync Server 2013 non supporta UAG. 
     
-DirectAccess - una tecnologia di accesso remoto che si basa su Internet Protocol security (IPsec) per l'autenticazione e per crittografare il traffico tra l'integrità e il server. DirectAccess consente di accedere contemporaneamente a Internet e intranet risorse per i dipendenti mobili e remoti senza dover avviare una connessione. 
+DirectAccess-una tecnologia di accesso remoto che si basa su IPsec (Internet Protocol Security) per l'autenticazione e la crittografia del traffico tra il client e il server DirectAccess. DirectAccess fornisce l'accesso simultaneo alle risorse Internet e Intranet per i dipendenti mobili e remoti senza dover avviare una connessione. 
   
-DirectAccess aspetti da considerare: 
+Punti DirectAccess da prendere in considerazione: 
   
-- DirectAccess utilizza il traffico IPsec protetta (protocollo 50 e 51 e UDP 500) tra l'integrità e il server. 
+- DirectAccess utilizza il traffico protetto con IPsec (protocollo 50 e 51 e UDP 500) tra il client e il server DirectAccess. 
     
-- DirectAccess per Windows Server 2012 e Windows 8 non è necessaria una distribuzione di infrastruttura a chiave pubblica (PKI) per l'autenticazione di client e server. 
+- DirectAccess per Windows Server 2012 e Windows 8 non necessita di una distribuzione di infrastruttura a chiave pubblica (PKI) per l'autenticazione del server e del client. 
     
-- Si consiglia di base utilizzando DirectAccess con Lync Server 2013 a causa di problemi di latenza audio e video associati a crittografia e decrittografia IPsec. 
+- Si consiglia di non utilizzare DirectAccess con Lync Server 2013 a causa di problemi di latenza audio e video associati alla crittografia e alla decrittografia IPsec. 
     
-    Gateway VPN - gateway VPN tipica fornire una connessione di accesso remoto in cui un client di accesso remoto è previsto logicamente nella rete intranet attraverso una connessione tunnel e dall'utente. È possibile utilizzare unificata l'accesso remoto in Windows Server 2012 o diverse soluzioni di terze parti per fornire l'accesso protetto alla rete intranet per dipendenti remoti o mobili. VPN non è consigliata per Lync. Il traffico remoto Lync deve utilizzare i server perimetrali e dividere tunnel. 
+    Gateway VPN-i gateway VPN tipici offrono una connessione di accesso remoto in cui un computer client di accesso remoto viene progettato logicamente sulla rete Intranet tramite una connessione a tunnel e avviata dall'utente. È possibile utilizzare l'accesso remoto unificato in Windows Server 2012 o diverse soluzioni di terze parti per fornire l'accesso protetto alla rete Intranet per i dipendenti in roaming o in remoto. La VPN non è consigliata per Lync. Il traffico Lync remoto deve utilizzare i server perimetrali e suddividere il tunneling. 
     
-### <a name="domain-name-system-dns-considerations"></a>Considerazioni per Domain Name System (DNS)
+### <a name="domain-name-system-dns-considerations"></a>Considerazioni su DNS (Domain Name System)
 
-È necessario pianificare per il set di record DNS che consentono agli utenti di Internet e intranet risolvere i nomi DNS per gli indirizzi IP appropriati. 
+È necessario pianificare il set di record DNS che consentono agli utenti di Internet e Intranet di risolvere i nomi DNS negli indirizzi IP corretti. 
   
-- Per basato su Internet partner e dipendenti remoti o mobili, i record DNS registrati con i server DNS Internet forniscono risoluzione per l'insieme di indirizzi IP pubblici corrispondente al router gateway, il Server perimetrale di Lync, l'insieme di indirizzi IP virtuali (VIP) servizio di bilanciamento del carico e il gateway DirectAccess o una rete VPN in base alle esigenze. 
+- Per i partner basati su Internet e il roaming o i dipendenti remoti, i record DNS registrati con i server DNS Internet offrono una soluzione all'insieme di indirizzi IP pubblici che corrispondono al router gateway, al server perimetrale di Lync, all'insieme di indirizzi IP virtuali (VIP) su il bilanciamento del carico e il gateway DirectAccess o VPN in base alle esigenze. 
     
-- Per gli utenti basate su intranet, i record DNS registrati con server DNS della rete intranet forniscono risoluzione per l'insieme di indirizzi IP virtuali (VIP) del servizio di bilanciamento del carico per l'accesso alle risorse di SharePoint, Lync ed Exchange. 
+- Per gli utenti basati su Intranet, i record DNS registrati con i server DNS Intranet offrono una soluzione all'insieme di indirizzi IP virtuali (VIP) del servizio di bilanciamento del carico per l'accesso alle risorse di SharePoint, Lync e Exchange. 
     
-- Client DirectAccess utilizzano server DNS della rete intranet di nomi che corrispondono ai server DNS Internet per i nomi che non e spazio dei nomi DNS intranet. Per semplificare l'operazione di DirectAccess, prendere in considerazione l'utilizzo di un'implementazione di DNS split che utilizza spazi dei nomi DNS diversi per i nomi basato su Internet e intranet. Utilizzare ad esempio, contoso.com per Internet dello spazio dei nomi e corp.contoso.com per lo spazio dei nomi intranet. 
+- I client DirectAccess utilizzano i server DNS Intranet per i nomi corrispondenti allo spazio del nome DNS Intranet e ai server DNS Internet per i nomi che non lo fanno. Per semplificare l'operazione di DirectAccess, prendere in considerazione l'utilizzo di un'implementazione DNS suddivisa che utilizza spazi dei nomi DNS diversi per i nomi Intranet e basati su Internet. Ad esempio, utilizzare contoso.com per lo spazio dei nomi Internet e corp.contoso.com per lo spazio dei nomi Intranet. 
     
-- Exchange utilizza un modello DNS diviso in host per la risoluzione IP diverso sul traffico pubblicamente indirizzato rispetto a quello della rete aziendale. Come minimo, è necessario disporre dei record DNS per OWA, individuazione automatica, ActiveSync URL per il traffico client e un record MX per la posta in ingresso. 
+- Exchange utilizza un modello DNS suddiviso in cui la risoluzione host-IP è diversa per il traffico pubblico instradato da quello della rete aziendale. È necessario disporre almeno dei record DNS per OWA, individuazione automatica, URL ActiveSync per il traffico client e un record MX per la posta in ingresso. 
     
-- Se si utilizza Exchange Online Protection (EOP), il record MX punta a tale servizio anziché la farm di Exchange. 
+- Se si utilizza Exchange Online Protection (EOP), il record MX punta a tale servizio invece che alla farm di Exchange. 
     
-- Per Exchange, è necessario un modello di prova di proprietà record TXT nel sistema DNS pubblico e un ID di organizzazione federativa impostare condivisione federata. 
+- Per Exchange, è necessario un record TXT relativo alla proprietà nel DNS pubblico e un ID org federativo per configurare la condivisione federata. 
     
-- Accesso remoto VPN client possono essere configurati per utilizzare solo i server DNS della rete intranet quando è attiva la connessione VPN di accesso remoto. 
+- I client VPN di accesso remoto possono essere configurati per l'utilizzo di solo server DNS Intranet quando la connessione VPN di accesso remoto è attiva. 
     
 ### <a name="diagram-description"></a>Descrizione diagramma
 
-In questo diagramma viene fornita una topologia di rete di esempio che illustrano il traffico in ingresso e in uscita tramite un gateway router e il bilanciamento del carico di sessione il traffico client (interno ed esterno) per i livelli appropriati di SharePoint, Exchange e Lync server. La descrizione di questo diagramma viene suddiviso in due parti: 
+Questo diagramma fornisce un esempio di topologia di rete che illustra il traffico in ingresso e in uscita attraverso un router gateway e il bilanciamento del carico del traffico delle sessioni client (esterno e interno) ai livelli di SharePoint, Exchange e Lync Server appropriato. La descrizione di questo diagramma è suddivisa in due parti: 
   
-- Descrizione dei componenti mostrato nella figura 
+- Descrizione dei componenti illustrati nel diagramma 
     
-- Descrizione di come traffico si sposta tra i componenti per i livelli di SharePoint, Exchange, Lync e Office Web Apps server. 
+- Descrizione del modo in cui il traffico passa attraverso i componenti ai livelli del server SharePoint, Exchange, Lync e Office Web Apps. 
     
-#### <a name="description-of-components-shown-in-the-diagram"></a>Descrizione dei componenti mostrato nella figura
+#### <a name="description-of-components-shown-in-the-diagram"></a>Descrizione dei componenti illustrati nel diagramma
 
-#### <a name="user-types"></a>Tipi di utente
+#### <a name="user-types"></a>Tipi di utenti
 
-Sono disponibili quattro tipi di utenti diversi, tre all'esterno dei servizi cloud e di rete e uno interno, che comprendono: 
+Esistono quattro diversi tipi di utenti, tre all'esterno della rete e dei servizi cloud e uno interno, che include: 
   
-- Società (business to business) partner-esterno 
+- Aziende partner (business-to-business)-esterne 
     
-- Singoli partner (SharePoint e anonimi (Lync))-esterno 
+- Partner singoli (SharePoint e Anonymous (Lync))-esterni 
     
-- Esterni dipendenti remoti e mobili 
+- Gestione del roaming e dipendenti remoti-esterni 
     
 - Dipendenti interni 
     
-#### <a name="cloud-based-email-traffic"></a>Traffico di posta elettronica basata sul cloud
+#### <a name="cloud-based-email-traffic"></a>Traffico di posta elettronica basato sul cloud
 
-Non vi è un componente basato su cloud per il traffico di posta elettronica basata su SMTP, ospitate su Internet Mail o Exchange Online Protection. 
+È presente un componente basato sul cloud per il traffico di posta elettronica basato su SMTP, ovvero host di posta Internet o Exchange Online Protection. 
   
 #### <a name="authentication-for-external-access"></a>Autenticazione per l'accesso esterno
 
-Non esiste un set specifico di procedure di autenticazione per Lync, SharePoint ed Exchange per ognuno dei tipi di utente. Vengono descritte in dettaglio più avanti in questo documento. 
+È presente un insieme specifico di procedure di autenticazione per Lync, SharePoint e Exchange per ognuno dei tipi di utenti. Sono descritte più avanti in questo documento. 
   
 #### <a name="gateway-router-with-acls"></a>Router gateway con ACL
 
-Router gateway si trova in corrispondenza del bordo della rete e il routing di tutto il traffico in ingresso e in uscita da e verso la rete intranet. 
+Il router del gateway si trova al bordo della rete e instrada tutto il traffico in ingresso e in uscita da e verso la Intranet. 
   
-#### <a name="remote-access-servers-for-lync-and-sharepoint"></a>Server di accesso remoto di Lync e SharePoint
+#### <a name="remote-access-servers-for-lync-and-sharepoint"></a>Server di accesso remoto per Lync e SharePoint
 
-Questa topologia include un server perimetrale di Lync e un gateway VPN SharePoint o server DirectAccess. 
+Questa topologia include un server perimetrale di Lync e un gateway VPN di SharePoint o un server DirectAccess. 
   
-#### <a name="load-balancer-and-reverse-proxy-device"></a>Servizio di bilanciamento del carico e il dispositivo proxy inverso
+#### <a name="load-balancer-and-reverse-proxy-device"></a>Dispositivo di bilanciamento del carico e proxy inverso
 
-È possibile utilizzare soluzioni di bilanciamento del carico di hardware o software per reindirizzare il traffico per i segmenti inclusi i server web front-end SharePoint e server Accesso Client di Exchange (classi). Questa topologia vengono illustrati i componenti di Lync VIP, SharePoint VIP e indirizzo IP virtuale di Exchange nel servizio di bilanciamento del carico. 
+È possibile utilizzare soluzioni di bilanciamento del carico hardware o software per reindirizzare il traffico per i segmenti, inclusi i server Web front-end di SharePoint e i server Accesso client di Exchange (CASs). Questa topologia Visualizza Lync VIP, SharePoint VIP e i componenti VIP di Exchange nel bilanciamento del carico. 
   
-#### <a name="servers"></a>Server
+#### <a name="servers"></a>Servers
 
-Esistono quattro server: Lync, SharePoint, Exchange e Office Web Apps Server. Ogni server può essere associato a tre livelli: front-end, a livelli di accesso client, un livello di applicazione e un livello di database e archivi.
+Sono disponibili quattro server: Lync, SharePoint, Exchange e il server Office Web Apps. Ogni server può disporre di tre livelli: un livello front-end, client-Access, un livello applicazione e un livello di database/archiviazione.
   
-#### <a name="front-end-client-access-tier"></a>Front-end, a livelli di accesso client
+#### <a name="front-end-client-access-tier"></a>Livello front-end, client-Access
 
-Questo livello è componenti in tutti i quattro server seguenti: 
+Questo livello include componenti su tutti e quattro i server: 
   
-- Pool di Lync (front-end). Nel diagramma vengono illustrati due database Lync. 
+- Pool Lync (front-end). Nel diagramma vengono visualizzati due database di Lync. 
     
-- Front-end di SharePoint e cache distribuita. Nel diagramma vengono illustrati tre database di SharePoint. 
+- SharePoint front-end e cache distribuita. Nel diagramma sono visualizzati tre database di SharePoint. 
     
-- Exchange Server accesso client. Nel diagramma vengono illustrati due database di Exchange. 
+- AUTORITÀ di certificazione di Exchange. Nel diagramma sono visualizzati due database di Exchange. 
     
-- Office Web Apps Server. Nel diagramma vengono illustrati due database di Office Web Apps. 
+- Server Office Web Apps. Nel diagramma sono visualizzati due database di Office Web Apps. 
     
 #### <a name="application-tier"></a>Livello applicazione
 
-Questo livello è componenti solo nel server di SharePoint seguenti: 
+Questo livello include componenti solo in SharePoint Server: 
   
-- Ricerca (query, indicizzazione, amministrazione). Nel diagramma vengono illustrati tre database di SharePoint. 
+- Ricerca (query, index, admin). Nel diagramma sono visualizzati tre database di SharePoint. 
     
-- Elaborazione batch. Nel diagramma vengono illustrati tre database di SharePoint. 
+- Elaborazione batch. Nel diagramma sono visualizzati tre database di SharePoint. 
     
-#### <a name="databasestorage-tier"></a>Livello di database e archivi
+#### <a name="databasestorage-tier"></a>Livello di database/archiviazione
 
-Questo livello con componenti sui server Exchange, Lync e SharePoint: 
+Questo livello include componenti nei server Lync, SharePoint e Exchange: 
   
-- Database di Lync (back-end). Nel diagramma vengono illustrati tre database Lync. 
+- Database Lync (back-end). Nel diagramma sono visualizzati tre database di Lync. 
     
-- Database di SharePoint. Nel diagramma vengono illustrati tre database di SharePoint. 
+- Database di SharePoint. Nel diagramma sono visualizzati tre database di SharePoint. 
     
-- Server cassette postali di Exchange. Nel diagramma vengono illustrati due server di cassette postali di Exchange. 
+- Server cassette postali di Exchange. Nel diagramma sono visualizzati due server cassette postali di Exchange. 
     
-Per ulteriori informazioni sui componenti installati in ognuno dei ruoli del server SharePoint, vedere [Topologie semplificate per SharePoint 2013](https://aka.ms/Ma5cgk). 
+Per ulteriori informazioni sui componenti installati in ogni ruolo del server di SharePoint, vedere [topologie semplificate per sharepoint 2013](https://aka.ms/Ma5cgk). 
   
-#### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a>Descrizione di come traffico si sposta tra i componenti a livelli diversi server
+#### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a>Descrizione del modo in cui il traffico passa attraverso i componenti ai diversi livelli del server
 
-In questa sezione viene descritto come spostare le richieste degli utenti tramite la topologia di rete. 
+In questa sezione viene descritto in che modo le richieste degli utenti passano attraverso la topologia di rete 
   
-#### <a name="authentication-and-routing-for-external-access"></a>Autenticazione e il routing per l'accesso esterno
+#### <a name="authentication-and-routing-for-external-access"></a>Autenticazione e routing per l'accesso esterno
 
-Esistono tre diversi tipi di client esterni servizi cloud e di rete, che comprendono: 
+Sono disponibili tre diversi tipi di client all'esterno della rete e dei servizi cloud, tra cui: 
   
-- Società (business to business) partner-esterno 
+- Aziende partner (business-to-business)-esterne 
     
-- Singoli partner (SharePoint e anonimi (Lync))-esterno 
+- Partner singoli (SharePoint e Anonymous (Lync))-esterni 
     
-- Esterni dipendenti remoti e mobili 
+- Gestione del roaming e dipendenti remoti-esterni 
     
-L'autenticazione e il processo di distribuzione per ogni tipo di utente esterno è descritto singolarmente. 
+Il processo di autenticazione e routing per ogni tipo di utente esterno viene descritto singolarmente. 
   
 #### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>Società partner (business-to-business) (https://partnerweb.contoso.com)
 
-- Lync: trust federativo con altre organizzazioni, Skype e la connettività di messaggistica immediata pubblica (PIC) con AOL. Il traffico della federazione Lync passa attraverso il router gateway per il Server perimetrale di Lync, all'indirizzo VIP Lync (server di proxy inverso/del servizio di bilanciamento del carico) e quindi a Lync Server. 
+- Lync: la relazione di trust federativa con altre organizzazioni, Skype e la connettività per la messaggistica istantanea pubblica (PIC) con AOL. Il traffico federativo di Lync passa attraverso il router gateway al server perimetrale Lync, al VIP Lync (server di bilanciamento del carico/proxy inverso) e quindi al server Lync. 
     
-- SharePoint: Attendibili provider di identità di partner con autenticazione SAML. Il traffico client SharePoint passa attraverso il router Gateway nell'indirizzo IP virtuale di SharePoint (server di proxy inverso/del servizio di bilanciamento del carico) e quindi al Server di SharePoint. 
+- SharePoint: provider di identità di partner attendibile con autenticazione SAML. Il traffico client di SharePoint passa attraverso il router gateway al VIP di SharePoint (server di bilanciamento del carico/proxy inverso) e quindi al server di SharePoint. 
     
-- Exchange: Mutual Auth TLS per il traffico di posta elettronica, l'autenticazione SAML per la condivisione federata. Il traffico client di Exchange passa attraverso il router Gateway nell'indirizzo IP virtuale di Exchange (server di proxy inverso/del servizio di bilanciamento del carico) e quindi al Server di Exchange. 
+- Exchange: Mutual AUTH TLS per il traffico di posta, autenticazione SAML per la condivisione federata. Il traffico del client di Exchange passa attraverso il router gateway al VIP di Exchange (server di bilanciamento del carico/proxy inverso) e quindi al server di Exchange. 
     
-- Il traffico SMTP passa attraverso il router Gateway e l'indirizzo IP virtuale di Exchange (server di proxy inverso/del servizio di bilanciamento del carico) al server di Exchange. 
+- Il traffico SMTP passa attraverso il router gateway e tramite il VIP di Exchange (server di bilanciamento del carico/proxy inverso) al server di Exchange. 
     
-#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>Singoli partner (SharePoint) e anonimi (Lync) (https://partnerweb.contoso.com e https://meet.contoso.com)
+#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>Partner singoli (SharePoint) e Anonymous (Lync) (https://partnerweb.contoso.com ehttps://meet.contoso.com)
 
-- Lync: gli utenti anonimi possono partecipare solo alle riunioni di Lync organizzate in base ai dipendenti. Il traffico della federazione Lync passa attraverso il router Gateway per il Server perimetrale di Lync, all'indirizzo VIP Lync (server di proxy inverso/del servizio di bilanciamento del carico) e quindi a Lync Server. 
+- Lync: gli utenti anonimi possono partecipare solo alle riunioni di Lync organizzate dai dipendenti. Il traffico federativo di Lync passa attraverso il router gateway al server perimetrale Lync, al VIP Lync (server di bilanciamento del carico/proxy inverso) e quindi al server Lync. 
     
-- SharePoint: Il provider di identità di partner attendibile con autenticazione basata su moduli o autenticazione SAML. Il traffico client SharePoint passa attraverso il router Gateway nell'indirizzo IP virtuale di SharePoint (server di proxy inverso/del servizio di bilanciamento del carico) e quindi al Server di SharePoint. 
+- SharePoint: provider di identità di partner attendibile con autenticazione SAML o autenticazione basata su moduli. Il traffico client di SharePoint passa attraverso il router gateway al VIP di SharePoint (server di bilanciamento del carico/proxy inverso) e quindi al server di SharePoint. 
     
-- Exchange: Non applicabile. 
+- Exchange: non applicabile. 
     
-- Lync Web traffico attraversa il router Gateway per il Server perimetrale di Lync, all'indirizzo VIP Lync (server proxy inverso/del servizio di bilanciamento del carico,) al bilanciamento del carico hardware, che è necessaria per il traffico HTTPS, e quindi a Lync Server. 
+- Il traffico Web Lync passa attraverso il router gateway al server perimetrale di Lync, al VIP Lync (server di bilanciamento del carico/proxy inverso), a un dispositivo di bilanciamento del carico hardware, necessario per il traffico HTTPS e quindi al server Lync. 
     
-#### <a name="roaming-and-remote-employees"></a>Dipendenti remoti e mobili
+#### <a name="roaming-and-remote-employees"></a>Gestione del roaming e dipendenti remoti
 
-1. https://Intranet.contoso.com 
+1. https://intranet.contoso.com 
     
-2. https://Teams.contoso.com 
+2. https://teams.contoso.com 
     
-3. https://My.contoso.com
+3. https://my.contoso.com
     
 4. https://partnerweb.contoso.com 
     
-5. https://Mail.contoso.com * 
+5. https://mail.contoso.com* 
     
-6. https://dial.contoso.com *
+6. https://dial.contoso.com*
     
-7. https://Meet.contoso.com *
+7. https://meet.contoso.com*
     
-* L'URL di Exchange sono le seguenti directory virtuali: servizio di individuazione automatica, ecp, servizi Web Exchange, Microsoft-Server-ActiveSync, della Rubrica offline, owa, PowerShell 
+* L'URL di Exchange include le seguenti directory virtuali: individuazione automatica, ECP, EWS, Microsoft-Server-ActiveSync, Rubrica offline, OWA, PowerShell 
   
-- Lync: L'autenticazione TLS DSK o NTLM. Il traffico client Lync passa attraverso il router Gateway per il Server perimetrale di Lync, all'indirizzo VIP Lync (server di proxy inverso/del servizio di bilanciamento del carico) e quindi a Lync Server. 
+- Lync: TLS-DSK o autenticazione NTLM. Il traffico client di Lync passa attraverso il router gateway al server perimetrale Lync, al VIP Lync (server di bilanciamento del carico/proxy inverso) e quindi al server Lync. 
     
-- SharePoint: Servizi di dominio Active Directory (AD DS), l'autenticazione basata su moduli o autenticazione SAML. Il traffico client SharePoint passa attraverso il gateway VPN o il server DirectAccess nell'indirizzo IP virtuale di SharePoint (server di proxy inverso/del servizio di bilanciamento del carico) e quindi al server di SharePoint. 
+- SharePoint: Servizi di dominio Active Directory (AD DS), autenticazione basata su moduli o autenticazione SAML. Il traffico client di SharePoint passa attraverso il gateway VPN o il server DirectAccess al VIP di SharePoint (server di bilanciamento del carico/proxy inverso) e quindi al server di SharePoint. 
     
-- Exchange: L'autenticazione di base su SSL (ActiveSync, individuazione automatica), l'autenticazione basata su moduli (OWA). Il traffico client di Exchange passa attraverso il router Gateway nell'indirizzo IP virtuale di Exchange (server di proxy inverso/del servizio di bilanciamento del carico) e quindi al Server di Exchange. 
+- Exchange: autenticazione di base su SSL (ActiveSync, individuazione automatica), autenticazione basata su form (OWA). Il traffico del client di Exchange passa attraverso il router gateway al VIP di Exchange (server di bilanciamento del carico/proxy inverso) e quindi al server di Exchange. 
     
-- Il traffico client Lync passa attraverso il router Gateway per Lync indirizzo IP virtuale (server di proxy inverso/del servizio di bilanciamento del carico) al bilanciamento del carico hardware, che è necessaria per il traffico HTTPS, e quindi a Lync Server. 
+- Il traffico client di Lync passa attraverso il router gateway al VIP di Lync (server di bilanciamento del carico/proxy inverso) a un dispositivo di bilanciamento del carico hardware, necessario per il traffico HTTPS e quindi al server Lync. 
     
 #### <a name="authentication-for-internal-access"></a>Autenticazione per l'accesso interno
 
 #### <a name="internal-employees"></a>Dipendenti interni
 
-> https://Intranet.contoso.com 
+> https://intranet.contoso.com 
     
-> https://Teams.contoso.com 
+> https://teams.contoso.com 
     
-> https://My.contoso.com
+> https://my.contoso.com
     
 > https://partnerweb.contoso.com
     
-> https://Mail.contoso.com * 
+> https://mail.contoso.com* 
     
 > https://dial.contoso.com 
     
-> https://Meet.contoso.com
+> https://meet.contoso.com
     
-> https://Admin.contoso.com
+> https://admin.contoso.com
     
-- Lync: Autenticazione Kerberos, TLS DSK o NTLM. Il traffico client Lync passa all'indirizzo VIP Lync (server di proxy inverso/del servizio di bilanciamento del carico) e quindi a Lync Server. 
+- Lync: Kerberos, TLS-DSK o autenticazione NTLM. Il traffico client di Lync passa a Lync VIP (server di bilanciamento del carico/proxy inverso) e quindi al server Lync. 
     
-- SharePoint: Servizi di dominio Active Directory (AD DS), l'autenticazione basata su moduli o autenticazione SAML. Il traffico client di SharePoint viene inoltrata all'indirizzo VIP SharePoint (server di proxy inverso/del servizio di bilanciamento del carico) e quindi al Server di SharePoint. 
+- SharePoint: Servizi di dominio Active Directory (AD DS), autenticazione basata su moduli o autenticazione SAML. Il traffico client di SharePoint passa al VIP di SharePoint (server di bilanciamento del carico/proxy inverso) e quindi al server di SharePoint. 
     
-- Exchange: Di dominio Active Directory, l'autenticazione basata su form. Il traffico client di Exchange viene inoltrata nell'indirizzo IP virtuale di Exchange (server di proxy inverso/del servizio di bilanciamento del carico) e quindi al Server di Exchange. 
+- Exchange: Servizi di dominio Active Directory, autenticazione basata su moduli. Il traffico client di Exchange passa al VIP di Exchange (server di bilanciamento del carico/proxy inverso) e quindi al server di Exchange. 
     
-- Il traffico client Lync passerà a Lync indirizzo IP virtuale (server di proxy inverso/del servizio di bilanciamento del carico) al bilanciamento del carico hardware, che è necessaria per il traffico HTTPS, e quindi a Lync Server. 
+- Il traffico client di Lync passa al VIP di Lync (server di bilanciamento del carico/proxy inverso) a un dispositivo di bilanciamento del carico hardware, necessario per il traffico HTTPS e quindi al server Lync. 
     
-#### <a name="cloud-based-email-traffic"></a>Traffico di posta elettronica basata sul cloud
+#### <a name="cloud-based-email-traffic"></a>Traffico di posta elettronica basato sul cloud
 
-Il componente basata su cloud per il traffico di posta elettronica basata su SMTP è costituita da host della posta Internet o Exchange Online Protection.
+Il componente basato sul cloud per il traffico di posta elettronica basato su SMTP è costituito da host di posta Internet o Exchange Online Protection.
   
-Questi componenti spostare il traffico di posta elettronica tramite la rete tramite SMTP. Il traffico attraversa il router Gateway nell'indirizzo IP virtuale di Exchange (server di proxy inverso/del servizio di bilanciamento del carico) e quindi al Server di Exchange. 
+Questi componenti spostano il traffico della posta elettronica sulla rete tramite SMTP. Il traffico passa attraverso il router gateway al VIP di Exchange (server di bilanciamento del carico/proxy inverso) e quindi al server di Exchange. 
   
 ### <a name="network-traffic-legend"></a>Legenda del traffico di rete
 
-La casella legenda Mostra graficamente i diversi tipi di traffico illustrato nel grafico nelle diverse righe colorate come indicato di seguito: 
+La casella Legenda Visualizza graficamente i diversi tipi di traffico rappresentati sul grafico in linee colorate diverse, come indicato di seguito: 
   
-- Verde riga: Lync SIP traffico 
+- Linea verde: traffico SIP Lync 
     
-- Blu riga: il traffico Web di Lync 
+- Riga blu: traffico Web Lync 
     
-- Viola riga: il traffico client di SharePoint 
+- Riga viola: traffico client di SharePoint 
     
-- Linea arancione: il traffico client di Exchange 
+- Linea arancione: traffico client di Exchange 
     
-- Grigio riga: il traffico di Exchange Server di posta elettronica tra Exchange in locale ed Exchange Online Protection. 
+- Linea grigia: traffico del server di posta di Exchange tra Exchange locale ed Exchange Online Protection. 
     
-Nella casella legenda inoltre descritti i diversi tipi di traffico e le porte che utilizzano. 
+I diversi tipi di traffico e le porte che utilizzano sono descritti anche nella casella Legenda. 
   
-#### <a name="lync-sip-traffic-and-lync-web-traffic"></a>Traffico SIP Lync e Lync web
+#### <a name="lync-sip-traffic-and-lync-web-traffic"></a>Traffico SIP Lync e traffico Web Lync
 
-Server perimetrale Lync utilizza le porte seguenti per le comunicazioni degli utenti esterni: 
+Lync Edge Server utilizza le porte seguenti per la comunicazione con gli utenti esterni: 
   
-- Il traffico di segnalazione/messaggistica immediata (SIP/semplice): porta TCP 443 (open per il traffico in ingresso) 
+- Signaling/traffico IM (SIP/SIMPLE): porta TCP 443 (aperta per il traffico in ingresso) 
     
-- Web (PSOM) traffico delle conferenze: TCP 443 (aperto per il traffico in ingresso) 
+- Traffico Web Conferencing (PSOM): TCP 443 (aperto per il traffico in ingresso) 
     
-- Un traffico audio / video (SRTP): 443 TCP, UDP 3478 e TCP 50000 a 59999 (facoltativo) (aperto per il traffico in ingresso e in uscita) 
+- Traffico A/V (SRTP): TCP 443, UDP 3478 e TCP 50000-59999 (facoltativo) (aperto per il traffico in ingresso e in uscita) 
     
-Server perimetrale Lync utilizza le porte seguenti per le comunicazioni federate: 
+Lync Edge Server utilizza le seguenti porte per la comunicazione federativa: 
   
-- Porte TCP 5061 (SIP) 5269 (XMPP) 443 e UDP 3478 (SRTP) (aperto per il traffico in ingresso e in uscita) 
+- Porte TCP 5061 (SIP), 5269 (XMPP), 443 e UDP 3478 (SRTP) (aperto per il traffico in ingresso e in uscita) 
     
 #### <a name="sharepoint-client-traffic"></a>Traffico client di SharePoint
 
-SharePoint è possibile utilizzare la porta TCP 443 (SSL) per la comunicazione crittografata tra il client e il servizio di bilanciamento del carico. Per l'accesso esterno da Internet, è necessario che la porta aperto per il traffico in ingresso e in uscita sul router gateway (o firewall esterno). 
+SharePoint può utilizzare la porta TCP 443 (SSL) per la comunicazione crittografata tra il client e il bilanciamento del carico. Per l'accesso esterno da Internet, è necessario che questa porta venga aperta per il traffico in ingresso e in uscita sul router gateway (o sul firewall esterno). 
   
-#### <a name="exchange-client-traffic-and-exchange-mail-server-traffic"></a>Il traffico client di Exchange e il traffico di server di posta elettronica di Exchange
+#### <a name="exchange-client-traffic-and-exchange-mail-server-traffic"></a>Traffico del server di posta elettronica di Exchange e traffico di Exchange
 
-Exchange utilizza la porta TCP 25 (SMTP) per le comunicazioni server-to-server. La maggior parte del traffico dei client (OWA, ActiveSync, individuazione automatica, Outlook via Internet) viene gestito tramite la porta 443 (HTTPS). Se sono presenti client POP o IMAP, le porte 110 (POP3), 995 (POP3 crittografato), 143 (IMAP4), 993 crittografate IMAP4 () e 587 (SMTP) vengono utilizzate anche per supportare tali client. 
+Exchange utilizza la porta TCP 25 (SMTP) per le comunicazioni da server a server. La maggior parte del traffico client (OWA, ActiveSync, individuazione automatica, Outlook via Internet) viene gestito tramite la porta 443 (HTTPS). Se si dispone di client POP o IMAP, le porte 110 (POP3), 995 (POP3 crittografato), 143 (IMAP4), 993 (IMAP4 crittografato) e 587 (SMTP) vengono utilizzati anche per supportare questi client. 
   
-#### <a name="more-on-lync-network-traffic"></a>Ulteriori in Lync il traffico di rete?
+#### <a name="more-on-lync-network-traffic"></a>Altre informazioni sul traffico di rete di Lync?
 
-Informazioni su come Lync Server consentono alle organizzazioni forniscono messaggistica immediata, servizi di conferenza web, la condivisione delle applicazioni e le comunicazioni vocali. Per ulteriori informazioni, vedere [Poster dei carichi di lavoro di protocollo di Microsoft Lync Server 2013](https://aka.ms/G5jzjo). 
+Informazioni su come Lync Server può aiutare l'organizzazione a fornire messaggistica istantanea, Web Conferencing, condivisione applicazioni e comunicazioni vocali. Per ulteriori informazioni, vedere [poster dei carichi di lavoro del protocollo Microsoft Lync Server 2013](https://aka.ms/G5jzjo). 
   
-Il poster include inoltre un codice QR per accedere a queste informazioni. 
+Nel poster è incluso anche un codice QR che consente di accedere a queste informazioni. 
   
 

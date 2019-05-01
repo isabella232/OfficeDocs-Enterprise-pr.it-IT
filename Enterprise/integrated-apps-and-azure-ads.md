@@ -1,5 +1,5 @@
 ---
-title: Azure AD e app integrate per gli amministratori di Office 365
+title: App integrate e Azure AD per amministratori di Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Informazioni su come le app integrate di O365 sono registrate e amministrate in Azure AD
 ms.openlocfilehash: f4e2061c952a09c4e23aa50bd294b7391e1ca3e6
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001879"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487123"
 ---
-# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Azure AD e app integrate per gli amministratori di Office 365
+# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>App integrate e Azure AD per amministratori di Office 365
 
 La gestione delle app integrate non è sufficiente per [attivare o disattivare le app integrate](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114). Con l'avvento delle API REST di Office 365, gli utenti possono concedere alle app l'accesso ai dati di Office 365, come posta, calendari, contatti, utenti, gruppi, file e cartelle. Per impostazione predefinita, gli utenti devono concedere individualmente le autorizzazioni per ogni app, ma questo non viene ridimensionato correttamente se si desidera autorizzare un'app una volta a livello di amministratore globale e distribuirla all'intera organizzazione tramite l'icona di avvio delle app. A tale scopo, è necessario registrare l'app in Azure AD. Ci sono alcuni passaggi da eseguire prima di poter registrare un'app in Azure AD e alcune informazioni di base che è necessario conoscere per gestire le app nell'organizzazione di Office 365. In questo articolo vengono indicate le risorse.
   

@@ -12,46 +12,46 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
-description: Informazioni su come utilizzare il rendering e sprite per migliorare le prestazioni immagine i siti Web di SharePoint Online.
+description: Informazioni su come utilizzare le copie trasformate e gli sprite per migliorare le prestazioni dell'immagine sui siti Web di SharePoint Online.
 ms.openlocfilehash: 313046dec885a38062635254699301bcf556d698
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541138"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487366"
 ---
 # <a name="image-optimization-for-sharepoint-online"></a>Ottimizzazione delle immagini per SharePoint Online
 
-La velocità di caricamento di una pagina Web dipende dalle dimensioni combinata di tutti i componenti necessari per il rendering della pagina, ad esempio immagini, HTML, JavaScript e CSS. Le immagini sono una fantastica opportunità per rendere il proprio sito più interessante, ma le dimensioni possono influire sulle prestazioni. Per ottimizzare le immagini con la compressione ridimensionamento e utilizzo di sprite, è possibile spostare gli effetti delle immagini di grandi dimensioni. Utilizza il rendering di immagini di SharePoint, è possibile caricare una singola immagine di grandi dimensioni e visualizzare le sezioni dell'immagine in modo che possa essere riutilizzata anziché ricaricato.
+La velocità di caricamento di una pagina Web dipende dalla dimensione combinata di tutti i componenti necessari per il rendering della pagina, tra cui immagini, HTML, JavaScript e CSS. Le immagini sono un ottimo modo per rendere il sito più accattivante, ma le dimensioni possono influire sulle prestazioni. Ottimizzando le immagini con compressione e ridimensionamento e utilizzando gli sprite, è possibile compensare gli effetti di immagini di grandi dimensioni. Utilizzando le trasformazioni di immagini di SharePoint, è possibile caricare una singola immagine di grandi dimensioni e visualizzare le sezioni dell'immagine che consentono di riutilizzarle anziché essere ricaricate.
   
 ## <a name="using-sprites-to-speed-up-image-loading-in-sharepoint-online"></a>Utilizzo di sprite per accelerare il caricamento delle immagini in SharePoint Online
 
 |||
 |:-----|:-----|
-| Sprite un'immagine contiene molte immagini più piccole. Tramite CSS selezionare una parte dell'immagine composta da visualizzare in una determinata parte della pagina con posizionamento assoluto. In pratica, spostare una sola immagine intorno alla pagina anziché caricare più immagini e rendere visibile una piccola parte di tale immagine attraverso un piccola finestra in cui è visualizzata la parte obbligatoria dell'immagine sprite all'utente finale. SharePoint Online utilizza sprite per visualizzare le icone diverse in spcommon.png sprite.  <br/>  Che cosa viene descritto di seguito:  <br/>  Compressione delle immagini  <br/>  Ottimizzazione dell'immagine  <br/>  Rendering di immagini di SharePoint  <br/> |![Cattura di schermata del spcommon](media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+| Uno sprite immagine contiene molte immagini più piccole. Utilizzo di CSS è possibile selezionare una parte dell'immagine composita da visualizzare in una determinata parte della pagina con posizionamento assoluto. In pratica, è possibile spostare una singola immagine intorno alla pagina invece di caricare più immagini e fare in modo che una piccola parte dell'immagine sia visibile attraverso una piccola finestra in cui viene visualizzata la parte richiesta dell'immagine sprite all'utente finale. SharePoint Online utilizza gli sprite per visualizzare le varie icone nello sprite spcommon.png.  <br/>  Elementi descritti di seguito:  <br/>  Compressione delle immagini  <br/>  Ottimizzazione delle immagini  <br/>  Copie trasformate di immagini di SharePoint  <br/> |![Schermata di spcommon](media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
    
-Ciò può migliorare le prestazioni perché si scarica solo un'immagine anziché diverse e quindi memorizzare nella cache e riutilizzare l'immagine. Anche se l'immagine non rimangono memorizzati nella cache, facendo in modo che una singola immagine anziché più immagini, questo metodo consente di ridurre il numero totale di richieste HTTP al server che consente di ridurre i tempi di caricamento della pagina. Si tratta veramente di un modulo di vendita abbinata immagine. Questa è una tecnica molto utile se le immagini non modifica molto spesso, ad esempio, le icone, come illustrato nell'esempio SharePoint fornita in precedenza. È possibile come utilizzare [Essentials Web](http://vswebessentials.com/), un progetto di terze parti, open source, basate sulla community per ottenere questo risultato facilmente in Microsoft Visual Studio. Per ulteriori informazioni, vedere [la riduzione e vendita abbinata in SharePoint Online](https://go.microsoft.com/fwlink/?LinkId=708698).
+Questo può aumentare le prestazioni perché è possibile scaricare una sola immagine invece di diverse e quindi memorizzarla nella cache e riutilizzarla. Anche se l'immagine non rimane memorizzata nella cache, con una singola immagine invece di più immagini, questo metodo riduce il numero totale di richieste HTTP al server che consentirà di ridurre i tempi di caricamento delle pagine. Ciò rappresenta un vero e proprio tipo di creazione di bundle di immagini. È una tecnica molto utile se le immagini non vengono modificate molto spesso, ad esempio nel caso delle icone, come illustrato nell'esempio di SharePoint fornito in precedenza. È possibile utilizzare [Web Essentials](http://vswebessentials.com/), un progetto di terze parti open source basato sulla community per ottenere questo risultato facilmente in Microsoft Visual Studio. Per ulteriori informazioni, vedere [Minification and bundling in SharePoint Online](https://go.microsoft.com/fwlink/?LinkId=708698).
   
 ## <a name="using-image-compression-and-optimization-to-speed-up-page-loading-in-sharepoint"></a>Utilizzo di ottimizzazione e compressione delle immagini per accelerare il caricamento delle immagini in SharePoint
 
 Per quanto riguarda l'ottimizzazione e la compressione delle immagini, si tratta della riduzione delle dimensioni dei file di immagini utilizzate nel proprio sito. Spesso, la tecnica migliore per ridurre le dimensioni di un'immagine è riportare l'immagine alle dimensioni massime in cui verrà visualizzata nel sito. Non ha alcun senso disporre di un'immagine in dimensioni superiori rispetto a quelle in cui verrà mai visualizzata. Accertarsi che le immagini siano nelle dimensioni corrette utilizzando un editor di immagini è un modo rapido e facile per ridurre le dimensioni della propria pagina.
   
-Dopo che le immagini sono le dimensioni corrette, il passaggio successivo è per ottimizzare la compressione di queste immagini. Sono disponibili diversi strumenti disponibili da utilizzare per la compressione e ottimizzazione, tra cui raccolta foto e gli strumenti di terze parti. La chiave di compressione è per ridurre le dimensioni del file per quanto possibile senza compromettere la qualità visibile per gli utenti finali. Verificare che si testa i file compressi in una visualizzazione ad alta definizione per garantire che ancora appare buona.
+Una volta che le immagini sono nelle dimensioni appropriate, il passaggio successivo consiste nell'ottimizzare la compressione di tali immagini. Sono disponibili diversi strumenti da utilizzare per la compressione e l'ottimizzazione, tra cui la raccolta foto e gli strumenti di terze parti. Per la compressione è fondamentale ridurre al minimo possibile le dimensioni del file senza compromettere la qualità visibile per gli utenti finali. Provare i file compressi su uno schermo ad alta definizione per accertarsi che siano ancora di buona qualità.
   
 ## <a name="speed-up-page-downloads-by-using-sharepoint-image-renditions"></a>Velocizzare i download delle pagine tramite rendering delle immagini di SharePoint
 
-Rendering di immagini è una funzionalità di SharePoint Online che consente di utilizzare backup di versioni diverse di immagini in base alle dimensioni predefinite immagine. Ciò è particolarmente importante quando le dimensioni dell'immagine, ad esempio la larghezza e altezza risolti dal foglio di stile CSS nel sito o non disponibile il contenuto dell'immagine generato dall'utente. Anche se un'immagine risolto da CSS, l'immagine ad alta risoluzione è ancora stato caricato. In questo caso è possono ridurre le dimensioni del file utilizzando il rendering di immagini.
+Le trasformazioni di immagini sono una funzionalità di SharePoint Online che consente di utilizzare diverse versioni di immagini in base alle dimensioni predefinite dell'immagine. Questo è particolarmente importante quando sono presenti contenuti di immagini generati dall'utente o dimensioni dell'immagine la cui larghezza e altezza vengono corrette tramite CSS nel sito. Anche se un'immagine è stata corretta mediante CSS, l'immagine ad alta risoluzione è ancora caricata. In questo caso, le dimensioni del file possono essere ridotte utilizzando il rendering di immagini.
   
 > [!NOTE]
-> Il rendering di è disponibile solo per SharePoint quando è abilitata la pubblicazione. È possibile abilitare la pubblicazione in impostazioni \> Impostazioni sito \> Gestisci caratteristiche sito \> pubblicazione SharePoint Server. L'opzione non verrà visualizzato in caso contrario. 
+> Le copie trasFormate sono disponibili solo per SharePoint quando la pubblicazione è abilitata. È possibile abilitare la pubblicazione in \> Impostazioni sito \> impostazioni gestire la \> pubblicazione di SharePoint Server per le caratteristiche del sito. L'opzione non verrà visualizzata in altro modo. 
   
 Il ridimensionamento del rendering delle immagini parte dalla dimensione minima definita dall'utente (larghezza o altezza), per poi ridimensionare l'immagine in modo che l'altra dimensione venga automaticamente ridimensionata in base alle proporzioni bloccate. Per impostazione predefinita, l'immagine verrà ritagliata dal centro alle dimensioni rimanenti. Ad esempio, se si definisce un rendering di 100 px di larghezza e 50 px di altezza e l'immagine originale è di 1000 px di larghezza e 800 px di altezza, verrà ridimensionata in modo che la dimensione di 800 px diventi 50 px e quella di 1000 px (ora 62,5 px) venga ritagliata dal centro dell'immagine.
   
 La procedura è relativamente semplice ma, per utilizzare il rendering delle immagini, il rendering deve trovarsi nel sito di SharePoint prima di aggiungere le immagini. Inoltre, è necessario disporre anche dell'Infrastruttura di pubblicazione SharePoint Server (livello della raccolta siti) e la funzionalità Pubblicazione SharePoint Server (livello di sito) attivate.
   
- **Aggiungere un rendering di immagini per velocizzare il caricamento della pagina**
+ **Aggiungere una resa delle immagini per velocizzare il caricamento delle pagine**
   
-1. Verificare che l'account utente che esegue questa procedura disponga, almeno le autorizzazioni di progettazione per il sito principale della raccolta siti e che il sito in fase di pubblicazione a una pagina Web.
+1. Verificare che l'account utente utilizzato per eseguire questa procedura disponga almeno delle autorizzazioni di progettazione per il sito principale della raccolta siti e che il sito venga pubblicato in una pagina Web.
     
 2. In un browser Web, andare al sito principale della raccolta siti di pubblicazione.
     
@@ -61,7 +61,7 @@ La procedura è relativamente semplice ma, per utilizzare il rendering delle imm
     
     È possibile utilizzare la parte esterna dei rendering della casella oppure selezionare **Rendering di immagini** per crearne uno nuovo. 
     
-    ![Cattura di schermata del rendering di immagini](media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
+    ![Schermata di rendering delle immagini](media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
   
 5. Nella pagina **Rendering di immagini**, selezionare **Aggiungi nuovo elemento**.
     
@@ -75,6 +75,6 @@ La procedura è relativamente semplice ma, per utilizzare il rendering delle imm
   
 ## <a name="custom-cropping-with-image-renditions-in-sharepoint"></a>Personalizzare il ritaglio con i rendering di immagini in SharePoint
 
-Per impostazione predefinita, viene generato una copia immagine dal centro dell'immagine. È possibile modificare il rendering di immagini per le singole immagini da parte dell'immagine che si desidera utilizzare il ritaglio. È possibile ritagliare le immagini singolarmente, per ogni copia trasformata. Ritaglio le immagini di velocizzare caricamento mediante l'utilizzo della cache blob di SharePoint per creare una versione dell'immagine per ciascuna copia della pagina. In questo modo il carico del server è ridotto perché l'immagine viene ridimensionata solo una volta e quindi è pronto per servire più volte per gli utenti finali. Per ulteriori informazioni su come ritagliare un rendering di immagini, vedere [ritagliare un rendering di immagini](https://go.microsoft.com/fwlink/p/?LinkId=525626).
+Per impostazione predefinita, un rendering di immagini viene generato dal centro dell'immagine. È possibile modificare il rendering di immagini per singole immagini ritagliando la parte dell'immagine che si desidera utilizzare. È possibile ritagliare immagini su base individuale in base al rendering. Il riTaglio delle immagini velocizza il caricamento delle pagine tramite la cache BLOB di SharePoint per creare una versione dell'immagine per ogni copia trasformata. In questo modo, il carico del server viene ridotto perché l'immagine viene ridimensionata solo una volta e quindi è pronta per essere utilizzato per gli utenti finali più volte. Per ulteriori informazioni su come ritagliare una copia trasformata di un'immagine, vedere [Ritaglia una copia di un'immagine](https://go.microsoft.com/fwlink/p/?LinkId=525626).
   
 

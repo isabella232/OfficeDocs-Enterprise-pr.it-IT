@@ -1,5 +1,5 @@
 ---
-title: Procedure consigliate per l'utilizzo di Office 365 con reti lente
+title: Procedure consigliate per l'utilizzo di Office 365 in una rete lenta
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,179 +16,179 @@ search.appverid:
 - MEW150
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
-description: Avendo la possibile interessante se la connessione a Internet è stato sempre fast e mai verso il basso. Ad esempio entreranno quel giorno. Ma nel frattempo, vi sono aspetti pratici che è possibile eseguire per ovviare a una rete balky e comunque di lavorare quotidiane.
+description: Non sarebbe bello se la connessione Internet fosse sempre veloce e mai inattiva? Forse quel giorno verrà. Nel frattempo, tuttavia, esistono operazioni pratiche che è possibile eseguire per aggirare una rete esitante e continuare a svolgere il proprio lavoro quotidiano.
 ms.openlocfilehash: 2287de562672f5ceb1ab32949168e8dfdeb31585
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933143"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490248"
 ---
-# <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedure consigliate per l'utilizzo di Office 365 con reti lente
+# <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedure consigliate per l'utilizzo di Office 365 in una rete lenta
 
-Avendo la possibile interessante se la connessione a Internet è stato sempre fast e mai verso il basso. Ad esempio entreranno quel giorno. Ma nel frattempo, vi sono aspetti pratici che è possibile eseguire per ovviare a una rete balky e comunque di lavorare quotidiane. Anche se Office 365 è un servizio basato su cloud, inoltre sono disponibili diversi modi di lavorare con il contenuto non in linea e in modo uniforme mantenere le modifiche sincronizzate. Inoltre, è talvolta più efficiente per l'utilizzo con contenuto non in linea, il fatto che le applicazioni vengono eseguite più velocemente e l'interfaccia utente è tempi di risposta. Il punto si tratta: Office 365 offre combinazione ottimale. Di seguito viene indicato come trarne vantaggio. 
+Non sarebbe bello se la connessione Internet fosse sempre veloce e mai inattiva? Forse quel giorno verrà. Nel frattempo, tuttavia, esistono operazioni pratiche che è possibile eseguire per aggirare una rete esitante e continuare a svolgere il proprio lavoro quotidiano. Anche se Office 365 è un servizio basato su cloud, fornisce anche molti modi per gestire i contenuti in modalità non in linea e mantenere sincronizzate le modifiche senza problemi. Inoltre, a volte è più efficiente lavorare con il contenuto offline solo perché le applicazioni vengono eseguite più velocemente e l'interfaccia utente è più reattiva. Il punto è questo: Office 365 offre il meglio di entrambi i mondi. Ecco come approfittarne. 
   
 > [!TIP]
-> Vuoi vedere come lenta (o fast) connessi alla rete? Provare a eseguire il [test di velocità OOKLA](https://www.speedtest.net/) o l' [App Test velocità di rete](https://www.windowsphone.com/en-us/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70). 
+> Vuoi vedere come lenta (o veloce) la connessione di rete è? Provare il [OOKLA Speed Test](https://www.speedtest.net/) o l' [app Speed Test di rete](https://www.windowsphone.com/en-us/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70). 
      
-## <a name="why-is-my-network-so-slow"></a>Perché non è pertanto lentezza della rete?
+## <a name="why-is-my-network-so-slow"></a>Perché la rete è così lenta?
 
-Anche se non disponi di controllo sulle prestazioni di rete direttamente, è utile acquisire familiarità con ciò che avviene in background. Internet è molto complessa, ma vi sono alcuni concetti che consentono di acquisire familiarità con la situazione molto meglio. Seguendo le procedure consigliate in questo articolo, è possibile aiutare problemi di prestazioni di una soluzione e ridurre frustrazione.
+Anche se non si ha il controllo sulle prestazioni di rete, è utile capire cosa succede dietro le quinte. La connessione Internet è estremamente complessa, ma esistono alcuni concetti che consentono di comprendere meglio la situazione. Seguire le procedure consigliate in questo articolo consente di risolvere i problemi di prestazioni della soluzione e ridurre la frustrazione.
   
-**Fattori principali che influiscono sulle prestazioni di rete**
+**Fattori principali che influiscono sulle prestazioni della rete**
 
-![Fattori legati alle prestazioni di rete](media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
+![Fattori relativi alle prestazioni di rete](media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
   
- **Larghezza di banda e latenza** Le due misure più importanti delle prestazioni della rete sono la larghezza di banda e latenza: 
+ **Larghezza di banda e latenza** Le due misure più importanti relative alle prestazioni di rete sono la larghezza di banda e la latenza: 
   
-- Larghezza di banda è la frequenza di velocità effettiva, misurata in bit al secondo. Grande è meglio. Larghezza di banda è simile a una pipe acqua. Maggiore pipe, acqua ulteriori che è possibile "includerlo tramite".
+- La larghezza di banda è il tasso di velocità effettiva misurato in bit al secondo. Maggiore è la migliore. La larghezza di banda è come un tubo di acqua. Maggiore è il tubo, maggiore è l'acqua che è possibile "inserire".
     
-- Latenza è il tempo necessario per il contenuto da recuperare da un server o un servizio sul dispositivo ed espresso in millisecondi. È più veloce migliore. Latenza può essere causata da diversi fattori, tra cui larghezza di banda ridotta, una connessione fragmentées o un'ora di trasmissione.
+- Latenza è il tempo necessario per il contenuto da un server o da un servizio al dispositivo e misurato in millisecondi. La velocità è migliore. La latenza può essere causata da una serie di fattori, tra cui la larghezza di banda bassa, una connessione di tipo sparse o la trasmissione.
     
- **Problemi comuni** Oltre a larghezza di banda e latenza, altri problemi di avere un impatto sulle prestazioni di rete e spesso sono imprevisti. Le prestazioni della rete possono variare in base all'ora del giorno o della posizione fisica. La rete può diventare ostruita quando si verificano determinati eventi che aumentare notevolmente l'utilizzo di Internet, ad esempio calamità naturali o di un evento pubblico principale. Le dimensioni e la complessità della pagina viene caricata e il numero e dimensioni dei file trasferiti avere diretto influiscono sulle prestazioni. Una connessione WiFi temporaneamente può comportare un calo: ad esempio, si eseguono il polling una riunione grande conferenza espresse in migliaia richiedendo tutti gli utenti a visualizzato contemporaneamente. 
+ **Problemi comuni** Oltre alla larghezza di banda e alla latenza, altri problemi hanno un impatto sulle prestazioni della rete e spesso sono imprevedibili. Le prestazioni di rete possono variare in base all'ora del giorno o alla posizione fisica. La rete può intasarsi quando si verificano determinati eventi che determinano l'utilizzo di Internet, ad esempio un'emergenza naturale o un evento pubblico importante. Le dimensioni e la complessità della pagina caricata e il numero e le dimensioni dei file trasferiti hanno un impatto diretto sulle prestazioni. Una connessione Wi-Fi può temporaneamente peggiorare: ad esempio, è possibile eseguire il polling di una riunione di riunioni di grandi dimensioni richiedendo tutti i Tweet contemporaneamente. 
   
- **Considerazioni per la rete satellitari** Una rete satellitari è utile quando una rete terrestre non è realizzabile, ad esempio paese back, una spedizione crociera o area scientifica remota. Tali reti utilizzano satellitari posizionati in un orbit geosynchronous 22.000 miglia di sopra dell'equatore. Tuttavia, una trasmissione in realtà viene trasferito circa 90.000 miglia e pertanto una rete satellitari presenta una latenza più lenta (o 500 ms) di una rete terrestre (20 per 50ms). In quanto di meglio delle condizioni, non è possibile notare questa latenza, ma per il download dei file di grandi dimensioni, streaming video e giocare, probabilmente verranno. Un altro problema è riquadro con "pioggia dissolvenza" in quali meteo elevato, ad esempio temporali e neve, può interrompere temporaneamente la trasmissione satellitare.
+ **Considerazioni relative a una rete satellitare** Una rete satellitare è utile quando non è possibile una rete terrestre, ad esempio il paese di origine, una nave da crociera o un'area scientifica remota. Queste reti si basano su satelliti posizionati in un'orbita geostazionaria 22.000 miglia sopra l'equatore. Tuttavia, una trasmissione effettivamente percorre circa 90.000 miglia e quindi una rete satellitare ha una latenza più lenta (500 ms o più) di una rete terrestre (da 20 a 50ms). In condizioni ottimali, non è possibile notare questa latenza, ma per scaricare file di grandi dimensioni, video in streaming e giochi, è probabile che lo sarà. Un altro problema è "pioggia sbiadita", in cui il tempo atmosferico, come temporali e bufere di neve, può interrompere temporaneamente la trasmissione satellitare.
   
-## <a name="are-you-sure-its-the-network"></a>Si che si tratti di rete?
+## <a name="are-you-sure-its-the-network"></a>Sei sicuro che sia la rete?
 
-Ogni volta che si verificano problemi di prestazioni, assicurarsi che il dispositivo non è la causa del problema. Sono disponibili è possibile effettuare due operazioni che è possono ottenere miglioramenti big:
+Ogni volta che si verificano problemi di prestazioni, verificare innanzitutto che il dispositivo non sia la causa principale del problema. È possibile eseguire due operazioni che possono apportare un notevole miglioramento:
   
-- Verificare che il dispositivo esegue anche e non esiste alcun malware nel computer in uso.
+- Verificare che il dispositivo sia in esecuzione correttamente e che non vi siano malware nel computer in uso.
     
-- Se possibile, acquistare più memoria. Aggiunta di memoria è il modo più semplice e più spesso efficace per migliorare le prestazioni del dispositivo. È particolarmente utile quando si lavora con video e file di grandi dimensioni.
+- Se possibile, acquistare più memoria. L'aggiunta di memoria è il modo più semplice e spesso più efficace per migliorare le prestazioni del dispositivo. È particolarmente utile quando si utilizzano file e video di grandi dimensioni.
     
-Per ulteriori informazioni, vedere [prestazioni di Windows e la manutenzione](https://windows.microsoft.com/en-us/windows/performance-maintenance-help#performance-maintenance-help) e [Windows correggere i problemi di prestazioni del sistema](https://support.microsoft.com/mats/slow_windows_performance/).
+Per ulteriori informazioni, vedere [prestazioni e manutenzione di Windows](https://windows.microsoft.com/en-us/windows/performance-maintenance-help#performance-maintenance-help) e [correggere i problemi relativi alle prestazioni del sistema Windows](https://support.microsoft.com/mats/slow_windows_performance/).
    
 ## <a name="best-practices-for-using-your-browser"></a>Procedure consigliate per l'utilizzo del browser
 
-Il browser sia il gateway a Office 365, in modo che può avere un impatto sulle prestazioni, soprattutto con il tempo che necessario per caricare una pagina e la frequenza con cui arrotondare attivarsi per Office 365 service. 
+Il browser è il gateway per Office 365, in modo che possa avere un impatto sulle prestazioni, soprattutto con il tempo necessario per caricare una pagina e la frequenza di andata e ritorno al servizio Office 365. 
   
  **Browser in generale**
   
-Di seguito sono riportati alcuni suggerimenti per i browser in genere:
+Di seguito sono riportate alcune proposte per i browser in generale:
   
-- Disattivare componenti aggiuntivi di browser che può influire sulle prestazioni o che non è necessario.
+- Disabilitare i componenti aggiuntivi del browser che potrebbero influire sulle prestazioni o che non sono necessari.
     
-- Aumentare le dimensioni della cache per i file temporanei internet.
+- Aumentare le dimensioni della cache per i file temporanei di Internet.
     
--  Dopo avere effettuato l'accesso all'account di lavoro o della scuola, tenere aperto nel corso della giornata finestra del browser. È possibile aprire altre schede e windows senza effettuare nuovamente l'accesso. Se è necessario accedere a un altro account, utilizzare la visualizzazione privata. 
+-  Dopo aver effettuato l'accesso all'account aziendale o dell'Istituto di istruzione, tenere aperta la finestra del browser per tutto il giorno. È possibile aprire altre schede e finestre senza accedere di nuovo. Se è necessario accedere a un altro account, utilizzare l'esplorazione privata. 
     
-- Una volta ogni pagina viene scaricato e open, tenerli aperti utilizzando le tabulazioni. È facile passare tra le schede e utilizzare la pagina in un secondo momento nel giorno. Aggiornare una pagina solo se sono necessari i dati più recenti in tale pagina.
+- Dopo aver scaricato e aperto ogni pagina, aprirla utilizzando tabulazioni. È facile spostarsi tra le schede e usare la pagina nel corso della giornata. Consente di aggiornare una pagina solo se sono necessari i dati più recenti in tale pagina.
     
-- Se una pagina richiede troppo tempo per aprire, arrestare il download di pagine (premere ESC) e quindi aggiornare la pagina (premere F5). 
+- Se una pagina richiede troppo tempo per l'apertura, interrompere il download della pagina (premere ESC) e quindi aggiornare la pagina (premere F5). 
     
--  Se possibile, ridurre round trip a Office 365. Anziché il paging elenchi o raccolte, ad esempio, è possibile utilizzare la ricerca per individuare i file in una raccolta di grandi dimensioni e filtro di un elenco da recuperare direttamente per i risultati desiderati. In alternativa, è possibile creare visualizzazioni per ridurre al minimo il tempo di caricamento di pagina. Per ulteriori informazioni, vedere [gestire elenchi di grandi dimensioni e le raccolte di Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784#BKMK_PAGES).
+-  Quando possibile, ridurre i viaggi di andata e ritorno a Office 365. Ad esempio, anziché eseguire il paging tramite elenchi o raccolte, utilizzare Search per individuare i file in una raccolta di grandi dimensioni e filtrare i dati in un elenco per ottenere direttamente i risultati desiderati. In alternativa, creare visualizzazioni che riducono al minimo il tempo di caricamento delle pagine. Per ulteriori informazioni, vedere [gestire elenchi e raccolte di grandi dimensioni in Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784#BKMK_PAGES).
     
-- Se le prestazioni video scadente, è possibile scaricare il video e guarda nel dispositivo. Un collegamento di download potrebbe essere disponibile o è in grado di fare clic con il pulsante destro sul collegamento video e scegliere **Salva oggetto con nome**. 
+- Se le prestazioni video sono scarse, potrebbe essere possibile scaricare il video e guardarlo sul dispositivo. Potrebbe essere disponibile un collegamento per il download oppure è possibile fare clic con il pulsante destro del mouse sul collegamento video e scegliere **Salva oggetto con nome**. 
     
- **Specifiche del browser**
+ **Specifico del browser**
   
-Di seguito sono riportati alcuni suggerimenti per i browser specifico:
+Di seguito sono riportate alcune proposte per il browser specifico:
   
-- **Internet Explorer** Aggiornamento a Internet Explorer versione 11 o versione successiva di miglioramento significativo delle prestazioni rispetto alle versioni precedenti. Per ulteriori informazioni, vedere [problemi di correzione di Internet Explorer ](https://support.microsoft.com/mats/ie_performance_and_safety).
+- **Internet Explorer** Eseguire l'aggiornamento a Internet Explorer versione 11 o successive per migliorare le prestazioni sostanziali rispetto alle versioni precedenti. Per ulteriori informazioni, vedere [risolvere i problemi di Internet Explorer ](https://support.microsoft.com/mats/ie_performance_and_safety).
     
-- **FireFox** Per ulteriori informazioni, vedere [Firefox lenta o smette di funzionare](https://support.mozilla.org/en-US/products/firefox/fix-problems/slowness-or-hanging).
+- **Firefox** Per ulteriori informazioni, vedere [Firefox è lento o smette di funzionare](https://support.mozilla.org/en-US/products/firefox/fix-problems/slowness-or-hanging).
     
-- **Safari** Per ulteriori informazioni, vedere [Apple - Safari](https://www.apple.com/safari/).
+- **Safari** Per ulteriori informazioni, vedere [Apple-Safari](https://www.apple.com/safari/).
     
-- **Chrome** Per ulteriori informazioni, vedere [La Guida di Chrome](https://support.google.com/chrome/?hl=en).
+- **Chrome** Per ulteriori informazioni, vedere [Guida di Chrome](https://support.google.com/chrome/?hl=en).
   
 ## <a name="best-practices-for-using-outlook-and-outlook-web-app"></a>Procedure consigliate per l'utilizzo di Outlook e Outlook Web App
 
-La lettura, scrittura e posta elettronica alle è una parte importante del giorno di tutti gli utenti. Outlook e Outlook Web App (OWA) offrono supporto non in linea. Utilizzando un'app di posta elettronica nel telefono smart è un'altra alternativa utile. Utilizzare le opzioni seguenti che meglio si adattano le proprie esigenze:
+La lettura, la scrittura e l'organizzazione della posta elettronica è una parte importante della giornata di tutti. Outlook e Outlook Web App (OWA) offrono supporto offline. L'utilizzo di un'app di posta elettronica nello Smart Phone è un'altra alternativa utile. Utilizzare le opzioni seguenti che meglio si adattano alle proprie esigenze:
   
-- Eseguire l'aggiornamento a Outlook 2013 SP1 o versione successiva di miglioramento significativo delle prestazioni rispetto alle versioni precedenti. 
+- Eseguire l'aggiornamento a Outlook 2013 SP1 o versioni successive per migliorare le prestazioni sostanziali rispetto alle versioni precedenti. 
     
--  Outlook Web App consente di creare messaggi non in linea, contatti e gli eventi del calendario che vengono caricati quando OWA è successiva in grado di connettersi a Office 365. Per ulteriori informazioni sulla configurazione e utilizzo di OWA in modalità non in linea, vedere [Utilizzo di Outlook Web App non in linea](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36).
+-  Outlook Web App consente di creare i messaggi, i contatti e gli eventi del calendario non in linea caricati quando OWA è in grado di connettersi a Office 365. Per ulteriori informazioni sulla configurazione e l'utilizzo di OWA in modalità offline, vedere [utilizzo di Outlook Web App offline](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36).
     
-- Outlook consente di lavorare in modalità cache, in cui si connette automaticamente quando possibile. È possibile di scaricare l'intera cassetta postale o solo una parte di esso. Per ulteriori informazioni, vedere [attivare la modalità cache](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) e [lavorare offline in Outlook](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633). 
+- Outlook consente di lavorare in modalità cache, in cui si connette automaticamente quando possibile. È possibile scaricare Outlook per l'intera cassetta postale o solo per una parte di esso. Per ulteriori informazioni, vedere [abilitare la modalità cache di Exchange](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) e [lavorare offline in Outlook](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633). 
     
-- Outlook offre inoltre modalità non in linea. Per utilizzare questa, è necessario innanzitutto configurare modalità cache in modo che le informazioni dall'account vengono copiate verso il basso fino al computer. In modalità non in linea, Outlook tenterà di connettersi mediante l'invio e la ricezione, oppure quando viene manualmente impostato per lavorare in linea. Per ulteriori informazioni, vedere [lavorare offline per evitare i costi di connessione dati](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282), [modificare l'operazione di invio e la ricezione in modalità offline](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a)e [passare dalla modalità non in linea in linea](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9). 
+- Outlook offre anche una modalità offline. Per utilizzare questa impostazione, è necessario innanzitutto impostare la modalità cache in modo che le informazioni dell'account vengano copiate nel computer. In modalità offline, Outlook tenterà di connettersi utilizzando le impostazioni di invio e ricezione oppure quando viene impostato manualmente per l'utilizzo online. Per ulteriori informazioni, vedere [work offline per evitare addebiti per la connessione dati](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282), [modificare le impostazioni di invio e ricezione quando si lavora offline](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a)e [passare dal lavoro offline a online](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9). 
     
-- Se si utilizza un telefono intelligente, è possibile utilizzare per valutare la posta elettronica e calendario sulla rete del gestore telefonico. 
+- Se si dispone di uno Smart Phone, è possibile utilizzarlo per la valutazione della posta elettronica e del calendario sulla rete del gestore del telefono. 
     
 > [!NOTE]
-> Ecco alcuni consigli su quando utilizzare Outlook o OWA. Se lo spazio su disco non è un problema del dispositivo, Outlook è un insieme completo di caratteristiche e potrebbe essere adatta automaticamente. Se lo spazio su disco è un problema del dispositivo, è consigliabile utilizzare OWA è un sottoinsieme delle funzionalità, ma assicura risultati ottimali anche in una situazione in linea. Ovviamente, è possibile utilizzare uno perché perfetto funzionamento. 
+> Di seguito sono riportate alcune indicazioni su quando utilizzare Outlook o OWA. Se lo spazio su disco non è un problema sul dispositivo, Outlook ha un set completo di funzionalità e potrebbe funzionare al meglio per te. Se lo spazio su disco è un problema del dispositivo, è consigliabile utilizzare OWA con un sottoinsieme di funzionalità, ma funziona anche meglio in una situazione online. Naturalmente, è possibile utilizzare entrambi perché funzionano bene insieme. 
   
-## <a name="best-practices-for-using-onedrive-for-business"></a>Procedure consigliate per l'utilizzo di OneDrive for Business
+## <a name="best-practices-for-using-onedrive-for-business"></a>Procedure consigliate per l'utilizzo di OneDrive for business
 
-OneDrive for Business è progettato completamente backup per lavorare con i file online e offline. Dopo aver impostato, viene eseguita la sincronizzazione delle modifiche apportate in modo affidabile e automaticamente ovunque ed è eseguirle. Se la rete è lenta, è possibile utilizzare con la versione non in linea dei file.
+OneDrive for business è stato creato fin dall'alto per lavorare con i file online e offline. Dopo averla configurata, la sincronizzazione delle modifiche avviene in modo automatico e affidabile ovunque e in qualsiasi momento. Se la rete è lenta, è possibile utilizzare la versione offline dei file.
   
-OneDrive for Business sincronizzazione app è disponibile con Office 2013 (Professional Plus o edizioni Standard) o una sottoscrizione a Office 365 che include le applicazioni di Office 2013. Se non disponi di Office 2013, è possibile [scaricare](https://support.microsoft.com/kb/2903984) OneDrive for Business sincronizzazione app gratuito. Questa applicazione è anche il comando **Apri in Esplora** o **caricare** più rapida. Per ulteriori informazioni, vedere [configurare il computer per sincronizzare le OneDrive per i file di Business in Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
+L'app di sincronizzazione di OneDrive for business è disponibile con Office 2013 (Professional Plus o standard Editions) oppure con una sottoscrizione di Office 365 che include le applicazioni di Office 2013. Se non si dispone di Office 2013, è possibile [scaricare](https://support.microsoft.com/kb/2903984) gratuitamente l'app di sincronizzazione di OneDrive for business. Questa app è anche più veloce rispetto all'utilizzo dei comandi **Apri in Esplora risorse** o **caricamento** . Per ulteriori informazioni, vedere [configurare il computer per sincronizzare i file di OneDrive for business in Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
   
-Ecco alcune indicazioni aggiuntive per l'utilizzo di OneDrive per Business sincronizzazione app:
+Di seguito sono riportate alcune indicazioni aggiuntive per l'utilizzo dell'app di sincronizzazione di OneDrive for business:
   
-- Se si sta sincronizzazione in corso di una raccolta di grandi dimensioni per la prima volta, avvia la sincronizzazione durante fuori dall'orario lavorativo, ad esempio, per una notte. 
+- Se si sta sincronizzando una raccolta di grandi dimensioni per la prima volta, avviare la sincronizzazione durante le ore di disattivazione, ad esempio durante la notte. 
     
-- È possibile utilizzare la funzionalità di [interrompere la sincronizzazione di una raccolta a OneDrive for Business app](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330) per impedire temporaneamente la sincronizzazione degli aggiornamenti. Tuttavia, utilizzare questa caratteristica per brevi periodi, ad esempio alcune ore contemporaneamente, per evitare di Accodamento messaggi grandi numeri degli aggiornamenti e per ridurre il rischio di conflitti di unione se altri utenti debbano dello stesso documento. 
+- È possibile utilizzare la funzionalità [Interrompi sincronizzazione di una raccolta con la caratteristica app di OneDrive for business](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330) per interrompere temporaneamente la sincronizzazione degli aggiornamenti. Tuttavia, utilizzare questa funzionalità per brevi periodi, ad esempio alcune ore per volta, per evitare l'accodamento di un numero elevato di aggiornamenti e per ridurre al minimo il rischio di conflitti di Unione se diverse persone lavorano nello stesso documento. 
   
 ## <a name="best-practices-for-using-onenote"></a>Procedure consigliate per l'utilizzo di OneNote
 
-È possibile creare facilmente il proprio ogni sito del team di SharePoint ha un blocco appunti di OneNote incorporato. OneNote è un modo straordinario per raccogliere informazioni tempestive che è necessario che ogni giorno per ottenere le operazioni eseguite. Ad esempio, molti team utilizzano OneNote come punto di raccolta per riunioni settimanali, note di progetto, idee, piani e relazioni sullo stato. È possibile organizzare accuratamente le informazioni utilizzando le pagine, sezioni e schede.
+Ogni sito del team di SharePoint dispone di un blocco appunti di OneNote incorporato e può essere creato facilmente. OneNote è un ottimo modo per raccogliere le informazioni tempestive necessarie ogni giorno per ottenere le attività eseguite. Ad esempio, molti team utilizzano OneNote come punto di raccolta per riunioni settimanali, note di progetto, idee, piani e report sullo stato. È possibile organizzare ordinatamente queste informazioni disparate utilizzando pagine, sezioni e schede.
   
-Ma il vantaggio di OneNote che è possibile accedere il contenuto da virtualmente da qualsiasi dispositivo, se un computer desktop, un computer portatile, Tablet PC o un telefono smart. E non è necessario preoccuparsi salvataggio o della sincronizzazione perché in OneNote non lo è. 
+Tuttavia, la bellezza di OneNote consiste nel fatto che è possibile accedere al contenuto da qualsiasi dispositivo, sia che si tratti di un desktop, di un laptop, di una tavoletta o di uno Smart Phone. Non è necessario preoccuparsi del salvataggio o della sincronizzazione perché OneNote lo fa per te. 
   
 Per ulteriori informazioni, vedere [Microsoft OneNote](https://office.microsoft.com/en-us/onenote/).
   
 ## <a name="best-practices-for-using-lync-online"></a>Procedure consigliate per l'utilizzo di Lync Online
 
-Linee guida generali per l'utilizzo di Lync Online quando la rete sia lenta sono i seguenti:
+Di seguito sono riportate le linee guida generali per l'utilizzo di Lync Online quando la rete è lenta:
   
-- Utilizzare la messaggistica immediata ogni volta che è possibile in quanto funziona bene con reti lente.
+- Utilizzare la messaggistica istantanea ogni volta che è possibile perché funziona bene in una rete lenta.
     
-- Evitare di effettuare chiamate telefoniche su una rete privata virtuale (VPN) o connessioni remote access service (RAS).
+- Evitare di effettuare chiamate telefoniche su una rete privata virtuale (VPN) o su una connessione a un servizio di accesso remoto.
     
-- Verificare che il dispositivo audio viene approvato. Per ulteriori informazioni, vedere [telefoni e dispositivi qualificati per Microsoft Lync](https://technet.microsoft.com/en-us/office/dn788944).
+- Verificare che il dispositivo audio sia approvato. Per ulteriori informazioni, vedere [telefoni e dispositivi qualificati per Microsoft Lync](https://technet.microsoft.com/en-us/office/dn788944).
     
--  Quando si utilizza PowerPoint in una presentazione in linea, ridurre le dimensioni e la complessità delle diapositive. Per ulteriori informazioni, vedere [suggerimenti per migliorare le prestazioni della presentazione](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949).
+-  Quando si utilizza PowerPoint in una presentazione online, ridurre le dimensioni e la complessità delle diapositive. Per ulteriori informazioni, vedere [Suggerimenti per migliorare le prestazioni della presentazione](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949).
     
-- Se possibile, condividere un monitor, invece di un desktop o un programma. Per ulteriori informazioni, vedere [condividere il desktop o un programma in Lync](https://support.office.com/article/33aaa965-eb32-42a9-8a9b-cdfffa364842).
+- Quando possibile, condividere un monitor, invece di un programma o di un desktop. Per ulteriori informazioni, vedere [condividere il desktop o un programma in Lync](https://support.office.com/article/33aaa965-eb32-42a9-8a9b-cdfffa364842).
     
-- Invece di condivisione, inviare le diapositive di PowerPoint anticipo riunione richiesta degli allegati in modo che i partecipanti consente di visualizzare le diapositive nel dispositivo client. Per ulteriori informazioni, vedere [configurazione di una riunione Lync](https://support.office.com/article/258f9d20-f06c-49a4-a77f-7f5ac635bb5d).
+- Invece di condividere, inviare le diapositive di PowerPoint prima del tempo come allegato di una richiesta di riunione in modo che i partecipanti visualizzano le diapositive sul dispositivo client. Per ulteriori informazioni, vedere [set up a Lync meeting](https://support.office.com/article/258f9d20-f06c-49a4-a77f-7f5ac635bb5d).
     
--  Prestazioni video sono molto varia a seconda delle prestazioni di rete. Evitare di utilizzare video se la rete è lenta. 
+-  Le prestazioni video dipendono molto dalle prestazioni di rete. Evitare di utilizzare video se la rete è lenta. 
     
-Per ulteriori informazioni, vedere [una scarsa qualità audio o video in Lync Online](https://support.microsoft.com/kb/2386655) e [lenta schermata aggiornare in Lync 2013](https://support.microsoft.com/kb/2958375).
+Per ulteriori informazioni, vedere [qualità audio o video scadente in Lync Online](https://support.microsoft.com/kb/2386655) e [aggiornamento dello schermo lento in Lync 2013](https://support.microsoft.com/kb/2958375).
   
 ## <a name="best-practices-for-using-sharepoint-lists"></a>Procedure consigliate per l'utilizzo di elenchi di SharePoint
 
-Utilizzo dei dati di elenchi non in linea "eseguire lo scrubbing", analizzare o il report dati sono la soluzione ideale per ridurre al minimo l'impatto di una rete lenta. È possibile leggere e scrivere maggior parte degli elenchi di Microsoft Access 2013 tramite il collegamento a loro. È anche possibile esportare un elenco in una tabella di Excel, che consente di creare una connessione dati unidirezionale tra la tabella di Excel e l'elenco.
+L'utilizzo di dati di elenco non in linea su "scrub", Analyze o report è un ottimo modo per ridurre al minimo l'impatto di una rete lenta. È possibile leggere e scrivere la maggior parte degli elenchi di Microsoft Access 2013 collegandosi a essi. È inoltre possibile esportare un elenco in una tabella di Excel, che consente di creare una connessione dati unidirezionale tra la tabella di Excel e l'elenco.
   
-Inoltre, se è attivata la caratteristica di Access Services, è possibile utilizzare con notevolmente maggiore quantità di dati superiore alla soglia della visualizzazione elenco, fino a 50.000 elementi per impostazione predefinita. Sia Access 2013 and Excel 2013 elabora automaticamente i dati di elenchi in batch di piccole dimensioni e quindi riunire i dati, una tecnica che consente l'utilizzo di più di dati superiore alla soglia della visualizzazione elenco e senza influire negativamente sulle prestazioni del servizio del altri utenti. 
+Inoltre, se la funzionalità di Access Services è attivata, è possibile utilizzare un numero di dati considerevolmente maggiore rispetto alla soglia della visualizzazione elenco, fino a 50.000 elementi per impostazione predefinita. Sia Access 2013 che Excel 2013 elaborano automaticamente i dati dell'elenco in batch di piccole dimensioni e quindi riassemblano i dati, una tecnica che consente di utilizzare in modo sostanziale più dati rispetto alla soglia della visualizzazione elenco e senza influire negativamente sulle prestazioni del servizio di altri utenti. 
   
-Per ulteriori informazioni, vedere la sezione "più sulla gestione di elenchi di grandi dimensioni" in [gestire elenchi di grandi dimensioni e le raccolte di Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784).
+Per ulteriori informazioni, vedere la sezione "ulteriori informazioni sulla gestione di elenchi di grandi dimensioni" in [gestire elenchi e raccolte di grandi dimensioni in Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784).
   
-## <a name="best-practices-for-customizing-web-pages"></a>Procedure consigliate per la personalizzazione di pagine web
+## <a name="best-practices-for-customizing-web-pages"></a>Procedure consigliate per la personalizzazione delle pagine Web
 
-Quando si personalizza una pagina web, si potrebbe influire negativamente sulle prestazioni inavvertitamente con la pagina. Diversi fattori possono avere un impatto, ad esempio la complessità e le dimensioni della pagina, vengono aggiunti il numero di web part, inizialmente viene visualizzato il numero di elementi elenco o raccolta e il modo in cui i codici.
+Quando si personalizza una pagina Web, è possibile che si verifichino inavvertitamente prestazioni insufficienti sulla pagina. Un certo numero di fattori può avere un impatto, ad esempio la complessità e le dimensioni della pagina, quante Web part vengono aggiunte, quanti elementi di elenco o di raccolta vengono inizialmente visualizzati e il modo in cui la pagina viene codificata.
   
-Per ulteriori informazioni, vedere [performance ottimizzare SharePoint Online](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance).
+Per ulteriori informazioni, vedere [ottimizzare le prestazioni di SharePoint Online](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance).
   
-## <a name="best-practices-for-using-project-online"></a>Procedure consigliate per l'utilizzo di Project Online
+## <a name="best-practices-for-using-project-online"></a>Procedure consigliate per l'utilizzo di Project online
 
 Le linee guida seguenti consentono di migliorare le prestazioni della rete.
   
-- Project Online e SharePoint Online richiedono la sincronizzazione, che può essere molto tempo. Se il team di progetto rotazione bassa, disabilitare la sincronizzazione dei siti di progetto per migliorare le prestazioni di pubblicazione del progetto e pagine dettagli progetto. Limite di sincronizzazione di Active Directory a gruppi di risorse che effettivamente necessario utilizzare il sistema e monitorare eventuali problemi di autorizzazione dopo la sincronizzazione dei gruppi di grandi dimensioni. 
+- Project online e SharePoint Online richiedono la sincronizzazione, che può richiedere molto tempo. Se i team del progetto hanno un turnover basso, disabilitare la sincronizzazione dei siti di progetto per migliorare la pubblicazione del progetto e le prestazioni delle pagine dei dettagli del progetto. Limitare la sincronizzazione di Active Directory ai gruppi di risorse che effettivamente devono utilizzare il sistema e monitorare i possibili problemi di autorizzazione dopo la sincronizzazione di gruppi di grandi dimensioni. 
     
-- Se l'organizzazione utilizza i siti di progetto, creare su richiesta anziché automaticamente. Ciò consente di velocizzare la funzionalità di pubblicazione prima e consente di evitare la creazione di contenuto e i siti non necessari.
+- Se nell'organizzazione vengono utilizzati siti di progetto, crearli su richiesta anziché automaticamente. Questo velocizza la prima esperienza di pubblicazione ed evita di creare siti e contenuti non necessari.
     
-- Pagine dettagli progetto (PDP) consente di attivare un ricalcolo dell'intero progetto e avviano azioni di flusso di lavoro, che può essere operazioni impegnative in termini di prestazioni. Per evitare la generazione di due processi di aggiornamento allo stesso tempo nella stessa PDP, evitare di aggiornare i campi di calendario (data di inizio, data di fine, data stato e data corrente) e i campi non pianificata (nome del progetto, descrizione e proprietario). 
+- Le pagine dei dettagli del progetto (PDP) possono attivare un ricalcolo dell'intero progetto e avviare azioni del flusso di lavoro, che possono essere entrambe operazioni con utilizzo intensivo delle prestazioni. Per evitare di attivare contemporaneamente due processi di aggiornamento nello stesso PDP, evitare di aggiornare i campi del calendario (data di inizio, data di fine, data stato e data corrente) e i campi non pianificati (nome del progetto, descrizione e proprietario). 
     
-- Ridurre il numero di Web part e i campi personalizzati visualizzati in ogni PDP. Creare un PDP dedicato con gli unici campi che richiedono l'aggiornamento per migliorare carico e risparmiare tempo. 
+- Ridurre il numero di Web part e dei campi personalizzati visualizzati su ogni PDP. Creare un PDP dedicato con gli unici campi che richiedono l'aggiornamento per migliorare il carico e risparmiare tempo. 
     
-- Quando si utilizza OData per i report, limitare la quantità di dati che si esegue una query in fase di esecuzione utilizzando il filtro sul lato server.
+- Quando si utilizza OData per la creazione di report, limitare la quantità di dati che si esegue una query in fase di esecuzione utilizzando il filtro sul server.
     
-Per ulteriori informazioni, vedere [Project Online ottimizzare le prestazioni](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c).
+Per ulteriori informazioni, vedere [Tune Project online performance](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c).
   
-## <a name="whats-the-best-way-to-report-problems"></a>Che cos'è il modo migliore per segnalare i problemi?
+## <a name="whats-the-best-way-to-report-problems"></a>Qual è il modo migliore per segnalare i problemi?
 
-Microsoft continuamente consente di migliorare le prestazioni complessive di Office 365 per il monitoraggio della rete, misurazione della larghezza di banda e latenza miglioramento pagina carico tempo, riducendo i/o su disco, riprogettazione pagine per l'utilizzo minimo strategia scaricare, aggiungere componenti hardware per data center e aggiunta di più data center. Per ulteriori informazioni su come verificare lo stato corrente e reporting problemi, vedere [visualizzare lo stato dei servizi](https://office.microsoft.com/en-us/office365-suite-help/view-the-status-of-your-services-HA102817837.aspx).
+Microsoft migliora continuamente le prestazioni complessive di Office 365 monitorando la rete, misurando la larghezza di banda e la latenza, migliorando il tempo di caricamento delle pagine, riducendo le operazioni di i/O su disco, riprogettando le Pages per utilizzare la strategia di download minima, aggiungendo l'hardware Aggiunta di più data center. Per ulteriori informazioni su come verificare lo stato corrente e i problemi relativi alle relazioni, vedere [visualizzare lo stato dei servizi](https://office.microsoft.com/en-us/office365-suite-help/view-the-status-of-your-services-HA102817837.aspx).
   
 ## <a name="see-also"></a>Vedere anche
 
 [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](network-planning-and-performance.md)
   
-[Corso di Microsoft Virtual Academy, ovvero la gestione delle prestazioni di Office 365](https://blogs.office.com/2014/12/03/microsoft-virtual-academy-course-office-365-performance-management/)
+[Corso Microsoft Virtual Academy-gestione delle prestazioni di Office 365](https://blogs.office.com/2014/12/03/microsoft-virtual-academy-course-office-365-performance-management/)
   
 [Gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

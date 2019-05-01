@@ -1,5 +1,5 @@
 ---
-title: Diagramma accessibile - funzionalità di integrazione tra prodotti Microsoft Office Server
+title: Diagramma accessibile-integrazione delle funzionalità tra i prodotti di Microsoft Office Server
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,35 +10,35 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: In questo articolo è una versione testo accessibile del diagramma denominato funzionalità di integrazione tra Office prodotti Server Microsoft - Server di SharePoint, Exchange Server, Lync Server e Office Online.
+description: Questo articolo è una versione di testo accessibile del diagramma denominato funzionalità di integrazione tra i prodotti Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e Office Online.
 ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17504219"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487812"
 ---
-# <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagramma accessibile - funzionalità di integrazione tra prodotti Microsoft Office Server
+# <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagramma accessibile-integrazione delle funzionalità tra i prodotti di Microsoft Office Server
 
-**Riepilogo:** In questo articolo è una versione testo accessibile del diagramma denominato funzionalità di integrazione tra Office prodotti Server Microsoft - Server di SharePoint, Exchange Server, Lync Server e Office Online.
+**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato funzionalità di integrazione tra i prodotti Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e Office Online.
   
-Nel diagramma include diverse schede, come indicato dei titoli delle sezioni del documento.
+Il diagramma è costituito da diverse schede, come indicato dai titoli di sezione di questo documento.
   
-## <a name="introduction-tab"></a>Scheda introduzione
+## <a name="introduction-tab"></a>Scheda Introduzione
 
-### <a name="illustrations-for-cross-server-features"></a>Nelle figure per le funzionalità tra server
+### <a name="illustrations-for-cross-server-features"></a>Illustrazioni per le funzionalità tra server
 
-In questo file di Visio (o più pagine file PDF) ha nove schede, ognuno con informazioni e un diagramma sulla caratteristica che funzioni correttamente sui prodotti Server di Office.
+Questo file di Visio (o file PDF MultiPage) contiene nove schede, ognuna delle quali contiene informazioni e un diagramma su una funzionalità che è compatibile con i prodotti di Office Server.
   
 Le caratteristiche e le schede sono: 
   
 - Introduzione
     
-- Autenticazione tra server 
+- Autenticazione da server a server 
     
-- Foto dell'utente ad alta risoluzione 
+- Foto degli utenti ad alta risoluzione 
     
-- Archivio unico dei contatti 
+- Archivio contatti unificato 
     
 - Cassette postali del sito 
     
@@ -48,37 +48,37 @@ Le caratteristiche e le schede sono:
     
 - Segreteria telefonica
     
-- Registrazioni delle riunioni 
+- Registrazioni di riunioni 
     
-Invia commenti su questo soluzione o richieste per le soluzioni aggiuntive a MODAContent@microsoft.com. 
+Inviare commenti e suggerimenti su questa soluzione o richieste per soluzioni aggiuntive a MODAContent@microsoft.com. 
   
 ### <a name="tips-for-printing"></a>Suggerimenti per la stampa
 
-Le dimensioni della pagina di ogni scheda sono 22 x 17 pollici (su un quarto della dimensione di un diagramma ANSI ingegneristiche). In questa pagina è possibile stampare su due pollici fogli dimensioni tabloid (11 x 17)) o quattro fogli formato lettera (11 x 8,5 pollici). Se si dispone di un plotter, è possibile stampare questi poster nelle dimensioni massime. Se non disponi di plotter, utilizzare la procedura seguente per stampare su carta di dimensioni ridotte. 
+Le dimensioni della pagina di ogni scheda sono 22 x 17 pollici (circa un quarto delle dimensioni di un diagramma ANSI Engineering). Questa pagina può essere stampata su due fogli di dimensioni di un formato tabloid (17 x 11 cm) o su quattro fogli di dimensioni lettera (11 x 8,5 pollici). Se si dispone di un plotter, è possibile stampare tali poster a grandezza intera. Se non si dispone di un plotter, eseguire la procedura seguente per stampare su carta di dimensioni più piccole. 
   
- **Stampare poster su carta di dimensioni ridotte**
+ **Stampare poster su carta di dimensioni più piccole**
   
 1. Aprire il poster in Visio. 
     
-2. Scegliere **Imposta pagina**dal menu **File** . 
+2. Scegliere **Imposta pagina** dal menu **File**. 
     
-3. Nella scheda **Imposta stampante** selezionare il formato della carta che su cui stampare nella sezione **formato carta stampante** .
+3. Nella sezione **Formato carta stampante** della scheda **Imposta stampante** selezionare il formato carta su cui stampare.
     
-4. Nella sezione **proporzioni** della scheda **Imposta stampante** fare clic su **Adatta a**e quindi specificare **1 pagine di larghezza per 1 di altezza**. 
+4. Nella sezione **Proporzioni** della scheda **Imposta stampante** fare clic su **Adatta a** e quindi specificare **1 pagine di larghezza per 1 di altezza**. 
     
-5. Nella scheda **Dimensioni** fare clic su **Adatta a contenuto disegno**e quindi fare clic su **OK**. 
+5. Nella scheda **Dimensioni** fare clic su **Adatta a contenuto del disegno** e quindi su **OK**. 
     
-6. Scegliere **Stampa**dal menu **File** . 
+6. Scegliere **Apri** dal menu **File**. 
     
-### <a name="microsoft-tags-and-qr-codes"></a>I tag di Microsoft e i codici QR
+### <a name="microsoft-tags-and-qr-codes"></a>Tag Microsoft e codici QR
 
-Utilizzare il telefono di Windows o scaricare un lettore codice QR per ottenere ulteriori informazioni sull'implementazione di queste funzionalità. 
+Utilizzare Windows Phone o scaricare un lettore di codici QR per ottenere ulteriori informazioni sull'implementazione di queste funzionalità. 
   
 ### <a name="cross-server-features"></a>Funzionalità tra server
 
-Una tabella mostra le funzionalità e i prodotti Server di Office che li utilizzano. Le funzionalità sono: 
+In una tabella sono riportate le caratteristiche e i prodotti di Office Server che li utilizzano. Le caratteristiche sono: 
   
-Autenticazione da server a server. Questa caratteristica è applicabile a: 
+Autenticazione da server a server. Questa funzionalità è applicabile a: 
   
 - SharePoint 
     
@@ -86,9 +86,9 @@ Autenticazione da server a server. Questa caratteristica è applicabile a:
     
 - Lync
     
-- Office Online (precedentemente noto come Office Web Apps) 
+- Office Online (in precedenza noto come Office Web Apps) 
     
-Foto dell'utente ad alta risoluzione. Questa caratteristica è applicabile a: 
+Foto degli utenti ad alta risoluzione. Questa funzionalità è applicabile a: 
   
 - SharePoint
     
@@ -96,33 +96,33 @@ Foto dell'utente ad alta risoluzione. Questa caratteristica è applicabile a:
     
 - Lync
     
-Archivio contatto unificato. Questa caratteristica è applicabile a: 
+Archivio contatti unificato. Questa funzionalità è applicabile a: 
   
 - Exchange
     
 - Lync
     
-Cassette postali del sito. Questa caratteristica è applicabile a: 
+Cassette postali del sito. Questa funzionalità è applicabile a: 
   
 - SharePoint
     
 - Exchange
     
-Sincronizzazione delle attività di Exchange. Questa caratteristica è applicabile a: 
+Sincronizzazione delle attività di Exchange. Questa funzionalità è applicabile a: 
   
 - SharePoint
     
 - Exchange
     
-Presenza di Lync in Outlook Web App. Questa caratteristica è applicabile a: 
+Presenza di Lync in Outlook Web App. Questa funzionalità è applicabile a: 
   
 - Lync
     
-Segreteria telefonica. Questa caratteristica è applicabile a: 
+Voicemail. Questa funzionalità è applicabile a: 
   
 - Lync
     
-Registrazioni delle riunioni. Questa caratteristica è applicabile a: 
+Registrazioni di riunioni. Questa funzionalità è applicabile a: 
   
 - SharePoint
     
@@ -130,15 +130,15 @@ Registrazioni delle riunioni. Questa caratteristica è applicabile a:
     
 ### <a name="office-web-apps-server"></a>server Office Web Apps
 
-Office Web Apps Server è un prodotto di server di Office che sono disponibili file basato su browser visualizzazione e modifica di servizi per i file di Office. Office Web Apps Server funziona con prodotti e servizi che supportano il Web Application Open piattaforma interfaccia protocollo WOPI (). Questi prodotti, noti come host, includono SharePoint 2013, Lync Server 2013 ed Exchange Server 2013. 
+Il server Office Web Apps è un prodotto server di Office che offre servizi di visualizzazione e modifica dei file basati su browser per i file di Office. Il server Office Web Apps funziona con prodotti e servizi che supportano l'applicazione Web WOPI (Open Platform Interface Protocol). Questi prodotti, noti come host, includono SharePoint 2013, Lync Server 2013 e Exchange Server 2013. 
   
-Per ulteriori informazioni su Office Web Apps Server, scaricare il poster semplificato distribuzione di Office Web Apps in http://aka.ms/OfficeWebAppsPoster. 
+Per ulteriori informazioni sul server Office Web Apps, scaricare il poster semplificato per la distribuzione di http://aka.ms/OfficeWebAppsPosterOffice Web Apps all'indirizzo. 
   
-## <a name="server-to-server-authentication-tab"></a>Scheda autenticazione da server a Server
+## <a name="server-to-server-authentication-tab"></a>Scheda autenticazione da server a server
 
-### <a name="servicing-resource-requests-between-servers"></a>Per gestire le richieste di risorse tra server
+### <a name="servicing-resource-requests-between-servers"></a>Manutenzione delle richieste di risorse tra server
 
-Autenticazione da server a server è una nuova funzionalità di Exchange Server 2013, Lync Server 2013 e SharePoint Server 2013 che consente a un server per richiedere le risorse di un altro server per conto di un utente. Questa funzionalità utilizza il settore standard Open Authorization (OAuth) 2.0 protocollo. Autenticazione da server a server consente a nuovi scenari, ad esempio eDiscovery, foto dell'utente ad alta risoluzione e cassette postali del sito. 
+L'autenticazione da server a server è una nuova funzionalità di Exchange Server 2013, Lync Server 2013 e SharePoint Server 2013 che consente a un server di richiedere risorse di un altro server per conto di un utente. Questa caratteristica utilizza il protocollo OAuth (Industry Standard Open Authorization) 2,0. L'autenticazione da server a server consente di effettuare molti nuovi scenari, ad esempio eDiscovery, foto utente ad alta risoluzione e cassette postali del sito. 
   
  **Prodotti server**
   
@@ -150,47 +150,47 @@ Autenticazione da server a server è una nuova funzionalità di Exchange Server 
     
 ### <a name="server-to-server-trust-relationships"></a>Relazioni di trust da server a server
 
-Per un server di servizi di una richiesta di risorse in arrivo, è necessario considerare attendibile il server effettua la richiesta. Per stabilire una relazione di trust, è necessario configurare le relazioni di trust da server a server. 
+Affinché un server disponga di una richiesta di risorse in arrivo, deve considerare attendibile il server che effettua la richiesta. Per stabilire questa relazione di trust, è necessario configurare le relazioni di trust tra server. 
   
-Una relazione di trust da server a server è un modo. Quando si configura un server che esegue SharePoint 2013 affinché consideri attendibile un server Exchange 2013, il server che esegue SharePoint Server trust tra le richieste di risorse del server di Exchange, ma il server di Exchange non è considerata attendibile dal server che esegue le richieste di risorse SharePoint Server. Per una facile integrazione, è necessario stabilire relazioni di trust bidirezionale. 
+Una relazione di trust da server a server è unidirezionale. Quando si configura un server che esegue SharePoint 2013 in modo che consideri attendibile un server Exchange 2013, il server che esegue SharePoint Server considera attendibili le richieste di risorse dal server Exchange, ma il server di Exchange non considera attendibili le richieste di risorse dal server in esecuzione SharePoint Server. Per una perfetta integrazione, è necessario stabilire trust bidirezionali. 
   
-Nella figura relativa Mostra le relazioni di trust da server a server che stabilite come trust bidirezionale. Le relazioni di trust bidirezionale riportate sono compresi tra un Server di Exchange, SharePoint Server e Lync Server. Ogni tipo di server dispone di un trust bidirezionale con ognuno dei due server. 
+Nel diagramma di accompagnamento vengono riportate le relazioni di trust da server a server stabilite come trust bidirezionali. Le relazioni di trust bidirezionali visualizzate sono tra un server di Exchange, un server di SharePoint e un server Lync. Ogni tipo di server dispone di una relazione di trust bidirezionale con ciascuno degli altri due server. 
   
 ### <a name="configuration"></a>Configurazione
 
-Per configurare una relazione di trust di autenticazione da server a server, è necessario aggiungere un nuovo emittente di token di sicurezza trusted corrispondente a ogni server che invia le richieste di risorse per conto di utenti. Ogni tipo di server dispone di un endpoint dei metadati JavaScript Object Notation (JSON) contenente le informazioni di configurazione e una parte pubblica del certificato di firma il token di accesso. Parte della configurazione di una relazione di trust di autenticazione da server a server è che specifica l'endpoint dei metadati JSON di altro server. 
+Per configurare l'attendibilità dell'autenticazione da server a server, è necessario aggiungere una nuova autorità emittente di token di sicurezza attendibile corrispondente a ogni server che invia le richieste di risorse per conto di utenti. Ogni tipo di server dispone di un endpoint di metadati JSON (JavaScript Object Notation) che contiene informazioni di configurazione e una parte pubblica del certificato di firma del token di accesso. Parte della configurazione di un trust di autenticazione da server a server specifica l'endpoint dei metadati JSON dell'altro server. 
   
-Nella tabella seguente sono elencati l'endpoint dei metadati JSON per ogni server. Nella tabella seguente: 
+Nella tabella seguente sono elencati gli endpoint dei metadati JSON per ogni server. Nella tabella sono riportati i seguenti: 
   
-- Un server di Exchange con un endpoint dei metadati JSON https://<server name>/autodiscover/metadata/json/1 
+- Un server di Exchange con un endpoint dei metadati JSON<server name>di https:///autodiscover/Metadata/JSON/1 
     
-- Lync server con un endpoint dei metadati JSON https://<server name>/metadata/json/1 
+- Un server Lync con un endpoint dei metadati JSON di<server name>https:///Metadata/JSON/1 
     
-- SharePoint server con un endpoint dei metadati JSON https://<web app name>/_layouts/15/metadata/json/1 
+- Un server di SharePoint con un endpoint dei metadati JSON<web app name>di https:///_layouts/15/Metadata/JSON/1 
     
-### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>Esempio: Come server a server l'autenticazione funzioni eDiscovery tra Exchange e SharePoint
+### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>Esempio: modalità di funzionamento dell'autenticazione da server a server per eDiscovery tra SharePoint ed Exchange
 
-In questo esempio, il server Exchange 2013 è stato configurato per considerare attendibile il server che esegue SharePoint Server con una relazione di trust da server a server. Un centro eDiscovery sul server che esegue SharePoint Server è stato configurato in modo da includere dati nelle cassette postali in Exchange server. 
+In questo esempio, il server Exchange 2013 è stato configurato in modo da considerare attendibile il server che esegue SharePoint Server con una relazione di trust da server a server. Un centro eDiscovery nel server che esegue SharePoint Server è stato configurato in modo da includere i dati nelle cassette postali sul server Exchange. 
   
-Le richieste di risorse in un altro server sotto forma di token di accesso vengono inviate al servizio server web nel server di destinazione. 
+Le richieste di risorse in un altro server assumono il formato dei token di accesso inviati al servizio server Web nel server di destinazione. 
   
-Nella figura relativa viene illustrato come le query e il token di accesso di viaggio tra i due server. 
+Nel diagramma seguente viene illustrato il modo in cui le query e i token di accesso passano tra i due server. 
   
-1. Un amministratore di eDiscovery invia una query nel server che esegue SharePoint Server in cui vengono indicate le risorse in un server Exchange. 
+1. Un amministratore di eDiscovery invia una query al server che esegue SharePoint Server che include risorse in un server di Exchange. 
     
-2. Il server che esegue SharePoint Server genera un token di accesso, che identifica l'utente e la risorsa richiesta. 
+2. Il server che esegue SharePoint Server genera un token di accesso, identificando l'utente e la risorsa richiesta. 
     
 3. Il server che esegue SharePoint Server invia il token di accesso al server di Exchange. 
     
-4. Exchange server convalida il token di accesso e invia i risultati delle query. 
+4. Il server di Exchange convalida il token di accesso e invia i risultati della query. 
     
-5. Il server che esegue SharePoint Server invia i risultati delle query eDiscovery sul computer dell'amministratore eDiscovery. 
+5. Il server che esegue SharePoint Server invia i risultati della query eDiscovery al computer dell'amministratore di eDiscovery. 
     
-## <a name="high-resolution-user-photos-tab"></a>Scheda foto dell'utente ad alta risoluzione
+## <a name="high-resolution-user-photos-tab"></a>Scheda foto utente ad alta risoluzione
 
-### <a name="larger-profile-picture-used-across-all-office-applications"></a>Immagine del profilo di dimensioni maggiori utilizzate in tutte le applicazioni di Office
+### <a name="larger-profile-picture-used-across-all-office-applications"></a>Immagine del profilo più grande utilizzata in tutte le applicazioni di Office
 
-Utilizzando la scheda **foto dell'utente ad alta risoluzione** , è possibile memorizzare le foto fino a 648 x 648 pixel di Exchange 2013. È quindi possibile accedervi dalle applicazioni client, inclusi Outlook, Outlook Web App, SharePoint 2013, Lync 2013 e i client di posta elettronica mobile. Una foto a bassa risoluzione inoltre viene archiviata in Active Directory.
+Utilizzando la scheda **foto utente ad alta risoluzione** , è possibile archiviare le foto fino a 648 x 648 pixel in Exchange 2013. È quindi possibile accedere alle applicazioni client, tra cui Outlook, Outlook Web App, SharePoint 2013, Lync 2013 e client di posta elettronica per dispositivi mobili. Una foto a bassa risoluzione viene anche conservata in Active Directory.
   
  **Prodotti server**
   
@@ -212,62 +212,62 @@ Configurazione dell'autenticazione da server a server:
   
 - Avviare e configurare il servizio di individuazione automatica di Exchange 2013. 
     
-- Impostare gli URL esterni di SharePoint. Si tratta utilizza SharePoint URL quando si accede mediante le foto di Exchange. 
+- Impostare gli URL esterni per SharePoint. Questo è l'URL utilizzato da SharePoint quando accede alle foto in Exchange. 
     
  **In SharePoint Server 2013**
   
-- Installare l'API gestita Exchange Web Services. Utilizzare GacUtil per caricare il Microsoft.Exchange.WebServices.dll nella Global Assembly Cache (GAC). 
+- Installare l'API gestita di servizi Web Exchange. Utilizzare GacUtil per caricare Microsoft. Exchange. WebServices. dll nella global assembly cache (GAC). 
     
-- Utilizzare Windows PowerShell per configurare la sincronizzazione di foto con Exchange. 
+- Utilizzare Windows PowerShell per configurare la sincronizzazione delle foto con Exchange. 
     
- **Modalità di funzionamento**
+ **Come funziona**
   
-- Gli utenti di caricare una foto utilizzando la pagina My Account in Outlook Web App (OWA) o le impostazioni degli account in Outlook 2013. 
+- Gli utenti caricano una foto utilizzando la pagina account personale in Outlook Web App (OWA) o le impostazioni dell'account in Outlook 2013. 
     
-- Exchange ridimensiona automaticamente l'immagine per l'utilizzo di dominio Active Directory (48 x 48 pixel) o da altre applicazioni di Office, tra cui OWA e il client di Outlook 2013 (96 x 96 pixel). 
+- Exchange consente di ridimensionare automaticamente l'immagine per l'utilizzo da servizi di dominio Active Directory (48 x 48 pixel) o da altre applicazioni di Office, tra cui OWA e il client Outlook 2013 (96 x 96 pixel). 
     
-Gli utenti possono caricare le immagini degli intervalli di pixel dal 48 × 48 a × 648 648. Le immagini vengono ridimensionata: 
+Gli utenti possono caricare immagini con intervalli di pixel compresi tra 48 × 48 e 648 × 648. Le foto vengono ridimensionate: 
   
-- 64 x 64 viene utilizzato per l'anteprima di Active Directory. 
+- 64 × 64 viene utilizzato per l'anteprima di Active Directory. 
     
 - 96 × 96 viene utilizzato per Outlook Web Access, Outlook, Lync Web Access e Lync 2013. 
     
-- 648 × 648 viene utilizzato per Lync 2013 e Lync Web Access. 
+- 648 × 648 viene utilizzato per Lync Web Access e Lync 2013. 
     
-Ad esempio gli script di configurazione, vedere articoli del blog di Jens portacampioni Rasmussen: 
+Ad esempio, gli script di configurazione, vedere gli articoli del Blog di Jens Trier Rasmussen: 
   
-- Utilizzo di Exchange 2013 foto ad alta risoluzione da SharePoint Server 2013 (http://aka.ms/Bhr4d2) 
+- Utilizzo di foto ad alta risoluzione di Exchange 2013 da SharePoint Server 2013 (http://aka.ms/Bhr4d2) 
     
 - Integrazione di Exchange 2013 e Lync Server 2013 (http://aka.ms/Pn08dw) 
     
-Il poster contiene inoltre i codici QR per questi due articoli del blog. 
+Il poster contiene anche codici QR per questi due articoli del Blog. 
   
-Nella figura relativa viene illustrato come è possibile aggiornare una foto da utilizzare per tutte le applicazioni di Office. 
+Nel diagramma seguente viene illustrato il modo in cui un utente può aggiornare una foto da utilizzare in tutte le applicazioni di Office. 
   
-1. Quando si aggiorna foto in Outlook, SharePoint o in Lync. Dopo aver aggiornato, viene utilizzata la foto aggiornata in tutte le applicazioni di Office. 
+1. Foto degli aggiornamenti degli utenti in Outlook, SharePoint o Lync. Dopo l'aggiornamento, la foto aggiornata viene utilizzata in tutte le applicazioni di Office. 
     
-2. L'utente può utilizzare diversi metodi per l'aggiornamento di una foto: 
+2. L'utente può utilizzare diversi modi per aggiornare una foto: 
     
 3. 
-  - Client di Outlook o Outlook Web App (OWA) tramite la porta HTTP 443 a un server Accesso Client di Exchange. 
+  - Client Outlook o Outlook Web App (OWA) tramite la porta HTTP 443 a un server Accesso client di Exchange. 
     
-  - Sito personale tramite HTTP o HTTPS a un Server di SharePoint. SharePoint memorizza nella cache l'utente nel database del sito personale (Https:443). Impostare le interfacce di server di SharePoint con il Server accesso Client di Exchange utilizzando gli URL esterni di Exchange. 
+  - My Site over HTTP or HTTPS to a SharePoint Server. SharePoint memorizza nella cache l'utente nel database di siti personali (https: 443). Il server di SharePoint si interfaccia con il server Accesso client di Exchange utilizzando gli URL esterni impostati in Exchange. 
     
-  - Client Lync 2013, che gestisce una GetConnection con Exchange server per ottenere gli aggiornamenti foto (richiesta HTTPS Get - 443). 
+  - Client Lync 2013, che mantiene una GetConnection con il server di Exchange per ottenere gli aggiornamenti delle foto (richiesta HTTPS Get-443). 
     
-4. Il Server accesso Client di Exchange si connette al Server di cassette postali di Exchange mediante le comunicazioni interne tra Exchange. 
+4. Il server Accesso client di Exchange si connette al server cassette postali di Exchange utilizzando la comunicazione interna di Exchange. 
     
-5. Il Server cassette postali di Exchange utilizza Exchange 2013 per estrarre foto ad alta risoluzione utente di dominio Active Directory (LDAP:389). 
+5. Il server cassette postali di Exchange utilizza Exchange 2013 per spingere la foto utente ad alta risoluzione su servizi di dominio Active Directory (LDAP: 389). 
     
-6. La foto è sincronizzata da servizi di dominio Active Directory (AD DS) per Lync indirizzo Book Service (ABS) in Lync Server in modo che i client legacy possono ottenere la stessa foto (LDAP:389). 
+6. La foto viene sincronizzata da servizi di dominio Active Directory (AD DS) al servizio Rubrica Lync (ABS) del server Lync in modo che i client legacy possano ottenere la stessa foto (LDAP: 389). 
     
-7. Il client Lync Legacy ora dispone dell'accesso per le foto. 
+7. Il client Lync Legacy ha ora accesso alla foto. 
     
-## <a name="unified-contact-store-tab"></a>Scheda archivio contatti unificata
+## <a name="unified-contact-store-tab"></a>Scheda archivio contatti unificato
 
-### <a name="exchange-2013-is-the-contact-store-for-all-office-applications"></a>Exchange 2013 sia l'archivio contatti per tutte le applicazioni di Office
+### <a name="exchange-2013-is-the-contact-store-for-all-office-applications"></a>Exchange 2013 è l'archivio contatti per tutte le applicazioni di Office
 
-Archivio contatti unificato (UCS) offre un'esperienza coerente contatto tra prodotti Microsoft Office. Gli utenti archiviare delle informazioni sul contatti nella cassetta postale di Exchange 2013. Le stesse informazioni di contatto sono disponibile a livello globale in Lync, Exchange, Outlook e Outlook Web App. 
+L'archivio contatti unificato (UCS) fornisce un'esperienza di contatto coerente tra i prodotti Microsoft Office. Gli utenti archiviano tutte le informazioni di contatto nella loro cassetta postale di Exchange 2013. Le stesse informazioni di contatto sono disponibili a livello globale in Lync, Exchange, Outlook e Outlook Web App. 
   
  **Prodotti server**
   
@@ -279,45 +279,45 @@ Archivio contatti unificato (UCS) offre un'esperienza coerente contatto tra prod
   
 - Configurare l'autenticazione da server a server tra Exchange Server 2013 e Lync Server 2013. 
     
-- In Lync 2013, attivare il criterio di archivio contatti unificato (abilitati per impostazione predefinita). 
+- In Lync 2013, abilitare il criterio dell'archivio contatti unificato (il valore predefinito è abilitato). 
     
-Ad esempio gli script di configurazione, vedere articolo di blog del Jens portacampioni Rasmussen: 
+Ad esempio, gli script di configurazione, vedere l'articolo del Blog di Jens Trier Rasmussen: 
   
 - Integrazione di Exchange 2013 e Lync Server 2013 (http://aka.ms/Oyg7fh) 
     
- **Modalità di funzionamento**
+ **Come funziona**
   
-- Contatti di Lync per un utente vengono eseguita la migrazione a Exchange 2013 automaticamente quando l'utente si disconnette con Lync 2013. 
+- I contatti di Lync per un utente vengono migrati automaticamente a Exchange 2013 quando l'utente esegue l'accesso con Lync 2013. 
     
-- Gli utenti possono accedere e gestire i contatti di Lync di Lync 2013, Outlook 2013 o Outlook Web Access. 
+- Gli utenti possono accedere e gestire i propri contatti di Lync da Lync 2013, Outlook 2013 o Outlook Web Access. 
     
-Contatti dell'utente vengono migrati automaticamente al server Exchange 2013 quando l'utente: 
+I contatti di un utente vengono migrati automaticamente al server Exchange 2013 quando l'utente: 
   
-1. È stato assegnato un criterio Servizi utente che ha UcsAllowed impostata su **True**. 
+1. È stato assegnato un criterio dei servizi utente che dispone di UcsAllowed impostato impostato su **true**. 
     
-2. È stato eseguito il provisioning con una cassetta postale di Exchange 2013 e ha effettuato l'accesso alla cassetta postale di almeno una volta. 
+2. È stato effettuato il provisioning con una cassetta postale di Exchange 2013 e ha eseguito l'accesso almeno una volta alla cassetta postale. 
     
-3. Esegue l'accesso a Lync utilizzando un rich client Lync 2013. 
+3. Consente di eseguire l'accesso a Lync utilizzando un rich client Lync 2013. 
     
-Esegue l'accesso a Lync utilizzando un rich client Lync 2013. 
+Consente di eseguire l'accesso a Lync utilizzando un rich client Lync 2013. 
   
-1. Esegue l'accesso alle cassette postali di Exchange 2013 sul Server accesso Client di Exchange, utilizzando un client Outlook o Outlook Web App (OWA) su HTTPS/443. Il Server cassette postali di Exchange utilizza le comunicazioni interne tra Exchange per comunicare con il Server accesso Client di Exchange. 
+1. Accede alla propria cassetta postale di Exchange 2013 sul server Accesso client di Exchange, utilizzando un client di Outlook o Outlook Web App (OWA) su HTTPS/443. Il server cassette postali di Exchange utilizza una comunicazione interna di Exchange per comunicare con il server Accesso client di Exchange. 
     
-2. Esegue l'accesso a Lync 2013. Il client Lync contatti Lync server tramite SIP/5061 HTTPS/443. 
+2. Consente di eseguire l'accesso a Lync 2013. Il client Lync Contatta il server Lync su SIP/5061 HTTPS/443. 
     
-3. Il client Lync indica a Lync server che l'utente è abilitato per l'archivio contatti unificato tramite SIP/5061. 
+3. Il client Lync indica al server Lync che l'utente è abilitato per l'archivio contatti unificato su SIP/5061. 
     
-4. Lync server utilizza il servizio di archiviazione di Lync per eseguire la migrazione dei contatti dell'utente per Exchange 2013 sul Server accesso Client di Exchange. 
+4. Lync Server utilizza il servizio di archiviazione di Lync per eseguire la migrazione dei contatti dell'utente a Exchange 2013 sul server Accesso client di Exchange. 
     
-5. È necessario disconnettersi e accedere a Lync 2013 le modifiche visualizzare (non illustrato nella figura). 
+5. L'utente deve disconnettersi e accedere a Lync 2013 affinché le modifiche vengano visualizzate (non mostrate nel diagramma). 
     
-6. Dopo la migrazione, il client Lync utilizza i servizi Web Exchange (EWS) da leggere e gestire i contatti di Lync. 
+6. Dopo la migrazione, il client Lync utilizza servizi Web Exchange (EWS) per leggere e gestire i contatti di Lync. 
     
-## <a name="site-mailboxes-tab"></a>Scheda di cassette postali del sito
+## <a name="site-mailboxes-tab"></a>Scheda cassette postali del sito
 
-### <a name="a-central-filing-cabinet-for-emails-and-documents"></a>Un archivio centrale per documenti e messaggi di posta elettronica
+### <a name="a-central-filing-cabinet-for-emails-and-documents"></a>Archivio centrale di archiviazione per messaggi di posta elettronica e documenti
 
-Cassette postali del sito di migliorare la collaborazione e produttività degli utenti che consenta l'accesso ai documenti memorizzati in SharePoint e posta elettronica la memorizzazione dei messaggi di Exchange utilizzando la stessa interfaccia client. 
+Le cassette postali del sito migliorano la collaborazione e la produttività degli utenti consentendo l'accesso ai documenti archiviati in SharePoint e i messaggi di posta elettronica archiviati in Exchange utilizzando la stessa interfaccia client. 
   
  **Prodotti server**
   
@@ -331,71 +331,71 @@ Configurazione di SharePoint:
   
 - Configurare la sincronizzazione dei profili utente nella farm di SharePoint. 
     
-- Configurare l'applicazione del servizio Gestione applicazioni della farm di SharePoint. 
+- Configurare l'applicazione del servizio di gestione delle app nella farm di SharePoint. 
     
-- Configurare SSL per l'area predefinita per supportare l'autenticazione da server a server. 
+- Configurare SSL per l'area predefinita per il supporto dell'autenticazione da server a server. 
     
-- Installare l'API per servizi Web Exchange su server che eseguono SharePoint 2013. 
+- Installare l'API EWS nei server che eseguono SharePoint 2013. 
     
-- Stabilire le autorizzazioni di protezione e il servizio OAuth su server che eseguono SharePoint 2013. 
+- Stabilire la relazione di trust OAuth e le autorizzazioni del servizio nei server che eseguono SharePoint 2013. 
     
 Configurazione di Exchange: 
   
-- Stabilire le autorizzazioni di protezione e il servizio OAuth sui server Exchange. 
+- Stabilire la relazione di trust OAuth e le autorizzazioni del servizio nei server Exchange. 
     
-- Creare criteri di provisioning delle cassette postali del sito. 
+- Creare il criterio di provisioning delle cassette postali del sito. 
     
-- Configurare prefisso del nome della cassetta postale del sito (facoltativo). 
+- Configurare il prefisso del nome della cassetta postale del sito (facoltativo). 
     
- **Modalità di funzionamento**
+ **Come funziona**
   
-Una cassetta postale del sito a livello funzionale è costituita da archiviazione appartenenze, i proprietari e membri, condivise del sito di SharePoint 2013 attraverso una cassetta postale di Exchange 2013 per i messaggi di posta elettronica e un sito di SharePoint 2013 per i documenti e un'interfaccia di gestione in grado di risolvere il provisioning di tipo ed è ciclo di vita. 
+Una cassetta postale del sito è composta dall'appartenenza al sito di SharePoint 2013 (proprietari e membri), da un archivio condiviso tramite una cassetta postale di Exchange 2013 per i messaggi di posta elettronica e un sito di SharePoint 2013 per i documenti e da un'interfaccia di gestione per i requisiti di provisioning e ciclo di vita. 
   
-Nella figura relativa Mostra agli utenti con cassette postali del sito per accedere ai messaggi di posta elettronica in Outlook e documenti archiviati in SharePoint. 
+Il diagramma di accompagnamento Visualizza gli utenti che utilizzano le cassette postali del sito per accedere ai messaggi di posta elettronica in Outlook e documenti archiviati in SharePoint. 
   
-1. Gli utenti possono accedere a documenti del sito del team di SharePoint tramite le cassette postali del sito in Outlook 2013 Pro Plus. 
+1. Gli utenti possono accedere ai documenti del sito del team di SharePoint tramite le cassette postali del sito in Outlook 2013 Pro Plus. 
     
-2. Gli utenti possono inoltre leggere messaggi di posta elettronica in arrivo della cassetta postale del sito del sito del team di SharePoint. 
+2. Gli utenti possono anche leggere messaggi di posta elettronica nella cassetta postale del sito del team di SharePoint. 
     
-3. Messaggi di posta elettronica vengono archiviati in cassette postali del sito nel server di Exchange. 
+3. I messaggi di posta elettronica vengono archiviati nelle cassette postali dei server Exchange. 
     
-4. Documenti vengono archiviati nelle cassette postali del sito in SharePoint Server. 
+4. I documenti vengono archiviati nelle cassette postali del sito nei server di SharePoint. 
     
-5. I metadati del contenuto nel sito di SharePoint viene sincronizzato con Exchange utilizzando la rappresentazione REST (State Transfer) API tramite HTTPS. 
+5. I metadati del contenuto del sito di SharePoint vengono sincronizzati con Exchange utilizzando l'API REST (rappresentation State Transfer) su HTTPS. 
     
 ### <a name="provisioning-and-management"></a>Provisioning e gestione
 
-Cassette postali del sito sono stato eseguito il provisioning e gestite tramite SharePoint 2013. Sono disponibili le funzionalità di SharePoint e di Exchange per il provisioning e gestione. 
+Le cassette postali del sito sono provisioning e gestite tramite SharePoint 2013. Sono disponibili funzionalità di SharePoint e di Exchange per il provisioning e la gestione. 
   
 #### <a name="sharepoint"></a>SharePoint
 
-Un diagramma vengono illustrati i componenti SharePoint necessari per eseguire il provisioning delle cassette postali del sito, tra cui: 
+Un diagramma illustra i componenti di SharePoint necessari per eseguire il provisioning della cassetta postale del sito, tra cui: 
   
 - App della cassetta postale del sito 
     
-- I proprietari e i membri del sito del team 
+- Membri e proprietari del sito del team 
     
-- Ciclo di vita del sito del team 
+- Criteri del ciclo di vita del sito del team 
     
-Per eseguire il provisioning di una nuova cassetta postale del sito, installare l'app cassetta postale del sito nel sito del team e accedere almeno una volta l'app. 
+Per eseguire il provisioning di una nuova cassetta postale del sito, installare l'app cassetta postale del sito nel sito del team e accedere all'app almeno una volta. 
   
-L'appartenenza al sito di SharePoint determina che dispongono dell'accesso alla cassetta postale del sito. 
+L'appartenenza al sito di SharePoint determina chi ha accesso alla cassetta postale del sito. 
   
-Conservazione delle cassette postali del sito segue lo stesso criterio del ciclo di vita configurato per il sito di SharePoint a cui è associato. 
+La conservazione della cassetta postale del sito segue gli stessi criteri del ciclo di vita configurati per il sito di SharePoint a cui è associato. 
   
 #### <a name="exchange"></a>Exchange
 
-La figura che mostra il criterio di Provisioning delle cassette postali del sito. Questo è il componente di Exchange che è necessario effettuare il provisioning delle cassette postali del sito.
+Nel diagramma viene illustrato il criterio di provisioning delle cassette postali del sito. Si tratta del componente di Exchange necessario per eseguire il provisioning della cassetta postale del sito.
   
-Sul server di Exchange, è possibile definire criteri di Provisioning delle cassette postali di siti. Questi criteri determinano email caratteristiche inviati e ricevuti dalla cassetta postale del sito, la dimensione della cassetta postale del sito nel Server Exchange e consentono di definire un prefisso per gli indirizzi di posta elettronica della cassetta postale del sito. 
+Sul server Exchange, è possibile definire i criteri di provisioning delle cassette postali del sito. Questi criteri regolano le caratteristiche di posta elettronica inviate e ricevute dalla cassetta postale del sito, le dimensioni della cassetta postale del sito sul server Exchange e consentono di definire un prefisso per gli indirizzi di posta elettronica delle cassette postali del sito. 
   
-Per le distribuzioni di Exchange locale, è inoltre necessario periodicamente cercare ed eliminare le cassette postali del rito contrassegnate per l'eliminazione tramite i criteri del ciclo di vita di SharePoint. 
+Per le distribuzioni di Exchange locali, è inoltre necessario cercare ed eliminare periodicamente le cassette postali del sito contrassegnate per l'eliminazione tramite il criterio del ciclo di vita di SharePoint. 
   
-## <a name="exchange-task-synchronization-tab"></a>Scheda Exchange Task Synchronization
+## <a name="exchange-task-synchronization-tab"></a>Scheda sincronizzazione attività di Exchange
 
 ### <a name="synchronizing-tasks-among-sharepoint-server-2013-project-server-2013-and-exchange-server-2013"></a>Sincronizzazione delle attività tra SharePoint Server 2013, Project Server 2013 ed Exchange Server 2013
 
-Utilizzando Exchange Task Synchronization, è possibile sincronizzare le attività di SharePoint Server 2013 e Project Server 2013 con Exchange Server 2013. Gli utenti possono visualizzare e gestire le attività di Outlook 2013 o nel proprio sito personale. 
+Se si utilizza la sincronizzazione delle attività di Exchange, è possibile sincronizzare le attività in SharePoint Server 2013 e Project Server 2013 con Exchange Server 2013. Gli utenti possono visualizzare e gestire le proprie attività in Outlook 2013 o nel proprio sito personale. 
   
  **Prodotti server**
   
@@ -409,103 +409,103 @@ Utilizzando Exchange Task Synchronization, è possibile sincronizzare le attivit
   
 In Exchange 2013: 
   
-- Configurare l'autorizzazione di protezione e il servizio OAuth. 
+- Configurare la relazione di trust OAuth e l'autorizzazione del servizio. 
     
 In SharePoint Server 2013: 
   
-- Applicazione di servizio profili utente. 
+- Applicazione del servizio profili utente. 
     
-- Utilizzo dell'applicazione di servizio di gestione. 
+- Applicazione del servizio di gestione del lavoro. 
     
-- Ricerca (è richiesto per le attività di SharePoint Server 2013). Configurare le ricerche per indicizzazione continue e ricerche per indicizzazione incrementali. 
+- Search (necessario per le attività in SharePoint Server 2013). Configurare le ricerche per indicizzazione continue e le ricerche per indicizzazione incrementali. 
     
-- È necessario Secure Sockets Layer (SSL). 
+- Secure Sockets Layer (SSL) è obbligatorio. 
     
 - Gli utenti dispongono di siti personali esistenti. 
     
-- Applicazione di servizio (aggregazione attività di Project Server) di Project. 
+- Applicazione di servizio di Project (per aggregare le attività di Project Server). 
     
-- API per servizi Web Exchange in ogni server front-end web (si tratta di un file separato .exe scaricabile che deve essere installato). 
+- API di servizi Web Exchange in ogni server Web front-end (è un file. exe separato da scaricare che deve essere installato). 
     
 In Project Server 2013: 
   
 - Creare siti di applicazioni Web di Project. 
     
- **Modalità di funzionamento**
+ **Come funziona**
   
-Quando la visualizzazione di attività personali nei siti personali viene aperto o aggiornamento: 
+Quando la visualizzazione attività personali nei siti personali viene aperta o aggiornata: 
   
-- Consente di sincronizzare l'applicazione di servizio di gestione del lavoro tra SharePoint Server e Project Server. 
+- L'applicazione del servizio di gestione del lavoro esegue la sincronizzazione tra SharePoint Server e Project Server. 
     
-- Processo Timer di sincronizzazione di Exchange chiama l'applicazione di servizio di gestione del lavoro per sincronizzare le attività con Exchange Server 2013. 
+- Il processo timer di sincronizzazione di Exchange chiama l'applicazione del servizio di gestione del lavoro per sincronizzare le attività con Exchange Server 2013. 
     
-- La pagina attività personali nei siti personali viene aggiornata. 
+- La pagina attività personali dei siti personali viene aggiornata. 
     
-Quando viene eseguito il processo Timer sincronizzazione di Exchange: 
+Quando viene eseguito il processo timer di sincronizzazione di Exchange: 
   
-- Consente di sincronizzare l'applicazione di servizio di gestione del lavoro tra SharePoint Server, Project Server ed Exchange Server. 
+- L'applicazione del servizio di gestione del lavoro è sincronizzata tra SharePoint Server, Project Server e Exchange Server. 
     
-Nella figura relativa viene illustrata l'interazione tra SharePoint Server 2013, Exchange Server 2013, Outlook 2013 e Project Server 2013. 
+Nel diagramma seguente viene illustrata l'interazione tra SharePoint Server 2013, Exchange Server 2013, Outlook 2013 e Project Server 2013. 
   
 SharePoint Server 2013 esegue i processi e le applicazioni seguenti: 
   
-- Applicazione di servizio profili utente. 
+- Applicazione del servizio profili utente. 
     
 - Applicazione del servizio di ricerca. 
     
-- Utilizzo dell'applicazione di servizio di gestione, descritta di seguito. 
+- Applicazione del servizio di gestione del lavoro, descritta di seguito. 
     
-- Processo Timer di sincronizzazione di Exchange, i quali è descritto di seguito. 
+- Processo timer di sincronizzazione di Exchange, descritta di seguito. 
     
-- SharePoint Server 2013 contiene altri siti e siti personali dell'utente e viene eseguito numerose attività degli utenti. 
+- SharePoint Server 2013 contiene il sito personale e gli altri siti dell'utente ed esegue numerose attività utente. 
     
-- SharePoint Server 2013 include un indice di ricerca. 
+- SharePoint Server 2013 contiene un indice di ricerca. 
     
-Exchange Server 2013 sono incluse le operazioni seguenti: 
+Exchange Server 2013 contiene gli elementi seguenti: 
   
-- Database di Exchange con informazioni di posta elettronica utente 
+- Database di Exchange con informazioni sulla posta elettronica degli utenti 
     
 - Attività di sincronizzazione 
     
-Outlook 2013 vengono illustrate le seguenti: 
+In Outlook 2013 sono riportati gli elementi seguenti: 
   
-- Gli utenti possono optare per sincronizzare le attività, viene descritto di seguito. 
+- Gli utenti possono scegliere di sincronizzare le attività descritte di seguito. 
     
-- Gli utenti possono visualizzare e modificare le attività di Outlook. 
+- Gli utenti possono visualizzare e modificare le attività in Outlook. 
     
-Project Server 2013 viene illustrato di seguito: 
+In Project Server 2013 sono riportati gli elementi seguenti: 
   
 - Database di Project 
     
-- Siti di Project Web Access con le attività 
+- Siti di Project Web Access con attività 
     
-L'applicazione di servizio di gestione del lavoro: 
+Applicazione del servizio di gestione del lavoro: 
   
-- Consente di aggregare le attività da elenchi delle attività e gli elenchi SharePoint (non sincronizzare le attività con Exchange Server). 
+- Aggrega le attività degli elenchi di SharePoint e degli elenchi di attività di progetto (non sincronizza le attività con Exchange Server). 
     
-- Sincronizza quando gli utenti visualizzano dei siti personali. 
+- Sincronizza quando gli utenti visualizzano il proprio sito personale. 
     
-- Gestisce l'elenco di utenti che hanno consenso esplicito. 
+- Gestisce l'elenco degli utenti che scelgono l'opt-in. 
     
-- Sincronizza il batch successivo di utenti. 
+- Sincronizza il prossimo batch di utenti. 
     
-Il processo Timer di sincronizzazione di Exchange: 
+Processo timer di sincronizzazione di Exchange: 
   
-- Determina il batch successivo di utenti. 
+- Determina il prossimo batch di utenti. 
     
-- Assicura che tutti gli utenti sono costantemente sincronizzati. 
+- Garantisce che tutti gli utenti siano costantemente sincronizzati. 
     
-- Avvia la chiamata all'applicazione di servizio di gestione del lavoro per Sincronizza attività con Exchange Server per gli utenti che si sono scelto di solo. 
+- Avvia la chiamata all'applicazione del servizio di gestione del lavoro per sincronizzare le attività con Exchange Server per gli utenti che sono solo opt-in. 
     
-Consentire 
+Opt-in 
   
-- Gli utenti devono optare per sincronizzare le attività di Exchange con i siti personali o le attività di SharePoint Server 2013 e Project Server 2013 con Exchange Server 2013. 
+- Gli utenti devono scegliere di eseguire la sincronizzazione delle attività di Exchange con il proprio sito personale o con le attività di SharePoint Server 2013 e Project Server 2013 con Exchange Server 2013. 
     
-## <a name="lync-presence-in-office-2013-outlook-web-app-and-sharepoint-server-tab"></a>Presenza di Lync nella scheda Office 2013, Outlook Web App e SharePoint Server
+## <a name="lync-presence-in-office-2013-outlook-web-app-and-sharepoint-server-tab"></a>Presenza di Lync in Office 2013, Outlook Web App e scheda di SharePoint Server
 
 ### <a name="lync-server-as-the-authoritative-source-of-presence-information"></a>Lync Server come origine autorevole delle informazioni sulla presenza
 
-Utilizzando le informazioni sulla presenza di Lync, è possibile creare una visualizzazione coerenza delle informazioni sulla presenza tra Lync, Outlook e SharePoint. Informazioni sulla presenza di query Outlook direttamente da Lync in locale è installato nello stesso computer di Outlook. Quando gli utenti visualizzano le informazioni sulla presenza in SharePoint Server, le informazioni sulla presenza viene eseguita una query da Lync sul computer locale.
+Utilizzando le informazioni sulla presenza di Lync, è possibile disporre di una visualizzazione coerente delle informazioni sulla presenza tra Lync, Outlook e SharePoint. Outlook esegue una query sulle informazioni sulla presenza direttamente da Lync, che è installato localmente nello stesso computer di Outlook. Quando gli utenti visualizzano le informazioni sulla presenza in SharePoint Server, le informazioni sulla presenza vengono interrogate da Lync sul computer locale.
   
 Prodotti client: 
   
@@ -521,45 +521,45 @@ Prodotti server:
     
 - SharePoint Server 2013 
     
- **Modalità di funzionamento**
+ **Come funziona**
   
-Purché nel computer locale dell'utente è installato Lync 2013, Outlook e SharePoint Server automaticamente visualizzare le informazioni sulla presenza degli utenti. 
+Fintanto che Lync 2013 è installato nel computer locale dell'utente, Outlook e SharePoint Server visualizzano automaticamente le informazioni sulla presenza degli utenti. 
   
-Per gli utenti di Outlook Web App, accesso client di Exchange esegue una query sulla presenza per conto dell'utente. 
+Per gli utenti di Outlook Web App, Exchange CAS interroga la presenza per conto dell'utente. 
   
- **Esistono due diagrammi corrispondente**
+ **Sono disponibili due diagrammi di accompagnamento**
   
-Il primo viene illustrato come un utente accede a Outlook Web App e quindi scambiare query di Lync Server per informazioni sulla presenza. 
+Il primo indica come un utente accede a Outlook Web App e quindi esegue una query su Lync Server per visualizzare le informazioni sulla presenza. 
   
-1. L'utente accede a Outlook Web App. Il computer client accede il Server accesso Client di Exchange (CAS) su HTTPS/443 e anche chiama il Server cassette postali di Exchange con una comunicazione di Exchange interna. 
+1. L'utente accede a Outlook Web App. Il computer client accede al server Accesso client (CAS) di Exchange su HTTPS/443 e chiama anche il server cassette postali di Exchange con una comunicazione interna di Exchange. 
     
-2. L'utente accede al proprio Exchange 2013 delle cassette postali e accesso client di Exchange invia query Lync Server per informazioni sulla presenza tramite SIP / MTLS:5061. 
+2. L'utente accede alla propria cassetta postale di Exchange 2013 e Exchange CAS esegue una query sul server Lync per le informazioni sulla presenza su SIP/MTLS: 5061. 
     
 Per ulteriori informazioni, vedere [integrazione di Microsoft Lync Server 2013 e Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/?LinkId=313522).
   
-Il secondo diagramma mostra come Outlook e SharePoint Server utilizzare Lync 2013 per visualizzare le informazioni sulla presenza degli utenti. 
+Nel secondo diagramma viene illustrato il modo in cui Outlook e SharePoint Server utilizzano Lync 2013 per visualizzare le informazioni sulla presenza degli utenti. 
   
-1. L'utente accede a Lync 2013 su SIP / TLS:5061 che chiama Lync server. 
+1. L'utente accede a Lync 2013 su SIP/TLS: 5061, che chiama il server Lync. 
     
-2. R. l'utente esegue l'accesso alle cassette postali di Exchange 2013 tramite Outlook in Office 2013. Il computer client accede il Server accesso Client di Exchange (CAS) su HTTPS/443 e chiama inoltre il Server cassette postali di Exchange con una comunicazione di Exchange interna. 
+2. R. L'utente accede alla propria cassetta postale di Exchange 2013 tramite Outlook in Office 2013. Il computer client accede al server Accesso client (CAS) di Exchange su HTTPS/443 e chiama anche il server cassette postali di Exchange con una comunicazione interna di Exchange. 
     
-3. R. outlook chiama Lync installato nello stesso computer di Outlook per recuperare le informazioni sulla presenza. 
+3. R. Outlook chiama Lync installato nello stesso computer di Outlook per recuperare le informazioni sulla presenza. 
     
-4. B. l'utente si connette a SharePoint MySite su HTTP o HTTPS, che chiama il server di SharePoint. 
+4. B. L'utente si connette a un sito Web di SharePoint tramite HTTP o HTTPS, che chiama il server di SharePoint. 
     
-5. B. Internet Explorer chiama Lync è installato nello stesso computer del browser, per recuperare le informazioni sulla presenza. 
+5. B. Internet Explorer chiama Lync, che è installato nello stesso computer del browser, per recuperare le informazioni sulla presenza. 
     
 ## <a name="voicemail-tab"></a>Scheda segreteria telefonica
 
-### <a name="exchange-um-is-the-voicemail-system-for-lync-server"></a>Messaggistica unificata di Exchange è il sistema di segreteria telefonica per Lync Server
+### <a name="exchange-um-is-the-voicemail-system-for-lync-server"></a>La messaggistica UNIFICAta di Exchange è il sistema di segreteria telefonica per Lync Server
 
-Segreteria telefonica consente a un chiamante di lasciare un messaggio vocale per gli utenti di Lync con Exchange messaggistica unificata (UM). 
+La segreteria telefonica consente a un chiamante di lasciare una segreteria telefonica agli utenti di Lync utilizzando la messaggistica unificata di Exchange. 
   
 Prodotti client: 
   
 - Lync 2013 
     
-- Dispositivo di rete PSTN (PBX, cellulare, POTS) 
+- Dispositivo PSTN (PBX, Cellular, POTS) 
     
 Prodotti server: 
   
@@ -567,43 +567,43 @@ Prodotti server:
     
 - Exchange Server 2013 
     
- **Modalità di funzionamento**
+ **Come funziona**
   
-Quando una chiamata non riceve risposta dal destinatario della chiamata in qualsiasi endpoint attivi del destinatario della chiamata, Lync Server indirizza la chiamata alla segreteria telefonica nella messaggistica unificata di Exchange (ad esempio Server di cassette postali di Exchange). 
+Quando una chiamata non riceve una risposta dal destinatario della chiamata su uno degli endpoint attivi del destinatario della chiamata, Lync Server instrada la chiamata alla segreteria telefonica della messaggistica UNIFICAta di Exchange (ad esempio, il server cassette postali di Exchange). 
   
-Nella figura relativa viene illustrato il routing delle chiamate per due scenari: 
+Nel diagramma di accompagnamento viene illustrato il routing delle chiamate per due scenari: 
   
-- Il chiamante viene inviata una chiamata con Lync 2013. 
+- Il chiamante avvia una chiamata utilizzando Lync 2013. 
     
-- Il chiamante viene inviata una chiamata con dispositivi PSTN (PBX, cellulare, POTS). 
+- Il chiamante avvia una chiamata utilizzando un dispositivo PSTN (PBX, Cellular, POTS). 
     
-Il chiamante avvia una chiamata con Lync 2013: 
+Il chiamante avvia una chiamata utilizzando Lync 2013: 
   
-1. Avvia il chiamante A una chiamata al destinatario della chiamata utilizzando Lync 2013. La chiamata viene avviata e inviata a Lync Server. 
+1. Il chiamante A avvia una chiamata al destinatario della chiamata utilizzando Lync 2013. La chiamata viene avviata e inviata al server Lync. 
     
-2. La chiamata viene indirizzata al server principale del destinatario della chiamata Lync. 
+2. La chiamata viene instradata al Lync Home Server del destinatario della chiamata. 
     
-3. Lync Server chiama endpoint attivi del destinatario della chiamata in Lync 2013. 
+3. Lync Server squilla gli endpoint attivi del destinatario su Lync 2013. 
     
-4. Quando la chiamata non riceve risposta, la chiamata viene indirizzata alla segreteria telefonica (messaggistica unificata di Exchange) in CAS di Exchange (router di chiamata). 
+4. Quando la chiamata non è stata risolta, la chiamata viene instradata alla segreteria telefonica (messaggistica UNIFICAta di Exchange) sul CAS di Exchange (router di chiamata). 
     
-Il chiamante avvia una chiamata con Lync 2013: 
+Il chiamante avvia una chiamata utilizzando Lync 2013: 
   
-1. Chiamante B compone il numero di telefono del destinatario della chiamata tramite PSTN. 
+1. Il chiamante B compone il numero di telefono del destinatario della chiamata tramite PSTN. 
     
-2. La chiamata PSTN viene instradata dal gateway IP di Mediation Server, ovvero un server Lync. 
+2. La chiamata PSTN viene instradata dal gateway IP al Mediation Server, che è un server Lync. 
     
-3. Il server Mediation server routs la chiamata al server principale del destinatario della chiamata Lync. 
+3. Il Mediation Server instrada la chiamata al Lync Home Server del destinatario della chiamata. 
     
-4. Lync Server chiama endpoint attivi del destinatario della chiamata in Lync 2013. 
+4. Lync Server squilla gli endpoint attivi del destinatario su Lync 2013. 
     
-5. Quando la chiamata non riceve risposta, la chiamata viene indirizzata alla segreteria telefonica (messaggistica unificata di Exchange) in CAS di Exchange (router di chiamata). 
+5. Quando la chiamata non è stata risolta, la chiamata viene instradata alla segreteria telefonica (messaggistica UNIFICAta di Exchange) sul CAS di Exchange (router di chiamata). 
     
-## <a name="meeting-recordings-tab"></a>Scheda registrazioni di riunioni
+## <a name="meeting-recordings-tab"></a>Scheda registrazioni riunioni
 
 ### <a name="publish-your-meeting-recordings-on-your-sharepoint-team-site"></a>Pubblicare le registrazioni delle riunioni nel sito del team di SharePoint
 
-Registrazioni delle riunioni sono un componente principale delle comunicazioni unificate. Un modo efficace per condividere le registrazioni delle riunioni consiste nell'utilizzare raccolte di risorse di SharePoint per i siti del team per archiviare le registrazioni delle riunioni. 
+Le registrazioni delle riunioni sono un componente di base delle comunicazioni unificate. Un buon modo per condividere le registrazioni delle riunioni consiste nell'utilizzare le raccolte di risorse di SharePoint nei siti del team per archiviare le registrazioni delle riunioni. 
   
 Prodotti client: 
   
@@ -615,78 +615,78 @@ Prodotti server:
     
 - SharePoint 2013 
     
-Prerequisiti: 
+Prerequisiti 
   
-- Lync 2013, Registrazione delle riunioni è una funzionalità sul lato client in Lync 2013. 
+- Lync 2013: la registrazione delle riunioni è una funzionalità sul fianco client in Lync 2013. 
     
-- SharePoint 2013, È necessario il sito del team in cui si desidera archiviare le registrazioni delle riunioni già configurate e in esecuzione. 
+- SharePoint 2013: si dispone del sito del team in cui si desidera archiviare le registrazioni delle riunioni già in esecuzione. 
     
- **Ciò che viene registrato?**
+ **Cosa viene registrato?**
   
-Di seguito viene registrati in un file MP4 durante la riunione (ogni punto preceduto da un'icona che rappresenta il tipo di registrazione): 
+Le seguenti sono registrate in un file MP4 durante la riunione (ogni punto elenco è preceduto da un'icona che rappresenta il tipo di registrazione): 
   
-- Tutti i file audio 
+- Tutti gli audio 
     
-- Il video, se utilizzato, di altoparlante attivo 
+- Video di un altoparlante attivo (se utilizzato) 
     
-- Video panorama (se utilizzato) 
+- Video panoramico (se utilizzato) 
     
 - Tutto il contenuto presentato 
     
-- I messaggi immediati * 
+- Messaggi istantanei * 
     
-* Solo i messaggi immediati all'interno della riunione sono inclusi. Qualsiasi messaggistica peer-to-peer tra i partecipanti alla riunione non fa parte della riunione e pertanto non viene acquisita. 
+* Sono inclusi solo i messaggi istantanei all'interno della riunione. Qualsiasi messaggistica peer-to-peer tra partecipanti alla riunione non fa parte della riunione e pertanto non viene acquisita. 
   
-Il poster include due diagrammi per due diversi scenari: 
+Nel poster sono disponibili due diagrammi per due diversi scenari: 
   
-- Preparazione per la pubblicazione di registrazioni delle riunioni 
+- Preparazione per la pubblicazione di registrazioni di riunioni 
     
-- Registrazione e la pubblicazione di una riunione utilizzando il client Lync 
+- Registrazione e pubblicazione di una riunione tramite il client Lync 
     
-### <a name="preparing-for-publishing-meeting-recordings"></a>Preparazione per la pubblicazione di registrazioni delle riunioni
+### <a name="preparing-for-publishing-meeting-recordings"></a>Preparazione per la pubblicazione di registrazioni di riunioni
 
-Il diagramma mostra SharePoint Server 2013 con un sito del Team, l'interfaccia di amministrazione centrale e Server Internet Information Services (IIS). 
+Nel diagramma viene mostrato SharePoint Server 2013 con un sito del team, un centro di amministrazione centrale e un server Internet Information Services (IIS). 
   
-Contiene il sito del Team: 
+Il sito del team contiene: 
   
-- Le risorse della libreria app. 
+- App della raccolta di risorse. 
     
-- Raccolta di risorse riunioni, ai team membri inviano registrazioni delle riunioni. 
+- Raccolta di risorse per riunioni, a cui i membri del team inviano le registrazioni delle riunioni. 
     
-L'interfaccia di amministrazione centrale contiene impostazioni generali applicazione web. 
+L'interfaccia di amministrazione centrale contiene le impostazioni generali dell'applicazione Web. 
   
-Il Server IIS contiene le impostazioni di IIS. 
+Il server IIS contiene le impostazioni di IIS. 
   
-Preparazione per la pubblicazione di registrazioni delle riunioni: 
+Per preparare le registrazioni delle riunioni di pubblicazione: 
   
-1. Nel sito del team di SharePoint, aggiungere la raccolta di risorse App facoltativamente, se non è possibile caricare registrazioni delle riunioni a causa di limitazioni relative alle dimensioni o timeout connessioni, eseguire i passaggi aggiuntivi 2 e 3. 
+1. Nel sito del team di SharePoint, aggiungere l'app della raccolta di risorse. Facoltativamente, se non è possibile caricare le registrazioni delle riunioni a causa di restrizioni di dimensione o timeout di connessione, eseguire i passaggi aggiuntivi 2 e 3. 
     
-2. In Amministrazione centrale SharePoint, modificare l'impostazione dimensioni massime di caricamento per l'applicazione web che contiene la raccolta siti del team. 
+2. In Amministrazione centrale SharePoint modificare l'impostazione dimensioni massime caricamento per l'applicazione Web in cui è contenuta la raccolta siti del team. 
     
-3. Nelle impostazioni del Server IIS, aumentare il timeout della connessione di IIS per il sito web che contiene la raccolta siti del team. 
+3. Nelle impostazioni del server IIS, aumentare il timeout di connessione IIS per il sito Web che contiene la raccolta siti del team. 
     
- **Raccolte risorse digitali**
+ **Raccolte di risorse digitali**
   
-Le raccolte risorse digitali sono raccolte di risorse contenenti video che determinati negativamente sulle prestazioni e capacità. Per ulteriori informazioni, vedere Pianificare le raccolte risorse digitali in SharePoint Server 2013 che si trovano in http://aka.ms/O1vq5w. Il poster include inoltre un codice QR per accedere a queste informazioni. 
+Le raccolte di risorse digitali sono raccolte di risorse che contengono video con determinate caratteristiche di capacità e prestazioni. Per ulteriori informazioni, vedere Plan Digital Asset Libraries in SharePoint Server 2013 located http://aka.ms/O1vq5wat. Nel poster è incluso anche un codice QR che consente di accedere a queste informazioni. 
   
-### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Registrazione e la pubblicazione di una riunione utilizzando il client Lync
+### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Registrazione e pubblicazione di una riunione tramite il client Lync
 
-Il diagramma mostra un utente utilizzando Lync di partecipare a una riunione. La riunione viene registrata con il client di Lync, che consente di creare un file MP4 con il contenuto delle riunioni. La registrazione MP4 viene salvata per la cartella delle registrazioni Lync nel computer in uso. È possibile spostare la registrazione MP4 per la raccolta di risorse di riunioni, da cui è possibile inserirlo in un wiki, pagina di SharePoint o blog. 
+Nel diagramma viene mostrato un utente che utilizza Lync per partecipare a una riunione. La riunione viene registrata utilizzando il client Lync, che crea un file MP4 con il contenuto della riunione. La registrazione MP4 viene salvata nella cartella di registrazione di Lync nel computer in uso. È possibile spostare la registrazione MP4 nella raccolta di risorse per le riunioni, dalla quale è possibile inserirla in un wiki, in una pagina di SharePoint o in un blog. 
   
  **Per registrare e pubblicare una riunione utilizzando il client Lync**
   
-1. Avviare la registrazione della riunione mediante il client Lync. 
+1. Avviare la registrazione della riunione utilizzando il client Lync. 
     
-2. Il contenuto delle riunioni è registrato in un file MP4 durante la riunione. 
+2. Il contenuto della riunione viene registrato in un file MP4 durante la riunione. 
     
-3. Dopo la conclusione alla riunione, la registrazione MP4 visualizzata nella cartella di registrazione nel computer in uso (c:\\utenti\\<username>\\video\\registrazioni di Lync). Facoltativamente, è possibile personalizzare la registrazione di riunioni tramite app Lync Recording Manager Ottiene installato con client Lync. 
+3. Dopo la conclusione della riunione, la registrazione MP4 viene visualizzata nella cartella di registrazione nel computer in uso (\\C\\<username>\\:\\utenti video di Lync Recordings). Facoltativamente, è possibile personalizzare la registrazione delle riunioni utilizzando l'app Lync Recording Manager che viene installata con il client Lync. 
     
-4. Trascinare e rilasciare la riunione registrando nella raccolta di risorse di SharePoint. 
+4. Trascinare e rilasciare la registrazione riunione nella raccolta di risorse di SharePoint. 
     
-5. Facoltativo: Dopo la registrazione è nella raccolta di risorse, è possibile inserire in tutte le pagine di SharePoint. Per ulteriori informazioni su questo passaggio, vedere la voce del blog di Office 365, creare e pubblicare i video di formazione con SharePoint e Lync Online, che si trova in http://aka.ms/R61q35. 
+5. Facoltativo: una volta che la registrazione è presente nella raccolta di risorse, è possibile inserirla in una pagina di SharePoint. Per ulteriori informazioni su questo passaggio, vedere l'articolo relativo al Blog di Office 365, creare e pubblicare video per la formazione con SharePoint e http://aka.ms/R61q35Lync Online, in cui si trova. 
     
- **Anteprime video**
+ **Miniature video**
   
-Anteprime video migliorano l'aspetto della raccolta risorse. Per ulteriori informazioni sulla creazione di miniature per le registrazioni delle riunioni, vedere Capture o modificare un'anteprima del video, disponibile all'indirizzo http://aka.ms/Kupj85. Il poster include inoltre un codice QR per accedere a queste informazioni. 
+Le miniature video migliorano l'aspetto della raccolta di risorse. Per ulteriori informazioni sulla creazione di anteprime per le registrazioni delle riunioni, vedere acquisizione o modifica di una miniatura http://aka.ms/Kupj85video, in cui si trova. Nel poster è incluso anche un codice QR che consente di accedere a queste informazioni. 
   
 

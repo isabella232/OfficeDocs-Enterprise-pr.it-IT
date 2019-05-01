@@ -14,93 +14,93 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
-description: ExpressRoute per Office 365 offre un percorso alternativo di routing per raggiungere molti servizi di Office 365 senza la necessità di tutto il traffico in uscita a internet. Anche se la connessione a internet per Office 365 è comunque necessario, la route specifiche Microsoft annuncia tramite BGP alla propria rete rendere il diretto ExpressRoute a commutazione di circuito preferito a meno che non sono disponibili altre configurazioni di rete. Le tre aree comuni che è possibile configurare per gestire questo routing sono prefix filtro, sicurezza e conformità.
+description: ExpressRoute per Office 365 offre un percorso di routing alternativo per raggiungere numerosi servizi di Office 365 senza che sia necessario che tutto il traffico venga in uscita su Internet. Anche se la connessione Internet a Office 365 è ancora necessaria, le route specifiche che Microsoft annuncia tramite BGP alla rete rendono il circuito ExpressRoute diretto preferito, a meno che non siano presenti altre configurazioni della rete. Le tre aree comuni che possono essere configurate per gestire questo percorso includono il filtro, la sicurezza e la conformità del prefisso.
 ms.openlocfilehash: 5345c4067f4ecf9b1b1bc1a0ad20d6e1f5273f65
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541176"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487732"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestione di ExpressRoute per la connettività di Office 365
 
-ExpressRoute per Office 365 offre un percorso alternativo di routing per raggiungere molti servizi di Office 365 senza la necessità di tutto il traffico in uscita a internet. Anche se la connessione a internet per Office 365 è comunque necessario, la route specifiche Microsoft annuncia tramite BGP alla propria rete rendere il diretto ExpressRoute a commutazione di circuito preferito a meno che non sono disponibili altre configurazioni di rete. Le tre aree comuni che è possibile configurare per gestire questo routing sono prefix filtro, sicurezza e conformità.
+ExpressRoute per Office 365 offre un percorso di routing alternativo per raggiungere numerosi servizi di Office 365 senza che sia necessario che tutto il traffico venga in uscita su Internet. Anche se la connessione Internet a Office 365 è ancora necessaria, le route specifiche che Microsoft annuncia tramite BGP alla rete rendono il circuito ExpressRoute diretto preferito, a meno che non siano presenti altre configurazioni della rete. Le tre aree comuni che possono essere configurate per gestire questo percorso includono il filtro, la sicurezza e la conformità del prefisso.
   
 > [!NOTE]
-> Microsoft ha modificato come viene esaminato il dominio di routing Peering Microsoft per Azure ExpressRoute. Avvio del 31 luglio 2017, tutti i clienti di Azure ExpressRoute consentono Peering Microsoft direttamente dalla console di amministrazione di Azure o tramite PowerShell. Dopo aver attivato Microsoft Peering, ai clienti possono creare filtri di route per la ricezione di annunci route BGP per le applicazioni di Engagement per i clienti Dynamics 365 (precedentemente note come CRM Online). Clienti che necessitano di ExpressRoute Azure per Office 365 devono ottenere la revisione da Microsoft poter creare filtri di route per Office 365. Rivolgersi al team di Account Microsoft per informazioni su come richiedere un esame per l'attivazione di Office 365 ExpressRoute. Sottoscrizioni non autorizzate tenta di creare filtri di route per Office 365 verranno visualizzato un [messaggio di errore](https://support.microsoft.com/kb/3181709)
+> Microsoft ha modificato il modo in cui viene esaminato il dominio di routing peering di Microsoft per Azure ExpressRoute. A partire dal 31 luglio 2017, tutti i clienti di ExpressRoute di Azure possono abilitare Microsoft peering direttamente dalla console di amministrazione di Azure o tramite PowerShell. Dopo aver abilitato il peering Microsoft, tutti i clienti possono creare filtri di route per ricevere gli annunci route BGP per le applicazioni di impegno dei clienti Dynamics 365 (in precedenza noto come CRM online). I clienti che hanno bisogno di Azure ExpressRoute per Office 365 devono ottenere la revisione da Microsoft prima che possano creare filtri di route per Office 365. Contattare il team dell'account Microsoft per informazioni su come richiedere una revisione per l'abilitazione di Office 365 ExpressRoute. Gli abbonamenti non autorizzati che tentano di creare filtri di route per Office 365 riceveranno un [messaggio di errore](https://support.microsoft.com/kb/3181709)
   
-## <a name="prefix-filtering"></a>Prefix filtro
+## <a name="prefix-filtering"></a>Filtro prefisso
 
-È consigliabile che i clienti accettano tutte le route BGP come annunciato da Microsoft, le route fornite seguito da un processo di revisione e convalida rigoroso la rimozione di eventuali vantaggi per il controllo è stato aggiunto. ExpressRoute disponibili in modo nativo i controlli consigliati, ad esempio la proprietà prefix IP, l'integrità e scala - Nessuna route in ingresso filtro sul lato cliente.
+Microsoft consiglia ai clienti di accettare tutte le rotte BGP come pubblicizzate da Microsoft, le rotte fornite subiscono una rigorosa revisione e processo di convalida, eliminando eventuali vantaggi per il controllo aggiunto. ExpressRoute offre in modo nativo i controlli consigliati, come la proprietà del prefisso IP, l'integrità e la scalabilità, senza filtraggio delle route in ingresso sul fianco del cliente.
   
-Se si richiedono ulteriori operazioni di convalida di proprietà route tra ExpressRoute peering pubblica, è possibile controllare le route annunciate rispetto all'elenco di tutti i prefissi IPv4 e IPv6 che rappresentano [gli intervalli IP pubblici di Microsoft](https://www.microsoft.com/download/details.aspx?id=53602). Questi intervalli coprire lo spazio degli indirizzi Microsoft completa e modificare raramente, una gamma di intervalli per filtrare i dati affidabile che offre anche protezione aggiuntiva per i clienti preoccupate non Microsoft proprietà route nella loro ambiente. Nel caso in cui viene apportata una modifica, verranno eseguita in 1st del mese e il numero di versione nella sezione **Dettagli** della pagina Modifica ogni volta che viene aggiornato il file.
+Se si richiede ulteriore convalida della proprietà di route tra peering pubblico di ExpressRoute, è possibile controllare le route pubblicizzate con l'elenco di tutti i prefissi IP IPv4 e IPv6 che rappresentano [gli intervalli di indirizzi IP pubblici di Microsoft](https://www.microsoft.com/download/details.aspx?id=53602). Questi intervalli coprono lo spazio di indirizzi Microsoft completo e cambiano di frequente, fornendo un set affidabile di intervalli da filtrare in base al quale viene fornito ulteriore protezione per i clienti che sono preoccupati per le rotte di proprietà non Microsoft che fuoriescono nel loro ambiente. Nel caso in cui si verifichi una modifica, verrà eseguito il 1 ° mese e il numero di versione nella sezione **Dettagli** della pagina cambia ogni volta che il file verrà aggiornato.
   
-Esistono diversi motivi per evitare l'utilizzo degli [intervalli di indirizzi IP e gli URL di Office 365](https://aka.ms/o365endpoints) per generare gli elenchi del filtro prefisso. Tra cui:
+Esistono diversi motivi per evitare l'utilizzo degli [URL di Office 365 e degli intervalli di indirizzi IP](https://aka.ms/o365endpoints) per la generazione di elenchi di filtri di prefisso. Sono inclusi gli elementi seguenti:
   
-- I prefissi di Office 365 IP seguito da una quantità elevata di modifiche regolarmente.
+- I prefissi IP di Office 365 subiscono molte modifiche su base frequente.
 
-- L'URL di Office 365 e l'indirizzo IP intervalli sono progettati per la gestione dei firewall consente elenchi e infrastruttura Proxy, non il routing.
+- Gli intervalli di indirizzi IP e URL di Office 365 sono stati creati per la gestione del firewall Consenti elenchi e infrastruttura proxy, non per il routing.
 
-- Gli intervalli di indirizzi IP e gli URL di Office 365 non comprendono altri servizi Microsoft che possono essere nell'ambito per le connessioni ExpressRoute.
+- Gli intervalli di indirizzi IP e URL di Office 365 non riguardano altri servizi Microsoft che possono essere nell'ambito delle connessioni di ExpressRoute.
 
 | |
-|**Opzione**|**Complessità**|**Modificare il controllo**|
+|**Opzione**|**Complessità**|**Controllo delle modifiche**|
 |:-----|:-----|:-----|
-|Accetta tutte le route di Microsoft  <br/> |**Basso:** Clienti si basa sulle controlli di Microsoft per verificare che tutte le route in modo corretto e di proprietà.  <br/> |Nessuno  <br/> |
-|Microsoft Filter proprietà supernets  <br/> |**Medio:** Clienti implementa prefisso riepilogati gli elenchi di filtro per consentire solo Microsoft proprietà route.  <br/> |I clienti devono verificare che gli aggiornamenti poco frequenti siano presenti in filtri di route.  <br/> |
-|Filtrare gli intervalli IP di Office 365  <br/> [!CAUTION] Non consigliato
-|**Elevata:** Clienti di filtrare route basate sulla prefissi di Office 365 IP definiti.  <br/> |I clienti devono implementare un processo di gestione delle modifiche affidabile per gli aggiornamenti mensili.  <br/> [!CAUTION]Questa soluzione richiede modifiche significative in corso. Modifiche non è implementate in tempo will, potrebbe risultare un'interruzione del servizio.   |
+|Accettare tutte le route Microsoft  <br/> |**Bassa:** Il cliente si affida ai controlli Microsoft per garantire che tutte le rotte siano possedute correttamente.  <br/> |Nessuna  <br/> |
+|Filtrare le reti supernets di Microsoft  <br/> |**Medium:** Il cliente implementa gli elenchi di filtri dei prefissi riepilogati per consentire solo le route di proprietà di Microsoft.  <br/> |I clienti devono garantire che gli aggiornamenti non frequenti vengano riflessi nei filtri route.  <br/> |
+|Filtrare gli intervalli di indirizzi IP di Office 365  <br/> [!CAUTION] Non consigliato
+|**Alta:** Le route dei filtri dei clienti si basano sui prefissi IP di Office 365 definiti.  <br/> |I clienti devono implementare un processo di gestione delle modifiche affidabile per gli aggiornamenti mensili.  <br/> [!CAUTION] Questa soluzione richiede importanti modifiche in continuo. Le modifiche non implementate nel tempo probabilmente provocheranno un'interruzione del servizio.   |
 
-Connessione a Office 365 utilizzando Azure ExpressRoute si basa su annunci BGP di subnet IP specifici che rappresentano le reti in cui sono distribuiti gli endpoint di Office 365. A causa della natura globale di Office 365 e il numero di servizi che compongono Office 365, i clienti spesso hanno l'esigenza di gestire gli annunci che accettano all'interno della rete. Se si è interessati con un numero di prefissi annunciato nell'ambiente, la caratteristica [community BGP](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) consente di filtrare gli annunci per un set specifico di servizi di Office 365. Questa caratteristica è ora in anteprima.
+La connessione a Office 365 con Azure ExpressRoute si basa su annunci BGP di subnet IP specifiche che rappresentano le reti in cui vengono distribuiti gli endpoint di Office 365. A causa della natura globale di Office 365 e del numero di servizi che compongono Office 365, i clienti spesso hanno la necessità di gestire gli annunci che accettano nella propria rete. Se si è interessati al numero di prefissi pubblicizzati nell'ambiente, la funzionalità [community BGP](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) consente di filtrare gli annunci pubblicitari in un set specifico di servizi di Office 365. Questa funzionalità è ora in anteprima.
   
-Indipendentemente dal fatto come gestire gli annunci di route BGP provenienti da Microsoft, non di acquisire qualsiasi esposizione particolare ai servizi di Office 365 rispetto alla connessione a Office 365 tramite un solo a commutazione di circuito di internet. Microsoft gestisce la protezione stessa, conformità e sui livelli di prestazioni dal tipo di circuito che viene utilizzato un cliente per connettersi a Office 365.
+Indipendentemente da come gestire la route BGP annunci provenienti da Microsoft, non si otterrà alcuna esposizione speciale ai servizi di Office 365 rispetto alla connessione a Office 365 su un circuito Internet solo. Microsoft mantiene gli stessi livelli di sicurezza, conformità e prestazioni indipendentemente dal tipo di circuito utilizzato da un cliente per la connessione a Office 365.
   
 ### <a name="security"></a>Sicurezza
 
-È consigliabile mantenere i propri controlli perimetrale rete e protezione per le connessioni da e verso ExpressRoute pubblici e peering Microsoft, che include le connessioni da e verso i servizi di Office 365. Controlli di sicurezza devono essere disponibili per le richieste di rete recarsi in uscita dalla rete in rete Microsoft e su come in ingresso dalla rete di Microsoft per la rete.
+Microsoft consiglia di mantenere i propri controlli perimetrali di rete e sicurezza per le connessioni da e verso ExpressRoute Public e Microsoft peering, che include connessioni da e verso i servizi di Office 365. I controlli di sicurezza devono essere disponibili per le richieste di rete che viaggiano in uscita dalla rete alla rete Microsoft e in ingresso dalla rete di Microsoft alla rete.
   
 #### <a name="outbound-from-customer-to-microsoft"></a>In uscita dal cliente a Microsoft
   
-Quando i computer si connettono a Office 365, si connettono allo stesso insieme di endpoint indipendentemente dal fatto che viene eseguita la connessione attraverso un internet o a commutazione di circuito ExpressRoute. Indipendentemente dal fatto circuito in uso, è consigliabile considerare servizi di Office 365 come più attendibili di destinazioni internet generico. I controlli di protezione recapito esterno dovrebbero consistere nelle porte e protocolli per ridurre i rischi e ridurre al minimo interventi di manutenzione. Informazioni sulle porte necessarie è disponibile nell'articolo di riferimento [endpoint di Office 365](https://aka.ms/o365endpoints) .
+Quando i computer si connettono a Office 365, si connettono allo stesso set di endpoint, indipendentemente dal fatto che la connessione venga effettuata tramite un circuito Internet o ExpressRoute. Indipendentemente dal circuito utilizzato, Microsoft consiglia di trattare i servizi di Office 365 come attendibili rispetto alle destinazioni Internet generiche. I controlli di sicurezza in uscita devono concentrarsi sulle porte e sui protocolli per ridurre l'esposizione e ridurre al minimo la manutenzione in uscita. Le informazioni sulla porta necessarie sono disponibili nell'articolo di riferimento per gli [endpoint di Office 365](https://aka.ms/o365endpoints) .
   
-Per i controlli sono stati aggiunti, è possibile utilizzare il filtraggio all'interno dell'infrastruttura proxy a livello FQDN per limitare o controllare alcune o tutte le richieste di rete indirizzate a internet o a Office 365. Conservare l'elenco di nomi di dominio completi quando vengono rilasciate caratteristiche e le offerte di Office 365 evolvono richiede la gestione delle modifiche più affidabile e il rilevamento delle modifiche per la pubblicazione [endpoint di Office 365](https://aka.ms/o365endpoints).
+Per i controlli aggiunti, è possibile utilizzare il filtro di livello FQDN all'interno dell'infrastruttura proxy per limitare o ispezionare alcune o tutte le richieste di rete destinate a Internet o a Office 365. La gestione dell'elenco di nomi FQDN come funzionalità vengono rilasciate e le offerte di Office 365 evolvono richiedono una maggiore robustezza delle modifiche e la verifica dei cambiamenti apportati agli [endpoint di Office 365](https://aka.ms/o365endpoints)pubblicati.
   
 > [!CAUTION]
-> È consigliabile che non utilizzare unicamente su IP prefissi per gestire la sicurezza in uscita a Office 365.
+> Microsoft consiglia di non fare affidamento solo sui prefissi IP per gestire la sicurezza in uscita in Office 365.
 
-|**Opzione**|**Complessità**|**Modificare il controllo**|
+|**Opzione**|**Complessità**|**Controllo delle modifiche**|
 |:-----|:-----|:-----|
-|Nessuna restrizione  <br/> |**Basso:** Clienti consente l'accesso illimitato in uscita a Microsoft.  <br/> |Nessuno  <br/> |
-|Limitazioni delle porte  <br/> |**Basso:** Clienti limita l'accesso in uscita a Microsoft per le porte previste.  <br/> |Poco frequenti.  <br/> |
-|Restrizioni di nome di dominio completo  <br/> |**Elevata:** Clienti limita l'accesso in uscita a Office 365 basato su FQDN pubblicato.  <br/> |Modifiche apportate ogni mese.  <br/> |
+|Nessuna restrizione  <br/> |**Bassa:** Il cliente consente l'accesso in uscita illimitato a Microsoft.  <br/> |Nessuna  <br/> |
+|Restrizioni delle porte  <br/> |**Bassa:** Il cliente limita l'accesso in uscita a Microsoft dalle porte previste.  <br/> |Rara.  <br/> |
+|Restrizioni FQDN  <br/> |**Alta:** Il cliente limita l'accesso in uscita a Office 365 in base ai nomi FQDN pubblicati.  <br/> |Modifiche mensili.  <br/> |
 
-#### <a name="inbound-from-microsoft-to-customer"></a>In ingresso da Microsoft per cliente
+#### <a name="inbound-from-microsoft-to-customer"></a>In ingresso da Microsoft al cliente
   
-Esistono diversi scenari facoltativi che richiedono Microsoft avviare le connessioni di rete.
+Sono disponibili diversi scenari facoltativi che richiedono che Microsoft avvii le connessioni alla rete.
   
-- ADFS durante la convalida della password per l'accesso.
+- ADFS durante la convalida delle password per l'accesso.
 
-- [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
+- [DistribuZioni ibride di Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
 
-- Posta elettronica da un tenant Exchange Online a un host locale.
+- Posta da un tenant di Exchange Online a un host locale.
 
-- SharePoint Online posta inviare da SharePoint Online a un host locale.
+- Posta elettronica di SharePoint Online inviata da SharePoint Online a un host locale.
 
-- [SharePoint federati ricerca ibrida](https://technet.microsoft.com/library/dn197174.aspx).
+- [Ricerca ibrida federata di SharePoint](https://technet.microsoft.com/library/dn197174.aspx).
 
 - [BCS ibrido di SharePoint](https://technet.microsoft.com/library/dn197239.aspx ).
 
-- [Skype per l'ambiente ibrido di Business](https://technet.microsoft.com/en-us/library/jj205403.aspx) e/o [Skype per la federazione di Business](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
+- Federazione di [Skype for business ibrida](https://technet.microsoft.com/en-us/library/jj205403.aspx) e/o [Skype for business](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
 
-- [Skype per Business Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx ).
+- [Connettore Cloud Skype for business](https://technet.microsoft.com/library/mt605227.aspx ).
 
-Si consiglia di accettare le connessioni tramite il circuito internet anziché il circuito ExpressRoute per ridurre la complessità. Se la conformità o le prestazioni effettive necessità che necessario accettare le connessioni in ingresso su un circuito ExpressRoute, è consigliabile utilizzare un firewall o proxy inverso come ambito connessioni accettate. È possibile utilizzare gli [endpoint di Office 365](https://aka.ms/o365endpoints) per scoprire il diritto FQDN e IP prefissi.
+Microsoft consiglia di accettare queste connessioni sul circuito Internet invece che sul circuito di ExpressRoute per ridurre la complessità. Se le esigenze di conformità o di prestazioni prevedono che queste connessioni in ingresso devono essere accettate su un circuito ExpressRoute, utilizzando un firewall o un proxy inverso per l'ambito, è consigliabile utilizzare le connessioni accettate. È possibile utilizzare gli [endpoint di Office 365](https://aka.ms/o365endpoints) per individuare gli FQDN e i prefissi IP giusti.
   
 ### <a name="compliance"></a>Conformità
 
-È non utilizzano il percorso di distribuzione da utilizzare per i controlli di conformità. Indipendentemente dal fatto che la connessione a servizi di Office 365 tramite un circuito ExpressRoute o internet, non modificare i controlli di conformità. È consigliabile consultare i livelli di certificazione di protezione per Office 365 stabilire la soluzione ideale per soddisfare le esigenze dell'organizzazione e di conformità diversa.
+Non si basa sul percorso di routing utilizzato per i controlli di conformità. Indipendentemente dal fatto che ci si connette a servizi di Office 365 su un circuito ExpressRoute o Internet, i controlli di conformità non cambiano. È consigliabile esaminare i diversi livelli di certificazione di conformità e sicurezza di Office 365 per individuare la scelta migliore per soddisfare le esigenze dell'organizzazione.
   
-Questo è un collegamento breve che è possibile utilizzare il ritorno:[https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
+Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -108,6 +108,6 @@ Questo è un collegamento breve che è possibile utilizzare il ritorno:[https://
   
 [URL e intervalli di indirizzi IP per Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Gestione di endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[ExpressRoute Azure per la formazione su Office 365](https://channel9.msdn.com/series/aer)
+[Formazione di Azure ExpressRoute per Office 365](https://channel9.msdn.com/series/aer)

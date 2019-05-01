@@ -13,13 +13,13 @@ search.appverid:
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
-description: "Riepilogo: Informazioni su come ottimizzare la rete per l'accesso a Microsoft Azure PaaS."
+description: "Riepilogo: informazioni su come ottimizzare la rete per l'accesso a Microsoft Azure PaaS."
 ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872237"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491370"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Progettazione di rete per Microsoft Azure PaaS
 
@@ -27,47 +27,47 @@ ms.locfileid: "26872237"
   
 L'ottimizzazione della rete per le app PaaS di Azure necessita di una larghezza di banda Internet adeguata e può richiedere la distribuzione del traffico di rete in più siti o app.
   
-## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Passaggi di pianificazione per l'hosting di applicazioni PaaS organizzazione in Azure
+## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Procedura di pianificazione per l'hosting di applicazioni PaaS dell'organizzazione in Azure
 
 1. Consultare la sezione **Procedura per predisporre la rete per i servizi cloud Microsoft** in [Common elements of Microsoft cloud connectivity](common-elements-of-microsoft-cloud-connectivity.md).
     
-2. Ottimizzare la larghezza di banda Internet utilizzando i passaggi da 2 a 4 della sezione **passaggi per la preparazione della rete per i servizi Microsoft SaaS** nella [Progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md).
+2. Ottimizzare la larghezza di banda Internet utilizzando i passaggi 2-4 della **procedura per preparare la rete per i servizi SaaS di Microsoft** nella sezione [progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md).
     
-3. Stabilire se sono necessari una connessione ExpressRoute in Azure.
+3. Determinare se è necessaria una connessione di ExpressRoute a Azure.
     
-4. Per carichi di lavoro basate sul web, determinare se è necessario Azure Application Gateway.
+4. Per i carichi di lavoro basati sul Web, determinare se è necessario il gateway dell'applicazione Azure.
     
-5. Per la distribuzione del traffico agli endpoint diversi nel centro dati diversi, determinare se è necessario Azure Traffic Managerhttp.
+5. Per la distribuzione del traffico verso endpoint diversi in diversi Data Center, determinare se è necessario Azure Traffic Manager.
     
-## <a name="internet-bandwidth-for-organization-paas-applications"></a>Larghezza di banda Internet per le applicazioni PaaS organizzazione
+## <a name="internet-bandwidth-for-organization-paas-applications"></a>Larghezza di banda Internet per le applicazioni di PaaS dell'organizzazione
 
-Organizzazione applicazioni ospitate in Azure PaaS richiedono larghezza di banda Internet per gli utenti intranet. Sono disponibili due opzioni:
+Le applicazioni dell'organizzazione ospitate in Azure PaaS richiedono la larghezza di banda Internet per gli utenti Intranet. Esistono due opzioni:
   
-- **Opzione 1:** Utilizzare la pipe esistente, ottimizzata per il traffico Internet con la capacità di gestire i carichi di picco. Vedere[Progettazione di rete per Microsoft SaaS](designing-networking-for-microsoft-saas.md) per edge Internet, l'utilizzo di client e considerazioni sulle operazioni IT.
+- **Opzione 1:** Utilizzare la tubazione esistente, ottimizzata per il traffico Internet con la capacità di gestire i carichi di picco. Vedere[progettazione della rete per](designing-networking-for-microsoft-saas.md) le considerazioni relative a Microsoft SaaS per Internet Edge, utilizzo client e operazioni it.
     
-- **Opzione 2:** Per ampia larghezza di banda o bassa latenza delle esigenze, utilizzare una connessione ExpressRoute in Azure.
+- **Opzione 2:** Per le esigenze di bassa latenza e larghezza di banda elevata, utilizzare una connessione ExpressRoute a Azure.
     
-**Nella figura 1: Opzioni di connessione per la connessione di servizi di Azure PaaS**
+**Figura 1: opzioni di connessione per la connessione dei servizi di PaaS di Azure**
 
-![Figura 1: Opzioni di connessione per i servizi PaaS di Azure](media/Network-Poster/PaaS1.png)
+![Figura 1: opzioni di connessione per i servizi di PaaS di Azure](media/Network-Poster/PaaS1.png)
   
-Una rete locale la connessione a servizi di Azure PaaS attraverso un canale Internet o ExpressRoute illustrato nella figura 1.
+Nella figura 1 viene illustrata una rete locale che si connette ai servizi di PaaS di Azure su una pipe Internet o ExpressRoute.
   
-## <a name="azure-application-gateway"></a>Azure Application Gateway
+## <a name="azure-application-gateway"></a>Gateway dell'applicazione di Azure
 
-Livello di applicazione di routing e il bilanciamento del carico servizi che consentono di creare un soluzione scalabile e altamente disponibile front-end web in Azure per applicazioni web, servizi cloud e macchine virtuali. 
+Servizi di routing a livello di applicazione e di bilanciamento del carico che consentono di creare un front-end Web scalabile e a disponibilità elevata in Azure per le applicazioni Web, i servizi cloud e le macchine virtuali. 
   
-**Figura 2: Applicazioni Azure Gateway**
+**Figura 2: gateway di applicazioni di Azure**
 
-![Figura 2: Servizio Gateway di applicazioni Azure](media/Network-Poster/PaaS2.png)
+![Figura 2: servizio gateway dell'applicazione Azure](media/Network-Poster/PaaS2.png)
   
-Nella figura 2 viene Azure Application Gateway e come utente richiede da Internet può essere instradate a Azure web App, servizi cloud o macchine virtuali.
+Nella figura 2 viene mostrato il gateway dell'applicazione di Azure e come le richieste degli utenti da Internet possono essere instradate a Azure Web Apps, servizi cloud o macchine virtuali.
   
-Application Gateway attualmente supporta il recapito di livello applicazione 7 per le operazioni seguenti:
+Il gateway applicazione supporta attualmente il recapito delle applicazioni Layer 7 per gli elementi seguenti:
   
 - Bilanciamento del carico HTTP
     
-- Affinità basata sui cookie di sessione
+- Affinità di sessione basata su cookie
     
 - Offload SSL
     
@@ -75,29 +75,29 @@ Per ulteriori informazioni, vedere [Application Gateway](https://docs.microsoft.
   
 ## <a name="azure-traffic-manager"></a>Azure Traffic Manager
 
-Distribuzione del traffico a endpoint distinti, che può includere servizi cloud o applicazioni web Azure in datacenter diversi oppure endpoint esterno.
+Distribuzione del traffico verso endpoint diversi, che possono includere servizi cloud o Azure Web Apps ubicati in diversi Data Center o endpoint esterni.
   
-Gestione del traffico vengono utilizzati i metodi di distribuzione seguenti:
+Traffic Manager utilizza i seguenti metodi di routing:
   
-- **Failover:** I punti finali sono nei data center Azure uguali o diversi e si desidera utilizzare un endpoint principale per tutto il traffico, ma fornisce backup nel caso in cui l'endpoint backup o il primario non sono disponibili.
+- **Failover:** Gli endpoint sono nello stesso datacenter di Azure o in altri centri dati e si desidera utilizzare un endpoint primario per tutto il traffico, ma fornire backup nel caso in cui gli endpoint primari o di backup non siano disponibili.
     
-- **Round robin:** Si desidera distribuire il carico in una serie di endpoint nello stesso datacenter o tra i datacenter diversi.
+- **Round Robin:** Si desidera distribuire il carico in un set di endpoint nello stesso datacenter o in diversi datacenter.
     
-- **Prestazioni:** Sono presenti endpoint in posizioni geografiche diverse e si desidera richiedente ai client di utilizzare l'endpoint "più vicino" in termini di più bassa latenza.
+- **Prestazioni:** Si dispone di endpoint in diverse posizioni geografiche e si desidera richiedere ai client di utilizzare l'endpoint "più vicino" in termini di latenza più bassa.
     
-Di seguito è riportato un esempio di tre distribuiti geograficamente web app.
+Di seguito è riportato un esempio per tre app Web geograficamente distribuite.
   
-**Figura 3: Gestione traffico di Azure**
+**Figura 3: gestione traffico di Azure**
 
-![Figura 3: Gestione traffico di Azure](media/Network-Poster/PaaS3.png)
+![Figura 3: gestione traffico di Azure](media/Network-Poster/PaaS3.png)
   
-Nella figura 3 viene illustrato il processo di base di gestione del traffico viene utilizzato per instradare le richieste per le applicazioni web diverse Azure tre negli Stati Uniti, Europa e Asia. Nell'esempio:
+Nella figura 3 viene illustrato il processo di base utilizzato da Traffic Manager per instradare le richieste a tre diverse app Web di Azure in Stati Uniti, Europa e Asia. Nell'esempio seguente:
   
-1. Una query DNS utente per un sito web che URL Ottiene indirizzati a Azure Traffic Managerhttp, che restituisce il nome di un'app web regionali, in base il metodo di routing delle prestazioni.
+1. Una query DNS dell'utente per l'URL di un sito Web viene indirizzata a Azure Traffic Manager, che restituisce il nome di un'app web regionale, in base al metodo di routing delle prestazioni.
     
-2. L'utente avvia il traffico con l'app web internazionali in Europa.
+2. L'utente avvia il traffico con l'app web regionale in Europa.
     
-Per ulteriori informazioni, vedere [Gestione del traffico](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
+Per ulteriori informazioni, vedere [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
 
 ## <a name="next-step"></a>Passaggio successivo
 

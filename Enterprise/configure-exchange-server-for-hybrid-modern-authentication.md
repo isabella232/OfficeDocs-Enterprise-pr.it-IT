@@ -1,5 +1,5 @@
 ---
-title: Informazioni su come configurare Exchange Server locale per l'utilizzo dell'autenticazione moderna ibrida
+title: Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: L'autenticazione moderna ibrida (HMA), è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure ed è disponibile per le distribuzioni ibride locali di Exchange Server.
 ms.openlocfilehash: 364f95bbbc06f477d258ed55a8711864e7a87e69
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372863"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490092"
 ---
-# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Informazioni su come configurare Exchange Server locale per l'utilizzo dell'autenticazione moderna ibrida
+# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida
 
 L'autenticazione moderna ibrida (HMA), è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure ed è disponibile per le distribuzioni ibride locali di Exchange Server.
   

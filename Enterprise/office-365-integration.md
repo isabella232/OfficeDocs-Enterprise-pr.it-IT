@@ -1,5 +1,5 @@
 ---
-title: Usare il dominio per integrare la posta elettronica locale, ad esempio, tramite servizi directory
+title: Integrazione di Office 365 con ambienti locali
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -20,13 +20,13 @@ search.appverid:
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Informazioni su come integrare Office 365 con i servizi directory esistenti.
 ms.openlocfilehash: 112f543a9c647ea850d5e43bc14483308da0b2c7
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085335"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487404"
 ---
-# <a name="office-365-integration-with-on-premises-environments"></a>Usare il dominio per integrare la posta elettronica locale, ad esempio, tramite servizi directory
+# <a name="office-365-integration-with-on-premises-environments"></a>Integrazione di Office 365 con ambienti locali
 
 È possibile integrare Office 365 con i servizi directory esistenti e con un'installazione locale di Exchange Server, Skype for Business Server 2015 o SharePoint Server 2013.
   

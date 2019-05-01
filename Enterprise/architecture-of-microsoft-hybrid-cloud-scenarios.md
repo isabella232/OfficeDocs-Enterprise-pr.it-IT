@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Riepilogo: informazioni sull'architettura delle offerte cloud ibride di Microsoft."
 ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038010"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490268"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architettura degli scenari cloud ibridi Microsoft
 
@@ -67,5 +67,5 @@ Molte imprese, tra cui quelle di Microsoft, utilizzano un approccio trifasico pe
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

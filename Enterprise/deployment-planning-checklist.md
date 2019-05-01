@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Questo elenco di controllo aiuterà l'organizzazione durante la pianificazione e la preparazione di una migrazione a Office 365. Le fasi e i passaggi dell'elenco di controllo sono allineati alle linee guida fornite dal centro di onboarding.
 ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085305"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490102"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Elenco di controllo per la pianificazione della distribuzione di Office 365
 
@@ -37,7 +37,7 @@ Quando si sposta un'organizzazione aziendale in Office 365, è importante pianif
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Attività/eventi di distribuzione** <br/> |**Data di inizio** <br/> |**Data di fine** <br/> |**Risorse** <br/> |**Dipendenze** <br/> |
+|**Attività di distribuzione/Events** <br/> |**Data di inizio** <br/> |**Data di fine** <br/> |**Risorse** <br/> |**Dipendenze** <br/> |
 |**Determinare gli obiettivi di distribuzione** <br/> |||||
 | Con le parti interessate interne ed esterne:<br>  -ConCordare l'ambito e la sequenza temporale <br>  -ConCordare il meccanismo di verifica dei progetti  <br>  -sviluppare criteri di successo e una [comunicazione](https://fasttrack.microsoft.com/office) / [per iniziare con Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventariare l'ambiente corrente e prendere decisioni di distribuzione principali** |||||

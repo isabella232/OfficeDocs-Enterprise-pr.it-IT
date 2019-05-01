@@ -1,5 +1,5 @@
 ---
-title: Panoramica del cloud ibrido
+title: Panoramica sul cloud ibrido
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,13 +15,13 @@ ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Riepilogo: Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.'
 ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741432"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491158"
 ---
-# <a name="hybrid-cloud-overview"></a>Panoramica del cloud ibrido
+# <a name="hybrid-cloud-overview"></a>Panoramica sul cloud ibrido
 
  **Riepilogo:** Informazioni sulla definizione e sugli elementi del cloud ibrido Microsoft.
   
@@ -89,5 +89,5 @@ Gli scenari per il cloud ibrido con i servizi cloud Microsoft variano a seconda 
 
 [Cloud ibrido Microsoft per Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
