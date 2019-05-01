@@ -14,11 +14,11 @@ ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Se si utilizza Office 2007 o Office 2010, è il momento di pianificare l'aggiornamento. Non essere bloccato con app obsolete. Utilizzare queste risorse per iniziare a usare il piano.
 ms.openlocfilehash: ee14250f6bb17a571ff2c2e7e4cbd68d91d13646
-ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "31838228"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492052"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Pianificare l'aggiornamento da Office 2007 o Office 2010 Server e client
 
@@ -94,7 +94,7 @@ Microsoft 365 è il modo in cui trasformare digitalmente la propria azienda con 
    
 ## <a name="related-topics"></a>Argomenti correlati
   
-[Criterio del ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Politica relativa al ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
 [Gruppo di pensionamento di Office (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
 

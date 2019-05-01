@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
 description: I servizi di archiviazione video e di flusso di Office 365 rendono semplice la memorizzazione e lo streaming dei video all'interno dell'organizzazione. Sono disponibili numerose informazioni sul video di Office 365. queste domande frequenti sulla rete sono state progettate per rispondere alle questioni più comuni relative alla pianificazione della larghezza di banda, alla crittografia e al modo in cui il servizio sfrutta le reti di distribuzione del contenuto (reti CDN).
 ms.openlocfilehash: f11bd8baff7c2527287f6e1249ad4dae1928bdd2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30641523"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491928"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Domande frequenti su Office 365 networking video
 

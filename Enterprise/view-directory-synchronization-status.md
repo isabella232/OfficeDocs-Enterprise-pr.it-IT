@@ -1,5 +1,5 @@
 ---
-title: Visualizzare lo stato di sincronizzazione della directory in Office 365
+title: Visualizzare lo stato della sincronizzazione della directory in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Informazioni su come disattivare la sincronizzazione della directory. È anche possibile visualizzarne lo stato.
 ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001569"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492102"
 ---
-# <a name="view-directory-synchronization-status-in-office-365"></a>Visualizzare lo stato di sincronizzazione della directory in Office 365
+# <a name="view-directory-synchronization-status-in-office-365"></a>Visualizzare lo stato della sincronizzazione della directory in Office 365
 
 Se è stata integrata Active Directory locale con Azure AD sincronizzando l'ambiente locale con Office 365, è anche possibile controllare lo stato della sincronizzazione.
   

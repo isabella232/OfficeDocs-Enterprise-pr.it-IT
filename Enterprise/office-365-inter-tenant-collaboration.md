@@ -1,5 +1,5 @@
 ---
-title: Collaborazione tra tenant di Office 365
+title: Collaborazione tra tenant in Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Informazioni su come funziona la collaborazione di Office 365 tra tenant e organizzazioni.
 ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665249"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492092"
 ---
-# <a name="office-365-inter-tenant-collaboration"></a>Collaborazione tra tenant di Office 365
+# <a name="office-365-inter-tenant-collaboration"></a>Collaborazione tra tenant in Office 365
 
 In questo articolo vengono descritte diverse modalità di collaborazione tra due tenant di Office 365. È destinato agli amministratori di Office 365.
   
@@ -37,7 +37,7 @@ Le opzioni di collaborazione tra tenant di Office 365 includono l'utilizzo di un
 |:-----|:-----|:-----|
 |Condividere i calendari con un'altra organizzazione di Office 365  <br/> |Gli amministratori possono configurare diversi livelli di accesso al calendario in Exchange Online per consentire alle aziende di collaborare con altre aziende e permettere agli utenti di condividere le pianificazioni (informazioni sulla disponibilità) con altre persone  <br/> |[Condivisione in Exchange Online](https://technet.microsoft.com/en-us/library/jj916670%28v=exchg.150%29.aspx) <br/> [Relazioni dell'organizzazione in Exchange Online](https://technet.microsoft.com/en-us/library/jj916658%28v=exchg.150%29.aspx) <br/> [Creare una relazione organizzativa in Exchange Online](https://technet.microsoft.com/en-us/library/jj916671%28v=exchg.150%29.aspx) <br/> [Modifica e relazione organizzativa in Exchange Online](https://technet.microsoft.com/en-us/library/jj916659%28v=exchg.150%29.aspx) <br/> [Rimuovere una relazione organizzativa in Exchange Online](https://technet.microsoft.com/en-us/library/jj916657%28v=exchg.150%29.aspx) <br/> [Condividere calendari con utenti esterni](https://support.office.com/article/fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd) <br/> |
 |Controllare in che modo gli utenti condividono i propri calendari con persone esterne all'organizzazione  <br/> |Gli amministratori applicano i criteri di condivisione alle cassette postali degli utenti per controllare chi può essere condiviso e il livello di accesso concesso  <br/> |[Condivisione di criteri in Exchange Online](https://technet.microsoft.com/en-us/library/jj916673%28v=exchg.150%29.aspx) <br/> [Creare un criterio di condivisione in Exchange Online](https://technet.microsoft.com/en-us/library/jj916676%28v=exchg.150%29.aspx) <br/> [Applicare un criterio di condivisione alle cassette postali in Exchange Online](https://technet.microsoft.com/en-us/library/jj916672%28v=exchg.150%29.aspx) <br/> [Modifica, disabilitazione o rimozione di un criterio di condivisione in Exchange Online](https://technet.microsoft.com/en-us/library/jj916674%28v=exchg.150%29.aspx) <br/> |
-|Configurare i canali di posta elettronica sicuri e controllare il flusso di posta con organizzazioni partner  <br/> |Gli amministratori creano connettori per applicare la sicurezza agli scambi di posta con un'organizzazione partner o un provider di servizi. I connettori impongono la crittografia tramite TLS (Transport Layer Security) e consentono restrizioni sui nomi di dominio o intervalli di indirizzi IP che i partner inviano messaggi di posta elettronica.  <br/> |[Come viene utilizzato TLS per proteggere il traffico della posta elettronica in Office 365](https://technet.microsoft.com/en-us/library/mt163898.aspx) <br/> [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/en-us/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx) <br/> [Domini remoti in Exchange Online](https://technet.microsoft.com/en-us/library/jj966211%28v=exchg.150%29.aspx) <br/> [Configurare il connettore per il flusso di posta sicura con un'organizzazione partner](https://technet.microsoft.com/en-us/library/dn751021%28v=exchg.150%29.aspx) <br/> [Procedure consigliate per il flusso di posta per Exchange Online e Office 365 (panoramica)](https://technet.microsoft.com/en-us/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491%28v=exchg.150%29) <br/> |
+|Configurare i canali di posta elettronica sicuri e controllare il flusso di posta con organizzazioni partner  <br/> |Gli amministratori creano connettori per applicare la sicurezza agli scambi di posta con un'organizzazione partner o un provider di servizi. I connettori impongono la crittografia tramite TLS (Transport Layer Security) e consentono restrizioni sui nomi di dominio o intervalli di indirizzi IP che i partner inviano messaggi di posta elettronica.  <br/> |[Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica in Office 365](https://technet.microsoft.com/en-us/library/mt163898.aspx) <br/> [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/en-us/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx) <br/> [Domini remoti in Exchange Online](https://technet.microsoft.com/en-us/library/jj966211%28v=exchg.150%29.aspx) <br/> [Configurare il connettore per il flusso di posta sicura con un'organizzazione partner](https://technet.microsoft.com/en-us/library/dn751021%28v=exchg.150%29.aspx) <br/> [Procedure consigliate per il flusso di posta per Exchange Online e Office 365 (panoramica)](https://technet.microsoft.com/en-us/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491%28v=exchg.150%29) <br/> |
    
 ## <a name="sharepoint-online-and-onedrive-for-business-collaboration-options"></a>Opzioni di collaborazione di SharePoint Online e OneDrive for business
 

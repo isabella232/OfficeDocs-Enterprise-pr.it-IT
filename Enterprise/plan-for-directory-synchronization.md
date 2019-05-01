@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Descrive la sincronizzazione della directory con Office 365, la pulizia di Active Directory e lo strumento Azure Active Directory Connect.
 ms.openlocfilehash: 1a7c63f699c51c829aaab5b70cb6a1a203bca3be
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001829"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492082"
 ---
 # <a name="plan-for-directory-synchronization-for-office-365"></a>Pianificare la sincronizzazione della directory per Office 365
 

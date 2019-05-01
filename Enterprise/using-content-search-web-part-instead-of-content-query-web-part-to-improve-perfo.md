@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di Web Part ricerca contenuto invece di Web Part Query contenuto per migliorare le prestazioni di SharePoint Online
+title: Utilizzo della web part Ricerca contenuto anziché della web part Query contenuto per migliorare le prestazioni in SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,58 +14,58 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
-description: In questo articolo viene descritto come migliorare le prestazioni, sostituendo la Web Part Query contenuto con Web Part ricerca contenuto in SharePoint Server 2013 e SharePoint Online.
+description: In questo articolo viene descritto come migliorare le prestazioni sostituendo la Web part Query contenuto con la Web part Ricerca contenuto in SharePoint Server 2013 e SharePoint Online.
 ms.openlocfilehash: f86a4b75c4bf75ebaa99924411d017c7eb7b6760
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541435"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492170"
 ---
-# <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Utilizzo di Web Part ricerca contenuto invece di Web Part Query contenuto per migliorare le prestazioni di SharePoint Online
+# <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Utilizzo della web part Ricerca contenuto anziché della web part Query contenuto per migliorare le prestazioni in SharePoint Online
 
-In questo articolo viene descritto come migliorare le prestazioni, sostituendo la Web Part Query contenuto con Web Part ricerca contenuto in SharePoint Server 2013 e SharePoint Online.
+In questo articolo viene descritto come migliorare le prestazioni sostituendo la Web part Query contenuto con la Web part Ricerca contenuto in SharePoint Server 2013 e SharePoint Online.
   
-Tra le nuove funzionalità più avanzate di SharePoint Server 2013 e SharePoint Online è contenuto ricerca Web Part (CSWP). Questa Web Part utilizza l'indice di ricerca per recuperare rapidamente i risultati che vengono visualizzati all'utente. Utilizzare invece il contenuto Query Web Part (CQWP) nelle pagine Web Part ricerca contenuto per migliorare le prestazioni per gli utenti.
+Una delle nuove caratteristiche più potenti di SharePoint Server 2013 e SharePoint Online è la Web part Ricerca contenuto (CSWP). Questa web part utilizza l'indice di ricerca per recuperare rapidamente i risultati che vengono visualizzati all'utente. Utilizzare la Web part Ricerca contenuto anziché la Web part Query contenuto (CQWP) nelle pagine per migliorare le prestazioni per gli utenti.
   
-Utilizzo di una Web Part ricerca contenuto in una Web Part Query contenuto quasi sempre genererà in modo significativo migliorare le prestazioni di carico di pagina in SharePoint Online. Non esiste un poche attività di configurazione aggiuntive per ottenere la query destra, ma vantaggi sono soddisfatti utenti e ottimizzare le prestazioni.
+L'utilizzo di una Web part Ricerca contenuto in una Web part Query contenuto comporta quasi sempre risultati di caricamento delle pagine significativamente migliori in SharePoint Online. Per ottenere la query corretta è disponibile una configurazione aggiuntiva, ma i ricompense migliorano le prestazioni e gli utenti più contenti.
   
-## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>Confronto tra il miglioramento delle prestazioni che ottenere dall'utilizzo di Web Part ricerca contenuto invece di Web Part Query contenuto
+## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>Confronto dei vantaggi delle prestazioni ottenibili dall'utilizzo della web part Ricerca contenuto anziché dalla web part Query contenuto
 
-Nell'esempio seguente mostra i miglioramenti a livello di prestazioni relative che venga visualizzato quando si utilizza una Web Part ricerca contenuto anziché una Web Part Query contenuto. Gli effetti sono più ovvi con una struttura del sito complessa e vastissima query contenuta.
+Negli esempi seguenti vengono illustrati i vantaggi relativi alle prestazioni che è possibile ricevere quando si utilizza una Web part Ricerca contenuto anziché una Web part Query contenuto. Gli effetti sono più evidenti con una struttura complessa del sito e query di contenuto molto ampie.
   
-Questo sito di esempio presenta le caratteristiche seguenti:
+In questo sito di esempio sono disponibili le caratteristiche seguenti:
   
 - 8 livelli di siti secondari.
     
-- Vengono elencati utilizzando un tipo di contenuto personalizzati "frutto".
+- Elenchi che utilizzano un tipo di contenuto personalizzato "Fruit".
     
-- Nella Web Part query contenuto è ampie, restituzione di tutti gli elementi con il tipo di contenuto del "frutto".
+- Nella web part, la query di contenuto è ampia, restituendo tutti gli elementi con il tipo di contenuto "Fruit".
     
-- Nell'esempio viene utilizzato solo 50 elementi tra i 8 siti. Gli effetti saranno ancora più evidente per i siti con altro contenuto.
+- Nell'esempio vengono utilizzati solo 50 elementi tra gli 8 siti. Gli effetti saranno ancora più evidenti per i siti con più contenuto.
     
-Ecco una schermata dei risultati della Web Part Query contenuto.
+Di seguito è riportato un screenshot dei risultati della web part Query contenuto.
   
 ![Grafico con la query contenuto della web part](media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
   
-In Internet Explorer, utilizzare la scheda di **rete** F12 gli strumenti di sviluppo per esaminare i dettagli per l'intestazione risposta. Nella cattura di schermata seguente, il valore **SPRequestDuration** per il caricamento di questa pagina è 924 millisecondi. 
+In Internet Explorer, utilizzare la scheda **rete** degli strumenti di sviluppo F12 per esaminare i dettagli per l'intestazione della risposta. Nella schermata seguente, il valore di **SPRequestDuration** per il caricamento della pagina è 924 millisecondi. 
   
 ![Schermata durata della richiesta di 924](media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
- **SPRequestDuration** indica la quantità di lavoro che viene eseguita nel server per preparare la pagina. Passare il contenuto da Web part Query contenuto dalla Web part di ricerca in modo significativo consente di ridurre il tempo che necessario per il rendering della pagina. Una pagina con un equivalente Web Part ricerca contenuto, al contrario, restituisce lo stesso numero di risultati ha un valore di **SPRequestDuration** di 106 millisecondi come illustrato in questa schermata: 
+ **SPRequestDuration** indica la quantità di lavoro che viene fatta sul server per preparare la pagina. Il passaggio di contenuto in base alle web part di query con contenuto dalle web part di ricerca riduce drasticamente il tempo necessario per il rendering della pagina. Al contrario, una pagina con una Web part Ricerca contenuto equivalente, restituendo lo stesso numero di risultati, ha un valore di **SPRequestDuration** di 106 millisecondi, come mostrato in questa schermata: 
   
 ![Schermata durata della richiesta di 106](media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
-## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Aggiunta di una Web Part ricerca contenuto in SharePoint Online
+## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Aggiunta di una Web part Ricerca contenuto in SharePoint Online
 
-Aggiunta di una Web Part ricerca contenuto è molto simile a una normale Web Part Query contenuto. Vedere la sezione *"aggiungere una Web Part ricerca contenuto"* in [configurare una Web Part ricerca contenuto in SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+L'aggiunta di una Web part Ricerca contenuto è molto simile a una Web part query di contenuto normale. Vedere la sezione *"aggiungere una Web part Ricerca contenuto"* in [configurare una Web part Ricerca contenuto in SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
-## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Creazione di query di ricerca appropriata per la Web Part ricerca contenuto
+## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Creazione della query di ricerca corretta per la Web part Ricerca contenuto
 
-Dopo aver aggiunto una Web Part ricerca contenuto, è possibile restringere la ricerca e gli elementi da restituire. Per istruzioni dettagliate su come eseguire questa operazione, vedere la sezione *"Contenuto visualizzato mediante la configurazione di una query in una Web Part ricerca contenuto avanzata"* in [configurare una Web Part ricerca contenuto in SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+Dopo aver aggiunto una Web part Ricerca contenuto, è possibile affinare la ricerca e restituire gli elementi desiderati. Per istruzioni dettagliate su come eseguire questa operazione, vedere la sezione *"visualizzazione di contenuto configurando una query avanzata in una Web part Ricerca contenuto"* in [configurare una Web part Ricerca contenuto in SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
-## <a name="query-building-and-testing-tool"></a>Creazione e testing dello strumento di query
+## <a name="query-building-and-testing-tool"></a>Strumento di compilazione e testing delle query
 
-Per uno strumento creare e testare query complesse, vedere lo [Strumento di Query di ricerca](https://sp2013searchtool.codeplex.com/) in Codeplex. 
+Per creare e testare query complesse in uno strumento, vedere lo [strumento di query di ricerca](https://sp2013searchtool.codeplex.com/) in CodePlex. 
   
 
