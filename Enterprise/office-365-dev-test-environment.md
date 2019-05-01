@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Riepilogo: usare la seguente guida al lab test per creare una sottoscrizione di valutazione di Office 365 per valutazione o sviluppo/test.'
 ms.openlocfilehash: 3e7aafc847b28ad7a81373539c2ea30ce304725a
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741242"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487594"
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365
 
@@ -70,7 +70,7 @@ Per avviare la sottoscrizione di valutazione di Office 365 E5, è necessario inn
     
   - Registrare il nome e cognome del nuovo account qui: ![](./media/Common-Images/TableLine.png)
     
-  - Registrare l'indirizzo di posta elettronica del nuovo account qui: ![](./media/Common-Images/TableLine.png)@outlook.com
+  - Registrare l'indirizzo e-mail del nuovo account qui: ![](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrare una sottoscrizione di valutazione di Office 365 E5
 
@@ -197,7 +197,7 @@ $spURL="https://" + $orgName + "-admin.sharepoint.com"
 Connect-SPOService -Url $spURL
 ```
 
-4. Nella finestra di dialogo **Microsoft SharePoint Online Management Shell** digitare il nome dell'amministratore globale di Office 365 (ad esempio: jdoe@contosotoycompany.onmicrosoft.com) e la password, quindi fare clic su **Accedi**.
+4. Nella finestra di dialogo **SharePoint Online Management Shell di Microsoft**, digitare il nome dell'amministratore globale di Office 365 (ad esempio: jdoe@contosotoycompany.onmicrosoft.com) e la password, quindi fare clic su **Accedi**.
     
 5. Per creare tre nuovi siti del team (Vendite, Produzione e Supporto tecnico), inserire il nome di un amministratore globale di Office 365, quindi eseguire i comandi seguenti dal prompt di SharePoint Online Management Shell:
     
@@ -265,25 +265,25 @@ Utilizzare questi articoli aggiuntivi nell'ambiente di sviluppo/test di Office 3
   
 - [Sincronizzazione della directory per l'ambiente di sviluppo/test di Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
-- [Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365. ](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
 - [Identità federata per l'ambiente di sviluppo/test di Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
 - [Cloud App Security per l'ambiente di sviluppo/test di Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-- [Advanced Threat Protection per l'ambiente di sviluppo/test di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Protezione avanzata dalle minacce per l'ambiente di sviluppo/test di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
 - [Advanced eDiscovery per l'ambiente di sviluppo/test di Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-- [Protezione dei file sensibili nell'ambiente di sviluppo/test di Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
+- [Protezione dei file sensibili nell’ambiente di sviluppo/test di Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
 - [Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
-- [Classificazione e assegnazione di un'etichetta ai dati nell'ambiente di sviluppo/test di Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+- [Classificazione e assegnazione di etichette ai dati nell'ambiente di sviluppo/test di Office 365 ](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
 ## <a name="see-also"></a>Vedere anche
 
-- [Guide dei lab di test per l'adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
+- [Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 

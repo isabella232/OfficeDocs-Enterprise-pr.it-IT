@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: ''
 description: 'Riepilogo: vedere questi articoli per gli endpoint di Internet dei vari cloud di Office 365.'
 ms.openlocfilehash: 1312dd80130d99dba24b0c99f7570a57e70982ac
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341927"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492012"
 ---
 # <a name="office-365-endpoints"></a>Endpoint di Office 365
 
