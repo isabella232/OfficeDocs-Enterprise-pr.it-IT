@@ -10,11 +10,11 @@ ms.custom: ''
 localization_priority: Priority
 description: Informazioni sull'amministrazione delle impostazioni multi-geografiche di Exchange Online con PowerShell di Microsoft.
 ms.openlocfilehash: cc8adecda26073f588b63af12c13209720f9bc98
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765048"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490882"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico
 
@@ -86,7 +86,7 @@ Per visualizzare le proprietà di una cassetta postale, utilizzare la sintassi s
 Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 ```
 
-Ad esempio, per visualizzare le informazioni geografiche della cassetta postale chris@contoso.onmicrosoft.com, eseguire il comando seguente:
+Ad esempio, per visualizzare le informazioni di posizione geografica della cassetta postale chris@contoso.onmicrosoft.com, eseguire il comando seguente:
 
 ```powershell
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
@@ -168,7 +168,7 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 
 In questo esempio crea un nuovo account utente per Elizabeth Brunner con i valori seguenti:
 
-- Nome utente principale:ebrunner@contoso.onmicrosoft.com
+- Nome dell'entità utente: ebrunner@contoso.onmicrosoft.com
 
 - Nome: entrambe
 
