@@ -3,7 +3,7 @@ title: Servizio Web per URL e indirizzi IP di Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/30/2019
+ms.date: 5/1/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Per identificare e differenziare meglio il traffico di rete di Office 365, un nuovo servizio Web pubblica gli endpoint di Office 365, consentendo agli utenti di valutare, configurare e rimanere aggiornati con le ultime modifiche. Questo nuovo servizio Web sostituisce i file scaricabili XML attualmente disponibili.
-ms.openlocfilehash: 8dedb88c830d51d9d2cf16df783be75fc9d66450
-ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
+ms.openlocfilehash: af1ff6f222d4d9563116c4173ebeca9ca9f4470d
+ms.sourcegitcommit: 3b5597cab55bc67890fd6c760102efce513be87b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497698"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33512682"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Servizio Web per URL e indirizzi IP di Office 365
 
@@ -180,7 +180,7 @@ I parametri per il metodo web per gli endpoint sono:
 - **NoIPv6=<true | false>**: Impostare questo parametro su true per escludere gli indirizzi IPv6 dall'output, ad esempio, se non si usa il protocollo IPv6 nella propria rete.
 - **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>**. Questo parametro obbligatorio specifica l'istanza per cui restituire gli endpoint. Le istanze valide sono: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
-Se si chiama il metodo web endpoint molte volte dallo stesso indirizzo IP client, si potrebbe ricevere il Codice di Risposta HTTP 429 (Troppe richieste). La maggior parte degli utenti non lo vedranno. Se si visualizza tale Codice di Risposta, è necessario attendere un'ora prima di chiamare il metodo nuovamente. Pianificare la chiamata del metodo web per gli endpoint solo quando la versione metodo web indica che è disponibile una nuova versione dei dati.
+Se si chiama il metodo Web per gli endpoint molte volte dallo stesso indirizzo IP client, si potrebbe ricevere il codice di risposta HTTP 429 (Troppe richieste). La maggior parte degli utenti non lo vedranno. Se viene visualizzato questo codice di risposta, attendere un'ora prima di ripetere la richiesta. Pianificare la chiamata del metodo Web per gli endpoint solo quando la versione metodo Web indica che è disponibile una nuova versione dei dati.
 
 Il risultato ottenuto dal metodo Web per gli endpoint è una matrice di record in cui ogni record rappresenta un set di endpoint. Gli elementi per ogni record sono:
 
@@ -227,7 +227,6 @@ Questo URI ottiene tutti gli endpoint per l'istanza Worldwide di Office 365 per 
    [
     "*.mail.protection.outlook.com"
    ],
-...
 ```
 
 In questo esempio non sono inclusi altri set di endpoint.
@@ -242,11 +241,11 @@ L'output dell'esempio 2 è simile a quello dell'esempio 1, ad eccezione del fatt
 
 Il metodo Web per le modifiche restituisce gli aggiornamenti più recenti che sono stati pubblicati. In genere, si tratta delle modifiche del mese precedente apportate agli URL e agli intervalli di indirizzi IP. Le modifiche più importanti da elaborare riguardano l'aggiunta di nuovi URL o indirizzi IP: infatti, se non è stato possibile aggiungere un indirizzo IP a un elenco di controllo di accesso al firewall o un URL a un elenco di server proxy da ignorare, può verificarsi un'interruzione del servizio per gli utenti di Office 365 che usano il relativo dispositivo di rete. Nonostante i requisiti operativi, le operazioni _Add_ vengono aggiunte con un preavviso di 30 giorni prima che si verifichi tale interruzione del servizio.
 
-Il parametro obbligatorio del metodo web per le modifiche è il seguente:
+Il parametro obbligatorio del metodo Web per le modifiche è il seguente:
 
-- **Versione =<YYYYMMDDNN> ** - Parametro obbligatorio di route URL. Questo valore deve corrispondere alla versione attualmente implementata. Il servizio web restituisce le modifiche apportate dopo tale versione. Il formato è _YYYYMMDDNN_.
+- **Versione =\<AAAAMMGGNN>** - Parametro di route URL obbligatorio. Questo valore deve corrispondere alla versione attualmente implementata. Il servizio Web restituisce le modifiche apportate dopo tale versione. Il formato è _AAAAMMGGNN_, dove _NN_ sono zeri. Il servizio Web richiede che questo parametro contenga esattamente 10 cifre.
 
-Il metodo Web per le modifiche ha gli stessi limiti di frequenza del metodo Web per gli endpoint. Se si riceve un codice di risposta HTTP 429, è necessario attendere 1 ora prima di chiamare di nuovo.
+Il metodo Web per le modifiche ha frequenza limitata, allo stesso modo del metodo Web per gli endpoint. Se viene visualizzato il codice di risposta 429 HTTP, attendere un'ora prima di ripetere la richiesta.
 
 Il risultato ottenuto dal metodo Web per le modifiche è una matrice di record in cui ogni record rappresenta una modifica in una versione specifica degli endpoint. Gli elementi per ogni record sono:
 
@@ -255,7 +254,7 @@ Il risultato ottenuto dal metodo Web per le modifiche è una matrice di record i
 - disposition: può trattarsi di una modifica, un'aggiunta o una rimozione e descrive l'effetto della modifica apportata sul record del set di endpoint.
 - impact: non tutte le modifiche avranno la stessa importanza per ogni ambiente. Descrive l'impatto previsto per un ambiente di rete perimetrale dell’organizzazione in seguito a questa modifica. Questo attributo è incluso solo nei record di modifica della versione 2018112800 e versioni successive. Le opzioni di impact sono:
   - AddedIp: un indirizzo IP è stato aggiunto a Office 365 e sarà presto live nel servizio. Rappresenta una modifica che è necessario impostare in un firewall o un altro dispositivo di rete perimetrale di livello 3. Se non si aggiunge prima che iniziamo a usarlo, potrebbe verificarsi un'interruzione del servizio.
-  - AddedUrl: un URL è stato aggiunto a Office 365 e sarà presto live nel servizio. Rappresenta una modifica che è necessario impostare in un server proxy o un dispositivo di rete perimetrale di analisi di URL. Se non si aggiunge prima che iniziamo a usarlo, potrebbe verificarsi un'interruzione del servizio.
+  - AddedUrl: un URL è stato aggiunto a Office 365 e sarà presto live nel servizio. Rappresenta una modifica da eseguire in un server proxy o in un dispositivo di rete perimetrale per analisi URL. Se non si aggiunge prima che iniziamo a usarlo, può verificarsi un'interruzione del servizio.
   - AddedIpAndUrl: sono stati aggiunti sia un indirizzo IP sia un URL. Rappresenta una modifica da eseguire su un dispositivo firewall di livello 3, un server proxy o un dispositivo di analisi di URL. Se non si aggiunge prima che iniziamo a usarlo, potrebbe verificarsi un'interruzione del servizio.
   - RemovedIpOrUrl: da Office 365 è stato rimosso almeno un indirizzo IP o un URL. È consigliabile rimuovere gli endpoint di rete dai dispositivi perimetrali, ma non c'è nessuna scadenza per eseguire questa operazione.
   - ChangedIsExpressRoute: l'attributo di supporto ExpressRoute è stato modificato. Se si utilizza ExpressRoute potrebbe essere necessario intervenire in base alla configurazione.
@@ -263,8 +262,8 @@ Il risultato ottenuto dal metodo Web per le modifiche è una matrice di record i
   - RemovedDuplicateIpOrUrl: abbiamo rimosso un indirizzo IP o URL duplicato ma questo è ancora pubblicato per Office 365. In genere, non è necessario alcun intervento.
   - OtherNonPriorityChanges: abbiamo modificato qualcosa di meno critico rispetto a tutte le altre opzioni, ad esempio un campo della nota
 - version: la versione del set di endpoint pubblicato in cui è stata introdotta la modifica. I numeri di versione hanno il formato _YYYYMMDDNN_, dove NN è un numero naturale incrementato se sono presenti più versioni da pubblicare in un unico giorno.
-- previous: una sottostruttura che descrive nel dettaglio i valori precedenti degli elementi modificati sul set di endpoint. Questo elemento non è incluso per i set di endpoint aggiunti di recente. Include tcpPorts, udpPorts, ExpressRoute, category, required, notes.
-- corrente: una sottostruttura che descrive dettagliatamente i valori aggiornati degli elementi di modifica nel set di endpoint. Includes _tcpPorts_, _udpPorts_, _ExpressRoute_, _category_, _required_, e_notes_.
+- previous: una sottostruttura che descrive dettagliatamente i valori precedenti degli elementi modificati nel set di endpoint. Non sarà inclusa per i set di endpoint appena aggiunti. Include _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ e _notes_.
+- current: una sottostruttura che descrive dettagliatamente i valori aggiornati degli elementi di modifica nel set di endpoint. Include _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ e _notes_.
 - add: una sottostruttura che descrive nel dettaglio gli elementi da aggiungere alle raccolte dei set di endpoint. Questo elemento viene omesso se non ci sono aggiunte.
   - effectiveDate: definisce la data in cui le aggiunte saranno effettive nel servizio.
   - ips: gli elementi da aggiungere alla matrice di _indirizzi IP_.
@@ -311,7 +310,6 @@ Richiede tutte le modifiche precedenti apportate all'istanza Worldwide del servi
    {
     "ips":
      [
-...
 ```
 
 URI della richiesta di esempio 2: [https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
