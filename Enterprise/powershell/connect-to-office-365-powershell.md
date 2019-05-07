@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Riepilogo: connettersi all'organizzazione di Office 365 con PowerShell di Office 365 per eseguire le attività dell'interfaccia di amministrazione dalla riga di comando."
-ms.openlocfilehash: ae0449611703759105d92a706cf78ba4a58ad4b2
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 4c70f067558773ce7e2a6e27bab78f5c64965872
+ms.sourcegitcommit: 0516a15c72f4bc8423a1d8112fd4d3e5f69896c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897199"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639777"
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
@@ -124,9 +124,9 @@ Per connettersi ad Azure AD per la sottoscrizione a Office 365 con un nome dell'
 |:-------|:-----|
 | **Cloud di Office 365** | **Comando** |
 | Office 365 internazionale (+GCC) | `Connect-MsolService` |
-| Office 365 gestito da 21 Vianet | `Connect-MsolService -AzureEnvironmentName AzureChinaCloud` |
-| Office 365 Germany | `Connect-MsolService -AzureEnvironmentName AzureGermanyCloud` |
-| U.S. Government DoD di Office 365 e U.S. Government GCC High di Office 365 | `Connect-MsolService -AzureEnvironmentName USGovernment` |
+| Office 365 gestito da 21 Vianet | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
+| Office 365 Germany | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |
+| U.S. Government DoD di Office 365 e U.S. Government GCC High di Office 365 | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
 Nella finestra di dialogo per **accedere all'account**, digitare nome utente e password dell'account dell'istituto di istruzione o aziendale di Office 365, quindi fare clic su **OK**.
