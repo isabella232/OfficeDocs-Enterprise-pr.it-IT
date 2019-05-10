@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Riepilogo: creare una rete virtuale cross-premise simulata in Microsoft Azure come ambiente di sviluppo/test.'
-ms.openlocfilehash: 57262ee58f539fffbb0fc5b92c3a24f4c9204293
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 1eefbf94549d8af927d93a554418cb2642d1b447
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741212"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867721"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rete virtuale tra più sedi simulata in Azure
 
@@ -117,6 +117,7 @@ New-AzNetworkSecurityGroup -Name "Testnet" -ResourceGroupName $rgName -Location 
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name XPrem
 $nsg=Get-AzNetworkSecurityGroup -Name "Testnet" -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "Testnet" -AddressPrefix 192.168.0.0/24 -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 Creare quindi la relazione peering di rete virtuale tra le reti virtuali TestLab e XPrem con questi comandi.
@@ -221,7 +222,7 @@ Utilizzare l’ambiente di sviluppo/test per simulare un [Server di SharePoint I
   
 [Cloud App Security per l'ambiente di sviluppo/test di Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[Advanced Threat Protection per l'ambiente di sviluppo/test di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[Protezione avanzata dalle minacce per l'ambiente di sviluppo/test di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
 

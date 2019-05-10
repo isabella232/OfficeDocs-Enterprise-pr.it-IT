@@ -1,5 +1,5 @@
 ---
-title: Utilizzare popouts snella per ridurre la memoria utilizzata durante la lettura di messaggi di posta
+title: Utilizzo di Lean popout per ridurre la memoria utilizzata per la lettura dei messaggi di posta elettronica
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,46 +11,46 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
-description: In questo articolo sono contenute informazioni per migliorare le prestazioni di download di messaggi in Outlook sul web.
-ms.openlocfilehash: 07c427793c1cd60d25020a1ab49855ed1bc77cf6
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: In questo articolo sono contenute informazioni per migliorare le prestazioni di download dei messaggi in Outlook sul Web.
+ms.openlocfilehash: 55cbdec3dc994f3301afaf1bf0a261de446d522a
+ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541193"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33655780"
 ---
-# <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Utilizzare popouts snella per ridurre la memoria utilizzata durante la lettura di messaggi di posta
+# <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Utilizzo di Lean popout per ridurre la memoria utilizzata per la lettura dei messaggi di posta elettronica
 
-In questo articolo sono contenute informazioni per migliorare le prestazioni di download di messaggi in Outlook sul web. In questo articolo fa parte del progetto di [pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://aka.ms/tune) .
+In questo articolo sono contenute informazioni per migliorare le prestazioni di download dei messaggi in Outlook sul Web. Questo articolo fa parte del progetto di [pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://aka.ms/tune) .
    
-Amministratore globale di Office 365, è possibile configurare Outlook sul web per il recapito *popouts snella* , valore più piccolo, meno versione memoria di alcuni messaggi di posta elettronica in Microsoft Edge o Internet Explorer. Quando popouts snella sono configurate per Outlook sul web, viene eseguito il rendering componenti sul lato server vengono caricati che ottimizzare le prestazioni. 
+In qualità di amministratore globale di Office 365, è possibile configurare Outlook sul Web per la distribuzione di *Lean popout* , una versione di alcuni messaggi di posta elettronica di Microsoft Edge o Internet Explorer meno intensiva per la memoria. Quando Lean popout sono configurati per Outlook sul Web, i componenti di rendering sul fianco del server vengono caricati in modo da ottimizzare le prestazioni. 
   
 > [!NOTE]
-> A partire da marzo 2018 popouts snella non sono attualmente disponibili per i messaggi che specificano limitazioni dei diritti di utilizzo, ad esempio Information Rights Management (IRM). 
+> Al 2018 marzo, Lean popout non è attualmente disponibile per i messaggi che specificano le restrizioni relative ai diritti di utilizzo, ad esempio Information Rights Management (IRM). 
   
-Queste funzionalità continueranno a funzionare nella finestra principale, ma non sono disponibili nel popouts snella:
+Queste funzionalità continueranno a funzionare nella finestra principale, ma non sono disponibili in Lean popout:
   
 - Componenti aggiuntivi di Outlook
     
-- Skype per presenza aziendale
+- Presenza di Skype for business
     
- **Per configurare snella popouts per tutti gli utenti all'interno dell'organizzazione Office 365**
+ **Per configurare Lean popout per tutti gli utenti all'interno dell'organizzazione di Office 365**
   
-1. [Connessione a Exchange Online tramite Remote PowerShell](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx ).
+1. [Connettersi a Exchange Online tramite Remote PowerShell](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx ).
     
-2. Eseguire il cmdlet [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) con il parametro LeanPopoutEnabled come indicato di seguito: 
+2. Eseguire il cmdlet [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) con il parametro LeanPopoutEnabled, come indicato di seguito: 
     
   ```
   Set-OrganizationConfig -LeanPopoutEnabled <$true |$false >
   ```
 
-    Ad esempio, per abilitare snella popouts per tutti gli utenti nell'organizzazione:
+  Ad esempio, per abilitare Lean popout per tutti gli utenti dell'organizzazione:
     
   ```
   Set-OrganizationConfig -LeanPopoutEnabled $true
   ```
 
-    Per disattivare snella popouts per tutti gli utenti nell'organizzazione:
+  Per disabilitare Lean popout per tutti gli utenti dell'organizzazione:
     
   ```
   Set-OrganizationConfig -LeanPopoutEnabled $false

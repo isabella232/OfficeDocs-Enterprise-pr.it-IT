@@ -17,19 +17,19 @@ search.appverid:
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 description: Non sarebbe bello se la connessione Internet fosse sempre veloce e mai inattiva? Forse quel giorno verrà. Nel frattempo, tuttavia, esistono operazioni pratiche che è possibile eseguire per aggirare una rete esitante e continuare a svolgere il proprio lavoro quotidiano.
-ms.openlocfilehash: 2287de562672f5ceb1ab32949168e8dfdeb31585
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3ddc6483956657485b75a20a540ea83a55b61564
+ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490248"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33655770"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedure consigliate per l'utilizzo di Office 365 in una rete lenta
 
 Non sarebbe bello se la connessione Internet fosse sempre veloce e mai inattiva? Forse quel giorno verrà. Nel frattempo, tuttavia, esistono operazioni pratiche che è possibile eseguire per aggirare una rete esitante e continuare a svolgere il proprio lavoro quotidiano. Anche se Office 365 è un servizio basato su cloud, fornisce anche molti modi per gestire i contenuti in modalità non in linea e mantenere sincronizzate le modifiche senza problemi. Inoltre, a volte è più efficiente lavorare con il contenuto offline solo perché le applicazioni vengono eseguite più velocemente e l'interfaccia utente è più reattiva. Il punto è questo: Office 365 offre il meglio di entrambi i mondi. Ecco come approfittarne. 
   
 > [!TIP]
-> Vuoi vedere come lenta (o veloce) la connessione di rete è? Provare il [OOKLA Speed Test](https://www.speedtest.net/) o l' [app Speed Test di rete](https://www.windowsphone.com/en-us/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70). 
+> Vuoi vedere come lenta (o veloce) la connessione di rete è? Provare il [OOKLA Speed Test](https://www.speedtest.net/) o l' [app Speed Test di rete](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70). 
      
 ## <a name="why-is-my-network-so-slow"></a>Perché la rete è così lenta?
 
@@ -57,8 +57,8 @@ Ogni volta che si verificano problemi di prestazioni, verificare innanzitutto ch
     
 - Se possibile, acquistare più memoria. L'aggiunta di memoria è il modo più semplice e spesso più efficace per migliorare le prestazioni del dispositivo. È particolarmente utile quando si utilizzano file e video di grandi dimensioni.
     
-Per ulteriori informazioni, vedere [prestazioni e manutenzione di Windows](https://windows.microsoft.com/en-us/windows/performance-maintenance-help#performance-maintenance-help) e [correggere i problemi relativi alle prestazioni del sistema Windows](https://support.microsoft.com/mats/slow_windows_performance/).
-   
+Per ulteriori informazioni, vedere [prestazioni e manutenzione di Windows](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help) e [Suggerimenti per migliorare le prestazioni del PC in Windows 10](https://support.microsoft.com/en-za/help/4002019/windows-10-improve-pc-performance).
+
 ## <a name="best-practices-for-using-your-browser"></a>Procedure consigliate per l'utilizzo del browser
 
 Il browser è il gateway per Office 365, in modo che possa avere un impatto sulle prestazioni, soprattutto con il tempo necessario per caricare una pagina e la frequenza di andata e ritorno al servizio Office 365. 
@@ -85,9 +85,9 @@ Di seguito sono riportate alcune proposte per i browser in generale:
   
 Di seguito sono riportate alcune proposte per il browser specifico:
   
-- **Internet Explorer** Eseguire l'aggiornamento a Internet Explorer versione 11 o successive per migliorare le prestazioni sostanziali rispetto alle versioni precedenti. Per ulteriori informazioni, vedere [risolvere i problemi di Internet Explorer ](https://support.microsoft.com/mats/ie_performance_and_safety).
+- **Internet Explorer** Eseguire l'aggiornamento a Internet Explorer versione 11 o successive per migliorare le prestazioni sostanziali rispetto alle versioni precedenti. Per ulteriori informazioni, vedere [Guida alla risoluzione dei problemi per Internet Explorer](https://support.microsoft.com/help/2437121/troubleshooting-guide-for-internet-explorer-when-you-access-office-365).
     
-- **Firefox** Per ulteriori informazioni, vedere [Firefox è lento o smette di funzionare](https://support.mozilla.org/en-US/products/firefox/fix-problems/slowness-or-hanging).
+- **Firefox** Per ulteriori informazioni, vedere [Firefox è lento o smette di funzionare](https://support.mozilla.org/products/firefox/fix-problems/slowness-or-hanging).
     
 - **Safari** Per ulteriori informazioni, vedere [Apple-Safari](https://www.apple.com/safari/).
     
@@ -97,7 +97,7 @@ Di seguito sono riportate alcune proposte per il browser specifico:
 
 La lettura, la scrittura e l'organizzazione della posta elettronica è una parte importante della giornata di tutti. Outlook e Outlook Web App (OWA) offrono supporto offline. L'utilizzo di un'app di posta elettronica nello Smart Phone è un'altra alternativa utile. Utilizzare le opzioni seguenti che meglio si adattano alle proprie esigenze:
   
-- Eseguire l'aggiornamento a Outlook 2013 SP1 o versioni successive per migliorare le prestazioni sostanziali rispetto alle versioni precedenti. 
+- Eseguire l'aggiornamento alla versione più recente di Outlook per migliorare le prestazioni sostanziali rispetto alle versioni precedenti. 
     
 -  Outlook Web App consente di creare i messaggi, i contatti e gli eventi del calendario non in linea caricati quando OWA è in grado di connettersi a Office 365. Per ulteriori informazioni sulla configurazione e l'utilizzo di OWA in modalità offline, vedere [utilizzo di Outlook Web App offline](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36).
     
@@ -114,7 +114,7 @@ La lettura, la scrittura e l'organizzazione della posta elettronica è una parte
 
 OneDrive for business è stato creato fin dall'alto per lavorare con i file online e offline. Dopo averla configurata, la sincronizzazione delle modifiche avviene in modo automatico e affidabile ovunque e in qualsiasi momento. Se la rete è lenta, è possibile utilizzare la versione offline dei file.
   
-L'app di sincronizzazione di OneDrive for business è disponibile con Office 2013 (Professional Plus o standard Editions) oppure con una sottoscrizione di Office 365 che include le applicazioni di Office 2013. Se non si dispone di Office 2013, è possibile [scaricare](https://support.microsoft.com/kb/2903984) gratuitamente l'app di sincronizzazione di OneDrive for business. Questa app è anche più veloce rispetto all'utilizzo dei comandi **Apri in Esplora risorse** o **caricamento** . Per ulteriori informazioni, vedere [configurare il computer per sincronizzare i file di OneDrive for business in Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
+L'app di sincronizzazione di OneDrive for business è disponibile con un abbonamento a SharePoint Online e Office 365 business oppure è possibile [scaricare](https://support.microsoft.com/kb/2903984) gratuitamente l'app OneDrive for business Sync. Questa app è anche più veloce rispetto all'utilizzo dei comandi **Apri in Esplora risorse** o **caricamento** . Per ulteriori informazioni, vedere [configurare il computer per sincronizzare i file di OneDrive for business in Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
   
 Di seguito sono riportate alcune indicazioni aggiuntive per l'utilizzo dell'app di sincronizzazione di OneDrive for business:
   
@@ -126,35 +126,29 @@ Di seguito sono riportate alcune indicazioni aggiuntive per l'utilizzo dell'app 
 
 Ogni sito del team di SharePoint dispone di un blocco appunti di OneNote incorporato e può essere creato facilmente. OneNote è un ottimo modo per raccogliere le informazioni tempestive necessarie ogni giorno per ottenere le attività eseguite. Ad esempio, molti team utilizzano OneNote come punto di raccolta per riunioni settimanali, note di progetto, idee, piani e report sullo stato. È possibile organizzare ordinatamente queste informazioni disparate utilizzando pagine, sezioni e schede.
   
-Tuttavia, la bellezza di OneNote consiste nel fatto che è possibile accedere al contenuto da qualsiasi dispositivo, sia che si tratti di un desktop, di un laptop, di una tavoletta o di uno Smart Phone. Non è necessario preoccuparsi del salvataggio o della sincronizzazione perché OneNote lo fa per te. 
+La bellezza di OneNote consiste nel fatto che è possibile accedere al contenuto da qualsiasi dispositivo, sia che si tratti di un desktop, di un laptop, di un tablet o di uno Smart Phone. Non è necessario preoccuparsi del salvataggio o della sincronizzazione perché OneNote lo fa per te. 
   
-Per ulteriori informazioni, vedere [Microsoft OneNote](https://office.microsoft.com/en-us/onenote/).
-  
-## <a name="best-practices-for-using-lync-online"></a>Procedure consigliate per l'utilizzo di Lync Online
+Per ulteriori informazioni, vedere [Microsoft OneNote](https://office.microsoft.com/onenote).
 
-Di seguito sono riportate le linee guida generali per l'utilizzo di Lync Online quando la rete è lenta:
-  
+## <a name="best-practices-for-using-skype-for-business-and-lync-online"></a>Procedure consigliate per l'utilizzo di Skype for business e Lync Online
+
+Di seguito sono riportate le linee guida generali per l'utilizzo di Skype for business o Lync Online quando la rete è lenta:
+
 - Utilizzare la messaggistica istantanea ogni volta che è possibile perché funziona bene in una rete lenta.
     
 - Evitare di effettuare chiamate telefoniche su una rete privata virtuale (VPN) o su una connessione a un servizio di accesso remoto.
     
-- Verificare che il dispositivo audio sia approvato. Per ulteriori informazioni, vedere [telefoni e dispositivi qualificati per Microsoft Lync](https://technet.microsoft.com/en-us/office/dn788944).
+- Verificare che il dispositivo audio sia approvato. Per ulteriori informazioni, vedere [telefoni e dispositivi qualificati per Microsoft Lync](https://docs.microsoft.com/skypeforbusiness/lync-cert/ip-phones).
     
 -  Quando si utilizza PowerPoint in una presentazione online, ridurre le dimensioni e la complessità delle diapositive. Per ulteriori informazioni, vedere [Suggerimenti per migliorare le prestazioni della presentazione](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949).
-    
-- Quando possibile, condividere un monitor, invece di un programma o di un desktop. Per ulteriori informazioni, vedere [condividere il desktop o un programma in Lync](https://support.office.com/article/33aaa965-eb32-42a9-8a9b-cdfffa364842).
-    
-- Invece di condividere, inviare le diapositive di PowerPoint prima del tempo come allegato di una richiesta di riunione in modo che i partecipanti visualizzano le diapositive sul dispositivo client. Per ulteriori informazioni, vedere [set up a Lync meeting](https://support.office.com/article/258f9d20-f06c-49a4-a77f-7f5ac635bb5d).
-    
+            
 -  Le prestazioni video dipendono molto dalle prestazioni di rete. Evitare di utilizzare video se la rete è lenta. 
-    
-Per ulteriori informazioni, vedere [qualità audio o video scadente in Lync Online](https://support.microsoft.com/kb/2386655) e [aggiornamento dello schermo lento in Lync 2013](https://support.microsoft.com/kb/2958375).
+
+Per ulteriori informazioni, vedere [qualità audio o video scadente in Lync Online](https://support.microsoft.com/kb/2386655)o [risoluzione dei problemi di connessione in Skype for business](https://support.office.com/article/troubleshoot-connection-issues-in-skype-for-business-ca302828-783f-425c-bbe2-356348583771).
   
 ## <a name="best-practices-for-using-sharepoint-lists"></a>Procedure consigliate per l'utilizzo di elenchi di SharePoint
 
-L'utilizzo di dati di elenco non in linea su "scrub", Analyze o report è un ottimo modo per ridurre al minimo l'impatto di una rete lenta. È possibile leggere e scrivere la maggior parte degli elenchi di Microsoft Access 2013 collegandosi a essi. È inoltre possibile esportare un elenco in una tabella di Excel, che consente di creare una connessione dati unidirezionale tra la tabella di Excel e l'elenco.
-  
-Inoltre, se la funzionalità di Access Services è attivata, è possibile utilizzare un numero di dati considerevolmente maggiore rispetto alla soglia della visualizzazione elenco, fino a 50.000 elementi per impostazione predefinita. Sia Access 2013 che Excel 2013 elaborano automaticamente i dati dell'elenco in batch di piccole dimensioni e quindi riassemblano i dati, una tecnica che consente di utilizzare in modo sostanziale più dati rispetto alla soglia della visualizzazione elenco e senza influire negativamente sulle prestazioni del servizio di altri utenti. 
+L'utilizzo di dati di elenco non in linea su "scrub", Analyze o report è un ottimo modo per ridurre al minimo l'impatto di una rete lenta. È possibile leggere e scrivere la maggior parte degli elenchi di Microsoft Access 2019 e Microsoft Access 2016 collegandosi a essi. È inoltre possibile esportare un elenco in una tabella di Excel, che consente di creare una connessione dati unidirezionale tra la tabella di Excel e l'elenco. Informazioni su come [lavorare in modalità non in linea con le tabelle collegate agli elenchi di SharePoint](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e).
   
 Per ulteriori informazioni, vedere la sezione "ulteriori informazioni sulla gestione di elenchi di grandi dimensioni" in [gestire elenchi e raccolte di grandi dimensioni in Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784).
   
@@ -182,13 +176,13 @@ Per ulteriori informazioni, vedere [Tune Project online performance](https://sup
   
 ## <a name="whats-the-best-way-to-report-problems"></a>Qual è il modo migliore per segnalare i problemi?
 
-Microsoft migliora continuamente le prestazioni complessive di Office 365 monitorando la rete, misurando la larghezza di banda e la latenza, migliorando il tempo di caricamento delle pagine, riducendo le operazioni di i/O su disco, riprogettando le Pages per utilizzare la strategia di download minima, aggiungendo l'hardware Aggiunta di più data center. Per ulteriori informazioni su come verificare lo stato corrente e i problemi relativi alle relazioni, vedere [visualizzare lo stato dei servizi](https://office.microsoft.com/en-us/office365-suite-help/view-the-status-of-your-services-HA102817837.aspx).
+Microsoft migliora continuamente le prestazioni complessive di Office 365 monitorando la rete, misurando la larghezza di banda e la latenza, migliorando il tempo di caricamento delle pagine, riducendo le operazioni di i/O su disco, riprogettando le Pages per utilizzare la strategia di download minima, aggiungendo l'hardware Aggiunta di più data center. Per ulteriori informazioni su come controllare lo stato corrente e i problemi relativi alle relazioni, vedere [How to Check Office 365 Service Health](https://docs.microsoft.com/office365/enterprise/view-service-health).
   
 ## <a name="see-also"></a>Vedere anche
 
 [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](network-planning-and-performance.md)
   
-[Corso Microsoft Virtual Academy-gestione delle prestazioni di Office 365](https://blogs.office.com/2014/12/03/microsoft-virtual-academy-course-office-365-performance-management/)
+[Principi della connettività di rete di Office 365](office-365-network-connectivity-principles.md)
   
 [Gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
