@@ -142,7 +142,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 |[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
    
 <a name="BKMK_o365solutions"></a>
-<span data-ttu-id="313bd-189">## Serie di soluzioni di Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="313bd-189">## Microsoft 365 enterprise solution series</span></span>
+## <span data-ttu-id="313bd-189">Serie di soluzioni di Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="313bd-189">Microsoft 365 enterprise solution series</span></span>
 
 <span data-ttu-id="313bd-190">La serie di soluzioni di Microsoft 365 Enterprise fornisce indicazioni per l'implementazione delle funzionalità di Microsoft 365, in particolare quando si combinano funzionalità e tecnologie.</span><span class="sxs-lookup"><span data-stu-id="313bd-190">The Microsoft 365 enterprise solution series provides guidance for implementing Microsoft 365 capabilities, especially where capabilities cross technologies.</span></span>
 
