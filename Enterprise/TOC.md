@@ -21,8 +21,7 @@
 ### [Pianificare per i dispositivi di rete che si connettono ai servizi di Office 365](plan-for-network-devices.md)
 ### [Pianificare per i certificati SSL di terze parti per Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Informazioni sull'identità di Office 365 e Azure Active Directory](about-office-365-identity.md)
-### 
-  [Scegliere tra MDM e Intune](https://docs.microsoft.com/it-IT/office365/securitycompliance/choose-between-mdm-and-intune)
+### [Scegliere tra MDM e Intune](https://docs.microsoft.com/it-IT/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Pianificazione della rete e della migrazione per Office 365](network-and-migration-planning.md)
 ### [Connettività di rete con Office 365](network-connectivity.md)
 ### [Assistenti distribuzione per i servizi di Office 365](deployment-advisors-for-office-365.md)
@@ -164,10 +163,8 @@
 # Gestire Office 365
 ## [Integrità dei servizi](view-service-health.md)
 ### [Monitorare la connettività](monitor-connectivity.md)
-### 
-  [Opzioni di supporto](https://support.office.com/it-IT/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## 
-  [Strumenti di gestione](https://support.office.com/it-IT/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Opzioni di supporto](https://support.office.com/it-IT/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## [Strumenti di gestione](https://support.office.com/it-IT/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Strumenti per gestire gli account di Office 365](manage-office-365-accounts.md)
 ### [Aggiungere più utenti contemporaneamente a Office 365 - Guida per amministratore](add-several-users-at-the-same-time.md)
 ### [Recuperare elementi eliminati in una cassetta postale utente - Guida per amministratore](recover-deleted-items-in-a-mailbox.md)
