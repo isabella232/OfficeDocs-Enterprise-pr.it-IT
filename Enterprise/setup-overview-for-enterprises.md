@@ -1,9 +1,9 @@
 ---
 title: Distribuire Office 365 Enterprise per l'organizzazione
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Questa procedura generica ha lo scopo di aiutare a distribuire Office 365, a connettersi ad Active Directory e a migrare i dati; inoltre, consente alle persone nell'organizzazione di iniziare a utilizzare l'ultima versione di Office 2016.
-ms.openlocfilehash: a49d57978faabfac7131db3178cbff02b500667f
-ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
-ms.translationtype: HT
+ms.openlocfilehash: 16e6c60404a9e1f2c49b2e8e23920540e1dd8e49
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004407"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070812"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Distribuire Office 365 Enterprise per l'organizzazione
 Se si è pronti a distribuire e integrare Office 365 Enterprise con l'infrastruttura locale, consultare questa procedura generica che ha lo scopo di aiutare a connettersi alla propria directory e a migrare i dati; inoltre, consente alle persone nell'organizzazione di iniziare a utilizzare l'ultima versione di Office 2016.
@@ -31,7 +31,7 @@ Questa procedura è destinata alle aziende e alle [organizzazioni no profit](htt
 Se non si dispone di Office 365 Enterprise, vedere [Configurare Office 365 per le aziende](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) per istruzioni rivolte alle piccole imprese. 
   
 ## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a>Processo di installazione guidata di Office 365 per le aziende con FastTrack
-**[FastTrack](https://docs.microsoft.com/fasttrack)** per Office 365 è il metodo migliore per distribuire Office 365. FastTrack guida l'utente attraverso le configurazioni di distribuzione più comuni e può fornirgli le risposte che cerca durante la procedura. Se si desidera ricevere supporto Self-help o linee guida da un partner, utilizzare la nostra [guida alla configurazione di Office 365](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), le nostre [procedure guidate per l'installazione di Office 365](https://aka.ms/o365fasttrack) oppure [trovare un partner qualificato](https://partnercenter.microsoft.com/it-IT/pcv/search).
+**[FastTrack](https://docs.microsoft.com/fasttrack)** per Office 365 è il metodo migliore per distribuire Office 365. FastTrack guida l'utente attraverso le configurazioni di distribuzione più comuni e può fornirgli le risposte che cerca durante la procedura. Se si desidera ricevere supporto Self-help o linee guida da un partner, utilizzare la nostra [guida alla configurazione di Office 365](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), le nostre [procedure guidate per l'installazione di Office 365](https://aka.ms/o365fasttrack) oppure [trovare un partner qualificato](https://partnercenter.microsoft.com/en-us/pcv/search).
 
 ## <a name="self-deployment-of-office-365"></a>Distribuzione autonoma di Office 365
 Se si desidera distribuire Office 365 autonomamente, seguire la procedura riportata di seguito.

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 11/08/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Informazioni su come funziona la collaborazione di Office 365 tra tenant e organizzazioni.
-ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cedeab08cf6daf3817179bcf770eda6598361e67
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492092"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069672"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Collaborazione tra tenant in Office 365
 
@@ -76,7 +76,7 @@ Le opzioni di collaborazione tra tenant di Office 365 includono l'utilizzo di un
 
 |**Obiettivo di condivisione**|**Azione amministrativa**|**Informazioni su come eseguire la procedura**|
 |:-----|:-----|:-----|
-|Collaborare in team con utenti esterni all'organizzazione  <br/> |Un amministratore globale per l'invitante Office 365 tenant deve abilitare la collaborazione esterna in teams. Gli amministratori globali e i proprietari del team saranno in grado di invitare tutti gli utenti con un indirizzo di posta elettronica a collaborare in teams.  <br/> Gli amministratori possono anche gestire e modificare gli ospiti già presenti nel tenant.  <br/> |[Autorizzare l'accesso Guest](https://docs.microsoft.com/en-us/microsoftteams/teams-dependencies) <br/> [Attivazione o disAttivazione dell'accesso guest in teams](https://docs.microsoft.com/en-us/microsoftteams/set-up-guests) <br/> [Utilizzo di PowerShell per controllare l'accesso Guest](https://docs.microsoft.com/en-us/microsoftteams/guest-access-powershell) <br/> [Elenco di controllo di accesso Guest](https://docs.microsoft.com/en-us/microsoftteams/guest-access-checklist) <br/> [Visualizzare gli utenti Guest](https://docs.microsoft.com/en-us/microsoftteams/view-guests) <br/> [Modificare le informazioni degli utenti Guest](https://docs.microsoft.com/en-us/microsoftteams/edit-guests-information) <br/> |
+|Collaborare in team con utenti esterni all'organizzazione  <br/> |Un amministratore globale per l'invitante Office 365 tenant deve abilitare la collaborazione esterna in teams. Gli amministratori globali e i proprietari del team saranno in grado di invitare tutti gli utenti con un indirizzo di posta elettronica a collaborare in teams.  <br/> Gli amministratori possono anche gestire e modificare gli ospiti già presenti nel tenant.  <br/> |[Autorizzare l'accesso Guest](https://docs.microsoft.com/en-us/microsoftteams/teams-dependencies) <br/> [Attivazione o disattivazione dell'accesso guest in teams](https://docs.microsoft.com/en-us/microsoftteams/set-up-guests) <br/> [Utilizzo di PowerShell per controllare l'accesso Guest](https://docs.microsoft.com/en-us/microsoftteams/guest-access-powershell) <br/> [Elenco di controllo di accesso Guest](https://docs.microsoft.com/en-us/microsoftteams/guest-access-checklist) <br/> [Visualizzare gli utenti Guest](https://docs.microsoft.com/en-us/microsoftteams/view-guests) <br/> [Modificare le informazioni degli utenti Guest](https://docs.microsoft.com/en-us/microsoftteams/edit-guests-information) <br/> |
 |I proprietari del team possono invitare e gestire in che modo gli ospiti collaborano all'interno del team.  <br/> |I proprietari del team dispongono di ulteriori controlli su ciò che gli utenti possono eseguire all'interno del team.  <br/> |[Aggiungere gli ospiti](https://support.office.com/en-us/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) <br/> [Aggiungere un ospite a un team](https://docs.microsoft.com/en-us/microsoftteams/add-guests) <br/> [Gestire l'accesso guest in teams](https://docs.microsoft.com/en-us/microsoftteams/manage-guests) <br/> [Vedere chi è in un team o in un canale](https://support.office.com/en-us/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> |
 |Gli ospiti provenienti da altri inquilini possono visualizzare il contenuto in teams e collaborare con altri membri  <br/> |Nessuno.  <br/> |[L'esperienza di accesso Guest](https://docs.microsoft.com/en-us/microsoftteams/guest-experience) <br/> |
 

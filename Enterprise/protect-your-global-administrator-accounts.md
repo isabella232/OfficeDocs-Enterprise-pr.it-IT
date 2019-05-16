@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 4/10/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteggere l'accesso dell'amministratore globale all'abbonamento a Office 365 con questi tre passaggi.
-ms.openlocfilehash: 23d47ec1f5fc4126113dd69e1ac6400d003ca41f
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: bb1b19a7ac0ec8e32c23303e8acf2b7ee42f0532
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573920"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071022"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Office 365
 
@@ -61,7 +61,7 @@ Vi sono relativamente poche attività amministrative, ad esempio l'assegnazione 
     
 4. Assegnare il ruolo di amministratore globale a ognuno dei nuovi account utente di amministratore globale dedicato.
     
-5. DisConnettersi da Office 365.
+5. Disconnettersi da Office 365.
     
 6. Accedere con uno dei nuovi account utente di amministratore globale dedicati.
     
@@ -71,11 +71,11 @@ Vi sono relativamente poche attività amministrative, ad esempio l'assegnazione 
     
   - Assegnare i ruoli di amministratore all'account appropriato per la funzione e la responsabilità del processo dell'utente. Per ulteriori informazioni sui vari ruoli di amministratore in Office 365, vedere [informazioni sui ruoli di amministratore di office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d).
     
-8. DisConnettersi da Office 365.
+8. Disconnettersi da Office 365.
     
 Il risultato deve essere:
   
-- Gli unici account utente dell'abbonamento che dispongono del ruolo di amministratore globale sono il nuovo set di account di amministratore globale dedicati. Verificarlo con il seguente comando di PowerShell:
+- Gli unici account utente dell'abbonamento a cui è assegnato il ruolo di amministratore globale sono i nuovi account di amministratore globale dedicati. Verificarlo con il seguente comando di PowerShell:
     
   ```
   Get-MsolRoleMember -RoleObjectId (Get-MsolRole -RoleName "Company Administrator").ObjectId
@@ -86,7 +86,7 @@ Il risultato deve essere:
 Da questo momento in poi, si accede con gli account amministratore globale dedicato solo per le attività che richiedono privilegi di amministratore globale. Tutte le altre attività di amministrazione di Office 365 devono essere eseguite assegnando altri ruoli di amministrazione agli account utente.
   
 > [!NOTE]
-> Sì, è necessario eseguire ulteriori passaggi per disconnettersi come account utente giornaliero e accedere con un account di amministratore globale dedicato. Tuttavia, è necessario eseguire questa operazione solo occasionalmente per le operazioni di amministratore globale. Si conSideri che il ripristino dell'abbonamento a Office 365 dopo una violazione di un account amministratore globale richiede passaggi molto più. 
+> Sì, è necessario eseguire ulteriori passaggi per disconnettersi come account utente giornaliero e accedere con un account di amministratore globale dedicato. Tuttavia, è necessario eseguire questa operazione solo occasionalmente per le operazioni di amministratore globale. Si consideri che il ripristino dell'abbonamento a Office 365 dopo una violazione di un account amministratore globale richiede passaggi molto più. 
   
 ## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-secondary-authentication"></a>Passaggio 2. Configurare l'autenticazione a più fattori per gli account di amministratore globale di Office 365 dedicati e utilizzare la forma più complessa di autenticazione secondaria
 
@@ -162,7 +162,7 @@ Gli account di amministratore globale, invece di essere amministratori permanent
   
 L'utilizzo di PIM e questo processo riduce significativamente la quantità di tempo in cui gli account di amministratore globale sono vulnerabili all'attacco e all'utilizzo da parte di utenti malintenzionati.
   
-Per ulteriori informazioni, vedere [Configure Azure ad privilegEd Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
+Per ulteriori informazioni, vedere [Configure Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
   
 > [!NOTE]
 > PIM è disponibile con Azure Active Directory Premium P2, incluso in Enterprise Mobility + Security (EMS) E5, oppure è possibile acquistare licenze individuali per gli account di amministratore globale. 

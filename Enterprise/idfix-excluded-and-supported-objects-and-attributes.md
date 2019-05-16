@@ -1,10 +1,9 @@
 ---
 title: Oggetti e attributi esclusi e supportati da
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: Elenca gli attributi che sono esclusi e supportati dallo strumento IdFix.
-ms.openlocfilehash: d6b7aac023e9fe96b8308483322e718937ab1355
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bf88fea3592860a89d69717177593b6553318ee4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067272"
 ---
 # <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Oggetti e attributi esclusi e supportati da
 Sono disponibili due insiemi di regole mantenute da IdFix; Multi-tenant e Dedicati/ITAR. A questo punto, le due regole impostate escludono gli stessi oggetti, attributi e valori di attributi dalla ricerca. Ciò potrebbe cambiare nelle versioni future.
@@ -35,7 +34,7 @@ Questa sezione elenca oggetti, attributi e valori esclusi da IdFix dalla propria
 |**Esclusione**|**Esempio**|
 |:-----|:-----|
 |Scelta\* |Amministratore |
-|CAS_ {\*  |CAS_ {fe35fc98e69e4d08} |
+|CAS_{\*  |CAS_{fe35fc98e69e4d08} |
 |DiscoverySearchMailbox\*  |DiscoverySearchMailbox  |
 |FederatedEmail\* |FederatedEmail. *GUID* |
 |Guest\* ||

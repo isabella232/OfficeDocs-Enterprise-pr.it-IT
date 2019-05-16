@@ -3,23 +3,23 @@ title: Diagramma accessibile-opzioni della piattaforma Microsoft Exchange 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Exchange 2013, disponibile nei diagrammi tecnici.
-ms.openlocfilehash: e1c4957c9152c5a23008c657d7e2d0d47b5cce0f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487797"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068592"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Diagramma accessibile-opzioni della piattaforma Microsoft Exchange 2013
 
-**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Exchange 2013, disponibile nei [diagramMi tecnici](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Exchange 2013, disponibile nei [diagrammi tecnici](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 In questo poster vengono descritti i responsabili decisionali aziendali (BDMs) e gli architetti che devono essere a conoscenza delle distribuzioni di Exchange Online e Exchange Server e include: 
   
@@ -230,7 +230,7 @@ Oltre alle responsabilità Pro IT sia per gli ambienti Office 365 che per quelli
 
 - Configurare i certificati necessari per i servizi di Exchange.
     
-- Eseguire il proVisioning dei server.
+- Eseguire il provisioning dei server.
     
 - Implementare la topologia di routing dei messaggi di Exchange.
     

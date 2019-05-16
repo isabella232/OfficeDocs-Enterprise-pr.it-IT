@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contiene collegamenti a informazioni sulla pianificazione e il testing della rete e sulla migrazione a Office 365.
-ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a32a8584f1aada7e2b82451d520f72bb7577bc4b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487278"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069922"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Pianificazione della rete e della migrazione per Office 365
 
@@ -60,7 +60,7 @@ Per stimare la larghezza di banda, attenersi alla procedura seguente:
   
 - [Microsoft Message Analyzer](https://technet.microsoft.com/library/jj649776.aspx): Message Analyzer è uno strumento efficace per la risoluzione dei problemi relativi alla rete. Analizzatore dei messaggi acquisisce, Visualizza e analizza il traffico di messaggistica e i messaggi di sistema basati sul protocollo. Analizzatore dei messaggi consente inoltre di importare, aggregare e analizzare i dati dai file di log e di traccia.
     
-- [AnalizzaTore connettività remota Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=517243): verifica la connettività nell'ambiente di Exchange Online.
+- [Analizzatore connettività remota Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=517243): verifica la connettività nell'ambiente di Exchange Online.
     
 - Utilizzare l' [Assistente di supporto e ripristino di Microsoft per office 365](https://diagnostics.office.com/#/Download?env=SOC) per risolvere i problemi di Outlook e Office 365. 
     

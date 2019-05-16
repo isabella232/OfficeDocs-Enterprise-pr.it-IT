@@ -1,9 +1,9 @@
 ---
 title: Risoluzione dei problemi di sincronizzazione della directory per Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Vengono descritte le cause più comuni di problemi relativi alla sincronizzazione della directory in Office 365 e vengono forniti alcuni metodi per risolvere il problema e risolverli.
-ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3a1cf63122be84dc3e1c60e84a9a3a488f81bc0f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487464"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067672"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Risoluzione dei problemi di sincronizzazione della directory per Office 365
 
@@ -38,7 +38,7 @@ Riceverà anche una mail (alla posta elettronica alternativa e alla posta elettr
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Come si ottiene lo strumento di Azure Active Directory Connect?
 
-nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), passare a * * users \> * * **Active users**. Fare clic sul menu **altro** e selezionare **sincronizzazione directory**. 
+Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), passare a * * Users \> * * **Active users**. Fare clic sul menu **altro** e selezionare **sincronizzazione directory**. 
   
 ![Nel menu altro, scegliere sincronizzazione directory](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   

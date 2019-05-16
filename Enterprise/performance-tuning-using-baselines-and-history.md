@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/31/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Esistono alcuni modi semplici per controllare le prestazioni della connessione tra Office 365 e la propria azienda che consentirà di stabilire una linea di base approssimativa della connettività. Se si conosce la cronologia delle prestazioni delle connessioni dei computer client, è possibile rilevare i problemi emergenti in anticipo, identificare e stimare.
-ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a399cb0057e9cc62e180fea8a6d7b9dbf1993a5f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491846"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069522"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ottimizzazione delle prestazioni di Office 365 con le linee di base e la cronologia delle prestazioni
 
@@ -214,13 +214,13 @@ Esistono alcuni modi per gestire il punto di uscita, in questo caso il server pr
     
 - \*. microsoftonline-p.com
     
-- \*. SharePoint.com
+- \*. sharepoint.com
     
-- \*. Outlook.com
+- \*. outlook.com
     
-- \*. Lync.com
+- \*. lync.com
     
-- osub.Microsoft.com
+- osub.microsoft.com
     
 È necessario consentire a tutti gli utenti di accedere a questi indirizzi senza alcuna interferenza o autenticazione del proxy. In una rete più piccola, è necessario aggiungerli all'elenco di bypass del proxy nel Web browser. 
   
@@ -246,13 +246,13 @@ Il tempo di andata e ritorno, o RTT, è un valore numerico che misura il tempo n
     
 2. Passare alla cartella in cui è installato lo strumento (in questo caso PsPing) e testare gli URL di Office 365:
     
-  - psping Portal.Office.com:443
+  - psping portal.office.com:443
     
-  - psping Microsoft-My.SharePoint.com:443
+  - psping microsoft-my.sharepoint.com:443
     
-  - psping Outlook.office365.com:443
+  - psping outlook.office365.com:443
     
-  - psping www.Yammer.com:443
+  - psping www.yammer.com:443
     
     ![Il comando PSPing sta per microsoft-my.sharepoint.com porta 443.](media/3258f620-4513-4e82-95c9-06b387fc3a82.PNG)
   
@@ -276,13 +276,13 @@ Se non si ha familiarità con il bypass proxy e si preferisce eseguire operazion
     
     Il comando può essere simile a uno di questi esempi: 
     
-  - ping ourproxy.ourdomain.Industry.business.com
+  - ping ourproxy.ourdomain.industry.business.com
     
   - ping 155.55.121.55
     
   - ping ourproxy
     
-  - psping ourproxy.ourdomain.Industry.business.com:80
+  - psping ourproxy.ourdomain.industry.business.com:80
     
   - psping 155.55.121.55:80
     
@@ -300,7 +300,7 @@ Ad esempio, se si dispone di 51,84 millisecondi dal client all'URL di Office 365
   
 ![Grafico aggiuntivo che consente di visualizzare il ping in millisecondi da client a proxy accanto a client a Office 365 in modo che i valori possano essere sottratti.](media/cd764e77-5154-44ba-a5cd-443a628eb2d9.PNG)
   
-In termini di risoluzione dei problemi, è possibile trovare qualcosa di interessante solo da mantenere queste linee di base. Ad esempio, se si rileva che in genere sono presenti circa 40 millisecondi di latenza dal proxy o dall'uscita dall'indirizzo all'URL di Office 365 e che un client può eseguire il proxy o la latenza di un punto di uscita di circa 3 o 7 millisecondi (a seconda del traffico di rete che si sta rivedendo g in quell'ora del giorno) allora saprete sicuramente che qualcosa è problematico se le ultime tre client per il proxy o l'uscita di linea di base mostrano una latenza di 45 millisecondi.
+In termini di risoluzione dei problemi, è possibile trovare qualcosa di interessante solo da mantenere queste linee di base. Ad esempio, se si rileva che in genere sono presenti circa 59 40 millisecondi di latenza dal proxy o dall'uscita dall'indirizzo all'URL di Office 365 e che un client può eseguire il proxy o la latenza di un punto di uscita di circa 3 o 7 millisecondi (a seconda del traffico di rete che si sta rivedendo g in quell'ora del giorno) allora saprete sicuramente che qualcosa è problematico se le ultime tre client per il proxy o l'uscita di linea di base mostrano una latenza di 45 millisecondi.
   
 ### <a name="advanced-methods"></a>Metodi avanzati
 

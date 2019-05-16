@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: "Nuovo datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescente domanda e la crescita dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle condizioni dei servizi online Microsoft: contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica) e contenuto del sito di SharePoint Online e file archiviati all'interno del sito e i file caricati in OneDrive for business."
-ms.openlocfilehash: d30ad64c96a3a2e790b911845141e1601758d384
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 8dd9295618c765bb9eeaffbcec82ff83af8b2e21
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647984"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069992"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS
 
@@ -30,7 +30,7 @@ I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme 
   
 I clienti esistenti che dispongono di dati di base dei clienti archiviati in un datacenter geografico già esistente non sono interessati dal lancio di un nuovo Data Center Geo. Non sono presenti funzionalità esclusive, funzionalità o certificazioni di conformità con il nuovo Data Center Geo. Come clienti in uno qualsiasi di questi due GEOS, si verificheranno gli stessi controlli di qualità dei servizi, delle prestazioni e della sicurezza come in precedenza. Offriamo ai clienti esistenti che hanno requisiti di residenza dei dati rigorosi e che sono elencati nella tabella seguente, un'opzione che consente di spostare i dati di base dei clienti nel nuovo geografico.
   
-|Clienti con indirizzo di fatturazione in * * * *|Datacenter geografico precedente * * * *|Nuovo datacenter Geo * * * *|GeoGrafica disponibile da * * * *|
+|Clienti con indirizzo di fatturazione in * * * *|Datacenter geografico precedente * * * *|Nuovo datacenter Geo * * * *|Geografica disponibile da * * * *|
 |:-----|:-----|:-----|:-----|
 |Giappone * * * *| Asia/Pacifico | Giappone | Dicembre 2014 |
 |Australia, Nuova Zelanda, Figi * * * *| Asia/Pacifico | Australia | Marzo 2015 |
@@ -65,9 +65,9 @@ I clienti che hanno la necessità di spostare i dati di base nel nuovo geografic
     
 ## <a name="related-topics"></a>Argomenti correlati 
  
-[Come richiedere lo spostamento dei dati](request-your-data-move.md)
+[Come richiedere lo spostamento dati](request-your-data-move.md)
     
-[FAQ generale sullo spostamento dei dati](data-move-faq.md)
+[Domande frequenti sullo spostamento dati](data-move-faq.md)
   
 [Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

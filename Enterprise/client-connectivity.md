@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/6/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Riepilogo: in questo articolo viene illustrato in che modo i computer client si connettono ai tenant di Office 365, a seconda della posizione del computer client e del datacenter tenant di Office 365.'
-ms.openlocfilehash: 9455147e70a391619e1602f2e36d9162ff2c0928
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490576"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068202"
 ---
 # <a name="client-connectivity"></a>Connettività dei client
 
@@ -31,7 +31,7 @@ ms.locfileid: "33490576"
   
 Office 365 risiede nei Data Center Microsoft di tutto il mondo che consentono di mantenere il servizio attivo e funzionante anche quando si verifica un problema importante in un'area, ad esempio un terremoto o un'interruzione di corrente. Quando si esegue la connessione al tenant di Office 365, la connessione client verrà indirizzata al centro dati appropriato in cui è ospitato il tenant. Le regole che determinano la posizione in cui il tenant può essere ospitato sono definite dal contratto con Microsoft. Le regole che determinano il modo in cui il client acquisisce i dati provenienti da tale percorso dipendono dall'architettura del servizio che si sta utilizzando.
   
-Ad esempio, quando si accede al portale di Office 365, si è in genere connessi al data center più vicino al client e quindi si è diretti a seconda del servizio che si utilizza successivamente. Se si avvia il messaggio di posta elettronica, la connessione iniziale per la visualizzazione dell'interfaccia utente potrebbe provenire dal Data Center più vicino, ma potrebbe essere aperta una seconda connessione tra il centro dati più vicino e il centro dati in cui si trova il tenant per visualizzare i messaggi di posta elettronica letti. Microsoft gestisce una delle prime dieci reti nel mondo, con una velocità di connessione Data Center-to-datacenter incredibilmente veloce.
+Ad esempio, quando si accede al portale di Office 365, si è in genere connessi al data center più vicino al client e quindi si è diretti a seconda del servizio che si utilizza successivamente. Se si avvia il messaggio di posta elettronica, la connessione iniziale per la visualizzazione dell'interfaccia utente potrebbe provenire dal Data Center più vicino, ma potrebbe essere aperta una seconda connessione tra il centro dati più vicino e il centro dati in cui si trova il tenant per visualizzare i messaggi di posta elettronica letti. Microsoft gestisce una delle prime dieci reti nel mondo, con conseguente incredibilmente veloce connessioni datacenter-to-datacenter.
   
 Dopo aver letto l'articolo, è probabile che sia possibile capire perché non si forniscono gli [URL di Office 365 e gli intervalli di indirizzi IP](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) per datacenter, ma sono troppo interconnessi e si affidano l'uno all'altro per renderlo possibile.
   

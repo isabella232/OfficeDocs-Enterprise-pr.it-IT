@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: "Riepilogo: configurazione e dimostrazione di Office 365 Advanced eDiscovery con dati di esempio nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491222"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068342"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery per l'ambiente di sviluppo/test di Office 365
 
@@ -91,7 +91,7 @@ In questa procedura, è possibile creare due documenti Word che in seguito verra
   
 1. Nella pagina **Office**, fare click su **Accedi,** effettuare l'accesso con le credenziali dell'account di amministratore globale.
     
-2. in una nuova scheda, accedere all'URL del sito di SharePoint di produzione: **https://** <fictional organization name> **. sharepoint.com/sites/production**
+2. In una nuova scheda, accedere all'URL del sito di SharePoint di produzione: **https://** <fictional organization name> **. SharePoint.com/sites/Production**
     
 3. Nella scheda **Raccolta siti di produzione**, in **Documenti**, fare clic su **Nuovo > Documento Word**.
     
@@ -177,7 +177,7 @@ In questa procedura, è possibile creare un nuovo caso di Advanced eDiscovery e 
     
 9. Nella pagina **Configurazione**, in **Temi** digitare **3** in **Numero massimo di temi**.
     
-10. Fare clic su **Analizza** e attendere il completamento dell'analisi. Viene visualizzata una serie di grafici a torta con l'analisi della popolazione target, dei documenti, dei messaggi di posta elettronica e degli allegati. Per ulteriori informazioni, vedere [viewIng Analyze results](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e).
+10. Fare clic su **Analizza** e attendere il completamento dell'analisi. Viene visualizzata una serie di grafici a torta con l'analisi della popolazione target, dei documenti, dei messaggi di posta elettronica e degli allegati. Per ulteriori informazioni, vedere [viewing Analyze results](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e).
     
 È ora possibile usare questo ambiente per creare nuovi contenuti, nuove ricerche e casi e sperimentare ulteriormente Advanced eDiscovery in Office 365.
   

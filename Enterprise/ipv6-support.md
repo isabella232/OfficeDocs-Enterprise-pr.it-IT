@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 10/10/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,18 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Riepilogo: in questo articolo viene descritto il supporto IPv6 nei componenti di Microsoft Office 365 e nelle offerte governative di Office 365.'
-ms.openlocfilehash: 82af5c7659b3c16c8e92b45b65b6868a404eca23
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 2c73f5191cf46ddcb036e9077b855ebf752a2f55
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487753"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067232"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Supporto IPv6 nei servizi Office 365
 
  **Riepilogo**: in questo articolo viene descritto il supporto IPv6 nei componenti di Microsoft Office 365 e nelle offerte governative di Office 365.
   
-Office 365 supporta sia IPv6 che IPv4. Tuttavia, non tutte le funzionalità di Office 365 sono completamente abilitate con IPv6. Questo significa che è necessario utilizzare sia IPv4 che IPv6 per connettersi a Office 365. Se si sta filtrando il traffico in uscita in Office 365, l'elenco completo degli indirizzi IPv6 supportati da Office 365 è disponibile nell'articolo [office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md). Una volta configurata la rete e gli indirizzi IPv6 corretti sono consentiti, è possibile scaricare il [piano di testIng IPv6 di Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) dall'area download Microsoft.
+Office 365 supporta sia IPv6 che IPv4. Tuttavia, non tutte le funzionalità di Office 365 sono completamente abilitate con IPv6. Questo significa che è necessario utilizzare sia IPv4 che IPv6 per connettersi a Office 365. Se si sta filtrando il traffico in uscita in Office 365, l'elenco completo degli indirizzi IPv6 supportati da Office 365 è disponibile nell'articolo [office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md). Una volta configurata la rete e gli indirizzi IPv6 corretti sono consentiti, è possibile scaricare il [piano di testing IPv6 di Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) dall'area download Microsoft.
   
 ||
 |:-----|
@@ -79,7 +79,7 @@ Queste considerazioni potrebbero essere applicate alla rete:
 
 - IPv6 non supporta alcuni scenari di Rights Management Services (RMS).
 
-- IPv6 non supporta BlackBerry ® Enterprise Server (BES) perché BlackBerry non supporta IPv6.
+- IPv6 non supporta BlackBerry® Enterprise Server (BES) perché BlackBerry non supporta IPv6.
 
 - Se si utilizza Active Directory Federation Services (ADFS) con Office 365, la pubblicità dell'endpoint di rete ad FS con Office 365 tramite IPv6 non è supportata. Quando si utilizza Exchange Online, non è necessario includere i record AAAA nella voce DNS ADFS. 
 

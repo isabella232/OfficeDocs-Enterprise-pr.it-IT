@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: "Riepilogo: configurazione e dimostrazione di Office 365 Advanced Threat Protection nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490152"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068302"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection per l'ambiente di sviluppo/test di Office 365
 
@@ -82,7 +82,7 @@ In questa fase, viene mostrato che prima di configurare i criteri di ATP, i mess
     
 17. Nella Posta in arrivo, fare clic sul messaggio con l'oggetto **Nuove chiavi**.
     
-18. Nella cartella posta inDesiderata, fare clic sul messaggio con il **nuovo sito Web di viaggio**soggetto. All'interno del messaggio, fare clic sul collegamento **sito** . Dovrebbe essere visualizzato un "Oops! Internet Explorer non è stato in grado di trovare spamlink.contoso.com. video. Questo è il risultato corretto perché non è presente alcuna pagina Web in tale posizione.
+18. Nella cartella posta indesiderata, fare clic sul messaggio con il **nuovo sito Web di viaggio**soggetto. All'interno del messaggio, fare clic sul collegamento **sito** . Dovrebbe essere visualizzato un "Oops! Internet Explorer non è stato in grado di trovare spamlink.contoso.com. video. Questo è il risultato corretto perché non è presente alcuna pagina Web in tale posizione.
     
 Si noti che questi messaggi di posta elettronica potenzialmente dannosi sono stati recapitati correttamente. Il messaggio di posta elettronica **Nuove chiavi** potrebbe contenere malware non rilevato e l'utente ha potuto fare clic sul collegamento potenzialmente dannoso nel messaggio di posta elettronica **Nuovo sito Web di viaggi**.
   

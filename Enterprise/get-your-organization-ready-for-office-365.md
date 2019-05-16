@@ -1,9 +1,9 @@
 ---
 title: Preparare l'organizzazione per Office 365 Enterprise
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Se si è scelto di non eseguire la distribuzione di FastTrack e non si trovano le informazioni necessarie nei passaggi di distribuzione di base, questo è il punto di partenza.
-ms.openlocfilehash: a15bd73efe2fd2e2dfd13b3a444f77b9d0bfc764
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 90cf7cda7070c626579389f8122cdc438d88abe0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487742"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067542"
 ---
 # <a name="get-your-organization-ready-for-office-365-enterprise"></a>Preparare l'organizzazione per Office 365 Enterprise
 

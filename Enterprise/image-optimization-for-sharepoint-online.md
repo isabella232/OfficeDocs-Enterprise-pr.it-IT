@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/19/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Informazioni su come utilizzare le copie trasformate e gli sprite per migliorare le prestazioni dell'immagine sui siti Web di SharePoint Online.
-ms.openlocfilehash: 313046dec885a38062635254699301bcf556d698
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b1210146aa3efb042937abeece4df0e62a579b94
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487366"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067372"
 ---
 # <a name="image-optimization-for-sharepoint-online"></a>Ottimizzazione delle immagini per SharePoint Online
 
@@ -43,7 +43,7 @@ Una volta che le immagini sono nelle dimensioni appropriate, il passaggio succes
 Le trasformazioni di immagini sono una funzionalità di SharePoint Online che consente di utilizzare diverse versioni di immagini in base alle dimensioni predefinite dell'immagine. Questo è particolarmente importante quando sono presenti contenuti di immagini generati dall'utente o dimensioni dell'immagine la cui larghezza e altezza vengono corrette tramite CSS nel sito. Anche se un'immagine è stata corretta mediante CSS, l'immagine ad alta risoluzione è ancora caricata. In questo caso, le dimensioni del file possono essere ridotte utilizzando il rendering di immagini.
   
 > [!NOTE]
-> Le copie trasFormate sono disponibili solo per SharePoint quando la pubblicazione è abilitata. È possibile abilitare la pubblicazione in \> Impostazioni sito \> impostazioni gestire la \> pubblicazione di SharePoint Server per le caratteristiche del sito. L'opzione non verrà visualizzata in altro modo. 
+> Le copie trasformate sono disponibili solo per SharePoint quando la pubblicazione è abilitata. È possibile abilitare la pubblicazione in \> Impostazioni sito \> impostazioni gestire la \> pubblicazione di SharePoint Server per le caratteristiche del sito. L'opzione non verrà visualizzata in altro modo. 
   
 Il ridimensionamento del rendering delle immagini parte dalla dimensione minima definita dall'utente (larghezza o altezza), per poi ridimensionare l'immagine in modo che l'altra dimensione venga automaticamente ridimensionata in base alle proporzioni bloccate. Per impostazione predefinita, l'immagine verrà ritagliata dal centro alle dimensioni rimanenti. Ad esempio, se si definisce un rendering di 100 px di larghezza e 50 px di altezza e l'immagine originale è di 1000 px di larghezza e 800 px di altezza, verrà ridimensionata in modo che la dimensione di 800 px diventi 50 px e quella di 1000 px (ora 62,5 px) venga ritagliata dal centro dell'immagine.
   
@@ -75,6 +75,6 @@ La procedura è relativamente semplice ma, per utilizzare il rendering delle imm
   
 ## <a name="custom-cropping-with-image-renditions-in-sharepoint"></a>Personalizzare il ritaglio con i rendering di immagini in SharePoint
 
-Per impostazione predefinita, un rendering di immagini viene generato dal centro dell'immagine. È possibile modificare il rendering di immagini per singole immagini ritagliando la parte dell'immagine che si desidera utilizzare. È possibile ritagliare immagini su base individuale in base al rendering. Il riTaglio delle immagini velocizza il caricamento delle pagine tramite la cache BLOB di SharePoint per creare una versione dell'immagine per ogni copia trasformata. In questo modo, il carico del server viene ridotto perché l'immagine viene ridimensionata solo una volta e quindi è pronta per essere utilizzato per gli utenti finali più volte. Per ulteriori informazioni su come ritagliare una copia trasformata di un'immagine, vedere [Ritaglia una copia di un'immagine](https://go.microsoft.com/fwlink/p/?LinkId=525626).
+Per impostazione predefinita, un rendering di immagini viene generato dal centro dell'immagine. È possibile modificare il rendering di immagini per singole immagini ritagliando la parte dell'immagine che si desidera utilizzare. È possibile ritagliare immagini su base individuale in base al rendering. Il ritaglio delle immagini velocizza il caricamento delle pagine tramite la cache BLOB di SharePoint per creare una versione dell'immagine per ogni copia trasformata. In questo modo, il carico del server viene ridotto perché l'immagine viene ridimensionata solo una volta e quindi è pronta per essere utilizzato per gli utenti finali più volte. Per ulteriori informazioni su come ritagliare una copia trasformata di un'immagine, vedere [Ritaglia una copia di un'immagine](https://go.microsoft.com/fwlink/p/?LinkId=525626).
   
 

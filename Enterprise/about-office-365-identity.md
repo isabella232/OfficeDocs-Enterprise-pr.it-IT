@@ -1,9 +1,9 @@
 ---
 title: Informazioni sulle identità di Office 365 e Azure Active Directory
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Informazioni sul modo in cui l'identità dell'utente viene gestita in Office 365.
-ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 85cfce4b08236bfcee74b6fe6d9c29766e7211c6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487763"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068762"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>Informazioni sulle identità di Office 365 e Azure Active Directory
 
@@ -83,4 +83,4 @@ L'integrazione delle directory locali con Office 365 e Azure AD è stata semplif
   
 ## <a name="video-training"></a>Video di formazione
 
-Per ulteriori informazioni, vedere il corso video [Office 365: Manage identiTies using Azure ad Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), portato all'utente da LinkedIn Learning.
+Per ulteriori informazioni, vedere il corso video [Office 365: Manage Identities using Azure ad Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), portato all'utente da LinkedIn Learning.

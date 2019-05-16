@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 'La connessione a Office 365 con Azure ExpressRoute si basa su annunci BGP di subnet IP specifiche che rappresentano le reti in cui vengono distribuiti gli endpoint di Office 365. A causa della natura globale di Office 365 e del numero di servizi che costituiscono Office 365, i clienti spesso hanno la necessità di gestire gli annunci che accettano nella propria rete. Riduzione del numero di subnet IP; denominati prefissi IP per tutto il resto di questo articolo, per allineare con la terminologia di gestione della rete BGP, sono serviti i seguenti obiettivi finali per i clienti:'
-ms.openlocfilehash: c6e40dc29df55aa87e8d40c6203100fa1e7ad38f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 2cce550aa4c14eb0de9daa6eac85cde6d1754add
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490922"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068182"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Utilizzo delle community BGP in ExpressRoute per gli scenari di Office 365
 
@@ -40,7 +40,7 @@ Per assistere i clienti con questi obiettivi, i prefissi IP di Office 365 che ve
 |:-----|:-----|:-----|
 |Exchange\*  <br/> |12076:5010  <br/> |Include i servizi di Exchange e EOP\*  <br/> |
 |SharePoint\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
-|Skype for business\*  <br/> |12076:5030  <br/> |Skype for Business Online  <br/> |
+|Skype for business\*  <br/> |12076:5030  <br/> |Skype for Business online  <br/> |
 |altri servizi di Office 365\*  <br/> |12076:5100  <br/> |Include Azure Active Directory (scenari di sincronizzazione della directory e di autenticazione) così come i servizi portale di Office 365  <br/> |
 |\*L'ambito degli scenari di servizio inclusi in ExpressRoute è documentato nell'articolo degli [endpoint di Office 365](https://aka.ms/o365endpoints) .  <br/> \*\*In futuro, è possibile aggiungere ulteriori servizi e i valori della community BGP. [Vedere l'elenco corrente delle community BGP](https://azure.microsoft.com/documentation/articles/expressroute-routing/).  <br/> |
 

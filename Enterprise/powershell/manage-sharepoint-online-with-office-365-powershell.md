@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/01/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: utilizzare PowerShell di Office 365 per gestire gli utenti, i gruppi e i gruppi di siti di SharePoint Online.'
-ms.openlocfilehash: c033e006f61ce34ff1e8925e50552c2041c11884
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 2721639ca3ef83b39f85f6da70e47ba90f93f558
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068872"
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Gestire SharePoint Online con PowerShell di Office 365
 
  **Sintesi:** Utilizzare PowerShell di Office 365 per gestire gli utenti, i gruppi e i gruppi di siti di SharePoint Online.
   
-Una delle attività principali di qualsiasi amministratore di SharePoint Online è la gestione di siti, gruppi di siti e utenti. Anche se è possibile eseguire alcune di queste attività nell'interfaccia di amministrazione di Microsoft 365, altre attività sono molto più rapide e facili in Office 365 PowerShell. Per ulteriori informazioni, vedere gli argomenti seguenti:
+Una delle attività principali di qualsiasi amministratore di SharePoint Online è la gestione di siti, gruppi di siti e utenti. Anche se è possibile eseguire alcune di queste operazioni nell'interfaccia di amministrazione di Microsoft 365, altre attività sono molto più rapide e semplici in PowerShell di Office 365. Per ulteriori informazioni, vedere i seguenti argomenti:
 
 - [Connettersi a PowerShell per SharePoint Online](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   

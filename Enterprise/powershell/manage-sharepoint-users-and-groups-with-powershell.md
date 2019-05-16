@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/07/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: utilizzare Office 365 PowerShell per gestire gli utenti, i gruppi e i siti di SharePoint Online.'
-ms.openlocfilehash: 747371b6ea63431fedb60fa9165fe496acb5b7c7
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 194486f539593215b8f8a17c04e3d4f499077c65
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573990"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068822"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Office 365
 
@@ -96,7 +96,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 ```
 
-Ad esempio, aggiungere Glen prevalente (nome utente Glenr) al gruppo reVisori nella raccolta siti di ContosoTest nel contratto di locazione Contoso1:
+Ad esempio, aggiungere Glen prevalente (nome utente Glenr) al gruppo revisori nella raccolta siti di ContosoTest nel contratto di locazione Contoso1:
 
 ```
 $tenant = "contoso1"
@@ -119,7 +119,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 ```
 Le proprietà del gruppo, ad esempio i livelli di autorizzazione, possono essere aggiornate in un secondo momento utilizzando il cmdlet **set-SPOSiteGroup** .
 
-Ad esempio, aggiungere il gruppo reVisori con autorizzazioni di sola visualizzazione per la raccolta siti di prova contoso nel contratto di locazione di Contoso1:
+Ad esempio, aggiungere il gruppo revisori con autorizzazioni di sola visualizzazione per la raccolta siti di prova contoso nel contratto di locazione di Contoso1:
 
 ```
 $tenant = "contoso1"
@@ -144,7 +144,7 @@ $user = "<user account name, such as opalc>"
 $group = "<group name name, such as Auditors>"
 Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
-Si supponga, ad esempio, di rimuovere Bobby statastirata dal gruppo reVisori raccolta siti nella raccolta siti di prova contoso nel contratto di locazione Contoso1:
+Si supponga, ad esempio, di rimuovere Bobby statastirata dal gruppo revisori raccolta siti nella raccolta siti di prova contoso nel contratto di locazione Contoso1:
 
 ```
 $tenant = "contoso1"

@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/5/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute per Office 365 fornisce un percorso di routing alternativo a numerosi servizi Internet di Office 365. L'architettura di ExpressRoute per Office 365 si basa sulla pubblicità di prefissi IP pubblici dei servizi di Office 365 già accessibili tramite Internet nei circuiti ExpressRoute di provisioning per la successiva ridistribuzione di tali prefissi IP in rete. Con ExpressRoute è possibile abilitare efficacemente diversi percorsi di routing, tramite Internet e tramite ExpressRoute, per molti servizi di Office 365. Questo stato del routing sulla rete può rappresentare una modifica significativa del modo in cui è stata progettata la topologia di rete interna.
-ms.openlocfilehash: e535135557f7f2f64077c1d926f120fff78dbd42
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: c9e4fa4f5c8cb46d32e1b0de6f18f66b3a971aa6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491688"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067402"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementazione di ExpressRoute per Office 365
 
@@ -43,7 +43,7 @@ Prima di avviare questa guida all'implementazione, è prevedibile che i prerequi
 
 3. Sono già state lette e interpretate la [documentazione di ExpressRoute](https://azure.microsoft.com/documentation/services/expressroute/) e la rete interna è in grado di rispettare i prerequisiti ExpressRoute end to end.
 
-4. il team ha letto tutte le linee guida e la documentazione pubblica [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)di [https://aka.ms/ert](https://aka.ms/ert), e ha guardato la serie di [formazione di Azure ExpressRoute per Office 365](https://channel9.msdn.com/series/aer) sul canale 9 per acquisire una conoscenza dei dettagli tecnici critici, tra cui:
+4. Il team ha letto tutte le linee guida e la documentazione pubblica [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)di [https://aka.ms/ert](https://aka.ms/ert), e ha guardato la serie di [formazione di Azure ExpressRoute per Office 365](https://channel9.msdn.com/series/aer) sul canale 9 per acquisire una conoscenza dei dettagli tecnici critici, tra cui:
 
       - Dipendenze Internet dei servizi SaaS.
 
@@ -185,7 +185,7 @@ Spesso, sono disponibili più posizioni Meet-me che possono essere selezionate a
 
 |**Planned ExpressRoute Meet-me Locations in California e New York**||
 |:-----|:-----|
-|Percorso  <br/> |Numero di persone  <br/> |Latenza prevista per la rete Microsoft tramite l'uscita Internet  <br/> |Latenza prevista per Microsoft Network over ExpressRoute  <br/> |
+|Posizione  <br/> |Numero di persone  <br/> |Latenza prevista per la rete Microsoft tramite l'uscita Internet  <br/> |Latenza prevista per Microsoft Network over ExpressRoute  <br/> |
 |Roma  <br/> |10,000  <br/> |~ 15ms  <br/> |~ 10ms (tramite Silicon Valley)  <br/> |
 |Washington D.C.  <br/> |15.000  <br/> |~ 20ms  <br/> |~ 10ms (via New York)  <br/> |
 |Dallas  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms (via New York)  <br/> |
@@ -241,7 +241,7 @@ Aggiungere la modalità di gestione della sicurezza in ogni Internet e la posizi
   
 Aggiungere dettagli al piano di cui le persone saranno intaccate dal tipo di interruzione e in che modo queste persone potranno svolgere il proprio lavoro a piena capacità nel modo più semplice.
   
-#### <a name="plan-bandwidth-requirements-including-skype-for-business-requirements-on-jitter-latency-congestion-and-headroom"></a>Pianificare i requisiti di larghezza di banda inclusi i requisiti di Skype for business su jitter, latenza, conGestione e spazio di espansione
+#### <a name="plan-bandwidth-requirements-including-skype-for-business-requirements-on-jitter-latency-congestion-and-headroom"></a>Pianificare i requisiti di larghezza di banda inclusi i requisiti di Skype for business su jitter, latenza, congestione e spazio di espansione
   
 Skype for business online dispone anche di requisiti di rete aggiuntivi specifici descritti nell'articolo [qualità multimediale e prestazioni della connettività di rete in Skype for business online](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917).
   
@@ -350,7 +350,7 @@ La semplice aggiunta di un NAT di origine alla richiesta in ingresso risolve que
 
 ![Soluzione di routing asimmetrica ExpressRoute 1](media/0e87a155-f8de-48ed-92ac-27367b727a82.png)
   
-##### <a name="solution-1b-route-scoping"></a>Soluzione 1B: inStradare l'ambito
+##### <a name="solution-1b-route-scoping"></a>Soluzione 1B: instradare l'ambito
   
 In alternativa, è possibile scegliere di non consentire l'annuncio dei prefissi di ExpressRoute BGP, rimuovendo il percorso di rete alternativo per tali computer. In questo diagramma:
   
@@ -449,9 +449,9 @@ Di seguito sono riportati alcuni esempi di attività di test.
   
 1. Eseguire il ping dal router locale al router dell'operatore di rete.
 
-2. ConValidare gli annunci di indirizzi IP di 500 + Office 365 e CRM Online vengono ricevuti dal router locale.
+2. Convalidare gli annunci di indirizzi IP di 500 + Office 365 e CRM Online vengono ricevuti dal router locale.
 
-3. ConValidare il NAT in ingresso e in uscita è in funzione tra ExpressRoute e la rete interna.
+3. Convalidare il NAT in ingresso e in uscita è in funzione tra ExpressRoute e la rete interna.
 
 4. Verificare che le route verso il NAT vengano pubblicizzate dal router.
 
@@ -463,7 +463,7 @@ Di seguito sono riportati alcuni esempi di attività di test.
       Get-AzureRmExpressRouteCircuitRouteTable -DevicePath Primary -ExpressRouteCircuitName TestER -ResourceGroupName RG -PeeringType MicrosoftPeering
       ```
 
-6. ConValidare l'intervallo IP pubblico NAT non è pubblicizzato a Microsoft tramite altri ExpressRoute o circuiti di rete Internet pubblici, a meno che non si tratta di un sottoinsieme specifico di un intervallo più esteso come nell'esempio precedente.
+6. Convalidare l'intervallo IP pubblico NAT non è pubblicizzato a Microsoft tramite altri ExpressRoute o circuiti di rete Internet pubblici, a meno che non si tratta di un sottoinsieme specifico di un intervallo più esteso come nell'esempio precedente.
 
 7. I circuiti di ExpressRoute sono associati, convalidare che entrambe le sessioni BGP sono in esecuzione.
 
@@ -558,7 +558,7 @@ La funzionalità QoS è necessaria per ottenere vantaggi per la riunione e la vo
 
 La prima cosa da vedere è la procedura descritta in questa guida all'implementazione, sono state perse nel piano di implementazione? Se possibile, è necessario eseguire ulteriori test di rete di piccole dimensioni per replicare l'errore e eseguirne il debug.
   
-Identificare i servizi in ingresso o in uscita non riusciti durante il testing. Ottenere in modo specifico gli indirizzi IP e le subnet per ognuno dei servizi che hanno avuto esito negativo. Andare avanti e percorrere il diagramma della topologia di rete su carta e convalidare il routing. ConValidare in modo specifico il percorso in cui viene pubblicizzato il routing di ExpressRoute, verificare che il routing durante l'interruzione, se possibile con le tracce.
+Identificare i servizi in ingresso o in uscita non riusciti durante il testing. Ottenere in modo specifico gli indirizzi IP e le subnet per ognuno dei servizi che hanno avuto esito negativo. Andare avanti e percorrere il diagramma della topologia di rete su carta e convalidare il routing. Convalidare in modo specifico il percorso in cui viene pubblicizzato il routing di ExpressRoute, verificare che il routing durante l'interruzione, se possibile con le tracce.
   
 Eseguire PSPing con una traccia di rete per ogni endpoint del cliente e valutare gli indirizzi IP di origine e di destinazione per convalidare i risultati previsti. Eseguire Telnet a qualsiasi host di posta elettronica esposto sulla porta 25 e verificare che SNAT nasconda l'indirizzo IP di origine originale, se previsto.
   

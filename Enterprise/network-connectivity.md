@@ -1,10 +1,10 @@
 ---
-title: Connettività di rete con Office 365
+title: Connettività di rete a Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,42 +15,42 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
-description: Office 365 è progettato per consentire ai clienti in tutto il mondo per la connessione al servizio utilizzando una connessione internet. Con il servizio evoluzione, la sicurezza, prestazioni e affidabilità di Office 365 sono stati migliorati basata sui clienti che utilizzano internet per stabilire una connessione al servizio.
-ms.openlocfilehash: da086aa3fcd23ccb4a82cde2a1f7d812c111071a
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Office 365 è stato creato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Man mano che il servizio si evolve, la sicurezza, le prestazioni e l'affidabilità di Office 365 sono migliorate in base ai clienti che utilizzano Internet per stabilire una connessione al servizio.
+ms.openlocfilehash: 4510cb073c0fde64abc4ee796a55d7ef32662f8c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25911390"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069872"
 ---
-# <a name="network-connectivity-to-office-365"></a>Connettività di rete con Office 365
+# <a name="network-connectivity-to-office-365"></a>Connettività di rete a Office 365
 
-Office 365 è progettato per consentire ai clienti in tutto il mondo per la connessione al servizio utilizzando una connessione internet. Con il servizio evoluzione, la sicurezza, prestazioni e affidabilità di Office 365 sono stati migliorati basata sui clienti che utilizzano internet per stabilire una connessione al servizio.
+Office 365 è stato creato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Man mano che il servizio si evolve, la sicurezza, le prestazioni e l'affidabilità di Office 365 sono migliorate in base ai clienti che utilizzano Internet per stabilire una connessione al servizio.
   
-I clienti prevede di utilizzare Office 365 necessario valutare le esigenze di connettività internet previsti ed esistente come parte del progetto di distribuzione. Per le distribuzioni di classe enterprise affidabile e dimensione appropriata in connessione a internet è di utilizzo di funzionalità di Office 365 e gli scenari di fondamentale importanza.
+I clienti che pianificano l'utilizzo di Office 365 devono valutare le esigenze di connettività Internet esistenti e previste come parte del progetto di distribuzione. Per le distribuzioni di classi Enterprise la connettività Internet affidabile e di dimensioni appropriate è una parte importante dell'utilizzo delle funzionalità e degli scenari di Office 365.
   
-Valutazioni di rete possono essere eseguite da molte diverse persone e organizzazioni in base alle dimensioni e preferenze dell'utente. L'ambito di rete della valutazione inoltre può variare a seconda di dove si è nel processo di distribuzione. Che consentono di ottenere una migliore comprensione delle necessario per eseguire una valutazione della rete, è stata generata una Guida alla valutazione di rete che consentono di acquisire familiarità con le opzioni disponibili per l'utente. Questa valutazione consente di determinare quali passaggi e le risorse devono essere aggiunti al progetto di distribuzione per consentire la corretta adottano Office 365.
+Le valutazioni di rete possono essere eseguite da molte persone e organizzazioni diverse in base alle dimensioni e alle preferenze. L'ambito di rete della valutazione può anche variare a seconda della posizione del processo di distribuzione. Per ottenere maggiori informazioni sulle operazioni necessarie per eseguire una valutazione della rete, è stata creata una guida di valutazione della rete che consente di comprendere le opzioni disponibili per l'utente. Questa valutazione determinerà i passaggi e le risorse che devono essere aggiunti al progetto di distribuzione per consentire di adottare correttamente Office 365.
   
-Una valutazione completa di rete, come quelle indicate nella [Skype Operations Framework](https://www.skypeoperationsframework.com/) fornirà le possibili soluzioni a problemi di progettazione e i dettagli di implementazione di rete. La maggior parte delle valutazioni di rete indicherà la connettività di rete per Office 365 può essere sistemata in [configurazione secondarie o le modifiche di progettazione](https://aka.ms/manageo365endpoints) per l'infrastruttura dei servizi esterni internet e di rete esistenti.
+Una valutazione globale della rete, come quelle prescritte in [Skype Operations Framework](https://www.skypeoperationsframework.com/) , fornirà le possibili soluzioni per le sfide di progettazione della rete insieme ai dettagli sull'implementazione. La maggior parte delle valutazioni di rete indicherà che la connettività di rete a Office 365 può essere adattata con [modifiche alla configurazione o alla progettazione secondarie](https://aka.ms/manageo365endpoints) all'infrastruttura di rete e di uscita Internet esistente.
 
-Alcune valutazioni indicherà la connettività di rete per Office 365 richiederà ulteriori investimenti in componenti di rete. Ad esempio, a livello di larghezza di banda WAN o infrastruttura routing ottimizzata per supportare la connettività internet a Office 365. In alcuni casi una valutazione indicherà la connettività di rete per Office 365 è influenzata dalle disposizioni o le prestazioni requisiti per gli scenari, ad esempio [Skype per Business Online della qualità multimediale](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917). Per gli investimenti in infrastruttura per la connettività internet, ottimizzazione routing e la connessione diretta specializzata possono causare questi requisiti aggiuntivi.
+Alcune valutazioni indicheranno che la connettività di rete a Office 365 richiederà ulteriori investimenti nei componenti di rete. Ad esempio, gli investimenti in larghezza di banda WAN o infrastruttura di routing ottimizzata per supportare la connettività Internet a Office 365. Ogni tanto una valutazione indicherà che la connettività di rete a Office 365 è influenzata dai requisiti di regolamentazione o prestazioni per scenari come la [qualità multimediale di Skype for business online](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917). Questi requisiti aggiuntivi possono comportare investimenti in infrastruttura di connettività Internet, ottimizzazione del routing e connettività diretta specializzata.
   
 > [!NOTE]
-> Autorizzazione di Microsoft è necessario utilizzare ExpressRoute per Office 365. Microsoft vengono esaminati ogni richiesta dei clienti e autorizza solo ExpressRoute per l'utilizzo di Office 365 quando i requisiti normativi del cliente impone la connessione diretta. Se si devono soddisfare questi requisiti, forniscono il collegamento testo estratto e web alla normativa che interpretare per indicare che è necessaria una connessione diretta in [ExpressRoute di modulo di richiesta di Office 365](https://aka.ms/O365ERReview) per iniziare una revisione di Microsoft. Sottoscrizioni non autorizzate tenta di creare filtri di route per Office 365 verranno visualizzato un [messaggio di errore](https://support.microsoft.com/kb/3181709).
+> È necessaria l'autorizzazione Microsoft per l'utilizzo di ExpressRoute per Office 365. Microsoft esamina tutte le richieste dei clienti e autorizza ExpressRoute per l'utilizzo di Office 365 solo quando il requisito normativo del cliente delega la connettività diretta. Se si dispone di tali requisiti, fornire l'Estratto di testo e il collegamento Web al regolamento che si intende interpretare per indicare che la connettività diretta è necessaria nel [modulo di richiesta di ExpressRoute per Office 365](https://aka.ms/O365ERReview) per avviare una revisione Microsoft. Gli abbonamenti non autorizzati che tentano di creare filtri di route per Office 365 riceveranno un [messaggio di errore](https://support.microsoft.com/kb/3181709).
   
-I punti chiave da considerare quando si pianifica la valutazione della rete per Office 365:
+Punti chiave da prendere in considerazione durante la pianificazione della valutazione della rete per Office 365:
   
-- Office 365 è un servizio affidabile e high performance eseguito su internet. È continuano a investire per migliorare i seguenti aspetti del servizio. Tutti i servizi di Office 365 sono disponibili tramite la connessione a internet.
+- Office 365 è un servizio sicuro, affidabile e ad alte prestazioni che viene eseguito su Internet pubblico. Continuiamo a investire per migliorare questi aspetti del servizio. Tutti i servizi di Office 365 sono disponibili tramite connettività Internet.
 
-- Viene continuamente stiamo ottimizzazione core raggiungono gli aspetti di Office 365, ad esempio disponibilità, globale e la connettività di basato sulle prestazioni per internet. Molti servizi di Office 365, ad esempio, utilizzare un set di espansione dei nodi edge è connessa a internet. La rete perimetrale offre la massima prossimità e prestazioni per le connessioni in arrivo tramite internet.
+- Vengono continuamente ottimizzati gli aspetti principali di Office 365, ad esempio la disponibilità, la portata globale e le prestazioni per la connettività basata su Internet. Ad esempio, molti servizi di Office 365 sfruttano un insieme di nodi perimetrali Internet in espansione. Questa rete Edge offre le migliori caratteristiche di prossimità e prestazioni alle connessioni provenienti da Internet.
 
-- Quando si valutano la possibilità di utilizzare Office 365 per i servizi inclusi, ad esempio Skype per la funzionalità di Business Online vocali, video o riunione, i clienti devono eseguire una valutazione della rete end-to-end e soddisfare requisiti utilizzando il nostro Skype Operations Framework. Questi clienti avranno diverse opzioni per soddisfare requisiti specifici per la connettività cloud, tra cui ExpressRoute.
+- Quando si considera l'utilizzo di Office 365 per uno qualsiasi dei servizi inclusi, come Skype for business online Voice, video o meeting capabilities, i clienti devono terminare la valutazione della rete finale e soddisfare i requisiti utilizzando Skype Operations Framework. Questi clienti avranno diverse opzioni per soddisfare requisiti specifici per la connettività cloud, tra cui ExpressRoute.
 
-Dare uno sguardo sui case study di Microsoft [ottimizzazione delle prestazioni di rete per Microsoft Office 365](https://msdn.microsoft.com/en-us/library/mt450488.aspx). Se si sta valutando Office 365 e non sono assicurarsi che la posizione in cui iniziano con la valutazione della rete o hanno trovato struttura della rete richiede che per assistenza per superare il lavoro con il team di account Microsoft.
+Esaminare il case study di Microsoft [per ottimizzare le prestazioni di rete per Microsoft Office 365](https://msdn.microsoft.com/en-us/library/mt450488.aspx). Se si sta valutando Office 365 e non si è certi di dove iniziare con la valutazione della rete o si sono verificati problemi di progettazione della rete per i quali è necessario un intervento di assistenza da superare, è possibile collaborare con il team dell'account Microsoft.
   
-Inoltre, leggere l'argomento [Principi di connettività di rete di Office 365](https://aka.ms/o365networkingprinciples) per comprendere i principi di connettività per la gestione in modo sicuro il traffico di Office 365 e ottenere prestazioni ottimali. In questo articolo consentono di acquisire familiarità con le indicazioni più recenti per l'ottimizzazione in modo sicuro la connettività di rete di Office 365.
+Leggere inoltre i [principi di connettività di rete di office 365](https://aka.ms/o365networkingprinciples) per comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e ottenere le migliori prestazioni possibili. In questo articolo vengono fornite informazioni utili per comprendere le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365.
   
-Questo è un collegamento breve è possibile utilizzare il ritorno: [ https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
+Ecco un breve collegamento che è possibile utilizzare per tornare: [ https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
   
 ## <a name="see-also"></a>Vedere anche
 
@@ -66,7 +66,7 @@ Questo è un collegamento breve è possibile utilizzare il ritorno: [ https://ak
   
 [Pianificazione della rete con ExpressRoute per Office 365](network-planning-with-expressroute.md)
   
-[Uso delle community BGP in ExpressRoute per gli scenari di Office 365 (anteprima)](bgp-communities-in-expressroute.md)
+[Utilizzo delle community BGP in ExpressRoute per gli scenari di Office 365 (anteprima)](bgp-communities-in-expressroute.md)
   
 [Qualità multimediale e prestazioni della connettività di rete in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

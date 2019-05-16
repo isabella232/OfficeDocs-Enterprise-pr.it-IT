@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/13/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute per Office 365 offre un percorso di routing alternativo per raggiungere numerosi servizi di Office 365 senza che sia necessario che tutto il traffico venga in uscita su Internet. Anche se la connessione Internet a Office 365 è ancora necessaria, le route specifiche che Microsoft annuncia tramite BGP alla rete rendono il circuito ExpressRoute diretto preferito, a meno che non siano presenti altre configurazioni della rete. Le tre aree comuni che possono essere configurate per gestire questo percorso includono il filtro, la sicurezza e la conformità del prefisso.
-ms.openlocfilehash: 5345c4067f4ecf9b1b1bc1a0ad20d6e1f5273f65
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 08c991deaaf1b8fa1e17addbed8a23cbfcf37b87
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487732"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067132"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestione di ExpressRoute per la connettività di Office 365
 
@@ -46,7 +46,7 @@ Esistono diversi motivi per evitare l'utilizzo degli [URL di Office 365 e degli 
 | |
 |**Opzione**|**Complessità**|**Controllo delle modifiche**|
 |:-----|:-----|:-----|
-|Accettare tutte le route Microsoft  <br/> |**Bassa:** Il cliente si affida ai controlli Microsoft per garantire che tutte le rotte siano possedute correttamente.  <br/> |Nessuna  <br/> |
+|Accettare tutte le route Microsoft  <br/> |**Bassa:** Il cliente si affida ai controlli Microsoft per garantire che tutte le rotte siano possedute correttamente.  <br/> |Nessuno  <br/> |
 |Filtrare le reti supernets di Microsoft  <br/> |**Medium:** Il cliente implementa gli elenchi di filtri dei prefissi riepilogati per consentire solo le route di proprietà di Microsoft.  <br/> |I clienti devono garantire che gli aggiornamenti non frequenti vengano riflessi nei filtri route.  <br/> |
 |Filtrare gli intervalli di indirizzi IP di Office 365  <br/> [!CAUTION] Non consigliato
 |**Alta:** Le route dei filtri dei clienti si basano sui prefissi IP di Office 365 definiti.  <br/> |I clienti devono implementare un processo di gestione delle modifiche affidabile per gli aggiornamenti mensili.  <br/> [!CAUTION] Questa soluzione richiede importanti modifiche in continuo. Le modifiche non implementate nel tempo probabilmente provocheranno un'interruzione del servizio.   |
@@ -70,7 +70,7 @@ Per i controlli aggiunti, è possibile utilizzare il filtro di livello FQDN all'
 
 |**Opzione**|**Complessità**|**Controllo delle modifiche**|
 |:-----|:-----|:-----|
-|Nessuna restrizione  <br/> |**Bassa:** Il cliente consente l'accesso in uscita illimitato a Microsoft.  <br/> |Nessuna  <br/> |
+|Nessuna restrizione  <br/> |**Bassa:** Il cliente consente l'accesso in uscita illimitato a Microsoft.  <br/> |Nessuno  <br/> |
 |Restrizioni delle porte  <br/> |**Bassa:** Il cliente limita l'accesso in uscita a Microsoft dalle porte previste.  <br/> |Rara.  <br/> |
 |Restrizioni FQDN  <br/> |**Alta:** Il cliente limita l'accesso in uscita a Office 365 in base ai nomi FQDN pubblicati.  <br/> |Modifiche mensili.  <br/> |
 
@@ -80,7 +80,7 @@ Sono disponibili diversi scenari facoltativi che richiedono che Microsoft avvii 
   
 - ADFS durante la convalida delle password per l'accesso.
 
-- [DistribuZioni ibride di Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
+- [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
 
 - Posta da un tenant di Exchange Online a un host locale.
 

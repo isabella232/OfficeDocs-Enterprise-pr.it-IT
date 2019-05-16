@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 3/1/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,28 +12,28 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: In questo articolo viene descritto come utilizzare la riduzione e vendita abbinata tecniche con Web Essentials per ridurre il numero di richieste HTTP e ridurre il tempo che necessario per caricare le pagine di SharePoint Online.
-ms.openlocfilehash: edc959e881b0f22b72fba64969e5984f30bce696
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: In questo articolo viene descritto come utilizzare minimizzazione e le tecniche di raggruppamento con Web Essentials per ridurre il numero di richieste HTTP e per ridurre il tempo necessario per il caricamento delle pagine in SharePoint Online.
+ms.openlocfilehash: d73bc6cc86ea1ea4ecba5395f22a20befdc64b13
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541103"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070262"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimizzazione e creazione di bundle in SharePoint Online
 
-In questo articolo viene descritto come utilizzare la riduzione e vendita abbinata tecniche con Web Essentials per ridurre il numero di richieste HTTP e ridurre il tempo che necessario per caricare le pagine di SharePoint Online.
+In questo articolo viene descritto come utilizzare minimizzazione e le tecniche di raggruppamento con Web Essentials per ridurre il numero di richieste HTTP e per ridurre il tempo necessario per il caricamento delle pagine in SharePoint Online.
   
 Quando si personalizza il sito Web è possibile aggiungere un numero elevato di file aggiuntivi al server per supportare la personalizzazione. L'aggiunta di ulteriori immagini, CSS e JavaScript aumenta il numero di richieste HTTP al server che a sua volta aumenta il tempo necessario per visualizzare una pagina Web. Se si dispone di più file dello stesso tipo, è possibile creare dei bundle di questi file per accelerarne il download.
   
-Per i file JavaScript e CSS, è inoltre possibile utilizzare un metodo chiamato riduzione, dove è ridurre le dimensioni totali dei file rimuovendo gli spazi vuoti e altri caratteri che non sono necessarie.
+Per i file JavaScript e CSS, è anche possibile utilizzare un approccio denominato minimizzazione, in cui si riducono le dimensioni totali dei file rimuovendo gli spazi vuoti e gli altri caratteri che non sono necessari.
   
 ## <a name="minification-and-bundling-javascript-and-css-files-with-web-essentials"></a>Minimizzazione e creazione di bundle di file JavaScript e CSS tramite Web Essentials
 
 È possibile utilizzare software di terze parti, ad esempio Web Essentials, per raggruppare i file CSS e JavaScript.
   
 > [!IMPORTANT]
-> Web Essentials è un progetto di terze parti, open source, basate sulla community. Il software è un'estensione di Visual Studio 2012 e Visual Studio 2013 e non è supportato da Microsoft. Per scaricare Web Essentials, visitare il sito Web al [http://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629). 
+> Web Essentials è un progetto di terze parti, open source e basato sulla community. Il software è un'estensione di Visual Studio 2012 e Visual Studio 2013 e non è supportato da Microsoft. Per scaricare Web Essentials, visitare il sito Web [http://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)all'indirizzo. 
   
 Web Essentials offre due forme di creazione di bundle:
   
@@ -45,11 +45,11 @@ Web Essentials offre due forme di creazione di bundle:
   
 ![Schermata dell'elemento del marchio nella pagina master personalizzata](media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
- **Per creare un bundle TE000127218 e CSS in Web Essentials**
+ **Per creare un bundle di TE000127218 e CSS in Web Essentials**
   
 1. In Visual Studio, in Esplora risorse selezionare i file che si desidera includere nel bundle.
     
-2. Fare clic sui file selezionati e quindi selezionare **Web Essentials** \> **file bundle creare JavaScript** dal menu di scelta rapida. Per esempio: 
+2. Fare clic con il pulsante destro del mouse sui file selezionati e quindi scegliere **Web Essentials** \> **creare file bundle JavaScript** dal menu di scelta rapida. Ad esempio: 
     
     ![Schermata che mostra le opzioni del menu di Web Essentials](media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -79,13 +79,13 @@ Dopo l'aggregazione, il file di bundle JavaScript viene ridotto in modo signific
   
 ## <a name="bundling-images-by-creating-an-image-sprite"></a>Aggregazione di immagini tramite la creazione di un'immagine sprite
 
-Analogamente a come si aggregano file JavaScript e CSS, è possibile combinare molte icone piccole e altre immagini comuni in un foglio sprite più grande e quindi utilizzare CSS per visualizzare le singole immagini. Invece di scaricare ogni immagine, web browser dell'utente scarica il foglio sprite una sola volta e quindi memorizza nella cache del computer locale. Consente di migliorare le prestazioni di caricamento delle pagine riducendo al numero di download e round trip al server web.
+Analogamente all'aggregazione di file CSS e JavaScript, è possibile combinare molte piccole icone e altre immagini comuni in un foglio sprite più grande e quindi utilizzare CSS per visualizzare le singole immagini. Invece di scaricare ogni singola immagine, il Web browser dell'utente esegue il download del foglio sprite una sola volta e quindi la memorizza nella cache del computer locale. Ciò migliora le prestazioni di caricamento della pagina riducendo il numero di download e sequenze di andata e ritorno al server Web.
   
  **Per creare un'immagine sprite in Web Essentials**
   
 1. In Visual Studio, in Esplora risorse selezionare i file che si desidera includere nel bundle.
     
-2. Fare clic sui file selezionati e quindi selezionare **Web Essentials** \> **sprite immagine crea** dal menu di scelta rapida. Per esempio: 
+2. Fare clic con il pulsante destro del mouse sui file selezionati e quindi scegliere **Web Essentials** \> **Crea immagine sprite** dal menu di scelta rapida. Ad esempio: 
     
     ![Schermata che illustra come creare un'immagine sprite](media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

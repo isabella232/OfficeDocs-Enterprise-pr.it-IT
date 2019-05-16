@@ -3,7 +3,7 @@ title: Opzioni di spostamento per SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,112 +11,112 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: In questo articolo vengono descritti lo spostamento opzioni siti con pubblicazione di SharePoint abilitati in SharePoint Online. La configurazione della struttura di spostamento e la scelta influisce sulle notevolmente le prestazioni e scalabilità dei siti di SharePoint Online.
-ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
-ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
+description: In questo articolo vengono descritti i siti delle opzioni di spostamento con la pubblicazione di SharePoint abilitata in SharePoint Online. La scelta e la configurazione della struttura di spostamento incidono in modo significativo sulle prestazioni e sulla scalabilità dei siti in SharePoint Online.
+ms.openlocfilehash: 9bf2010000f14b173b63574fab4ee77cb772b3f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "26547178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069942"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opzioni di spostamento per SharePoint Online
 
-In questo articolo vengono descritti lo spostamento opzioni siti con pubblicazione di SharePoint abilitati in SharePoint Online. La configurazione della struttura di spostamento e la scelta influisce sulle notevolmente le prestazioni e scalabilità dei siti di SharePoint Online.
+In questo articolo vengono descritti i siti delle opzioni di spostamento con la pubblicazione di SharePoint abilitata in SharePoint Online. La scelta e la configurazione della struttura di spostamento incidono in modo significativo sulle prestazioni e sulla scalabilità dei siti in SharePoint Online.
 
 ## <a name="overview"></a>Panoramica
 
-Configurazione del provider di spostamento può ridurre notevolmente le prestazioni per l'intero sito e un'attenta valutazione deve essere prese per selezionare un provider di spostamento e la configurazione ridimensiona in modo efficace per i requisiti di un sito di SharePoint. Esistono due provider di spostamento della finestra, nonché le implementazioni di spostamento personalizzato.
+La configurazione del provider di spostamento può influire in modo significativo sulle prestazioni per l'intero sito e è necessario prendere in considerazione attentamente la scelta di un provider di spostamento e una configurazione in grado di ridimensionare efficacemente i requisiti di un sito di SharePoint. Sono disponibili due provider di spostamento fuori dalla casella, nonché implementazioni di spostamento personalizzate.
 
-La prima opzione, [**esplorazione gestita (metadati)**](#using-managed-navigation-and-metadata-in-sharepoint-online), è consigliabile e tra le opzioni predefinite in SharePoint Online, Tuttavia, si consiglia la disabilitazione di limitazione per motivi di sicurezza se non necessario. Limitazione per motivi di sicurezza è abilitata come impostazione sicura per impostazione predefinita per il provider di spostamento; Tuttavia, molti siti non richiedono l'overhead di sicurezza di limitazione per motivi poiché gli elementi di spostamento sono spesso coerenti per tutti gli utenti del sito. Con la configurazione consigliata per disabilitare la limitazione per motivi di sicurezza, il provider di spostamento non richiede l'enumerazione struttura del sito e altamente scalabile con un impatto sulle prestazioni accettabili.
+La prima opzione, lo [**spostamento gestito (metadati)**](#using-managed-navigation-and-metadata-in-sharepoint-online)è consigliata ed è una delle opzioni predefinite in SharePoint Online. Tuttavia, si consiglia di disabilitare la limitazione di sicurezza a meno che non sia necessario. La limitazione di sicurezza è abilitata come impostazione di protezione per il provider di spostamento. Tuttavia, molti siti non richiedono il sovraccarico della limitazione di sicurezza poiché gli elementi di spostamento spesso sono coerenti per tutti gli utenti del sito. Con la configurazione consigliata per disabilitare la limitazione di sicurezza, questo provider di spostamento non richiede l'enumerazione della struttura del sito ed è altamente scalabile con un impatto sulle prestazioni accettabile.
 
-La seconda opzione, la [**struttura di spostamento**](#using-structural-navigation-in-sharepoint-online), **non un'opzione di spostamento consigliato in SharePoint Online**. Questo provider di spostamento è stato progettato per il supporto di SharePoint Online è limitato una topologia locale. Mentre offre alcuni altri set di funzionalità e altre opzioni di spostamento, queste caratteristiche, tra cui limitazione per motivi di sicurezza e sull'enumerazione struttura del sito, ha un costo di chiamate un sovraccarico del server e le prestazioni e scalabilità impatti quando viene utilizzata. Siti che utilizzano structed spostamento che utilizzano risorse eccessive possono essere soggetto di limitazione.
+La seconda opzione, ovvero [**struttura di spostamento strutturale**](#using-structural-navigation-in-sharepoint-online), **non è un'opzione di spostamento consigliata in SharePoint Online**. Questo provider di spostamento è stato creato per una topologia locale con supporto limitato in SharePoint Online. Anche se fornisce alcuni set di funzionalità aggiuntivi rispetto ad altre opzioni di spostamento, queste funzionalità, tra cui la limitazione della sicurezza e l'enumerazione della struttura del sito, sono a costo di eccessive chiamate ai server e incidono sulla scalabilità e sulle prestazioni quando vengono utilizzate. I siti che utilizzano una struttura di spostamento che consumano risorse eccessive possono essere soggetti a limitazione.
 
-Oltre ai provider di spostamento della finestra, molti clienti hanno implementato con successo implementazioni di spostamento personalizzato alternativi. Una classe comune delle implementazioni di spostamento personalizzato prestare modelli di progettazione viene eseguito il rendering client che archiviano una cache locale di nodi. Vedere **[creazione di script sul lato client basate sulla ricerca](#using-search-driven-client-side-scripting)** in questo articolo.
+Oltre ai provider di spostamento fuori campo, molti clienti hanno implementato con successo implementazioni di spostamento personalizzate alternative. Una classe comune di implementazioni di spostamento personalizzate abbraccia modelli di progettazione con rendering client che archiviano una cache locale dei nodi di spostamento. Per ulteriori informazioni, vedere **[script sul fianco client](#using-search-driven-client-side-scripting)** basato sulla ricerca in questo articolo.
 
-Tali provider spostamento hanno due vantaggi principali: 
-- In genere con cui lavorano anche progettazioni di pagina risponde.
-- Sono estremamente scalabili e ad alte prestazioni dal momento che è possibile eseguire il rendering con alcun costo della risorsa (e l'aggiornamento in background dopo un intervallo di timeout). 
-- Tali provider spostamento può recuperare dati di spostamento con diverse strategie, compresi tra configurazioni statiche semplice per vari provider di dati dinamico. 
+Questi provider di spostamento hanno un paio di vantaggi principali: 
+- In genere funzionano bene con i progetti di pagina reattivi.
+- Sono estremamente scalabili e performanti perché è possibile eseguire il rendering senza costi di risorse (e aggiornare in background dopo un timeout). 
+- Tali provider di spostamento possono recuperare i dati di spostamento utilizzando diverse strategie, che vanno dalle configurazioni statiche semplici ai vari provider di dati dinamici. 
 
-Un esempio di un provider di dati consiste nell'utilizzare una **struttura di spostamento basata sulla ricerca**, che consente la flessibilità per l'enumerazione dei nodi di spostamento e la gestione efficiente motivi di sicurezza. 
+Un esempio di provider di dati prevede l'utilizzo di una struttura di **spostamento basata sulla ricerca**, che consente la flessibilità per l'enumerazione dei nodi di spostamento e la gestione efficiente del taglio di sicurezza. 
 
-Sono disponibili altre opzioni più comuni per creare **provider di spostamento personalizzato**. Esaminare [le soluzioni di spostamento per i portali di SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) per ulteriori informazioni sulla creazione di un provider di spostamento personalizzato.
+Sono disponibili altre opzioni popolari per la creazione di **provider di spostamento personalizzati**. Leggere le [soluzioni di navigazione per i portali di SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) per ulteriori informazioni sulla creazione di un provider di spostamento personalizzato.
   
-## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Opzioni di spostamento vantaggi e svantaggi di SharePoint Online
+## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Vantaggi e svantaggi delle opzioni di spostamento di SharePoint Online
 
 Nella tabella seguente sono riepilogati i vantaggi e gli svantaggi di ogni opzione. 
 
 
 |Esplorazione gestita  |Esplorazione strutturale  |Esplorazione basata sulla ricerca  |Provider di spostamento personalizzato  |
 |---------|---------|---------|---------|
-|Pro:<br/><br/>Facile da gestire<br/>Opzione consigliata<br/>     |Pro:<br/><br/>Semplice da configurare<br/>Per motivi di sicurezza<br/>Viene aggiornato automaticamente con l'aggiunta di contenuto<br/>|Vantaggi:<br/><br/>Per motivi di sicurezza<br/>Si aggiorna automaticamente man mano che i siti vengono aggiunti<br/>Tempo di caricamento rapido e struttura dell'esplorazione memorizzata nella cache<br/>|Vantaggi:<br/><br/>Più ampia scelta delle opzioni disponibili<br/>Caricamento rapido quando la memorizzazione nella cache viene utilizzato in modo corretto<br/>Molte opzioni funzionano bene con struttura delle pagine risponde<br/>|
-|Contro:<br/><br/>Non si aggiorna automaticamente per riflettere la struttura del sito<br/>Influisce sulle prestazioni se è abilitata la rimozione di sicurezza<br/>|Contro:<br/><br/>**Scelta non consigliata**<br/>**Influisce sulle prestazioni e scalabilità**<br/>**Soggetti a limitazione delle richieste**<br/>|Contro:<br/><br/>Non è possibile ordinare facilmente i siti<br/>Richiede la personalizzazione della pagina master (necessarie competenze tecniche)<br/>|Contro:<br/><br/>Sviluppo personalizzato è obbligatorio<br/>Origine dati esterna / cache memorizzati è necessario ad esempio Azure<br/>|
+|Professionisti<br/><br/>Facile da gestire<br/>Opzione consigliata<br/>     |Professionisti<br/><br/>Semplice da configurare<br/>Protezione ritagliata<br/>Viene aggiornato automaticamente con l'aggiunta di contenuto<br/>|Professionisti<br/><br/>Protezione ritagliata<br/>Si aggiorna automaticamente man mano che i siti vengono aggiunti<br/>Tempo di caricamento rapido e struttura dell'esplorazione memorizzata nella cache<br/>|Professionisti<br/><br/>Scelta più ampia di opzioni disponibili<br/>Caricamento veloce quando la memorizzazione nella cache viene utilizzata correttamente<br/>Molte opzioni funzionano bene con la progettazione delle pagine reattive<br/>|
+|Contro<br/><br/>Non si aggiorna automaticamente per riflettere la struttura del sito<br/>Impatto delle prestazioni se la limitazione di sicurezza è abilitata<br/>|Contro<br/><br/>**Non consigliato**<br/>**Impatto sulle prestazioni e sulla scalabilità**<br/>**Soggette a limitazione**<br/>|Contro<br/><br/>Non è possibile ordinare facilmente i siti<br/>Richiede la personalizzazione della pagina master (necessarie competenze tecniche)<br/>|Contro<br/><br/>Lo sviluppo personalizzato è obbligatorio<br/>L'origine dati esterna/cache memorizzata è necessaria ad esempio Azure<br/>|
 
-L'opzione più appropriata per il sito dipenderà alle specifiche esigenze di siti e le funzionalità tecniche. Se si desidera che un provider di spostamento della casella scalabile, spostamento gestite con limitazione per motivi di sicurezza disabilitato è un'opzione ottima. 
+L'opzione più appropriata per il sito dipende dai requisiti del sito e dalle proprie capacità tecniche. Se si desidera un provider di navigazione esterno scalabile, quindi l'esplorazione gestita con la limitazione della sicurezza disabilitata è un'ottima opzione. 
 
-È possibile mantenere l'opzione di esplorazione gestita tramite la configurazione, non implicano l'utilizzo di file di personalizzazione di codice ed è notevolmente più veloce di struttura di spostamento. Se si richiedono la limitazione per motivi di sicurezza e ha familiarità con una pagina master personalizzata e alcune funzionalità nell'organizzazione per gestire le modifiche che possono verificarsi nella pagina master predefinita per SharePoint Online, l'opzione basate sulla ricerca potrebbe verificarsi un migliore esperienza utente. Se si dispone di più complesse, un provider di spostamento personalizzato può essere la scelta ideale. Struttura di spostamento non è consigliato.
+L'opzione di spostamento gestito può essere mantenuta tramite la configurazione, non comporta file di personalizzazione del codice ed è significativamente più veloce rispetto alla struttura di spostamento strutturale. Se si richiede la riduzione della sicurezza e si ha dimestichezza con una pagina master personalizzata e si dispone di una certa funzionalità nell'organizzazione per gestire le modifiche che possono verificarsi nella pagina master predefinita per SharePoint Online, l'opzione basata sulla ricerca potrebbe produrre una migliore esperienza utente. Se si dispone di requisiti più complessi, è possibile che il provider di spostamento personalizzato sia la scelta giusta. La struttura di spostamento strutturale non è consigliata.
 
-Infine, è importante tenere presente che SharePoint viene aggiunta di provider di spostamento aggiuntivi e le funzionalità per sfruttare una gerarchia del sito più bidimensionale e un modello hub and spoke con i siti hub SharePoint moderne architetture del sito SharePoint. In questo modo molti scenari da raggiungere che non richiedono l'utilizzo della caratteristica Pubblicazione di SharePoint e le configurazioni di spostamento sono ottimizzate per la scalabilità e latenza in SharePoint Online. Si noti che l'applicazione lo stesso principio - semplificando la struttura complessiva del sito di pubblicazione di SharePoint a una struttura più lineare, aiuta a con le prestazioni complessive e proporzioni anche. Ciò significa che anziché una singola raccolta siti con centinaia di siti (Web secondari), una soluzione migliore deve disporre di molte raccolte siti con poche siti secondari (Web secondari).
+Infine, è importante tenere presente che SharePoint aggiunge ulteriori provider di spostamento e funzionalità per le moderne architetture di siti di SharePoint, sfruttando una gerarchia di siti più appiattita e un modello hub-and-spoke con i siti hub di SharePoint. In questo modo è possibile ottenere numerosi scenari che non richiedono l'utilizzo della caratteristica di pubblicazione di SharePoint e queste configurazioni di spostamento sono ottimizzate per la scalabilità e la latenza all'interno di SharePoint Online. Si noti che l'applicazione dello stesso principio: semplificare la struttura complessiva del sito di pubblicazione di SharePoint in una struttura più piatta, spesso contribuisce anche alle prestazioni generali e alla scalabilità. Ciò significa che, invece di disporre di una singola raccolta siti con centinaia di Site (Web secondari), un approccio migliore consiste nell'avere molte raccolte siti con pochissimi sottositi (Web secondari).
 
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Utilizzo di esplorazione gestita e metadati in SharePoint Online
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Utilizzo dell'esplorazione e dei metadati gestiti in SharePoint Online
 
-Esplorazione gestita è un'altra opzione di predefinite che è possibile utilizzare per ricreare la maggior parte delle stesse funzionalità struttura di spostamento. Metadati gestiti possono essere configurati per disporre di limitazione per motivi di sicurezza abilitate o disabilitate. Nelle configurazioni con limitazione per motivi di sicurezza disabilitato, esplorazione gestita è relativamente efficiente in caso di caricamento tutti i collegamenti di spostamento con un numero di chiamate server costante. Abilitazione della sicurezza limitazione per motivi, tuttavia, Nega alcuni dei vantaggi dell'esplorazione gestita e clienti possono scegliere di esplorare una delle soluzioni di spostamento personalizzata per ottimizzare le prestazioni e scalabilità.
+L'esplorazione gestita è un'altra opzione che è possibile utilizzare per ricreare la maggior parte delle stesse funzionalità della struttura di spostamento strutturale. I metadati gestiti possono essere configurati in modo da abilitare o disabilitare la limitazione di sicurezza. Una volta configurata con la limitazione della sicurezza disabilitata, l'esplorazione gestita è piuttosto efficiente poiché carica tutti i collegamenti di spostamento con un numero costante di chiamate del server. L'abilitazione della limitazione della sicurezza, tuttavia, nega alcuni dei vantaggi dell'esplorazione gestita e i clienti possono scegliere di esplorare una delle soluzioni di spostamento personalizzate per ottimizzare le prestazioni e la scalabilità.
 
-Numero di siti non richiedono una limitazione per motivi di sicurezza, come la struttura di spostamento è spesso coerenza per tutti gli utenti del sito. Se la rimozione di sicurezza è disattivata e viene aggiunto un collegamento alla struttura non tutti gli utenti hanno accesso a, il collegamento indicherà che ancora ma porterà a un messaggio di accesso negato. Non esiste alcun rischio di accesso non intenzionale al contenuto.
+Molti siti non richiedono la limitazione della sicurezza, in quanto la struttura di spostamento è spesso coerente per tutti gli utenti del sito. Se la limitazione di sicurezza è disabilitata e viene aggiunto un collegamento alla struttura di spostamento a cui non è consentito l'accesso a tutti gli utenti, il collegamento verrà comunque visualizzato, ma comporterà un messaggio di accesso negato. Non vi è alcun rischio di accesso involontario al contenuto.
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Come implementare l'esplorazione gestita e i risultati
 
-Esistono diversi articoli su Docs.Microsoft.com sui dettagli dell'esplorazione gestita, ad esempio, vedere [Panoramica dell'esplorazione gestita in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation).
+Sono disponibili numerosi articoli su Docs.Microsoft.com per informazioni dettagliate sull'esplorazione gestita, ad esempio, vedere [Overview of Managed Navigation in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation).
 
-Per implementare esplorazione gestita, è impostare termini gli URL corrispondente alla struttura di spostamento del sito. Esplorazione gestita può anche essere curated manualmente per sostituire struttura di spostamento in molti casi. Per esempio:
+Per implementare l'esplorazione gestita, è necessario configurare i termini con gli URL corrispondenti alla struttura di spostamento del sito. L'esplorazione gestita può anche essere curata manualmente per sostituire la struttura di spostamento strutturale in molti casi. Ad esempio:
 
-![Struttura dei siti SharePoint Online](media/SPONavOptionsListOfSites.png)
+![Struttura del sito di SharePoint Online](media/SPONavOptionsListOfSites.png)
 
 L'esempio seguente mostra le prestazioni della struttura di spostamento complessa utilizzando l'esplorazione gestita.
 
-![Prestazioni di navigazione complesse utilizzando esplorazione gestita](media/SPONavOptionsComplexNavPerf.png)
+![Prestazioni dell'esplorazione complessa tramite l'esplorazione gestita](media/SPONavOptionsComplexNavPerf.png)
 
-Utilizzo dell'esplorazione gestita in modo coerente migliora le prestazioni rispetto al metodo struttura di spostamento.
+L'utilizzo dell'esplorazione gestita migliora costantemente le prestazioni rispetto all'approccio di spostamento strutturale.
   
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>Utilizzo dell'esplorazione strutturale in SharePoint Online
 
-Questa è la struttura di spostamento della casella utilizzato per impostazione predefinita ed è la soluzione più semplice ma è pertanto un compromesso prestazioni costosa. Non richiede alcuna personalizzazione e utente tecnico può inoltre possibile aggiungere elementi, nascondere gli elementi e gestire la struttura di spostamento dalla pagina delle impostazioni. Si tratta tuttavia anche true per l'esplorazione gestita in modo, si consiglia di utilizzare l'esplorazione gestita come che è possibile inoltre facilmente gestiti e controllati anche con un miglioramento delle prestazioni.
+Questa è la struttura di spostamento fuori campo utilizzata per impostazione predefinita ed è la soluzione più semplice, ma come tale ha un costo elevato di prestazioni. Non richiede alcuna personalizzazione e un utente non tecnico può anche aggiungere facilmente elementi, nascondere gli elementi e gestire la struttura di spostamento dalla pagina impostazioni. Questo è tuttavia valido anche per l'esplorazione gestita, pertanto è consigliabile utilizzare l'esplorazione gestita in modo che possa essere anche facilmente gestita e controllata e con prestazioni migliorate.
 
-![Struttura di spostamento con i siti secondari Mostra selezionata](media/SPONavOptionsStructuredShowSubsites.png)
+![Struttura di spostamento strutturale con i siti secondari visualizzati selezionati](media/SPONavOptionsStructuredShowSubsites.png)
   
 ### <a name="turning-on-structural-navigation-in-sharepoint-online"></a>Attivazione dell'esplorazione strutturale in SharePoint Online
 
-Per illustrare come le prestazioni in una soluzione di SharePoint Online standard con struttura di spostamento e Mostra i siti secondari opzione attivato. Di seguito è riportata una schermata delle impostazioni presenti nella pagina **Impostazioni sito** \> **struttura di spostamento**.
+Per illustrare le prestazioni in una soluzione SharePoint Online con esplorazione strutturale e opzione per mostrare i siti secondari attivate. Di seguito è riportata una schermata delle impostazioni disponibili nella pagina di **spostamento** **delle impostazioni** \> del sito.
   
 ![Schermata che mostra i siti secondari](media/5b6a8841-34ed-4f61-b6d3-9d3e78d393e7.png)
   
 ### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>Analisi delle prestazioni dell'esplorazione strutturale in SharePoint Online
 
-Per analizzare le prestazioni di una pagina di SharePoint, utilizzare la scheda di **rete** F12 gli strumenti di sviluppo in Internet Explorer. 
+Per analizzare le prestazioni di una pagina di SharePoint, utilizzare la scheda **rete** degli strumenti di sviluppo F12 in Internet Explorer. 
   
 ![Schermata che mostra la scheda Rete degli strumenti di sviluppo F12](media/SPONavOptionsNetworks.png)
   
 1. Nella scheda **Rete**, fare clic nella pagina aspx in caricamento, quindi fare clic sulla scheda **Dettagli**.<br/> ![Schermata che mostra la scheda dei dettagli](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
-2. Fare clic su **Intestazioni di risposta**. <br/>![Schermata scheda Dettagli](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>SharePoint restituisce alcune informazioni utili per la diagnostiche delle intestazioni di risposta. 
-3. Uno dei componenti maggiormente utili di informazioni è **SPRequestDuration** è il valore espresso in millisecondi, di una richiesta di tempo richiesto per l'elaborazione sul server. Nella schermata seguente **Mostra i siti secondari** è selezionata per la struttura di spostamento. Ciò significa che non vi è solo il collegamento di raccolta siti nel riquadro di spostamento globale:<br/>![Schermata che mostra i tempi di caricamento come durata richiesta](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
-4. Il tasto **SPRequestDuration** ha un valore di 245 millisecondi. Rappresenta il tempo impiegato per restituire la richiesta. Poiché esiste un solo elemento di spostamento nel sito, questo è un riscontro valido per modalità SharePoint Online esegue senza spostamento spessi. Nella schermata successiva viene illustrato l'aggiunta nei siti secondari su questa chiave.<br/>![Schermata che illustra una durata richiesta di 2502 ms](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
+2. Fare clic su **Intestazioni di risposta**. <br/>![Schermata scheda Dettagli](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>SharePoint restituisce alcune informazioni diagnostiche utili nelle intestazioni di risposta. 
+3. Una delle informazioni più utili è **SPRequestDuration** , ovvero il valore, in millisecondi, della durata della richiesta di elaborazione sul server. Nella schermata seguente l'opzione **Mostra i siti secondari** non è selezionata per l'esplorazione strutturale. Questo significa che è presente solo il collegamento della raccolta di siti nel riquadro di esplorazione globale:<br/>![Schermata che mostra i tempi di caricamento come durata richiesta](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
+4. La chiave **SPRequestDuration** presenta un valore di 245 millisecondi. Questo valore rappresenta il tempo necessario per restituire la richiesta. Poiché esiste un solo elemento di spostamento nel sito, questo è un valido riferimento per il modo in cui si comporta SharePoint Online senza spostamento intenso. Nella schermata successiva viene mostrato il modo in cui l'aggiunta nei siti secondari influisce su questa chiave.<br/>![Schermata che illustra una durata richiesta di 2502 ms](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
   
-Aggiunta di siti secondari è aumentata in modo significativo il tempo che necessario per restituire la richiesta della pagina per il sito di esempio relativamente semplice. Gerarchie di siti complessi, incluse le pagine nella struttura di spostamento e configurazione e altre opzioni di topologia possono aumentare notevolmente ulteriormente tale impatto.
+L'aggiunta dei siti secondari ha aumentato significativamente il tempo necessario per restituire la richiesta di pagina per questo sito di esempio relativamente semplice. Le gerarchie di siti complesse, incluse le pagine in navigazione e altre opzioni di configurazione e topologia, possono aumentare drasticamente ulteriormente questo impatto.
 
 ## <a name="using-search-driven-client-side-scripting"></a>Utilizzo di script sul lato client basato sulla ricerca
 
-Utilizzo di ricerca è possibile utilizzare gli indici vengono sviluppati in background tramite ricerca per indicizzazione continua. I risultati della ricerca vengono estratti dall'indice di ricerca e i risultati vengono tagliati sicurezza. Si tratta in genere più provider di spostamento della casella rapido durante la limitazione per motivi di protezione è necessario. Utilizzo della ricerca per la struttura di spostamento, in particolare se si dispone di una struttura del sito complessa, velocizzare il caricamento notevolmente ora della pagina. Il vantaggio principale di questo oggetto su esplorazione gestita è vantaggiosa limitazione per motivi di sicurezza.
+Utilizzando la ricerca è possibile utilizzare gli indici sviluppati in background tramite la ricerca per indicizzazione continua. I risultati della ricerca vengono recuperati dall'indice di ricerca e i risultati sono limitati per motivi di sicurezza. Questo è in genere più veloce rispetto ai provider di spostamento esterno alla casella quando è richiesta la limitazione della sicurezza. Utilizzando la ricerca per l'esplorazione strutturale, soprattutto se si dispone di una struttura di siti complessa, è possibile velocizzare notevolmente tempi di caricamento delle pagine. Il principale vantaggio di questa esplorazione gestita è che è possibile beneficiare della limitazione per motivi di sicurezza.
 
-Questo approccio prevede la creazione di una pagina master personalizzata e sostituendo il codice di struttura di spostamento della casella con HTML personalizzati. Eseguire la procedura descritta nell'esempio seguente per sostituire il codice di struttura di spostamento nel file `seattle.html`. In questo esempio, si aprirà la `seattle.html` di file e sostituire l'intero elemento `id=”DeltaTopNavigation”` con il codice HTML personalizzato.
+Questo approccio implica la creazione di una pagina master personalizzata e la sostituzione del codice di spostamento predefinito con codice HTML personalizzato. Seguire questa procedura illustrata nell'esempio seguente per sostituire il codice di spostamento nel file `seattle.html`. In questo esempio viene aperto il `seattle.html` file e sostituito l'intero elemento `id=”DeltaTopNavigation”` con codice HTML personalizzato.
 
-### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Esempio: Sostituire il codice di struttura di spostamento della finestra in una pagina master
+### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Esempio: sostituire il codice di spostamento fuori dalla casella in una pagina master
 
 1.  Andare alla pagina Impostazioni sito.
 2.  Aprire la raccolta di pagine master facendo clic su **Pagine master**.
-3.  Da qui è possibile spostarsi tra la raccolta e scaricare il file `seattle.master`.
-4.  Modificare il codice utilizzando un editor di testo ed eliminare il blocco di codice nella schermata seguente.<br/>![Eliminare il blocco di codice riportato](media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. Rimuovere il codice tra il `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` e `<\SharePoint:AjaxDelta>` tags e sostituirlo con il frammento di codice seguente:<br/>
+3.  Da qui è possibile passare alla raccolta e scaricare il file `seattle.master`.
+4.  Modificare il codice utilizzando un editor di testo ed eliminare il blocco di codice nella schermata seguente.<br/>![Eliminare il blocco di codice visualizzato](media/SPONavOptionsDeleteCodeBlock.png)<br/>
+5. Rimuovere il codice tra i `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` tag `<\SharePoint:AjaxDelta>` e e sostituirlo con il seguente frammento:<br/>
 
 ```
 <div id="loading">
@@ -186,24 +186,24 @@ Questo approccio prevede la creazione di una pagina master personalizzata e sost
 </div>
 ```
 <br/>
-6. Sostituire l'URL nel caricamento dell'immagine tag di ancoraggio all'inizio, con un collegamento a un'immagine nella raccolta siti. Dopo aver apportato le modifiche, rinominare il file e quindi caricare nella raccolta pagine master. Verrà generato un nuovo file con estensione master.<br/>
-7. In questo codice HTML è il markup di base che verrà popolato per i risultati della ricerca restituiti dal codice JavaScript. È necessario modificare il codice per modificare il valore di var radice = "URL della raccolta siti" come illustrato nel frammento di seguito:<br/>
+6. Sostituire l'URL nel tag Anchor dell'immagine di caricamento all'inizio, con un collegamento a un'immagine di caricamento nella raccolta siti. Dopo aver apportato le modifiche, rinominare il file, quindi caricarlo nella raccolta di pagine master. Ciò genera un nuovo file con estensione master.<br/>
+7. Questo codice HTML è il codice di base che verrà precompilato dai risultati della ricerca restituiti dal codice JavaScript. Sarà necessario modificare il codice per modificare il valore di var root = "URL della raccolta siti", come illustrato nel seguente frammento:<br/>
 
 ```
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. I risultati vengono assegnati alla matrice self.nodes e viene creata una gerarchia dagli oggetti utilizzando linq.js assegnazione l'output a una matrice self.hierarchy. Questa matrice è l'oggetto che viene associato al codice HTML. Questa operazione viene eseguita nella funzione toggleView() passando l'oggetto self-alla funzione ko.applyBinding().<br/>In questo modo quindi la matrice di gerarchia per l'associazione ai HTML seguenti:<br/>
+8. I risultati vengono assegnati alla matrice self. Nodes e una gerarchia è costituita dagli oggetti tramite LINQ. js che assegnano l'output a una matrice self. Hierarchy. Questa matrice è l'oggetto in cui è associato il codice HTML. Questa operazione viene eseguita nella funzione toggleView() passando l'oggetto utente alla funzione ko.applyBinding().<br/>Quindi, in questo modo la matrice di gerarchia va associata al codice HTML seguente:<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
 ```
 
-I gestori eventi per `mouseenter` e `mouseexit` vengono aggiunti al riquadro di spostamento principale per gestire i menu a discesa sito secondario che viene effettuata nel `addEventsToElements()` funzione.
+I gestori eventi per `mouseenter` e `mouseexit` vengono aggiunti all'esplorazione di livello principale per gestire i menu a discesa dei siti secondari, che vengono eseguiti nella `addEventsToElements()` funzione.
 
-In questo esempio di navigazione complesse, una pagina nuova carico senza mostrato nella cache locale il tempo impiegato per il server è stato eliminato verso il basso da benchmark struttura di spostamento per ottenere un risultato simile come il metodo di esplorazione gestita.
+Nell'esempio di esplorazione complessa, un caricamento di pagina aggiornato senza la memorizzazione nella cache locale indica che il tempo trascorso nel server è stato ridotto dall'esplorazione strutturale di benchmark per ottenere un risultato simile a quello dell'approccio di spostamento gestito.
 
-### <a name="about-the-javascript-file"></a>Sul file JavaScript...
+### <a name="about-the-javascript-file"></a>Informazioni sul file JavaScript...
 
 Di seguito è riportato l'intero file JavaScript:
 
@@ -440,27 +440,27 @@ function addEventsToElements() {
 
 ``` 
 
-Per riassumere il codice indicato nella precedente il `jQuery $(document).ready` funzione non esiste un `viewModel object` creato e quindi la `loadNavigationNodes()` funzione per tale oggetto viene chiamato. Questa funzione viene caricato eseguire una gerarchia di spostamento compilata precedentemente memorizzata nell'archivio locale HTML5 del browser del client o chiama la funzione `queryRemoteInterface()`.
+Per riepilogare il codice sopra riportato nella `jQuery $(document).ready` funzione viene `viewModel object` creata e quindi viene chiamata la `loadNavigationNodes()` funzione su quell'oggetto. Questa funzione carica la gerarchia di spostamento precedentemente creata memorizzata nell'archiviazione locale di HTML5 del browser client o chiama la funzione `queryRemoteInterface()`.
 
-`QueryRemoteInterface()`Crea una richiesta tramite il `getRequest()` funzione con il parametro di query definito in precedenza nello script e quindi restituisce dati dal server. Questi dati sono fondamentalmente una matrice di tutti i siti della raccolta siti rappresentati come oggetti di trasferimento dati diverse proprietà. 
+`QueryRemoteInterface()`Compila una richiesta utilizzando la `getRequest()` funzione con il parametro di query definito in precedenza nello script e quindi restituisce i dati dal server. Questi dati sono sostanzialmente una matrice di tutti i siti nella raccolta di siti rappresentati come oggetti di trasferimento dei dati con alcune proprietà. 
 
-Questi dati viene quindi analizzati in definita in precedenza `SPO.Models.NavigationNode` gli oggetti che utilizzano `Knockout.js` per creare proprietà presenza da utilizzare per i valori di tale associazione a HTML definita in precedenza. 
+Questi dati vengono quindi analizzati negli oggetti definiti `SPO.Models.NavigationNode` in precedenza che utilizzano `Knockout.js` per creare proprietà osservabili per l'utilizzo da parte dei dati per l'associazione dei valori nel codice HTML definito in precedenza. 
 
-Gli oggetti vengono quindi inseriti in una matrice dei risultati. Questa matrice viene analizzata in JSON utilizzando foratura e memorizzata nell'archivio locale del browser per migliorare le prestazioni nella pagina future carichi.
+Gli oggetti vengono quindi inseriti in una matrice di risultati. Questa matrice viene analizzata in JSON utilizzando Knockout e memorizzata nell'archivio locale del browser per migliorare le prestazioni su caricamenti di pagina futuri.
 
 ### <a name="benefits-of-this-approach"></a>Vantaggi di questo approccio
 
-Uno dei vantaggi principale di [questo metodo](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) è che utilizzando HTML5 archiviazione locale, la struttura di spostamento viene archiviato in locale per l'utente al successivo che momento del caricamento della pagina. È possibile ottenere miglioramenti delle prestazioni principali di utilizzare l'API di ricerca per la struttura di spostamento; Tuttavia, ha alcune funzionalità tecniche per l'esecuzione e personalizzare questa funzionalità. 
+Uno dei principali vantaggi di [questo approccio](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) consiste nel fatto che tramite l'archiviazione locale di HTML5 la struttura di spostamento viene archiviata localmente per l'utente al successivo caricamento della pagina. Si ottengono miglioramenti delle prestazioni principali utilizzando l'API di ricerca per l'esplorazione strutturale; tuttavia, sono necessarie alcune capacità tecniche per eseguire e personalizzare questa funzionalità. 
 
-Nell' [esempio di implementazione](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page), i siti vengono ordinati allo stesso modo di casella struttura di spostamento; ordine alfabetico. Se si desidera diversi da quest'ordine, potrebbe risultare più complessa sviluppare e gestire. Inoltre, questo approccio richiede diversi dalle pagine master supportate. Se la pagina master personalizzata non viene mantenuta, il sito verrà perdere: aggiornamenti e i miglioramenti che Microsoft consente alle pagine master.
+Nell' [implementazione di esempio](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page), i siti vengono ordinati in modo analogo a quello della struttura di spostamento strutturale fuori campo. ordine alfabetico. Se si desidera deviare da questo ordine, diventa più complesso lo sviluppo e la manutenzione. Inoltre, questo approccio richiede di deviare dalle pagine master supportate. Se non viene mantenuta la pagina master personalizzata, il sito verrà escluso dagli aggiornamenti e dai miglioramenti che Microsoft apporta alle pagine master.
 
-Il [precedente codice](#about-the-javascript-file) ha le dipendenze seguenti:
+Il [codice sopra](#about-the-javascript-file) riportato presenta le dipendenze seguenti:
 
-- jQuery-http://jquery.com/
-- KnockoutJS-http://knockoutjs.com/
-- LINQ.js - http://linqjs.codeplex.com/, o github.com/neuecc/linq.js
+- jQueryhttp://jquery.com/
+- KnockoutJS -http://knockoutjs.com/
+- LINQ. js- http://linqjs.codeplex.com/o github.com/neuecc/LINQ.js
 
-La versione corrente di LinqJS non contiene il metodo ByHierarchy utilizzato nel codice precedente e interromperà il codice di struttura di spostamento. Per risolvere questo problema, aggiungere il metodo seguente al file Linq.js prima della riga `Flatten: function ()`.
+La versione corrente di LinqJS non contiene il metodo ByHierarchy utilizzato nel codice precedente e interrompe il codice di spostamento. Per risolvere il cosa, aggiungere il metodo seguente al file LINQ. js prima della riga `Flatten: function ()`.
 
 ```
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {

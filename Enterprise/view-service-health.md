@@ -1,9 +1,9 @@
 ---
 title: Come verificare l'integrità dei servizi di Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365P_ServiceHealthModern
@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visualizzare lo stato di integrità dei servizi di Office 365 prima di contattare il supporto per verificare se è presente un'interruzione del servizio attiva
-ms.openlocfilehash: 483ff0ff6507010c9a81f0774fc8c3e8820395cb
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 67595bddaed23222d09c0e7f6f5353b764722f83
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001579"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071222"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Come verificare l'integrità dei servizi di Office 365
 
@@ -121,7 +121,7 @@ Viene visualizzato un elenco di tutti i messaggi di integrità dei servizi pubbl
   
 È possibile visualizzare la cronologia dell'integrità relativa agli ultimi sette giorni o agli ultimi 30 giorni. Selezionare una riga per visualizzare ulteriori dettagli sul problema.
   
-Per ulteriori informazioni sul nostro impegno per il tempo di attività, vedere transParent [Operations from Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
+Per ulteriori informazioni sul nostro impegno per il tempo di attività, vedere Transparent [Operations from Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
   
 ## <a name="leave-feedback"></a>Feedback
 

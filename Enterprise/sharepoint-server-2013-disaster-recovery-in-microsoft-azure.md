@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 04/17/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Riepilogo: Con Azure è possibile creare un ambiente di ripristino di emergenza per la farm locale di SharePoint. In questo articolo viene descritto come progettare e implementare questa soluzione.'
-ms.openlocfilehash: 56d9fa039bfe533afbc5ac7c1e060d43c0801aef
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915801"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070442"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
 
@@ -142,7 +142,7 @@ Dopo che è stato eseguito un ripristino, questa soluzione fornisce gli elementi
 |:-----|:-----|
 |Siti e contenuto  <br/> |Siti e contenuto sono disponibili nell'ambiente di ripristino.  <br/> |
 |Una nuova istanza di ricerca  <br/> |In questa soluzione con warm standby, la ricerca non viene ripristinata dai database di ricerca. I componenti della ricerca nella farm di ripristino sono configurati in modo più simile possibile alla farm di produzione. Una volta ripristinati i siti e il contenuto, viene avviata una ricerca per indicizzazione completa per ricompilare l'indice di ricerca. Non è necessario attendere che la ricerca per indicizzazione venga completata per rendere disponibili i siti e il contenuto.  <br/> |
-|Servizi  <br/> | I servizi che archiviano i dati nei database vengono ripristinati dai database sottoposti a log shipping. I servizi che non archiviano i dati nei database vengono semplicemente avviati. <br/>  Non tutti i servizi con i database devono essere ripristinati. Per i seguenti servizi non è necessario il ripristino dai database e possono essere semplicemente avviati dopo il failover: <br/>  Raccolta dati di utilizzo e integrità <br/>  Servizio informazioni sullo stato <br/>  Word Automation <br/>  Qualsiasi altro servizio che non usa un database <br/> |
+|Servizi  <br/> | I servizi che archiviano i dati nei database vengono ripristinati dai database sottoposti a log shipping. I servizi che non archiviano i dati nei database vengono semplicemente avviati. <br/>  Non tutti i servizi con i database devono essere ripristinati. Per i seguenti servizi non è necessario il ripristino dai database e possono essere semplicemente avviati dopo il failover: <br/>  Raccolta dati di integrità e utilizzo <br/>  Servizio informazioni sullo stato <br/>  Word Automation <br/>  Qualsiasi altro servizio che non usa un database <br/> |
    
 È possibile lavorare con Microsoft Consulting Services (MCS) o un partner per risolvere obiettivi di ripristino più complessi. Tali obiettivi sono riepilogati nella tabella riportata di seguito:
   
@@ -256,7 +256,7 @@ Questa guida di orientamento presuppone che si disponga già di una farm SharePo
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>Fase 1: Progettare l'ambiente di ripristino di emergenza
 
-Utilizzare le istruzioni contenute in [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) per la progettazione dell'ambiente di ripristino di emergenza, tra cui la farm di ripristino di SharePoint. È possibile utilizzare gli elementi grafici nel file di Visio [SharePoint soluzione di ripristino di emergenza in Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) per avviare il processo di progettazione. È consigliabile progettare dell'intero ambiente prima di avviare qualsiasi lavoro nell'ambiente di Azure.
+Utilizzare le istruzioni in [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) per progettare l'ambiente di ripristino di emergenza, inclusa la farm di ripristino di SharePoint. È possibile utilizzare la grafica nella [soluzione di ripristino di emergenza di SharePoint nel](https://go.microsoft.com/fwlink/p/?LinkId=392554) file di Azure Visio per avviare il processo di progettazione. È consigliabile progettare l'intero ambiente prima di iniziare qualsiasi lavoro nell'ambiente Azure.
   
 Oltre al materiale sussidiario fornito in [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) per la progettazione della rete virtuale, la connessione VPN, Active Directory e la farm di SharePoint, assicurarsi di aggiungere un ruolo di condivisione file per l'ambiente di Azure.
   
@@ -349,7 +349,7 @@ Nella tabella seguente vengono forniti i collegamenti ad articoli di riferimento
   
 **Tabella: Articoli di riferimento per DFSR**
 
-|**Title**|**Descrizione**|
+|**Titolo**|**Descrizione**|
 |:-----|:-----|
 |[Replica](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |Argomento di DFS Management TechNet con collegamenti per la replica  <br/> |
 |[Replica DFS: Guida di sopravvivenza](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Wiki con collegamenti a informazioni DFS  <br/> |
@@ -476,7 +476,7 @@ Nella maggior parte dei casi in cui si dispone di più server Web front-end, è 
   
 In genere, quando si configura il bilanciamento del carico di rete, al cluster viene assegnato un singolo indirizzo IP. Viene quindi creato un record host DNS nel provider DNS per la rete che punta al cluster (per questo progetto, un server DNS è inserito in Azure per la resilienza in caso di un errore del centro dati locale.) Ad esempio, è possibile creare un record DNS, in Gestore DNS in Active Directory, denominato  `http://sharepoint.contoso.com`, che punta all'indirizzo IP per il cluster con carico bilanciato.
   
-Per l'accesso esterno per la farm di SharePoint, è possibile creare un record host in un server DNS esterno con lo stesso URL utilizzati dai client nella rete intranet (ad esempio `http://sharepoint.contoso.com`) che punta a un indirizzo IP esterno del firewall. (È consigliabile, utilizzando in questo esempio, impostare ambiente DNS diviso in modo che i server DNS interno è rilevante per `contoso.com` e distribuisce le richieste direttamente al cluster di farm di SharePoint anziché routing DNS richiede al server DNS esterni.) Per associare l'indirizzo IP esterno per l'indirizzo IP interno del cluster in locale in modo che i client individuare le risorse che stanno cercando.
+Per l'accesso esterno alla farm di SharePoint, è possibile creare un record host su un server DNS esterno con lo stesso URL utilizzato dai client sulla rete Intranet (ad esempio `http://sharepoint.contoso.com`,) che punta a un indirizzo IP esterno nel firewall. (Una procedura consigliata, in questo esempio, consiste nel configurare il DNS suddiviso in modo che il server DNS interno `contoso.com` sia autorevole e INSTRADE le richieste direttamente al cluster di farm di SharePoint, anziché instradare le richieste DNS al server DNS esterno). È quindi possibile mappare l'indirizzo IP esterno all'indirizzo IP interno del cluster locale in modo che i client possano trovare le risorse che stanno cercando.
   
 Da qui è possibile incorrere in scenari di ripristino di emergenza diversi:
   
@@ -484,7 +484,7 @@ Da qui è possibile incorrere in scenari di ripristino di emergenza diversi:
   
  **Scenario di esempio: il centro dati locale viene perso completamente.** Questo scenario potrebbe verificarsi a causa di un disastro naturale, ad esempio un incendio o un'alluvione. In tal caso, è probabile che un'azienda disponga di un centro dati secondario ospitato in un'altra area geografica, nonché una subnet Azure con servizi directory e DNS propri. Come illustrato nello scenario di emergenza precedente, è possibile reindirizzare i record DNS interni ed esterni in modo che puntino alla farm di SharePoint di Azure. Anche in questo caso, prendere nota che la propagazione dei record DNS può richiedere un po' di tempo.
   
-Se si utilizzano raccolte siti con nome host, come consigliato nella [architettura della raccolta siti con nome Host e la distribuzione (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), potrebbe essere diverse raccolte siti ospitate dalla stessa applicazione web della farm di SharePoint, con univoco I nomi DNS (ad esempio `http://sales.contoso.com` e `http://marketing.contoso.com`). In questo caso, è possibile creare record DNS per ogni raccolta siti scegliere l'indirizzo IP del cluster. Dopo che una richiesta raggiunge i server web front-end di SharePoint, si gestiscono il routing di ogni richiesta alla raccolta siti appropriato.
+Se si utilizzano raccolte siti con nome host, come consigliato nell' [architettura e nella distribuzione della raccolta siti con nome host (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), potrebbero essere presenti diverse raccolte siti ospitate dalla stessa applicazione Web nella farm di SharePoint, con Unique Nomi DNS (ad esempio, `http://sales.contoso.com` e `http://marketing.contoso.com`). In questo caso, è possibile creare record DNS per ogni raccolta siti che punta all'indirizzo IP del cluster. Quando una richiesta raggiunge i server Web front-end di SharePoint, questi gestiscono il routing di ogni richiesta alla raccolta siti appropriata.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Ambiente del modello di verifica di Microsoft
 
@@ -522,7 +522,7 @@ La tabella seguente descrive le configurazioni di unità per le macchine virtual
 |C  <br/> |80  <br/> |Directory radice dati  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\  <br/> |
 |E  <br/> |500  <br/> |Directory database utente  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
 |F  <br/> |500  <br/> |Directory log database utente  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
-|G  <br/> |500  <br/> |Directory DB temp  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
+|G  <br/> |500  <br/> |Directory DB temp  <br/> |<DriveLetter>:\\Program Files\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATA  <br/> |
 |H  <br/> |500  <br/> |Directory log DB temp  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
    
 ### <a name="setting-up-the-test-environment"></a>Configurazione dell'ambiente di testing
@@ -564,7 +564,7 @@ Abbiamo la farm e unito altri server nell'ordine seguente:
     
 - Provisioning di SP-WFE1 e SP-WFE2 per ospitare la cache distribuita. 
     
-È stato utilizzato il parametro _skipRegisterAsDistributedCachehost_ eseguito **psconfig.exe** nella riga di comando. Per ulteriori informazioni, vedere [pianificare i feed e il servizio Cache distribuita in SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
+Abbiamo utilizzato il parametro  _skipRegisterAsDistributedCachehost_ quando abbiamo eseguito **psconfig.exe** alla riga di comando. Per ulteriori informazioni, vedere [Plan for Feeds and the Distributed cache Service in SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
   
 Abbiamo ripetuto i passaggi seguenti nell'ambiente di ripristino:
   
@@ -654,7 +654,7 @@ Ciò accade perché la preferenza di backup predefinito per un gruppo di disponi
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Il servizio Metadati gestiti (o un altro servizio di SharePoint) non si avvia automaticamente dopo l'installazione
 
-Servizi possono richiedere diversi minuti per avviare, a seconda delle prestazioni e carico corrente dei Server di SharePoint. Fare clic su **Start** per il servizio e fornire il tempo sufficiente per l'avvio durante l'aggiornamento in alcuni casi i servizi nella schermata di Server per monitorare lo stato manualmente. Nel caso in cui il servizio viene arrestato, attivare la registrazione diagnostica di SharePoint, tentare di riavviare il servizio e quindi controllare il registro errori. Per ulteriori informazioni, vedere [Configure diagnostic logging in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
+I servizi potrebbero richiedere alcuni minuti per avviarsi, a seconda delle prestazioni e del carico corrente del server di SharePoint. Scegliere manualmente **Start** per il servizio e fornire il tempo sufficiente per l'avvio aggiornando di tanto in tanto la schermata Servizi nel server per monitorarne lo stato. Nel caso in cui il servizio resti in stato di arresto, abilitare la registrazione diagnostica di SharePoint, tentare di avviare di nuovo il servizio e quindi verificare l'assenza di errori nel log. Per ulteriori informazioni, vedere [Configure diagnostic logging in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>Dopo la modifica DNS per l'ambiente di failover di Azure, i browser client continuano a usare il vecchio indirizzo IP del sito di SharePoint
 

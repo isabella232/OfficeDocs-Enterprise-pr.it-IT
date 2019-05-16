@@ -1,9 +1,9 @@
 ---
 title: Configurare la sincronizzazione della directory per Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Informazioni su come configurare la sincronizzazione della directory tra Office 365 e Active Directory locale.
-ms.openlocfilehash: 6d635dbcacb5a1c6c6c9c202f2ece4fac35558a4
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: d5c09b006c4e4b9ca9fbe3b0d673435a8ea6637e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001749"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070872"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Configurare la sincronizzazione della directory per Office 365
 
@@ -32,7 +32,7 @@ Office 365 utilizza il servizio di gestione delle identità utente basato sul cl
   
 ## <a name="office-365-directory-synchronization"></a>Sincronizzazione della directory di Office 365
 
-È possibile utilizzare l'identità sincronizzata o l'identità federata tra l'organizzazione locale e Office 365. Con l'identità sincronizzata, è possibile gestire gli utenti in locale e vengono autenticati da Azure AD quando utilizzano la stessa password nel cloud come in locale. Questo è lo scenario di sincronizzazione della directory più comune. Autenticazione pass-through o identità federata, consente di gestire gli utenti in locale e vengono autenticati dalla directory locale. L'identità federata richiede una configurazione aggiuntiva e consente agli utenti di accedere solo una volta. Per informazioni dettagliate, vedere [understandIng Office 365 Identity e Azure Active Directory](about-office-365-identity.md).
+È possibile utilizzare l'identità sincronizzata o l'identità federata tra l'organizzazione locale e Office 365. Con l'identità sincronizzata, è possibile gestire gli utenti in locale e vengono autenticati da Azure AD quando utilizzano la stessa password nel cloud come in locale. Questo è lo scenario di sincronizzazione della directory più comune. Autenticazione pass-through o identità federata, consente di gestire gli utenti in locale e vengono autenticati dalla directory locale. L'identità federata richiede una configurazione aggiuntiva e consente agli utenti di accedere solo una volta. Per informazioni dettagliate, vedere [Understanding Office 365 Identity e Azure Active Directory](about-office-365-identity.md).
   
 ## <a name="want-to-upgrade-from-windows-azure-active-directory-sync-dirsync-to-azure-active-directory-connect"></a>Si desidera eseguire l'aggiornamento da Windows Azure Active Directory Sync (DirSync) ad Azure Active Directory Connect?
 
@@ -64,7 +64,7 @@ Per esaminare più accuratamente i requisiti hardware, software, account e autor
 
 ## <a name="to-set-up-directory-synchronization"></a>Per configurare la sincronizzazione della directory
 
-1. accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) e scegliere **gli** \> utenti **attivi** degli utenti sulla barra di spostamento a sinistra.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) e scegliere **gli** \> utenti **attivi** degli utenti sulla barra di spostamento a sinistra.
 2. Nell'interfaccia di amministrazione, nella pagina **utenti attivi** , scegliere **altre** \> **sincronizzazione della directory**.
 
     ![Nel menu altro, scegliere sincronizzazione directory](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)

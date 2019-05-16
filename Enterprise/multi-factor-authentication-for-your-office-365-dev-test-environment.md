@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/20/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "Riepilogo: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno smartphone in un ambiente di sviluppo e testing di Office 365."
-ms.openlocfilehash: 091b82132b407cfd25b18c3ba8e424e29df58910
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 2c53d7fa9239395e28d68487dd0ccea8cc57efb7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741222"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069952"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365
 
@@ -38,7 +38,7 @@ Le fasi di configurazione dell’autenticazione a più fattori per Office 365 in
 2. Abilitare e testare l'autenticazione a più fattori per l'account User 2.
     
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per visualizzare una mappa di tutti gli articoli della guida del laboratorio di testing di Office 365.
+> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365 aziendale leggero o simulato
 

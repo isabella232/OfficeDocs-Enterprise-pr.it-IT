@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Riepilogo: informazioni su come ExpressRoute può essere di aiuto con connessioni più veloci e affidabili ai servizi cloud e alle piattaforme Microsoft.'
-ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0bab6cf3d400293221692a595346445afd242e48
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33488144"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067682"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute per la connettività cloud Microsoft
 
@@ -248,7 +248,7 @@ Per ulteriori informazioni, vedere:
     
 - **Traffico Internet per le macchine virtuali:** Per impedire che le macchine virtuali di Azure inizino il traffico direttamente con le posizioni Internet, annunciare la route predefinita a Microsoft. Il traffico su Internet viene instradato attraverso la connessione ExpressRoute e attraverso i server proxy locali. Il traffico dalle macchine virtuali di Azure ai servizi di PaaS di Azure o Office 365 viene instradato all'interno della connessione ExpressRoute.
     
-- **OttimizzaTori WAN:** È possibile distribuire ottimizzatori WAN su entrambi i lati di una connessione peer privata per una rete virtuale di Azure cross-premise (rete virtuale). All'interno di rete virtuale di Azure, utilizzare un dispositivo di rete WAN Optimizer da Azure Marketplace e routing definito dall'utente per instradare il traffico tramite l'accessorio.
+- **Ottimizzatori WAN:** È possibile distribuire ottimizzatori WAN su entrambi i lati di una connessione peer privata per una rete virtuale di Azure cross-premise (rete virtuale). All'interno di rete virtuale di Azure, utilizzare un dispositivo di rete WAN Optimizer da Azure Marketplace e routing definito dall'utente per instradare il traffico tramite l'accessorio.
     
 - **Qualità del servizio:** Utilizzare i valori di codice Point (DSCP) di servizi differenziati nell'intestazione IPv4 del traffico per contrassegnarla per il recapito vocale, video/Interactive o Best-Effort. Questo è particolarmente importante per la relazione di peering Microsoft e per il traffico di Skype for business online.
     
@@ -268,5 +268,5 @@ Per ulteriori informazioni, vedere queste risorse aggiuntive:
 
 [Rete di Microsoft Cloud per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,25 +12,25 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Riepilogo: utilizzare PowerShell di Office 365 per gestire i criteri, i criteri per utente e le impostazioni relative alle riunioni di Skype for Business online.'
-ms.openlocfilehash: a91803316972337aa31e2b979f841ac1cfbe8566
-ms.sourcegitcommit: 053db5479f93478a65d4c36ffe44c6a7bcb60e3c
+ms.openlocfilehash: 33c7247686cc8eb308b8db6d4900c89f693004fb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965193"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068732"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gestire Skype for Business Online con PowerShell di Office 365
 
  **Sintesi:**: Utilizzare PowerShell di Office 365 per gestire i criteri, i criteri per utente e le impostazioni relative alle riunioni di Skype for Business online.
   
-Una delle attività principali di qualsiasi Skype per l'amministratore aziendale Online è la gestione di criteri. Anche se è possibile eseguire alcune di queste attività nell'interfaccia di amministrazione di Office 365, altre attività sono molto più rapida e semplice in Office 365 PowerShell. 
+Una delle attività principali di qualsiasi amministratore di Skype for Business online è la gestione dei criteri. Anche se è possibile eseguire alcune di queste attività nell'interfaccia di amministrazione di Office 365, altre attività sono molto più rapide e facili in Office 365 PowerShell. 
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Scaricare e installare [Skype di funzionalità di Business Online Connector](https://www.microsoft.com/en-us/download/details.aspx?id=39366)e quindi riavviare il computer se richiesto.
+Scaricare e installare il [modulo del connettore di Skype for business online](https://www.microsoft.com/en-us/download/details.aspx?id=39366), quindi riavviare il computer se richiesto.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>Connettersi utilizzando un Skype Business Online nome account di amministratore e password
+## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>Connettersi utilizzando un nome e una password dell'account di amministratore di Skype for business online
 
 1. Aprire il prompt dei comandi Windows PowerShell ed eseguire quanto segue: 
     
@@ -41,10 +41,10 @@ Scaricare e installare [Skype di funzionalità di Business Online Connector](htt
   Import-PSSession $sfbSession
   ```
 
-2. Nella finestra di dialogo **Richiesta credenziali di Windows PowerShell** digitare i Skype per nome dell'account amministratore aziendale Online e la password e quindi fare clic su **OK**.
+2. Nella finestra di dialogo **richiesta credenziali di Windows PowerShell** , digitare il nome e la password dell'account di amministratore di Skype for business online, quindi fare clic su **OK**.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a>Connettersi utilizzando un Skype per account dell'amministratore aziendale Online con l'autenticazione a più fattori
+## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a>Connettersi utilizzando un account di amministratore di Skype for business online con l'autenticazione a più fattori
 
 1. Aprire il prompt dei comandi Windows PowerShell ed eseguire quanto segue:
 
@@ -54,11 +54,11 @@ Scaricare e installare [Skype di funzionalità di Business Online Connector](htt
   Import-PSSession $sfbSession
   ```
 
-2. Quando richiesto dal comando **New-CsOnlineSession** , immettere la Skype per nome dell'account amministratore aziendale Online.
+2. Quando viene richiesto dal comando **New-CsOnlineSession** , immettere il nome dell'account di amministratore di Skype for business online.
 
-3. Nella finestra di dialogo **Accedi al tuo account** digitare il Skype Business Online password di amministratore e fare clic su **Accedi**.
+3. Nella finestra **di dialogo Accedi all'account** Digitare la password di amministratore di Skype for business online e quindi fare clic su **Accedi**.
 
-4. Seguire le istruzioni nella finestra di dialogo **Accedi al tuo account** per fornire ulteriori informazioni di autenticazione, ad esempio un codice di verifica e quindi fare clic su **verifica**.
+4. Seguire le istruzioni riportate nella finestra di dialogo **Accedi alla tua account** per fornire ulteriori informazioni di autenticazione, ad esempio un codice di verifica, e quindi fare clic su **Verifica**.
 
 Per ulteriori informazioni, vedere i seguenti argomenti:
   
@@ -72,5 +72,5 @@ Per ulteriori informazioni, vedere i seguenti argomenti:
   
 [Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
 
-[Skype per i riferimenti cmdlet PowerShell di Business](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
+[Riferimenti ai cmdlet di PowerShell per Skype for business](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

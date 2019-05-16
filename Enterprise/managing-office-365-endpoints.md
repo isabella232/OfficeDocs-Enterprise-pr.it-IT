@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/21/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Alcune reti aziendali limitano l'accesso a percorsi Internet generici o includono una sostanziale backhaul o l'elaborazione del traffico di rete. Per garantire che i computer su reti come queste possano accedere a Office 365, gli amministratori di rete e proxy devono gestire l'elenco di nomi FQDN, URL e indirizzi IP che compongono l'elenco degli endpoint di Office 365. Queste necessità devono essere aggiunte alla route diretta, al bypass proxy e/o alle regole del firewall e ai file PAC per garantire che le richieste di rete siano in grado di raggiungere Office 365.
-ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 37f90ba5c008a4e0b562526d10185e01d07e4918
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487088"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067172"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestione degli endpoint di Office 365
 
@@ -51,7 +51,7 @@ La [raccolta di PowerShell Get-PacFile](https://www.powershellgallery.com/packag
 
 Il file PAC viene distribuito ai Web browser al punto 1 della figura 1. Quando si utilizza un file PAC per l'uscita diretta del traffico di rete vitale di Office 365, è inoltre necessario consentire la connettività agli indirizzi IP dietro questi URL sul firewall perimetrale di rete. A tale scopo, vengono recuperati gli indirizzi IP per le stesse categorie di endpoint di Office 365 specificate nel file PAC e la creazione di ACL del firewall in base a tali indirizzi. Il firewall è il punto 3 della figura 1.
 
-Separatamente se si sceglie di eseguire il routing diretto solo per gli endpoint di categoria Optimize, gli eventuali endpoint di categoria conSentiti da inviare al server proxy dovranno essere elencati nel server proxy per ignorare l'ulteriore elaborazione. Ad esempio, la rottura SSL e il controllo e l'autenticazione proxy sono incompatibili con gli endpoint di categoria optimize e Allow. Il server proxy è il punto 2 nella figura 1.
+Separatamente se si sceglie di eseguire il routing diretto solo per gli endpoint di categoria Optimize, gli eventuali endpoint di categoria consentiti da inviare al server proxy dovranno essere elencati nel server proxy per ignorare l'ulteriore elaborazione. Ad esempio, la rottura SSL e il controllo e l'autenticazione proxy sono incompatibili con gli endpoint di categoria optimize e Allow. Il server proxy è il punto 2 nella figura 1.
 
 La configurazione comune è quella di consentire senza l'elaborazione di tutto il traffico in uscita dal server proxy per gli indirizzi IP di destinazione per il traffico di rete di Office 365 che raggiunge il server proxy. Per informazioni sui problemi relativi all'interruzione e alla verifica di SSL, vedere [using the Third-Party Network Devices or Solutions on Office 365 Traffic](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
@@ -94,7 +94,7 @@ Se si esegue questa operazione manualmente, sarà necessario ottenere i dati di 
 
 Oltre a selezionare la configurazione appropriata per il perimetro della rete, è importante adottare un processo di gestione delle modifiche per gli endpoint di Office 365. Tali endpoint cambiano regolarmente e, se non vengono gestite le modifiche, è possibile finire con gli utenti bloccati o con prestazioni insufficienti dopo l'aggiunta di un nuovo indirizzo IP o URL.
 
-Le modifiche apPortate agli indirizzi IP e agli URL di Office 365 vengono in genere pubblicate vicino all'ultimo giorno di ogni mese. A volte una modifica verrà pubblicata al di fuori di quella pianificazione a causa di requisiti operativi, di supporto o di sicurezza.
+Le modifiche apportate agli indirizzi IP e agli URL di Office 365 vengono in genere pubblicate vicino all'ultimo giorno di ogni mese. A volte una modifica verrà pubblicata al di fuori di quella pianificazione a causa di requisiti operativi, di supporto o di sicurezza.
 
 Quando viene pubblicata una modifica che richiede l'intervento di un indirizzo IP o di un URL, è necessario aspettarsi di ricevere un avviso di 30 giorni dal momento in cui si pubblica la modifica finché non è presente un servizio di Office 365 su quell'endpoint. Anche se si intende questo periodo di notifica, potrebbe non essere sempre possibile a causa di requisiti operativi, di supporto o di sicurezza. Le modifiche che non richiedono un'azione immediata per mantenere la connettività, ad esempio gli indirizzi IP o gli URL rimossi o le modifiche meno significative, non includono la notifica anticipata. Indipendentemente dalla notifica fornita, viene elencata la data di attivazione del servizio previsto per ogni modifica.
 
@@ -140,9 +140,9 @@ Gli indirizzi IP vengono forniti solo per i server di Office 365 che è necessar
   
 Per ulteriori informazioni, vedere un indirizzo IP associato a Office 365.
   
-1. Controllare se l'indirizzo IP è incluso in un intervallo di pubblicazione più grande tramite una [calcolaTrice CIDR](http://jodies.de/ipcalc).
+1. Controllare se l'indirizzo IP è incluso in un intervallo di pubblicazione più grande tramite una [calcolatrice CIDR](http://jodies.de/ipcalc).
 2. Vedere se un partner possiede l'indirizzo IP con una [query WHOIS](https://dnsquery.org/). Se è di proprietà di Microsoft, può trattarsi di un partner interno.
-3. controllare il certificato, in un browser connettersi all'indirizzo ip utilizzando *HTTPS://\<IP_ADDRESS\> * , controllare i domini elencati nel certificato per comprendere quali domini sono associati all'indirizzo ip. Se si tratta di un indirizzo IP di proprietà di Microsoft e non dell'elenco degli indirizzi IP di Office 365, è probabile che l'indirizzo IP sia associato a una rete CDN Microsoft, ad esempio *MSOCDN.NET* o un altro dominio Microsoft senza informazioni IP pubblicate. Se si trova il dominio sul certificato è quello in cui pretendiamo di elencare l'indirizzo IP, fatecelo sapere.
+3. Controllare il certificato, in un browser connettersi all'indirizzo IP utilizzando *https://\<ip_address\> * , controllare i domini elencati nel certificato per comprendere quali domini sono associati all'indirizzo IP. Se si tratta di un indirizzo IP di proprietà di Microsoft e non dell'elenco degli indirizzi IP di Office 365, è probabile che l'indirizzo IP sia associato a una rete CDN Microsoft, ad esempio *MSOCDN.NET* o un altro dominio Microsoft senza informazioni IP pubblicate. Se si trova il dominio sul certificato è quello in cui pretendiamo di elencare l'indirizzo IP, fatecelo sapere.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Alcuni URL di Office 365 puntano ai record CNAME invece che a record nel DNS. Che cosa è necessario fare con i record CNAME?
@@ -164,9 +164,9 @@ Le configurazioni hardcoded o la whitelist in base ai nomi FQDN indiretti di Off
 
 Office 365 e altri servizi Microsoft utilizzano diversi servizi di terze parti, ad esempio Akamai e MarkMonitor, per migliorare l'esperienza di Office 365. Per continuare a fornire le migliori esperienze possibili, è possibile modificare questi servizi in futuro. I domini di terze parti possono ospitare contenuto, ad esempio una rete CDN, oppure possono ospitare un servizio, ad esempio un servizio di gestione del traffico geografico. Alcuni dei servizi attualmente in uso includono:
   
-[MarkMonitor](https://www.markmonitor.com/) è in uso quando vengono visualizzate le richieste che includono * \*. nsatc.net* . Questo servizio fornisce la protezione del nome di dominio e il monitoraggio per proteggersi da comportamenti dannosi.
+[MarkMonitor](https://www.markmonitor.com/) è in uso quando vengono visualizzate le richieste che includono * \*. nsatc.NET* . Questo servizio fornisce la protezione del nome di dominio e il monitoraggio per proteggersi da comportamenti dannosi.
   
-[ExactTarget](https://www.marketingcloud.com/) è in uso quando si visualizzano le richieste a * \*. exacttarget.com* . Questo servizio fornisce la gestione e il monitoraggio del collegamento tramite posta elettronica rispetto a comportamenti dannosi.
+[ExactTarget](https://www.marketingcloud.com/) è in uso quando si visualizzano le richieste a * \*. ExactTarget.com* . Questo servizio fornisce la gestione e il monitoraggio del collegamento tramite posta elettronica rispetto a comportamenti dannosi.
   
 [Akamai](https://www.akamai.com/) è in uso quando vengono visualizzate le richieste che includono uno dei seguenti FQDN. Questo servizio offre servizi di rete per la distribuzione di contenuti e Geo-DNS.
   

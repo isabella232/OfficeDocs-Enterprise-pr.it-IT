@@ -1,9 +1,9 @@
 ---
 title: Integrazione di Azure con Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: La sottoscrizione di Office 365 include una sottoscrizione ad Azure AD. Integrazione di Office 365 con Azure AD se si desidera sincronizzare la password o l'accesso Single Sign-on con l'ambiente locale.
-ms.openlocfilehash: 0ad1c064d2ffe29f0f06e1368cd728d8b3bd630b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 51ed71aa94bc5317d9b5ff76d0aa6af2762c429e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490142"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068222"
 ---
 # <a name="azure-integration-with-office-365"></a>Integrazione di Azure con Office 365
 
@@ -48,7 +48,7 @@ Con l'abbonamento gratuito, è possibile eseguire la sincronizzazione con le dir
   
 Se si desidera migliorare la funzionalità di servizi di dominio Active Directory, la sincronizzazione bi-direzionale e altre funzionalità di gestione, è possibile aggiornare l'abbonamento gratuito a un abbonamento Premium a pagamento. Per informazioni dettagliate, vedere [edizioni di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
   
-Per ulteriori informazioni su Office 365 e Azure AD, vedere [understandIng office 365 Identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
+Per ulteriori informazioni su Office 365 e Azure AD, vedere [Understanding office 365 Identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
   
 ## <a name="extend-the-capabilities-of-your-office-365-tenant"></a>Estendere le funzionalità del tenant di Office 365
 

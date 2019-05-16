@@ -1,10 +1,9 @@
 ---
 title: Elenco di controllo per la pianificazione della distribuzione di Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Questo elenco di controllo aiuterà l'organizzazione durante la pianificazione e la preparazione di una migrazione a Office 365. Le fasi e i passaggi dell'elenco di controllo sono allineati alle linee guida fornite dal centro di onboarding.
-ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 858ae9520db4cfb18696c817f041b879d66484e3
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490102"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067882"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Elenco di controllo per la pianificazione della distribuzione di Office 365
 
@@ -39,7 +38,7 @@ Quando si sposta un'organizzazione aziendale in Office 365, è importante pianif
 |:-----|:-----|:-----|:-----|:-----|
 |**Attività di distribuzione/Events** <br/> |**Data di inizio** <br/> |**Data di fine** <br/> |**Risorse** <br/> |**Dipendenze** <br/> |
 |**Determinare gli obiettivi di distribuzione** <br/> |||||
-| Con le parti interessate interne ed esterne:<br>  -ConCordare l'ambito e la sequenza temporale <br>  -ConCordare il meccanismo di verifica dei progetti  <br>  -sviluppare criteri di successo e una [comunicazione](https://fasttrack.microsoft.com/office) / [per iniziare con Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| Con le parti interessate interne ed esterne:<br>  -Concordare l'ambito e la sequenza temporale <br>  -Concordare il meccanismo di verifica dei progetti  <br>  -Sviluppare criteri di successo e una [comunicazione](https://fasttrack.microsoft.com/office) / [per iniziare con Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventariare l'ambiente corrente e prendere decisioni di distribuzione principali** |||||
 |Inventario dell'ambiente corrente |||||
 | Raccogliere il numero di account utente (nomi di account di accesso, indirizzi di posta elettronica) |||||
@@ -77,7 +76,7 @@ Quando si sposta un'organizzazione aziendale in Office 365, è importante pianif
 |Account e cassette postali di installazione |||||
 | Aggiungere gli utenti e [assegnare licenze agli utenti in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
 | Facoltativamente, eseguire la migrazione dei dati ( [posta elettronica](https://go.microsoft.com/fwlink/?LinkId=534823)e [file](https://go.microsoft.com/fwlink/?LinkId=534824)e così via) |||||
-|ConValidare la funzionalità e completare i passaggi finali |||||
+|Convalidare la funzionalità e completare i passaggi finali |||||
 | Eseguire la migrazione [delle impostazioni DNS in modo che puntino a Office 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
 | Informare gli utenti quando possono [iniziare a usare Office 365](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
 | Riconfigurare i sistemi client per la connessione a Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook per Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [dispositivi mobili](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

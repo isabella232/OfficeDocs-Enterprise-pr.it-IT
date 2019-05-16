@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 9/12/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Viene illustrato il motivo per cui l'ottimizzazione della rete è importante per i servizi SaaS, l'obiettivo della rete di Office 365 e il modo in cui SaaS richiede una rete diversa da altri carichi di lavoro.
-ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 88fde9a142b5394b642a46c19da6979c93fe8f9e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491908"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069621"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Panoramica della connettività di rete di Office 365
 
@@ -69,7 +69,7 @@ Alcuni problemi comuni relativi alle prestazioni vengono creati quando il traffi
 
 - La latenza elevata può causare prestazioni estremamente scarse di flussi video e audio e una risposta lenta del recupero dei dati, ricerche, collaborazione in tempo reale, informazioni sulla disponibilità del calendario, contenuto del prodotto e altri servizi
 - Le connessioni di Egressing da una posizione centrale vanificano le funzionalità di routing dinamico della rete globale di Office 365, l'aggiunta di latenza e il tempo di andata e ritorno
-- La deCrittografia del traffico di rete di Office 365 protetto da SSL e la ricrittografia può causare errori di protocollo e ha un rischio per la sicurezza
+- La decrittografia del traffico di rete di Office 365 protetto da SSL e la ricrittografia può causare errori di protocollo e ha un rischio per la sicurezza
 
 Accorciamento del percorso di rete per i punti di ingresso di Office 365 consentendo al traffico client di essere in uscita il più vicino possibile alla propria posizione geografica, è possibile migliorare le prestazioni di connettività e l'esperienza degli utenti finali in Office 365. Può anche contribuire a ridurre l'impatto delle modifiche future nell'architettura di rete per le prestazioni e l'affidabilità di Office 365. Il modello di connettività ottimale consiste nel fornire sempre l'uscita di rete nella posizione dell'utente, indipendentemente dal fatto che si trovi sulla rete aziendale o su postazioni remote come la casa, gli alberghi, i coffee shop e gli aeroporti. Il traffico generico Internet e la rete aziendale basata su WAN verrebbero instradati separatamente e non utilizzeranno il modello di uscita diretta locale. Questo modello di uscita diretta locale è rappresentato nel diagramma seguente.
 
@@ -82,7 +82,7 @@ L'architettura di uscita locale presenta i seguenti vantaggi per il traffico di 
 - Consente di proteggere le connessioni su entrambe le estremità sfruttando le funzionalità di sicurezza e sicurezza cloud di endpoint client, evitando l'applicazione di tecnologie di sicurezza di rete ridondanti.
 
 > [!NOTE]
-> L'infrastruttura del _servizio distribuTed front door_ è il perimetro di rete altamente disponibile e scalaBile di Microsoft Global Network con posizioni geograficamente distribuite. Termina le connessioni degli utenti finali e le instrada efficacemente all'interno della rete globale di Microsoft. Per ulteriori informazioni sulla rete globale Microsoft [, vedere come Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+> L'infrastruttura del _servizio Distributed front door_ è il perimetro di rete altamente disponibile e scalabile di Microsoft Global Network con posizioni geograficamente distribuite. Termina le connessioni degli utenti finali e le instrada efficacemente all'interno della rete globale di Microsoft. Per ulteriori informazioni sulla rete globale Microsoft [, vedere come Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Per ulteriori informazioni su come comprendere e applicare i principi di connettività di rete di Office 365, vedere [principi di connettività di rete di office 365](office-365-network-connectivity-principles.md).
 

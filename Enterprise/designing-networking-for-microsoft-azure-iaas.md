@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Riepilogo: informazioni su come progettare una rete ottimizzata per i carichi di lavoro in Microsoft Azure IaaS.'
-ms.openlocfilehash: c41e92445dd01a94b7d305b521bbd4330311fcb4
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b06564c8a86c59dac4ac9a5380cd88cf9d045974
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491066"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068132"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Progettazione di rete per Microsoft Azure IasS
 
@@ -113,8 +113,8 @@ Di seguito sono riportati i passaggi e l'esempio di determinazione del prefisso 
 1. Decidere la dimensione della subnet del gateway. Per il nostro esempio, abbiamo scelto/28.
 2. Impostare i bit nella parte variabile dello spazio di indirizzi di rete virtuale (b) su 0 per i bit della subnet del gateway (G), altrimenti 1 (V). Ad esempio, viene utilizzato lo spazio degli indirizzi 10.119.0.0/16 per rete virtuale.
 <br/>
-<br/>10,119. bbbbbbbb. bbbbbbbb
-<br/>10,119. VVVVVVVV. VVVVGGGG
+<br/>10,119. bbbbbbbb . bbbbbbbb
+<br/>10,119. VVVVVVVV . VVVVGGGG
 <br/>10,119. 11111111. 11110000
 <br/><br/>
 3. Convertire il risultato del passaggio 2 in decimale e Express come spazio degli indirizzi. Ad esempio, 10,119. 11111111. 11110000 è 10.119.255.240 e con la lunghezza del prefisso del passaggio 1, (28 nell'esempio), il prefisso dell'indirizzo di subnet del gateway risultante è 10.119.255.240/28.
@@ -128,10 +128,10 @@ Azure utilizza i primi 3 indirizzi in ogni subnet. Pertanto, il numero di indiri
 |**Macchine virtuali necessarie**|**Bit dell'host**|**Dimensioni subnet**|
 |:-----|:-----|:-----|
 |1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4   <br/> |/28  <br/> |
-|12-27  <br/> |5   <br/> |/27  <br/> |
-|28-59  <br/> |6   <br/> |/26  <br/> |
-|60-123  <br/> |7   <br/> |/25  <br/> |
+|4-11  <br/> |4  <br/> |/28  <br/> |
+|12-27  <br/> |5  <br/> |/27  <br/> |
+|28-59  <br/> |6  <br/> |/26  <br/> |
+|60-123  <br/> |7  <br/> |/25  <br/> |
    
  **Tabella 3: Requisiti della macchina virtuale e dimensioni della subnet corrispondente**
   
@@ -434,6 +434,6 @@ Per ulteriori esempi di carichi di lavoro IT distribuiti su macchine virtuali in
 
 [Rete di Microsoft Cloud per Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
 

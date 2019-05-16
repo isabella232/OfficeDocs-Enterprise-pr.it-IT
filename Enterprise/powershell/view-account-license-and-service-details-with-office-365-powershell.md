@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/13/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,18 +15,18 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Viene illustrato come utilizzare Office 365 PowerShell per determinare i servizi di Office 365 assegnati agli utenti.
-ms.openlocfilehash: 113107df75880a21210991d5b301245d75c5c739
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+ms.openlocfilehash: 608d26dfc4aa1be782f94aa3b1ba5f66a0378f1e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30052970"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071122"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell
 
 **Riepilogo:** Viene illustrato come utilizzare Office 365 PowerShell per determinare i servizi di Office 365 assegnati agli utenti.
   
-In Office 365, le licenze provenienti da piani di licenza (denominati anche SKU o piani di Office 365) offrono agli utenti l'accesso ai servizi di Office 365 definiti per tali piani. Tuttavia, un utente potrebbe non avere accesso a tutti i servizi disponibili in una licenza attualmente assegnata. È possibile utilizzare Office 365 PowerShell per visualizzare lo stato dei servizi negli account utente. 
+In Office 365, le licenze provenienti da piani di licenza (denominati anche SKU o piani di Office 365) offrono agli utenti l'accesso ai servizi di Office 365 definiti per tali piani. Tuttavia, un utente potrebbe non avere accesso a tutti i servizi disponibili in una licenza che gli è attualmente assegnata. È possibile utilizzare Office 365 PowerShell per visualizzare lo stato dei servizi negli account utente. 
 
 Per ulteriori informazioni sui piani di licenza, la licenza e i servizi, vedere [View licences and Services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
 
@@ -98,7 +98,7 @@ Per visualizzare tutti i servizi di Office 365 a cui un utente ha accesso, utili
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
-In questo esempio vengono illustrati i servizi ai quali l'utente BelindaN@litwareinc.com ha accesso. In questo modo vengono visualizzati i servizi associati a tutte le licenze assegnate all'account.
+In questo esempio vengono illustrati i servizi ai quali l'utente BelindaN@litwareinc.com ha accesso. Vengono indicati i servizi associati a tutte le licenze assegnate al suo account.
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus

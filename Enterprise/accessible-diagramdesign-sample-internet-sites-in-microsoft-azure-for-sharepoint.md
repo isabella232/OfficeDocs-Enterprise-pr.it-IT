@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.collection: Ent_O365
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
 description: 'Questo articolo è una versione di testo accessibile del diagramma denominato esempio di progettazione: siti Internet in Microsoft Azure per SharePoint 2013.'
-ms.openlocfilehash: 0d42a96f80d47b360084557fea47c4155d106d30
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 28cf28739c476638b5775d170508001f2a9730ed
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487832"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068799"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagramma accessibile-esempio di progettazione: siti Internet in Microsoft Azure per SharePoint 2013
 
@@ -56,7 +56,7 @@ In questa struttura sono disponibili quattro tipi di account utente. Ogni tipo d
     
 - Autori e sviluppatori di siti: gli autori e gli sviluppatori di siti possono accedere http://authoring.contoso.com:8000 tramite http://www.contoso.com:8000siti quali o. L'area utilizzata è la "zona predefinita/integrata di Windows", che utilizza servizi di dominio Active Directory (AD DS).
     
-- Account di ricerca per inDicizzazione-l'account di http://authoring.contoso.com:8000 ricerca per indicizzazione ha accesso tramite siti quali o. http://www.contoso.com:8000 L'area utilizzata è l'"area predefinita/integrata di Windows", che utilizza servizi di dominio Active Directory con l'autenticazione NTLM di Windows.
+- Account di ricerca per indicizzazione-l'account di http://authoring.contoso.com:8000 ricerca per indicizzazione ha accesso tramite siti quali o. http://www.contoso.com:8000 L'area utilizzata è l'"area predefinita/integrata di Windows", che utilizza servizi di dominio Active Directory con l'autenticazione NTLM di Windows.
     
 ## <a name="server-farm"></a>Server farm
 

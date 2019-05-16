@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 09/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Di seguito sono riportate le risposte alle domande generali su come spostare i dati di base in un nuovo datacenter Geo.
-ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490068"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067901"
 ---
 # <a name="data-move-general-faq"></a>Domande frequenti sullo spostamento dati
 
@@ -139,7 +139,7 @@ R. Sì. Microsoft mantiene una rete globale di grandi dimensioni con connessioni
 
 ## <a name="my-tenant-is-configured-for-office-365-multi-geohttpsakamsmulti-geo--can-i-still-enroll-in-my-tenant-in-the-office-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>My tenant è configurato per [Office 365 multi Geo](https://aka.ms/multi-geo).  È possibile continuare a iscriversi al tenant nel programma di spostamento di Office 365 per modificare il mio account geografico predefinito e spostare tutti gli utenti non presenti in un'area satellite per il nuovo valore geografico predefinito?
 
-Sì, il tenant è idoneo per la registrazione.  Sposteremo tutte le cassette postali EXO dall'attuale Geo predefinito al nuovo Data Center geografico locale.  Non verranno spostate le cassette postali EXO configurate nelle diverse aree geoGrafiche satelliti per continuare a rispettare la residenza dei dati delle aree satellite come previsto.  SharePoint Online e OneDrive for business non possono eseguire la migrazione al nuovo datacenter Geo come parte del programma Move, anche se è possibile configurare le condivisioni di OneDrive for business per spostarsi in qualsiasi area desiderata tramite il programma multi Geo.
+Sì, il tenant è idoneo per la registrazione.  Sposteremo tutte le cassette postali EXO dall'attuale Geo predefinito al nuovo Data Center geografico locale.  Non verranno spostate le cassette postali EXO configurate nelle diverse aree geografiche satelliti per continuare a rispettare la residenza dei dati delle aree satellite come previsto.  SharePoint Online e OneDrive for business non possono eseguire la migrazione al nuovo datacenter Geo come parte del programma Move, anche se è possibile configurare le condivisioni di OneDrive for business per spostarsi in qualsiasi area desiderata tramite il programma multi Geo.
   
 ## <a name="related-topics"></a>Argomenti correlati
 

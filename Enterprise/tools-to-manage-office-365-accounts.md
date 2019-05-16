@@ -1,9 +1,9 @@
 ---
 title: Strumenti per gestire gli account di Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: "Informazioni sugli strumenti da utilizzare per la gestione degli utenti di Office 365 e sul modo in cui è possibile utilizzare dipende dalla modalità di gestione delle identità dell'utente. "
-ms.openlocfilehash: 6e8f35d9b4f753d8e5ddad448d311767971c3c2a
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 3b1a869825991d9c85e16b1cc5f50646806ab3fd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001599"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070378"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Strumenti per gestire gli account di Office 365
 

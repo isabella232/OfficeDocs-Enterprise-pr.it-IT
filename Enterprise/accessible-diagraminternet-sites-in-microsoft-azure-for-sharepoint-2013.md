@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: Questo articolo è una versione di testo accessibile del diagramma denominato siti Internet in Microsoft Azure per SharePoint 2013.
-ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487693"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068642"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagramma accessibile-siti Internet in Microsoft Azure per SharePoint 2013
 
@@ -64,7 +64,7 @@ Per eseguire la scalabilità orizzontale, aggiungere un ulteriore server Web con
   
 #### <a name="application-servers"></a>Server applicazioni
 
-Nella sezione Server applicazioni esistono tre server applicazioni, host D, host E e host F. host D contenente i componenti di ricerca per inDicizzazione, amministrazione, analisi e elaborazione del contenuto. Host E contiene componenti di ricerca per inDicizzazione, amministrazione e elaborazione del contenuto. Host F contiene i componenti di ricerca per inDicizzazione e elaborazione del contenuto. 
+Nella sezione Server applicazioni esistono tre server applicazioni, host D, host E e host F. host D contenente i componenti di ricerca per indicizzazione, amministrazione, analisi e elaborazione del contenuto. Host E contiene componenti di ricerca per indicizzazione, amministrazione e elaborazione del contenuto. Host F contiene i componenti di ricerca per indicizzazione e elaborazione del contenuto. 
   
 Per eseguire la scalabilità orizzontale, aggiungere un server applicazioni con un componente di ricerca per indicizzazione e un componente di elaborazione del contenuto per elaborare un ulteriore 40 documenti al secondo. 
   
@@ -72,7 +72,7 @@ Per eseguire la scalabilità orizzontale, aggiungere un server applicazioni con 
 
 Nella sezione Server database sono disponibili due server, ovvero host G e host H. I server di database sono inclusi in host associati per la tolleranza di errore. 
   
-L'host G contiene tutti i database di SharePoint, inclusi il database di amministrazione della ricerca, il database dei collegamenti, due database per inDicizzazione, un database di analisi e tutti i database di SharePoint. Host H contiene tutti i database di SharePoint, incluse le copie ridondanti di tutti i database che utilizzano il clustering SQL, il mirroring o SQL Server 2012 AlwaysOn. 
+L'host G contiene tutti i database di SharePoint, inclusi il database di amministrazione della ricerca, il database dei collegamenti, due database per indicizzazione, un database di analisi e tutti i database di SharePoint. Host H contiene tutti i database di SharePoint, incluse le copie ridondanti di tutti i database che utilizzano il clustering SQL, il mirroring o SQL Server 2012 AlwaysOn. 
   
 ## <a name="fine-tune-for-azure"></a>Ottimizzazione per Azure
 
@@ -88,17 +88,17 @@ Nella topologia di esempio nel diagramma:
 
 La parte superiore del diagramma Visualizza la farm di SharePoint prima che sia stata ottimizzata per i set di disponibilità in Azure. Nel diagramma, i tre server applicazioni host non sono configurati in modo identico. Il numero di componenti è determinato dagli obiettivi di prestazioni e capacità per la farm. I tre server sono configurati come indicato di seguito: 
   
-- Host D Application Server è configurato con ruoli di ricerca per inDicizzazione, amministrazione, analisi e elaborazione del contenuto. 
+- Host D Application Server è configurato con ruoli di ricerca per indicizzazione, amministrazione, analisi e elaborazione del contenuto. 
     
-- Host E Application Server è configurato con i ruoli di elaborazione di ricerca per inDicizzazione, amministrazione e contenuto. 
+- Host E Application Server è configurato con i ruoli di elaborazione di ricerca per indicizzazione, amministrazione e contenuto. 
     
-- Il server applicazioni F host è configurato con i ruoli di ricerca per inDicizzazione e elaborazione del contenuto. 
+- Il server applicazioni F host è configurato con i ruoli di ricerca per indicizzazione e elaborazione del contenuto. 
     
 ### <a name="after"></a>Dopo
 
 Questa parte del diagramma Visualizza la farm di SharePoint dopo che è stata ottimizzata per i set di disponibilità in Azure. Per adattare questa architettura per Azure, è possibile replicare i quattro componenti in tutti e tre i server. Questo aumenta il numero di componenti oltre ciò che è necessario per le prestazioni e la capacità. Il compromesso è che questa struttura garantisce una disponibilità elevata di tutti e quattro i componenti della piattaforma di Azure quando queste tre macchine virtuali vengono assegnate a un set di disponibilità. 
   
-I tre server sono configurati per tutti i ruoli di ricerca per inDicizzazione, amministrazione, analisi e elaborazione del contenuto. 
+I tre server sono configurati per tutti i ruoli di ricerca per indicizzazione, amministrazione, analisi e elaborazione del contenuto. 
   
 ## <a name="choose-the-active-directory-model"></a>Scegliere il modello di Active Directory
 
@@ -200,7 +200,7 @@ Nel diagramma di accompagnamento vengono illustrati i servizi del pool di applic
   
 - Raccolta siti basata su percorso disponibile in http://internal:8000 (sito radice). 
     
-- Ricerca per inDicizzazione: raccolte siti con nome basato sull'host https://authoring.contoso.com:8000situate in un indirizzo, ad esempio. 
+- Ricerca per indicizzazione: raccolte siti con nome basato sull'host https://authoring.contoso.com:8000situate in un indirizzo, ad esempio. 
     
 - Query: 2 raccolte siti con nome host distinte situate in indirizzi quali: 
     

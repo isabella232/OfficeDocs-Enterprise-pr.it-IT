@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Se si utilizza Office 2007 o Office 2010, è il momento di pianificare l'aggiornamento. Non essere bloccato con app obsolete. Utilizzare queste risorse per iniziare a usare il piano.
-ms.openlocfilehash: ee14250f6bb17a571ff2c2e7e4cbd68d91d13646
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492052"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069332"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Pianificare l'aggiornamento da Office 2007 o Office 2010 Server e client
 
@@ -50,7 +50,7 @@ Le organizzazioni dispongono di diverse opzioni da prendere in considerazione:
     |[Project Server 2007](project-server-2007-end-of-support.md) |[Project Server 2010](project-server-2010-end-of-support.md) |
     |[PerformancePoint Server 2007](pps-2007-end-of-support.md) | |
  
-- **Implementare una soluzione ibrida comprendeNte Office 365** e i server e le applicazioni locali. Se si sta spostando il cloud in fasi o se è necessario mantenere alcuni server e applicazioni locali, è possibile che una soluzione ibrida sia adatta alla propria organizzazione. Vedere **[Panoramica delle soluzioni cloud ibride di Office 365.](hybrid-cloud-overview.md)** 
+- **Implementare una soluzione ibrida comprendente Office 365** e i server e le applicazioni locali. Se si sta spostando il cloud in fasi o se è necessario mantenere alcuni server e applicazioni locali, è possibile che una soluzione ibrida sia adatta alla propria organizzazione. Vedere **[Panoramica delle soluzioni cloud ibride di Office 365.](hybrid-cloud-overview.md)** 
     
 ### <a name="help-is-available-for-your-organization"></a>La guida è disponibile per l'organizzazione
 

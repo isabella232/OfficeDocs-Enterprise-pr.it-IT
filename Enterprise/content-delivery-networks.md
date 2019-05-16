@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 4/2/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilizzare queste informazioni per scoprire in che modo Office 365 utilizza le reti di distribuzione del contenuto (reti CDN) per migliorare le prestazioni.
-ms.openlocfilehash: 5d02b28fad0e47473cc6a75948c9dd27e6728bb5
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 8694f8aa4caf6161d221d1375d97ad5b72fb1818
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068023"
 ---
 # <a name="content-delivery-networks-cdns"></a>Reti di distribuzione del contenuto (reti CDN)
 
@@ -152,7 +152,7 @@ Per informazioni approfondite sulla privacy e la protezione dei dati per i provi
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Come è possibile proteggere la rete con tutti i servizi di terze parti?
 
-L'utilizzo di una vasta gamma di servizi partner consente a Office 365 di scalare e soddisfare i requisiti di disponibilità, nonché di migliorare l'esperienza utente quando si utilizza Office 365. I servizi di terze parti Office 365 leverages includono entrambi gli elenchi di revoche di certificati. ad esempio crl.microsoft.com o sa.symcb.com e reti CDN; ad esempio R3.res.Outlook.com. Ogni nome di dominio completo della rete CDN generato da Office 365 è un FQDN personalizzato per Office 365. Se si è inviati a un FQDN su richiesta di Office 365, è possibile garantire che il provider CDN controlli il nome di dominio completo e il contenuto sottostante in tale percorso.
+L'utilizzo di una vasta gamma di servizi partner consente a Office 365 di scalare e soddisfare i requisiti di disponibilità, nonché di migliorare l'esperienza utente quando si utilizza Office 365. I servizi di terze parti Office 365 leverages includono entrambi gli elenchi di revoche di certificati. ad esempio crl.microsoft.com o sa.symcb.com e reti CDN; ad esempio r3.res.outlook.com. Ogni nome di dominio completo della rete CDN generato da Office 365 è un FQDN personalizzato per Office 365. Se si è inviati a un FQDN su richiesta di Office 365, è possibile garantire che il provider CDN controlli il nome di dominio completo e il contenuto sottostante in tale percorso.
   
 Per i clienti che desiderano separare le richieste destinate a un datacenter Microsoft o Office 365 dalle richieste destinate a terze parti, sono state scritte linee guida per la [gestione degli endpoint di office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
 

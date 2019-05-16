@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 2/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010 e SharePoint Server 2010 sono vicini alla fine del supporto. Utilizzare questo articolo come guida per l'aggiornamento a SharePoint Online o a una versione più recente di SharePoint Server locale.
-ms.openlocfilehash: c88c6010aa398d8076fce59976bf6f5c0aa1a743
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 18522f9abb1514e14a172c6f2d661591826dff22
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492043"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070682"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Aggiornamento da SharePoint 2010
 
@@ -99,7 +99,7 @@ Se si esegue l'aggiornamento a SharePoint Server 2013 o SharePoint Server 2016 e
 |L'utente è l'amministratore globale dell'abbonamento e può assegnare gli amministratori ai siti SPO.  <br/> |Alcune azioni disponibili per un amministratore di farm in SharePoint Server locale non sono presenti (o non sono necessarie) nel ruolo di amministratore di SharePoint in Office 365, ma l'amministrazione di SharePoint, l'amministrazione della raccolta siti e la proprietà del sito sono locali per l'organizzazione.  <br/> |
 |Microsoft applica patch, correzioni e aggiornamenti per l'hardware e il software sottostante (inclusi i server SQL in cui viene eseguito SharePoint Online).  <br/> |Poiché non è disponibile alcun accesso al file system sottostante nel servizio, alcune personalizzazioni sono limitate.  <br/> |
 |Microsoft pubblica [contratti a livello di servizio](https://go.microsoft.com/fwlink/?linkid=843153) e si sposta rapidamente per risolvere gli incidenti a livello di servizio.  <br/> |Il backup e il ripristino e altre opzioni di ripristino vengono automatizzati dal servizio in SharePoint Online-i backup vengono sovrascritti se non utilizzati.  <br/> |
-|I test di sicurezza e l'ottimizzazione delle prestazioni del server vengono eseguite su base continuativa del servizio da Microsoft.  <br/> |Le modifiche apPortate all'interfaccia utente e ad altre funzionalità di SharePoint vengono installate dal servizio e possono essere attivate o disattivate.  <br/> |
+|I test di sicurezza e l'ottimizzazione delle prestazioni del server vengono eseguite su base continuativa del servizio da Microsoft.  <br/> |Le modifiche apportate all'interfaccia utente e ad altre funzionalità di SharePoint vengono installate dal servizio e possono essere attivate o disattivate.  <br/> |
 |Office 365 soddisfa molti standard del settore: [conformità a office 365](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |L'assistenza di [FastTrack](https://go.microsoft.com/fwlink/?linkid=518597) per la migrazione è limitata.  <br/> Gran parte dell'aggiornamento sarà manuale o tramite l'API di migrazione di SPO descritta nella Guida di [orientamento al contenuto di SharePoint Online e OneDrive Migration](https://go.microsoft.com/fwlink/?linkid=843184).  <br/> |
 |Né gli ingegneri del supporto Microsoft né i dipendenti del datacenter dispongono dell'accesso amministratore illimitato all'abbonamento.  <br/> |Se è necessario aggiornare l'infrastruttura hardware per supportare la versione più recente di SharePoint o se è necessaria una farm secondaria per l'aggiornamento, è possibile che siano presenti costi aggiuntivi.  <br/> |
 |I partner possono assistere con il processo monouso di migrazione dei dati a SharePoint Online.  <br/> |Non tutte le modifiche apportate a SharePoint Online sono all'interno del controllo. Dopo la migrazione, la progettazione delle differenze nei menu, nelle raccolte e in altre funzionalità può influire temporaneamente sull'usabilità.  <br/> |
@@ -149,15 +149,15 @@ Iniziare confrontando i requisiti hardware e software. Se non si soddisfano i re
   
 - **Requisiti hardware e software per**: 
     
-    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - **Limiti software e limitazioni per**: 
     
-    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **Panoramica del processo di aggiornamento per**: 
     
-    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Creare una soluzione ibrida di SharePoint tra SharePoint Online e SharePoint Server locale
 

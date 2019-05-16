@@ -1,9 +1,9 @@
 ---
 title: Preparare un dominio non instradabile per la sincronizzazione della directory
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365E_SetupDirSyncLocalDir
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Informazioni su cosa fare se si dispone di un dominio non routale associato agli utenti locali prima di eseguire la sincronizzazione con Office 365.
-ms.openlocfilehash: 150e670e58419cda0f8ba08a5fb1e375478a27b1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 15ab67212ec1ea6ca7665bb5a4b0748f7d85adb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085315"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071082"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparare un dominio non instradabile per la sincronizzazione della directory
 Quando si sincronizza la directory locale con Office 365, è necessario disporre di un dominio verificato in Azure Active Directory. Vengono sincronizzati solo i nomi dell'entità utente (UPN, User Principal Name) associati al dominio locale. Tuttavia, tutti gli UPN che contengono un dominio non instradabile, ad esempio Local (come Billa @ contoso. local), verranno sincronizzati con un dominio. onmicrosoft.com (come billa@contoso.onmicrosoft.com). 
@@ -34,7 +34,7 @@ Se si utilizza attualmente un dominio. local per gli account utente in Active Di
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Cosa succede se si dispone di un solo dominio locale?
 
-Lo strumento più recente che è possibile utilizzare per la sincronizzazione di Active Directory in Azure Active Directory è denominato Azure AD Connect. Per ulteriori informazioni, vedere [integrazione delle identità locali con Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
+Lo strumento più recente che è possibile utilizzare per la sincronizzazione di Active Directory in Azure Active Directory è denominato Azure AD Connect. Per ulteriori informazioni, vedere [Integrazione delle identità locali con Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
 Azure AD Connect sincronizza l'UPN e la password degli utenti in modo che gli utenti possano accedere con le stesse credenziali che utilizzano in locale. Tuttavia, Azure AD Connect sincronizza solo gli utenti nei domini verificati da Office 365. Questo significa che il dominio è verificato anche da Azure Active Directory perché le identità di Office 365 sono gestite da Azure Active Directory. In altre parole, il dominio deve essere un dominio Internet valido (ad esempio,. com,. org, .NET,. US, ecc.). Se l'utente interno di Active Directory utilizza solo un dominio non instradabile (ad esempio,. local), non è possibile che il dominio verificato sia presente in Office 365. È possibile risolvere il problema modificando il dominio principale in Active Directory locale oppure aggiungendo uno o più suffissi UPN.
   

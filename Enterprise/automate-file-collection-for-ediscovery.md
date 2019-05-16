@@ -3,7 +3,7 @@ title: Automatizzare la raccolta file per eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Riepilogo: informazioni su come automatizzare la raccolta di file dai computer degli utenti per eDiscovery.'
-ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b54e54e2905407b81d95238afe97c1a542238e06
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490824"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068422"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizzare la raccolta file per eDiscovery
 
@@ -343,7 +343,7 @@ $AllFiles | ForEach-Object {
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>Opzione di importazione PST B, per Exchange Online
 
--  Creare la struttura delle cassette postali in cui inserire i file PST importati. Per ulteriori informazioni su come creare una cassetta postale utente in Exchange Online, vedere[creare cassette postAli utente in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
+-  Creare la struttura delle cassette postali in cui inserire i file PST importati. Per ulteriori informazioni su come creare una cassetta postale utente in Exchange Online, vedere[creare cassette postali utente in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
     
 ### <a name="cold-storage"></a>Archiviazione frigorifera
 
@@ -375,7 +375,7 @@ $AllFiles | ForEach-Object {
     
 ### <a name="sharepoint-on-premises-search-for-cold-storage"></a>Ricerca di SharePoint locale per l'archiviazione frigorifera
 
-1. creare una nuova origine di contenuto nella farm di SharePoint 2013 per la condivisione di archiviazione frigorifera in Azure \\ \\,\\ad esempio AZFile1 ContentColdStorage. Per ulteriori informazioni sulla gestione delle origini di contenuto, vedere [aggiungere, modificare o eliminare un'origine di contenuto in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
+1. Creare una nuova origine di contenuto nella farm di SharePoint 2013 per la condivisione di archiviazione frigorifera in Azure \\ \\,\\ad esempio AZFile1 ContentColdStorage. Per ulteriori informazioni sulla gestione delle origini di contenuto, vedere [aggiungere, modificare o eliminare un'origine di contenuto in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
     
 2. Avviare una ricerca per indicizzazione completa. Per ulteriori informazioni, vedere, [avviare, sospendere, riprendere o interrompere una ricerca per indicizzazione in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     
@@ -436,7 +436,7 @@ Tutti gli altri passaggi non sono specifici di questa soluzione. Si tratta di at
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>Opzione di importazione PST B, per Exchange Online
 
-- Per inserire i file PST raccolti in Exchange Online, seguire le procedure riPortate nella sezione Import files into Office 365 through the network upload section of [office 365 Import Service](https://go.microsoft.com/fwlink/p/?LinkId=614938).
+- Per inserire i file PST raccolti in Exchange Online, seguire le procedure riportate nella sezione Import files into Office 365 through the network upload section of [office 365 Import Service](https://go.microsoft.com/fwlink/p/?LinkId=614938).
     
 ### <a name="move-to-cold-storage"></a>Passare a archiviazione frigorifera
 

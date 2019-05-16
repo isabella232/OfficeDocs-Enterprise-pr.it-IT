@@ -1,10 +1,10 @@
 ---
-title: Come richiedere lo spostamento dei dati
+title: Come richiedere lo spostamento dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650079"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071012"
 ---
-# <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dei dati
+# <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
 > [!NOTE]
 > Le informazioni contenute in questa pagina sono valide solo per i clienti che avevano già inquilini di Office 365 prima che i nuovi datacenter venissero avviati in Geo. 
@@ -113,7 +113,7 @@ Se gli utenti dispongono di un dispositivo mobile con il server Exchange imposta
 
 [Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS](moving-data-to-new-datacenter-geos.md)
 
-[FAQ generale sullo spostamento dei dati](data-move-faq.md)
+[Domande frequenti sullo spostamento dati](data-move-faq.md)
 
 [Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
