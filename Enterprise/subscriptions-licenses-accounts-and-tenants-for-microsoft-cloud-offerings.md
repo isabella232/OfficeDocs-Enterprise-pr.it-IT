@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/12/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Riepilogo: comprendere le relazioni delle organizzazioni, le sottoscrizioni, le licenze, gli account utente e i tenant tra le offerte cloud di Microsoft.'
-ms.openlocfilehash: 55d13e55b597f398189efbafb6b3426609f2d41d
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 9df81d14cbd18246bf10e66002d9042a3b3d9384
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741322"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070432"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Sottoscrizioni, licenze, account e tenant per offerte cloud di Microsoft
 
@@ -62,7 +62,7 @@ Una sottoscrizione è un contratto stipulato con Microsoft per utilizzare una o 
   
 Le organizzazioni possono disporre di più sottoscrizioni per le offerte cloud di Microsoft. Nella figura 1 è riportato un esempio.
   
-**Figura 1: Esempio di più sottoscrizioni per un'organizzazione**
+**Figura 1: esempio di più sottoscrizioni per un'organizzazione**
 
 ![Esempio di organizzazione con più sottoscrizioni per le offerte cloud di Microsoft.](media/Subscriptions/Subscriptions-Fig1.png)
 
@@ -73,7 +73,7 @@ Nella figura 1 viene mostrata una singola organizzazione che dispone di più sot
 
 Per le offerte cloud SaaS di Microsoft, una licenza consente a un account utente specifico di utilizzare l'offerta cloud. Vengono effettuati addebiti mensili fissi come parte della sottoscrizione. Gli amministratori assegnano licenze a singoli account utente nella sottoscrizione. Ad esempio, nella figura 2, Contoso Corporation dispone di una sottoscrizione a Office 365 Enterprise E5 con 100 licenze, che consente a oltre 100 account utente singoli di usare le funzionalità e i servizi di Enterprise E5.
   
-**Figura 2: Licenze comprese nelle sottoscrizioni basate su SaaS di un'organizzazione**
+**Figura 2: licenze comprese nelle sottoscrizioni basate su SaaS di un'organizzazione**
 
 ![Un esempio di più licenze all'interno delle sottoscrizioni per le offerte cloud di Microsoft basate su SaaS.](media/Subscriptions/Subscriptions-Fig2.png)
   
@@ -131,7 +131,7 @@ Ecco un esempio di relazione di organizzazioni, sottoscrizioni, licenze e accoun
     
 Più sottoscrizioni alle offerte cloud Microsoft possono usare lo stesso tenant di Azure AD che agisce da provider di identità comune. Un tenant di Azure AD centrale che contiene gli account sincronizzati di Active Directory Domain Services locale fornisce IDaaS basata su cloud per l'organizzazione. Questo è il contenuto della figura 4.
   
-**Figura 4: Account locali sincronizzati e IDaaS per un'organizzazione**
+**Figura 4: account sincronizzati in locale e IDaaS per un'organizzazione**
 
 ![IDaaS IaaS per l'organizzazione.](media/Subscriptions/Subscriptions-Fig4.png)
   
@@ -172,9 +172,9 @@ Se sono state acquistate sottoscrizioni di Azure e Office 365 separate e si desi
   
 ## <a name="see-also"></a>Vedere anche
 
-[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
   
-[Guide dei lab di test per l'adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

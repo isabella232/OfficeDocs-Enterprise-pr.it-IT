@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/6/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Una volta distribuito Office 365, è possibile mantenere la connettività di Office 365 usando alcune delle tecniche e degli strumenti seguenti. È consigliabile leggere le linee guida ufficiali sull'integrità e la continuità dei servizi, oltre alle procedure consigliate per l'uso di Office 365 in una rete lenta. È inoltre opportuno acquisire l'app di amministrazione di Office 365 e aggiungere ai preferiti la nostra guida Office 365 per le aziende - Guida per amministratori.
-ms.openlocfilehash: 80e1f56ed3ef7ae2e013239ac286e2a804bd9696
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: ce307e01a3d7da4a24a06e58d293b9598c684d8f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541104"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070052"
 ---
 # <a name="monitor-office-365-connectivity"></a>Monitorare la connettività di Office 365
 
@@ -35,7 +35,7 @@ Una volta distribuito Office 365, è possibile mantenere la connettività di Off
 |**Usare System Center per monitorare Office 365** <br/> |Se si usa Microsoft System Center, è possibile scaricare il [Management Pack di System Center per Office 365](https://www.microsoft.com/download/details.aspx?id=43708) per iniziare subito a monitorare Office 365. Per indicazioni più dettagliate, vedere la guida operativa del Management Pack o il post di blog sul [monitoraggio di Office365 tramite System Center Operations Manager](https://blogs.msdn.com/b/mvpawardprogram/archive/2015/07/08/office365-monitoring-using-system-centre-operations-manager.aspx). <br/> |
 |**Monitorare l'integrità di Azure ExpressRoute** <br/> |Se ci si connette a Office 365 con Azure ExpressRoute per Office 365, è consigliabile assicurarsi di usare il dashboard per l'integrità dei servizi di Office 365 e consultare l'articolo sulla [riduzione delle tempistiche per la risoluzione di problemi con Integrità risorse di Azure](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) <br/> |
 |**Usare Azure AD Connect Health con AD FS** <br/> |Se si usa AD FS per Single Sign-On con Office 365, per iniziare, [usare Azure AD Connect Health per monitorare l'infrastruttura AD FS](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/).  <br/> |
-|**Monitorare Office 365 a livello di programmazione** <br/> |Vedere le indicazioni sull'[API di gestione di Office 365](https://msdn.microsoft.com/library/jj984343%28v=office.15%29.aspx).  <br/> |
+|**Monitorare Office 365 a livello di programmazione** <br/> |Vedere le indicazioni sull'[API di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview).  <br/> |
 
 Ecco un collegamento breve per tornare alla pagina: [hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   

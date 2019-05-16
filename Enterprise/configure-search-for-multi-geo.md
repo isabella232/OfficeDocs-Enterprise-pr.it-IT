@@ -3,19 +3,19 @@ title: Configurare la ricerca di Office 365 Multi-Geo
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su come configurare la ricerca in un ambiente multi-geografico.
-ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490390"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068072"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Configurare la ricerca di Office 365 Multi-Geo
 
@@ -85,7 +85,7 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La ricerca multi-geografica non supporta il bucket di criteri di affinamento numerici.</td>
-<td align="left">Utilizzare il <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "Discretize"</a> per criteri di affinamento numerici.</td>
+<td align="left">Utilizzare il <a href="https://docs.microsoft.com/it-IT/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "Discretize"</a> per criteri di affinamento numerici.</td>
 </tr>
 <tr class="even">
 <td align="left">ID documenti</td>

@@ -3,7 +3,7 @@ title: Risorse sull'architettura IT del cloud Microsoft
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Riepilogo: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft. Informazioni su come implementare un desktop protetto e moderno con Windows 10 e Office ProPlus."
-ms.openlocfilehash: adc6e2c5992f7a9b146eca1b8b9b04c4f7aed115
-ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
+ms.openlocfilehash: ca62612dd76b3ada07dba0e58f92f36e2bf8e1cd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "31838198"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070302"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 
