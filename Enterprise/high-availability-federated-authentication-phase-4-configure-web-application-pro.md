@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: "Riepilogo: configurare i server proxy dell'applicazione Web per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: fa8f5d278283f66bda0aa9efb0dddf40e52ee1a6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe98657f1298021d9ed2c32a357051b5faeb4f21
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067332"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102534"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 dell'autenticazione federata a disponibilità elevata: configurare i proxy applicazione Web
 
@@ -171,7 +171,4 @@ Utilizzare [High availability federated authentication Phase 5: Configure federa
 [Identità federata per l'ambiente di sviluppo/test di Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
-
-[Opzioni di autenticazione federata](about-office-365-identity.md#federated-authentication-options)
-
 
