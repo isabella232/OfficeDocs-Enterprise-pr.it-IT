@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Riepilogo: usare la seguente guida al lab test per creare una sottoscrizione di valutazione di Office 365 per valutazione o sviluppo/test.'
-ms.openlocfilehash: ac234d783685f3812b899491d6c28ffb46a2ecf7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2f1856d203e892c98b44ccc1dbe1598d527165de
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069792"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162509"
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365
 
@@ -268,8 +268,6 @@ Utilizzare questi articoli aggiuntivi nell'ambiente di sviluppo/test di Office 3
 - [Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365. ](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
 - [Identità federata per l'ambiente di sviluppo/test di Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
-    
-- [Cloud App Security per l'ambiente di sviluppo/test di Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
 - [Protezione avanzata dalle minacce per l'ambiente di sviluppo/test di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     

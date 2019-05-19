@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Informazioni sul modo in cui l'identità dell'utente viene gestita in Office 365.
-ms.openlocfilehash: cd7fb1db2d5372097f3da0e6a2521335d7933015
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102465"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162389"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modelli di identità di Office 365 e Azure Active Directory
 
@@ -43,14 +43,14 @@ Di seguito sono illustrati i due tipi di identità e i loro vantaggi e adattamen
 
 |||
 |:-------|:-----|:-----|
-|  | Identità solo cloud | Identità ibrida |
-| Definizione | L'account utente è presente solo nel tenant di Azure Active Directory (Azure AD) per l'abbonamento a Microsoft 365. | L'account utente esiste in servizi di dominio Active Directory e una copia è anche nel tenant di Azure AD per l'abbonamento a Microsoft 365. L'account utente in Azure AD potrebbe includere anche una versione con hash della password dell'account utente. |
-| In che modo Microsoft 365 autentica le credenziali utente | Il tenant di Azure AD per la sottoscrizione Microsoft 365 esegue l'autenticazione con l'account di identità cloud. | Il tenant di Azure AD per la sottoscrizione Microsoft 365 gestisce il processo di autenticazione oppure reindirizza l'utente a un altro provider di identità. |
-| Ideale per... | Organizzazioni che non dispongono o hanno bisogno di servizi di dominio Active Directory locali. | Organizzazioni che utilizzano servizi di dominio Active Directory o un altro provider di identità. |
-| Maggiore vantaggio | Semplice da usare. Non sono necessari ulteriori server o strumenti di directory. | Gli utenti possono utilizzare le stesse credenziali per l'accesso a risorse locali o basate su cloud. |
+|  | **Identità solo cloud** | **Identità ibrida** |
+| **Definizione** | L'account utente è presente solo nel tenant di Azure Active Directory (Azure AD) per l'abbonamento a Microsoft 365. | L'account utente esiste in servizi di dominio Active Directory e una copia è anche nel tenant di Azure AD per l'abbonamento a Microsoft 365. L'account utente in Azure AD potrebbe includere anche una versione con hash della password dell'account utente. |
+| **In che modo Microsoft 365 autentica le credenziali utente** | Il tenant di Azure AD per la sottoscrizione Microsoft 365 esegue l'autenticazione con l'account di identità cloud. | Il tenant di Azure AD per la sottoscrizione Microsoft 365 gestisce il processo di autenticazione oppure reindirizza l'utente a un altro provider di identità. |
+| **Compatibilità** | Organizzazioni che non dispongono o hanno bisogno di servizi di dominio Active Directory locali. | Organizzazioni che utilizzano servizi di dominio Active Directory o un altro provider di identità. |
+| **Maggiore vantaggio** | Semplice da usare. Non sono necessari ulteriori server o strumenti di directory. | Gli utenti possono utilizzare le stesse credenziali per l'accesso a risorse locali o basate su cloud. |
 ||||
 
-### <a name="cloud-only-identity"></a>Identità solo cloud
+## <a name="cloud-only-identity"></a>Identità solo cloud
 
 Un'identità solo cloud utilizza gli account utente che esistono solo in Azure AD. L'identità del cloud in genere viene utilizzata dalle organizzazioni di piccole dimensioni che non dispongono di server locali oppure che non utilizzano servizi di dominio Active Directory per gestire le identità locali. 
 
@@ -60,7 +60,7 @@ Di seguito sono ripartiti i componenti di base dell'identità solo cloud.
 
 Sia gli utenti locali che quelli remoti (online) usano gli account utente e le password di Azure AD per accedere ai servizi cloud di Office 365. Azure AD autentica le credenziali degli utenti in base agli account utente e alle password archiviati.
 
-#### <a name="administration"></a>Amministrazione
+### <a name="administration"></a>Amministrazione
 Poiché gli account utente sono archiviati solo in Azure AD, è possibile gestire le identità cloud con strumenti quali l'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) e Windows PowerShell con il modulo Azure Active Directory PowerShell per Graph. 
 
 ## <a name="hybrid-identity"></a>Identità ibrida
@@ -81,14 +81,15 @@ Il tenant di Azure AD ha una copia degli account di servizi di dominio Active Di
 >È sempre necessario utilizzare Azure AD Connect per sincronizzare gli account utente per l'identità ibrida. Sono necessari gli account utente sincronizzati in Azure AD per eseguire l'assegnazione delle licenze e la gestione dei gruppi, configurare le autorizzazioni e altre attività amministrative che coinvolgono gli account utente.
 >
 
-#### <a name="administration"></a>Amministrazione
+### <a name="administration"></a>Amministrazione
 
 Poiché gli account utente originali e autorevoli sono archiviati in servizi di dominio Active Directory locali, è possibile gestire le identità con gli stessi strumenti di AD DS, ad esempio lo strumento utenti e computer di Active. 
 
 Non è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o Windows PowerShell per gestire gli account utente sincronizzati in Azure AD.
 
-
 ## <a name="next-step"></a>Passaggio successivo
+
+Se è necessario il modello di identità solo cloud, vedere [identità solo cloud](cloud-only-identities.md).
 
 Se è necessario il modello di identità ibrido, vedere [Planning for your Identities Synchronized and Authentication Methods](plan-for-directory-synchronization.md).
   

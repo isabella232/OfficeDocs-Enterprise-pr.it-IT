@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Vengono fornite istruzioni sull'utilizzo di IdFix per preparare e pulire la directory locale prima della sincronizzazione a Office 365.
-ms.openlocfilehash: 134f9cd60e65b64b91fb42fd7cbfa300626fc867
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071072"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162369"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Preparare gli attributi della directory per la sincronizzazione con Office 365 usando lo strumento IdFix
 Questo argomento contiene istruzioni dettagliate sull'esecuzione dello strumento IdFix, alcuni errori comuni che è possibile riscontrare, correzioni consigliate, esempi e procedure consigliate per le operazioni da eseguire se si dispone di un numero elevato di errori.
@@ -81,3 +81,7 @@ Per impostazione predefinita, IdFix ricerca l'intera directory. Se si desidera, 
   
 ## <a name="rolling-back-your-changes-by-using-the-idfix-gui"></a>Ripristino delle modifiche utilizzando l'interfaccia grafica di IdFix
 Tutte le volte che si seleziona **Applica** per applicare le modifiche, lo strumento IdFix crea un file separato denominato registro di transazione che elenca le modifiche appena effettuate. In caso di errore, è possibile utilizzare il registro di transazione per ripristinare solo le modifiche presenti nel registro più recente. In caso di errore durante l'aggiornamento, è possibile annullare le modifiche recentemente applicate selezionando **Annulla**. Quando scegli **Annulla**, IdFix utilizza il registro di transazione per ripristinare solo le modifiche presenti nel registro più recente. Per ulteriori informazioni sull'utilizzo del log delle transazioni, vedere [Reference: Office 365 IdFix Transaction Log](idfix-transaction-log.md).
+
+## <a name="next-step"></a>Passaggio successivo
+
+[Configurare la sincronizzazione della directory](set-up-directory-synchronization.md)

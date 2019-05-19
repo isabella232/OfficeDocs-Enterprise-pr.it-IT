@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Prima di iniziare a pianificare la rete per la connettività di rete di Office 365, è importante comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e ottenere le migliori prestazioni possibili. In questo articolo vengono fornite informazioni utili per comprendere le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365.
-ms.openlocfilehash: 2d8b629d291be44da3d3360e676e7a01d9cd5a35
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d242196c2136962bf11472b51c28889977c2fc21
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069822"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162499"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principi della connettività di rete di Office 365
 
@@ -200,7 +200,7 @@ Microsoft offre una vasta gamma di funzionalità di sicurezza di Office 365 e fo
   
 - **Utilizzo dell'autenticazione a più fattori (AMF)** L'AMF aggiunge un ulteriore livello di protezione a una strategia di password complessa richiedendo agli utenti di riconoscere una telefonata, un messaggio di testo o una notifica di app sul proprio smartphone dopo aver inserito correttamente la propria password.
 
-- **Utilizzo di Office 365 cloud app Security** Impostare i criteri per monitorare le attività anomale e agire su di esso. Configurare gli avvisi con Office 365 cloud app Security in modo che gli amministratori possano esaminare attività utente inusuali o rischiose, ad esempio il download di grandi quantità di dati, più tentativi di accesso non riusciti o connessioni da indirizzi IP sconosciuti o pericolosi.
+- **Utilizzare Microsoft cloud app Security** Impostare i criteri per monitorare le attività anomale e agire su di esso. Configurare gli avvisi con Microsoft cloud app Security in modo che gli amministratori possano esaminare attività utente inusuali o rischiose, ad esempio il download di grandi quantità di dati, più tentativi di accesso non riusciti o connessioni provenienti da indirizzi IP sconosciuti o pericolosi.
 
 - **Configurare la prevenzione della perdita di dati (DLP)** DLP consente di identificare i dati sensibili e creare criteri che consentono di impedire agli utenti di condividere accidentalmente o intenzionalmente i dati. DLP è compatibile con Office 365 incluso Exchange Online, SharePoint Online e OneDrive in modo che gli utenti possano rimanere conformi senza interrompere il flusso di lavoro.
 

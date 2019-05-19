@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Riepilogo: creare una rete virtuale cross-premise simulata in Microsoft Azure come ambiente di sviluppo/test.'
-ms.openlocfilehash: 23e713ee50f1efed9ede07b13c289195d9054f8d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 595aa20595f43f481aaf090a14d0d7c0df000345
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070422"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162489"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rete virtuale tra più sedi simulata in Azure
 
@@ -219,8 +219,6 @@ Utilizzare l’ambiente di sviluppo/test per simulare un [Server di SharePoint I
 [Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md)
   
 [DirSync per l'ambiente di sviluppo/test di Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Cloud App Security per l'ambiente di sviluppo/test di Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Protezione avanzata dalle minacce per l'ambiente di sviluppo/test di Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
