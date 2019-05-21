@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Informazioni sul modo in cui l'identità dell'utente viene gestita in Office 365.
-ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162389"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249464"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modelli di identità di Office 365 e Azure Active Directory
 
@@ -91,7 +91,7 @@ Non è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o 
 
 Se è necessario il modello di identità solo cloud, vedere [identità solo cloud](cloud-only-identities.md).
 
-Se è necessario il modello di identità ibrido, vedere [Planning for your Identities Synchronized and Authentication Methods](plan-for-directory-synchronization.md).
+Se è necessario il modello di identità ibrida, vedere [sincronizzazione della directory](plan-for-directory-synchronization.md).
   
 
 ## <a name="video-training"></a>Video di formazione

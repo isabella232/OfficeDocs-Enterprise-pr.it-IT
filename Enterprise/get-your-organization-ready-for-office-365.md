@@ -1,5 +1,5 @@
 ---
-title: Preparare l'organizzazione per Office 365 Enterprise
+title: Pianificare Office 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,35 +16,73 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
-description: Se si è scelto di non eseguire la distribuzione di FastTrack e non si trovano le informazioni necessarie nei passaggi di distribuzione di base, questo è il punto di partenza.
-ms.openlocfilehash: 90cf7cda7070c626579389f8122cdc438d88abe0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Ottenere l'accesso alle risorse da pianificare per la distribuzione di Office 365 Enterprise.
+ms.openlocfilehash: 29510c6e3df5dfd6064b6e7e96e236e4bd8c0c47
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067542"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249474"
 ---
-# <a name="get-your-organization-ready-for-office-365-enterprise"></a>Preparare l'organizzazione per Office 365 Enterprise
+# <a name="plan-for-office-365-enterprise"></a>Pianificare Office 365 Enterprise
 
-## <a name="what-do-you-need-to-do-to-get-ready-for-office-365"></a>Che cosa è necessario fare per prepararsi per Office 365?
+Quando si sposta un'organizzazione aziendale in Office 365, è importante pianificare la pianificazione e prendere le decisioni di progettazione chiave che semplificano la distribuzione e l'adozione dell'utente. 
 
-La maggior parte delle organizzazioni non ha bisogno di fare nulla per prepararsi per Office 365. Si tratta di un'applicazione sul Web e gli utenti sono in grado di utilizzarlo non appena dispongono di un account. Altre organizzazioni dispongono di altre posizioni, procedure di sicurezza o altri requisiti che creano la necessità di una maggiore pianificazione. Per le organizzazioni a livello aziendale, seguire gli elementi di elenco di controllo riportati di seguito per iniziare a usare Office 365.
+## <a name="planning-with-office-365-fasttrack"></a>Pianificazione con Office 365 FastTrack
+
+[FastTrack per office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) è il metodo migliore per ottenere assistenza da Microsoft per la pianificazione della distribuzione di Office 365. FastTrack può essere di aiuto nelle considerazioni di progettazione più comuni e può rispondere a domande lungo la strada. 
+
+>[!Note]
+>È inoltre possibile ottenere assistenza da un [partner Microsoft](https://www.microsoft.com/solution-providers/home).
+>
+
+## <a name="do-it-yourself-planning-for-office-365"></a>Pianificazione del fai da te per Office 365
+
+Per pianificare Office 365 da soli, determinare le scelte di progettazione corrette per queste aree:
+
+- Il tenant di Office 365
+
+  Include la pianificazione per le connessioni di rete a Internet, le identità di Office 365 e l'integrazione con le app, gli elementi locali, di Azure e di altro. Iniziare da [qui](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+
+- Supporto per i client
+
+  Include l'autenticazione basata su certificati, la gestione dei dispositivi mobili, le opzioni di autenticazione e la collaborazione tra tenant. Iniziare da [qui](office-365-client-support-certificate-based-authentication.md).
+
+- Supporto per l'autenticazione moderna ibrida
+
+  Include la pianificazione per l'autenticazione moderna quando si utilizzano configurazioni ibride dei carichi di lavoro principali di Office 365. Iniziare da [qui](hybrid-modern-auth-overview.md).
+
+- Server e client di Office meno recenti
+
+  Include informazioni sulla migrazione per i prodotti client e server di Office 2007 e Office 2010. Iniziare da [qui](plan-upgrade-previous-versions-office.md).
+
+È inoltre possibile accedere all'abbonamento e utilizzare i consulenti [per la distribuzione per i servizi di Office 365](deployment-advisors-for-office-365.md).
+
+
+<!--
+
+This checklist will help your organization as you plan and prepare for a migration to Office 365. The phases and steps in the checklist are aligned with the guidance provided by the [Onboarding Center](https://go.microsoft.com/fwlink/?LinkId=517115). Feel free to adapt this checklist to your organization's needs.
+
+Most organizations don't need to do anything to prepare for Office 365. It's an application on the web and people are able to use it as soon as they have an account. Other organizations have more locations, security practices, or other requirements that create the need for more planning. For enterprise-level organizations, follow the checklist items below to get started with Office 365.
   
-Se si desidera ricevere assistenza per la configurazione di Office 365, [FastTrack](https://fasttrack.microsoft.com/office) è il modo più semplice per distribuire Office 365; è anche possibile utilizzare gli [assistenti per la distribuzione per i servizi di Office 365](deployment-advisors-for-office-365.md).
+If you want help getting Office 365 set up, [FastTrack](https://fasttrack.microsoft.com/office) is the easiest way to deploy Office 365, you can also sign in and use the [Deployment advisors for Office 365 services](deployment-advisors-for-office-365.md).
   
-|**Scegliere uno o più per iniziare:**||
+|**Choose one or more to get started:**||
 |:-----|:-----|
-| [Requisiti di sistema per Office](https://products.office.com/office-system-requirements) |-Microsoft Office Professional, Office 365, Office 365 ProPlus e tutte le applicazioni di Office per Windows, Mac, iOS e Android dispongono di requisiti di sistema specifici. Assicurarsi che l'hardware e il software soddisfino i requisiti minimi di sistema.|
-|**La maggior parte dei** clienti collega la propria directory locale a Office 365. Ottenere un vantaggio sulla preparazione della directory tramite [l'installazione e l'esecuzione di IdFix nella rete](https://www.microsoft.com/download/details.aspx?id=36832). <br> Utilizzare il sistema di [consulenza AAD Connect Advisor](https://aka.ms/aadconnectpwsync) e la [Guida set up di Azure ad Premium](https://aka.ms/aadpguidance) per ottenere una guida di configurazione personalizzata. <br> |-I controlli automatici sulla directory per [convalidare gli account delle persone verranno sincronizzati correttamente](https://support.office.com/article/Prepare-to-provision-users-through-directory-synchronization-to-Office-365-01920974-9e6f-4331-a370-13aea4e82b3e). <br> -Consiglia le modifiche apportate agli oggetti directory e offre di automatizzare le modifiche apportate. <br> - [Ulteriori informazioni sull'utilizzo dello strumento IdFix](prepare-directory-attributes-for-synch-with-idfix.md). |
-|**Leggere** le [informazioni sulle prestazioni di rete](https://aka.ms/tune) e utilizzare gli strumenti necessari per garantire la connettività e la configurazione delle prestazioni necessarie per offrire agli utenti la migliore esperienza possibile.  <br> | -Verificare che sia possibile connettersi a Office 365, se si filtra o si esegue l'analisi del traffico in uscita, è necessario capire cosa significa [gestire gli endpoint di office 365](https://support.office.com/article/Managing-Office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a) per la propria organizzazione.  <br>  - [Model and test your network Capacity](https://support.office.com/article/Network-and-migration-planning-for-Office-365-f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132) o Move to a [Azure ExpressRoute for Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd) Circuit per un'esperienza più prevedibile.   |
-|**Utilizzare** l' [elenco di controllo di pianificazione](https://support.office.com/article/Deployment-planning-checklist-for-Office-365-5fa4f6ef-35ad-4840-91c1-4834df3df5a0) come punto di partenza per la creazione di un piano di distribuzione personalizzato.  <br> | -Panoramica dettagliata delle aree possibili che è necessario pianificare con collegamenti a informazioni di riferimento o How-to utili per la pianificazione. |
-|**Utilizzare** lo script degli elementi di [grandi dimensioni di Exchange Server](https://gallery.technet.microsoft.com/Exchange-Server-Large-Item-b9546cc6) per individuare gli elementi di posta che potrebbero essere troppo grandi per la migrazione.  <br> | -Utilizza i servizi Web Exchange per impersonare, accedere, analizzare la cassetta postale per le dimensioni dei file specificate e scaricare i risultati in un file CSV. Leggere le [istruzioni dettagliate su come utilizzare lo script](https://blogs.technet.com/b/mikehall/archive/2013/06/27/large-mail-item-script.aspx). |
-|**** Approfitta degli [esperti della distribuzione di Microsoft](https://go.microsoft.com/fwlink/?LinkId=517115) che possono aiutarti a pianificare l'utilizzo di tutti i nuovi servizi e applicazioni.  <br> Utilizzare le [procedure guidate per la distribuzione di Office 365 Services](https://support.office.com/article/Deployment-wizards-for-Office-365-services-165f46e8-3533-4d76-be57-97f81ebd40f2) per ottenere indicazioni sulla configurazione personalizzate.  <br> | -L'onboarding Center funziona direttamente con i clienti e con le organizzazioni partner. Date loro una chiamata oggi. |
-|**Utilizzare** i [modelli e le risorse disponibili in Office 365 Success Center](https://www.microsoft.com/fasttrack/resources) per condividere i piani di distribuzione e onboarding con gli utenti dell'organizzazione.  <br> | -La comunicazione con tutti gli utenti prima, durante e dopo la transizione a Office 365 è critica.  <br> -Utilizzare i modelli, le guide e gli stampati per migliorare le comunicazioni. |
-|**Leggere** l'articolo [Office 365 criteri di connettività di rete](https://aka.ms/o365networkingprinciples) per comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e per ottenere le migliori prestazioni possibili.  <br> | -In questo articolo vengono fornite informazioni sulle linee guida più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365. |
+| [System requirements for Office](https://products.office.com/office-system-requirements) |- Microsoft Office Professional, Office 365, Office 365 ProPlus, and each Office application for Windows, Mac, iOS, and Android all have specific system requirements. Ensure your hardware and software meet the minimum system requirements.|
+|**Most** customers connect their on-premises directory to Office 365. Get a head start on directory preparation by [installing and running IdFix on your network](https://www.microsoft.com/download/details.aspx?id=36832). <br> Use the [AAD Connect advisor](https://aka.ms/aadconnectpwsync) and the [Azure AD Premium set up guide](https://aka.ms/aadpguidance) to get customized set up guidance. <br> |- Automated checks against your directory to [validate people's accounts will properly synchronize](https://support.office.com/article/Prepare-to-provision-users-through-directory-synchronization-to-Office-365-01920974-9e6f-4331-a370-13aea4e82b3e). <br> - Recommends changes to directory objects and offers to automate the changes for you. <br> - [More details on using the IdFix tool](prepare-directory-attributes-for-synch-with-idfix.md). |
+|**Read** our [network performance guidance](https://aka.ms/tune) and use our tools to ensure you have the connectivity and performance configuration necessary to provide people with the best experience.  <br> | - Ensure you can connect to Office 365, if you filter or scan outbound traffic, you'll want to understand what [managing Office 365 endpoints](https://support.office.com/article/Managing-Office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a) means for your organization.  <br>  - [Model and test your network capacity](https://support.office.com/article/Network-and-migration-planning-for-Office-365-f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132) or move to an [Azure ExpressRoute for Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd) circuit for a more predictable experience.   |
+|**Use** our [planning checklist](https://support.office.com/article/Deployment-planning-checklist-for-Office-365-5fa4f6ef-35ad-4840-91c1-4834df3df5a0) as a starting place for building your own deployment plan.  <br> | - In-depth overview of possible areas you'll need to plan for with links to reference or how-to information to help you plan. |
+|**Use** the [Exchange Server Large Item Script](https://gallery.technet.microsoft.com/Exchange-Server-Large-Item-b9546cc6) to find mail items that may be too large to migrate.  <br> | - Uses Exchange Web Services to impersonate, access, scan the mailbox for file sizes you specify, and dumps the results in a CSV file. Read the [detailed instructions on how to use the script](https://blogs.technet.com/b/mikehall/archive/2013/06/27/large-mail-item-script.aspx). |
+|**Take** advantage of [Microsoft deployment experts](https://go.microsoft.com/fwlink/?LinkId=517115) who can help you from planning to helping everyone start using the new services and applications.  <br> Use the [Deployment wizards for Office 365 services](https://support.office.com/article/Deployment-wizards-for-Office-365-services-165f46e8-3533-4d76-be57-97f81ebd40f2) to get customized set up guidance.  <br> | - The Onboarding center works directly with customers and with partner organizations. Give them a call today. |
+|**Use** the [templates and resources in the Office 365 success center](https://www.microsoft.com/fasttrack/resources) to share your deployment and onboarding plans with the people in your organization.  <br> | - Communication with everyone before, during, and after the transition to Office 365 is critical.  <br> - Use our templates, guides, and handouts to improve your communications. |
+|**Read** the article [Office 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples) to understand the connectivity principles for securely managing Office 365 traffic and getting the best possible performance.  <br> | - This article will help you understand the most recent guidance for securely optimizing Office 365 network connectivity. |
    
-Si desiderano ulteriori risorse che consentono di integrare Office 365 con una strategia cloud più ampia? Di seguito sono riPORTAte le [risorse dell'architettura IT di Microsoft Cloud](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-cloud-it-architecture-resources).
+Want more resources to help you integrate Office 365 with your broader cloud strategy? Here are the [Microsoft cloud IT architecture resources](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-cloud-it-architecture-resources).
   
-## <a name="want-to-talk-with-support"></a>Vuoi parlare con il supporto?
+## Want to talk with support?
 
-Siamo qui per aiutare, [contattare il supporto](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) per i prodotti per le aziende.
+We're here to help, [contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) for business products.
+
+
+--> 
