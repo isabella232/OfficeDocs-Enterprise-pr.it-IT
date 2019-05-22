@@ -3,55 +3,55 @@ title: Exchange Multi-Geo
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
-description: Informazioni sulle funzionalità multi-Geo in Exchange Online.
-ms.openlocfilehash: 70db45bb7626c49a2c9cd6ec827bff6ca16d4673
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
-ms.translationtype: MT
+description: Informazioni sulle funzionalità Multi-Geo in Exchange Online.
+ms.openlocfilehash: d518121c69ee29ee246c6947e361a74a3933310f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765068"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069932"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Funzionalità Multi-Geo in Exchange Online
 
-In un ambiente multi-geografico, è possibile selezionare il percorso del contenuto delle cassette postali di Exchange Online (dati a riposo) in base ai singoli utenti.
+In un ambiente Multi-Geo, è possibile selezionare la posizione del contenuto delle cassette postali di Exchange Online (dati inattivi) per ogni utente.
 
-È possibile inserire le cassette postali nelle posizioni geografiche satellitari per:
+È possibile inserire cassette postali in posizioni geografiche satelliti per:
 
-- Creazione di una nuova cassetta postale di Exchange Online direttamente in una posizione geografica satellitare.
+- Creare una nuova cassetta postale di Exchange Online direttamente in una posizione geografica satellite.
 
-- Spostamento di una cassetta postale di Exchange Online esistente in una posizione geografica satellite modificando la posizione dei dati preferita dell'utente.
+- Spostare una cassetta postale di Exchange Online esistente in una posizione geografica satellite modificando la posizione preferita dei dati dell'utente.
 
-- Onboarding di una cassetta postale da un'organizzazione di Exchange locale direttamente in una posizione geografica satellitare.
+- Caricare una cassetta postale di un'organizzazione di Exchange locale direttamente in una posizione geografica satellite.
 
-## <a name="mailbox-placement-and-moves"></a>Posizionamento e spostamenti delle cassette postali
+## <a name="mailbox-placement-and-moves"></a>Inserimento e spostamenti delle cassette postali
 
-Dopo aver completato la procedura di configurazione multi-Geo prerequisita, Exchange Online onorerà l'attributo **PreferredDataLocation** per gli oggetti utente in Azure ad.
+Dopo che Microsoft ha completato la procedura di configurazione Multi-Geo del prerequisito, Exchange Online riserverà l'attributo **PreferredDataLocation** per gli oggetti utente in Azure AD.
 
-Exchange Online Sincronizza la proprietà **PreferredDataLocation** da Azure ad nella proprietà **MailboxRegion** nel servizio directory di Exchange Online. Il valore di **MailboxRegion** determina la posizione geografica in cui verranno posizionate le cassette postali degli utenti e le cassette postali di archiviazione associate. Non è possibile configurare la cassetta postale principale e le cassette postali di archiviazione di un utente per risiedere in posizioni geografiche diverse. È possibile configurare una sola posizione geografica per ogni oggetto utente.
+Exchange Online sincronizza la proprietà **PreferredDataLocation di Azure AD nella proprietà **MailboxRegion nel servizio directory di Exchange Online. Il valore di **MailboxRegion** determina la posizione geografica in cui verranno inserite le cassette postali degli utenti e le cassette postali di archiviazione associate. Non è possibile configurare la cassetta postale principale di un utente e le cassette postali di archiviazione affinché risiedano in diverse posizioni geografiche. Può essere configurata una sola posizione geografica per ogni oggetto utente.
 
-- Quando **PreferredDataLocation** viene configurato in un utente con una cassetta postale esistente, la cassetta postale viene inserita in una coda di rilocazione e spostata automaticamente nella posizione geografica specificata.
+- Se **PreferredDataLocation** è configurato per un utente con una cassetta postale esistente, la cassetta postale verrà inserita in una coda di rilocazione e spostata automaticamente nella posizione geografica specificata.
 
-- Quando **PreferredDataLocation** viene configurato in un utente senza una cassetta postale esistente, quando si esegue il provisioning della cassetta postale, verrà eseguito il provisioning nella posizione geografica specificata.
+- Se **PreferredDataLocation** è configurato per un utente con una cassetta postale esistente, quando si effettua il provisioning, questi sarà effettuato nella posizione geografica specificata.
 
-- Quando **PreferredDataLocation** non è specificato su un utente, quando si esegue il provisioning della cassetta postale, verrà eseguito il provisioning nella posizione geografica centrale.
+- Se **PreferredDataLocation** non è specificato per un utente, quando si effettua il provisioning, questi sarà effettuato nella posizione geografica specificata.
 
-- Se il codice **PreferredDataLocation** non è corretto (ad esempio, un tipo di Nan anziché Nam), la cassetta postale verrà provisionata nella posizione geografica centrale.
+- Se il codice **PreferredDataLocation** non è corretto, ad esempio un tipo di NAN anziché NAM, verrà effettuato il provisioning della cassetta postale nella posizione geografica centrale.
 
-**Note**: multi-Geo Capabilities e Skype for business online riunioni ospitate a livello regionale entrambi utilizzano la proprietà **PreferredDataLocation** su oggetti utente per individuare i servizi. Se si configurano i valori di **PreferredDataLocation** per gli oggetti utente per le riunioni ospitate regionalmente, la cassetta postale per tali utenti verrà automaticamente spostata nella posizione geografica specificata dopo che è stata abilitata la multi-Geo sul tenant di Office 365.
+**Nota**: le funzionalità Multi-Geo e le riunioni di Skype for Business online ospitate a livello regionale usano la proprietà **PreferredDataLocation** per gli oggetti utente per individuare i servizi. Se si configurano i valori di **PreferredDataLocation** per gli oggetti utente per le riunioni ospitate a livello regionale, la cassetta postale di tali utenti verrà spostata automaticamente nella posizione geografica specificata dopo che il Multi-Geo è abilitato nel tenant di Office 365.
 
-## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitazioni relative alle funzionalità per multi-Geo in Exchange Online
+## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitazioni della funzionalità per il Multi-Geo in Exchange Online
 
-- Le funzionalità di sicurezza e conformità, ad esempio controllo e eDiscovery, disponibili nell'interfaccia di amministrazione di Exchange (EAC) non sono disponibili nelle organizzazioni multi-Geo. Al contrario, è necessario utilizzare il [centro conformità _AMP_ sicurezza di Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) per configurare le funzionalità di sicurezza e conformità.
+- Le funzionalità di sicurezza e conformità, ad esempio il controllo ed eDiscovery, disponibili nell'interfaccia di amministrazione di Exchange (EAC) non sono disponibili nelle organizzazioni Multi-Geo. È invece necessario usare il Centro sicurezza e conformità di Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) per configurare le funzionalità di sicurezza e conformità.
 
-- Gli utenti di Outlook per Mac potrebbero subire una perdita temporanea di accesso alla cartella dell'archivio online mentre si spostano le cassette postali in una nuova posizione geografica. Questa condizione si verifica quando le cassette postali primarie e di archiviazione dell'utente sono ubicate in posizioni geografiche diverse, perché le cassette postali Cross-Geo possono essere completate in momenti diversi.
+- Gli utenti di Outlook per Mac potrebbero riscontrare una perdita temporanea di accesso alla cartella di archiviazione online mentre viene spostata la cassetta postale in una nuova posizione geografica. Questa condizione si verifica quando la cassetta postale primaria e quella di archiviazione dell’utente si trovano in diverse posizioni geografiche, poiché gli spostamenti delle cassette postali tra diverse aree geografiche potrebbero essere completati in momenti diversi.
 
-- Gli utenti non possono condividere le *cartelle delle cassette postali* tra le posizioni geografiche in Outlook sul Web (in precedenza noto come Outlook Web App o OWA). Ad esempio, un utente nell'Unione europea non è in grado di utilizzare Outlook sul Web per aprire una cartella condivisa in una cassetta postale che si trova negli Stati Uniti. Tuttavia, gli utenti di Outlook sul Web possono aprire *altre cassette postali* in diverse posizioni geografiche utilizzando una finestra del browser separata, come descritto in [aprire la cassetta postale di un'altra persona in una finestra del browser distinta in Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
+- Gli utenti non possono condividere le *cartelle della cassetta postale* nelle diverse posizioni geografiche di Outlook sul web (in precedenza noto come Outlook Web App o OWA). Ad esempio, un utente nell'Unione Europea non può usare Outlook sul web per aprire una cartella condivisa in una cassetta postale che si trova negli Stati Uniti d'America. Tuttavia, gli utenti di Outlook sul web possono aprire *altre cassette postali* in posizioni geografiche diverse usando una finestra del browser separata, come descritto in [Aprire la cassetta postale di un'altra persona in una finestra separata del browser in Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
 
-  **Nota**: la condivisione della cartella delle cassette postali tra Geo è supportata in Outlook su Windows.
+  **Nota**: la condivisione delle cartelle della cassetta postale tra diverse aree geografiche è supportata in Outlook per Windows.
 
-- Le cartelle pubbliche sono supportate nelle organizzazioni multi-Geo. Tuttavia, le cartelle pubbliche devono rimanere nella posizione geografica centrale. Non è possibile spostare le cartelle pubbliche in posizioni geografiche satellitari.
+- Le cartelle pubbliche sono supportate nelle organizzazioni Multi-Geo. Tuttavia, è necessario che le cartelle pubbliche rimangano nella posizione geografica centrale. Non è possibile spostare le cartelle pubbliche nelle posizioni geografiche satelliti.
