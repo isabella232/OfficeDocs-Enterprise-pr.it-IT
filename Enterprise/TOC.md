@@ -14,8 +14,7 @@
 ### [Scenari cloud ibridi per IaaS di Azure](hybrid-cloud-scenarios-for-azure-iaas.md)
 ## [Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# Piano per Office 365
-## [Preparare l'organizzazione](get-your-organization-ready-for-office-365.md)
+# [Pianificare per Office 365](get-your-organization-ready-for-office-365.md)
 
 ## Tenant di Office 365
 ### [Sottoscrizioni, licenze e tenant](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
@@ -26,12 +25,12 @@
 #### [Pianificazione della rete e della migrazione per Office 365](network-and-migration-planning.md)
 
 ### Pianificare le identità
-#### [Modelli di identità di Office 365](about-office-365-identity.md)
-#### [Identità ibride](plan-for-directory-synchronization.md)
+#### [Modelli di identità](about-office-365-identity.md)
+#### [Identità ibrida](plan-for-directory-synchronization.md)
 
 ### [Pianificare i certificati SSL di terze parti per Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Assistenti distribuzione per i servizi di Office 365](deployment-advisors-for-office-365.md)
-### [Azure AD e app integrate per gli amministratori di Office 365](integrated-apps-and-azure-ads.md)
+### [App integrate e Azure AD](integrated-apps-and-azure-ads.md)
 
 ### Integrazione di Office 365
 #### [Integrazione con l'ambiente locale](office-365-integration.md)
@@ -79,19 +78,13 @@
 ### [Sincronizzazione della directory](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Autenticazione a più fattori](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [Identità federata](federated-identity-for-your-office-365-dev-test-environment.md)
-### [Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
 ### [Protezione avanzata dalle minacce](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 ### [Advanced eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 ### [Protezione dati sensibili](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
 ### [Classificazione dei dati ed etichette](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Rete virtuale cross-premise simulata in Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
-# Distribuire Office 365
-
-## Elenchi di controllo e procedure consigliate
-### [Distribuire Office 365 Enterprise per l'organizzazione](setup-overview-for-enterprises.md)
-### [Elenco di controllo per la pianificazione della distribuzione](deployment-planning-checklist.md)
-### [Roadmap della sicurezza per Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+# [Distribuire Office 365 Enterprise](setup-overview-for-enterprises.md)
 
 ## 1. Configurare la rete
 ### [Configurare la rete aziendale](set-up-network-for-office-365.md)
@@ -122,23 +115,28 @@
 #### [Routing con ExpressRoute per Office 365](routing-with-expressroute.md)
 
 ## 2. Configurare le identità
-### [Predisporre la sincronizzazione della directory](prepare-for-directory-synchronization.md)
-### Usare lo strumento IDFix
-#### [Preparare gli attributi della directory con lo strumento di IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
-#### [Installazione ed esecuzione dello strumento IDFix](install-and-run-idfix.md)
-#### [Oggetti e attributi esclusi e supportati di IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
-#### [Log delle transazioni di IdFix](idfix-transaction-log.md)
-### [Configurare la sincronizzazione della directory](set-up-directory-synchronization.md)
 ### [Proteggere gli account di amministrazione globale](protect-your-global-administrator-accounts.md)
+### [Identità solo cloud](cloud-only-identities.md)
+### Identità ibride
+#### [Predisporre la sincronizzazione della directory](prepare-for-directory-synchronization.md)
+#### Usare lo strumento IDFix
+##### [Preparare gli attributi della directory con lo strumento di IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
+##### [Installazione ed esecuzione dello strumento IDFix](install-and-run-idfix.md)
+##### [Oggetti e attributi esclusi e supportati di IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
+##### [Log delle transazioni di IdFix](idfix-transaction-log.md)
+#### [Configurare la sincronizzazione della directory](set-up-directory-synchronization.md)
+### [Assegnare licenze agli account utente](assign-licenses-to-user-accounts.md).
 
-## 3. Distribuire il software client
+## [3. implementare funzionalità di sicurezza](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+
+## 4. Distribuire il software client
 ### [Distribuire Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 ### [Distribuire il client di Skype for Business](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [Distribuire e gestire le app per dispositivi mobili](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
-## [4. Configurare la gestione dei dispositivi con Intune](https://docs.microsoft.com/intune/setup-steps)
+## [5. Configurare la gestione di dispositivi mobili](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
-## 5. Configurare i servizi e le applicazioni
+## 6. Configurare i servizi e le applicazioni
 ### [Introduzione](configure-services-and-applications.md)
 ### [Eseguire la migrazione dei dati a Office 365](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
@@ -149,7 +147,7 @@
 ### [Attivare la gestione dei diritti](activate-rms-in-office-365.md)
 ### [Configurazione delle opzioni di rilascio](https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47)
 
-## [6. Formazione degli utenti](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)
+## [7. Formazione degli utenti](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
 ## Distribuzione avanzata
 
