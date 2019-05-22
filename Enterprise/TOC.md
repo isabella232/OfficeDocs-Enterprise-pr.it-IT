@@ -43,8 +43,7 @@
 ## Supporto client di Office 365
 ### [Autenticazione basata su certificati](office-365-client-support-certificate-based-authentication.md)
 ### [Accesso condizionale](office-365-client-support-conditional-access.md)
-### 
-  [Scegliere tra MDM e Intune](https://docs.microsoft.com/it-IT/office365/securitycompliance/choose-between-mdm-and-intune)
+### [Scegliere tra MDM e Intune](https://docs.microsoft.com/it-IT/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Gestione di applicazioni mobili](office-365-client-support-mobile-application-management.md)
 ### [Autenticazione moderna](office-365-client-support-modern-authentication.md)
 ### [Single Sign-On](office-365-client-support-single-sign-on.md)
@@ -204,8 +203,7 @@
 ### [Disattivare la sincronizzazione della directory](turn-off-directory-synchronization.md)
 
 ## Utenti
-### 
-  [Centro assistenza per gli amministratori di Office 365](https://support.office.com/it-IT/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Centro assistenza per gli amministratori di Office 365](https://support.office.com/it-IT/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Strumenti per gestire gli account utente](manage-office-365-accounts.md)
 ### [Aggiungere più utenti contemporaneamente](add-several-users-at-the-same-time.md)
 ### [Recuperare gli elementi eliminati nella cassetta postale di un utente](recover-deleted-items-in-a-mailbox.md)
@@ -223,8 +221,7 @@
 
 ## Integrità dei servizi
 ### [Procedure di controllo](view-service-health.md)
-### 
-  [Opzioni di supporto](https://support.office.com/it-IT/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+### [Opzioni di supporto](https://support.office.com/it-IT/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## Prestazioni
 ### [Ottimizzare le prestazioni di Office 365](tune-office-365-performance.md)
