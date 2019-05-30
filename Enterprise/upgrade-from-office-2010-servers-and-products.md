@@ -1,9 +1,9 @@
 ---
 title: Risorse utili per l'aggiornamento da server e client di Office 2010
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 05/28/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,16 +21,18 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Il supporto si concluderà presto per i server e le applicazioni client di Office 2010 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
-ms.openlocfilehash: cb1aa32f77a7a1f5490565cc269d5b93b842c229
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 11bd2e7acf5c35a427b2acd04fd37605615b42ed
+ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070692"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539212"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2010
 
-Se si utilizzano prodotti e servizi di Office 2010, è probabile che i prodotti e i servizi di Office 2010 siano vicini alla fine del supporto. Durante la pianificazione dell'aggiornamento, questo è il momento ideale per passare al cloud Microsoft, a partire da Office 365. Utilizzare questo articolo come punto di partenza per esaminare le opzioni.
+Se si utilizzano i prodotti e i servizi di Office 2010, è probabile che i prodotti e i servizi di Office 2010 raggiungano la fine del supporto il **13 ottobre 2020**. Durante la pianificazione dell'aggiornamento, questo è il momento ideale per passare a Office 365. Office 365 dispone di servizi basati su cloud per prodotti di Office 2010 Server quali Exchange Server e SharePoint Server e nuovi servizi, ad esempio teams e OneDrive for business. Office 365 ProPlus sono le app client di Office 2010 installate nel dispositivo locale e vengono aggiornate con nuove funzionalità di sicurezza e produttività su base ongoign dal cloud Microsoft. Office 365 ProPlus è incluso in Office 365 E3 ed E5.
+
+Utilizzare questo articolo come punto di partenza per esaminare le opzioni.
       
 ## <a name="office-2010-planning-content"></a>Contenuto di pianificazione di Office 2010
   
