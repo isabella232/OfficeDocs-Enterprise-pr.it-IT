@@ -3,7 +3,7 @@ title: Assegnare i ruoli agli account utente con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/18/2019
+ms.date: 05/30/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Sintesi: usare Office 365 PowerShell per assegnare ruoli agli account utente.'
-ms.openlocfilehash: d7177dc05aff8725a72edf7c9ab7b6ef93c36aaf
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d06b305c348d014ce526448d7f8401c26f4d1c47
+ms.sourcegitcommit: 3100813cd7dff8b27b1a30a6d6ed5a7c4765c60f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069222"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34586982"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Assegnare i ruoli agli account utente con Office 365 PowerShell
 
@@ -79,7 +79,11 @@ In primo luogo, [connettersi al tenant di Office 365](connect-to-office-365-powe
   
 ### <a name="for-a-single-role-change"></a>Per una singola modifica del ruolo
 
-Determinare quanto segue:
+La modalità più comune di un account utente specifico è il nome visualizzato o il nome di posta elettronica, noto anche come nome dell'entità utente (UPN) del nome di accesso.
+
+#### <a name="display-names-of-user-accounts"></a>Visualizzazione dei nomi degli account utente
+
+Se si è abituati a utilizzare i nomi visualizzati degli account utente, determinare quanto segue:
   
 - L'account utente da configurare.
     
@@ -92,7 +96,7 @@ Determinare quanto segue:
     Questo comando elenca il nome visualizzato degli account utente, ordinati per nome visualizzato, una schermata alla volta. È possibile filtrare l'elenco in un set più piccolo utilizzando il cmdlet **Where**. Ecco un esempio:
     
   ```
-  Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
+  Get-MsolUser -All | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
     Questo comando elenca solo gli account utente per cui il nome visualizzato inizia con "John".
@@ -110,7 +114,7 @@ Dopo aver determinato il nome visualizzato dell'account e il nome del ruolo, è 
 ```
 $dispName="<The Display Name of the account>"
 $roleName="<The role name you want to assign to the account>"
-Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
+Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
 Copiare i comandi e incollarli nel blocco note. Per le variabili **$dispName** e **$roleName**, sostituire il testo della descrizione con i rispettivi valori, rimuovere i caratteri \< e > e lasciare le virgolette. Copiare le righe modificate e incollarle nel modulo di Windows Azure Active Directory modulo affinché Windows PowerShell le esegua. È anche possibile utilizzare Windows PowerShell Integrated Scripting Environment (ISE).
@@ -120,28 +124,60 @@ Segue un esempio di un set di comandi completati:
 ```
 $dispName="Scott Wallace"
 $roleName="SharePoint Service Administrator"
-Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
+Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
+```
+
+#### <a name="sign-in-names-of-user-accounts"></a>Nomi di accesso degli account utente
+
+Se si è abituati a utilizzare i nomi di accesso o gli account utente di UPN, determinare quanto segue:
+  
+- UPN dell'account utente.
+    
+    Se non si conosce già l'UPN, utilizzare il seguente comando:
+    
+  ```
+  Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
+  ```
+
+    Questo comando consente di elencare l'UPN degli account utente, ordinati in base all'UPN, una schermata alla volta. È possibile filtrare l'elenco in un set più piccolo utilizzando il cmdlet **Where**. Ecco un esempio:
+    
+  ```
+  Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More
+  ```
+
+    Questo comando elenca solo gli account utente per cui il nome visualizzato inizia con "John".
+    
+- Il ruolo da assegnare.
+    
+    Per visualizzare l'elenco dei ruoli disponibili che è possibile assegnare agli account utente, usare il comando:
+    
+  ```
+  Get-MsolRole | Sort Name | Select Name,Description
+  ```
+
+Una volta che si dispone dell'UPN dell'account e del nome del ruolo, utilizzare questi comandi per assegnare il ruolo all'account:
+  
+```
+$upnName="<The UPN of the account>"
+$roleName="<The role name you want to assign to the account>"
+Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
+```
+
+Copiare i comandi e incollarli nel blocco note. Per le variabili **$upnName** e **$roleName** , sostituire il testo della descrizione con i relativi valori, \< rimuovere i caratteri e > e lasciare le virgolette. Copiare le righe modificate e incollarle nel modulo di Windows Azure Active Directory modulo affinché Windows PowerShell le esegua. In alternativa, è possibile utilizzare Windows PowerShell ISE.
+  
+Segue un esempio di un set di comandi completati:
+  
+```
+$upnName="scottw@contoso.com"
+$roleName="SharePoint Service Administrator"
+Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
 ### <a name="for-multiple-role-changes"></a>Per più modifiche di ruoli
 
 Determinare quanto segue:
   
-- Quali account utente configurare.
-    
-    Per specificare l'account utente, è necessario determinare il nome visualizzato. Per ottenere un elenco di account, utilizzare questo comando:
-    
-  ```
-  Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
-  ```
-
-    Questo comando elenca il nome visualizzato di tutti gli account utente, ordinati per nome visualizzato, una schermata alla volta. È possibile filtrare l'elenco in un set più piccolo utilizzando il cmdlet **Where**. Ecco un esempio:
-    
-  ```
-  Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
-  ```
-
-    Questo comando elenca solo gli account utente per cui il nome visualizzato inizia con "John".
+- Quali account utente configurare. È possibile utilizzare i metodi descritti nella sezione precedente per raccogliere il set di nomi visualizzati o UPN.
     
 - Ruoli che si desidera assegnare a ogni account utente.
     
@@ -151,13 +187,14 @@ Determinare quanto segue:
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Creare quindi un file CSV che include i campi Nome visualizzato e Nome del ruolo. Ecco un esempio:
+Successivamente, creare un file di testo con valori delimitati da virgole (CSV) con il nome visualizzato o i campi UPN e nome ruolo. È possibile eseguire questa operazione facilmente con Microsoft Excel.
+
+Di seguito è riportato un esempio per i nomi visualizzati:
   
 ```
 DisplayName,RoleName
 "Belinda Newman","Billing Administrator"
-"John Doe","SharePoint Service Administrator"
-"Alice Smithers","Lync Service Administrator"
+"Scott Wallace","SharePoint Service Administrator"
 ```
 
 Immettere infine il percorso del file CSV ed eseguire i comandi risultanti al prompt dei comandi di PowerShell.
@@ -167,6 +204,23 @@ $fileName="<path and file name of the input CSV file that has the role changes, 
 $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $_.DisplayName).UserPrincipalName -RoleName $_.RoleName }
 
 ```
+
+Di seguito è riportato un esempio per UPN:
+  
+```
+UserPrincipalName,RoleName
+"belindan@contoso.com","Billing Administrator"
+"scottw@contoso.com","SharePoint Service Administrator"
+```
+
+Immettere infine il percorso del file CSV ed eseguire i comandi risultanti al prompt dei comandi di PowerShell.
+  
+```
+$fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
+$roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmailAddress $_.UserPrincipalName -RoleName $_.RoleName }
+
+```
+
 
 ## <a name="see-also"></a>Vedere anche
 
