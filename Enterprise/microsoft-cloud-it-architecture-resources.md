@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Riepilogo: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft. Informazioni su come implementare un desktop protetto e moderno con Windows 10 e Office ProPlus."
-ms.openlocfilehash: ca62612dd76b3ada07dba0e58f92f36e2bf8e1cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dfb6df46faacf6623a90ac5a4cf95d9512c31289
+ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070302"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539328"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 
@@ -38,6 +38,7 @@ Questi poster e strumenti dell'architettura forniscono informazioni sui servizi 
     - [Rete cloud Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#networking)
     - [Cloud ibrido Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Attacchi comuni e funzionalità di Microsoft che proteggono l'organizzazione](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
+    - [Infrastruttura di base di Microsoft 365 Enterprise](#m365foundationinfra)
     
 - **[Serie di soluzioni di Microsoft 365 Enterprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Microsoft Teams e servizi di produttività correlati in Microsoft 365 per architetti IT](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
@@ -49,8 +50,6 @@ Questi poster e strumenti dell'architettura forniscono informazioni sui servizi 
     - [Soluzioni di telefonia Microsoft](#microsoft-telephony-solutions) 
     - [Distribuire un desktop protetto e moderno con Microsoft](microsoft-cloud-it-architecture-resources.md#msd)
     
-
-  
 Inviare commenti e suggerimenti all'indirizzo [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
 
 <!--
@@ -128,6 +127,15 @@ Informazioni sugli attacchi informatici più comuni e su come Microsoft è in gr
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
 |[![Immagine di scorrimento del poster sugli attacchi comuni.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | Questo poster illustra il percorso degli attacchi comuni e descrive le funzionalità che consentono di bloccare i pirati informatici in ogni fase di un attacco. <br/>|
+
+<a name="m365foundationinfra"></a>
+### <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastruttura di base di Microsoft 365 Enterprise
+
+Ottenere una visualizzazione immediata dell'[infrastruttura di base](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) per Microsoft 365 Enterprise per avviare la distribuzione.
+  
+|**Elemento**|**Descrizione**|
+|:-----|:-----|
+|[![Immagine di anteprima del poster dell’infrastruttura di base di Microsoft 365 Enterprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [Visualizza online](http://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Questo poster riepiloga ogni fasi dell'infrastruttura di base in termini di obiettivi, funzionalità e strumenti, scelte progettuali, risultati della configurazione, onboarding, monitoraggio continuo e aggiornamenti. <br/>| 
 
 
 <!--<a name="santa"></a>
