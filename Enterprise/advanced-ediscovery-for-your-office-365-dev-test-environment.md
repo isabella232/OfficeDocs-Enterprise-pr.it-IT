@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: "Riepilogo: configurazione e dimostrazione di Office 365 Advanced eDiscovery con dati di esempio nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: dc783672f8f667e424ad738d8eb9091732537ebe
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
+ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162409"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726232"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery per l'ambiente di sviluppo/test di Office 365
 
@@ -95,11 +95,11 @@ In questa procedura, è possibile creare due documenti Word che in seguito verra
     
 3. Nella scheda **Raccolta siti di produzione**, in **Documenti**, fare clic su **Nuovo > Documento Word**.
     
-4. Nella pagina **Word Online**, digitare **Bozza contratto Tailspin**, attendere finché non compare **Salvato** nel titolo, quindi chiudere la scheda della pagina **Word Online**.
+4. Nella pagina **parola** digitare **Tilt Draft contratto**, attendere fino a quando non viene visualizzato **salvato** nel titolo, quindi chiudere la scheda pagina di **Word** .
     
 5. Nella scheda **Raccolta siti di produzione**, in **Documenti**, fare clic su **Nuovo > Documento Word**.
     
-6. 	Nella scheda **Word Online**, digitare **Note su divergenze relative al contratto Tailspin**, attendere finché non compare **Salvato** nel titolo, quindi chiudere la scheda **Word Online**.
+6. Nella scheda **parola** digitare **Tilt note**sulla controversia contrattuale, attendere fino a quando non viene visualizzato **salvato** nel titolo, quindi chiudere la scheda **parola** .
     
 7. Nella scheda **Raccolta siti di produzione**, viene visualizzato **Documento** e **Documento1** nell'elenco dei documenti.
     
@@ -139,7 +139,7 @@ In questa procedura, è possibile creare una ricerca nel centro &amp; sicurezza 
     
 11. Nella finestra **Gruppo di ruoli**, fare clic su **Salva**.
     
-12. Nel riquadro di spostamento a sinistra, fare clic su search ** &amp; Investigation > content search**.
+12. Nel riquadro di spostamento a sinistra **, &amp; **fare clic su ricerca > ricerca contenuto.
     
 13. Fare clic sull'icona più per aggiungere una ricerca.
     
