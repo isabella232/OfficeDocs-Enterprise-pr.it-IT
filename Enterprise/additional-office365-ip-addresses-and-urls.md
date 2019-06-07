@@ -3,7 +3,7 @@ title: Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Off
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/04/2019
+ms.date: 06/05/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Riepilogo: il nuovo servizio Web endpoint non include un numero limitato di endpoint per scenari specifici.'
 hideEdit: true
-ms.openlocfilehash: d124ac514e83c7cb9a2d8baf476b6a5880acb0ed
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 05bb48efef57785b75d302fd12294b7fb7062862
+ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068482"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726242"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365
 
@@ -61,6 +61,7 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 | 15  |  **FQDN di Microsoft Teams** <br> Se si usa Internet Explorer o Microsoft Edge, è necessario attivare i cookie dei siti Web visualizzati e di terze parti e aggiungere i nomi di dominio completo per Teams per i siti attendibili. Si tratta di un'aggiunta all'intera famiglia di FQDN, CDN e telemetrie elencata in riga 14. Vedere [Problemi noti di Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) per ulteriori informazioni. |  | Siti attendibili |
 | 16  |  **FQDN di SharePoint Online e OneDrive for Business** <br> Tutti i nomi di dominio completo di ".sharepoint.com" con "\<tenant>" nel nome di dominio completo devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. Oltre all’intera famiglia di FQDN, CDN e telemetria elencata in riga 14, è necessario aggiungere anche questi endpoint. |  | Siti attendibili |
 | 17  | **Yammer**  <br> Yammer è disponibile solo nel browser e necessita di un'autenticazione proxy da parte dell'utente. Tutti i FQDN di Yammer devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. |  | Siti attendibili |
+| 18  | Usare [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) per sincronizzare gli account utente locali con Azure AD. | Vedere[Porte e protocolli necessari per la soluzione ibrida di gestione delle identità](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Risolvere i problemi di connettività di Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) e [Installazione dell'agente di Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Solo traffico del server in uscita |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
