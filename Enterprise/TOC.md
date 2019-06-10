@@ -20,7 +20,7 @@
 ### [Sottoscrizioni, licenze e tenant](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### Pianificare la rete
-#### [Connettività di rete con Office 365](network-connectivity.md)
+#### [Valutazione della connettività di rete di Office 365](assessing-network-connectivity.md)
 #### [Pianificare i dispositivi di rete che si connettono ai servizi di Office 365](plan-for-network-devices.md)
 #### [Pianificazione della rete e della migrazione per Office 365](network-and-migration-planning.md)
 
@@ -92,7 +92,7 @@
 ### [Informazioni generali sulla connettività di rete di Office 365](office-365-networking-overview.md)
 ### [Principi della connettività di rete di Office 365](office-365-network-connectivity-principles.md)
 ### [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](network-planning-and-performance.md)
-### [Connettività di rete con Office 365](network-connectivity.md)
+### [Valutazione della connettività di rete di Office 365](assessing-network-connectivity.md)
 ### [Office 365 Networking Partner Program](office-365-networking-partner-program.md)
 ### URL e indirizzi IP di Office 365
 #### [Endpoint di Office 365](office-365-endpoints.md)
