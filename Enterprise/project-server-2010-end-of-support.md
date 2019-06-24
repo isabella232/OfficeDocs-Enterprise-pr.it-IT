@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: La terminazione del supporto per Project Server 2010 termina il 13 ottobre 2020. Utilizzare questo articolo come guida per l'aggiornamento a Project online o a una versione più recente di Project Server locale.
-ms.openlocfilehash: 8cdfc4a8362df65ca238b9478061dc8e9bda1166
-ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
+ms.openlocfilehash: 86ab1534058d49094327c326d8367a08c14d725b
+ms.sourcegitcommit: c763b0f28e1ce498aef5d5deb3b6324288da85ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34780875"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35128703"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Guida di orientamento alla fine del supporto di Project Server 2010
 
@@ -186,10 +186,6 @@ Risorse chiave:
 
 - Dopo l'aggiornamento, tenere conto di diverse modifiche in Project Web App.  Per una descrizione di questi elementi, vedere [What ' s New in Project Server 2019](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
 
-
-## <a name="migrate-from-portfolio-server-2010"></a>Eseguire la migrazione da Portfolio Server 2010
-
-Project Portfolio Server 2010 è stato utilizzato con Project Server 2010 per la strategia di portfolio, la definizione di priorità e l'ottimizzazione. Non sono state create altre versioni del server del portfolio di progetti dopo questa versione. Tuttavia, le funzionalità di gestione del portfolio sono disponibili nelle versioni successive di Project Server e nella versione Premium di Project online. Non è possibile eseguire la migrazione dei dati di Project Portfolio Server 2010. I dati, ad esempio i driver di business, dovranno essere ricreati.
   
 Altre risorse:
   

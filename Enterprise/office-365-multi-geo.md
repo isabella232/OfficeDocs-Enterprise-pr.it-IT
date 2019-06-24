@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Con Office 365 Multi-Geo si può espandere la propria presenza Office 365 a più paesi/aree geografiche.
-ms.openlocfilehash: 25621a0a8c833c4334fe6f70e7cb04d15690ba71
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7aa1933725617bcc1f84bbe6d0f31a6ddd91815d
+ms.sourcegitcommit: a7b2adf4b55df5fc35a617a145e8177caefce28b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069752"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35078510"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -55,7 +55,7 @@ Office 365 Multi-Geo è attualmente disponibile in questi paesi/aree geografiche
 
 Seguire questi semplici passaggi per iniziare con Multi-Geo:
 
-1. Collaborare con il team responsabile dell'account per aggiungere _Multi-Geo Capabilities al piano di servizio di Office 365 _. Verranno fornite le procedure per aggiungere il numero di licenze necessarie. La funzionalità Multi-Geo Capabilities è disponibile per i clienti con un minimo di 2.500 abbonamenti a Office 365.
+1. Collaborare con il team responsabile dell'account per aggiungere _Multi-Geo Capabilities al piano di servizio di Office 365 _. Verranno fornite le procedure per aggiungere il numero di licenze necessarie. La funzionalità Multi-Geo Capabilities è disponibile per i clienti con un minimo di 500 abbonamenti a Office 365.
 
    Prima di iniziare a usare Office 365 Multi-Geo, Microsoft deve configurare il tenant di Exchange Online per il supporto Multi-Geo. La procedura di configurazione, da effettuare una sola volta, viene attivata dopo aver ordinato il piano di servizio *Funzionalità Multi-Geo di Office 365* e le licenze saranno visualizzate nel tenant. Una volta che vengono applicate le licenze Multi-Geo, si riceveranno notifiche nel [Centro messaggi di Office 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) e sarà quindi possibile iniziare la configurazione e l’uso della funzionalità Multi-Geo di Office 365.
 
