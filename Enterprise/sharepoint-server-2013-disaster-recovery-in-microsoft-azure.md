@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Riepilogo: Con Azure è possibile creare un ambiente di ripristino di emergenza per la farm locale di SharePoint. In questo articolo viene descritto come progettare e implementare questa soluzione.'
-ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070442"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203645"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
 
@@ -36,34 +36,6 @@ Utilizzare questo articolo con il modello della soluzione seguente: **Ripristino
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
-Contenuto dell'articolo:
-  
-- [Utilizzare i servizi infrastruttura di Azure per il ripristino di emergenza](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#AZ)
-    
-- [Descrizione della soluzione](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#SOL)
-    
-- [Architettura dettagliata](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#arch)
-    
-- [Guida di orientamento al ripristino di emergenza](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#RDmap)
-    
-- [Fase 1: Progettare l'ambiente di ripristino di emergenza](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase1)
-    
-- [Fase 2: Creare la rete virtuale di Azure e la connessione VPN.](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase2)
-    
-- [Fase 3: Distribuire Active Directory e Domain Name Services nella rete virtuale di Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase3)
-    
-- [Fase 4: Distribuire la farm di ripristino di SharePoint in Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase4)
-    
-- [Fase 5: Configurare DFSR tra le farm](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase5)
-    
-- [Fase 6: Configurare il log shipping nella farm di ripristino](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase6)
-    
-- [Fase 7: Convalidare failover e ripristino](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase7)
-    
-- [Ambiente del modello di verifica di Microsoft](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#POC)
-    
-- [Suggerimenti per la risoluzione dei problemi](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
-    
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>Utilizzare i servizi infrastruttura di Azure per il ripristino di emergenza
 
 Molte organizzazioni non dispongono di un ambiente di ripristino di emergenza per SharePoint, che può essere costoso creare e gestire in locale. servizi infrastruttura di Azure fornisce opzioni interessanti per gli ambienti di ripristino di emergenza che sono più flessibili e meno costosi rispetto alle alternative locali.
@@ -297,7 +269,7 @@ Questa fase include la distribuzione di Windows Server Active Directory e DNS al
   
 **Figura: Configurazione del dominio ibrido Active Directory**
 
-![Le macchine virtuali STwo distribuite nella rete virtuale di Azure e la subnet farm di SharePoint sono controller di dominio di replica e server DNS](media/AZarch-HyADdomainConfig.png)
+![Due macchine virtuali distribuite nella rete virtuale di Azure e la subnet della farm di SharePoint sono controller di dominio di replica e server DNS](media/AZarch-HyADdomainConfig.png)
   
 Nella figura, nella stessa sottorete vengono distribuite due macchine virtuali. Ognuna delle macchine virtuali ospita due ruoli: Active Directory e DNS
   
@@ -558,7 +530,7 @@ Abbiamo la farm e unito altri server nell'ordine seguente:
   
 - Provisioning di SP-SQL-HA1 e SP-SQL-HA2.
     
-- Configurazione di AlwaysOn e creazione di tre gruppi di disponibilità per la farm. 
+- Configurazione di AlwaysOn e creazione di tre gruppi di disponibilità per la farm.  
     
 - Provisioning di SP-APP1 all'host Amministrazione centrale.
     
