@@ -3,7 +3,7 @@ title: Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Off
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/11/2019
+ms.date: 06/24/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Riepilogo: il nuovo servizio Web endpoint non include un numero limitato di endpoint per scenari specifici.'
 hideEdit: true
-ms.openlocfilehash: 01d0acfd832df47dd5cabd95b7b8137dd76ab049
-ms.sourcegitcommit: 37c29ded24f999fc5f41f5aae284238b25eb83f3
+ms.openlocfilehash: b674d5d9de64431207f6a31289cb4f5fa463616f
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857359"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203585"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365
 
@@ -63,6 +63,7 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 | 17  | **Yammer**  <br> Yammer è disponibile solo nel browser e necessita di un'autenticazione proxy da parte dell'utente. Tutti i FQDN di Yammer devono essere situati nell'area siti attendibili di Edge o IE del client per poter funzionare. |  | Siti attendibili |
 | 18  | Usare [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) per sincronizzare gli account utente locali con Azure AD. | Vedere[Porte e protocolli necessari per la soluzione ibrida di gestione delle identità](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Risolvere i problemi di connettività di Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) e [Installazione dell'agente di Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Solo traffico del server in uscita |
 | 19  | Microsoft Stream (richiede il token utente Azure AD). <BR> Office 365 internazionale (incluso GCC) | *.cloudapp.net <BR> *.api.microsoftstream.com <BR> *.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> Porta TCP 443  | Traffico del server in ingresso |
+| 20  | Usare il server MFA per le richieste di autenticazione a più fattori, sia per le nuove installazioni del server che per la configurazione con Active Directory Domain Services (AD DS). | Vedere [Introduzione al server Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment).  | Solo traffico del server in uscita |
 |||||
 
 ## <a name="related-topics"></a>Argomenti correlati
