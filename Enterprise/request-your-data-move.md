@@ -3,7 +3,7 @@ title: Come richiedere lo spostamento dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +12,19 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
+ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071012"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35392356"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
 > [!NOTE]
 > Le informazioni contenute in questa pagina sono valide solo per i clienti che avevano già inquilini di Office 365 prima che i nuovi datacenter venissero avviati in Geo. 
   
-Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico. 
-  
-Non è possibile accettare le richieste da spostare dopo la data di scadenza di ogni Geo. 
+I clienti di Office 365 esistenti sono idonei a richiedere la migrazione anticipata per i dati del cliente principale dell'intera organizzazione a riposo.  
   
 ## <a name="when-can-i-request-a-move"></a>Quando è possibile richiedere un trasferimento?
 
@@ -55,13 +53,10 @@ Nella pagina **profilo organizzazione** scorrere verso il basso fino alla sezion
 ![Scheda di residenza dati](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
   
 **È possibile che questa sezione non venga visualizzata se si applica una delle opzioni seguenti**:
-- Il tenant non è idoneo per il programma di spostamento. 
+- Il tenant non è idoneo per il programma di spostamento.  L'eleggibilità è determinata dal paese di iscrizione del tenant.
 - Tutti i dati sono già presenti nel nuovo Geo (vedere la sezione relativa alla posizione dei dati della pagina). 
   
-> [!IMPORTANT]
-> **Si sta per fare una scelta importante per la propria organizzazione. Dopo aver confermato l'opzione seguente, non è possibile annullarla. Il supporto non è in grado di invertire la decisione.**
-  
-Se l'organizzazione dispone di requisiti di residenza dei dati ed è necessario richiedere uno spostamento, fare clic su **modifica** in alto a destra della sezione. Sul lato destro dello schermo viene visualizzata una nuova sezione in cui vengono illustrati i dettagli del programma di spostamento. Selezionare il pulsante Toggle accanto al testo che indica **Sì, l'organizzazione ha requisiti di residenza dei dati**. Fare quindi clic su **Salva**.
+Se nell'organizzazione sono presenti requisiti di residenza dei dati ed è necessario richiedere la migrazione anticipata, fare clic su **modifica** in alto a destra della sezione. Sul lato destro dello schermo viene visualizzata una nuova sezione in cui vengono illustrati i dettagli del programma di spostamento. Selezionare il pulsante Toggle accanto al testo che indica **Sì, l'organizzazione ha requisiti di residenza dei dati**. Fare quindi clic su **Salva**.
   
 ![Schermata di operazione di consenso per il datacenter](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
   
@@ -71,11 +66,9 @@ Verrà visualizzato il testo nella sezione **opzione di residenza dei dati** cam
   
 ## <a name="what-happens-after-requesting-a-move"></a>Cosa succede dopo aver richiesto uno spostamento?
 
-Dopo aver richiesto uno spostamento, si prevede di spostarla rapidamente come i vincoli operativi lo consentono. A causa della natura imprevedibile di molti vincoli, non è possibile condividere una data o un intervallo di tempo specifico per gli spostamenti. Dopo aver completato lo spostamento, verrà visualizzata una notifica.
+Dopo aver richiesto uno spostamento, si prevede di spostarla rapidamente come i vincoli operativi consentono. A causa della natura imprevedibile di molti vincoli, non è possibile condividere una data o un intervallo di tempo specifico per gli spostamenti. Dopo aver completato lo spostamento, verrà visualizzata una notifica.
   
 Gli spostamenti possono richiedere fino a 24 mesi dalla data di scadenza richiesta per il completamento del paese.
-  
-Dopo aver richiesto uno spostamento, non è possibile modificare la selezione Man mano che si inizia a elaborare gli spostamenti dopo aver effettuato la richiesta.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
