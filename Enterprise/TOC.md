@@ -205,6 +205,8 @@
 ### [Strumenti per gestire gli account utente](manage-office-365-accounts.md)
 ### [Aggiungere più utenti contemporaneamente](add-several-users-at-the-same-time.md)
 ### [Recuperare gli elementi eliminati nella cassetta postale di un utente](recover-deleted-items-in-a-mailbox.md)
+### Collaborare con gli utenti guest
+#### [Informazioni di riferimento sulla condivisione guest](microsoft-365-guest-settings.md)
 
 ## Dispositivi
 ### [Scegliere tra MDM e Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
