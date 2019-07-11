@@ -1,7 +1,7 @@
 ---
 title: Opzioni di spostamento per SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: In questo articolo vengono descritti i siti delle opzioni di spostamento con la pubblicazione di SharePoint abilitata in SharePoint Online. La scelta e la configurazione della struttura di spostamento incidono in modo significativo sulle prestazioni e sulla scalabilità dei siti in SharePoint Online.
-ms.openlocfilehash: 9bf2010000f14b173b63574fab4ee77cb772b3f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b3194009d21f60093ec80cb2e138df34df60e22e
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069942"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616859"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opzioni di spostamento per SharePoint Online
 
@@ -29,7 +29,7 @@ La configurazione del provider di spostamento può influire in modo significativ
 
 La prima opzione, lo [**spostamento gestito (metadati)**](#using-managed-navigation-and-metadata-in-sharepoint-online)è consigliata ed è una delle opzioni predefinite in SharePoint Online. Tuttavia, si consiglia di disabilitare la limitazione di sicurezza a meno che non sia necessario. La limitazione di sicurezza è abilitata come impostazione di protezione per il provider di spostamento. Tuttavia, molti siti non richiedono il sovraccarico della limitazione di sicurezza poiché gli elementi di spostamento spesso sono coerenti per tutti gli utenti del sito. Con la configurazione consigliata per disabilitare la limitazione di sicurezza, questo provider di spostamento non richiede l'enumerazione della struttura del sito ed è altamente scalabile con un impatto sulle prestazioni accettabile.
 
-La seconda opzione, ovvero [**struttura di spostamento strutturale**](#using-structural-navigation-in-sharepoint-online), **non è un'opzione di spostamento consigliata in SharePoint Online**. Questo provider di spostamento è stato creato per una topologia locale con supporto limitato in SharePoint Online. Anche se fornisce alcuni set di funzionalità aggiuntivi rispetto ad altre opzioni di spostamento, queste funzionalità, tra cui la limitazione della sicurezza e l'enumerazione della struttura del sito, sono a costo di eccessive chiamate ai server e incidono sulla scalabilità e sulle prestazioni quando vengono utilizzate. I siti che utilizzano una struttura di spostamento che consumano risorse eccessive possono essere soggetti a limitazione.
+La seconda opzione, ovvero [**struttura di spostamento strutturale**](#using-structural-navigation-in-sharepoint-online), **non è un'opzione di spostamento consigliata in SharePoint Online**. Questo provider di spostamento è stato creato per una topologia locale con supporto limitato in SharePoint Online. Anche se fornisce alcuni set di funzionalità aggiuntivi rispetto ad altre opzioni di spostamento, queste funzionalità, tra cui la limitazione della sicurezza e l'enumerazione della struttura del sito, sono a costo di eccessive chiamate ai server e incidono sulla scalabilità e sulle prestazioni quando vengono utilizzate. I siti che utilizzano l'esplorazione strutturata che consumano risorse eccessive possono essere soggetti a limitazione.
 
 Oltre ai provider di spostamento fuori campo, molti clienti hanno implementato con successo implementazioni di spostamento personalizzate alternative. Una classe comune di implementazioni di spostamento personalizzate abbraccia modelli di progettazione con rendering client che archiviano una cache locale dei nodi di spostamento. Per ulteriori informazioni, vedere **[script sul fianco client](#using-search-driven-client-side-scripting)** basato sulla ricerca in questo articolo.
 
@@ -52,7 +52,7 @@ Nella tabella seguente sono riepilogati i vantaggi e gli svantaggi di ogni opzio
 |Professionisti<br/><br/>Facile da gestire<br/>Opzione consigliata<br/>     |Professionisti<br/><br/>Semplice da configurare<br/>Protezione ritagliata<br/>Viene aggiornato automaticamente con l'aggiunta di contenuto<br/>|Professionisti<br/><br/>Protezione ritagliata<br/>Si aggiorna automaticamente man mano che i siti vengono aggiunti<br/>Tempo di caricamento rapido e struttura dell'esplorazione memorizzata nella cache<br/>|Professionisti<br/><br/>Scelta più ampia di opzioni disponibili<br/>Caricamento veloce quando la memorizzazione nella cache viene utilizzata correttamente<br/>Molte opzioni funzionano bene con la progettazione delle pagine reattive<br/>|
 |Contro<br/><br/>Non si aggiorna automaticamente per riflettere la struttura del sito<br/>Impatto delle prestazioni se la limitazione di sicurezza è abilitata<br/>|Contro<br/><br/>**Non consigliato**<br/>**Impatto sulle prestazioni e sulla scalabilità**<br/>**Soggette a limitazione**<br/>|Contro<br/><br/>Non è possibile ordinare facilmente i siti<br/>Richiede la personalizzazione della pagina master (necessarie competenze tecniche)<br/>|Contro<br/><br/>Lo sviluppo personalizzato è obbligatorio<br/>L'origine dati esterna/cache memorizzata è necessaria ad esempio Azure<br/>|
 
-L'opzione più appropriata per il sito dipende dai requisiti del sito e dalle proprie capacità tecniche. Se si desidera un provider di navigazione esterno scalabile, quindi l'esplorazione gestita con la limitazione della sicurezza disabilitata è un'ottima opzione. 
+L'opzione più appropriata per il sito dipende dai requisiti del sito e dalle proprie capacità tecniche. Se si desidera un provider di navigazione esterno scalabile, quindi l'esplorazione gestita con la limitazione della sicurezza disabilitata è un'ottima opzione.
 
 L'opzione di spostamento gestito può essere mantenuta tramite la configurazione, non comporta file di personalizzazione del codice ed è significativamente più veloce rispetto alla struttura di spostamento strutturale. Se si richiede la riduzione della sicurezza e si ha dimestichezza con una pagina master personalizzata e si dispone di una certa funzionalità nell'organizzazione per gestire le modifiche che possono verificarsi nella pagina master predefinita per SharePoint Online, l'opzione basata sulla ricerca potrebbe produrre una migliore esperienza utente. Se si dispone di requisiti più complessi, è possibile che il provider di spostamento personalizzato sia la scelta giusta. La struttura di spostamento strutturale non è consigliata.
 

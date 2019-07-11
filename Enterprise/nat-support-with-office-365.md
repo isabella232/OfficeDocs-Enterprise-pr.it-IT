@@ -1,7 +1,7 @@
 ---
 title: Supporto NAT con Office 365
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/24/2017
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: "Riepilogo: In questo articolo vengono fornite informazioni dettagliate su come calcolare il numero approssimativo di client che è possibile utilizzare per ciascun indirizzo IP all'interno dell'organizzazione utilizzando NAT (Network Address Translation)."
-ms.openlocfilehash: bdbf108163c7b22fd6d7583436af5f0ed655784c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 63180faab720e32c1066dcca60536db492d52734
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069882"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616869"
 ---
 # <a name="nat-support-with-office-365"></a>Supporto NAT con Office 365
 
@@ -50,12 +50,12 @@ Numero massimo di dispositivi supportati dietro un unico indirizzo IP pubblico =
   
  **Ad esempio, se si verificano le condizioni seguenti:**
   
-- **Porte limitate:** 4.000 per il sistema operativo 
-    
-- **Consumi delle porte di picco:** 6 per dispositivo 
-    
-- **Fattore di picco:** 4 
-    
+- **Porte limitate:** 4.000 per il sistema operativo
+
+- **Consumi delle porte di picco:** 6 per dispositivo
+
+- **Fattore di picco:** 4
+
 Successivamente, il numero massimo di dispositivi supportati dietro un unico indirizzo IP pubblico = (64.000-4000)/(6 + 4) = 6.000
   
 Con il rilascio di Office 365 Hosting Pack, incluso negli aggiornamenti a partire da settembre 2011 per Microsoft Office Outlook 2007 o novembre 2011 per Microsoft Outlook 2010 o un aggiornamento successivo, il numero di connessioni da Outlook (sia Office Outlook 2007 che Service Pack 2 e Outlook 2010) per Exchange possono essere di almeno 2. Sarà necessario fattorizzare i diversi sistemi operativi, i comportamenti degli utenti e così via per determinare il numero minimo e massimo di porte che la rete richiederà al massimo.
@@ -79,4 +79,3 @@ Esistono diversi metodi per distribuire carico sul client attraverso ulteriori i
 [Gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Domande frequenti sugli endpoint di Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
-

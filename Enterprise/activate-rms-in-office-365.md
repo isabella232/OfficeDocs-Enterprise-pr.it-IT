@@ -1,5 +1,5 @@
 ---
-title: Attivare Rights Management nell'interfaccia di amministrazione di Office 365
+title: Puntatori a informazioni su Rights Management nell'interfaccia di amministrazione di Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Punta ad argomenti che descrivono come attivare e utilizzare il servizio Rights Management con Office 365.
-ms.openlocfilehash: ffbb88de88b5f90d239698c0600e914266e84048
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7ae954eafacb196dc85f3e4c084de2f704f4ddce
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068452"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616709"
 ---
-# <a name="activate-rights-management-in-the-office-365-admin-center"></a>Attivare Rights Management nell'interfaccia di amministrazione di Office 365
+# <a name="pointers-to-information-about-rights-management-in-the-office-365-admin-center"></a>Puntatori a informazioni su Rights Management nell'interfaccia di amministrazione di Office 365
 
 In questo argomento vengono illustrati gli argomenti in cui viene descritto come abilitare e utilizzare RMS con Office 365.
   
@@ -34,13 +34,11 @@ Per poter utilizzare le funzionalità di Information Rights Management (IRM) di 
 Utilizzare questi collegamenti per ulteriori informazioni su RMS:
   
 - Per ulteriori informazioni su RMS, vedere [che cos'è Azure Rights Management](https://docs.microsoft.com/rights-management/understand-explore/what-is-azure-rms).
-    
-- Se si è nuovi a RMS, vedere [Overview of Azure Rights Management](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management).
-    
-- Per una panoramica dei passaggi di distribuzione, vedere la Guida di orientamento per la [distribuzione di Azure Rights Management](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap).
-    
-- Per istruzioni sull'attivazione di RMS per Office 365, vedere [attivazione di Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx).
-    
-- La differenza tra Azure RMS e IRM in Office è confusa. Per ulteriori informazioni, fare riferimento ai termini di gestione dei diritti. Vedere [terminologia per Rights Management](https://technet.microsoft.com/library/dn595132.aspx).
-    
 
+- Se si è nuovi a RMS, vedere [Overview of Azure Rights Management](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management).
+
+- Per una panoramica dei passaggi di distribuzione, vedere la [mappa stradale di distribuzione di Azure Rights Management](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap).
+
+- Per istruzioni sull'attivazione di RMS per Office 365, vedere [attivazione di Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx).
+
+- La differenza tra Azure RMS e IRM in Office è confusa. Per ulteriori informazioni, fare riferimento ai termini di gestione dei diritti. Vedere [terminologia per Rights Management](https://technet.microsoft.com/library/dn595132.aspx).
