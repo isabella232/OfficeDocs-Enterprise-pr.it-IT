@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Riepilogo: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft. Informazioni su come implementare un desktop protetto e moderno con Windows 10 e Office ProPlus."
-ms.openlocfilehash: dfb6df46faacf6623a90ac5a4cf95d9512c31289
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 7af74f254ffc73251188b23255a35f800b5503f6
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539328"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616885"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 
@@ -39,6 +39,7 @@ Questi poster e strumenti dell'architettura forniscono informazioni sui servizi 
     - [Cloud ibrido Microsoft per Enterprise Architects](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Attacchi comuni e funzionalità di Microsoft che proteggono l'organizzazione](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     - [Infrastruttura di base di Microsoft 365 Enterprise](#m365foundationinfra)
+    - [Approcci dell'architettura in materia di migrazioni da tenant a tenant del cloud Microsoft](#architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations)
     
 - **[Serie di soluzioni di Microsoft 365 Enterprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Microsoft Teams e servizi di produttività correlati in Microsoft 365 per architetti IT](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
@@ -135,8 +136,14 @@ Ottenere una visualizzazione immediata dell'[infrastruttura di base](https://doc
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di anteprima del poster dell’infrastruttura di base di Microsoft 365 Enterprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [Visualizza online](http://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Questo poster riepiloga ogni fasi dell'infrastruttura di base in termini di obiettivi, funzionalità e strumenti, scelte progettuali, risultati della configurazione, onboarding, monitoraggio continuo e aggiornamenti. <br/>| 
+|[![Immagine di anteprima del poster dell’infrastruttura di base di Microsoft 365 Enterprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [Visualizza online](http://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Questo poster riepiloga ogni fase dell'infrastruttura di base in termini di obiettivi, funzionalità e strumenti, scelte progettuali, risultati della configurazione, onboarding, monitoraggio continuo e aggiornamenti. <br/>| 
 
+### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Approcci dell'architettura in materia di migrazioni da tenant a tenant del cloud Microsoft 
+Questa serie di argomenti illustra diversi approcci dell'architettura in materia di fusioni, acquisizioni, cessioni e altri scenari che potrebbero indurre la migrazione in un nuovo tenant del cloud. Questi argomenti forniscono le indicazioni da cui partire per la pianificazione.
+
+|**Elemento**|**Descrizione**|
+|:-----|:-----|
+|[![Immagine di scorrimento per poster dell'architettura logica di Teams](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |Questo modello contiene: <ul><li>Un mapping di scenari da quelli aziendali a quelli dettati dagli approcci dell'architettura</li><li>Considerazioni sulla progettazione</li><li>Flusso di migrazione singolo</li><li>Flusso di migrazione in più fasi</li><li>Spostamento di tenant o flusso diviso</li></ul>|
 
 <!--<a name="santa"></a>
 ### The Santa cloud
