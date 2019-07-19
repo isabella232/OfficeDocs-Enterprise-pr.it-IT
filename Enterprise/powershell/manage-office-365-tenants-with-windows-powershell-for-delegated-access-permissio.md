@@ -13,18 +13,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 'Riepilogo: utilizzare Windows PowerShell per gestire i tenancy dei propri clienti tramite Office 365.'
-ms.openlocfilehash: 0c7e4cd737a2e83a4d82c566ecd248501d780c54
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b38c1862a0cf2db4a751d1690686baeead8ae9ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068942"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781856"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestire tenant Office 365 con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
  **Sintesi:** Utilizzare Windows PowerShell per gestire i tenancy dei propri clienti tramite Office 365.
   
-Windows PowerShell agevola i Partner di Syndication e Cloud Solution Provider (CSP) nell'amministrazione e nella creazione di report sulle impostazioni dei tenancy dei clienti che non sono disponibili nell'interfaccia di amministrazione di Office 365. Tenere presente che le autorizzazioni Amministra per conto terzi (AOBO, Administer On Behalf Of) sono necessarie all'account amministratore del partner per connettersi ai tenancy dei clienti.
+Windows PowerShell consente ai partner di syndication e Cloud Solution Provider (CSP) di amministrare e segnalare facilmente le impostazioni di locazione dei clienti che non sono disponibili nell'interfaccia di amministrazione di Microsoft 365. Tenere presente che le autorizzazioni Amministra per conto terzi (AOBO, Administer On Behalf Of) sono necessarie all'account amministratore del partner per connettersi ai tenancy dei clienti.
   
 I partner di autorizzazione accesso delegato (DAP, Delegated Access Permission) sono partner di Syndication e Cloud Solution Provider (CSP). Di solito, rappresentano fornitori di rete o telecomunicazioni di altre aziende. Consentono di raggruppare le sottoscrizioni Office 365 nelle offerte di servizio per i clienti. Quando vendono un abbonamento a Office 365, vengono loro concesse automaticamente le autorizzazioni Amministra per conto terzi ai tenancy dei clienti in modo che possano amministrare ed effettuare report sui tenancy dei clienti.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare

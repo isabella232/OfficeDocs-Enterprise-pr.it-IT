@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Esistono alcuni modi semplici per controllare le prestazioni della connessione tra Office 365 e la propria azienda che consentirà di stabilire una linea di base approssimativa della connettività. Se si conosce la cronologia delle prestazioni delle connessioni dei computer client, è possibile rilevare i problemi emergenti in anticipo, identificare e stimare.
-ms.openlocfilehash: a399cb0057e9cc62e180fea8a6d7b9dbf1993a5f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 755f4c4bde7e040638e768002a528710bcdd48fd
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069522"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781906"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ottimizzazione delle prestazioni di Office 365 con le linee di base e la cronologia delle prestazioni
 
@@ -49,7 +49,7 @@ La risoluzione dei problemi relativi alle prestazioni non riguarda la riunione d
 
 In primo luogo, è necessario assicurarsi che le operazioni riscontrate siano effettivamente un problema di prestazioni e non un incidente di servizio. Un problema di prestazioni è diverso da un incidente di servizio in Office 365. Ecco come distinguerli.
   
-Se il servizio Office 365 ha problemi, si tratta di un incidente di servizio. In **Current Health** nell'interfaccia di amministrazione di Office 365 vengono visualizzate icone rosse o gialle, ma è anche possibile notare prestazioni lente sui computer client che si connettono a Office 365. Ad esempio, se lo stato corrente segnala un'icona rossa e si visualizza l' **analisi** accanto a Exchange, è possibile ricevere anche un gruppo di chiamate provenienti da persone dell'organizzazione che si lamentano che le cassette postali client che utilizzano Exchange Online stanno eseguendo una cattiva esecuzione. In tal caso, è ragionevole presumere che le prestazioni di Exchange Online siano diventate solo una vittima di problemi all'interno del servizio. 
+Se il servizio Office 365 ha problemi, si tratta di un incidente di servizio. Nell'interfaccia di amministrazione di Microsoft 365 vengono visualizzate icone rosse o gialle in **stato di integrità corrente** , è anche possibile notare prestazioni lente sui computer client che si connettono a Office 365. Ad esempio, se lo stato corrente segnala un'icona rossa e si visualizza l' **analisi** accanto a Exchange, è possibile ricevere anche un gruppo di chiamate provenienti da persone dell'organizzazione che si lamentano che le cassette postali client che utilizzano Exchange Online stanno eseguendo una cattiva esecuzione. In tal caso, è ragionevole presumere che le prestazioni di Exchange Online siano diventate solo una vittima di problemi all'interno del servizio. 
   
 ![Dashboard di integrità di Office 365 con tutti i carichi di lavoro che mostrano verde, tranne Exchange, in cui viene visualizzato il servizio ripristinato.](media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -59,7 +59,7 @@ A questo punto, l'amministratore di Office 365 deve controllare l' **integrità 
   
 Un problema di prestazioni non è un incidente di servizio, anche se gli incidenti possono causare una prestazione lenta. Un problema di prestazioni è simile al seguente:
   
-- Si verifica un problema di prestazioni indipendentemente dall' **integrità corrente** dell'interfaccia di amministrazione di Office 365 per il servizio. 
+- Si verifica un problema di prestazioni indipendentemente dall' **integrità corrente** del centro di amministrazione per il servizio. 
     
 -  Un comportamento utilizzato per essere relativamente semplice richiede molto tempo per il completamento o non viene mai completato. 
     
@@ -198,7 +198,7 @@ L'obiettivo di questi metodi semplici consiste nell'imparare a prendere, compren
 ![Rete di base con client, proxy e cloud e suggerimenti per gli strumenti PSPing, TraceTCP e le tracce di rete.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP è incluso in questa schermata perché è uno strumento utile per mostrare, in millisecondi, la durata della richiesta di elaborazione e il numero di hop di rete o di connessioni da un computer all'altro, che la richiesta richiede per raggiungere una destinazione. TraceTCP può anche fornire i nomi dei server utilizzati durante il luppolo, il che può essere utile per una soluzione di risoluzione dei problemi di Microsoft Office 365 in supporto. i comandi di TraceTCP di > possono essere molto semplici, ad `tracetcp.exe outlook.office365.com:443`esempio: _GT_ > ricordarsi di includere il numero di porta nel comando. > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) è un download gratuito, ma si basa su WINCAP. WINCAP è uno strumento utilizzato e installato anche da Netmon. È inoltre possibile utilizzare Netmon nella sezione Advanced methods. 
+> TraceTCP è incluso in questa schermata perché è uno strumento utile per mostrare, in millisecondi, la durata della richiesta di elaborazione e il numero di hop di rete o di connessioni da un computer all'altro, che la richiesta richiede per raggiungere una destinazione. TraceTCP può anche fornire i nomi dei server utilizzati durante il luppolo, il che può essere utile per una soluzione di risoluzione dei problemi di Microsoft Office 365 in supporto. > i comandi di TraceTCP possono essere molto semplici, ad esempio `tracetcp.exe outlook.office365.com:443` : >> ricordarsi di includere il numero di porta nel comando. > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) è un download gratuito, ma si basa su WINCAP. WINCAP è uno strumento utilizzato e installato anche da Netmon. È inoltre possibile utilizzare Netmon nella sezione Advanced methods. 
   
  Se si dispone di più uffici, è necessario mantenere un set di dati da un client in ognuno di questi percorsi. Questo test misura la latenza, che, in questo caso, è un valore numerico che descrive la quantità di tempo tra un client che invia una richiesta a Office 365 e Office 365 che risponde alla richiesta. Il testing ha origine all'interno del dominio in un computer client e cerca di misurare un round trip dall'interno della rete, tramite un punto di uscita, tramite Internet a Office 365 e viceversa. 
   

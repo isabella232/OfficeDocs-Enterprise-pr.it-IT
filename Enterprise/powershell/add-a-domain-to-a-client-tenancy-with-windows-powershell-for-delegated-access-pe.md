@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Riepilogo: utilizzare Windows PowerShell per Office 365 per aggiungere un nome di dominio alternativo al tenant di un cliente esistente.'
-ms.openlocfilehash: 9b65a5665ce8aa7205db733a2d0e0969e5cd401d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1a1c1c06a2912f6624e6eb860ea6794f9474c09e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069272"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781846"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Aggiungere un dominio a un tenancy client con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
@@ -46,7 +46,7 @@ Sono necessarie anche le informazioni seguenti:
  Probabilmente i propri clienti richiederanno la creazione di domini aggiuntivi da associare ai loro tenancy perché non vogliono che il dominio principale per rappresentare le loro identità aziendali a livello mondiale sia quello predefinito, vale a dire <domain>.onmicrosoft.com sia quello principale che rappresenta le identità aziendali al mondo. La procedura seguente illustra i passaggi per creare un nuovo dominio associato alla tenancy del cliente.
   
 > [!NOTE]
-> Per eseguire alcune di queste operazioni, l'account amministratore del partner con cui è stato effettuato l'accesso deve essere impostato su **Amministrazione completa** per l'impostazione **Assegna l'accesso amministrativo alle società supportate** disponibile nei dettagli dell'account amministratore nell'interfaccia di amministrazione di Office 365. Per ulteriori informazioni sulla gestione dei ruoli di amministratore del partner, vedere[Partner: offrire l'amministrazione delegata](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
+> Per eseguire alcune di queste operazioni, è necessario che l'account amministratore partner con cui si esegue l'accesso debba essere impostato su **amministrazione completa** per l'impostazione **assegna accesso amministrativo alle società supportate** nell'ambito dei dettagli dell'account di amministratore nell' Interfaccia di amministrazione di Microsoft 365. Per ulteriori informazioni sulla gestione dei ruoli di amministratore del partner, vedere[Partner: offrire l'amministrazione delegata](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Creare il dominio in Azure Active Directory
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "Sintesi: configurazione e dimostrazione di Office 365 Cloud App Security nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068102"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782256"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security per l'ambiente di sviluppo/test di Office 365
 
@@ -81,7 +81,7 @@ In questa procedura, viene abilitato Cloud App Security e viene creato un nuovo 
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)() e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
-2. Scegliere il riquadro **Amministrazione**. Nella scheda dell'interfaccia di **amministrazione di Office** , fare clic su interfaccia di **amministrazione di _GT_ sicurezza & conformità**.
+2. Scegliere il riquadro **Amministrazione**. Nella scheda dell'interfaccia di **amministrazione di Office** , fare clic su interfaccia di **amministrazione > conformità & sicurezza**.
     
 3. Nel riquadro di spostamento a sinistra fare clic su **Avvisi > Gestisci gli avvisi avanzati**.
     
@@ -153,7 +153,7 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
     
 22. Dalla scheda **Microsoft Office Home**, fare clic su **Posta**. Attendere fino a 30 minuti.  
     
-    Dovrebbero essere visualizzati due nuovi messaggi di posta elettronica nella Posta in arrivo con il titolo **Servizio di notifica di Microsoft Azure AD**. Un messaggio indica che l'account di User 5 è stato aggiunto al ruolo **Amministratore password** e l'altro messaggio indica che l'account di User 5 è stato aggiunto al ruolo **Amministratore utenti** (equivalente al ruolo Amministratore Gestione utenti nell'interfaccia di amministrazione di Office 365).
+    Dovrebbero essere visualizzati due nuovi messaggi di posta elettronica nella Posta in arrivo con il titolo **Servizio di notifica di Microsoft Azure AD**. Un messaggio indica che l'account utente 5 è stato aggiunto al ruolo **amministratore password** e un altro messaggio indica che l'account utente 5 è stato aggiunto al ruolo **amministratore utente** (uguale al ruolo Amministratore Gestione utenti nel Interfaccia di amministrazione di Microsoft 365).
     
 È ora possibile utilizzare questo ambiente per creare nuovi criteri e sperimentare ulteriormente Office 365 Cloud App Security. Vedere prepararsi [per Office 365 cloud app Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) per i collegamenti ad altri articoli di configurazione.
   

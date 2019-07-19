@@ -28,7 +28,7 @@ ID | Categoria | ER | Addresses | Porte
 8  | Predefinita<BR>Obbligatorio | Sì | `*.gov.teams.microsoft.us, *.infra.gov.skypeforbusiness.us, *.online.gov.skypeforbusiness.us, gov.teams.microsoft.us` | **TCP:** 5061, 50000-59999<BR>**UDP:** 50000-59999
 21 | Predefinita<BR>Obbligatorio | Sì | `statics.teams.microsoft.com` | **TCP:** 443
 
-## <a name="microsoft-365-common-and-office-online"></a>Microsoft 365 comune e Office Online
+## <a name="microsoft-365-common-and-office"></a>Microsoft 365 Common e Office 
 
 ID | Categoria | ER | Addresses | Porte
 -- | ------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------

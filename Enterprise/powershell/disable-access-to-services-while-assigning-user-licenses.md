@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Informazioni su come assegnare licenze ad account utente e disabilitare i piani di servizio specifici nello stesso momento usando PowerShell di Office 365.
-ms.openlocfilehash: 82a448e4fc7f068fab3b04519b9689506208bee8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f45c76ba0e756aec057e4243ece51de2af26aaec
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069052"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782146"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente
 
@@ -70,7 +70,7 @@ Nella tabella seguente vengono illustrati i piani di servizio di Office 365 e i 
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online, piano 2  <br/> |
    

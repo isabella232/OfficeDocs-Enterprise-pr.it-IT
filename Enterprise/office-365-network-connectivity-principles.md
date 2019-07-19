@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Prima di iniziare a pianificare la rete per la connettività di rete di Office 365, è importante comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e ottenere le migliori prestazioni possibili. In questo articolo vengono fornite informazioni utili per comprendere le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365.
-ms.openlocfilehash: e8bb819fee5aa53fe3ea23f7b3b691be131ddf1f
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: 9444cef0a93d10953a726da40d24ab18e29d8f24
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017296"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782206"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principi della connettività di rete di Office 365
 
@@ -42,7 +42,7 @@ In questo articolo verrà illustrato quanto segue:
 ## <a name="office-365-architecture"></a>Architettura di Office 365
 <a name="BKMK_Architecture"> </a>
 
-Office 365 è un cloud SaaS (software-as-a-Service) distribuito che offre scenari di produttività e collaborazione tramite una serie diversificata di micro-servizi e applicazioni, ad esempio Exchange Online, SharePoint Online, Skype for business online, Microsoft Teams, Exchange Online Protection, Office Online e molti altri. Sebbene le applicazioni di Office 365 specifiche possano avere caratteristiche univoche applicate alla rete e alla connettività dei clienti al cloud, condividono tutti alcuni principi chiave, obiettivi e modelli di architettura. Questi modelli di entità e architettura per la connettività sono tipici di molti altri cloud SaaS e, allo stesso tempo, sono molto diversi dai modelli di distribuzione tipici di cloud di tipo piattaforma-come-a-Service e infrastruttura-come-a-Service, ad esempio Microsoft Azure.
+Office 365 è un cloud SaaS (software-as-a-Service) distribuito che offre scenari di produttività e collaborazione tramite una serie diversificata di micro-servizi e applicazioni, ad esempio Exchange Online, SharePoint Online, Skype for business online, Microsoft Teams, Exchange Online Protection, Office in un browser e molti altri. Sebbene le applicazioni di Office 365 specifiche possano avere caratteristiche univoche applicate alla rete e alla connettività dei clienti al cloud, condividono tutti alcuni principi chiave, obiettivi e modelli di architettura. Questi modelli di entità e architettura per la connettività sono tipici di molti altri cloud SaaS e, allo stesso tempo, sono molto diversi dai modelli di distribuzione tipici di cloud di tipo piattaforma-come-a-Service e infrastruttura-come-a-Service, ad esempio Microsoft Azure.
   
 Una delle caratteristiche architettoniche più significative di Office 365 (spesso mancata o erroneamente interpretata dai pianificatori di rete) è che si tratta di un servizio distribuito davvero globale, nel contesto del modo in cui gli utenti si connettono. La posizione del tenant di Office 365 è importante per comprendere la località in cui vengono archiviati i dati dei clienti all'interno del cloud, ma l'esperienza utente con Office 365 non comporta la connessione diretta ai dischi contenenti i dati. L'esperienza dell'utente con Office 365 (comprese le prestazioni, l'affidabilità e altre importanti caratteristiche di qualità) implica la connettività tramite porte frontali di servizi estremamente distribuiti che vengono distribuite in centinaia di percorsi Microsoft in tutto il mondo. Nella maggior parte dei casi, la migliore esperienza utente viene ottenuta consentendo alla rete del cliente di instradare le richieste degli utenti al punto di ingresso di servizio di Office 365 più vicino, anziché connettersi a Office 365 tramite un punto di uscita in una posizione centrale o in un'area geografica.
   

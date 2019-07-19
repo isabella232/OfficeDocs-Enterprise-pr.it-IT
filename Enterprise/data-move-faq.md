@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Di seguito sono riportate le risposte alle domande generali su come spostare i dati di base in un nuovo datacenter Geo.
-ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067901"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782326"
 ---
 # <a name="data-move-general-faq"></a>Domande frequenti sullo spostamento dati
 
@@ -61,7 +61,7 @@ Sì. Una volta che un nuovo datacenter geografico è disponibile, nuovi clienti 
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>Dove si trovano i dati dei clienti di base?
 
-Gli amministratori tenant possono visualizzare la scheda percorso dati nell'interfaccia di amministrazione in qualsiasi momento per confermare i dati del cliente di base nel percorso REST per ogni servizio, in particolare per il tenant.Inoltre, viene pubblicata la posizione del centro dati GEOS, dei datacenter e la posizione di Office 365 clienti sui mapping del datacenter interattivi di [ office 365](https://office.com/datamaps) come riferimento per i dati dei clienti di base predefiniti correnti nelle posizioni REST per i nuovi tenant.  È possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Office 365.  
+Gli amministratori tenant possono visualizzare la scheda percorso dati nell'interfaccia di amministrazione in qualsiasi momento per confermare i dati del cliente di base nel percorso REST per ogni servizio, in particolare per il tenant.Inoltre, viene pubblicata la posizione del centro dati GEOS, dei datacenter e la posizione di Office 365 clienti sui mapping del datacenter interattivi di [ office 365](https://office.com/datamaps) come riferimento per i dati dei clienti di base predefiniti correnti nelle posizioni REST per i nuovi tenant.  È possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Microsoft 365.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Quando sarà possibile richiedere una mossa?
   
@@ -101,7 +101,7 @@ Vedere [durante e dopo lo spostamento dei dati](during-and-after-your-data-move.
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>Come si fa a sapere se lo spostamento è stato completato?
   
-Guardare il centro messaggi di Office 365 per confermare che lo spostamento dei dati di ogni servizio è stato completato. Quando i dati di ogni servizio vengono spostati, verrà visualizzato un avviso di completamento per ottenere tre notifiche di completamento: una per Exchange Online, SharePoint Online e Skype for business online.  È inoltre possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Office 365.  
+Guardare il centro messaggi di Office 365 per confermare che lo spostamento dei dati di ogni servizio è stato completato. Quando i dati di ogni servizio vengono spostati, verrà visualizzato un avviso di completamento per ottenere tre notifiche di completamento: una per Exchange Online, SharePoint Online e Skype for business online.  È inoltre possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Microsoft 365.  
   
 ## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Sono un cliente di Office 365 in uno dei nuovi datacenter GEOS, ma al momento dell'iscrizione, ho selezionato un paese diverso. Come si può essere spostati nel nuovo datacenter Geo?
 

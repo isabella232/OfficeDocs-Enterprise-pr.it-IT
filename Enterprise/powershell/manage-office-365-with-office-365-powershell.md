@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Riepilogo: informazioni su come usare PowerShell di Office 365 con utenti e licenze di Office 365, Skype for Business online, SharePoint Online, Exchange Online e il Centro sicurezza e conformità di Office 365.'
-ms.openlocfilehash: 90903c33ebabc426ba95e0c69e71fea985cb464d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 56c23aca44d09947e7469296c6ed85b2f3d2f3c5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068902"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782106"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Gestire Office 365 con PowerShell di Office 365
 
  **Riepilogo:** informazioni su come usare PowerShell di Office 365 con utenti e licenze di Office 365, Skype for Business online, SharePoint Online, Exchange Online e il Centro sicurezza e conformità di Office 365.
   
-PowerShell di Office 365 è un potente strumento che si integra con l'interfaccia di amministrazione di Office 365. Ad esempio, è possibile utilizzare l'automazione di PowerShell di Office 365 per gestire più account utente e licenze e creare report più rapidamente. Informazioni su come usare PowerShell di Office 365 con utenti e licenze di Office 365, Skype for Business online, SharePoint Online, Exchange Online e il Centro sicurezza e conformità di Office 365.
+Office 365 PowerShell è uno strumento di gestione potente che integra l'interfaccia di amministrazione di Microsoft 365. Ad esempio, è possibile utilizzare l'automazione di PowerShell di Office 365 per gestire più account utente e licenze e creare report più rapidamente. Informazioni su come usare Office 365 PowerShell con gli utenti e le licenze di Office 365, Skype for business online, SharePoint Online, Exchange Online e il Centro sicurezza & conformità di Office 365.
   
 Selezionare l'argomento in base alle proprie esigenze:
   

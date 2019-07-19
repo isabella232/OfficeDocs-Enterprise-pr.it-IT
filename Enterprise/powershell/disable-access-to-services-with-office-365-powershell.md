@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Utilizzare Office 365 PowerShell per disabilitare l'accesso ai servizi di Office 365 per gli utenti.
-ms.openlocfilehash: bd6961f0de52d95026bae3a743613b33a4af918b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 32c43a47e1547e85488cb5158bd7392d79c8a4fb
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069032"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781836"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Disattivare l'accesso ai servizi con PowerShell di Office 365
 
@@ -61,7 +61,7 @@ Per disabilitare un set specifico di servizi di Office 365 per gli utenti per un
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
-  Nell'esempio seguente viene creato un oggetto **LicenseOptions** che Disabilita i servizi Office Online e SharePoint Online nel piano di gestione delle licenze `litwareinc:ENTERPRISEPACK` denominato (Office 365 Enterprise E3).
+  Nell'esempio seguente viene creato un oggetto **LicenseOptions** che Disabilita i servizi Office e SharePoint Online nel piano di gestione delle licenze `litwareinc:ENTERPRISEPACK` denominato (Office 365 Enterprise E3).
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"

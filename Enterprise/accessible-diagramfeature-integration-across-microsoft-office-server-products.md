@@ -10,17 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: Questo articolo è una versione di testo accessibile del diagramma denominato funzionalità di integrazione tra i prodotti Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e Office Online.
-ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Questo articolo è una versione di testo accessibile del diagramma denominato Feature Integration tra i prodotti Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e Office Online Server.
+ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068772"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782246"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagramma accessibile-integrazione delle funzionalità tra i prodotti di Microsoft Office Server
 
-**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato funzionalità di integrazione tra i prodotti Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e Office Online.
+**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato Feature Integration tra i prodotti Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e Office Online Server.
   
 Il diagramma è costituito da diverse schede, come indicato dai titoli di sezione di questo documento.
   
@@ -86,7 +86,7 @@ Autenticazione da server a server. Questa funzionalità è applicabile a:
     
 - Lync
     
-- Office Online (in precedenza noto come Office Web Apps) 
+- Office Online Server (in precedenza noto come Office Web Apps) 
     
 Foto degli utenti ad alta risoluzione. Questa funzionalità è applicabile a: 
   
@@ -551,7 +551,7 @@ Nel secondo diagramma viene illustrato il modo in cui Outlook e SharePoint Serve
     
 ## <a name="voicemail-tab"></a>Scheda segreteria telefonica
 
-### <a name="exchange-um-is-the-voicemail-system-for-lync-server"></a>La messaggistica UNIFICAta di Exchange è il sistema di segreteria telefonica per Lync Server
+### <a name="exchange-um-is-the-voicemail-system-for-lync-server"></a>La messaggistica unificata di Exchange è il sistema di segreteria telefonica per Lync Server
 
 La segreteria telefonica consente a un chiamante di lasciare una segreteria telefonica agli utenti di Lync utilizzando la messaggistica unificata di Exchange. 
   
@@ -569,7 +569,7 @@ Prodotti server:
     
  **Come funziona**
   
-Quando una chiamata non riceve una risposta dal destinatario della chiamata su uno degli endpoint attivi del destinatario della chiamata, Lync Server instrada la chiamata alla segreteria telefonica della messaggistica UNIFICAta di Exchange (ad esempio, il server cassette postali di Exchange). 
+Quando una chiamata non riceve una risposta dal destinatario della chiamata su uno degli endpoint attivi del destinatario della chiamata, Lync Server instrada la chiamata alla segreteria telefonica della messaggistica unificata di Exchange (ad esempio, il server cassette postali di Exchange). 
   
 Nel diagramma di accompagnamento viene illustrato il routing delle chiamate per due scenari: 
   
@@ -585,7 +585,7 @@ Il chiamante avvia una chiamata utilizzando Lync 2013:
     
 3. Lync Server squilla gli endpoint attivi del destinatario su Lync 2013. 
     
-4. Quando la chiamata non è stata risolta, la chiamata viene instradata alla segreteria telefonica (messaggistica UNIFICAta di Exchange) sul CAS di Exchange (router di chiamata). 
+4. Quando la chiamata non è stata risolta, la chiamata viene instradata alla segreteria telefonica (messaggistica unificata di Exchange) sul CAS di Exchange (router di chiamata). 
     
 Il chiamante avvia una chiamata utilizzando Lync 2013: 
   
@@ -597,7 +597,7 @@ Il chiamante avvia una chiamata utilizzando Lync 2013:
     
 4. Lync Server squilla gli endpoint attivi del destinatario su Lync 2013. 
     
-5. Quando la chiamata non è stata risolta, la chiamata viene instradata alla segreteria telefonica (messaggistica UNIFICAta di Exchange) sul CAS di Exchange (router di chiamata). 
+5. Quando la chiamata non è stata risolta, la chiamata viene instradata alla segreteria telefonica (messaggistica unificata di Exchange) sul CAS di Exchange (router di chiamata). 
     
 ## <a name="meeting-recordings-tab"></a>Scheda registrazioni riunioni
 

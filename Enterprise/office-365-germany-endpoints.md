@@ -3,7 +3,7 @@ title: Endpoint di Office 365 Germany
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/29/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Se nell'organizzazione viene utilizzato Office 365 e i computer della rete vengono limitati dalla connessione a Internet, di seguito sono elencati gli endpoint (FQDN, porte, URL e intervalli di indirizzi IPv4 e IPv6) che è necessario includere negli elenchi in uscita consentiti per garantire la propria i computer possono utilizzare correttamente Office 365.
 hideEdit: true
-ms.openlocfilehash: ccc8d82abf9640a17140fba6b341bfbfb61a903e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ba35f79132733ab3f35000a799ebf6dba843a826
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069772"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781922"
 ---
 # <a name="office-365-germany-endpoints"></a>Endpoint di Office 365 Germany
 
@@ -36,7 +36,7 @@ ms.locfileid: "34069772"
   
 |||
 |:-----|:-----|
-|**Ultimo aggiornamento:** 29/04/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [abbonamento al Log delle modifiche](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Download:** tutte le destinazioni obbligatorie e facoltative in un unico elenco in [formato JSON](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
+|**Ultimo aggiornamento:** 06/28/2019- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change log Subscription](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Download:** tutte le destinazioni necessarie e facoltative in un unico elenco [JSON formattato](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Iniziare con la [gestione degli endpoint di Office 365](managing-office-365-endpoints.md) per comprendere i suggerimenti per la gestione della connettività di rete tramite questi dati. I dati degli endpoint vengono aggiornati all'inizio di ogni mese con i nuovi indirizzi IP e gli URL pubblicati 30 giorni prima di essere attivi. In questo modo i clienti che non dispongono ancora di aggiornamenti automatici consentono di completare i processi prima che sia necessaria una nuova connettività. Gli endpoint possono anche essere aggiornati nel corso del mese, se necessario, per risolvere le escalation del supporto, gli incidenti di sicurezza o altri requisiti operativi immediati. È sempre possibile fare riferimento alla [sottoscrizione del registro delle modifiche](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 
@@ -44,7 +44,7 @@ I dati visualizzati in questa pagina sono tutti generati dai servizi Web basati 
 
 I dati degli endpoint riportati di seguito elencano i requisiti di connessione del computer di un utente a Office 365. Non sono incluse le connessioni di rete da Microsoft a una rete cliente, a volte chiamate connessioni di rete ibride o in ingresso.
 
-Gli endpoint sono raggruppati in quattro aree del servizio. Le prime tre aree del servizio possono essere selezionate in modo indipendente per la connessione. La quarta area del servizio è una dipendenza comune (denominata Microsoft 365 Common e Office Online) e deve avere sempre la connessione di rete.
+Gli endpoint sono raggruppati in quattro aree di servizio. Le prime tre aree di servizio possono essere selezionate in modo indipendente per la connettività. La quarta area di servizio è una dipendenza comune (denominata Microsoft 365 Common and Office) e deve avere sempre la connettività di rete.
 
 Le colonne di dati visualizzate sono le seguenti:
 
