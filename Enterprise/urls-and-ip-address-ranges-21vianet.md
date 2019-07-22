@@ -3,7 +3,7 @@ title: URL e intervalli di indirizzi IP per Office 365 gestito da 21Vianet
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 6/28/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 description: Questo articolo si applica a Office 365 gestito da 21Vianet in Cina. Vengono elencati gli URL e gli intervalli di indirizzi IP utilizzati da Office 365 gestito da 21Vianet.
 hideEdit: true
-ms.openlocfilehash: e1e477b0bca538accd1fc76c202a27429c705ac6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1a95e3c956dfdf77a1c889ea40f5055c88ae1915
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070782"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781972"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URL e intervalli di indirizzi IP per Office 365 gestito da 21Vianet
 
@@ -38,13 +38,13 @@ ms.locfileid: "34070782"
   
 |||
 |:-----|:-----|
-|**Ultimo aggiornamento:** 28/11/2018 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abbonamento al log delle modifiche](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** tutte le destinazioni necessarie e facoltative in un unico elenco [JSON formattato](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
+|**Ultimo aggiornamento:** 28/6/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [abbonamento al Log delle modifiche](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** tutte le destinazioni obbligatorie e facoltative in un unico elenco in [formato JSON](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Iniziare con [Gestione degli endpoint di Office 365](managing-office-365-endpoints.md) per conoscere i nostri consigli sulla gestione della connessione di rete con questi dati. I dati degli endpoint vengono aggiornati all'inizio di ogni mese con i nuovi URL e indirizzi IP pubblicati 30 giorni prima di essere attivi. In questo modo, i clienti che non hanno ancora automatizzato gli aggiornamenti possono completare le loro procedure prima che sia necessaria una nuova connessione. Inoltre, gli endpoint potrebbero essere aggiornati anche durante il mese qualora fosse necessario gestire problemi di supporto, problemi di sicurezza o altri requisiti operativi immediati. I dati mostrati più avanti in questa pagina sono tutti generati dai servizi Web basati su REST. Se si utilizza uno script o un dispositivo di rete per accedere a questi dati, passare direttamente al [servizio Web](office-365-ip-web-service.md).
 
 I dati degli endpoint riportati di seguito elencano i requisiti di connessione del computer di un utente a Office 365. Non sono incluse le connessioni di rete da Microsoft a una rete cliente, a volte chiamate connessioni di rete ibride o in ingresso.
 
-Gli endpoint sono raggruppati in quattro aree del servizio. Le prime tre aree del servizio possono essere selezionate in modo indipendente per la connessione. La quarta area del servizio è una dipendenza comune (denominata Microsoft 365 Common e Office Online) e deve avere sempre la connessione di rete.
+Gli endpoint sono raggruppati in quattro aree di servizio. Le prime tre aree di servizio possono essere selezionate in modo indipendente per la connettività. La quarta area di servizio è una dipendenza comune, denominata Microsoft 365 Common e Office, e deve avere sempre la connettività di rete.
 
 Le colonne di dati visualizzate sono le seguenti:
 

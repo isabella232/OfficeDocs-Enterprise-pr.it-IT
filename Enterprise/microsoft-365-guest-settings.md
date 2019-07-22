@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365.
-ms.openlocfilehash: b3944fc393b035a275ae71817415a0fb8ba250c1
-ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
+ms.openlocfilehash: 8c067374b960ff2cec7cdce87f67da0104697ff3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35606341"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782276"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 

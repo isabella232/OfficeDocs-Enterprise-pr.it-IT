@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Riepilogo: usare la seguente guida al lab test per creare una sottoscrizione di valutazione di Office 365 per valutazione o sviluppo/test.'
-ms.openlocfilehash: 2f1856d203e892c98b44ccc1dbe1598d527165de
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 06ffed9ab4b41c5e164cfadb951181a3406c67a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162509"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781936"
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente di sviluppo/test di Office 365
 
@@ -118,7 +118,7 @@ Per avviare la sottoscrizione di valutazione di Office 365 E5, è necessario inn
     
 11. Nella pagina successiva, attendere che Office 365 completi la configurazione e che siano disponibili tutti i riquadri.
     
-Dovrebbe essere visualizzata la pagina principale del portale di Office 365 dalla quale è possibile accedere ai servizi di Office Online e all'interfaccia di amministrazione di Microsoft 365.
+Dovrebbe essere visualizzata la pagina principale del portale di Office 365 dalla quale è possibile accedere ai servizi di Office e all'interfaccia di amministrazione di Microsoft 365.
   
 Per l'ambiente di sviluppo/test di Office 365 dell'azienda simulata, ecco la configurazione risultante.
   
