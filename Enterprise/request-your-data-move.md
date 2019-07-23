@@ -3,7 +3,7 @@ title: Come richiedere lo spostamento dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
+ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392356"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35818028"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
@@ -37,20 +37,20 @@ I clienti di Office 365 esistenti sono idonei a richiedere la migrazione anticip
 |Regno Unito  <br/> |15 marzo 2017  <br/> |15 settembre 2017  <br/> |
 |Sud Corea  <br/> |1 maggio 2017  <br/> |31 ottobre 2017  <br/> |
 |Francia  <br/> |14 marzo 2018  <br/> |15 settembre 2018  <br/> |
-|Emirati Arabi Uniti  <br/> |Pianificata  <br/> |Pianificata  <br/> |
+|Emirati Arabi Uniti  <br/> |15 luglio 2019  <br/> |31 gennaio 2020  <br/> |
 |Sudafrica  <br/> |Pianificata  <br/> |Pianificata  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Come richiedere uno spostamento
 
-I clienti idonei vedranno una pagina nell'interfaccia di [amministrazione di Office 365](https://aka.ms/365admin), che consentirà loro di richiedere di spostare i dati di base dei clienti nella nuova area del datacenter.  
+I clienti idonei vedranno una pagina nell'interfaccia di [Amministrazione](https://aka.ms/365admin), che consentirà loro di richiedere di spostare i dati di base dei clienti nella nuova area del datacenter.  
   
-Per accedere alla pagina nell'interfaccia di amministrazione di Office 365, nel riquadro di spostamento a sinistra espandere **Impostazioni**e quindi fare clic su **profilo organizzazione**.
+Per accedere alla pagina nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra espandere **Impostazioni**e quindi fare clic su **profilo organizzazione**.
   
-![Menu Impostazioni con il profilo aziendale evidenziato](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
+![Menu impostazioni con profilo organizzazione evidenziato](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
   
 Nella pagina **profilo organizzazione** scorrere verso il basso fino alla sezione **opzione di residenza dei dati** . 
   
-![Scheda di residenza dati](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
+![Scheda di residenza dati](media/dataresidencyae.jpg)
   
 **È possibile che questa sezione non venga visualizzata se si applica una delle opzioni seguenti**:
 - Il tenant non è idoneo per il programma di spostamento.  L'eleggibilità è determinata dal paese di iscrizione del tenant.
@@ -58,7 +58,7 @@ Nella pagina **profilo organizzazione** scorrere verso il basso fino alla sezion
   
 Se nell'organizzazione sono presenti requisiti di residenza dei dati ed è necessario richiedere la migrazione anticipata, fare clic su **modifica** in alto a destra della sezione. Sul lato destro dello schermo viene visualizzata una nuova sezione in cui vengono illustrati i dettagli del programma di spostamento. Selezionare il pulsante Toggle accanto al testo che indica **Sì, l'organizzazione ha requisiti di residenza dei dati**. Fare quindi clic su **Salva**.
   
-![Schermata di operazione di consenso per il datacenter](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
+![Schermata di operazione di consenso per il datacenter](media/dataresidencyflyoutae.jpg)
   
 Verrà visualizzato il testo nella sezione **opzione di residenza dei dati** cambiare per indicare che **l'organizzazione ha chiesto di spostare i dati di base dei clienti.** Nel centro messaggi verrà visualizzato anche un messaggio di conferma. Questo conferma che la richiesta di spostamento è stata eseguita correttamente. 
 
