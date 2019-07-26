@@ -3,7 +3,7 @@ title: Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: "Nuovo datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescente domanda e la crescita dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle condizioni dei servizi online Microsoft: contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica) e contenuto del sito di SharePoint Online e file archiviati all'interno del sito e i file caricati in OneDrive for business."
-ms.openlocfilehash: 63b094772fc5e199124251e204b116e74cedec0a
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392346"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907639"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS
 
@@ -39,8 +39,8 @@ I clienti esistenti che dispongono di dati di base dei clienti archiviati in un 
 |Regno Unito * * * *| Europa | Regno Unito | Settembre 2016 |
 |Corea del sud * * * *| Asia/Pacifico | Sud Corea | Aprile 2017 |
 |Francia * * * *| Europa | Francia | Marzo 2018 |
-|Emirati Arabi Uniti * * * *| Europa | Emirati Arabi Uniti | Annunciate |
-|Sudafrica * * * *| Europa | Sudafrica | Annunciate |
+|Emirati Arabi Uniti * * * *| Europa | Emirati Arabi Uniti | 2019 giugno |
+|Sudafrica * * * *| Europa | Sudafrica | 2019 luglio |
   
 I nuovi clienti o i tenant di Office 365 creati dopo la disponibilità del nuovo datacenter Geo avranno i dati di base dei clienti archiviati a riposo nel nuovo datacenter Geo automaticamente.
   
