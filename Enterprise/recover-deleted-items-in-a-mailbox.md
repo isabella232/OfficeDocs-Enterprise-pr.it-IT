@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: "Questo articolo è rivolto agli amministratori. Può accadere che un utente elimini in modo permanente alcuni elementi della propria cassetta postale di Outlook e che voglia recuperarli senza riuscirci. È possibile recuperare gli elementi eliminati se non sono stati rimossi definitivamente dalla cassetta postale dell'utente. "
-ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203655"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782616"
 ---
 <a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Ripristinare gli elementi eliminati in una cassetta postale utente - Guida per l'amministratore
@@ -46,11 +46,11 @@ Il primo passaggio consiste nell'assegnare a se stessi le autorizzazioni necessa
   
 1. [Dove accedere a Office 365 per le aziende](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con l'account aziendale o dell'istituto di istruzione. 
     
-2. Selezionare l’icona di avvio dell’app ![Icona di avvio delle app di Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) nell'angolo in alto a sinistra e scegliere **Amministratore**.
+2. Selezionare l’icona di avvio dell’app ![Icona di avvio delle app di Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) nell'angolo in alto a sinistra e fare clic su **Amministratore**.
     
-3. Nel riquadro di spostamento a sinistra nell'interfaccia di amministrazione di Office 365, espandere **Interfaccia di amministrazione** e poi fare clic su **Exchange**.
+3. Nel riquadro di spostamento a sinistra nell'interfaccia di amministrazione di Microsoft 365, espandere **Interfaccia di amministrazione** e poi fare clic su **Exchange**.
     
-    ![Elenco Interfaccia di amministrazione](media/7d308eb7-ba63-4156-a845-3770facc5de4.PNG)
+    ![Elenco Interfacce di amministrazione](media/7d308eb7-ba63-4156-a845-3770facc5de4.PNG)
   
 4. Nell’Interfaccia di amministrazione fare clic su **Autorizzazioni** e poi su **Ruoli amministratore**.
     
@@ -83,7 +83,7 @@ Quando si esegue una ricerca eDiscovery sul posto, la cartella Elementi ripristi
   
 1. [Dove accedere a Office 365 per le aziende](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con l'account aziendale o dell'istituto di istruzione. 
     
-2. Selezionare l’icona di avvio dell’app ![Icona di avvio delle app di Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) nell'angolo in alto a sinistra e scegliere **Amministratore**.
+2. Selezionare l’icona di avvio dell’app ![Icona di avvio delle app di Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) nell'angolo in alto a sinistra e fare clic su **Amministratore**.
     
 3. Nel riquadro di spostamento a sinistra nell'interfaccia di amministrazione di Office 365, espandere **Amministratore** e poi fare clic su **Exchange**.
     
