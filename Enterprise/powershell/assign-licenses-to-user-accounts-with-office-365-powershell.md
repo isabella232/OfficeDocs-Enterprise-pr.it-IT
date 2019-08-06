@@ -3,7 +3,7 @@ title: Assegnare le licenze agli account utente con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/18/2019
+ms.date: 08/05/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,20 +17,23 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: Viene illustrato come utilizzare Office 365 PowerShell per assegnare una licenza di Office 365 agli utenti senza licenza.
-ms.openlocfilehash: 91fe9f3a14663ebb9adb61700de3004edd236e0c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Informazioni su come utilizzare Office 365 PowerShell per assegnare una licenza di Office 365 a utenti senza licenza.
+ms.openlocfilehash: c244e60016cb04008e27e2df444703ac7e41db12
+ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069282"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "36198648"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Assegnare le licenze agli account utente con Office 365 PowerShell
 
-**Riepilogo:**  Viene illustrato come utilizzare Office 365 PowerShell per assegnare una licenza di Office 365 agli utenti senza licenza.
+**Riepilogo:**  Informazioni su come utilizzare Office 365 PowerShell per assegnare una licenza di Office 365 a utenti senza licenza.
   
 Gli utenti non possono utilizzare i servizi di Office 365 finché all'account non è stata assegnata una licenza da un piano di gestione delle licenze. È possibile utilizzare Office 365 PowerShell per assegnare rapidamente le licenze agli account senza licenza. 
 
+>[!Note]
+>Gli account utente devono essere assegnati a un percorso. È possibile eseguire questa operazione dalle proprietà di un account utente nell'interfaccia di amministrazione di Microsoft 365 o da PowerShell.
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
@@ -44,6 +47,20 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
 Successivamente, ottenere il nome di accesso dell'account a cui si desidera aggiungere una licenza, noto anche come nome dell'entità utente (UPN).
+
+Successivamente, verificare che l'account utente disponga di una posizione di utilizzo assegnata.
+
+```
+Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
+```
+
+Se non è stata assegnata alcuna posizione di utilizzo, è possibile assegnarne una con questi comandi:
+
+```
+$userUPN="<user sign-in name (UPN)>"
+$userLoc="<ISO 3166-1 alpha-2 country code>"
+Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
+```
 
 Infine, specificare il nome di accesso dell'utente e il nome del piano di licenza ed eseguire questi comandi.
 
@@ -68,7 +85,7 @@ Per trovare gli account senza licenza nell'organizzazione, eseguire questo coman
 ```
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
-    
+
 È possibile assegnare licenze solo agli account utente con la proprietà **UsageLocation** impostata su un codice paese ISO 3166-1 Alpha-2 valido. Ad esempio, US per gli Stati Uniti e FR per la Francia. Alcuni servizi di Office 365 non sono disponibili in alcuni paesi. Per ulteriori informazioni, vedere [informazioni sulle restrizioni di licenza](https://go.microsoft.com/fwlink/p/?LinkId=691730).
     
 Per trovare account che non dispongono di un valore **UsageLocation** , eseguire il comando seguente.

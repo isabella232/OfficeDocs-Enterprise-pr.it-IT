@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute per Office 365 fornisce un percorso di routing alternativo a numerosi servizi Internet di Office 365. L'architettura di ExpressRoute per Office 365 si basa sulla pubblicità di prefissi IP pubblici dei servizi di Office 365 già accessibili tramite Internet nei circuiti ExpressRoute di provisioning per la successiva ridistribuzione di tali prefissi IP in rete. Con ExpressRoute è possibile abilitare efficacemente diversi percorsi di routing, tramite Internet e tramite ExpressRoute, per molti servizi di Office 365. Questo stato del routing sulla rete può rappresentare una modifica significativa del modo in cui è stata progettata la topologia di rete interna.
-ms.openlocfilehash: c9e4fa4f5c8cb46d32e1b0de6f18f66b3a971aa6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3e3171c3058b485ef644af3f1d33a9f80c71345c
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067402"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722725"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementazione di ExpressRoute per Office 365
 
@@ -568,7 +568,7 @@ Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/implementexp
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Connettività di rete con Office 365](network-connectivity.md)
+[Valutazione della connettività di rete di Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute per Office 365](azure-expressroute.md)
   

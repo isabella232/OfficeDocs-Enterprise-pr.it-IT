@@ -3,7 +3,7 @@ title: Durante e dopo lo spostamento dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 07/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067732"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786231"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -38,7 +38,7 @@ Guardare il centro messaggi di Office 365 per conferma quando si sposta per ogni
 |Sud Corea  <br/> |31 ottobre 2018  <br/> |
 |Regno Unito  <br/> |15 settembre 2019  <br/> |
 |Francia  <br/> |15 settembre 2020  <br/> |
-|Emirati Arabi Uniti  <br/> |Annunciate  <br/> |
+|Emirati Arabi Uniti  <br/> |2022 febbraio 1  <br/> |
 |Sudafrica  <br/> |Annunciate  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
@@ -74,7 +74,7 @@ Quando viene spostato SharePoint Online, vengono spostati anche i dati per i ser
     
 - Servizi video di Office 365
     
-- Office Online
+- Office nel browser s
     
 - Office 365 ProPlus
     

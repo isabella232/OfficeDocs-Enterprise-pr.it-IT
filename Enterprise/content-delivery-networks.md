@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilizzare queste informazioni per scoprire in che modo Office 365 utilizza le reti di distribuzione del contenuto (reti CDN) per migliorare le prestazioni.
-ms.openlocfilehash: 8694f8aa4caf6161d221d1375d97ad5b72fb1818
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068023"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722665"
 ---
 # <a name="content-delivery-networks-cdns"></a>Reti di distribuzione del contenuto (reti CDN)
 
@@ -48,6 +48,11 @@ Reti CDN contribuisce a migliorare le prestazioni del servizio cloud in diversi 
 ## <a name="the-office-365-cdn"></a>La rete CDN di Office 365
 
 La rete di distribuzione dei contenuti (CDN) di Office 365 consente agli amministratori di Office 365 di fornire prestazioni migliori per le pagine di SharePoint Online dell'organizzazione memorizzando nella cache le risorse statiche più vicino ai browser che li richiedono, contribuendo ad accelerare Download e riduzione della latenza. La rete CDN di Office 365 utilizza il [protocollo http/2](https://en.wikipedia.org/wiki/HTTP/2) per migliorare la compressione e la velocità di download.
+
+> [!NOTE]
+> Restrizioni per l'utilizzo della rete CDN di Office 365:
+> + La rete CDN di Office 365 è disponibile solo per i tenant nel cloud di **produzione** (tutto il mondo). Gli inquilini del governo degli Stati Uniti, le nuvole cinesi e tedesche attualmente non supportano la rete CDN di Office 365.
+> + La rete CDN di Office 365 attualmente non supporta i tenant configurati con domini personalizzati o "Vanity". Se è stato aggiunto un dominio al tenant seguendo le istruzioni riportate nell'argomento [Add a domain to office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide), la rete CDN di Office 365 restituirà errori quando si tenta di accedere al contenuto dalla rete CDN.
 
 La rete per la distribuzione di contenuti di Office 365 è costituita da diverse reti per la distribuzione di contenuti che consentono di ospitare le risorse statiche in più località o _origini_ e gestirle da reti globali ad alta velocità. In base al tipo di contenuto che si vuole ospitare nella rete per la distribuzione di contenuti di Office 365, è possibile aggiungere origini **pubbliche**, origini **private** o entrambi.
 
@@ -182,7 +187,7 @@ Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/o365cdns](ht
 
 [Principi della connettività di rete di Office 365](https://aka.ms/o365networkingprinciples)
 
-[Connettività di rete con Office 365](network-connectivity.md)
+[Valutazione della connettività di rete di Office 365](assessing-network-connectivity.md)
 
 [Gestione degli endpoint di Office 365](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 

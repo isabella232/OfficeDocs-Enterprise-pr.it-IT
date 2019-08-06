@@ -23,12 +23,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come prepararsi a eseguire il provisioning degli utenti a Office 365 utilizzando la sincronizzazione della directory e i vantaggi a lungo termine dell'utilizzo di questo metodo.
-ms.openlocfilehash: 2361f4484f00d61fda90fed407bf3c287bbc2bc1
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
+ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162469"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35249197"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparare la sincronizzazione della directory a Office 365
 
@@ -113,7 +113,7 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
   - Numero massimo di caratteri per valore: 256
   - Il valore dell'attributo non deve contenere uno spazio.
   - Il valore dell'attributo deve essere univoco all'interno della directory.
-  - Caratteri non validi \< \> : (); , [ ] "
+  - Caratteri non validi \< \> : (); , [ ] " '
     
     Si noti che i caratteri non validi si applicano ai caratteri che seguono il delimitatore di tipo e ":", in modo che SMTP:User@contso.com sia consentita, ma SMTP:user:M@contoso.com non lo è.
     
@@ -124,7 +124,7 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
     
   - Numero massimo di caratteri: 20
   - Il valore dell'attributo deve essere univoco all'interno della directory.
-  - Caratteri non validi: [\ "|,/ \< \> : + =;? \* ]
+  - Caratteri non validi: [\ "|,/ \< \> : + =;? \* ']
   - Se un utente ha un attributo **sAMAccountName** non valido, ma anche un attributo **userPrincipalName** valido, l'account utente verrà creato in Office 365. 
   - Se **sAMAccountName** e **userPrincipalName** non sono validi, è necessario aggiornare l'attributo **userPrincipalName** di servizi di dominio Active Directory. 
     
@@ -148,7 +148,7 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
   - Il numero massimo di caratteri per l'attributo **userPrincipalName** è 113. È consentito un numero specifico di caratteri prima e dopo il simbolo di chiocciola (@), come riportato di seguito: 
   - Numero massimo di caratteri per il nome utente che si trova di fronte al segno di chiocciola (@): 64
   - Numero massimo di caratteri per il nome di dominio dopo il simbolo chiocciola (@): 48
-  - Caratteri non validi: \ &amp; \* % +/=? { } | \< \> ( ) ; : , [ ] "
+  - Caratteri non validi: \ &amp; \* % +/=? { } | \< \> ( ) ; : , [ ] " '
   - Anche la dieresi è un carattere non valido.
   - Il carattere @ è necessario in ogni valore **userPrincipalName**. 
   - Il carattere @ non può essere il primo carattere in ogni valore **userPrincipalName**. 
@@ -160,9 +160,9 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
 
 Vedere [preparare gli attributi della directory con lo strumento IdFix](prepare-directory-attributes-for-synch-with-idfix.md) per utilizzare lo strumento IdFix per identificare gli errori negli attributi di ad DS.
     
-## <a name="2-prepare-the-userprincipalname-attribute"></a>2. preparare l'attributo userPrincipalName
+## <a name="3-prepare-the-userprincipalname-attribute"></a>3. preparare l'attributo userPrincipalName
 
-Active Directory è stato creato per consentire agli utenti finali dell'organizzazione di accedere alla directory tramite **sAMAccountName** o **userPrincipalName**. Analogamente, gli utenti finali possono accedere a Office 365 utilizzando il nome dell'entità utente (UPN) dell'account aziendale o dell'Istituto di istruzione. La sincronizzazione della directory tenta di creare nuovi utenti in Azure Active Directory utilizzando lo stesso UPN presente in AD SD. L'UPN viene formattato come un indirizzo di posta elettronica. 
+Active Directory è stato creato per consentire agli utenti finali dell'organizzazione di accedere alla directory tramite **sAMAccountName** o **userPrincipalName**. Analogamente, gli utenti finali possono accedere a Office 365 utilizzando il nome dell'entità utente (UPN) dell'account aziendale o dell'Istituto di istruzione. La sincronizzazione della directory tenta di creare nuovi utenti in Azure Active Directory utilizzando lo stesso UPN presente in servizi di dominio Active copia. L'UPN viene formattato come un indirizzo di posta elettronica. 
 
 In Office 365, l'UPN è l'attributo predefinito utilizzato per generare l'indirizzo di posta elettronica. È facile ottenere **userPrincipalName** (in servizi di dominio Active Directory e in Azure ad) e l'indirizzo di posta elettronica principale in **proxyAddresses** impostato su valori diversi. Quando sono impostati su valori diversi, possono generare confusione per amministratori e utenti finali. 
   

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: "Informazioni sugli strumenti da utilizzare per la gestione degli utenti di Office 365 e sul modo in cui è possibile utilizzare dipende dalla modalità di gestione delle identità dell'utente. "
-ms.openlocfilehash: 007de5844badbaad2c5061c69cae33523438805f
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 3e29af9e3d01184f9edc386148de60897fb03e27
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102444"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490739"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Strumenti per gestire gli account di Office 365
 
@@ -53,7 +53,7 @@ Quando si decide in che modo l'organizzazione creerà e gestirà gli account, pr
   
 - Il software di sincronizzazione della directory deve essere installato nei server all'interno dell'ambiente locale per connettere le identità tra Office 365 e la directory locale.
     
-- Qualsiasi opzione di sincronizzazione della directory, incluse le opzioni SSO, richiede che gli attributi di directory locali soddisfino gli standard. Le specifiche di quali attributi vengono utilizzate nella directory e quali operazioni di pulizia (se presenti) sono necessarie sono descritte in [prepararsi a eseguire il provisioning degli utenti tramite la sincronizzazione della directory con Office 365](prepare-for-directory-synchronization.md). Per istruzioni su come utilizzare IdFix per automatizzare la pulizia della directory, vedere [Install and Run the Office 365 IdFix Tool](install-and-run-idfix.md) . 
+- Qualsiasi opzione di sincronizzazione della directory, incluse le opzioni SSO, richiede che gli attributi di directory locali soddisfino gli standard. Le specifiche di quali attributi vengono utilizzate nella directory e quali operazioni di pulizia (se presenti) sono necessarie sono descritte in [prepararsi a eseguire il provisioning degli utenti tramite la sincronizzazione della directory con Office 365](prepare-for-directory-synchronization.md). Per istruzioni su come utilizzare IdFix per automatizzare la pulizia della directory, vedere [scaricare ed eseguire lo strumento Office 365 IdFix](install-and-run-idfix.md) . 
     
 - Pianificare il modo in cui si intende creare gli account di Office 365.
     

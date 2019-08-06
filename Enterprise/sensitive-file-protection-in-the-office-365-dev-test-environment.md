@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Riepilogo: configurare e illustrare in che modo Office 365 Information Rights Management protegge i file sensibili, anche quando vengono pubblicati nella raccolta siti di SharePoint Online errata.'
-ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070892"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782496"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protezione dei file sensibili nell'ambiente di sviluppo/test di Office 365
 
@@ -126,9 +126,9 @@ Successivamente, creare una raccolta siti dirigenti e consentire solo ai membri 
   
 1. Nella scheda **Microsoft Office Home**, fare clic sulla sezione **Amministrazione**.
     
-2. Nella scheda dell'interfaccia di **amministrazione di Office** , fare clic su interfaccia di **amministrazione di > SharePoint**.
+2. Nella scheda dell'interfaccia di **amministrazione di Office** , fare clic su interfaccia di **Amministrazione > SharePoint**.
     
-3. Nella scheda dell'interfaccia di **amministrazione di SharePoint** , fare clic su **nuova raccolta siti privati di >**.
+3. Nella scheda dell'interfaccia di **amministrazione di SharePoint** , fare clic su **nuovo > raccolta siti privati**.
     
 4. Nel riquadro nuovo raccolta siti, digitare **dirigenti** in **titolo**, dirigenti nella casella URL, specificare il nome dell'account di amministratore globale in **Administrator**e quindi fare clic su **OK**.
     
@@ -172,7 +172,7 @@ Successivamente, accedere con un account dirigente e creare un documento nella r
     
 4. Digitare il nome dell'account **CEO** e la relativa password, quindi fare clic su **Accedi**.
     
-5. In una nuova scheda del browser, digitare l'URL della raccolta siti dirigenti ( **https://**\<Organization name>**. SharePoint.com/sites/Executives**).
+5. In una nuova scheda del browser, digitare l'URL della raccolta siti dirigenti ( **https://**\<Organization Name>**. SharePoint.com/sites/Executives**).
     
 6. Fare clic su **documenti**, fare clic su **nuovo** e quindi su **documento di Word**.
     
@@ -190,7 +190,7 @@ Quindi scaricare una copia locale del documento SensitiveData-BeforeIRM.docx e q
     
 3. Archiviare il documento **SensitiveData-BeforeIRM.docx** nella cartella creata nel passaggio 1.
     
-4. In una nuova scheda del browser, digitare l'URL della raccolta siti di vendita ( **https://**\<Organization name>**. SharePoint.com/sites/sales**).
+4. In una nuova scheda del browser, digitare l'URL della raccolta siti di vendita ( **https://**\<Organization Name>**. SharePoint.com/sites/sales**).
     
 5. Fare clic sulla cartella **Documenti** della **Raccolta siti vendite**.
     
@@ -316,7 +316,7 @@ Successivamente, agendo da utente normale, provare ad accedere al documento **Se
     
 6. Nella pagina **Documenti**, aprire il documento **SensitiveData-AfterIRM.docx**. 
     
-    Verrà visualizzato un messaggio di errore "Impossibile aprire il documento in Word Online perché è protetto con Information Rights Management (IRM)".  
+    Verrà visualizzato un messaggio in cui viene indicato che "spiacenti, non è possibile aprire il documento perché è protetto da Information Rights Management (IRM)". 
     
 7. Selezionare **Modifica in Word**. Viene chiesto se si desidera aprire il file. Fare clic su **Sì**.
     

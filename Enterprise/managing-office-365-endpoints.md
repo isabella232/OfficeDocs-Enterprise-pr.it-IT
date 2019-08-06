@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Alcune reti aziendali limitano l'accesso a percorsi Internet generici o includono una sostanziale backhaul o l'elaborazione del traffico di rete. Per garantire che i computer su reti come queste possano accedere a Office 365, gli amministratori di rete e proxy devono gestire l'elenco di nomi FQDN, URL e indirizzi IP che compongono l'elenco degli endpoint di Office 365. Queste necessità devono essere aggiunte alla route diretta, al bypass proxy e/o alle regole del firewall e ai file PAC per garantire che le richieste di rete siano in grado di raggiungere Office 365.
-ms.openlocfilehash: 37f90ba5c008a4e0b562526d10185e01d07e4918
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 21129387aeaf20f34e8528829dd942fddd381108
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067172"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782476"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestione degli endpoint di Office 365
 
@@ -115,7 +115,7 @@ Si capisce che potrebbe essere ancora necessario l'elaborazione manuale per le m
 Per informazioni su un modello e un esempio di flusso Microsoft, vedere [use Microsoft Flow to receive an mail for changes to Office 365 IP address and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
   
 <a name="FAQ"> </a>
-## <a name="office-365-network-endpoints-faq"></a>DOMANDE frequenti sugli endpoint di rete di Office 365
+## <a name="office-365-network-endpoints-faq"></a>Domande frequenti sugli endpoint di rete di Office 365
 
 Domande frequenti sull'amministratore sulla connettività di Office 365:
   
@@ -194,7 +194,7 @@ La famiglia di prodotti Office 365 è suddivisa in aree di servizio principali. 
 |**Exchange** <br/> |Exchange Online e Exchange Online Protection <br/> |
 |**SharePoint** <br/> |SharePoint Online e OneDrive for Business <br/> |
 |**Skype for Business Online e Microsoft Teams** <br/> |Skype for business e Microsoft Teams <br/> |
-|**Comune** <br/> |Office 365 Pro Plus, Office Online, Azure AD e altri endpoint di rete comuni <br/> |
+|**Comune** <br/> |Office 365 Pro Plus, Office in un browser, Azure AD e altri endpoint di rete comuni <br/> |
 
 Oltre ai servizi Internet di base, esistono servizi di terze parti che vengono utilizzati solo per integrare la funzionalità. Anche se questi sono necessari per l'integrazione, sono contrassegnati come facoltativi nell'articolo endpoint di Office 365 che indica che la funzionalità di base del servizio continuerà a funzionare se l'endpoint non è accessibile. Qualsiasi endpoint di rete necessario avrà l'attributo obbligatorio impostato su true. Qualsiasi endpoint di rete facoltativo avrà l'attributo obbligatorio impostato su false e l'attributo Notes fornirà informazioni dettagliate sulla funzionalità mancante che è necessario prevedere se la connettività è bloccata.
   

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Riepilogo: in questo articolo viene illustrato in che modo i computer client si connettono ai tenant di Office 365, a seconda della posizione del computer client e del datacenter tenant di Office 365.'
-ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f7b41e1ff4fd8b30ed0f51641c479025b4e04ae5
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068202"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722695"
 ---
 # <a name="client-connectivity"></a>Connettività dei client
 
@@ -130,4 +130,4 @@ Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/o365clientco
 
 [Gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Connettività di rete con Office 365](network-connectivity.md)
+[Valutazione della connettività di rete di Office 365](assessing-network-connectivity.md)

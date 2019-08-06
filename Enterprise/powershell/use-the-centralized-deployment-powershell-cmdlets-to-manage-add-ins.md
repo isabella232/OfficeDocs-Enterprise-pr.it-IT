@@ -15,16 +15,16 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Utilizzare i cmdlet di PowerShell per la distribuzione centralizzata per facilitare la distribuzione e la gestione dei componenti aggiuntivi di Office per l'organizzazione di Office 365.
-ms.openlocfilehash: 404085d79827664437f3ad327fac4a99166adcf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3d6495646c6ce0a1d15f2d911f1fa8af92e3c2c6
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071142"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782586"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usare i cmdlet di PowerShell della distribuzione centralizzata per gestire i componenti aggiuntivi
 
-In qualità di amministratore di Office 365, è possibile distribuire i componenti aggiuntivi di Office agli utenti tramite la caratteristica di distribuzione centralizzata (vedere [gestire la distribuzione dei componenti aggiuntivi di office 365 nell'interfaccia di amministrazione di office 365](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). Oltre a distribuire i componenti aggiuntivi di Office tramite l'interfaccia di amministrazione di Office 365, è anche possibile utilizzare Microsoft PowerShell. [Scaricare](https://go.microsoft.com/fwlink/p/?linkid=850850) i cmdlet di PowerShell per la distribuzione centralizzata dall'area download Microsoft. 
+Come amministratore di Office 365, è possibile distribuire i componenti aggiuntivi di Office agli utenti tramite la caratteristica di distribuzione centralizzata (vedere [gestire la distribuzione dei componenti aggiuntivi di office 365 nell'](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)interfaccia di amministrazione). Oltre a distribuire i componenti aggiuntivi di Office tramite l'interfaccia di amministrazione, è anche possibile utilizzare Microsoft PowerShell. [Scaricare](https://go.microsoft.com/fwlink/p/?linkid=850850) i cmdlet di PowerShell per la distribuzione centralizzata dall'area download Microsoft. 
   
 ## <a name="what-do-you-want-to-do"></a>Operazione desiderata
 

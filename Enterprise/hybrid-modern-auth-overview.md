@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: L'autenticazione moderna è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure. È disponibile per le distribuzioni ibride di Skype for Business Server locale ed Exchange Server locale, nonché per gli ibridi di Skype for business suddivisi in domini. In questo articolo vengono forniti collegamenti a documenti correlati relativi ai prerequisiti, all'installazione e alla disabilitazione dell'autenticazione moderna e ad alcuni client correlati (es. Informazioni su Outlook e client Skype).
-ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
-ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
+ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34404218"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782456"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Panoramica dell'autenticazione moderna ibrida e prerequisiti per l'utilizzo con i server Skype for business e Exchange locali
 
@@ -88,7 +88,7 @@ Verificare e controllare questi elementi dall'elenco prima di continuare:
     
   - Il dominio SIP viene aggiunto come dominio federato in Office 365
     
-  - Tutti i front-end di questo devono disporre di connessioni in uscita su Internet, per gli URL di autenticazione di Office 365 (TCP 443) e per i CRL radice del certificato (TCP 80) elencati nelle righe 56 e 125 della sezione ' Microsoft 365 Common and Office Online ' di [office 365 URLs and IP intervalli di indirizzi](urls-and-ip-address-ranges.md).
+  - Tutti i front-end di questo devono disporre di connessioni in uscita su Internet, per gli URL di autenticazione di Office 365 (TCP 443) e per i CRL radice del certificato (TCP 80) elencati nelle righe 56 e 125 della sezione ' Microsoft 365 Common and Office ' degli [URL e degli indirizzi IP di office 365 intervalli](urls-and-ip-address-ranges.md).
   
 - **Skype for business locale in un ambiente ibrido di Office 365**
   - Una distribuzione di Skype for Business Server 2019 con tutti i server che eseguono Skype for Business Server 2019.

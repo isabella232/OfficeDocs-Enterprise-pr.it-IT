@@ -15,18 +15,18 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Sintesi: utilizzare PowerShell di Office 365 per configurare le proprietà di uno o più account utente nel tenant di Office 365.'
-ms.openlocfilehash: 3fdf5c4c5dbb4c44a3c91d343bd77810a1411a20
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 53a99c33dcebebc87e12a468d56e5460b8a0c111
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069240"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782606"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurare le proprietà degli account utente con Office 365 PowerShell
 
  **Sintesi:** Utilizzare PowerShell di Office 365 per configurare le proprietà di uno o più account utente nel tenant di Office 365.
   
-Sebbene sia possibile utilizzare l'interfaccia di amministrazione di Office 365 per configurare le proprietà degli account utente del tenant di Office 365, è possibile utilizzare anche PowerShell di Office 365 ed eseguire delle operazioni che non sono possibili nell'interfaccia di amministrazione di Office 365.
+Anche se è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per configurare le proprietà degli account utente del tenant di Office 365, è anche possibile utilizzare PowerShell per Office 365 e fare alcuni elementi che non possono essere configurati dal centro di amministrazione.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 

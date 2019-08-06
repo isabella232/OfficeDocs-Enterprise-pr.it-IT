@@ -1,9 +1,9 @@
 ---
 title: Diagnosi dei problemi delle prestazioni con SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/23/2018
+ms.date: 7/9/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: In questo articolo viene illustrato come è possibile diagnosticare problemi comuni con il sito di SharePoint Online utilizzando gli strumenti di sviluppo di Internet Explorer.
-ms.openlocfilehash: dfc66822a98ce26bfd9fd94d9d58882b8b140831
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a4d66fd019a3b477a97dbf039144734dc7ee1288
+ms.sourcegitcommit: cb338a74194ec9ba0913070e2b74c9f50caffb3b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067862"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605501"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosi dei problemi delle prestazioni con SharePoint Online
 
@@ -27,11 +27,11 @@ In questo articolo viene illustrato come è possibile diagnosticare problemi com
 Esistono tre modi per identificare che una pagina in un sito di SharePoint Online presenta di un problema di prestazioni con le personalizzazioni.
   
 - Il network monitor della barra degli strumenti F12
-    
+
 - Confronto di una linea di base non personalizzata
-    
+
 - Metrica dell'intestazione delle risposte di SharePoint Online
-    
+
 In questo argomento viene descritto come utilizzare ciascuno di questi metodi per diagnosticare problemi di prestazioni. Dopo aver individuato la causa del problema, è possibile lavorare per una soluzione utilizzando gli articoli relativi al miglioramento delle prestazioni di SharePoint che è possibile trovare http://aka.ms/tunesu.
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Utilizzo della barra degli strumenti F12 per diagnosticare le prestazioni in SharePoint Online
@@ -40,14 +40,14 @@ In questo argomento viene descritto come utilizzare ciascuno di questi metodi pe
 In questo articolo si utilizza Internet Explorer 11. Le versioni degli strumenti di sviluppo F12 su altri browser dispongono di caratteristiche simili, anche se potrebbero apparire leggermente diversi. Per informazioni sugli strumenti di sviluppo F12, vedere:
   
 - [Novità degli strumenti F12](https://go.microsoft.com/fwlink/p/?LinkId=522545)
-    
+
 - [Utilizzo degli strumenti di sviluppo F12](https://go.microsoft.com/fwlink/p/?LinkId=522546)
-    
-Per visualizzare gli strumenti di sviluppo premere **F12**, quindi fare clic sull'icona Wi-Fi: 
+
+Per visualizzare gli strumenti di sviluppo premere **F12**, quindi fare clic sull'icona Wi-Fi:
   
 ![Schermata dell'icona Wi-Fi di Strumenti di sviluppo F12](media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
   
-Nella scheda **Rete**, premere il pulsante verde di riproduzione per caricare la pagina. Lo strumento restituisce tutti i file che il browser richiede per ottenere la pagina richiesta dall'utente. La schermata seguente mostra un elenco di questo tipo. 
+Nella scheda **Rete**, premere il pulsante verde di riproduzione per caricare la pagina. Lo strumento restituisce tutti i file che il browser richiede per ottenere la pagina richiesta dall'utente. La schermata seguente mostra un elenco di questo tipo.
   
 ![Schermata dell'elenco di file restituito con una richiesta di pagina.](media/247a9422-76da-4b0c-bed3-ce77b05e4560.png)
   
@@ -65,37 +65,27 @@ Il modo migliore per determinare i punti deboli delle prestazioni del sito consi
 ## <a name="viewing-sharepoint-response-header-information"></a>Visualizzazione delle informazioni di intestazione della risposta di SharePoint
 <a name="F12ToolInfo"> </a>
 
-In SharePoint Online e SharePoint Server 2013 è possibile accedere alle informazioni inviate al browser nell'intestazione della risposta per ogni file. I due valori più utili per la diagnosi dei problemi di prestazioni sono SPRequestDuration e X-SharePointHealthScore:
-  
-- **SPRequestDuration**
-    
-    È la quantità di tempo impiegato per l'elaborazione della richiesta sul server. Ciò consente di determinare se la richiesta è molto pesante e richiede un utilizzo intensivo delle risorse. Questa è la migliore conoscenza disponibile relativa all'attività del server per visualizzare la pagina.
-    
-- **X-SharePointHealthScore**
-    
-    In questo modo viene indicato l'utilizzo del server o della CPU su cui viene eseguita l'istanza di SharePoint. Questo numero è compreso tra 0 e 10 dove 0 indica che il server è inattivo e 10 indica che il server è molto occupato. Un HealthScore che è coerentemente 9 o 10 potrebbe indicare un problema di prestazioni in esecuzione con il server. Qualsiasi altro numero indica che il server opera all'interno dell'intervallo previsto.
-    
- **Per visualizzare le informazioni di intestazione della risposta di SharePoint**
+In SharePoint Online, è possibile accedere alle informazioni restituite al browser nell'intestazione della risposta per ogni file. Il valore più utile per la diagnosi dei problemi di prestazioni è **SPRequestDuration**, che consente di visualizzare l'intervallo di tempo in cui la richiesta ha eseguito il server per l'elaborazione. Ciò consente di determinare se la richiesta è molto pesante e richiede un utilizzo intensivo delle risorse. Questa è la migliore conoscenza disponibile relativa all'attività del server per visualizzare la pagina.
+
+### <a name="to-view-sharepoint-response-header-information"></a>Per visualizzare le informazioni di intestazione della risposta di SharePoint
   
 1. Verificare di avere installato gli strumenti F12. Per ulteriori informazioni sul download e sull'installazione di questi strumenti, vedere [What ' s New in F12 Tools](https://go.microsoft.com/fwlink/p/?LinkId=522545).
-    
-2. Negli strumenti F12,nella scheda **Rete**, premere il pulsante verde di riproduzione per caricare la pagina. 
-    
-3. Fare clic sui file .aspx restituiti dagli strumenti, quindi fare clic su **DETTAGLI**. 
-    
+
+2. Negli strumenti F12,nella scheda **Rete**, premere il pulsante verde di riproduzione per caricare la pagina.
+
+3. Fare clic sui file .aspx restituiti dagli strumenti, quindi fare clic su **DETTAGLI**.
+
     ![Mostra i dettagli dell'intestazione della risposta](media/1f8a044a-caf8-4613-be2b-7e064141ac8a.png)
   
-4. Fare clic su **Intestazioni di risposta**. 
-    
+4. Fare clic su **Intestazioni di risposta**.
+
     ![Diagramma che mostra l'URL dell'intestazione della risposta](media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
   
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>Qual è la causa dei problemi delle prestazioni in SharePoint Online?
 <a name="F12ToolInfo"> </a>
 
-Nell'articolo [Navigation options for SharePoint Online](navigation-options-for-sharepoint-online.md) viene illustrato un esempio dell'utilizzo del valore SPRequestDuration per determinare che la navigazione strutturale complicata causava che la pagina richiedeva molto tempo per l'elaborazione sul server. Adottando un valore per un sito di base (senza personalizzazione), è possibile determinare se un determinato file richieda molto tempo per il caricamento. Nell'esempio utilizzato in [Navigation options for SharePoint Online](navigation-options-for-sharepoint-online.md) è il file .aspx principale. Tale file contiene la maggior parte del codice ASP.NET che viene eseguito per il caricamento della pagina. A seconda del modello di sito utilizzato, potrebbe trattarsi di start.aspx, home.aspx, default.aspx o di un altro nome se si personalizza la home page. Se questo numero è notevolmente superiore al sito di base, è molto probabile che sia in corso qualcosa di complesso nella pagina che causa problemi delle prestazioni. 
+Nell'articolo [Navigation options for SharePoint Online](navigation-options-for-sharepoint-online.md) viene illustrato un esempio dell'utilizzo del valore SPRequestDuration per determinare che la navigazione strutturale complicata causava che la pagina richiedeva molto tempo per l'elaborazione sul server. Adottando un valore per un sito di base (senza personalizzazione), è possibile determinare se un determinato file richieda molto tempo per il caricamento. Nell'esempio utilizzato in [Navigation options for SharePoint Online](navigation-options-for-sharepoint-online.md) è il file .aspx principale. Tale file contiene la maggior parte del codice ASP.NET che viene eseguito per il caricamento della pagina. A seconda del modello di sito utilizzato, potrebbe trattarsi di start.aspx, home.aspx, default.aspx o di un altro nome se si personalizza la home page. Se questo numero è notevolmente superiore al sito di base, è molto probabile che sia in corso qualcosa di complesso nella pagina che causa problemi delle prestazioni.
   
 Dopo aver chiarito che si tratta di un problema specifico del sito, il metodo consigliato per individuare la causa della riduzione delle prestazioni è l'eliminazione di tutte le possibili cause, come le personalizzazioni della pagina, per poi riaggiungerle al sito una alla volta. Dopo aver rimosso sufficienti personalizzazioni soddisfacenti della pagina, sarà quindi possibile riaggiungere le personalizzazioni specifiche una alla volta.
   
 Ad esempio, se si dispone di una struttura di spostamento molto complessa provare a modificare tale struttura per non visualizzare siti secondari, quindi controllare gli strumenti di sviluppo per vedere se ci sono differenze. In alternativa, se si dispone di una grande quantità di contenuti di aggiornamenti cumulativi provare a rimuoverli dalla pagina e vedere se si ottengono miglioramenti. Se si eliminano tutte le possibili cause e si aggiungono nuovamente una alla volta, è possibile identificare facilmente quali funzionalità sono il problema principale, per poi lavorare a una soluzione.
-  
-

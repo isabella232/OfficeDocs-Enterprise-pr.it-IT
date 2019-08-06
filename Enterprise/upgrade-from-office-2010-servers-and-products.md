@@ -3,7 +3,7 @@ title: Risorse utili per l'aggiornamento da server e client di Office 2010
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/03/2019
+ms.date: 07/10/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,32 +21,38 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Il supporto si concluderà presto per i server e le applicazioni client di Office 2010 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
-ms.openlocfilehash: 4c0c5101a7d1dbd068fe4bbbd03eb1bdd41b3b05
-ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
+ms.openlocfilehash: 3cd345f60c534ef8c2a464e4f9535f5f691a9110
+ms.sourcegitcommit: c718aae17c8046d5e1ef67f82ffa10e54e1eb23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34780865"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613452"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2010
 
-Exchange Server 2010 raggiungerà la fine del supporto il **14 gennaio 2020**. Office 2010, SharePoint 2010 e Project Server 2010 raggiungeranno la fine del supporto il **13 ottobre 2020**. Durante la pianificazione dell'aggiornamento, questo è il momento ideale per passare a Office 365. 
+Tenere presente che:
 
-Office 365 dispone di servizi basati su cloud per prodotti di Office 2010 Server quali Exchange Server e SharePoint Server e nuovi servizi, ad esempio teams e OneDrive for business. 
+- Exchange Server 2010 raggiungerà la fine del supporto il **14 gennaio 2020**. 
 
-Office 365 ProPlus, incluso in Office 365 E3 ed E5, è l'insieme di applicazioni client di Office installate nel dispositivo locale. Sono state aggiornate con nuove funzionalità di sicurezza e produttività su base continuativa dal cloud Microsoft.
+- Office 2010, SharePoint 2010 e Project Server 2010 raggiungeranno la fine del supporto il **13 ottobre 2020**. 
+
+Durante la pianificazione dell'aggiornamento, questo è il momento ideale per passare a Office 365. 
+
+- Office 365 dispone di servizi basati su cloud per prodotti server di Office 2010, quali Exchange Server e SharePoint Server e servizi quali teams e OneDrive for business. 
+
+- Office 365 ProPlus, incluso in Office 365 E3 ed E5 e Microsoft 365 Enterprise, è l'insieme di applicazioni client di Office installate nel dispositivo locale. Sono state aggiornate con nuove funzionalità di sicurezza e produttività su base continuativa dal cloud Microsoft.
 
 Utilizzare questo articolo come punto di partenza per esaminare le opzioni.
       
-## <a name="office-2010-planning-content"></a>Contenuto di pianificazione di Office 2010
+## <a name="office-2010-client-and-server-upgrade-planning"></a>Pianificazione dell'aggiornamento del server e del client di Office 2010
   
-|**Per questo prodotto**|**Vedere questa risorsa**|
-|:-----|:-----|
-|Office 2010 (inclusi Word 2010, Excel 2010, PowerPoint 2010 e Outlook 2010)  <br/> |[Guida di orientamento alla fine del supporto di Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
-|Exchange Server 2010  <br/> |[Guida di orientamento alla fine del supporto di Exchange 2010](exchange-2010-end-of-support.md) <br/> |
-|SharePoint 2010 o SharePoint Server 2010  <br/> |[Aggiornamento da SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 <br/> | [Guida di orientamento alla fine del supporto di Project Server 2010](project-server-2010-end-of-support.md) <br/> |
-|Lync Server 2010 <br/> | [Pianificare l'aggiornamento a Skype for Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
+|**Per questo prodotto**|**Con la data di fine del supporto**|**Vedere questa risorsa**|
+|:-----|:-----|:-----|
+|Office 2010 (inclusi Word 2010, Excel 2010, PowerPoint 2010 e Outlook 2010)  <br/> | 13 ottobre 2020 |[Guida di orientamento alla fine del supporto di Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
+|Exchange Server 2010  <br/> | 14 gennaio 2020  |[Guida di orientamento alla fine del supporto di Exchange 2010](exchange-2010-end-of-support.md) <br/> |
+|SharePoint 2010 o SharePoint Server 2010  <br/> | 13 ottobre 2020 |[Aggiornamento da SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
+|Project Server 2010 <br/> | 13 ottobre 2020 | [Guida di orientamento alla fine del supporto di Project Server 2010](project-server-2010-end-of-support.md) <br/> |
+|Lync Server 2010 <br/> | 13 aprile 2021 | [Pianificare l'aggiornamento a Skype for Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
 ## <a name="im-a-home-user-what-do-i-do"></a>Sono un utente di casa. What do I do?
 

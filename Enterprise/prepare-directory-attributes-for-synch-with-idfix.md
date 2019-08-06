@@ -16,17 +16,18 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Vengono fornite istruzioni sull'utilizzo di IdFix per preparare e pulire la directory locale prima della sincronizzazione a Office 365.
-ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162369"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490789"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Preparare gli attributi della directory per la sincronizzazione con Office 365 usando lo strumento IdFix
 Questo argomento contiene istruzioni dettagliate sull'esecuzione dello strumento IdFix, alcuni errori comuni che è possibile riscontrare, correzioni consigliate, esempi e procedure consigliate per le operazioni da eseguire se si dispone di un numero elevato di errori.
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>Correzione degli errori nella directory utilizzando l'interfaccia grafica di IdFix
+
 [Eseguire lo strumento IdFix di Office 365](install-and-run-idfix.md) per cercare i problemi nella directory e quindi correggere gli errori nella GUI come descritto in questo argomento. Se lo strumento restituisce una tabella vuota, non vengono individuati errori. Nel caso vi siano molti problemi nella directory, questa potrebbe sovraccaricarsi quando lo strumento restituisce gli errori. Un modo per evitare questo problema è risolvere prima gli errori dello stesso tipo e poi quelli diversi. 
   
 1. Prima di iniziare ad apportare modifiche, esaminare i consigli presentati da IdFix.

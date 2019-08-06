@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Riepilogo: vengono descritte le considerazioni relative alla capacità di rete, agli acceleratori WAN e ai dispositivi di bilanciamento del carico utilizzati per la connessione a Office 365.'
-ms.openlocfilehash: 6ff63232d4efe581ed4a6ba0a83730a5362ecff7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069372"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722625"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Pianificare i dispositivi di rete che si connettono ai servizi di Office 365
 
@@ -66,7 +66,7 @@ Viene fornita una soluzione NLB basata su software incorporata in Windows Server
   
 ## <a name="firewalls-and-proxies"></a>Firewall e proxy
 
-Per ulteriori informazioni sulla configurazione di firewall e proxy per la connessione a Office 365, vedere [Managing office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [network connectivity to Office 365](network-connectivity.md)e [Office 365 Endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) per ulteriori informazioni sui dispositivi e sulla selezione dei circuiti.
+Per ulteriori informazioni sulla configurazione di firewall e proxy per la connessione a Office 365, vedere [Managing office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [valutazione di Office 365 network connectivity](assessing-network-connectivity.md)e [Office 365 Endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) per ulteriori informazioni sui dispositivi e sui circuiti selezione.
   
 ## <a name="see-also"></a>Vedere anche
 

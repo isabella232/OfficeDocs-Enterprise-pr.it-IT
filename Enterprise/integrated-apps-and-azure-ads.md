@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Informazioni su come le app integrate di O365 sono registrate e amministrate in Azure AD
-ms.openlocfilehash: 01bd932ed12e040a0e6dae517d7b4fd360b5da80
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c52b4beefaefd4a115c132c6f82e7f1d20564b46
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067252"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782526"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>App integrate e Azure AD per amministratori di Office 365
 
@@ -32,7 +32,7 @@ La gestione delle app integrate non è sufficiente per [attivare o disattivare l
   
 |**Prerequisiti**|**Comments**|
 |:-----|:-----|
-|[Registrare la sottoscrizione di Azure Active Directory gratuita](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Ogni sottoscrizione a pagamento per Office 365 viene fornito con una sottoscrizione gratuita ad Azure Active Directory. È possibile utilizzare Azure AD per gestire le app e per creare e gestire gli account utente e di gruppo. Per attivare la sottoscrizione e accedere al portale di gestione di Azure, è necessario completare un processo di registrazione una tantum. Successivamente, è possibile accedere a Azure AD dall'interfaccia di amministrazione di Office 365.  <br/> |
+|[Registrare la sottoscrizione di Azure Active Directory gratuita](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Ogni sottoscrizione a pagamento per Office 365 viene fornito con una sottoscrizione gratuita ad Azure Active Directory. È possibile utilizzare Azure AD per gestire le app e per creare e gestire gli account utente e di gruppo. Per attivare la sottoscrizione e accedere al portale di gestione di Azure, è necessario completare un processo di registrazione una tantum. Successivamente, è possibile accedere a Azure AD dall'interfaccia di amministrazione di Microsoft 365.  <br/> |
 |[Attivazione o disattivazione delle app integrate](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114) <br/> |Per consentire alle app di terze parti di accedere alle informazioni di Office 365 e registrare le app in Azure AD, è necessario attivare le app integrate per gli utenti. Ad esempio, quando un utente utilizza un'app di terze parti, l'app potrebbe richiedere l'autorizzazione per accedere al calendario e modificare i file presenti in una cartella di OneDrive for business.  <br/> |
    
 La gestione delle app di Office 365 richiede la conoscenza delle app in Azure AD. Questi articoli consentono di fornire lo sfondo necessario.
