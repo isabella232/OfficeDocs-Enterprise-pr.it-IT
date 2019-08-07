@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Per identificare e differenziare meglio il traffico di rete di Office 365, un nuovo servizio Web pubblica gli endpoint di Office 365, consentendo agli utenti di valutare, configurare e rimanere aggiornati con le ultime modifiche. Questo nuovo servizio Web sostituisce i file scaricabili XML attualmente disponibili.
-ms.openlocfilehash: fcef7a6a175b043639275fedc77faaa689f0e7d5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 8571a91e1ede5d281269b7209f4ddd69a70d586f
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069732"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786251"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Servizio Web per URL e indirizzi IP di Office 365
 
@@ -511,55 +511,15 @@ In futuro potrebbero essere richiesti aggiornamenti ai parametri o ai risultati 
 - L'aggiunta di un nuovo attributo denominato in una delle colonne aggiuntive o in uno degli elementi REST della risposta nel CSV di risposta.
 - L'aggiunta di un nuovo metodo Web con un nuovo nome che non è chiamato dai client precedenti.
 
-## <a name="office-365-endpoint-functions-module"></a>Modulo di funzioni di Endpoint di Office 365
+## <a name="exporting-a-proxy-pac-file"></a>Esportare un file PAC Proxy
 
-Microsoft ospita un servizio REST per ottenere l'URI più nuovo e recente per i servizi di Office 365.  Per poter usare l'URI come raccolta, è possibile utilizzare questo modulo con alcuni cmdlet utili.
-
-### <a name="calling-the-rest-service"></a>Chiamare il servizio REST
-
-Per usare questo modulo, è sufficiente copiare il file del modulo [O365EndpointFunctions.psm1](https://github.com/samurai-ka/PS-Module-O365EndpointService/blob/master/O365EndpointFunctions.psm1) in un punto qualsiasi del disco rigido e importarlo direttamente con questo comando:
-
-```powershell
-    Import-Module O365EndpointFunctions.psm1
-```
-
-Dopo avere importato il modulo, sarà possibile chiamare il servizio REST. L'URI sarà restituito come una raccolta che può essere elaborata direttamente in PowerShell. È necessario immettere il nome del tenant di Office 365, come descritto in questo comando:
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant]
-```
-
-#### <a name="parameters"></a>Parametri
-
-- **tenantName** - il nome del tenant di Office 365. Questo parametro è obbligatorio.
-- **ForceLatest** - questa opzione obbligherà le API REST a restituire l'intero elenco di URI più recente.
-- **IPv6** - restituisce il parametro e gli indirizzi IPv6. Verrà restituito solo IPv4 come predefinito.
-
-### <a name="examples"></a>Esempi
-
-Restituire l'elenco completo di tutti gli URI, inclusi gli indirizzi IPv6
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
-```
-
-Restituire solo gli indirizzi IP per il servizio Exchange Online
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
-```
-
-### <a name="exporting-a-proxy-pac-file"></a>Esportare un file PAC Proxy
-
-È possibile utilizzare questo modulo per creare un file PAC Proxy. In questo esempio si ottengono in primo luogo gli endpoint, quindi si filtrano i risultati per selezionare gli URL. Tali URL vengono reindirizzati per l’esportazione.  
-
-```powershell
- Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
-```
+[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) è uno script di PowerShell che legge gli ultimi endpoint di rete dall'indirizzo IP e dall'URL di Office 365 e crea un file PAC di esempio. Per informazioni sull'uso di Get-PacFile, vedere [Usare un file PAC per il routing diretto del traffico vitale di Office 365](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
 
 ## <a name="related-topics"></a>Argomenti correlati
   
 [URL e intervalli di indirizzi IP per Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+
+[Gestione degli endpoint di Office 365](managing-office-365-endpoints.md)
   
 [Domande frequenti sugli endpoint di Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
@@ -567,7 +527,7 @@ Restituire solo gli indirizzi IP per il servizio Exchange Online
 
 [Ottimizzazione delle prestazioni e della rete di Office 365](network-planning-and-performance.md)
 
-[Connettività di rete con Office 365](network-connectivity.md)
+[Valutazione della connettività di rete di Office 365](assessing-network-connectivity.md)
   
 [Qualità multimediale e prestazioni della connettività di rete in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

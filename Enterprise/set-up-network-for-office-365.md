@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Riepilogo: consultare questi articoli per comprendere le funzionalità di rete per Office 365.'
-ms.openlocfilehash: 6fb1d4d441719f61886b9263b30cdf27cbe7eaf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070822"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722685"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Configurare la rete per Office 365
 
@@ -38,7 +38,7 @@ Per una panoramica sulla connettività per Office 365, consultare gli articoli s
 
 - [Informazioni generali sulla connettività di rete di Office 365](office-365-networking-overview.md)
 - [Principi della connettività di rete di Office 365](office-365-network-connectivity-principles.md)
-- [Connettività di rete con Office 365](network-connectivity.md)
+- [Valutazione della connettività di rete di Office 365](assessing-network-connectivity.md)
 
 Per informazioni sull'ottimizzazione delle prestazioni, vedere [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](network-planning-and-performance.md).
 
