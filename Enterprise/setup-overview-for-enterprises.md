@@ -3,6 +3,7 @@ title: Distribuire Office 365 Enterprise per l'organizzazione
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Questi passaggi introduttivi sono stati creati per facilitare la configurazione della rete, creare identità, distribuire Office 365 ProPlus, eseguire la migrazione dei dati e aiutare gli utenti dell'organizzazione a iniziare a usare Office 365.
-ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 20b970651d2ff432e0bf7b5d74bdc5f02e34f225
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249504"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302718"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Distribuire Office 365 Enterprise per l'organizzazione
 
@@ -77,3 +78,5 @@ Per distribuire Office 365 Enterprise da solo, ecco i passaggi consigliati.
 >[!Note]
 >Questi passaggi sono anche per le aziende [](https://go.microsoft.com/fwlink/?LinkId=627221) e i nonprofit che desiderano iniziare con una distribuzione personalizzata di Office 365 Enterprise. 
 >
+
+Se si dispone di un abbonamento a Microsoft 365 Enterprise, iniziare da [qui](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise).

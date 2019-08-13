@@ -3,14 +3,6 @@
 
 
 
-## <a name="week-of-july-01-2019"></a>Settimana del 1 ° luglio 2019
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 7/2/2019 | [Spostare un sito di SharePoint in una posizione geografica diversa](/Office365/Enterprise/move-sharepoint-between-geo-locations) | modificato |
-
-
 ## <a name="week-of-july-08-2019"></a>Settimana del 08 luglio 2019
 
 
@@ -120,3 +112,14 @@
 | 7/29/2019 | [Office 365 US Government High endpoint GCC](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificato |
 | 7/29/2019 | [URL e intervalli di indirizzi IP per Office 365 gestito da 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | modificato |
 | 7/29/2019 | [URL e intervalli di indirizzi IP per Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificato |
+
+
+## <a name="week-of-august-05-2019"></a>Settimana del 05 agosto 2019
+
+
+| Data di pubblicazione |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 8/5/2019 | [Aggiungere più utenti contemporaneamente a Office 365 - Guida per amministratore](/Office365/Enterprise/add-several-users-at-the-same-time) | modificato |
+| 8/5/2019 | [Assegnare le licenze agli account utente con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificato |
+| 8/6/2019 | [Servizio Web di indirizzi IP e URL di Office 365](/Office365/Enterprise/office-365-ip-web-service) | modificato |
+| 8/7/2019 | [Valutazione della connettività di rete di Office 365](/Office365/Enterprise/assessing-network-connectivity) | modificato |
