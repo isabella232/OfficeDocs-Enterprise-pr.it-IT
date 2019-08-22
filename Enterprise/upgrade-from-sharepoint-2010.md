@@ -3,7 +3,7 @@ title: Aggiornamento da SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: La terminazione del supporto per SharePoint 2010 e SharePoint Server 2010 termina il 13 ottobre 2020. Utilizzare questo articolo come guida per l'aggiornamento a SharePoint Online o a una versione più recente di SharePoint Server locale.
-ms.openlocfilehash: c3860e8229c8633ea605228d7d3553d0f673a7d3
-ms.sourcegitcommit: d3f8df9439e9cd15333f01b5cde2001fb4b74113
+ms.openlocfilehash: 944dd4a2980097611de1fa9239acbfca46517960
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35643063"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491325"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Aggiornamento da SharePoint 2010
 
@@ -178,6 +178,16 @@ Un ottimo modo per vedere come funziona una farm di SharePoint ibrida è la crea
   
 > [!NOTE]
 > Tenere presente che la farm di SharePoint Server 2010 deve prima essere aggiornata, in locale, a SharePoint Server 2013 o SharePoint Server 2016 per utilizzare l'opzione ibrida. SharePoint Foundation 2010 e SharePoint Foundation 2013 non sono in grado di creare connessioni ibride con SharePoint Online. 
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Riepilogo delle opzioni per il client e i server di Office 2010 e Windows 7
+
+Per un riepilogo visivo dell'aggiornamento, la migrazione e le opzioni di spostamento al cloud per il client e i server di Office 2010 e Windows 7, scaricare il [poster di fine servizio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del servizio, con percorsi preferiti e supporto delle opzioni in Microsoft 365 Enterprise evidenziato.
+
+È possibile stampare questo poster nei formati lettera, legale o tabloid (11 x 17).
   
 ## <a name="related-topics"></a>Argomenti correlati
 

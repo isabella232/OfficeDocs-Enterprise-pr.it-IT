@@ -3,7 +3,7 @@ title: Guida di orientamento alla fine del supporto di Project Server 2010
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 07/11/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: La terminazione del supporto per Project Server 2010 termina il 13 ottobre 2020. Utilizzare questo articolo come guida per l'aggiornamento a Project online o a una versione più recente di Project Server locale.
-ms.openlocfilehash: 8001a3e3c9cb40d23f60a6d38aceca55e4838831
-ms.sourcegitcommit: 19de9984f47a1490e277848f079088685ad22a63
+ms.openlocfilehash: 5133cfaba65349133246e4e3eee3dd2fc286289d
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630399"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491315"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Guida di orientamento alla fine del supporto di Project Server 2010
 
@@ -197,6 +197,16 @@ Altre risorse:
 - [Descrizioni dei servizi di Project Online](https://go.microsoft.com/fwlink/p/?linkid=841280): vedere le funzionalità di gestione del portfolio incluse in project server 2016 e Project Online Premium.
     
 - [Guida alla migrazione di Microsoft Office Project Portfolio Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841279)
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Riepilogo delle opzioni per il client e i server di Office 2010 e Windows 7
+
+Per un riepilogo visivo dell'aggiornamento, la migrazione e le opzioni di spostamento al cloud per il client e i server di Office 2010 e Windows 7, scaricare il [poster di fine servizio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del servizio, con percorsi preferiti e supporto delle opzioni in Microsoft 365 Enterprise evidenziato.
+
+È possibile stampare questo poster nei formati lettera, legale o tabloid (11 x 17).
     
 ## <a name="related-topics"></a>Argomenti correlati
 

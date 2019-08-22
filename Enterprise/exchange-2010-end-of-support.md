@@ -3,7 +3,7 @@ title: Guida di orientamento alla fine del supporto di Exchange 2010
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 08/12/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 si sta avvicinando alla fine del supporto. Utilizzare questa roadmap di pianificazione come guida per preparare l'aggiornamento a Exchange Online o a una versione più recente di Exchange Server locale.
-ms.openlocfilehash: a08ef80d2e6081adbc62b4c534ef185dcaff611f
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: 82d09b2193e009cfdf553743199638ca5dc4f319
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302753"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491244"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Guida di orientamento alla fine del supporto di Exchange 2010
 
@@ -209,6 +209,16 @@ Exchange 2016 include tutte le funzionalità e gli avanzamenti inclusi nelle ver
 - Modifiche allo schema di Active Directory per Exchange [2016](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.150%29.aspx)
 - Requisiti di sistema per Exchange [2016](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx)
 - Prerequisiti per Exchange [2016](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.150%29.aspx)
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Riepilogo delle opzioni per il client e i server di Office 2010 e Windows 7
+
+Per un riepilogo visivo dell'aggiornamento, la migrazione e le opzioni di spostamento al cloud per il client e i server di Office 2010 e Windows 7, scaricare il [poster di fine servizio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del servizio, con percorsi preferiti e supporto delle opzioni in Microsoft 365 Enterprise evidenziato.
+
+È possibile stampare questo poster nei formati lettera, legale o tabloid (11 x 17).
 
 ## <a name="what-if-i-need-help"></a>Cosa succede se si ha bisogno di assistenza?
 
