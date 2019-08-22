@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Informazioni sulle differenze di funzionamento dell'autenticazione moderna di Office 365 nelle applicazioni client di Office 2013 e 2016.
-ms.openlocfilehash: 25646c014fc9ff11926c0091209a3419fad811d6
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203625"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491295"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funzionamento dell'autenticazione moderna per le applicazioni client di Office 2013 e Office 2016
 
@@ -43,11 +43,14 @@ Per i servizi di Office 365, lo stato predefinito di autenticazione moderna è:
     
 - **Attivata** per SharePoint Online per impostazione predefinita. 
     
-- **Attivata** per Skype for Business Online per impostazione predefinita. Vedere [Abilitare Skype for Business Online per l'autenticazione moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) per disattivarlo o attivarlo.
+- **Attivata** per Skype for Business Online per impostazione predefinita. Per disattivarla o attivarla, vedere [Abilitare Skype for Business Online per l'autenticazione moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+
+> [!NOTE]
+> Per i tenant creati **prima** del 1° agosto 2017, l'autenticazione moderna è **disattivata** per impostazione predefinita per Exchange Online e Skype for Business Online.
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Comportamento di accesso delle app client di Office
 
-Per impostazione predefinita, le app client di Office 2013 supportano l'autenticazione legacy. cioè supportano l'Assistente per l'accesso ai Microsoft Online Services oppure l'autenticazione di base. Per usare le funzionalità di autenticazione moderna in questi client, è necessario aver impostato le chiavi del Registro di sistema per il client Windows. Per istruzioni, vedere [Abilitare l'autenticazione moderna per Office 2013 nei dispositivi Windows.
+Per impostazione predefinita, le app client di Office 2013 supportano l'autenticazione legacy. cioè supportano l'Assistente per l'accesso ai Microsoft Online Services oppure l'autenticazione di base. Per usare le funzionalità di autenticazione moderna in questi client, è necessario aver impostato le chiavi del Registro di sistema per il client Windows. Per istruzioni, vedere [Abilitare l'autenticazione moderna per Office 2013 nei dispositivi Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
   
 Leggere [come usare l'autenticazione moderna (ADAL) con Skype for Business](https://go.microsoft.com/fwlink/p/?LinkId=785431) per comprenderne il funzionamento. 
   
