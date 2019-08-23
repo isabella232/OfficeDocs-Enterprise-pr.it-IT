@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365.
-ms.openlocfilehash: 8c067374b960ff2cec7cdce87f67da0104697ff3
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 59e51a7118a226bb9c17e9529a517bf681b69849
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782276"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493343"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
@@ -72,6 +72,8 @@ L'interfaccia di amministrazione di Microsoft 365 presenta delle impostazioni a 
 |:-----|:-----|:-----|
 |Consenti ai membri del gruppo esterni all'organizzazione di accedere al contenuto del gruppo|Attivato|Se l'impostazione è su **Attivato**, gli utenti guest possono accedere al contenuto del gruppo; se l'impostazione è su **Disattivato**, non possono farlo. Questa impostazione deve essere su **Attivato** per qualsiasi scenario in cui gli utenti guest interagiscono con Teams o Gruppi di Office 365.|
 |Consenti ai proprietari del gruppo di aggiungere persone esterne all'organizzazione ai gruppi|Attivato|Se è su **Attivato**, i proprietari di Teams o Gruppi di Office 365 possono invitare nuovi utenti guest al gruppo. Se è su **Disattivato**, i proprietari possono invitare solo utenti guest già presenti nella directory.|
+
+Queste impostazioni sono a livello di organizzazione. Vedere [Creare impostazioni per un gruppo specifico](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) per informazioni sulle modifiche di queste impostazioni a livello di gruppo con PowerShell.
 
 ## <a name="teams"></a>Teams
 
