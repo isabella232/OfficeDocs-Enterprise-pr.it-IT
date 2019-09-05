@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: L'autenticazione moderna, è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure, è disponibile per Skype for Business Server locale e Exchange Server locale, nonché per gli ibridi di Skype for business suddivisi in domini.
-ms.openlocfilehash: 5db33a39ff58ae2aa21968c2f092c8ac29af5681
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
+ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493333"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36759684"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Skype for Business locale per utilizzare l'autenticazione moderna ibrida
 
@@ -140,7 +140,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Verificare che i nuovi record siano stati aggiunti eseguendo di nuovo il comando Get-MsolServicePrincipal viene del passaggio 2 e analizzando l'output. Confrontare l'elenco/screenshot da prima al nuovo elenco di nomi SPN (è anche possibile schermare il nuovo elenco per i record). In caso di esito positivo, verranno visualizzati i due nuovi URL presenti nell'elenco. In questo esempio, l'elenco dei nomi SPN includerà ora gli URL https://lyncweb01.contoso.com specifici e https://lyncwebext01.contoso.com/.
+4. Verificare che i nuovi record siano stati aggiunti eseguendo di nuovo il comando Get-MsolServicePrincipal viene del passaggio 2 e analizzando l'output. Confrontare l'elenco/screenshot da prima al nuovo elenco di nomi SPN (è anche possibile schermare il nuovo elenco per i record). In caso di esito positivo, verranno visualizzati i due nuovi URL presenti nell'elenco. In questo esempio, l'elenco dei nomi SPN includerà ora gli URL https://lyncwebint01.contoso.com specifici e https://lyncwebext01.contoso.com/.
     
 ### <a name="create-the-evosts-auth-server-object"></a>Creare l'oggetto server auth EvoSTS
 
@@ -174,7 +174,7 @@ Per testare il funzionamento di HMA dopo averla abilitata, disconnettersi da un 
 
 [Collegare di nuovo la panoramica dell'autenticazione moderna](hybrid-modern-auth-overview.md) . 
   
-È necessario sapere come usare l'autenticazione moderna (ADAL) per i client Skype for business? Sono disponibili passaggi. [](https://technet.microsoft.com/en-us/library/mt710548.aspx)
+È necessario sapere come usare l'autenticazione moderna (ADAL) per i client Skype for business? Sono [disponibili passaggi.](https://technet.microsoft.com/en-us/library/mt710548.aspx)
   
 Si desidera leggere questi passaggi come vengono visualizzati per Exchange Server, in locale, in esecuzione senza questo? Tali passaggi sono disponibili qui.
   
