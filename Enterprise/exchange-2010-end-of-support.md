@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 si sta avvicinando alla fine del supporto. Utilizzare questa roadmap di pianificazione come guida per preparare l'aggiornamento a Exchange Online o a una versione più recente di Exchange Server locale.
-ms.openlocfilehash: 82d09b2193e009cfdf553743199638ca5dc4f319
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: 94efc456df67017a557b14edcc9348433c862c6a
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491244"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782387"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Guida di orientamento alla fine del supporto di Exchange 2010
 
@@ -212,14 +212,14 @@ Exchange 2016 include tutte le funzionalità e gli avanzamenti inclusi nelle ver
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Riepilogo delle opzioni per il client e i server di Office 2010 e Windows 7
 
-Per un riepilogo visivo dell'aggiornamento, la migrazione e le opzioni di spostamento al cloud per il client e i server di Office 2010 e Windows 7, scaricare il [poster di fine servizio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+Per un riepilogo visivo dell'aggiornamento, la migrazione e le opzioni di spostamento al cloud per i client e i server di Office 2010 e Windows 7, vedere il [poster relativo alla fine del supporto tecnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del servizio, con percorsi preferiti e supporto delle opzioni in Microsoft 365 Enterprise evidenziato.
+Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del supporto, con percorsi preferiti e supporto delle opzioni in Microsoft 365 Enterprise evidenziato.
 
-È possibile stampare questo poster nei formati lettera, legale o tabloid (11 x 17).
-
+È anche possibile [scaricare](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) questo poster e stamparlo nei formati lettera, legale o tabloid (11 x 17).
+      
 ## <a name="what-if-i-need-help"></a>Cosa succede se si ha bisogno di assistenza?
 
 Se si esegue la migrazione a Office 365, potrebbe essere possibile utilizzare il servizio Microsoft FastTrack. In FastTrack sono disponibili procedure consigliate, strumenti e risorse che consentono di eseguire la migrazione a Office 365 nel modo più semplice possibile. È consigliabile disporre di un supporto tecnico reale che consentirà di eseguire la migrazione, dalla pianificazione e progettazione fino alla migrazione dell'ultima cassetta postale. Se si desiderano ulteriori informazioni su FastTrack, vedere [Microsoft FastTrack](https://fasttrack.microsoft.com/).

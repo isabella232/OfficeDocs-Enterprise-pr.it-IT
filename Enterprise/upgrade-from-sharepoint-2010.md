@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: La terminazione del supporto per SharePoint 2010 e SharePoint Server 2010 termina il 13 ottobre 2020. Utilizzare questo articolo come guida per l'aggiornamento a SharePoint Online o a una versione più recente di SharePoint Server locale.
-ms.openlocfilehash: 944dd4a2980097611de1fa9239acbfca46517960
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: c83d91b3ae8124312459033cb59524dec048fd03
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491325"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782433"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Aggiornamento da SharePoint 2010
 
@@ -129,13 +129,13 @@ Se si sceglie di seguire l'intero percorso da SharePoint 2010 a SharePoint Serve
 > [!NOTE]
 > È possibile mantenere la fine del supporto per la farm di SharePoint 2010, installare una farm di SharePoint Server 2016 su un nuovo hardware (in modo che le farm separate vengano eseguite affiancate) e quindi pianificare ed eseguire una migrazione manuale del contenuto (per il download e il caricamento del contenuto, ad esempio). Sono possibili insidie per questi spostamenti manuali, ad esempio i documenti provenienti da 2010 che dispongono di un account di Ultima modifica corrente con l'alias dell'account che esegue lo spostamento manuale, e che alcuni lavori devono essere eseguiti in anticipo (ricreando siti, siti secondari, autorizzazioni e strutture elenco). È opportuno prendere in considerazione i dati che è possibile spostare nello spazio di archiviazione o non è più necessario. Ciò può ridurre l'impatto della migrazione. In entrambi i casi, pulire l'ambiente prima dell'aggiornamento. Accertarsi che la farm esistente sia funzionale prima di eseguire l'aggiornamento e (di sicuro) prima di rimuovere le autorizzazioni. 
   
-Tenere presente i **percorsi di aggiornamento supportati e**non consolidati: 
+Tenere presente i **percorsi di aggiornamento supportati e non consolidati**: 
   
 - [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
     
-Se si dispone **** di personalizzazioni, è importante disporre di un piano di aggiornamento per ogni passaggio del percorso di migrazione: 
+Se si dispone di **personalizzazioni**, è importante disporre di un piano di aggiornamento per ogni passaggio del percorso di migrazione: 
   
 - [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
     
@@ -181,14 +181,14 @@ Un ottimo modo per vedere come funziona una farm di SharePoint ibrida è la crea
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Riepilogo delle opzioni per il client e i server di Office 2010 e Windows 7
 
-Per un riepilogo visivo dell'aggiornamento, la migrazione e le opzioni di spostamento al cloud per il client e i server di Office 2010 e Windows 7, scaricare il [poster di fine servizio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+Per un riepilogo visivo dell'aggiornamento, la migrazione e le opzioni di spostamento al cloud per i client e i server di Office 2010 e Windows 7, vedere il [poster relativo alla fine del supporto tecnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del servizio, con percorsi preferiti e supporto delle opzioni in Microsoft 365 Enterprise evidenziato.
+Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del supporto, con percorsi preferiti e supporto delle opzioni in Microsoft 365 Enterprise evidenziato.
 
-È possibile stampare questo poster nei formati lettera, legale o tabloid (11 x 17).
-  
+È anche possibile [scaricare](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) questo poster e stamparlo nei formati lettera, legale o tabloid (11 x 17).
+        
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Risorse utili per l'aggiornamento da server e client di Office 2007 o 2010](upgrade-from-office-2010-servers-and-products.md)
