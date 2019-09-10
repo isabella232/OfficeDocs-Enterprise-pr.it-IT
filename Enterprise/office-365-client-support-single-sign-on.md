@@ -13,12 +13,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Supporto delle app client di Office 365 per Single Sign-on.
-ms.openlocfilehash: d96bee3da885598ce99e8b66cbd16b68687010a8
-ms.sourcegitcommit: 27614632a0ceccbd5a4083cefa822187417f02a6
+ms.openlocfilehash: e8f3aab27d898ebbc564a1815320bce72a151d35
+ms.sourcegitcommit: b1a32e8df403143fb34eaddf116aed3595228c8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36672916"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "36817252"
 ---
 # <a name="office-365-client-app-support--single-sign-on"></a>Supporto delle app client di Office 365: Single Sign-on
 
@@ -47,7 +47,7 @@ Le versioni più recenti dei client seguenti supportano il servizio Single Sign-
 | ![Icona flusso](media/o365-flow-64x64.png) <br> [Flow](https://flow.microsoft.com) | ![Icona Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala<sup>1</sup>](https://products.office.com/en/business/microsoft-kaizala) | ![Icona Office.com](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Icona dell'obiettivo](media/o365-lens-64x64.png) <br> [Obiettivo di Office<sup>4</sup>](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Icona di OneDrive for business](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) 
 | ![Icona di OneNote](media/o365-OneNote-64x64.png) <br> [OneNote<sup>2</sup>](https://products.office.com/onenote) | ![Icona di Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Icona Planner](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Icona PowerBI](media/o365-powerbi-64x64.png) <br> [Alimentazione BI<sup>2</sup>](https://powerbi.microsoft.com)| ![Icona PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Icona del progetto](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Icona editore](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![Icona di SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Icona di Skype for business](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> business](https://www.skype.com/business/) | ![Icona note adesive](media/o365-stickynotes-64x64.png) <br> [Sticky Notes](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) 
-| ![Icona ondeggiamento](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Icona Teams](media/o365-teams-64x64.png) <br> [Teams<sup>2</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![Icona da fare](media/o365-todo-64x64.png) <br> [To-Do](https://todo.microsoft.com) | ![Icona di Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Icona della lavagna](media/o365-whiteboard-64x64.png) <br> [Lavagna<sup>3</sup>](https://whiteboard.microsoft.com/) 
+| ![Icona ondeggiamento](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Icona Teams](media/o365-teams-64x64.png) <br> [Teams<sup>2</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![Icona da fare](media/o365-todo-64x64.png) <br> [da fare](https://todo.microsoft.com) | ![Icona di Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Icona della lavagna](media/o365-whiteboard-64x64.png) <br> [Lavagna<sup>3</sup>](https://whiteboard.microsoft.com/) 
 | ![Icona Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Icona Yammer](media/o365-yammer-64x64.png) <br> [Yammer<sup>2</sup>](https://products.office.com/yammer/yammer-overview) |
 
 ## <a name="supported-powershell-modules"></a>Moduli di PowerShell supportati
