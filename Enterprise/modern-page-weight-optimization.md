@@ -1,0 +1,82 @@
+---
+title: Ottimizzare il peso delle pagine moderne del sito in SharePoint Online
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
+ms.date: 9/18/2019
+audience: ITPro
+ms.topic: conceptual
+ms.service: o365-administration
+localization_priority: Priority
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: Adm_O365
+ms.reviewer: sstewart
+search.appverid:
+- MET150
+description: Informazioni su come ottimizzare il peso delle pagine moderne del sito in SharePoint Online.
+ms.openlocfilehash: 5e2231468363f58faeac1d7b21e06cd4fa790cf8
+ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37028213"
+---
+# <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Ottimizzare il peso delle pagine moderne del sito in SharePoint Online
+
+Le pagine moderne del sito di SharePoint Online contengono codice serializzato necessario per il rendering del contenuto della pagina, incluse le immagini, il testo, gli oggetti nell'area del contenuto sotto le barre di spostamento e di comando e altri codici HTML che formano la struttura della pagina. Il peso della pagina è una misura di questo codice HTML e deve essere limitato per garantire tempi di caricamento delle pagine ottimali.
+
+Questo articolo spiega come ridurre il peso della pagina nelle pagine moderne del sito.
+
+>[!NOTE]
+>Per ulteriori informazioni sulle prestazioni nei portali moderni di SharePoint Online, vedere [Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/it-IT/sharepoint/modern-experience-performance).
+
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>Usare lo strumento Diagnostica pagine per SharePoint per analizzare il peso delle pagine
+
+Lo **strumento Diagnostica pagine per SharePoint** è un'estensione del browser per Chrome e per la [versione di Microsoft Edge 77 o versioni successive](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8), che consente di analizzare sia le pagine di pubblicazione moderne che quelle classiche di SharePoint. Lo strumento fornisce un report per ogni pagina analizzata che mostra le prestazioni della pagina rispetto a un set di criteri di prestazioni definito. Per installare e conoscere lo strumento Diagnostica pagine per SharePoint, visitare [Usare lo strumento Diagnostica pagine per SharePoint Online](page-diagnostics-for-spo.md).
+
+Quando si analizza una pagina del sito di SharePoint con lo strumento Diagnostica pagine per SharePoint, è possibile visualizzare le informazioni sulla pagina nel risultato **Peso della pagina inferiore a 500 KB** del riquadro _Test diagnostici_. Il risultato sarà verde se il peso della pagina è inferiore al valore della linea di base, mentre sarà rosso se il peso della pagina supera il valore della linea di base.
+
+I risultati possibili includono:
+
+- **Attenzione richiesta** (rosso): il peso della pagina supera 500 KB
+- **Nessuna azione richiesta** (verde): il peso della pagina è inferiore a 500 KB
+
+Se il risultato del **Peso della pagina inferiore a 500 KB** viene visualizzato nella sezione **Attenzione richiesta**, è possibile fare clic sul risultato per consultare le informazioni dettagliate.
+
+![Risultati delle Richieste a SharePoint](media/modern-portal-optimization/pagediag-page-weight.png)
+
+## <a name="remediate-page-weight-issues"></a>Risolvere i problemi di peso delle pagine
+
+Se il peso della pagina supera 500 KB, è possibile migliorare i tempi complessivi di caricamento delle pagine, riducendo il numero di Web part e limitando il contenuto della pagina a un livello appropriato.
+
+Le indicazioni generali per ridurre il peso della pagina includono:
+
+- Limitare il contenuto della pagina a un livello ragionevole e usare più pagine per i contenuti correlati.
+- Ridurre al minimo l'uso delle Web part con contenitori delle proprietà di grandi dimensioni.
+- Usare le viste di rollup non interattive, se possibile.
+- Ottimizzare le dimensioni delle immagini ridimensionando le immagini in modo appropriato, usando formati di immagine compressi e verificando che vengano scaricati da una rete CDN.
+
+Per altre informazioni sulle indicazioni per ridurre il peso della pagina, vedere l'articolo seguente:
+
+- [Ottimizzare le prestazioni delle pagine in SharePoint](https://docs.microsoft.com/it-IT/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
+
+Prima di eseguire le revisioni delle pagine per correggere i problemi di prestazioni, prendere nota del tempo di caricamento delle pagine nei risultati dell'analisi. Eseguire di nuovo lo strumento dopo la revisione per verificare se il nuovo risultato ora rientra nei parametri di riferimento e controllare il tempo di caricamento della nuova pagina per verificare se è migliorato.
+
+![Risultati del tempo di caricamento delle pagine](media/modern-portal-optimization/pagediag-page-load-time.png)
+
+>[!NOTE]
+>Il tempo di caricamento delle pagine può variare in base a un'ampia varietà di fattori, ad esempio il carico di rete, l'ora del giorno e altre condizioni transitorie. È consigliabile verificare il tempo di caricamento delle pagine alcune volte prima e dopo aver apportato modifiche per ottenere la media dei risultati.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Ottimizzare le prestazioni di SharePoint Online](tune-sharepoint-online-performance.md)
+
+[Ottimizzare le prestazioni di Office 365](tune-office-365-performance.md)
+
+[Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/it-IT/sharepoint/modern-experience-performance.md)
+
+[Reti per la distribuzione di contenuti](content-delivery-networks.md)
+
+[Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online](use-office-365-cdn-with-spo.md)
