@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Informazioni su come collaborare con gli utenti di un documento in SharePoint e OneDrive.
-ms.openlocfilehash: c0c74f2457e9b25b37355c58ed18f120261e3364
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: ebb887e4fc337b4c0e94e85e0a08e87be0e74490
+ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992405"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37108226"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborare con gli utenti in un documento
 
-Se è necessario collaborare con gli ospiti nei documenti di SharePoint o OneDrive, è possibile inviare un collegamento di condivisione al documento. In questo articolo verranno illustrati i passaggi di configurazione di Microsoft 365 necessari per configurare i collegamenti di condivisione per SharePoint e OneDrive.
+Se è necessario collaborare con gli ospiti nei documenti di SharePoint o OneDrive, è possibile inviare un collegamento di condivisione al documento. In questo articolo verranno illustrati i passaggi di configurazione di Microsoft 365 necessari per configurare i collegamenti di condivisione per SharePoint e OneDrive per le esigenze dell'organizzazione.
 
 ## <a name="azure-organizational-relationships-settings"></a>Impostazioni delle relazioni organizzative di Azure
 
@@ -44,7 +44,7 @@ Affinché gli utenti dispongano dell'accesso a un documento in SharePoint o OneD
 
 Le impostazioni a livello di organizzazione per SharePoint determinano le impostazioni disponibili per i singoli siti di SharePoint. Le impostazioni del sito non possono essere più permissive rispetto alle impostazioni a livello di organizzazione. L'impostazione a livello di organizzazione per OneDrive determina il livello di condivisione disponibile nelle raccolte OneDrive degli utenti.
 
-Per SharePiont e OneDrive, se si desidera consentire la condivisione di file e cartelle con utenti anonimi, scegliere **chiunque**. Se si desidera garantire che tutti gli utenti siano in grado di eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. 
+Per SharePoint e OneDrive, se si desidera consentire la condivisione di file e cartelle con utenti anonimi, scegliere **chiunque**. Se si desidera garantire che tutti gli utenti siano in grado di eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. I collegamenti di *tutti* gli utenti sono il modo più semplice per condividere: gli utenti possono aprire il collegamento senza l'autenticazione e sono liberi di passarlo ad altri.
 
 Per SharePoint, scegliere l'impostazione più permissiva che sarà necessaria per qualsiasi sito dell'organizzazione.
 

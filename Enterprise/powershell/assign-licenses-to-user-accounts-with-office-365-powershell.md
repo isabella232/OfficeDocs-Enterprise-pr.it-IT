@@ -18,12 +18,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Informazioni su come utilizzare Office 365 PowerShell per assegnare una licenza di Office 365 a utenti senza licenza.
-ms.openlocfilehash: c244e60016cb04008e27e2df444703ac7e41db12
-ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
+ms.openlocfilehash: 4351feaa1dbe9d657ed8df54a74410991834ea5d
+ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "36198648"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37108216"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Assegnare le licenze agli account utente con Office 365 PowerShell
 
@@ -116,7 +116,7 @@ Per assegnare una licenza a un utente, utilizzare il seguente comando in Office 
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-In questo esempio viene assegnata una licenza dal piano di gestione delle licenze **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) all'utente senza licenza **Belindan@litwareinc.com**:
+In questo esempio viene assegnata una licenza dal piano di gestione delle licenze **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) all'utente non autorizzato **\@litwareinc.com**:
   
 ```
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
