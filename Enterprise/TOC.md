@@ -209,6 +209,10 @@
 ##### [Collaborare ai documenti](collaborate-on-documents.md)
 ##### [Collaborare a un sito](collaborate-in-a-site.md)
 ##### [Collaborare in team](collaborate-as-a-team.md)
+#### Sicurezza di condivisione guest
+##### [Condivisione anonima](best-practices-anonymous-sharing.md)
+##### [Limitare l'esposizione accidentale](sharing-limit-accidental-exposure.md)
+##### [Ambiente di condivisione guest sicuro](create-a-secure-guest-sharing-environment.md)
 
 ## Dispositivi
 ### [Scegliere tra MDM e Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
