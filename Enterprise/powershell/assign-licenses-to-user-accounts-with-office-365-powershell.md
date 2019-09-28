@@ -18,12 +18,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Informazioni su come utilizzare Office 365 PowerShell per assegnare una licenza di Office 365 a utenti senza licenza.
-ms.openlocfilehash: 1f12c7b55e6766db5b2afc661ee5337448336ba1
-ms.sourcegitcommit: 71e6a99fb585b4eb1aea3f215c234688f28d2050
+ms.openlocfilehash: e963b9a0f24ae5b573dfe9612d9d09419809defe
+ms.sourcegitcommit: 6b4fca7ccdbb7aeadc705d82f1007ac285f27357
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37273681"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37282931"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Assegnare le licenze agli account utente con Office 365 PowerShell
 
@@ -159,7 +159,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 Successivamente, elencare le sottoscrizioni che l'account utente ha attualmente con questi comandi.
 
 ```
-$userUPN=”<user account UPN>”
+$userUPN="<user account UPN>"
 $licensePlanList = Get-AzureADSubscribedSku
 $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }

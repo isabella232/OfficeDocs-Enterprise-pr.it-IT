@@ -3,7 +3,7 @@ title: Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utent
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 09/27/2019
 audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Informazioni su come assegnare licenze ad account utente e disabilitare i piani di servizio specifici nello stesso momento usando PowerShell di Office 365.
-ms.openlocfilehash: f45c76ba0e756aec057e4243ece51de2af26aaec
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: ac356e5cc70ef36ad2e45b84f0dcd9d2252c79a4
+ms.sourcegitcommit: 6b4fca7ccdbb7aeadc705d82f1007ac285f27357
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782146"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37282921"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente
 
@@ -27,6 +27,40 @@ ms.locfileid: "35782146"
   
 Le sottoscrizioni a Office 365 includono piani di servizio per i singoli servizi. Gli amministratori di Office 365 spesso devono disabilitare alcuni piani quando assegnano le licenze agli utenti. Con le istruzioni disponibili in questo articolo, è possibile assegnare una licenza di Office 365 durante la disabilitazione di piani di servizio specifici usando PowerShell per un singolo account utente o più account utente.
 
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
+
+Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+  
+
+Successivamente, elencare i piani di licenza per il tenant con questo comando.
+
+```
+Get-AzureADSubscribedSku | Select SkuPartNumber
+```
+
+Successivamente, ottenere il nome di accesso dell'account a cui si desidera aggiungere una licenza, noto anche come nome dell'entità utente (UPN).
+
+Successivamente, compilare un elenco di servizi da abilitare. Per un elenco completo dei piani di licenza (noti anche come nomi di prodotto), per i piani di servizio inclusi e per i nomi descrittivi corrispondenti, vedere [nomi di prodotti e identificatori di piani di servizio per la gestione delle licenze](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+
+Per il blocco di comandi riportato di seguito, immettere il nome dell'entità utente dell'account utente, il numero di parte SKU e l'elenco dei piani di servizio per abilitare e rimuovere il testo \< esplicativo e i caratteri e >. Successivamente, eseguire i comandi risultanti nel prompt dei comandi di PowerShell.
+  
+```
+$userUPN="<user account UPN>"
+$skuPart="<SKU part number>"
+$serviceList=<double-quoted enclosed, comma-separated list of enabled services>
+$user = Get-AzureADUser -ObjectID $userUPN
+$skuID= (Get-AzureADSubscribedSku  | Where {$_.SkuPartNumber -eq $skuPart}).SkuID
+$SkuFeaturesToEnable = @($serviceList)
+$StandardLicense = Get-AzureADSubscribedSku | Where {$_.SkuId -eq $skuID}
+$SkuFeaturesToDisable = $StandardLicense.ServicePlans | ForEach-Object { $_ | Where {$_.ServicePlanName -notin $SkuFeaturesToEnable }}
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = $StandardLicense.SkuId
+$License.DisabledPlans = $SkuFeaturesToDisable.ServicePlanId
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAssign
+```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il modulo di Microsoft Azure Active Directory per Windows PowerShell
 
