@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Un riepilogo del modo in cui Microsoft impone l'isolamento tenant per Office 365.
-ms.openlocfilehash: 4859fd5feec50159e71ca2ca8968388c5ab82d64
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: a5b8a3e42aa7acc5cebe8ed21a8599fc03b5060f
+ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067533"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37375524"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Isolamento del tenant in Office 365
 
@@ -34,7 +34,7 @@ Sono state implementate più forme di protezione in Office 365 per impedire ai c
 - L'isolamento logico del contenuto dei clienti all'interno di ogni tenant per i servizi di Office 365 viene ottenuto tramite l'autorizzazione di Azure Active Directory e il controllo di accesso basato sui ruoli.
 - SharePoint Online fornisce meccanismi di isolamento dei dati a livello di archiviazione.
 - Microsoft utilizza la sicurezza fisica rigorosa, lo screening di sfondo e una strategia di crittografia a più livelli per proteggere la riservatezza e l'integrità del contenuto dei clienti. Tutti i datacenter di Office 365 dispongono di controlli di accesso biometrici, con la maggior parte delle stampe Palm che richiedono l'accesso fisico. Inoltre, tutti i dipendenti Microsoft basati su Stati Uniti sono necessari per completare correttamente un controllo di sfondo standard come parte del processo di assunzione. Per ulteriori informazioni sui controlli utilizzati per l'accesso amministrativo in Office 365, vedere [office 365 Administrative Access Controls](office-365-administrative-access-controls-overview.md).
-- Office 365 utilizza tecnologie sul fianco del servizio che crittografano il contenuto dei clienti a riposo e in transito, tra cui BitLocker, crittografia per file, TLS (Transport Layer Security) e IPsec (Internet Protocol Security). Per informazioni specifiche sulla crittografia in Office 365, vedere [tecnologie di crittografia dei dati in office 365](/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview.md).
+- Office 365 utilizza tecnologie sul fianco del servizio che crittografano il contenuto dei clienti a riposo e in transito, tra cui BitLocker, crittografia per file, TLS (Transport Layer Security) e IPsec (Internet Protocol Security). Per informazioni specifiche sulla crittografia in Office 365, vedere [tecnologie di crittografia dei dati in office 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview).
 
 Insieme, le protezioni elencate di seguito offrono robusti controlli di isolamento logico che forniscono protezione dalle minacce e una mitigazione equivalente a quella fornita solo dall'isolamento fisico.
 
