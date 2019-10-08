@@ -3,7 +3,7 @@ title: Configurare le proprietà degli account utente con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 10/07/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Sintesi: utilizzare PowerShell di Office 365 per configurare le proprietà di uno o più account utente nel tenant di Office 365.'
-ms.openlocfilehash: 53a99c33dcebebc87e12a468d56e5460b8a0c111
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
+ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782606"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "37411515"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurare le proprietà degli account utente con Office 365 PowerShell
 
@@ -71,7 +71,11 @@ Identificare l'account con il parametro **-ObjectID** e impostare o modificare p
     Si tratta del codice paese o area geografica a due lettere ISO 3166-1 alpha-2 (A2).
     
 Per ulteriori parametri, vedere [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0).
-  
+
+>[!Note]
+> Impostare la proprietà **mail** con il parametro **-OtherMails** .
+>
+ 
 Per visualizzare il nome principale degli utenti per gli account utente, eseguire il comando seguente.
   
 ```
@@ -186,7 +190,11 @@ Identificare l'account con il parametro **-UserPrincipalName** e impostare o mod
     Si tratta del codice paese o area geografica a due lettere ISO 3166-1 alpha-2 (A2).
     
 Per ulteriori parametri, vedere [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).
-  
+
+>[!Note]
+> Impostare la proprietà **mail** con il parametro **-AlternateEmailAddresses** .
+>
+ 
 Per visualizzare i nomi principali di tutti gli utenti, eseguire il comando seguente.
   
 ```
