@@ -16,17 +16,19 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Riepilogo: vengono descritte le considerazioni relative alla capacità di rete, agli acceleratori WAN e ai dispositivi di bilanciamento del carico utilizzati per la connessione a Office 365.'
-ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722625"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428103"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Pianificare i dispositivi di rete che si connettono ai servizi di Office 365
 
- **Riepilogo**: vengono descritte le considerazioni relative alla capacità di rete, agli acceleratori WAN e ai dispositivi di bilanciamento del carico utilizzati per la connessione a Office 365.
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*
   
+**Riepilogo**: vengono descritte le considerazioni relative alla capacità di rete, agli acceleratori WAN e ai dispositivi di bilanciamento del carico utilizzati per la connessione a Office 365.
+
 Alcuni componenti hardware di rete possono avere limitazioni sul numero di sessioni simultanee supportate. Per le organizzazioni con più di 2.000 utenti, è consigliabile monitorare i propri dispositivi di rete per assicurarsi che siano in grado di gestire il traffico di servizio aggiuntivo di Office 365. Il software di monitoraggio SNMP (Simple Network Management Protocol) consente di eseguire questa operazione.
 
 ||
@@ -71,3 +73,5 @@ Per ulteriori informazioni sulla configurazione di firewall e proxy per la conne
 ## <a name="see-also"></a>Vedere anche
 
 [Assistenti distribuzione per i servizi di Office 365](deployment-advisors-for-office-365.md)
+
+[Panoramica di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

@@ -3,7 +3,7 @@ title: Pianificare l'aggiornamento di client e server di Office 2007 o 2010
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/09/2019
+ms.date: 09/16/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,26 +13,18 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Se si usa Office 2007 o Office 2010, è il momento di pianificare l'aggiornamento. È meglio evitare di rimanere bloccati con app e server obsoleti e non supportati. Usare queste risorse per iniziare a creare un piano.
-ms.openlocfilehash: 444befb11fdbb3578b30f63615b2f6f1e18a3cf9
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 56efdc56824b3f280548a106450c565af4fb2694
+ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782176"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "36991897"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Pianificare l'aggiornamento di client e server di Office 2007 o Office 2010
 
-Se l'organizzazione usa versioni precedenti dei prodotti e server di Office, è il momento giusto per iniziare a pianificare l'aggiornamento. I prodotti e servizi di Office 2007 hanno raggiunto la fine del supporto. Office 2010 raggiungerà la fine del supporto il **14 gennaio 2020**. Altri prodotti e servizi di Office 2010 raggiungeranno la fine del supporto il **13 ottobre 2020**. Per iniziare, usare le risorse in questa sezione.
+Se l'organizzazione usa versioni precedenti dei prodotti e server di Office, è il momento giusto per iniziare a pianificare l'aggiornamento. I prodotti e servizi di Office 2007 hanno raggiunto la [fine del supporto](upgrade-from-office-2007-servers-and-products.md). I prodotti e servizi di Office 2010 (compresi Office 2010, Exchange 2010, SharePoint 2010 e Project Server 2010) raggiungeranno la fine del supporto il **13 ottobre 2020**. Per iniziare, usare le risorse in questa sezione.
 
-- I prodotti e servizi di Office 2007 hanno raggiunto la fine del supporto. Vedere [Pianificare l'aggiornamento di client e server di Office 2007](upgrade-from-office-2007-servers-and-products.md) per ulteriori dettagli.
-
-- Aggiornare i server e i client di Office 2010:
-
-  - Office 2010 raggiungerà la fine del supporto il **14 gennaio 2020**.
-
-  - Office 2010, SharePoint 2010 e Project Server 2010 raggiungeranno la fine del supporto il **13 ottobre 2020.**
-
-Vedere [Pianificare l'aggiornamento di client e server di Office 2010](upgrade-from-office-2010-servers-and-products.md) per ulteriori dettagli.
+Vedere [Aggiornare i server e i client di Office 2010](upgrade-from-office-2010-servers-and-products.md) per ulteriori dettagli.
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Cosa succede se non si esegue l'aggiornamento?
 

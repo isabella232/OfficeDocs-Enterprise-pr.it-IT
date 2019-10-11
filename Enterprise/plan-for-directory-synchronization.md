@@ -5,6 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
+ms.date: 05/20/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
@@ -16,17 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Descrive la sincronizzazione della directory con Office 365, la pulizia dei servizi di dominio Active Directory e lo strumento Azure Active Directory Connect.
-ms.openlocfilehash: 31fcd8baaccabf5d3f4f0cf47c7573c43f7cd40b
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102495"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428116"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Sincronizzazione della directory e dell'identità ibrida per Office 365
 
-A seconda delle esigenze aziendali e dei requisiti tecnici, il modello di identità ibrido e la sincronizzazione della directory rappresentano la scelta più comune per i clienti aziendali che adottano Office 365. La sincronizzazione della directory consente di gestire le identità nei servizi di dominio Active Directory e tutti gli aggiornamenti per gli account utente, i gruppi e i contatti vengono sincronizzati con il tenant Azure Active Directory (Azure AD) dell'abbonamento a Office 365.
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*
 
+A seconda delle esigenze aziendali e dei requisiti tecnici, il modello di identità ibrido e la sincronizzazione della directory rappresentano la scelta più comune per i clienti aziendali che adottano Office 365. La sincronizzazione della directory consente di gestire le identità nei servizi di dominio Active Directory e tutti gli aggiornamenti per gli account utente, i gruppi e i contatti vengono sincronizzati con il tenant Azure Active Directory (Azure AD) dell'abbonamento a Office 365.
 
 >[!Note]
 >Quando gli account utente di servizi di dominio Active Directory vengono sincronizzati per la prima volta, non viene assegnata automaticamente una licenza di Office 365 e non possono accedere ai servizi di Office 365, ad esempio la posta elettronica. È necessario assegnare una licenza a questi account utente, sia singolarmente che dinamicamente tramite l'appartenenza al gruppo.
@@ -65,7 +67,7 @@ Con la sincronizzazione degli hash delle password (pH), è possibile sincronizza
 
 Quando le password vengono modificate o reimpostate in locale, i nuovi hash delle password vengono sincronizzati con Azure AD, in modo che gli utenti possano sempre utilizzare la stessa password per le risorse cloud e le risorse locali. Le password degli utenti non vengono mai inviate ad Azure AD o archiviate in Azure AD in testo non crittografato. Alcune funzionalità Premium di Azure AD, ad esempio la protezione delle identità, richiedono pH indipendentemente dal metodo di autenticazione selezionato.
   
-Per ulteriori informazioni, vedere [choosING pH](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Per ulteriori informazioni, vedere [choosing pH](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
   
 #### <a name="pass-through-authentication"></a>Autenticazione pass-through
 
@@ -103,7 +105,7 @@ La pulizia della directory dovrebbe concentrarsi sulle attività seguenti:
 
 - Rimuovere gli attributi **ProxyAddress** e **userPrincipalName** duplicati.
 - Aggiornare gli attributi **userPrincipalName** vuoti e non validi con gli attributi **userPrincipalName** validi.
-- Rimuovere i caratteri non validi e discutibili **** nelle DATENAME, cognome ( **sn** ), **sAMAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailNickname**e **userPrincipalName** attributi. Per informazioni dettagliate sulla preparazione degli attributi, vedere [l'elenco degli attributi sincronizzati tramite lo strumento di sincronizzazione di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+- Rimuovere i caratteri non validi e discutibili nelle **DATENAME**, cognome ( **sn** ), **sAMAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailNickname**e **userPrincipalName** attributi. Per informazioni dettagliate sulla preparazione degli attributi, vedere [l'elenco degli attributi sincronizzati tramite lo strumento di sincronizzazione di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
     > [!NOTE]
     > Si tratta degli stessi attributi sincronizzati da Azure AD Connect. 
@@ -141,6 +143,9 @@ La sincronizzazione della directory è necessaria per le caratteristiche e le fu
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Quando si è pronti per la distribuzione dell'identità ibrida, vedere [Prepare to](prepare-for-directory-synchronization.md)provisioning Users.
+Quando si è pronti per la distribuzione dell'identità ibrida, vedere [Prepare to provisioning Users](prepare-for-directory-synchronization.md).
   
+## <a name="see-also"></a>Vedere anche
+
+[Panoramica di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
 

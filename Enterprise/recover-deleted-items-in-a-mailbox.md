@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: "Questo articolo è rivolto agli amministratori. Può accadere che un utente elimini in modo permanente alcuni elementi della propria cassetta postale di Outlook e che voglia recuperarli senza riuscirci. È possibile recuperare gli elementi eliminati se non sono stati rimossi definitivamente dalla cassetta postale dell'utente. "
-ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 0b73556f4c53667cfeeb09f73d45ee87d326b820
+ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782616"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "36991907"
 ---
 <a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Ripristinare gli elementi eliminati in una cassetta postale utente - Guida per l'amministratore
@@ -117,12 +117,12 @@ Quando si esegue una ricerca eDiscovery sul posto, la cartella Elementi ripristi
 |![Numero due in un cerchio rosa.](media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)           <br/> |Cercare i messaggi con parole chiave o frasi e usare gli operatori logici, ad esempio **AND** oppure **OR**.  <br/> |
 |![Numero tre in un cerchio rosa.](media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)           <br/> |Cercare i messaggi inviati o ricevuti in un intervallo di date.  <br/> |
 |![Number quattro in a pink circle.](media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)           <br/> |Cercare i messaggi ricevuti o inviati a utenti specifici.  <br/> |
-|![Numero cinque in un cerchio rosa.](media/878cc815-0165-49ba-a1ee-9236e5980403.png)           <br/> |Cercare tutti i tipi di messaggio oppure selezionarne di specifici.  <br/> |
+|![Numero cinque in un cerchio rosa.](media/878cc815-0165-49ba-a1ee-9236e5980403.png)           <br/> |Cercare tutti i tipi di messaggi oppure selezionarne di specifici.  <br/> |
    
-    > [!TIP]
-    >  Here's a few tips about how to build a search query to find missing items. Try to get as much information from the user to help you create a search query so you can find what you're looking for. >  If you not sure how to find a missing message, consider using the **Include all content** option. The search results will include all items in the user's Recoverable Items folder, including the hidden folder (called the Purges folder) that contain items that have been purged by the user. Then you can go to Step 3, copy the results to a discovery mailbox, and look at the message in the hidden folder. >  If you know approximately when the missing message was originally sent or received by the user, use the **Specify start date** and **Specify end date** options to provide a date range. This will return all messages sent or received by the user within that date range. Specifying a date range is a really good way to narrow the search results. >  If you know who sent the missing email, use the **From** box to specify this sender. >  If you want to narrow the search results to different types of mailbox items, click **Select message types**, click **Select the message types to search**, and then choose a specific message type to search for. For example, you can search only for calendar items or contacts. Here's a screenshot of the different message types you can search for; the default is to search for all message types. 
+   > [!TIP]
+   >  Ecco alcuni suggerimenti su come creare una query di ricerca per trovare gli elementi mancanti. Provare a ottenere dall'utente tutte le informazioni necessarie per creare una query di ricerca idonea per trovare gli elementi cercati. Se non si è sicuri di come trovare un messaggio mancante, è consigliabile usare l'opzione **Includi tutto il contenuto**. I risultati della ricerca includeranno tutti gli elementi nella cartella Elementi ripristinabili dell'utente, tra cui la cartella nascosta (denominata Ripuliture) che contiene gli elementi che sono stati eliminati dall'utente. A questo punto è possibile passare al passaggio 3, copiare i risultati in una cassetta postale di individuazione e osservare il messaggio nella cartella nascosta. Se si conosce approssimativamente quando il messaggio mancante è stato inviato o ricevuto dall'utente originariamente, usare le opzioni **Specifica la data di inizio** e **Specifica la data di fine** per specificare un intervallo di date. Verranno restituiti tutti i messaggi inviati o ricevuti dall'utente in tale intervallo di date. Specificare un intervallo di date è un modo molto efficace per limitare i risultati della ricerca. Se si conosce chi ha inviato i messaggi mancanti, usare la casella **Da** per specificare il mittente. Se si vuole limitare i risultati della ricerca a tipi diversi di elementi della cassetta postale, fare clic su **Seleziona tipi di messaggi**, quindi su **Scegli i tipi di messaggi in cui cercare** e infine scegliere un tipo di messaggio specifico da cercare. È ad esempio possibile cercare solo gli elementi del calendario o i contatti. Ecco una schermata che illustra i diversi tipi di messaggio che è possibile cercare. Per impostazione predefinita vengono cercati tutti i tipi di messaggio. 
   
-    Click **Next** when you've completed the **Search query** page. 
+   Fare clic su **Avanti** dopo aver completato la pagina **Query di ricerca**. 
     
 10. Nella pagina **Impostazioni di blocco sul posto** fare clic su **Fine** per avviare la ricerca. Per recuperare i messaggi eliminati, non occorre impostare un blocco per la cassetta postale dell'utente. 
     
@@ -271,9 +271,10 @@ Per ripristinare un elemento eliminato tramite un file PST, è necessario usare 
     
 ![Selezionare una cartella in cui spostare altri tipi di elementi](media/f8290131-43f2-46f1-bc07-228c2d83b96c.png)
   
-    Note that calendar items, contacts, and tasks are located directly in the Purges folder, and not in a Calendar, Contacts, or Tasks subfolder. However, you can sort by **Type** to group similar types of items. 
+   > [!NOTE]
+   > Gli elementi del calendario, i contatti e le attività si trovano direttamente nella cartella Ripuliture e non in una sottocartella del calendario, dei contatti o delle attività. È possibile tuttavia ordinare per **tipo** per raggruppare i tipi di elementi simili. 
     
-8. Dopo aver completato il recupero degli elementi eliminati, fare clic con il pulsante destro del mouse sul file PST nella barra di spostamento sinistra e selezionare **Chiudi il "nome del file PST"**.
+8. Dopo aver completato il recupero degli elementi eliminati, fare clic con il pulsante destro del mouse sul file PST nella barra di spostamento sinistra e selezionare **Chiudi "nome del file PST"**.
     
 [Inizio pagina](recover-deleted-items-in-a-mailbox.md#__top)
   

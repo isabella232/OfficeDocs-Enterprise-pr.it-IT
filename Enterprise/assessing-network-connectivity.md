@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 è stato creato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Man mano che il servizio si evolve, la sicurezza, le prestazioni e l'affidabilità di Office 365 sono migliorate in base ai clienti che utilizzano Internet per stabilire una connessione al servizio.
-ms.openlocfilehash: 884c4c0d510de55da4125a3e3b80b4bd869ec697
-ms.sourcegitcommit: c207aafc126a495e700552796ed89da3de254910
+ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233426"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428073"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Valutazione della connettività di rete di Office 365
+
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*
 
 Office 365 è stato creato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Man mano che il servizio si evolve, la sicurezza, le prestazioni e l'affidabilità di Office 365 sono migliorate in base ai clienti che utilizzano Internet per stabilire una connessione al servizio.
   
@@ -116,3 +118,5 @@ Ecco un breve collegamento che è possibile utilizzare per tornare: [ https://ak
 [Servizio Web per URL e indirizzi IP di Office 365](office-365-ip-web-service.md)
 
 [Ottimizzazione delle prestazioni e della rete di Office 365](network-planning-and-performance.md)
+
+[Panoramica di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

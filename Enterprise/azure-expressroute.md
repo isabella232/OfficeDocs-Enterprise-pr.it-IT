@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Informazioni su come utilizzare Azure ExpressRoute con Office 365 e su come pianificare il progetto di implementazione della rete che sarà necessario se si esegue la distribuzione di Azure ExpressRoute per l'utilizzo con Office 365.
-ms.openlocfilehash: b12310d9a82a1adafd82ce0c3b6554e7ceea9550
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: 360cae39010f35b5a921ec95f6e8ed1d02afb808
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385184"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435410"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute per Office 365
+
+*Questo articolo si applica a Office 365 Enterprise e Microsoft 365 Enterprise*
 
 Informazioni su come utilizzare Azure ExpressRoute con Office 365 e su come pianificare il progetto di implementazione della rete che sarà necessario se si esegue la distribuzione di Azure ExpressRoute per l'utilizzo con Office 365. L'infrastruttura e i servizi di piattaforma in esecuzione in Azure spesso usufruiscono dell'architettura di rete e delle considerazioni relative alle prestazioni. In questi casi è consigliabile ExpressRoute per Azure. Il software come offerta di servizi come Office 365 e Dynamics 365 è stato creato per accedere in modo sicuro e affidabile tramite Internet. È possibile leggere le prestazioni e la sicurezza di Internet e quando è possibile considerare Azure ExpressRoute per Office 365 nell'articolo [valutare la connettività di rete di office 365](assessing-network-connectivity.md).
 
@@ -90,7 +92,7 @@ L'implementazione di ExpressRoute richiede la partecipazione dei proprietari di 
 
 Per ulteriori riferimenti, utilizzare la [Guida di routing](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) oltre alla [documentazione di ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/).
 
-Per acquistare ExpressRoute per Office 365, è necessario collaborare con uno o più [provider](https://azure.microsoft.com/documentation/articles/expressroute-locations/) approvati per effettuare il provisioning dei circuiti numerici e di dimensioni desiderate con un abbonamento a ExpressRoute Premium. Non sono disponibili licenze aggiuntive per l'acquisto da Office 365.
+Per acquistare ExpressRoute per Office 365, è necessario collaborare con uno o più [provider approvati](https://azure.microsoft.com/documentation/articles/expressroute-locations/) per effettuare il provisioning dei circuiti numerici e di dimensioni desiderate con un abbonamento a ExpressRoute Premium. Non sono disponibili licenze aggiuntive per l'acquisto da Office 365.
 
 Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
 
@@ -119,3 +121,7 @@ Pronto a iscriversi per [ExpressRoute per Office 365](https://aka.ms/ert)?
 [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Ottimizzazione delle prestazioni e della rete di Office 365](network-planning-and-performance.md)
+
+## <a name="see-also"></a>Vedere anche
+
+[Panoramica di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

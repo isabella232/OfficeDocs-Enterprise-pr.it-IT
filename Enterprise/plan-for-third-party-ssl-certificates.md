@@ -4,6 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Riepilogo: in questo articolo vengono descritti i certificati SSL necessari per Exchange locale e ibrido, SSO tramite ADFS, i servizi Exchange Online e i servizi Web Exchange.'
-ms.openlocfilehash: 9b5bcb20272dcaf5c1df39179a4ba4b05fc04a28
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3120be6cf127b8615259f865f03db1dbe6f0ea73
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069352"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428093"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Pianificare i certificati SSL di terze parti per Office 365
+
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*
 
  **Riepilogo:** Vengono descritti i certificati SSL necessari per Exchange locale e ibrido, SSO tramite ADFS, servizi Exchange Online e servizi Web Exchange. 
   
@@ -77,4 +80,6 @@ Il server o i server ibridi di Exchange con accesso esterno richiedono un certif
 
 In questo articolo vengono illustrati i certificati che potrebbe essere necessario installare nell'infrastruttura. Per ulteriori informazioni sui certificati installati nei server di Office 365, vedere [catene di certificati di office 365](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
   
+## <a name="see-also"></a>Vedere anche
 
+[Panoramica di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

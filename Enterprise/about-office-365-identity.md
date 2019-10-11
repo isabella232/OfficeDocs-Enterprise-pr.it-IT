@@ -4,6 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
+ms.date: 05/20/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,14 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Informazioni sulla gestione delle identità utente in Office 365.
-ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: b1c1e8f9a56f2bdaa927ef3d096c1c614de647bb
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249464"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428083"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modelli di gestione delle identità di Office 365 e Azure Active Directory
+
+*Questo articolo si applica a Office 365 Enterprise e Microsoft 365 Enterprise*
 
 Per gestire le identità e l'autenticazione, Office 365 usa Azure Active Directory (Azure AD), un servizio di autenticazione e gestione delle identità utente basato sul cloud incluso nell'abbonamento a Office 365. La configurazione corretta dell'infrastruttura di gestione delle identità è di fondamentale importanza per gestire l'accesso utente e le autorizzazioni di Office 365 per l'organizzazione.
 
@@ -97,3 +100,7 @@ Se è necessario il modello di gestione delle identità ibrido, vedere [Sincroni
 ## <a name="video-training"></a>Video di formazione
 
 Vedere il video corso sulla [gestione delle identità con Azure AD Connect in Office 365](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx) offerto da LinkedIn Learning.
+
+## <a name="see-also"></a>Vedere anche
+
+[Panoramica di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
