@@ -601,7 +601,7 @@ Per ricevere notifiche tramite posta elettronica, è possibile usare diversi met
 
 - Per usare una soluzione di Microsoft Flow, vedere [Usare Microsoft Flow per ricevere un messaggio di posta elettronica per le modifiche apportate agli indirizzi IP e agli URL di Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Per distribuire un'app logica di Azure con un modello ARM, [vedere notifica di aggiornamento di Office 365 (v 1.1)](https://aka.ms/ipurlws-updates-template).
-- Per scrivere uno script di notifica personalizzato con PowerShell, [vedere Invio-MailMessage](https://docs.microsoft.com/it-IT/powershell/module/microsoft.powershell.utility/send-mailmessage).
+- Per scrivere uno script di notifica personalizzato con PowerShell, [vedere Invio-MailMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Esportare un file PAC Proxy
 
