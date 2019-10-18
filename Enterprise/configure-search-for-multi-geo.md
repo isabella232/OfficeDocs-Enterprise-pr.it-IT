@@ -85,7 +85,7 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La ricerca multi-geografica non supporta il bucket di criteri di affinamento numerici.</td>
-<td align="left">Utilizzare il <a href="https://docs.microsoft.com/it-IT/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "Discretize"</a> per criteri di affinamento numerici.</td>
+<td align="left">Utilizzare il <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "Discretize"</a> per criteri di affinamento numerici.</td>
 </tr>
 <tr class="even">
 <td align="left">ID documenti</td>
@@ -172,7 +172,7 @@ Per ottenere i risultati di tutte o alcune posizioni geografiche nelle applicazi
 
 **Requisito**
 
-Per ogni posizione geografica è necessario verificare che a tutti gli utenti dell'organizzazione sia stato concesso il livello di autorizzazioni **Lettura** per il sito Web radice, ad esempio contoso**APAC**.sharepoint.com/ e contoso**EU**.sharepoint.com/. [Informazioni sulle autorizzazioni](https://support.office.com/it-IT/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Per ogni posizione geografica è necessario verificare che a tutti gli utenti dell'organizzazione sia stato concesso il livello di autorizzazioni **Lettura** per il sito Web radice, ad esempio contoso**APAC**.sharepoint.com/ e contoso**EU**.sharepoint.com/. [Informazioni sulle autorizzazioni](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parametri di query
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - Questo è un elenco facoltativo di quali posizioni
 </tbody>
 </table>
 
-Se si omette DataLocation o EndPoint oppure se DataLocation è duplicato, la richiesta ha esito negativo. [È possibile ottenere informazioni sull'endpoint delle posizioni geografiche di un tenant utilizzando Microsoft Graph](https://docs.microsoft.com/it-IT/sharepoint/dev/solution-guidance/multigeo-discovery).
+Se si omette DataLocation o EndPoint oppure se DataLocation è duplicato, la richiesta ha esito negativo. [È possibile ottenere informazioni sull'endpoint delle posizioni geografiche di un tenant utilizzando Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Dati di risposta
 

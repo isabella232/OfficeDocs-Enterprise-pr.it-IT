@@ -113,7 +113,7 @@ In questo passaggio, viene creata la rete virtuale TestLab in Azure.
 Per prima cosa, avviare un prompt di Azure PowerShell.
   
 > [!NOTE]
-> I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/it-IT/powershell/azureps-cmdlets-docs/). 
+> I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Accedere al proprio account Azure con il seguente comando.
   
