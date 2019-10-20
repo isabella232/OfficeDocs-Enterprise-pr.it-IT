@@ -3,7 +3,7 @@ title: Identità federata per l'ambiente di sviluppo/test di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 09/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: "Sintesi: configurare l'autenticazione federata per l'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: 9cee3ae308b5dc7e97b8711a9b021869478a47b4
-ms.sourcegitcommit: ed9d80a7b4acc42065c94155122f0cdb86dccde6
+ms.openlocfilehash: c2cb4bcd9085cd8dd91df5de2ad936076d11432c
+ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37046991"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37207392"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identità federata per l'ambiente di sviluppo/test di Office 365
 
@@ -189,15 +189,12 @@ Successivamente, interagire con il provider DNS pubblico e creare un nuovo recor
 Successivamente, utilizzare il [portale di Azure](http://portal.azure.com) per connettersi alla macchina virtuale DC1 usando le credenziali di CORP\\User1, quindi eseguire i comandi seguenti a un prompt dei comandi di Windows PowerShell a livello di amministratore:
   
 ```
-$testZone="<the FQDN of your testlab domain from phase 1, example: testlab.contoso.com>"
-$testZoneFile= $testZone + ".dns"
-Add-DnsServerPrimaryZone -Name $testZone -ZoneFile $testZoneFile
-Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
+Add-DnsServerPrimaryZone -Name corp.contoso.com -ZoneFile corp.contoso.com.dns
+Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
 ```
-
-Tali comandi consentono di creare un record A DNS per il nome di dominio completo del servizio federativo che le macchine virtuali nella rete virtuale di Azure possono risolvere nell'indirizzo IP privato di ADFS1.
+Tali comandi consentono di creare un record DNS A interno in modo che le macchine virtuali nella rete virtuale di Azure possano risolvere il nome di dominio completo interno della federazione nell'indirizzo IP privato di ADFS1.
   
-Di seguito è riportata la configurazione risultante.
+Questa è la configurazione risultante.
   
 **Figura 4: aggiunta del server proxy di applicazione Web**
 
@@ -414,7 +411,7 @@ Per verificare il funzionamento dell'autenticazione federata, eseguire le operaz
     
 2. Per le credenziali di accesso, digitare **user1@**\<dominio creato nella fase 1>.  
     
-    Ad esempio, se il dominio di test è **testlab.contoso.com**, digitare **user1@testlab.contoso.com**. Premere TAB o consentire a Office 365 di essere reindirizzati automaticamente.
+    Ad esempio, se il dominio di test è **testlab.contoso.com**, digitare "user1@testlab.contoso.com". Premere TAB o consentire a Office 365 di essere reindirizzati automaticamente.
     
     Viene visualizzata una pagina **La connessione non è privata**. Accade questo perché è stato installato un certificato autofirmato su ADFS1 che non può essere convalidato dal computer desktop. In una distribuzione di produzione di autenticazione federata, utilizzare un certificato rilasciato da un'autorità di certificazione attendibile per fare in modo che gli utenti non visualizzino questa pagina.
     
