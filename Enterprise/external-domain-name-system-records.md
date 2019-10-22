@@ -3,7 +3,7 @@ title: Record Domain Name System (DNS) esterni per Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 8/13/2019
+ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Riepilogo: elenco riferimenti dei record DNS da utilizzare quando si pianifica una distribuzione di Office 365.'
-ms.openlocfilehash: 665e5aebee6546ceaa3275249da1bcaac6eb0ba2
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37387053"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616139"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Record Domain Name System (DNS) esterni per Office 365
 
@@ -45,7 +45,7 @@ Ogni cliente di Office 365 deve aggiungere due record ai propri DNS esterni. Il 
 ||||
 |:-----|:-----|:-----|
 |**Record DNS** <br/> |**Scopo** <br/> |**Valore da utilizzare** <br/> |
-|**CNAME** <br/> **(famiglia di prodotti)** <br/> |Utilizzato da Office 365 per indirizzare l'autenticazione verso la piattaforma delle identità corretta. [Ulteriori informazioni](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Nota:** questo record CNAME si applica solo a Office 365 gestito da 21Vianet.   |**Alias:** msoid  <br/> **Destinazione:** clientconfig.microsoftonline-p.net  <br/> |
+|**CNAME** <br/> **(famiglia di prodotti)** <br/> |Utilizzato da Office 365 per indirizzare l'autenticazione verso la piattaforma delle identità corretta. [Ulteriori informazioni](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Nota:** questo record CNAME si applica solo a Office 365 gestito da 21Vianet.   |**Alias:** msoid  <br/> **Destinazione:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(verifica del dominio)** <br/> |Utilizzato da Office 365 per verificare soltanto se il dominio appartiene all'utente. Non incide su nessun altro elemento.  <br/> |**Host:** @ (o per alcuni provider di hosting DNS, il nome di dominio dell'utente)  <br/> **TXT Value:** _ una stringa di testo fornita da_ Office 365  <br/> La procedura guidata di **configurazione del dominio** di Office 365 fornisce i valori da utilizzare per creare il record.  <br/> |
 
 
