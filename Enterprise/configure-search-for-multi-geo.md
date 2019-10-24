@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su come configurare la ricerca in un ambiente multi-geografico.
-ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e2f3aa9888e3c41c445e4ceeab491a3c5a617a14
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068072"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643279"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Configurare la ricerca di Office 365 Multi-Geo
 
@@ -172,11 +172,11 @@ Per ottenere i risultati di tutte o alcune posizioni geografiche nelle applicazi
 
 **Requisito**
 
-Per ogni posizione geografica è necessario verificare che a tutti gli utenti dell'organizzazione sia stato concesso il livello di autorizzazioni **Lettura** per il sito Web radice, ad esempio contoso**APAC**.sharepoint.com/ e contoso**EU**.sharepoint.com/. [Informazioni sulle autorizzazioni](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Per ogni posizione geografica è necessario verificare che a tutti gli utenti dell'organizzazione sia stato concesso il livello di autorizzazioni **Lettura** per il sito Web radice, ad esempio contoso**APAC**.sharepoint.com/ e contoso**EU**.sharepoint.com/. [Informazioni sulle autorizzazioni](https://support.office.com/it-IT/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parametri di query
 
-EnableMultiGeoSearch - questo è un valore Booleano che specifica se la query debba essere estesa agli indici di altre posizioni geografiche del tenant multi-geo. Impostare su **true** per estendere la query, su **false** per non estendere la query. Il valore predefinito è **false**. Se non si include questo parametro, la query non viene estesa a diverse posizioni geografiche. Se si usa questo parametro in un ambiente non multi-geografico, il parametro viene ignorato.
+EnableMultiGeoSearch - questo è un valore Booleano che specifica se la query debba essere estesa agli indici di altre posizioni geografiche del tenant multi-geo. Impostare su **true** per estendere la query, su **false** per non estendere la query. Se non si include questo parametro, il valore predefinito è **false**, tranne quando si esegue una chiamata all'API REST su un sito che usa il modello Centro ricerche organizzazione. In tal caso, il valore predefinito è **true**. Se si usa questo parametro in un ambiente non multi-geografico, il parametro viene ignorato.
 
 ClientType - Questa è una stringa. Immettere un nome univoco di client per ogni applicazione di ricerca. Se non si include questo parametro, la query non viene estesa a diverse posizioni geografiche.
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - Questo è un elenco facoltativo di quali posizioni
 </tbody>
 </table>
 
-Se si omette DataLocation o EndPoint oppure se DataLocation è duplicato, la richiesta ha esito negativo. [È possibile ottenere informazioni sull'endpoint delle posizioni geografiche di un tenant utilizzando Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).
+Se si omette DataLocation o EndPoint oppure se DataLocation è duplicato, la richiesta ha esito negativo. [È possibile ottenere informazioni sull'endpoint delle posizioni geografiche di un tenant utilizzando Microsoft Graph](https://docs.microsoft.com/it-IT/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Dati di risposta
 
