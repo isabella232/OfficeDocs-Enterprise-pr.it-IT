@@ -3,7 +3,7 @@ title: Reti per la distribuzione di contenuti
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 10/22/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilizzare queste informazioni per scoprire in che modo Office 365 utilizza le reti di distribuzione del contenuto (reti CDN) per migliorare le prestazioni.
-ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: a65e83c6063dcd5102dabb6be5ba76029aff6c85
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722665"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643289"
 ---
 # <a name="content-delivery-networks-cdns"></a>Reti di distribuzione del contenuto (reti CDN)
 
@@ -37,7 +37,7 @@ Reti CDN vengono utilizzati dalla maggior parte dei servizi cloud aziendali. I s
 
 ## <a name="how-do-cdns-make-services-work-faster"></a>In che modo le reti per la distribuzione dei contenuti velocizzano l'esecuzione dei servizi?
 
-Scaricare oggetti comuni come icone più e più volte può occupare la larghezza di banda della rete che può essere utilizzata per il download di contenuti personali importanti, come la posta elettronica o i documenti. Poiché Office 365 utilizza un'architettura che include reti CDN, le icone, gli script e altri contenuti generici possono essere scaricati da server più vicini ai computer client, rendendo più veloce il download. Questo significa un accesso più rapido ai contenuti personali, che sono archiviati in modo sicuro nei data center di Office 365.
+Il download di oggetti comuni come le immagini e le icone del sito può richiedere più volte la larghezza di banda della rete che può essere utilizzata per il download di contenuti personali importanti, come la posta elettronica o i documenti. Poiché Office 365 utilizza un'architettura che include reti CDN, le icone, gli script e altri contenuti generici possono essere scaricati da server più vicini ai computer client, rendendo più veloce il download. Questo significa un accesso più rapido ai contenuti personali, che sono archiviati in modo sicuro nei data center di Office 365.
 
 Reti CDN contribuisce a migliorare le prestazioni del servizio cloud in diversi modi:
 
@@ -50,21 +50,21 @@ Reti CDN contribuisce a migliorare le prestazioni del servizio cloud in diversi 
 La rete di distribuzione dei contenuti (CDN) di Office 365 consente agli amministratori di Office 365 di fornire prestazioni migliori per le pagine di SharePoint Online dell'organizzazione memorizzando nella cache le risorse statiche più vicino ai browser che li richiedono, contribuendo ad accelerare Download e riduzione della latenza. La rete CDN di Office 365 utilizza il [protocollo http/2](https://en.wikipedia.org/wiki/HTTP/2) per migliorare la compressione e la velocità di download.
 
 > [!NOTE]
-> Restrizioni per l'utilizzo della rete CDN di Office 365:
-> + La rete CDN di Office 365 è disponibile solo per i tenant nel cloud di **produzione** (tutto il mondo). Gli inquilini del governo degli Stati Uniti, le nuvole cinesi e tedesche attualmente non supportano la rete CDN di Office 365.
-> + La rete CDN di Office 365 attualmente non supporta i tenant configurati con domini personalizzati o "Vanity". Se è stato aggiunto un dominio al tenant seguendo le istruzioni riportate nell'argomento [Add a domain to office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide), la rete CDN di Office 365 restituirà errori quando si tenta di accedere al contenuto dalla rete CDN.
+> La rete CDN di Office 365 è disponibile solo per i tenant nel cloud di **produzione** (tutto il mondo). Gli inquilini del governo degli Stati Uniti, le nuvole cinesi e tedesche attualmente non supportano la rete CDN di Office 365.
 
 La rete per la distribuzione di contenuti di Office 365 è costituita da diverse reti per la distribuzione di contenuti che consentono di ospitare le risorse statiche in più località o _origini_ e gestirle da reti globali ad alta velocità. In base al tipo di contenuto che si vuole ospitare nella rete per la distribuzione di contenuti di Office 365, è possibile aggiungere origini **pubbliche**, origini **private** o entrambi.
 
-![Diagramma concettuale della rete CDN di Office 365] (media/O365-CDN/o365-cdn-flow-transparent.svg "Diagramma concettuale della rete CDN di Office 365")
+![Diagramma concettuale della rete CDN di Office 365](media/O365-CDN/o365-cdn-flow-transparent.svg "Diagramma concettuale della rete CDN di Office 365")
 
 Il contenuto nelle origini **pubbliche** della rete per la distribuzione di contenuti di Office 365 è accessibile in forma anonima, di conseguenza chiunque disponga degli URL delle risorse ospitate può accedervi. Dal momento che l'accesso al contenuto in origini pubbliche è anonimo, è consigliabile usarle solo per memorizzare nella cache contenuti generici non riservati, ad esempio file JavaScript, script, icone e immagini. Per impostazione predefinita, la rete per la distribuzione di contenuti di Office 365 viene usata per il download di risorse generiche, ad esempio le applicazioni client di Office 365 da un'origine pubblica.
 
-Le origini **private** della rete per la distribuzione di contenuti di Office 365 offrono accesso privato ai contenuti dell'utente, ad esempio raccolte documenti, siti di SharePoint Online e contenuti multimediali, come i video. L'accesso ai contenuti nelle origini private è protetto con token generati dinamicamente in modo da consentire l'accesso solo agli utenti che dispongono delle autorizzazioni per la raccolta documenti o per la posizione di archiviazione originali. Le origini private della rete per la distribuzione di contenuti di Office 365 possono essere usate solo per contenuti di SharePoint Online. L'accesso alle risorse può avvenire solo tramite il reindirizzamento dal tenant di SharePoint Online.
+Le origini **private** all'interno della rete CDN di Office 365 offrono accesso privato ai contenuti degli utenti, ad esempio raccolte documenti di SharePoint Online, siti e immagini proprietarie. L'accesso ai contenuti nelle origini private è protetto con token generati dinamicamente in modo da consentire l'accesso solo agli utenti che dispongono delle autorizzazioni per la raccolta documenti o per la posizione di archiviazione originali. Le origini private della rete per la distribuzione di contenuti di Office 365 possono essere usate solo per contenuti di SharePoint Online. L'accesso alle risorse può avvenire solo tramite il reindirizzamento dal tenant di SharePoint Online.
 
 Il servizio della rete per la distribuzione di contenuti di Office 365 è incluso nell'abbonamento a SharePoint Online.
 
 Per ulteriori informazioni su come utilizzare la rete CDN di Office 365, vedere [use the office 365 Content Delivery Network with SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo).
+
+Per guardare una serie di brevi video che forniscono informazioni concettuali e HOWTO sull'utilizzo della rete CDN di Office 365, visitare il [canale YouTube per i modelli e le procedure](https://aka.ms/sppnp-videos)per gli sviluppatori di SharePoint.
 
 ## <a name="other-microsoft-cdns"></a>Altri Microsoft reti CDN
 
@@ -100,7 +100,7 @@ Indipendentemente dalla rete CDN configurata per il tenant di Office 365, il pro
 
 2. Office 365 restituisce i dati direttamente al client o, se i dati fanno parte di un insieme di contenuto ospitato dalla rete CDN, reindirizza il client all'URL della rete CDN.
 
-    un. Se i dati sono già memorizzati nella cache in origine _pubblica_ , il client Scarica i dati direttamente dal percorso della rete CDN più vicino al client.
+    a. Se i dati sono già memorizzati nella cache in origine _pubblica_ , il client Scarica i dati direttamente dal percorso della rete CDN più vicino al client.
 
     b. Se i dati sono già memorizzati nella cache in base all'origine _privata_ , il servizio CDN verifica le autorizzazioni dell'account utente di Office 365 sull'origine. Se si dispone delle autorizzazioni, SharePoint Online genera dinamicamente un URL personalizzato composto dal percorso del cespite della rete CDN e da due token di accesso e restituisce l'URL personalizzato al client. Il client Scarica quindi i dati direttamente dal percorso della rete CDN più vicino al client utilizzando l'URL personalizzato.
 
@@ -196,3 +196,5 @@ Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/o365cdns](ht
 [Utilizzare la rete di distribuzione dei contenuti di Office 365 con SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 
 [Centro protezione Microsoft](https://www.microsoft.com/trustcenter)
+
+[Ottimizzare le prestazioni di Office 365](tune-office-365-performance.md)
