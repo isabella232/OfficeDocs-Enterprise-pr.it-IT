@@ -1,5 +1,5 @@
 ---
-title: Collaborare con gli utenti in un sito
+title: Collaborare con gli utenti guest a un sito
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,18 +8,24 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Informazioni su come collaborare con gli utenti in un sito di SharePoint.
-ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: d0f4528db683795da0f3c949228f902d775f6b7e
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017314"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920169"
 ---
-# <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti in un sito
+# <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
 Se è necessario collaborare con gli utenti tra documenti, dati ed elenchi, è possibile utilizzare un sito di SharePoint. I siti di SharePoint moderni sono connessi a gruppi di Office 365 che possono gestire l'appartenenza al sito e fornire strumenti di collaborazione aggiuntivi quali una cassetta postale condivisa e un calendario.
 
 In questo articolo verranno illustrati i passaggi di configurazione di Microsoft 365 necessari per configurare un sito di SharePoint per la collaborazione con gli utenti.
+
+## <a name="video-demonstration"></a>Dimostrazione video
+
+In questo video vengono illustrati i passaggi di configurazione descritti in questo documento.</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44Llg?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Impostazioni delle relazioni organizzative di Azure
 
@@ -27,7 +33,7 @@ La condivisione in Microsoft 365 è regolata al livello più alto dalle impostaz
 
 Controllare le impostazioni delle relazioni organizzative per garantire che la condivisione con gli ospiti non sia bloccata.
 
-![Schermata della pagina delle impostazioni delle relazioni organizzative di Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
+![Screenshot della pagina delle impostazioni delle relazioni aziendali di Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
 
 Per impostare le impostazioni delle relazioni organizzative
 
@@ -36,7 +42,7 @@ Per impostare le impostazioni delle relazioni organizzative
 3. Nel riquadro **Panoramica** fare clic su **relazioni organizzative**.
 4. Nel riquadro **relazioni organizzative** fare clic su **Impostazioni**.
 5. Verificare che **gli amministratori e gli utenti del ruolo invitato ospite possano invitare** e che **i membri possano invitare** siano entrambi impostati su **Sì**.
-6. Se sono state apportate modifiche, fare clic su **Salva**.
+6. Se si apportano modifiche, fare clic su **Salva**.
 
 Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . Verificare che i domini degli utenti con cui si desidera collaborare non siano bloccati.
 
@@ -44,7 +50,7 @@ Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . V
 
 I siti di SharePoint moderni utilizzano i gruppi di Office 365 per controllare l'accesso al sito. Le impostazioni di Office 365 groups Guest devono essere attivate affinché l'accesso guest in siti di SharePoint funzioni.
 
-![Schermata di Office 365 gruppi Guest Settings in Microsoft 365 Admin Center](media/office-365-groups-guest-settings.png)
+![Screenshot delle impostazioni guest di Gruppi di Office 365 nell'interfaccia di amministrazione di Microsoft 365](media/office-365-groups-guest-settings.png)
 
 Per impostare le impostazioni di Office 365 groups Guest
 
@@ -63,15 +69,15 @@ Le impostazioni a livello di organizzazione determinano le impostazioni disponib
 
 Se si desidera consentire la condivisione di file e cartelle con utenti anonimi, scegliere **nessuno**. Se si desidera garantire che tutti gli utenti siano in grado di eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. Scegliere l'impostazione più permissiva che sarà necessaria per qualsiasi sito dell'organizzazione.
 
-![Schermata delle impostazioni di condivisione a livello di organizzazione di SharePoint](media/sharepoint-organization-external-sharing-controls.png)
+![Screenshot delle impostazioni di condivisione a livello di organizzazione in SharePoint](media/sharepoint-organization-external-sharing-controls.png)
 
 
 Per impostare le impostazioni di condivisione a livello di organizzazione di SharePoint
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, nella barra di spostamento a sinistra, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
-2. Nell'interfaccia di amministrazione di SharePoint, nella barra di spostamento a sinistra, fare clic su **condivisione**.
+2. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, fare clic su **Condivisione**.
 3. Assicurarsi che la condivisione esterna per SharePoint sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
-4. Se sono state apportate modifiche, fare clic su **Salva**.
+4. Se si apportano modifiche, fare clic su **Salva**.
 
 ## <a name="create-a-site"></a>Creare un sito
 
@@ -94,14 +100,14 @@ Controllare le impostazioni di condivisione a livello di sito per assicurarsi ch
 
 Si noti che il sito non può essere condiviso con utenti anonimi (impostazione**chiunque** ), ma è possibile eseguire singoli file e cartelle.
 
-![Schermata delle impostazioni di condivisione esterna del sito di SharePoint](media/sharepoint-site-external-sharing-settings.png)
+![Screenshot delle impostazioni di condivisione esterna dei siti di SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
 Per impostare le impostazioni di condivisione a livello di sito
-1. Nell'interfaccia di amministrazione di SharePoint, nella barra di spostamento sinistra, espandere **siti** e fare clic su **siti attivi**.
+1. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, espandere **Siti** e fare clic su **Siti attivi**.
 2. Selezionare il sito appena creato.
-3. Sulla barra multifunzione fare clic su **condivisione**.
+3. Sulla barra multifunzione fare clic su **Condivisione**.
 4. Verificare che la condivisione sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
-5. Se sono state apportate modifiche, fare clic su **Salva**.
+5. Se si apportano modifiche, fare clic su **Salva**.
 
 ## <a name="invite-users"></a>Invitare gli utenti
 
@@ -122,3 +128,10 @@ Per invitare gli ospiti a un sito
 4. Fare clic su **Chiudi**.
 
 ## <a name="see-also"></a>Vedere anche
+
+[Procedure consigliate per la condivisione di file e cartelle con utenti anonimi](best-practices-anonymous-sharing.md)
+
+[Limitare l'esposizione accidentale ai file durante la condivisione con gli utenti guest](sharing-limit-accidental-exposure.md)
+
+[Creare un ambiente di condivisione Guest sicuro](create-a-secure-guest-sharing-environment.md))
+

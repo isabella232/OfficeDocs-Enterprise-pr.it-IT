@@ -1,5 +1,5 @@
 ---
-title: Collaborare con gli ospiti in un team
+title: Collaborare con gli utenti guest in un team
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,18 +8,24 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Informazioni su come collaborare con gli utenti in teams.
-ms.openlocfilehash: 9a169e33a9cbd8f079966443bd3d830aa79f4971
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 6a50331b5badcd2534052f04193300b427bafd57
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992415"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920159"
 ---
-# <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli ospiti in un team
+# <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
 Se è necessario collaborare con gli utenti tra documenti, attività e conversazioni, è consigliabile utilizzare Microsoft teams. Teams offre tutte le funzionalità di collaborazione disponibili in Office e SharePoint con chat persistente e un set di strumenti di collaborazione personalizzabile ed estensibile in un'esperienza utente unificata.
 
 In questo articolo verranno illustrati i passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione con gli utenti.
+
+## <a name="video-demonstration"></a>Dimostrazione video
+
+In questo video vengono illustrati i passaggi di configurazione descritti in questo documento.</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44NTr?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Impostazioni delle relazioni organizzative di Azure
 
@@ -27,7 +33,7 @@ La condivisione in Microsoft 365 è regolata al livello più alto dalle impostaz
 
 Controllare le impostazioni delle relazioni organizzative per garantire che la condivisione con gli ospiti non sia bloccata.
 
-![Schermata della pagina delle impostazioni delle relazioni organizzative di Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
+![Screenshot della pagina delle impostazioni delle relazioni aziendali di Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
 
 Per impostare le impostazioni delle relazioni organizzative
 
@@ -36,7 +42,7 @@ Per impostare le impostazioni delle relazioni organizzative
 3. Nel riquadro **Panoramica** fare clic su **relazioni organizzative**.
 4. Nel riquadro **relazioni organizzative** fare clic su **Impostazioni**.
 5. Verificare che **gli amministratori e gli utenti del ruolo invitato ospite possano invitare** e che **i membri possano invitare** siano entrambi impostati su **Sì**.
-6. Se sono state apportate modifiche, fare clic su **Salva**.
+6. Se si apportano modifiche, fare clic su **Salva**.
 
 Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . Verificare che i domini degli utenti con cui si desidera collaborare non siano bloccati.
 
@@ -46,7 +52,7 @@ I team dispongono di un'opzione Master di attivazione/disattivazione dell'access
 
 Verificare che l'accesso Guest sia abilitato nei team e apportare eventuali adeguamenti alle impostazioni guest in base alle esigenze aziendali. Tenere presente che queste impostazioni influiscono su tutti i team.
 
-![Schermata del disattivatore accesso Guest Teams](media/teams-guest-access-toggle-on.png)
+![Screenshot dell'opzione di accesso guest in Teams](media/teams-guest-access-toggle-on.png)
 
 Per impostare le impostazioni di accesso guest di Teams
 
@@ -64,7 +70,7 @@ Per impostare le impostazioni di accesso guest di Teams
 
 Teams utilizza i gruppi di Office 365 per l'appartenenza al team. È necessario che le impostazioni Guest dei gruppi di Office 365 siano attivate affinché l'accesso guest nei team funzioni.
 
-![Schermata di Office 365 gruppi Guest Settings in Microsoft 365 Admin Center](media/office-365-groups-guest-settings.png)
+![Screenshot delle impostazioni guest di Gruppi di Office 365 nell'interfaccia di amministrazione di Microsoft 365](media/office-365-groups-guest-settings.png)
 
 Per impostare le impostazioni di Office 365 groups Guest
 
@@ -77,21 +83,21 @@ Per impostare le impostazioni di Office 365 groups Guest
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>Impostazioni di condivisione a livello di organizzazione di SharePoint
 
-Affinché gli utenti dispongano dell'accesso ai file nei team, le impostazioni di condivisione a livello di organizzazione di SharePoint devono consentire la condivisione con gli utenti.
+I contenuti dei team, ad esempio file, cartelle ed elenchi, sono tutti archiviati in SharePoint. Per consentire agli utenti di accedere a questi elementi nei team, le impostazioni di condivisione a livello dell'organizzazione di SharePoint devono essere consentite per la condivisione con gli utenti.
 
 Le impostazioni a livello di organizzazione determinano le impostazioni disponibili per i singoli siti, inclusi i siti associati ai team. Le impostazioni del sito non possono essere più permissive rispetto alle impostazioni a livello di organizzazione.
 
 Se si desidera consentire la condivisione di file e cartelle con utenti anonimi, scegliere **nessuno**. Se si desidera garantire che tutti gli utenti siano in grado di eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. Scegliere l'impostazione più permissiva che sarà necessaria per qualsiasi sito dell'organizzazione.
 
-![Schermata delle impostazioni di condivisione a livello di organizzazione di SharePoint](media/sharepoint-organization-external-sharing-controls.png)
+![Screenshot delle impostazioni di condivisione a livello di organizzazione in SharePoint](media/sharepoint-organization-external-sharing-controls.png)
 
 
 Per impostare le impostazioni di condivisione a livello di organizzazione di SharePoint
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, nella barra di spostamento a sinistra, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
-2. Nell'interfaccia di amministrazione di SharePoint, nella barra di spostamento a sinistra, fare clic su **condivisione**.
+2. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, fare clic su **Condivisione**.
 3. Assicurarsi che la condivisione esterna per SharePoint sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
-4. Se sono state apportate modifiche, fare clic su **Salva**.
+4. Se si apportano modifiche, fare clic su **Salva**.
 
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>Impostazioni di collegamento predefinite a livello di organizzazione di SharePoint
@@ -106,14 +112,14 @@ Scegliere il tipo di collegamento selezionato per impostazione predefinita quand
 - **Solo persone nell'organizzazione** : scegliere questa opzione se si prevede che la maggior parte della condivisione di file e cartelle sia con le persone all'interno dell'organizzazione.
 - **Persone specifiche** : considerare questa opzione se si prevede di eseguire un sacco di condivisione di file e cartelle con gli utenti. Questo tipo di collegamento è compatibile con gli utenti e richiede l'autenticazione.
  
-![Schermata di impostazioni di condivisione di file e cartelle a livello di organizzazione di SharePoint](media/sharepoint-organization-files-folders-sharing-settings.png)
+![Screenshot delle impostazioni di condivisione di file e cartelle a livello di organizzazione in SharePoint](media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 Per impostare le impostazioni dei collegamenti predefiniti a livello di organizzazione di SharePoint
 
 1. Passare alla pagina condivisione nell'interfaccia di amministrazione di SharePoint.
 2. In **collegamenti a file e cartelle**selezionare il collegamento di condivisione predefinito che si desidera utilizzare.
-3. Se sono state apportate modifiche, fare clic su **Salva**.
+3. Se si apportano modifiche, fare clic su **Salva**.
 
 ## <a name="create-a-team"></a>Creare un team
 
@@ -133,15 +139,15 @@ Gli utenti verranno invitati in un secondo momento. Successivamente, è importan
 
 Controllare le impostazioni di condivisione a livello di sito per assicurarsi che consentano il tipo di accesso desiderato per il team. Ad esempio, se si impostano le impostazioni a livello di organizzazione per tutti gli **utenti**, ma si desidera che tutti gli ospiti eseguano l'autenticazione per questo team, assicurarsi che le impostazioni di condivisione a livello di sito siano impostate su **Guest nuovi e esistenti**.
 
-![Schermata delle impostazioni di condivisione esterna del sito di SharePoint](media/sharepoint-site-external-sharing-settings.png)
+![Screenshot delle impostazioni di condivisione esterna dei siti di SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
 
 Per impostare le impostazioni di condivisione a livello di sito
-1. Nell'interfaccia di amministrazione di SharePoint, nella barra di spostamento sinistra, espandere **siti** e fare clic su **siti attivi**.
+1. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, espandere **Siti** e fare clic su **Siti attivi**.
 2. Selezionare il sito del team appena creato.
-3. Sulla barra multifunzione fare clic su **condivisione**.
+3. Sulla barra multifunzione fare clic su **Condivisione**.
 4. Verificare che la condivisione sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
-5. Se sono state apportate modifiche, fare clic su **Salva**.
+5. Se si apportano modifiche, fare clic su **Salva**.
 
 ## <a name="invite-users"></a>Invitare gli utenti
 
@@ -160,4 +166,11 @@ Per invitare gli ospiti a un team
 5. Fare clic su **Aggiungi**, quindi fare clic su **Chiudi**.
 
 ## <a name="see-also"></a>Vedere anche
+
+[Procedure consigliate per la condivisione di file e cartelle con utenti anonimi](best-practices-anonymous-sharing.md)
+
+[Limitare l'esposizione accidentale ai file durante la condivisione con gli utenti guest](sharing-limit-accidental-exposure.md)
+
+[Creare un ambiente di condivisione Guest sicuro](create-a-secure-guest-sharing-environment.md))
+
 
