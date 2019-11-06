@@ -3,7 +3,7 @@ title: Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Offi
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/07/2018
+ms.date: 10/05/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: utilizzare Office 365 PowerShell per gestire gli utenti, i gruppi e i siti di SharePoint Online.'
-ms.openlocfilehash: 194486f539593215b8f8a17c04e3d4f499077c65
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f84e4cda797cd8f1bc4ddf573cb4f1c6f0165da7
+ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068822"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37975891"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Office 365
 
@@ -27,7 +27,7 @@ ms.locfileid: "34068822"
 
 Se si è un amministratore di SharePoint Online che lavora con elenchi di grandi dimensioni degli account utente o dei gruppi e che si desidera gestire in modo più semplice, è possibile utilizzare Office 365 PowerShell. 
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Le procedure descritte in questo argomento richiedono la connessione a SharePoint Online. Per istruzioni, vedere [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -83,9 +83,9 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 È possibile copiare e incollare questi comandi nel blocco note, modificare i valori delle variabili per $tenant, $site e $user ai valori effettivi dell'ambiente e quindi incollarli nella finestra di SharePoint Online Management Shell per eseguirli.
 
-## <a name="add-a-user-to-other-site-collection-administrators-groups"></a>Aggiungere un utente ad altri gruppi di amministratori di raccolte siti
+## <a name="add-a-user-to-other-site-collection-groups"></a>Aggiungere un utente ad altri gruppi di raccolte siti
 
-In questa attività viene utilizzato il comando **Add-** consorter per aggiungere un utente a un gruppo di SharePoint in una raccolta siti.
+In questa attività viene utilizzato il comando **Add-Consorter** per aggiungere un utente a un gruppo di SharePoint in una raccolta siti.
 
 ```
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
@@ -108,7 +108,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 ## <a name="create-a-site-collection-group"></a>Creare un gruppo di raccolte siti
 
-È possibile utilizzare il comando **set-SPOSiteGroup** per creare un nuovo gruppo di SharePoint e aggiungerlo alla raccolta siti di ContosoTest.
+È possibile utilizzare il comando **New-SPOSiteGroup** per creare un nuovo gruppo di SharePoint e aggiungerlo alla raccolta siti di ContosoTest.
 
 ```
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
@@ -135,7 +135,7 @@ A volte è necessario rimuovere un utente da un sito o anche da tutti i siti. Fo
 
 Tuttavia, grazie a SharePoint Online Management Shell e ai file CSV, è semplice e veloce. In questa attività, è possibile utilizzare Windows PowerShell per rimuovere un utente da un gruppo di sicurezza della raccolta siti. Verrà quindi utilizzato un file CSV e verranno rimossi numerosi utenti provenienti da siti diversi. 
 
-Verrà utilizzato il comando **Remove-** consorter per rimuovere un singolo utente di Office 365 da un gruppo di raccolte siti in modo che sia possibile visualizzare la sintassi dei comandi. Ecco come appare la sintassi:
+Verrà utilizzato il comando **Remove-Consorter** per rimuovere un singolo utente di Office 365 da un gruppo di raccolte siti in modo che sia possibile visualizzare la sintassi dei comandi. Ecco come appare la sintassi:
 
 ```
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
@@ -236,7 +236,7 @@ Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Gr
 Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
 
-Lo script importa il contenuto del file CSV e utilizza i valori nelle colonne per popolare i parametri dei comandi **New-SPOSiteGroup** e **Add-** consorter. In questo esempio, viene salvata la cartella theO365Admin nell'unità C, ma è possibile salvarla dove si vuole.
+Lo script importa il contenuto del file CSV e utilizza i valori nelle colonne per popolare i parametri dei comandi **New-SPOSiteGroup** e **Add-consorter** . In questo esempio, viene salvata la cartella theO365Admin nell'unità C, ma è possibile salvarla dove si vuole.
 
 A questo punto, è possibile rimuovere un gruppo di utenti per diversi gruppi in siti diversi utilizzando lo stesso file CSV. Ecco un esempio di comando:
 
