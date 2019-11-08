@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: "Riepilogo: Configurare la sincronizzazione di directory per l'ambiente di sviluppo e di testing di Office 365."
-ms.openlocfilehash: c1596b12ab3c6c8feda3063134cc53a5f18919af
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 795bd871be7937933ce61801d616c900dab7601a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162429"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030790"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Sincronizzazione della directory per l'ambiente di sviluppo e di testing di Office 365
 
@@ -44,7 +44,7 @@ Le fasi principali della configurazione dell'ambiente di sviluppo e di testing s
 2. Installare e configurare Azure AD Connect su APP1.
     
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
+> Fare clic [qui](https://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo e di testing di Office 365
 

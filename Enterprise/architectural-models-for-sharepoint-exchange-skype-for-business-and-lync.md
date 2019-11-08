@@ -11,18 +11,19 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Riepilogo: ottenere i poster IT in cui vengono descritti i modelli architetturali, la distribuzione e le opzioni delle piattaforme per SharePoint, Exchange, Skype for Business e Lync.'
-ms.openlocfilehash: ed4aca3728d12b1a7828b003f0da219d67da6de3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce12d0a807c71e88d2f989f1b24ce033a63b8b70
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068412"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038265"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync
 
@@ -108,7 +109,7 @@ Questi nuovi poster IT per SharePoint 2016 e Skype for Business 2015 forniscono 
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Anteprima del poster dei database di SharePoint Server 2016.](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Questo poster IT è una guida di riferimento rapido per i database di SharePoint Server 2016. Ogni database fornisce quanto segue: <br/><br/> - Dimensioni <br/> - Linee guida sul ridimensionamento <br/> - Modello di I/O <br/> - Requisiti <br/><br/>  La prima pagina contiene i database di sistema di SharePoint e le applicazioni di servizio che dispongono di più database. La seconda pagina mostra tutte le applicazioni di servizio con database singoli. <br/><br/>  Per ulteriori informazioni sui database di SharePoint Server 2016, vedere [Tipi di database e relative descrizioni in SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc678868%28v=office.16%29.aspx) <br/> |
+|[![Anteprima del poster dei database di SharePoint Server 2016.](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Questo poster IT è una guida di riferimento rapido per i database di SharePoint Server 2016. Ogni database fornisce quanto segue: <br/><br/> - Dimensioni <br/> - Linee guida sul ridimensionamento <br/> - Modello di I/O <br/> - Requisiti <br/><br/>  La prima pagina contiene i database di sistema di SharePoint e le applicazioni di servizio che dispongono di più database. La seconda pagina mostra tutte le applicazioni di servizio con database singoli. <br/><br/>  Per ulteriori informazioni sui database di SharePoint Server 2016, vedere [Tipi di database e relative descrizioni in SharePoint Server 2016](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions) <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Modelli architetturali di Microsoft Skype for Business 2015
@@ -138,7 +139,7 @@ In questi poster IT per SharePoint 2013, Exchange 2013 e Lync 2013 è disponibil
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di anteprima delle opzioni della piattaforma SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Destinato ai decision maker aziendali (BDM) e agli architetti, questo modello illustra le opzioni della piattaforma per SharePoint 2013, SharePoint in Office 365, ibrido locale con Office 365, Azure e distribuzioni solo locali. Include una panoramica di ogni architettura, suggerimenti, requisiti di licenze e un elenco di attività per architetti e professionisti IT per ogni piattaforma. Sono evidenziate diverse soluzioni SharePoint in Azure. <br/><br/>Per una versione accessibile del testo di questo poster, vedere [Diagramma accessibile - opzioni della piattaforma Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
+|[![Immagine di anteprima delle opzioni della piattaforma SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Destinato ai decision maker aziendali (BDM) e agli architetti, questo modello illustra le opzioni della piattaforma per SharePoint 2013, SharePoint in Office 365, ibrido locale con Office 365, Azure e distribuzioni solo locali. Include una panoramica di ogni architettura, suggerimenti, requisiti di licenze e un elenco di attività per architetti e professionisti IT per ogni piattaforma. Sono evidenziate diverse soluzioni SharePoint in Azure. <br/><br/>Per una versione accessibile del testo di questo poster, vedere [Diagramma accessibile - opzioni della piattaforma Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Opzioni della piattaforma Exchange 2013

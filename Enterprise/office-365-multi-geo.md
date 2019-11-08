@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Con Office 365 Multi-Geo si può espandere la propria presenza Office 365 a più paesi/aree geografiche.
-ms.openlocfilehash: 7aa1933725617bcc1f84bbe6d0f31a6ddd91815d
-ms.sourcegitcommit: a7b2adf4b55df5fc35a617a145e8177caefce28b
+ms.openlocfilehash: 86234cb025d5e0398cbfa626b4867642412e7e0b
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078510"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031931"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -25,7 +25,7 @@ Con Office 365 Multi-Geo, è possibile effettuare il provisioning e archiviare i
 
 #### <a name="video-introducing-office-365-multi-geo"></a>Video: Introduzione a Office 365 Multi-Geo
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
 
 In un ambiente geografico Multi tenant di Office 365 è costituito da una posizione centralizzata (in cui l'abbonamento a Office 365 è stato originariamente provisioning) e uno o più località. In un tenant Multi-Geo, le informazioni su località geografiche, gruppi e le informazioni utente, vengono acquisite in Azure Active Directory (AAD). Poiché le informazioni del tenant sono acquisite in modo centralizzato e sincronizzate in ogni località geografica, la condivisione e le esperienze coinvolgono tutti gli utenti della società.
 

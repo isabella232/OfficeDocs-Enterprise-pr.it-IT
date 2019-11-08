@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: Informazioni sulle Quote di archiviazione di SharePoint in ambienti multi-geo.
-ms.openlocfilehash: a9ccc32940293dcd11e2f3b89607950f7b6ae3f0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d4049312a2da64f16d2637ffd37adf98f2282287
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070752"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033382"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Quote di archiviazione di SharePoint in ambienti multi-geo
 
@@ -27,7 +29,7 @@ La Quota di archiviazione di SharePoint per qualsiasi posizione geografica può 
 
 ## <a name="configure-a-storage-quota-for-a-geo-location"></a>Configurare una quota di archiviazione per una posizione geografica.
 
-Usare il [Modulo di Microsoft Office SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=35588 ) e connettersi alla posizione centrale per assegnare la Quota di archiviazione ad una posizione geografica. 
+Usare il [Modulo di Microsoft Office SharePoint Online](https://www.microsoft.com/download/details.aspx?id=35588 ) e connettersi alla posizione centrale per assegnare la Quota di archiviazione ad una posizione geografica. 
 
 Per assegnare una Quota di archiviazione ad un percorso, eseguire il cmdlet:
 

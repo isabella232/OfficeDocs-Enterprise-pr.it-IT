@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su Office 365 Multi-Geo, come funziona multi-Geo e quali località geografiche sono disponibili per l'archiviazione dei dati.
-ms.openlocfilehash: f3abcf5e2c5cf0b8250b219e2891181365ffa934
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 216ff8e80970630356c36d50beda25f93ec706da
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069422"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031761"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Piano per Office 365 Multi-Geo
 
@@ -25,7 +25,7 @@ In una configurazione multi-geo, il tenant di Office 365 è costituito da una lo
 
 Ecco un glossario dei termini principali per facilitare la comprensione della configurazione multi-geografica:
 
--   **Tenant**: rappresentazione di un'organizzazione in Office 365 che in genere contiene uno o più domini associati ad essa ad esempio, http://contoso.sharepoint.com). 
+-   **Tenant**: rappresentazione di un'organizzazione in Office 365 che in genere contiene uno o più domini associati ad essa ad esempio, https://contoso.sharepoint.com). 
 
 -   **Posizioni geografiche**: le posizioni geografiche disponibili per ospitare i dati in un tenant di Office 365.
 
@@ -64,7 +64,7 @@ Ogni utente deve avere una *posizione dati preferita* (PDL) impostata in modo ch
 
 Creare un elenco degli utenti e includere il nome dell'entità utente (UPN) e il codice di posizione per la posizione dati preferita appropriata. Includere l'utente test e il gruppo pilota iniziale per cominciare. Tale elenco è necessario per le procedure di configurazione.
 
-Se gli utenti vengono sincronizzati da un sistema di Active Directory locale con Azure Active Directory, è necessario impostare la posizione preferita dati come attributo di Active Directory e sincronizzarla con Azure Active Directory Connect. Non è possibile configurare direttamente la posizione dati consigliata per gli utenti sincronizzati con Azure AD PowerShell. La procedura per configurare PDL in Active Directory e la sincronizzazione è descritta in[Sincronizzazione di Azure Active Directory Connect: configurare il percorso di dati consigliato per le risorse di Office 365](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Se gli utenti vengono sincronizzati da un sistema di Active Directory locale con Azure Active Directory, è necessario impostare la posizione preferita dati come attributo di Active Directory e sincronizzarla con Azure Active Directory Connect. Non è possibile configurare direttamente la posizione dati consigliata per gli utenti sincronizzati con Azure AD PowerShell. La procedura per configurare PDL in Active Directory e la sincronizzazione è descritta in[Sincronizzazione di Azure Active Directory Connect: configurare il percorso di dati consigliato per le risorse di Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 L'amministrazione di un tenant multi-geografico può essere diverso da un tenant non multi-geografico, dal momento che la maggior parte delle impostazioni SharePoint e OneDrive e i servizi hanno funzionalità multi-geo. È consigliabile consultare [Amministrazione di un ambiente multi-geografico](administering-a-multi-geo-environment.md) prima di procedere con la configurazione.
 

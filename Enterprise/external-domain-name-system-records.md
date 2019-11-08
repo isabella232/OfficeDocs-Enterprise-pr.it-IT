@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Riepilogo: elenco riferimenti dei record DNS da utilizzare quando si pianifica una distribuzione di Office 365.'
-ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: ec05958eaf40fe988245eae808cc78bf60c06136
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616139"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028820"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Record Domain Name System (DNS) esterni per Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "37616139"
   
 |||
 |:-----|:-----|
-|![Dominio](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Se si desidera visualizzare un elenco personalizzato di record DNS per la propria organizzazione di Office 365,** è possibile [trovare le informazioni necessarie per creare record DNS di Office 365](https://support.office.microsoft.com/it-IT/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) per il proprio dominio in Office 365.  <br/> **Se si necessita di assistenza per aggiungere questi record al proprio host DNS di dominio, come GoDaddy o eNom,** [sono disponibili dei collegamenti alle istruzioni dettagliate per numerosi host DNS](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **Si sta cercando di utilizzare l'elenco riferimenti per la propria distribuzione personalizzata?** Utilizzare l'elenco di seguito come riferimento per la propria distribuzione personalizzata di Office 365. Sarà necessario selezionare i record da applicare all'organizzazione e compilare i valori appropriati. <br/> **Tornare a** [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://aka.ms/tune).  <br/> |
+|![Dominio](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Se si desidera visualizzare un elenco personalizzato di record DNS per la propria organizzazione di Office 365,** è possibile [trovare le informazioni necessarie per creare record DNS di Office 365](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) per il proprio dominio in Office 365.  <br/> **Se si necessita di assistenza per aggiungere questi record al proprio host DNS di dominio, come GoDaddy o eNom,** [sono disponibili dei collegamenti alle istruzioni dettagliate per numerosi host DNS](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **Si sta cercando di utilizzare l'elenco riferimenti per la propria distribuzione personalizzata?** Utilizzare l'elenco di seguito come riferimento per la propria distribuzione personalizzata di Office 365. Sarà necessario selezionare i record da applicare all'organizzazione e compilare i valori appropriati. <br/> **Tornare a** [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](https://aka.ms/tune).  <br/> |
 
 Spesso i record SPF e MX sono i più difficili da individuare. Microsoft ha aggiornato le indicazioni sui record SPF alla fine di questo articolo. La cosa importante da ricordare è che _è possibile avere un solo record SPF nel dominio_. È possibile avere più record MX; tuttavia, può essere proprio questa la causa di alcuni problemi relativi al recapito della posta. Disporre di un solo record MX che indirizza la posta elettronica a un sistema di posta consente di eliminare molti potenziali problemi.
   
@@ -103,7 +103,7 @@ SharePoint Online richiede solo un record DNS se l'organizzazione utilizza Share
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
->  SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste tecniche, dopo aver configurato SPF, è necessario configurare anche DKIM e DMARC per Office 365. Per iniziare, vedere [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/it-IT/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Use DMARC to validate email in Office 365](https://technet.microsoft.com/it-IT/library/mt734386%28v=exchg.150%29.aspx).
+>  SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste tecniche, dopo aver configurato SPF, è necessario configurare anche DKIM e DMARC per Office 365. Per iniziare, vedere [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Use DMARC to validate email in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
   
 I record SPF sono record TXT che consentono di impedire che altri utenti utilizzino il dominio per l'invio di posta indesiderata o comunque dannosa. I record SPF (Sender Policy Framework) identificano i server che sono autorizzati a inviare posta elettronica dal dominio dell'utente.
   
