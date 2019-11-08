@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: Se si è scelto di rifiutare la distribuzione di FastTrack e si è pronti per eseguire la migrazione dei dati a Office 365, questo è il punto di partenza.
-ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
-ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
+ms.openlocfilehash: 8fa0b26a1051c33a32fa9a583c76662e998b0692
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35597552"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031331"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Eseguire la migrazione dei dati dell'organizzazione a Office 365 Enterprise
 
@@ -40,7 +40,7 @@ Se si desidera ricevere assistenza per la configurazione di Office 365, [FastTra
 
 ## <a name="migrate-skype-for-business-users"></a>Eseguire la migrazione degli utenti di Skype for Business
 - [Eseguire la migrazione a Skype for Business Online](https://technet.microsoft.com/library/jj204969.aspx) (amministratore)
-- Scaricare lo [Strumento di aggiornamento delle riunioni per Skype for Business](https://www.microsoft.com/en-us/download/details.aspx?id=51659) ed [eseguirlo in ogni workstation](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4) (amministratore e/o utente finale)
+- Scaricare lo [Strumento di aggiornamento delle riunioni per Skype for Business](https://www.microsoft.com/download/details.aspx?id=51659) ed [eseguirlo in ogni workstation](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4) (amministratore e/o utente finale)
   
 ## <a name="need-to-talk-to-support"></a>È necessario contattare il supporto?
 [Contattare il supporto tecnico](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) per i prodotti per le aziende.

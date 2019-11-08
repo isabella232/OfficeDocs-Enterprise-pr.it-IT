@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: In questo articolo viene descritto come utilizzare la rete di distribuzione del contenuto (CDN) di Office 365 per velocizzare il recapito delle risorse di SharePoint Online a tutti gli utenti, indipendentemente dal luogo in cui si trovano o dal modo in cui accedono al contenuto.
-ms.openlocfilehash: dc08ae1cc54e17e5d7f1c3c717bfd254b6cf962d
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 60016fff28ca7c71555e141ef479d32fdd6d7856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643299"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031431"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online
 
@@ -218,7 +218,7 @@ Per consentire all'organizzazione di utilizzare origini private, digitare il com
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-Per ulteriori informazioni su questo cmdlet, vedere [set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).
+Per ulteriori informazioni su questo cmdlet, vedere [set-SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx).
 
 <a name="Office365CDNforSPOFileType"> </a>
 ### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Modificare l'elenco dei tipi di file da includere nella rete CDN di Office 365 (facoltativo)
@@ -246,7 +246,7 @@ Per sapere quali tipi di file sono attualmente consentiti dalla rete CDN, utiliz
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-Per ulteriori informazioni su questi cmdlet, vedere [set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) e [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).
+Per ulteriori informazioni su questi cmdlet, vedere [set-SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) e [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx).
 
 <a name="Office365CDNforSPOSiteClassification"> </a>
 ### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Modificare l'elenco di classificazioni dei siti che si desidera escludere dalla rete CDN di Office 365 (facoltativo)
@@ -279,7 +279,7 @@ La proprietà _ExcludeRestrictedSiteClassifications_ contiene le classificazioni
 
 La proprietà _ExcludeIfNoScriptDisabled_ esclude il contenuto dalla rete CDN in base alle impostazioni degli attributi _noscript_ a livello di sito. Per impostazione predefinita, l'attributo _noscript_ è impostato su **abilitato** per i siti _moderni_ e **disabilitato** per i siti _classici_ . Questo dipende dalle impostazioni del tenant.
 
-Per ulteriori informazioni su questi cmdlet, vedere [set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) e [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).
+Per ulteriori informazioni su questi cmdlet, vedere [set-SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) e [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx).
 
 <a name="Office365CDNforSPOOrigin"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>Aggiungere un'origine per le risorse
@@ -326,7 +326,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
-Per ulteriori informazioni su questo comando e sulla relativa sintassi, vedere [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Per ulteriori informazioni su questo comando e sulla relativa sintassi, vedere [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
 
 > [!NOTE]
 > In origine privata, le risorse condivise da un'origine devono avere una versione principale pubblicata prima che sia possibile accedervi dalla rete CDN.
@@ -350,7 +350,7 @@ In genere, queste origini sono configurate per l'utente per impostazione predefi
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-Per ulteriori informazioni su questo comando e sulla relativa sintassi, vedere [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Per ulteriori informazioni su questo comando e sulla relativa sintassi, vedere [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
 
 Dopo aver eseguito il comando, il sistema sincronizza la configurazione all'interno del datacenter. Questo può richiedere fino a 15 minuti.
 
@@ -375,7 +375,7 @@ Dopo aver eseguito il comando, il sistema sincronizza la configurazione all'inte
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-Per ulteriori informazioni su questo comando e sulla relativa sintassi, vedere [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Per ulteriori informazioni su questo comando e sulla relativa sintassi, vedere [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
 
 Dopo aver eseguito il comando, il sistema sincronizza la configurazione all'interno del datacenter. Questo può richiedere fino a 15 minuti.
 
@@ -388,7 +388,7 @@ Utilizzare il cmdlet **Add-SPOTenantCdnOrigin** per definire una raccolta siti c
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-Per ulteriori informazioni su questo comando e sulla relativa sintassi, vedere [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Per ulteriori informazioni su questo comando e sulla relativa sintassi, vedere [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
   
 Dopo aver eseguito il comando, il sistema sincronizza la configurazione all'interno del datacenter. È possibile che venga visualizzato un messaggio di _configurazione in sospeso_ che è previsto quando il tenant di SharePoint Online si connette al servizio CDN. Questo può richiedere fino a 15 minuti.
 
@@ -402,7 +402,7 @@ Dopo aver configurato la rete CDN, è possibile apportare modifiche alla configu
 
 Dopo aver completato la procedura di installazione, è possibile aggiungere nuove risorse e aggiornare o rimuovere le risorse esistenti ogni volta che si desidera. È sufficiente apportare le modifiche apportate alle risorse nella cartella o nella raccolta di SharePoint identificate come origine. Se si aggiunge un nuovo asset, è possibile utilizzarlo immediatamente tramite la rete CDN. Tuttavia, se si aggiorna la risorsa, saranno necessari fino a 15 minuti affinché la nuova copia venga propagata e diventi disponibile nella rete CDN.
   
-Se è necessario recuperare il percorso dell'origine, è possibile utilizzare il cmdlet **Get-SPOTenantCdnOrigins** . Per informazioni sull'utilizzo di questo cmdlet, vedere [Get-SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx).
+Se è necessario recuperare il percorso dell'origine, è possibile utilizzare il cmdlet **Get-SPOTenantCdnOrigins** . Per informazioni sull'utilizzo di questo cmdlet, vedere [Get-SPOTenantCdnOrigins](https://technet.microsoft.com/library/mt790770.aspx).
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Rimuovere un'origine dalla rete CDN di Office 365
@@ -413,7 +413,7 @@ Se è necessario recuperare il percorso dell'origine, è possibile utilizzare il
 Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
-Per informazioni sull'utilizzo di questo cmdlet, vedere [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx).
+Per informazioni sull'utilizzo di questo cmdlet, vedere [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790761.aspx).
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Modificare un'origine nella rete CDN di Office 365
@@ -437,7 +437,7 @@ Per disabilitare l'utilizzo delle origini private nella rete CDN, immettere il s
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-Per ulteriori informazioni su questo cmdlet, vedere [set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).
+Per ulteriori informazioni su questo cmdlet, vedere [set-SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx).
 
 </details>
 
@@ -578,7 +578,7 @@ In questa sezione vengono fornite informazioni su come utilizzare gli URL della 
 + [Utilizzo delle risorse in origini pubbliche](use-office-365-cdn-with-spo.md#using-assets-in-public-origins)
 + [Utilizzo delle risorse in origine privata](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)
 
-Per informazioni su come utilizzare la rete CDN per l'hosting di Web part sul lato client, vedere l'argomento [host your web part sul lato client da Office 365 CDN (Hello World Part 4)](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn).
+Per informazioni su come utilizzare la rete CDN per l'hosting di Web part sul lato client, vedere l'argomento [host your web part sul lato client da Office 365 CDN (Hello World Part 4)](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn).
 
 ### <a name="updating-links-to-cdn-assets"></a>Aggiornamento di collegamenti alle risorse della rete CDN
 
@@ -690,7 +690,7 @@ Dopo aver aggiunto collegamenti alle risorse della rete CDN a una pagina, è pos
 
 Non è possibile testare gli URL della rete CDN direttamente in un Web browser perché è necessario disporre di un referrer proveniente da SharePoint Online. Tuttavia, se si aggiunge l'URL delle risorse della rete CDN a una pagina di SharePoint e quindi si apre la pagina in un browser, verrà visualizzata la risorsa della rete CDN di cui è stato eseguito il rendering nella pagina.
 
-Per ulteriori informazioni sull'utilizzo degli strumenti di sviluppo nel browser Microsoft Edge, vedere [Microsoft Edge Developer Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide).
+Per ulteriori informazioni sull'utilizzo degli strumenti di sviluppo nel browser Microsoft Edge, vedere [Microsoft Edge Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide).
 
 Per guardare un breve video ospitato nei [modelli di sviluppo di SharePoint e nelle pratiche del canale YouTube](https://aka.ms/sppnp-videos) che dimostra come verificare che la rete CDN funzioni correttamente, vedere [verifying your CDN Usage and assicuration Optimal Network Connectivity](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5).
 

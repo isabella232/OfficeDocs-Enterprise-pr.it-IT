@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: Informazioni sui consigli sulle prestazioni per i siti moderni in SharePoint Online.
-ms.openlocfilehash: 0f54520faaefcdfc66d10430c8d2a646696fc52b
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 2ff7f76a943563644403f3df2b6b0a6ee9b28d53
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441073"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031271"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Limiti del sito portale moderno di SharePoint Online
 
@@ -52,7 +52,7 @@ Molte delle linee guida contenute in questo articolo sono incentrate sulla riduz
 |Dimensioni massime dell'immagine  <br/> |300 KB per immagine  <br/> |È consigliabile limitare le dimensioni delle immagini a 300kb o più piccole e utilizzare una rete CDN per ospitare immagini, fogli di stile e script. <br/>Per ulteriori informazioni, vedere [ottimizzare le immagini nelle pagine del sito di SharePoint Online](modern-image-optimization.md) e [utilizzare la rete di distribuzione dei contenuti (CDN) di Office 365 con SharePoint Online](use-office-365-cdn-with-spo.md).  <br/> |
 |Utenti con diritti di modifica  <br/> |200 utenti per sito  <br/> |I siti portale di SharePoint sono ottimizzati per la visualizzazione e l'utilizzo di contenuto. Le autorizzazioni di modifica per un portale devono essere limitate a un gruppo limitato di utenti, perché le autorizzazioni di modifica scaricano ulteriori controlli e quindi eseguono una maggiore lentezza per tali utenti. Un numero eccessivo di utenti con autorizzazioni di modifica influenzerà pertanto l'esperienza complessiva. <br/> |
 |IFrame di terze parti  <br/> |2 per pagina  <br/> |gli iFrame sono inaspettatamente lenti perché caricano una pagina esterna separata, inclusi tutti i contenuti associati, ad esempio JavaScript, CSS e gli elementi del Framework. Se è necessario utilizzare gli iFrame, limitare il numero a 2 o meno per ogni pagina.<br/> Per ulteriori informazioni, vedere [optimize iframes in SharePoint Online Modern and Classic Publishing site pages](modern-iframe-optimization.md). <br/> |
-|Chiamate al servizio UPA  <br/> |1 per utente all'ora  <br/> |Si consiglia di non effettuare chiamate per _richiesta_ al servizio UPA (user profile Application). È possibile utilizzare l' [API di Microsoft Graph](https://docs.microsoft.com/en-us/graph/call-api) e [PageContext](https://docs.microsoft.com/en-us/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) per eseguire una query per informazioni sugli utenti.  <br/> Se è necessaria una chiamata di servizio UPA, effettuare una singola chiamata quando necessario e quindi memorizzare nella cache le informazioni per il riutilizzo nella stessa sessione. |
+|Chiamate al servizio UPA  <br/> |1 per utente all'ora  <br/> |Si consiglia di non effettuare chiamate per _richiesta_ al servizio UPA (user profile Application). È possibile utilizzare l' [API di Microsoft Graph](https://docs.microsoft.com/graph/call-api) e [PageContext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) per eseguire una query per informazioni sugli utenti.  <br/> Se è necessaria una chiamata di servizio UPA, effettuare una singola chiamata quando necessario e quindi memorizzare nella cache le informazioni per il riutilizzo nella stessa sessione. |
 |Chiamate al servizio di tassonomia  <br/> |5 per utente all'ora  <br/> |Si consiglia di non effettuare chiamate per _richiesta_ al servizio di tassonomia. Se le chiamate al servizio di tassonomia sono necessarie, memorizzare le informazioni riutilizzate nella stessa sessione. <br/> Per ulteriori informazioni, vedere [optimize page calls in SharePoint Online Modern and Classic Publishing site pages](modern-page-call-optimization.md). <br/> |
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -63,8 +63,8 @@ Molte delle linee guida contenute in questo articolo sono incentrate sulla riduz
 
 [Ottimizzare le prestazioni di Office 365](tune-office-365-performance.md)
 
-[Limiti di SharePoint Online](https://docs.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[Limiti di SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/en-us/sharepoint/modern-experience-performance)
+[Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
-[Indicazioni sulle prestazioni per i portali di SharePoint Online](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+[Indicazioni sulle prestazioni per i portali di SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)

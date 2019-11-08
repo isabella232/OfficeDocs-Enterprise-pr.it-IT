@@ -11,16 +11,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - SPO160
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contiene collegamenti ad altri articoli che illustrano come migliorare le prestazioni dei tempi di download delle pagine per SharePoint Online.
-ms.openlocfilehash: 4352420637974e07a6c9d5ed843c312ea74729f4
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 8cd8b3b7a957fac7f3ddaed325cf64850b111fea
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375494"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033432"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Ottimizzare le prestazioni di SharePoint Online
 
@@ -36,7 +38,7 @@ Utilizzare questi articoli per ottimizzare le prestazioni di SharePoint Online.
 
 - [Opzioni di spostamento per SharePoint Online](navigation-options-for-sharepoint-online.md)
 
-- [Indicazioni sulle prestazioni per i portali di SharePoint Online](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+- [Indicazioni sulle prestazioni per i portali di SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
 
 - [Ottimizzazione delle immagini per SharePoint Online](image-optimization-for-sharepoint-online.md)
 
@@ -56,7 +58,7 @@ Utilizzare questi articoli per ottimizzare le prestazioni di SharePoint Online.
 
 - [Utilizzo della cache oggetti con SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
 
-- [Procedura: Evitare la limitazione o il blocco in SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [Procedura: Evitare la limitazione o il blocco in SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
 
 - [Ottimizzare gli iFrame nelle pagine del portale moderne di SharePoint Online](modern-iframe-optimization.md)
 

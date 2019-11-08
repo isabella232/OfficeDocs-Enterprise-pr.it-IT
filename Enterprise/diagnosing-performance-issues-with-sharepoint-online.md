@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: In questo articolo viene illustrato come è possibile diagnosticare problemi comuni con il sito di SharePoint Online utilizzando gli strumenti di sviluppo di Internet Explorer.
-ms.openlocfilehash: a4d66fd019a3b477a97dbf039144734dc7ee1288
-ms.sourcegitcommit: cb338a74194ec9ba0913070e2b74c9f50caffb3b
+ms.openlocfilehash: 2b97098c68eb519ed5a1edc26146c521f39a11d1
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605501"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033412"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosi dei problemi delle prestazioni con SharePoint Online
 
@@ -32,7 +34,7 @@ Esistono tre modi per identificare che una pagina in un sito di SharePoint Onlin
 
 - Metrica dell'intestazione delle risposte di SharePoint Online
 
-In questo argomento viene descritto come utilizzare ciascuno di questi metodi per diagnosticare problemi di prestazioni. Dopo aver individuato la causa del problema, è possibile lavorare per una soluzione utilizzando gli articoli relativi al miglioramento delle prestazioni di SharePoint che è possibile trovare http://aka.ms/tunesu.
+In questo argomento viene descritto come utilizzare ciascuno di questi metodi per diagnosticare problemi di prestazioni. Dopo aver individuato la causa del problema, è possibile lavorare per una soluzione utilizzando gli articoli relativi al miglioramento delle prestazioni di SharePoint che è possibile trovare https://aka.ms/tunesu.
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Utilizzo della barra degli strumenti F12 per diagnosticare le prestazioni in SharePoint Online
 <a name="F12ToolInfo"> </a>

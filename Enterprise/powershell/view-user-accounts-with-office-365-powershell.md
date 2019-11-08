@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Riepilogo: visualizzare, elencare o visualizzare gli account utente in vari modi con Office 365 PowerShell.'
-ms.openlocfilehash: c23e9106873aa32e8daccb1e35a16862e6f9bb7d
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 63756e29bb4d5f3e749cf4d66ef31c98ffac6182
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782066"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031661"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Visualizzare gli account utente con Office 365 PowerShell
 
@@ -212,7 +212,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  La sintassi del cmdlet **Where-Object** mostrato in questi esempi è **Where-Object {$\_.** [nome della proprietà dell'account utente] [operatore di confronto] valore **}**.  [operatore di confronto] è **-EQ** per Equals, **-ne** per non uguale a, **-lt** per meno di, **-gt** per maggiore di e altri.  [valore] è in genere una stringa, ovvero una sequenza di lettere, numeri e altri caratteri, un valore numerico o **$null** per Unspecified. Per ulteriori informazioni, vedere [Where-Object](https://technet.microsoft.com/en-us/library/hh849715.aspx) .
+>  La sintassi del cmdlet **Where-Object** mostrato in questi esempi è **Where-Object {$\_.** [nome della proprietà dell'account utente] [operatore di confronto] valore **}**.  [operatore di confronto] è **-EQ** per Equals, **-ne** per non uguale a, **-lt** per meno di, **-gt** per maggiore di e altri.  [valore] è in genere una stringa, ovvero una sequenza di lettere, numeri e altri caratteri, un valore numerico o **$null** per Unspecified. Per ulteriori informazioni, vedere [Where-Object](https://technet.microsoft.com/library/hh849715.aspx) .
   
 È possibile controllare lo stato bloccato di un account utente con il seguente comando:
   
@@ -230,7 +230,7 @@ Il cmdlet **Get-MsolUser** per impostazione predefinita visualizza tre propriet�
     
 - isLicensed
     
-Se sono necessarie ulteriori proprietà, ad esempio il reparto utilizzato dall'utente e il paese/area geografica in cui l'utente utilizza i servizi di Office 365, è possibile eseguire **Get-MsolUser** in combinazione con il cmdlet **Select-Object** per specificare l'elenco di account utente. Proprietà. Ecco un esempio:
+Se sono necessarie ulteriori proprietà, ad esempio il reparto utilizzato dall'utente e il paese/area geografica in cui l'utente utilizza i servizi di Office 365, è possibile eseguire **Get-MsolUser** in combinazione con il cmdlet **Select-Object** per specificare l'elenco delle proprietà degli account utente. Ecco un esempio:
   
 ```
 Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
@@ -284,7 +284,7 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-Se si utilizza la sincronizzazione della directory per creare e gestire gli utenti di Office 365, è possibile visualizzare l'account locale da cui è stato proiettato un utente di Office 365. Di seguito si presuppone che Azure AD Connect sia stato configurato per l'utilizzo dell'ancoraggio di origine predefinito di ObjectGUID (per ulteriori informazioni sulla configurazione di un ancoraggio di origine, vedere [Azure ad Connect: Design Concepts](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)) e presuppone che il modulo di Active Directory per PowerShell sia stati installati (vedere [strumenti di amministrazione remota](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):
+Se si utilizza la sincronizzazione della directory per creare e gestire gli utenti di Office 365, è possibile visualizzare l'account locale da cui è stato proiettato un utente di Office 365. Di seguito si presuppone che Azure AD Connect sia stato configurato per l'utilizzo dell'ancoraggio di origine predefinito di ObjectGUID (per ulteriori informazioni sulla configurazione di un ancoraggio di origine, vedere [Azure ad Connect: Design Concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)) e si presuppone che sia stato installato il modulo di Active Directory per PowerShell (vedere [strumenti di amministrazione remota](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):
 
 ```
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid

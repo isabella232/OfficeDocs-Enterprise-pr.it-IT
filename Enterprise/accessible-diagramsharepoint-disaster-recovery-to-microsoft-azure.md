@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: Questo articolo è una versione di testo accessibile del diagramma denominato ripristino di emergenza di SharePoint in Microsoft Azure.
-ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068522"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038235"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagramma accessibile-ripristino di emergenza di SharePoint in Microsoft Azure
 
@@ -194,10 +194,9 @@ Nella rete virtuale di Azure sono disponibili tre servizi cloud:
 
 La configurazione di servizi di dominio Active Directory per questa soluzione costituisce uno scenario di distribuzione ibrida in cui AD DS è in parte distribuito in locale e in parte distribuito in macchine virtuali di Azure. 
   
-Importante: prima di distribuire servizi di dominio Active Directory in Azure, vedere linee guida per la distribuzione di Windows Server attivo nellehttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)macchine virtuali di Microsoft Azure (. 
+Importante: prima di distribuire servizi di dominio Active Directory in Azure, vedere linee guida per la distribuzione di Windows Server attivo nellehttps://docs.microsoft.com/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)macchine virtuali di Microsoft Azure (. 
   
-Per istruzioni complete sulla progettazione e la distribuzione di ambienti Active Directory http://TechNet.microsoft.com, vedere. 
-  
+ 
 Questa architettura di riferimento include due macchine virtuali configurate come controller di dominio. Ognuna è configurata come indicato di seguito: 
   
 - Dimensioni: piccolo. 

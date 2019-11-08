@@ -13,20 +13,23 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Comprendere la resilienza dei dati in Microsoft Office 365.
-ms.openlocfilehash: d7cba870546a78d585908e06809970d1c8e08f86
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 4bdd46689ca0dd9caa3da10fc57951bee3513b85
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067539"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035793"
 ---
 # <a name="data-resiliency-in-office-365"></a>Resilienza dei dati in Office 365
 
 ## <a name="introduction"></a>Introduzione
+
 Data la complessità del cloud computing, Microsoft è consapevole del fatto che non si tratta di un caso in cui le cose andranno male, ma piuttosto quando. È possibile progettare i servizi cloud per massimizzare l'affidabilità e ridurre al minimo gli effetti negativi sui clienti quando si verifica un errore. Ci siamo spostati oltre la strategia tradizionale di fare affidamento sull'infrastruttura fisica complessa e abbiamo creato la ridondanza direttamente nei nostri servizi cloud. Viene utilizzata una combinazione di infrastruttura fisica meno complessa e software più intelligente che genera la resilienza dei dati nei servizi e garantisce una disponibilità elevata ai clienti. 
 
 ## <a name="resiliency-and-recoverability-are-built-in"></a>La resilienza e la recuperabilità sono incorporate 
-La creazione di resilienza e ripristino inizia con l'assunto che l'infrastruttura e i processi sottostanti avranno esito negativo a un certo punto: l'hardware (infrastruttura) avrà esito negativo, gli esseri umani commetteranno errori e il software avrà bug. Anche se non è corretto dire che gli sviluppatori di software non stavano pensando a queste operazioni prima del cloud, in che modo questi problemi sono stati gestiti in una tipica implementazione IT è stato molto diverso prima del cloud: 
+
+La creazione di resilienza e ripristino inizia con l'assunto che l'infrastruttura e i processi sottostanti avranno esito negativo a un certo punto: l'hardware (infrastruttura) avrà esito negativo, gli esseri umani commetteranno errori e il software avrà bug. Anche se non è corretto dire che gli sviluppatori di software non stavano pensando a queste operazioni prima del cloud, in che modo questi problemi sono stati gestiti in una tipica implementazione IT è stato molto diverso prima del cloud:
+
 - In primo luogo, le protezioni per l'hardware e l'infrastruttura sono state significative. Questo significava che i datacenter con 99,99% di affidabilità richiedevano una notevole quantità di energia e ridondanza di rete e che i server sono stati implementati con il clustering basato su hardware, alimentatori duali, interfacce di rete duali e così. 
 - In secondo luogo, il processo è stato fondamentale. I team operativi hanno mantenuto procedure rigorose, sono state apportate modifiche alle finestre e spesso sono stati significativi overhead per la gestione dei progetti. 
 - Terza, la distribuzione ha avuto luogo a ritmi glaciali. La distribuzione del codice senza possedere l'origine significava in attesa di rilasci delle patch e la versione principale rilasciava la sostituzione hardware e una significativa spesa di capitale. Inoltre, l'unico modo per correggere un problema è stato quello di eseguire il rollback. In questo modo, la maggior parte delle organizzazioni IT distribuirà solo i rilasci importanti per evitare che il lavoro venga mantenuto aggiornato. 
@@ -34,8 +37,10 @@ La creazione di resilienza e ripristino inizia con l'assunto che l'infrastruttur
 
 Oggi, i clienti si aspettano un'innovazione continua da Microsoft senza compromettere la qualità e questo è uno dei motivi per cui i servizi e il software di Microsoft sono stati creati con resilienza e ripristino in mente. 
 
-## <a name="office-365-data-resiliency-principles"></a>Principi di resilienza dei dati di Office 365 
-La resilienza si riferisce alla capacità di un servizio basato sul cloud di resistere a determinati tipi di errori, ma rimane completamente funzionante dalla prospettiva dei clienti. La resilienza dei dati significa che non importa quali errori si verifichino all'interno di Office 365, i dati critici dei clienti restano intatti e inalterati. A tal fine, i servizi di Office 365 sono stati disegnati attorno a cinque specifici principi di resilienza: 
+## <a name="office-365-data-resiliency-principles"></a>Principi di resilienza dei dati di Office 365
+
+La resilienza si riferisce alla capacità di un servizio basato sul cloud di resistere a determinati tipi di errori, ma rimane completamente funzionante dalla prospettiva dei clienti. La resilienza dei dati significa che non importa quali errori si verifichino all'interno di Office 365, i dati critici dei clienti restano intatti e inalterati. A tal fine, i servizi di Office 365 sono stati disegnati attorno a cinque specifici principi di resilienza:
+
 - Sono presenti dati critici e non critici. I dati non critici, ad esempio l'eventuale lettura di un messaggio, possono essere eliminati in scenari di errore rari. I dati critici (ad esempio, i dati dei clienti come i messaggi di posta elettronica) devono essere protetti a costi estremi. Come obiettivo di progettazione, i messaggi di posta elettronica recapitati sono sempre importanti e gli elementi come se un messaggio è stato letto non sono critici. 
 - Le copie dei dati del cliente devono essere separate in aree di errore diverse o come molti domini di errore possibili (ad esempio, Datacenter, accessibili tramite credenziali singole (processo, server o operatore)) per fornire l'isolamento degli errori. 
 - I dati critici dei clienti devono essere monitorati per la mancanza di qualsiasi parte dell'atomicità, della coerenza, dell'isolamento e della durata (acido). 

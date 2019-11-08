@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Prima di iniziare a pianificare la rete per la connettività di rete di Office 365, è importante comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e ottenere le migliori prestazioni possibili. In questo articolo vengono fornite informazioni utili per comprendere le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365.
-ms.openlocfilehash: 9444cef0a93d10953a726da40d24ab18e29d8f24
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: d403cd6245be21f8089e1234e7c769b93c2142cb
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782206"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031921"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principi della connettività di rete di Office 365
 
@@ -37,7 +37,7 @@ In questo articolo verrà illustrato quanto segue:
 - [Nuove categorie di endpoint di Office 365](office-365-network-connectivity-principles.md#BKMK_Categories) e linee guida per l'ottimizzazione
 - [Confronto tra sicurezza perimetrale di rete e sicurezza degli endpoint](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - Opzioni di [ottimizzazione incrementale](office-365-network-connectivity-principles.md#BKMK_IncOpt) per il traffico di Office 365
-- Strumento di onboarding di [rete di office 365](https://aka.ms/netonboard), un nuovo strumento per testare la connettività di base a Office 365
+- [Strumento di onboarding di rete di office 365](https://aka.ms/netonboard), un nuovo strumento per testare la connettività di base a Office 365
 
 ## <a name="office-365-architecture"></a>Architettura di Office 365
 <a name="BKMK_Architecture"> </a>
@@ -53,7 +53,7 @@ Per la maggior parte dei clienti, gli utenti di Office 365 sono distribuiti in m
 
 Microsoft consiglia i seguenti principi per ottenere la connettività e le prestazioni ottimali di Office 365. Utilizzare questi principi di connettività di Office 365 per gestire il traffico e ottenere prestazioni ottimali per la connessione a Office 365.
   
-L'obiettivo principale della progettazione della rete dovrebbe essere quello di ridurre al minimo la latenza riducendo il tempo di andata e ritorno (RTT) dalla rete nella rete globale Microsoft, la backbone di rete pubblica di Microsoft che interconnette tutti i datacenter di Microsoft con una bassa latenza. e i punti di ingresso dell'applicazione cloud sparsi in tutto il mondo. Per ulteriori informazioni sulla rete globale Microsoft [, vedere come Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+L'obiettivo principale della progettazione della rete dovrebbe essere quello di ridurre al minimo la latenza riducendo il tempo di andata e ritorno (RTT) dalla rete nella rete globale Microsoft, la backbone di rete pubblica di Microsoft che interconnette tutti i datacenter di Microsoft con una bassa latenza. e i punti di ingresso dell'applicazione cloud sparsi in tutto il mondo. Per ulteriori informazioni sulla rete globale Microsoft [, vedere come Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
   
 <a name="BKMK_P1"> </a>
 ### <a name="identify-and-differentiate-office-365-traffic"></a>Identificare e differenziare il traffico di Office 365
@@ -62,18 +62,18 @@ L'obiettivo principale della progettazione della rete dovrebbe essere quello di 
   
 Identificare il traffico di rete di Office 365 è il primo passaggio per la possibilità di differenziare il traffico dal traffico di rete generico associato a Internet. La connettività di Office 365 può essere ottimizzata mediante l'implementazione di una combinazione di approcci quali ottimizzazione della route di rete, regole del firewall, impostazioni del proxy del browser e bypass dei dispositivi di ispezione di rete per alcuni endpoint.
   
-Le linee guida per l'ottimizzazione di Office 365 sono state 365 suddivise in due categorie, **obbligatorie** e **facoltative**. Poiché sono stati aggiunti endpoint per il supporto di nuove funzionalità e servizi di Office 365, sono stati riorganizzati endpoint di Office 365 in **** tre categorie: Optimize, **Allow** e **default**. Le linee guida di ogni categoria si applicano a tutti gli endpoint della categoria, semplificando le ottimizzazioni per la comprensione e l'implementazione.
+Le linee guida per l'ottimizzazione di Office 365 sono state 365 suddivise in due categorie, **obbligatorie** e **facoltative**. Poiché sono stati aggiunti endpoint per il supporto di nuove funzionalità e servizi di Office 365, sono stati riorganizzati endpoint di Office 365 in tre categorie: **optimize**, **Allow** e **default**. Le linee guida di ogni categoria si applicano a tutti gli endpoint della categoria, semplificando le ottimizzazioni per la comprensione e l'implementazione.
   
 Per ulteriori informazioni sulle categorie di endpoint di Office 365 e sui metodi di ottimizzazione, vedere la sezione [New office 365 endpoint Categories](office-365-network-connectivity-principles.md#BKMK_Categories) .
   
-Microsoft ora pubblica tutti gli endpoint di Office 365 come servizio Web e fornisce indicazioni su come utilizzare al meglio tali dati. Per ulteriori informazioni su come recuperare e utilizzare gli endpoint di Office 365, vedere l'articolo [office 365 URLs and IP address ranges](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Microsoft ora pubblica tutti gli endpoint di Office 365 come servizio Web e fornisce indicazioni su come utilizzare al meglio tali dati. Per ulteriori informazioni su come recuperare e utilizzare gli endpoint di Office 365, vedere l'articolo [office 365 URLs and IP address ranges](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 <a name="BKMK_P2"> </a>
 ### <a name="egress-network-connections-locally"></a>Uscire dalle connessione di rete a livello locale
 
 ![Uscire dalle connessione di rete a livello locale](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
-Il DNS locale e l'uscita Internet sono di fondamentale importanza per la riduzione della latenza delle connessioni e per garantire che le connessioni utente vengano apportate al punto più vicino di accesso ai servizi di Office 365. In una topologia di rete complessa, è importante implementare contemporaneamente sia il DNS locale che l'uscita Internet locale. Per ulteriori informazioni sul modo in cui Office 365 instrada le connessioni client al punto di ingresso più vicino, vedere l'articolo [connettività client](https://support.office.com/en-us/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
+Il DNS locale e l'uscita Internet sono di fondamentale importanza per la riduzione della latenza delle connessioni e per garantire che le connessioni utente vengano apportate al punto più vicino di accesso ai servizi di Office 365. In una topologia di rete complessa, è importante implementare contemporaneamente sia il DNS locale che l'uscita Internet locale. Per ulteriori informazioni sul modo in cui Office 365 instrada le connessioni client al punto di ingresso più vicino, vedere l'articolo [connettività client](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
   
 Prima dell'avvento dei servizi cloud, ad esempio Office 365, la connettività Internet degli utenti finali come fattore di progettazione nell'architettura di rete era relativamente semplice. Quando i servizi Internet e i siti Web vengono distribuiti in tutto il mondo, la latenza tra i punti di uscita delle aziende e qualsiasi endpoint di destinazione specificato è in gran parte una funzione di distanza geografica.
   
@@ -128,7 +128,7 @@ La maggior parte delle reti aziendali impone la sicurezza della rete per il traf
 <a name="BKMK_WebSvc"> </a>
 #### <a name="office-365-endpoints-web-service"></a>Servizio Web di endpoint di Office 365
 
-Gli amministratori di Office 365 possono utilizzare uno script o una chiamata REST per consumare un elenco strutturato di endpoint dal servizio Web di Office 365 endpoint e aggiornare le configurazioni dei firewall perimetrali e di altri dispositivi di rete. Questo assicurerà che il traffico associato a Office 365 venga identificato, trattato adeguatamente e gestito in modo diverso dal traffico di rete associato a siti web generici e spesso sconosciuti. Per ulteriori informazioni su come utilizzare il servizio Web di Office 365 endpoint, vedere l'articolo [office 365 URLs and IP address ranges](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Gli amministratori di Office 365 possono utilizzare uno script o una chiamata REST per consumare un elenco strutturato di endpoint dal servizio Web di Office 365 endpoint e aggiornare le configurazioni dei firewall perimetrali e di altri dispositivi di rete. Questo assicurerà che il traffico associato a Office 365 venga identificato, trattato adeguatamente e gestito in modo diverso dal traffico di rete associato a siti web generici e spesso sconosciuti. Per ulteriori informazioni su come utilizzare il servizio Web di Office 365 endpoint, vedere l'articolo [office 365 URLs and IP address ranges](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 #### <a name="pac-proxy-automatic-configuration-scripts"></a>Script per la configurazione automatica del proxy (PAC)
 <a name="BKMK_WebSvc"> </a>
@@ -140,7 +140,7 @@ Gli amministratori di Office 365 possono creare script PAC (Proxy Automatic Conf
 
 Microsoft è trasparente sulla sicurezza del datacenter, la sicurezza operativa e la riduzione dei rischi attorno a Office 365 server e gli endpoint di rete che rappresentano. Le funzionalità di sicurezza predefinite di Office 365 sono disponibili per ridurre il rischio di protezione della rete, ad esempio la prevenzione della perdita di dati, l'antivirus, l'autenticazione a più fattori, la casella di blocco del cliente, la protezione avanzata dalle minacce, Office 365 Threat Intelligence, Office 365 Secure Punteggio, Exchange Online Protection e sicurezza DDOS di rete.
   
-Per ulteriori informazioni su Microsoft datacenter e sulla sicurezza della rete globale, vedere [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/security).
+Per ulteriori informazioni su Microsoft datacenter e sulla sicurezza della rete globale, vedere [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security).
   
 ## <a name="new-office-365-endpoint-categories"></a>Nuove categorie di endpoint di Office 365
 <a name="BKMK_Categories"> </a>
@@ -152,7 +152,7 @@ Gli endpoint di Office 365 rappresentano un insieme variegato di indirizzi di re
   
 Nelle linee guida precedenti per la gestione del traffico di Office 365, gli endpoint sono stati organizzati in due categorie, **obbligatorie** e **facoltative**. Gli endpoint all'interno di ogni categoria richiedevano diverse ottimizzazioni a seconda della criticità del servizio e molti clienti affrontavano le sfide per giustificare l'applicazione delle stesse ottimizzazioni di rete all'elenco completo di URL e indirizzi IP di Office 365.
   
-Nel nuovo modello gli endpoint sono suddivisi in tre categorie, optimize ****, **Allow** e **default**, che forniscono un pivot basato sulla priorità in cui si concentrano gli sforzi di ottimizzazione della rete per realizzare i migliori miglioramenti delle prestazioni e restituire sull'investimento. Gli endpoint sono consolidati nelle categorie sopra riportate in base alla sensibilità dell'esperienza utente effettiva alla qualità della rete, all'inviluppo di volume e prestazioni degli scenari e alla facilità di implementazione. Le ottimizzazioni consigliate possono essere applicate allo stesso modo per tutti gli endpoint di una determinata categoria.
+Nel nuovo modello gli endpoint sono suddivisi in tre categorie, **optimize**, **Allow** e **default**, fornendo un pivot basato sulla priorità in cui si concentrano gli sforzi di ottimizzazione della rete per ottenere i migliori miglioramenti delle prestazioni e il ritorno sull'investimento. Gli endpoint sono consolidati nelle categorie sopra riportate in base alla sensibilità dell'esperienza utente effettiva alla qualità della rete, all'inviluppo di volume e prestazioni degli scenari e alla facilità di implementazione. Le ottimizzazioni consigliate possono essere applicate allo stesso modo per tutti gli endpoint di una determinata categoria.
   
 - **Ottimizzazione** degli endpoint sono necessari per la connettività a tutti i servizi di Office 365 e rappresentano oltre il 75% della larghezza di banda, delle connessioni e del volume di dati di Office 365. Tali endpoint rappresentano gli scenari di Office 365 che sono più sensibili alle prestazioni, alla latenza e alla disponibilità della rete. Tutti gli endpoint sono ospitati nei datacenter Microsoft. La percentuale di modifiche apportate agli endpoint in questa categoria dovrebbe essere molto più bassa rispetto a quella degli endpoint nelle altre due categorie. Questa categoria include un insieme di URL di chiave molto piccolo (nell'ordine di ~ 10) e un set definito di subnet IP dedicate ai carichi di lavoro di core Office 365, ad esempio Exchange Online, SharePoint Online, Skype for business online e Microsoft teams.
 
@@ -170,7 +170,7 @@ Nel nuovo modello gli endpoint sono suddivisi in tre categorie, optimize ****, *
   - Verificare che gli indirizzi IP restituiti dalla risoluzione dei nomi DNS corrispondano al percorso di uscita del routing per questi endpoint.
   - Assegnare la priorità a questi endpoint per l'integrazione di SD-WAN per il routing diretto e minimo di latenza al punto di peering Internet più vicino della rete globale di Microsoft.
 
-- **Consenti** gli endpoint sono necessari per la connettività a servizi e funzionalità di Office 365 specifici, ma non sono sensibili alle prestazioni e alla latenza di rete ** come quelli della categoria optimize. L'ingombro globale di rete di questi endpoint dal punto di vista della larghezza di banda e del numero di connessioni è significativamente più piccolo. Questi endpoint sono dedicati a Office 365 e sono ospitati nei Data Center Microsoft. Essi rappresentano un ampio set di micro-servizi di Office 365 e le relative dipendenze (nell'ordine di ~ 100 URL) e dovrebbero variare a una velocità superiore rispetto a quelle della ** categoria optimize. Non tutti gli endpoint di questa categoria sono associati a subnet IP dedicate definite.
+- **Consenti** gli endpoint sono necessari per la connettività a servizi e funzionalità di Office 365 specifici, ma non sono sensibili alle prestazioni e alla latenza di rete come quelli della categoria *optimize* . L'ingombro globale di rete di questi endpoint dal punto di vista della larghezza di banda e del numero di connessioni è significativamente più piccolo. Questi endpoint sono dedicati a Office 365 e sono ospitati nei Data Center Microsoft. Essi rappresentano un ampio set di micro-servizi di Office 365 e le relative dipendenze (nell'ordine di ~ 100 URL) e dovrebbero variare a una velocità superiore rispetto a quelle della categoria *optimize* . Non tutti gli endpoint di questa categoria sono associati a subnet IP dedicate definite.
 
     Le ottimizzazioni di rete per gli endpoint *consentono* di migliorare l'esperienza utente di Office 365, ma alcuni clienti possono scegliere di applicare queste ottimizzazioni in modo più restrittivo per ridurre al minimo le modifiche apportate alla rete.
 
@@ -186,7 +186,7 @@ Nel nuovo modello gli endpoint sono suddivisi in tre categorie, optimize ****, *
 
 - Gli endpoint **predefiniti** rappresentano i servizi e le dipendenze di Office 365 che non richiedono alcuna ottimizzazione e possono essere trattati dalle reti dei clienti come normale traffico associato a Internet. Tenere presente che alcuni endpoint di questa categoria potrebbero non essere ospitati nei Data Center Microsoft. Tra gli *https://odc.officeapps.live.com* esempi *https://appexsin.stb.s-msn.com*sono inclusi e.
 
-Per ulteriori informazioni sulle tecniche di ottimizzazione della rete di Office 365, vedere l'articolo [Managing office 365 Endpoints](https://support.office.com/en-us/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#ID0EAEAAA=0._Overview).
+Per ulteriori informazioni sulle tecniche di ottimizzazione della rete di Office 365, vedere l'articolo [Managing office 365 Endpoints](https://support.office.com/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#ID0EAEAAA=0._Overview).
   
 ## <a name="comparing-network-perimeter-security-with-endpoint-security"></a>Confronto tra sicurezza perimetrale di rete e sicurezza degli endpoint
 <a name="BKMK_SecurityComparison"> </a>
@@ -223,14 +223,14 @@ Un approccio olistico alla sicurezza avanzata deve includere la considerazione d
   - Assicura l'uscita locale per il traffico di Office 365
 - I miglioramenti possono essere risolti in modo incrementale come descritto nella sezione [ottimizzazione incrementale](office-365-network-connectivity-principles.md#BKMK_IncOpt) . Alcune tecniche di ottimizzazione possono offrire migliori rapporti costi/benefici a seconda dell'architettura di rete e scegliere le ottimizzazioni più sensate per l'organizzazione.
 
-Per ulteriori informazioni sulla sicurezza e conformità di Office 365, vedere l'articolo [panoramica sulla sicurezza e la conformità in office 365](https://support.office.com/en-us/article/overview-of-security-and-compliance-in-office-365-dcb83b2c-ac66-4ced-925d-50eb9698a0b2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Per ulteriori informazioni sulla sicurezza e conformità di Office 365, vedere l'articolo [panoramica sulla sicurezza e la conformità in office 365](https://support.office.com/article/overview-of-security-and-compliance-in-office-365-dcb83b2c-ac66-4ced-925d-50eb9698a0b2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 ## <a name="incremental-optimization"></a>Ottimizzazione incrementale
 <a name="BKMK_IncOpt"> </a>
 
 Il modello di connettività di rete ideale per SaaS è stato rappresentato in precedenza in questo articolo, ma per molte organizzazioni di grandi dimensioni con architetture di rete complesse storicamente, non sarà pratico apportare direttamente tutte queste modifiche. In questa sezione vengono illustrate numerose modifiche incrementali che consentono di migliorare le prestazioni e l'affidabilità di Office 365.
   
-I metodi che verranno utilizzati per ottimizzare il traffico di Office 365 variano a seconda della topologia di rete e dei dispositivi di rete implementati. Le grandi aziende con numerosi percorsi e procedure di sicurezza di rete complesse dovranno sviluppare una strategia che includa la maggior parte o tutti i principi elencati nella sezione dei [principi di connettività di Office 365](office-365-network-connectivity-principles.md#BKMK_Principles) , mentre le organizzazioni più piccole possono solo è necessario prendere in considerazione uno o due.
+I metodi che verranno utilizzati per ottimizzare il traffico di Office 365 variano a seconda della topologia di rete e dei dispositivi di rete implementati. Le grandi aziende con numerosi percorsi e procedure di sicurezza di rete complesse dovranno sviluppare una strategia che includa la maggior parte o tutti i principi elencati nella sezione dei [principi di connettività di Office 365](office-365-network-connectivity-principles.md#BKMK_Principles) , mentre le organizzazioni più piccole potrebbero dover prendere in considerazione solo uno o due.
   
 È possibile approcciare l'ottimizzazione come processo incrementale, applicando ogni metodo in successione. Nella tabella seguente sono elencati i metodi di ottimizzazione principali per il loro impatto sulla latenza e l'affidabilità per il numero massimo di utenti.
   
@@ -266,6 +266,6 @@ I metodi che verranno utilizzati per ottimizzare il traffico di Office 365 varia
 
 [Strumento di onboarding di rete di Office 365](https://aka.ms/netonboard)
 
-[In che modo Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[In che modo Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
 [Blog di rete di Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Riepilogo: configurare e illustrare in che modo Office 365 Information Rights Management protegge i file sensibili, anche quando vengono pubblicati nella raccolta siti di SharePoint Online errata.'
-ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782496"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031571"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protezione dei file sensibili nell'ambiente di sviluppo/test di Office 365
 
@@ -32,7 +32,7 @@ Information Rights Management (IRM) in Office 365 è un set di funzionalità per
 Con le istruzioni disponibili in questo articolo, è possibile abilitare e testare Information Rights Management in Office 365 per i file contenenti possibili informazioni riservate nella sottoscrizione di valutazione di Office 365.
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
+> Fare clic [qui](https://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/testing di Office 365
 
@@ -92,7 +92,7 @@ Dalla visualizzazione del comando **New-MsolUser**, prendere nota della password
   
 Successivamente, si crea un gruppo di dirigenti privato e vi si aggiungono i nuovi account dirigente.
   
-1. Nel browser, accedere al portale di Office [http://admin.microsoft.com](http://admin.microsoft.com) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
+1. Nel browser, accedere al portale di Office [https://admin.microsoft.com](https://admin.microsoft.com) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
   - Se è in uso l'ambiente di sviluppo/test di Office 365 leggero, aprire una sessione privata di Internet Explorer o del proprio browser e accedere dal computer locale.
     
@@ -166,7 +166,7 @@ Successivamente, accedere con un account dirigente e creare un documento nella r
   
 1. Nella scheda **Microsoft Office Home** fare clic sull'icona dell'account utente in alto a destra, quindi fare clic su **Disconnetti**.
     
-2. Passare a [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Passare a [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Nella pagina di **accesso di Office 365**, fare clic su **Usa un altro account**.
     
@@ -204,7 +204,7 @@ Successivamente, accedere come User5 e provare ad aprire il documento SensitiveD
   
 1. Nella scheda **Microsoft Office Home** fare clic sull'icona dell'account utente in alto a destra, quindi fare clic su **Disconnetti**.
     
-2. Passare a [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Passare a [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Nella pagina di **accesso di Office 365**, fare clic su **Usa un altro account**.
     
@@ -224,7 +224,7 @@ Per preparare Office 365 per le fasi 3 e 4, abilitare IRM per SharePoint Online.
   
 1. Nella scheda **Microsoft Office Home** fare clic sull'icona dell'account utente in alto a destra, quindi fare clic su **Disconnetti**.
     
-2. Passare a [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Passare a [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Nella pagina **Accesso a Office 365**, fare clic sul nome dell'account di amministratore globale, digitare la relativa password, quindi fare clic su **Accedi**.
     
@@ -280,7 +280,7 @@ Successivamente, agendo da CEO, si carica un nuovo documento nella cartella docu
     
 5. Nella scheda **Microsoft Office Home** nel browser, fare clic sull'icona utente in alto a destra, quindi fare clic su **Disconnetti**.
     
-6. Passare a [http://admin.microsoft.com](http://admin.microsoft.com).
+6. Passare a [https://admin.microsoft.com](https://admin.microsoft.com).
     
 7. Nella pagina **Accesso a Office 365**, fare clic sul nome dell'account CEO, digitare la relativa password, quindi fare clic su **Accedi**.
     
@@ -306,7 +306,7 @@ Successivamente, agendo da utente normale, provare ad accedere al documento **Se
   
 1. Nella scheda **Microsoft Office Home** nel browser, fare clic sull'icona utente in alto a destra, quindi fare clic su **Disconnetti**.
     
-2. Passare a [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Passare a [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Nella pagina di **accesso a Office 365** fare clic sul nome dell'account User5, digitare la relativa password, quindi fare clic su **Accedi**.
     

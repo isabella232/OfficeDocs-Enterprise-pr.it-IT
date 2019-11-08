@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 è stato creato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Man mano che il servizio si evolve, la sicurezza, le prestazioni e l'affidabilità di Office 365 sono migliorate in base ai clienti che utilizzano Internet per stabilire una connessione al servizio.
-ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428073"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030500"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Valutazione della connettività di rete di Office 365
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*
+*Questo articolo si applica a Office 365 Enterprise e Microsoft 365 Enterprise*
 
 Office 365 è stato creato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Man mano che il servizio si evolve, la sicurezza, le prestazioni e l'affidabilità di Office 365 sono migliorate in base ai clienti che utilizzano Internet per stabilire una connessione al servizio.
   
@@ -41,7 +41,7 @@ Alcune risorse utili per valutare la rete:
 
 - Vedere [office 365 Network Connectivity Overview](office-365-networking-overview.md) per informazioni concettuali sulla rete di Office 365.
 - Vedere i [principi di connettività di rete di office 365](https://aka.ms/o365networkingprinciples) per comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e ottenere le migliori prestazioni possibili.
-- Iscriversi a [Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack) per assistenza guidata per la pianificazione, la progettazione e la distribuzione di Office 365. 
+- Iscriversi a [Microsoft FastTrack](https://www.microsoft.com/fasttrack) per assistenza guidata per la pianificazione, la progettazione e la distribuzione di Office 365. 
 - Vedere la sezione [office 365 Network onboarding Tool](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) seguente per eseguire test di connettività di base che forniscono indicazioni specifiche sui miglioramenti della connettività di rete che possono essere effettuati tra una determinata posizione utente e Office 365.
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Punti chiave da prendere in considerazione durante la pianificazione della valut
 
 - Vengono continuamente ottimizzati gli aspetti principali di Office 365, ad esempio la disponibilità, la portata globale e le prestazioni per la connettività basata su Internet. Ad esempio, molti servizi di Office 365 sfruttano un insieme di nodi perimetrali Internet in espansione. Questa rete Edge offre le migliori caratteristiche di prossimità e prestazioni alle connessioni provenienti da Internet.
 
-- Quando si considera l'utilizzo di Office 365 per uno qualsiasi dei servizi inclusi, ad esempio teams o funzionalità di riunione, video o riunioni di Skype for business online, i clienti devono terminare la valutazione della rete finale e soddisfare i requisiti di connettività tramite [Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack).
+- Quando si considera l'utilizzo di Office 365 per uno qualsiasi dei servizi inclusi, ad esempio teams o funzionalità di riunione, video o riunioni di Skype for business online, i clienti devono terminare la valutazione della rete finale e soddisfare i requisiti di connettività con [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
 Se si sta valutando Office 365 e non si è certi di dove iniziare con la valutazione della rete o si sono verificati problemi di progettazione della rete per i quali è necessario un intervento di assistenza da superare, è possibile collaborare con il team dell'account Microsoft.
 

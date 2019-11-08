@@ -13,21 +13,22 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Spiegazione dell'eliminazione dei dati in SharePoint Online.
-ms.openlocfilehash: ff219654387a17598f1ada8c866a005d8d4f5449
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 44b05ce6c028e79e489a94157f264fcedd63ea1a
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067554"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035476"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Eliminazione dei dati di SharePoint online in Office 365
 
-SharePoint Online archivia gli oggetti come codice astratto all'interno dei database dell'applicazione. Quando un utente carica un file in SharePoint Online, tale file viene disassemblato e convertito in codice dell'applicazione e archiviato in più tabelle tra più database. In SharePoint Online, tutto il contenuto utilizzato dai caricamenti dei clienti è suddiviso in blocchi, crittografato (potenzialmente con più chiavi AES 256 bit) e distribuito in tutto il datacenter. Per informazioni dettagliate sul processo di blocco e la crittografia, vedere [crittografia nel cloud Microsoft](/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview.md). 
+SharePoint Online archivia gli oggetti come codice astratto all'interno dei database dell'applicazione. Quando un utente carica un file in SharePoint Online, tale file viene disassemblato e convertito in codice dell'applicazione e archiviato in più tabelle tra più database. In SharePoint Online, tutto il contenuto utilizzato dai caricamenti dei clienti è suddiviso in blocchi, crittografato (potenzialmente con più chiavi AES 256 bit) e distribuito in tutto il datacenter. Per informazioni dettagliate sul processo di blocco e la crittografia, vedere [crittografia nel cloud Microsoft](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview). 
 
-In SharePoint Online, gli elementi vengono conservati per 93 giorni dal momento in cui vengono eliminati dal percorso originale. Rimangono nel cestino del sito per tutto il tempo, a meno che qualcuno non li elimini o svuoti quel cestino. In tal caso, gli elementi passano al cestino della raccolta siti, in cui restano per il resto dei 93 giorni. Per informazioni su come ripristinare gli elementi eliminati, vedere [ripristinare gli elementi nel cestino di un sito di SharePoint](https://support.office.com/en-us/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
+In SharePoint Online, gli elementi vengono conservati per 93 giorni dal momento in cui vengono eliminati dal percorso originale. Rimangono nel cestino del sito per tutto il tempo, a meno che qualcuno non li elimini o svuoti quel cestino. In tal caso, gli elementi passano al cestino della raccolta siti, in cui restano per il resto dei 93 giorni. Per informazioni su come ripristinare gli elementi eliminati, vedere [ripristinare gli elementi nel cestino di un sito di SharePoint](https://support.office.com/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
 ) e [ripristinare gli elementi eliminati dal cestino della raccolta siti](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b). Il tempo di conservazione del cestino non è configurabile in SharePoint Online.
 
 Quando si elimina una raccolta siti, si elimina anche la gerarchia dei siti nell'insieme e tutto il contenuto all'interno di essi:
+
 - Documenti e raccolte documenti
 - Elenchi e dati di elenco
 - Impostazioni di configurazione del sito

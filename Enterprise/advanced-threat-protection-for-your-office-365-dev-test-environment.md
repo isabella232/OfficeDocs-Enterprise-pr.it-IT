@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: "Riepilogo: configurazione e dimostrazione di Office 365 Advanced Threat Protection nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: 274f8558d23714a73e0891500dac5d5e007b6be2
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: e3efe339550992fba85509cd07a791d916d5d6e7
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162419"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030560"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection per l'ambiente di sviluppo/test di Office 365
 
@@ -74,7 +74,7 @@ In questa fase, viene mostrato che prima di configurare i criteri di ATP, i mess
     
 13. Nel corpo del messaggio, selezionare il testo **questo sito** e fare clic sull'icona del collegamento ipertestuale nella barra degli strumenti.
     
-14. In **URL**Digitare **http://www.spamlink.contoso.com/**, fare clic su **OK**, quindi fare clic su **Invia**.
+14. In **URL**Digitare **https://www.spamlink.contoso.com/**, fare clic su **OK**, quindi fare clic su **Invia**.
     
 15. Aprire un'istanza separata di Internet Explorer in modalità esplorazione privata, accedere all'interfaccia di amministrazione di Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)() e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
@@ -156,7 +156,7 @@ In questa fase, viene mostrato come ATP si occupa dei messaggi di posta elettron
 È ora possibile utilizzare questo ambiente per creare nuovi criteri e sperimentare ATP.
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
+> Fare clic [qui](https://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
   
 ## <a name="see-also"></a>Vedere anche
 

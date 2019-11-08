@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: "Riepilogo: configurare i server proxy dell'applicazione Web per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: fe98657f1298021d9ed2c32a357051b5faeb4f21
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: c0a469f8945b9e69415b511c253e72a0118a4cfa
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102534"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027670"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 dell'autenticazione federata a disponibilità elevata: configurare i proxy applicazione Web
 
@@ -32,7 +32,7 @@ In questa fase di distribuzione di disponibilità elevata per l'autenticazione f
 È necessario creare un bilanciatore di carico per traffico Internet affinché Azure distribuisca il traffico di autenticazione del client in arrivo da Internet uniformemente tra i due server proxy dell'applicazione Web.
   
 > [!NOTE]
-> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Una volta forniti i valori per i gruppi di risorse e il percorso, eseguire il blocco risultante nel prompt dei comandi di Azure PowerShell o in PowerShell ISE.
   

@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
-ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
+ms.openlocfilehash: 67b337ee1ddf34a547ddafc80d886ff6075987ce
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786231"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030780"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -90,7 +90,7 @@ Dopo aver completato lo spostamento dei dati di SharePoint Online, è possibile 
     
 - Si stanno rimuovendo le copie Trans-coded dal Data Center precedente e la loro transcodifica nel nuovo datacenter.
     
-### <a name="search"></a>Ricerca
+### <a name="search"></a>Cerca
 
 Durante lo spostamento dei dati di SharePoint Online, la migrazione dell'indice di ricerca e delle impostazioni di ricerca in una nuova posizione. Fino a quando non è stato **completato** lo spostamento dei dati di SharePoint Online, è possibile continuare a servire gli utenti dall'indice nel percorso originale. Nella nuova posizione viene avviata automaticamente la ricerca per indicizzazione del contenuto dopo aver completato lo spostamento dei dati di SharePoint Online. Da questo punto in poi, vengono serviti gli utenti dall'indice migrato. Le modifiche al contenuto che si sono verificate dopo la migrazione non vengono incluse nell'indice migrato finché la ricerca per indicizzazione non viene rilevata. La maggior parte dei clienti non si accorge che i risultati sono meno freschi subito dopo aver completato lo spostamento dei dati di SharePoint Online, ma alcuni clienti potrebbero riscontrare una riduzione della freschezza nelle prime 24-48 ore. 
   
@@ -118,7 +118,7 @@ Tutti gli utenti verranno disconnessi dal software client Skype for business dur
    
 |**Dopo lo spostamento**|
 |:-----|
-| I dati relativi alle riunioni (presentazioni caricate e così via) non verranno spostati e dovranno essere caricati di nuovo.  <br/>  I client Lync meno recenti, ad esempio client Lync 2010 e client Lync per Mac 2011, sono noti per memorizzare nella cache le informazioni DNS sul servizio che causano problemi di accesso. La cancellazione della cache DNS potrebbe essere necessaria se l'utente non è nel client Windows Skype for business più recente. Chiedere agli utenti di eseguire la [procedura guidata per la risoluzione dei problemi](https://support.microsoft.com/en-us/kb/2541980) e seguire le istruzioni su come cancellare la cache client. Gli utenti di Lync per Mac client devono seguire [queste istruzioni](https://support.microsoft.com/en-us/kb/2629861).  <br/> |
+| I dati relativi alle riunioni (presentazioni caricate e così via) non verranno spostati e dovranno essere caricati di nuovo.  <br/>  I client Lync meno recenti, ad esempio client Lync 2010 e client Lync per Mac 2011, sono noti per memorizzare nella cache le informazioni DNS sul servizio che causano problemi di accesso. La cancellazione della cache DNS potrebbe essere necessaria se l'utente non è nel client Windows Skype for business più recente. Chiedere agli utenti di eseguire la [procedura guidata per la risoluzione dei problemi](https://support.microsoft.com/kb/2541980) e seguire le istruzioni su come cancellare la cache client. Gli utenti di Lync per Mac client devono seguire [queste istruzioni](https://support.microsoft.com/kb/2629861).  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Spostamenti di Skype for business che coinvolgono un provider di servizi di audioconferenza di terze parti
 I servizi per i componenti aggiuntivi di terze parti per le conferenze telefoniche per Skype for business non sono disponibili per gli utenti ospitati in nuovi Data Center geografici specifici.  I clienti esistenti che utilizzano un servizio di provider di servizi di audioconferenza di terze parti non devono richiedere lo spostamento in un nuovo Data Center geografico specifico.  Per utilizzare un provider di servizi di audioconferenza di terze parti, è necessario che i nuovi clienti distribuiti nei nuovi Data Center geografici richiedano uno spostamento in un Data Center regionale.
@@ -135,5 +135,5 @@ Si muovono solo i dati dei clienti per Exchange Online, SharePoint Online e Skyp
   
 [Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/en-us/regions/)
+[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/regions/)
 

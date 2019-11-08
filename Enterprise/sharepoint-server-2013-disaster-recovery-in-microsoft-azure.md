@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Riepilogo: Con Azure è possibile creare un ambiente di ripristino di emergenza per la farm locale di SharePoint. In questo articolo viene descritto come progettare e implementare questa soluzione.'
-ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: cd350cca38b3cf11764e34bf5f0744f8a3c50190
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203645"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031521"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
 
@@ -446,9 +446,9 @@ Successivamente, configurare la nuova applicazione di servizio metadati gestiti 
   
 Nella maggior parte dei casi in cui si dispone di più server Web front-end, è opportuno sfruttare la funzionalità Bilanciamento carico di rete in Windows Server 2012 o un bilanciamento del carico hardware per distribuire le richieste tra i server Web-front-end della farm. Bilanciamento carico di rete consente inoltre di ridurre i rischi distribuendo le richieste agli altri server se uno dei server Web-front-end ha esito negativo. 
   
-In genere, quando si configura il bilanciamento del carico di rete, al cluster viene assegnato un singolo indirizzo IP. Viene quindi creato un record host DNS nel provider DNS per la rete che punta al cluster (per questo progetto, un server DNS è inserito in Azure per la resilienza in caso di un errore del centro dati locale.) Ad esempio, è possibile creare un record DNS, in Gestore DNS in Active Directory, denominato  `http://sharepoint.contoso.com`, che punta all'indirizzo IP per il cluster con carico bilanciato.
+In genere, quando si configura il bilanciamento del carico di rete, al cluster viene assegnato un singolo indirizzo IP. Viene quindi creato un record host DNS nel provider DNS per la rete che punta al cluster (per questo progetto, un server DNS è inserito in Azure per la resilienza in caso di un errore del centro dati locale.) Ad esempio, è possibile creare un record DNS, in Gestore DNS in Active Directory, denominato  `https://sharepoint.contoso.com`, che punta all'indirizzo IP per il cluster con carico bilanciato.
   
-Per l'accesso esterno alla farm di SharePoint, è possibile creare un record host su un server DNS esterno con lo stesso URL utilizzato dai client sulla rete Intranet (ad esempio `http://sharepoint.contoso.com`,) che punta a un indirizzo IP esterno nel firewall. (Una procedura consigliata, in questo esempio, consiste nel configurare il DNS suddiviso in modo che il server DNS interno `contoso.com` sia autorevole e INSTRADE le richieste direttamente al cluster di farm di SharePoint, anziché instradare le richieste DNS al server DNS esterno). È quindi possibile mappare l'indirizzo IP esterno all'indirizzo IP interno del cluster locale in modo che i client possano trovare le risorse che stanno cercando.
+Per l'accesso esterno alla farm di SharePoint, è possibile creare un record host su un server DNS esterno con lo stesso URL utilizzato dai client sulla rete Intranet (ad esempio `https://sharepoint.contoso.com`,) che punta a un indirizzo IP esterno nel firewall. (Una procedura consigliata, in questo esempio, consiste nel configurare il DNS suddiviso in modo che il server DNS interno `contoso.com` sia autorevole e INSTRADE le richieste direttamente al cluster di farm di SharePoint, anziché instradare le richieste DNS al server DNS esterno). È quindi possibile mappare l'indirizzo IP esterno all'indirizzo IP interno del cluster locale in modo che i client possano trovare le risorse che stanno cercando.
   
 Da qui è possibile incorrere in scenari di ripristino di emergenza diversi:
   
@@ -456,7 +456,7 @@ Da qui è possibile incorrere in scenari di ripristino di emergenza diversi:
   
  **Scenario di esempio: il centro dati locale viene perso completamente.** Questo scenario potrebbe verificarsi a causa di un disastro naturale, ad esempio un incendio o un'alluvione. In tal caso, è probabile che un'azienda disponga di un centro dati secondario ospitato in un'altra area geografica, nonché una subnet Azure con servizi directory e DNS propri. Come illustrato nello scenario di emergenza precedente, è possibile reindirizzare i record DNS interni ed esterni in modo che puntino alla farm di SharePoint di Azure. Anche in questo caso, prendere nota che la propagazione dei record DNS può richiedere un po' di tempo.
   
-Se si utilizzano raccolte siti con nome host, come consigliato nell' [architettura e nella distribuzione della raccolta siti con nome host (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), potrebbero essere presenti diverse raccolte siti ospitate dalla stessa applicazione Web nella farm di SharePoint, con Unique Nomi DNS (ad esempio, `http://sales.contoso.com` e `http://marketing.contoso.com`). In questo caso, è possibile creare record DNS per ogni raccolta siti che punta all'indirizzo IP del cluster. Quando una richiesta raggiunge i server Web front-end di SharePoint, questi gestiscono il routing di ogni richiesta alla raccolta siti appropriata.
+Se si utilizzano raccolte siti con nome host, come consigliato nell' [architettura e nella distribuzione della raccolta siti con nome host (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), potrebbero essere presenti diverse raccolte siti ospitate dalla stessa applicazione Web nella farm di SharePoint, con nomi DNS univoci (ad `https://sales.contoso.com` esempio `https://marketing.contoso.com`, e). In questo caso, è possibile creare record DNS per ogni raccolta siti che punta all'indirizzo IP del cluster. Quando una richiesta raggiunge i server Web front-end di SharePoint, questi gestiscono il routing di ogni richiesta alla raccolta siti appropriata.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Ambiente del modello di verifica di Microsoft
 
@@ -612,7 +612,7 @@ Import-module activedirectory
 
 ```
 
-### <a name="availability-group-creation-fails-at-starting-the-alwaysonhealth-xevent-session-on-server-name"></a>Errore di creazione del gruppo di disponibilità all'avvio della sessione 'AlwaysOn_health' XEvent in '<server name>'
+### <a name="availability-group-creation-fails-at-starting-the-alwayson_health-xevent-session-on-server-name"></a>Errore di creazione del gruppo di disponibilità all'avvio della sessione 'AlwaysOn_health' XEvent in '<server name>'
 
 Verificare che entrambi i nodi del cluster di failover siano nello stato "Attivo" e non "Sospeso" o "Interrotto". 
   

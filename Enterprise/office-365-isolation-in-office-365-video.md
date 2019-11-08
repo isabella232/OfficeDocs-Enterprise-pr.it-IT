@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "Sintesi: una spiegazione dell'isolamento del tenant in Office 365 video."
-ms.openlocfilehash: a9ecd4b2c2d7dc7bf69a43c608312e3893b5009d
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: c9be942e10debeb729cda87a88131c17d736d4a2
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067511"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035586"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Isolamento del tenant in Office 365 Video
 
@@ -26,12 +26,15 @@ ms.locfileid: "37067511"
 > Il video di Office 365 verrà sostituito da Microsoft Stream. Per ulteriori informazioni sul nuovo servizio video aziendale che aggiunge servizi di intelligence alla collaborazione video e informazioni sui piani di transizione per i clienti di Office 365 video correnti, vedere [migrate to Stream from office 365 video](https://docs.microsoft.com/stream/).
 
 ## <a name="introduction"></a>Introduzione
+
 Lo spazio di archiviazione di Azure viene utilizzato per archiviare i dati di più servizi di Office 365, tra cui Office 365 video e Sway. Nello spazio di archiviazione di Azure è incluso l'archiviazione BLOB, ovvero un archivio oggetti cloud estremamente scalabile e basato sul REST utilizzato per l'archiviazione dei dati non strutturati. Lo spazio di archiviazione di Azure utilizza un semplice modello di controllo di accesso; ogni sottoscrizione di Azure è in grado di creare uno o più account di archiviazione. Ogni account di archiviazione dispone di una sola chiave segreta utilizzata per controllare l'accesso a tutti i dati dell'account di archiviazione. Questo supporta lo scenario tipico in cui l'archiviazione è associata alle applicazioni e tali applicazioni dispongono del controllo completo sui dati associati; ad esempio, Sway archivia il contenuto nello spazio di archiviazione di Azure. Tutti i contenuti dei clienti per Sway sono archiviati in account di archiviazione di Azure condivisi. Il contenuto di ogni utente si trova in una struttura di directory distinta di BLOB nell'archiviazione di Azure.
 
 I sistemi che gestiscono l'accesso agli ambienti dei clienti (ad esempio, il portale di Azure, SMAPI e così via) sono isolati all'interno di un'applicazione di Azure gestita da Microsoft. Questo separa logicamente l'infrastruttura di accesso dei clienti dal livello di archiviazione e applicazioni del cliente.
 
 ## <a name="tenant-isolation-in-office-365-video"></a>Isolamento del tenant in Office 365 Video
+
 [Office 365 video](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6) è un portale aziendale che fornisce alle organizzazioni una destinazione estremamente sicura, a livello di organizzazione, per la pubblicazione, la condivisione e la scoperta di contenuti video. In Office 365 video, i video di ogni tenant vengono mantenuti isolati e crittografati in tutti i percorsi e sono disponibili solo per gli utenti autenticati che dispongono dell'accesso e delle autorizzazioni per i video dell'organizzazione. Office 365 video utilizza una combinazione di tecnologie per eseguire le operazioni seguenti:
+
 - SharePoint Online viene utilizzato per archiviare i file video e i metadati (titolo video, descrizione e così via). Fornisce inoltre il livello di sicurezza e conformità (inclusa l'autenticazione) e le funzionalità di ricerca.
 - Servizi di Azure Media fornisce la transcodifica, il flusso adattivo, il recapito sicuro (utilizzando la crittografia AES) e le funzionalità di anteprima.
 

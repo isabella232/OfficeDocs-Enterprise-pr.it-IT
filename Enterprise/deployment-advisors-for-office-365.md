@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Velocizzare la pianificazione e la configurazione di Office 365 o Microsoft 365 con i consulenti per la distribuzione.
-ms.openlocfilehash: 86605b1476916d8510a52009dc20a37eafd7c08f
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eee8dfedd72ed0e2e1ac6660d32167490a13f504
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782306"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030800"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Consulenti per la distribuzione per i servizi di Office 365 o Microsoft 365
 
@@ -34,13 +34,13 @@ I consulenti per la distribuzione di Office 365 o Microsoft 365 offrono supporto
 
 Se non si accede come amministratore tenant, verrà visualizzato un messaggio in cui è necessario disporre delle autorizzazioni di amministratore tenant.
 
-Ogni Advisor è una procedura guidata che consente di scegliere tra le opzioni per le caratteristiche e gli optional che si desidera distribuire. In alcuni casi, è possibile utilizzare la procedura guidata per configurare qualcosa o attivare un'impostazione. Ecco un esempio:
+Ogni Advisor è una procedura guidata che consente di scegliere tra le opzioni per le caratteristiche e gli optional che si desidera distribuire. In alcuni casi, è possibile utilizzare la procedura guidata per configurare qualcosa o attivare un'impostazione. Ecco un esempio.
 
 ![](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
 
 Il consulente illustra le procedure per la personalizzazione delle proprie esigenze. Lungo la strada, vengono fornite istruzioni, script e altre risorse per apportare le modifiche alla configurazione.
 
-Alla fine, vengono forniti collegamenti a video e articoli di riferimento. Ecco un esempio:
+Alla fine, vengono forniti collegamenti a video e articoli di riferimento. Ecco un esempio.
 
 ![](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
 
@@ -320,7 +320,7 @@ Microsoft StaffHub è una piattaforma basata sul cloud che funziona su tutti i d
 
 ### <a name="microsoft-365-admin-center"></a>Interfaccia di amministrazione di Microsoft 365
 
-- [Orientamento del centro di amministrazione](https://www.microsoft.com/en-us/videoplayer/embed/RWfMut)
+- [Orientamento del centro di amministrazione](https://www.microsoft.com/videoplayer/embed/RWfMut)
 
 - [Creare gli utenti nell'interfaccia di amministrazione](https://aka.ms/ac-createusers)
 

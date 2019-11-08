@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute per Office 365 fornisce la connettività Layer 3 tra la rete e i datacenter di Microsoft. I circuiti utilizzano la route BGP (Border Gateway Protocol) per gli annunci dei front end server di Office 365. Dal punto di vista dei dispositivi locali, quando è necessario selezionare il percorso TCP/IP corretto per Office 365, Azure ExpressRoute viene visualizzato come alternativa a Internet.
-ms.openlocfilehash: b31d6150ee3eb11a93b485a5eece22eb3a82021e
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782236"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032121"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Pianificazione della rete con ExpressRoute per Office 365
 
@@ -34,7 +34,7 @@ Nella tabella seguente sono riportate alcune differenze tra le connessioni Inter
 |**Differenze nella pianificazione della rete**|**Connessione di rete Internet**|**Connessione di rete ExpressRoute**|
 |:-----|:-----|:-----|
 | Accesso ai servizi Internet richiesti, tra cui;  <br/>  Risoluzione del nome DNS  <br/>  Verifica della revoca del certificato  <br/>  Reti per la distribuzione di contenuti  <br/> |Sì  <br/> |Le richieste all'infrastruttura DNS e/o CDN di proprietà di Microsoft possono utilizzare la rete ExpressRoute.  <br/> |
-| Accesso ai servizi di Office 365, tra cui;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business online  <br/>  Office in un browser  <br/>  Portale e autenticazione di Office 365  <br/> |Sì, tutte le applicazioni e le funzionalità  <br/> |Sì, [applicazioni e funzionalità specifiche](https://aka.ms/o365endpoints) <br/> |
+| Accesso ai servizi di Office 365, tra cui;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office in un browser  <br/>  Portale e autenticazione di Office 365  <br/> |Sì, tutte le applicazioni e le funzionalità  <br/> |Sì, [applicazioni e funzionalità specifiche](https://aka.ms/o365endpoints) <br/> |
 |Sicurezza locale al perimetro.  <br/> |Sì  <br/> |Sì  <br/> |
 |Pianificazione della disponibilità elevata.  <br/> |Failover a una connessione di rete Internet alternativa  <br/> |Failover a una connessione ExpressRoute alternativa  <br/> |
 |Connessione diretta con un profilo di rete prevedibile.  <br/> |No  <br/> |Sì  <br/> |
@@ -76,7 +76,7 @@ Tutti i suggerimenti su quale tipo di elaborazione della rete è consigliato si 
 
 La protezione della connettività di ExpressRoute di Azure inizia con gli stessi principi di protezione della connettività Internet. Molti clienti scelgono di distribuire controlli di rete e perimetrali lungo il percorso ExpressRoute che collega la rete locale a Office 365 e ad altri cloud Microsoft. Questi controlli possono includere firewall, proxy di applicazioni, prevenzione della perdita di dati, rilevamento delle intrusioni, sistemi di prevenzione delle intrusioni e così via. In molti casi, i clienti applicano diversi livelli di controlli al traffico avviato da Microsoft in locale, rispetto al traffico avviato da Microsoft che si rivolge alla rete locale del cliente, rispetto al traffico avviato da un ambiente generale Destinazione Internet.
   
-Di seguito sono riportati alcuni esempi di integrazione della sicurezza con il [modello di connettività di ExpressRoute](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models) che si sceglie di distribuire.
+Di seguito sono riportati alcuni esempi di integrazione della sicurezza con il [modello di connettività di ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) che si sceglie di distribuire.
 
 |**Opzione di integrazione di ExpressRoute**|**Modello perimetrale di sicurezza di rete**|
 |:-----|:-----|
@@ -102,7 +102,7 @@ Di seguito è riportato un esempio di Woodgrove Bank che confronta le diverse op
   
 ### <a name="example-1-securing-azure-expressroute"></a>Esempio 1: protezione di ExpressRoute di Azure
   
-La Woodgrove Bank sta prendendo in considerazione l'implementazione di ExpressRoute di Azure e dopo aver pianificato l'architettura ottimale per il [routing con ExpressRoute per Office 365](routing-with-expressroute.md) e dopo aver utilizzato le linee guida sopra riportate per comprendere i requisiti di larghezza di banda Metodo migliore per la protezione del perimetro.
+La Woodgrove Bank sta prendendo in considerazione l'implementazione di Azure ExpressRoute e dopo aver pianificato l'architettura ottimale per il [routing con ExpressRoute per Office 365](routing-with-expressroute.md) e dopo aver utilizzato le linee guida sopra riportate per comprendere i requisiti di larghezza di banda, determinano il metodo migliore per la protezione del perimetro.
   
 Per la Woodgrove, un'organizzazione multi-nazionale con posizioni in più continenti, la sicurezza deve coprire tutti i perimetri. L'opzione di connettività ottimale per la Woodgrove è una connessione a più punti con più posizioni di peering in tutto il mondo per soddisfare le esigenze dei propri dipendenti in ogni continente. Ogni continente include circuiti di ExpressRoute di Azure ridondanti all'interno del continente e la sicurezza deve essere esteso a tutti questi.
   

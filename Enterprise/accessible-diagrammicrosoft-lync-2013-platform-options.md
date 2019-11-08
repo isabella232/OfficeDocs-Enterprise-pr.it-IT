@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Lync 2013, disponibile nei diagrammi tecnici.
-ms.openlocfilehash: 4993ad90307973589da6dc5081d8c2875b44ce66
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a62fb6d1e1ee7fbddb79b0aec4ddafea4b07b4fe
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068612"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030600"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>Diagramma accessibile-opzioni della piattaforma Microsoft Lync 2013
 
-**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Lync 2013, disponibile nei [diagrammi tecnici](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Lync 2013, disponibile nei [diagrammi tecnici](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 In questo poster vengono descritti i responsabili decisionali aziendali (BDMs) e gli architetti che devono essere a conoscenza delle distribuzioni di Lync Online (Office 365) e di Lync Server e include:
   

@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: In questo articolo vengono illustrati gli aspetti specifici che è necessario prendere in considerazione durante la progettazione delle pagine per ottimizzare le prestazioni in SharePoint Online.
-ms.openlocfilehash: d0dc4d6eac1a8711d1c93b97eccbf5474092d3af
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3c2c6ccc58659aceaaf831b97eb8c4c05141afce
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616679"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033402"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introduzione all'ottimizzazione delle prestazioni per SharePoint Online
 
@@ -124,7 +126,7 @@ Indipendentemente dalla versione di SharePoint (e di rete) utilizzata, le operaz
     
 - Grande distanza fisica con il server
     
-Una funzionalità da sfruttare in SharePoint Online è Microsoft CDN (CDN, rete per la distribuzione di contenuti). Una rete CDN è fondamentalmente un insieme di server distribuiti su più datacenter. Con una rete CDN, il contenuto delle pagine può essere ospitato su un server più vicino al client anche se il client è lontano dal server di SharePoint di origine. Microsoft utilizzerà ancora questa funzionalità in futuro per l'archiviazione locale di istanze di pagine che non possono essere personalizzate, ad esempio la home page di amministrazione di SharePoint Online. Per ulteriori informazioni su reti CDN, vedere [Content Delivery Networks](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks).
+Una funzionalità da sfruttare in SharePoint Online è Microsoft CDN (CDN, rete per la distribuzione di contenuti). Una rete CDN è fondamentalmente un insieme di server distribuiti su più datacenter. Con una rete CDN, il contenuto delle pagine può essere ospitato su un server più vicino al client anche se il client è lontano dal server di SharePoint di origine. Microsoft utilizzerà ancora questa funzionalità in futuro per l'archiviazione locale di istanze di pagine che non possono essere personalizzate, ad esempio la home page di amministrazione di SharePoint Online. Per ulteriori informazioni su reti CDN, vedere [Content Delivery Networks](https://docs.microsoft.com/office365/enterprise/content-delivery-networks).
   
 Un elemento che è necessario tenere presente ma sul quale potrebbe non essere possibile agire, è la velocità della connessione del provider di servizi Internet. Uno strumento di test di velocità semplice indica la velocità della connessione.
   
@@ -158,6 +160,6 @@ Consultare gli articoli seguenti per diverse tecniche di personalizzazione della
     
 - [Utilizzo della cache oggetti con SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [Procedura: Evitare la limitazione o il blocco in SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [Procedura: Evitare la limitazione o il blocco in SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
     
 

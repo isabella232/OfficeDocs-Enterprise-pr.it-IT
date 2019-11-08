@@ -14,12 +14,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Il programma di networking partner di Office 365 consente al dispositivo di essere certificato come funzionante con Office 365.
 hideEdit: true
-ms.openlocfilehash: ee18ac3f681702b18f4d9898875ee8b7ba499b27
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7fc73a16006ac4f1b024a50cbd7cd352e1b658c7
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069592"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031881"
 ---
 # <a name="office-365-networking-partner-program"></a>Office 365 Networking Partner Program
 
@@ -29,7 +29,7 @@ Poiché i clienti adottano Office 365 per la produttività aziendale, Microsoft 
 
 I clienti che iniziano il loro viaggio nel cloud sono spesso contestati con la transizione da architetture legacy, hub-spoke, Datacenter-focused Enterprise Network e Security Architecture. E i clienti che si connettono a Office 365 su reti legacy possono affrontare i problemi di prestazioni quando si utilizzano le funzionalità di collaborazione avanzate di Office 365. L'obiettivo finale per i clienti di Office 365 è quello di modernizzare e ottimizzare le reti aziendali per offrire un'esperienza di collaborazione di prim'uso per i propri dipendenti e partner, semplificare la gestione IT e ridurre i costi. 
 
-Per modernizzare le reti aziendali per una connettività ottimale a Office 365, i clienti si basano spesso sui provider di soluzioni di rete, sui servizi di sicurezza locali o basati su cloud e sugli integratori di sistema per pianificare, progettare e implementare la connettività di rete per il cloud Servizi. I clienti spesso chiedono a Microsoft se la propria architettura di rete e le proprie soluzioni funzionino con Office 365 e siano allineate ai principi di connettività di rete di Microsoft [per office 365](http://aka.ms/PNC).  
+Per modernizzare le reti aziendali per una connettività ottimale a Office 365, i clienti si basano spesso sui provider di soluzioni di rete, sui servizi di sicurezza locali o basati su cloud e sugli integratori di sistema per pianificare, progettare e implementare la connettività di rete per il cloud Servizi. I clienti spesso chiedono a Microsoft se la propria architettura di rete e le proprie soluzioni funzionino con Office 365 e siano allineate ai principi di connettività di rete di Microsoft [per office 365](https://aka.ms/PNC).  
 
 Microsoft si impegna ad aiutare i clienti a creare e ottimizzare la connettività di architettura di rete per la migliore esperienza di Office 365. Il team di Office 365 collabora con molti partner del settore della rete per garantire che i principi fondamentali per la connettività ottimale siano incorporati a livello nativo nei rispettivi prodotti e soluzioni di rete. 
 
@@ -41,7 +41,7 @@ Solo i dispositivi o le soluzioni che soddisfano i rigorosi requisiti di testing
 
 Numerosi provider di soluzioni di rete attualmente collaborano con Microsoft per soddisfare i requisiti per ricevere la designazione "Works with Office 365". Informazioni dettagliate su come configurare tali soluzioni per una connettività e prestazioni ottimali di Office 365 verranno pubblicate in questa pagina.  
 
-Se si è un cliente di Office 365, è possibile rendere il provider della soluzione di rete a conoscenza di questo [http://aka.ms/Office365NPP](http://aka.ms/Office365NPP)programma tramite questo collegamento.
+Se si è un cliente di Office 365, è possibile rendere il provider della soluzione di rete a conoscenza di questo [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP)programma tramite questo collegamento.
 
 Per i provider di soluzioni di rete che desiderano richiedere informazioni sul programma di networking partner di Office 365, [compilare questo modulo](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyOZxByRF1dLgv7k6ye5z8pUMTNCVTYyVk9GNEYzWjFOVkI1SzdJNUkyWi4u) e saremo in contatto. Vi ringrazio per il vostro interesse e siamo lieti di una splendida partnership. 
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Definisce e spiega l'immutabilità dei dati in Office 365.
-ms.openlocfilehash: 7563b37af6c59d8d1d4273f70d86b2551addab89
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 027191e6bd8cb117bfec3fcd4e9b26ab0a6940b3
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067547"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035576"
 ---
 # <a name="immutability-in-office-365"></a>Immutabilità in Office 365
 
@@ -38,12 +38,12 @@ Tramite le caratteristiche dei criteri di conservazione e conservazione sul post
 
 Inoltre, Microsoft ha sviluppato funzionalità per i componenti aggiuntivi per consentire l' [archiviazione di dati](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) da altre origini tramite l'integrazione con l'acquisizione di dati di terze parti e le soluzioni di gestione. Dopo aver importato i dati di terze parti, è possibile applicare le funzionalità di conformità di Office 365 ai dati, tra cui:
 
-- [Conservazione per controversia legale](/microsoft365/compliance/create-a-litigation-hold.md)
-- [EDiscovery e blocco sul posto](/microsoft365/compliance/manage-legal-investigations.md)
-- [Ricerca di conformità](/microsoft365/compliance/search-for-content.md)
-- [Archiviazione sul posto](/microsoft365/compliance/enable-archive-mailboxes.md)
-- [Controllo delle cassette postali](/microsoft365/compliance/enable-mailbox-auditing.md)
-- [Criteri di conservazione](/microsoft365/compliance/retention-policies.md)
+- [Conservazione per controversia legale](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
+- [EDiscovery e blocco sul posto](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [Ricerca di conformità](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
+- [Archiviazione sul posto](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- [Controllo delle cassette postali](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)
+- [Criteri di conservazione](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 Ad esempio, quando una cassetta postale viene inserita nella conservazione per controversia legale, vengono conservati i dati di terze parti. È possibile eseguire la ricerca di dati di terze parti utilizzando eDiscovery sul posto o la ricerca di conformità. In alternativa, è possibile applicare i criteri di archiviazione e conservazione ai dati di terze parti, esattamente come è possibile per i dati di Microsoft. L'archiviazione dei dati di terze parti in Office 365 aiuta l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 

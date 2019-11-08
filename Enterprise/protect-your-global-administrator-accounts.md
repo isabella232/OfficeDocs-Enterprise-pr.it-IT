@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protezione dell'accesso da parte dell'amministratore globale all'abbonamento a Office 365.
-ms.openlocfilehash: 353787ccda7ab96583fe75bc423f70d339d3435b
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: a75cab61c5b59ebd1b085829cfa20365f20443c9
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162399"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031611"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Office 365
 
@@ -125,7 +125,7 @@ Dopo i passaggi 1 e 2, utilizzare questi metodi aggiuntivi per verificare che l'
 
 Per garantire che l'esecuzione di attività con privilegi elevati sia la più sicura possibile, utilizzare una workstation con accesso privilegiato (PAW). La ZAMPa è un computer dedicato utilizzato solo per le attività di configurazione sensibili, ad esempio la configurazione di Office 365 che richiede un account di amministratore globale. Poiché questo computer non viene utilizzato giornalmente per la navigazione Internet o la posta elettronica, è meglio proteggerlo dagli attacchi e dalle minacce di Internet.
   
-Per istruzioni su come configurare una ZAMPa, vedere [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw).
+Per istruzioni su come configurare una ZAMPa, vedere [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw).
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: "Riepilogo: creare e configurare i server Active Directory Federation Services (AD FS) per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: 83e6d024676ae608b9f6f856e2ce91c4b0b9a31f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 68410111be6c4d12e27e32e9663592306d733970
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067492"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030740"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Fase 3 dell'autenticazione federata a disponibilità elevata: configurare i server AD FS
 
@@ -46,7 +46,7 @@ Utilizzare il seguente blocco di comandi di PowerShell per creare le macchine vi
 Ricordare che è stata definita la tabella M nella [fase 2 di autenticazione federata a disponibilità elevata: configurare i controller di dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) e le tabelle R, V, S, i e a nella [fase 1 di autenticazione federata a disponibilità elevata: configurare Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Per prima cosa, creare un bilanciamento del carico interno di Azure per i due server AD FS. Specificare i valori per le variabili, rimuovendo \< i caratteri e >. Una volta forniti tutti i valori opportuni, eseguire il blocco risultante nel prompt dei comandi di Azure PowerShell o in PowerShell ISE.
   

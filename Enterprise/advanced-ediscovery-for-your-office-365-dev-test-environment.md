@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: "Riepilogo: configurazione e dimostrazione di Office 365 Advanced eDiscovery con dati di esempio nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: dbd03c1a75b63f4fdaff49db47c8d415f267aaf3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726232"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030670"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery per l'ambiente di sviluppo/test di Office 365
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery consente di trovare e analizzare rapidamente le i
 Con le istruzioni disponibili in questo articolo, è possibile creare un insieme limitato di dati per una controversia fittizia relativa a un contratto e analizzarli con Advanced eDiscovery.
   
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
+> Fare clic [qui](https://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365
 
@@ -53,7 +53,7 @@ In questa procedura, è possibile creare messaggi di posta elettronica che in se
     
 2. Nella scheda **Posta di Outlook**, fare clic su **Nuovo**.
     
-3. In **a**, digitare l'indirizzo di posta elettronica dell'account di USER6 della sottoscrizione di valutazione ( **USER6 @.**<organization name> **. onmicrosoft.com**).
+3. In **a**, digitare l'indirizzo di posta elettronica dell'account di USER6 della sottoscrizione di valutazione ( **USER6@.**<organization name> **. onmicrosoft.com**).
     
 4. Per l'oggetto, digitare **Messaggio di posta elettronica di prova 1**.
     
@@ -99,7 +99,7 @@ In questa procedura, è possibile creare due documenti Word che in seguito verra
     
 5. Nella scheda **Raccolta siti di produzione**, in **Documenti**, fare clic su **Nuovo > Documento Word**.
     
-6. Nella scheda **parola** digitare **Tilt note**sulla controversia contrattuale, attendere fino a quando non viene visualizzato **salvato** nel titolo, quindi chiudere la scheda **parola** .
+6. Nella scheda **parola** digitare **Tilt note sulla controversia contrattuale**, attendere fino a quando non viene visualizzato **salvato** nel titolo, quindi chiudere la scheda **parola** .
     
 7. Nella scheda **Raccolta siti di produzione**, viene visualizzato **Documento** e **Documento1** nell'elenco dei documenti.
     

@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: In questo articolo vengono descritti i siti delle opzioni di spostamento con la pubblicazione di SharePoint abilitata in SharePoint Online. La scelta e la configurazione della struttura di spostamento incidono in modo significativo sulle prestazioni e sulla scalabilità dei siti in SharePoint Online. Questo articolo non è applicabile ai siti del team classici.
-ms.openlocfilehash: 10b4e1cbad4fbb570affe43feb6773aa59c5f2f3
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: fa180e1904ef57f28e512c6d6ff163f2f4a483ad
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385204"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031261"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opzioni di spostamento per SharePoint Online
 
@@ -456,9 +456,9 @@ Nell' [implementazione di esempio](#example-replace-the-out-of-the-box-navigatio
 
 Il [codice sopra](#about-the-javascript-file) riportato presenta le dipendenze seguenti:
 
-- jQueryhttp://jquery.com/
-- KnockoutJS -http://knockoutjs.com/
-- LINQ. js- http://linqjs.codeplex.com/o github.com/neuecc/LINQ.js
+- jQueryhttps://jquery.com/
+- KnockoutJS -https://knockoutjs.com/
+- LINQ. js- https://linqjs.codeplex.com/o github.com/neuecc/LINQ.js
 
 La versione corrente di LinqJS non contiene il metodo ByHierarchy utilizzato nel codice precedente e interrompe il codice di spostamento. Per risolvere il cosa, aggiungere il metodo seguente al file LINQ. js prima della riga `Flatten: function ()`.
 

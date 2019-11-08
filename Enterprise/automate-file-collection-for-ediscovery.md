@@ -13,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Riepilogo: informazioni su come automatizzare la raccolta di file dai computer degli utenti per eDiscovery.'
-ms.openlocfilehash: b54e54e2905407b81d95238afe97c1a542238e06
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 0133da6eecb229ad999043c9dfcb15d98a732829
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068422"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030490"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizzare la raccolta file per eDiscovery
 
@@ -301,9 +301,9 @@ param ([String]$SourcePath,[String]$MailboxAlias)
 $FolderIdentifier = "zzImportedPSTs_"
 
 # Connect to Exchange remote powershell using the connection Uri below
-# This would be the format http://<exchange server FQDN>/Powershell
+# This would be the format https://<exchange server FQDN>/Powershell
 
-$ConnectionUri = 'http://h10-exch/PowerShell'
+$ConnectionUri = 'https://h10-exch/PowerShell'
 $RemoteEx2013Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $ConnectionUri -Authentication Kerberos
 Import-PSSession $RemoteEx2013Session
 
@@ -361,7 +361,7 @@ $AllFiles | ForEach-Object {
     
 3. Nella casella **percorso file** Digitare il percorso e il nome del file di Runbook che si desidera importare oppure fare clic sui puntini di sospensione ( **...**) per passare al file che si desidera importare. 
     
-4. Selezionare **Importa Runbook** e **importare i dati crittografati**dell'orchestratore. Cancellare **contatori**, **pianificazioni**, **variabili**, **gruppi di computer**, **importare configurazioni globali**e **sovrascrivere le configurazioni globali esistenti**.
+4. Selezionare **Importa Runbook** e **importare i dati crittografati dell'orchestratore**. Cancellare **contatori**, **pianificazioni**, **variabili**, **gruppi di computer**, **importare configurazioni globali**e **sovrascrivere le configurazioni globali esistenti**.
     
 5. Fare clic su **Fine**.
     
@@ -369,7 +369,7 @@ $AllFiles | ForEach-Object {
     
 1. **Spostamento attività file** : impostare il percorso del **file di origine** per la condivisione file di raccolta \\ \\,\\ad esempio i casi di gestione temporanea $. Impostare la **cartella di destinazione** sulla condivisione file di archiviazione fredda in Azure, ad \\ \\esempio\\AZFile1 ContentColdStorage. Selezionare **Crea un file con un nome univoco**.
     
-2. **Elimina attività cartella** -impostare il **percorso:** per la condivisione file di raccolta, ad \\ \\esempio\\per i\\casi di gestione temporanea $ *, e selezionare **Elimina tutti i file e**le sottocartelle. 
+2. **Elimina attività cartella** -impostare il **percorso:** per la condivisione file di raccolta, ad \\ \\esempio\\per i\\casi di gestione temporanea $ *, e selezionare **Elimina tutti i file e le sottocartelle**. 
     
 7. Distribuire la runbook di **MoveToColdStorage** utilizzando le procedure descritte in[Deploying Runbook](https://go.microsoft.com/fwlink/p/?LinkId=615120).
     

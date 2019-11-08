@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Exchange 2013, disponibile nei diagrammi tecnici.
-ms.openlocfilehash: 9d10b9475a2c3a316ad5d23876574a46469e462e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068441"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030580"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Diagramma accessibile-SharePoint Server, Exchange, Lync, Office Web Apps-il paesaggio per dispositivi mobili
 
-**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Exchange 2013, disponibile nei [diagrammi tecnici](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409).
+**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Exchange 2013, disponibile nei [diagrammi tecnici](https://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409).
   
 In questo poster viene illustrato un layout dettagliato dell'applicazione e del paesaggio basato su browser per dispositivi mobili per SharePoint Server, Lync, Exchange Server e Office Web Apps. Sono incluse le informazioni seguenti: 
   
@@ -132,7 +132,7 @@ Un'illustrazione accompagnante Visualizza Office Mobile su un dispositivo Window
     
 - Office Mobile è disponibile su Windows Phone (built-in), iPhone e Android. Per gli utenti di iPhone e Android, è necessario disporre di un abbonamento a Office 365 per utilizzare l'app.
     
-### <a name="office"></a>Office
+### <a name="office"></a>Ufficio
 
 Al di fuori dell'utilizzo di Office Mobile, gli utenti possono visualizzare i documenti di Office nei browser dei dispositivi mobili, come Windows 8 tablet, iPads e telefoni. Office Web Apps è il compagno online per le applicazioni Word, Excel, PowerPoint e OneNote. Anche se Office Web Apps è disponibile per più browser e produttori di dispositivi, la visualizzazione delle esperienze può variare tra i dispositivi. Ad esempio, Windows 8 tablet e iPad offrono funzionalità di modifica, mentre i telefoni sono in grado di visualizzare solo queste app. Un'illustrazione di accompagnamento illustra l'esperienza di Office Web Apps su un iPad per Microsoft PowerPoint e Microsoft Excel. È disponibile sia per le distribuzioni locali che per quelle online.
   

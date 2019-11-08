@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Riepilogo: Utilizzare PowerShell di Office 365 per assegnare impostazioni di comunicazione per utente con criteri Skype for Business online.'
-ms.openlocfilehash: 3c6c869874329d7efb6d8c417c797c9f81df6bf8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2252a6df4298bb36a669404aefac3b14eaa23b7f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069292"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031041"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Assegnare criteri Skype for Business Online con PowerShell di Office 365
 
@@ -29,7 +29,7 @@ L'utilizzo di PowerShell di Office 365 è un modo efficace di assegnare impostaz
 
 Utilizzare queste istruzioni per ottenere la configurazione che consenta di eseguire i comandi (ignorare i passaggi già completati):
   
-1. Scaricare e installare il [Modulo di Windows PowerShell per Skype for Business Online](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
+1. Scaricare e installare il [Modulo di Windows PowerShell per Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366).
     
 2. Aprire il prompt dei comandi Windows PowerShell ed eseguire quanto segue: 
     

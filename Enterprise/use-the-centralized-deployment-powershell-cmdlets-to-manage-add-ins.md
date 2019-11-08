@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Utilizzare i cmdlet di PowerShell per la distribuzione centralizzata per facilitare la distribuzione e la gestione dei componenti aggiuntivi di Office per l'organizzazione di Office 365.
-ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
-ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
+ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35834236"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030861"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usare i cmdlet di PowerShell della distribuzione centralizzata per gestire i componenti aggiuntivi
 
@@ -111,7 +111,7 @@ Get-OrganizationAddIn |Format-List
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>Attivazione o disattivazione di un componente aggiuntivo
 
-Per disattivare un componente aggiuntivo in modo che gli utenti e i gruppi a esso assegnati non avranno più accesso, eseguire il cmdlet **set-OrganizationAddIn** con il parametro _ProductID_ e il parametro _Enabled_ impostato su `$false`, come illustrato nell'esempio seguente. .
+Per disattivare un componente aggiuntivo in modo che gli utenti e i gruppi a esso assegnati non avranno più accesso, eseguire il cmdlet **set-OrganizationAddIn** con il parametro _ProductID_ e il parametro _Enabled_ impostato su `$false`, come illustrato nell'esempio seguente.
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
@@ -177,7 +177,7 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 Tenere presente anche le restrizioni seguenti:
 - Tutti gli URL devono essere assoluti (Includi http o HTTPS) e validi.
 - *DisplayName* non deve superare 125 caratteri 
-- *DisplayName*, ** Resources and *AppDomains* non deve includere i caratteri seguenti: 
+- *DisplayName*, *Resources* and *AppDomains* non deve includere i caratteri seguenti: 
  
     - \<
     -  \>
@@ -189,12 +189,12 @@ Se si desidera personalizzare un componente aggiuntivo distribuito, è necessari
 Per personalizzare un componente aggiuntivo, eseguire il cmdlet **set-OrganizationAddInOverrides** con il *ProductID* come parametro, seguito dal tag che si desidera sovrascrivere e dal nuovo valore. Per informazioni su come ottenere il *ProductID* , vedere [ottenere i dettagli di un componente aggiuntivo](#get-details-of-an-add-in) in questo articolo. Ad esempio:
 
 ```powershell
- Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "http://site.com/img.jpg" 
+ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
 Per personalizzare più tag per un componente aggiuntivo, aggiungere tali tag alla riga di comando:
 
 ```powershell
-Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "http://site.com/img.jpg" 
+Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
@@ -219,7 +219,7 @@ Qualsiasi elemento del <Resources> tag del manifesto può essere personalizzato 
 ```
 <Resources>  
     <bt:Images> 
-          <bt:Image id=”img16icon” DefaultValue=”http://site.com/img.jpg” 
+          <bt:Image id=”img16icon” DefaultValue=”https://site.com/img.jpg” 
     </bt:Images> 
 </Resources> 
 ``` 

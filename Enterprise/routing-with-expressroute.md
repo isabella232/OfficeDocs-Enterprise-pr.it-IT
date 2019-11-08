@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Per comprendere adeguatamente il traffico di routing a Office 365 utilizzando Azure ExpressRoute, è necessario disporre di una solida conoscenza dei requisiti di routing di ExpressRoute di base e dei circuiti di ExpressRoute e i domini di routing. Questi sono i principi fondamentali per l'utilizzo di ExpressRoute su cui si basano i clienti di Office 365.
-ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722715"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031581"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routing con ExpressRoute per Office 365
 
@@ -63,7 +63,7 @@ Di seguito sono illustrati gli scenari in cui verranno avviate le comunicazioni 
 
 - [BCS ibrido di SharePoint](https://technet.microsoft.com/library/dn197239.aspx ).
 
-- Federazione di [Skype for business ibrida](https://technet.microsoft.com/en-us/library/jj205403.aspx) e/o [Skype for business](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
+- Federazione di [Skype for business ibrida](https://technet.microsoft.com/library/jj205403.aspx) e/o [Skype for business](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
 
 - [Connettore Cloud Skype for business](https://technet.microsoft.com/library/mt605227.aspx ).
 
@@ -157,7 +157,7 @@ Gli FQDN dei volumi più alti per Exchange Online, SharePoint Online e Skype for
 
 - \*. Lync.com insieme agli intervalli IP per il traffico non TCP
 
-- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \* word-edit.officeapps.live.com, \*word-view.officeapps.live.com, Office.Live.com
+- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*powerpoint.officeapps.live.com, \*view.officeapps.live.com, \*Visio.officeapps.Live.com, \*Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
 
 Per ulteriori informazioni, vedere [distribuzione e gestione delle impostazioni proxy in Windows 8](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) e [garantire che Office 365 non sia limitato dal proxy](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
@@ -212,13 +212,13 @@ In questo scenario, il traffico proveniente dall'ufficio remoto risolverebbe l'i
   
 Se il numeroso ha uffici importanti in più continenti, è consigliato un minimo di due circuiti attivi/attivi per ogni area geografica per ridurre la latenza per le applicazioni sensibili come Skype for business online. Se tutti gli uffici si trovano in un unico continente o non utilizzano la collaborazione in tempo reale, la scelta di un punto di uscita consolidato o distribuito è una decisione specifica del cliente. Quando sono disponibili più circuiti, il routing BGP assicurerà il failover nel caso in cui un singolo circuito diventi non disponibile.
   
-Per ulteriori informazioni, vedere [configurazioni](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) di [https://azure.microsoft.com/en-us/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)routing di esempio e.
+Per ulteriori informazioni, vedere [configurazioni](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) di [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)routing di esempio e.
   
 ## <a name="selective-routing-with-expressroute"></a>Routing selettivo con ExpressRoute
 
 Il routing selettivo con ExpressRoute può essere necessario per una serie di motivi, ad esempio testing, implementazione di ExpressRoute a un sottoinsieme di utenti. Sono disponibili vari strumenti che i clienti possono utilizzare per instradare selettivamente il traffico di rete di Office 365 su ExpressRoute:
   
-1. **Route filtering/** segregazione-consentendo la route BGP a Office 365 su ExpressRoute a un sottoinsieme delle subnet o dei router. Questo consente di instradare selettivamente il segmento di rete del cliente o la posizione fisica dell'ufficio. Questo è comune per l'implementazione scaglionata di ExpressRoute per Office 365 ed è configurata nei dispositivi BGP.
+1. **Route filtering/segregazione** -consentendo la route BGP a Office 365 su ExpressRoute a un sottoinsieme delle subnet o dei router. Questo consente di instradare selettivamente il segmento di rete del cliente o la posizione fisica dell'ufficio. Questo è comune per l'implementazione scaglionata di ExpressRoute per Office 365 ed è configurata nei dispositivi BGP.
 
 2. **File PAC/URL** -direzione del traffico di rete destinato a Office 365 per FQDN specifici da instradare su un percorso specifico. Questo consente di instradare selettivamente il computer client come identificato dalla [distribuzione dei file PAC](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies).
 

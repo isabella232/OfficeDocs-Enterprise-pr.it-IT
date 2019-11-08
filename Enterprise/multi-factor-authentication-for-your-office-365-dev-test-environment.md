@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "Riepilogo: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno smartphone in un ambiente di sviluppo e testing di Office 365."
-ms.openlocfilehash: 2c53d7fa9239395e28d68487dd0ccea8cc57efb7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6e78d826cd010230218048ef320d8f32430ac02b
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069952"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032131"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticazione a più fattori per l'ambiente di sviluppo/test di Office 365
 
@@ -38,7 +38,7 @@ Le fasi di configurazione dell’autenticazione a più fattori per Office 365 in
 2. Abilitare e testare l'autenticazione a più fattori per l'account User 2.
     
 > [!TIP]
-> Fare clic [qui](http://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
+> Fare clic [qui](https://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli nella serie di guide dei lab di test di Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365 aziendale leggero o simulato
 
@@ -59,7 +59,7 @@ Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel mo
     
 3. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
-4. Nel riquadro utenti attivi, fare clic su **altre > configurazione di autenticazione a più fattori**.
+4. Nel riquadro utenti attivi, fare clic su **altre > configurazione dell'autenticazione a più fattori**.
     
 5. Nell'elenco, selezionare l'account **User 2** .
     
@@ -77,7 +77,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 1. Aprire una nuova istanza del browser.
     
-2. Accedere al portale di Office 365 ([https://www.office.com](https://www.office.com)) ed eseguire l'accesso con l'account User 2 (User2\<@ Organization name>. onmicrosoft. com) e la password.
+2. Accedere al portale di Office 365 ([https://www.office.com](https://www.office.com)) ed eseguire l'accesso con l'account User 2 (\<user2@ nome dell'organizzazione>. onmicrosoft.com) e la password.
     
 3. Dopo l'accesso, viene chiesto di configurare l'account per un'ulteriore convalida di sicurezza. Fare clic su **Configura ora**.
     

@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Spiegazione di come funziona la registrazione interna per i team di ingegneri di Office 365.
-ms.openlocfilehash: 5fff245435d6b21a06bfe8544f991b919dbf15d9
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3f0a65b618e34e5bba92a0f0b471c5c7c43bb329
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067526"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035526"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Registrazione interna per Office 365 Engineering
+
 Oltre agli eventi e ai dati dei registri disponibili per i clienti, è presente anche un sistema di raccolta dati interno disponibile per gli ingegneri di Office 365. Molti tipi diversi di dati di log vengono caricati dai server di Office 365 a un servizio di elaborazione dati di grandi dimensioni interno denominato Cosmos. Ogni team di servizio carica i registri di controllo dai rispettivi server nel database Cosmos per l'aggregazione e l'analisi. Questo trasferimento dei dati si verifica su una connessione TLS convalidata FIPS 140-2 su porte e protocolli approvati utilizzando uno strumento di automazione proprietaria denominato Office Data Loader (FAD). Gli strumenti utilizzati in Office 365 per la raccolta e l'elaborazione dei record di controllo non consentono modifiche permanenti o irreversibili al contenuto del record di controllo originale o all'ordine di tempo.
 
 I team di servizio utilizzano Cosmos come repository centralizzato per eseguire un'analisi dell'utilizzo delle applicazioni, per misurare le prestazioni operative e del sistema e per cercare anomalie e modelli che potrebbero indicare problemi o problemi di sicurezza. Ogni team di servizio carica una linea di base dei log in Cosmos, a seconda di ciò che stanno cercando di analizzare, che spesso includono:
+
 - Registri eventi
 - Registri di AppLocker
 - Dati sulle prestazioni

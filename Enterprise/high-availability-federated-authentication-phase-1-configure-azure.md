@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Riepilogo: Configurare l'infrastruttura Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Office 365."
-ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d3cb5006f9630b4fc20462252a570f4e575a1da1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067502"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030750"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: configurare Azure
 
@@ -45,7 +45,7 @@ Prima di iniziare la configurazione dei componenti di Azure, compilare le tabell
 |2.  <br/> |Percorso VNet  <br/> |Data center di Azure regionale che conterrà la rete virtuale.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |Indirizzo IP del dispositivo VPN  <br/> |L'indirizzo IPv4 pubblico dell'interfaccia del dispositivo VPN su Internet.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |Spazio di indirizzi della VNet  <br/> |Lo spazio di indirizzi della rete virtuale. Consultare il proprio reparto IT per determinare tale spazio di indirizzi.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Chiave condivisa IPsec  <br/> |Una stringa con 32 caratteri alfanumerici casuali che verrà utilizzata per autenticare entrambi i lati della connessione VPN da sito a sito. Consultare il reparto IT o della sicurezza per determinare tale valore chiave. In alternativa, vedere [Creare una stringa casuale per una chiave già condivisa IPsec ](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Chiave condivisa IPsec  <br/> |Una stringa con 32 caratteri alfanumerici casuali che verrà utilizzata per autenticare entrambi i lati della connessione VPN da sito a sito. Consultare il reparto IT o della sicurezza per determinare tale valore chiave. In alternativa, vedere [Creare una stringa casuale per una chiave già condivisa IPsec ](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabella V: configurazione di una rete virtuale cross-premise**
   
@@ -109,7 +109,7 @@ Per l'insieme degli spazi di indirizzi della rete locale, compilare la tabella L
 Iniziamo a creare l'infrastruttura di Azure per ospitare l'autenticazione federata di Office 365.
   
 > [!NOTE]
-> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Avviare un prompt dei comandi di Azure PowerShell e accedere al proprio account.
   

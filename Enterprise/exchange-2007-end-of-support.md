@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: L'11 aprile 2017, Exchange Server 2007 ha raggiunto la fine del supporto. Se non è già stata avviata la migrazione da Exchange 2007 a Office 365 o Exchange 2016, ora è il momento di iniziare la pianificazione.
-ms.openlocfilehash: 08796407e41fcc249da709267301de94fc359f36
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: df870d05c6f5139c4274c1654cd3b4304103a98e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067612"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028850"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Guida sulla fine del supporto di Exchange 2007
 
@@ -85,7 +85,7 @@ A seconda dell'organizzazione, sono disponibili alcune opzioni che consentono di
 |Migrazione a fasi  <br/> |Più di 150 sedi  <br/> |Qualche settimana  <br/> |
 |Migrazione ibrida completa  <br/> |Diverse centinaia di migliaia di seggi  <br/> |Alcuni mesi o più  <br/> |
    
-Nelle sezioni seguenti viene illustrata una panoramica di questi metodi. Per informazioni dettagliate su ogni metodo, vedere [decidere su un percorso di migrazione](https://support.office.com/en-us/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) . 
+Nelle sezioni seguenti viene illustrata una panoramica di questi metodi. Per informazioni dettagliate su ogni metodo, vedere [decidere su un percorso di migrazione](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) . 
   
 #### <a name="cutover-migration"></a>Migrazione completa
 
@@ -109,17 +109,17 @@ Se si sta pensando di eseguire una migrazione completa, è necessario considerar
     
 - È necessaria una licenza di Office 365 che includa Exchange Online per ogni cassetta postale dell'utente di cui si esegue la migrazione.
     
-- Gli utenti dovranno impostare un nuovo profilo di Outlook su ciascuno dei propri dispositivi e scaricare di nuovo la posta elettronica. La quantità di messaggi di posta elettronica che Outlook scaricherà può variare. Per ulteriori informazioni, vedere [modificare la quantità di posta da mantenere offline](https://support.office.com/en-us/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1).
+- Gli utenti dovranno impostare un nuovo profilo di Outlook su ciascuno dei propri dispositivi e scaricare di nuovo la posta elettronica. La quantità di messaggi di posta elettronica che Outlook scaricherà può variare. Per ulteriori informazioni, vedere [modificare la quantità di posta da mantenere offline](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1).
     
 Per ulteriori informazioni sulla migrazione di completa, vedere:
   
-- [Cosa è necessario sapere sulla migrazione della posta elettronica di completa a Office 365](https://support.office.com/en-us/article/What-you-need-to-know-about-a-cutover-email-migration-to-Office-365-961978ef-f434-472d-a811-1801733869da)
+- [Cosa è necessario sapere sulla migrazione della posta elettronica di completa a Office 365](https://support.office.com/article/What-you-need-to-know-about-a-cutover-email-migration-to-Office-365-961978ef-f434-472d-a811-1801733869da)
     
-- [Eseguire una migrazione completa della posta elettronica a Office 365](https://support.office.com/en-us/article/Perform-a-cutover-migration-of-email-to-Office-365-9496e93c-1e59-41a8-9bb3-6e8df0cd81b4)
+- [Eseguire una migrazione completa della posta elettronica a Office 365](https://support.office.com/article/Perform-a-cutover-migration-of-email-to-Office-365-9496e93c-1e59-41a8-9bb3-6e8df0cd81b4)
     
 #### <a name="staged-migration"></a>Migrazione a fasi
 
-Una migrazione a fasi è quella in cui si dispone di poche centinaia o migliaia di cassette postali di cui si desidera eseguire la migrazione a Office 365, è necessario richiedere una o più settimane per completare la migrazione e non è necessaria alcuna funzionalità di migrazione ibrida avanzata, ad esempio le informazioni sulla disponibilità del calendario condivise conferma.
+Una migrazione a fasi è quella in cui si dispone di poche centinaia o migliaia di cassette postali di cui si desidera eseguire la migrazione a Office 365, è necessario richiedere una o più settimane per completare la migrazione e non è necessaria alcuna funzionalità di migrazione ibrida avanzata, ad esempio le informazioni sulla disponibilità del calendario condivise.
   
 La migrazione in fasi è ideale per le organizzazioni che devono richiedere più tempo per eseguire la migrazione delle cassette postali a Office 365, ma comunque pianificano di completare la migrazione entro poche settimane. È possibile eseguire la migrazione delle cassette postali in "batch" che consentono di controllare il numero di cassette postali di cui è stata eseguita la migrazione in un determinato momento. È possibile che le cassette postali in batch degli utenti nello stesso reparto, ad esempio, per assicurarsi che siano tutti spostati nello stesso momento. In alternativa, è possibile lasciare le cassette postali Executive fino all'ultimo batch. Come per le migrazioni di completa, gli utenti dovranno ricreare i profili di Outlook.
   
@@ -139,13 +139,13 @@ Se si sta pensando di eseguire una migrazione a fasi, è necessario tenere prese
     
 - È necessaria una licenza di Office 365 che includa Exchange Online per ogni cassetta postale dell'utente di cui si esegue la migrazione.
     
-- Gli utenti dovranno impostare un nuovo profilo di Outlook su ciascuno dei propri dispositivi e scaricare di nuovo la posta elettronica. La quantità di messaggi di posta elettronica che Outlook scaricherà può variare. Per ulteriori informazioni, vedere [modificare la quantità di posta da mantenere offline](https://support.office.com/en-us/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1).
+- Gli utenti dovranno impostare un nuovo profilo di Outlook su ciascuno dei propri dispositivi e scaricare di nuovo la posta elettronica. La quantità di messaggi di posta elettronica che Outlook scaricherà può variare. Per ulteriori informazioni, vedere [modificare la quantità di posta da mantenere offline](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1).
     
 Per ulteriori informazioni sulla migrazione in fasi, vedere:
   
-- [Informazioni utili su una migrazione a fasi della posta elettronica a Office 365](https://support.office.com/en-us/article/What-you-need-to-know-about-a-staged-email-migration-to-Office-365-7e2c82be-5f3d-4e36-bc6b-e5b4d411e207)
+- [Informazioni utili su una migrazione a fasi della posta elettronica a Office 365](https://support.office.com/article/What-you-need-to-know-about-a-staged-email-migration-to-Office-365-7e2c82be-5f3d-4e36-bc6b-e5b4d411e207)
     
-- [Eseguire una migrazione a fasi della posta elettronica a Office 365](https://support.office.com/en-us/article/Perform-a-staged-migration-of-email-to-Office-365-83bc0b69-de47-4cc4-a57d-47e478e4894e)
+- [Eseguire una migrazione a fasi della posta elettronica a Office 365](https://support.office.com/article/Perform-a-staged-migration-of-email-to-Office-365-83bc0b69-de47-4cc4-a57d-47e478e4894e)
     
 #### <a name="full-hybrid"></a>Full Hybrid
 
@@ -187,13 +187,13 @@ Se una migrazione ibrida completa è adatta per l'utente, vedere le risorse segu
   
 - [Assistente per la distribuzione di Exchange](https://aka.ms/exdeploy)
     
-- [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/en-us/library/jj200581%28v=exchg.150%29.aspx)
+- [Distribuzioni ibride di Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)
     
-- [Configurazione ibrida guidata](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
+- [Configurazione ibrida guidata](https://technet.microsoft.com/library/hh529921%28v=exchg.150%29.aspx)
     
-- [Domande frequenti sulla configurazione ibrida guidata](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
+- [Domande frequenti sulla configurazione ibrida guidata](https://technet.microsoft.com/library/mt488940%28v=exchg.150%29.aspx)
     
-- [Prerequisiti per la distribuzione ibrida](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
+- [Prerequisiti per la distribuzione ibrida](https://technet.microsoft.com/library/hh534377%28v=exchg.150%29.aspx)
     
 ### <a name="migrate-to-a-newer-version-of-exchange-server"></a>Eseguire la migrazione a una versione più recente di Exchange Server
 
@@ -215,12 +215,12 @@ Si consiglia di iniziare a eseguire la migrazione a Exchange 2016. Successivamen
 |:-----|:-----|
 |Date di fine del supporto  <br/> | Analogamente a Exchange 2007, ogni versione di Exchange ha la propria data di fine del supporto:  <br/> **Exchange 2010** -January 2020  <br/> **Exchange 2013** -April 2023  <br/> **Exchange 2016** -ottobre 2025  <br/>  Prima la data di fine del supporto, prima sarà necessario eseguire un'altra migrazione. Gennaio 2020 è molto più vicino di quanto si pensi!  <br/> |
 |Percorso di migrazione a Exchange 2010 e 2013  <br/> |Di seguito sono ritratte le fasi generali per la migrazione a Exchange 2010 o Exchange 2013:  <br/> Installare Exchange 2010 o 2013 nell'organizzazione Exchange 2007 Organization Move Services and other Infrastructure to Exchange 2010 or 2013 Move Mailboxes and Public Folders to Exchange 2010 or 2013 decommission restant Exchange 2007 Servers |
-|Percorso di migrazione a Exchange 2016  <br/> |Di seguito sono ritratte le fasi generali per la migrazione a Exchange 2016:  <br/> Installare Exchange 2013 nell'organizzazione di Exchange 2007 e negli altri servizi infrastrutturali di Exchange 2013 spostare le cassette postali e le cartelle pubbliche in Exchange 2013 rimuovere i server di Exchange 2007 restanti installare Exchange 2016 nell'ambiente esistente Organizzazione di Exchange 2013. Spostare le cassette postali, le cartelle pubbliche, i servizi e altre infrastrutture a Exchange 2016 (l'ordine non è importante). Rimuovere gli altri server di Exchange 2013 [!NOTE]> _GT_ la migrazione da Exchange 2013 a Exchange 2016 è semplice. Entrambe le versioni presentano quasi gli stessi requisiti hardware. Questo, e il fatto che queste versioni siano compatibili, significa che è possibile ricreare un server acquistato per Exchange 2013 e installare Exchange 2016 su di esso. E, con gli spostamenti delle cassette postali online, la maggior parte degli utenti non noterà mai che la cassetta postale viene spostata dal server e poi di nuovo dopo che è stata ricreata con Exchange 2016.           |
+|Percorso di migrazione a Exchange 2016  <br/> |Di seguito sono ritratte le fasi generali per la migrazione a Exchange 2016:  <br/> Installare Exchange 2013 nell'organizzazione di Exchange 2007 e negli altri servizi infrastrutturali di Exchange 2013 spostare le cassette postali e le cartelle pubbliche in Exchange 2013 rimuovere i server di Exchange 2007 restanti installare Exchange 2016 nell'ambiente esistente Organizzazione di Exchange 2013. Spostare le cassette postali, le cartelle pubbliche, i servizi e altre infrastrutture a Exchange 2016 (l'ordine non è importante). Rimuovere i server di Exchange 2013 > [!NOTE]> la migrazione da Exchange 2013 a Exchange 2016 è semplice. Entrambe le versioni presentano quasi gli stessi requisiti hardware. Questo, e il fatto che queste versioni siano compatibili, significa che è possibile ricreare un server acquistato per Exchange 2013 e installare Exchange 2016 su di esso. E, con gli spostamenti delle cassette postali online, la maggior parte degli utenti non noterà mai che la cassetta postale viene spostata dal server e poi di nuovo dopo che è stata ricreata con Exchange 2016.           |
 |Coesistenza della versione  <br/> | Quando si esegue la migrazione a:  <br/> **Exchange 2016** Exchange 2016 non può essere installato in un'organizzazione che include un server Exchange 2007. Per prima cosa, è necessario eseguire la migrazione a Exchange 2010 o 2013 (si consiglia vivamente Exchange 2013), rimuovere tutti i server Exchange 2007 e quindi eseguire la migrazione a Exchange 2016.  <br/> **Exchange 2010 o exchange 2013** È possibile installare Exchange 2010 o Exchange 2013 in un'organizzazione Exchange 2007 esistente. In questo modo è possibile installare uno o più server Exchange 2010 o 2013 ed eseguire la migrazione.  <br/> |
-|Hardware dei server  <br/> | I requisiti hardware del server sono stati modificati da Exchange 2007. È necessario assicurarsi che l'hardware utilizzato sia compatibile. Per ulteriori informazioni sui requisiti hardware per ogni versione, vedere:  <br/> [Requisiti di sistema di Exchange 2016](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx) <br/> [Requisiti di sistema di Exchange 2013](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx) <br/> [Requisiti di sistema di Exchange 2010](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.141%29.aspx) <br/>  Si noterà che, con i miglioramenti significativi nelle prestazioni di Exchange e la maggiore capacità di elaborazione e di archiviazione nei server più recenti, è probabile che siano necessari meno server per supportare lo stesso numero di cassette postali.  <br/> |
-|Versione del sistema operativo  <br/> | Le versioni minime del sistema operativo supportate per ogni versione sono le seguenti:  <br/> **Exchange 2016** Windows Server 2012  <br/> **Exchange 2013** Windows Server 2008 R2 SP1  <br/> **Exchange 2010** Windows Server 2008 SP2  <br/>  Per ulteriori informazioni sul supporto del sistema operativo, vedere [Matrix supportabilità di Exchange](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
-|Livello di funzionalità della foresta di Active Directory  <br/> | I livelli di funzionalità della foresta di Active Directory supportati almeno per ogni versione sono i seguenti:  <br/> **Exchange 2016** Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Per ulteriori informazioni sul supporto dei livelli di funzionalità della foresta, vedere [Matrix supportabilità di Exchange](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
-|Versioni client di Office  <br/> | Le versioni client di Office supportate minime per ogni versione sono le seguenti:  <br/> **Exchange 2016** Office 2010 (con gli aggiornamenti più recenti)  <br/> **Exchange 2013** Office 2007 Service Pack 3  <br/> **Exchange 2010** Office 2003  <br/>  Per ulteriori informazioni sul supporto dei client di Office, vedere [Matrix supportabilità di Exchange](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
+|Hardware dei server  <br/> | I requisiti hardware del server sono stati modificati da Exchange 2007. È necessario assicurarsi che l'hardware utilizzato sia compatibile. Per ulteriori informazioni sui requisiti hardware per ogni versione, vedere:  <br/> [Requisiti di sistema di Exchange 2016](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Requisiti di sistema di Exchange 2013](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Requisiti di sistema di Exchange 2010](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  Si noterà che, con i miglioramenti significativi nelle prestazioni di Exchange e la maggiore capacità di elaborazione e di archiviazione nei server più recenti, è probabile che siano necessari meno server per supportare lo stesso numero di cassette postali.  <br/> |
+|Versione del sistema operativo  <br/> | Le versioni minime del sistema operativo supportate per ogni versione sono le seguenti:  <br/> **Exchange 2016** Windows Server 2012  <br/> **Exchange 2013** Windows Server 2008 R2 SP1  <br/> **Exchange 2010** Windows Server 2008 SP2  <br/>  Per ulteriori informazioni sul supporto del sistema operativo, vedere [Matrix supportabilità di Exchange](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
+|Livello di funzionalità della foresta di Active Directory  <br/> | I livelli di funzionalità della foresta di Active Directory supportati almeno per ogni versione sono i seguenti:  <br/> **Exchange 2016** Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Per ulteriori informazioni sul supporto dei livelli di funzionalità della foresta, vedere [Matrix supportabilità di Exchange](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
+|Versioni client di Office  <br/> | Le versioni client di Office supportate minime per ogni versione sono le seguenti:  <br/> **Exchange 2016** Office 2010 (con gli aggiornamenti più recenti)  <br/> **Exchange 2013** Office 2007 Service Pack 3  <br/> **Exchange 2010** Office 2003  <br/>  Per ulteriori informazioni sul supporto dei client di Office, vedere [Matrix supportabilità di Exchange](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
    
 #### <a name="how-do-i-migrate"></a>Come si esegue la migrazione?
 
@@ -228,11 +228,11 @@ Se si è deciso di mantenere la posta elettronica in locale, è possibile utiliz
   
 - [Assistente per la distribuzione di Exchange](https://aka.ms/exdeploy)
     
-- Modifiche allo schema di Active Directory per Exchange [2016](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.150%29.aspx), [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)
+- Modifiche allo schema di Active Directory per Exchange [2016](https://technet.microsoft.com/library/bb738144%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/library/bb738144%28v=exchg.150%29.aspx), [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)
     
-- Requisiti di sistema per Exchange [2016](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx), [2010](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.141%29.aspx)
+- Requisiti di sistema per Exchange [2016](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx), [2010](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx)
     
-- Prerequisiti per Exchange [2016](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.150%29.aspx), [2010](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.141%29.aspx)
+- Prerequisiti per Exchange [2016](https://technet.microsoft.com/library/bb691354%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/library/bb691354%28v=exchg.150%29.aspx), [2010](https://technet.microsoft.com/library/bb691354%28v=exchg.141%29.aspx)
     
 ## <a name="what-if-i-need-help"></a>Cosa succede se si ha bisogno di assistenza?
 
@@ -240,14 +240,14 @@ Se si esegue la migrazione a Office 365, potrebbe essere possibile utilizzare il
   
 Se si verificano problemi durante la migrazione a Office 365 e non si utilizza FastTrack o si esegue la migrazione a una versione più recente di Exchange Server, è possibile aiutarla. Di seguito sono riportate alcune risorse che è possibile utilizzare:
   
-- [Community tecnica](https://social.technet.microsoft.com/Forums/office/en-US/home?category=exchangeserver)
+- [Community tecnica](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
     
-- [Assistenza clienti](https://support.microsoft.com/en-us/gp/support-options-for-business)
+- [Assistenza clienti](https://support.microsoft.com/gp/support-options-for-business)
     
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Risorse utili per l'aggiornamento dei server e dei client di Office 2007](upgrade-from-office-2007-servers-and-products.md)
   
-[Gruppo di pensionamento di Office (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Office Retirement Group (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
   
 

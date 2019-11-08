@@ -14,12 +14,12 @@ ms.assetid: 5a91b9e3-1508-475b-93e0-710fa5d5cd2d
 ms.collection:
 - M365-security-compliance
 description: Se è stata abilitata l'autenticazione moderna ibrida (HMA) solo per scoprire che non è adatta per l'ambiente corrente, è possibile disabilitare HMA. In questo articolo viene illustrato come.
-ms.openlocfilehash: 91373adf590ad9a69880de20897795ced23d98b8
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 9f1236775f60fdb37ab12cd7cfb7eabd9763466d
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493323"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031601"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Rimozione o disabilitazione dell'autenticazione moderna ibrida da Skype for Business ed Exchange
 
@@ -30,7 +30,7 @@ Se è stata abilitata l'autenticazione moderna ibrida (HMA) solo per scoprire ch
 Se è stata abilitata l'autenticazione moderna in Skype for business online o locale e/o Exchange Online o in locale e si è trovato che è necessario disabilitare HMA, questi passaggi sono disponibili per l'utente.
 
 > [!IMPORTANT]
-> Vedere l'articolo relativo alle topologie di[Skype for business supportate con l'autenticazione moderna](https://technet.microsoft.com/en-us/library/mt803262.aspx)se si è in Skype for business online o in locale, è presente una HMA a topologia mista ed è necessario esaminare le topologie supportate prima di iniziare.
+> Vedere l'articolo relativo alle topologie di[Skype for business supportate con l'autenticazione moderna](https://technet.microsoft.com/library/mt803262.aspx)se si è in Skype for business online o in locale, è presente una HMA a topologia mista ed è necessario esaminare le topologie supportate prima di iniziare.
   
 ## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>Come disabilitare l'autenticazione moderna ibrida (Exchange)
 
@@ -41,7 +41,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange Online**: [connettersi a Exchange Online](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) con Remote PowerShell. Eseguire il seguente comando per trasformare il flag *OAuth2ClientProfileEnabled* su' false ':
+2. **Exchange Online**: [connettersi a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) con Remote PowerShell. Eseguire il seguente comando per trasformare il flag *OAuth2ClientProfileEnabled* su' false ':
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
@@ -55,7 +55,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. **Skype for business online**: [connettersi a Skype for business online](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) con Remote PowerShell. Eseguire il seguente comando per disabilitare l'autenticazione moderna:
+2. **Skype for business online**: [connettersi a Skype for business online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) con Remote PowerShell. Eseguire il seguente comando per disabilitare l'autenticazione moderna:
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed

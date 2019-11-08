@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Panoramica della caratteristica eDiscovery e di altre funzionalità di ricerca di Office 365 per l'utilizzo e la trasparenza di controllo.
-ms.openlocfilehash: e9a120f717c04d5e5570e341aa5d3d93f85f80cb
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e94c8e27c2ddf7bd50dca15eb849337de6f89c1a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067556"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032031"
 ---
 # <a name="ediscovery-and-search-features"></a>Funzionalità di ricerca e di eDiscovery 
 
@@ -28,7 +28,7 @@ La caratteristica eDiscovery fornisce un'unica posizione per gli amministratori,
 
 ## <a name="content-search"></a>Ricerca contenuto
 
-La [ricerca di contenuti](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) è uno strumento di ricerca di eDiscovery che offre funzionalità di ridimensionamento e prestazioni migliorate rispetto agli strumenti di ricerca di eDiscovery precedenti. Si utilizza la ricerca contenuto per cercare le cassette postali, le cartelle pubbliche, i siti di SharePoint Online e le posizioni di OneDrive for business. La ricerca contenuto supporta ricerche di grandi dimensioni. Non esistono limiti al numero di cassette postali e siti in cui è possibile eseguire la ricerca. Non sono previsti limiti al numero di ricerche eseguite contemporaneamente. Dopo aver eseguito una ricerca, il numero di origini di contenuto e il numero stimato di risultati della ricerca vengono visualizzati nel riquadro dei dettagli della pagina di ricerca. È possibile visualizzare in anteprima i risultati o esportarli in un computer locale. Se l'organizzazione dispone di un abbonamento a Office 365 Enterprise E5, è possibile [preparare i risultati](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) per l'analisi utilizzando le potenti funzionalità di analisi di [Office 365 Advanced eDiscovery](http://go.microsoft.com/fwlink/p/?LinkID=620116).
+La [ricerca di contenuti](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) è uno strumento di ricerca di eDiscovery che offre funzionalità di ridimensionamento e prestazioni migliorate rispetto agli strumenti di ricerca di eDiscovery precedenti. Si utilizza la ricerca contenuto per cercare le cassette postali, le cartelle pubbliche, i siti di SharePoint Online e le posizioni di OneDrive for business. La ricerca contenuto supporta ricerche di grandi dimensioni. Non esistono limiti al numero di cassette postali e siti in cui è possibile eseguire la ricerca. Non sono previsti limiti al numero di ricerche eseguite contemporaneamente. Dopo aver eseguito una ricerca, il numero di origini di contenuto e il numero stimato di risultati della ricerca vengono visualizzati nel riquadro dei dettagli della pagina di ricerca. È possibile visualizzare in anteprima i risultati o esportarli in un computer locale. Se l'organizzazione dispone di un abbonamento a Office 365 Enterprise E5, è possibile [preparare i risultati](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) per l'analisi utilizzando le potenti funzionalità di analisi di [Office 365 Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?LinkID=620116).
 
 ## <a name="audit-log-search"></a>Ricerca nel log di controllo
 

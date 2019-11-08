@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Riepilogo: le soluzioni di SharePoint 2013 possono essere ospitate nelle macchine virtuali di Microsoft Azure. Informazioni sul tipo di soluzione adatta e su come configurare Microsoft Azure per ospitarne uno.'
-ms.openlocfilehash: 913910af1acf1353c3ee9b553178c4f0736eb290
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7bc274098f961ccf9aa6aef05f595dfc6e116bec
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070292"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032291"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure Architectures for SharePoint 2013
 
@@ -54,9 +54,9 @@ Per le soluzioni e i carichi di lavoro per Intranet e collaborazione, prendere i
 
 Anche se in questo articolo vengono utilizzati esempi di topologie di SharePoint, è possibile utilizzare questi concetti di progettazione con qualsiasi topologia della farm di SharePoint. Prima di progettare l'ambiente di Azure, utilizzare le seguenti linee guida per la topologia, l'architettura, la capacità e le prestazioni per la progettazione della farm di SharePoint:
   
-- [Progettazione dell'architettura per SharePoint 2013 professionisti IT](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
+- [Progettazione dell'architettura per SharePoint 2013 professionisti IT](http://technet.microsoft.com/sharepoint/fp123594.aspx)
     
-- [Pianificare la gestione delle prestazioni e della capacità in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Pianificare la gestione delle prestazioni e della capacità in SharePoint Server 2013](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Determinare il tipo di dominio Active Directory
 

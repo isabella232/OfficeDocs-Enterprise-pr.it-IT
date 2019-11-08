@@ -13,17 +13,18 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Informazioni sulle funzionalità di monitoraggio e correzione automatica di Office 365.
-ms.openlocfilehash: 75241463d300a6bd7110950934a0501d902040f8
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: bb82a82fffea4602ece258091b75580594ba435f
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067494"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035743"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Monitoraggio e autoguarigione di Office 365
+
 Data la scala di Office 365, sarebbe impossibile mantenere i dati dei clienti resilienti e sicuri da malware senza il monitoraggio integrato che è completo, avvisando che è intelligente e auto-guarigione che è veloce e affidabile. Il monitoraggio di un insieme di servizi alla scala di Office 365 è molto impegnativo. Sono state introdotte nuove mentalità e metodologie che sono state necessarie per creare e gestire il servizio in un ambiente globale connesso. L'approccio di monitoraggio tradizionale della raccolta e del filtro dei dati è stato rimosso per creare avvisi per un approccio basato sull'analisi dei dati. prendere segnali e creare fiducia nei dati e quindi utilizzare l'automazione per recuperare o risolvere il problema. Questo approccio consente di eliminare gli umani dall'equazione di ripristino, che rende le operazioni meno onerose, veloci e meno soggette a errori. 
 
-Fondamentale per il monitoraggio di Office 365 è una raccolta di tecnologie che comprendono il motore Data Insights, basato su Azure, SQL Azure e la tecnologia dei [database di flusso open source](http://cassandra.apache.org/). È stato creato per raccogliere e aggregare i dati e raggiungere conclusioni. Attualmente, elabora più di 500 milioni eventi all'ora da oltre 100.000 server (~ 15 TB al giorno) sparsi in decine di datacenter in molte aree geografiche e questi numeri sono in crescita. 
+Fondamentale per il monitoraggio di Office 365 è una raccolta di tecnologie che comprendono il motore Data Insights, basato su Azure, SQL Azure e la tecnologia dei [database di flusso open source](https://cassandra.apache.org/). È stato creato per raccogliere e aggregare i dati e raggiungere conclusioni. Attualmente, elabora più di 500 milioni eventi all'ora da oltre 100.000 server (~ 15 TB al giorno) sparsi in decine di datacenter in molte aree geografiche e questi numeri sono in crescita. 
 
 Office 365 utilizza il *monitoraggio esterno*, che prevede la creazione di transazioni sintetiche per testare tutto ciò che è importante. Ad esempio, in Exchange Online ogni scenario verifica tutti i database di tutto il mondo ogni cinque minuti in modo sparso, fornendo una copertura continua di tutto ciò che vive nel sistema. Da più posizioni vengono eseguite 250 milioni transazioni di test giornalieri per creare una linea di base o un battito cardiaco robusto per il servizio. 
 
@@ -34,14 +35,17 @@ In base alla combinazione tra l'avviso di errore e gli avvisi rossi, questo avvi
 Oltre alle funzionalità di autoguarigione, ad esempio il ripristino di una singola pagina, Exchange Online include diverse funzionalità che interessano il monitoraggio e la guarigione automatica, che si concentra sulla conservazione dell'esperienza degli utenti finali. Queste funzionalità includono la *disponibilità gestita*, che fornisce azioni di monitoraggio e ripristino incorporate, e il reseeding automatico, che ripristina automaticamente la ridondanza dei database dopo un errore del disco. 
 
 ## <a name="managed-availability"></a>Disponibilità gestita 
-La disponibilità gestita fornisce una soluzione per il ripristino e il controllo dell'integrità nativo che monitora e protegge l'esperienza dell'utente finale mediante azioni orientate al ripristino. La disponibilità gestita è l'integrazione delle azioni di monitoraggio e ripristino incorporate con la piattaforma a disponibilità elevata di Exchange. Tale piattaforma è stata progettata per rilevare e risolvere i problemi non appena si verificano e vengono rilevati dal sistema. Diversamente dalle precedenti soluzioni e tecniche di monitoraggio esterno di Exchange, la disponibilità gestita non cerca di identificare o comunicare la causa principale di un problema. Si concentra invece sugli aspetti di ripristino che si riferiscono a tre aree principali dell'esperienza dell'utente finale: 
+
+La disponibilità gestita fornisce una soluzione per il ripristino e il controllo dell'integrità nativo che monitora e protegge l'esperienza dell'utente finale mediante azioni orientate al ripristino. La disponibilità gestita è l'integrazione delle azioni di monitoraggio e ripristino incorporate con la piattaforma a disponibilità elevata di Exchange. Tale piattaforma è stata progettata per rilevare e risolvere i problemi non appena si verificano e vengono rilevati dal sistema. Diversamente dalle precedenti soluzioni e tecniche di monitoraggio esterno di Exchange, la disponibilità gestita non cerca di identificare o comunicare la causa principale di un problema. Si concentra invece sugli aspetti di ripristino che si riferiscono a tre aree principali dell'esperienza dell'utente finale:
+
 - **Disponibilità** : gli utenti possono accedere al servizio? 
 - **Latenza** -come è l'esperienza per gli utenti? 
 - **Errori** : gli utenti sono in grado di realizzare ciò che desiderano? 
 
-La disponibilità gestita è una funzionalità interna che viene eseguita su ogni server di Office 365 in cui è in esecuzione Exchange Online. Effettua il polling e analizza centinaia di metriche di integrità ogni secondo. Se si verifica un errore, la maggior parte delle volte viene risolta automaticamente. Tuttavia, saranno sempre presenti problemi che la disponibilità gestita non sarà in grado di risolvere autonomamente. In questi casi, la disponibilità gestita escrescerà il problema in un team di supporto di Office 365 tramite la registrazione di eventi. 
+La disponibilità gestita è una funzionalità interna che viene eseguita su ogni server di Office 365 in cui è in esecuzione Exchange Online. Effettua il polling e analizza centinaia di metriche di integrità ogni secondo. Se si verifica un errore, la maggior parte delle volte viene risolta automaticamente. Tuttavia, saranno sempre presenti problemi che la disponibilità gestita non sarà in grado di risolvere autonomamente. In questi casi, la disponibilità gestita escrescerà il problema in un team di supporto di Office 365 tramite la registrazione di eventi.
 
-## <a name="autoreseed"></a>Reseeding automatico 
+## <a name="autoreseed"></a>Reseeding automatico
+
 I server Exchange Online vengono distribuiti in una configurazione in cui vengono archiviati più database e i relativi flussi di log sullo stesso disco non RAID. Questa configurazione viene spesso definita solo come *un gruppo di dischi* (JBOD) perché non vengono utilizzati meccanismi di ridondanza dello spazio di archiviazione, ad esempio RAID, per duplicare i dati nel disco. Quando un disco ha esito negativo in un ambiente JBOD, i dati del disco sono persi. 
 
 Date le dimensioni di Exchange Online e il fatto che è distribuito all'interno di esso sono milioni di unità disco, gli errori dell'unità disco sono un'occorrenza normale in Exchange Online. Infatti, più di 100 hanno esito negativo ogni giorno. Quando un disco ha esito negativo in una distribuzione aziendale locale, è necessario che un amministratore sostituisca manualmente il disco non riuscito e ripristini i dati interessati. In una distribuzione del cloud le dimensioni di Office 365, con operatori (amministratori cloud) che sostituiscono manualmente i dischi non è né pratico né economicamente fattibile. 

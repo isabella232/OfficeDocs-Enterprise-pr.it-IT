@@ -1,5 +1,5 @@
 ---
-title: Guida sulla fine del supporto di SharePoint Server 2007
+title: Roadmap di fine supporto di SharePoint Server 2007
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -32,14 +32,14 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: Il 10 ottobre 2017 è stato terminato il supporto per SharePoint Server 2007. Leggere questo articolo per informazioni sulle opzioni di aggiornamento, la risoluzione dei problemi, le procedure consigliate, i requisiti di sistema, i passaggi di aggiornamento e su come ottenere assistenza dai partner Microsoft.
-ms.openlocfilehash: 5e5f697f64c520ec1be2b055be0fd42e1742a9ed
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 4054ca5c0b502c2008556021a80d3a939a979bb3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070722"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030911"
 ---
-# <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Guida sulla fine del supporto di SharePoint Server 2007
+# <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Roadmap di fine supporto di SharePoint Server 2007
 
 Il **10 ottobre 2017**, Microsoft Office SharePoint Server 2007 ha raggiunto la fine del supporto. Se non è stata avviata la migrazione da SharePoint Server 2007 a Office 365 o una versione più recente di SharePoint Server locale, ora è il momento di iniziare a pianificare. In questo articolo vengono illustrate le risorse che consentono agli utenti di eseguire la migrazione dei dati in SharePoint Online o di aggiornare il server SharePoint locale. 
   
@@ -55,7 +55,7 @@ SharePoint Server, come quasi tutti i prodotti Microsoft, ha un ciclo di vita di
     
 - Aggiornamenti del fuso orario.
     
-Anche se la farm di SharePoint Server 2007 continuerà a essere operativa dopo il 10 ottobre 2017, non verranno spediti ulteriori aggiornamenti, patch o correzioni per il prodotto (incluse le patch di sicurezza/correzioni) e il supporto tecnico Microsoft avrà spostato completamente gli sforzi di supporto per versioni più recenti del prodotto. Poiché l'installazione non è più supportata o patchata, al termine degli approcci di supporto è necessario aggiornare il prodotto o eseguire la migrazione di dati importanti.
+Anche se la farm di SharePoint Server 2007 continuerà a essere operativa dopo il 10 ottobre 2017, non verranno spediti ulteriori aggiornamenti, patch o correzioni per il prodotto (incluse le patch di sicurezza/correzioni) e il supporto tecnico Microsoft avrà spostato completamente le proprie attività di supporto per le versioni più recenti del prodotto. Poiché l'installazione non è più supportata o patchata, al termine degli approcci di supporto è necessario aggiornare il prodotto o eseguire la migrazione di dati importanti.
   
 > [!TIP]
 > Se non è stato già pianificato l'aggiornamento o la migrazione, vedere: [Opzioni di migrazione di SharePoint 2007 da prendere in considerazione](sharepoint-2007-migration-options.md), per alcuni esempi di inizio. È inoltre possibile cercare i [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=841249) che possono essere utili per l'aggiornamento o la migrazione di Office 365 (o entrambi). 
@@ -72,9 +72,9 @@ Il primo arresto dovrebbe essere il [sito del ciclo](https://go.microsoft.com/fw
 ||Ambiente ibrido di SharePoint  <br/> |SharePoint Server 2016  <br/> |
 |||Ambiente ibrido di SharePoint  <br/> |
    
-Se si scelgono le opzioni sulla parte bassa della scala (sufficiente), tenere presente che è necessario iniziare a pianificare l'aggiornamento molto presto dopo la migrazione da SharePoint Server 2007. (la fine del supporto per SharePoint Server 2007 è il 10 ottobre 2017. Tenere presente che queste date sono soggette a modifiche e controllano il [sito del ciclo](https://support.microsoft.com/en-us/lifecycle)di vita del prodotto.
+Se si scelgono le opzioni sulla parte bassa della scala (sufficiente), tenere presente che è necessario iniziare a pianificare l'aggiornamento molto presto dopo la migrazione da SharePoint Server 2007. (la fine del supporto per SharePoint Server 2007 è il 10 ottobre 2017. Tenere presente che queste date sono soggette a modifiche e controllano il [sito del ciclo](https://support.microsoft.com/lifecycle)di vita del prodotto.
   
-## <a name="where-can-i-go-next"></a>Dove posso andare dopo?
+## <a name="where-can-i-go-next"></a>Come si prosegue?
 
 SharePoint Server può essere installato in locale nei server personali oppure è possibile utilizzare SharePoint Online, che è un servizio online che fa parte di Microsoft Office 365. È possibile scegliere di:
   
@@ -104,7 +104,7 @@ Quando si esegue la migrazione a Office 365, lo spostamento di una tantum avrà 
 
 Verificare che in SharePoint Online siano disponibili tutte le funzionalità necessarie rivedendo la descrizione del servizio associato. Di seguito è indicato il collegamento a tutte le descrizioni dei servizi di Office 365:
   
-[Descrizioni dei servizi di Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
+[Descrizioni del servizio Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
   
 Non esiste un modo diretto per eseguire la migrazione da SharePoint 2007 a SharePoint Online; lo spostamento a SharePoint Online verrebbe effettuato manualmente. Se si esegue l'aggiornamento a SharePoint Server 2013 o SharePoint Server 2016, è possibile che lo spostamento implichi anche l'utilizzo dell'API di migrazione di SharePoint (per eseguire la migrazione delle informazioni in OneDrive for business, ad esempio).
   
@@ -139,16 +139,15 @@ Per utilizzare l'intero percorso da SharePoint 2007 a SharePoint Server 2016, si
   
 In entrambi i casi, pulire l'ambiente prima dell'aggiornamento. Accertarsi che la farm esistente sia funzionale prima di eseguire l'aggiornamento e (di sicuro) prima di rimuovere le autorizzazioni. 
   
-Tenere presente i **percorsi di aggiornamento supportati e**non consolidati: 
+Tenere presente i **percorsi di aggiornamento supportati e non consolidati**: 
   
-- 
-  [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843156)
     
 - [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
     
-Se si dispone **** di personalizzazioni, è importante disporre di un piano di aggiornamento per ogni passaggio del percorso di migrazione: 
+Se si dispone di **personalizzazioni**, è importante disporre di un piano di aggiornamento per ogni passaggio del percorso di migrazione: 
   
 - [SharePoint 2007](https://go.microsoft.com/fwlink/?linkid=843158)
     

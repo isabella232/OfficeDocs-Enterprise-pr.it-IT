@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: "Nuovo datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescente domanda e la crescita dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle condizioni dei servizi online Microsoft: contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica) e contenuto del sito di SharePoint Online e file archiviati all'interno del sito e i file caricati in OneDrive for business."
-ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 780530873022426a8dc10c6a30573e303239a0d1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907639"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032191"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS
 
@@ -39,12 +39,12 @@ I clienti esistenti che dispongono di dati di base dei clienti archiviati in un 
 |Regno Unito * * * *| Europa | Regno Unito | Settembre 2016 |
 |Corea del sud * * * *| Asia/Pacifico | Sud Corea | Aprile 2017 |
 |Francia * * * *| Europa | Francia | Marzo 2018 |
-|Emirati Arabi Uniti * * * *| Europa | Emirati Arabi Uniti | 2019 giugno |
-|Sudafrica * * * *| Europa | Sudafrica | 2019 luglio |
+|Emirati Arabi Uniti * * * *| Europa | Emirati Arabi Uniti | Giugno 2019 |
+|Sudafrica * * * *| Europa | Sudafrica | Luglio 2019 |
   
 I nuovi clienti o i tenant di Office 365 creati dopo la disponibilità del nuovo datacenter Geo avranno i dati di base dei clienti archiviati a riposo nel nuovo datacenter Geo automaticamente.
   
-Un elenco completo di tutti i datacenter GEOS, Datacenter e la posizione dei dati del cliente a riposo è disponibile come parte delle [mappe](https://office.com/datamaps)dei datacenter interattivi. 
+Un elenco completo di tutti i datacenter GEOS, Datacenter e la posizione dei dati del cliente a riposo è disponibile come parte delle [mappe dei datacenter interattivi](https://office.com/datamaps). 
   
 ## <a name="data-residency-option"></a>Opzione di residenza dei dati
 
@@ -68,4 +68,4 @@ I dati si spostano nel nuovo datacenter Geo vengono completati senza costi aggiu
   
 [Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/en-us/regions/)
+[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/regions/)

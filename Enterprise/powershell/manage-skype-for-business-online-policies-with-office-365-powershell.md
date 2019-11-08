@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "Riepilogo: Utilizzare PowerShell di Office 365 per gestire le proprietà dell'account utente di Skype for Business online con i criteri."
-ms.openlocfilehash: 4b0d45e89910c7fb1a215f78690cfc2fdb17c472
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: 51e402922b2a357ef29e9b2628eb25fc252e5437
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302728"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031731"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gestire criteri Skype for Business Online con PowerShell di Office 365
 
@@ -62,7 +62,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-Nell'esempio riportato, i valori compresi nei criteri determinano le operazioni di comunicazione con utenti federati che Alex può davvero effettuare o meno. Ad esempio, la proprietà EnableOutsideAccess deve essere impostata su True affinché un utente possa comunicare con utenti esterni all'organizzazione. Tenere presente che questa proprietà non viene visualizzata nell'interfaccia di amministrazione di Microsoft 365. Al contrario, la proprietà viene impostata automaticamente su True o False in base alle altre selezioni effettuate. Le altre due proprietà di interesse sono:
+In questo esempio, i valori all'interno di questo criterio determinano le operazioni che possono essere eseguite o non possono essere utilizzate per la comunicazione con gli utenti federati. Ad esempio, la proprietà EnableOutsideAccess deve essere impostata su true affinché un utente sia in grado di comunicare con utenti esterni all'organizzazione. Tenere presente che questa proprietà non viene visualizzata nell'interfaccia di amministrazione di Microsoft 365. Al contrario, la proprietà viene impostata automaticamente su true o su false in base alle altre selezioni apportate. Le altre due proprietà di interesse sono le seguenti:
   
 - **EnableFederationAccess** indica se l'utente può comunicare con utenti di domini federati.
     
@@ -103,7 +103,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Viene restituito un elenco di tutti i criteri vocali disponibili per l'utente. Tuttavia, tenere presente che non tutti i criteri possono essere assegnati a qualsiasi utente. Ciò si verifica a causa di vari limiti che riguardano le licenze e la posizione geografica. (Il "[percorso di utilizzo](https://msdn.microsoft.com/en-us/library/azure/dn194136.aspx)"). Se si desidera conoscere i criteri di accesso esterno e i criteri di conferenza che possono essere assegnati a un utente particolare, utilizzare comandi analoghi ai seguenti: 
+> Viene restituito un elenco di tutti i criteri vocali disponibili per l'utente. Tuttavia, tenere presente che non tutti i criteri possono essere assegnati a qualsiasi utente. Ciò si verifica a causa di vari limiti che riguardano le licenze e la posizione geografica. (Il "[percorso di utilizzo](https://msdn.microsoft.com/library/azure/dn194136.aspx)"). Se si desidera conoscere i criteri di accesso esterno e i criteri di conferenza che possono essere assegnati a un utente particolare, utilizzare comandi analoghi ai seguenti: 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"

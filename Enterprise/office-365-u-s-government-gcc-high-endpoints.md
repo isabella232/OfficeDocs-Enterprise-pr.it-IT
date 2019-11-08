@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Se nell'organizzazione viene utilizzato Office 365 e i computer della rete vengono limitati dalla connessione a Internet, di seguito sono elencati gli endpoint (FQDN, porte, URL, IPv4 e gli intervalli di indirizzi IPv6) che devono essere inclusi negli elenchi in uscita consentiti per garantire la i computer possono utilizzare correttamente Office 365.
 hideEdit: true
-ms.openlocfilehash: 8ff4caf4c2fb3e067f3d0d23aed0be16fd099039
-ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
+ms.openlocfilehash: f96aca7a7b4655df655228771d6319deb46408f9
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37975858"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038275"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 US Government High endpoint GCC
 
@@ -50,7 +50,7 @@ Le colonne di dati visualizzate sono le seguenti:
 
 - **Categoria**: indica se il set di endpoint è categorizzato come "Optimize", "Allow" o "Default". Sono disponibili informazioni su queste categorie e linee guida per la loro gestione nell'articolo [https://aka.ms/pnc](https://aka.ms/pnc). Inoltre, in questa colonna sono elencati i set di endpoint necessari per la connessione di rete. Per i set di endpoint non necessari per la connessione di rete, in questo campo sono fornite delle note che indicano quale funzionalità non sarebbe disponibile se il set di endpoint fosse bloccato. Se si esclude un'intera area del servizio, i set di endpoint elencati come necessari non richiedono la connessione.
 
-- **Er**: **Sì** , se il set di endpoint è supportato su Azure ExpressRoute con i prefissi di route di Office 365. La community BGP che include i prefissi del percorso visualizzati è allineata all'area di servizio elencata. Quando ER è **No**, significa che ExpressRoute non è supportato per questo set di endpoint. Tuttavia, non si deve presumere che nessuna route sia annunciata per un set di endpoint in cui ER è **No**. Se si prevede di utilizzare Azure AD Connect, leggere la [sezione Considerazioni speciali](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud) per assicurarsi di avere la configurazione di Azure ad Connect appropriata.
+- **Er**: **Sì** , se il set di endpoint è supportato su Azure ExpressRoute con i prefissi di route di Office 365. La community BGP che include i prefissi del percorso visualizzati è allineata all'area di servizio elencata. Quando ER è **No**, significa che ExpressRoute non è supportato per questo set di endpoint. Tuttavia, non si deve presumere che nessuna route sia annunciata per un set di endpoint in cui ER è **No**. Se si prevede di utilizzare Azure AD Connect, leggere la [sezione Considerazioni speciali](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) per assicurarsi di avere la configurazione di Azure ad Connect appropriata.
 
 - **Indirizzi**: sono elencati i nomi di dominio completo (FQDN) o con caratteri jolly e gli intervalli di indirizzi IP per il set di endpoint. Tenere presente che un intervallo di indirizzi IP è in formato CIDR e potrebbe includere più indirizzi IP nella rete specificata.
  

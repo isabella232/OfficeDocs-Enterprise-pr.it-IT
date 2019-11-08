@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Una spiegazione delle funzionalità di Reporting all'interno di Office 365.
-ms.openlocfilehash: 27dc1f8164e21040399ae9882c3fab78ab3d5eb2
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067496"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031861"
 ---
 # <a name="office-365-reporting-features"></a>Funzionalità di creazione di report di Office 365 
 
@@ -78,7 +78,7 @@ I report di conformità MDM offrono una panoramica dei criteri configurati da un
 
 I criteri DLP consentono di gestire la sicurezza e il flusso di informazioni in un'organizzazione. È possibile configurare i criteri per bloccare l'accesso al contenuto, crittografare i dati o informare gli utenti delle violazioni di criteri e criteri utilizzando suggerimenti per i criteri DLP in-Application. I report DLP forniscono informazioni sul numero di corrispondenze di criteri e regole, sostituzioni e falsi positivi.
 
-È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per visualizzare le informazioni sul numero di messaggi rilevati dai criteri DLP. I report DLP forniscono informazioni dettagliate sui criteri e sulle corrispondenze della regola per la posta inviata e ricevuta. È inoltre possibile visualizzare il numero di corrispondenze, sostituzioni e falsi positivi per ogni criterio nelle ultime 24 ore utilizzando l'interfaccia di amministrazione di Exchange. Se si scarica un report di Excel, è possibile visualizzare ulteriori dettagli, ad esempio chi ha inviato il messaggio, in quale giorno e quali criteri sono stati attivati. Per ulteriori informazioni, vedere [visualizzare i report sui rilevamenti dei criteri DLP](https://technet.microsoft.com/en-us/library/jj889415(v=exchg.150).aspx).
+È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per visualizzare le informazioni sul numero di messaggi rilevati dai criteri DLP. I report DLP forniscono informazioni dettagliate sui criteri e sulle corrispondenze della regola per la posta inviata e ricevuta. È inoltre possibile visualizzare il numero di corrispondenze, sostituzioni e falsi positivi per ogni criterio nelle ultime 24 ore utilizzando l'interfaccia di amministrazione di Exchange. Se si scarica un report di Excel, è possibile visualizzare ulteriori dettagli, ad esempio chi ha inviato il messaggio, in quale giorno e quali criteri sono stati attivati. Per ulteriori informazioni, vedere [visualizzare i report sui rilevamenti dei criteri DLP](https://technet.microsoft.com/library/jj889415(v=exchg.150).aspx).
 
 ## <a name="auditing-in-yammer-enterprise"></a>Controllo in Yammer Enterprise
 

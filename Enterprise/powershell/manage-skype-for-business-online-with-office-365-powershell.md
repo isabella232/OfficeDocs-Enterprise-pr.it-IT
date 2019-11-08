@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Riepilogo: utilizzare PowerShell di Office 365 per gestire i criteri, i criteri per utente e le impostazioni relative alle riunioni di Skype for Business online.'
-ms.openlocfilehash: 80d8308a1c9b32fcafd47d1df2f699141e41accd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 48b10038e396953469f4b0732103671cbc6b0d75
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782136"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030941"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gestire Skype for Business Online con PowerShell di Office 365
 
@@ -27,7 +27,7 @@ Una delle attività principali di qualsiasi amministratore di Skype for Business
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Scaricare e installare il [modulo del connettore di Skype for business online](https://www.microsoft.com/en-us/download/details.aspx?id=39366), quindi riavviare il computer se richiesto.
+Scaricare e installare il [modulo del connettore di Skype for business online](https://www.microsoft.com/download/details.aspx?id=39366), quindi riavviare il computer se richiesto.
 
 
 ## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>Connettersi utilizzando un nome e una password dell'account di amministratore di Skype for business online

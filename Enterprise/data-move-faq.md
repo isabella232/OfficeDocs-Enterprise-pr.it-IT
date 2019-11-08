@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Di seguito sono riportate le risposte alle domande generali su come spostare i dati di base in un nuovo datacenter Geo.
-ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782326"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028890"
 ---
 # <a name="data-move-general-faq"></a>Domande frequenti sullo spostamento dati
 
@@ -61,7 +61,7 @@ Sì. Una volta che un nuovo datacenter geografico è disponibile, nuovi clienti 
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>Dove si trovano i dati dei clienti di base?
 
-Gli amministratori tenant possono visualizzare la scheda percorso dati nell'interfaccia di amministrazione in qualsiasi momento per confermare i dati del cliente di base nel percorso REST per ogni servizio, in particolare per il tenant.Inoltre, viene pubblicata la posizione del centro dati GEOS, dei datacenter e la posizione di Office 365 clienti sui mapping del datacenter interattivi di [ office 365](https://office.com/datamaps) come riferimento per i dati dei clienti di base predefiniti correnti nelle posizioni REST per i nuovi tenant.  È possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Microsoft 365.  
+Gli amministratori tenant possono visualizzare la scheda percorso dati nell'interfaccia di amministrazione in qualsiasi momento per confermare i dati del cliente di base nel percorso REST per ogni servizio, in particolare per il tenant.Inoltre, viene pubblicata la posizione del centro dati GEOS, dei datacenter e la posizione di Office 365 clienti sui [ mapping del datacenter interattivi di office 365](https://office.com/datamaps) come riferimento per i dati dei clienti di base predefiniti correnti nelle posizioni REST per i nuovi tenant.  È possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Microsoft 365.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Quando sarà possibile richiedere una mossa?
   
@@ -155,4 +155,4 @@ Sì, il tenant è idoneo per la registrazione.  Sposteremo tutte le cassette pos
 
 [Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/en-us/regions/)
+[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/regions/)

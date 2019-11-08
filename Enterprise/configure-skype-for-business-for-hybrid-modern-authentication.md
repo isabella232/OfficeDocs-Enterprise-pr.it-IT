@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: L'autenticazione moderna, è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure, è disponibile per Skype for Business Server locale e Exchange Server locale, nonché per gli ibridi di Skype for business suddivisi in domini.
-ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
-ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
+ms.openlocfilehash: 17079ab5e47e2e739780d3df4a9a523edccda14f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36759684"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029130"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Skype for Business locale per utilizzare l'autenticazione moderna ibrida
 
@@ -67,7 +67,7 @@ Nota questi passaggi attivano MA per questo, SFBO, EXCH e EXO, ovvero tutti i pr
   
 Come si può notare, ci sono quattro luoghi diversi per accendere MA! Per una migliore esperienza utente, si consiglia di abilitare MA in tutte e quattro le posizioni. Se non è possibile abilitare MA in tutti questi percorsi, regolare i passaggi in modo che si accenda solo nelle posizioni che sono necessarie per l'ambiente.
   
-Per informazioni sulle topologie supportate, vedere l' [argomento relativo alla supportabilità per Skype for business con ma](https://technet.microsoft.com/en-us/library/mt803262.aspx) . 
+Per informazioni sulle topologie supportate, vedere l' [argomento relativo alla supportabilità per Skype for business con ma](https://technet.microsoft.com/library/mt803262.aspx) . 
   
  **Importante** Verificare che siano stati soddisfatti tutti i prerequisiti prima di iniziare. Queste informazioni sono disponibili [qui](hybrid-modern-auth-overview.md).
   
@@ -117,7 +117,7 @@ A questo punto è necessario eseguire comandi per aggiungere gli URL (raccolti i
   
  **Note** I nomi dell'entità servizio (SPN) identificano i servizi Web e li associano a un'entità di sicurezza, ad esempio un nome account o un gruppo, in modo che il servizio possa agire per conto di un utente autorizzato. I client che eseguono l'autenticazione in un server utilizzano le informazioni contenute nei nomi SPN. 
   
-1. Per prima cosa, connettersi a AAD con [queste istruzioni](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0).
+1. Per prima cosa, connettersi a AAD con [queste istruzioni](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
     
 2. Eseguire questo comando, in locale, per ottenere un elenco di URL del servizio Web di questo.
 
@@ -174,7 +174,7 @@ Per testare il funzionamento di HMA dopo averla abilitata, disconnettersi da un 
 
 [Collegare di nuovo la panoramica dell'autenticazione moderna](hybrid-modern-auth-overview.md) . 
   
-È necessario sapere come usare l'autenticazione moderna (ADAL) per i client Skype for business? Sono [disponibili passaggi.](https://technet.microsoft.com/en-us/library/mt710548.aspx)
+È necessario sapere come usare l'autenticazione moderna (ADAL) per i client Skype for business? Sono [disponibili passaggi.](https://technet.microsoft.com/library/mt710548.aspx)
   
 Si desidera leggere questi passaggi come vengono visualizzati per Exchange Server, in locale, in esecuzione senza questo? Tali passaggi sono disponibili qui.
   

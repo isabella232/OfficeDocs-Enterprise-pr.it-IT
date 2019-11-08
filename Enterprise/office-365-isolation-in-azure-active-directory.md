@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "Riepilogo: funzionamento del controllo dell'isolamento e dell'accesso all'interno di Azure Active Directory."
-ms.openlocfilehash: d1f3a10d44a949511236d5adce38693ad2ad5c04
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 0e6423c53bd0c2823708f59830d1ba628a0c71ca
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067522"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035783"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Isolamento e controllo di accesso in Azure Active Directory
 
 Azure Active Directory è stato creato per ospitare più tenant in modo estremamente sicuro tramite l'isolamento dei dati logici. L'accesso a Azure Active Directory è associato a un livello di autorizzazione. Azure Active Directory consente di isolare i clienti utilizzando i contenitori tenant come limiti di sicurezza per salvaguardare il contenuto di un cliente, in modo che non sia possibile accedere ai contenuti o essere compromessi dai coinquilini. Tre controlli vengono eseguiti dal livello di autorizzazione di Azure Active Directory:
+
 - L'entità è abilitata per l'accesso al tenant di Azure Active Directory?
 - L'entità è abilitata per l'accesso ai dati nel tenant?
 - Il ruolo dell'entità in questo tenant è autorizzato per il tipo di accesso ai dati richiesto?

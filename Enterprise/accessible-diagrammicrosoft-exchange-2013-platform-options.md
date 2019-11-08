@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Exchange 2013, disponibile nei diagrammi tecnici.
-ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce1fe525b6a339c64d757b82a6f1c9ea4b82d23e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068592"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027570"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Diagramma accessibile-opzioni della piattaforma Microsoft Exchange 2013
 
-**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Exchange 2013, disponibile nei [diagrammi tecnici](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Riepilogo:** Questo articolo è una versione di testo accessibile del diagramma denominato opzioni della piattaforma Microsoft Exchange 2013, disponibile nei [diagrammi tecnici](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 In questo poster vengono descritti i responsabili decisionali aziendali (BDMs) e gli architetti che devono essere a conoscenza delle distribuzioni di Exchange Online e Exchange Server e include: 
   
@@ -252,7 +252,7 @@ Le responsabilità del provider sono le seguenti:
     
 Le responsabilità del personale IT nell'organizzazione includono la creazione e la gestione degli account utente.
   
-#### <a name="more-information"></a>Ulteriori informazioni
+#### <a name="more-information"></a>Altre informazioni
 
 Per ulteriori informazioni su Exchange Online (Office 365), vedere gli argomenti seguenti:
   

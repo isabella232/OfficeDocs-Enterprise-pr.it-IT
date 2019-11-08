@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Esistono alcuni modi semplici per controllare le prestazioni della connessione tra Office 365 e la propria azienda che consentirà di stabilire una linea di base approssimativa della connettività. Se si conosce la cronologia delle prestazioni delle connessioni dei computer client, è possibile rilevare i problemi emergenti in anticipo, identificare e stimare.
-ms.openlocfilehash: 755f4c4bde7e040638e768002a528710bcdd48fd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: f7ce3b70e698bd0125ba2a1623f40ddf808ee4d3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781906"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031791"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ottimizzazione delle prestazioni di Office 365 con le linee di base e la cronologia delle prestazioni
 
@@ -39,7 +39,7 @@ Se non si è abituati a lavorare sui problemi di prestazioni, questo articolo è
 Office 365 risiede all'interno di una rete Microsoft dedicata e a elevata capacità, che viene costantemente monitorata non solo dall'automazione, ma da persone reali. Parte del ruolo di manutenzione del cloud di Office 365 è l'ottimizzazione delle prestazioni e la razionalizzazione dei casi in cui è possibile. Poiché i client del cloud di Office 365 devono connettersi su Internet, è possibile ottimizzare le prestazioni anche tra i servizi di Office 365. I miglioramenti delle prestazioni non si interrompono mai nel cloud e sono presenti molte esperienze accumulate con la conservazione del cloud in modo rapido e integro. Se si verifica un problema di prestazioni che si connette dal percorso a Office 365, è preferibile non iniziare e attendere un caso di supporto. In alternativa, è consigliabile iniziare a esaminare il problema da "all'interno". In altri termini, iniziare dall'interno della rete e procedere con l'uscita a Office 365. Prima di aprire un caso con il supporto di Office 365, è possibile raccogliere dati e intraprendere azioni che analizzino e possano risolvere il problema.
   
 > [!IMPORTANT]
-> Tenere conto della pianificazione della capacità e dei limiti in Office 365. Tali informazioni consentiranno di superare la curva quando si tenta di risolvere un problema di prestazioni. Di seguito è indicato un collegamento alla [Descrizione del servizio piattaforma Office 365](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx). Si tratta di un hub centrale e tutti i servizi offerti da Office 365 dispongono di un collegamento che passa alla propria descrizione dei servizi da qui. Questo significa che, se è necessario visualizzare i limiti standard per SharePoint Online, ad esempio, fare clic su [Descrizione servizio SharePoint Online](https://technet.microsoft.com/en-us/library/sharepoint-online-service-description.aspx) e individuare la [sezione limiti di SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=856113). 
+> Tenere conto della pianificazione della capacità e dei limiti in Office 365. Tali informazioni consentiranno di superare la curva quando si tenta di risolvere un problema di prestazioni. Di seguito è indicato un collegamento alla [Descrizione del servizio piattaforma Office 365](https://technet.microsoft.com/library/office-365-service-descriptions.aspx). Si tratta di un hub centrale e tutti i servizi offerti da Office 365 dispongono di un collegamento che passa alla propria descrizione dei servizi da qui. Questo significa che, se è necessario visualizzare i limiti standard per SharePoint Online, ad esempio, fare clic su [Descrizione servizio SharePoint Online](https://technet.microsoft.com/library/sharepoint-online-service-description.aspx) e individuare la [sezione limiti di SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=856113). 
   
 Assicurarsi di andare alla risoluzione dei problemi con la consapevolezza che le prestazioni sono una scala scorrevole, non si tratta di ottenere un valore idealizzato e di mantenerlo permanentemente (se si ritiene che sia così, quindi occasionali attività a larghezza di banda elevata come l'imbarco a un numero elevato di utenti o la migrazione di dati di grandi dimensioni sarà molto stressante, quindi pianificare gli effetti delle prestazioni. È possibile, e deve, avere una vaga idea dei vostri obiettivi di prestazioni, ma molte variabili giocano nelle prestazioni, pertanto, le prestazioni variano. Questa è la natura delle prestazioni. 
   
@@ -198,7 +198,7 @@ L'obiettivo di questi metodi semplici consiste nell'imparare a prendere, compren
 ![Rete di base con client, proxy e cloud e suggerimenti per gli strumenti PSPing, TraceTCP e le tracce di rete.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP è incluso in questa schermata perché è uno strumento utile per mostrare, in millisecondi, la durata della richiesta di elaborazione e il numero di hop di rete o di connessioni da un computer all'altro, che la richiesta richiede per raggiungere una destinazione. TraceTCP può anche fornire i nomi dei server utilizzati durante il luppolo, il che può essere utile per una soluzione di risoluzione dei problemi di Microsoft Office 365 in supporto. > i comandi di TraceTCP possono essere molto semplici, ad esempio `tracetcp.exe outlook.office365.com:443` : >> ricordarsi di includere il numero di porta nel comando. > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) è un download gratuito, ma si basa su WINCAP. WINCAP è uno strumento utilizzato e installato anche da Netmon. È inoltre possibile utilizzare Netmon nella sezione Advanced methods. 
+> TraceTCP è incluso in questa schermata perché è uno strumento utile per mostrare, in millisecondi, la durata della richiesta di elaborazione e il numero di hop di rete o di connessioni da un computer all'altro, che la richiesta richiede per raggiungere una destinazione. TraceTCP può anche fornire i nomi dei server utilizzati durante il luppolo, il che può essere utile per una soluzione di risoluzione dei problemi di Microsoft Office 365 in supporto. > i comandi di TraceTCP possono essere molto semplici, ad esempio `tracetcp.exe outlook.office365.com:443` : >> ricordarsi di includere il numero di porta nel comando. > [TraceTCP](https://simulatedsimian.github.io/tracetcp_download.html) è un download gratuito, ma si basa su WINCAP. WINCAP è uno strumento utilizzato e installato anche da Netmon. È inoltre possibile utilizzare Netmon nella sezione Advanced methods. 
   
  Se si dispone di più uffici, è necessario mantenere un set di dati da un client in ognuno di questi percorsi. Questo test misura la latenza, che, in questo caso, è un valore numerico che descrive la quantità di tempo tra un client che invia una richiesta a Office 365 e Office 365 che risponde alla richiesta. Il testing ha origine all'interno del dominio in un computer client e cerca di misurare un round trip dall'interno della rete, tramite un punto di uscita, tramite Internet a Office 365 e viceversa. 
   
@@ -214,7 +214,7 @@ Esistono alcuni modi per gestire il punto di uscita, in questo caso il server pr
     
 - \*. microsoftonline-p.com
     
-- \*. sharepoint.com
+- \*.sharepoint.com
     
 - \*. outlook.com
     
@@ -232,7 +232,7 @@ Dopo aver ignorato il proxy, è necessario essere in grado di utilizzare ping o 
   
 Il tempo di andata e ritorno, o RTT, è un valore numerico che misura il tempo necessario per inviare una richiesta HTTP a un server come outlook.office365.com e ottenere una risposta che riconosce che il server sa di averlo fatto. A volte viene visualizzato questo abbreviato come RTT. Questo dovrebbe essere un periodo di tempo relativamente breve.
   
-È necessario utilizzare [PSPing](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx) o un altro strumento che non utilizza pacchetti ICMP che sono bloccati da Office 365 per eseguire questo test. 
+È necessario utilizzare [PSPing](https://technet.microsoft.com/sysinternals/jj729731.aspx) o un altro strumento che non utilizza pacchetti ICMP che sono bloccati da Office 365 per eseguire questo test. 
   
  **Come usare PsPing per ottenere una durata complessiva del tragitto di andata e ritorno in millisecondi direttamente da un URL di Office 365**
   
@@ -304,7 +304,7 @@ In termini di risoluzione dei problemi, è possibile trovare qualcosa di interes
   
 ### <a name="advanced-methods"></a>Metodi avanzati
 
-Se si vuole davvero sapere cosa succede con le richieste Internet a Office 365, è necessario acquisire familiarità con le tracce di rete. Non importa quali strumenti si preferisce per queste tracce, HTTPWatch, Netmon, Message Analyzer, Wireshark, Fiddler, Developer dashboard Tool o qualsiasi altro farà fino a quando tale strumento può acquisire e filtrare il traffico di rete. In questa sezione viene illustrato che è utile eseguire più di uno di questi strumenti per ottenere un'immagine più completa del problema. Quando si esegue il testing, alcuni di questi strumenti agiscono anche come proxy a proprio piacimento. Gli strumenti utilizzati nell'articolo complementare, [piano per la risoluzione dei problemi relativi alle prestazioni per Office 365](performance-troubleshooting-plan.md), includono [NetMon 3,4](https://www.microsoft.com/en-us/download/details.aspx?id=4865), [HttpWatch](https://www.httpwatch.com/download/)o [Wireshark](https://www.wireshark.org/).
+Se si vuole davvero sapere cosa succede con le richieste Internet a Office 365, è necessario acquisire familiarità con le tracce di rete. Non importa quali strumenti si preferisce per queste tracce, HTTPWatch, Netmon, Message Analyzer, Wireshark, Fiddler, Developer dashboard Tool o qualsiasi altro farà fino a quando tale strumento può acquisire e filtrare il traffico di rete. In questa sezione viene illustrato che è utile eseguire più di uno di questi strumenti per ottenere un'immagine più completa del problema. Quando si esegue il testing, alcuni di questi strumenti agiscono anche come proxy a proprio piacimento. Gli strumenti utilizzati nell'articolo complementare, [piano per la risoluzione dei problemi relativi alle prestazioni per Office 365](performance-troubleshooting-plan.md), includono [NetMon 3,4](https://www.microsoft.com/download/details.aspx?id=4865), [HttpWatch](https://www.httpwatch.com/download/)o [Wireshark](https://www.wireshark.org/).
   
 L'esecuzione di una previsione delle prestazioni è la parte semplice di questo metodo e molti dei passaggi sono gli stessi che si verificano quando si risolve un problema di prestazioni. I metodi più avanzati per la creazione di linee di base per le prestazioni richiedono l'esecuzione e l'archiviazione delle tracce di rete. La maggior parte degli esempi descritti in questo articolo utilizza SharePoint Online, ma è consigliabile sviluppare un elenco di azioni comuni nei servizi di Office 365 a cui si sottoscrive il test e il record. Di seguito è riportato un esempio di base:
   
@@ -320,7 +320,7 @@ Questo elenco deve includere le più importanti azioni comuni eseguite dagli ute
   
 Se si è in un problema di prestazioni, molti dei passaggi sono gli stessi di quando si effettua una linea di base. Le tracce di rete diventano critiche, quindi verrà gestito *come* prendere le tracce importanti successive. 
   
-Per risolvere un problema di prestazioni, ** è necessario prendere una traccia al momento in cui si verifica il problema delle prestazioni. È necessario disporre degli strumenti appropriati disponibili per raccogliere i registri ed è necessario un piano di azione, ovvero un elenco di azioni di risoluzione dei problemi da intraprendere per raccogliere le migliori informazioni possibili. La prima cosa da fare è registrare la data e l'ora del test in modo che i file possano essere salvati in una cartella che rispecchi la tempistica. Successivamente, limitare i passaggi del problema stessi. Questi sono i passaggi esatti che verranno utilizzati per il testing. Non dimenticare le nozioni di base: se il problema è solo con Outlook, verificare che il comportamento del problema si verifica in un solo servizio di Office 365. Per limitare l'ambito di questo problema, è possibile concentrarsi su un elemento che può essere risolto. 
+Per risolvere un problema di prestazioni, è necessario prendere una traccia *al momento in* cui si verifica il problema delle prestazioni. È necessario disporre degli strumenti appropriati disponibili per raccogliere i registri ed è necessario un piano di azione, ovvero un elenco di azioni di risoluzione dei problemi da intraprendere per raccogliere le migliori informazioni possibili. La prima cosa da fare è registrare la data e l'ora del test in modo che i file possano essere salvati in una cartella che rispecchi la tempistica. Successivamente, limitare i passaggi del problema stessi. Questi sono i passaggi esatti che verranno utilizzati per il testing. Non dimenticare le nozioni di base: se il problema è solo con Outlook, verificare che il comportamento del problema si verifica in un solo servizio di Office 365. Per limitare l'ambito di questo problema, è possibile concentrarsi su un elemento che può essere risolto. 
   
 ## <a name="see-also"></a>Vedere anche
 

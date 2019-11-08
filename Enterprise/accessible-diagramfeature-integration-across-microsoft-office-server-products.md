@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: Questo articolo è una versione di testo accessibile del diagramma denominato Feature Integration tra i prodotti Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e Office Online Server.
-ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9cc13853f839e86867caed8d8d689b9b3a894a96
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782246"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027690"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagramma accessibile-integrazione delle funzionalità tra i prodotti di Microsoft Office Server
 
@@ -132,7 +132,7 @@ Registrazioni di riunioni. Questa funzionalità è applicabile a:
 
 Il server Office Web Apps è un prodotto server di Office che offre servizi di visualizzazione e modifica dei file basati su browser per i file di Office. Il server Office Web Apps funziona con prodotti e servizi che supportano l'applicazione Web WOPI (Open Platform Interface Protocol). Questi prodotti, noti come host, includono SharePoint 2013, Lync Server 2013 e Exchange Server 2013. 
   
-Per ulteriori informazioni sul server Office Web Apps, scaricare il poster semplificato per la distribuzione di http://aka.ms/OfficeWebAppsPosterOffice Web Apps all'indirizzo. 
+Per ulteriori informazioni sul server Office Web Apps, scaricare il poster semplificato per la distribuzione di https://aka.ms/OfficeWebAppsPosterOffice Web Apps all'indirizzo. 
   
 ## <a name="server-to-server-authentication-tab"></a>Scheda autenticazione da server a server
 
@@ -236,9 +236,9 @@ Gli utenti possono caricare immagini con intervalli di pixel compresi tra 48 × 
     
 Ad esempio, gli script di configurazione, vedere gli articoli del Blog di Jens Trier Rasmussen: 
   
-- Utilizzo di foto ad alta risoluzione di Exchange 2013 da SharePoint Server 2013 (http://aka.ms/Bhr4d2) 
+- Utilizzo di foto ad alta risoluzione di Exchange 2013 da SharePoint Server 2013 (https://aka.ms/Bhr4d2) 
     
-- Integrazione di Exchange 2013 e Lync Server 2013 (http://aka.ms/Pn08dw) 
+- Integrazione di Exchange 2013 e Lync Server 2013 (https://aka.ms/Pn08dw) 
     
 Il poster contiene anche codici QR per questi due articoli del Blog. 
   
@@ -283,7 +283,7 @@ L'archivio contatti unificato (UCS) fornisce un'esperienza di contatto coerente 
     
 Ad esempio, gli script di configurazione, vedere l'articolo del Blog di Jens Trier Rasmussen: 
   
-- Integrazione di Exchange 2013 e Lync Server 2013 (http://aka.ms/Oyg7fh) 
+- Integrazione di Exchange 2013 e Lync Server 2013 (https://aka.ms/Oyg7fh) 
     
  **Come funziona**
   
@@ -615,7 +615,7 @@ Prodotti server:
     
 - SharePoint 2013 
     
-Prerequisiti 
+Prerequisiti: 
   
 - Lync 2013: la registrazione delle riunioni è una funzionalità sul fianco client in Lync 2013. 
     
@@ -667,7 +667,7 @@ Per preparare le registrazioni delle riunioni di pubblicazione:
     
  **Raccolte di risorse digitali**
   
-Le raccolte di risorse digitali sono raccolte di risorse che contengono video con determinate caratteristiche di capacità e prestazioni. Per ulteriori informazioni, vedere Plan Digital Asset Libraries in SharePoint Server 2013 located http://aka.ms/O1vq5wat. Nel poster è incluso anche un codice QR che consente di accedere a queste informazioni. 
+Le raccolte di risorse digitali sono raccolte di risorse che contengono video con determinate caratteristiche di capacità e prestazioni. Per ulteriori informazioni, vedere Plan Digital Asset Libraries in SharePoint Server 2013 located https://aka.ms/O1vq5wat. Nel poster è incluso anche un codice QR che consente di accedere a queste informazioni. 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Registrazione e pubblicazione di una riunione tramite il client Lync
 
@@ -683,10 +683,10 @@ Nel diagramma viene mostrato un utente che utilizza Lync per partecipare a una r
     
 4. Trascinare e rilasciare la registrazione riunione nella raccolta di risorse di SharePoint. 
     
-5. Facoltativo: una volta che la registrazione è presente nella raccolta di risorse, è possibile inserirla in una pagina di SharePoint. Per ulteriori informazioni su questo passaggio, vedere l'articolo relativo al Blog di Office 365, creare e pubblicare video per la formazione con SharePoint e http://aka.ms/R61q35Lync Online, in cui si trova. 
+5. Facoltativo: una volta che la registrazione è presente nella raccolta di risorse, è possibile inserirla in una pagina di SharePoint. Per ulteriori informazioni su questo passaggio, vedere l'articolo relativo al Blog di Office 365, creare e pubblicare video per la formazione con SharePoint e https://aka.ms/R61q35Lync Online, in cui si trova. 
     
  **Miniature video**
   
-Le miniature video migliorano l'aspetto della raccolta di risorse. Per ulteriori informazioni sulla creazione di anteprime per le registrazioni delle riunioni, vedere acquisizione o modifica di una miniatura http://aka.ms/Kupj85video, in cui si trova. Nel poster è incluso anche un codice QR che consente di accedere a queste informazioni. 
+Le miniature video migliorano l'aspetto della raccolta di risorse. Per ulteriori informazioni sulla creazione di anteprime per le registrazioni delle riunioni, vedere acquisizione o modifica di una miniatura https://aka.ms/Kupj85video, in cui si trova. Nel poster è incluso anche un codice QR che consente di accedere a queste informazioni. 
   
 

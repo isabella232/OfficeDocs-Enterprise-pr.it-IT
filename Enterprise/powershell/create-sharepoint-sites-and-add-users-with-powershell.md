@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: utilizzare Office 365 PowerShell per creare nuovi siti di SharePoint Online e quindi aggiungere utenti e gruppi a tali siti.'
-ms.openlocfilehash: c2ed2afd7915fa5fc3aa936b5aa09cf90679ff97
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2262c69af7dce7472257512d215c1f0425f875f0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069102"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031031"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Creare siti di SharePoint Online e aggiungere utenti con PowerShell di Office 365
 
@@ -26,9 +26,9 @@ ms.locfileid: "34069102"
 
 Quando si utilizza Office 365 PowerShell per creare siti di SharePoint Online e aggiungere utenti, è possibile eseguire rapidamente e più volte le attività molto più velocemente di quanto non sia possibile nell'interfaccia di amministrazione di Office 356. È inoltre possibile eseguire attività che non possono essere eseguite nell'interfaccia di amministrazione di Office 356. 
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-Le procedure descritte in questo argomento richiedono la connessione a SharePoint Online. Per istruzioni, vedere [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Le procedure descritte in questo argomento richiedono la connessione a SharePoint Online. Per istruzioni, vedere [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Passaggio 1: creare nuove raccolte siti tramite Office 365 PowerShell
 
@@ -60,7 +60,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
-<br/>Dove ** alias è uguale all'alias dell'utente.<br/>
+<br/>Dove alias è uguale *all'alias dell'* utente.<br/>
 
 2. Attendere che venga rivisualizzato il prompt di Windows PowerShell. Potrebbe richiedere uno o due minuti.<br/>
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907649"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031591"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
@@ -100,7 +100,7 @@ Il tenant di valutazione non può essere combinato con il tenant esistente:
     
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notificare agli utenti di aggiornare le impostazioni di Exchange obsolete nei dispositivi mobili
 
-Se gli utenti dispongono di un dispositivo mobile con il server Exchange impostato su **m.Outlook.com** o **podxxxxx.Outlook.com**, è consigliabile passare a **Outlook.office365.com**, seguendo le istruzioni riportate in [configurare un dispositivo mobile per la sincronizzazione con il tuo account](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+Se gli utenti dispongono di un dispositivo mobile con il server Exchange impostato su **m.Outlook.com** o **podxxxxx.Outlook.com**, è consigliabile passare a **Outlook.office365.com**, seguendo le istruzioni riportate in [configurare un dispositivo mobile per la sincronizzazione con l'account](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -110,6 +110,6 @@ Se gli utenti dispongono di un dispositivo mobile con il server Exchange imposta
 
 [Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/en-us/regions/)
+[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/regions/)
   
 

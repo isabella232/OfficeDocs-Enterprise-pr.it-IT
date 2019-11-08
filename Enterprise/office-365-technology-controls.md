@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Riepilogo: Panoramica delle procedure di controllo della tecnologia Microsoft per Office 365.'
-ms.openlocfilehash: 1ddf4efdd8e2c2159f6d6c55cfeead1cfbd54395
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3063bcaca85d529885fbafddda88f61325b2b83c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067531"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031141"
 ---
 # <a name="office-365-technology-controls"></a>Controlli delle tecnologie Office 365 
 
@@ -39,7 +39,7 @@ L'archivio protetto dei clienti per Office 365 consente di soddisfare gli obblig
 
 Nell'istanza rara quando un tecnico del servizio Microsoft ha bisogno dell'accesso ai dati, si concede l'accesso solo ai dati necessari per risolvere il problema e per un periodo di tempo limitato. Se si rifiuta una richiesta di accesso, gli ingegneri Microsoft non possono accedere al contenuto e non saranno in grado di completare le operazioni di servizio. Se si approva la richiesta, gli ingegneri Microsoft dispongono dell'accesso just-in-time al contenuto tramite interfacce di gestione monitorate e vincolate.
 
-Le azioni eseguite dal tecnico del supporto sono registrate per il controllo e sono accessibili tramite l' [API di gestione delle attività di Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) e il [Centro sicurezza e conformità](http://protection.office.com/).
+Le azioni eseguite dal tecnico del supporto sono registrate per il controllo e sono accessibili tramite l' [API di gestione delle attività di Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) e il [Centro sicurezza e conformità](https://protection.office.com/).
 
 >[!NOTE]
 > L'archivio protetto dei clienti è disponibile in [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) come acquisto di un componente aggiuntivo. Per ulteriori informazioni, vedere [Richieste di Customer Lockbox di Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
@@ -60,7 +60,7 @@ I server di Office 365 limitano le sessioni simultanee a una sessione per ammini
 
 Le restrizioni di utilizzo e i requisiti di connessione e configurazione per il personale di Office 365 sono stabiliti da criteri di gruppo di Active Directory. Questi criteri includono le caratteristiche seguenti:
 
-- STG utilizzare solo la crittografia [FIPS](https://www.microsoft.com/en-us/TrustCenter/Compliance/FIPS) 140-2 convalidata.
+- STG utilizzare solo la crittografia [FIPS](https://www.microsoft.com/TrustCenter/Compliance/FIPS) 140-2 convalidata.
 - Le sessioni STG si disconnettono dopo 30 minuti di inattività.
 - Le sessioni STG vengono disattivate automaticamente dopo 24 ore.
 

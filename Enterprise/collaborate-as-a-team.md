@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Informazioni su come collaborare con gli utenti in teams.
-ms.openlocfilehash: 6a50331b5badcd2534052f04193300b427bafd57
-ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
+ms.openlocfilehash: a3e34431b97e8f565d61470ddd55797981b837c8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37920159"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029170"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
@@ -25,7 +25,7 @@ In questo articolo verranno illustrati i passaggi di configurazione di Microsoft
 
 In questo video vengono illustrati i passaggi di configurazione descritti in questo documento.</br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44NTr?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Impostazioni delle relazioni organizzative di Azure
 

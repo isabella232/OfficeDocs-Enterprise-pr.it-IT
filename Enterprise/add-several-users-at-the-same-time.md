@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Informazioni su come aggiungere più utenti a Office 365 for business da un elenco in un foglio di calcolo o in un altro file in formato CSV. Guarda un video su YouTube che spiega come aggiungere account a Office 365. Alla fine di questo processo, ogni utente con un account avrà una cassetta postale di Office 365. '
-ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
-ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
+ms.openlocfilehash: a719b2626eada8abe225a6951af4a2d292667856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "36198658"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030730"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Aggiungere più utenti a Office 365 contemporaneamente - Guida per l'amministratore
 
@@ -39,7 +39,7 @@ Per poter accedere a Office 365 e ai relativi servizi, ad esempio posta elettron
 
 1. Accedere a Office 365 con l'account di lavoro o della scuola. 
     
-2. Nell'interfaccia di amministrazione scegliere **** \> utenti **attivi**.
+2. Nell'interfaccia di **amministrazione scegliere** \> utenti **attivi**.
     
     ![Nell'interfaccia di amministrazione scegliere utenti e quindi utenti attivi](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
@@ -96,7 +96,7 @@ Per poter accedere a Office 365 e ai relativi servizi, ad esempio posta elettron
 
 Un file CSV è un file con valori delimitati da virgole. È possibile creare o modificare un file di questo tipo con qualsiasi editor di testo o foglio di calcolo, ad esempio Excel.
   
-Come punto di partenza, è possibile scaricare questo [foglio di calcolo](https://www.microsoft.com/en-us/download/details.aspx?id=45485). Tenere presente che Office 365 richiede intestazioni di colonna nella prima riga, quindi non sostituirle con altro contenuto. 
+Come punto di partenza, è possibile scaricare questo [foglio di calcolo](https://www.microsoft.com/download/details.aspx?id=45485). Tenere presente che Office 365 richiede intestazioni di colonna nella prima riga, quindi non sostituirle con altro contenuto. 
   
 Salvare il file con un nuovo nome e specificare il formato CSV.
   
@@ -147,7 +147,7 @@ Quando si salva il file, è probabile che venga visualizzato un messaggio indica
     
 ## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>Aggiungere più utenti a Office 365 nell'interfaccia di amministrazione precedente
 
-1. Scaricare questo [foglio di calcolo di esempio](https://www.microsoft.com/en-us/download/details.aspx?id=45485) e aprirlo in Excel. 
+1. Scaricare questo [foglio di calcolo di esempio](https://www.microsoft.com/download/details.aspx?id=45485) e aprirlo in Excel. 
     
     Il foglio di calcolo deve includere le **stesse intestazioni di colonna** dell'esempio per il nome utente, il nome, eccetera. Se si usa il modello, lasciare inalterati tutti i dati della riga 1, immettendo i dati solo dalla riga 2 in giù. 
     
