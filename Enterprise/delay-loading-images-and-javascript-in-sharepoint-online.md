@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: In questo articolo viene descritto come ridurre il tempo di caricamento per le pagine di SharePoint Online utilizzando JavaScript per ritardare il caricamento delle immagini e anche in attesa di caricare JavaScript non essenziale fino al caricamento della pagina.
-ms.openlocfilehash: 9069fb395465cd9d087c018cc2ae782759ddcb0d
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: a015c8ca26c402733eba3b26e641524f38acca21
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616789"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077669"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Ritardo caricamento immagini e JavaScript in SharePoint Online
 
@@ -28,7 +30,7 @@ Le immagini possono influenzare negativamente la velocità di caricamento della 
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Migliorare i tempi di caricamento delle immagini nelle pagine caricando le pagine di SharePoint Online tramite JavaScript
 
-È possibile utilizzare JavaScript per impedire a un browser Web di pre-recuperare le immagini. Ciò consente di velocizzare il rendering complessivo del documento. A tale scopo, è necessario rimuovere il valore dell'attributo src dal \<tag\> IMG e sostituirlo con il percorso di un file in un attributo data, ad esempio data-src. Per esempio:
+È possibile utilizzare JavaScript per impedire a un browser Web di pre-recuperare le immagini. Ciò consente di velocizzare il rendering complessivo del documento. A tale scopo, è necessario rimuovere il valore dell'attributo src dal \<tag\> IMG e sostituirlo con il percorso di un file in un attributo data, ad esempio data-src. Ad esempio:
   
 ```txt
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />

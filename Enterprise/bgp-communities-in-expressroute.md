@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,18 +18,18 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 'La connessione a Office 365 con Azure ExpressRoute si basa su annunci BGP di subnet IP specifiche che rappresentano le reti in cui vengono distribuiti gli endpoint di Office 365. A causa della natura globale di Office 365 e del numero di servizi che costituiscono Office 365, i clienti spesso hanno la necessità di gestire gli annunci che accettano nella propria rete. Riduzione del numero di subnet IP; denominati prefissi IP per tutto il resto di questo articolo, per allineare con la terminologia di gestione della rete BGP, sono serviti i seguenti obiettivi finali per i clienti:'
-ms.openlocfilehash: 37fef66aeccc0fcd2102463384ebc2341b9c37e8
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: e9b9d78df4898c1bb212b62444e5a9911a0e548c
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782346"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077935"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Utilizzo delle community BGP in ExpressRoute per gli scenari di Office 365
 
 La connessione a Office 365 con Azure ExpressRoute si basa su annunci BGP di subnet IP specifiche che rappresentano le reti in cui vengono distribuiti gli endpoint di Office 365. A causa della natura globale di Office 365 e del numero di servizi che costituiscono Office 365, i clienti spesso hanno la necessità di gestire gli annunci che accettano nella propria rete. Riduzione del numero di subnet IP; denominati prefissi IP per tutto il resto di questo articolo, per allineare con la terminologia di gestione della rete BGP, sono serviti i seguenti obiettivi finali per i clienti:
   
-- **Gestire il numero di prefissi IP annunciati accettati** -clienti che dispongono di un'infrastruttura di rete interna o di un gestore di rete che supporta solo un numero limitato di prefissi IP e clienti che dispongono di un gestore di rete che si addebiti per accettare prefissi sopra un numero limitato si desidera valutare il numero totale di prefissi già pubblicizzati nella propria rete e selezionare le applicazioni di Office 365 più adatte per ExpressRoute.
+- **Gestire il numero di prefissi IP annunciati accettati** -i clienti che dispongono di un'infrastruttura di rete interna o di una rete che supporta solo un numero limitato di prefissi IP e i clienti che dispongono di un gestore di rete che si addice all'accettazione di prefissi superiori a un numero limitato vorranno valutare il numero totale di prefissi già pubblicizzati nella propria rete e selezionare le applicazioni di 365 Office
 
 - **Gestire la quantità di larghezza di banda necessaria sul circuito di ExpressRoute di Azure** -i clienti possono controllare l'inviluppo di larghezza di banda dei servizi di Office 365 sul percorso ExpressRoute e sul percorso Internet. In questo modo i clienti possono prenotare la larghezza di banda di ExpressRoute per applicazioni specifiche come Skype for business e instradare le restanti applicazioni di Office 365 sul percorso Internet.
 
