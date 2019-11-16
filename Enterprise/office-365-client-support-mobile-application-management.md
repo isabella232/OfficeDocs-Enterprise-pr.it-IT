@@ -14,10 +14,10 @@ search.appverid:
 - MET150
 description: Informazioni sul supporto delle app client di Office 365 per la gestione delle applicazioni mobili
 ms.openlocfilehash: 09fc57a41d310a37cee5c91a3814e4fc633d332a
-ms.sourcegitcommit: b1a32e8df403143fb34eaddf116aed3595228c8c
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "36817201"
 ---
 # <a name="office-365-client-app-support--mobile-application-management"></a>Supporto delle app client di Office 365-gestione delle applicazioni per dispositivi mobili

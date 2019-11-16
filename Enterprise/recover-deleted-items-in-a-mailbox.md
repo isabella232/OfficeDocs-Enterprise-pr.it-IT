@@ -16,14 +16,13 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: "Questo articolo è rivolto agli amministratori. Può accadere che un utente elimini in modo permanente alcuni elementi della propria cassetta postale di Outlook e che voglia recuperarli senza riuscirci. È possibile recuperare gli elementi eliminati se non sono stati rimossi definitivamente dalla cassetta postale dell'utente. "
-ms.openlocfilehash: 0b73556f4c53667cfeeb09f73d45ee87d326b820
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36991907"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38308601"
 ---
-<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Ripristinare gli elementi eliminati in una cassetta postale utente - Guida per l'amministratore
 
 **Questo articolo è rivolto agli amministratori. Si sta tentando di recuperare gli elementi eliminati nella propria cassetta postale? ** Eseguire una delle seguenti operazioni:
@@ -74,7 +73,7 @@ Il primo passaggio consiste nell'assegnare a se stessi le autorizzazioni necessa
 > [!CAUTION]
 > I membri del gruppo di ruoli Gestione individuazione possono accedere al contenuto dei messaggi riservati. Sono incluse le ricerche in tutte le cassette postali dell'organizzazione, la visualizzazione in anteprima dei risultati della ricerca, e di altri elementi della cassetta postale, la copia dei risultati in una cassetta postale di individuazione e l’esportazione dei risultati della ricerca in un file PST. 
   
-[Inizio pagina](recover-deleted-items-in-a-mailbox.md#__top)
+[Inizio pagina](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-2-search-the-users-mailbox-for-deleted-items"></a>Passaggio 2: Cercare gli elementi eliminati nella cassetta postale dell'utente
 <a name="step2"> </a>
@@ -136,7 +135,7 @@ Quando si esegue una ricerca eDiscovery sul posto, la cartella Elementi ripristi
   
 13. Se non si trova ciò che sta cercando, è possibile modificare i criteri di ricerca facendo clic sull’icona **Modifica**![Icona Modifica](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) e poi su **Query di ricerca**. Modificare i criteri di ricerca e quindi eseguire di nuovo la ricerca.
     
-[Inizio pagina](recover-deleted-items-in-a-mailbox.md#__top)
+[Inizio pagina](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="optional-step-3-copy-the-search-results-to-a-discovery-mailbox"></a>(Facoltativo) Passaggio 3: Copiare i risultati della ricerca in una cassetta postale di individuazione
 <a name="step3"> </a>
@@ -181,7 +180,7 @@ Se non si riesce a trovare un elemento nell’anteprima dei risultati della rice
     > [!TIP]
     > Se un utente non riesce a trovare un elemento eliminato tramite lo strumento Elementi ripristinabili, ma tale elemento è comunque ripristinabile, in quanto non è stato rimosso definitivamente dalla cassetta postale, è molto probabile che si trovi nella cartella Purges. Pertanto, assicurarsi di controllare la cartella Ripuliture per cercare gli elementi eliminati che si vuole recuperare per un utente. 
   
-[Inizio pagina](recover-deleted-items-in-a-mailbox.md#__top)
+[Inizio pagina](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-4-export-the-search-results-to-a-pst-file"></a>Passaggio 4: Esportare i risultati della ricerca in un file PST
 <a name="step4"> </a>
@@ -208,7 +207,7 @@ Dopo aver individuato l'elemento che si vuole recuperare per un utente, occorre 
     
     Lo **strumento di esportazione di eDiscovery** mostra le informazioni relative all stato del processo di esportazione. Quando l'esportazione è completa, è possibile accedere al file nella posizione in cui è stato scaricato. 
     
-[Inizio pagina](recover-deleted-items-in-a-mailbox.md#__top)
+[Inizio pagina](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-5-restore-the-recovered-items-to-the-users-mailbox"></a>Passaggio 5: Ripristinare gli elementi recuperati nella cassetta postale dell'utente
 <a name="step5"> </a>
@@ -276,7 +275,7 @@ Per ripristinare un elemento eliminato tramite un file PST, è necessario usare 
     
 8. Dopo aver completato il recupero degli elementi eliminati, fare clic con il pulsante destro del mouse sul file PST nella barra di spostamento sinistra e selezionare **Chiudi "nome del file PST"**.
     
-[Inizio pagina](recover-deleted-items-in-a-mailbox.md#__top)
+[Inizio pagina](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="more-information"></a>Altre informazioni
 <a name="moreinfo"> </a>
@@ -297,6 +296,6 @@ Per ripristinare un elemento eliminato tramite un file PST, è necessario usare 
     
   - [Ripristinare i messaggi di posta elettronica eliminati in Outlook.com](https://go.microsoft.com/fwlink/p/?LinkID=623435)
     
-[Inizio pagina](recover-deleted-items-in-a-mailbox.md#__top)
+[Inizio pagina](recover-deleted-items-in-a-mailbox.md)
   
 

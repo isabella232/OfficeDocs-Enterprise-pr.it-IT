@@ -15,10 +15,10 @@ search.appverid:
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Consente di pianificare i requisiti di larghezza di banda di rete per Microsoft Office 365. Dopo la distribuzione, tornare qui per ottimizzare e risolvere i problemi relativi alle prestazioni di Office 365.
 ms.openlocfilehash: bedddefe893781fc2c51d0e282dc603e30c90b06
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38032141"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Pianificazione della rete e ottimizzazione delle prestazioni per Office 365

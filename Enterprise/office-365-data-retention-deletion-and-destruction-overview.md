@@ -13,19 +13,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una panoramica dei criteri Microsoft per Office 365 relativa a conservazione, eliminazione e distruzione dei dati.
-ms.openlocfilehash: 08b04e4fec762249208acb626fa20562ffecb82f
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067546"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37975831"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Conservazione, eliminazione e distruzione dei dati in Office 365
 
 Microsoft dispone di un criterio di gestione dei dati standard per Office 365 che specifica la durata di conservazione dei dati del cliente dopo l'eliminazione. In genere, esistono due scenari in cui vengono eliminati i dati dei clienti:
 
-- **Eliminazione attiva:** Il tenant ha un abbonamento attivo e un utente elimina i dati, oppure Elimina i dati forniti da un utente.
-- **Eliminazione passiva:** La sottoscrizione tenant termina.
+- **Eliminazione attiva**: il tenant ha un abbonamento attivo e un utente o un amministratore Elimina i dati o gli amministratori eliminano un utente.
+- **Eliminazione passiva**: termina la sottoscrizione tenant.
 
 ## <a name="data-retention"></a>Conservazione dei dati
 
@@ -36,7 +36,7 @@ Per ognuno di questi scenari di eliminazione, nella tabella seguente viene mostr
 | Dati cliente
  | Contenuto del cliente| Contenuto direttamente fornito/creato da amministratori e utenti <br><br> Include tutto il testo, audio, video, file di immagine e software creati e archiviati nei data center di Microsoft quando si utilizzano i servizi in Office 365 | Esempi delle applicazioni di Office 365 più comunemente utilizzate che consentono agli utenti di creare dati includono Word, Excel, PowerPoint, Outlook e OneNote <br><br> Il contenuto del cliente include anche i segreti di proprietà dei clienti/forniti (password, certificati, chiavi di crittografia, chiavi di archiviazione) | **Scenario di eliminazione attiva:** al massimo 30 giorni <br><br> **Scenario di eliminazione passiva:** al massimo 180 giorni |
 | Dati cliente
- | Informazioni identificabili dall'utente finale (EUII) | Dati che identificano o possono essere utilizzati per identificare l'utente di un servizio Microsoft. EUII non contiene contenuto del cliente | Nome utente o nome visualizzato (dominio\nomeutente) <br><br> Nome dell'entità utente (nome @ dominio) <br><br>  Indirizzi IP specifici dell'utente | **Scenario di eliminazione attiva:** al massimo 180 giorni (solo un'azione di amministratore tenant) <br><br> **Scenario di eliminazione passiva:** al massimo 180 giorni |
+ | Informazioni identificabili dall'utente finale (EUII) | Dati che identificano o possono essere utilizzati per identificare l'utente di un servizio Microsoft. EUII non contiene contenuto del cliente | Nome utente o nome visualizzato (dominio\nomeutente) <br><br> Nome dell'entità utente (name@domain) <br><br>  Indirizzi IP specifici dell'utente | **Scenario di eliminazione attiva:** al massimo 180 giorni (solo un'azione di amministratore tenant) <br><br> **Scenario di eliminazione passiva:** al massimo 180 giorni |
 | Dati personali <br> (dati non inclusi nei dati del cliente) | Identificatori pseudonimi dell'utente finale (EUPI) | Identificatore creato da Microsoft associato all'utente di un servizio Microsoft. Se in combinazione con altre informazioni, ad esempio una tabella di mapping, EUPI identifica l'utente finale <br><br> EUPI non contiene informazioni caricate o create dal cliente | GUID utente, PUID o SID <br><br> ID di sessione | **Scenario di eliminazione attiva:** al massimo 30 giorni <br><br> **Scenario di eliminazione passiva:** al massimo 180 giorni |
 
 ## <a name="subscription-retention"></a>Conservazione della sottoscrizione
@@ -52,6 +52,7 @@ Per qualsiasi sottoscrizione, un Sottoscrittore può contattare il supporto tecn
 Per ulteriori informazioni sul deprovisioning rapido, vedere [Annulla Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
 ## <a name="related-links"></a>Collegamenti correlati
+
 - [Distruzione dei dati](office-365-data-destruction.md)
 - [Capacità di immutabilità in Office 365](office-365-data-immutability.md)
 - [Eliminazione dei dati di Exchange Online](office-365-exchange-online-data-deletion.md)

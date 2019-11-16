@@ -13,14 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Un breve riepilogo dei cmdlet utilizzati per le migrazioni delle cassette postali di Office 365.
-ms.openlocfilehash: bdd4d6eb68a8727dc26a693f2716ed602e7a5a60
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 03075fdab50ed5dd315d4f9b988032e40f4cbc85
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067507"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38035546"
 ---
 # <a name="office-365-mailbox-migrations"></a>Migrazioni delle cassette postali di Office 365
+
 Con una distribuzione ibrida basata su Exchange, i clienti possono scegliere di spostare le cassette postali di Exchange locali in un'organizzazione di [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) o di spostare le cassette postali di Exchange online in un'organizzazione di [Exchange locale](https://docs.microsoft.com/Exchange/exchange-server) . Quando si spostano le cassette postali tra organizzazioni locali e di Exchange Online, vengono utilizzati i batch di migrazione.
 
 I clienti possono esaminare le statistiche e altre informazioni sulle migrazioni delle cassette postali con i cmdlet seguenti:
