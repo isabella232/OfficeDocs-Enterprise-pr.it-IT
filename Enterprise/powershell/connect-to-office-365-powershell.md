@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Riepilogo: connettersi all'organizzazione di Office 365 con PowerShell di Office 365 per eseguire le attività dell'interfaccia di amministrazione dalla riga di comando."
-ms.openlocfilehash: 1bcf2438c4a07f3d025ef9cb664875214f1aa289
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e80af8b4174a4d3ac423e887b7f3c2fd9ee73375
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031751"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707043"
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
@@ -75,7 +75,7 @@ Per le procedure che necessitano di nuovi cmdlet nel modulo di Azure Active Dire
     
 2. Nella finestra di comando **Amministratore: Windows PowerShell**, eseguire il comando seguente:
     
-  ```
+  ```powershell
   Install-Module -Name AzureAD
   ```
 
@@ -155,7 +155,7 @@ Se non vengono visualizzati errori, controllare i requisiti seguenti:
   
 - **La versione del Modulo di Microsoft Azure Active Directory per Windows PowerShell potrebbe essere scaduta.** Per verificare, eseguire il comando seguente in PowerShell di Office 365 o nel Modulo di Microsoft Azure Active Directory per Windows PowerShell:
     
-  ```
+  ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
