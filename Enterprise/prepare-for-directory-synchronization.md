@@ -3,6 +3,7 @@ title: Preparare la sincronizzazione della directory a Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 11/18/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come prepararsi a eseguire il provisioning degli utenti a Office 365 utilizzando la sincronizzazione della directory e i vantaggi a lungo termine dell'utilizzo di questo metodo.
-ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
-ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
+ms.openlocfilehash: 22db70d659d74e6d0f37f54a7743a562f220565d
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35249197"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702237"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparare la sincronizzazione della directory a Office 365
 
@@ -54,6 +55,9 @@ Prima di sincronizzare servizi di dominio Active Directory con il tenant di Azur
 In servizi di dominio Active Directory, completare le seguenti attività di pulizia per ogni account utente a cui viene assegnata una licenza di Office 365:
   
 1. Verificare l'indirizzo di posta elettronica valido e univoco nell'attributo **proxyAddresses** . 
+
+  >[!Note]
+  >Un carattere tilde (~) negli indirizzi di posta elettronica verrà ignorato. Ciò può comportare errori di sincronizzazione della directory falsi positivi relativi a proxyAddresses duplicati.
     
 2. Rimuovere tutti i valori duplicati nell'attributo **proxyAddresses**. 
     
@@ -176,7 +180,7 @@ Per ulteriori informazioni su come aggiungere un suffisso UPN alternativo ad Act
   
 ## <a name="5-match-the-ad-ds-upn-with-the-office-365-upn"></a>5. corrispondere all'UPN di servizi di dominio Active Directory con l'UPN di Office 365
 
-Se è già stata configurata la sincronizzazione della directory, l'UPN dell'utente per Office 365 potrebbe non corrispondere all'UPN di servizi di dominio utente di AD DS definito in AD DS. Questa situazione può verificarsi quando a un utente viene assegnata una licenza prima della verifica del dominio. Per risolvere questo risultato, utilizzare [PowerShell per correggere](https://go.microsoft.com/fwlink/p/?LinkId=396730) l'UPN duplicato per aggiornare l'UPN dell'utente per verificare che l'UPN di Office 365 corrisponda al nome utente aziendale e al dominio. Se si esegue l'aggiornamento dell'UPN in servizi di dominio Active Directory e si desidera che venga sincronizzato con l'identità di Azure, è necessario rimuovere la licenza dell'utente in Office 365 prima di apportare le modifiche in AD DS. 
+Se è già stata configurata la sincronizzazione della directory, l'UPN dell'utente per Office 365 potrebbe non corrispondere all'UPN di servizi di dominio utente di AD DS definito in AD DS. Questa situazione può verificarsi quando a un utente viene assegnata una licenza prima della verifica del dominio. Per risolvere questo risultato, utilizzare [PowerShell per correggere l'UPN duplicato](https://go.microsoft.com/fwlink/p/?LinkId=396730) per aggiornare l'UPN dell'utente per verificare che l'UPN di Office 365 corrisponda al nome utente aziendale e al dominio. Se si esegue l'aggiornamento dell'UPN in servizi di dominio Active Directory e si desidera che venga sincronizzato con l'identità di Azure, è necessario rimuovere la licenza dell'utente in Office 365 prima di apportare le modifiche in AD DS. 
   
 Vedere anche [come preparare un dominio non instradabile (ad esempio, dominio locale) per la sincronizzazione della directory](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
