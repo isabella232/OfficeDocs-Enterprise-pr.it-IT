@@ -3,7 +3,7 @@ title: Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Off
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/03/2019
+ms.date: 11/18/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Riepilogo: il nuovo servizio Web endpoint non include un numero limitato di endpoint per scenari specifici.'
 hideEdit: true
-ms.openlocfilehash: da69876f4b189d11e46ee6a01d87fecde03480ca
-ms.sourcegitcommit: 960ad339d16cd5112cf83460b123ae3993839310
+ms.openlocfilehash: 2dae3a5f37be071f38991c599ea1b0ba81fa6281
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37388164"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702197"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365
 
@@ -45,7 +45,7 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 |:-----|:-----|:-----|:-----|
 | **Riga** | **Scopo** | **Destinazione** | **Tipo** |
 | 1  | [Servizio di importazione](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) per l'inserimento di file e PST | Vedere il [servizio di importazione](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) per i requisiti aggiuntivi. | Scenario in uscita non comune |
-| 2  | [Assistente di supporto e ripristino Microsoft per Office 365](https://diagnostics.office.com/#/): convalidare le credenziali utente Single Sign-On. Origine: <br> ```o365diagnosticsbasic-eus.cloudapp.net (104.211.54.99)``` <br> ```o365diagnosticworker-eus.cloudapp.net (104.211.54.134)```  | Servizio token di sicurezza locale | Traffico del server in ingresso |
+| 2  | [Assistente supporto e ripristino Microsoft per Office 365](https://diagnostics.office.com/#/): per convalidare le credenziali utente Single Sign-On.  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Traffico del server in uscita |
 | 3  | Azure AD Connect (opzione con SSO) – WinRM e sessione remota di PowerShell | Ambiente STS del cliente (server AD FS e proxy AD FS) \| porte TCP 80 e 443 | Traffico del server in ingresso |
 | 4  | STS come server proxy AD FS (solo per clienti federati) | STS del cliente (come proxy AD FS) \| porte TCP 443 o TCP 49443 con ClientTLS | Traffico del server in ingresso |
 | 5  | [Messaggistica unificata di Exchange Online/integrazione SBC](https://technet.microsoft.com/library/jj673565.aspx) | Bidirezionale tra session border controller locale e *.um.outlook.com | Solo traffico del server in uscita |
