@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: "Riepilogo: informazioni sull'utilizzo di Windows PowerShell per eseguire una migrazione a fasi a Office 365."
-ms.openlocfilehash: 8bb877cba8bb06762ee56fa8c022be78d1c011c3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071172"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747532"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Utilizzare PowerShell per eseguire una migrazione a fasi a Office 365
 
- **Sintesi:** Informazioni sull'utilizzo di Windows PowerShell per eseguire una migrazione a fasi a Office 365.
-  
 È possibile migrare i contenuti delle cassette postali degli utenti da un sistema di posta elettronica di origine a Office 365 nel tempo utilizzando una migrazione a fasi.
   
 In questo articolo vengono illustrate le attività necessarie per una migrazione della posta elettronica a fasi tramite PowerShell di Exchange Online. Nell'argomento [Informazioni utili su una migrazione a fasi della posta elettronica a Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536487) viene fornita una panoramica della procedura di migrazione. Una volta appresi i contenuti di questo articolo, utilizzare quest'ultimo per iniziare la migrazione delle cassette postali da un sistema di posta elettronica a un altro.
@@ -63,11 +61,11 @@ Prima di eseguire la migrazione delle cassette postali a Office 365 utilizzando 
     
 - In PowerShell di Exchange Online, eseguire i comandi seguenti:
     
-  ```
+  ```powershell
   $Credentials = Get-Credential
   ```
 
-  ```
+  ```powershell
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
@@ -118,7 +116,7 @@ Di seguito viene illustrato un esempio di formato per il file CSV. In questo ese
   
 Nella prima riga, o riga di intestazione, del file CSV sono elencati i nomi degli attributi, o campi, specificati nelle righe successive. Il nome di ciascun attributo è separato da una virgola.
   
-```
+```powershell
 EmailAddress,Password,ForceChangePassword 
 pilarp@contoso.com,Pa$$w0rd,False 
 tobyn@contoso.com,Pa$$w0rd,False 
@@ -141,11 +139,11 @@ Per un elenco completo dei comandi di migrazione, vedere [Cmdlet di spostamento 
   
 Per creare un endpoint di migrazione di Outlook via Internet denominato "StagedEndpoint" in PowerShell di Exchange Online, eseguire i comandi seguenti:
   
-```
+```powershell
 $Credentials = Get-Credential
 ```
 
-```
+```powershell
 New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscover -EmailAddress administrator@contoso.com -Credentials $Credentials
 ```
 
@@ -158,7 +156,7 @@ Per ulteriori informazioni sul cmdlet **New-MigrationEndpoint**, vedere[New-Migr
 
 In PowerShell di Exchange Online eseguire il comando riportato di seguito per visualizzare le informazioni sull'endpoint di migrazione "StagedEndpoint":
   
-```
+```powershell
 Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,UseAutoDiscover,Max*
 ```
 
@@ -167,13 +165,13 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 
 È possibile utilizzare il cmdlet **New-MigrationBatch** in PowerShell di Exchange Online per creare un batch di migrazione per una migrazione completa. È possibile creare un batch di migrazione e avviarlo automaticamente includendo il parametro _AutoStart_. In alternativa, è possibile creare il batch di migrazione, per poi avviarlo utilizzando il cmdlet **Start-MigrationBatch**. In questo esempio viene creato un batch di migrazione denominato "StagedBatch1" e viene utilizzato l'endpoint di migrazione creato nel passaggio precedente.
   
-```
+```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart
 ```
 
 In questo esempio viene inoltre creato un batch di migrazione denominato "StagedBatch1" e viene utilizzato l'endpoint di migrazione creato nel passaggio precedente. Poiché il parametro  _AutoStart_ non è incluso, il batch di migrazione deve essere avviato manualmente nel dashboard di migrazione oppure utilizzando il cmdlet **Start-MigrationBatch**. Come illustrato in precedenza, può esistere solo un batch di migrazione completa alla volta.
   
-```
+```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 ```
 
@@ -181,13 +179,13 @@ New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 
 Eseguire il seguente comando in PowerShell di Exchange Online per visualizzare informazioni su "StagedBatch1":
   
-```
+```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List
 ```
 
 È inoltre possibile verificare che il batch sia stato avviato eseguendo il comando riportato di seguito:
   
-```
+```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ```
 
@@ -215,7 +213,7 @@ Per ulteriori informazioni e per scaricare gli script che consentono di converti
   
 Per eliminare il batch di migrazione "StagedBatch1" in PowerShell di Exchange Online, eseguire il comando riportato di seguito.
   
-```
+```powershell
 Remove-MigrationBatch -Identity StagedBatch1
 ```
 
@@ -225,7 +223,7 @@ Per ulteriori informazioni sul cmdlet **Remove-MigrationBatch**, vedere[Remove-M
 
 Eseguire il seguente comando in PowerShell di Exchange Online per visualizzare informazioni su "IMAPBatch1":
   
-```
+```powershell
 Get-MigrationBatch StagedBatch1
 ```
 

@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "Riepilogo: Utilizzare PowerShell di Office 365 per gestire le proprietà dell'account utente di Skype for Business online con i criteri."
-ms.openlocfilehash: 51e402922b2a357ef29e9b2628eb25fc252e5437
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1d4f6bc52932bb7315fdd769788b5b3108423424
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031731"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748526"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gestire criteri Skype for Business Online con PowerShell di Office 365
 
- **Sintesi:** Utilizzare PowerShell di Office 365 per gestire le proprietà dell'account utente di Skype for Business online con i criteri.
-  
 Per gestire molte proprietà dell'account utente per Skype for Business online, è necessario specificarle come proprietà dei criteri con PowerShell di Office 365.
   
 ## <a name="before-you-begin"></a>Prima di iniziare
@@ -33,7 +31,7 @@ Utilizzare queste istruzioni per ottenere la configurazione che consenta di eseg
     
 2. Aprire il prompt dei comandi Windows PowerShell ed eseguire quanto segue: 
     
-```
+```powershell
 Import-Module SkypeOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
@@ -46,13 +44,13 @@ Quando richiesto, immettere il nome e la password dell'account Administrator di 
 
 Molte proprietà dell'account utente di Skype for Business online sono configurate utilizzando criteri. I criteri consistono in una raccolta di impostazioni che possono essere applicate a uno o più utenti. Per esaminare la configurazione del criterio, è possibile eseguire il comando di esempio riportato per il criterio FederationAndPICDefault.
   
-```
+```powershell
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
 ```
 
 Verrà restituito un elemento analogo al seguente:
   
-```
+```powershell
 Identity                          : Tag:FederationAndPICDefault
 Description                       :
 EnableFederationAccess            : True
@@ -62,7 +60,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-In questo esempio, i valori all'interno di questo criterio determinano le operazioni che possono essere eseguite o non possono essere utilizzate per la comunicazione con gli utenti federati. Ad esempio, la proprietà EnableOutsideAccess deve essere impostata su true affinché un utente sia in grado di comunicare con utenti esterni all'organizzazione. Tenere presente che questa proprietà non viene visualizzata nell'interfaccia di amministrazione di Microsoft 365. Al contrario, la proprietà viene impostata automaticamente su true o su false in base alle altre selezioni apportate. Le altre due proprietà di interesse sono le seguenti:
+Nell'esempio riportato, i valori compresi nei criteri determinano le operazioni di comunicazione con utenti federati che Alex può davvero effettuare o meno. Ad esempio, la proprietà EnableOutsideAccess deve essere impostata su True affinché un utente possa comunicare con utenti esterni all'organizzazione. Tenere presente che questa proprietà non viene visualizzata nell'interfaccia di amministrazione di Microsoft 365. Al contrario, la proprietà viene impostata automaticamente su True o False in base alle altre selezioni effettuate. Le altre due proprietà di interesse sono:
   
 - **EnableFederationAccess** indica se l'utente può comunicare con utenti di domini federati.
     
@@ -78,7 +76,7 @@ Se si desidera sapere se qualche utente è in grado di comunicare con utenti est
     
 Ad esempio, è possibile utilizzare il comando riportato di seguito:
   
-```
+```powershell
 Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -Identity $_.ExternalAccessPolicy}
 ```
 
@@ -98,14 +96,14 @@ Per gestire i criteri di Skype for business online con PowerShell, vedere i cmdl
   
 Ad esempio, per esaminare tutti i criteri vocali che possono essere utilizzati, eseguire tale comando:
   
-```
+```powershell
 Get-CsVoicePolicy
 ```
 
 > [!NOTE]
 > Viene restituito un elenco di tutti i criteri vocali disponibili per l'utente. Tuttavia, tenere presente che non tutti i criteri possono essere assegnati a qualsiasi utente. Ciò si verifica a causa di vari limiti che riguardano le licenze e la posizione geografica. (Il "[percorso di utilizzo](https://msdn.microsoft.com/library/azure/dn194136.aspx)"). Se si desidera conoscere i criteri di accesso esterno e i criteri di conferenza che possono essere assegnati a un utente particolare, utilizzare comandi analoghi ai seguenti: 
 
-```
+```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
 Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 ```
@@ -116,13 +114,11 @@ In alcuni casi, le proprietà dei criteri non vengono utilizzate con Office 365,
   
 Con Skype for Business online, gli utenti devono essere gestiti da un criterio di qualche tipo. Se una proprietà correlata a criteri validi è vuota, significa che l'utente in questione viene gestito da un criterio globale, ovvero un criterio che viene applicato automaticamente a un utente a meno che non venga specificamente assegnato un criterio per utente. Poiché un criterio client per un account utente non è disponibile nell'elenco, viene gestito dal criterio globale. È possibile determinare il criterio client globale con questo comando:
   
-```
+```powershell
 Get-CsClientPolicy -Identity "Global"
 ```
 
 ## <a name="see-also"></a>Vedere anche
-
-#### 
 
 [Gestire Skype for Business Online con PowerShell di Office 365](manage-skype-for-business-online-with-office-365-powershell.md)
   

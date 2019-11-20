@@ -15,17 +15,17 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: "Riepilogo: In questo articolo vengono fornite informazioni dettagliate su come calcolare il numero approssimativo di client che è possibile utilizzare per ciascun indirizzo IP all'interno dell'organizzazione utilizzando NAT (Network Address Translation)."
-ms.openlocfilehash: 63180faab720e32c1066dcca60536db492d52734
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 5d252b059661fdd3bad1f86bf552f44b8a747d24
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616869"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747900"
 ---
 # <a name="nat-support-with-office-365"></a>Supporto NAT con Office 365
 
- **Riepilogo:** In questo articolo vengono fornite informazioni dettagliate su come calcolare il numero approssimativo di client che è possibile utilizzare per ciascun indirizzo IP all'interno dell'organizzazione utilizzando NAT (Network Address Translation). 
-  
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
+
 In precedenza, le indicazioni suggerivano che il numero massimo di client di Exchange da utilizzare per l'indirizzo IP per la connessione a Office 365 era di circa 2.000 client per porta di rete.
   
 ## <a name="why-use-nat"></a>Perché utilizzare NAT?

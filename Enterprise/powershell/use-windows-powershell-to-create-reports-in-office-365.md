@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Sintesi: Utilizzare PowerShell di Office 365 per creare report che non è possibile produrre nell'interfaccia di amministrazione di Microsoft 365."
-ms.openlocfilehash: e620ecffc89bd5b93de7b608be55bf68721b80af
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 4303f03c282c84972428ab8e5010aa316f40c90a
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031681"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746259"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Utilizzo di Windows PowerShell per creare rapporti in Office 365
 
- **Sintesi**: Utilizzare PowerShell di Office 365 per creare report che non è possibile produrre nell'interfaccia di amministrazione di Microsoft 365.
-  
 Sono disponibili molti report nell'interfaccia di amministrazione di Microsoft 365. Tuttavia, questi report forniscono solo determinate informazioni e talvolta è necessario aggiungerne altre. In questi casi, è necessario disporre di PowerShell di Office 365
   
 Gli articoli seguenti descrivono come utilizzare PowerShell di Office 365 per ottenere informazioni dal tenant di Office 365:
@@ -58,8 +56,6 @@ Gli articoli seguenti descrivono come utilizzare PowerShell di Office 365 per ot
   - [Display Exchange Online reports with Office 365 PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
 ## <a name="see-also"></a>Vedere anche
-
-#### 
 
 [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
   

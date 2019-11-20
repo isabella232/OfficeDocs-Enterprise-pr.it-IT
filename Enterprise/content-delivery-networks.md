@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilizzare queste informazioni per scoprire in che modo Office 365 utilizza le reti di distribuzione del contenuto (reti CDN) per migliorare le prestazioni.
-ms.openlocfilehash: 38c4af58ea7e655a5941557ea1e3b035f15b9074
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077659"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745839"
 ---
 # <a name="content-delivery-networks-cdns"></a>Reti di distribuzione del contenuto (reti CDN)
+
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
 
 La Guida di reti CDN consente di mantenere Office 365 veloce e affidabile per gli utenti finali. I servizi cloud come Office 365 utilizzano reti CDN per memorizzare nella cache le risorse statiche più vicino ai browser che richiedono l'accelerazione dei download e la riduzione della latenza dell'utente finale percepita. Le informazioni contenute in questo argomento consentiranno di conoscere le reti di distribuzione del contenuto (reti CDN) e le modalità di utilizzo di Office 365.
 

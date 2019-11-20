@@ -14,14 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Viene illustrato il motivo per cui l'ottimizzazione della rete è importante per i servizi SaaS, l'obiettivo della rete di Office 365 e il modo in cui SaaS richiede una rete diversa da altri carichi di lavoro.
-ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031891"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747708"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Panoramica della connettività di rete di Office 365
+
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
 
 Office 365 è un cloud SaaS (software-as-a-Service) distribuito che offre scenari di produttività e collaborazione tramite una serie diversificata di micro-servizi e applicazioni. I componenti client di Office 365, ad esempio Outlook, Word e PowerPoint, vengono eseguiti sui computer degli utenti e si connettono ad altri componenti di Office 365 eseguiti nei Data Center Microsoft. Il fattore più significativo che determina la qualità dell'esperienza dell'utente finale di Office 365 è l'affidabilità della rete e la bassa latenza tra i client di Office 365 e le porte anteriori del servizio Office 365.
 

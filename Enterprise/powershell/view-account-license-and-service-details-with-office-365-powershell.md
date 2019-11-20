@@ -15,17 +15,15 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Viene illustrato come utilizzare Office 365 PowerShell per determinare i servizi di Office 365 assegnati agli utenti.
-ms.openlocfilehash: 608d26dfc4aa1be782f94aa3b1ba5f66a0378f1e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 53668a69d72cdcbe912d550be2b9e571b7f6c0e0
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071122"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747475"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell
 
-**Riepilogo:** Viene illustrato come utilizzare Office 365 PowerShell per determinare i servizi di Office 365 assegnati agli utenti.
-  
 In Office 365, le licenze provenienti da piani di licenza (denominati anche SKU o piani di Office 365) offrono agli utenti l'accesso ai servizi di Office 365 definiti per tali piani. Tuttavia, un utente potrebbe non avere accesso a tutti i servizi disponibili in una licenza che gli è attualmente assegnata. È possibile utilizzare Office 365 PowerShell per visualizzare lo stato dei servizi negli account utente. 
 
 Per ulteriori informazioni sui piani di licenza, la licenza e i servizi, vedere [View licences and Services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
@@ -36,13 +34,13 @@ Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powe
   
 Successivamente, elencare i piani di licenza per il tenant con questo comando.
 
-```
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
 Utilizzare questi comandi per elencare i servizi disponibili in ogni piano di gestione delle licenze.
 
-```
+```powershell
 $allSKUs=Get-AzureADSubscribedSku
 $licArray = @()
 for($i = 0; $i -lt $allSKUs.Count; $i++)
@@ -52,16 +50,16 @@ $licArray +=  Get-AzureADSubscribedSku -ObjectID $allSKUs[$i].ObjectID | Select 
 $licArray +=  ""
 }
 $licArray
-````
+```
 
 Utilizzare questi comandi per elencare le licenze assegnate a un account utente.
 
-````
+```powershell
 $userUPN="<user account UPN, such as belindan@contoso.com>"
 $licensePlanList = Get-AzureADSubscribedSku
 $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
-````
+```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il modulo di Microsoft Azure Active Directory per Windows PowerShell
 
@@ -69,21 +67,21 @@ Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powe
 
 Successivamente, eseguire il comando seguente per elencare i piani di gestione delle licenze disponibili nell'organizzazione. 
 
-```
+```powershell
 Get-MsolAccountSku
 ```
 
 Successivamente, eseguire il comando seguente per elencare i servizi disponibili in ogni piano di licenze e l'ordine in cui sono elencati (il numero di indice).
 
-````
+```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
-````
+```
   
 Utilizzare questo comando per elencare le licenze assegnate a un utente e l'ordine in cui sono elencate (il numero di indice).
 
-````
+```powershell
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
-````
+```
 
 >[!Note]
 >Se si usa il cmdlet **Get-MsolUser** senza utilizzare il parametro _All_, vengono restituiti solo i primi 500 account.
@@ -94,25 +92,25 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 
 Per visualizzare tutti i servizi di Office 365 a cui un utente ha accesso, utilizzare la sintassi seguente:
   
-```
+```powershell
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
 In questo esempio vengono illustrati i servizi ai quali l'utente BelindaN@litwareinc.com ha accesso. Vengono indicati i servizi associati a tutte le licenze assegnate al suo account.
   
-```
+```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
 ```
 
 Questo esempio mostra i servizi ai quali l'utente BelindaN@litwareinc.com ha accesso dalla prima licenza assegnata al suo account (il numero di indice è 0).
   
-```
+```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
 ```
 
 Per visualizzare tutti i servizi per un utente a cui sono state assegnate *più licenze*, utilizzare la sintassi seguente:
 
-```
+```powershell
 $userAccountUPN="<user account UPN>"
 $AllLicenses=(Get-MsolUser -UserPrincipalName $userAccountUPN).Licenses
 $licArray = @()

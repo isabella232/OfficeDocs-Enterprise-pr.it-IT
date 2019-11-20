@@ -19,16 +19,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Informazioni su come integrare Office 365 con i servizi directory esistenti.
-ms.openlocfilehash: f6e29207dfb1175df8af480942484ece39e249b7
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
-ms.translationtype: HT
+ms.openlocfilehash: 36bbda95e96223c465d5bf5a2ec93e5514a38a17
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428121"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747162"
 ---
 # <a name="office-365-integration-with-on-premises-environments"></a>Integrazione di Office 365 con ambienti locali
 
-*Questo articolo si applica a Office 365 Enterprise e Microsoft 365 Enterprise*
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
 
 È possibile integrare Office 365 con i servizi directory esistenti e con un'installazione locale di Exchange Server, Skype for Business Server 2015 o SharePoint Server.
   

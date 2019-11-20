@@ -17,16 +17,18 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: Il 10 ottobre 2017, il supporto è stato terminato per Project Server 2007, Project Portfolio Server e Project 2007. Utilizzare questo articolo per pianificare l'aggiornamento.
-ms.openlocfilehash: 620b5ae3e23c3b4bdba9c429def81eebedbd32a3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c21d9d1c2539f66587243f04d4d874649d6bf460
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071052"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746239"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Guida sulla fine del supporto di Project Server 2007
 
-Il supporto termina per i server e le applicazioni di Office 2007 nel 2017 ed è necessario prendere in considerazione i piani per la migrazione. Se si sta attualmente utilizzando Project Server 2007, tenere presente che questo e altri prodotti correlati avranno le seguenti date di fine del supporto:
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
+
+Il supporto è terminato per i server e le applicazioni di Office 2007 nel 2017 ed è necessario prendere in considerazione i piani per la migrazione. Se si sta attualmente utilizzando Project Server 2007, tenere presente che questo e altri prodotti correlati presentano le seguenti date di fine del supporto:
   
 |**Prodotto**|**Data di fine del supporto**|
 |:-----|:-----|
@@ -39,7 +41,7 @@ Per ulteriori informazioni sui server di Office 2007 che raggiungono il pensiona
   
 ## <a name="what-does-end-of-support-mean"></a>Cosa significa fine del supporto?
 
-Project Server, come quasi tutti i prodotti Microsoft, ha un ciclo di vita di supporto durante il quale vengono fornite nuove funzionalità, correzioni di bug, correzioni di sicurezza e così via. Questo ciclo di vita di solito dura 10 anni a partire dalla data di rilascio iniziale del prodotto e la fine di questo ciclo di vita è nota come fine del prodotto di supporto. Poiché Project Server 2007 ha raggiunto la fine del supporto il 10 ottobre 2017, Microsoft non fornirà più:
+Project Server, come quasi tutti i prodotti Microsoft, ha un ciclo di vita di supporto durante il quale vengono fornite nuove funzionalità, correzioni di bug, correzioni di sicurezza e così via. Questo ciclo di vita di solito dura 10 anni a partire dalla data di rilascio iniziale del prodotto e la fine di questo ciclo di vita è nota come fine del prodotto di supporto. Poiché Project Server 2007 ha raggiunto la fine del supporto il 10 ottobre 2017, Microsoft non fornisce più:
   
 - Supporto tecnico per i problemi che possono verificarsi.
     

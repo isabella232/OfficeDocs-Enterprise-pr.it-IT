@@ -21,14 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Il supporto si concluderà presto per i server e le applicazioni client di Office 2010 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
-ms.openlocfilehash: 0c2352806d71687287ed885f5c835f61082da64b
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: af31db341aab1c52873613682c03dd54b3b76225
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "36991887"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748006"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2010
+
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
 
 Office 2010, Exchange Server 2010, SharePoint 2010 e Project Server 2010 raggiungeranno la fine del supporto il **13 ottobre 2020**. 
 
@@ -66,7 +68,7 @@ Se si utilizzano i prodotti e le applicazioni di Office 2010 a casa, vedere [que
   
 [Video: che cos'è Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Politica relativa al ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Criteri relativi al ciclo di vita Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
 [Pianificare l'aggiornamento di client e server di Office 2007 o Office 2010](plan-upgrade-previous-versions-office.md)
 
