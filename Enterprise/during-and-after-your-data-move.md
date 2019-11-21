@@ -1,9 +1,9 @@
 ---
 title: Durante e dopo lo spostamento dati
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626136"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756575"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -123,10 +123,6 @@ Tutti gli utenti verranno disconnessi dal software client Skype for business dur
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Spostamenti di Skype for business che coinvolgono un provider di servizi di audioconferenza di terze parti
 I servizi per i componenti aggiuntivi di terze parti per le conferenze telefoniche per Skype for business non sono disponibili per gli utenti ospitati in nuovi Data Center geografici specifici.  I clienti esistenti che utilizzano un servizio di provider di servizi di audioconferenza di terze parti non devono richiedere lo spostamento in un nuovo Data Center geografico specifico.  Per utilizzare un provider di servizi di audioconferenza di terze parti, è necessario che i nuovi clienti distribuiti nei nuovi Data Center geografici richiedano uno spostamento in un Data Center regionale.
-
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Dati per altri servizi, tra cui teams, Yammer e Power BI
-
-Si muovono solo i dati dei clienti per Exchange Online, SharePoint Online e Skype for business. I dati non vengono spostati per altri servizi. Non vi sono modifiche o impatto su di voi come clienti o utenti di questi altri servizi. Il processo di spostamento non li influenza e la posizione dei relativi dati dei clienti rimane invariata.
   
 ## <a name="related-topics"></a>Argomenti correlati 
  

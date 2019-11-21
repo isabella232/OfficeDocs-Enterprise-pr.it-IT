@@ -1,9 +1,9 @@
 ---
 title: Come richiedere lo spostamento dati
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031591"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756595"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
@@ -72,7 +72,7 @@ Gli spostamenti possono richiedere fino a 24 mesi dalla data di scadenza richies
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft teams non supporta ancora la migrazione del contenuto dei clienti a riposo dall'interno ai data center nazionali in cui è disponibile la residenza dei dati per Microsoft teams.  Di conseguenza, solo i nuovi clienti disporranno di tutti i dati archiviati all'interno di un paese nelle nuove aree geografiche in cui Microsoft teams supporta la residenza dei dati.  Per ulteriori informazioni sulla residenza dei dati di Office 365 per la posizione dell'azienda in [cui si trovano i dati?](https://products.office.com/where-is-your-data-located)   
+Il supporto per la migrazione a Microsoft teams chat e i dati dei messaggi di canale verranno aggiunti al programma di migrazione locale di Office 365.  Si prevede di aprire la registrazione del programma nel gennaio 2020 per tutti i clienti idonei, inclusi i clienti che hanno precedentemente optato per la migrazione di Exchange Online e SharePoint Online/OneDrive for business.  Il controllo dell'opt-in verrà esposto nell'interfaccia di amministrazione di Microsoft 365 e invierà una notifica nel centro messaggi a tutti i clienti idonei.   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Azioni facoltative prima di richiedere uno spostamento
 

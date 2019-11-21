@@ -1,9 +1,9 @@
 ---
 title: Domande frequenti sullo spostamento dati
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Di seguito sono riportate le risposte alle domande generali su come spostare i dati di base in un nuovo datacenter Geo.
-ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028890"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756585"
 ---
 # <a name="data-move-general-faq"></a>Domande frequenti sullo spostamento dati
 
@@ -29,7 +29,7 @@ Gli attuali clienti commerciali di Office 365 che hanno selezionato un paese ido
 
 ## <a name="how-do-we-define-core-customer-data"></a>Come definire i dati di base dei clienti
  
-I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle [condizioni dei servizi online Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
+I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle [condizioni dei servizi online Microsoft](https://aka.ms/ost): 
 - Contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica)
 - Contenuto del sito di SharePoint Online e file archiviati all'interno del sito
 - File caricati in OneDrive for business 
