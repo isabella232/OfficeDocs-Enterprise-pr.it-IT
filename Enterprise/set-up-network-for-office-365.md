@@ -3,7 +3,7 @@ title: Configurare la rete per Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,20 +17,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Riepilogo: consultare questi articoli per comprendere le funzionalità di rete per Office 365.'
-ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 725c2470644206045a40816fad3643b83d6c8ea6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722685"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747415"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Configurare la rete per Office 365
 
-**Riepilogo:** consultare questi articoli per comprendere le funzionalità di rete per Office 365.
-  
-Una parte importante dell'onboarding di Office 365 consiste nel verificare che la rete e le connessioni Internet siano configurate per l'accesso ottimizzato. La configurazione della rete locale per accedere al cloud SaaS (Software-as-a-Service) distribuito a livello globale è diversa da una rete tradizionale ottimizzata per il traffico verso data center locali. 
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
-Consultare questi articoli per comprendere le differenze principali e per modificare i dispositivi periferici, i computer client e la rete locale in uso per prestazioni utente ottimali.
+Una parte importante dell'onboarding di Office 365 consiste nel verificare che la rete e le connessioni Internet siano configurate per l'accesso ottimizzato. La configurazione della rete locale per accedere al cloud SaaS (Software-as-a-Service) distribuito a livello globale è diversa da una rete tradizionale ottimizzata per il traffico verso data center locali e una connessione Internet centralizzata. 
+
+Consultare questi articoli per comprendere le differenze principali e per modificare i dispositivi periferici, i computer client e la rete locale in uso per prestazioni ottimali per gli utenti locali.
 
 ## <a name="how-office-365-networking-works"></a>Funzionamento della rete di Office 365
 
@@ -50,7 +50,7 @@ Se si è un fornitore di apparecchiature di rete, partecipare a [Office 365 Netw
 
 Gli endpoint sono il set di indirizzi IP di destinazione, i nomi di dominio DNS e gli URL per il traffico di Office 365 su Internet. 
 
-Per ottimizzare le prestazioni di servizi basati sul cloud di Office 365, gli endpoint richiedono una gestione speciale da parte dei i browser client e dei dispositivi nella propria rete perimetrale. Questi dispositivi includono firewall, SSL Break and Inspect, dispositivi di ispezione dei pacchetti e sistemi di prevenzione della perdita di dati.
+Per ottimizzare le prestazioni di servizi basati sul cloud di Office 365, alcuni endpoint richiedono una gestione speciale da parte dei i browser client e dei dispositivi nella propria rete perimetrale. Questi dispositivi includono firewall, SSL Break and Inspect, dispositivi di ispezione dei pacchetti e sistemi di prevenzione della perdita di dati.
 
 Vedere [Gestione degli endpoint di Office 365](managing-office-365-endpoints.md) per i dettagli.
 

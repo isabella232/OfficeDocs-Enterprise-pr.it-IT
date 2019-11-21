@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Riepilogo: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft. Informazioni su come implementare un desktop protetto e moderno con Windows 10 e Office ProPlus."
-ms.openlocfilehash: c8817e0a6f0eda0dafec56475a3fb3e6a5a8627f
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 85031a3062397c63326a3306d9a4a14d77c114f3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702257"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756605"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 
@@ -109,8 +109,8 @@ Cosa devono sapere gli architetti IT della rete per i servizi cloud e le piattaf
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di scorrimento per modello di rete del cloud Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Questo modello contiene: <ul><li> Trasformazione della rete per la connettività cloud </li><li> Elementi comuni della connettività cloud Microsoft </li><li> ExpressRoute per la connettività cloud Microsoft </li><li> Progettazione di rete per Microsoft SaaS, Azure PaaS e Azure IaaS </li></ul><br/>  <br/>|
-   
+|[![Immagine di anteprima del modello di rete cloud Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](media/Network-Poster/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](media/Network-Poster/MSFT_cloud_architecture_networking.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/> | Questo modello contiene: <ul><li> Trasformazione della rete per la connettività cloud </li><li> Elementi comuni della connettività cloud Microsoft </li><li> ExpressRoute per la connettività cloud Microsoft </li><li> Progettazione di rete per Microsoft SaaS, Azure PaaS e Azure IaaS </li></ul><br/>  <br/>|
+
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Cloud ibrido Microsoft per Enterprise Architect
 
@@ -118,7 +118,7 @@ Cosa devono sapere gli architetti IT del cloud ibrido per i servizi cloud e le p
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di scorrimento per modello ibrido del cloud Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Questo modello contiene: <ul><li> Offerte cloud Microsoft (SaaS, Azure PaaS e Azure IaaS) e relativi elementi comuni </li><li> Architettura cloud ibrida per le offerte cloud Microsoft </li><li> Scenari cloud ibridi per Microsoft SaaS (Office 365), Azure PaaS e Azure IaaS </li></ul><br/>|
+|[![Immagine di anteprima del modello di cloud ibrido Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | Questo modello contiene: <ul><li> Offerte cloud Microsoft (SaaS, Azure PaaS e Azure IaaS) e relativi elementi comuni </li><li> Architettura cloud ibrida per le offerte cloud Microsoft </li><li> Scenari cloud ibridi per Microsoft SaaS (Office 365), Azure PaaS e Azure IaaS </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Attacchi comuni e funzionalità di Microsoft che proteggono l'organizzazione
