@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Riepilogo: Configurare l'infrastruttura Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Office 365."
-ms.openlocfilehash: d3cb5006f9630b4fc20462252a570f4e575a1da1
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: b6c872e46f39391e5e80caa399140adb044e773d
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030750"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793301"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: configurare Azure
 
@@ -113,37 +113,32 @@ Iniziamo a creare l'infrastruttura di Azure per ospitare l'autenticazione federa
   
 Avviare un prompt dei comandi di Azure PowerShell e accedere al proprio account.
   
-```
+```powershell
 Connect-AzAccount
 ```
-
-<!--
-> [!TIP]
-> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
--->
   
 Ottenere il nome della sottoscrizione utilizzando il comando seguente.
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select Name
 ```
 
 Per le versioni precedenti di Azure PowerShell, utilizzare questo comando.
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
 Impostare la sottoscrizione di Azure. Sostituire tutti gli elementi racchiusi tra virgolette, compresi i \< caratteri e >, con il nome corretto.
   
-```
+```powershell
 $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 Successivamente, creare i nuovi gruppi di risorse. Per determinare un set di nomi dei gruppi di risorse univoci, utilizzare questo comando per creare un elenco dei gruppi di risorse esistenti.
   
-```
+```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
@@ -160,7 +155,7 @@ Compilare la tabella seguente per il set di nomi dei gruppi di risorse univoci.
   
 Creare i nuovi gruppi di risorse con questi comandi.
   
-```
+```powershell
 $locName="<an Azure location, such as West US>"
 $rgName="<Table R - Item 1 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
@@ -174,7 +169,7 @@ New-AzResourceGroup -Name $rgName -Location $locName
 
 Successivamente, creare la rete virtuale di Azure e le relative subnet.
   
-```
+```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
 $locName="<your Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
@@ -203,7 +198,7 @@ New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locNa
 
 Successivamente, è possibile creare gruppi di sicurezza di rete per ogni subnet che dispone di macchine virtuali. Per eseguire l'isolamento della subnet, è possibile aggiungere regole per i tipi specifici di traffico concesso o negato per il gruppo di sicurezza di rete di una subnet.
   
-```
+```powershell
 # Create network security groups
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 
@@ -223,7 +218,7 @@ $vnet | Set-AzVirtualNetwork
 
 Successivamente, utilizzare questi comandi per creare i gateway per la connessione VPN da sito a sito.
   
-```
+```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
 $locName="<Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
@@ -259,7 +254,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
   
 Successivamente, registrare l'indirizzo IPv4 pubblico del gateway VPN di Azure per la rete virtuale visualizzato con questo comando:
   
-```
+```powershell
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
@@ -287,7 +282,7 @@ Questi nomi sono necessari quando si creano le macchine virtuali nelle fasi 2, 3
   
 Creare i nuovi set di disponibilità con questi comandi di Azure PowerShell.
   
-```
+```powershell
 $locName="<the Azure location for your new resource group>"
 $rgName="<Table R - Item 1 - Resource group name column>"
 $avName="<Table A - Item 1 - Availability set name column>"

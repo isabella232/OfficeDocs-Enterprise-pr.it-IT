@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: "Riepilogo: Configurare l'autenticazione federata a disponibilità elevata per l'abbonamento a Office 365 in Microsoft Azure."
-ms.openlocfilehash: afed84c8fd496e8092664601188bb0c43313607a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ba8049271e4820cca8db2ce5d6cabf76dacfb36a
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067962"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793288"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Distribuire l'autenticazione federata ad alta visibilità per Office 365 in Azure
 
@@ -110,8 +110,3 @@ Per creare un ambiente di sviluppo e di testing o modello di verifica di questa 
 
 Iniziare la configurazione di questo carico di lavoro con [Fase 1 dell'autenticazione federata a disponibilità elevata: Configurare Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
   
-<!--
-> [!TIP]
-> For a set of files to more quickly deploy your high availability federated authentication for Office 365 in Azure, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
---> 
-

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Riepilogo: informazioni su come distribuire Azure AD Connect in una macchina virtuale in Azure per eseguire la sincronizzazione degli account tra la directory locale e il tenant di Azure AD della sottoscrizione a Office 365.'
-ms.openlocfilehash: cb908de04aa38972744077bd1359b94babca7290
-ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
+ms.openlocfilehash: 1b03e2a18062523c53b5c2c094e9adf10e2e3358
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038285"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793328"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Distribuire la sincronizzazione della directory di Office 365 in Microsoft Azure
 
@@ -120,11 +120,7 @@ La distribuzione di Azure AD Connect in una macchina virtuale in Azure è costit
     
 Dopo la distribuzione, è necessario assegnare percorsi e licenze ai nuovi account utente in Office 365.
 
-<!--  
-> [!TIP]
-> The [Directory Synchronization Server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) has all of the Azure PowerShell blocks to build out this solution, the diagrams in Microsoft PowerPoint and Visio format, and a Microsoft Excel configuration workbook that generates Azure PowerShell command blocks customized for your settings.
--->
-  
+
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Fase 1: Creare e configurare la rete virtuale di Azure
 
 Per creare e configurare la rete virtuale di Azure, completare la [Fase 1: Preparare la rete locale](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-1-prepare-your-on-premises-network) e la [Fase 2: Creare la rete virtuale cross-premise in Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-2-create-the-cross-premises-virtual-network-in-azure) nella guida di orientamento alla distribuzione di [Connect an on-premises network to a Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
@@ -202,8 +198,3 @@ Azure AD Connect aggiunge account alla sottoscrizione a Office 365 da AD DS loca
   
 [Configurare la sincronizzazione della directory per Office 365](set-up-directory-synchronization.md)
   
-<!--
-[Directory Synchronization server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
--->
-
-

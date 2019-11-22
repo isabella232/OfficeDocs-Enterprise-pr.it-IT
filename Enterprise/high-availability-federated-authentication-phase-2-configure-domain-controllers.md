@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: "Riepilogo: Configurare i controller di dominio e il server DirSync per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: 5cb7c75f5d66dc37aa9e4b7fdc682c9508eac40e
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 3e5ede99c114b59f6aafbf37c3aa11e3ebd62cca
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028800"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793348"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 dell'autenticazione federata a disponibilità elevata: configurare i controller di dominio
 
@@ -69,12 +69,7 @@ Tenere presente che le tabelle R, V, S, I e A sono definite in [fase 1 di autent
   
 Una volta forniti tutti i valori corretti, eseguire il blocco risultante nel prompt di Azure PowerShell oppure in PowerShell Integrated Script Environment (ISE) nel computer locale.
   
-<!--
-> [!TIP]
-> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
--->
-  
-```
+```powershell
 # Set up variables common to both virtual machines
 $locName="<your Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
@@ -154,7 +149,7 @@ Usare il client desktop remoto di propria scelta e creare una connessione deskto
   
 Successivamente, aggiungere il disco dati aggiuntivo al primo controller di dominio con questo comando da un prompt dei comandi di Windows PowerShell **sulla prima macchina virtuale del controller di dominio**:
   
-```
+```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
@@ -164,7 +159,7 @@ Questa procedura assicura che la risoluzione dei nomi DNS funziona correttamente
   
 Successivamente, dal prompt dei comandi di Windows PowerShell nel primo controller di dominio, eseguire i comandi seguenti:
   
-```
+```powershell
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
 $cred = Get-Credential -Message "Enter credentials of an account with permission to join a new domain controller to the domain"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
@@ -179,13 +174,13 @@ Usare il client desktop remoto di propria scelta e creare una connessione deskto
   
 Successivamente, è necessario aggiungere il disco dati aggiuntivo al secondo controller di dominio con questo comando da un prompt dei comandi di Windows PowerShell **sul secondo computer virtuale del controller di dominio**:
   
-```
+```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
 Quindi, eseguire i seguenti comandi:
   
-```
+```powershell
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
 $cred = Get-Credential -Message "Enter credentials of an account with permission to join a new domain controller to the domain"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
@@ -197,7 +192,7 @@ Verrà richiesto di fornire le credenziali di un account di amministratore del d
   
 Successivamente, è necessario aggiornare i server DNS per la rete virtuale in modo che Azure assegni le macchine virtuali agli indirizzi IP dei due nuovi controller di dominio da utilizzare come server DNS. Inserire le variabili e quindi eseguire questi comandi da un prompt dei comandi di Windows PowerShell nel computer locale:
   
-```
+```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
 $adrgName="<Table R - Item 1 - Resource group name column>"
 $locName="<your Azure location>"
@@ -223,7 +218,7 @@ Si noti che i due controller di dominio vengono riavviati in modo che non siano 
   
 Successivamente, è necessario creare un sito di replica di Active Directory per assicurarsi che i server della rete virtuale di Azure utilizzino i controller di dominio locali. Connettersi a uno dei due controller di dominio con un account di amministratore di dominio ed eseguire i comandi seguenti dal prompt dei comandi di Windows PowerShell a livello di amministratore:
   
-```
+```powershell
 $vnet="<Table V - Item 1 - Value column>"
 $vnetSpace="<Table V - Item 4 - Value column>"
 New-ADReplicationSite -Name $vnet 
@@ -236,7 +231,7 @@ Utilizzare il client desktop remoto di propria scelta e creare una connessione D
   
 Successivamente, aggiungerlo al dominio AD DS appropriato con questi comandi nel prompt di Windows PowerShell.
   
-```
+```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
 $cred=Get-Credential -Message "Type the name and password of a domain acccount."
 Add-Computer -DomainName $domName -Credential $cred

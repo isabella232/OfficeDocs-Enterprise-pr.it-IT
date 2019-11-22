@@ -3,7 +3,7 @@ title: Connettere una rete locale a una rete virtuale di Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,17 +17,15 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Riepilogo: informazioni su come configurare una rete virtuale di Azure cross-premise per i carichi di lavoro del server di Office con una connessione VPN da sito a sito.'
-ms.openlocfilehash: 634016a2102ef602e9963dadc7ddff36b7381661
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3506b1b4c6a88567bf216957f5e083c9e99156ba
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068082"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793338"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Connettere una rete locale a una rete virtuale di Microsoft Azure
 
- **Riepilogo:** informazioni su come configurare una rete virtuale di Azure cross-premise per i carichi di lavoro del server di Office.
-  
 Una rete virtuale di Azure cross-premise è connessa alla rete locale, ampliando quest'ultima affinché includa subnet e macchine virtuali ospitate nei servizi dell'infrastruttura di Azure. Questa connessione consente ai computer su rete locale di accedere direttamente alle macchine virtuali in Azure e viceversa. 
 
 Ad esempio, un server di sincronizzazione della directory in esecuzione su una macchina virtuale Azure deve eseguire una query sui controller di dominio locali per le modifiche agli account e sincronizzare tali modifiche con la sottoscrizione di Office 365. Questo articolo illustra come configurare una rete virtuale Azure cross-premise utilizzando una connessione VPN (Virtual Private Network) da sito a sito pronta per ospitare macchine virtuali in Azure.
@@ -211,46 +209,43 @@ Di seguito è riportata la configurazione risultante.
 
 Per prima cosa, aprire un prompt di Azure PowerShell. Se Azure PowerShell non è installato, vedere [Panoramica di Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
 
-> [!TIP]
-> Per ottenere un file di testo con tutti i comandi di PowerShell citati in questo articolo, fare clic [qui](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
-  
+ 
 Successivamente, accedere al proprio account di Azure con questo comando.
   
-```
+```powershell
 Connect-AzAccount
 ```
 
 Ottenere il nome della sottoscrizione utilizzando il comando seguente.
   
-```
+```powershell
 Get-AzSubscription | Sort SubscriptionName | Select SubscriptionName
 ```
 
 Impostare la sottoscrizione di Azure con questi comandi. Sostituire tutto il testo racchiuso tra virgolette, compresi i caratteri < e >, con il nome della sottoscrizione corretto.
   
-```
+```powershell
 $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 In seguito, creare un nuovo gruppo di risorse per la rete virtuale. Per determinare un nome del gruppo di risorse univoco, utilizzare questo comando per creare un elenco dei gruppi di risorse esistenti.
   
-```
+```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 Creare il nuovo gruppo di risorse con questi comandi.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName="<Table V - Item 2 - Value column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-
 ```
 
 Successivamente, creare la rete virtuale di Azure.
   
-```
+```powershell
 # Fill in the variables from previous values and from Tables V, S, and D
 $rgName="<name of your new resource group>"
 $locName="<Azure location of your new resource group>"
@@ -280,7 +275,7 @@ Di seguito è riportata la configurazione risultante.
   
 Successivamente, utilizzare questi comandi per creare i gateway per la connessione VPN da sito a sito.
   
-```
+```powershell
 # Fill in the variables from previous values and from Tables V and L
 $vnetName="<Table V - Item 1 - Value column>"
 $localGatewayIP="<Table V - Item 3 - Value column>"
