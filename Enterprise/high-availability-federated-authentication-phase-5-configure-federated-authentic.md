@@ -3,7 +3,7 @@ title: Fase 5 dell'autenticazione federata a disponibilità elevata Configurare 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "Riepilogo: Configurare Azure AD Connect per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: a4c8a76a322824bfdb4df88600881d76cb3e378c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dcd66ee6a650081e4ad27f9023fe98082a7ccd43
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067322"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254555"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Fase 5 dell'autenticazione federata a disponibilità elevata: Configurare l'autenticazione federata per Office 365
 
- **Riepilogo:** Configurare Azure AD Connect per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure.
- 
 In questa fase finale della distribuzione dell'autenticazione federata a disponibilità elevata per Office 365 nei servizi di infrastruttura di Azure, si ottiene e si installa un certificato emesso da un'autorità di certificazione pubblica, si verifica la configurazione e quindi si installa ed esegue Azure AD Connettersi al server di sincronizzazione della directory. Azure AD Connect configura l'abbonamento a Office 365 e Active Directory Federation Services (AD FS) e i server proxy dell'applicazione Web per l'autenticazione federata.
   
 Vedere [Distribuire l'autenticazione federata ad alta visibilità per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) per tutte le fasi.
@@ -87,7 +85,7 @@ Lo strumento Azure AD Connect configura i server AD FS, i server proxy dell’ap
     
 8. Nella pagina **Connessione ad Azure AD**, digitare nome e password di un account amministratore globale per l'abbonamento a Office 365, quindi fare clic su **Avanti**.
     
-9. Nella pagina **Connetti le directory** , verificare che la foresta di servizi di dominio Active Directory (ad DS) locale sia selezionata nella **foresta**, digitare il nome e la password di un account amministratore di dominio, fare clic su **Aggiungi directory**e quindi fare clic su **Avanti**.
+9. Nella pagina **Connect your Directories** verificare che la foresta di servizi di dominio Active Directory (ad DS) locale sia selezionata nella **foresta**, digitare il nome e la password di un account amministratore di dominio, fare clic su **Aggiungi directory**e quindi fare clic su **Avanti**.
     
 10. Nella pagina **Configurazione dell'accesso ad Azure AD**, fare clic su **Avanti**.
     

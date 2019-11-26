@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Descrive le cause comuni dei problemi di sincronizzazione della directory in Office 365 e fornisce alcuni metodi per individuarli e risolverli.
-ms.openlocfilehash: 3a1cf63122be84dc3e1c60e84a9a3a488f81bc0f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: cc0fe15d0d49542489ac1e586efbe99d0846b3ab
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067672"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254525"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Risoluzione dei problemi di sincronizzazione della directory per Office 365
 
@@ -30,17 +30,13 @@ Con la sincronizzazione della directory, puoi continuare a gestire gli utenti e 
   
 ## <a name="how-do-i-know-if-something-is-wrong"></a>Come si fa a sapere se si è verificato un problema?
 
-La prima segnalazione di un problema viene visualizzata nel riquadro Stato DirSync dell'interfaccia di amministrazione di Microsoft 365:
-  
-![Riquadro Stato DirSync nell'anteprima dell'interfaccia di amministrazione](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+La prima indicazione che qualcosa è errato è quando il riquadro di stato DirSync nell'interfaccia di amministrazione di Microsoft 365 indica che si è verificato un problema.
   
 Office 365 invia anche un messaggio di posta elettronica, all'indirizzo di posta elettronica alternativo e a quello di amministrazione, per segnalare che nel tenant si sono verificati errori di sincronizzazione della directory. Per informazioni dettagliate, vedere [Identificare gli errori di sincronizzazione della directory in Office 365](identify-directory-synchronization-errors.md).
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Come si ottiene lo strumento Azure Active Directory Connect?
 
-Nell'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), passare a ** Utenti ** \> **Utenti attivi**. Fare clic sul menu **Altro** e scegliere **Sincronizzazione della directory**. 
-  
-![Nel menu Altro scegliere Sincronizzazione della directory](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), passare **a** \> utenti **attivi**. Fare clic sul menu **altro** (tre punti) e selezionare **sincronizzazione directory**. 
   
 Seguire le [istruzioni della procedura guidata](set-up-directory-synchronization.md) per scaricare Azure AD Connect. 
   
@@ -93,6 +89,6 @@ Per eseguire l'aggiornamento da Azure Active Directory Sync ad Azure AD Connect,
     
 ## <a name="diagnostic-tools"></a>Strumenti di diagnostica
 
-Lo [strumento IDFix](prepare-directory-attributes-for-synch-with-idfix.md) viene usato per l'individuazione e la correzione di oggetti identità e dei relativi attributi in un ambiente Active Directory locale per la preparazione della migrazione a Office 365. IDFix è destinato agli amministratori di Active Directory responsabili dell'esecuzione di DirSync con il servizio di Office 365. 
+Lo [strumento IDFix](prepare-directory-attributes-for-synch-with-idfix.md) viene usato per l'individuazione e la correzione di oggetti identità e dei relativi attributi in un ambiente Active Directory locale per la preparazione della migrazione a Office 365. IDFix è destinato agli amministratori di Active Directory responsabili della sincronizzazione della directory con il servizio Office 365. 
 
 [Scaricare lo strumento IDFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) dall'Area download Microsoft.

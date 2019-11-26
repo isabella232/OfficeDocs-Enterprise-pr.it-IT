@@ -3,7 +3,7 @@ title: Fase 2 dell'autenticazione federata a disponibilità elevata configurare 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,24 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: "Riepilogo: Configurare i controller di dominio e il server DirSync per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: 3e5ede99c114b59f6aafbf37c3aa11e3ebd62cca
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+description: "Riepilogo: configurare i controller di dominio e il server di sincronizzazione della directory per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
+ms.openlocfilehash: 853f7c55039fb4dcd09ae9d0d748a4e559d5564a
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793348"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257505"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 dell'autenticazione federata a disponibilità elevata: configurare i controller di dominio
 
- **Riepilogo:** Configurare i controller di dominio e il server DirSync per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure.
-  
-In questa fase di distribuzione di disponibilità elevata per l'autenticazione federata di Office 365 nei servizi dell'infrastruttura di Azure, si configurano due controller di dominio e il server DirSync nella rete virtuale Azure. Le richieste Web client per l'autenticazione possono quindi essere autenticate nella rete virtuale di Azure, anziché inviare tale traffico di autenticazione tramite la connessione VPN da sito a sito alla rete locale.
+In questa fase di distribuzione della disponibilità elevata per l'autenticazione federata di Office 365 nei servizi di infrastruttura di Azure, è possibile configurare due controller di dominio e il server di sincronizzazione della directory nella rete virtuale di Azure. Le richieste Web client per l'autenticazione possono quindi essere autenticate nella rete virtuale di Azure, anziché inviare tale traffico di autenticazione tramite la connessione VPN da sito a sito alla rete locale.
   
 > [!NOTE]
 > Active Directory Federation Services (AD FS) non è in grado di utilizzare i servizi di dominio di Azure Active Directory come sostituto dei controller di dominio di servizi di dominio Active Directory. 
   
-È necessario completare questa fase prima di passare a [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Vedere [Distribuire l'autenticazione federata ad alta visibilità per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) per tutte le fasi.
+È necessario completare questa fase prima di passare alla [fase 3: configurare i server ad FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Vedere [Distribuire l'autenticazione federata ad alta visibilità per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) per tutte le fasi.
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Creare le macchine virtuali dei controller di dominio in Azure
 
@@ -38,7 +36,7 @@ Per prima cosa, è necessario compilare la colonna **Nome macchina virtuale** de
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)______________ (primo controller di dominio, ad esempio DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)______________ (secondo controller di dominio, ad esempio DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)(Server DirSync, esempio DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)(server di sincronizzazione della directory, esempio DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |4.  <br/> |![](./media/Common-Images/TableLine.png)(primo server AD FS, esempio ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |5.  <br/> |![](./media/Common-Images/TableLine.png)(secondo server AD FS, ad esempio ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |6.  <br/> |![](./media/Common-Images/TableLine.png)(primo server proxy di applicazione Web, esempio WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
@@ -62,13 +60,16 @@ Il seguente blocco di comandi di Azure PowerShell consente di creare le macchine
     
 - Tabella A, per i set di disponibilità
     
-Tenere presente che le tabelle R, V, S, I e A sono definite in [fase 1 di autenticazione federata a disponibilità elevata: configurare Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Ricordare che sono state definite le tabelle R, V, S, I e A nella [fase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione a PowerShell di Azure](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
   
 Una volta forniti tutti i valori corretti, eseguire il blocco risultante nel prompt di Azure PowerShell oppure in PowerShell Integrated Script Environment (ISE) nel computer locale.
   
+> [!TIP]
+> Per generare blocchi di comandi di PowerShell pronti per l'esecuzione in base alle impostazioni personalizzate, utilizzare questa [cartella di lavoro di configurazione di Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+
 ```powershell
 # Set up variables common to both virtual machines
 $locName="<your Azure location>"
@@ -123,7 +124,7 @@ $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer Win
 $vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
-# Create the DirSync server
+# Create the directory synchronization server
 $vmName="<Table M - Item 3 - Virtual machine name column>"
 $vmSize="<Table M - Item 3 - Minimum size column>"
 $staticIP="<Table I - Item 3 - Value column>"
@@ -132,7 +133,7 @@ $diskStorageType="<Table M - Item 3 - Storage type column>"
 $nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize
 
-$cred=Get-Credential -Message "Type the name and password of the local administrator account for the DirSync server." 
+$cred=Get-Credential -Message "Type the name and password of the local administrator account for the directory synchronization server." 
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
@@ -225,9 +226,9 @@ New-ADReplicationSite -Name $vnet
 New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 ```
 
-## <a name="configure-the-dirsync-server"></a>Configurare il server DirSync
+## <a name="configure-the-directory-synchronization-server"></a>Configurare il server di sincronizzazione della directory
 
-Utilizzare il client desktop remoto di propria scelta e creare una connessione Desktop remoto alla macchina virtuale del server DirSync. Usare il nome DNS Intranet o il nome computer e le credenziali dell'account di amministratore locale.
+Utilizzare il client desktop remoto di propria scelta e creare una connessione Desktop remoto alla macchina virtuale del server di sincronizzazione della directory. Usare il nome DNS Intranet o il nome computer e le credenziali dell'account di amministratore locale.
   
 Successivamente, aggiungerlo al dominio AD DS appropriato con questi comandi nel prompt di Windows PowerShell.
   
@@ -240,13 +241,13 @@ Restart-Computer
 
 Di seguito è riportata la configurazione risultante dal completamento corretto di questa fase, con i nomi computer segnaposto.
   
-**Fase 2: i controller di dominio e il server DirSync per l'infrastruttura dell'autenticazione federata a disponibilità elevata in Azure**
+**Fase 2: i controller di dominio e il server di sincronizzazione della directory per l'infrastruttura di autenticazione federata a disponibilità elevata in Azure**
 
 ![Fase 2 dell'infrastruttura di autenticazione federata di Office 365 a disponibilità elevata in Azure con controller di dominio](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Passaggio successivo
 
-Utilizzare [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) per continuare a configurare il carico di lavoro.
+Utilizzare la [fase 3: configurare i server ad FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) per continuare a configurare il carico di lavoro.
   
 ## <a name="see-also"></a>Vedere anche
 

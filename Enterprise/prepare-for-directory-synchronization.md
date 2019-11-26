@@ -3,7 +3,7 @@ title: Preparare la sincronizzazione della directory a Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 11/25/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come prepararsi a eseguire il provisioning degli utenti a Office 365 utilizzando la sincronizzazione della directory e i vantaggi a lungo termine dell'utilizzo di questo metodo.
-ms.openlocfilehash: 22db70d659d74e6d0f37f54a7743a562f220565d
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: adae292f4dc8ef0402c3bd51391d020af0c28649
+ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702237"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250512"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparare la sincronizzazione della directory a Office 365
 
@@ -110,7 +110,11 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
     
   - Il valore dell'attributo non può iniziare con un punto (.).
   - Il valore dell'attributo deve essere univoco all'interno della directory.
-    
+  
+    > [!NOTE]
+    > Carattere di sottolineatura ("_") nel nome sincronizzato indica che il valore originale di questo attributo contiene caratteri non validi. Il valore originale può contenere lettere, numeri e i caratteri!, #, $,%, &,', \*, +,-,/, =,?, ^, _,', {, |,} e ~. Per ulteriori informazioni su questo attributo, vedere [attributo alias di Exchange](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
+    >
+      
 - **proxyAddresses**
     
   - Attributo con più valori

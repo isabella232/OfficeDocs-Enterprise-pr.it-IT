@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Riepilogo: utilizzare Windows PowerShell per Office 365 per aggiungere un nome di dominio alternativo al tenant di un cliente esistente.'
-ms.openlocfilehash: 60088a9eafa1f5380eef2cc0240b0f5b5b02fe0f
-ms.sourcegitcommit: 68181eca8e43ea7f5dfd89cbaf587bc0c260ca7e
+ms.openlocfilehash: 5f22e21e1eafc7c2d3fb9bc7286e860ad468445b
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853229"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257465"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Aggiungere un dominio a un tenancy client con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
@@ -48,7 +48,7 @@ Sono necessarie anche le informazioni seguenti:
  Probabilmente i propri clienti richiederanno la creazione di domini aggiuntivi da associare ai loro tenancy perché non vogliono che il dominio principale per rappresentare le loro identità aziendali a livello mondiale sia quello predefinito, vale a dire <domain>.onmicrosoft.com sia quello principale che rappresenta le identità aziendali al mondo. La procedura seguente illustra i passaggi per creare un nuovo dominio associato alla tenancy del cliente.
   
 > [!NOTE]
-> Per eseguire alcune di queste operazioni, è necessario che l'account amministratore partner con cui si esegue l'accesso debba essere impostato su **amministrazione completa** per l'impostazione **assegna accesso amministrativo alle società supportate** nell'ambito dei dettagli dell'account di amministratore nell' Interfaccia di amministrazione di Microsoft 365. Per ulteriori informazioni sulla gestione dei ruoli di amministratore del partner, vedere[Partner: offrire l'amministrazione delegata](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
+> Per eseguire alcune di queste operazioni, è necessario che l'account di amministratore del partner con cui si esegue l'accesso sia impostato su **amministrazione completa** per l'impostazione **assegna accesso amministrativo alle società supportate** in informazioni dettagliate sull'account di amministratore nell'interfaccia di amministrazione di Microsoft 365. Per ulteriori informazioni sulla gestione dei ruoli di amministratore del partner, vedere[Partner: offrire l'amministrazione delegata](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Creare il dominio in Azure Active Directory
 
@@ -57,6 +57,10 @@ Questo comando consente di creare il dominio in Azure Active Directory ma non di
 ```
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
+
+>[!Note]
+>PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet con **MSOL** nel proprio nome. Per continuare a utilizzare questi cmdlet, è necessario eseguirli da Windows PowerShell.
+>
 
 ### <a name="get-the-data-for-the-dns-txt-verification-record"></a>Recuperare i dati per il record di verifica TXT DNS
 
