@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Riepilogo: comprendere le relazioni delle organizzazioni, le sottoscrizioni, le licenze, gli account utente e i tenant tra le offerte cloud di Microsoft.'
-ms.openlocfilehash: c6c6aa02701d47c5818f66d2f0e499e7a85cb902
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: 3e10ed7752fc4763aef77c7cb683532cf0d5c2ce
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616149"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254585"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Sottoscrizioni, licenze, account e tenant per offerte cloud di Microsoft
 
@@ -77,7 +77,7 @@ Alcune immagini della macchina virtuale dispongono di versioni di prova delle ap
   
 ### <a name="user-accounts"></a>Account utente
 
-Gli account utente per tutte le offerte cloud di Microsoft sono archiviati in un tenant di Azure Active Directory (Azure AD) che include gli account utente e i gruppi. Un tenant di Azure AD può essere sincronizzato con gli account Active Directory Domain Services (AD DS) esistenti tramite Azure AD Connect, un servizio basato su server di Windows. Si tratta della cosiddetta sincronizzazione della directory (DirSync).
+Gli account utente per tutte le offerte cloud di Microsoft sono archiviati in un tenant di Azure Active Directory (Azure AD) che include gli account utente e i gruppi. Un tenant di Azure AD può essere sincronizzato con gli account Active Directory Domain Services (AD DS) esistenti tramite Azure AD Connect, un servizio basato su server di Windows. Si tratta della cosiddetta sincronizzazione della directory.
   
 Nella figura 3 viene mostrato un esempio di più sottoscrizioni di un'organizzazione che usa un tenant Azure AD comune, il quale include gli account dell'organizzazione.
   

@@ -158,11 +158,11 @@
 #### [Connettere una rete locale a una rete virtuale di Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Distribuire un server di sincronizzazione directory in Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 #### [Distribuire l'autenticazione federata a disponibilità elevata per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
-##### [Fase 1 dell'autenticazione federata a disponibilità elevata: configurare Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
-##### [Fase 2 dell'autenticazione federata a disponibilità elevata: configurare i controller di dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
-##### [Fase 3 dell'autenticazione federata a disponibilità elevata: configurare i server AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
-##### [Fase 4 dell'autenticazione federata a disponibilità elevata: configurare i proxy applicazione Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
-##### [Fase 5 dell'autenticazione federata a disponibilità elevata: configurare l'autenticazione federata per Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+##### [Fase 1: configurare Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
+##### [Fase 2: configurare i controller di dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
+##### [Fase 3: configurare i server AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
+##### [Fase 4: configurare i proxy applicazione Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
+##### [Fase 5: configurare l'autenticazione federata](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # Gestire Office 365
 
