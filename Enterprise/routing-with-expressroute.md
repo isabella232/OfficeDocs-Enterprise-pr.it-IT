@@ -3,7 +3,7 @@ title: Routing con ExpressRoute per Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/14/2017
+ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Per comprendere adeguatamente il traffico di routing a Office 365 utilizzando Azure ExpressRoute, è necessario disporre di una solida conoscenza dei requisiti di routing di ExpressRoute di base e dei circuiti di ExpressRoute e i domini di routing. Questi sono i principi fondamentali per l'utilizzo di ExpressRoute su cui si basano i clienti di Office 365.
-ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031581"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813896"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routing con ExpressRoute per Office 365
+
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
 Per comprendere adeguatamente il traffico di routing a Office 365 utilizzando Azure ExpressRoute, è necessario disporre di una solida conoscenza dei [requisiti di routing di ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-routing/) di base e dei circuiti di [ExpressRoute e i domini di routing](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). Questi sono i principi fondamentali per l'utilizzo di ExpressRoute su cui si basano i clienti di Office 365.
   
@@ -73,15 +75,14 @@ Per instradare nuovamente la rete per questi flussi di traffico bi-direzionale, 
 
 2) Utilizzare pool IP NAT distinti per ogni circuito di ExpressRoute e separato da quello dei circuiti Internet.
 
-3) Tenere presente che qualsiasi route pubblicizzata a Microsoft attirerà il traffico di rete da qualsiasi server della rete Microsoft, non solo quelli per cui le route vengono pubblicizzate nella rete su ExpressRoute. Pubblicizzare solo le route verso i server in cui gli scenari di routing sono definiti e ben compresi dal team. Pubblicizzare i prefissi degli indirizzi IP separati in ognuno dei circuiti di ExpressRoute multipli dalla rete. 
+3) Tenere presente che qualsiasi route pubblicizzata a Microsoft attirerà il traffico di rete da qualsiasi server della rete Microsoft, non solo quelli per cui le route vengono pubblicizzate nella rete su ExpressRoute. Pubblicizzare solo le route verso i server in cui gli scenari di routing sono definiti e ben compresi dal team. Pubblicizzare i prefissi degli indirizzi IP separati in ognuno dei circuiti di ExpressRoute multipli dalla rete.
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>Decidere le applicazioni e le funzionalità Route over ExpressRoute
 
 Quando si configura una relazione di peering utilizzando il dominio di routing peering di Microsoft e sono approvati per l'accesso appropriato, è possibile visualizzare tutti i servizi PaaS e SaaS disponibili su ExpressRoute. I servizi di Office 365 creati per ExpressRoute possono essere gestiti con le [community BGP](https://aka.ms/bgpexpressroute365) o con i [filtri di route](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal).
   
 Altre applicazioni, ad esempio Office 365 video, sono un'applicazione di Office 365. Tuttavia, Office 365 video è costituito da tre diversi componenti, il portale, il servizio di flusso e la rete di distribuzione del contenuto. Il portale vive all'interno di SharePoint Online, il servizio di flusso vive all'interno di Azure Media Services e la rete di distribuzione del contenuto vive all'interno della CDN di Azure. Nella tabella seguente vengono descritti i componenti.
-  
-| |
+
 |**Componente**|**Applicazione sottostante**|**Incluso nella community di SharePoint Online BGP?**|**Utilizzo**|
 |:-----|:-----|:-----|:-----|
 |Portale video di Office 365  <br/> |SharePoint Online  <br/> |Sì  <br/> |Configurazione, caricamento  <br/> |
@@ -111,7 +112,7 @@ In questa tabella vengono visualizzati i domini jolly che vengono pubblicizzati 
 
 |**Dominio con caratteri jolly pubblicizzato solo sui circuiti Internet**|**FQDN secondario pubblicizzato in ExpressRoute e circuiti Internet**|
 |:-----|:-----|
-|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
 |\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> individuazione automatica-\<tenant\>. Outlook.com  <br/> |

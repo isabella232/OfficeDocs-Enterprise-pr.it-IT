@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come ottimizzare le immagini nelle pagine moderne di siti di SharePoint Online.
-ms.openlocfilehash: df6fab6fdd02bf6668a86c8d7a3941ece10cc3d1
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 68e2f79e1f768cfc93feb4f26f8b2fbeca5d6b83
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078015"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814224"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Ottimizzare le immagini nelle pagine moderne di siti di SharePoint Online
 
@@ -65,7 +65,7 @@ Prima di revisionare le pagine per correggere i problemi di prestazioni, prender
 
 [Ottimizzare le prestazioni di Office 365](tune-office-365-performance.md)
 
-[Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [Reti per la distribuzione di contenuti](content-delivery-networks.md)
 

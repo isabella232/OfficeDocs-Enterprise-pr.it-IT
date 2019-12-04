@@ -16,14 +16,17 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Vengono fornite istruzioni sull'utilizzo di IdFix per preparare e pulire la directory locale prima della sincronizzazione a Office 365.
-ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 623dc38290b44dd69644b24f7640b0d49bcd7722
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490789"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814614"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Preparare gli attributi della directory per la sincronizzazione con Office 365 usando lo strumento IdFix
+
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+
 Questo argomento contiene istruzioni dettagliate sull'esecuzione dello strumento IdFix, alcuni errori comuni che è possibile riscontrare, correzioni consigliate, esempi e procedure consigliate per le operazioni da eseguire se si dispone di un numero elevato di errori.
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>Correzione degli errori nella directory utilizzando l'interfaccia grafica di IdFix
@@ -51,7 +54,7 @@ Nella seguente tabella vengono descritti gli errori rilevati da IdFix, vengono f
 |:-----|:-----|:-----|:-----|
 |**carattere** | Caratteri non validi. Il valore contiene un carattere non valido. | La risoluzione suggerita per l'errore visualizzato nella colonna **UPDATE** mostra il valore con il carattere non valido rimosso.  <br/> | Uno spazio finale alla fine di un indirizzo di posta elettronica valido è un carattere illegale, ad esempio:  <br/> " `user@contoso.com` "  <br/> Uno spazio iniziale all'inizio di un indirizzo di posta elettronica valido è un carattere illegale, ad esempio:  <br/> " ` user@contoso.com `"  <br/>  Il `ú` carattere è un carattere non valido. |
 |**duplicato** | Voce duplicata. Il valore ha un duplicato all'interno dell'ambito della query. Tutti i valori duplicati verranno visualizzati come errori. | Modificare o rimuovere i valori per eliminare i duplicati. Lo strumento non fornirà una correzione suggerita di duplicati. Al contrario, è necessario scegliere quale dei due o più duplicati è corretto ed eliminare la voce o le voci duplicate. ||
-|**formato** | Errore di formattazione. Il valore viola i requisiti di formato per l'utilizzo dell'attributo. | L'aggiornamento suggerito mostrerà il valore con caratteri non validi rimossi. Se non sono presenti caratteri non validi, Update e Value saranno uguali. Devi decidere quello che ti interessa veramente dell'aggiornamento. Lo strumento non fornirà una correzione suggerita per tutti gli errori di formattazione. | Ad esempio, gli indirizzi SMTP devono soddisfare lo standard RFC 2822 e mailNickName non può iniziare o terminare con un punto. Per ulteriori informazioni sui requisiti di formato per gli attributi delle directory, vedere la sezione relativa alla preparazione degli oggetti directory e dell'attributo in preparare il provisioning [degli utenti tramite la sincronizzazione della directory con Office 365](prepare-for-directory-synchronization.md) |
+|**formato** | Errore di formattazione. Il valore viola i requisiti di formato per l'utilizzo dell'attributo. | L'aggiornamento suggerito mostrerà il valore con caratteri non validi rimossi. Se non sono presenti caratteri non validi, Update e Value saranno uguali. Devi decidere quello che ti interessa veramente dell'aggiornamento. Lo strumento non fornirà una correzione suggerita per tutti gli errori di formattazione. | Ad esempio, gli indirizzi SMTP devono soddisfare lo standard RFC 2822 e mailNickName non può iniziare o terminare con un punto. Per ulteriori informazioni sui requisiti di formato per gli attributi delle directory, vedere la sezione relativa alla preparazione degli oggetti directory e dell'attributo in [preparare il provisioning degli utenti tramite la sincronizzazione della directory con Office 365](prepare-for-directory-synchronization.md) |
 |TopLevelDomain  <br/> |Dominio di livello superiore. Questo si applica ai valori soggetti alla formattazione [RFC 2822](https://go.microsoft.com/fwlink/p/?LinkId=401464) . Se il dominio di livello superiore non è instradabile su Internet, l'evento viene identificato come errore. Ad esempio, un indirizzo SMTP che termina in .local non è instradabile su Internet e causa l'errore. |Modificare il valore in un dominio instradabile su Internet `.com` , `.net`ad esempio o. | Passare `myaddress@fourthcoffee.local` a `fourthcoffee.com` un altro dominio instradabile su Internet.  <br/> Per istruzioni, vedere [come preparare un dominio non instradabile (ad esempio, dominio locale) per la sincronizzazione della directory](prepare-a-non-routable-domain-for-directory-synchronization.md). |
 |**partedominio** | Errore di parte del dominio. Questo vale per valori soggetti a formattazione RFC 2822. Se la parte di dominio del valore non è valida e non soddisfa la formattazione RFC 2822, viene generata. | Modificare il valore su uno che soddisfa la formattazione RFC 2822. Ad esempio, assicurarsi che non contenga spazi o caratteri non validi. | Passare `myaddress@fourth coffee.com` a `myaddress@fourthcoffee.com`. |
 |**domainpart_localpart** | Errore della parte locale. Questo vale per valori soggetti a formattazione RFC 2822. Se la parte locale del valore non è valida e non soddisfa la formattazione RFC 2822, viene generata. |Modificare il valore su uno che soddisfa la formattazione RFC 2822. Ad esempio, assicurarsi che non contenga spazi o caratteri non validi. |Passare `my"work"address@fourthcoffee.com` a `myworkaddress@fourthcoffee.com`. |
@@ -72,10 +75,10 @@ Per correggere un errore, è possibile selezionare un'opzione dall'elenco a disc
 
 Dopo aver scelto il valore **ACTION** per un errore o un batch di errori, fare clic su **Applica**. Quando fa clic su **Applica**, lo strumento apporta le modifiche nella directory. È possibile fornire delle correzioni per più errori prima di fare clic su **Applica** e IdFix le modificherà tutte contemporaneamente.
 
-Eseguire di nuovo IdFix per assicurarsi che le correzioni apportate non introducano nuovi errori. È possibile ripetere la procedura tutte le volte che è necessario. È consigliabile passare un paio di volte al processo prima di eseguire la sincronizzazione.
+Eseguire di nuovo IdFix per assicurarsi che le correzioni apportate non introducano nuovi errori. È possibile ripetere la procedura tutte le volte che è necessario. È consigliabile ripetere il processo più volte prima di eseguire la sincronizzazione.
     
 ## <a name="changing-the-rule-set-used-by-idfix"></a>Modifica del set di regole utilizzato da IdFix
-Per impostazione predefinita, IdFix utilizza il set di regole multi-tenant per controllare le voci nella directory. Si tratta del set di regole appropriato per la maggior parte dei clienti di Office 365 =. Tuttavia, se si è un cliente di Office 365 dedicato o ITAR (International Traffic on Arms Regulations), è possibile configurare IdFix per utilizzare il set di regole dedicato. Se non si è certi del tipo di cliente, è possibile ignorare questo passaggio. Per impostare il set di regole su Dedicated, fare clic sull'icona a forma di ingranaggio nella barra dei menu e fare clic su **Dedicated**.
+Per impostazione predefinita, IdFix utilizza il set di regole multi-tenant per controllare le voci nella directory. Si tratta del set di regole appropriato per la maggior parte dei clienti di Office 365 =. Tuttavia, se si è un cliente di Office 365 dedicato o ITAR (International Traffic on Arms Regulations), è possibile configurare IdFix per utilizzare il set di regole dedicato. Se non si sa a quale tipologia di cliente si appartiene, è possibile saltare questo passaggio. Per impostare il set di regole su Dedicated, fare clic sull'icona a forma di ingranaggio nella barra dei menu e fare clic su **Dedicated**.
   
 ## <a name="changing-the-scope-of-the-search-used-by-idfix"></a>Modifica dell'ambito della ricerca utilizzata da IdFix
 Per impostazione predefinita, IdFix ricerca l'intera directory. Se si desidera, è possibile configurare lo strumento per la ricerca di una sottostruttura specifica. A tale scopo, nella barra dei menu, fare clic sull'icona Filter e immettere una sottostruttura valida.

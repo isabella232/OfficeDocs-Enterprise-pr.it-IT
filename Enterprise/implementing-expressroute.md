@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute per Office 365 fornisce un percorso di routing alternativo a numerosi servizi Internet di Office 365. L'architettura di ExpressRoute per Office 365 si basa sulla pubblicità di prefissi IP pubblici dei servizi di Office 365 già accessibili tramite Internet nei circuiti ExpressRoute di provisioning per la successiva ridistribuzione di tali prefissi IP in rete. Con ExpressRoute è possibile abilitare efficacemente diversi percorsi di routing, tramite Internet e tramite ExpressRoute, per molti servizi di Office 365. Questo stato del routing sulla rete può rappresentare una modifica significativa del modo in cui è stata progettata la topologia di rete interna.
-ms.openlocfilehash: 3e3171c3058b485ef644af3f1d33a9f80c71345c
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722725"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813484"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementazione di ExpressRoute per Office 365
+
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
 ExpressRoute per Office 365 fornisce un percorso di routing alternativo a numerosi servizi Internet di Office 365. L'architettura di ExpressRoute per Office 365 si basa sulla pubblicità di prefissi IP pubblici dei servizi di Office 365 già accessibili tramite Internet nei circuiti ExpressRoute di provisioning per la successiva ridistribuzione di tali prefissi IP in rete. Con ExpressRoute è possibile abilitare efficacemente diversi percorsi di routing, tramite Internet e tramite ExpressRoute, per molti servizi di Office 365. Questo stato del routing sulla rete può rappresentare una modifica significativa del modo in cui è stata progettata la topologia di rete interna.
   
@@ -39,7 +41,7 @@ Prima di avviare questa guida all'implementazione, è prevedibile che i prerequi
   
 1. È stata completata una valutazione della rete per determinare se ExpressRoute è consigliato e approvato.
 
-2. È stato selezionato un provider di servizi di rete di ExpressRoute. Sono disponibili informazioni dettagliate sui [partner di ExpressRoute e sulle posizioni](https://azure.microsoft.com/documentation/articles/expressroute-locations/)di peering.
+2. È stato selezionato un provider di servizi di rete di ExpressRoute. Sono disponibili informazioni dettagliate sui [partner di ExpressRoute e sulle posizioni di peering](https://azure.microsoft.com/documentation/articles/expressroute-locations/).
 
 3. Sono già state lette e interpretate la [documentazione di ExpressRoute](https://azure.microsoft.com/documentation/services/expressroute/) e la rete interna è in grado di rispettare i prerequisiti ExpressRoute end to end.
 
@@ -89,7 +91,7 @@ Il catalogo del traffico di rete deve contenere liste di tutte le connessioni di
 
 - I flussi del traffico di rete in ingresso sono scenari in cui una connessione viene avviata dal cloud Microsoft a un host locale. In genere, queste connessioni devono passare attraverso il firewall e altre infrastrutture di sicurezza richieste dai criteri di sicurezza dei clienti per i flussi originati esternamente.
 
-Leggere la sezione **garantire la simmetria del percorso** dell'articolo [routing con ExpressRoute per Office 365](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) per determinare quali servizi invieranno il traffico in ingresso e cercare la colonna contrassegnata **come ExpressRoute per Office 365** in [Office 365 ](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)articolo di riferimento per gli endpoint per determinare le altre informazioni di connettività.
+Leggere la **sezione garantire la simmetria del percorso** dell'articolo [routing con ExpressRoute per Office 365](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) per determinare quali servizi invieranno il traffico in ingresso e cercare la colonna contrassegnata **come ExpressRoute per Office 365** nell'articolo di riferimento per gli [endpoint di Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) per determinare le altre informazioni di connettività.
   
 Per ogni servizio che richiede una connessione in uscita, è consigliabile descrivere la connettività pianificata per il servizio, tra cui il routing di rete, la configurazione del proxy, l'ispezione dei pacchetti e le esigenze di larghezza di banda.
   
@@ -186,7 +188,7 @@ Spesso, sono disponibili più posizioni Meet-me che possono essere selezionate a
 |**Planned ExpressRoute Meet-me Locations in California e New York**||
 |:-----|:-----|
 |Posizione  <br/> |Numero di persone  <br/> |Latenza prevista per la rete Microsoft tramite l'uscita Internet  <br/> |Latenza prevista per Microsoft Network over ExpressRoute  <br/> |
-|Roma  <br/> |10,000  <br/> |~ 15ms  <br/> |~ 10ms (tramite Silicon Valley)  <br/> |
+|Roma  <br/> |10.000  <br/> |~ 15ms  <br/> |~ 10ms (tramite Silicon Valley)  <br/> |
 |Washington D.C.  <br/> |15.000  <br/> |~ 20ms  <br/> |~ 10ms (via New York)  <br/> |
 |Dallas  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms (via New York)  <br/> |
 

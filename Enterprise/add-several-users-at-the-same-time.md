@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Informazioni su come aggiungere più utenti a Office 365 for business da un elenco in un foglio di calcolo o in un altro file in formato CSV. Guarda un video su YouTube che spiega come aggiungere account a Office 365. Alla fine di questo processo, ogni utente con un account avrà una cassetta postale di Office 365. '
-ms.openlocfilehash: 864bdf788b0beefce49a53382795d522114aad5d
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 16cea3b09da7d6450efd09bad0937bfcef9f70ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702217"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813494"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Aggiungere più utenti a Office 365 contemporaneamente - Guida per l'amministratore
 
@@ -142,3 +142,10 @@ Quando si salva il file, è probabile che venga visualizzato un messaggio indica
     
 - **Se i nuovi utenti di Office 365 non sono visibili subito, attendere qualche minuto.** La modifica di tutti i servizi di Office 365 può richiedere un po' di tempo. 
     
+## <a name="related-articles"></a>Articoli correlati
+
+[Aggiungere gli utenti singolarmente o in blocco a Office 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+
+
+
+

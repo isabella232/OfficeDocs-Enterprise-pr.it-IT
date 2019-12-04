@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute per Office 365 offre un percorso di routing alternativo per raggiungere numerosi servizi di Office 365 senza che sia necessario che tutto il traffico venga in uscita su Internet. Anche se la connessione Internet a Office 365 è ancora necessaria, le route specifiche che Microsoft annuncia tramite BGP alla rete rendono il circuito ExpressRoute diretto preferito, a meno che non siano presenti altre configurazioni della rete. Le tre aree comuni che possono essere configurate per gestire questo percorso includono il filtro, la sicurezza e la conformità del prefisso.
-ms.openlocfilehash: 163b94bed1bf27b30a3ac8d3079d6fe70d7a1af0
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 589d8e60d2826170b7eddb84406d1d3d0effbb43
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027550"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814244"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestione di ExpressRoute per la connettività di Office 365
 
@@ -43,7 +43,6 @@ Esistono diversi motivi per evitare l'utilizzo degli [URL di Office 365 e degli 
 
 - Gli intervalli di indirizzi IP e URL di Office 365 non riguardano altri servizi Microsoft che possono essere nell'ambito delle connessioni di ExpressRoute.
 
-| |
 |**Opzione**|**Complessità**|**Controllo delle modifiche**|
 |:-----|:-----|:-----|
 |Accettare tutte le route Microsoft  <br/> |**Bassa:** Il cliente si affida ai controlli Microsoft per garantire che tutte le rotte siano possedute correttamente.  <br/> |Nessuno  <br/> |

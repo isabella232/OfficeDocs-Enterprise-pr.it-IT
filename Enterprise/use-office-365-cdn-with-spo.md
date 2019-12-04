@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: In questo articolo viene descritto come utilizzare la rete di distribuzione del contenuto (CDN) di Office 365 per velocizzare il recapito delle risorse di SharePoint Online a tutti gli utenti, indipendentemente dal luogo in cui si trovano o dal modo in cui accedono al contenuto.
-ms.openlocfilehash: eedbbbf143890e336ae16f80a135f611b9e65f26
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: bb60e129f988041a7d763c1558a9ee3c86f75226
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077955"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813514"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online
 
@@ -446,7 +446,7 @@ Per ulteriori informazioni su questo cmdlet, vedere [set-SPOTenantCdnEnabled](ht
 <a name="CDNSetupinCLI"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a>Impostare e configurare la rete CDN di Office 365 tramite la CLI di Office 365
 
-Le procedure descritte in questa sezione richiedono l'installazione di [Office 365 CLI](https://aka.ms/o365cli). Successivamente, connettersi al tenant di SharePoint Online utilizzando il comando [SPO Connect](https://pnp.github.io/office365-cli/cmd/spo/connect/) .
+Le procedure descritte in questa sezione richiedono l'installazione di [Office 365 CLI](https://aka.ms/o365cli). Successivamente, connettersi al tenant di Office 365 utilizzando il comando [login](https://pnp.github.io/office365-cli/cmd/login/) .
 
 Completare questa procedura per impostare e configurare la rete CDN per ospitare le risorse in SharePoint Online utilizzando la CLI di Office 365.
 

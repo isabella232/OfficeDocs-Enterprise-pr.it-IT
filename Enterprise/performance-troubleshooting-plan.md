@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: È necessario conoscere i passaggi da eseguire per identificare e correggere i ritardi, appendere e rallentare le prestazioni tra SharePoint Online, OneDrive for business, Exchange Online o Skype for business online e il computer client? Prima di chiamare il supporto, questo articolo consente di risolvere i problemi relativi alle prestazioni di Office 365 e persino di risolvere alcuni dei problemi più comuni.
-ms.openlocfilehash: e0117cebc80acbd2b29ce319002dbd3dccafb764
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031131"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814624"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Piano di risoluzione dei problemi relativi alle prestazioni per Office 365
 
@@ -250,7 +250,7 @@ La latenza è una misura che può cambiare molto a seconda di molte variabili, a
 
 Esistono calcolatrici della larghezza di banda per Office 365 disponibili in questa pagina di [pianificazione della rete e ottimizzazione delle prestazioni per office 365](network-planning-and-performance.md) .  
 
-È necessario misurare la velocità della connessione o la larghezza di banda della connessione dell'ISP? Provare questo sito (o siti simili): [sito ufficiale di Speedtest](https://www.speedtest.net/)e [Pingtest](https://www.pingtest.net/).
+È necessario misurare la velocità della connessione o la larghezza di banda della connessione dell'ISP? Provare questo sito (o siti simili): [speedtest Official Site](https://www.speedtest.net/)o eseguire una query sul motore di ricerca preferito per il **test della velocità**della frase.
 
 #### <a name="tools"></a>Strumenti
 

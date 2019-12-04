@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come ottimizzare il peso delle pagine moderne del sito in SharePoint Online.
-ms.openlocfilehash: 75bc6227cf77d355dcd6b3a4ce1afa9388b32c58
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 96341402cb6f1ca89e7a1602d77adf70e4a69607
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078005"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814214"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Ottimizzare il peso delle pagine moderne del sito in SharePoint Online
 
@@ -76,7 +76,7 @@ Prima di eseguire le revisioni delle pagine per correggere i problemi di prestaz
 
 [Ottimizzare le prestazioni di Office 365](tune-office-365-performance.md)
 
-[Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [Reti per la distribuzione di contenuti](content-delivery-networks.md)
 

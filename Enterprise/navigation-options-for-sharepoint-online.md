@@ -14,12 +14,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: In questo articolo vengono descritti i siti delle opzioni di spostamento con la pubblicazione di SharePoint abilitata in SharePoint Online. La scelta e la configurazione della struttura di spostamento incidono in modo significativo sulle prestazioni e sulla scalabilità dei siti in SharePoint Online. Questo articolo non è applicabile ai siti del team classici.
-ms.openlocfilehash: d86b0462e8ddb93c39eab0d42a24f3a94f785ecd
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: ce6bde50d35cdddf28fed4ad6c74a9a2da8193af
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078311"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814194"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opzioni di spostamento per SharePoint Online
 
@@ -35,19 +35,19 @@ La seconda opzione, ovvero [**struttura di spostamento strutturale**](#using-str
 
 Oltre ai provider di spostamento fuori campo, molti clienti hanno implementato con successo implementazioni di spostamento personalizzate alternative. Una classe comune di implementazioni di spostamento personalizzate abbraccia modelli di progettazione con rendering client che archiviano una cache locale dei nodi di spostamento. Per ulteriori informazioni, vedere **[script sul fianco client](#using-search-driven-client-side-scripting)** basato sulla ricerca in questo articolo.
 
-Questi provider di spostamento hanno un paio di vantaggi principali: 
-- In genere funzionano bene con i progetti di pagina reattivi.
-- Sono estremamente scalabili e performanti perché è possibile eseguire il rendering senza costi di risorse (e aggiornare in background dopo un timeout). 
-- Tali provider di spostamento possono recuperare i dati di spostamento utilizzando diverse strategie, che vanno dalle configurazioni statiche semplici ai vari provider di dati dinamici. 
+Questi provider di spostamento hanno un paio di vantaggi principali:
 
-Un esempio di provider di dati prevede l'utilizzo di una struttura di **spostamento basata sulla ricerca**, che consente la flessibilità per l'enumerazione dei nodi di spostamento e la gestione efficiente del taglio di sicurezza. 
+- In genere funzionano bene con i progetti di pagina reattivi.
+- Sono estremamente scalabili e performanti perché è possibile eseguire il rendering senza costi di risorse (e aggiornare in background dopo un timeout).
+- Tali provider di spostamento possono recuperare i dati di spostamento utilizzando diverse strategie, che vanno dalle configurazioni statiche semplici ai vari provider di dati dinamici.
+
+Un esempio di provider di dati prevede l'utilizzo di una struttura di **spostamento basata sulla ricerca**, che consente la flessibilità per l'enumerazione dei nodi di spostamento e la gestione efficiente del taglio di sicurezza.
 
 Sono disponibili altre opzioni popolari per la creazione di **provider di spostamento personalizzati**. Leggere le [soluzioni di navigazione per i portali di SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) per ulteriori informazioni sulla creazione di un provider di spostamento personalizzato.
   
 ## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Vantaggi e svantaggi delle opzioni di spostamento di SharePoint Online
 
-Nella tabella seguente sono riepilogati i vantaggi e gli svantaggi di ogni opzione. 
-
+Nella tabella seguente sono riepilogati i vantaggi e gli svantaggi di ogni opzione.
 
 |Esplorazione gestita  |Esplorazione strutturale  |Esplorazione basata sulla ricerca  |Provider di spostamento personalizzato  |
 |---------|---------|---------|---------|
@@ -58,8 +58,7 @@ L'opzione più appropriata per il sito dipende dai requisiti del sito e dalle pr
 
 L'opzione di spostamento gestito può essere mantenuta tramite la configurazione, non comporta file di personalizzazione del codice ed è significativamente più veloce rispetto alla struttura di spostamento strutturale. Se si richiede la riduzione della sicurezza e si ha dimestichezza con una pagina master personalizzata e si dispone di una certa funzionalità nell'organizzazione per gestire le modifiche che possono verificarsi nella pagina master predefinita per SharePoint Online, l'opzione basata sulla ricerca potrebbe produrre una migliore esperienza utente. Se si dispone di requisiti più complessi, è possibile che il provider di spostamento personalizzato sia la scelta giusta. La struttura di spostamento strutturale non è consigliata.
 
-Infine, è importante tenere presente che SharePoint aggiunge ulteriori provider di spostamento e funzionalità per le moderne architetture di siti di SharePoint, sfruttando una gerarchia di siti più appiattita e un modello hub-and-spoke con i siti hub di SharePoint. In questo modo è possibile ottenere numerosi scenari che non richiedono l'utilizzo della caratteristica di pubblicazione di SharePoint e queste configurazioni di spostamento sono ottimizzate per la scalabilità e la latenza all'interno di SharePoint Online. Si noti che l'applicazione dello stesso principio: semplificare la struttura complessiva del sito di pubblicazione di SharePoint in una struttura più piatta, spesso contribuisce anche alle prestazioni generali e alla scalabilità. Ciò significa che, invece di disporre di una singola raccolta siti con centinaia di Site (Web secondari), un approccio migliore consiste nell'avere molte raccolte siti con pochissimi sottositi (Web secondari).
-
+Infine, è importante tenere presente che SharePoint aggiunge ulteriori provider di spostamento e funzionalità per le moderne architetture di siti di SharePoint, sfruttando una gerarchia di siti più appiattita e un modello hub-and-spoke con i siti hub di SharePoint. In questo modo è possibile ottenere numerosi scenari che non richiedono l'utilizzo della caratteristica di pubblicazione di SharePoint e queste configurazioni di spostamento sono ottimizzate per la scalabilità e la latenza all'interno di SharePoint Online. Si noti che l'applicazione dello stesso principio di semplificare la struttura complessiva del sito di pubblicazione di SharePoint a una struttura più piatta spesso contribuisce anche a prestazioni e scalabilità complessive. Ciò significa che, invece di disporre di una singola raccolta siti con centinaia di Site (Web secondari), un approccio migliore consiste nell'avere molte raccolte siti con pochissimi sottositi (Web secondari).
 
 ## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Utilizzo dell'esplorazione e dei metadati gestiti in SharePoint Online
 
@@ -95,7 +94,7 @@ Per illustrare le prestazioni in una soluzione SharePoint Online con esplorazion
   
 ### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>Analisi delle prestazioni dell'esplorazione strutturale in SharePoint Online
 
-Per analizzare le prestazioni di una pagina di SharePoint, utilizzare la scheda **rete** degli strumenti di sviluppo F12 in Internet Explorer. 
+Per analizzare le prestazioni di una pagina di SharePoint, utilizzare la scheda **rete** degli strumenti di sviluppo F12 in Internet Explorer.
   
 ![Schermata che mostra la scheda Rete degli strumenti di sviluppo F12](media/SPONavOptionsNetworks.png)
   
@@ -114,13 +113,13 @@ Questo approccio implica la creazione di una pagina master personalizzata e la s
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Esempio: sostituire il codice di spostamento fuori dalla casella in una pagina master
 
-1.  Andare alla pagina Impostazioni sito.
-2.  Aprire la raccolta di pagine master facendo clic su **Pagine master**.
-3.  Da qui è possibile passare alla raccolta e scaricare il file `seattle.master`.
-4.  Modificare il codice utilizzando un editor di testo ed eliminare il blocco di codice nella schermata seguente.<br/>![Eliminare il blocco di codice visualizzato](media/SPONavOptionsDeleteCodeBlock.png)<br/>
+1. Andare alla pagina Impostazioni sito.
+2. Aprire la raccolta di pagine master facendo clic su **Pagine master**.
+3. Da qui è possibile passare alla raccolta e scaricare il file `seattle.master`.
+4. Modificare il codice utilizzando un editor di testo ed eliminare il blocco di codice nella schermata seguente.<br/>![Eliminare il blocco di codice visualizzato](media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. Rimuovere il codice tra i `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` tag `<\SharePoint:AjaxDelta>` e e sostituirlo con il seguente frammento:<br/>
 
-```
+```javascript
 <div id="loading">
   <!--Replace with path to loading image.-->
   <div style="background-image: url(''); height: 22px; width: 22px; ">
@@ -143,15 +142,15 @@ Questo approccio implica la creazione di una pagina master personalizzata e la s
                         </span>
                     </span>
                 <!-- /ko -->
-                <!-- ko if: children.length == 0-->   
+                <!-- ko if: children.length == 0-->
                     <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
                         <span class="menu-item-text" data-bind="text: item.Title">
                         </span>
                     </span>
-                <!-- /ko -->   
+                <!-- /ko -->
                 </a>
                
-                <!-- ko if: children.length > 0-->                                                       
+                <!-- ko if: children.length > 0-->
                 <ul id="menu"  data-bind="foreach: children;" class="dynamic  level2" >
                     <li class="dynamic level2">
                         <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline  ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
@@ -166,8 +165,8 @@ Questo approccio implica la creazione di una pagina master personalizzata e la s
           <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
            <span class="menu-item-text" data-bind="text: item.Title">
            </span>
-          </span>                 
-          <!-- /ko -->   
+          </span>
+          <!-- /ko -->
                         </a>
           <!-- ko if: children.length > 0-->
          <ul id="menu" data-bind="foreach: children;" class="dynamic level3" >
@@ -191,13 +190,13 @@ Questo approccio implica la creazione di una pagina master personalizzata e la s
 6. Sostituire l'URL nel tag Anchor dell'immagine di caricamento all'inizio, con un collegamento a un'immagine di caricamento nella raccolta siti. Dopo aver apportato le modifiche, rinominare il file, quindi caricarlo nella raccolta di pagine master. Ciò genera un nuovo file con estensione master.<br/>
 7. Questo codice HTML è il codice di base che verrà precompilato dai risultati della ricerca restituiti dal codice JavaScript. Sarà necessario modificare il codice per modificare il valore di var root = "URL della raccolta siti", come illustrato nel seguente frammento:<br/>
 
-```
+```javascript
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
 8. I risultati vengono assegnati alla matrice self. Nodes e una gerarchia è costituita dagli oggetti tramite LINQ. js che assegnano l'output a una matrice self. Hierarchy. Questa matrice è l'oggetto in cui è associato il codice HTML. Questa operazione viene eseguita nella funzione toggleView() passando l'oggetto utente alla funzione ko.applyBinding().<br/>Quindi, in questo modo la matrice di gerarchia va associata al codice HTML seguente:<br/>
 
-```
+```javascript
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
 ```
 
@@ -209,7 +208,7 @@ Nell'esempio di esplorazione complessa, un caricamento di pagina aggiornato senz
 
 Di seguito è riportato l'intero file JavaScript:
 
-```
+```javascript
 //Models and Namespaces
 var SPOCustom = SPOCustom || {};
 SPOCustom.Models = SPOCustom.Models || {}
@@ -393,7 +392,7 @@ function NavigationViewModel() {
         }
     };
 
-    // ByHierarchy method breaks the sorting in chrome and firefix 
+    // ByHierarchy method breaks the sorting in chrome and firefox
     // we need to resort  as ascending
     self.sortObjectsInArray2 = function (a, b) {
         if (a.item.Title() > b.item.Title())
@@ -440,7 +439,7 @@ function addEventsToElements() {
     });
 } _spBodyOnLoadFunctionNames.push("InitCustomNav");
 
-``` 
+```
 
 Per riepilogare il codice sopra riportato nella `jQuery $(document).ready` funzione viene `viewModel object` creata e quindi viene chiamata la `loadNavigationNodes()` funzione su quell'oggetto. Questa funzione carica la gerarchia di spostamento precedentemente creata memorizzata nell'archiviazione locale di HTML5 del browser client o chiama la funzione `queryRemoteInterface()`.
 
@@ -464,7 +463,7 @@ Il [codice sopra](#about-the-javascript-file) riportato presenta le dipendenze s
 
 La versione corrente di LinqJS non contiene il metodo ByHierarchy utilizzato nel codice precedente e interrompe il codice di spostamento. Per risolvere il cosa, aggiungere il metodo seguente al file LINQ. js prima della riga `Flatten: function ()`.
 
-```
+```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
      ascending = ascending == undefined ? true : ascending;
      var orderMethod = ascending == true ? 'OrderBy' : 'OrderByDescending';
@@ -530,4 +529,3 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Panoramica dell'esplorazione gestita in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
-

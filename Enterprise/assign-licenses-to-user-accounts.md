@@ -3,6 +3,7 @@ title: Assegnare le licenze di Office 365 agli account utente
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come assegnare le licenze di Office 365 agli account utente, individualmente o in base all'appartenenza a un gruppo.
-ms.openlocfilehash: bc736236f9371ee1372fd36af4a707aca2ee1408
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 169f5a3c0bf75bf807c40338542e0ba15b79a1bc
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745709"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813384"
 ---
 # <a name="assign-office-365-licenses-to-user-accounts"></a>Assegnare le licenze di Office 365 agli account utente
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
 Per il modello di identità solo cloud, è possibile assegnare le licenze di Office 365 agli account utente quando vengono create, a seconda della modalità di creazione.
 
@@ -55,5 +56,5 @@ Con l'intero set di account utente a cui sono state assegnate le licenze, ora è
 
 - [Implementare la sicurezza](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Distribuire il software client, ad esempio Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
-- [Configurare la gestione dei dispositivi mobili](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Configurare la gestione dei dispositivi mobili in Office 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [Configurare servizi e applicazioni](configure-services-and-applications.md)

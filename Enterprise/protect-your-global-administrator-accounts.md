@@ -3,7 +3,7 @@ title: Proteggere gli account di amministratore globale di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 5/16/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protezione dell'accesso da parte dell'amministratore globale all'abbonamento a Office 365.
-ms.openlocfilehash: a75cab61c5b59ebd1b085829cfa20365f20443c9
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a428f3d70e87744c33c5fb5187dc869f3b2029e1
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031611"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814604"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Office 365
 
- **Riepilogo:** Proteggere la sottoscrizione di Office 365 da attacchi basati sul compromesso di un account di amministratore globale. 
-  
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+
 Le violazioni della sicurezza di un abbonamento a Office 365, incluse le informazioni sulla raccolta e gli attacchi di phishing, vengono in genere eseguite compromettendo le credenziali di un account di amministratore globale di Office 365. La sicurezza nel cloud è una partnership tra l'utente e Microsoft:
   
 - I servizi cloud Microsoft sono basati su una base di attendibilità e sicurezza. Microsoft fornisce controlli e funzionalità di sicurezza che consentono di proteggere i dati e le applicazioni.
@@ -67,7 +67,7 @@ Vi sono relativamente poche attività amministrative, ad esempio l'assegnazione 
     
   - Rimuovere il ruolo di amministratore globale.
     
-  - Assegnare i ruoli di amministratore all'account appropriato per la funzione e la responsabilità del processo dell'utente. Per ulteriori informazioni sui vari ruoli di amministratore in Office 365, vedere [informazioni sui ruoli di amministratore di office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  - Assegnare i ruoli di amministratore all'account appropriato per la funzione e la responsabilità del processo dell'utente. Per ulteriori informazioni sui vari ruoli di amministratore in Office 365, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
     
 8. Disconnettersi da Office 365.
     
@@ -100,13 +100,13 @@ L'autenticazione a più fattori richiede ulteriori informazioni oltre il nome e 
     
 Se si è una società di piccole dimensioni che utilizza gli account utente archiviati solo nel cloud (modello di identità solo cloud), attenersi alla procedura seguente per configurare l'utilizzo di una chiamata telefonica o di un codice di verifica del messaggio di testo inviato a uno Smart Phone:
   
-1. [Abilitazione dell'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+1. [Configurare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
 2. [Impostare la verifica in due passaggi per Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) per configurare ogni account amministratore globale dedicato per la chiamata telefonica o il messaggio di testo come metodo di verifica. 
     
 Se si è un'organizzazione più grande che utilizza un modello di identità ibrido di Office 365, sono disponibili altre opzioni di verifica. Se l'infrastruttura di sicurezza è già attiva per un metodo di autenticazione secondario più forte, attenersi alla seguente procedura:
   
-1. [Abilitazione dell'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+1. [Configurare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
 2. [Impostare la verifica in due passaggi per Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) per configurare ogni account amministratore globale dedicato per il metodo di verifica appropriato. 
     
@@ -114,8 +114,12 @@ Se l'infrastruttura di sicurezza per il metodo di verifica più sicuro desiderat
   
 Per maggiori informazioni, vedere [Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)
   
-Per connettersi ai servizi di Office 365 con AMF e PowerShell, vedere [questo articolo](https://blogs.technet.microsoft.com/solutions_advisory_board/2017/04/27/connect-to-office-365-services-with-multifactor-authentication-mfa-and-powershell/).
+Per connettersi ai servizi di Office 365 con AMF e PowerShell, vedere gli articoli seguenti:
 
+- [Office 365 PowerShell per gli account utente, i gruppi e le licenze](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-by-using-mfa)
+- [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
+- [Skype for Business online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>Protezioni aggiuntive per le organizzazioni aziendali
 
@@ -135,14 +139,14 @@ Gli account di amministratore globale, invece di essere amministratori permanent
   
 L'utilizzo di PIM e questo processo riduce significativamente la quantità di tempo in cui gli account di amministratore globale sono vulnerabili all'attacco e all'utilizzo da parte di utenti malintenzionati.
   
-Per ulteriori informazioni, vedere [Configure Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
+Per ulteriori informazioni, vedere [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
   
 > [!NOTE]
-> PIM è disponibile con Azure AD Premium P2, incluso in Enterprise Mobility + Security (EMS) E5, oppure è possibile acquistare licenze individuali per gli account di amministratore globale. 
+> PIM è disponibile con Azure AD Premium P2, incluso in Microsoft 365 Enterprise E5 o Enterprise Mobility + Security (EMS) E5, oppure è possibile acquistare licenze individuali per gli account di amministratore globale. 
   
 ### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Software di sicurezza e gestione eventi (SIEM) per la registrazione di Office 365
 
-Il software di SIEM eseguito su un server esegue un'analisi in tempo reale degli avvisi di sicurezza e degli eventi creati dalle applicazioni e dall'hardware di rete. Per consentire al server SIEM di includere gli avvisi e gli eventi di sicurezza di Office 365 nelle sue funzioni di analisi e Reporting, integrare Azure AD in You SEIM. Per ulteriori informazioni, vedere [integrare i registri dalle risorse di Azure nei sistemi Siem](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
+Il software di SIEM eseguito su un server esegue un'analisi in tempo reale degli avvisi di sicurezza e degli eventi creati dalle applicazioni e dall'hardware di rete. Per consentire al server SIEM di includere gli avvisi e gli eventi di sicurezza di Office 365 nelle sue funzioni di analisi e Reporting, integrare Azure AD in You SEIM. Vedere [Introduzione all'integrazione del registro di Azure](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Passaggio successivo
 

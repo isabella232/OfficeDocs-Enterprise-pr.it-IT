@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute per Office 365 fornisce la connettività Layer 3 tra la rete e i datacenter di Microsoft. I circuiti utilizzano la route BGP (Border Gateway Protocol) per gli annunci dei front end server di Office 365. Dal punto di vista dei dispositivi locali, quando è necessario selezionare il percorso TCP/IP corretto per Office 365, Azure ExpressRoute viene visualizzato come alternativa a Internet.
-ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 8e8c1e1790e38b4e0e858a4a72266de9fcdc8157
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032121"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814634"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Pianificazione della rete con ExpressRoute per Office 365
+
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
 ExpressRoute per Office 365 fornisce la connettività Layer 3 tra la rete e i datacenter di Microsoft. I circuiti utilizzano la route BGP (Border Gateway Protocol) per gli annunci dei front end server di Office 365. Dal punto di vista dei dispositivi locali, quando è necessario selezionare il percorso TCP/IP corretto per Office 365, Azure ExpressRoute viene visualizzato come alternativa a Internet.
   

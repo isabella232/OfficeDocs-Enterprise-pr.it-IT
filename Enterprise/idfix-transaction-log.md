@@ -1,5 +1,5 @@
 ---
-title: Registro delle transazioni di Office 365 IdFix
+title: Log delle transazioni IdFix di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: Fornisce un esempio e descrive la convenzione di denominazione e il livello di registrazione predefinito del registro delle transazioni IdFix di Office 365.
-ms.openlocfilehash: 0c6f2dd64cb406681c0a98099b2a42887ee79c25
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 22ea5af87b1bbcaa96f88e3746a50f1411a01b9a
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067262"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813424"
 ---
-# <a name="office-365-idfix-transaction-log"></a>Registro delle transazioni di Office 365 IdFix
+# <a name="office-365-idfix-transaction-log"></a>Log delle transazioni IdFix di Office 365
+
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
 Fornisce un esempio e descrive la convenzione di denominazione e il livello di registrazione predefinito del registro delle transazioni IdFix di Office 365.
   

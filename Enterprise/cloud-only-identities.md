@@ -3,6 +3,7 @@ title: Identità solo cloud di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,18 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: In questo articolo viene descritto come creare utenti e gruppi quando la sottoscrizione di Office 365 utilizza identità solo cloud.
-ms.openlocfilehash: 7a2aaf7705378da3cbd91b415f07d10b6e039293
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 6815c89821216416379a27eb525e66b90b828ea8
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34164611"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813414"
 ---
 # <a name="office-365-cloud-only-identities"></a>Identità solo cloud di Office 365
 
-Con l'identità solo cloud, tutti gli utenti, i gruppi e i contatti vengono archiviati nel tenant di Azure Active Directory (Azure AD) dell'abbonamento a Office 365. Di seguito sono ripartiti i componenti di base dell'identità solo cloud.
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+
+Con l'identità solo cloud, tutti gli utenti, i gruppi e i contatti vengono archiviati nel tenant di Azure Active Directory (Azure AD) dell'abbonamento a Office 365. Ecco i componenti di base dell'identità solo cloud.
  
 ![](./media/about-office-365-identity/cloud-only-identity.png)
 
@@ -53,12 +56,12 @@ Inoltre, alcuni servizi cloud possono essere condivisi al di fuori dell'organizz
 
 È possibile creare nuovi ***utenti*** con:
 
-- [Interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+- [L'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
 - [PowerShell di Office 365](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
 
 È possibile creare nuovi ***gruppi*** con:
 
-- [Interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
+- [L'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
 - [PowerShell di Office 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 
