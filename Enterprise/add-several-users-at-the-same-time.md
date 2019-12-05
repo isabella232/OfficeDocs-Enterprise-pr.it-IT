@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Informazioni su come aggiungere più utenti a Office 365 for business da un elenco in un foglio di calcolo o in un altro file in formato CSV. Guarda un video su YouTube che spiega come aggiungere account a Office 365. Alla fine di questo processo, ogni utente con un account avrà una cassetta postale di Office 365. '
-ms.openlocfilehash: 16cea3b09da7d6450efd09bad0937bfcef9f70ab
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 283a45750c6b5d51f96dae2cac12acf3f47b98fe
+ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813494"
+ms.locfileid: "39825198"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Aggiungere più utenti a Office 365 contemporaneamente - Guida per l'amministratore
 
@@ -68,14 +68,7 @@ Per poter accedere a Office 365 e ai relativi servizi, ad esempio posta elettron
 5. Nella finestra di dialogo **Imposta opzioni utente** è possibile impostare lo stato di accesso e scegliere la licenza del prodotto che verrà assegnata a tutti gli utenti. 
     
 6. Nella finestra di dialogo **Visualizza i risultati** è possibile scegliere di inviare i risultati a se stessi o ad altri utenti (le password saranno in testo normale) ed è possibile vedere quanti utenti sono stati creati e se è necessario acquistare altre licenze da assegnare ad alcuni nuovi utenti. 
-    
-## <a name="watch-the-video"></a>Guardare il video
-<a name="bk_preview"> </a>
 
- Guardare un breve video che spiega come aggiungere utenti in blocco. 
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/f4e7f161-8ae6-4264-a429-9297b539a8de?autoplay=false]
-  
 ## <a name="next-steps"></a>Passaggi successivi
 <a name="bk_preview"> </a>
 

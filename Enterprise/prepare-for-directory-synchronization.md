@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come prepararsi a eseguire il provisioning degli utenti a Office 365 utilizzando la sincronizzazione della directory e i vantaggi a lungo termine dell'utilizzo di questo metodo.
-ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 4b602be99239d1e66b149929bd73142252f6cba6
+ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814184"
+ms.locfileid: "39825188"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparare la sincronizzazione della directory a Office 365
 
@@ -57,10 +57,7 @@ Prima di sincronizzare servizi di dominio Active Directory con il tenant di Azur
 In servizi di dominio Active Directory, completare le seguenti attività di pulizia per ogni account utente a cui viene assegnata una licenza di Office 365:
   
 1. Verificare l'indirizzo di posta elettronica valido e univoco nell'attributo **proxyAddresses** . 
-
-  >[!Note]
-  >Un carattere tilde (~) negli indirizzi di posta elettronica verrà ignorato. Ciò può comportare errori di sincronizzazione della directory falsi positivi relativi a proxyAddresses duplicati.
-    
+  
 2. Rimuovere tutti i valori duplicati nell'attributo **proxyAddresses**. 
     
 3.  Se possibile, garantire un valore valido e univoco per l'attributo **userPrincipalName** nell'oggetto **utente** dell'utente. Per un'esperienza di sincronizzazione ottimale, verificare che l'UPN di servizi di dominio Active Directory corrisponda all'UPN di Azure AD. Se un utente non dispone di un valore per l'attributo **userPrincipalName**, l'oggetto **user** deve contenere un valore univoco e valido per l'attributo **sAMAccountName**. Rimuovere tutti i valori duplicati nell'attributo **userPrincipalName**. 
