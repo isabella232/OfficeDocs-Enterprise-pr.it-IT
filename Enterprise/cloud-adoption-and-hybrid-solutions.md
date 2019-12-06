@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 60f0636228942273a7e5ae45f174155abf64e491
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 64f38ba0f0bbc4eba03e2b59f041bf19de620027
+ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029180"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39857984"
 ---
 <h1>Soluzioni cloud aziendali</h1>
 <p>Risolvere i problemi aziendali utilizzando Microsoft Cloud. Informazioni sulle soluzioni cloud di sicurezza e ibride più recenti, sull'adozione cloud e altro.</p>
@@ -123,14 +123,5 @@ ms.locfileid: "38029180"
 
 ---
 
-<h2>Contattaci</h2>
-<ul>
-    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">Ottenere la soluzione necessaria</a><br>Stiamo creando risorse per l'adozione del cloud relativi a varie piattaforme e servizi cloud Microsoft. Per inviare commenti sulle risorse relative all'adozione del cloud oppure per richiedere informazioni specifiche, inviare un'e-mail all'indirizzo cloudadopt@microsoft.com.
-</li><br>
-    <li><a href="https://aka.ms/caab">Partecipa alla discussione sull'adozione del cloud</a>
-<br>Gli appassionati di soluzioni cloud possono accedere al Cloud Adoption Advisory Board (CAAB) per entrare in contatto con una community attiva di sviluppatori di contenuti Microsoft, professionisti del settore e clienti di tutto il mondo. Per accedere, è necessario diventare un membro dell'area CAAB (Cloud Adoption Advisory Board) della Community tecnica Microsoft e inviare una breve e-mail all'indirizzo <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>. Chiunque può leggere i contenuti correlati alla community nel <a href="https://blogs.technet.com/b/solutions_advisory_board/">blog di CAAB</a>. Tuttavia, i membri CAAB ricevono inviti a webinar privati che descrivono le nuove soluzioni e risorse relative all'adozione del cloud.
-</li><br>
-    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">Ottieni l'immagine visualizzata</a>
-<br>Se si desidera una copia modificabile dell'immagine nel presente articolo, saremo lieti di inviarla. Inviare la propria richiesta tramite e-mail, includendo l'URL e il titolo dell'immagine, all'indirizzo cloudadopt@microsoft.com
-</li>
-</ul>
+
+
