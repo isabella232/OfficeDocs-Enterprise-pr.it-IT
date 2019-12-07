@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Informazioni su come collaborare con gli utenti in teams.
-ms.openlocfilehash: a3e34431b97e8f565d61470ddd55797981b837c8
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 9920bb57f31a36dcc4f903e2f26eccbf41a522db
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029170"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886525"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
@@ -87,7 +87,7 @@ I contenuti dei team, ad esempio file, cartelle ed elenchi, sono tutti archiviat
 
 Le impostazioni a livello di organizzazione determinano le impostazioni disponibili per i singoli siti, inclusi i siti associati ai team. Le impostazioni del sito non possono essere più permissive rispetto alle impostazioni a livello di organizzazione.
 
-Se si desidera consentire la condivisione di file e cartelle con utenti anonimi, scegliere **nessuno**. Se si desidera garantire che tutti gli utenti siano in grado di eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. Scegliere l'impostazione più permissiva che sarà necessaria per qualsiasi sito dell'organizzazione.
+Se si desidera consentire la condivisione di file e cartelle con persone non autenticate, scegliere **nessuno**. Se si desidera garantire che tutti gli utenti siano in grado di eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. Scegliere l'impostazione più permissiva che sarà necessaria per qualsiasi sito dell'organizzazione.
 
 ![Screenshot delle impostazioni di condivisione a livello di organizzazione in SharePoint](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -108,7 +108,7 @@ Tenere presente che questa impostazione ha effetto su tutti i team e i siti di S
 
 Scegliere il tipo di collegamento selezionato per impostazione predefinita quando gli utenti condividono file e cartelle:
 
-- **Tutti gli utenti con il collegamento** : scegliere questa opzione se si prevede di condividere un gran quantità di file e cartelle in modo anonimo. Se si desidera consentire collegamenti a *tutti gli utenti* , ma sono preoccupati per la condivisione accidentale anonima, prendere in considerazione una delle altre opzioni come impostazione predefinita. Questo tipo di collegamento è disponibile solo se è stata abilitata la condivisione di **utenti** .
+- **Tutti gli utenti con il collegamento** : scegliere questa opzione se si prevede di condividere un sacco di file e cartelle con persone non autenticate. Se si desidera consentire collegamenti a *tutti gli utenti* , ma si è preoccupati per la condivisione accidentale non autenticata, prendere in considerazione una delle altre opzioni come impostazione predefinita. Questo tipo di collegamento è disponibile solo se è stata abilitata la condivisione di **utenti** .
 - **Solo persone nell'organizzazione** : scegliere questa opzione se si prevede che la maggior parte della condivisione di file e cartelle sia con le persone all'interno dell'organizzazione.
 - **Persone specifiche** : considerare questa opzione se si prevede di eseguire un sacco di condivisione di file e cartelle con gli utenti. Questo tipo di collegamento è compatibile con gli utenti e richiede l'autenticazione.
  
@@ -167,7 +167,7 @@ Per invitare gli ospiti a un team
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedure consigliate per la condivisione di file e cartelle con utenti anonimi](best-practices-anonymous-sharing.md)
+[Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md)
 
 [Limitare l'esposizione accidentale ai file durante la condivisione con gli utenti guest](sharing-limit-accidental-exposure.md)
 

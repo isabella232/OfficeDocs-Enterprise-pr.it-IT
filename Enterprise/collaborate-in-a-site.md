@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Informazioni su come collaborare con gli utenti in un sito di SharePoint.
-ms.openlocfilehash: 25b0aea05c922385828e62512d3724da7324c719
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029160"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886485"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
@@ -67,7 +67,7 @@ Affinché gli utenti dispongano dell'accesso ai siti di SharePoint, le impostazi
 
 Le impostazioni a livello di organizzazione determinano le impostazioni disponibili per i singoli siti. Le impostazioni del sito non possono essere più permissive rispetto alle impostazioni a livello di organizzazione.
 
-Se si desidera consentire la condivisione di file e cartelle con utenti anonimi, scegliere **nessuno**. Se si desidera garantire che tutti gli utenti siano in grado di eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. Scegliere l'impostazione più permissiva che sarà necessaria per qualsiasi sito dell'organizzazione.
+Se si desidera consentire la condivisione di file e cartelle non autenticata, scegliere **nessuno**. Se si desidera garantire che tutti gli utenti siano in grado di eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. Scegliere l'impostazione più permissiva che sarà necessaria per qualsiasi sito dell'organizzazione.
 
 ![Screenshot delle impostazioni di condivisione a livello di organizzazione in SharePoint](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -98,7 +98,7 @@ Gli utenti verranno invitati in un secondo momento. Successivamente, è importan
 
 Controllare le impostazioni di condivisione a livello di sito per assicurarsi che consentano il tipo di accesso desiderato per il sito. Ad esempio, se si impostano le impostazioni a livello di organizzazione per tutti gli **utenti**, ma si desidera che tutti gli ospiti eseguano l'autenticazione per questo sito, assicurarsi che le impostazioni di condivisione a livello di sito siano impostate su **ospiti nuovi e esistenti**.
 
-Si noti che il sito non può essere condiviso con utenti anonimi (impostazione**chiunque** ), ma è possibile eseguire singoli file e cartelle.
+Si noti che il sito non può essere condiviso con persone non autenticate (impostazione di**tutti** gli utenti), ma è possibile eseguire singoli file e cartelle.
 
 ![Screenshot delle impostazioni di condivisione esterna dei siti di SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
@@ -129,7 +129,7 @@ Per invitare gli ospiti a un sito
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedure consigliate per la condivisione di file e cartelle con utenti anonimi](best-practices-anonymous-sharing.md)
+[Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md)
 
 [Limitare l'esposizione accidentale ai file durante la condivisione con gli utenti guest](sharing-limit-accidental-exposure.md)
 

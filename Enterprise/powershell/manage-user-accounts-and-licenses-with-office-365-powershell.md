@@ -3,7 +3,7 @@ title: Gestire gli account utente e le licenze con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/06/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,40 +13,40 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: 'Riepilogo: informazioni su come gestire gli account utente e le licenze con PowerShell di Office 365.'
-ms.openlocfilehash: 333a9501d3dfcd2f9f254a7b58e9f8589b68f9cb
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+description: 'Riepilogo: informazioni su come gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell.'
+ms.openlocfilehash: ebc3038cf244c651ebbf98c10bb7992268d8f5dd
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748454"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886455"
 ---
-# <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Gestire gli account utente e le licenze con Office 365 PowerShell
+# <a name="manage-user-accounts-licenses-and-groups-with-office-365-powershell"></a>Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell
 
-Una delle attività principali degli amministratori di Office 365 è quella di gestire gli account utente e le licenze. Anche se è possibile eseguire alcune di queste operazioni nell'interfaccia di amministrazione di Microsoft 365, altre attività sono molto più rapide e semplici con PowerShell di Office 365. Per ulteriori informazioni, vedere i seguenti argomenti:
-  
-- [Visualizzare le licenze e i servizi con PowerShell di Office 365](view-licenses-and-services-with-office-365-powershell.md)
-    
-- [Visualizzare gli utenti con e senza licenza con PowerShell di Office 365](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-    
-- [Assegnare le licenze agli account utente con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [Visualizzare la licenza dell'account e i dettagli di servizio con Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md)
-    
-- [Assegnare i ruoli agli account utente con Office 365 PowerShell](assign-roles-to-user-accounts-with-office-365-powershell.md)
-    
-- [Disattivare l'accesso ai servizi con PowerShell di Office 365](disable-access-to-services-with-office-365-powershell.md)
-    
-- [Rimuovere le licenze dagli account utente con Office 365 PowerShell](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-    
-- [Bloccare gli account utente con Office 365 PowerShell](block-user-accounts-with-office-365-powershell.md)
-    
-- [Eliminare e ripristinare account utente con Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Creare account utente con Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
-    
-- [Visualizzare gli account utente con Office 365 PowerShell](view-user-accounts-with-office-365-powershell.md)
-    
-- [Configurare le proprietà degli account utente con Office 365 PowerShell](configure-user-account-properties-with-office-365-powershell.md)
-    
+Una delle attività principali di qualsiasi amministratore di Office 365 è la gestione degli account utente, delle licenze e del gruppo. Anche se è possibile eseguire la maggior parte degli aspetti di queste attività nell'interfaccia di amministrazione di Microsoft 365, altre attività sono molto più rapide e facili con Office 365 PowerShell. 
+
+Per ulteriori informazioni, vedere questi argomenti.
+
+## <a name="user-accounts"></a>Account utente
+
+- [Creare account utente](create-user-accounts-with-office-365-powershell.md)
+- [Visualizzare account utente](view-user-accounts-with-office-365-powershell.md)
+- [Configurare le proprietà degli account utente](configure-user-account-properties-with-office-365-powershell.md)
+- [Assegnare ruoli agli account utente](assign-roles-to-user-accounts-with-office-365-powershell.md)
+- [Eliminare e ripristinare account utente](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [Bloccare account utente](block-user-accounts-with-office-365-powershell.md)
+
+## <a name="licenses-and-services"></a>Licenze e servizi
+- [Visualizzare le licenze e i servizi](view-licenses-and-services-with-office-365-powershell.md)
+- [Visualizzare gli utenti con licenza e senza licenza](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+- [Assegnare licenze agli account utente](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+- [Visualizzare la licenza dell'account e i dettagli di servizio](view-account-license-and-service-details-with-office-365-powershell.md)
+- [Disabilitare l'accesso ai servizi](disable-access-to-services-with-office-365-powershell.md)
+  - [Disabilitare l'accesso a Sway](disable-access-to-sway-with-office-365-powershell.md)
+  - [Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente](disable-access-to-services-while-assigning-user-licenses.md)
+- [Rimuovere licenze dagli account utente](remove-licenses-from-user-accounts-with-office-365-powershell.md)
+
+## <a name="groups"></a>Gruppi
+- [Gestire l'appartenenza ai gruppi](maintain-group-membership-with-office-365-powershell.md)
+- [Gestire i gruppi di Office 365](manage-office-365-groups-with-powershell.md)
 
