@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
 description: Informazioni su come creare un ambiente di condivisione guest sicuro in Microsoft 365.
-ms.openlocfilehash: 727b635c0ed13a9dcf85bb93092ab9a002740e99
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 51e9d8c8d09d5ee687fc47a1c382da383d1cf231
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077709"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886515"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -308,7 +308,7 @@ Per creare criteri file basati su etichette
 12. Per il messaggio di notifica personalizzato, digitare *Questo file è estremamente riservato. I criteri aziendali ne vietano la condivisione con utenti guest*.
 13. Fare clic su **Crea**.
 
-È importante sottolineare che questo criterio rimuove l'accesso ai file condivisi con un collegamento *Utenti specifici*. Non rimuove l'accesso da collegamenti anonimi (*Chiunque*). Inoltre, non rimuove l'accesso se il guest è membro del sito o del team nel suo complesso. Se si prevede di avere documenti estremamente riservati in un sito o in un team con utenti guest, è consigliabile usare [canali privati in Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) e consentire l'accesso ai canali privati solo ai membri dell'organizzazione.
+È importante sottolineare che questo criterio rimuove l'accesso ai file condivisi con un collegamento *Utenti specifici*. Non rimuove l'accesso dai collegamenti non autenticati (*Chiunque*). Inoltre, non rimuove l'accesso se il guest è membro del sito o del team nel suo complesso. Se si prevede di avere documenti estremamente riservati in un sito o in un team con utenti guest, è consigliabile usare [canali privati in Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) e consentire l'accesso ai canali privati solo ai membri dell'organizzazione.
 
 ## <a name="test-the-solution"></a>Testare la soluzione
 
@@ -322,4 +322,4 @@ Quando il guest ha accesso al documento, digitare *Progetto Saturno* nel documen
 
 [Limitare l'esposizione accidentale ai file durante la condivisione con gli utenti guest](sharing-limit-accidental-exposure.md)
 
-[Procedure consigliate per la condivisione di file e cartelle con utenti anonimi](best-practices-anonymous-sharing.md)
+[Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md)

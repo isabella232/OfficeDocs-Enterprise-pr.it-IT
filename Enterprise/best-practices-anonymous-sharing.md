@@ -1,5 +1,5 @@
 ---
-title: Procedure consigliate per la condivisione anonima
+title: Procedure consigliate per la condivisione non autenticata
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,26 +7,26 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
-description: Informazioni sulla procedure consigliate per la condivisione di file e cartelle con utenti anonimi.
-ms.openlocfilehash: f6263fe09a677094055f79a4ff38ec9d41f48898
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+description: Informazioni sulla procedure consigliate per la condivisione di file e cartelle con utenti non autenticati.
+ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108332"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886505"
 ---
-# <a name="best-practices-for-sharing-files-and-folders-with-anonymous-users"></a>Procedure consigliate per la condivisione di file e cartelle con utenti anonimi
+# <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati
 
-La condivisione anonima (collegamenti *Chiunque*) può essere comoda e utile in diversi scenari. I collegamenti *Chiunque* sono il modo più semplice per condividere: il collegamento può essere aperto senza autenticazione e passato ad altri utenti.
+La condivisione non autenticata (collegamenti *Chiunque*) può essere comoda e utile in diversi scenari. I collegamenti *Chiunque* sono il modo più semplice per condividere: il collegamento può essere aperto senza autenticazione e passato ad altri utenti.
 
-In genere, non tutto il contenuto di un'organizzazione è adatto alla condivisione anonima. Questo articolo illustra le opzioni disponibili per la creazione di un ambiente in cui gli utenti possono condividere file e cartelle in modo anonimo e in cui sono disponibili misure di sicurezza per proteggere il contenuto dell'organizzazione.
+In genere, non tutto il contenuto di un'organizzazione è adatto alla condivisione non autenticata. Questo articolo illustra le opzioni disponibili per la creazione di un ambiente in cui gli utenti possano condividere file e cartelle senza autenticazione e in cui siano implementate misure di sicurezza per proteggere il contenuto dell'organizzazione.
 
 > [!NOTE]
-> Affinché la condivisione anonima funzioni, è necessario abilitarla per l'organizzazione e per il singolo sito o team che si userà. Vedere [Collaborazione con persone esterne all'organizzazione](collaborating-with-people-outside-your-organization.md) per lo scenario da abilitare.
+> Affinché la condivisione non autenticata funzioni, è necessario abilitarla per l'organizzazione e per il singolo sito o team che si userà. Vedere [Collaborazione con persone esterne all'organizzazione](collaborating-with-people-outside-your-organization.md) per lo scenario da abilitare.
 
 ## <a name="set-an-expiration-date-for-anyone-links"></a>Impostare una data di scadenza per i collegamenti Chiunque
 
-Spesso i file vengono archiviati in siti, gruppi e team per lunghi periodi di tempo. A volte esistono criteri di conservazione dei dati che richiedono la conservazione dei file per anni. Se tali file vengono condivisi in modo anonimo, potrebbero verificarsi accessi imprevisti o modifiche ai file in futuro. Per limitare questa possibilità, è possibile configurare una data di scadenza per i collegamenti *Chiunque*.
+Spesso i file vengono archiviati in siti, gruppi e team per lunghi periodi di tempo. A volte esistono criteri di conservazione dei dati che richiedono la conservazione dei file per anni. Se tali file vengono condivisi con persone non autenticate, potrebbero verificarsi accessi imprevisti o modifiche ai file in futuro. Per limitare questa possibilità, è possibile configurare una data di scadenza per i collegamenti *Chiunque*.
 
 Quando un collegamento *Chiunque* scade, non può più essere utilizzato per accedere al contenuto.
 
@@ -43,9 +43,9 @@ Tenere presente che dopo la scadenza di un collegamento *Chiunque*, è possibile
 
 Per impostazione predefinita, i collegamenti *Chiunque* per un file consentono di modificare il file, mentre i collegamenti *Chiunque* per una cartella consentono di modificare e visualizzare i file, nonché di caricare nuovi file nella cartella. È possibile impostare le autorizzazioni di sola visualizzazione per i file e le cartelle in modo indipendente.
 
-Se si vuole consentire la condivisione anonima ma si teme che il contenuto dell'organizzazione venga modificato da utenti non autenticati, è consigliabile impostare le autorizzazioni per i file e le cartelle su **Visualizzazione**.
+Se si vuole consentire la condivisione senza autenticazione, ma si teme che il contenuto dell'organizzazione venga modificato da utenti non autenticati, è consigliabile impostare le autorizzazioni per i file e le cartelle su **Visualizzazione**.
 
-Per impostare le autorizzazioni per i collegamenti anonimi
+Per impostare le autorizzazioni per i collegamenti Chiunque
 1. Aprire l'interfaccia di amministrazione di SharePoint Online.
 2. Nel riquadro di spostamento sinistro fare clic su **Condivisione**.
 3. In **Impostazioni avanzate per i collegamenti di tipo "Chiunque"** selezionare le autorizzazioni per i file e le cartelle da usare.</br>
@@ -55,9 +55,9 @@ Con i collegamenti *Chiunque* impostati su **Visualizzazione**, è comunque poss
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Impostare il tipo di collegamento predefinito in modo che funzioni solo per le persone dell'organizzazione
 
-Quando per l'organizzazione è abilitata la condivisione di tipo *Chiunque*, il collegamento di condivisione predefinito è generalmente impostato su **Chiunque**. Può essere comodo per gli utenti, ma può aumentare il rischio di condivisione anonima involontaria. Se un utente dimentica di cambiare il tipo di collegamento durante la condivisione di un documento sensibile, potrebbe accidentalmente creare un collegamento di condivisione che non richiede l'autenticazione.
+Quando per l'organizzazione è abilitata la condivisione di tipo *Chiunque*, il collegamento di condivisione predefinito è generalmente impostato su **Chiunque**. Può essere comodo per gli utenti, ma può aumentare il rischio di condivisione non autenticata involontaria. Se un utente dimentica di cambiare il tipo di collegamento durante la condivisione di un documento sensibile, potrebbe accidentalmente creare un collegamento di condivisione che non richiede l'autenticazione.
 
-È possibile ridurre questo rischio modificando l'impostazione predefinita per il collegamento su un collegamento che funziona solo per le persone interne all'organizzazione. Gli utenti che vogliono condividere in modo anonimo dovranno selezionare specificamente tale opzione.
+È possibile ridurre questo rischio modificando l'impostazione predefinita per il collegamento su un collegamento che funziona solo per le persone interne all'organizzazione. Gli utenti che vogliono condividere con persone non autenticate dovranno selezionare specificamente tale opzione.
 
 Per impostare il collegamento di condivisione di file e cartelle predefinito
 1. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, fare clic su **Condivisione**.

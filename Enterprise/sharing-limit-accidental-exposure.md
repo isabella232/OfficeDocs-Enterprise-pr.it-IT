@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: Informazioni su come limitare l'esposizione accidentale di informazioni quando si condividono file con utenti guest.
-ms.openlocfilehash: d1a12579bdcce03ad74dbf753ddb1a8a6368c88c
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 3a5a99e96207e407f15abb17d9e1903c8ba52339
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108336"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886475"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-guests"></a>Limitare l'esposizione accidentale ai file durante la condivisione con gli utenti guest
 
@@ -21,13 +21,13 @@ Quando si condividono file e cartelle con utenti guest sono disponibili diverse 
 
 ## <a name="use-best-practices-for-anyone-links"></a>Usare le procedure consigliate per i collegamenti di tipo “Chiunque”
 
-Se le persone dell'organizzazione devono eseguire una condivisione anonima, ma si incorre nel rischio che gli utenti non autenticati modifichino il contenuto, leggere [Procedure consigliate per la condivisione anonima](best-practices-anonymous-sharing.md) per istruzioni su come gestire la condivisione anonima nell’organizzazione.
+Se le persone dell'organizzazione devono eseguire la condivisione non autenticata, ma si teme che il contenuto venga modificato da utenti guest non autenticati, vedere [Procedure consigliate per la condivisione non autenticata](best-practices-anonymous-sharing.md) per istruzioni su come gestire la condivisione non autenticata nell'organizzazione.
 
 ## <a name="turn-off-anyone-links"></a>Disattivare i collegamenti di tipo “Chiunque”
 
 È consigliabile lasciare abilitati i collegamenti di tipo *Chiunque* per il contenuto appropriato, perché è il modo più semplice per condividere informazioni e contribuisce a ridurre il rischio che gli utenti cerchino altre soluzioni fuori dal controllo del reparto IT. I collegamenti di tipo *Chiunque* possono essere inoltrati ad altri, ma l'accesso ai file è disponibile solo per gli utenti che dispongono del collegamento.
 
-Se si vuole che gli utenti eseguano sempre l'autenticazione per accedere al contenuto di SharePoint, Groups o Teams, è possibile disattivare la condivisione *Chiunque*. In questo modo è possibile impedire agli utenti di condividere contenuto in modo anonimo.
+Se si vuole che gli utenti eseguano sempre l'autenticazione per accedere al contenuto di SharePoint, Groups o Teams, è possibile disattivare la condivisione *Chiunque*. In questo modo si impedisce agli utenti di condividere il contenuto senza autenticazione.
 
 Se si disabilitano i collegamenti di tipo *Chiunque*, gli utenti potranno comunque condividerli facilmente con gli utenti guest utilizzando i collegamenti di tipo *Persone specifiche*. In questo caso, per poter accedere al contenuto condiviso, tutti gli utenti guest dovranno eseguire l'autenticazione.
 
