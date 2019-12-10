@@ -7,29 +7,29 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
-description: Informazioni su come limitare l'esposizione accidentale di informazioni quando si condividono file con utenti guest.
-ms.openlocfilehash: 3a5a99e96207e407f15abb17d9e1903c8ba52339
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+description: Informazioni su come limitare l'esposizione accidentale di informazioni quando si condividono file con persone esterne all'organizzazione.
+ms.openlocfilehash: d980af0a8aa60416a32f4c2fe5d4a1c8911842f4
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886475"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919249"
 ---
-# <a name="limit-accidental-exposure-to-files-when-sharing-with-guests"></a>Limitare l'esposizione accidentale ai file durante la condivisione con gli utenti guest
+# <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitare l'esposizione accidentale ai file durante la condivisione con persone esterne all'organizzazione
 
-Quando si condividono file e cartelle con utenti guest sono disponibili diverse opzioni per ridurre le possibilità di condivisione accidentale di informazioni riservate. È possibile scegliere tra le opzioni disponibili in questo articolo per soddisfare al meglio le esigenze dell'organizzazione.
+Quando si condividono file e cartelle con persone esterne all'organizzazione sono disponibili varie opzioni per ridurre le possibilità di condivisione accidentale di informazioni riservate. È possibile scegliere tra le opzioni disponibili in questo articolo per soddisfare al meglio le esigenze dell'organizzazione.
 
 ## <a name="use-best-practices-for-anyone-links"></a>Usare le procedure consigliate per i collegamenti di tipo “Chiunque”
 
-Se le persone dell'organizzazione devono eseguire la condivisione non autenticata, ma si teme che il contenuto venga modificato da utenti guest non autenticati, vedere [Procedure consigliate per la condivisione non autenticata](best-practices-anonymous-sharing.md) per istruzioni su come gestire la condivisione non autenticata nell'organizzazione.
+Se le persone dell'organizzazione devono eseguire la condivisione non autenticata, ma si teme che il contenuto venga modificato da utenti non autenticati, vedere [Procedure consigliate per la condivisione non autenticata](best-practices-anonymous-sharing.md) per istruzioni su come gestire la condivisione non autenticata nell'organizzazione.
 
 ## <a name="turn-off-anyone-links"></a>Disattivare i collegamenti di tipo “Chiunque”
 
 È consigliabile lasciare abilitati i collegamenti di tipo *Chiunque* per il contenuto appropriato, perché è il modo più semplice per condividere informazioni e contribuisce a ridurre il rischio che gli utenti cerchino altre soluzioni fuori dal controllo del reparto IT. I collegamenti di tipo *Chiunque* possono essere inoltrati ad altri, ma l'accesso ai file è disponibile solo per gli utenti che dispongono del collegamento.
 
-Se si vuole che gli utenti eseguano sempre l'autenticazione per accedere al contenuto di SharePoint, Groups o Teams, è possibile disattivare la condivisione *Chiunque*. In questo modo si impedisce agli utenti di condividere il contenuto senza autenticazione.
+Se si vuole che le persone esterne all'organizzazione eseguano sempre l'autenticazione per accedere al contenuto di SharePoint, Groups o Teams, è possibile disattivare la condivisione *Chiunque*. In questo modo si impedisce agli utenti di condividere il contenuto senza autenticazione.
 
-Se si disabilitano i collegamenti di tipo *Chiunque*, gli utenti potranno comunque condividerli facilmente con gli utenti guest utilizzando i collegamenti di tipo *Persone specifiche*. In questo caso, per poter accedere al contenuto condiviso, tutti gli utenti guest dovranno eseguire l'autenticazione.
+Se si disabilitano i collegamenti di tipo *Chiunque*, gli utenti potranno comunque condividerli facilmente con gli utenti guest utilizzando i collegamenti di tipo *Persone specifiche*. In questo caso, per poter accedere al contenuto condiviso, tutte le persone esterne all'organizzazione dovranno eseguire l'autenticazione.
 
 In base alle proprie esigenze, è possibile disabilitare i collegamenti di tipo *Chiunque* per siti specifici o per l'intera organizzazione.
 
@@ -49,15 +49,15 @@ Per disattivare i collegamenti di tipo *Chiunque* per un sito
 
 ## <a name="domain-filtering"></a>Filtro domini
 
-È possibile usare gli elenchi di domini consentiti o non consentiti per determinare da quali domini gli utenti possono invitare utenti guest.
+È possibile usare gli elenchi di domini consentiti o non consentiti per determinare i domini che gli utenti interni possono condividere con persone esterne all'organizzazione.
 
-Con un elenco di domini consentiti è possibile specificare un elenco di domini da cui gli utenti dell'organizzazione possono invitare utenti guest. Gli inviti guest ad altri domini sono bloccati. Se l'organizzazione collabora solo con utenti guest da un elenco di domini specifici, è possibile usare questa caratteristica per impedire la condivisione con altri domini.
+Con un elenco di domini consentiti è possibile specificare un elenco di domini in cui gli utenti dell'organizzazione possono condividere con persone esterne all'organizzazione. La condivisione con altri domini è bloccata. Se l'organizzazione collabora solo con persone da un elenco di domini specifici, è possibile usare questa funzionalità per impedire la condivisione con altri domini.
 
-Con un elenco di domini non consentiti è possibile specificare un elenco di domini da cui gli utenti dell'organizzazione non possono invitare utenti guest. Gli inviti guest ai domini presenti nell’elenco sono bloccati. Questa opzione può essere utile, ad esempio, se si vuole impedire che alcuni concorrenti specifici diventino utenti guest nell’organizzazione.
+Con un elenco di domini non consentiti è possibile specificare un elenco di domini da cui gli utenti dell'organizzazione non possono condividere con persone esterne all'organizzazione. La condivisione con i domini elencati è bloccata. Questa opzione può essere utile, ad esempio, se si vuole impedire che alcuni concorrenti possano accedere a contenuto della propria organizzazione.
 
-Gli elenchi di domini consentiti e non consentiti influiscono solo sulle condivisioni con utenti guest autenticati. Gli utenti possono continuare a condividere contenuti con utenti guest da domini non consentiti tramite i collegamenti di tipo *Chiunque*, se questi non sono stati disabilitati. Per ottenere risultati ottimali con gli elenchi di domini consentiti e non consentiti, è consigliabile disabilitare i collegamenti di tipo *Chiunque* come descritto sopra.
+Gli elenchi di domini consentiti e non consentiti influiscono solo sulle condivisioni con utenti guest. Gli utenti possono continuare a condividere contenuti con persone da domini non consentiti tramite i collegamenti di tipo *Chiunque*, se questi non sono stati disabilitati. Per ottenere risultati ottimali con gli elenchi di domini consentiti e non consentiti, è consigliabile disabilitare i collegamenti di tipo *Chiunque* come descritto sopra.
 
-Per creare un elenco di domini consentiti o non consentiti per la condivisione guest
+Per configurare un elenco di domini consentiti o non consentiti per gli persone esterne all'organizzazione
 1. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, fare clic su **Condivisione**.
 2. In **Impostazioni avanzate per la condivisione esterna** selezionare la casella di controllo **Limitare la condivisione esterna in base al dominio**.
 3. Fare clic su **Aggiungi domini**.
@@ -67,11 +67,11 @@ Per creare un elenco di domini consentiti o non consentiti per la condivisione g
 
 Se si vuole limitare la condivisione in base al dominio a un livello superiore rispetto a SharePoint e OneDrive, è possibile [consentire o bloccare gli inviti agli utenti B2B da organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list) in Azure Active Directory. (È necessario configurare l’[anteprima dell'integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) perché queste impostazioni influiscano su SharePoint e OneDrive.)
 
-## <a name="limit-guest-sharing-of-files-folders-and-sites-to-specified-security-groups"></a>Limitare la condivisione guest di file, cartelle e siti a gruppi di sicurezza specifici
+## <a name="limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups"></a>Limitare la condivisione di file, cartelle e siti con persone esterne all'organizzazione a gruppi di sicurezza specifici
 
-È possibile limitare la condivisione guest di file, cartelle e siti ai membri di un gruppo di sicurezza specifico. Questa opzione è utile se si vuole abilitare la condivisione guest, ma con un flusso di lavoro di approvazione o un processo di richiesta.
+È possibile limitare la condivisione di file, cartelle e siti con persone esterne all'organizzazione ai membri di un gruppo di sicurezza specifico. Questa opzione è utile se si vuole abilitare la condivisione esterna, ma con un flusso di lavoro di approvazione o un processo di richiesta.
 
-Per limitare la condivisione guest ai membri di un gruppo di sicurezza
+Per limitare la condivisione esterna ai membri di un gruppo di sicurezza
 1. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, fare clic su **Condivisione**.
 2. In **Altre impostazioni** seguire il collegamento **Limitare la condivisione esterna ai gruppi di sicurezza**.
 3. In **Chi può condividere all'esterno dell'organizzazione** selezionare una o entrambe le caselle di controllo: a. **Consenti solo agli utenti dei gruppi di sicurezza selezionati di condividere con utenti esterni autenticati** per specificare un gruppo di sicurezza che può condividere con utenti autenticati b. **Consenti la condivisione con utenti esterni autenticati e usando collegamenti anonimi ai soli utenti dei gruppi di sicurezza selezionati** per specificare un gruppo di sicurezza che può condividere con utenti autenticati e usando collegamenti di tipo Chiunque
