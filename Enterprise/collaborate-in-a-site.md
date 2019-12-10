@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Informazioni su come collaborare con gli utenti in un sito di SharePoint.
-ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886485"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919259"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
@@ -67,7 +67,7 @@ Affinché gli utenti dispongano dell'accesso ai siti di SharePoint, le impostazi
 
 Le impostazioni a livello di organizzazione determinano le impostazioni disponibili per i singoli siti. Le impostazioni del sito non possono essere più permissive rispetto alle impostazioni a livello di organizzazione.
 
-Se si desidera consentire la condivisione di file e cartelle non autenticata, scegliere **nessuno**. Se si desidera garantire che tutti gli utenti siano in grado di eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. Scegliere l'impostazione più permissiva che sarà necessaria per qualsiasi sito dell'organizzazione.
+Se si desidera consentire la condivisione di file e cartelle non autenticata, scegliere **nessuno**. Se si desidera garantire che tutti gli utenti esterni all'organizzazione debbano eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. Scegliere l'impostazione più permissiva che sarà necessaria per qualsiasi sito dell'organizzazione.
 
 ![Screenshot delle impostazioni di condivisione a livello di organizzazione in SharePoint](media/sharepoint-organization-external-sharing-controls.png)
 

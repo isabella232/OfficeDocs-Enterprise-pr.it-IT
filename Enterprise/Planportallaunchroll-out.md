@@ -13,15 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: In questo articolo viene descritto come pianificare il lancio del portale in SharePoint Online e quali operazioni eseguire per un'operazione di avvio con esito positivo
-ms.openlocfilehash: bba38bb188235ed38f3719cb4472ef156a4d76b3
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077569"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919128"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Pianificazione del piano di avvio del portale per il lancio in SharePoint Online
-Un portale è il sito di SharePoint predefinito per la propria azienda. nelle organizzazioni di grandi dimensioni potrebbero essere presenti diverse di queste. Se si prevede che più del 20% degli utenti all'interno dell'organizzazione accederà alla pagina, è preferibile considerarla una pagina del portale. Non deve essere confuso con un sito del team usato da un reparto per la collaborazione e la condivisione di documenti all'interno del team.
+Un portale è un sito di SharePoint nella rete Intranet con un numero elevato di visualizzatori di siti che utilizzano il contenuto del sito. Nelle organizzazioni di grandi dimensioni potrebbero essere presenti diverse di queste. ad esempio, un portale aziendale e un portale HR. In genere, i portali presentano relativamente poche persone che creano e modificano il sito e il relativo contenuto. La maggior parte dei visitatori del portale legge e utilizza solo il contenuto.
 
 In questo articolo viene descritto come pianificare la distribuzione e il piano di implementazione di SharePoint Online. Sono inoltre disponibili approcci da seguire come test di carico tradizionale non consentiti in SharePoint Online. SharePoint Online è un servizio cloud e le funzionalità di carico, integrità e bilanciamento del carico generale nel servizio sono gestite da Microsoft.
 
