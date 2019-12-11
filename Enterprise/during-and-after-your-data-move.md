@@ -3,7 +3,7 @@ title: Durante e dopo lo spostamento dati
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250502"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39959281"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -30,7 +30,7 @@ Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli 
 Guardare il centro messaggi di Office 365 per conferma quando si sposta per ogni di Exchange Online, SharePoint Online e Skype for business sono stati completati. Come illustrato nella tabella seguente, è possibile richiedere fino a 24 mesi, dopo la fine del periodo di registrazione, per completare tutti gli spostamenti di dati richiesti per tutti i clienti in uno specifico Geo. Se dopo lo spostamento vengono visualizzati eventuali problemi con il tenant, contattare il [supporto di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) per ottenere assistenza. 
   
 
-|**Clienti con indirizzo di fatturazione in**|**Tutti gli spostamenti completati da**|
+|**Clienti con paese di registrazione in**|**Tutti gli spostamenti completati da**|
 |:-----|:-----|
 |Australia, Nuova Zelanda, Figi  <br/> |31 ottobre 2017  <br/> |
 |Giappone  <br/> |31 ottobre 2018  <br/> |
@@ -41,6 +41,8 @@ Guardare il centro messaggi di Office 365 per conferma quando si sposta per ogni
 |Francia  <br/> |15 settembre 2020  <br/> |
 |Emirati Arabi Uniti  <br/> |2022 febbraio 1  <br/> |
 |Sudafrica  <br/> |2022 febbraio 1  <br/> |
+|Svizzera, Liechtenstein  <br/> |Luglio 1, 2022  <br/> |
+|Germania  <br/> |Pianificata  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 

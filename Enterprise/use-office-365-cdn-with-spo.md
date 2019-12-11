@@ -3,7 +3,7 @@ title: Usare la rete per la distribuzione di contenuti di Office 365 con SharePo
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: In questo articolo viene descritto come utilizzare la rete di distribuzione del contenuto (CDN) di Office 365 per velocizzare il recapito delle risorse di SharePoint Online a tutti gli utenti, indipendentemente dal luogo in cui si trovano o dal modo in cui accedono al contenuto.
-ms.openlocfilehash: bb60e129f988041a7d763c1558a9ee3c86f75226
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: de4982047e7a92d7df477128274e0037fbc86d42
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813514"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962483"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online
 
@@ -688,9 +688,9 @@ Dopo aver aggiunto collegamenti alle risorse della rete CDN a una pagina, è pos
 È inoltre possibile utilizzare gli strumenti di sviluppo del browser per visualizzare l'URL di ogni risorsa in una pagina o utilizzare uno strumento di traccia di rete di terze parti.
 
 > [!NOTE]
-> Se si utilizza uno strumento di rete, ad esempio Fiddler, per testare le risorse all'esterno del rendering del cespite da una pagina di SharePoint, è necessario aggiungere manualmente l'intestazione Referrer " `https://yourdomain.sharepoint.com`Referrer:" alla richiesta GET, in cui l'URL è l'URL radice del tenant di SharePoint Online.
+> Se si utilizza uno strumento di rete, ad esempio Fiddler, per testare le risorse all'esterno del rendering del cespite da una pagina di SharePoint, è necessario aggiungere manualmente l'intestazione `https://yourdomain.sharepoint.com`referer "Referer:" alla richiesta GET, in cui l'URL è l'URL radice del tenant di SharePoint Online.
 
-Non è possibile testare gli URL della rete CDN direttamente in un Web browser perché è necessario disporre di un referrer proveniente da SharePoint Online. Tuttavia, se si aggiunge l'URL delle risorse della rete CDN a una pagina di SharePoint e quindi si apre la pagina in un browser, verrà visualizzata la risorsa della rete CDN di cui è stato eseguito il rendering nella pagina.
+Non è possibile testare gli URL della rete CDN direttamente in un Web browser perché è necessario disporre di un Referer proveniente da SharePoint Online. Tuttavia, se si aggiunge l'URL delle risorse della rete CDN a una pagina di SharePoint e quindi si apre la pagina in un browser, verrà visualizzata la risorsa della rete CDN di cui è stato eseguito il rendering nella pagina.
 
 Per ulteriori informazioni sull'utilizzo degli strumenti di sviluppo nel browser Microsoft Edge, vedere [Microsoft Edge Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide).
 

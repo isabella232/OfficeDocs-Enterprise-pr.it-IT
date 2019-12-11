@@ -3,7 +3,7 @@ title: Come richiedere lo spostamento dati
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756595"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962463"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
@@ -28,7 +28,7 @@ I clienti di Office 365 esistenti sono idonei a richiedere la migrazione anticip
   
 ## <a name="when-can-i-request-a-move"></a>Quando è possibile richiedere un trasferimento?
 
-|**Clienti con indirizzo di fatturazione in**|**Inizio del periodo di richiesta**|**Scadenza richieste**|
+|**Clienti con paese di registrazione in**|**Inizio del periodo di richiesta**|**Scadenza richieste**|
 |:-----|:-----|:-----|
 |Giappone  <br/> |2016 agosto 1  <br/> |31 ottobre 2016  <br/> |
 |Australia, Nuova Zelanda, Figi  <br/> |2016 agosto 1  <br/> |31 ottobre 2016  <br/> |
@@ -39,10 +39,12 @@ I clienti di Office 365 esistenti sono idonei a richiedere la migrazione anticip
 |Francia  <br/> |14 marzo 2018  <br/> |15 settembre 2018  <br/> |
 |Emirati Arabi Uniti  <br/> |15 luglio 2019  <br/> |31 gennaio 2020  <br/> |
 |Sudafrica  <br/> |25 luglio 2019  <br/> |31 gennaio 2020  <br/> |
+|Svizzera, Liechtenstein  <br/> |10 dicembre 2019  <br/> |30 giugno 2020  <br/> |
+|Germania  <br/> |Pianificata  <br/> |Pianificata  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Come richiedere uno spostamento
 
-I clienti idonei vedranno una pagina nell'interfaccia di [Amministrazione](https://aka.ms/365admin), che consentirà loro di richiedere di spostare i dati di base dei clienti nella nuova area del datacenter.  
+I clienti idonei vedranno una pagina nell'interfaccia di [amministrazione di Microsoft 365](https://aka.ms/365admin), che consentirà loro di richiedere di spostare i dati di base dei clienti nella nuova area del datacenter.  
   
 Per accedere alla pagina nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra espandere **Impostazioni**e quindi fare clic su **profilo organizzazione**.
   

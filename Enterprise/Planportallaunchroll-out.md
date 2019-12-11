@@ -13,14 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: In questo articolo viene descritto come pianificare il lancio del portale in SharePoint Online e quali operazioni eseguire per un'operazione di avvio con esito positivo
-ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 8c7f427d0f8f89b11b144d045a03fa3138b8f019
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919128"
+ms.locfileid: "39959120"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Pianificazione del piano di avvio del portale per il lancio in SharePoint Online
+
 Un portale è un sito di SharePoint nella rete Intranet con un numero elevato di visualizzatori di siti che utilizzano il contenuto del sito. Nelle organizzazioni di grandi dimensioni potrebbero essere presenti diverse di queste. ad esempio, un portale aziendale e un portale HR. In genere, i portali presentano relativamente poche persone che creano e modificano il sito e il relativo contenuto. La maggior parte dei visitatori del portale legge e utilizza solo il contenuto.
 
 In questo articolo viene descritto come pianificare la distribuzione e il piano di implementazione di SharePoint Online. Sono inoltre disponibili approcci da seguire come test di carico tradizionale non consentiti in SharePoint Online. SharePoint Online è un servizio cloud e le funzionalità di carico, integrità e bilanciamento del carico generale nel servizio sono gestite da Microsoft.
