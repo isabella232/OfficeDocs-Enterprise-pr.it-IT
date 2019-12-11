@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365.
-ms.openlocfilehash: 739a14460d4039281bde11eb1bec60bb3a5b8886
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076400"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919380"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
-Questo articolo fornisce informazioni di riferimento per le varie impostazioni che possono interessare la condivisione guest per i carichi di lavoro di Microsoft 365: Teams, Gruppi di Office 365, SharePoint e OneDrive. Queste impostazioni si trovano nelle interfacce di amministrazione di Azure Active Directory, Microsoft 365, Teams e SharePoint admin centers.
+Questo articolo fornisce informazioni di riferimento per le varie impostazioni che possono interessare la condivisione con persone esterne all'organizzazione per i carichi di lavoro di Microsoft 365: Teams, Gruppi di Office 365, SharePoint e OneDrive. Queste impostazioni si trovano nelle interfacce di amministrazione di Azure Active Directory, Microsoft 365, Teams e SharePoint admin centers.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 

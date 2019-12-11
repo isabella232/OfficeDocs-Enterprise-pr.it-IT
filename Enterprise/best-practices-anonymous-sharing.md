@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: Informazioni sulla procedure consigliate per la condivisione di file e cartelle con utenti non autenticati.
-ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: decdc068f238329516ae0ce3594e68a753780216
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886505"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919138"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati
 
-La condivisione non autenticata (collegamenti *Chiunque*) può essere comoda e utile in diversi scenari. I collegamenti *Chiunque* sono il modo più semplice per condividere: il collegamento può essere aperto senza autenticazione e passato ad altri utenti.
+La condivisione non autenticata (collegamenti *Chiunque*) può essere comoda e utile in diversi scenari. I collegamenti *Chiunque* sono il modo più semplice per condividere: il collegamento può essere aperto senza autenticazione e passato ad altre persone.
 
 In genere, non tutto il contenuto di un'organizzazione è adatto alla condivisione non autenticata. Questo articolo illustra le opzioni disponibili per la creazione di un ambiente in cui gli utenti possano condividere file e cartelle senza autenticazione e in cui siano implementate misure di sicurezza per proteggere il contenuto dell'organizzazione.
 
@@ -51,7 +51,7 @@ Per impostare le autorizzazioni per i collegamenti Chiunque
 3. In **Impostazioni avanzate per i collegamenti di tipo "Chiunque"** selezionare le autorizzazioni per i file e le cartelle da usare.</br>
    ![Screenshot delle impostazioni per le autorizzazioni dei collegamenti Chiunque a livello di organizzazione in SharePoint](media/sharepoint-organization-anyone-link-permissions.png)
 
-Con i collegamenti *Chiunque* impostati su **Visualizzazione**, è comunque possibile condividere file e cartelle con utenti guest e assegnare loro le autorizzazioni di modifica utilizzando i collegamenti *Persone specifiche*. Questi collegamenti richiedono l'autenticazione degli utenti guest e consentono di tenere traccia e controllare le attività di tali utenti sulle cartelle e sui file condivisi.
+Con i collegamenti *Chiunque* impostati su **Visualizzazione**, è comunque possibile condividere file e cartelle con utenti guest e assegnare loro le autorizzazioni di modifica utilizzando i collegamenti *Persone specifiche*. Questi collegamenti richiedono l'autenticazione come guest da parte delle persone esterne all'organizzazione e consentono di tenere traccia e controllare le attività di tali utenti sulle cartelle e sui file condivisi.
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Impostare il tipo di collegamento predefinito in modo che funzioni solo per le persone dell'organizzazione
 
