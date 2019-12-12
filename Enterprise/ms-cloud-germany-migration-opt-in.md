@@ -1,5 +1,5 @@
 ---
-title: Come acconsentire esplicitamente alla migrazione da Microsoft Cloud Germany (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree geografiche tedesche dei data center
+title: Come acconsentire esplicitamente alla migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,17 +17,17 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: '
-ms.openlocfilehash: 6105b9a386a64c2f855433fcc60ebb41149afdab
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 97075a861a86f8285837b8528f8c387d45dbafab
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39920262"
+ms.locfileid: "39962433"
 ---
-# <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Come acconsentire esplicitamente alla migrazione da Microsoft Cloud Germany (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree geografiche tedesche dei data center
+# <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Come acconsentire esplicitamente alla migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche
 
 >[!Note]
->Questo articolo interessa solo i clienti idonei di Microsoft Cloud Germany/Deutschland.
+>Questo articolo interessa solo i clienti idonei di Microsoft Cloud Germania/Deutschland.
 >
 
 ## <a name="how-to-request-migration"></a>Come richiedere la migrazione
@@ -46,7 +46,7 @@ Una nuova sezione apparirà sul lato destro dello schermo per accettare la confe
  
 ![Accettazione consenso esplicito](./media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-Dopo che un amministratore avrà acconsentito esplicitamente per conto del tenant, tutti gli amministratori visualizzeranno la conferma nella sezione **Migrazione da Microsoft Cloud Germany (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche**, inclusa la data del consenso esplicito. Gli amministratori riceveranno una conferma anche nel Centro messaggi dell'interfaccia di amministrazione di Microsoft 365. 
+Dopo che l'amministratore avrà acconsentito esplicitamente per conto del tenant, tutti gli amministratori visualizzeranno la conferma nella sezione **Migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche**, inclusa la data del consenso esplicito. Inoltre, gli amministratori riceveranno una conferma nel Centro messaggi dell'interfaccia di amministrazione di Microsoft 365. 
  
 ![Conferma del consenso esplicito](./media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
@@ -56,8 +56,8 @@ Per le organizzazioni che hanno acconsentito a partecipare all'approccio guidato
 
 ## <a name="more-information"></a>Altre informazioni
 
-- Assistenza sulla migrazione di Microsoft Cloud Deutschland disponibile all'indirizzo [https://aka.ms/germanymigrateassist](https://aka.ms/germanymigrateassist)
-- Migrazione di Office 365 disponibile all'indirizzo [https://aka.ms/office365germanymove](https://aka.ms/office365germanymove)
-- Migrazione di Dynamics 365 disponibile all'indirizzo [https://aka.ms/d365ceoptin](https://aka.ms/d365ceoptin)
-- Migrazione di Power BI disponibile all'indirizzo [https://aka.ms/pbioptin](https://aka.ms/pbioptin)
+- [Assistenza per la migrazione di Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
+- [Programma di migrazione di Office 365 per clienti di Microsoft Cloud Deutschland](https://aka.ms/office365germanymove)
+- [Programma di migrazione di Dynamics 365 per clienti di Microsoft Cloud Deutschland](https://aka.ms/d365ceoptin)
+- [Programma di migrazione di Power BI per clienti di Microsoft Cloud Deutschland](https://aka.ms/pbioptin)
 - Inviare domande tramite il collegamento "Serve aiuto?" nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.de/)
