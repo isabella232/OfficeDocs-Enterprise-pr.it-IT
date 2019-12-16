@@ -7,22 +7,31 @@
 ### [Utilizzare Windows PowerShell per creare report in Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
 ### [Riferimenti cmdlet per i servizi di Office 365](cmdlet-references-for-office-365-services.md)
 ### [Risorse della community di PowerShell di Office 365](office-365-powershell-community-resources.md)
-## [Gestire gli account utente e le licenze](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-### [Visualizzare le licenze e i servizi](view-licenses-and-services-with-office-365-powershell.md)
-### [Visualizzare gli utenti con licenza e senza licenza](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-### [Assegnare licenze agli account utente](assign-licenses-to-user-accounts-with-office-365-powershell.md).
-### [Visualizzare la licenza dell'account e i dettagli di servizio](view-account-license-and-service-details-with-office-365-powershell.md)
-### [Assegnare ruoli agli account utente](assign-roles-to-user-accounts-with-office-365-powershell.md)
-### [Disabilitare l'accesso ai servizi](disable-access-to-services-with-office-365-powershell.md)
-#### [Disabilitare l'accesso a Sway](disable-access-to-sway-with-office-365-powershell.md)
-#### [Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente](disable-access-to-services-while-assigning-user-licenses.md)
-### [Rimuovere licenze dagli account utente](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-### [Bloccare account utente](block-user-accounts-with-office-365-powershell.md)
-### [Eliminare e ripristinare account utente](delete-and-restore-user-accounts-with-office-365-powershell.md)
-### [Creare account utente](create-user-accounts-with-office-365-powershell.md)
-### [Visualizzare account utente](view-user-accounts-with-office-365-powershell.md)
-### [Configurare le proprietà degli account utente](configure-user-account-properties-with-office-365-powershell.md)
-## [Gestire gruppi](manage-office-365-groups-with-powershell.md)
+
+## [Gestire gli account utente, le licenze e i gruppi](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+
+### Account utente
+#### [Creare account utente](create-user-accounts-with-office-365-powershell.md)
+#### [Visualizzare account utente](view-user-accounts-with-office-365-powershell.md)
+#### [Configurare le proprietà degli account utente](configure-user-account-properties-with-office-365-powershell.md)
+#### [Assegnare ruoli agli account utente](assign-roles-to-user-accounts-with-office-365-powershell.md)
+#### [Eliminare e ripristinare account utente](delete-and-restore-user-accounts-with-office-365-powershell.md)
+#### [Bloccare account utente](block-user-accounts-with-office-365-powershell.md)
+
+### Licenze e servizi
+#### [Visualizzare le licenze e i servizi](view-licenses-and-services-with-office-365-powershell.md)
+#### [Visualizzare gli utenti con licenza e senza licenza](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+#### [Assegnare licenze agli account utente](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+#### [Visualizzare la licenza dell'account e i dettagli di servizio](view-account-license-and-service-details-with-office-365-powershell.md)
+#### [Disabilitare l'accesso ai servizi](disable-access-to-services-with-office-365-powershell.md)
+##### [Disabilitare l'accesso a Sway](disable-access-to-sway-with-office-365-powershell.md)
+##### [Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente](disable-access-to-services-while-assigning-user-licenses.md)
+#### [Rimuovere licenze dagli account utente](remove-licenses-from-user-accounts-with-office-365-powershell.md)
+
+### Gruppi
+#### [Gestire l'appartenenza ai gruppi](maintain-group-membership-with-office-365-powershell.md)
+#### [Gestire i gruppi di Office 365](manage-office-365-groups-with-powershell.md)
+
 ## [Gestire SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
 ### [Creare siti di SharePoint Online e aggiungere utenti](create-sharepoint-sites-and-add-users-with-powershell.md)
 ### [Gestire gli utenti e i gruppi di SharePoint Online](manage-sharepoint-users-and-groups-with-powershell.md)
