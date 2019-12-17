@@ -20,15 +20,15 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Informazioni su cosa fare se si dispone di un dominio non routale associato agli utenti locali prima di eseguire la sincronizzazione con Office 365.
-ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 013d29acdd3761793a93dab1eb8583324ba08591
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203635"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072418"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparare un dominio non instradabile per la sincronizzazione della directory
-Quando si sincronizza la directory locale con Office 365, è necessario disporre di un dominio verificato in Azure Active Directory. Vengono sincronizzati solo i nomi dell'entità utente (UPN, User Principal Name) associati al dominio locale. Tuttavia, tutti gli UPN che contengono un dominio non instradabile, ad esempio Local (come Billa @ contoso. local), verranno sincronizzati con un dominio. onmicrosoft.com (come billa@contoso.onmicrosoft.com). 
+Quando si sincronizza la directory locale con Office 365, è necessario disporre di un dominio verificato in Azure Active Directory. Vengono sincronizzati solo i nomi dell'entità utente (UPN, User Principal Name) associati al dominio locale. Tuttavia, qualsiasi UPN che contiene un dominio non instradabile, ad esempio Local (come billa@contoso. local), verrà sincronizzato con un dominio. onmicrosoft.com (come billa@contoso.onmicrosoft.com). 
 
 Se si utilizza attualmente un dominio. local per gli account utente in Active Directory, è consigliabile modificarli in modo da utilizzare un dominio verificato (come billa@contoso.com) per sincronizzarlo correttamente con il dominio di Office 365.
   
@@ -70,7 +70,7 @@ Dopo aver aggiornato l'UPN per l'utilizzo del dominio verificato, si è pronti p
     
  **Passaggio 2: modificare il suffisso UPN per gli utenti esistenti**
   
-1. Sul server in cui è in esecuzione Active Directory Domain Services (ad DS), in Server Manager scegliere **** \> **gli utenti e i computer**di Active Directory.
+1. Sul server in cui è in esecuzione Active Directory Domain Services (ad DS), in Server Manager scegliere \> **gli utenti e i computer** **di Active Directory** .
     
     **In alternativa, se non si dispone di Windows Server 2012**
     
@@ -91,12 +91,10 @@ Se si dispone di molti utenti da aggiornare, è più facile usare Windows PowerS
 
 Eseguire i seguenti comandi di Windows PowerShell per aggiornare tutti i suffissi contoso. local a contoso.com:
     
-  ```
+  ```powershell
   $LocalUsers = Get-ADUser -Filter {UserPrincipalName -like '*contoso.local'} -Properties userPrincipalName -ResultSetSize $null
-  ```
-
-  ```
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("contoso.local","contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
+
 Per ulteriori informazioni sull'utilizzo di Windows PowerShell in Active Directory, vedere [modulo di Windows PowerShell di Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=624314) . 
 

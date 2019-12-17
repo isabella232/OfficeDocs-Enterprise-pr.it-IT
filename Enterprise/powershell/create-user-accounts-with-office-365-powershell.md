@@ -3,7 +3,7 @@ title: Creare account utente con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,17 +15,15 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Informazioni su come usare PowerShell di Office 365 per creare account utente in Office 365.
-ms.openlocfilehash: 618459cbf226a9a7cef0e03c7126d791f2ca8bc8
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: b69e0afa6177f29ed2abe18be39f5db08c9f5e75
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257415"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072228"
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Creare account utente con Office 365 PowerShell
 
-**Sintesi**: Informazioni su come usare PowerShell di Office 365 per creare account utente in Office 365.
-  
 È possibile utilizzare PowerShell di Office 365 per creare in modo efficiente account utente, in particolare di tipo multiplo. Quando si creano account utente in PowerShell di Office 365, alcune proprietà dell'account sono sempre richieste. Altre proprietà non sono necessarie per creare l'account, ma sono comunque importanti. Tali proprietà sono descritte nella tabella seguente.
   
 |**Nome della proprietà**|**Obbligatorio?**|**Descrizione**|
@@ -72,7 +70,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet con **MSOL** nel proprio nome. Per continuare a utilizzare questi cmdlet, è necessario eseguirli da Windows PowerShell.
+>PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
 >
 
 Per elencare i nomi dei piani di gestione delle licenze disponibili, usare il seguente comando:
@@ -117,7 +115,7 @@ In questo esempio, vengono creati gli account utente dal file denominato C:\My D
     
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
   

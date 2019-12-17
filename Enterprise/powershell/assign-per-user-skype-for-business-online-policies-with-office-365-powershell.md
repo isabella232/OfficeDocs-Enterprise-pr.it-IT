@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Riepilogo: Utilizzare PowerShell di Office 365 per assegnare impostazioni di comunicazione per utente con criteri Skype for Business online.'
-ms.openlocfilehash: 2252a6df4298bb36a669404aefac3b14eaa23b7f
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e425c3f0bc6253550b1be2081df89e535da811f4
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031041"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072258"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Assegnare criteri Skype for Business Online con PowerShell di Office 365
 
- **Sintesi:** Utilizzare PowerShell di Office 365 per assegnare impostazioni di comunicazione per utente con criteri Skype for Business online.
-  
 L'utilizzo di PowerShell di Office 365 è un modo efficace di assegnare impostazioni di comunicazione per utente con criteri Skype for Business online.
   
 ## <a name="before-you-begin"></a>Prima di iniziare
@@ -33,12 +31,13 @@ Utilizzare queste istruzioni per ottenere la configurazione che consenta di eseg
     
 2. Aprire il prompt dei comandi Windows PowerShell ed eseguire quanto segue: 
     
-  ```
-  Import-Module LyncOnlineConnector
+```powershell
+Import-Module LyncOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
 Import-PSSession $sfbSession
-  ```
+```
+
 Quando richiesto, immettere il nome e la password dell'account Administrator di Skype for Business online.
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>Aggiornamento delle impostazioni di comunicazione esterna per un account utente
@@ -54,13 +53,13 @@ Si supponga di voler modificare le impostazioni di comunicazione esterna in un a
   
 Pertanto, come è possibile determinare qualche criterio di accesso esterno deve essere assegnato ad Alex? Il comando seguente restituisce tutti i criteri di accesso esterno nei quali EnableFederationAccess è impostato su True e EnablePublicCloudAccess è impostato su False:
   
-```
+```powershell
 Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
 Il comando chiede di restituire tutti i criteri che soddisfano due requisiti: la proprietà EnableFederationAccess deve essere impostata su True e il criterio EnablePublicCloudAccess su False. A sua volta, il comando restituisce un criterio (FederationOnly) che soddisfa i criteri necessari. Di seguito viene riportato un esempio:
   
-```
+```powershell
 Identity                          : Tag:FederationOnly
 Description                       :
 EnableFederationAccess            : True
@@ -75,7 +74,7 @@ EnableOutsideAccess               : True
   
 Quando si conosce il criterio da assegnare ad Alex, è possibile assegnarlo utilizzando il cmdlet [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974). Di seguito viene riportato un esempio:
   
-```
+```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
 ```
 
@@ -83,7 +82,7 @@ Assegnare un criterio è piuttosto semplice: è necessario specificare soltanto 
   
 Nel caso di criteri e assegnazione dei criteri, non ci si limita a effettuare operazioni con account utenti una sola volta. Ad esempio, si supponga che sia necessario disporre di un elenco di tutti gli utenti che possono comunicare con partner federati e con gli utenti di Windows Live. È noto che a tali utenti è stato assegnato il criterio di accesso utente esterno FederationAndPICDefault. Dal momento che si conosce tale informazione, è possibile visualizzare un elenco di tutti gli utenti eseguendo un comando semplice. Di seguito viene riportato il comando:
   
-```
+```powershell
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName
 ```
 
@@ -91,7 +90,7 @@ in altre parole, è possibile visualizzare tutti gli utenti per i quali la propr
   
 Per configurare tutti gli account utente affinché utilizzino quello stesso criterio, usare questo comando:
   
-```
+```powershell
 Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 ```
 
@@ -99,7 +98,7 @@ Il comando utilizza Get-CsOnlineUser per restituire una raccolta di tutti gli ut
   
 Come esempio aggiuntivo, si supponga di aver assegnato in precedenza il criterio FederationAndPICDefault ad Alex, ma ora si desidera che Alex sia gestito dal criterio di accesso esterno globale. Non è possibile assegnare in modo esplicito il criterio globale. Viene utilizzato solo se nessun altro criterio per utente è assegnato. Pertanto, se si desidera che Alex sia gestito dal criterio globale, è necessario  *non assegnare*  i criteri per utente assegnati in precedenza all'utente. Ecco un esempio di comando:
   
-```
+```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
@@ -108,8 +107,6 @@ Il comando imposta il nome del criterio di accesso esterno assegnato ad Alex su 
 Per disabilitare un account utente tramite Windows PowerShell, utilizzare i cmdlet di Azure Active Directory per rimuovere la licenza di Skype for Business Online di Alex. Per ulteriori informazioni, vedere [Disabilitare l'accesso ai servizi con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
   
 ## <a name="see-also"></a>Vedere anche
-
-#### 
 
 [Gestire Skype for Business Online con PowerShell di Office 365](manage-skype-for-business-online-with-office-365-powershell.md)
   

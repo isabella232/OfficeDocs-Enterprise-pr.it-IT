@@ -3,7 +3,7 @@ title: Configurare le proprietà degli account utente con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/07/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,17 +15,15 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Sintesi: utilizzare PowerShell di Office 365 per configurare le proprietà di uno o più account utente nel tenant di Office 365.'
-ms.openlocfilehash: 67ce7d3c57f286f0b2365aa2503fdf1c8bc13429
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: b9cd529cd5881d522285ff43a60e954bc9ebd193
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257657"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072238"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurare le proprietà degli account utente con Office 365 PowerShell
 
- **Sintesi:** Utilizzare PowerShell di Office 365 per configurare le proprietà di uno o più account utente nel tenant di Office 365.
-  
 Anche se è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per configurare le proprietà degli account utente del tenant di Office 365, è anche possibile utilizzare PowerShell per Office 365 e fare alcuni elementi che non possono essere configurati dal centro di amministrazione.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
@@ -76,16 +74,17 @@ Per ulteriori parametri, vedere [Set-AzureADUser](https://docs.microsoft.com/pow
 Per visualizzare il nome principale degli utenti per gli account utente, eseguire il comando seguente.
   
 ```powershell
-Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
+Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName | More
 ```
 
 Questo comando indica a PowerShell di Office 365 di:
   
 - Accedere a tutte le informazioni degli account utente ( **Get-AzureADUser** ) e inviarle al comando successivo ( **|** ).
     
-- Elencare i nomi principali degli utenti in ordine alfabetico ( **Sort-Object UserPrincipalName** ) e inviarli al comando successivo ( **|** ).
+- Ordinare l'elenco dei nomi delle entità utente in ordine alfabetico ( **Sort userPrincipalName** ) e inviarlo al comando **|** successivo ().
     
-- Visualizzare solo la proprietà del nome principale degli utenti per ogni account ( **Select-Object UserPrincipalName** ).
+- Visualizzare solo la proprietà del nome dell'entità utente per ogni account ( **selezionare userPrincipalName** ).
+
 - Visualizzare gli elementi in una schermata alla volta ( **More** ).
     
 Con questo comando vengono elencati tutti gli account. Se si desidera visualizzare il nome principale dell'utente di un account in base al nome visualizzato (nome e cognome), inserire la variabile **$userName** sotto (rimuovendo i caratteri \< e >), quindi eseguire i comandi seguenti:
@@ -129,7 +128,7 @@ Questo comando indica a PowerShell di Office 365 di:
 Per modificare le proprietà per un set specifico di account utente, è possibile utilizzare la combinazione di cmdlet **Get-AzureADUser**, **Where** e **Set-AzureADUser**. Nell'esempio seguente viene modificata la posizione di utilizzo per tutti gli utenti del reparto Contabilità in Francia:
   
 ```powershell
-Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
+Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
 ```
 
 Questo comando indica a PowerShell di Office 365 di:
@@ -142,17 +141,17 @@ Questo comando indica a PowerShell di Office 365 di:
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Per configurare le proprietà degli account utente con il modulo di Microsoft Azure Active Directory per Windows PowerShell, utilizzare il cmdlet Set-MsolUser e specificare le proprietà da impostare o modificare. 
+Per configurare le proprietà degli account utente con il modulo di Microsoft Azure Active Directory per Windows PowerShell, utilizzare il cmdlet **set-MsolUser** e specificare le proprietà da impostare o modificare. 
 
 Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
 >[!Note]
->PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet con **MSOL** nel proprio nome. Per continuare a utilizzare questi cmdlet, è necessario eseguirli da Windows PowerShell.
+>PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
 >
 
 ### <a name="change-properties-for-a-specific-user-account"></a>Modificare le proprietà per un account utente specifico
 
-Per configurare le proprietà per un account utente specifico, utilizzare il cmdlet [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) e specificare le proprietà da impostare o modificare. 
+Per configurare le proprietà per un account utente specifico, utilizzare il cmdlet [Set-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194136(v=azure.100)) e specificare le proprietà da impostare o modificare. 
 
 Identificare l'account con il parametro **-UserPrincipalName** e impostare o modificare proprietà specifiche con ulteriori parametri. Ecco un elenco dei parametri più comuni.
   
@@ -190,21 +189,21 @@ Identificare l'account con il parametro **-UserPrincipalName** e impostare o mod
     
     Si tratta del codice paese o area geografica a due lettere ISO 3166-1 alpha-2 (A2).
     
-Per ulteriori parametri, vedere [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).
+Per ulteriori parametri, vedere [Set-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194136(v=azure.100)).
 
 Per visualizzare i nomi principali di tutti gli utenti, eseguire il comando seguente.
   
 ```powershell
-Get-MSolUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
+Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName | More
 ```
 
 Questo comando indica a PowerShell di Office 365 di:
   
 - Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).
     
-- Elencare i nomi principali degli utenti in ordine alfabetico ( **Sort-Object UserPrincipalName** ) e inviarli al comando successivo ( **|** ).
+- Ordinare l'elenco dei nomi delle entità utente in ordine alfabetico ( **Sort userPrincipalName** ) e inviarlo al comando **|** successivo ().
     
-- Visualizzare solo la proprietà del nome principale degli utenti per ogni account ( **Select-Object UserPrincipalName** ).
+- Visualizzare solo la proprietà del nome dell'entità utente per ogni account ( **selezionare userPrincipalName** ).
     
 - Visualizzare gli elementi in una schermata alla volta ( **More** ).
     
@@ -246,24 +245,24 @@ Questo comando indica a PowerShell di Office 365 di:
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>Modificare le proprietà per un set specifico di account utente
 
-Per modificare le proprietà per un set specifico di account utente, è possibile utilizzare la combinazione di cmdlet **Get-MsolUser**, **Where-Object** e **Set-MsolUser**. Nell'esempio seguente viene modificata la posizione di utilizzo per tutti gli utenti del reparto Contabilità in Francia:
+Per modificare le proprietà di un determinato set di account utente, è possibile utilizzare la combinazione dei cmdlet **Get-MsolUser**, **where**e **set-MsolUser** . Nell'esempio seguente viene modificata la posizione di utilizzo per tutti gli utenti del reparto Contabilità in Francia:
   
 ```powershell
-Get-MsolUser | Where-Object {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
+Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
 ```
 
 Questo comando indica a PowerShell di Office 365 di:
   
 - Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).
     
-- Individuare tutti gli account utente con la proprietà Department impostata su "Accounting" ( **Where-Object {$_.Department -eq "Accounting"}** ) e inviare le informazioni risultanti al comando successivo ( **|** ).
+- Individuare tutti gli account utente con la proprietà Department impostata su "Accounting" ( **Where {$_.Department -eq "Accounting"}** ) e inviare le informazioni risultanti al comando successivo ( **|** ).
     
 - Impostare la posizione dell'utente in Francia ( **Set-MsolUser -UsageLocation "FR"** ).
     
 
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
   

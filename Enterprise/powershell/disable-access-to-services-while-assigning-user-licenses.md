@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Informazioni su come assegnare licenze ad account utente e disabilitare i piani di servizio specifici nello stesso momento usando PowerShell di Office 365.
-ms.openlocfilehash: 06b6de4ea6d96dd2c9510770042bd2a2f1260876
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: cbf19005ac78599a280ff1dd1b007242731e39db
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257395"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072188"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente
 
@@ -70,7 +70,7 @@ Get-MsolAccountSku
 ```
 
 >[!Note]
->PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet con **MSOL** nel proprio nome. Per continuare a utilizzare questi cmdlet, è necessario eseguirli da Windows PowerShell.
+>PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
 >
 
 Nella visualizzazione del comando  `Get-MsolAccountSku`:
@@ -192,7 +192,7 @@ Blocco di comando di PowerShell:
   
 [Disattivare l'accesso a Sway con PowerShell di Office 365](disable-access-to-sway-with-office-365-powershell.md)
   
-[Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
 

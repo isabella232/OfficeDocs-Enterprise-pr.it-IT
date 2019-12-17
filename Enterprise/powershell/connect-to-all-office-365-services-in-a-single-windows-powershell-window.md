@@ -3,7 +3,7 @@ title: Effettuare la connessione a tutti i servizi Office 365 in un'unica finest
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/28/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,17 +16,15 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Riepilogo: connettere Windows PowerShell a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell."
-ms.openlocfilehash: c8390b3d704fa9df64f147a942891308b1ed825f
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: ec24914367450e4ff464b3399be9cb2e626dd254
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257425"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072508"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell
 
- **Riepilogo:** Invece di gestire diversi servizi di Office 365 in finestre separate della console PowerShell, è possibile connettersi a tutti i servizi di Office 365 e gestirli da una singola finestra della console.
-  
 Quando si utilizza PowerShell per gestire Office 365, è possibile che siano disponibili fino a cinque sessioni di Windows PowerShell diverse contemporaneamente corrispondenti all'interfaccia di amministrazione di Microsoft 365, SharePoint Online, Exchange Online, Skype for business online e il Centro sicurezza &amp; e conformità. Con cinque diversi metodi di connessione in sessioni di Windows PowerShell separate, il desktop potrebbe essere simile al seguente:
   
 ![Cinque console di Windows PowerShell in esecuzione contemporaneamente](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
@@ -100,7 +98,7 @@ Di seguito sono riportati i passaggi da eseguire per la connessione a tutti i se
  ```
 
 >[!Note]
->PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet con **MSOL** nel proprio nome. Per continuare a utilizzare questi cmdlet, è necessario eseguirli da Windows PowerShell.
+>PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
 >
 
 4. Eseguire questi comandi per connettersi a SharePoint Online. Sostituire _ \<DomainHost>_ con il valore effettivo per il dominio. Ad esempio, per "litwareinc.onmicrosoft.com", il _ \<valore di DomainHost>_ è "litwareinc".
@@ -222,5 +220,5 @@ Tenere presente che, in entrambi i casi, è necessario connettersi utilizzando s
 
 - [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md)
 - [Gestire SharePoint Online con PowerShell di Office 365](manage-sharepoint-online-with-office-365-powershell.md)
-- [Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Utilizzo di Windows PowerShell per creare rapporti in Office 365](use-windows-powershell-to-create-reports-in-office-365.md)

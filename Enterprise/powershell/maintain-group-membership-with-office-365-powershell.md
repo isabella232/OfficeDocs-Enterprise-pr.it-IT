@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Informazioni su come utilizzare Office 365 PowerShell per mantenere l'appartenenza a gruppi per Office 365.
-ms.openlocfilehash: dfd3cad3f2e691930b5f4c754ee07205d3950e54
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: e7cd4cb76f28bfbe2e1bc538df6727ac403c29df
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886658"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072498"
 ---
 # <a name="maintain-group-membership-with-office-365-powershell"></a>Gestire l'appartenenza ai gruppi con Office 365 PowerShell
 
@@ -147,7 +147,7 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayN
 
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
   

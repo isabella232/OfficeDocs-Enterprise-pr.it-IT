@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Informazioni su come configurare la sincronizzazione della directory tra Office 365 e Active Directory locale.
-ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 505dde1a371d269f157ec076b75ca1bc5962c9da
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814594"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072148"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Configurare la sincronizzazione della directory per Office 365
 
@@ -35,7 +35,7 @@ Office 365 usa un tenant di Azure Active Directory (Azure AD) per archiviare e g
 
 Se si usa Active Directory Domain Services (AD DS), è possibile sincronizzare gli account utente, i gruppi e i contatti di Active Directory con il tenant di Azure AD dell'abbonamento a Office 365. Questa corrisponde all'identità ibrida per Office 365, i cui componenti sono descritti di seguito.
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![Componenti della sincronizzazione della directory per Office 365](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD Connect viene eseguito in un server locale e consente di sincronizzare il servizio AD DS con il tenant di Azure AD. Oltre alla sincronizzazione della directory, è anche possibile specificare le opzioni di autenticazione seguenti:
 

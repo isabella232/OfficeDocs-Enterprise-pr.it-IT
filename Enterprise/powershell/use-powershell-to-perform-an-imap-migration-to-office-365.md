@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: "Riepilogo: informazioni sull'utilizzo di Windows PowerShell per eseguire una migrazione IMAP a Office 365."
-ms.openlocfilehash: b6c68dc611d22579f81db838b2b5d08e99f7519a
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 411c60f78284c4d7405cd0a1b1d737f99155c1d3
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746269"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072468"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Utilizzo di PowerShell per eseguire una migrazione IMAP a Office 365
 
@@ -204,7 +204,7 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 
 I sistemi di posta elettronica utilizzano un record DNS denominato record MX per individuare dove recapitare i messaggi di posta elettronica. Durante il processo di migrazione della posta elettronica, il record MX fa riferimento al sistema di posta elettronica di origine. Al termine della migrazione della posta elettronica a Office 365, il record MX fa riferimento a Office 365. Ciò contribuisce a garantire che la posta elettronica sia recapitata alle cassette postali di Office 365. Spostando il record MX, è inoltre possibile disattivare il sistema di posta elettronica precedente al momento più opportuno. 
   
-Per molti provider DNS, sono disponibili istruzioni specifiche per [modificare il record MX](https://go.microsoft.com/fwlink/p/?LinkId=279163). Se il provider DNS non è incluso oppure si desidera farsi un'idea delle direzioni generali, vengono fornite anche [istruzioni generali sul record MX](https://go.microsoft.com/fwlink/?LinkId=397449).
+Per molti provider DNS, sono disponibili istruzioni specifiche per modificare il record MX. Se il provider DNS non è incluso oppure si desidera farsi un'idea delle direzioni generali, vengono fornite anche [istruzioni generali sul record MX](https://go.microsoft.com/fwlink/?LinkId=397449).
   
 È possibile che i sistemi di posta elettronica dei propri clienti e partner impieghino fino a 72 ore per riconoscere il record MX modificato. Attendere almeno 72 ore prima di procedere con l'attività successiva: Passaggio 6: eliminare il batch di migrazione IMAP. 
   

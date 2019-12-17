@@ -3,7 +3,7 @@ title: Visualizzare le licenze e i servizi con PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Viene illustrato come utilizzare Office 365 PowerShell per visualizzare informazioni sui piani di licenza, i servizi e le licenze disponibili nell'organizzazione di Office 365.
-ms.openlocfilehash: b8a0bb1845f3c0db5aa47cea0c2f6e5e580c804f
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: d212a79be127dabae52993cb8cfd21fb848b3aad
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655848"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072158"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Visualizzare le licenze e i servizi con PowerShell di Office 365
 
@@ -40,13 +40,13 @@ Ogni sottoscrizione di Office 365 è costituita dai seguenti elementi:
 
 Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-Per visualizzare informazioni di riepilogo sui piani di gestione delle licenze e sulle licenze disponibili per ogni piano, eseguire il comando riportato di seguito:
+Per visualizzare le informazioni di riepilogo sui piani di gestione delle licenze e sulle licenze disponibili per ogni piano, eseguire il comando seguente:
   
 ```powershell
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
 ```
 
-I risultati contengono le seguenti informazioni:
+I risultati contengono:
   
 - **SkuPartNumber:** Visualizza i piani di gestione delle licenze disponibili per l'organizzazione. Ad esempio, `ENTERPRISEPACK` è il nome del piano di licenza per Office 365 Enterprise E3.
     
@@ -115,7 +115,7 @@ Get-MsolAccountSku
 
 I risultati contengono le seguenti informazioni:
   
-- **AccountSkuId:** Visualizzare i piani di gestione delle licenze disponibili per l'organizzazione utilizzando `<CompanyName>:<LicensingPlan>`la sintassi.  _<CompanyName>_ è il valore specificato quando si è registrato in Office 365 ed è univoco per l'organizzazione. Il _<LicensingPlan>_ valore è lo stesso per tutti. Ad esempio, nel valore `litwareinc:ENTERPRISEPACK`, il nome della società è `litwareinc`e il nome `ENTERPRISEPACK`del piano di gestione delle licenze, che è il nome di sistema per Office 365 Enterprise E3.
+- **AccountSkuId:** Visualizzare i piani di gestione delle licenze disponibili per l'organizzazione utilizzando `<CompanyName>:<LicensingPlan>`la sintassi.  CompanyName>è il valore specificato quando si è registrato in Office 365 ed è univoco per l'organizzazione. _ \<_ Il _ \<valore>LicensingPlan_ è lo stesso per tutti gli utenti. Ad esempio, nel valore `litwareinc:ENTERPRISEPACK`, il nome della società è `litwareinc`e il nome `ENTERPRISEPACK`del piano di gestione delle licenze, che è il nome di sistema per Office 365 Enterprise E3.
     
 - **ActiveUnits:** Il numero di licenze acquistate per uno specifico piano di gestione delle licenze.
     
@@ -157,14 +157,9 @@ In questo esempio vengono illustrati i servizi di Office 365 disponibili nel pia
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-
-## <a name="new-to-office-365"></a>Nuovo utente di Office 365?
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
   

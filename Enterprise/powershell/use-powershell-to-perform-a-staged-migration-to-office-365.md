@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: "Riepilogo: informazioni sull'utilizzo di Windows PowerShell per eseguire una migrazione a fasi a Office 365."
-ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 598824933af54d79030465c825186f89b193666c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747532"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072308"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Utilizzare PowerShell per eseguire una migrazione a fasi a Office 365
 
@@ -57,7 +57,7 @@ Prima di eseguire la migrazione delle cassette postali a Office 365 utilizzando 
   
 - Utilizzare Outlook all'esterno della rete aziendale per connettersi alla cassetta postale di Exchange locale.
     
-- Utilizzare [Microsoft Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) per testare le impostazioni della connessione. Utilizzare i test di individuazione automatica di Outlook o Outlook via Internet (RPC su HTTP).
+- Utilizzare l' [Analizzatore connettività remota Microsoft](https://https://testconnectivity.microsoft.com/) per testare le impostazioni di connessione. Utilizzare i test di individuazione automatica di Outlook o Outlook via Internet (RPC su HTTP).
     
 - In PowerShell di Exchange Online, eseguire i comandi seguenti:
     
@@ -199,12 +199,6 @@ Dopo la migrazione di un batch di cassette postali, è necessario fare in modo c
 Dato che le attività di migrazione non sono ancora terminate, non è ancora possibile indirizzare gli utenti a Office 365 per la posta elettronica. Pertanto, per gli utenti che dispongono di entrambe, è possibile convertire le cassette postali locali di cui è già stata eseguita la migrazione in utenti abilitati alla posta. Quando si converte una cassetta postale in un utente abilitato alla posta elettronica, è possibile indirizzare l'utente a Office 365 per la posta elettronica invece di accedere alla cassetta postale locale. 
   
 Un altro motivo importante per convertire le cassette postali locali in utenti abilitati alla posta è rappresentato dalla possibilità di conservare gli indirizzi proxy dalle cassette postali di Office 365 semplicemente copiando questi indirizzi negli utenti abilitati alla posta. In questo modo è possibile gestire gli utenti basati su cloud dall'organizzazione locale utilizzando Active Directory. Inoltre, se si sceglie di rimuovere l'organizzazione Exchange Server locale dopo aver eseguito la migrazione di tutte le cassette postali in Office 365, gli indirizzi proxy copiati negli utenti abilitati alla posta elettronica resteranno nella distribuzione locale di Active Directory.
-  
-Per ulteriori informazioni e per scaricare gli script che consentono di convertire le cassette postali in utenti abilitati alla posta, vedere:
-  
-- [Convertire le cassette postali di Exchange 2007 in utenti abilitati alla posta](https://go.microsoft.com/fwlink/p/?LinkId=233648)
-    
-- [Convertire le cassette postali di Exchange 2003 in utenti abilitati alla posta](https://go.microsoft.com/fwlink/p/?LinkId=233647)
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>Passaggio 6: eliminare un batch di migrazione a fasi
 <a name="BK_Endpoint"> </a>

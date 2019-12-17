@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Velocizzare la pianificazione e la configurazione di Office 365 o Microsoft 365 con i consulenti per la distribuzione.
-ms.openlocfilehash: a698ea4cf4eec5640d836986ce45f71bf7dba0a8
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076150"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072368"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Consulenti per la distribuzione per i servizi di Office 365 o Microsoft 365
 
@@ -37,13 +37,13 @@ Se non si accede come amministratore tenant, verrà visualizzato un messaggio in
 
 Ogni Advisor è una procedura guidata che consente di scegliere tra le opzioni per le caratteristiche e gli optional che si desidera distribuire. In alcuni casi, è possibile utilizzare la procedura guidata per configurare qualcosa o attivare un'impostazione. Ecco un esempio.
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
+![Esempio di un consulente per la distribuzione](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
 
 Il consulente illustra le procedure per la personalizzazione delle proprie esigenze. Lungo la strada, vengono fornite istruzioni, script e altre risorse per apportare le modifiche alla configurazione.
 
 Alla fine, vengono forniti collegamenti a video e articoli di riferimento. Ecco un esempio.
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
+![Esempio di collegamenti a video e articoli di riferimento](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
 
 È possibile utilizzare questi consulenti in qualsiasi momento per ulteriori informazioni sulle funzionalità e sulle opzioni di Office 365. Ciò include durante la pianificazione o dopo aver già configurato i servizi.
   

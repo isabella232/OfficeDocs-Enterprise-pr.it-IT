@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protezione dell'accesso da parte dell'amministratore globale all'abbonamento a Office 365.
-ms.openlocfilehash: a428f3d70e87744c33c5fb5187dc869f3b2029e1
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 293044fc508c89b5e08234aa62633c6c4490ba6d
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814604"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072208"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Office 365
 
@@ -49,7 +49,7 @@ Vi sono relativamente poche attività amministrative, ad esempio l'assegnazione 
   
 1. Determinare il set di account utente a cui è stato assegnato il ruolo di amministratore globale. È possibile eseguire questa operazione con il comando di PowerShell Active Azure (Azure AD) per l'elenco dei grafici:
   
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
@@ -75,7 +75,7 @@ Il risultato deve essere:
   
 - Gli unici account utente dell'abbonamento a cui è assegnato il ruolo di amministratore globale sono i nuovi account di amministratore globale dedicati. Verificarlo con il seguente comando di PowerShell:
     
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 

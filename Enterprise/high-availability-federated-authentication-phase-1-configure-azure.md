@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Riepilogo: Configurare l'infrastruttura Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Office 365."
-ms.openlocfilehash: ca53c4584b21aab03e9383ac4eef1f321c3f4939
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 262a7dcdb2dc48f7890b7ef188b1d8ce506f40dd
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257581"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072138"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: configurare Azure
 
@@ -39,11 +39,11 @@ Prima di iniziare la configurazione dei componenti di Azure, compilare le tabell
   
 |**Elemento**|**Impostazione di configurazione**|**Descrizione**|**Valore**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nome VNet  <br/> |Un nome da assegnare alla VNet (ad esempio, FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Percorso VNet  <br/> |Data center di Azure regionale che conterrà la rete virtuale.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Indirizzo IP del dispositivo VPN  <br/> |L'indirizzo IPv4 pubblico dell'interfaccia del dispositivo VPN su Internet.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Spazio di indirizzi della VNet  <br/> |Lo spazio di indirizzi della rete virtuale. Consultare il proprio reparto IT per determinare tale spazio di indirizzi.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Chiave condivisa IPsec  <br/> |Una stringa con 32 caratteri alfanumerici casuali che verrà utilizzata per autenticare entrambi i lati della connessione VPN da sito a sito. Consultare il reparto IT o della sicurezza per determinare tale valore chiave. In alternativa, vedere [Creare una stringa casuale per una chiave già condivisa IPsec ](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Nome VNet  <br/> |Un nome da assegnare alla VNet (ad esempio, FedAuthNet).  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Percorso VNet  <br/> |Data center di Azure regionale che conterrà la rete virtuale.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Indirizzo IP del dispositivo VPN  <br/> |L'indirizzo IPv4 pubblico dell'interfaccia del dispositivo VPN su Internet.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Spazio di indirizzi della VNet  <br/> |Lo spazio di indirizzi della rete virtuale. Consultare il proprio reparto IT per determinare tale spazio di indirizzi.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Chiave condivisa IPsec  <br/> |Una stringa con 32 caratteri alfanumerici casuali che verrà utilizzata per autenticare entrambi i lati della connessione VPN da sito a sito. Consultare il reparto IT o della sicurezza per determinare tale valore chiave. In alternativa, vedere [Creare una stringa casuale per una chiave già condivisa IPsec ](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabella V: configurazione di una rete virtuale cross-premise**
   
@@ -61,10 +61,10 @@ Consultare il reparto IT per determinare tali spazi di indirizzi in base allo sp
   
 |**Elemento**|**Nome della subnet**|**Spazio di indirizzi della subnet**|**Scopo**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dal controller di dominio di servizi di dominio Active Directory (AD DS) e dalle macchine virtuali del server di sincronizzazione della directory.  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali di AD FS.  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali del proxy di applicazione Web.  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali del gateway di Azure.  <br/> |
+|1.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dal controller di dominio di servizi di dominio Active Directory (AD DS) e dalle macchine virtuali del server di sincronizzazione della directory.  <br/> |
+|2.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali di AD FS.  <br/> |
+|3.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali del proxy di applicazione Web.  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali del gateway di Azure.  <br/> |
    
  **Tabella S: subnet nella rete virtuale**
   
@@ -72,14 +72,14 @@ Successivamente, compilare la tabella I per gli indirizzi IP statici assegnati a
   
 |**Elemento**|**Scopo**|**Indirizzo IP sulla subnet**|**Valore**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Indirizzo IP statico del primo controller di dominio  <br/> |Il quarto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 1 della tabella S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Indirizzo IP statico del secondo controller di dominio  <br/> |Il quinto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 1 della tabella S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Indirizzo IP statico del server di sincronizzazione della directory  <br/> |Il sesto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 1 della tabella S.   <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Indirizzo IP statico del bilanciamento del carico interno per i server AD FS  <br/> |Il quarto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 2 della tabella S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Indirizzo IP statico del primo server AD FS  <br/> |Il quinto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 2 della tabella S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|6.  <br/> |Indirizzo IP statico del secondo server AD FS  <br/> |Il sesto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 2 della tabella S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|7.  <br/> |Indirizzo IP statico del primo server proxy dell'applicazione Web  <br/> |Il quarto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 3 della tabella S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|8.  <br/> |Indirizzo IP statico del secondo server proxy dell'applicazione Web  <br/> |Il quinto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 3 della tabella S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Indirizzo IP statico del primo controller di dominio  <br/> |Il quarto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 1 della tabella S.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Indirizzo IP statico del secondo controller di dominio  <br/> |Il quinto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 1 della tabella S.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Indirizzo IP statico del server di sincronizzazione della directory  <br/> |Il sesto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 1 della tabella S.   <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Indirizzo IP statico del bilanciamento del carico interno per i server AD FS  <br/> |Il quarto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 2 della tabella S.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Indirizzo IP statico del primo server AD FS  <br/> |Il quinto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 2 della tabella S.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |Indirizzo IP statico del secondo server AD FS  <br/> |Il sesto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 2 della tabella S.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |Indirizzo IP statico del primo server proxy dell'applicazione Web  <br/> |Il quarto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 3 della tabella S.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |Indirizzo IP statico del secondo server proxy dell'applicazione Web  <br/> |Il quinto indirizzo IP possibile per lo spazio di indirizzi della subnet definito alla voce 3 della tabella S.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabella I: Indirizzi IP statici nella rete virtuale**
   
@@ -87,8 +87,8 @@ Per due server DNS (Domain Name System) nella rete locale che si desidera utiliz
   
 |**Elemento**|**Nome descrittivo del server DNS**|**Indirizzo IP del server DNS**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabella D: server DNS locali**
   
@@ -98,9 +98,9 @@ Per l'insieme degli spazi di indirizzi della rete locale, compilare la tabella L
   
 |**Elemento**|**Spazio di indirizzi della rete locale**|
 |:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabella L: prefissi degli indirizzi per la rete locale**
   
@@ -147,10 +147,10 @@ Compilare la tabella seguente per il set di nomi dei gruppi di risorse univoci.
   
 |**Elemento**|**Nome dei gruppi di risorse**|**Scopo**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Controller di dominio  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Server AD FS  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Server proxy di applicazione Web  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Elementi dell'infrastruttura  <br/> |
+|1.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |Controller di dominio  <br/> |
+|2.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |Server AD FS  <br/> |
+|3.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |Server proxy di applicazione Web  <br/> |
+|4.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |Elementi dell'infrastruttura  <br/> |
    
  **Tabella R: gruppi di risorse**
   
@@ -273,9 +273,9 @@ Successivamente, definire i nomi di tre set di disponibilità. Compilare la tabe
   
 |**Elemento**|**Scopo**|**Nome set di disponibilità**|
 |:-----|:-----|:-----|
-|1.  <br/> |Controller di dominio  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Server AD FS  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Server proxy di applicazione Web  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Controller di dominio  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Server AD FS  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Server proxy di applicazione Web  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabella A: set di disponibilità**
   

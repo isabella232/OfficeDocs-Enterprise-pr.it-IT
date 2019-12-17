@@ -21,16 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Il supporto si concluderà presto per i server e le applicazioni client di Office 2010 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
-ms.openlocfilehash: af31db341aab1c52873613682c03dd54b3b76225
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 9df09e0f31358c9dd1bfe4a4adde99d41070060f
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748006"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072408"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2010
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
 Office 2010, Exchange Server 2010, SharePoint 2010 e Project Server 2010 raggiungeranno la fine del supporto il **13 ottobre 2020**. 
 
@@ -42,7 +42,7 @@ Durante la pianificazione dell'aggiornamento, è opportuno passare a Office 365 
 
 Per un riepilogo visivo dell'aggiornamento, la migrazione e le opzioni di spostamento al cloud per i client e i server di Office 2010 e Windows 7, vedere il [poster relativo alla fine del supporto tecnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+![Office 2010 client e server e Windows 7 fine del supporto poster](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
 Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del supporto, con percorsi preferiti e supporto delle opzioni in Microsoft 365 Enterprise evidenziato.
 

@@ -3,7 +3,7 @@ title: Eliminare account utente con PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Informazioni su come usare PowerShell di Office 365 per eliminare gli account utente di Office 365.
-ms.openlocfilehash: e62c06981a861580804dde852ad3da7bd729fdbe
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 0cdc48f9570c994ec0a55d37d013a084b495f259
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257647"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072518"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Eliminare account utente con PowerShell di Office 365
 
@@ -35,10 +35,6 @@ Una volta stabilita la connessione, utilizzare la sintassi seguente per rimuover
 ```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
-
->[!Note]
->PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet con **MSOL** nel proprio nome. Per continuare a utilizzare questi cmdlet, è necessario eseguirli da Windows PowerShell.
->
 
 Questo esempio consente di rimuovere l'account utente fabricec@litwareinc.com.
   
@@ -76,12 +72,15 @@ Quando si elimina un account utente con il modulo di Microsoft Azure Active Dire
 
 Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-
 Per eliminare un account utente, utilizzare la sintassi riportata di seguito:
   
 ```powershell
 Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
+
+>[!Note]
+>PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
+>
 
 Questo esempio elimina l'account utente BelindaN@litwareinc.com.
   
@@ -114,9 +113,8 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire gli account utente e le licenze con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
-
