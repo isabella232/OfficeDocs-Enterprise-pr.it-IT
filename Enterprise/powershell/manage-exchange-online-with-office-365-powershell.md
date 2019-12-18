@@ -3,7 +3,7 @@ title: Gestire Exchange Online con PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,30 +14,24 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 'Riepilogo: utilizzare PowerShell di Office 365 per gestire Microsoft Exchange Online, inclusa la visualizzazione della configurazione della cassetta postale e la creazione di report avanzati.'
-ms.openlocfilehash: 06524431ee98a0f5119544da9278d8c672155fd9
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1fdba6a34fdd3e8833f445f86a8cf025409adf77
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031011"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261329"
 ---
-# <a name="manage-exchange-online-with-office-365-powershell"></a><span data-ttu-id="75d63-103">Gestire Exchange Online con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="75d63-103">Manage Exchange Online with Office 365 PowerShell</span></span>
+# <a name="manage-exchange-online-with-office-365-powershell"></a><span data-ttu-id="6a0d4-103">Gestire Exchange Online con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="6a0d4-103">Manage Exchange Online with Office 365 PowerShell</span></span>
 
- <span data-ttu-id="75d63-104">**Sintesi:** Utilizzare PowerShell di Office 365 per gestire Microsoft Exchange Online, inclusa la visualizzazione della configurazione della cassetta postale e la creazione di report avanzati.</span><span class="sxs-lookup"><span data-stu-id="75d63-104">**Summary:** Use Office 365 PowerShell to manage Microsoft Exchange Online, including displaying mailbox configuration and advanced reporting.</span></span>
+<span data-ttu-id="6a0d4-104">Una delle attività principali di qualsiasi amministratore di Microsoft Exchange Online è la gestione delle cassette postali e la creazione di report su di esse.</span><span class="sxs-lookup"><span data-stu-id="6a0d4-104">One of the primary tasks of any Microsoft Exchange Online administrator is managing mailboxes and getting reports on them.</span></span> <span data-ttu-id="6a0d4-105">Anche se è possibile eseguire alcune di queste attività nell'interfaccia di amministrazione di Exchange, altre attività sono molto più rapide e facili in Office 365 PowerShell.</span><span class="sxs-lookup"><span data-stu-id="6a0d4-105">Although you can accomplish some of these tasks in the Exchange admin center, other tasks are much quicker and easier in Office 365 PowerShell.</span></span> <span data-ttu-id="6a0d4-106">Per ulteriori informazioni, vedere i seguenti argomenti:</span><span class="sxs-lookup"><span data-stu-id="6a0d4-106">For more information, see the following topics:</span></span>
   
-<span data-ttu-id="75d63-105">Una delle attività principali di qualsiasi amministratore di Microsoft Exchange Online è la gestione delle cassette postali e la creazione di report su di esse.</span><span class="sxs-lookup"><span data-stu-id="75d63-105">One of the primary tasks of any Microsoft Exchange Online administrator is managing mailboxes and getting reports on them.</span></span> <span data-ttu-id="75d63-106">Anche se è possibile eseguire alcune di queste operazioni nell'interfaccia di amministrazione di Microsoft 365, altre attività sono molto più rapide e semplici in PowerShell di Office 365.</span><span class="sxs-lookup"><span data-stu-id="75d63-106">Although you can accomplish some of these tasks in the Microsoft 365 admin center, other tasks are much quicker and easier in Office 365 PowerShell.</span></span> <span data-ttu-id="75d63-107">Per ulteriori informazioni, vedere i seguenti argomenti:</span><span class="sxs-lookup"><span data-stu-id="75d63-107">For more information, see the following topics:</span></span>
-  
-- [<span data-ttu-id="75d63-108">Visualizzare informazioni sulla cassetta postale di Exchange Online con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="75d63-108">Display Exchange Online mailbox information with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/mt771881%28v=exchg.160%29.aspx)
+- [<span data-ttu-id="6a0d4-107">Utilizzare PowerShell di Exchange Online per visualizzare le informazioni sulle cassette postali di Office 365</span><span class="sxs-lookup"><span data-stu-id="6a0d4-107">Use Exchange Online PowerShell to display Office 365 mailbox information</span></span>](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
     
-- [<span data-ttu-id="75d63-109">Visualizzare report di Exchange Online con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="75d63-109">Display Exchange Online reports with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/mt771882%28v=exchg.160%29.aspx)
+- [<span data-ttu-id="6a0d4-108">Trovare le autorizzazioni necessarie per eseguire i cmdlet di Exchange</span><span class="sxs-lookup"><span data-stu-id="6a0d4-108">Find the permissions required to run any Exchange cmdlet</span></span>](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions)
     
-- [<span data-ttu-id="75d63-110">Visualizzare i cmdlet disponibili per gli amministratori di Exchange Online con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="75d63-110">Determine which cmdlets are available to Exchange Online administrators with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/mt771883%28v=exchg.160%29.aspx)
-    
-## <a name="see-also"></a><span data-ttu-id="75d63-111">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="75d63-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6a0d4-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="6a0d4-109">See also</span></span>
 
-#### 
-
-[<span data-ttu-id="75d63-112">Gestire Office 365 con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="75d63-112">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="6a0d4-110">Gestire Office 365 con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="6a0d4-110">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="75d63-113">Guida introduttiva a PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="75d63-113">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="6a0d4-111">Guida introduttiva a PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="6a0d4-111">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
 
