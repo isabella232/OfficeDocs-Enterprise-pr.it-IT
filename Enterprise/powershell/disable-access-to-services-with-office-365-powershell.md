@@ -3,7 +3,7 @@ title: Disattivare l'accesso ai servizi con PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/04/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Utilizzare Office 365 PowerShell per disabilitare l'accesso ai servizi di Office 365 per gli utenti.
-ms.openlocfilehash: 83967e0b44099fb651edaa7f7cba9e811f9fdf81
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 7f50d3bbe08f02ee1149ca10859c9583b10f5e2d
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072198"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261419"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Disattivare l'accesso ai servizi con PowerShell di Office 365
 
@@ -156,17 +156,9 @@ Per disabilitare i servizi di Office 365 per gli utenti mentre si assegnano a un
 
 
 ## <a name="see-also"></a>Vedere anche
-<a name="SeeAlso"> </a>
 
-Vedere i seguenti argomenti aggiuntivi sulla gestione degli utenti con Office 365 PowerShell:
+[Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-- [Eliminare e ripristinare account utente con Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Eliminare e ripristinare account utente con Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Bloccare gli account utente con Office 365 PowerShell](block-user-accounts-with-office-365-powershell.md)
-    
-- [Assegnare le licenze agli account utente con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [Creare account utente con Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
-    
+[Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
+  
+[Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)

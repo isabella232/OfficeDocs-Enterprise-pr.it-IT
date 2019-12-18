@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Informazioni su come collaborare con gli utenti in un sito di SharePoint.
-ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919259"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261359"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
@@ -121,7 +121,7 @@ Per invitare gli utenti interni a un gruppo
 
 Gli utenti guest non possono essere aggiunti dal sito. È necessario aggiungerli utilizzando Outlook sul Web.
 
-Per invitare gli ospiti a un sito
+Per invitare gli ospiti a un gruppo
 1. In **gruppi**, in Outlook sul Web, fare clic sul gruppo in cui si desidera aggiungere i membri.
 2. Aprire la scheda contatto di gruppo e quindi, in **altre opzioni** (...), fare clic su **Aggiungi membri**.
 3. Digitare gli indirizzi di posta elettronica degli utenti che si desidera invitare e quindi fare clic su **Aggiungi**.
@@ -133,5 +133,7 @@ Per invitare gli ospiti a un sito
 
 [Limitare l'esposizione accidentale ai file durante la condivisione con gli utenti guest](sharing-limit-accidental-exposure.md)
 
-[Creare un ambiente di condivisione Guest sicuro](create-a-secure-guest-sharing-environment.md))
+[Creare un ambiente di condivisione guest sicuro](create-a-secure-guest-sharing-environment.md)
+
+[Creare una rete Extranet B2B con gli utenti gestiti](b2b-extranet.md)
 

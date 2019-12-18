@@ -3,7 +3,7 @@ title: Manage SharePoint Online site groups with Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2018
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,18 +15,18 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: utilizzare Office 365 PowerShell per gestire i gruppi di siti di SharePoint Online.'
-ms.openlocfilehash: 7eb8a472cb021fb2b78468a9100282b72c1b88cb
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e8cde8e65b009c1ae677df6b63f416ed227f824c
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748536"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261389"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Manage SharePoint Online site groups with Office 365 PowerShell
 
 Anche se è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365, è anche possibile utilizzare Office 365 PowerShell per gestire i gruppi di siti di SharePoint Online.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Le procedure descritte in questo articolo richiedono la connessione a SharePoint Online. Per istruzioni, vedere [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
@@ -34,15 +34,12 @@ Le procedure descritte in questo articolo richiedono la connessione a SharePoint
 
 L'interfaccia di amministrazione di SharePoint Online offre alcuni metodi di facile utilizzo per la gestione dei gruppi di siti. Ad esempio, si supponga di voler esaminare i gruppi e i membri del gruppo per il `https://litwareinc.sharepoint.com/sites/finance` sito. Di seguito sono riportate le operazioni da eseguire per:
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su**siti** **risorse** > e quindi sull'URL del sito.
-2. Nella finestra di dialogo raccolta siti fare clic su **Vai a questo sito**.
-3. Nella pagina del sito fare clic sull'icona delle **Impostazioni** (nell'angolo in alto a destra della pagina) e quindi fare clic su **Impostazioni sito**:<br/>
-![Impostazioni del sito di SharePoint Online](media/spo-site-settings.png)<br/>
-4. Nella pagina Impostazioni sito fare clic su **autorizzazioni siti** in **utenti e autorizzazioni**.
+1. Dall'interfaccia di amministrazione di SharePoint, fare clic su **siti attivi**e quindi fare clic sull'URL del sito.
+2. Nella pagina sito fare clic sull'icona **delle impostazioni** (nell'angolo in alto a destra della pagina) e quindi fare clic su **autorizzazioni sito**.
 
 Ripetere quindi la procedura per il sito successivo.
 
-Per ottenere un elenco dei gruppi con Office 365 PowerShell, è necessario utilizzare il seguente set di comandi:
+Per ottenere un elenco dei gruppi con Office 365 PowerShell, è possibile utilizzare i seguenti comandi:
 
 ```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
@@ -57,7 +54,7 @@ foreach ($y in $x)
 
 Esistono due modi per eseguire questo set di comandi nel prompt dei comandi di SharePoint Online Management Shell:
 
-- Copiare i comandi nel blocco note o in un altro editor di testo, modificare il valore della variabile **$SiteUrl** , selezionare i comandi e quindi incollarli nel prompt dei comandi di SharePoint Online Management Shell. Quando si esegue questa operazione, PowerShell si arresterà al **>>** prompt. Premere INVIO per eseguire il comando **foreach** .<br/>
+- Copiare i comandi nel blocco note o in un altro editor di testo, modificare il valore della variabile **$SiteUrl** , selezionare i comandi e quindi incollarli nel prompt dei comandi di SharePoint Online Management Shell. Quando si esegue questa operazione, PowerShell si arresterà al **>>** prompt. Premere INVIO per eseguire il `foreach` comando.<br/>
 - Copiare i comandi nel blocco note o in un altro editor di testo, modificare il valore della variabile **$SiteUrl** e quindi salvare il file di testo con un nome e l'estensione ps1 in una cartella adatta. Successivamente, eseguire lo script dal prompt dei comandi di SharePoint Online Management Shell specificando il percorso e il nome del file. Ecco un esempio di comando:
 
 ```powershell
