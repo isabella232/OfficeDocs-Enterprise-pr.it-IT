@@ -10,20 +10,33 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informazioni su come creare un gruppo di Office 365 con una posizione preferita per i dati specifica in un ambiente multi-geografico.
-ms.openlocfilehash: fb512478d69502eafd633b552d1db2acbec43ef4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 96870923c00cebc247609b67378fd39011077d45
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070002"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072378"
 ---
 # <a name="create-an-office-365-group-with-a-specific-pdl"></a>Creare un gruppo di Office 365 con una posizione preferita per i dati specifica
 
-Quando gli utenti in un ambiente multi-geografico creano un gruppo di Office 365, la posizione preferita per i dati del gruppo viene impostata automaticamente su quella dell'utente. Se è necessario creare un gruppo con una posizione preferita per i dati specifica, è possibile usare il cmdlet New-UnifiedGroup di Microsoft PowerShell per Exchange Online. Quando si esegue questa operazione, il provisioning della cassetta postale del gruppo e del sito di SharePoint associato al gruppo verrà effettuato nella posizione preferita per i dati specifica.
+Quando gli utenti in un ambiente multi-geografico creano un gruppo di Office 365, la posizione preferita per i dati del gruppo viene impostata automaticamente su quella dell'utente. Gli amministratori globali di SharePoint ed Exchange possono creare i gruppi in qualsiasi area selezionata. 
 
-Per eseguire questa operazione, è necessario essere un amministratore globale o un amministratore di SharePoint Online o di Exchange Online.
+Se è necessario creare un gruppo con una posizione preferita per i dati specifica, è possibile usare il cmdlet New-UnifiedGroup di Microsoft PowerShell dall'interfaccia di amministrazione di SharePoint o tramite Exchange Online. Quando si esegue questa operazione, il provisioning della cassetta postale del gruppo e del sito di SharePoint associato al gruppo verrà effettuato nella posizione preferita per i dati specifica.
 
-Per creare un gruppo di Office 365 con la posizione preferita per i dati specifica, connettersi a PowerShell per Exchange Online e passare il parametro *MailBoxRegion -* con il codice della posizione geografica.
+Per creare un gruppo di Office 365 con la posizione preferita per i dati specifica, passare all'interfaccia di amministrazione di SharePoint nella posizione geografica in cui si vuole creare il sito del gruppo.
+
+Ad esempio:
+
+Se si vuole per creare un sito del gruppo nella posizione in Australia, passare a https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement
+
+1. Selezionare **+ Crea**.
+2. Seguire la procedura per creare un sito di gruppo.
+
+Il provisioning del sito del gruppo verrà effettuato nella posizione geografica corrispondente all'interfaccia di amministrazione di SharePoint da cui è stata avviata la richiesta di creazione del sito. 
+
+Utilizzo di PowerShell di Exchange 
+
+Connettersi a PowerShell per Exchange Online e passare il parametro *-MailBoxRegion* con il codice della posizione geografica.
 
 Ad esempio: 
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Riepilogo: informazioni su come configurare una rete virtuale di Azure cross-premise per i carichi di lavoro del server di Office con una connessione VPN da sito a sito.'
-ms.openlocfilehash: 34d7b7310fd0828732e288f090314b8689953b50
-ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
+ms.openlocfilehash: 2d87c269565c3281c2f047187fd48578153088be
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254595"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072298"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Connettere una rete locale a una rete virtuale di Microsoft Azure
 
@@ -142,11 +142,11 @@ Per le impostazioni della rete virtuale, compilare la tabella V.
   
 |**Elemento**|**Elemento Configuration**|**Descrizione**|**Valore**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nome della rete virtuale  <br/> |Un nome da assegnare alla rete virtuale di Azure (ad esempio, DirSyncNet).  <br/> |![](./media/Common-Images/TableLine.png) |
-|2.  <br/> |Percorso della rete virtuale  <br/> |Data center di Azure che conterrà la rete virtuale (come Stati Uniti occidentali).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Indirizzo IP del dispositivo VPN  <br/> |L'indirizzo IPv4 pubblico dell'interfaccia del dispositivo VPN su Internet. Consultare il proprio reparto IT per determinare tale indirizzo.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Spazio degli indirizzi delle reti virtuali  <br/> |Lo spazio di indirizzi (definito in un singolo prefisso di indirizzi privati) per la rete virtuale. Consultare il proprio reparto IT per determinare tale spazio di indirizzi. Lo spazio di indirizzi deve essere in formato CIDR (Classless Interdomain Routing), noto anche come formato del prefisso di rete. Ad esempio, 10.24.64.0/20.  <br/> |![](./media/Common-Images/TableLine.png) <br/> |
-|5.  <br/> |Chiave condivisa IPsec  <br/> |Una stringa con 32 caratteri alfanumerici casuali che verrà utilizzata per autenticare entrambi i lati della connessione VPN da sito a sito. Consultare il reparto IT o della sicurezza per determinare tale valore chiave e archiviarlo in un percorso sicuro. In alternativa, vedere [Creare una stringa casuale per una chiave già condivisa IPsec ](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./media/Common-Images/TableLine.png) <br/> |
+|1.  <br/> |Nome della rete virtuale  <br/> |Un nome da assegnare alla rete virtuale di Azure (ad esempio, DirSyncNet).  <br/> |![riga](./media/Common-Images/TableLine.png) |
+|2.  <br/> |Percorso della rete virtuale  <br/> |Data center di Azure che conterrà la rete virtuale (come Stati Uniti occidentali).  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Indirizzo IP del dispositivo VPN  <br/> |L'indirizzo IPv4 pubblico dell'interfaccia del dispositivo VPN su Internet. Consultare il proprio reparto IT per determinare tale indirizzo.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Spazio degli indirizzi delle reti virtuali  <br/> |Lo spazio di indirizzi (definito in un singolo prefisso di indirizzi privati) per la rete virtuale. Consultare il proprio reparto IT per determinare tale spazio di indirizzi. Lo spazio di indirizzi deve essere in formato CIDR (Classless Interdomain Routing), noto anche come formato del prefisso di rete. Ad esempio, 10.24.64.0/20.  <br/> |![riga](./media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |Chiave condivisa IPsec  <br/> |Una stringa con 32 caratteri alfanumerici casuali che verrà utilizzata per autenticare entrambi i lati della connessione VPN da sito a sito. Consultare il reparto IT o della sicurezza per determinare tale valore chiave e archiviarlo in un percorso sicuro. In alternativa, vedere [Creare una stringa casuale per una chiave già condivisa IPsec ](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![riga](./media/Common-Images/TableLine.png) <br/> |
    
 Compilare la tabella S per le subnet della soluzione.
   
@@ -160,8 +160,8 @@ Consultare il reparto IT per determinare tali spazi di indirizzi in base allo sp
   
 |**Elemento**|**Nome della subnet**|**Spazio di indirizzi della subnet**|**Scopo**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dal gateway di Azure.  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dal gateway di Azure.  <br/> |
+|2.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
    
 Per i server DNS locali DNS che devono essere utilizzati dalle macchine virtuali nella rete virtuale, compilare la tabella D. Assegnare a ogni server DNS un nome descrittivo e un singolo indirizzo IP. Tale nome non deve necessariamente corrispondere a nome host o al nome computer del server DNS. Sono elencate due voci vuote, ma è possibile aggiungerne altre. Consultare il proprio reparto IT per determinare tale elenco.
   
@@ -169,8 +169,8 @@ Per i server DNS locali DNS che devono essere utilizzati dalle macchine virtuali
   
 |**Elemento**|**Nome descrittivo del server DNS**|**Indirizzo IP del server DNS**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
    
 Per instradare pacchetti dalla rete virtuale di Azure alla propria rete aziendale tramite la connessione VPN da sito a sito, è necessario configurare la rete virtuale con una rete locale. Tale rete locale contiene un elenco degli spazi di indirizzi (in formato CIDR) per tutti i percorsi nella rete locale aziendale che le macchine virtuali nella rete virtuale devono raggiungere. Può trattarsi di tutti i percorsi nella rete locale o di una subnet. L'elenco degli spazi di indirizzi che definiscono la rete locale deve essere univoco e non deve sovrapporsi con gli spazi di indirizzi utilizzati per questa rete virtuale o per altre reti virtuali cross-premise.
   
@@ -180,9 +180,9 @@ Per l'insieme degli spazi di indirizzi della rete locale, compilare la tabella L
   
 |**Elemento**|**Spazio di indirizzi della rete locale**|
 |:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![riga](./media/Common-Images/TableLine.png)  <br/> |
    
 ## <a name="deployment-roadmap"></a>Guida di orientamento alla distribuzione
 <a name="DeploymentRoadmap"> </a>

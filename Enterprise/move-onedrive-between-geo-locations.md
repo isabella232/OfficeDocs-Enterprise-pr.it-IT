@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Informazioni su come spostare un sito OneDrive in un'altra posizione geografica.
-ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 9760d61a8a1db76e3abf061552e0a99d85b9092a
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626166"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072558"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Spostare un sito OneDrive in un'altra posizione geografica 
 
@@ -47,7 +47,7 @@ Quando si effettua lo spostamento dei siti di OneDrive tra le posizioni geografi
 
 - È possibile pianificare fino a 4.000 spostamenti alla volta.
 - Una volta iniziati gli spostamenti, è possibile pianificarne di nuovi, con un massimo di 4.000 spostamenti in sospeso in coda in qualsiasi momento.
-- È consigliabile pianificare un numero massimo di 4.000 spostamenti al mese.
+- Le dimensioni massime di OneDrive che consentono lo spostamento sono 1 TB (1 TB).
 
 ## <a name="moving-a-onedrive-site"></a>Spostamento di un sito OneDrive
 
