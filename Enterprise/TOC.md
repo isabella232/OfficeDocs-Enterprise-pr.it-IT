@@ -194,6 +194,7 @@
 ##### [condivisione non autenticata](best-practices-anonymous-sharing.md)
 ##### [Limitare l'esposizione accidentale](sharing-limit-accidental-exposure.md)
 ##### [Ambiente di condivisione guest sicuro](create-a-secure-guest-sharing-environment.md)
+#### [Creare una Extranet B2B](b2b-extranet.md)
 
 ## Dispositivi
 ### [Scegliere tra MDM e Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
