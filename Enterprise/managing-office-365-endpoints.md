@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Alcune reti aziendali limitano l'accesso a percorsi Internet generici o includono una sostanziale backhaul o l'elaborazione del traffico di rete. Per garantire che i computer su reti come queste possano accedere a Office 365, gli amministratori di rete e proxy devono gestire l'elenco di nomi FQDN, URL e indirizzi IP che compongono l'elenco degli endpoint di Office 365. Queste necessità devono essere aggiunte alla route diretta, al bypass proxy e/o alle regole del firewall e ai file PAC per garantire che le richieste di rete siano in grado di raggiungere Office 365.
-ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072488"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744510"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestione degli endpoint di Office 365
 
@@ -133,14 +133,14 @@ Fare clic sul collegamento nella parte inferiore per indicare se l'articolo è s
   
 Con oltre 2500 relazioni di peering ISP a livello globale e 70 punti di presenza, ottenere dalla rete alla nostra dovrebbe essere senza problemi. Non può far male spendere qualche minuto assicurandosi che il rapporto di peering dell'ISP sia il più ottimale, [Ecco alcuni esempi](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) di buoni e non così buoni peering per la nostra rete.
   
-### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Per visualizzare le richieste di rete agli indirizzi IP non presenti nell'elenco pubblicato, è necessario fornire loro l'accesso?
 <a name="bkmk_MissingIP"> </a>
+### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Per visualizzare le richieste di rete agli indirizzi IP non presenti nell'elenco pubblicato, è necessario fornire loro l'accesso?
 
 Gli indirizzi IP vengono forniti solo per i server di Office 365 che è necessario indirizzare direttamente a. Non si tratta di un elenco completo di tutti gli indirizzi IP in cui verranno visualizzate le richieste di rete. Verranno visualizzate le richieste di rete per gli indirizzi IP di Microsoft e di terze parti, inediti e di proprietà. Questi indirizzi IP vengono generati dinamicamente o gestiti in modo da impedire l'avviso tempestivo quando cambiano. Se il firewall non è in grado di consentire l'accesso in base ai nomi FQDN per queste richieste di rete, utilizzare un file PAC o WPAD per gestire le richieste.
   
 Per ulteriori informazioni, vedere un indirizzo IP associato a Office 365.
   
-1. Controllare se l'indirizzo IP è incluso in un intervallo di pubblicazione più grande tramite una [calcolatrice CIDR](https://www.ipaddressguide.com/cidr).
+1. Controllare se l'indirizzo IP è incluso in un intervallo di pubblicazione più grande tramite una calcolatrice CIDR, ad esempio per [IPv4](https://www.ipaddressguide.com/cidr) o [https://www.ipaddressguide.com/ipv6-cidr)IPv6].
 2. Vedere se un partner possiede l'indirizzo IP con una [query WHOIS](https://dnsquery.org/). Se è di proprietà di Microsoft, può trattarsi di un partner interno.
 3. Controllare il certificato, in un browser connettersi all'indirizzo IP utilizzando *https://\<ip_address\> * controllare i domini elencati nel certificato per comprendere quali domini sono associati all'indirizzo IP. Se si tratta di un indirizzo IP di proprietà di Microsoft e non dell'elenco degli indirizzi IP di Office 365, è probabile che l'indirizzo IP sia associato a una rete CDN Microsoft, ad esempio *MSOCDN.NET* o un altro dominio Microsoft senza informazioni IP pubblicate. Se si trova il dominio sul certificato è quello in cui pretendiamo di elencare l'indirizzo IP, fatecelo sapere.
 
@@ -159,8 +159,8 @@ Un server proxy convalida l'URL iniziale che nell'esempio precedente è serviceA
 
 Le configurazioni hardcoded o la whitelist in base ai nomi FQDN indiretti di Office 365 non sono consigliate, non sono supportate da Microsoft ed è noto che causano problemi di connettività dei clienti. Le soluzioni DNS che bloccano il reindirizzamento CNAME o che altrimenti risolvono erroneamente le voci DNS di Office 365 possono essere risolte tramite l'inoltro condizionale DNS (ambito per gli FQDN di Office 365 direttamente usati) con la ricorsione DNS abilitata. Molti prodotti perimetrali di rete di terze parti integrano in modo nativo la whitelist raccomandata di Office 365 endpoint nella loro configurazione utilizzando l' [indirizzo IP e il servizio Web URL di office 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
-### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Perché vengono visualizzati nomi quali nsatc.net o akadns.net nei nomi di dominio Microsoft?
 <a name="bkmk_akamai"> </a>
+### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Perché vengono visualizzati nomi quali nsatc.net o akadns.net nei nomi di dominio Microsoft?
 
 Office 365 e altri servizi Microsoft utilizzano diversi servizi di terze parti, ad esempio Akamai e MarkMonitor, per migliorare l'esperienza di Office 365. Per continuare a fornire le migliori esperienze possibili, è possibile modificare questi servizi in futuro. I domini di terze parti possono ospitare contenuto, ad esempio una rete CDN, oppure possono ospitare un servizio, ad esempio un servizio di gestione del traffico geografico. Alcuni dei servizi attualmente in uso includono:
   
@@ -182,8 +182,8 @@ Office 365 e altri servizi Microsoft utilizzano diversi servizi di terze parti, 
 *.edgesuite.net
 ```
 
-### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>È necessario avere la connettività minima possibile per Office 365
 <a name="bkmk_thirdparty"> </a>
+### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>È necessario avere la connettività minima possibile per Office 365
 
 Poiché Office 365 è una famiglia di servizi creata per funzionare tramite Internet, le promesse di affidabilità e disponibilità si basano su numerosi servizi Internet standard disponibili. Ad esempio, i servizi Internet standard quali DNS, CRL e reti CDN devono essere raggiungibili per l'utilizzo di Office 365 così come devono essere raggiungibili per utilizzare i servizi Internet più moderni.
 
@@ -200,8 +200,8 @@ Oltre ai servizi Internet di base, esistono servizi di terze parti che vengono u
   
 Se si sta tentando di utilizzare Office 365 e i servizi di terze parti non sono accessibili, è necessario assicurarsi che tutti i nomi [FQDN contrassegnati come necessari o facoltativi in questo articolo siano consentiti tramite il proxy e il firewall](urls-and-ip-address-ranges.md).
   
-### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Come si blocca l'accesso ai servizi consumer di Microsoft?
 <a name="bkmk_consumer"> </a>
+### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Come si blocca l'accesso ai servizi consumer di Microsoft?
 
 La limitazione dell'accesso ai servizi consumer dovrebbe essere condotta a proprio rischio. L'unico modo affidabile per bloccare i servizi consumer è limitare l'accesso all'FQDN di *login.Live.com* . Questo nome di dominio completo viene utilizzato da un ampio insieme di servizi, tra cui servizi non consumer quali MSDN, TechNet e altri. Questo FQDN è utilizzato anche dal programma di Exchange file sicuro del supporto tecnico Microsoft ed è necessario trasferire i file per semplificare la risoluzione dei problemi per i prodotti Microsoft.  La limitazione dell'accesso a questo FQDN può comportare la necessità di includere anche eccezioni alla regola per le richieste di rete associate a questi servizi.
   
