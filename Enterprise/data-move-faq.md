@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Di seguito sono riportate le risposte alle domande generali su come spostare i dati di base in un nuovo datacenter Geo.
-ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: cea25e2e3a400c2bcf76c2dbe13c4f7ba1a7b884
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756585"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923848"
 ---
 # <a name="data-move-general-faq"></a>Domande frequenti sullo spostamento dati
 
@@ -50,6 +50,14 @@ Sono disponibili due azioni che è possibile eseguire come amministratore tenant
 Gli spostamenti di dati rappresentano un'operazione del servizio back-end con un impatto minimo sugli utenti finali. Le caratteristiche che possono essere influenzate sono elencate [durante e dopo lo spostamento dei dati](during-and-after-your-data-move.md). Il contratto di servizio di [Microsoft Online Services (SLA, Service Level Agreement)](https://go.microsoft.com/fwlink/p/?LinkId=523897) per la disponibilità è pertanto insufficiente per consentire ai clienti di prepararsi o monitorarli durante lo spostamento. 
   
 Tutti i servizi di Office 365 eseguono le stesse versioni nei data center, pertanto è possibile garantire la coerenza delle funzionalità. Il servizio è supportato completamente nel corso del processo.
+
+## <a name="what-is-in-scope-for-teams-migration"></a>Che cos'è l'ambito per la migrazione dei team?
+
+Oltre a Exchange Online, SharePoint Online e OneDrive for business; Microsoft eseguirà la migrazione dei dati del team nel datacenter locale.  
+- Messaggi di chat dei team, inclusi i messaggi privati e i messaggi di canale. 
+- Immagini di Team utilizzate nelle chat. 
+
+I file dei team sono archiviati in SharePoint Online e i file chat di team sono archiviati in OneDrive for business.  La segreteria telefonica, il calendario, la cronologia chat e i contatti sono archiviati in Exchange Online.  In molti casi, Exchange Online, SharePoint Online e OneDrive for business sono già utilizzati dal cliente nel centro dati geografico locale e fanno anche parte del programma di migrazione di Office 365 per i paesi idonei ai clienti.
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>Quali sono le conseguenze dell'utilizzo di servizi diversi in GEOS?
 

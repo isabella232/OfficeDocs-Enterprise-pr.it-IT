@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
-ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
+ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39959281"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923858"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -32,18 +32,21 @@ Guardare il centro messaggi di Office 365 per conferma quando si sposta per ogni
 
 |**Clienti con paese di registrazione in**|**Tutti gli spostamenti completati da**|
 |:-----|:-----|
-|Australia, Nuova Zelanda, Figi  <br/> |31 ottobre 2017  <br/> |
-|Giappone  <br/> |31 ottobre 2018  <br/> |
-|India  <br/> |31 ottobre 2018  <br/> |
-|Canada  <br/> |30 giugno 2019  <br/> |
-|Sud Corea  <br/> |31 ottobre 2018  <br/> |
-|Regno Unito  <br/> |15 settembre 2019  <br/> |
-|Francia  <br/> |15 settembre 2020  <br/> |
-|Emirati Arabi Uniti  <br/> |2022 febbraio 1  <br/> |
-|Sudafrica  <br/> |2022 febbraio 1  <br/> |
+|Australia, Nuova Zelanda, Figi  <br/> |Luglio 1, 2022  <br/> |
+|Giappone  <br/> |Luglio 1, 2022  <br/> |
+|India  <br/> |Luglio 1, 2022  <br/> |
+|Canada  <br/> |Luglio 1, 2022  <br/> |
+|Sud Corea  <br/> |Luglio 1, 2022  <br/> |
+|Regno Unito  <br/> |Luglio 1, 2022  <br/> |
+|Francia  <br/> |Luglio 1, 2022  <br/> |
+|Emirati Arabi Uniti  <br/> |Luglio 1, 2022  <br/> |
+|Sudafrica  <br/> |Luglio 1, 2022  <br/> |
 |Svizzera, Liechtenstein  <br/> |Luglio 1, 2022  <br/> |
 |Germania  <br/> |Pianificata  <br/> |
-   
+
+> [!NOTE]
+> I clienti nei paesi idonei di Office 365 possono scegliere la migrazione dei dati del servizio chat di Microsoft teams dal 1 ° gennaio 2020 al 30 giugno 2020, che segnalerà anche la migrazione per eventuali altri carichi di lavoro idonei.  I clienti che hanno scelto di eseguire la migrazione prima di 2020 possono aspettarsi che Exchange Online e SharePoint Online/OneDrive for business vengano completati entro la data di scadenza originale, mentre i team verranno completati entro il 1 ° luglio 2022 per tutti i clienti. 
+
 ## <a name="exchange-online"></a>Exchange Online
 
 Poiché richiede tempo per spostare ogni utente nel nuovo datacenter Geo per un singolo tenant, alcuni utenti saranno comunque nel centro dati geografico precedente durante lo spostamento, mentre altri saranno nel nuovo datacenter Geo. Questo significa che alcune caratteristiche che implicano l'accesso a più cassette postali potrebbero non funzionare completamente durante il processo di spostamento, che può durare settimane. Queste funzionalità sono descritte nelle sezioni seguenti.
@@ -102,7 +105,11 @@ Le seguenti funzionalità di ricerca sono intaccate:
 - eDiscovery: gli elementi che sono stati modificati durante la migrazione non vengono visualizzati finché la ricerca per indicizzazione riprende le modifiche.
     
 - Protezione dalla perdita di dati (DLP): i criteri non vengono applicati sugli elementi che cambiano finché la ricerca per indicizzazione riprende le modifiche.
-    
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+I clienti nei paesi idonei di Office 365 possono scegliere la migrazione dei dati del servizio chat di Microsoft teams dal 1 ° gennaio 2020.  
+
 ## <a name="skype-for-business"></a>Skype for Business
 
 Tutti gli utenti verranno disconnessi dal software client Skype for business durante il ritaglio. L'accesso automatico ricollegherà gli utenti entro due minuti.

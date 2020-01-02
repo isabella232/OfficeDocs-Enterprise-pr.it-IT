@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: 6c5b576b0d099f4a46aca63a72390d27ae39984b
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962463"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923878"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
@@ -30,15 +30,15 @@ I clienti di Office 365 esistenti sono idonei a richiedere la migrazione anticip
 
 |**Clienti con paese di registrazione in**|**Inizio del periodo di richiesta**|**Scadenza richieste**|
 |:-----|:-----|:-----|
-|Giappone  <br/> |2016 agosto 1  <br/> |31 ottobre 2016  <br/> |
-|Australia, Nuova Zelanda, Figi  <br/> |2016 agosto 1  <br/> |31 ottobre 2016  <br/> |
-|India  <br/> |2016 agosto 1  <br/> |31 ottobre 2016  <br/> |
-|Canada  <br/> |2016 agosto 1  <br/> |31 ottobre 2016  <br/> |
-|Regno Unito  <br/> |15 marzo 2017  <br/> |15 settembre 2017  <br/> |
-|Sud Corea  <br/> |1 maggio 2017  <br/> |31 ottobre 2017  <br/> |
-|Francia  <br/> |14 marzo 2018  <br/> |15 settembre 2018  <br/> |
-|Emirati Arabi Uniti  <br/> |15 luglio 2019  <br/> |31 gennaio 2020  <br/> |
-|Sudafrica  <br/> |25 luglio 2019  <br/> |31 gennaio 2020  <br/> |
+|Giappone  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
+|Australia, Nuova Zelanda, Figi  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
+|India  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
+|Canada  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
+|Regno Unito  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
+|Sud Corea  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
+|Francia  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
+|Emirati Arabi Uniti  <br/> |15 luglio 2019  <br/> |30 giugno 2020  <br/> |
+|Sudafrica  <br/> |25 luglio 2019  <br/> |30 giugno 2020  <br/> |
 |Svizzera, Liechtenstein  <br/> |10 dicembre 2019  <br/> |30 giugno 2020  <br/> |
 |Germania  <br/> |Pianificata  <br/> |Pianificata  <br/> |
    
@@ -74,7 +74,7 @@ Gli spostamenti possono richiedere fino a 24 mesi dalla data di scadenza richies
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Il supporto per la migrazione a Microsoft teams chat e i dati dei messaggi di canale verranno aggiunti al programma di migrazione locale di Office 365.  Si prevede di aprire la registrazione del programma nel gennaio 2020 per tutti i clienti idonei, inclusi i clienti che hanno precedentemente optato per la migrazione di Exchange Online e SharePoint Online/OneDrive for business.  Il controllo dell'opt-in verrà esposto nell'interfaccia di amministrazione di Microsoft 365 e invierà una notifica nel centro messaggi a tutti i clienti idonei.   
+A gennaio 2020, i clienti nei paesi di Office 365 idonei possono scegliere l'opzione per la migrazione dei dati del servizio chat di Microsoft teams.  Le sequenze temporali di opt-in sono state riaperte o estese per tutti i paesi idonei a offrire ai clienti la possibilità di prendere in considerazione il programma di migrazione precoce con Microsoft teams nell'ambito.   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Azioni facoltative prima di richiedere uno spostamento
 
