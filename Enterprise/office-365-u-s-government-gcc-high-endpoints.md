@@ -3,7 +3,7 @@ title: Office 365 US Government High endpoint GCC
 ms.author: laurawi
 author: LauraWi
 manager: laurawi
-ms.date: 12/04/2019
+ms.date: 01/02/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Se nell'organizzazione viene utilizzato Office 365 e i computer della rete vengono limitati dalla connessione a Internet, di seguito sono elencati gli endpoint (FQDN, porte, URL, IPv4 e gli intervalli di indirizzi IPv6) che devono essere inclusi negli elenchi in uscita consentiti per garantire la i computer possono utilizzare correttamente Office 365.
 hideEdit: true
-ms.openlocfilehash: 8c2b324dedc79cb66d65266311d6062beaf15e87
-ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
+ms.openlocfilehash: 9d4b0538256a2c65d299572f665c908f678b4538
+ms.sourcegitcommit: f9888d1c27e38d3c489a0cbed7684a2e67c3afbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40744322"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951550"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 US Government High endpoint GCC
 
@@ -36,7 +36,7 @@ ms.locfileid: "40744322"
   
 |||
 |:-----|:-----|
-|**Ultimo aggiornamento:** 12/04/2019- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change log Subscription](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** l'elenco completo in [formato JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Ultimo aggiornamento:** 01/02/2020- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change log Subscription](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** l'elenco completo in [formato JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Iniziare con la [gestione degli endpoint di Office 365](managing-office-365-endpoints.md) per comprendere i suggerimenti per la gestione della connettività di rete tramite questi dati. I dati degli endpoint vengono aggiornati all'inizio di ogni mese con i nuovi indirizzi IP e gli URL pubblicati 30 giorni prima di essere attivi. In questo modo i clienti che non dispongono ancora di aggiornamenti automatici consentono di completare i processi prima che sia necessaria una nuova connettività. Gli endpoint possono anche essere aggiornati nel corso del mese, se necessario, per risolvere le escalation del supporto, gli incidenti di sicurezza o altri requisiti operativi immediati. I dati visualizzati in questa pagina sono tutti generati dai servizi Web basati su REST. Se si utilizza uno script o un dispositivo di rete per accedere a questi dati, è consigliabile andare direttamente al [servizio Web](office-365-ip-web-service.md) .
 
