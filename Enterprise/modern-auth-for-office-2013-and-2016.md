@@ -21,16 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come l'autenticazione moderna di Office 365 funziona in modo diverso per le app client di Office 2013 e 2016.
-ms.openlocfilehash: 8fde952201b01a235794ddcd59abeed402a368d4
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: aebc9957ed3eac5997bf8646dfc7284f24a2ed1b
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747989"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122575"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funzionamento dell'autenticazione moderna per le applicazioni client di Office 2013 e Office 2016
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
 Leggere questo articolo per informazioni su come le app client di Office 2013 e Office 2016 utilizzano le funzionalità di autenticazione moderne in base alla configurazione dell'autenticazione nel tenant di Office 365 per Exchange Online, SharePoint Online e Skype for business online.
 
@@ -73,6 +73,7 @@ Nella tabella seguente viene descritto il comportamento di autenticazione per le
   
 |Versione app client di Office * * * *|Chiave del registro di sistema presente? * * * *|Autenticazione moderna in? * * * *|Comportamento di autenticazione con autenticazione moderna attivata per il tenant (impostazione predefinita) * * * *|Comportamento di autenticazione con l'autenticazione moderna disattivata per il tenant * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2016  <br/> |No <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Sì  <br/> |Impone l'autenticazione moderna in Outlook 2010, 2013 o 2016 <br/> [Altre informazioni](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Impone l'autenticazione moderna all'interno del client Outlook.<br/> |
 |Office 2016  <br/> |No, o EnableADAL = 1  <br/> |Sì  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |
 |Office 2016  <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |L'autenticazione moderna viene tentata per prima. Se il server rifiuta una connessione di autenticazione moderna, viene utilizzata l'autenticazione di base. Il server rifiuta l'autenticazione moderna quando il tenant non è abilitato.  <br/> |
 |Office 2016  <br/> |Sì, EnableADAL = 0  <br/> |No  <br/> |Autenticazione di base  <br/> |Autenticazione di base  <br/> |

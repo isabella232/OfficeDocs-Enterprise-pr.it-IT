@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visualizzare lo stato di integrità dei servizi di Office 365 prima di contattare il supporto per verificare se è presente un'interruzione del servizio attiva.
-ms.openlocfilehash: 5d9b4c65932f65b878518bd5e0f33a1c5336aaf9
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37931738"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122585"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Come verificare l'integrità dei servizi di Office 365
 
@@ -55,7 +55,7 @@ Se non si è in grado di accedere al portale del servizio, è possibile utilizza
 
 La scheda **tutti i servizi** (la visualizzazione predefinita) Visualizza tutti i servizi e lo stato di integrità corrente. Un'icona e la colonna **stato** indicano lo stato di ogni servizio. Per filtrare la visualizzazione per i servizi che stanno vivendo un incidente, selezionare la scheda **eventi** non consentiti nella parte superiore della pagina. Selezionando la scheda **avvisi** , verranno visualizzati solo i servizi a cui è attualmente inviato un avviso. La scheda **cronologia** Visualizza la cronologia degli incidenti e degli avvisi risolti.
 
-Se si verifica un problema che non viene visualizzato nell'elenco, selezionare **segnala un problema**, completare la maschera breve per dirci il problema e quindi selezionare **Invia**.
+Se si verifica un problema con un servizio di Office 365 e non viene visualizzato nell'elenco nella pagina **integrità del servizio** , parlarne selezionando **segnala un problema**e completando la maschera breve. Verranno esaminati i dati correlati e i report di altre organizzazioni per vedere quanto è diffuso il problema e se sono stati originati dal servizio. In tal caso, verrà aggiunto come nuovo incidente o Advisory nella pagina **integrità del servizio** , in cui è possibile monitorarne la risoluzione. Se non viene visualizzato nell'elenco entro circa 30 minuti, prendere in considerazione l'eventualità di contattare il supporto tecnico per risolvere il problema.
 
 > [!TIP]
 > È anche possibile usare l'[app Amministrazione di Office 365](https://go.microsoft.com/fwlink/p/?linkid=627216) in un dispositivo mobile per visualizzare Integrità del servizio, uno strumento ideale per tenersi aggiornati con le notifiche push. 

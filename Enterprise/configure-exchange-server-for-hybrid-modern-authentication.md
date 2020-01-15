@@ -14,12 +14,12 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: L'autenticazione moderna ibrida (HMA), è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure ed è disponibile per le distribuzioni ibride locali di Exchange Server.
-ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 1a8bed186acd8da9c5f223120c5e58e8bfd445b4
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085171"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122565"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida
 
@@ -164,3 +164,5 @@ Se si è un cliente locale che utilizza Exchange Server su TCP 443, è necessari
 
 [Panoramica dell'autenticazione moderna ibrida e prerequisiti per l'utilizzo con i server Skype for business e Exchange locali](hybrid-modern-auth-overview.md) 
   
+Forzare gli utenti di Outlook all'autenticazione moderna  
+[Requisiti di configurazione dell'autenticazione moderna per la transizione da Office 365 dedicato/ITAR a vNext](modern-authentication-configuration.md)
