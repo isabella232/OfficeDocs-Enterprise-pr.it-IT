@@ -3,7 +3,7 @@ title: Gestione degli endpoint di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/21/2019
+ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Alcune reti aziendali limitano l'accesso a percorsi Internet generici o includono una sostanziale backhaul o l'elaborazione del traffico di rete. Per garantire che i computer su reti come queste possano accedere a Office 365, gli amministratori di rete e proxy devono gestire l'elenco di nomi FQDN, URL e indirizzi IP che compongono l'elenco degli endpoint di Office 365. Queste necessità devono essere aggiunte alla route diretta, al bypass proxy e/o alle regole del firewall e ai file PAC per garantire che le richieste di rete siano in grado di raggiungere Office 365.
-ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
-ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
+ms.openlocfilehash: 189a21c310b7fd2e62817504b8d6910a2b3e66ca
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40744510"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570883"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestione degli endpoint di Office 365
 
@@ -140,9 +140,10 @@ Gli indirizzi IP vengono forniti solo per i server di Office 365 che è necessar
   
 Per ulteriori informazioni, vedere un indirizzo IP associato a Office 365.
   
-1. Controllare se l'indirizzo IP è incluso in un intervallo di pubblicazione più grande tramite una calcolatrice CIDR, ad esempio per [IPv4](https://www.ipaddressguide.com/cidr) o [https://www.ipaddressguide.com/ipv6-cidr)IPv6].
-2. Vedere se un partner possiede l'indirizzo IP con una [query WHOIS](https://dnsquery.org/). Se è di proprietà di Microsoft, può trattarsi di un partner interno.
-3. Controllare il certificato, in un browser connettersi all'indirizzo IP utilizzando *https://\<ip_address\> * controllare i domini elencati nel certificato per comprendere quali domini sono associati all'indirizzo IP. Se si tratta di un indirizzo IP di proprietà di Microsoft e non dell'elenco degli indirizzi IP di Office 365, è probabile che l'indirizzo IP sia associato a una rete CDN Microsoft, ad esempio *MSOCDN.NET* o un altro dominio Microsoft senza informazioni IP pubblicate. Se si trova il dominio sul certificato è quello in cui pretendiamo di elencare l'indirizzo IP, fatecelo sapere.
+1. Controllare se l'indirizzo IP è incluso in un intervallo di pubblicazione più grande tramite una calcolatrice CIDR, ad esempio per [IPv4](https://www.ipaddressguide.com/cidr) o [IPv6](https://www.ipaddressguide.com/ipv6-cidr). Ad esempio, 40.96.0.0/13 include l'indirizzo IP 40.103.0.1 nonostante 40,96 non corrispondente a 40,103.
+2. Vedere se un partner possiede l'indirizzo IP con una [query WHOIS](https://dnsquery.org/). Se è di proprietà di Microsoft, può trattarsi di un partner interno. Molti endpoint di rete partner sono elencati come appartenenti alla categoria _predefinita_ , per i quali gli indirizzi IP non vengono pubblicati.
+3. L'indirizzo IP potrebbe non essere parte di Office 365 o di una dipendenza. La pubblicazione di endpoint di rete di Office 365 non include tutti gli endpoint di rete Microsoft.
+4. Controllare il certificato, in un browser connettersi all'indirizzo IP utilizzando *https://\<ip_address\> * controllare i domini elencati nel certificato per comprendere quali domini sono associati all'indirizzo IP. Se si tratta di un indirizzo IP di proprietà di Microsoft e non dell'elenco degli indirizzi IP di Office 365, è probabile che l'indirizzo IP sia associato a una rete CDN Microsoft, ad esempio *MSOCDN.NET* o un altro dominio Microsoft senza informazioni IP pubblicate. Se si trova il dominio sul certificato è quello in cui pretendiamo di elencare l'indirizzo IP, fatecelo sapere.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Alcuni URL di Office 365 puntano ai record CNAME invece che a record nel DNS. Che cosa è necessario fare con i record CNAME?
@@ -206,7 +207,12 @@ Se si sta tentando di utilizzare Office 365 e i servizi di terze parti non sono 
 La limitazione dell'accesso ai servizi consumer dovrebbe essere condotta a proprio rischio. L'unico modo affidabile per bloccare i servizi consumer è limitare l'accesso all'FQDN di *login.Live.com* . Questo nome di dominio completo viene utilizzato da un ampio insieme di servizi, tra cui servizi non consumer quali MSDN, TechNet e altri. Questo FQDN è utilizzato anche dal programma di Exchange file sicuro del supporto tecnico Microsoft ed è necessario trasferire i file per semplificare la risoluzione dei problemi per i prodotti Microsoft.  La limitazione dell'accesso a questo FQDN può comportare la necessità di includere anche eccezioni alla regola per le richieste di rete associate a questi servizi.
   
 Tenere presente che bloccare l'accesso solo ai servizi consumer di Microsoft non impedirà la possibilità per gli utenti della rete di exfiltrate le informazioni utilizzando un tenant di Office 365 o un altro servizio.
-  
+
+<a name="bkmk_IPOnlyFirewall"> </a>
+### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>Il firewall richiede indirizzi IP e non è in grado di elaborare gli URL. Come configurarlo per Office 365?
+
+Office 365 non fornisce gli indirizzi IP di tutti gli endpoint di rete richiesti. Alcuni sono forniti solo come URL e sono categorizzati come predefiniti. Gli URL nella categoria predefinita necessari devono essere consentiti tramite un server proxy. Se non si dispone di un server proxy, esaminare come sono state configurate le richieste Web per gli URL che gli utenti digitano nella barra degli indirizzi di un Web browser. l'utente non fornisce nemmeno un indirizzo IP. Gli URL di categoria predefiniti di Office 365 che non forniscono indirizzi IP devono essere configurati nello stesso modo.
+
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Servizio Web per URL e indirizzi IP di Office 365](office-365-ip-web-service.md)

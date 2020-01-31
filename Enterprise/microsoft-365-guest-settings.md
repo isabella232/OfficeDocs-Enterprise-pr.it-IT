@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365.
-ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 6fba4a8107962ef7ac7da5f83dd2d7f1d75dccb2
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919380"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627884"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
@@ -55,7 +55,7 @@ L'interfaccia di amministrazione di Microsoft 365 presenta delle impostazioni a 
 
 ### <a name="sharing"></a>Condivisione
 
-**Navigazione:** [Interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) > Impostazioni > Sicurezza e privacy > Condivisione
+**Navigazione:** [Interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) > Impostazioni > Impostazioni > scheda Sicurezza e privacy > Condivisione
 
 ![Screenshot dell'impostazione di condivisione guest in sicurezza e privacy nell'interfaccia di amministrazione di Microsoft 365](media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -65,7 +65,7 @@ L'interfaccia di amministrazione di Microsoft 365 presenta delle impostazioni a 
 
 ### <a name="office-365-groups"></a>Gruppi di Office 365
 
-**Navigazione:** [Interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) > Impostazioni > Servizi e componenti aggiuntivi > Gruppi di Office 365
+**Navigazione:** [Interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) > Impostazioni > Impostazioni > Gruppi di Office 365
 
 ![Screenshot delle impostazioni guest di Gruppi di Office 365 nell'interfaccia di amministrazione di Microsoft 365](media/office-365-groups-guest-settings.png)
 
@@ -196,11 +196,13 @@ Queste due impostazioni possono essere usate contemporaneamente. Se un utente si
 
 **Ruolo di amministratore:** Amministratore di SharePoint
 
+Poiché queste impostazioni sono soggette alle impostazioni a livello di organizzazione per SharePoint, l'impostazione di condivisione effettiva per il sito potrebbe cambiare se l'impostazione a livello di organizzazione cambia. Se si sceglie un'impostazione qui e il livello di organizzazione viene impostato successivamente su un valore più restrittivo, a questo sito sarà applicato tale livello più restrittivo. Ad esempio, se si sceglie **Chiunque** e l'impostazione a livello di organizzazione viene in seguito impostata su **Utenti guest nuovi ed esistenti**, il sito consentirà solo utenti guest nuovi ed esistenti. Se l'impostazione a livello di organizzazione viene quindi reimpostata su **Chiunque**, il sito consentirà di nuovo i collegamenti *Chiunque*.
+
 ### <a name="site-sharing"></a>Condivisione di siti
 
 È possibile impostare le autorizzazioni di condivisione guest per ogni sito di SharePoint. Questa impostazione è valida sia per la condivisione di siti che per la condivisione di file e cartelle. La condivisione *Chiunque* non è disponibile per la condivisione di siti. Se si sceglie **Chiunque**, gli utenti possono condividere file e cartelle utilizzando i collegamenti *Chiunque* e il sito stesso con utenti guest nuovi ed esistenti.
 
-**Navigazione:** Interfaccia di amministrazione di SharePoint > Siti attivi > selezionare il sito > Condivisione
+**Navigazione:** Interfaccia di amministrazione di SharePoint > Siti attivi > selezionare il sito > scheda Criteri > Modifica le impostazioni di condivisione esterna
 
 ![Screenshot delle impostazioni di condivisione esterna dei siti di SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
@@ -208,7 +210,22 @@ Queste due impostazioni possono essere usate contemporaneamente. Se un utente si
 |:-----|:-----|:-----|
 |Il contenuto del sito può essere condiviso con:|Varia in base al tipo di sito (vedere la tabella seguente)|Indica il tipo di condivisione esterna consentito per il sito. Le opzioni disponibili qui sono soggette alle impostazioni di condivisione a livello di organizzazione per SharePoint.|
 
-Poiché queste impostazioni sono soggette alle impostazioni a livello di organizzazione per SharePoint, l'impostazione di condivisione effettiva per il sito potrebbe cambiare se l'impostazione a livello di organizzazione cambia. Se si sceglie un'impostazione qui e il livello di organizzazione viene impostato successivamente su un valore più restrittivo, a questo sito sarà applicato tale livello più restrittivo. Ad esempio, se si sceglie **Chiunque** e l'impostazione a livello di organizzazione viene in seguito impostata su **Utenti guest nuovi ed esistenti**, il sito consentirà solo utenti guest nuovi ed esistenti. Se l'impostazione a livello di organizzazione viene quindi reimpostata su **Chiunque**, il sito consentirà di nuovo i collegamenti *Chiunque*.
+### <a name="site-file-and-folder-link-settings"></a>Impostazioni dei collegamenti a file e cartelle dei siti
+
+È possibile configurare impostazioni predefinite per il tipo di collegamento, le autorizzazioni e la scadenza dei collegamenti *Chiunque* per ogni sito. Se configurate al livello del sito, queste impostazioni sostituiscono le impostazioni a livello di organizzazione. Si noti che se i collegamenti *Chiunque* sono disabilitati a livello dell'organizzazione, *Chiunque* non sarà un tipo di collegamento disponibile a livello di sito.
+
+**Navigazione:** Interfaccia di amministrazione di SharePoint > Siti attivi > selezionare il sito > scheda Criteri > Modifica le impostazioni di condivisione esterna
+
+![Screenshot delle impostazioni di condivisione a livello di sito di SharePoint](media/sharepoint-site-link-sharing-settings.png)
+
+|**Impostazione**|**Predefinita**|**Descrizione**|
+|:-----|:-----|:-----|
+|Limita la condivisione esterna in base al dominio|Off|Questa impostazione consente di specificare un elenco di domini autorizzati o bloccati per la condivisione. Se si specificano domini autorizzati, gli inviti di condivisione possono essere inviati solo a tali domini. Se si specificano domini non autorizzati, gli inviti di condivisione non possono essere inviati a tali domini.<br><br> Questa impostazione non può essere usata per ignorare le restrizioni sul dominio impostate a livello di organizzazione o di Azure AD.|
+|Tipo di collegamento di condivisione predefinito|Uguale all'impostazione a livello di organizzazione|Questa impostazione consente di specificare il collegamento di condivisione predefinito presentato agli utenti del sito. L'opzione *Uguale all'impostazione a livello di organizzazione* è definita da una combinazione di impostazioni di condivisione a livello di organizzazione e di sito.|
+|Impostazioni avanzate per i collegamenti di tipo "Chiunque"|Uguale all'impostazione a livello di organizzazione|Specifica il numero di giorni dopo cui scade un collegamento *Chiunque* creato per un file di questo sito. I collegamenti scaduti non possono essere rinnovati. Creare un nuovo collegamento se è necessario continuare a condividere dopo la scadenza.|
+|Autorizzazione collegamento predefinita|Uguale all'impostazione a livello di organizzazione|Questa impostazione consente di specificare l'autorizzazione predefinita (Visualizzazione o Modifica) per la i collegamenti di condivisione creati per i file nel sito.|
+
+### <a name="default-site-sharing-settings"></a>Impostazioni di condivisione del sito predefinite
 
 Nella tabella seguente viene mostrata l'impostazione di condivisione predefinita per ogni tipo di sito.
 

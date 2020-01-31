@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Velocizzare la pianificazione e la configurazione di Office 365 o Microsoft 365 con i consulenti per la distribuzione.
-ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ac892a7d0551ede4d7bb4df7081ee0ae8dd5d618
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072368"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627862"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Consulenti per la distribuzione per i servizi di Office 365 o Microsoft 365
 
@@ -168,7 +168,7 @@ Vedere questa guida per la procedura di installazione di Office in un PC o un Ma
 | **Correre:** |  [Guida introduttiva a Office 365 ProPlus](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Office 365 ProPlus Deployment Advisor illustra i passaggi necessari per aiutare gli utenti a installare Office 365 ProPlus direttamente dal portale di Office 365 online o per la distribuzione di Office 365 ProPlus agli utenti da una posizione locale. Sono incluse istruzioni per l'utilizzo di System Center Configuration Manager, uno script di avvio di criteri di gruppo, un'immagine del disco del sistema operativo o l'attivazione di Servizi Desktop remoto (RDS) condivisa.
+Office 365 ProPlus Deployment Advisor illustra i passaggi necessari per aiutare gli utenti a installare Office 365 ProPlus direttamente dal portale di Office 365 online o per la distribuzione di Office 365 ProPlus agli utenti da una posizione locale. Sono incluse le istruzioni per l'utilizzo di Microsoft endpoint Configuration Manager, uno script di avvio di criteri di gruppo, un'immagine del disco del sistema operativo o l'attivazione condivisa di Servizi Desktop remoto (RDS).
 
 |||
 |:-------|:-----|

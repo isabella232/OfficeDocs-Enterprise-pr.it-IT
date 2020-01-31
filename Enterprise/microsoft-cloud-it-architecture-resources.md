@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Riepilogo: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft. Informazioni su come implementare un desktop protetto e moderno con Windows 10 e Office ProPlus."
-ms.openlocfilehash: 85031a3062397c63326a3306d9a4a14d77c114f3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 30f3cb17f59c3a2352b4f0be9fec92d53126e63b
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756605"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627902"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 
@@ -220,7 +220,7 @@ Cosa devono sapere gli architetti IT della distribuzione e della gestione degli 
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Miniatura per il modello Distribuire un desktop protetto e moderno con Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf) \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Questo modello contiene: <ul><li>  Distribuzione di Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Distribuzione di Windows 10 e Office ProPlus con System Center Configuration Manager </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus con System Center Configuration Manager </li><li>  Funzionalità di protezione predefinite e aggiuntive di Windows 10 </li></ul><br/> |
+|[![Miniatura per il modello Distribuire un desktop protetto e moderno con Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf) \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Questo modello contiene: <ul><li>  Distribuzione di Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Distribuzione di Windows 10 e Office ProPlus con Microsoft Endpoint Configuration Manager </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus con Microsoft Endpoint Configuration Manager </li><li>  Funzionalità di protezione predefinite e aggiuntive di Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Vedere anche
 
