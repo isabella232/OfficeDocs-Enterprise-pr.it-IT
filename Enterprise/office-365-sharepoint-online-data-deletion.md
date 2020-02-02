@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Spiegazione dell'eliminazione dei dati in SharePoint Online.
-ms.openlocfilehash: 94b70d34cb05f98dfa560761dec87a919720dca9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 3f00e88c8d0e2bc10f6468b843385753ef864297
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078155"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658323"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Eliminazione dei dati di SharePoint online in Office 365
 
@@ -36,6 +36,8 @@ Quando si elimina una raccolta siti, si elimina anche la gerarchia dei siti nell
 - Informazioni sul ruolo e sulla sicurezza correlate al sito o ai relativi siti secondari
 - Siti secondari del sito Web principale, del relativo contenuto e delle informazioni utente
 
-Se si elimina accidentalmente una raccolta siti, è possibile ripristinarla da un amministratore globale o di SharePoint utilizzando l'interfaccia di amministrazione di SharePoint. 
+Se si elimina accidentalmente una raccolta siti, è possibile ripristinarla da un amministratore globale o di SharePoint utilizzando l'interfaccia di amministrazione di SharePoint.
+
+Le raccolte siti eliminate vengono conservate per 93 giorni. Dopo 93 giorni, i siti e tutto il contenuto e le impostazioni vengono eliminati in modo definitivo, inclusi gli elenchi, le raccolte, le pagine e qualsiasi sito secondario.
 
 L'eliminazione non consentita si verifica quando un utente elimina gli elementi eliminati dal cestino della raccolta siti, quando scade il periodo di conservazione e di backup oppure quando un amministratore Elimina definitivamente una raccolta siti utilizzando il [cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Quando un utente Elimina (Elimina definitivamente o Elimina in modo definitivo) contenuto da SharePoint Online, vengono eliminate anche tutte le chiavi di crittografia per i blocchi eliminati. I blocchi nei dischi che in precedenza sono stati memorizzati nei blocchi eliminati vengono contrassegnati come inutilizzati e disponibili per il riutilizzo.
