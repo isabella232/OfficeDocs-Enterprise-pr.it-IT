@@ -3,7 +3,7 @@ title: Office 365 degli endpoint del servizio governativo degli Stati Uniti
 ms.author: laurawi
 author: LauraWi
 manager: laurawi
-ms.date: 01/02/2020
+ms.date: 01/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: 'Riepilogo: Office 365 richiede la connettività a Internet. Gli endpoint seguenti devono essere raggiungibili per i clienti che utilizzano solo i piani di Office 365.'
 hideEdit: true
-ms.openlocfilehash: 3f603ceb8211a46dec43d5b06677b6a316b4fefa
-ms.sourcegitcommit: f9888d1c27e38d3c489a0cbed7684a2e67c3afbd
+ms.openlocfilehash: f764934edacf377851122c89dcfb923946e79f41
+ms.sourcegitcommit: 22fa825e9bcd1e167d0b931941f30b8622b93cb4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951517"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41677851"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 degli endpoint del servizio governativo degli Stati Uniti
 
@@ -39,7 +39,7 @@ ms.locfileid: "40951517"
   
 |||
 |:-----|:-----|
-|**Ultimo aggiornamento:** 01/02/2020- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change log Subscription](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** l'elenco completo in [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Ultimo aggiornamento:** 01/28/2020- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change log Subscription](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** l'elenco completo in [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Iniziare con la [gestione degli endpoint di Office 365](managing-office-365-endpoints.md) per comprendere i suggerimenti per la gestione della connettività di rete tramite questi dati. I dati degli endpoint vengono aggiornati all'inizio di ogni mese con i nuovi indirizzi IP e gli URL pubblicati 30 giorni prima di essere attivi. In questo modo i clienti che non dispongono ancora di aggiornamenti automatici consentono di completare i processi prima che sia necessaria una nuova connettività. Gli endpoint possono anche essere aggiornati nel corso del mese, se necessario, per risolvere le escalation del supporto, gli incidenti di sicurezza o altri requisiti operativi immediati. I dati visualizzati in questa pagina sono tutti generati dai servizi Web basati su REST. Se si utilizza uno script o un dispositivo di rete per accedere a questi dati, è consigliabile andare direttamente al [servizio Web](office-365-ip-web-service.md) .
 
