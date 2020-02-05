@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visualizzare lo stato di integrità dei servizi di Office 365 prima di contattare il supporto per verificare se è presente un'interruzione del servizio attiva.
-ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 4dace633b4f68f3f9361096a4bd99296b8b807b2
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122585"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721977"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Come verificare l'integrità dei servizi di Office 365
 
@@ -114,6 +114,7 @@ Per la maggior parte dei casi, i servizi verranno visualizzati come integri senz
 |**Ripristino esteso** | Questo stato indica che è in corso un'azione correttiva per ripristinare il servizio per la maggior parte degli utenti, ma il ripristino di tutti i sistemi interessati potrebbe richiedere più tempo. Questo stato viene visualizzato anche se è stata applicata una soluzione temporanea per limitare l'impatto in attesa di una correzione permanente. |
 |**Analisi sospesa** | Questo stato viene visualizzato se, in seguito all'analisi dettagliata di un potenziale problema, il team di supporto deve richiedere maggiori informazioni ai clienti. In tal caso, il team comunicherà all'utente quali dati e log sono necessari. |
 |**Servizio ripristinato** | È stato verificato che l'azione correttiva ha consentito di risolvere il problema sottostante e il servizio è stato ripristinato. Per scoprire la causa dell'errore, visualizzare i dettagli del problema. |
+|**Falso positivo** | Dopo un'indagine dettagliata, è stato confermato che il servizio è integro e funziona come previsto. Nessun impatto sul servizio è stato osservato o la causa dell'incidente ha avuto origine all'esterno del servizio. |
 |**Rapporto post-evento pubblicato** | È stato pubblicato un rapporto post-evento per un problema specifico che include informazioni sulla causa principale e i passaggi successivi per garantire che un problema simile non venga rigenerato. |
 
 ### <a name="history"></a>Cronologia
