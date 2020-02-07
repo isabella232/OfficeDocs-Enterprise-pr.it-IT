@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Alcune reti aziendali limitano l'accesso a percorsi Internet generici o includono una sostanziale backhaul o l'elaborazione del traffico di rete. Per garantire che i computer su reti come queste possano accedere a Office 365, gli amministratori di rete e proxy devono gestire l'elenco di nomi FQDN, URL e indirizzi IP che compongono l'elenco degli endpoint di Office 365. Queste necessità devono essere aggiunte alla route diretta, al bypass proxy e/o alle regole del firewall e ai file PAC per garantire che le richieste di rete siano in grado di raggiungere Office 365.
-ms.openlocfilehash: 189a21c310b7fd2e62817504b8d6910a2b3e66ca
-ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
+ms.openlocfilehash: f1e614412c1ef789ba5f0b81e124fdfebf361f94
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41570883"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845037"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestione degli endpoint di Office 365
 

@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Le applicazioni di Office per Mac forniscono un'esperienza di app nativa sulla piattaforma macOS. Ogni app è progettata per funzionare in diversi scenari, tra cui gli stati in cui non è disponibile alcun accesso alla rete. Quando un computer è connesso a una rete, le applicazioni si connettono automaticamente a una serie di servizi basati sul Web per fornire funzionalità avanzate. In questo articolo vengono descritti gli endpoint e gli URL che le applicazioni tentano di raggiungere e i servizi forniti. Queste informazioni sono utili per la risoluzione dei problemi relativi alla configurazione della rete e per l'impostazione di un criterio per i server proxy di rete. I dettagli in questo articolo sono destinati a completare l'articolo di Office 365 URL e degli intervalli di indirizzi.
-ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781956"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844547"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Richieste di rete in Office per Mac
 

@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: La modalità di gestione delle eliminazioni dei dati non consentiti in Exchange Online.
-ms.openlocfilehash: f25f2416778f19f8b2e464e31e6116a81eb872cc
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067563"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843637"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Eliminazione dei dati di Exchange online in Office 365
 In Exchange Online, esistono due tipi di eliminazioni: eliminazioni morbide e eliminazioni dure. Questo si applica alle cassette postali e agli elementi all'interno di una cassetta postale.
@@ -31,7 +33,7 @@ Una cassetta postale utente eliminata temporaneamente è una cassetta postale ch
 
 Una cassetta postale di un utente eliminato definitivamente è una cassetta postale che è stata eliminata in uno dei modi seguenti:
 - La cassetta postale dell'utente è stata eliminata temporaneamente per più di 30 giorni e l'utente di Azure Active Directory associato è stato eliminato definitivamente. Tutti i contenuti delle cassette postali, ad esempio messaggi di posta elettronica, contatti e file vengono eliminati definitivamente.
-- L'account utente associato alla cassetta postale dell'utente è stato eliminato definitivamente da Azure Active Directory. La cassetta postale dell'utente è stata eliminata temporaneamente in Exchange Online e rimane in uno stato di eliminazione temporanea per 30 giorni. Se nel periodo di 30 giorni un nuovo utente di Azure Active Directory è sincronizzato dall'account del destinatario originale con lo stesso **ExchangeGuid** o **proprietà ArchiveGuid**e questo nuovo account è concesso in licenza per Exchange Online, si verificherà un'eliminazione dura di la cassetta postale dell'utente originale. Tutti i contenuti delle cassette postali, ad esempio messaggi di posta elettronica, contatti e file vengono eliminati definitivamente.
+- L'account utente associato alla cassetta postale dell'utente è stato eliminato definitivamente da Azure Active Directory. La cassetta postale dell'utente è stata eliminata temporaneamente in Exchange Online e rimane in uno stato di eliminazione temporanea per 30 giorni. Se nel periodo di 30 giorni un nuovo utente di Azure Active Directory è sincronizzato dall'account del destinatario originale con lo stesso **ExchangeGuid** o **proprietà ArchiveGuid**e questo nuovo account è concesso in licenza per Exchange Online, si verificherà un'eliminazione definitiva della cassetta postale dell'utente originale. Tutti i contenuti delle cassette postali, ad esempio messaggi di posta elettronica, contatti e file vengono eliminati definitivamente.
 - Una cassetta postale eliminata temporaneamente viene eliminata utilizzando **Remove-Mailbox-PermanentlyDelete**.
 
 Gli scenari di eliminazione precedenti presuppongono che la cassetta postale dell'utente non sia in uno degli Stati di blocco, come il blocco per controversia legale o la conservazione di eDiscovery. Se è presente qualsiasi tipo di blocco sulla cassetta postale, la cassetta postale non può essere eliminata. Per tutti i tipi di destinatari degli utenti di posta, tutte le impostazioni di [blocco](https://support.office.com/article/manage-legal-investigations-in-office-365-2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e?ui=en-US&rs=en-US&ad=US) vengono ignorate e non hanno alcun effetto su eliminazioni o eliminazioni.
@@ -50,7 +52,7 @@ La tabella seguente elenca le sequenze di riempimento che corrispondono a specif
 
 | Operazione runtime di ESE   | Sequenza di riempimento |
 |--------------------------|--------------|
-| Sostituisce                  | R            |
+| Sostituisci                  | R            |
 | Elimina record/valore lungo | D            |
 | Spazio pagina liberato         | H            |
 

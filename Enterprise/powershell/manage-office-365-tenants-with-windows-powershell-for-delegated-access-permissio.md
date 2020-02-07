@@ -10,15 +10,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 'Riepilogo: utilizzare Windows PowerShell per gestire i tenancy dei propri clienti tramite Office 365.'
-ms.openlocfilehash: a45fb7b888d7e591f6765150525f0b50c72ddc5c
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: f4b3dcee297a4b4e09c76c2790ed74d18407d80e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257591"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844217"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestire tenant Office 365 con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
@@ -49,7 +51,7 @@ Get-MsolPartnerContract -All | Select-Object TenantId
 In questo modo verrà visualizzato un elenco di tutti i tenant dei clienti tramite **TenantId**.
 
 >[!Note]
->PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet con **MSOL** nel proprio nome. Per continuare a utilizzare questi cmdlet, è necessario eseguirli da Windows PowerShell.
+>PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
 >
   
 ### <a name="get-a-tenant-id-by-using-the-domain-name"></a>Ottenere un ID tenant tramite il nome di dominio

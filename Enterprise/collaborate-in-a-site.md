@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: Informazioni su come collaborare con gli utenti in un sito di SharePoint.
-ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261359"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845067"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
@@ -84,7 +86,7 @@ Per impostare le impostazioni di condivisione a livello di organizzazione di Sha
 Il passaggio successivo consiste nel creare il sito che si intende utilizzare per la collaborazione con gli utenti.
 
 Per creare un sito
-1. Nell'interfaccia di amministrazione di SharePoint, in **siti**, fare clic su **siti attivi**.
+1. Nell'interfaccia di amministrazione di SharePoint, in **Siti** fare clic su **Siti attivi**.
 2. Fare clic su **Crea**.
 3. Fare clic su **sito del team**.
 4. Digitare il nome di un sito e immettere un nome per il proprietario del gruppo (proprietario del sito).

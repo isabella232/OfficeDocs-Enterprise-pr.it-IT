@@ -20,17 +20,19 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Il supporto si concluderà presto per i server e le applicazioni client di Office 2007 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
-ms.openlocfilehash: 2fd2e8a0bd2435dbec8c846111a628ffe56fa10c
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748023"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841003"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2007
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
 Se si utilizzano i prodotti e i servizi di Office 2007, il supporto per queste applicazioni è terminato. Durante la pianificazione dell'aggiornamento, questo è il momento ideale per passare al cloud Microsoft, a partire da Office 365. Utilizzare questo articolo come punto di partenza per esaminare le opzioni e pianificare l'aggiornamento.
       
@@ -59,7 +61,7 @@ Se si utilizzano i prodotti e le applicazioni di Office 2007 a casa, vedere [que
   
 [Video: che cos'è Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Criteri relativi al ciclo di vita Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Politica relativa al ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
 [Pianificare l'aggiornamento di client e server di Office 2007 o Office 2010](plan-upgrade-previous-versions-office.md)
   

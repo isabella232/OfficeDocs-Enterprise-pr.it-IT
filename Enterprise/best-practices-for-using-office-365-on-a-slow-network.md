@@ -16,13 +16,15 @@ search.appverid:
 - MEW150
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
+f1.keywords:
+- NOCSH
 description: Non sarebbe bello se la connessione Internet fosse sempre veloce e mai inattiva? Forse quel giorno verrà. Nel frattempo, tuttavia, esistono operazioni pratiche che è possibile eseguire per aggirare una rete esitante e continuare a svolgere il proprio lavoro quotidiano.
-ms.openlocfilehash: 69fde7ab60fecba4cc43d555d2988f75b7148dba
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616759"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844957"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedure consigliate per l'utilizzo di Office 365 in una rete lenta
 
@@ -176,7 +178,7 @@ Per ulteriori informazioni, vedere [Tune Project online performance](https://sup
   
 ## <a name="whats-the-best-way-to-report-problems"></a>Qual è il modo migliore per segnalare i problemi?
 
-Microsoft migliora continuamente le prestazioni complessive di Office 365 monitorando la rete, misurando la larghezza di banda e la latenza, migliorando il tempo di caricamento delle pagine, riducendo le operazioni di I/O su disco, riprogettando le Pages per utilizzare la strategia di download minima, aggiungendo l'hardware Aggiunta di più data center. Per ulteriori informazioni su come controllare lo stato corrente e i problemi relativi alle relazioni, vedere [How to Check Office 365 Service Health](https://docs.microsoft.com/office365/enterprise/view-service-health).
+Microsoft migliora continuamente le prestazioni complessive di Office 365 monitorando la rete, misurando la larghezza di banda e la latenza, migliorando il tempo di caricamento delle pagine, riducendo le operazioni di I/O su disco, riprogettando le pagina per l'utilizzo di una strategia di download minima, aggiungendo hardware ai Data Center e aggiungendo Per ulteriori informazioni su come controllare lo stato corrente e i problemi relativi alle relazioni, vedere [How to Check Office 365 Service Health](https://docs.microsoft.com/office365/enterprise/view-service-health).
   
 ## <a name="see-also"></a>Vedere anche
 

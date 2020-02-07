@@ -8,24 +8,26 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: utilizzare Office 365 PowerShell per creare nuovi siti di SharePoint Online e quindi aggiungere utenti e gruppi a tali siti.'
-ms.openlocfilehash: f15add5652af44d24e2fec678c5224b5efd7aa4f
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: c6cd47668dbe1472bcee83ca98e815a2fe73892e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261349"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841550"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Creare siti di SharePoint Online e aggiungere utenti con PowerShell di Office 365
 
 Quando si utilizza Office 365 PowerShell per creare siti di SharePoint Online e aggiungere utenti, è possibile eseguire rapidamente e più volte le attività molto più velocemente di quanto non sia possibile nell'interfaccia di amministrazione di Microsoft 356. È inoltre possibile eseguire attività che non possono essere eseguite nell'interfaccia di amministrazione di Office 356. 
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Le procedure descritte in questo argomento richiedono la connessione a SharePoint Online. Per istruzioni, vedere [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 

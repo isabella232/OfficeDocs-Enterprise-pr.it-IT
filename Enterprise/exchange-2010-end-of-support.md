@@ -10,17 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
+f1.keywords:
+- NOCSH
 description: Exchange 2010 si sta avvicinando alla fine del supporto. Utilizzare questa roadmap di pianificazione come guida per preparare l'aggiornamento a Exchange Online o a una versione più recente di Exchange Server locale.
-ms.openlocfilehash: 464406cd9603a41d10f98374442167160609c060
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: b8e9e1b94c08ec58294f88a7b5607b18c9f44a99
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745799"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840383"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Guida di orientamento alla fine del supporto di Exchange 2010
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise.*
+*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
 Il **13 ottobre 2020**, Exchange Server 2010 raggiungerà la fine del supporto. Se non è già stata avviata la migrazione da Exchange 2010 a Office 365 o Exchange 2016, ora è il momento di iniziare la pianificazione.
 

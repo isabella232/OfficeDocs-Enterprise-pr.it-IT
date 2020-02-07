@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Riepilogo: Configurare l'infrastruttura Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Office 365."
-ms.openlocfilehash: 262a7dcdb2dc48f7890b7ef188b1d8ce506f40dd
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: c669df7e719d8ff8516ad556817921e1440558d3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072138"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840343"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: configurare Azure
 

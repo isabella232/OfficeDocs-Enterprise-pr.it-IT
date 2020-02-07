@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Per comprendere adeguatamente il traffico di routing a Office 365 utilizzando Azure ExpressRoute, è necessario disporre di una solida conoscenza dei requisiti di routing di ExpressRoute di base e dei circuiti di ExpressRoute e i domini di routing. Questi sono i principi fondamentali per l'utilizzo di ExpressRoute su cui si basano i clienti di Office 365.
-ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813896"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844057"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routing con ExpressRoute per Office 365
 

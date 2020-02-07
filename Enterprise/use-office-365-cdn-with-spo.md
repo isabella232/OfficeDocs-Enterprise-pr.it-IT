@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: In questo articolo viene descritto come utilizzare la rete di distribuzione del contenuto (CDN) di Office 365 per velocizzare il recapito delle risorse di SharePoint Online a tutti gli utenti, indipendentemente dal luogo in cui si trovano o dal modo in cui accedono al contenuto.
-ms.openlocfilehash: 829903919d0a6222b213fe08a610ff6ebe9b985d
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 7194f5e73c2799a40b750032b736e2b7c7bd2c10
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721937"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841073"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online
 
@@ -993,10 +995,10 @@ Quando si Abilita la rete CDN di Office 365 per le origini pubbliche, il servizi
 
 Se l'origine */clientsideassets è mancante, le soluzioni di SharePoint Framework avranno esito negativo e non verranno generati messaggi di avviso o di errore. Questa origine potrebbe non essere presente perché la rete CDN è stata abilitata con il parametro _-NoDefaultOrigins_ impostato su **$true**oppure perché l'origine è stata eliminata manualmente.
 
-È possibile verificare se l'origine */CLIENTSIDEASSETS è presente con il seguente comando di PowerShell:
+È possibile controllare quali origini sono presenti con il seguente comando di PowerShell:
 
 ``` powershell
-Get-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
+Get-SPOTenantCdnOrigins -CdnType Public
 ```
 
 In alternativa, è possibile verificare con Office 365 CLI:

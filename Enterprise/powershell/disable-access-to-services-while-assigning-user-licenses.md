@@ -9,17 +9,19 @@ ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Informazioni su come assegnare licenze ad account utente e disabilitare i piani di servizio specifici nello stesso momento usando PowerShell di Office 365.
-ms.openlocfilehash: cbf19005ac78599a280ff1dd1b007242731e39db
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 019a8c62829c3b8c4bd2e81d573b861b0a09794a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072188"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841562"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente
 

@@ -20,13 +20,15 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Il supporto si concluderà presto per i server e le applicazioni client di Office 2010 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
-ms.openlocfilehash: 9df09e0f31358c9dd1bfe4a4adde99d41070060f
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: a71ac61b69d72f6386c3b9063ec0c1946a5b57ca
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072408"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841033"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2010
 
@@ -68,7 +70,7 @@ Se si utilizzano i prodotti e le applicazioni di Office 2010 a casa, vedere [que
   
 [Video: che cos'è Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Criteri relativi al ciclo di vita Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Politica relativa al ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
 [Pianificare l'aggiornamento di client e server di Office 2007 o Office 2010](plan-upgrade-previous-versions-office.md)
 

@@ -15,13 +15,15 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
+f1.keywords:
+- NOCSH
 description: "Questo articolo è rivolto agli amministratori. Può accadere che un utente elimini in modo permanente alcuni elementi della propria cassetta postale di Outlook e che voglia recuperarli senza riuscirci. È possibile recuperare gli elementi eliminati se non sono stati rimossi definitivamente dalla cassetta postale dell'utente. "
-ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
-ms.translationtype: HT
+ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38308601"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845127"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Ripristinare gli elementi eliminati in una cassetta postale utente - Guida per l'amministratore
 

@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -17,21 +19,21 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Informazioni su come disattivare la sincronizzazione della directory. È anche possibile visualizzarne lo stato.
-ms.openlocfilehash: 4204d72719e928982b2b6222fb971d62c0f1f8d6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 74e2eee0086e4f8098221f4aaa30d408091a6a0f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070412"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840983"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Visualizzare lo stato della sincronizzazione della directory in Office 365
 
 Se è stata integrata Active Directory locale con Azure AD sincronizzando l'ambiente locale con Office 365, è anche possibile controllare lo stato della sincronizzazione.
   
-## <a name="view-directory-synchronization-status"></a>Visualizzazione dello stato di sincronizzazione della directory
+## <a name="view-directory-synchronization-status"></a>Visualizzare lo stato della sincronizzazione della directory
 
 - Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) e scegliere **stato dirsync** nella Home page.
-- In alternativa, è possibile **** \> accedere agli utenti **attivi**degli utenti, quindi nella pagina **utenti attivi** scegliere **altre** \> **sincronizzazione della directory**. Nel riquadro di **sincronizzazione della directory** scegliere **Vai a gestione dirsync**.
+- In \> alternativa, è possibile accedere agli utenti **attivi** **degli utenti** , quindi nella pagina **utenti attivi** scegliere **altre** \> **sincronizzazione della directory**. Nel riquadro di **sincronizzazione della directory** scegliere **Vai a gestione dirsync**.
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Informazioni sulla pagina Gestisci sincronizzazione directory
 

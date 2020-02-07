@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Se nell'organizzazione viene utilizzato Office 365 e i computer della rete vengono limitati dalla connessione a Internet, di seguito sono elencati gli endpoint (FQDN, porte, URL e intervalli di indirizzi IPv4 e IPv6) che è necessario includere negli elenchi in uscita consentiti per garantire la propria i computer possono utilizzare correttamente Office 365.
 hideEdit: true
-ms.openlocfilehash: 13579546eceb33add9eda867cc5515ccb9e5ff13
-ms.sourcegitcommit: 22fa825e9bcd1e167d0b931941f30b8622b93cb4
+ms.openlocfilehash: fa9e4c9e29aa440a4d45fc2ad90987dd5f482f2c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41677871"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843667"
 ---
 # <a name="office-365-germany-endpoints"></a>Endpoint di Office 365 Germany
 
@@ -36,7 +38,7 @@ ms.locfileid: "41677871"
   
 |||
 |:-----|:-----|
-|**Ultimo aggiornamento:** 01/28/2020- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change log Subscription](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Download:** tutte le destinazioni necessarie e facoltative in un unico elenco [JSON formattato](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
+|**Ultimo aggiornamento:** 28/01/2020 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abbonamento al Log delle modifiche](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Download:** tutte le destinazioni obbligatorie e facoltative in un unico elenco in [formato JSON](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Iniziare con la [gestione degli endpoint di Office 365](managing-office-365-endpoints.md) per comprendere i suggerimenti per la gestione della connettività di rete tramite questi dati. I dati degli endpoint vengono aggiornati all'inizio di ogni mese con i nuovi indirizzi IP e gli URL pubblicati 30 giorni prima di essere attivi. In questo modo i clienti che non dispongono ancora di aggiornamenti automatici consentono di completare i processi prima che sia necessaria una nuova connettività. Gli endpoint possono anche essere aggiornati nel corso del mese, se necessario, per risolvere le escalation del supporto, gli incidenti di sicurezza o altri requisiti operativi immediati. È sempre possibile fare riferimento alla [sottoscrizione del registro delle modifiche](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 

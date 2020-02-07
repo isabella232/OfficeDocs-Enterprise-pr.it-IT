@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -21,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come l'autenticazione moderna di Office 365 funziona in modo diverso per le app client di Office 2013 e 2016.
-ms.openlocfilehash: aebc9957ed3eac5997bf8646dfc7284f24a2ed1b
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122575"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844857"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funzionamento dell'autenticazione moderna per le applicazioni client di Office 2013 e Office 2016
 
@@ -48,7 +50,7 @@ Per i servizi di Office 365, lo stato predefinito dell'autenticazione moderna è
 - Attivata per Skype for business **online per impostazione** predefinita. Vedere [abilitare Skype for business online per l'autenticazione moderna ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)per disattivarla o attivarla.
 
 > [!NOTE]
-> Per i tenant creati **prima** del 1 ° agosto 2017, l'autenticazione moderna è **disattivata** per impostazione predefinita per Exchange Online e Skype for business online.
+> Per i tenant creati **prima** del 1° agosto 2017, l'autenticazione moderna è **disattivata** per impostazione predefinita per Exchange Online e Skype for Business Online.
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Comportamento di accesso delle app client di Office
 

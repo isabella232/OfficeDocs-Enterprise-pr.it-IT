@@ -9,16 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Riepilogo: informazioni generali sui controlli di accesso amministrativo e sulla categorizzazione dei dati di Office 365.'
-ms.openlocfilehash: e8cc470c617deea7435841f276b772b0a8ef17a3
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: f902b123b26f2c71cb6597f66fc47142e2f2b44c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067559"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844537"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Controlli di accesso amministrativo in Office 365 
 
@@ -29,7 +31,7 @@ Per impostazione predefinita, i tecnici Microsoft non hanno privilegi amministra
 Microsoft fornisce servizi online utilizzando più moduli di recapito cloud:
 
 - **Cloud pubblici:** Include versioni multi-tenant di Office 365, Azure e altri servizi ospitati in Nord America, Sud America, Europa, Asia, Australia e così via.
-- **Nubi nazionali:** Include tutte le nubi sovrane e di terze parti al di fuori degli Stati Uniti (ad eccezione di quelle riportate in precedenza), come Office 365 in Cina (gestito da 21Vianet) e Office 365 in Germany (gestito da Microsoft, ma in un modello in cui un amministratore di dati tedesco, Deutsche Telekom, controlla e monitora l'accesso di Microsoft ai dati e ai sistemi dei clienti che contengono i dati dei clienti.
+- **Nubi nazionali:** Include tutte le nubi sovrane e di terze parti al di fuori degli Stati Uniti (ad eccezione di quelle indicate in precedenza), come Office 365 in Cina (gestito da 21Vianet) e Office 365 in Germany (gestito da Microsoft, ma in un modello in cui un amministratore di dati tedesco, Deutsche Telekom, controlla e monitora l'accesso di Microsoft ai dati e ai sistemi dei clienti).
 - **Cloud governativi:** Include i servizi Office 365 e Azure che sono disponibili per i clienti del governo degli Stati Uniti.
 
 Ai fini di questo articolo, i servizi di Office 365 includono:

@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: In questo articolo viene descritto come distribuire SharePoint Online senza eseguire il test di carico tradizionale, poiché non è consentito.
-ms.openlocfilehash: 13e71343aa5ec823003791d99e227fc835117b62
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077879"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844707"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Pianificazione della capacità e test di carico di SharePoint Online
 In questo articolo viene descritto come eseguire la distribuzione in SharePoint Online senza il test di carico tradizionale, in quanto i test di carico non sono consentiti in SharePoint Online. SharePoint Online è un servizio cloud e le funzionalità di carico, integrità e bilanciamento del carico generale del servizio sono gestite da Microsoft.

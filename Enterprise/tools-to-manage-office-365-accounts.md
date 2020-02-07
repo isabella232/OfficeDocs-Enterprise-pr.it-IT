@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: "Informazioni sugli strumenti da utilizzare per la gestione degli utenti di Office 365 e sul modo in cui è possibile utilizzare dipende dalla modalità di gestione delle identità dell'utente. "
-ms.openlocfilehash: 27c447e19e9664fe190497cefcd5af4c3be408eb
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 669d71aafe0efdff575615dab835dd67cb7aebdf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490769"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843947"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Strumenti per gestire gli account di Office 365
 
@@ -39,7 +41,7 @@ Il percorso e la modalità di gestione degli account utente dipendono dal modell
 
 - [Office 365 Identity](about-office-365-identity.md) -creare e gestire gli utenti nell'interfaccia di amministrazione, è anche possibile utilizzare Windows PowerShell o Azure Active Directory per gestire gli utenti.
 - [Sincronizzazione hash delle password con Single Sign-on senza soluzione di continuità](about-office-365-identity.md) : il modo più semplice per abilitare l'autenticazione per gli oggetti directory locali in Azure ad. Con la sincronizzazione degli hash delle password (pH), è possibile sincronizzare gli oggetti dell'account utente di Active Directory locale con Office 365 e gestire gli utenti in locale. 
-- [Autenticazione pass-through con Single Sign-on senza soluzione di continuità](about-office-365-identity.md) -fornisce una semplice convalida delle password per i servizi di autenticazione di Azure ad utilizzando un agente software in esecuzione su uno o più server locali per convalidare gli utenti direttamente con il proprio Active Directory locale. 
+- [Autenticazione pass-through con Single Sign-on senza soluzione di continuità](about-office-365-identity.md) -fornisce una semplice convalida delle password per i servizi di autenticazione di Azure ad utilizzando un agente software in esecuzione su uno o più server locali per convalidare gli utenti direttamente con Active Directory locale. 
 
 ### <a name="federated-authentication"></a>Autenticazione federata
 

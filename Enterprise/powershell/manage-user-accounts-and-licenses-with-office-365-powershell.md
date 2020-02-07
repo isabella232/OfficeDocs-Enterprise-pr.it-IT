@@ -9,17 +9,19 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: 'Riepilogo: informazioni su come gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell.'
-ms.openlocfilehash: ebc3038cf244c651ebbf98c10bb7992268d8f5dd
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: e43272196556bcfb09fb7a41a5b2cd40e2056928
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886455"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841313"
 ---
 # <a name="manage-user-accounts-licenses-and-groups-with-office-365-powershell"></a>Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell
 

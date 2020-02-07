@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -19,12 +21,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Informazioni su come visualizzare gli errori di sincronizzazione della directory nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: b1cda68590131967ea2fe91506c8e71769f4c32b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e270b7f1bc29d952cd07a7b3430a1a9a50b67783
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067522"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840173"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Visualizzare gli errori di sincronizzazione della directory in Office 365
 
@@ -42,7 +44,7 @@ Per visualizzare gli errori nell'interfaccia di amministrazione:
     
 3. Nella **Home** page verrà visualizzato il riquadro **stato dirsync** . 
     
-    ![Riquadro di stato DirSync nell'anteprima dell'interfaccia di amministrazione](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![Riquadro Stato DirSync nell'anteprima dell'interfaccia di amministrazione](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
 4. Nel riquadro, scegliere **stato dirsync** per passare alla pagina **stato sincronizzazione directory** . 
     

@@ -8,15 +8,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 'Riepilogo: informazioni su come utilizzare Windows PowerShell per eseguire una migrazione completa a Office 365.'
-ms.openlocfilehash: 669aa3dc728b41bdc2ba8cc467943db5eb2005d9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6f82dc8501d5dfbca7c980b025e6da7a4deb00d5
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071202"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844717"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Utilizzare PowerShell per eseguire una migrazione completa a Office 365
 
@@ -184,7 +186,7 @@ Dopo aver modificato il record MX e verificato che tutta la posta elettronica ve
   
 - Tutti gli utenti utilizzano cassette postali di Office 365. Dopo l'eliminazione del batch, la posta inviata alle cassette postali nel server di Exchange locale non viene copiata nelle cassette postali di Office 365 corrispondenti.
     
-- Le cassette postali di Office 365 sono state sincronizzate almeno una volta dal momento in cui hanno cominciato a ricevere la posta elettronica direttamente. A tale scopo, assicurarsi che il valore nella casella Ultima sincronizzazione per il batch di migrazione sia più recente di quello dell'inizio dell'invio della posta direttamente alle cassette postali di Office 365.
+- Le cassette postali di Office 365 sono state sincronizzate almeno una volta dal momento in cui ha avuto inizio l'invio della posta elettronica direttamente verso di loro. A tale scopo, assicurarsi che il valore nella casella Ultima sincronizzazione per il batch di migrazione sia più recente di quello dell'inizio dell'invio della posta direttamente alle cassette postali di Office 365.
     
 Per eliminare il batch di migrazione "CutoverBatch" in PowerShell di Exchange Online, eseguire il comando riportato di seguito:
   

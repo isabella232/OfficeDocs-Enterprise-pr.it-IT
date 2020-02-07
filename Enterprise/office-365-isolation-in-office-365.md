@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: "Sintesi: una spiegazione dell'isolamento e del controllo di accesso all'interno delle diverse applicazioni di Office 365."
-ms.openlocfilehash: 5855828faafaf12e609e93a1a4f0ec7419e0a9d6
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2cf98480a2a3f5d202198c9056ecb46d281e1a3e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078165"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844407"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Isolamento e controllo di accesso in Office 365
 
@@ -41,7 +43,7 @@ Il contenuto della cassetta postale dell'utente include:
 - Informazioni sulla disponibilità e sul calendario
 - Contacts
 - Attività
-- Note
+- Notes
 - Gruppi
 - Dati di inferenza
 

@@ -10,17 +10,19 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Riepilogo: informazioni su come automatizzare la raccolta di file dai computer degli utenti per eDiscovery.'
-ms.openlocfilehash: ccea04f4573a16750f588295fca5621d5abd8498
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: cc6018f65174e142710c71c7f820fc728cd1dc3e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077719"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844737"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizzare la raccolta file per eDiscovery
 

@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: Informazioni su come collaborare con gli utenti in teams.
-ms.openlocfilehash: 45a806694285006faa02ff4df413f4078016b9d9
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 61d45829071bf19bfbda4bbb80fc7b0af7472d7f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122595"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845047"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 

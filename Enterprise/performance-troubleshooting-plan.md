@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: È necessario conoscere i passaggi da eseguire per identificare e correggere i ritardi, appendere e rallentare le prestazioni tra SharePoint Online, OneDrive for business, Exchange Online o Skype for business online e il computer client? Prima di chiamare il supporto, questo articolo consente di risolvere i problemi relativi alle prestazioni di Office 365 e persino di risolvere alcuni dei problemi più comuni.
-ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 7bb8ce4884ad7419cfc7e9c895ea7e1783042b1b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814624"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841813"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Piano di risoluzione dei problemi relativi alle prestazioni per Office 365
 

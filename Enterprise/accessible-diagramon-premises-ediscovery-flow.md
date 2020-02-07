@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
+f1.keywords:
+- NOCSH
 description: Questo articolo è una versione di testo accessibile del diagramma denominato flusso eDiscovery locale.
-ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ec9ecf7d3663503f2da412364d919a6c70032e23
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068532"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843857"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagramma accessibile-flusso eDiscovery locale
 
@@ -42,11 +44,11 @@ I numeri per ogni procedura descritta in questo elenco sono relativi a un passag
     
 3. Se la richiesta è quella di eseguire una query su un caso, il SSA consulterà l'indice di ricerca. Successivamente, il set di risultati di query di eDiscovery torna all'utente tramite EDC. 
     
-4. Se la richiesta è un'azione, ad esempio un blocco o un ReleaseHold, tale azione viene scritta in Actions_Table nel database amministrativo SSA. In questo esempio, una richiesta di archiviazione per qualsiasi elemento nella farm del contenuto di SharePoint con "CONTOSO" viene scritta in Actions_Table. 
+4. Se la richiesta è un'azione, ad esempio un blocco o un ReleaseHold, tale azione viene scritta nel Actions_Table nel database amministrativo SSA. In questo esempio, una richiesta di archiviazione per qualsiasi elemento nella farm del contenuto di SharePoint con "CONTOSO" viene scritta nel Actions_Table. 
     
 5. A intervalli regolari la farm di contenuto eDiscovery il processo timer del blocco sul posto viene riattivato e genera una richiesta per le azioni in sospeso e invia gli aggiornamenti dello stato tramite il proxy SSA al SSA. 
     
-6. La query per le azioni in sospeso viene inoltrata al SSA centrale, che consulta l'Action_Table per tutte le azioni in sospeso per la farm di contenuto. Il processo timer della farm di contenuto consente inoltre di inviare gli aggiornamenti di stato per gli oggetti e le azioni ricevuti, scritti in ActionsTable. 
+6. La query per le azioni in sospeso viene inoltrata al SSA centrale, che consulta la Action_Table per tutte le azioni in sospeso per la farm di contenuto. Il processo timer della farm di contenuto consente inoltre di inviare gli aggiornamenti di stato per gli oggetti e le azioni ricevuti, scritti in ActionsTable. 
     
 7. La richiesta di archiviazione per qualsiasi contenuto con "CONTOSO" nel nome nella farm di contenuto di SharePoint 2013 viene inviata da SSA al processo timer di archiviazione sul posto di eDiscovery nella farm di contenuto. 
     
@@ -100,7 +102,7 @@ La farm di SharePoint 2013 Services contiene i componenti seguenti:
     
 - Database degli indici di ricerca 
     
-- Database SSA admin_db. La tabella Actions del database contiene: Hold Release Hold GetStatus 
+- Database admin_db SSA. La tabella Actions del database contiene: Hold Release Hold GetStatus 
     
 - Proxy EWS 
     
@@ -108,7 +110,7 @@ Quando il proxy SSA nella farm di app di SharePoint Enterprise invia una query d
   
 - Se la richiesta è una query, la SSA consulterà l'indice di ricerca. La risposta di individuazione viene restituita al SSA e quindi all'utente tramite EDC. 
     
-- Se la richiesta è un'azione di scrittura, il servizio SSA invia l'azione di scrittura al admin_db SSA. 
+- Se la richiesta è un'azione di scrittura, il servizio SSA invierà l'azione di scrittura sul admin_db SSA. 
     
 - Una richiesta di ricerca per indicizzazione e risposta viene inviata da SSA alla farm di contenuto di SharePoint 2013 e viene restituita una risposta al SSA. 
     
@@ -118,9 +120,9 @@ Quando il proxy SSA nella farm di app di SharePoint Enterprise invia una query d
     
 - Una richiesta di azione/stato di Exchange viene inviata dal SSA al proxy EWS, che invia una richiesta di azione/stato di query di Exchange al servizio Web di Exchange sul server Exchange 2013. 
     
-- Una query di stato/risposta viene inviata dal SSA al ssa admin_db e viene restituita al SSA. 
+- Una query di stato/risposta viene inviata dal SSA al admin_db SSA e viene restituita al SSA. 
     
-- Una query o una risposta di azione in sospeso viene inviata dal SSA al ssa admin_db e viene restituita al SSA. 
+- Una query o una risposta di azione in sospeso viene inviata dal SSA alla admin_db SSA e viene restituita al SSA. 
     
 #### <a name="sharepoint-2013-content-farm"></a>Farm di contenuto di SharePoint 2013
 

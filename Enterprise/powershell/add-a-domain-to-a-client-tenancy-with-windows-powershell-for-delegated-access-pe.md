@@ -10,15 +10,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Riepilogo: utilizzare Windows PowerShell per Office 365 per aggiungere un nome di dominio alternativo al tenant di un cliente esistente.'
-ms.openlocfilehash: 5f22e21e1eafc7c2d3fb9bc7286e860ad468445b
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 3097ac1574f946a8bd0c82eb25892107ce39b9be
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257465"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844277"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Aggiungere un dominio a un tenancy client con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
@@ -59,7 +61,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
 
 >[!Note]
->PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet con **MSOL** nel proprio nome. Per continuare a utilizzare questi cmdlet, è necessario eseguirli da Windows PowerShell.
+>PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
 >
 
 ### <a name="get-the-data-for-the-dns-txt-verification-record"></a>Recuperare i dati per il record di verifica TXT DNS
