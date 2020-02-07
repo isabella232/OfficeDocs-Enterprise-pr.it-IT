@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Una volta distribuito Office 365, è possibile mantenere la connettività di Office 365 usando alcune delle tecniche e degli strumenti seguenti. È consigliabile leggere le linee guida ufficiali sull'integrità e la continuità dei servizi, oltre alle procedure consigliate per l'uso di Office 365 in una rete lenta. È inoltre opportuno acquisire l'app di amministrazione di Office 365 e aggiungere ai preferiti la nostra guida Office 365 per le aziende - Guida per amministratori.
-ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 5a0a6e217d0f74f6266bffa1bd6037427f14e7bd
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721967"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843707"
 ---
 # <a name="monitor-office-365-connectivity"></a>Monitorare la connettività di Office 365
 

@@ -6,15 +6,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sulle funzionalità Multi-Geo in Exchange Online.
-ms.openlocfilehash: d518121c69ee29ee246c6947e361a74a3933310f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 07a231a78d52ced4102e26c070eee40b9846c12f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069932"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844777"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Funzionalità Multi-Geo in Exchange Online
 
@@ -32,7 +34,7 @@ In un ambiente Multi-Geo, è possibile selezionare la posizione del contenuto de
 
 Dopo che Microsoft ha completato la procedura di configurazione Multi-Geo del prerequisito, Exchange Online riserverà l'attributo **PreferredDataLocation** per gli oggetti utente in Azure AD.
 
-Exchange Online sincronizza la proprietà **PreferredDataLocation di Azure AD nella proprietà **MailboxRegion nel servizio directory di Exchange Online. Il valore di **MailboxRegion** determina la posizione geografica in cui verranno inserite le cassette postali degli utenti e le cassette postali di archiviazione associate. Non è possibile configurare la cassetta postale principale di un utente e le cassette postali di archiviazione affinché risiedano in diverse posizioni geografiche. Può essere configurata una sola posizione geografica per ogni oggetto utente.
+Exchange Online sincronizza la proprietà **PreferredDataLocation** di Azure AD nella proprietà **MailboxRegion** nel servizio directory di Exchange Online. Il valore di **MailboxRegion** determina la posizione geografica in cui verranno inserite le cassette postali degli utenti e le cassette postali di archiviazione associate. Non è possibile configurare la cassetta postale principale di un utente e le cassette postali di archiviazione affinché risiedano in diverse posizioni geografiche. Può essere configurata una sola posizione geografica per ogni oggetto utente.
 
 - Se **PreferredDataLocation** è configurato per un utente con una cassetta postale esistente, la cassetta postale verrà inserita in una coda di rilocazione e spostata automaticamente nella posizione geografica specificata.
 
@@ -46,7 +48,7 @@ Exchange Online sincronizza la proprietà **PreferredDataLocation di Azure AD ne
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitazioni della funzionalità per il Multi-Geo in Exchange Online
 
-- Le funzionalità di sicurezza e conformità, ad esempio il controllo ed eDiscovery, disponibili nell'interfaccia di amministrazione di Exchange (EAC) non sono disponibili nelle organizzazioni Multi-Geo. È invece necessario usare il Centro sicurezza e conformità di Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) per configurare le funzionalità di sicurezza e conformità.
+- Le funzionalità di sicurezza e conformità, ad esempio il controllo ed eDiscovery, disponibili nell'interfaccia di amministrazione di Exchange (EAC) non sono disponibili nelle organizzazioni Multi-Geo. È invece necessario usare il [Centro sicurezza e conformità di Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) per configurare le funzionalità di sicurezza e conformità.
 
 - Gli utenti di Outlook per Mac potrebbero riscontrare una perdita temporanea di accesso alla cartella di archiviazione online mentre viene spostata la cassetta postale in una nuova posizione geografica. Questa condizione si verifica quando la cassetta postale primaria e quella di archiviazione dell’utente si trovano in diverse posizioni geografiche, poiché gli spostamenti delle cassette postali tra diverse aree geografiche potrebbero essere completati in momenti diversi.
 
