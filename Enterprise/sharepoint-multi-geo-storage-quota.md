@@ -6,18 +6,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Priority
 description: Informazioni sulle Quote di archiviazione di SharePoint in ambienti multi-geo.
-ms.openlocfilehash: d4049312a2da64f16d2637ffd37adf98f2282287
-ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
+ms.openlocfilehash: 1e9c24cac43f5376fcef35782b3b024ab10cef58
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033382"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843987"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Quote di archiviazione di SharePoint in ambienti multi-geo
 

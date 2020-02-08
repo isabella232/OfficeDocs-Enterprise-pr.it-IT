@@ -6,16 +6,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: Abilitazione di SharePoint Multi-Geo in una posizione geografica satellite.
-ms.openlocfilehash: d1f18c22410ec98e6c27cf3d10cdaf05a5095036
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f5f7137f64f26ce324894ee80b5dfb2f46888889
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070762"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41848763"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Abilitazione di SharePoint Multi-Geo in una posizione geografica satellite
 
@@ -46,6 +50,6 @@ Per impostare una posizione geografica in modalità SPO, connettersi alla posizi
 >[!Note]
 >Alcune cache del servizio eseguono aggiornamenti ogni 24 ore, quindi è possibile durante questo periodo di 24 ore che la posizione geografica satellite occasionalmente si comporti come se fosse ancora in modalità ODB. Questo non causa problemi tecnici. 
  
-Per ulteriori informazioni su SharePoint Multi-Geo visitare [aka.ms/sharepointmultigeo](https://docs.microsoft.com/it-IT/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)
+Per ulteriori informazioni su SharePoint Multi-Geo visitare [aka.ms/sharepointmultigeo](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)
 
 
