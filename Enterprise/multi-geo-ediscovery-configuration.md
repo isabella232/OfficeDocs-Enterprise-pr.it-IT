@@ -6,19 +6,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Informazioni su come configurare eDiscovery in Office 365 multi-geo.
-ms.openlocfilehash: f9d8fe8b65f5772005bf7d6a7ea3735277077d3b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 01796000353bcc20d9e0ed63be088beeb9b3680e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069962"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844597"
 ---
 # <a name="office-365-multi-geo-ediscovery-configuration"></a>Configurazione di eDiscovery per Office 365 multi-geo
-
 
 Per impostazione predefinita, un manager o amministratore di eDiscovery di un tenant multi-geo potrà eseguire eDiscovery solo nella posizione centrale di tale tenant. Per supportare la possibilità di eseguire eDiscovery per le posizioni satelliti, è disponibile un nuovo parametro filtro di sicurezza di conformità denominato "Area" tramite PowerShell.
 
@@ -33,15 +34,18 @@ Quando è impostato il ruolo di manager o amministratore di eDiscovery per una p
 
 Per impostare il filtro di sicurezza di conformità per un'area geografica:
 
-1.  Aprire Windows PowerShell
+1. [Connettersi a PowerShell per Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
 
-2.  Immettere  
-    $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
+2. Utilizzare la sintassi seguente:
 
-    $a = Import-PSSession $s -AllowClobber  
+   ```powershell
+   New-ComplianceSecurityFilter -Action All -FilterName <TheNameYouWantToAssign> -Region <RegionValue> -Users <UserPrincipalName>
+   ```
 
-3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
+   Ad esempio:
 
-    Ad esempio: **New-ComplianceSecurityFilter -Action** ALL **-FilterName** NAMEDISCOVERYMANAGERS **-Region** NAM **-Users** adwood@contosodemosx.onmicrosoft.com
+   ```powershell
+   New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
+   ```
 
-Vedere l’articolo [New-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx) per ulteriori parametri e sintassi
+Vedere l’articolo [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesecurityfilter) per ulteriori parametri e sintassi.
