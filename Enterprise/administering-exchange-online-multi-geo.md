@@ -1,5 +1,6 @@
 ---
 title: Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico
+ms.reviewer: adwood
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sull'amministrazione delle impostazioni multi-geografiche di Exchange Online con PowerShell di Microsoft.
-ms.openlocfilehash: 135d3af76e03dfb7e6fcc9f55ba3be8ab21a6906
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4074748a9fdd567e37159198524acb3979291ef5
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844657"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41973998"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico
 
