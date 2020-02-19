@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: 886b852608b29f42aaa6f8051fd60b467830842a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844107"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106227"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
@@ -48,13 +48,8 @@ I clienti di Office 365 esistenti sono idonei a richiedere la migrazione anticip
 
 I clienti idonei vedranno una pagina nell'interfaccia di [amministrazione di Microsoft 365](https://aka.ms/365admin), che consentirà loro di richiedere di spostare i dati di base dei clienti nella nuova area del datacenter.  
   
-Per accedere alla pagina nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra espandere **Impostazioni**e quindi fare clic su **profilo organizzazione**.
-  
-![Menu impostazioni con profilo organizzazione evidenziato](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
-  
-Nella pagina **profilo organizzazione** scorrere verso il basso fino alla sezione **opzione di residenza dei dati** . 
-  
-![Scheda di residenza dati](media/dataresidencyae.jpg)
+Per accedere alla pagina nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra espandere **Impostazioni**e quindi fare clic su **Impostazioni**.
+Selezionare il **profilo organizzazione**scheda, quindi selezionare l'opzione **Data Residency**.
   
 **È possibile che questa sezione non venga visualizzata se si applica una delle opzioni seguenti**:
 - Il tenant non è idoneo per il programma di spostamento di Office 365.  L'eleggibilità è determinata dal paese di iscrizione del tenant.
