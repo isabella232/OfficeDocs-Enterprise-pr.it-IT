@@ -3,7 +3,7 @@ title: Utilizzare lo strumento di diagnostica delle pagine per SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/19/2019
+ms.date: 2/18/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,21 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Utilizzare lo strumento page Diagnostics for SharePoint per analizzare i moderni portale e le pagine di pubblicazione classiche di SharePoint online in base a un set predefinito di criteri di prestazioni.
-ms.openlocfilehash: 57f8aa86b049701c152e8110f64b418d64250981
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841783"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155596"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utilizzare lo strumento page Diagnostics for SharePoint
 
 In questo articolo viene descritto come utilizzare lo **strumento page Diagnostics for SharePoint** per analizzare pagine del sito moderne e classiche di SharePoint online in base a un set predefinito di criteri di prestazioni.  
 
 >[!TIP]
->**La versione 2.0.1 dello strumento è stata rilasciata**. La versione **2.0.0** e versioni successive include il supporto per le pagine moderne oltre alle pagine del sito classiche. Se non si è certi di quale versione dello strumento si sta utilizzando, è possibile selezionare il collegamento **About** o i puntini di controllo (...) per verificare la versione.
+>**La versione 2.0.2 dello strumento è stata rilasciata**. La versione **2.0.0** e versioni successive include il supporto per le pagine moderne oltre alle pagine del sito classiche. Se non si è certi di quale versione dello strumento si sta utilizzando, è possibile selezionare il collegamento **About** o i puntini di controllo (...) per verificare la versione. Aggiornare sempre la versione più recente quando si utilizza lo strumento.
 
-Lo strumento page Diagnostics for SharePoint è un'estensione del browser per Chrome e [Microsoft Edge versione 77 e versioni successive](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) che analizzano sia il portale moderno di SharePoint Online che le pagine del sito di pubblicazione classiche. Questo strumento funziona solo per SharePoint Online e avrà esito negativo con un errore se utilizzato in una pagina del sito di SharePoint Server.
+Lo strumento page Diagnostics for SharePoint è un'estensione del browser per il nuovo Microsofthttps://www.microsoft.com/edge) Edge (e i browser Chrome che analizzano sia il portale moderno di SharePoint Online che le pagine del sito di pubblicazione classiche. Questo strumento funziona solo per SharePoint Online e non può essere utilizzato in una pagina di sistema di SharePoint.
 
 Lo strumento genera un rapporto per ogni pagina analizzata che mostra la modalità di esecuzione della pagina in base a un set di regole predefinito e visualizza informazioni dettagliate quando i risultati di un test non rientrano nel valore previsto. Gli amministratori e i progettisti di SharePoint Online possono utilizzare lo strumento per la risoluzione dei problemi relativi alle prestazioni e per garantire che le nuove pagine vengano ottimizzate prima della pubblicazione.
 
@@ -52,9 +52,9 @@ Per fornire commenti e suggerimenti sullo strumento, selezionare i puntini di so
 La procedura di installazione in questa sezione funzionerà per i browser Chrome e Microsoft Edge.
 
 > [!IMPORTANT]
-> Microsoft non legge i dati o il contenuto della pagina analizzati dallo strumento page Diagnostics for SharePoint e non acquisisce informazioni personali, siti Web o informazioni di download. Le uniche informazioni registrate dallo strumento sono il nome del tenant, il conteggio delle regole e se l'opzione di registrazione del supporto è stata abilitata al momento dell'esecuzione dello strumento. Queste informazioni vengono utilizzate da Microsoft per comprendere le tendenze di utilizzo dei siti di pubblicazione e di portale moderne e i problemi di prestazioni comuni per informare i miglioramenti del prodotto.
+> Microsoft non legge i dati o il contenuto della pagina analizzati dallo strumento page Diagnostics for SharePoint e non acquisisce informazioni personali, siti Web o informazioni di download. Le uniche informazioni identificabili registrate in Microsoft dallo strumento sono il nome del tenant, i conteggi delle regole che hanno avuto esito negativo e la data e l'ora in cui è stato eseguito lo strumento. Queste informazioni vengono utilizzate da Microsoft per comprendere meglio i moderni trend di utilizzo dei siti e del portale di pubblicazione e i problemi di prestazioni comuni.
 
-1. Usando il browser _Chrome_ o _Microsoft Edge versione 77 o versioni successive_ , aprire il collegamento direttamente allo [strumento](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) oppure aprire la ricerca nel [webstore di Chrome browser](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint) e installare l'estensione del browser. Leggere i criteri di privacy degli utenti disponibili nella pagina di descrizione dell'archivio. Quando si aggiunge lo strumento al browser, verrà visualizzato il seguente avviso di autorizzazione.
+1. Installare lo strumento page Diagnostics for SharePoint per **Microsoft Edge** [(Edge Extension)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) o **Chrome** [(Chrome Extension)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi). Leggere i criteri di privacy degli utenti disponibili nella pagina di descrizione dell'archivio. Quando si aggiunge lo strumento al browser, verrà visualizzato il seguente avviso di autorizzazione.
 
     ![Autorizzazioni di estensione](media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
@@ -73,7 +73,10 @@ Selezionare **inizia** per iniziare la raccolta dei dati per l'analisi.
 
 ## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>Cosa verrà visualizzato nello strumento page Diagnostics for SharePoint
 
-1. Il collegamento **About** , che assomiglia ai puntini di ellissi (...) nell'angolo in alto a destra, fornisce indicazioni generali e dettagli relativi allo strumento, incluso un collegamento a questo articolo. Include inoltre un collegamento diretto ai consigli sulle prestazioni di SharePoint, un avviso di terze parti e un'opzione per fornire commenti e suggerimenti sullo strumento.  
+1. Fare clic sui puntini di ellisse (...) nell'angolo superiore destro dello strumento per trovare i collegamenti seguenti:
+   1. Il collegamento **risorse aggiuntive** fornisce indicazioni generali e dettagli relativi allo strumento, tra cui un collegamento a questo articolo.
+   1. Il collegamento **Invia commenti e suggerimenti** fornisce un collegamento ai _siti di SharePoint e al sito vocale dell'utente di collaborazione_ .
+   1. Il collegamento **About** include la versione correntemente installata dello strumento e un collegamento diretto all'avviso di terze parti dello strumento.  
 1. L' **ID correlazione, SPRequestDuration, SPIISLatency**, il **tempo di caricamento delle pagine**e i dettagli **URL** sono informativi e possono essere utilizzati per alcuni scopi.
 
     ![Dettagli sulla diagnostica delle pagine](media/page-diagnostics-for-spo/pagediag-details.PNG)
@@ -116,12 +119,12 @@ I risultati di colore rosso o giallo possono inoltre indicare le web part che ag
 
 La scheda **traccia di rete** fornisce informazioni dettagliate su entrambe le richieste di creazione della pagina e sulle risposte ricevute da SharePoint.
 
-1. **Cercare i tempi di caricamento degli elementi contrassegnati come rossi**. Le prestazioni di ogni richiesta e risposta sono codificate a colori, in base al loro impatto sulle prestazioni complessive della pagina, come indicato di seguito:
+1. **Cercare i tempi di caricamento degli elementi contrassegnati come rossi**. Ogni richiesta e risposta è codificata a colori per indicare il relativo impatto sulle prestazioni complessive della pagina utilizzando le metriche di latenza seguenti:
     - Verde: \< 500ms
     - Giallo: 500-1000ms
     - Rosso: \> 1000ms
 
-    ![Traccia di rete](media/page-diagnostics-for-spo/pagediag-networktrace.png)
+    ![Traccia di rete](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
     Nell'immagine sopra riportata, l'elemento rosso appartiene alla pagina predefinita. La visualizzazione sarà sempre rossa, a meno che la pagina \< non venga caricata in 1000ms (meno di 1 secondo).
 
