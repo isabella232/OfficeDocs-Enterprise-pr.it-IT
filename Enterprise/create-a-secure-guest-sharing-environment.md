@@ -8,15 +8,14 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Informazioni su come creare un ambiente di condivisione guest sicuro in Microsoft 365.
-ms.openlocfilehash: 9df369457770315d5d77894432761385edf3dbc4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4c77ae6905341ba7cde974b2fc3966009a38d512
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840623"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155575"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -319,6 +318,14 @@ Per testare la soluzione descritta in questo articolo, creare un documento di Wo
 Quando il guest ha accesso al documento, digitare *Progetto Saturno* nel documento e salvarlo. Quando Cloud App Security analizza il documento, dovrebbe essere applicata l'etichetta *Estremamente riservato* e l'utente guest non dovrebbe potervi più accedere.
 
 È possibile usare gli strumenti descritti in questo articolo in varie combinazioni, per creare un ambiente di condivisione con gli utenti guest produttivo, ma allo stesso tempo sicuro per l'organizzazione.
+
+## <a name="additional-options"></a>Opzioni aggiuntive
+
+Sono disponibili delle opzioni aggiuntive in Microsoft 365 e Azure Active Directory che possono aiutare a proteggere l'ambiente di condivisione guest.
+
+- È possibile creare un elenco di domini di condivisione consentiti o rifiutati per limitare le persone con cui gli utenti possono condividere contenuti. Per altre informazioni, vedere [Limitare la condivisione di contenuti di SharePoint e OneDrive per dominio](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) e [Consentire o bloccare gli inviti per gli utenti B2B da organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
+- È possibile limitare a quali altri tenant di Azure Active Directory possono connettersi gli utenti. Per informazioni, vedere [Utilizzare le restrizioni del tenant per gestire l'accesso alle applicazioni cloud SaaS](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions).
+- È possibile creare un ambiente gestito in cui i partner possano contribuire alla gestione degli account guest. Per informazioni, vedere [Creare una Extranet B2B con guest gestiti](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet).
 
 ## <a name="see-also"></a>Vedere anche
 
