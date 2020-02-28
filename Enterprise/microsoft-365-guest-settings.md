@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365.
-ms.openlocfilehash: 52f597357aed510e3bd3ff71e87e1056e19a3bad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ed9165d4589dbdaa18c3b3a3c21aab7bce01ad8c
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844967"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316045"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
@@ -238,6 +237,9 @@ Nella tabella seguente viene mostrata l'impostazione di condivisione predefinita
 |Siti collegati ai gruppi (tra cui Teams)|**Utenti guest nuovi ed esistenti** se l'impostazione di Gruppi di Office 365 **Consenti ai proprietari di gruppi di aggiungere persone esterne all'organizzazione ai gruppi** è su **Attivato**; altrimenti, **Solo utenti guest esistenti**|
 |Comunicazione|**Solo gli utenti dell'organizzazione**|
 |Siti moderni senza gruppo (#STS3 TeamSite)|**Solo gli utenti dell'organizzazione**|
+
+> [!NOTE]
+> Il sito radice di comunicazione (tenant-name.sharepoint.com) include un'opzione di condivisione predefinita impostata su **Chiunque**.
 
 ## <a name="see-also"></a>Vedere anche
 

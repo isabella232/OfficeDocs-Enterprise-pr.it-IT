@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Informazioni su Office 365 Multi-Geo, come funziona multi-Geo e quali località geografiche sono disponibili per l'archiviazione dei dati.
-ms.openlocfilehash: f3bc2b43181bb4479c0f3b9c65ed4bcd5b1f9b38
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 2875f820b0ce1437a09289e3c5e660287b64dc40
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974228"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316005"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Piano per Office 365 Multi-Geo
 
@@ -74,6 +74,8 @@ Se gli utenti vengono sincronizzati da un sistema di Active Directory locale con
 L'amministrazione di un tenant multi-geografico può essere diverso da un tenant non multi-geografico, dal momento che la maggior parte delle impostazioni SharePoint e OneDrive e i servizi hanno funzionalità multi-geo. È consigliabile consultare [Amministrazione di un ambiente multi-geografico](administering-a-multi-geo-environment.md) prima di procedere con la configurazione.
 
 Leggere [Esperienza utente in un ambiente multi-geografico](multi-geo-user-experience.md) per i dettagli riguardanti l'esperienza degli utenti finali in un ambiente multi-geografico.
+
+Per informazioni dettagliate sull'esperienza di Teams in un tenant multi geografico con Office 365, consultare [Esperienza di Teams in un tenant con Office 365 OneDrive e SharePoint Online Multi-Geo.](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
 
 Per iniziare a configurare Office 365 Multi-Geo, vedere [Configurare Office 365 Multi-Geo](multi-geo-tenant-configuration.md).
 
