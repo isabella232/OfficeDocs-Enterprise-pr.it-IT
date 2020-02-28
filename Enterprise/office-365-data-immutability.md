@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Definisce e spiega l'immutabilità dei dati in Office 365.
-ms.openlocfilehash: 8e52d1be87bff163b2d1cfc9233de08861104681
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844517"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42315995"
 ---
 # <a name="immutability-in-office-365"></a>Immutabilità in Office 365
 
@@ -28,7 +28,7 @@ La conformità alle normative, i requisiti di governance interna o i rischi per 
 
 I metodi tradizionali per l'immutabilità in genere hanno funzionato spostando i messaggi di posta elettronica in un percorso di archiviazione separato e di sola lettura. Sebbene tali sistemi servano allo scopo di preservare gli elementi delle cassette postali per l'individuazione, spesso influiscono sull'esperienza degli utenti rimuovendo gli elementi conservati dal flusso di lavoro giornaliero consueto. Per i professionisti IT, questo approccio immutabilità richiede la distribuzione e la manutenzione continua di un'infrastruttura di server e di archiviazione distinta. L'individuazione viene eseguita con gli strumenti esterni al sistema di posta elettronica e include i costi di distribuzione e manutenzione associati.
 
-Tramite le caratteristiche dei criteri di conservazione e conservazione sul posto dell'archiviazione in Office 365 e i relativi servizi, è possibile conservare e mantenere numerose classi di dati in ingresso, interno e in uscita. Sono inclusi i seguenti:
+Tramite le caratteristiche dei criteri di conservazione e conservazione sul posto dell'archiviazione in Office 365 e i relativi servizi, è possibile conservare e mantenere numerose classi di dati in ingresso, interno e in uscita. Ciò include:
 
 - Comunicazioni di posta elettronica in ingresso e in uscita
 - Libri e record contenuti in un modulo di posta elettronica o in documenti condivisi online

@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Informazioni su come aggiungere più utenti a Office 365 for business da un elenco in un foglio di calcolo o in un altro file in formato CSV. Guarda un video su YouTube che spiega come aggiungere account a Office 365. Alla fine di questo processo, ogni utente con un account avrà una cassetta postale di Office 365. '
-ms.openlocfilehash: 713d54759b32d498a58b88766ffbba9df64da51c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0d0416662bf4934d3373f1ab7ac23c8055ad3098
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844647"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316015"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Aggiungere più utenti a Office 365 contemporaneamente - Guida per l'amministratore
 
@@ -115,7 +115,7 @@ Quando si salva il file, è probabile che venga visualizzato un messaggio indica
     
 |**Etichetta colonna dati utente**|**Numero massimo di caratteri**|
 |:-----|:-----|
-|Nome utente (obbligatorio)  <br/> |79, incluso il simbolo (@), nel formato nome@dominio.\<estensione\>. L'alias dell'utente può essere composto da un massimo di 30 caratteri e il nome di dominio da un massimo di 48 caratteri.  <br/> |
+|Nome utente (obbligatorio)  <br/> |79, incluso il simbolo (@), nel formato nome@dominio.\<estensione\>. L'alias dell'utente non può superare i 50 caratteri e il nome di dominio non può superare i 48 caratteri.  <br/> |
 |Nome  <br/> |64  <br/> |
 |Cognome  <br/> |64  <br/> |
 |Nome visualizzato (obbligatorio)  <br/> |256  <br/> |
