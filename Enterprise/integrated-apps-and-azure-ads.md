@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Informazioni su come le app integrate di O365 sono registrate e amministrate in Azure AD
-ms.openlocfilehash: fdeb3e3f35a795851b253f9b68d755404851ba07
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6846b57256bd81ae8d2054d69bd8f980d91d6ce9
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417061"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>App integrate e Azure AD per amministratori di Office 365
 
@@ -44,7 +44,7 @@ La gestione delle app di Office 365 richiede la conoscenza delle app in Azure AD
 |[Vedere l'icona di avvio delle app di Office 365](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |Se si è nuovi per l'icona di avvio delle app, potrebbe essere utile sapere cosa è e come utilizzarlo. L'icona di avvio delle app è progettata per accedere alle app da qualsiasi posizione in Office 365.  <br/> |
 |[Panoramica delle API di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) <br/> |Le API di Office 365 consentono di fornire l'accesso ai dati di Office 365 del cliente, tra cui gli elementi più importanti, ovvero la posta elettronica, i calendari, i contatti, gli utenti e i gruppi, i file e le cartelle. In questo articolo è presente un buon diagramma in cui viene illustrata la relazione tra le app di Office 365, Azure AD e i dati di accesso delle app.  <br/> |
 |[Integrazione di applicazioni in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | Informazioni sulle applicazioni che sono integrate con Azure Active Directory e su come registrare l'applicazione, comprendere i concetti che stanno alla base di un'applicazione registrata e informazioni sulle linee guida per la personalizzazione di diverse applicazioni tenant.  <br/> |
-|[Aggiungere sezioni personalizzate all'icona di avvio delle app](https://docs.microsoft.com/office365/admin/manage/customize-the-app-launcher).  <br/> |L'icona di avvio delle app di Office 365 rende più semplice per gli utenti trovare e accedere alle proprie app. In questo articolo vengono illustrati i modi in cui uno sviluppatore può visualizzare le app nei lanci delle app degli utenti e fornire loro un'esperienza Single Sign-on (SSO) utilizzando le credenziali di Office 365.  <br/> |
+|[Aggiungere sezioni personalizzate all'icona di avvio delle app](https://docs.microsoft.com/office365/admin/manage/customize-the-app-launcher)  <br/> |L'icona di avvio delle app di Office 365 rende più semplice per gli utenti trovare e accedere alle proprie app. In questo articolo vengono illustrati i modi in cui uno sviluppatore può visualizzare le app nei lanci delle app degli utenti e fornire loro un'esperienza Single Sign-on (SSO) utilizzando le credenziali di Office 365.  <br/> |
 |[Esercitazioni sull'integrazione di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) <br/> |L'obiettivo di queste esercitazioni è mostrare come configurare Azure AD SSO per le applicazioni SaaS di terze parti.  <br/> |
 |[Scenari di autenticazione per Azure AD](https://go.microsoft.com/fwlink/?LinkId=617145) <br/> |Azure AD semplifica l'autenticazione per gli sviluppatori fornendo l'identità come servizio, con supporto per i protocolli standard del settore, come OAuth 2,0 e OpenID Connect, nonché librerie open source per diverse piattaforme che consentono di avviare rapidamente la codifica. In questo documento vengono fornite informazioni utili per comprendere i vari scenari supportati da Azure AD e vengono illustrate le procedure per iniziare.  <br/> |
 |[Accesso alle applicazioni](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management) <br/> |Azure AD consente una facile integrazione con molte delle applicazioni di software popolare di oggi come servizio (SaaS). fornisce la gestione delle identità e degli accessi e offre un pannello di accesso per gli utenti in cui è possibile individuare l'accesso all'applicazione in uso e in cui è possibile utilizzare SSO per accedere alle proprie applicazioni. In questo articolo vengono forniti collegamenti alle risorse correlate che consentono di ottenere ulteriori informazioni sui miglioramenti relativi all'accesso alle applicazioni per Azure AD e su come è possibile contribuirvi.  <br/> |

@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: "Nuovo datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescente domanda e la crescita dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle condizioni dei servizi online Microsoft: contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica) e contenuto del sito di SharePoint Online e file archiviati all'interno del sito e i file caricati in OneDrive for business."
-ms.openlocfilehash: f2f6706d69d79681833ebca70cbe32964b7f3b77
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0efe43b61351d89452abb9a114b37f8df9d79ec2
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844767"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417051"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS
 
@@ -33,19 +33,19 @@ I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme 
   
 I clienti esistenti che dispongono di dati di base dei clienti archiviati in un datacenter geografico già esistente non sono interessati dal lancio di un nuovo Data Center Geo. Non sono presenti funzionalità esclusive, funzionalità o certificazioni di conformità con il nuovo Data Center Geo. Come clienti in uno qualsiasi di questi due GEOS, si verificheranno gli stessi controlli di qualità dei servizi, delle prestazioni e della sicurezza come in precedenza. Offriamo ai clienti esistenti elencati nella tabella riportata di seguito un'opzione per richiedere la migrazione anticipata dei dati del cliente principale dell'organizzazione a riposo per il nuovo datacenter Geo.
   
-|Clienti con paese di iscrizione del tenant in * * * *|Datacenter geografico precedente * * * *|Nuovo datacenter Geo * * * *|Geografica disponibile da * * * *|
+|**Clienti con paese di iscrizione tenant in**|**Centro dati geografico precedente**|**Nuovo datacenter Geo**|**Geografica disponibile da**|
 |:-----|:-----|:-----|:-----|
-|Giappone * * * *| Asia/Pacifico | Giappone | Dicembre 2014 |
-|Australia, Nuova Zelanda, Figi * * * *| Asia/Pacifico | Australia | Marzo 2015 |
-|India * * * *| Asia/Pacifico | India | Ottobre 2015 |
-|Canada * * * *| Nord America | Canada | Maggio 2016 |
-|Regno Unito * * * *| Europa | Regno Unito | Settembre 2016 |
-|Corea del sud * * * *| Asia/Pacifico | Sud Corea | Aprile 2017 |
-|Francia * * * *| Europa | Francia | Marzo 2018 |
-|Emirati Arabi Uniti * * * *| Europa | Emirati Arabi Uniti | Giugno 2019 |
-|Sudafrica * * * *| Europa | Sudafrica | Luglio 2019 |
-|Svizzera, Liechtenstein * * * *| Europa | Svizzera | Dicembre 2019 |
-|Germany * * * *| Europa | Germania | Dicembre 2019 |
+|**Giappone**| Asia/Pacifico | Giappone | Dicembre 2014 |
+|**Australia, Nuova Zelanda, Figi**| Asia/Pacifico | Australia | Marzo 2015 |
+|**India**| Asia/Pacifico | India | Ottobre 2015 |
+|**Canada**| Nord America | Canada | Maggio 2016 |
+|**Regno Unito**| Europa | Regno Unito | Settembre 2016 |
+|**Corea del Sud**| Asia/Pacifico | Sud Corea | Aprile 2017 |
+|**Francia**| Europa | Francia | Marzo 2018 |
+|**Emirati Arabi Uniti**| Europa | Emirati Arabi Uniti | Giugno 2019 |
+|**Sudafrica**| Europa | Sudafrica | Luglio 2019 |
+|**Svizzera, Liechtenstein**| Europa | Svizzera | Dicembre 2019 |
+|**Germania**| Europa | Germania | Dicembre 2019 |
   
 I nuovi clienti o i tenant di Office 365 creati dopo la disponibilità del nuovo datacenter Geo avranno i dati di base dei clienti archiviati a riposo nel nuovo datacenter Geo automaticamente.
 
