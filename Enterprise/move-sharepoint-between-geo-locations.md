@@ -14,12 +14,12 @@ localization_priority: Priority
 f1.keywords:
 - NOCSH
 description: Informazioni su come trasferire un sito di SharePoint in un'altra posizione geografica.
-ms.openlocfilehash: 903daff5af44789774b09000ebe52a6046ffc5d3
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 8bcd76959cdddd5bb6fadf390e5b71df8decf0a0
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974855"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417041"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Trasferire un sito di SharePoint in una posizione geografica diversa
 
@@ -85,6 +85,7 @@ Prima di pianificare il trasferimento di un sito, è consigliabile eseguire una 
 Non è supportato il trasferimento di siti con:
 -   Servizi di integrazione applicativa
 -   Moduli di InfoPath 
+- Modelli applicati di Information Rights Management (IRM)
 
 Per assicurarsi che tutte le posizioni geografiche siano compatibili, eseguire `Get-SPOGeoMoveCrossCompatibilityStatus`. Verranno mostrate tutte le posizioni geografiche e verrà indicato se l'ambiente è compatibile con la posizione geografica di destinazione.
 
