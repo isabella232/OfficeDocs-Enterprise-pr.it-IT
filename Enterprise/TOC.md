@@ -187,13 +187,13 @@
 ### [Recuperare gli elementi eliminati nella cassetta postale di un utente](recover-deleted-items-in-a-mailbox.md)
 ### Collaborare con gli utenti guest
 #### [Informazioni di riferimento sulla condivisione guest](microsoft-365-guest-settings.md)
-#### Soluzioni di condivisione guest
+#### Scenari di condivisione guest
 ##### [Panoramica di collaborazione guest](collaborating-with-people-outside-your-organization.md)
 ##### [Collaborare ai documenti](collaborate-on-documents.md)
 ##### [Collaborare a un sito](collaborate-in-a-site.md)
 ##### [Collaborare in team](collaborate-as-a-team.md)
 #### Sicurezza di condivisione guest
-##### [condivisione non autenticata](best-practices-anonymous-sharing.md)
+##### [Condivisione non autenticata](best-practices-anonymous-sharing.md)
 ##### [Limitare l'esposizione accidentale](sharing-limit-accidental-exposure.md)
 ##### [Ambiente di condivisione guest sicuro](create-a-secure-guest-sharing-environment.md)
 #### [Creare una Extranet B2B](b2b-extranet.md)
