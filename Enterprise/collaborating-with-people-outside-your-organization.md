@@ -8,15 +8,14 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
-f1.keywords:
-- NOCSH
-description: Informazioni su come configurare Office 365 per la collaborazione con utenti esterni all'organizzazione.
-ms.openlocfilehash: 747f2d40ade4396979450c3e2d27f387c7bd8aca
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+f1.keywords: NOCSH
+description: Informazioni su come configurare Microsoft 365 per la collaborazione con utenti esterni all'organizzazione.
+ms.openlocfilehash: 4cfaabd04a1f66592ab558bdca964fb6a1042855
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840773"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549085"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborare con utenti esterni all'organizzazione
 
@@ -26,10 +25,26 @@ Per impostazione predefinita, in Microsoft 365, la condivisione con utenti ester
 - [Collaborare in un sito](collaborate-in-a-site.md) : informazioni su come configurare Microsoft 365 per abilitare la condivisione dei siti di SharePoint con gli utenti.
 - [Collaborare come team](collaborate-as-a-team.md) -informazioni su come configurare Microsoft 365 per abilitare la collaborazione ospite in teams.
 
+Per una panoramica completa delle impostazioni di condivisione Guest disponibili in Microsoft 365, vedere [riferimento alle impostazioni di condivisione Guest di microsoft 365](microsoft-365-guest-settings.md).
+
+## <a name="secure-your-environment"></a>Protezione dell'ambiente
+
+Dopo aver abilitato lo scenario che si desidera utilizzare per la condivisione con utenti esterni all'organizzazione, prendere in considerazione ulteriori misure di salvaguardia per proteggere il contenuto da una condivisione accidentale o intenzionale.
+
+- [Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md) : informazioni sulle procedure consigliate per la condivisione con utenti non autenticati.
+- [Limite di esposizione accidentale](sharing-limit-accidental-exposure.md) -informazioni su come ridurre le probabilità di condivisione accidentale di contenuti sensibili con utenti esterni all'organizzazione.
+- [Creare un ambiente di condivisione Guest sicuro](create-a-secure-guest-sharing-environment.md)) -Informazioni sugli strumenti forniti in Microsoft 365 per garantire che la condivisione con persone esterne all'organizzazione venga svolta in modo sicuro e conforme ai requisiti di governance.
+
+## <a name="collaborate-with-partner-companies"></a>Collaborare con le aziende partner
+
+Quando si lavora su un progetto di grandi dimensioni che coinvolge numerosi ospiti di un'altra organizzazione o se si dispone di una relazione del fornitore in corso in cui gli utenti cambiano spesso, è possibile utilizzare la gestione dei diritti in Azure Active Directory per semplificare la gestione degli utenti e consentire all'azienda partner di condividere questa responsabilità. Per ulteriori informazioni, vedere [Create a B2B Extranet with Managed guests](b2b-extranet.md) .
+
+## <a name="limit-sharing"></a>Limitare la condivisione
+
+Se alcune delle funzionalità di condivisione in Microsoft 365 sono in conflitto con i criteri di governance, vedere [limitare la condivisione in microsoft 365](microsoft-365-limit-sharing.md) per informazioni sulle opzioni di limitazione della condivisione.
+
 ## <a name="see-also"></a>Vedere anche
 
-[Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md)
+[Introduzione alla collaborazione di file in Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 
-[Limitare l'esposizione accidentale ai file durante la condivisione con persone esterne all'organizzazione](sharing-limit-accidental-exposure.md)
-
-[Creare un ambiente di condivisione Guest sicuro](create-a-secure-guest-sharing-environment.md))
+[Pianificare la collaborazione dei file in SharePoint con Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
