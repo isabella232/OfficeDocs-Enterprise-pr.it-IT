@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni su come creare un ambiente di condivisione guest sicuro in Microsoft 365.
-ms.openlocfilehash: 4c77ae6905341ba7cde974b2fc3966009a38d512
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 978e7f0e2f81f8e7f97ee73b8e490922afcf1c0a
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155575"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316035"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -332,3 +332,5 @@ Sono disponibili delle opzioni aggiuntive in Microsoft 365 e Azure Active Direct
 [Limitare l'esposizione accidentale ai file durante la condivisione con gli utenti guest](sharing-limit-accidental-exposure.md)
 
 [Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md)
+
+[Creare una Extranet B2B con guest gestiti](b2b-extranet.md).
