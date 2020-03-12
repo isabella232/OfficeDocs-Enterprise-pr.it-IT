@@ -15,12 +15,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Se si usa Office 2007 o Office 2010, è il momento di pianificare l'aggiornamento. È meglio evitare di rimanere bloccati con app e server obsoleti e non supportati. Usare queste risorse per iniziare a creare un piano.
-ms.openlocfilehash: b654dcd7b8f923f952a6e2fbefe37a5e523e1cd4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841713"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605617"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Pianificare l'aggiornamento di client e server di Office 2007 o Office 2010
 
@@ -109,10 +109,4 @@ oppure
    
 ## <a name="related-topics"></a>Argomenti correlati
   
-[Criteri relativi al ciclo di vita Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
-
-[Office Retirement Group (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-
-
-
-
+[Politica relativa al ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)

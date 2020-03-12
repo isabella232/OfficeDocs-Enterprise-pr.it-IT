@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Definisce e spiega l'immutabilità dei dati in Office 365.
-ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: fe6b2cf3d3ba2e0bb69f4275c77de0a452b3140f
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315995"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605631"
 ---
 # <a name="immutability-in-office-365"></a>Immutabilità in Office 365
 
@@ -58,4 +58,4 @@ In particolare:
 - L'archiviazione in Office 365 consente agli utenti di combinare diversi criteri di conservazione e di mantenere le azioni per creare criteri di conservazione granulare. Questi criteri definiscono il tipo o la posizione degli elementi conservati e la durata della conservazione.
 - La funzionalità di blocco di conservazione consente agli utenti di scegliere se rendere il criterio restrittivo. Un criterio restrittivo impedisce a chiunque di avere la possibilità di rimuovere, disabilitare o apportare modifiche al criterio di conservazione. Questo significa che, una volta abilitato il blocco di conservazione, non può essere disabilitato e non esiste alcun meccanismo in base al quale i dati provenienti da depositari esistenti raccolti dai criteri di conservazione sul posto possono essere sovrascritti, modificati, cancellati o eliminati durante la periodo di conservazione. Inoltre, il periodo di attesa impostato dal blocco di conservazione non può essere ridotto o diminuito. Tuttavia, può essere allungato, nel caso di un requisito legale per continuare la conservazione dei dati archiviati, come indicato in alto. Il blocco conservazione garantisce che nessuno, neanche gli amministratori o gli utenti con un determinato accesso al controllo, possano modificare le impostazioni o sovrascrivere o cancellare i dati archiviati, portando l'archiviazione in Office 365 in linea con le indicazioni riportate nella versione 2003 di SEC. Regola 17a-4.
 
-Per comprendere in che modo Office 365 consente di soddisfare gli obblighi normativi, in particolare per quanto riguarda i requisiti della regola 17a-4, vedere questo [white paper](https://go.microsoft.com/fwlink/?linkid=830440) relativo all'archiviazione di Exchange Online, SharePoint Online, OneDrive for business e Skype for business. Il white paper fornisce inoltre un'analisi approfondita delle caratteristiche e delle funzionalità di archiviazione di Office 365 rispetto a ognuno dei requisiti previsti dalla regola 17a-4 di SEC e dimostra ai clienti regolamentati come l'archiviazione di Office 365 può consentire loro di soddisfare queste condizioni requisiti.
+Per comprendere in che modo Office 365 consente di soddisfare gli obblighi normativi, in particolare per quanto riguarda i requisiti della regola 17a-4, vedere il [white paper](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/2015/11/Microsoft-EOA-White-Paper.pdf) relativo all'archiviazione di Exchange Online, SharePoint Online, OneDrive for business e Skype for business. Il white paper fornisce inoltre un'analisi approfondita delle caratteristiche e delle funzionalità di archiviazione di Office 365 rispetto a ognuno dei requisiti previsti dalla regola 17a-4 di SEC e dimostra ai clienti regolamentati come l'archiviazione di Office 365 può consentire loro di soddisfare queste condizioni requisiti.

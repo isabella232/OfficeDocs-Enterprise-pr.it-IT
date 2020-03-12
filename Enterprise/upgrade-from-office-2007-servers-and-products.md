@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Il supporto si concluderà presto per i server e le applicazioni client di Office 2007 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
-ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 101db7891dd2d336c9b15b2e7070587fb61eb53a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841003"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605641"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2007
 
@@ -44,7 +44,7 @@ Il supporto è terminato per i prodotti e i servizi di Office 2007. Le seguenti 
 |:-----|:-----|
 |[Guida di orientamento alla fine del supporto di Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 ottobre 2017  <br/> |
 |[Guida sulla fine del supporto di Exchange 2007](exchange-2007-end-of-support.md) <br/> |11 aprile 2017  <br/> |
-|[Roadmap di fine supporto di SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 ottobre 2017  <br/> |
+|[Guida sulla fine del supporto di SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 ottobre 2017  <br/> |
 |[Guida sulla fine del supporto di Project Server 2007](project-server-2007-end-of-support.md) <br/> |10 ottobre 2017  <br/> |
 |[Eseguire l'aggiornamento da Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 gennaio 2018  <br/> |
 |[Guida sulla fine del supporto di PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |9 gennaio 2018  <br/> |
@@ -57,8 +57,6 @@ Se si utilizzano i prodotti e le applicazioni di Office 2007 a casa, vedere [que
      
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Office Retirement Group (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-  
 [Video: che cos'è Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Politica relativa al ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)

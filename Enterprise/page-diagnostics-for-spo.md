@@ -3,7 +3,7 @@ title: Utilizzare lo strumento di diagnostica delle pagine per SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/18/2020
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +19,19 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Utilizzare lo strumento page Diagnostics for SharePoint per analizzare i moderni portale e le pagine di pubblicazione classiche di SharePoint online in base a un set predefinito di criteri di prestazioni.
-ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155596"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603735"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utilizzare lo strumento page Diagnostics for SharePoint
 
 In questo articolo viene descritto come utilizzare lo **strumento page Diagnostics for SharePoint** per analizzare pagine del sito moderne e classiche di SharePoint online in base a un set predefinito di criteri di prestazioni.  
 
 >[!TIP]
->**La versione 2.0.2 dello strumento è stata rilasciata**. La versione **2.0.0** e versioni successive include il supporto per le pagine moderne oltre alle pagine del sito classiche. Se non si è certi di quale versione dello strumento si sta utilizzando, è possibile selezionare il collegamento **About** o i puntini di controllo (...) per verificare la versione. Aggiornare sempre la versione più recente quando si utilizza lo strumento.
+>La versione **2.0.0** e versioni successive include il supporto per le pagine moderne oltre alle pagine del sito classiche. Se non si è certi di quale versione dello strumento si sta utilizzando, è possibile selezionare il collegamento **About** o i puntini di controllo (...) per verificare la versione. **Aggiornare sempre la versione più recente quando si** utilizza lo strumento.
 
 Lo strumento page Diagnostics for SharePoint è un'estensione del browser per il nuovo Microsofthttps://www.microsoft.com/edge) Edge (e i browser Chrome che analizzano sia il portale moderno di SharePoint Online che le pagine del sito di pubblicazione classiche. Questo strumento funziona solo per SharePoint Online e non può essere utilizzato in una pagina di sistema di SharePoint.
 
@@ -161,4 +161,8 @@ Nessuna modifica è visibile, tranne per il fatto che si riceverà una notifica 
 
 [Ottimizzare le prestazioni di Office 365](tune-office-365-performance.md)
 
+[Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+
 [Reti per la distribuzione di contenuti](content-delivery-networks.md)
+
+[Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online](use-office-365-cdn-with-spo.md)

@@ -16,12 +16,12 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007, ProClarity e SharePoint Server 2007 hanno raggiunto la fine del supporto. Leggere questo articolo per pianificare l'aggiornamento della soluzione BI.
-ms.openlocfilehash: 89f13a9fba91195c8e3ecfcdaaebb52a27307eef
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 37ac5425e282efd4a9e8e0fc2a8f6b5c897ec105
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844097"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605616"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Guida sulla fine del supporto di PerformancePoint Server 2007
 
@@ -154,9 +154,3 @@ Se si sta eseguendo l'aggiornamento in locale o si passa a Office 365, è consig
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Risorse utili per l'aggiornamento da server e client di Office 2007](upgrade-from-office-2007-servers-and-products.md)
-  
-[Office Retirement Group (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-
-
-  
-
