@@ -11,5 +11,6 @@
 |Corea                        |KOR     |Datacenter Asia orientale o sudorientale|
 |Nord America                |NAM     |Datacenter Stati Uniti                    |
 |Sudafrica                 |ZAF     |(Presto disponibile)                     |
+|Svizzera                  |SWE     |(Presto disponibile)                     |
 |Emirati Arabi Uniti         |ARE     |(Presto disponibile)                     |
 |Regno Unito               |GBR     |Datacenter Europa                |
