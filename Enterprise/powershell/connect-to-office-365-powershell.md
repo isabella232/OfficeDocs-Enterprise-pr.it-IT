@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Riepilogo: connettersi all'organizzazione di Office 365 con PowerShell di Office 365 per eseguire le attività dell'interfaccia di amministrazione dalla riga di comando."
 ms.openlocfilehash: 96ad47e6f60d6e098deffb48c56b4004d732b033
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.sourcegitcommit: 48d8d40f546d452a0068260571d8d147e1c9de22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844257"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42616953"
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
