@@ -3,7 +3,7 @@ title: Ottimizzare le immagini nelle pagine moderne di siti di SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come ottimizzare le immagini nelle pagine moderne di siti di SharePoint Online.
-ms.openlocfilehash: b1bb8bab7ee9d5f0972a476e37c35e8c14748bfb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 592839c68f790ffa35887cd1ff95e5354218d9e8
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843747"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603755"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Ottimizzare le immagini nelle pagine moderne di siti di SharePoint Online
 
@@ -37,7 +37,10 @@ Per informazioni su come ottimizzare le immagini in siti di pubblicazione classi
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>Usare lo strumento Diagnostica pagine per SharePoint per analizzare l'ottimizzazione delle immagini
 
-Lo **strumento Diagnostica pagine per SharePoint** è un'estensione del browser per Chrome e per la [versione 77 o successiva di Microsoft Edge](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) che consente di analizzare le pagine classiche e moderne di siti di pubblicazione di SharePoint. Per ogni pagina analizzata lo strumento fornisce un report che mostra le prestazioni della pagina rispetto a un set definiti di criteri delle prestazioni. Per installare Diagnostica pagine per SharePoint e saperne di più su questo strumento, vedere [Usare lo strumento Diagnostica pagine per SharePoint Online](page-diagnostics-for-spo.md).
+Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per il nuovo browser Microsoft Edge (https://www.microsoft.com/edge) e per Chrome che consente di analizzare le pagine del sito di pubblicazione di SharePoint Online sia classiche che dei portali moderni. Per ogni pagina analizzata lo strumento fornisce un report che mostra le prestazioni della pagina rispetto a un set definiti di criteri delle prestazioni. Per installare e conoscere lo strumento Diagnostica pagine per SharePoint, visitare [Usare lo strumento Diagnostica pagine per SharePoint Online](page-diagnostics-for-spo.md).
+
+>[!NOTE]
+>Lo strumento Diagnostica pagine funziona solo per SharePoint Online e non può essere usato in una pagina di sistema di SharePoint.
 
 Quando si analizza un sito moderno di SharePoint con lo strumento Diagnostica pagine per SharePoint, è possibile visualizzare le informazioni sulle immagini di grandi dimensioni nel riquadro _Test diagnostici_.
 

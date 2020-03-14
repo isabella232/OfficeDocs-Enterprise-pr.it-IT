@@ -3,7 +3,7 @@ title: Ottimizzare gli iFrame nelle pagine classiche e moderne del sito di pubbl
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/17/2019
+ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come ottimizzare le prestazioni degli iFrame nelle pagine classiche e moderne del sito di pubblicazione di SharePoint Online.
-ms.openlocfilehash: e7a66492e18272525d854e376db49f20233d6820
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0ca49355b079e212fa394ddb3a4c2b9bd62d0207
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844867"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603775"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Ottimizzare gli iFrame nelle pagine classiche e moderne del sito di pubblicazione di SharePoint Online
 
@@ -35,7 +35,10 @@ Gli iFrame possono essere utili per visualizzare in anteprima contenuto compless
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>Usare lo strumento Diagnostica pagine per SharePoint per analizzare le Web part che usano iFrame
 
-Lo **strumento Diagnostica pagine per SharePoint** è un'estensione del browser per Chrome e per [Microsoft Edge versione 77 o successive](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) che consente di analizzare le pagine del sito di pubblicazione di SharePoint sia classiche che moderne. Per ogni pagina analizzata lo strumento fornisce un report che mostra le prestazioni della pagina rispetto a un set definiti di criteri delle prestazioni. Per installare e conoscere lo strumento Diagnostica pagine per SharePoint, visitare [Usare lo strumento Diagnostica pagine per SharePoint Online](page-diagnostics-for-spo.md).
+Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per il nuovo browser Microsoft Edge (https://www.microsoft.com/edge) e per Chrome che consente di analizzare le pagine del sito di pubblicazione di SharePoint Online sia classiche che dei portali moderni. Per ogni pagina analizzata lo strumento fornisce un report che mostra le prestazioni della pagina rispetto a un set definiti di criteri delle prestazioni. Per installare e conoscere lo strumento Diagnostica pagine per SharePoint, visitare [Usare lo strumento Diagnostica pagine per SharePoint Online](page-diagnostics-for-spo.md).
+
+>[!NOTE]
+>Lo strumento Diagnostica pagine funziona solo per SharePoint Online e non può essere usato in una pagina di sistema di SharePoint.
 
 Quando si analizza una pagina del sito di SharePoint con lo strumento Diagnostica pagine per SharePoint, è possibile visualizzare le informazioni sulle Web part che contengono iFrame nel riquadro _Diagnostic tests_ (Test diagnostici). La metrica di base è la stessa per le pagine classiche e moderne.
 

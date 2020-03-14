@@ -3,7 +3,7 @@ title: Ottimizzare le prestazioni delle web part nelle pagine moderne di siti di
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/6/2019
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come ottimizzare le prestazioni delle web part nelle pagine moderne di siti di SharePoint Online.
-ms.openlocfilehash: 8ee8e932913ad8b75d6e68cecbd5d5da08bce76b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 48eba5f638d75cb12b7b4dcf516a9c3833cf8f4d
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844832"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603745"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Ottimizzare le prestazioni delle web part nelle pagine moderne di siti di SharePoint Online
 
@@ -35,14 +35,17 @@ Le pagine moderne dei siti di SharePoint Online contengono web part che possono 
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Usare lo strumento Diagnostica pagine per SharePoint per analizzare le web part
 
-Lo **strumento Diagnostica pagine per SharePoint** è un'estensione del browser per Chrome e per la [versione 77 o successiva di Microsoft Edge](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) che consente di analizzare le pagine classiche e moderne di siti di pubblicazione di SharePoint. Per ogni pagina analizzata lo strumento fornisce un report che mostra le prestazioni della pagina rispetto a un set definiti di criteri delle prestazioni. Per installare Diagnostica pagine per SharePoint e saperne di più su questo strumento, vedere [Usare lo strumento Diagnostica pagine per SharePoint Online](page-diagnostics-for-spo.md).
+Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per il nuovo browser Microsoft Edge (https://www.microsoft.com/edge) e per Chrome che consente di analizzare le pagine del sito di pubblicazione di SharePoint Online sia classiche che dei portali moderni. Per ogni pagina analizzata lo strumento fornisce un report che mostra le prestazioni della pagina rispetto a un set definiti di criteri delle prestazioni. Per installare e conoscere lo strumento Diagnostica pagine per SharePoint, visitare [Usare lo strumento Diagnostica pagine per SharePoint Online](page-diagnostics-for-spo.md).
+
+>[!NOTE]
+>Lo strumento Diagnostica pagine funziona solo per SharePoint Online e non può essere usato in una pagina di sistema di SharePoint.
 
 Quando si analizza una pagina del sito di SharePoint con lo strumento Diagnostica pagine per SharePoint, è possibile visualizzare informazioni sulle web part che superano la metrica di base nel risultato **Le web part influiscono sul tempo di caricamento delle pagine** del riquadro _Test diagnostici_.
 
 I risultati possibili includono:
 
-- **Attenzione** (rosso): in questa sezione sono elencate tutte le web part _personalizzate_ il cui caricamento richiede più di **due** secondi. Il tempo di caricamento totale visualizzato nei risultati del test è suddiviso per caricamento del modulo, caricamento lazy, inizializzazione e rendering.
-- **Possibilità di miglioramento** (giallo): in questa sezione sono visualizzati gli elementi che potrebbero influire sul tempo di caricamento delle pagine e che devono essere esaminati e monitorati. Tali elementi possono includere le web part Microsoft predefinite. I risultati relativi a tutte le web part Microsoft mostrati in questa sezione vengono segnalati automaticamente a Microsoft, di conseguenza **non è richiesta alcuna azione**. È opportuno aprire un ticket di supporto per l'analisi solo se si riscontra una notevole lentezza nel caricamento della pagina e **tutte le web part Microsoft** nella pagina vengono visualizzate nei risultati della sezione **Possibilità di miglioramento**. In un futuro aggiornamento dello strumento Diagnostica pagine i risultati verranno suddivisi ulteriormente in base alla specifica configurazione della web part Microsoft.
+- **Attenzione richiesta** (rosso): qualsiasi web part _personalizzata_ visibile nel viewport (parte visibile della schermata della pagina caricata per prima) che richiede più di **due** secondi per essere caricata. Qualsiasi web part _personalizzata_ all'esterno del viewport che richiede più di **quattro** secondi per essere caricata. Il tempo di caricamento totale viene visualizzato nei risultati del test ed è suddiviso per caricamento del modulo, caricamento lazy, inizializzazione e rendering.
+- **Possibilità di miglioramento** (giallo): in questa sezione sono visualizzati gli elementi che potrebbero influire sul tempo di caricamento delle pagine e che devono essere esaminati e monitorati. Tali elementi possono includere le web part Microsoft predefinite. I risultati relativi a tutte le web part Microsoft mostrati in questa sezione vengono segnalati automaticamente a Microsoft, di conseguenza **non è richiesta alcuna azione**. È opportuno aprire un ticket di supporto per l'analisi solo se si riscontra una notevole lentezza nel caricamento della pagina e **tutte le web part Microsoft** nella pagina vengono visualizzate nei risultati della sezione **Possibilità di miglioramento**. In un futuro aggiornamento dello strumento Diagnostica pagine per SharePoint i risultati verranno suddivisi ulteriormente in base alla specifica configurazione della web part Microsoft.
 - **Non è richiesto alcun intervento** (verde): nessuna web part impiega più di **due** secondi per restituire dati.
 
 Se il risultato **Le web part influiscono sul tempo di caricamento delle pagine** viene visualizzato nella sezione dei risultati **Attenzione** o **Possibilità di miglioramento**, fare clic sul risultato per visualizzare i dettagli relativi alle web part che vengono caricate lentamente. Gli aggiornamenti futuri dello strumento Diagnostica pagine per SharePoint potrebbero includere novità relative alle regole di analisi, di conseguenza assicurarsi di usare sempre la versione più recente dello strumento.
