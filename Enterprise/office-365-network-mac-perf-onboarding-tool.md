@@ -3,7 +3,7 @@ title: Strumento di onboarding di rete di Office 365 nell'interfaccia di amminis
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)
-ms.openlocfilehash: 7ead201d78c1a6ce971c6ff09d4be9c0d2c76be6
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106352"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890399"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)
 
@@ -30,7 +30,7 @@ Le informazioni sulla rete nell'interfaccia di amministrazione di Microsoft 365 
 È consigliabile utilizzare questi strumenti insieme in cui è possibile valutare lo stato della qualità di rete per ogni posizione di Office nell'interfaccia di amministrazione di Microsoft 365 e trovare ulteriori specifiche dopo la distribuzione dei test basati sullo strumento di onboarding di rete di Office 365.
 
 >[!IMPORTANT]
->Suggerimenti per le prestazioni di rete, approfondimenti e valutazioni nell'interfaccia di amministrazione di Microsoft 365 è attualmente in stato di anteprima ed è disponibile solo per i tenant di Office 365 che sono stati registrati nel programma di anteprima delle funzionalità.
+>Le considerazioni di rete, le raccomandazioni sulle prestazioni e le valutazioni nell'interfaccia di amministrazione di Microsoft 365 sono attualmente in stato di anteprima ed è disponibile solo per i tenant di Office 365 che sono stati registrati nel programma di anteprima delle funzionalità.
 
 ## <a name="the-advanced-tests-client-application"></a>Applicazione client test avanzati
 

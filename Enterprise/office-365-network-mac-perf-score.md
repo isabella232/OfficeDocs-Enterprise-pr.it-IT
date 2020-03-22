@@ -3,7 +3,7 @@ title: Valutazione della rete di Office 365 (Preview)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,41 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Valutazione della rete di Office 365 (Preview)
-ms.openlocfilehash: f919eeb2771095502865b4a5079b91eb8d7efe36
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: 24ecea73d9ecb6ae73b26e42a25749c846e3a281
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106350"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890365"
 ---
 # <a name="office-365-network-assessment-preview"></a>Valutazione della rete di Office 365 (Preview)
 
-La valutazione della rete di Office 365 indica l'impatto dell'esperienza utente relativa dalla connettività di rete del cliente. L'impatto di qualsiasi connettività di rete di Microsoft è escluso da questo per consentire ai clienti di ottimizzare le progettazioni di rete per le quali sono responsabili.
+Nella pagina connettività di Microsoft 365 Admin Center to Microsoft 365, le **valutazioni di rete** distillano un'aggregazione di molte metriche delle prestazioni di rete in un'istantanea dell'integrità della rete aziendale, rappresentata da un valore punti da 1-100. Le valutazioni di rete sono limitate all'intero tenant e per ogni posizione geografica da cui gli utenti si connettono al tenant, fornendo agli amministratori di Office 365 un modo semplice per afferrare istantaneamente la Gestalt dell'integrità della rete aziendale e forare rapidamente verso il basso in un rapporto dettagliato per qualsiasi percorso di Office globale.
 
-Viene calcolato in base alle misure che influiscono sull'esperienza degli utenti nei carichi di lavoro chiave di Office 365 e che vengono visualizzate come percentuali con un intervallo compreso tra 0 e 100.
+Il valore dei punti di valutazione della rete è una media misura della latenza, della larghezza di banda, della velocità di download e delle metriche di qualità di connessione compilate dal vivo al momento della visualizzazione. Le metriche delle prestazioni per le reti di proprietà di Microsoft sono escluse da queste misure per garantire che i risultati della valutazione siano inequivocabili e specifici per la rete aziendale.
 
-Un punteggio di rete molto basso suggerisce che i client di Office 365 avranno problemi significativi per la connessione o il reattivo degli utenti. Un punteggio di 80% rappresenta la connettività di rete in cui non è consigliabile ricevere reclami da parte dell'utente sull'esperienza utente di Office 365 a causa delle prestazioni di rete. Man mano che vengono apportati miglioramenti alla connettività di rete, questo punteggio aumenterà insieme all'esperienza utente.
+![Valore di valutazione della rete](Media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
+
+Un valore di valutazione della rete molto basso suggerisce che i client di Office 365 avranno problemi significativi per la connessione al tenant o per il mantenimento di un'esperienza utente reattiva, mentre un valore elevato indica una rete adeguatamente configurata con poche prestazioni in esecuzione. problemi. Un valore pari a 80% rappresenta una linea di base sana, in cui non si dovrebbe pretendere di ricevere reclami da un utente regolare sulla connettività di Office 365 o la reattività a causa delle prestazioni di rete. Quando vengono apportati miglioramenti della connettività di rete iterativa, questo valore aumenterà insieme all'esperienza utente.
 
 >[!IMPORTANT]
->Suggerimenti per le prestazioni di rete, approfondimenti e valutazioni nell'interfaccia di amministrazione di Microsoft 365 è attualmente in stato di anteprima ed è disponibile solo per i tenant di Office 365 che sono stati registrati nel programma di anteprima delle funzionalità.
+>Le considerazioni di rete, le raccomandazioni sulle prestazioni e le valutazioni nell'interfaccia di amministrazione di Microsoft 365 sono attualmente in stato di anteprima ed è disponibile solo per i tenant di Office 365 che sono stati registrati nel programma di anteprima delle funzionalità.
+
+## <a name="network-assessment-panel"></a>Pannello di valutazione della rete
+
+Ogni valutazione di rete, se ambito del tenant o di una specifica posizione di Office, Visualizza un riquadro con i dettagli relativi alla valutazione. In questo riquadro viene visualizzato un grafico a barre della valutazione, sia in percentuale che come punti totali per ogni carico di lavoro del componente, compresi solo i carichi di lavoro in cui sono stati ricevuti i dati di misurazione. Per una valutazione della rete delle posizioni di Office, viene mostrato anche un benchmark che è la mediana di tutti i client di Office 365 che hanno segnalato dati nella stessa città del percorso dell'ufficio.
+
+![Valore di valutazione della rete di esempio](Media/m365-mac-perf/m365-mac-perf-overview-score.png)
+
+La **ripartizione di valutazione** nel pannello Visualizza la valutazione per ognuno dei carichi di lavoro del componente.
+
+La **cronologia di valutazione** indica gli ultimi 30 giorni della valutazione e del benchmark.
+
+## <a name="tenant-network-assessments-and-office-location-network-assessments"></a>Valutazioni della rete tenant e valutazioni della rete delle posizioni di Office
+
+Una valutazione della rete misura la progettazione del perimetro di rete di una posizione di Office alla rete di Microsoft. I miglioramenti apportati al perimetro della rete sono migliori in ogni posizione di Office o in cui è possibile aggregare la connettività di rete possono essere presenti miglioramenti che influiscono su più percorsi.
+
+Viene visualizzato un valore di valutazione della rete per l'intero tenant di Office 365 nella pagina Panoramica delle prestazioni di rete e un valore specifico per ogni posizione di Office rilevata nella pagina di riepilogo di tale percorso.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -44,19 +62,6 @@ Per SharePoint Online, la velocità di download disponibile per un utente per l'
 
 Per Microsoft teams la qualità della rete viene misurata come latenza UDP, jitter UDP e perdita di pacchetti UDP. UDP viene utilizzato per la connettività multimediale di chiamata e di audioconferenza per Microsoft teams. Questo può influire sugli stessi fattori di latenza e velocità di download, oltre agli spazi di connettività nel supporto UDP di una rete, poiché UDP è configurato separatamente per il protocollo TCP più comune.
 
-## <a name="tenant-network-score-and-office-location-network-score"></a>Punteggio di rete tenant e posizione di rete di Office location
-
-Un punteggio di rete misura la progettazione del perimetro di rete di una posizione di Office alla rete di Microsoft. I miglioramenti apportati al perimetro della rete sono migliori in ogni posizione di Office o in cui è possibile aggregare la connettività di rete possono essere presenti miglioramenti che influiscono su più percorsi.
-Viene visualizzato un punteggio di rete per l'intero tenant di Office 365 nella pagina Panoramica delle prestazioni di rete e uno specifico punteggio di rete per ogni posizione di Office rilevata nella pagina di riepilogo di tale percorso.
-
-## <a name="network-score-panel"></a>Pannello Punteggio di rete
-
-Ogni punteggio di rete se per il tenant o per una specifica posizione di Office viene visualizzato un riquadro con informazioni dettagliate sul punteggio. Questo pannello Visualizza un grafico a barre dello score sia come percentuale che come punti totali per ogni carico di lavoro del componente, compresi solo i carichi di lavoro in cui sono stati ricevuti i dati di misurazione. Per un punteggio di rete per la posizione di Office viene mostrato anche un benchmark che è il mediano di tutti i client di Office 365 che hanno segnalato dati nella stessa città del percorso dell'ufficio.
-
-La ripartizione dei punteggi nel pannello Visualizza il punteggio per ogni carico di lavoro del componente.
-
-La cronologia dei punteggi Visualizza gli ultimi 30 giorni dello score e del benchmark.
-
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Suggerimenti relativi alle prestazioni di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)](office-365-network-mac-perf-overview.md)
@@ -64,3 +69,5 @@ La cronologia dei punteggi Visualizza gli ultimi 30 giorni dello score e del ben
 [Informazioni sulle prestazioni di rete di Office 365 (anteprima)](office-365-network-mac-perf-insights.md)
 
 [Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
+
+[Privacy e condizioni di utilizzo di Office 365 Network Insights (Preview)](office-365-network-mac-perf-privacy.md)
