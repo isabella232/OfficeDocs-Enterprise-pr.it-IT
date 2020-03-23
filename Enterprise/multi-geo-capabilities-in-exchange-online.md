@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sulle funzionalità Multi-Geo in Exchange Online.
-ms.openlocfilehash: 034631d10cc46fc24a7714dee13ddfc667272a49
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974838"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890548"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Funzionalità Multi-Geo in Exchange Online
 
@@ -58,3 +58,5 @@ Exchange Online sincronizza la proprietà **PreferredDataLocation** di Azure AD 
   **Nota**: la condivisione delle cartelle della cassetta postale tra diverse aree geografiche è supportata in Outlook per Windows.
 
 - Le cartelle pubbliche sono supportate nelle organizzazioni Multi-Geo. Tuttavia, è necessario che le cartelle pubbliche rimangano nella posizione geografica centrale. Non è possibile spostare le cartelle pubbliche nelle posizioni geografiche satelliti.
+
+- In un ambiente multi-geografico il controllo delle cassette postali in aree geografiche diverse non è supportato. Ad esempio, se a un utente sono assegnate le autorizzazioni per accedere a una cassetta postale condivisa in un'area geografica diversa, le azioni sulla cassetta postale eseguite da tale utente non vengono registrate nel log di controllo della cassetta postale condivisa. Per altre informazioni, vedere [Gestire il controllo delle cassette postali](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide).
