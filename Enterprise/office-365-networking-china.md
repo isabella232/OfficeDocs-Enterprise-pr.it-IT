@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- remotework
 search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: In questo articolo vengono fornite indicazioni per l'ottimizzazione delle prestazioni di rete per gli utenti cinesi dei tenant globali di Office 365.
-ms.openlocfilehash: 33e475dfbf4accf306a099542cf8cf2f22ff23a5
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: 50cf6189c922ada5d4ebb9683bec0dd8c6e38f6d
+ms.sourcegitcommit: cb942f32da99eda6455756ce0fd409cf8ee9de3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106358"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058969"
 ---
 # <a name="office-365-global-tenant-performance-optimization-for-china-users"></a>Ottimizzazione delle prestazioni di Office 365 Global tenant per gli utenti cinesi
 
@@ -57,7 +58,7 @@ Per informazioni su come instradare il traffico di Office 365 in modo selettivo,
 
 ## <a name="user-best-practices"></a>Procedure consigliate per gli utenti
 
-Gli utenti in Cina che si connettono a Global Office 365 tenant provenienti da postazioni remote quali case, coffee shop, Hotel e succursali senza alcuna connessione con le reti aziendali possono sperimentare prestazioni di rete insufficienti perché il traffico tra i propri dispositivi e Office 365 deve transitare nei circuiti di rete transfrontalieri congestionati della Cina.
+Gli utenti in Cina che si connettono a Global Office 365 tenant provenienti da postazioni remote quali case, coffee shop, Hotel e succursali senza alcuna connessione con le reti aziendali possono sperimentare prestazioni di rete insufficienti perché il traffico tra i dispositivi e Office 365 deve transitare nei circuiti di rete transfrontalieri congestionati della Cina.
 
 Se le reti private transfrontaliere e/o l'accesso VPN all'interno della rete aziendale non sono un'opzione, i problemi di prestazioni per utente possono ancora essere attenuati dall'addestramento degli utenti basati su Cina per seguire queste procedure consigliate.
 
