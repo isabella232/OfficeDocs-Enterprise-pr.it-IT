@@ -3,7 +3,7 @@ title: Suggerimenti relativi alle prestazioni di rete nell'interfaccia di ammini
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Panoramica delle raccomandazioni relative alle prestazioni di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: 16ef23810645bcd9719107b13d32909af25d4766
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: f2ff012d20c799925c571d8065e28859c4c81f71
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890451"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081718"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Suggerimenti relativi alle prestazioni di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -43,7 +43,7 @@ Gli esempi di misura e le posizioni degli uffici devono iniziare a essere visual
 
 **Intuizioni di rete**, le raccomandazioni relative alle prestazioni e le valutazioni di rete correlate sono utili per la progettazione di perimetri di rete per le posizioni di Office. Ogni Insight fornisce informazioni dettagliate sulle caratteristiche delle prestazioni per un problema comune specifico per ogni posizione geografica in cui gli utenti accedono al tenant. Le **indicazioni sulle prestazioni** per ogni Network Insight offrono specifiche modifiche alla progettazione dell'architettura di rete che è possibile apportare per migliorare l'esperienza degli utenti in relazione alla connettività di rete di Office 365. La valutazione della rete illustra come la connettività di rete influisce sull'esperienza utente, consentendo il confronto tra diverse connessioni di rete per le posizioni degli utenti.
 
-Le **valutazioni di rete** distillano un'aggregazione di molte metriche delle prestazioni di rete in un'istantanea dell'integrità della rete aziendale, rappresentata da un valore a punti compreso tra 1-100. Le valutazioni di rete sono limitate all'intero tenant e per ogni posizione geografica da cui gli utenti si connettono al tenant, fornendo agli amministratori di Office 365 un modo semplice per afferrare istantaneamente la Gestalt dell'integrità della rete aziendale e forare rapidamente verso il basso in un rapporto dettagliato per qualsiasi percorso di Office globale.
+Le **valutazioni di rete** distillano un'aggregazione di molte metriche delle prestazioni di rete in un'istantanea dell'integrità della rete aziendale, rappresentata da un valore a punti compreso tra 1-100. Le valutazioni di rete sono limitate all'intero tenant e per ogni posizione geografica da cui gli utenti si connettono al tenant, fornendo agli amministratori di Office 365 un modo semplice per afferrare istantaneamente una Gestalt dell'integrità della rete dell'organizzazione e analizzarla rapidamente in una relazione dettagliata per qualsiasi posizione globale dell'ufficio.
 
 Le aziende complesse con più percorsi di Office e architetture perimetrali di rete non banali possono trarre vantaggio da queste informazioni durante l'onboarding iniziale su Office 365 o per correggere i problemi di prestazioni della rete individuati con la crescita dell'utilizzo. In genere non è necessario per le aziende di piccole dimensioni che utilizzano Office 365 o per le aziende che dispongono già di connettività di rete semplice e diretta. Le aziende con oltre 500 utenti e più sedi di Office dovrebbero avvantaggiarsi al massimo.
 
@@ -62,7 +62,7 @@ Le aziende possono migliorare l'esperienza utente generale e proteggere l'ambien
 
 A volte viene chiesto a Microsoft di esaminare i problemi relativi alle prestazioni di rete con Office 365 per i clienti di grandi dimensioni e spesso presentano una causa principale relativa all'infrastruttura di uscita della rete dei clienti. Quando viene trovata una causa principale comune di un problema di perimetro della rete del cliente, si cerca di identificare le misure di test semplici che lo identificano. Un test con una soglia di misurazione che identifica un problema specifico è importante perché è possibile testare la stessa misura in qualsiasi posizione, stabilire se questa causa principale è presente e condividerla come Insight di rete con l'amministratore.
 
-Alcune informazioni di rete indicano solo un problema che richiede ulteriori indagini. Un'analisi di rete in cui sono disponibili test sufficienti per visualizzare un'azione di correzione specifica per correggere la causa principale è elencata come **azione consigliata**. Questi suggerimenti, basati su metriche in tempo reale che rivelano valori che non rientrano in una soglia predeterminata, sono molto più importanti dei consigli generali di Best practice, poiché sono specifici dell'ambiente in uso e visualizzano il miglioramento effettivo dopo che il sono state apportate modifiche consigliate.
+Alcune informazioni di rete indicano solo un problema che richiede ulteriori indagini. Un'analisi di rete in cui sono disponibili test sufficienti per visualizzare un'azione di correzione specifica per correggere la causa principale è elencata come **azione consigliata**. Questi suggerimenti, basati su metriche in tempo reale che rivelano valori che non rientrano in una soglia predeterminata, sono molto più importanti dei consigli generali di Best practice, poiché sono specifici dell'ambiente in uso e mostrano il miglioramento effettivo dopo che sono state apportate le modifiche consigliate.
 
 ## <a name="network-performance-overview-in-the-microsoft-365-admin-center"></a>Panoramica delle prestazioni di rete nell'interfaccia di amministrazione di Microsoft 365
 
@@ -82,7 +82,7 @@ Se si seleziona un percorso di Office, viene visualizzata una pagina di riepilog
 
 ![Informazioni dettagliate sulla rete in base alla posizione](Media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
-La pagina di riepilogo dell'ubicazione di Office Visualizza inoltre la valutazione della rete della posizione, la cronologia di valutazione della rete, il confronto tra la valutazione di questo percorso e gli altri clienti della stessa città e un elenco di informazioni e suggerimenti specifici che è possibile impegnarsi per migliorare le prestazioni e l'affidabilità della rete. Le posizioni con raccomandazioni specifiche possono includere anche un miglioramento della latenza potenziale stimato.
+La pagina di riepilogo dell'ubicazione di Office consente inoltre di visualizzare la valutazione della rete della posizione, la cronologia di valutazione della rete, il confronto tra la valutazione di questo percorso e gli altri clienti della stessa città, nonché un elenco di approfondimenti e suggerimenti specifici che è possibile intraprendere per migliorare le prestazioni e l'affidabilità della rete. Le posizioni con raccomandazioni specifiche possono includere anche un miglioramento della latenza potenziale stimato.
 
 I confronti tra clienti nella stessa città si basano sull'aspettativa che tutti i clienti abbiano uguale accesso ai provider di servizi di rete, all'infrastruttura di telecomunicazioni e ai punti di presenza della rete Microsoft nelle vicinanze.
 
@@ -145,4 +145,4 @@ La posizione di uscita Internet è il percorso in cui il traffico di rete esce d
 
 [Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Privacy e condizioni di utilizzo di Office 365 Network Insights (Preview)](office-365-network-mac-perf-privacy.md)
+[Servizi di localizzazione di connettività di rete di Office 365 (anteprima)](office-365-network-mac-location-services.md)

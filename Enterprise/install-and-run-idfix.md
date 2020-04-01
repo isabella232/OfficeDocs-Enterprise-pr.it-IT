@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Come scaricare ed eseguire lo strumento IdFix di Office 365 per eseguire la pulizia di Active Directory Domain Services (AD DS) prima della sincronizzazione con Office 365.
-ms.openlocfilehash: 7bb1577e7fc1c96cc7edcf96e4aac17b310e3710
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d816abe8e93830832077c614e496576d42890d50
+ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844617"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068778"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Scaricare ed eseguire lo strumento IdFix di Office 365
 
@@ -74,15 +74,15 @@ Seguire queste istruzioni.
   
 1. Accedere al computer in cui si vuole eseguire lo strumento IdFix.
     
-2. Accedere al sito Microsoft per il download dello [strumento IdFix di correzione degli errori di DirSync](https://go.microsoft.com/fwlink/?linkid=867219).
+2. Accedere al sito [dello strumento di correzione degli errori di IdFix DirSync](https://github.com/microsoft/idfix) .
     
-3. Scaricare e aprire il file ZIP.
+3. Fare clic su **Avvia** nella sezione **avvio ClickOnce** per scaricare il file zip. Aprire il file zip.
     
-3. Nella finestra **IdFix** scegliere **Estrai** e quindi **Estrai tutto**. Per impostazione predefinita, IdFix viene estratto in `C:\Users\<your user name>\Documents\IdFix`. 
+4. Nella finestra **IdFix** scegliere **Estrai** e quindi **Estrai tutto**. Per impostazione predefinita, IdFix viene estratto in `C:\Users\<your user name>\Documents\IdFix`. 
     
-6. Scegliere **Estrai**.
+5. Scegliere **Estrai**.
 
-Queste istruzioni sono state eseguite con Internet Explorer in un server con Windows Server 2016. Se si usa una versione diversa di Windows o un browser diverso, la procedura potrebbe variare.
+I passaggi possono variare in base alla versione di Windows e al browser Internet.
     
 ## <a name="run-the-idfix-tool"></a>Eseguire lo strumento IdFix
 

@@ -3,7 +3,7 @@ title: Office 365 Insights Network (anteprima)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 Insights Network (anteprima)
-ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890616"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081708"
 ---
 # <a name="office-365-network-insights-preview"></a>Office 365 Insights Network (anteprima)
 
@@ -40,7 +40,7 @@ Sono disponibili cinque informazioni specifiche sulla rete che possono essere vi
 
 ## <a name="backhauled-network-egress"></a>Uscita di rete con backhauling
 
-Questa intuizione verrà visualizzata se il servizio Network Insights rileva che la distanza tra una determinata posizione utente e l'uscita di rete è superiore a 500 miglia (800 km), a indicare che il traffico di Office 365 viene reindirizzato a un Internet Edge comune dispositivo o proxy.
+Questa intuizione verrà visualizzata se il servizio Network Insights rileva che la distanza tra un determinato percorso utente e l'uscita di rete è superiore a 500 miglia (800 km), a indicare che il traffico di Office 365 viene reindirizzato a un normale dispositivo o proxy di Internet Edge.
 
 Questa intuizione è abbreviata in "uscita" in alcune visualizzazioni di riepilogo.
 
@@ -50,7 +50,7 @@ Questa intuizione è abbreviata in "uscita" in alcune visualizzazioni di riepilo
 
 Ciò indica che la distanza tra l'area di lavoro e l'uscita di rete è superiore a 500 miglia (800 km). La posizione di Office è identificata da una posizione del computer client offuscata e il percorso dell'uscita di rete viene identificato utilizzando l'indirizzo IP inverso nei database delle posizioni. La posizione di Office potrebbe non essere accurata se i servizi di posizione di Windows sono disabilitati nei computer. La posizione di uscita della rete potrebbe non essere accurata se le informazioni sul database degli indirizzi IP inversi non sono accurate.
 
-I dettagli relativi a questa intuizione includono l'ubicazione dell'ufficio, la percentuale stimata dell'utente tenant totale nel percorso, la posizione corrente di uscita della rete, la pertinenza del percorso di uscita, la distanza tra la posizione e il punto di uscita corrente, la data in cui il la condizione è stata rilevata per la prima volta e la data in cui è stata risolta.
+Per informazioni dettagliate su questa panoramica, vedere l'ubicazione dell'ufficio, la percentuale stimata dell'utente tenant totale nel percorso, la posizione corrente di uscita della rete, la pertinenza del percorso di uscita, la distanza tra la posizione e il punto di uscita corrente, la data in cui è stata rilevata la condizione e la data in cui è stata risolta la condizione.
 
 ### <a name="what-should-i-do"></a>Cosa si può fare?
 
@@ -148,3 +148,5 @@ Per ulteriori informazioni su come attenuare i problemi relativi alle prestazion
 [Valutazione della rete di Office 365 (Preview)](office-365-network-mac-perf-score.md)
 
 [Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
+
+[Servizi di localizzazione di connettività di rete di Office 365 (anteprima)](office-365-network-mac-location-services.md)

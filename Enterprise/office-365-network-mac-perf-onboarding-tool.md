@@ -3,7 +3,7 @@ title: Strumento di onboarding di rete di Office 365 nell'interfaccia di amminis
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)
-ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890399"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081698"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)
 
@@ -127,3 +127,5 @@ In questa sezione vengono illustrati i risultati di un traceroute ICMP per il se
 [Informazioni sulle prestazioni di rete di Office 365 (anteprima)](office-365-network-mac-perf-insights.md)
 
 [Valutazione della rete di Office 365 (Preview)](office-365-network-mac-perf-score.md)
+
+[Servizi di localizzazione di connettività di rete di Office 365 (anteprima)](office-365-network-mac-location-services.md)

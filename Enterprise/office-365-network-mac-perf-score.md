@@ -3,7 +3,7 @@ title: Valutazione della rete di Office 365 (Preview)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,22 +14,22 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Valutazione della rete di Office 365 (Preview)
-ms.openlocfilehash: 24ecea73d9ecb6ae73b26e42a25749c846e3a281
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 280046487b116172430df1d15d4bc671fa708e68
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890365"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081688"
 ---
 # <a name="office-365-network-assessment-preview"></a>Valutazione della rete di Office 365 (Preview)
 
-Nella pagina connettività di Microsoft 365 Admin Center to Microsoft 365, le **valutazioni di rete** distillano un'aggregazione di molte metriche delle prestazioni di rete in un'istantanea dell'integrità della rete aziendale, rappresentata da un valore punti da 1-100. Le valutazioni di rete sono limitate all'intero tenant e per ogni posizione geografica da cui gli utenti si connettono al tenant, fornendo agli amministratori di Office 365 un modo semplice per afferrare istantaneamente la Gestalt dell'integrità della rete aziendale e forare rapidamente verso il basso in un rapporto dettagliato per qualsiasi percorso di Office globale.
+Nella pagina connettività di Microsoft 365 Admin Center to Microsoft 365, le **valutazioni di rete** distillano un'aggregazione di molte metriche delle prestazioni di rete in un'istantanea dell'integrità della rete aziendale, rappresentata da un valore punti da 1-100. Le valutazioni di rete sono limitate all'intero tenant e per ogni posizione geografica da cui gli utenti si connettono al tenant, fornendo agli amministratori di Office 365 un modo semplice per afferrare istantaneamente una Gestalt dell'integrità della rete dell'organizzazione e analizzarla rapidamente in una relazione dettagliata per qualsiasi posizione globale dell'ufficio.
 
 Il valore dei punti di valutazione della rete è una media misura della latenza, della larghezza di banda, della velocità di download e delle metriche di qualità di connessione compilate dal vivo al momento della visualizzazione. Le metriche delle prestazioni per le reti di proprietà di Microsoft sono escluse da queste misure per garantire che i risultati della valutazione siano inequivocabili e specifici per la rete aziendale.
 
 ![Valore di valutazione della rete](Media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-Un valore di valutazione della rete molto basso suggerisce che i client di Office 365 avranno problemi significativi per la connessione al tenant o per il mantenimento di un'esperienza utente reattiva, mentre un valore elevato indica una rete adeguatamente configurata con poche prestazioni in esecuzione. problemi. Un valore pari a 80% rappresenta una linea di base sana, in cui non si dovrebbe pretendere di ricevere reclami da un utente regolare sulla connettività di Office 365 o la reattività a causa delle prestazioni di rete. Quando vengono apportati miglioramenti della connettività di rete iterativa, questo valore aumenterà insieme all'esperienza utente.
+Un valore di valutazione della rete molto basso suggerisce che i client di Office 365 avranno problemi significativi per la connessione al tenant o per il mantenimento di un'esperienza utente reattiva, mentre un valore elevato indica una rete adeguatamente configurata con alcuni problemi di prestazioni in esecuzione. Un valore pari a 80% rappresenta una linea di base sana, in cui non si dovrebbe pretendere di ricevere reclami da un utente regolare sulla connettività di Office 365 o la reattività a causa delle prestazioni di rete. Quando vengono apportati miglioramenti della connettività di rete iterativa, questo valore aumenterà insieme all'esperienza utente.
 
 >[!IMPORTANT]
 >Le considerazioni di rete, le raccomandazioni sulle prestazioni e le valutazioni nell'interfaccia di amministrazione di Microsoft 365 sono attualmente in stato di anteprima ed è disponibile solo per i tenant di Office 365 che sono stati registrati nel programma di anteprima delle funzionalità.
@@ -70,4 +70,4 @@ Per Microsoft teams la qualità della rete viene misurata come latenza UDP, jitt
 
 [Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Privacy e condizioni di utilizzo di Office 365 Network Insights (Preview)](office-365-network-mac-perf-privacy.md)
+[Servizi di localizzazione di connettività di rete di Office 365 (anteprima)](office-365-network-mac-location-services.md)
