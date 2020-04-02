@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: Posizioni dei dati di Office 365'
-ms.openlocfilehash: 004d055c08769524907651a56b1a885d44a111d0
-ms.sourcegitcommit: a59b35b0b2667738998333d25e2a61cd8d7a3e26
+ms.openlocfilehash: ae11127cfaa592ae4a3db0a342e6d68c85fe7774
+ms.sourcegitcommit: 9483bc02cf410e80b56fe898298bd26eef486e17
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42581605"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43076129"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -39,6 +39,12 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 Informazioni sugli impegni contrattuali relativi alla posizione di archiviazione dei dati inattivi dei clienti sono disponibili nelle [Condizioni di Microsoft Online Services (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Per le posizioni dei dati di Azure Active Directory, visitare la [mappa dei dati di AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
+
+
+A causa delle circostanze senza precedenti legate al COVID-19 e della necessità di gestire la richiesta di servizi online in Europa, se l'organizzazione è un Istituto di istruzione, è possibile eseguire il provisioning del tenant di Office 365 nell'Unione europea, nell'Associazione europea di libero scambio, nel Regno Unito, negli Stati Uniti o in Canada oppure è possibile trasferire i dati in qualsiasi data center nelle predette aree geografiche.  Ciò significa che i dati possono essere archiviati in modo statico nell'Unione europea, nell'Associazione europea di libero scambio, nel Regno Unito, negli Stati Uniti o in Canada.  Il nostro impegno a garantire la conformità, la privacy e la sicurezza rimane invariato e applicheremo le misure necessarie e prudenti per mantenere la disponibilità del servizio.  Manterremo la conformità a tutte le leggi applicabili relativamente ai trasferimenti dei dati.
+
+
+
 
 ## <a name="faq"></a>Domande frequenti
 

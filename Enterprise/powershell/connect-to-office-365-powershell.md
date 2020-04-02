@@ -3,7 +3,7 @@ title: Connettersi a PowerShell di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/26/2020
+ms.date: 03/31/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,13 +16,13 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: "Riepilogo: connettersi all'organizzazione di Office 365 con PowerShell di Office 365 per eseguire le attività dell'interfaccia di amministrazione dalla riga di comando."
-ms.openlocfilehash: a1031250919dfa7724bf44ac752684060422d85e
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: Connettersi all'organizzazione di Office 365 con PowerShell di Office 365 per eseguire le attività dell'interfaccia di amministrazione dalla riga di comando.
+ms.openlocfilehash: 642016f734a2a9d7e490d5905a3ed93d7f330ca9
+ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979438"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068758"
 ---
 # <a name="connect-to-office-365-powershell"></a>Connettersi a PowerShell di Office 365
 
@@ -158,9 +158,15 @@ Se non vengono visualizzati errori, controllare i requisiti seguenti:
   ```
 
     Se il numero della versione restituito è inferiore al valore 1.0.8070.2, disinstallare il Modulo di Microsoft Azure Active Directory per Windows PowerShell e installare la versione più recente dal collegamento indicato nel passaggio 1.
-    
+
 - **Se viene visualizzato un errore di connessione, vedere l'argomento:** [Errore "La connessione-MsolService: eccezione di tipo"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
+- **Se viene visualizzato un messaggio di errore "Get-Item: impossibile trovare il percorso", usare questo comando:** 
+
+  ```powershell
+  (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
+ 
+```
 
 ## <a name="see-also"></a>Vedere anche
 
