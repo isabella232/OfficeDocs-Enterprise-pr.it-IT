@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come prepararsi a eseguire il provisioning degli utenti a Office 365 utilizzando la sincronizzazione della directory e i vantaggi a lungo termine dell'utilizzo di questo metodo.
-ms.openlocfilehash: 948db4d5dca8d5deb9844ff9a7ec652653a5ab6b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d2eab22e360ae26543db1774c3b174647f30bcd6
+ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841173"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43093440"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparare la sincronizzazione della directory a Office 365
 
@@ -113,7 +113,7 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
   - Il valore dell'attributo deve essere univoco all'interno della directory.
   
     > [!NOTE]
-    > Carattere di sottolineatura ("_") nel nome sincronizzato indica che il valore originale di questo attributo contiene caratteri non validi. Il valore originale può contenere lettere, numeri e i caratteri!, #, $,%, &,', \*, +,-,/, =,?, ^, _,', {, |,} e ~. Per ulteriori informazioni su questo attributo, vedere [attributo alias di Exchange](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
+    > Carattere di sottolineatura ("_") nel nome sincronizzato indica che il valore originale di questo attributo contiene caratteri non validi. Per ulteriori informazioni su questo attributo, vedere [attributo alias di Exchange](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
     >
       
 - **proxyAddresses**
