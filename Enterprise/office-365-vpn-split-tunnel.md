@@ -3,7 +3,7 @@ title: 'Panoramica: split tunneling per VPN con Office 365'
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/27/2020
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Informazioni su come usare split tunneling per VPN con Office 365 per ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling per VPN.
-ms.openlocfilehash: 3ba52ecdb6e22c234cc0f208ae3ca40b3cb06b6d
-ms.sourcegitcommit: c081928170e2a56bc0627e5ec8174c1152fcc151
+ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
+ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034885"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131435"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling VPN
 <!---
@@ -106,6 +106,8 @@ In molti casi, l'implementazione è possibile in poche ore, il che offre una rap
 [Ottimizzazione delle prestazioni di Office 365 per utenti della Cina](office-365-networking-china.md)
 
 [Modi alternativi per i professionisti della sicurezza e l'IT per ottenere moderni controlli di sicurezza nei particolari scenari odierni di lavoro remoto (blog del team di sicurezza di Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Ottimizzazione delle prestazioni VPN in Microsoft: usare i profili VPN di Windows 10 per consentire connessioni automatiche](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [Esecuzione del servizio VPN: la soluzione Microsoft per mantenere connessa la forza lavoro remota](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
