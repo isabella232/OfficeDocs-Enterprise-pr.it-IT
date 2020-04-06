@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Riepilogo: Utilizzare PowerShell di Office 365 per assegnare impostazioni di comunicazione per utente con criteri Skype for Business online.'
-ms.openlocfilehash: b9bb38b4b93d9b18e46fc1891f52d89fd1ba9c9e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
+ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844267"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "43146811"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Assegnare criteri Skype for Business Online con PowerShell di Office 365
 
@@ -107,6 +107,39 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 Il comando imposta il nome del criterio di accesso esterno assegnato ad Alex su un valore ($Null). Null vuol dire "niente". In altre parole, nessun criterio di accesso esterno viene assegnato ad Alex. Se non viene assegnato alcun criterio di accesso esterno a un utente, quest'ultimo viene gestito dal criterio globale.
   
 Per disabilitare un account utente tramite Windows PowerShell, utilizzare i cmdlet di Azure Active Directory per rimuovere la licenza di Skype for Business Online di Alex. Per ulteriori informazioni, vedere [Disabilitare l'accesso ai servizi con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+
+## <a name="managing-large-numbers-of-users"></a>Gestione di un numero elevato di utenti
+
+Per gestire un numero elevato di utenti (1000 o più), è necessario eseguire il batch dei comandi tramite un blocco di script utilizzando il cmdlet [Invoke-Command](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  Negli esempi precedenti, ogni volta che si esegue un cmdlet, è necessario impostare la chiamata e quindi attendere il risultato prima di inviarlo.  Quando si utilizza un blocco di script, questo consente l'esecuzione remota dei cmdlet e, una volta completata, l'invio dei dati. 
+
+```powershell
+Import-Module LyncOnlineConnector
+$sfbSession = New-CsOnlineSession
+$users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
+
+$batch = 50
+$filter = ''
+$total = $users.Count
+$count = 0
+    $users | ForEach-Object {
+    $upn = $_.UserPrincipalName
+    $filter += "(UserPrincipalName -eq '$upn')"
+    $batch--
+    $count++
+    if (($batch -eq 0) -or ($count -eq $total)) {
+        $filterSB=[ScriptBlock]::Create($filter)
+        Invoke-Command -Session $s -ScriptBlock {param($f) Get-CsOnlineUser -filter $f | Grant-CsClientPolicy -PolicyName "ClientPolicyNoIMURL" -Passthru | Grant-CsExternalAccessPolicy -PolicyName "FederationAndPICDefault"} -ArgumentList $filterSB
+
+        # Reset
+        $batch = 50
+        $filter = ''
+    } else {
+        $filter += " -or "
+    }
+}
+```
+
+In questo modo si troveranno 500 utenti alla volta che non dispongono di un criterio client. Concederà loro il criterio client "ClientPolicyNoIMURL" e il criterio di accesso esterno "FederationAndPicDefault". I risultati vengono inseriti in batch in gruppi di 50 e ogni batch di 50 viene quindi inviato al computer remoto.
   
 ## <a name="see-also"></a>Vedere anche
 
@@ -115,4 +148,3 @@ Per disabilitare un account utente tramite Windows PowerShell, utilizzare i cmdl
 [Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
-
