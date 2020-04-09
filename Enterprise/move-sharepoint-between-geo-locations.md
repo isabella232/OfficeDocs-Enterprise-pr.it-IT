@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni su come trasferire un sito di SharePoint in un'altra posizione geografica.
-ms.openlocfilehash: cf7d0bb73013c776b8cd67579aca334114820743
-ms.sourcegitcommit: 8578eb35b83a38fbf8ae7344e2128ddb6458fe16
+ms.openlocfilehash: 8a842f32091f84d64522526ad5407af8cfd780a9
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175044"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185717"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Trasferire un sito di SharePoint in una posizione geografica diversa
 
@@ -190,17 +190,6 @@ Il client win32 di OneNote e l'app UWP (Universal Windows Platform) rileveranno 
 ### <a name="teams-applicable-to-office-365-group-connected-sites"></a>Teams (applicabile ai siti connessi a gruppi di Office 365)
 
 Al termine del trasferimento geografico del sito di SharePoint, gli utenti avranno accesso ai propri file nel sito del gruppo di Office 365 nell'app Teams. Inoltre, i file condivisi tramite la chat di Teams dal proprio sito prima del trasferimento geografico continueranno a funzionare anche dopo il trasferimento.
-
-Problemi noti:
-
-|Problema|Soluzione alternativa|
-|:----|:---------|
-|I file presenti nella scheda File prima del trasferimento geografico non possono essere aperti in Teams.|Aprire i file da SharePoint.|
-|I file condivisi nelle conversazioni prima del trasferimento geografico non si aprono nella versione desktop di Teams.|Aprire i file dalla scheda File.|
-|La scheda File di canale potrebbe non aprirsi inizialmente dopo il trasferimento geografico.|Aprire di nuovo la scheda File.|
-|Il caricamento di file in una conversazione nel canale potrebbe non funzionare dopo il trasferimento del sito.|Caricare i file tramite la scheda File.|
-|I risultati della ricerca dei file in Teams non verranno visualizzati dopo il trasferimento geografico.|Sfogliare i file tramite la scheda File.|
-|La visualizzazione di Microsoft Teams nell'app File (riquadro di spostamento a sinistra) potrebbe non mostrare i file finché la scheda File del sito trasferito geograficamente non viene aggiornata.|Visitare la scheda File del sito trasferito.|
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>App SharePoint per dispositivi mobili (iOS/Android)
 
