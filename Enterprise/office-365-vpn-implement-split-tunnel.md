@@ -3,7 +3,7 @@ title: Implementazione di split tunneling per VPN per Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2020
+ms.date: 4/8/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Come implementare split tunneling per VPN per Office 365
-ms.openlocfilehash: 5cc8a4ecc124090c50e600a5edcec6d7362e6cf5
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: 72cdef3da872f7886963be80cf2b092a19e017eb
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131445"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185767"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementazione di split tunneling per VPN per Office 365
 
@@ -268,6 +268,7 @@ Se servono altre informazioni per la risoluzione dei problemi o per richiede l'a
 
 Questa sezione fornisce collegamenti a guide dettagliate per l'implementazione di split tunneling per il traffico di Office 365 dai partner più comuni in questo spazio. Ulteriori guide verranno aggiunte non appena rese disponibili.
 
+- **Client VPN per Windows 10**: [ottimizzazione del traffico di Office 365 per i lavoratori remoti con il client VPN di Windows 10 nativo](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco Anyconnect**: [Optimize Anyconnect Split Tunnel per Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**: [Optimizing Office 365 Traffic via VPN Split Tunnel Exclude Access Route](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM**: [Optimizing Office 365 traffic on Remote Access through VPNs when using BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
