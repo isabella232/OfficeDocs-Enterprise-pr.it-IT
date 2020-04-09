@@ -1,5 +1,5 @@
 ---
-title: Valutazione della rete di Office 365 (Preview)
+title: Valutazione della rete Microsoft 365 (Preview)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,30 +13,30 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Valutazione della rete di Office 365 (Preview)
-ms.openlocfilehash: 280046487b116172430df1d15d4bc671fa708e68
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Valutazione della rete Microsoft 365 (Preview)
+ms.openlocfilehash: 2ee18f50e841982e8f677964d2e7e57d95a209d8
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081688"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185747"
 ---
-# <a name="office-365-network-assessment-preview"></a>Valutazione della rete di Office 365 (Preview)
+# <a name="microsoft-365-network-assessment-preview"></a>Valutazione della rete Microsoft 365 (Preview)
 
-Nella pagina connettività di Microsoft 365 Admin Center to Microsoft 365, le **valutazioni di rete** distillano un'aggregazione di molte metriche delle prestazioni di rete in un'istantanea dell'integrità della rete aziendale, rappresentata da un valore punti da 1-100. Le valutazioni di rete sono limitate all'intero tenant e per ogni posizione geografica da cui gli utenti si connettono al tenant, fornendo agli amministratori di Office 365 un modo semplice per afferrare istantaneamente una Gestalt dell'integrità della rete dell'organizzazione e analizzarla rapidamente in una relazione dettagliata per qualsiasi posizione globale dell'ufficio.
+Nella pagina connettività di Microsoft 365 Admin Center to Microsoft 365, le **valutazioni di rete** distillano un'aggregazione di molte metriche delle prestazioni di rete in un'istantanea dell'integrità della rete aziendale, rappresentata da un valore punti da 1-100. Le valutazioni di rete sono limitate all'intero tenant e per ogni posizione geografica da cui gli utenti si connettono al tenant, fornendo agli amministratori di Microsoft 365 un modo semplice per afferrare istantaneamente una Gestalt dell'integrità della rete dell'organizzazione e analizzarla rapidamente in una relazione dettagliata per qualsiasi posizione globale dell'ufficio.
 
 Il valore dei punti di valutazione della rete è una media misura della latenza, della larghezza di banda, della velocità di download e delle metriche di qualità di connessione compilate dal vivo al momento della visualizzazione. Le metriche delle prestazioni per le reti di proprietà di Microsoft sono escluse da queste misure per garantire che i risultati della valutazione siano inequivocabili e specifici per la rete aziendale.
 
 ![Valore di valutazione della rete](Media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-Un valore di valutazione della rete molto basso suggerisce che i client di Office 365 avranno problemi significativi per la connessione al tenant o per il mantenimento di un'esperienza utente reattiva, mentre un valore elevato indica una rete adeguatamente configurata con alcuni problemi di prestazioni in esecuzione. Un valore pari a 80% rappresenta una linea di base sana, in cui non si dovrebbe pretendere di ricevere reclami da un utente regolare sulla connettività di Office 365 o la reattività a causa delle prestazioni di rete. Quando vengono apportati miglioramenti della connettività di rete iterativa, questo valore aumenterà insieme all'esperienza utente.
+Un valore di valutazione della rete molto basso suggerisce che i client Microsoft 365 avranno problemi significativi per la connessione al tenant o per il mantenimento di un'esperienza utente reattiva, mentre un valore elevato indica una rete adeguatamente configurata con alcuni problemi di prestazioni in esecuzione. Un valore pari a 80% rappresenta una linea di base sana in cui non si dovrebbe pretendere di ricevere reclami da un utente regolare sulla connettività di Microsoft 365 o la risposta a causa delle prestazioni di rete. Quando vengono apportati miglioramenti della connettività di rete iterativa, questo valore aumenterà insieme all'esperienza utente.
 
 >[!IMPORTANT]
->Le considerazioni di rete, le raccomandazioni sulle prestazioni e le valutazioni nell'interfaccia di amministrazione di Microsoft 365 sono attualmente in stato di anteprima ed è disponibile solo per i tenant di Office 365 che sono stati registrati nel programma di anteprima delle funzionalità.
+>Insights di rete, raccomandazioni sulle prestazioni e valutazioni nell'interfaccia di amministrazione di Microsoft 365 è attualmente in stato di anteprima ed è disponibile solo per i tenant di Microsoft 365 che sono stati registrati nel programma di anteprima delle funzionalità.
 
 ## <a name="network-assessment-panel"></a>Pannello di valutazione della rete
 
-Ogni valutazione di rete, se ambito del tenant o di una specifica posizione di Office, Visualizza un riquadro con i dettagli relativi alla valutazione. In questo riquadro viene visualizzato un grafico a barre della valutazione, sia in percentuale che come punti totali per ogni carico di lavoro del componente, compresi solo i carichi di lavoro in cui sono stati ricevuti i dati di misurazione. Per una valutazione della rete delle posizioni di Office, viene mostrato anche un benchmark che è la mediana di tutti i client di Office 365 che hanno segnalato dati nella stessa città del percorso dell'ufficio.
+Ogni valutazione di rete, se ambito del tenant o di una specifica posizione di Office, Visualizza un riquadro con i dettagli relativi alla valutazione. In questo riquadro viene visualizzato un grafico a barre della valutazione, sia in percentuale che come punti totali per ogni carico di lavoro del componente, compresi solo i carichi di lavoro in cui sono stati ricevuti i dati di misurazione. Per una valutazione della rete delle posizioni di Office, viene mostrato anche un benchmark che è la mediana di tutti i client Microsoft 365 che hanno segnalato dati nella stessa città del percorso dell'ufficio.
 
 ![Valore di valutazione della rete di esempio](Media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
@@ -48,7 +48,7 @@ La **cronologia di valutazione** indica gli ultimi 30 giorni della valutazione e
 
 Una valutazione della rete misura la progettazione del perimetro di rete di una posizione di Office alla rete di Microsoft. I miglioramenti apportati al perimetro della rete sono migliori in ogni posizione di Office o in cui è possibile aggregare la connettività di rete possono essere presenti miglioramenti che influiscono su più percorsi.
 
-Viene visualizzato un valore di valutazione della rete per l'intero tenant di Office 365 nella pagina Panoramica delle prestazioni di rete e un valore specifico per ogni posizione di Office rilevata nella pagina di riepilogo di tale percorso.
+Viene mostrato un valore di valutazione della rete per l'intero tenant Microsoft 365 nella pagina Panoramica delle prestazioni di rete e un valore specifico per ogni posizione di Office rilevata nella pagina di riepilogo di tale percorso.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -66,8 +66,8 @@ Per Microsoft teams la qualità della rete viene misurata come latenza UDP, jitt
 
 [Suggerimenti relativi alle prestazioni di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)](office-365-network-mac-perf-overview.md)
 
-[Informazioni sulle prestazioni di rete di Office 365 (anteprima)](office-365-network-mac-perf-insights.md)
+[Informazioni sulle prestazioni di rete di Microsoft 365 (anteprima)](office-365-network-mac-perf-insights.md)
 
-[Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 Network onboarding Tool nell'interfaccia di amministrazione di M365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Servizi di localizzazione di connettività di rete di Office 365 (anteprima)](office-365-network-mac-location-services.md)
+[Microsoft 365 servizi di localizzazione della connettività di rete (anteprima)](office-365-network-mac-location-services.md)
