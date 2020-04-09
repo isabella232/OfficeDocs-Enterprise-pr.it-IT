@@ -10,7 +10,7 @@
 |Giappone                        |JPN     |Datacenter Asia orientale o sudorientale|
 |Corea                        |KOR     |Datacenter Asia orientale o sudorientale|
 |Nord America                |NAM     |Datacenter Stati Uniti                    |
-|Sudafrica                 |ZAF     |(Presto disponibile)                     |
-|Svizzera                  |SWE     |(Presto disponibile)                     |
-|Emirati Arabi Uniti         |ARE     |(Presto disponibile)                     |
+|Sudafrica                 |ZAF     |Posizione dei dati in eDiscovery presto disponibile|
+|Svizzera                  |CHE     |Posizione dei dati in eDiscovery presto disponibile|
+|Emirati Arabi Uniti         |ARE     |Posizione dei dati in eDiscovery presto disponibile|
 |Regno Unito               |GBR     |Datacenter Europa                |
