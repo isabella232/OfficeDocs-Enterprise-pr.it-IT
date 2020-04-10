@@ -1,5 +1,5 @@
 ---
-title: Servizi di localizzazione di connettività di rete di Office 365 (anteprima)
+title: Microsoft 365 servizi di localizzazione della connettività di rete (anteprima)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Servizi di localizzazione di connettività di rete di Office 365 (anteprima)
-ms.openlocfilehash: 6deb964955689416219c5b9350ea150ecd4f3b7a
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 servizi di localizzazione della connettività di rete (anteprima)
+ms.openlocfilehash: 13ca35afe4bd375482a9fc924801e240c361bb6b
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081811"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185727"
 ---
-# <a name="office-365-network-connectivity-location-services-preview"></a>Servizi di localizzazione di connettività di rete di Office 365 (anteprima)
+# <a name="microsoft-365-network-connectivity-location-services-preview"></a>Microsoft 365 servizi di localizzazione della connettività di rete (anteprima)
 
-L'interfaccia di amministrazione di Microsoft 365 ora Mostra **informazioni dettagliate sulla rete e sulle prestazioni**, che sono raccolte dal tenant di Office 365 e disponibili per la visualizzazione solo da parte di utenti amministrativi del tenant. La connettività di rete organizzativa è progettata per ogni percorso di Office tramite una posizione di uscita di rete su Internet. La connettività client di Office 365 utilizza tale route e quindi su Internet per i server front door di Microsoft Service. Identificare le posizioni di Office è fondamentale per poter mostrare queste informazioni sulla rete.
+L'interfaccia di amministrazione di Microsoft 365 ora Mostra **informazioni dettagliate sulla rete e sulle prestazioni**, che sono raccolte dal tenant di Microsoft 365 e disponibili per la visualizzazione solo da parte di utenti amministrativi del tenant. La connettività di rete organizzativa è progettata per ogni percorso di Office tramite una posizione di uscita di rete su Internet. La connettività client Microsoft 365 utilizza tale route e quindi su Internet per i server front door di Microsoft Service. Identificare le posizioni di Office è fondamentale per poter mostrare queste informazioni sulla rete.
 
 ## <a name="location-in-network-measurements"></a>Posizione in misure di rete
 

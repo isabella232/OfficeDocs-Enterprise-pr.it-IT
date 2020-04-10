@@ -1,9 +1,9 @@
 ---
-title: Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)
+title: Microsoft 365 Network onboarding Tool nell'interfaccia di amministrazione di M365 (anteprima)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/08/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,28 +13,28 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)
-ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 Network onboarding Tool nell'interfaccia di amministrazione di M365 (anteprima)
+ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081698"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185737"
 ---
-# <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Strumento di onboarding di rete di Office 365 nell'interfaccia di amministrazione di M365 (anteprima)
+# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Microsoft 365 Network onboarding Tool nell'interfaccia di amministrazione di M365 (anteprima)
 
-Lo strumento di onboarding di rete di Office 365 <https://connectivity.office.com>è disponibile all'indirizzo. Si tratta di uno strumento aggiunto alle informazioni sulla rete e sui punteggi di rete disponibili nell'interfaccia di amministrazione di Microsoft 365 nell'area **integrità | Menu prestazioni di rete** .
+Lo strumento di onboarding di rete di Microsoft 365 <https://connectivity.office.com>è disponibile all'indirizzo. Si tratta di uno strumento aggiunto alle informazioni sulla rete e sui punteggi di rete disponibili nell'interfaccia di amministrazione di Microsoft 365 nell'area **integrità | Menu prestazioni di rete** .
 
-Le informazioni sulla rete nell'interfaccia di amministrazione di Microsoft 365 si basano sulle misure del prodotto per il tenant di Office 365. In confronto, le informazioni di rete provenienti dallo strumento di onboarding di rete di Office 365 vengono eseguite localmente nello strumento. Il testing che può essere eseguito in-Product è limitato e eseguendo i test locali all'utente è possibile raccogliere più dati con conseguente approfondimento delle informazioni. Si consideri quindi che l'interfaccia di amministrazione di Microsoft 365 dimostrerà che è presente un problema di rete per l'utilizzo di Office 365 in una posizione specifica di Office. Lo strumento di onboarding di rete di Office 365 può essere utile per identificare la causa principale del problema che porta a un'azione consigliata per il miglioramento delle prestazioni della rete.
+Le informazioni sulla rete nell'interfaccia di amministrazione di Microsoft 365 si basano sulle misure del prodotto per il tenant di Microsoft 365. In confronto, le informazioni di rete provenienti dallo strumento di onboarding di rete di Microsoft 365 vengono eseguite localmente nello strumento. Il testing che può essere eseguito in-Product è limitato e eseguendo i test locali all'utente è possibile raccogliere più dati con conseguente approfondimento delle informazioni. Si consideri quindi che la rete di approfondimenti nell'interfaccia di amministrazione di Microsoft 365 mostrerà che esiste un problema di rete per l'utilizzo di Microsoft 365 in una posizione specifica di Office. Lo strumento di onboarding di rete di Microsoft 365 può contribuire a identificare la causa principale del problema che porta a un'azione di miglioramento delle prestazioni di rete consigliata.
 
-È consigliabile utilizzare questi strumenti insieme in cui è possibile valutare lo stato della qualità di rete per ogni posizione di Office nell'interfaccia di amministrazione di Microsoft 365 e trovare ulteriori specifiche dopo la distribuzione dei test basati sullo strumento di onboarding di rete di Office 365.
+È consigliabile utilizzare questi strumenti insieme in cui è possibile valutare lo stato della qualità di rete per ogni posizione di Office nell'interfaccia di amministrazione di Microsoft 365 e trovare ulteriori informazioni specifiche dopo la distribuzione dei test basati su Microsoft 365 Network onboarding Tool.
 
 >[!IMPORTANT]
->Le considerazioni di rete, le raccomandazioni sulle prestazioni e le valutazioni nell'interfaccia di amministrazione di Microsoft 365 sono attualmente in stato di anteprima ed è disponibile solo per i tenant di Office 365 che sono stati registrati nel programma di anteprima delle funzionalità.
+>Insights di rete, raccomandazioni sulle prestazioni e valutazioni nell'interfaccia di amministrazione di Microsoft 365 è attualmente in stato di anteprima ed è disponibile solo per i tenant di Microsoft 365 che sono stati registrati nel programma di anteprima delle funzionalità.
 
 ## <a name="the-advanced-tests-client-application"></a>Applicazione client test avanzati
 
-Sono disponibili due parti per lo strumento di onboarding di rete di Office 365. È disponibile il sito <https://connectivity.office.com> Web ed è disponibile un'applicazione client Windows scaricabile. Il client scaricabile esegue test di connettività di rete avanzati e la maggior parte dei test richiede l'esecuzione di questa operazione.
+Sono disponibili due parti per lo strumento di onboarding di rete di Microsoft 365. È disponibile il sito <https://connectivity.office.com> Web ed è disponibile un'applicazione client Windows scaricabile. Il client scaricabile esegue test di connettività di rete avanzati e la maggior parte dei test richiede l'esecuzione di questa operazione.
 
 È possibile eseguire il test client avanzato dal sito Web e i risultati vengono inseriti di nuovo nella pagina Web durante l'esecuzione.
 
@@ -54,7 +54,7 @@ Il percorso di uscita della rete è visualizzato sulla visualizzazione mappa e c
 
 La posizione individuata dall'indirizzo IP della rete di uscita potrebbe non essere accurata e ciò porterebbe a un falso risultato di questo test. Per convalidare se questo errore si verifica per uno specifico indirizzo IP, è possibile utilizzare siti Web di indirizzi IP di rete accessibili pubblicamente.
 
-Per la connettività di rete di Office 365 è consigliabile implementare l'uscita di rete locale e diretta dalle posizioni degli utenti di Office a Internet. I miglioramenti apportati alle funzionalità di uscita locali e dirette sono il modo migliore per gestire questa panoramica della rete.
+Per la connettività di rete di Microsoft 365 è consigliata l'implementazione dell'uscita di rete locale e diretta dalle posizioni degli uffici degli utenti a Internet. I miglioramenti apportati alle funzionalità di uscita locali e dirette sono il modo migliore per gestire questa panoramica della rete.
 
 ## <a name="exchange-online-service-front-door"></a>Sportello anteriore del servizio Exchange Online
 
@@ -66,7 +66,7 @@ Viene calcolato un potenziale miglioramento della latenza TCP per il servizio Ex
 
 ## <a name="comparison-of-performance-of-customers-in-the-area"></a>Confronto delle prestazioni dei clienti nell'area
 
-La latenza TCP di rete del percorso dell'utente di Office per il servizio Exchange Online porta anteriore viene confrontata con altri clienti di Office 365 nella stessa area metropolitana. Se il 10% o più clienti della stessa area metropolitana hanno prestazioni migliori, viene visualizzata una panoramica della rete.
+La latenza TCP di rete del percorso dell'utente di Office per il servizio Exchange Online porta anteriore viene confrontata con altri clienti Microsoft 365 nella stessa area metropolitana. Se il 10% o più clienti della stessa area metropolitana hanno prestazioni migliori, viene visualizzata una panoramica della rete.
 
 Questo Network Insight è generato sulla base del fatto che tutti gli utenti di una città abbiano accesso alla stessa infrastruttura di telecomunicazioni e alla stessa vicinanza ai circuiti Internet e alla rete di Microsoft.
 
@@ -92,11 +92,11 @@ Questo Network Insight avrà un impatto specifico sulla selezione del servizio E
 
 ## <a name="dns-lookup-of-exchange-online-front-end-server-and-sharepoint-online-front-end-server"></a>Ricerca DNS di Exchange Online front end server e SharePoint Online front end server
 
-Questi mostrano il record DNS per il servizio porta di ingresso per i due carichi di lavoro di Office 365. Sono disponibili solo per informazioni e non è disponibile un'analisi di rete associata.
+Questi mostrano il record DNS per il servizio porta di ingresso per i due carichi di lavoro Microsoft 365. Sono disponibili solo per informazioni e non è disponibile un'analisi di rete associata.
 
 ## <a name="proxy-server-identification"></a>Identificazione del server proxy
 
-Vengono identificati i server proxy configurati nel computer locale. Si identifica se una di queste impostazioni è configurata nel percorso di rete per ottimizzare il traffico di rete di Office 365. È possibile identificare la distanza tra la posizione dell'ufficio utente e i server proxy. La distanza viene testata prima dal ping ICMP e, in caso di esito negativo, viene testato con il ping TCP e, infine, se si verifica un errore, si cerca l'indirizzo IP del server proxy in un database del percorso dell'indirizzo IP. Viene visualizzata una panoramica della rete se il server proxy è oltre 500 miglia (800 km) dalla posizione dell'ufficio utenti.
+Vengono identificati i server proxy configurati nel computer locale. Si identifica se una di queste impostazioni è configurata nel percorso di rete per ottimizzare il traffico di rete di Microsoft 365. È possibile identificare la distanza tra la posizione dell'ufficio utente e i server proxy. La distanza viene testata prima dal ping ICMP e, in caso di esito negativo, viene testato con il ping TCP e, infine, se si verifica un errore, si cerca l'indirizzo IP del server proxy in un database del percorso dell'indirizzo IP. Viene visualizzata una panoramica della rete se il server proxy è oltre 500 miglia (800 km) dalla posizione dell'ufficio utenti.
 
 ## <a name="media-quality-checks"></a>Controlli qualità multimediale
 
@@ -106,13 +106,13 @@ Questi sono i test del protocollo UDP usati da Microsoft teams audio and video c
 
 ## <a name="tcp-connectivity-tests"></a>Test di connettività TCP
 
-Testiamo la connettività HTTP dalla posizione dell'ufficio utenti a tutti gli endpoint di rete di Office 365 necessari. Questi sono pubblicati su [https://aka.ms/o365ip](https://aka.ms/o365ip). Viene visualizzata una panoramica della rete per tutti gli endpoint di rete necessari che non possono essere connessi.
+Testiamo la connettività HTTP dal percorso dell'utente a tutti gli endpoint di rete Microsoft 365 necessari. Questi sono pubblicati su [https://aka.ms/o365ip](https://aka.ms/o365ip). Viene visualizzata una panoramica della rete per tutti gli endpoint di rete necessari che non possono essere connessi.
 
 La connettività ay deve essere bloccata da un server proxy, un firewall o un altro dispositivo di sicurezza di rete nel perimetro della rete aziendale o in uso come proxy cloud.
 
 ## <a name="ssl-interception-tests"></a>Test di intercettazione SSL
 
-Testiamo il certificato SSL a ogni endpoint di rete di Office 365 obbligatorio che si trova nella categoria ottimizza o Consenti come [https://aka.ms/o365ip](https://aka.ms/o365ip)definito in. Se i test non trovano un certificato SSL Microsoft, è necessario che la rete crittografata connessa sia stata intercettata da un dispositivo di rete intermediario. Un'analisi di rete viene visualizzata su tutti gli endpoint di rete crittografati intercettati.
+Testiamo il certificato SSL a ogni endpoint di rete Microsoft 365 necessario che si trova nella categoria ottimizza o Consenti come definito [https://aka.ms/o365ip](https://aka.ms/o365ip)in. Se i test non trovano un certificato SSL Microsoft, è necessario che la rete crittografata connessa sia stata intercettata da un dispositivo di rete intermediario. Un'analisi di rete viene visualizzata su tutti gli endpoint di rete crittografati intercettati.
 
 Quando viene rilevato un certificato SSL non fornito da Microsoft, viene visualizzato il nome di dominio completo per il test e il proprietario del certificato SSL in uso. Questo proprietario del certificato SSL può essere un fornitore del server proxy oppure un certificato autofirmato Enterprise.
 
@@ -120,12 +120,34 @@ Quando viene rilevato un certificato SSL non fornito da Microsoft, viene visuali
 
 In questa sezione vengono illustrati i risultati di un traceroute ICMP per il servizio Exchange Online, la porta di ingresso del servizio SharePoint Online e il servizio Microsoft teams front door. Viene fornito solo per informazioni e non è presente un'analisi di rete associata.
 
+## <a name="faq"></a>Domande frequenti
+
+Di seguito sono riportate alcune delle risposte alle domande più frequenti.
+
+### <a name="is-this-tool-released-and-supported-by-microsoft"></a>Questo strumento è stato rilasciato e supportato da Microsoft?
+
+Attualmente è una prova del concetto e noi intendiamo fornire aggiornamenti regolarmente fino a raggiungere lo stato di rilascio generale di disponibilità con il supporto di Microsoft. Si prega di fornire commenti e suggerimenti per migliorare. Si prevede di pubblicare una guida di onboarding di rete di Office 365 più dettagliata come parte di questo strumento, personalizzato per l'organizzazione in base ai risultati dei test.
+
+### <a name="what-is-microsoft-365-service-front-door"></a>Che cos'è Microsoft 365 Service front door?
+
+Microsoft 365 Service front door è un punto di ingresso sulla rete globale di Microsoft in cui i client e i servizi di Office terminano la connessione di rete. Per una connessione di rete ottimale a Microsoft 365, è consigliabile che la connessione di rete venga interrotta nella porta principale più vicina di Microsoft 365 nella propria città o nella metropolitana.
+
+Nota: Microsoft 365 Service front door non ha alcuna relazione diretta con il prodotto "Azure front door Service" disponibile in Azure Marketplace.
+
+### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Che cos'è un'ottima porta di servizio di Microsoft 365 Service?
+
+Un'ottima porta di servizio di Microsoft 365 Service è quella più vicina all'uscita di rete, in genere nella propria area urbana o metropolitana. Utilizzare lo strumento di prestazioni di rete Microsoft 365 per determinare la posizione della porta anteriore del servizio Microsoft 365 e la porta anteriore del servizio ottimale. Se lo strumento determina che la porta principale in uso è ottimale, è possibile connettersi in modo ottimale alla rete globale di Microsoft.
+
+### <a name="what-is-an-internet-egress-location"></a>Che cos'è un percorso di uscita Internet?
+
+La posizione di uscita Internet è il percorso in cui il traffico di rete esce dalla rete aziendale e si connette a Internet. Questo è anche identificato come il percorso in cui si dispone di un dispositivo NAT (Network Address Translation) e in genere dove si è connessi con un provider di servizi Internet (ISP). Se si vede una distanza interurbana tra la posizione e la posizione di uscita Internet, potrebbe essere possibile identificare una significativa backhaul WAN.
+
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Suggerimenti relativi alle prestazioni di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)](office-365-network-mac-perf-overview.md)
 
-[Informazioni sulle prestazioni di rete di Office 365 (anteprima)](office-365-network-mac-perf-insights.md)
+[Informazioni sulle prestazioni di rete di Microsoft 365 (anteprima)](office-365-network-mac-perf-insights.md)
 
-[Valutazione della rete di Office 365 (Preview)](office-365-network-mac-perf-score.md)
+[Valutazione della rete Microsoft 365 (Preview)](office-365-network-mac-perf-score.md)
 
-[Servizi di localizzazione di connettività di rete di Office 365 (anteprima)](office-365-network-mac-location-services.md)
+[Microsoft 365 servizi di localizzazione della connettività di rete (anteprima)](office-365-network-mac-location-services.md)
