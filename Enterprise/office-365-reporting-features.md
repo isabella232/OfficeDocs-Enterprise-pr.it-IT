@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Una spiegazione delle funzionalità di Reporting all'interno di Office 365.
-ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7816ed231a3e38f618fb3f63f77dc24c9eed37c3
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842033"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206553"
 ---
 # <a name="office-365-reporting-features"></a>Funzionalità di creazione di report di Office 365 
 
@@ -30,7 +30,7 @@ La caratteristica rapporti di Office 365 fornisce diversi rapporti di controllo 
 
 ## <a name="office-365-reports-dashboard"></a>Dashboard di report di Office 365
 
-Il dashboard report nell'anteprima dell'interfaccia di amministrazione di Microsoft 365 Visualizza l'attività di utilizzo in Office 365. Gli amministratori globali di Office 365 o un amministratore di Exchange Online, SharePoint Online o Skype for business possono ottenere informazioni dettagliate sull'utilizzo del servizio. Ad esempio, il numero di utenti di un determinato servizio di Office 365, il numero di utenti che hanno attivato Office Professional Plus e la quantità di posta che scorre nell'organizzazione. I report sono disponibili per gli ultimi 7, 30, 90 e 180 giorni.
+Il dashboard report nell'anteprima dell'interfaccia di amministrazione di Microsoft 365 Visualizza l'attività di utilizzo in Office 365. Gli amministratori globali di Office 365 o un amministratore di Exchange Online, SharePoint Online o Skype for business possono ottenere informazioni dettagliate sull'utilizzo del servizio. Ad esempio, il numero di utenti di un determinato servizio di Office 365, il numero di utenti che hanno attivato Office 365 ProPlus e la quantità di posta che scorre nell'organizzazione. I report sono disponibili per gli ultimi 7, 30, 90 e 180 giorni.
 
 Sono disponibili i report seguenti:
 
