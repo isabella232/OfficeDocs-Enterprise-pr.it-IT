@@ -3,7 +3,7 @@ title: Microsoft 365 Network onboarding Tool nell'interfaccia di amministrazione
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/08/2020
+ms.date: 04/10/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network onboarding Tool nell'interfaccia di amministrazione di M365 (anteprima)
-ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
+ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185737"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225699"
 ---
 # <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Microsoft 365 Network onboarding Tool nell'interfaccia di amministrazione di M365 (anteprima)
 
 Lo strumento di onboarding di rete di Microsoft 365 <https://connectivity.office.com>è disponibile all'indirizzo. Si tratta di uno strumento aggiunto alle informazioni sulla rete e sui punteggi di rete disponibili nell'interfaccia di amministrazione di Microsoft 365 nell'area **integrità | Menu prestazioni di rete** .
+
+>[!NOTE]
+>Lo strumento di onboarding supporta i tenant in WW Commercial e GCC moderato ma non GCC High, DoD, Germany o China.
 
 Le informazioni sulla rete nell'interfaccia di amministrazione di Microsoft 365 si basano sulle misure del prodotto per il tenant di Microsoft 365. In confronto, le informazioni di rete provenienti dallo strumento di onboarding di rete di Microsoft 365 vengono eseguite localmente nello strumento. Il testing che può essere eseguito in-Product è limitato e eseguendo i test locali all'utente è possibile raccogliere più dati con conseguente approfondimento delle informazioni. Si consideri quindi che la rete di approfondimenti nell'interfaccia di amministrazione di Microsoft 365 mostrerà che esiste un problema di rete per l'utilizzo di Microsoft 365 in una posizione specifica di Office. Lo strumento di onboarding di rete di Microsoft 365 può contribuire a identificare la causa principale del problema che porta a un'azione di miglioramento delle prestazioni di rete consigliata.
 
