@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: La terminazione del supporto per Project Server 2010 termina il 13 aprile 2021. Utilizzare questo articolo come guida per l'aggiornamento a Project online o a una versione più recente di Project Server locale.
-ms.openlocfilehash: b9cb6c08a2eacc794ace5f9d983120c29820df14
-ms.sourcegitcommit: ae9220b36041395a786a48d04c09eafd8ebe76d0
+ms.openlocfilehash: 3c60763576d75e62c39fe202523d22550acd2f3c
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240526"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503834"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Guida di orientamento alla fine del supporto di Project Server 2010
 
@@ -33,9 +33,9 @@ Project Server 2010 raggiungerà la fine del supporto il **13 aprile 2021**. Que
   
 |**Prodotto**|**Data di fine del supporto**|
 |:-----|:-----|
-|Project Portfolio Server 2010  <br/> |13 ottobre 2020  <br/> |
-|Project 2010 standard  <br/> |13 ottobre 2020  <br/> |
+|Project 2010 standard <br/> |13 ottobre 2020  <br/> |
 |Project 2010 Professional  <br/> |13 ottobre 2020  <br/> |
+
    
 Per ulteriori informazioni sui server di Office 2010 che raggiungono la fine del supporto, vedere [upgrade from office 2010 Servers and client Products](https://docs.microsoft.com/office365/enterprise/plan-upgrade-previous-versions-office).
   
