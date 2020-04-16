@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: Posizioni dei dati di Office 365'
-ms.openlocfilehash: 5db3c97914f9c5bdcf4389637494a421ad57de64
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206599"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516537"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -120,6 +120,7 @@ Per i data center specifici per paese o area geografica, di seguito sono indicat
 | India | Chennai, Mumbai, Pune |
 | Giappone | Osaka, Tokyo, Saitama |
 | Corea del Sud | Busan, Seoul |
+| Norvegia | Oslo, Stavanger |
 | Sudafrica | Capetown, Johannesburg |
 | Svizzera | Ginevra, Zurigo |
 | Emirati Arabi Uniti | Dubai, Abu Dhabi |
@@ -3928,18 +3929,18 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 
 | Servizio | Posizione |
 | --- | --- |
-| Exchange Online | Area geografica globale 1 - EMEA |
-| OneDrive for Business | Area geografica globale 1 - EMEA |
-| SharePoint Online | Area geografica globale 1 - EMEA |
+| Exchange Online | Norvegia |
+| OneDrive for Business | Norvegia |
+| SharePoint Online | Norvegia |
 | Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
-| Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
-| EOP | Area geografica globale 1 - EMEA |
-| MyAnalytics | Area geografica globale 1 - EMEA |
-| Planner | Area geografica globale 1 - EMEA |
+| Microsoft Teams | Norvegia |
+| Office Online &amp; Mobile | Norvegia |
+| EOP | Norvegia |
+| MyAnalytics | Norvegia |
+| Programmazione | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
-| Servizi di OneNote | Area geografica globale 1 - EMEA |
+| Servizi di OneNote | Norvegia |
 | Stream | Area geografica globale 1 - EMEA |
 | Whiteboard | Stati Uniti |
 | Forms | Area geografica globale 1 - EMEA |
