@@ -13,20 +13,20 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi di Office 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi Microsoft 365 partecipanti vengano spostati nel nuovo geografico.
+ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106227"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516567"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
 > [!NOTE]
-> Le informazioni contenute in questa pagina sono valide solo per i clienti che avevano già inquilini di Office 365 prima che i nuovi datacenter venissero avviati in Geo. 
+> Le informazioni contenute in questa pagina si applicano solo ai clienti che avevano già inquilini Microsoft 365 prima che i nuovi Data Center venissero introdotti nel loro Geo. 
   
-I clienti di Office 365 esistenti sono idonei a richiedere la migrazione anticipata per i dati del cliente principale dell'intera organizzazione a riposo.  
+I clienti esistenti di Microsoft 365 sono idonei a richiedere la migrazione per i dati del cliente principale dell'intera organizzazione a riposo.  
   
 ## <a name="when-can-i-request-a-move"></a>Quando è possibile richiedere un trasferimento?
 
@@ -43,6 +43,7 @@ I clienti di Office 365 esistenti sono idonei a richiedere la migrazione anticip
 |Sudafrica  <br/> |25 luglio 2019  <br/> |30 giugno 2020  <br/> |
 |Svizzera, Liechtenstein  <br/> |10 dicembre 2019  <br/> |30 giugno 2020  <br/> |
 |Germania  <br/> |Pianificata  <br/> |Pianificata  <br/> |
+|Norvegia  <br/> |15 aprile 2020  <br/> |31 ottobre 2020  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Come richiedere uno spostamento
 
@@ -55,7 +56,7 @@ Selezionare il **profilo organizzazione**scheda, quindi selezionare l'opzione **
 - Il tenant non è idoneo per il programma di spostamento di Office 365.  L'eleggibilità è determinata dal paese di iscrizione del tenant.
 - Tutti i dati dei clienti di base a Rest sono già presenti nel nuovo Geo (vedere la sezione Data location della pagina). 
   
-Se nell'organizzazione sono presenti requisiti di residenza dei dati ed è necessario richiedere la migrazione anticipata, fare clic su **opt-in** in alto a destra della sezione. Sul lato destro dello schermo viene visualizzata una nuova sezione in cui vengono illustrati i dettagli del programma di spostamento di Office 365. Selezionare il pulsante Toggle accanto al testo che indica che **i dati del cliente principale dell'organizzazione devono essere migrati a riposo**. Fare quindi clic su **Salva**.
+Se nell'organizzazione sono presenti requisiti di residenza dei dati ed è necessario richiederne la migrazione, fare clic su **opt-in** in alto a destra della sezione. Sul lato destro dello schermo viene visualizzata una nuova sezione in cui vengono illustrati i dettagli del programma Microsoft 365 Move. Selezionare il pulsante Toggle accanto al testo che indica che **i dati del cliente principale dell'organizzazione devono essere migrati a riposo**. Fare quindi clic su **Salva**.
   
 ![Schermata di operazione di consenso per il datacenter](media/dataresidencyflyoutae.jpg)
   
@@ -71,35 +72,7 @@ Gli spostamenti possono richiedere fino a 24 mesi dalla data di scadenza richies
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-A gennaio 2020, i clienti nei paesi di Office 365 idonei possono scegliere l'opzione per la migrazione dei dati del servizio chat di Microsoft teams.  Le sequenze temporali di opt-in sono state riaperte o estese per tutti i paesi idonei a offrire ai clienti la possibilità di prendere in considerazione il programma di migrazione precoce con Microsoft teams nell'ambito.   
-
-## <a name="optional-actions-before-you-request-a-move"></a>Azioni facoltative prima di richiedere uno spostamento
-
-Eseguire i passaggi seguenti in base alle esigenze.
-  
-### <a name="if-you-use-an-ip-based-firewall-add-allow-rules-for-the-new-ip-addresses"></a>Se si utilizza un firewall basato su IP, aggiungere le regole Consenti per i nuovi indirizzi IP
-
-È consigliabile utilizzare il filtro DNS per i firewall anziché gli indirizzi IP. Non sono necessarie nuove voci DNS.
-  
-Se si utilizza un firewall basato su IP per la connettività Internet, è necessario aggiungere le regole Allow per i nuovi indirizzi IP per il datacenter di destinazione Geo. Gli indirizzi IP per il nuovo datacenter GEOS oltre ai nuovi server vengono continuamente aggiunti agli [intervalli di indirizzi IP e URL di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=229631).
-  
-Consultare la documentazione del firewall per informazioni su come aggiungere regole di autorizzazione (note anche come whitelist).
-  
-Dopo aver aggiunto gli indirizzi IP, potrebbe essere necessario testare la connettività al nuovo Data Center Geo. A tale scopo, si consiglia di creare un nuovo tenant di [prova gratuito di 30 giorni](https://go.microsoft.com/fwlink/?LinkId=522463) non appena il nuovo datacenter Geo è disponibile. 
-  
-### <a name="test-using-a-new-tenant"></a>Verificare l'utilizzo di un nuovo tenant
-
-Se si desidera testare la connettività prima dello spostamento, è possibile configurare un [nuovo tenant di prova gratuito di 30 giorni](https://go.microsoft.com/fwlink/?LinkId=522463) dopo che è disponibile il nuovo Data Center Geo e utilizzarlo per l'esperienza di Office 365 ospitato nel nuovo datacenter Geo. 
-  
-Il tenant di valutazione non può essere combinato con il tenant esistente:
-  
-- Gli utenti devono utilizzare un account di prova separato per il testing.
-    
-- Non esiste alcun modo per spostare i dati tra i tenant.
-    
-### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notificare agli utenti di aggiornare le impostazioni di Exchange obsolete nei dispositivi mobili
-
-Se gli utenti dispongono di un dispositivo mobile con il server Exchange impostato su **m.Outlook.com** o **podxxxxx.Outlook.com**, è consigliabile passare a **Outlook.office365.com**, seguendo le istruzioni riportate in [configurare un dispositivo mobile per la sincronizzazione con l'account](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+A gennaio 2020, i clienti nei paesi di Office 365 idonei possono scegliere l'opzione per la migrazione dei dati del servizio chat di Microsoft teams.  Le sequenze temporali di opt-in sono state riaperte o estese per tutti i paesi idonei a offrire ai clienti la possibilità di prendere in considerazione il programma di migrazione con Microsoft teams nell'ambito. I clienti che in precedenza hanno optato per una mossa di residenza dei dati avranno anche i team che si spostano nel datacenter geografico locale.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

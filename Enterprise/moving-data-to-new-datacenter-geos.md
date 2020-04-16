@@ -1,5 +1,5 @@
 ---
-title: Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS
+title: Spostamento dei dati di base in un nuovo datacenter di Microsoft 365 GEOS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: "Nuovo datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescente domanda e la crescita dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle condizioni dei servizi online Microsoft: contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica) e contenuto del sito di SharePoint Online e file archiviati all'interno del sito e i file caricati in OneDrive for business."
-ms.openlocfilehash: 0efe43b61351d89452abb9a114b37f8df9d79ec2
-ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
+description: "Nuovo datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescente domanda e la crescita dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. I dati dei clienti principali sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle condizioni dei servizi online Microsoft: il contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, le voci del calendario e il contenuto degli allegati di posta elettronica) e il contenuto del sito di SharePoint Online e i file archiviati all'interno del sito e i file caricati in OneDrive"
+ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417051"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516547"
 ---
-# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Spostamento dei dati di base in un nuovo datacenter di Office 365 GEOS
+# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Spostamento dei dati di base in un nuovo datacenter di Microsoft 365 GEOS
 
-Si continua ad aprire nuovo datacenter GEOS per i servizi di Office 365 for business. Questi nuovi datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescita della domanda e dell'utilizzo dei clienti in continua espansione. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. 
+Si continua ad aprire nuovo datacenter GEOS per i servizi Microsoft 365. Questi nuovi datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescita della domanda e dell'utilizzo dei clienti in continua espansione. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. 
 
 I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti, tra cui: 
 - Contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica)
@@ -46,22 +46,21 @@ I clienti esistenti che dispongono di dati di base dei clienti archiviati in un 
 |**Sudafrica**| Europa | Sudafrica | Luglio 2019 |
 |**Svizzera, Liechtenstein**| Europa | Svizzera | Dicembre 2019 |
 |**Germania**| Europa | Germania | Dicembre 2019 |
+|**Norvegia**| Europa | Norvegia | 2020 aprile |
   
 I nuovi clienti o i tenant di Office 365 creati dopo la disponibilità del nuovo datacenter Geo avranno i dati di base dei clienti archiviati a riposo nel nuovo datacenter Geo automaticamente.
 
 
 >[!Note]
->Nel dicembre 2019 è stata avviata la regione datacenter Germania. I nuovi clienti di Office 365 con un indirizzo di registrazione tedesco associato al tenant avranno i dati di base dei clienti archiviati a riposo in Germania. Intendiamo offrire la migrazione dall'Europa alla Germania per i clienti tedeschi in futuro. Oggi, i clienti di Microsoft Cloud Germany/Deutschland possono richiedere la migrazione ai servizi di Office 365 nelle nuove aree del datacenter tedesco. Per ulteriori informazioni [, vedere l'opzione di opt-in per la migrazione da Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 Services nelle nuove aree del datacenter tedesco](https://aka.ms/office365germanymoveoptin) .
+>Nel dicembre 2019 è stata avviata la regione datacenter Germania. I nuovi clienti di Microsoft 365 con un indirizzo di registrazione tedesco associato al tenant avranno i dati di base dei clienti archiviati a riposo in Germania. Intendiamo offrire la migrazione dall'Europa alla Germania per i clienti tedeschi in futuro. Oggi, i clienti di Microsoft Cloud Germany/Deutschland possono richiedere la migrazione ai servizi di Office 365 nelle nuove aree del datacenter tedesco. Per ulteriori informazioni [, vedere l'opzione di opt-in per la migrazione da Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 Services nelle nuove aree del datacenter tedesco](https://aka.ms/office365germanymoveoptin) .
 >
   
 Un elenco completo di tutti i datacenter GEOS, Datacenter e la posizione dei dati del cliente a riposo è disponibile come parte delle [mappe dei datacenter interattivi](https://office.com/datamaps). 
   
 ## <a name="data-residency-option"></a>Opzione di residenza dei dati
 
-È disponibile un'opzione di data Residency per i clienti di Office 365 esistenti che sono coperti dal centro dati GEOS elencato nella tabella precedente. Con questa opzione, i clienti con requisiti di residenza dei dati possono richiedere la migrazione precoce dei dati del cliente principale dell'organizzazione a riposo per il nuovo datacenter Geo.  Microsoft offrirà una scadenza impegnata a tutti i clienti idonei che richiedono la migrazione precoce durante la finestra di registrazione.  Esaminare la pagina [come richiedere lo spostamento dei dati](request-your-data-move.md) per ulteriori informazioni sulla finestra di registrazione per la propria Geo e la procedura da eseguire per iscriversi al programma.  Gli spostamenti di dati possono richiedere fino a 24 mesi dopo il completamento del periodo di richieste.
+È disponibile un'opzione per la residenza dei dati per i clienti esistenti di Microsoft 365 che sono coperti dal Data Center GEOS elencato nella tabella precedente. Con questa opzione, i clienti con requisiti di residenza dei dati possono richiedere la migrazione precoce dei dati del cliente principale dell'organizzazione a riposo per il nuovo datacenter Geo.  Microsoft offrirà una scadenza impegnata a tutti i clienti idonei che richiedono la migrazione precoce durante la finestra di registrazione.  Esaminare la pagina [come richiedere lo spostamento dei dati](request-your-data-move.md) per ulteriori informazioni sulla finestra di registrazione per la propria Geo e la procedura da eseguire per iscriversi al programma.  Gli spostamenti di dati possono richiedere fino a 24 mesi dopo il completamento del periodo di richieste.
 
-La mancata esecuzione dei risultati di azione in Microsoft è in grado di spostare i dati dei clienti di base a riposo nel nuovo Data Center Geo nel tempo come parte della gestione e dell'ottimizzazione del servizio.I dati di base dei clienti possono essere spostati solo sul nuovo datacenter Geo, non su qualsiasi altro geografico.Gli amministratori del tenant verranno informati tramite il centro messaggi quando tale spostamento di gestione dei servizi è stato completato e l'aggiornamento della posizione dati nell'interfaccia di amministrazione.
-   
 Non sono presenti funzionalità esclusive, funzionalità o certificazioni di conformità con il nuovo Data Center Geo.
     
 La complessità, la precisione e la scalabilità in cui è necessario eseguire lo spostamento dei dati in un ambiente automatizzato e gestito a livello globale impediscono la condivisione quando si prevede che lo spostamento dei dati venga completato per il tenant o per qualsiasi altro tenant. I clienti riceveranno una conferma nel centro messaggi per ogni servizio di partecipazione quando il relativo spostamento dei dati è stato completato. 
