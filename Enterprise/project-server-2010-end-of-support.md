@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: La terminazione del supporto per Project Server 2010 termina il 13 aprile 2021. Utilizzare questo articolo come guida per l'aggiornamento a Project online o a una versione più recente di Project Server locale.
-ms.openlocfilehash: 3c60763576d75e62c39fe202523d22550acd2f3c
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 069675eef7190cf815147bc74dcced2943d2c956
+ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503834"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43532279"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Guida di orientamento alla fine del supporto di Project Server 2010
 
@@ -41,7 +41,7 @@ Per ulteriori informazioni sui server di Office 2010 che raggiungono la fine del
   
 ## <a name="what-does-end-of-support-mean"></a>Cosa significa fine del supporto?
 
-Project Server, come quasi tutti i prodotti Microsoft, ha un ciclo di vita di supporto durante il quale vengono fornite nuove funzionalità, correzioni di bug e aggiornamenti della sicurezza. Questo ciclo di vita di solito dura 10 anni a partire dalla data di rilascio iniziale del prodotto e la fine di questo ciclo di vita è nota come fine del prodotto di supporto. Quando Project Server 2010 raggiunge la fine del supporto il 13 ottobre 2020, Microsoft non fornirà più:
+Project Server, come quasi tutti i prodotti Microsoft, ha un ciclo di vita di supporto durante il quale vengono fornite nuove funzionalità, correzioni di bug e aggiornamenti della sicurezza. Questo ciclo di vita di solito dura 10 anni a partire dalla data di rilascio iniziale del prodotto e la fine di questo ciclo di vita è nota come fine del prodotto di supporto. Quando Project Server 2010 raggiunge la fine del supporto del 13 aprile 2021, Microsoft non fornirà più:
   
 - Supporto tecnico per i problemi che possono verificarsi.
     
