@@ -1,7 +1,7 @@
 ---
 title: Spostamento dei dati di base in un nuovo datacenter di Microsoft 365 GEOS
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: "Nuovo datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescente domanda e la crescita dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. I dati dei clienti principali sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle condizioni dei servizi online Microsoft: il contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, le voci del calendario e il contenuto degli allegati di posta elettronica) e il contenuto del sito di SharePoint Online e i file archiviati all'interno del sito e i file caricati in OneDrive"
-ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516547"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547724"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Spostamento dei dati di base in un nuovo datacenter di Microsoft 365 GEOS
 
@@ -46,7 +46,7 @@ I clienti esistenti che dispongono di dati di base dei clienti archiviati in un 
 |**Sudafrica**| Europa | Sudafrica | Luglio 2019 |
 |**Svizzera, Liechtenstein**| Europa | Svizzera | Dicembre 2019 |
 |**Germania**| Europa | Germania | Dicembre 2019 |
-|**Norvegia**| Europa | Norvegia | 2020 aprile |
+|**Norvegia**| Europa | Norvegia | Aprile 2020 |
   
 I nuovi clienti o i tenant di Office 365 creati dopo la disponibilità del nuovo datacenter Geo avranno i dati di base dei clienti archiviati a riposo nel nuovo datacenter Geo automaticamente.
 
