@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Informazioni su come usare split tunneling per VPN con Office 365 per ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling per VPN.
-ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: d8f8d4364804395cd10eceb1aa55422f01cbe079
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131435"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547654"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling VPN
 <!---
@@ -32,7 +32,7 @@ ms.locfileid: "43131435"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
-Microsoft consiglia ai lavoratori remoti che connettono i propri dispositivi all'infrastruttura cloud o alla rete aziendale tramite VPN, di instradare gli scenari principali di Office 365 **Microsoft Teams**, **SharePoint Online** ed **Exchange Online** su una configurazione di _split tunneling per VPN_. Questa soluzione assume particolare rilevanza come strategia da attuare per favorire la continuità produttiva dei dipendenti quando si fa uso del lavoro da casa su larga scala come sta avvenendo per la pandemia di COVID-19.
+Microsoft consiglia ai lavoratori remoti che connettono i propri dispositivi all'infrastruttura cloud o alla rete aziendale tramite VPN, di instradare gli scenari principali di Office 365 **Microsoft Teams**, **SharePoint Online** ed **Exchange Online** su una configurazione di _split tunneling per VPN_. Questa soluzione assume particolare rilevanza come strategia da attuare per favorire la continuità produttiva dei dipendenti quando si fa uso del telelavoro su larga scala, come sta avvenendo per la crisi COVID-19.
 
 ![Configurazione di split tunneling per VPN](media/vpn-split-tunnelling/vpn-model-2.png)
 

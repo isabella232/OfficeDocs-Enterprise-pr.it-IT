@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Come implementare split tunneling per VPN per Office 365
-ms.openlocfilehash: 81412e5f64f143949ef1cbca7b030f643cbace03
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516487"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547664"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementazione di split tunneling per VPN per Office 365
 
@@ -41,7 +41,7 @@ L'uso di VPN con tunnel forzato per la connessione ad applicazioni cloud distrib
 
 Il problema aumenta già da diversi anni, con molti clienti che segnalano un cambiamento significativo dei modelli di traffico di rete. Il traffico che in passato restava in locale, ora si connette a endpoint del cloud esterno. Molti clienti Microsoft segnalano che, in precedenza, circa l'80% del traffico di rete era associato a un'origine interna, rappresentata dalla riga punteggiata nel diagramma precedente. Nel 2020 la percentuale è scesa a meno del 20%, perché i clienti hanno spostato i principali carichi di lavoro nel cloud. Questa tendenza è comune anche ad altre aziende. Con il graduale passaggio al cloud, il modello precedente risulta sempre più lento e insostenibile e ciò impedisce alle aziende di essere agili nel loro passaggio a un ambiente cloud-first.
 
-La pandemia di COVID-19 ha aumentato il problema, per cui ora è necessario un intervento immediato. La necessità di garantire la sicurezza dei dipendenti ha generato richieste senza precedenti all'IT aziendale per supportare la produttività lavorativa da casa su vasta scala. Microsoft Office 365 si trova in una posizione ottimale per consentire ai clienti di soddisfare la richiesta, ma l'alta livello di simultaneità degli utenti che lavorano da casa genera una grande quantità di traffico di Office 365, che, se instradato attraverso il tunnel VPN forzato e nel perimetro di rete locale, provoca una rapida saturazione e l'esaurimento di capacità dell'infrastruttura VPN. In questa nuova realtà, l'uso della VPN per accedere a Office 365 non è più solo un ostacolo alle prestazioni, ma un limite il cui impatto riguarda non solo Office 365, ma anche tutte le operazioni aziendali critiche che si avvalgono di VPN per funzionare.
+La crisi COVID-19 mondiale ha aggravato il problema, per cui ora è necessario un intervento immediato. La necessità di garantire la sicurezza dei dipendenti ha generato richieste senza precedenti all'IT aziendale per supportare la produttività lavorativa da casa su vasta scala. Microsoft Office 365 si trova in una posizione ottimale per consentire ai clienti di soddisfare la richiesta, ma l'alta livello di simultaneità degli utenti che lavorano da casa genera una grande quantità di traffico di Office 365, che, se instradato attraverso il tunnel VPN forzato e nel perimetro di rete locale, provoca una rapida saturazione e l'esaurimento di capacità dell'infrastruttura VPN. In questa nuova realtà, l'uso della VPN per accedere a Office 365 non è più solo un ostacolo alle prestazioni, ma un limite il cui impatto riguarda non solo Office 365, ma anche tutte le operazioni aziendali critiche che si avvalgono di VPN per funzionare.
 
 Microsoft collabora attivamente con i clienti e con il settore più ampio da molti anni, per offrire soluzioni efficaci e moderne a questi problemi all'interno dei propri servizi, e per allinearsi alle procedure consigliate del settore. [I principi di connettività](https://aka.ms/pnc) per il servizio Office 365 sono stati sviluppati in modo da funzionare efficientemente per gli utenti remoti, pur consentendo a un'azienda di mantenere la sicurezza e il controllo sulla connettività. Queste soluzioni di rapida implementazione con lavoro limitato possono avere un impatto positivo significativo sui problemi descritti.
 

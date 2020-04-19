@@ -24,19 +24,19 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Riepilogo: Office 365 richiede la connessione a Internet. Gli endpoint riportati di seguito dovrebbero essere raggiungibili per i clienti che usano i piani di Office 365, compreso Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: ac69ea79c86cf9ae7ca110ef644ed30bcf639235
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: acccd4dbb1d9d7107542b711c5a7dd34d2f33c71
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516467"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547764"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL e intervalli di indirizzi IP di Office 365
 
  **Riepilogo:** Office 365 richiede la connessione a Internet. Gli endpoint riportati di seguito dovrebbero essere raggiungibili per i clienti che usano i piani di Office 365, compreso Government Community Cloud (GCC).
   
 > [!NOTE]
-> Come parte della risposta di Microsoft alla situazione COVID-19, Microsoft ha dichiarato una moratoria temporanea su alcune modifiche pianificate di URL e indirizzi IP. Questa moratoria ha lo scopo di fornire ai team IT dei clienti sicurezza e semplicità nell'implementazione delle ottimizzazioni di rete consigliate per gli scenari di Office 365 per il lavoro da casa. Dal 24 marzo 2020 al 30 giugno 2020 questa moratoria interromperà le modifiche per i principali servizi di Office 365 (Exchange Online, SharePoint Online e Microsoft Teams) agli intervalli IP e agli URL inclusi nella categoria Ottimizzazione. Le modifiche all'interno di altre categorie di endpoint avverranno come al solito. Durante questo periodo, i clienti possono usare le definizioni di endpoint del servizio della categoria Ottimizzazione di Office 365 in modo statico per eseguire ottimizzazioni di rete mirate come prenotazioni di larghezza di banda o configurazione di split tunneling per VPN con rischi minimi per la connettività di Office 365 a causa di modifiche della rete lato cloud. Per garantire che non si verifichino interruzioni del servizio al termine del periodo di moratoria, Microsoft consiglia vivamente ai clienti di implementare processi di gestione delle modifiche e/o di automazione per gli endpoint dei servizi di Office 365 seguendo le indicazioni fornite in [Gestione degli endpoint di Office 365](managing-office-365-endpoints.md).
+> Come parte della risposta di Microsoft alla crisi COVID-19, Microsoft ha dichiarato una moratoria temporanea su alcune modifiche pianificate di URL e indirizzi IP. Questa moratoria ha lo scopo di fornire ai team IT dei clienti sicurezza e semplicità nell'implementazione delle ottimizzazioni di rete consigliate per gli scenari di Office 365 per il lavoro da casa. Dal 24 marzo 2020 al 30 giugno 2020 questa moratoria interromperà le modifiche per i principali servizi di Office 365 (Exchange Online, SharePoint Online e Microsoft Teams) agli intervalli IP e agli URL inclusi nella categoria Ottimizzazione. Le modifiche all'interno di altre categorie di endpoint avverranno come al solito. Durante questo periodo, i clienti possono usare le definizioni di endpoint del servizio della categoria Ottimizzazione di Office 365 in modo statico per eseguire ottimizzazioni di rete mirate come prenotazioni di larghezza di banda o configurazione di split tunneling per VPN con rischi minimi per la connettività di Office 365 a causa di modifiche della rete lato cloud. Per garantire che non si verifichino interruzioni del servizio al termine del periodo di moratoria, Microsoft consiglia vivamente ai clienti di implementare processi di gestione delle modifiche e/o di automazione per gli endpoint dei servizi di Office 365 seguendo le indicazioni fornite in [Gestione degli endpoint di Office 365](managing-office-365-endpoints.md).
 
 > [!NOTE]
 > Microsoft ha rilasciato un servizio Web basato su REST per le voci FQDN e gli indirizzi IP in questa pagina. Questo nuovo servizio consente di configurare e aggiornare i dispositivi di rete perimetrale come firewall e server proxy. È possibile scaricare l'elenco degli endpoint, la versione corrente dell'elenco o modifiche specifiche. Questo servizio sostituisce il documento XML collegato da questa pagina, la quale è stata deprecata il 2 ottobre 2018. Per provare questo nuovo servizio, passare a [Servizio Web](office-365-ip-web-service.md).
@@ -70,7 +70,6 @@ Le colonne di dati visualizzate sono le seguenti:
 >[!Note]
 >Per suggerimenti sugli URL e indirizzi IP di Yammer, vedere [Questo post di blog](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).
 >
-
 
 ## <a name="related-topics"></a>Argomenti correlati
 
