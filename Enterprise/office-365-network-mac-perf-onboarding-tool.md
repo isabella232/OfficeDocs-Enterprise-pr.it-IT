@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 Network onboarding Tool nell'interfaccia di amministrazione di M365 (anteprima)
+title: Test di connettività Microsoft 365 nell'interfaccia di amministrazione di M365 (anteprima)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/10/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,31 +13,31 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 Network onboarding Tool nell'interfaccia di amministrazione di M365 (anteprima)
-ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
-ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
+description: Test di connettività Microsoft 365 nell'interfaccia di amministrazione di M365 (anteprima)
+ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225699"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612876"
 ---
-# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Microsoft 365 Network onboarding Tool nell'interfaccia di amministrazione di M365 (anteprima)
+# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>Test di connettività Microsoft 365 nell'interfaccia di amministrazione di M365 (anteprima)
 
-Lo strumento di onboarding di rete di Microsoft 365 <https://connectivity.office.com>è disponibile all'indirizzo. Si tratta di uno strumento aggiunto alle informazioni sulla rete e sui punteggi di rete disponibili nell'interfaccia di amministrazione di Microsoft 365 nell'area **integrità | Menu prestazioni di rete** .
+Il test di connettività Microsoft 365 si trova <https://connectivity.office.com>in. Si tratta di uno strumento aggiunto alle informazioni sulla rete e sui punteggi di rete disponibili nell'interfaccia di amministrazione di Microsoft 365 nell'area **integrità | Menu prestazioni di rete** .
 
 >[!NOTE]
 >Lo strumento di onboarding supporta i tenant in WW Commercial e GCC moderato ma non GCC High, DoD, Germany o China.
 
-Le informazioni sulla rete nell'interfaccia di amministrazione di Microsoft 365 si basano sulle misure del prodotto per il tenant di Microsoft 365. In confronto, le informazioni di rete provenienti dallo strumento di onboarding di rete di Microsoft 365 vengono eseguite localmente nello strumento. Il testing che può essere eseguito in-Product è limitato e eseguendo i test locali all'utente è possibile raccogliere più dati con conseguente approfondimento delle informazioni. Si consideri quindi che la rete di approfondimenti nell'interfaccia di amministrazione di Microsoft 365 mostrerà che esiste un problema di rete per l'utilizzo di Microsoft 365 in una posizione specifica di Office. Lo strumento di onboarding di rete di Microsoft 365 può contribuire a identificare la causa principale del problema che porta a un'azione di miglioramento delle prestazioni di rete consigliata.
+Le informazioni sulla rete nell'interfaccia di amministrazione di Microsoft 365 si basano sulle misure del prodotto per il tenant di Microsoft 365. In confronto, le informazioni di rete del test di connettività di Microsoft 365 vengono eseguite localmente nello strumento. Il testing che può essere eseguito in-Product è limitato e eseguendo i test locali all'utente è possibile raccogliere più dati con conseguente approfondimento delle informazioni. Si consideri quindi che la rete di approfondimenti nell'interfaccia di amministrazione di Microsoft 365 mostrerà che esiste un problema di rete per l'utilizzo di Microsoft 365 in una posizione specifica di Office. Il test di connettività Microsoft 365 può essere utile per identificare la causa principale del problema che porta a un'azione di miglioramento delle prestazioni di rete consigliata.
 
-È consigliabile utilizzare questi strumenti insieme in cui è possibile valutare lo stato della qualità di rete per ogni posizione di Office nell'interfaccia di amministrazione di Microsoft 365 e trovare ulteriori informazioni specifiche dopo la distribuzione dei test basati su Microsoft 365 Network onboarding Tool.
+È consigliabile utilizzarli insieme in cui è possibile valutare lo stato di qualità di rete per ogni percorso di Office nell'interfaccia di amministrazione di Microsoft 365 e trovare ulteriori specifiche dopo la distribuzione dei test in base al test di connettività di Microsoft 365.
 
 >[!IMPORTANT]
 >Insights di rete, raccomandazioni sulle prestazioni e valutazioni nell'interfaccia di amministrazione di Microsoft 365 è attualmente in stato di anteprima ed è disponibile solo per i tenant di Microsoft 365 che sono stati registrati nel programma di anteprima delle funzionalità.
 
 ## <a name="the-advanced-tests-client-application"></a>Applicazione client test avanzati
 
-Sono disponibili due parti per lo strumento di onboarding di rete di Microsoft 365. È disponibile il sito <https://connectivity.office.com> Web ed è disponibile un'applicazione client Windows scaricabile. Il client scaricabile esegue test di connettività di rete avanzati e la maggior parte dei test richiede l'esecuzione di questa operazione.
+Vi sono due parti del test di connettività di Microsoft 365. È disponibile il sito <https://connectivity.office.com> Web ed è disponibile un'applicazione client Windows scaricabile. Il client scaricabile esegue test di connettività di rete avanzati e la maggior parte dei test richiede l'esecuzione di questa operazione.
 
 È possibile eseguire il test client avanzato dal sito Web e i risultati vengono inseriti di nuovo nella pagina Web durante l'esecuzione.
 

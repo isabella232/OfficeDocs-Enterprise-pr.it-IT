@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Viene illustrato il motivo per cui l'ottimizzazione della rete è importante per i servizi SaaS, l'obiettivo della rete di Office 365 e il modo in cui SaaS richiede una rete diversa da altri carichi di lavoro.
-ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88072e8c85f9ca1e53201b58f0333d84ef543184
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844357"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612886"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Panoramica della connettività di rete di Office 365
 
@@ -33,9 +33,9 @@ In questo articolo vengono fornite informazioni sugli obiettivi della rete di Of
 
 ## <a name="office-365-networking-goals"></a>Obiettivi di rete di Office 365
 
-L'obiettivo finale della rete di Office 365 è ottimizzare l'esperienza dell'utente finale, consentendo l'accesso meno restrittivo tra i client e gli endpoint di Office 365 più vicini. La qualità dell'esperienza dell'utente finale è direttamente correlata alle prestazioni e alla capacità di risposta dell'applicazione che l'utente sta utilizzando. Ad esempio, Microsoft teams si basa su una bassa latenza in modo che le chiamate telefoniche degli utenti, le conferenze e le collaborazioni dello schermo condiviso siano prive di problemi e Outlook si basa su una grande connettività di rete per le funzionalità di ricerca immediata che sfruttano l'indicizzazione sul server e AI funzionalità.
+L'obiettivo finale della rete di Office 365 è ottimizzare l'esperienza dell'utente finale, consentendo l'accesso meno restrittivo tra i client e gli endpoint di Office 365 più vicini. La qualità dell'esperienza dell'utente finale è direttamente correlata alle prestazioni e alla capacità di risposta dell'applicazione che l'utente sta utilizzando. Ad esempio, Microsoft teams si basa su una bassa latenza in modo che le chiamate telefoniche degli utenti, le conferenze e le collaborazioni dello schermo condiviso siano prive di problemi e Outlook si basa su una grande connettività di rete per le funzionalità di ricerca immediata che sfruttano l'indicizzazione sul server e le funzionalità AI.
 
-L'obiettivo principale della progettazione della rete deve essere quello di ridurre al minimo la latenza riducendo il tempo di andata e ritorno (RTT, Round Trip Time) dai computer client alla rete globale Microsoft, la backbone di rete pubblica di Microsoft che collega tutti i datacenter di Microsoft con una bassa latenza. , i punti di ingresso dell'applicazione cloud a disponibilità elevata vengono distribuiti in tutto il mondo. Per ulteriori informazioni sulla rete globale Microsoft [, vedere come Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+L'obiettivo principale della progettazione della rete dovrebbe essere quello di ridurre al minimo la latenza riducendo il tempo di andata e ritorno (RTT, Round Trip Time) dai computer client alla rete globale Microsoft, la backbone di rete pubblica di Microsoft che interconnette tutti i datacenter di Microsoft con una bassa latenza, punti di ingresso dell'applicazione cloud a disponibilità elevata sparsi in tutto il mondo. Per ulteriori informazioni sulla rete globale Microsoft [, vedere come Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 L'ottimizzazione delle prestazioni di rete di Office 365 non deve essere complicata. È possibile ottenere le migliori prestazioni possibili seguendo alcuni principi fondamentali:
 
@@ -49,7 +49,7 @@ Per ulteriori informazioni sui principi di connettività di rete di Office 365, 
 
 I principi dell'architettura di rete tradizionale per i carichi di lavoro client/server sono stati creati in base all'ipotesi che il traffico tra client e endpoint non si estenda all'esterno del perimetro della rete aziendale. Inoltre, in molte reti aziendali, tutte le connessioni Internet in uscita attraversano la rete aziendale e l'uscita da una posizione centrale.
 
-Nelle architetture di rete tradizionali, la latenza più elevata per il traffico Internet generico è un compromesso necessario per mantenere la sicurezza del perimetro di rete e l'ottimizzazione delle prestazioni per il traffico Internet in genere implica l'aggiornamento o la scalabilità orizzontale apparecchiature nei punti di uscita di rete. Tuttavia, questo approccio non risolve i requisiti per le prestazioni di rete ottimali dei servizi SaaS come Office 365.
+Nelle architetture di rete tradizionali, la latenza più elevata per il traffico Internet generico è un compromesso necessario per mantenere la sicurezza del perimetro della rete e l'ottimizzazione delle prestazioni per il traffico Internet in genere implica l'aggiornamento o la scalabilità delle apparecchiature nei punti di uscita della rete. Tuttavia, questo approccio non risolve i requisiti per le prestazioni di rete ottimali dei servizi SaaS come Office 365.
 
 ## <a name="identifying-office-365-network-traffic"></a>Identificazione del traffico di rete di Office 365
 
@@ -116,7 +116,7 @@ L'ottimizzazione delle prestazioni di rete di Office 365 è una vera e propria e
 
 [Reti per la distribuzione di contenuti](content-delivery-networks.md)
 
-[Strumento di onboarding di rete di Office 365](https://aka.ms/netonboard)
+[Test di connettività Microsoft 365](https://aka.ms/netonboard)
 
 [In che modo Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

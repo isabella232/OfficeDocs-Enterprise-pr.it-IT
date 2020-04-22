@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 04/20/2010
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Descrive la sincronizzazione della directory con Office 365, la pulizia dei servizi di dominio Active Directory e lo strumento Azure Active Directory Connect.
-ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44894cdbc65c243ce0c4a66ceba1d123ece49c62
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841763"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580933"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Sincronizzazione della directory e dell'identità ibrida per Office 365
 
@@ -69,7 +69,7 @@ Con la sincronizzazione degli hash delle password (pH), è possibile sincronizza
 
 Quando le password vengono modificate o reimpostate in locale, i nuovi hash delle password vengono sincronizzati con Azure AD, in modo che gli utenti possano sempre utilizzare la stessa password per le risorse cloud e le risorse locali. Le password degli utenti non vengono mai inviate ad Azure AD o archiviate in Azure AD in testo non crittografato. Alcune funzionalità Premium di Azure AD, ad esempio la protezione delle identità, richiedono pH indipendentemente dal metodo di autenticazione selezionato.
   
-Per ulteriori informazioni, vedere [choosing pH](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Per ulteriori informazioni, vedere [choosing pH](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 #### <a name="pass-through-authentication"></a>Autenticazione pass-through
 
@@ -81,15 +81,15 @@ PTA consente agli utenti di accedere alle risorse e alle applicazioni locali e d
 
 PTA è anche per le organizzazioni con un requisito di sicurezza per applicare immediatamente gli Stati degli account utente locali, i criteri di password e le ore di accesso. 
   
-Per ulteriori informazioni, vedere [scegliere PTA](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Per ulteriori informazioni, vedere [scegliere PTA](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 ### <a name="federated-authentication"></a>Autenticazione federata
 
 L'autenticazione federata è principalmente per organizzazioni aziendali di grandi dimensioni con requisiti di autenticazione più complessi. Le identità di servizi di dominio Active Directory sono sincronizzate con Office 365 e gli account utente vengono gestiti in locale. Con l'autenticazione federata, gli utenti hanno la stessa password in locale e nel cloud e non devono accedere di nuovo per utilizzare Office 365. 
 
-L'autenticazione federata può supportare ulteriori requisiti di autenticazione, ad esempio l'autenticazione basata su smartcard o un'autenticazione a più fattori di terze parti e in genere è necessario quando le organizzazioni non dispongono di un requisito di autenticazione supportato nativamente da Azure AD.
+L'autenticazione federata può supportare ulteriori requisiti di autenticazione, ad esempio l'autenticazione basata su smartcard o un'autenticazione a più fattori di terze parti e in genere è necessario quando le organizzazioni dispongono di un requisito di autenticazione non supportato nativamente da Azure AD.
  
-Per ulteriori informazioni, vedere [scelta dell'autenticazione federata](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Per ulteriori informazioni, vedere [scelta dell'autenticazione federata](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 #### <a name="third-party-authentication-and-identity-providers"></a>Provider di identità e autenticazione di terze parti
 
