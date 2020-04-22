@@ -15,18 +15,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: "Riepilogo: informazioni sui limiti delle risorse per le diverse applicazioni all'interno di Office 365."
-ms.openlocfilehash: 112d910ae724ad01629aaef5a8e2e1756ceb8ecf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 55fa8d90c6f83c84a1e43f32cf7cd0eeafbf1274
+ms.sourcegitcommit: ed4482ad35274b79d44d0f9a17be3e52d5ad0492
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844317"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43666327"
 ---
 # <a name="resource-limits"></a>Limiti della risorsa
 
 I limiti delle risorse vengono applicati utilizzando le quote (limiti) e la limitazione. Azure Active Directory e i singoli servizi di Office 365 utilizzano entrambi. I limiti sono specifici del servizio e cambiano nel tempo man mano che vengono aggiunte nuove funzionalità. Per informazioni dettagliate sui limiti correnti per i diversi servizi, vedere i seguenti argomenti:
 
-- [Limiti e restrizioni dei servizi di Azure Active Directory](https://msdn.microsoft.com/library/azure/dn764971.aspx)
+- [Limiti e restrizioni dei servizi di Azure Active Directory](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 - [Limiti di Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx)
 - [Limiti di Exchange Online Protection](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx)
 - [Confini e limiti del software di SharePoint Online](https://support.office.com/article/SharePoint-Online-software-boundaries-and-limits-8F34FF47-B749-408B-ABC0-B605E1F6D498)
