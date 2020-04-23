@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Come implementare split tunneling per VPN per Office 365
-ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: edc19af175aaa3d0366a8ec1c3af55a0aeb041fd
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547664"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612926"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementazione di split tunneling per VPN per Office 365
 
@@ -248,7 +248,7 @@ Informazioni sui moderni controlli di sicurezza negli scenari di lavoro remoto n
 
 Una volta applicati i criteri, è consigliabile verificare che funzionino come previsto. Esistono diversi modi per verificare se il percorso è impostato correttamente per l'uso della connessione Internet locale:
 
-- Eseguire lo [strumento di onboarding di rete di Office 365](https://aka.ms/netonboard) che eseguirà test di connettività per l'utente, incluso il tracciamento delle route come sopra. Inoltre è in corso l'aggiunta di test VPN in questo strumento per alcune informazioni aggiuntive.
+- Eseguire il [test di connettività di Microsoft 365](https://aka.ms/netonboard) che eseguirà test di connettività per l'utente, incluso il tracciamento delle route come sopra. Inoltre è in corso l'aggiunta di test VPN in questo strumento per alcune informazioni aggiuntive.
 
 - Una semplice applicazione tracert per un endpoint nell'ambito dello split tunnel mostrerà il percorso intrapreso, ad esempio:
 
