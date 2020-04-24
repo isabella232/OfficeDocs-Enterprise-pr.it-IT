@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Riepilogo: Configurare l'infrastruttura Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Office 365."
-ms.openlocfilehash: c669df7e719d8ff8516ad556817921e1440558d3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 9f2991ef495093f2aed01e57f47dab3371b97de3
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840343"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793829"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: configurare Azure
 
@@ -94,7 +94,7 @@ Per due server DNS (Domain Name System) nella rete locale che si desidera utiliz
    
  **Tabella D: server DNS locali**
   
-Per instradare i pacchetti dalla rete cross-premise alla rete dell'organizzazione tramite la connessione VPN da sito a sito, è necessario configurare la rete virtuale con una rete locale contenente un elenco degli spazi degli indirizzi (in notazione CIDR) per tutti i siti raggiungibili. percorsi nella rete locale dell'organizzazione. L'elenco degli spazi di indirizzi che definiscono la rete locale deve essere univoco e non deve sovrapporsi con lo spazio di indirizzi utilizzato per altre reti virtuali o per altre reti locali.
+Per instradare i pacchetti dalla rete cross-premise alla rete dell'organizzazione tramite la connessione VPN da sito a sito, è necessario configurare la rete virtuale con una rete locale contenente un elenco degli spazi degli indirizzi (in notazione CIDR) per tutti i percorsi raggiungibili nella rete in locale dell'organizzazione. L'elenco degli spazi di indirizzi che definiscono la rete locale deve essere univoco e non deve sovrapporsi con lo spazio di indirizzi utilizzato per altre reti virtuali o per altre reti locali.
   
 Per l'insieme degli spazi di indirizzi della rete locale, compilare la tabella L. Sono elencate tre voci vuote, ma sarà necessario aggiungerne altre. Consultare il proprio reparto IT per determinare questo elenco di spazi di indirizzi.
   
@@ -314,7 +314,7 @@ Utilizzare la [fase 2: configurare i controller di dominio](high-availability-fe
   
 [Identità federata per l'ambiente di sviluppo/test di Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
+[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.yml)
 
 [Informazioni sull'identità di Office 365 e Azure Active Directory](about-office-365-identity.md)
 

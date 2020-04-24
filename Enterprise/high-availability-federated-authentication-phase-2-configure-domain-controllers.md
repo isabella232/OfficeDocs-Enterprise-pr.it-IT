@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: "Riepilogo: configurare i controller di dominio e il server di sincronizzazione della directory per l'autenticazione federata a disponibilità elevata per Office 365 in Microsoft Azure."
-ms.openlocfilehash: e43787817287779330e28236700f1a710c37dceb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 80b413f8a6d415378e384b1625fc756f96dd00db
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840313"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793819"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 dell'autenticazione federata a disponibilità elevata: configurare i controller di dominio
 
@@ -257,6 +257,6 @@ Utilizzare la [fase 3: configurare i server ad FS](high-availability-federated-a
   
 [Identità federata per l'ambiente di sviluppo/test di Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
+[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.yml)
 
 

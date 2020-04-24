@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute per Office 365 offre un percorso di routing alternativo per raggiungere numerosi servizi di Office 365 senza che sia necessario che tutto il traffico venga in uscita su Internet. Anche se la connessione Internet a Office 365 è ancora necessaria, le route specifiche che Microsoft annuncia tramite BGP alla rete rendono il circuito ExpressRoute diretto preferito, a meno che non siano presenti altre configurazioni della rete. Le tre aree comuni che possono essere configurate per gestire questo percorso includono il filtro, la sicurezza e la conformità del prefisso.
-ms.openlocfilehash: 54edc348e3c91e1b34555d5d4743ccdc7748191f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844987"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798797"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestione di ExpressRoute per la connettività di Office 365
 
@@ -35,7 +35,7 @@ ExpressRoute per Office 365 offre un percorso di routing alternativo per raggiun
 
 Microsoft consiglia ai clienti di accettare tutte le rotte BGP come pubblicizzate da Microsoft, le rotte fornite subiscono una rigorosa revisione e processo di convalida, eliminando eventuali vantaggi per il controllo aggiunto. ExpressRoute offre in modo nativo i controlli consigliati, come la proprietà del prefisso IP, l'integrità e la scalabilità, senza filtraggio delle route in ingresso sul fianco del cliente.
   
-Se si richiede ulteriore convalida della proprietà di route tra peering pubblico di ExpressRoute, è possibile controllare le route pubblicizzate con l'elenco di tutti i prefissi IP IPv4 e IPv6 che rappresentano [gli intervalli di indirizzi IP pubblici di Microsoft](https://www.microsoft.com/download/details.aspx?id=53602). Questi intervalli coprono lo spazio di indirizzi Microsoft completo e cambiano di frequente, fornendo un set affidabile di intervalli da filtrare in base al quale viene fornito ulteriore protezione per i clienti che sono preoccupati per le rotte di proprietà non Microsoft che fuoriescono nel loro ambiente. Nel caso in cui si verifichi una modifica, verrà eseguito il 1 ° mese e il numero di versione nella sezione **Dettagli** della pagina cambia ogni volta che il file verrà aggiornato.
+Se si richiede ulteriore convalida della proprietà di route tra peering pubblico di ExpressRoute, è possibile controllare le route pubblicizzate con l'elenco di tutti i prefissi IP IPv4 e IPv6 che rappresentano [gli intervalli di indirizzi IP pubblici di Microsoft](https://www.microsoft.com/download/details.aspx?id=53602). Questi intervalli coprono lo spazio di indirizzi Microsoft completo e cambiano di frequente, fornendo un set affidabile di intervalli di cui filtrare i contenuti che fornisce anche ulteriore protezione ai clienti preoccupati per le rotte di proprietà non Microsoft che fuoriescono nel loro ambiente. Nel caso in cui si verifichi una modifica, verrà eseguito il 1 ° mese e il numero di versione nella sezione **Dettagli** della pagina cambia ogni volta che il file verrà aggiornato.
   
 Esistono diversi motivi per evitare l'utilizzo degli [URL di Office 365 e degli intervalli di indirizzi IP](https://aka.ms/o365endpoints) per la generazione di elenchi di filtri di prefisso. Sono inclusi gli elementi seguenti:
   
@@ -49,8 +49,7 @@ Esistono diversi motivi per evitare l'utilizzo degli [URL di Office 365 e degli 
 |:-----|:-----|:-----|
 |Accettare tutte le route Microsoft  <br/> |**Bassa:** Il cliente si affida ai controlli Microsoft per garantire che tutte le rotte siano possedute correttamente.  <br/> |Nessuno  <br/> |
 |Filtrare le reti supernets di Microsoft  <br/> |**Medium:** Il cliente implementa gli elenchi di filtri dei prefissi riepilogati per consentire solo le route di proprietà di Microsoft.  <br/> |I clienti devono garantire che gli aggiornamenti non frequenti vengano riflessi nei filtri route.  <br/> |
-|Filtrare gli intervalli di indirizzi IP di Office 365  <br/> [!CAUTION] Non consigliato
-|**Alta:** Le route dei filtri dei clienti si basano sui prefissi IP di Office 365 definiti.  <br/> |I clienti devono implementare un processo di gestione delle modifiche affidabile per gli aggiornamenti mensili.  <br/> [!CAUTION] Questa soluzione richiede importanti modifiche in continuo. Le modifiche non implementate nel tempo probabilmente provocheranno un'interruzione del servizio.   |
+|Filtrare gli intervalli di indirizzi IP di Office 365  <br/> [!CAUTION] Non consigliato |**Alta:** Le route dei filtri dei clienti si basano sui prefissi IP di Office 365 definiti.  <br/> |I clienti devono implementare un processo di gestione delle modifiche affidabile per gli aggiornamenti mensili.  <br/> [!CAUTION] Questa soluzione richiede importanti modifiche in continuo. Le modifiche non implementate nel tempo probabilmente provocheranno un'interruzione del servizio.   |
 
 La connessione a Office 365 con Azure ExpressRoute si basa su annunci BGP di subnet IP specifiche che rappresentano le reti in cui vengono distribuiti gli endpoint di Office 365. A causa della natura globale di Office 365 e del numero di servizi che compongono Office 365, i clienti spesso hanno la necessità di gestire gli annunci che accettano nella propria rete. Se si è interessati al numero di prefissi pubblicizzati nell'ambiente, la funzionalità [community BGP](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) consente di filtrare gli annunci pubblicitari in un set specifico di servizi di Office 365. Questa funzionalità è ora in anteprima.
   

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Riepilogo: le soluzioni di SharePoint 2013 possono essere ospitate nelle macchine virtuali di Microsoft Azure. Informazioni sul tipo di soluzione adatta e su come configurare Microsoft Azure per ospitarne uno.'
-ms.openlocfilehash: ff5837030384a7f10dc36bb9c436394a19521254
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 62a3668fe231e8cb5d60964a3325cc200126df12
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844907"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793739"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure Architectures for SharePoint 2013
 
@@ -75,7 +75,7 @@ In questo articolo sono inclusi i concetti relativi alla progettazione per l'est
 
 Per prima cosa, è necessaria una rete virtuale in Azure, che include le subnet su cui verranno posizionate le macchine virtuali. La rete virtuale ha bisogno di uno spazio di indirizzi IP privato, porzioni di cui si assegnano le subnet.
   
-Se si sta estendendo la rete locale a Azure tramite una connessione tra sedi locali (necessaria per un ambiente di ripristino di emergenza), è necessario scegliere uno spazio di indirizzi privato non già in uso altrove nella rete dell'organizzazione, che può includere l'ambiente locale e altre reti virtuali di Azure. 
+Se si sta estendendo la rete locale a Azure tramite una connessione tra più sedi (necessaria per un ambiente di ripristino di emergenza), è necessario scegliere uno spazio di indirizzi privato non già in uso in altre aree della rete dell'organizzazione, che può includere l'ambiente locale e altre reti virtuali di Azure. 
   
 **Figura 1: ambiente locale con una rete virtuale in Azure**
 
@@ -219,7 +219,7 @@ Nel diagramma seguente viene illustrata la farm di SharePoint implementata nei s
   
 ## <a name="see-also"></a>Vedere anche
 
-[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
+[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.yml)
   
 [Siti Internet in Microsoft Azure che utilizzano SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   

@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "Sintesi: configurazione e dimostrazione di Office 365 Cloud App Security nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: a4f0f9e8912a5455ec5253e9992873136e71d694
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f76aaa5b13e409f08a4b96714e1f4bdfcc84ecac
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840803"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793719"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security per l'ambiente di sviluppo/test di Office 365
 
  **Sintesi:** configurazione e dimostrazione di Office 365 Cloud App Security nell'ambiente di sviluppo/test di Office 365.
   
-Office 365 cloud app Security, precedentemente noto come Office 365 Advanced Security Management, consente di creare criteri che controllano e informano le attività sospette nell'abbonamento a Office 365, in modo da poter esaminare e intraprendere possibili correzioni azione. Per ulteriori informazioni, vedere [Overview of cloud app Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Office 365 cloud app Security, precedentemente noto come Office 365 Advanced Security Management, consente di creare criteri che controllano e informano le attività sospette nell'abbonamento a Office 365, in modo da poter indagare e intraprendere possibili interventi di correzione. Per ulteriori informazioni, vedere [Overview of cloud app Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Con le istruzioni disponibili in questo articolo, è possibile abilitare e testare Cloud App Security nella sottoscrizione di valutazione di Office 365.
   
@@ -161,11 +161,11 @@ In questa procedura, viene mostrato come Cloud App Security crea avvisi e invia 
   
 ## <a name="see-also"></a>Vedere anche
 
-[Test Lab Guide (TLG) di adozione cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guida al lab test (TLG) per adozione del cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente di sviluppo/test di Office 365](office-365-dev-test-environment.md)
   
-[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
+[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.yml)
 
 [Panoramica della sicurezza delle app cloud in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 

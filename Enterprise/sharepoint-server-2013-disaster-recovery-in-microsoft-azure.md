@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Riepilogo: Con Azure è possibile creare un ambiente di ripristino di emergenza per la farm locale di SharePoint. In questo articolo viene descritto come progettare e implementare questa soluzione.'
-ms.openlocfilehash: d9d17ca3357e3297a0cfba2a764cb0468fd1a0ed
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d448ae31c31238f1cf5ef97ff79e6ec97fda60a1
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841183"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793709"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
 
@@ -646,7 +646,7 @@ Ipconfig /flushdns
   
 ## <a name="see-also"></a>Vedere anche
 
-[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.md)
+[Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.yml)
 
 
 
