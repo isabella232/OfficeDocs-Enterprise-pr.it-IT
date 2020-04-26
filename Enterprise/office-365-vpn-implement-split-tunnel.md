@@ -1,9 +1,9 @@
 ---
-title: Implementazione di split tunneling per VPN per Office 365
+title: Implementazione dello split tunneling per VPN per Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/14/2020
+ms.date: 4/24/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,28 +16,28 @@ ms.collection:
 - remotework
 f1.keywords:
 - NOCSH
-description: Come implementare split tunneling per VPN per Office 365
-ms.openlocfilehash: edc19af175aaa3d0366a8ec1c3af55a0aeb041fd
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+description: Come implementare lo split tunneling per VPN per Office 365
+ms.openlocfilehash: 0594be194bda222fafa0d00a93e0ee43814cd334
+ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612926"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804055"
 ---
-# <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementazione di split tunneling per VPN per Office 365
+# <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementazione dello split tunneling per VPN per Office 365
 
 >[!NOTE]
 >Questo argomento fa parte di un set di argomenti relativi all'ottimizzazione di Office 365 per gli utenti remoti.
->- Per una panoramica sull'uso di split tunneling per VPN per ottimizzare la connettività Office 365 per gli utenti remoti, vedere [Panoramica: split tunneling per VPN per Office 365](office-365-vpn-split-tunnel.md).
+>- Per una panoramica sull'uso dello split tunneling per VPN per ottimizzare la connettività di Office 365 per gli utenti remoti, vedere [Panoramica: split tunneling per VPN per Office 365](office-365-vpn-split-tunnel.md).
 >- Per informazioni su come ottimizzare le prestazioni del tenant di Office 365 a livello mondiale per gli utenti della Cina, vedere [Ottimizzazione delle prestazioni di Office 365 per utenti della Cina](office-365-networking-china.md).
 
 Da molti anni le aziende usano reti VPN per supportare esperienze remote per gli utenti. Sebbene i carichi di lavoro principali siano gestiti in locale, la rete VPN da client remoto instradata attraverso data center della rete aziendale era il metodo principale per consentire agli utenti remoti di accedere alle risorse aziendali. Per proteggere queste connessioni, le aziende creano livelli di soluzioni di sicurezza per la rete lungo percorsi VPN. Tale soluzione permette di proteggere le infrastrutture interne e di salvaguardare la navigazione mobile di siti Web esterni reinstradando il traffico verso la VPN, quindi indirizzandolo all'esterno del perimetro Internet locale. VPN, perimetri di rete e l'infrastruttura di sicurezza associata sono stati spesso creati e ridimensionati per un volume di traffico definito, in genere con la maggior parte delle connessioni avviate dall'interno della rete aziendale, la cui maggior parte restava nei confini della rete interna.
 
-Per un certo periodo di tempo, i modelli VPN in cui tutte le connessioni dal dispositivo dell'utente remoto sono inoltrate nuovamente alla rete locale (fenomeno noto come **tunnelling forzato**) erano ampiamente sostenibili fintanto che il numero di utenti remoti era contenuto e i volumi di traffico che attraversavano la VPN erano bassi.  Alcuni clienti hanno continuato a usare l'imposizione del tunneling VPN come status quo, anche dopo lo spostamento delle applicazioni aziendali dall'interno del perimetro aziendale al cloud SaaS pubblico, di cui Office 365 è un esempio.
+Per un certo periodo di tempo, i modelli di VPN in cui tutte le connessioni dal dispositivo dell'utente remoto sono inoltrate nuovamente alla rete locale (fenomeno noto come **tunnelling forzato**) erano ampiamente sostenibili fintanto che il numero di utenti remoti simultanei era contenuto e i volumi di traffico che attraversavano la VPN erano bassi.  Alcuni clienti hanno continuato a usare l'imposizione del tunneling VPN come status quo, anche dopo lo spostamento delle applicazioni aziendali dall'interno del perimetro aziendale al cloud SaaS pubblico, di cui Office 365 è un esempio.
 
 L'uso di VPN con tunnel forzato per la connessione ad applicazioni cloud distribuite e sensibili alle prestazioni non è particolarmente ottimale, tuttavia tale aspetto negativo è stato accettato da alcune aziende per mantenere lo status quo dal punto di vista della sicurezza. Di seguito è illustrato un diagramma di esempio di questo scenario:
 
-![Configurazione di split tunneling per VPN](media/vpn-split-tunnelling/vpn-ent-challenge.png)
+![Configurazione di split tunneling per VPN](media/vpn-split-tunneling/vpn-ent-challenge.png)
 
 Il problema aumenta già da diversi anni, con molti clienti che segnalano un cambiamento significativo dei modelli di traffico di rete. Il traffico che in passato restava in locale, ora si connette a endpoint del cloud esterno. Molti clienti Microsoft segnalano che, in precedenza, circa l'80% del traffico di rete era associato a un'origine interna, rappresentata dalla riga punteggiata nel diagramma precedente. Nel 2020 la percentuale è scesa a meno del 20%, perché i clienti hanno spostato i principali carichi di lavoro nel cloud. Questa tendenza è comune anche ad altre aziende. Con il graduale passaggio al cloud, il modello precedente risulta sempre più lento e insostenibile e ciò impedisce alle aziende di essere agili nel loro passaggio a un ambiente cloud-first.
 
@@ -63,39 +63,39 @@ Nell'elenco riportato di seguito sono elencati gli scenari VPN più comuni verif
 
 Questo è lo scenario di partenza più comune per la maggior parte dei clienti aziendali. Viene usata una VPN forzata, il che significa che il 100% del traffico viene indirizzato alla rete aziendale, indipendentemente dal fatto che l'endpoint risieda all'interno della rete aziendale o meno. Il traffico associato esterno (Internet), ad esempio la navigazione Internet o Office 365, è quindi nuovamente sottoposto a hairpinning fuori dai sistemi di sicurezza locali, ad esempio i proxy. Poiché nella situazione attuale quasi il 100% degli utenti lavora da remoto, questo modello impone un carico estremamente elevato all'infrastruttura VPN ed è probabile che ostacoli significativamente le prestazioni di tutto il traffico aziendale compromettendo l'efficienza lavorativa dell'azienda in questo momento di crisi.
 
-![Tunnel forzato VPN, modello 1](media/vpn-split-tunnelling/vpn-model-1.png)
+![Tunnel forzato VPN, modello 1](media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. Tunnel forzato VPN con numero limitato di eccezioni attendibili
 
 Questo modello è significativamente più efficiente per un'azienda in quanto consente di ottenere un numero limitato di endpoint controllati e definiti, con carico molto elevato e sensibilità alla latenza che consentono di bypassare il tunnel VPN e l'esecuzione diretta nel servizio Office 365, in questo esempio. Ciò migliora significativamente le prestazioni per i servizi scaricati, e diminuisce anche il carico sull'infrastruttura VPN, consentendo così agli elementi che ancora lo richiedono di operare con un contenimento inferiore delle risorse. L'articolo pone l'attenzione su questo modello per facilitarvi il passaggio in quanto consente di intraprendere azioni semplici e definite molto rapidamente con numerosi esiti positivi.
 
-![Split tunneling per VPN, modello 2](media/vpn-split-tunnelling/vpn-model-2.png)
+![Split tunneling per VPN, modello 2](media/vpn-split-tunneling/vpn-model-2.png)
 
 ### <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. Tunnel forzato VPN con ampie eccezioni
 
 Il terzo modello allarga l'ambito del modello due, anziché semplicemente inviare un piccolo gruppo di endpoint definiti direttamente, invia tutto il traffico direttamente a servizi attendibili, ad esempio Office 365, SalesForce e così via. Ciò consente di ridurre ulteriormente il carico sull'infrastruttura VPN aziendale e di migliorare le prestazioni dei servizi definiti. Poiché per questo modello è necessario più tempo per valutarne l'eseguibilità e l'implementazione, la procedura può essere eseguita in modo iterativo in un secondo momento, una volta attivato il modello 2.
 
-![Split tunneling per VPN, modello 3](media/vpn-split-tunnelling/vpn-model-3.png)
+![Split tunneling per VPN, modello 3](media/vpn-split-tunneling/vpn-model-3.png)
 
 ### <a name="4-vpn-selective-tunnel"></a>4. Tunnel selettivo VPN
 
-Questo modello inverte il terzo modello in quanto solo il traffico identificato come avente un indirizzo IP aziendale viene inviato nel tunnel VPN e quindi il percorso Internet è la route predefinita per tutte le altre operazioni. Per implementare in sicurezza questo modello è necessario che l'organizzazione utilizzi [Zero Trust](https://www.microsoft.com/security/zero-trust?rtc=1). Tenere presente che questo modello o alcune sue varianti probabilmente acquisteranno nel tempo un carattere necessario predefinito, man mano che sempre più servizi passeranno dalla rete aziendale al cloud. Microsoft fa uso di questo modello internamente. Sono disponibili ulteriori informazioni sull'implementazione della soluzione split tunneling per VPN di Microsoft nella pagina [Esecuzione del servizio VPN: la soluzione Microsoft per mantenere connessa la forza lavoro remota](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
+Questo modello inverte il terzo modello in quanto solo il traffico identificato come avente un indirizzo IP aziendale viene inviato nel tunnel VPN e quindi il percorso Internet è la route predefinita per tutte le altre operazioni. Per implementare in sicurezza questo modello è necessario che l'organizzazione utilizzi [Zero Trust](https://www.microsoft.com/security/zero-trust?rtc=1). Tenere presente che questo modello o alcune sue varianti probabilmente acquisteranno nel tempo un carattere necessario predefinito, man mano che sempre più servizi passeranno dalla rete aziendale al cloud. Microsoft fa uso di questo modello internamente. Per altre informazioni sull'implementazione della soluzione di split tunneling per VPN di Microsoft nell'articolo [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv) (Lavorare su VPN: la soluzione Microsoft per mantenere connessa la forza lavoro remota).
 
-![Split tunneling per VPN, modello 4](media/vpn-split-tunnelling/vpn-model-4.png)
+![Split tunneling per VPN, modello 4](media/vpn-split-tunneling/vpn-model-4.png)
 
 ### <a name="5-no-vpn"></a>5. Nessuna VPN
 
 Si tratta della versione più avanzata del modello 2, in cui i servizi interni sono pubblicati con un approccio di sicurezza moderno o una soluzione SDWAN, ad esempio Azure AD Proxy, MCAS, Zscaler ZPA e così via.
 
-![Split tunneling per VPN, modello 5](media/vpn-split-tunnelling/vpn-model-5.png)
+![Split tunneling per VPN, modello 5](media/vpn-split-tunneling/vpn-model-5.png)
 
-## <a name="implement-vpn-split-tunnelling"></a>Implementazione di split tunneling per VPN
+## <a name="implement-vpn-split-tunneling"></a>Implementare lo split tunneling per VPN
 
 In questa sezione è disponibile la semplice procedura per eseguire la migrazione dell'architettura client VPN da _Tunnel forzato VPN_ a _Tunnel forzato VPN con numero limitato di eccezioni attendibili_, [Split tunneling per VPN, modello 2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) della sezione [Scenari VPN comuni](#common-vpn-scenarios).
 
 Il diagramma seguente illustra come funziona la soluzione split tunneling per VPN consigliata:
 
-![Dettagli della soluzione split tunneling per VPN](media/vpn-split-tunnelling/vpn-split-detail.png)
+![Dettagli della soluzione split tunneling per VPN](media/vpn-split-tunneling/vpn-split-detail.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identificare gli endpoint da ottimizzare
 
@@ -176,7 +176,7 @@ Nello script in alto, _$intIndex_ è l'indice dell'interfaccia connessa a Intern
 
 Una volta aggiunte le route, è possibile confermare che la tabella di route è corretta, eseguendo **Route Print ** a un prompt dei comandi o PowerShell. L'output deve contenere i percorsi aggiunti, con l'indice dell'interfaccia (_22_ nell'esempio riportato) e il gateway per quell'interfaccia (_192.168.1.1_ nell'esempio riportato):
 
-![Output di Route Print](media/vpn-split-tunnelling/vpn-route-print.png)
+![Output di Route Print](media/vpn-split-tunneling/vpn-route-print.png)
 
 Per aggiungere route a **tutti** gli intervalli di indirizzi IP correnti nella categoria Optimize, è possibile usare la seguente variante di script per interrogare l'[IP di Office 365 e il servizio Web dell'URL](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service) per il set corrente delle subnet IP Optimize e aggiungerle alla tabella di route.
 
@@ -226,7 +226,8 @@ Alcuni software client VPN consentono di modificare il routing in base all'URL. 
 
 In alcuni scenari, spesso non correlati alla configurazione del client Teams, il traffico multimediale continua ad attraversare il tunnel VPN anche con le route corrette applicate. Se si verifica questo scenario, è sufficiente usare una regola del firewall per bloccare le porte o le subnet IP di Teams affinché non utilizzino la VPN.
 
-Affinché ciò funzioni nel 100% degli scenari, aggiungere anche l'intervallo IP **13.107.60.1/32**. Ciò non dovrebbe essere necessario a breve per via di un aggiornamento nel client Teams più recente previsto per il rilascio all'inizio di **aprile 2020**. Questo articolo verrà aggiornato con i dettagli della build appena saranno disponibili queste informazioni.
+>[!IMPORTANT]
+>Per garantire che il traffico multimediale di Teams venga instradato con il metodo desiderato in tutti gli scenari VPN, assicurarsi di eseguire almeno il numero di versione del client seguente o superiore, perché queste versioni integrano miglioramenti nel modo in cui il client rileva i percorsi di rete disponibili.<br>Numero di versione Windows: **1.3.00.9267**<br>Numero di versione Mac: **1.3.00.9221**
 
 Il traffico di segnalazione viene eseguito su HTTPS e non è sensibile alla latenza come il traffico multimediale. Inoltre è contrassegnato come **Allow** negli URL/dati IP, pertanto può essere instradato in modo sicuro attraverso il client VPN.
 
@@ -266,7 +267,7 @@ Se servono altre informazioni per la risoluzione dei problemi o per richiede l'a
 
 ## <a name="howto-guides-for-common-vpn-platforms"></a>PROCEDURE per le piattaforme VPN più comuni
 
-Questa sezione fornisce collegamenti a guide dettagliate per l'implementazione di split tunneling per il traffico di Office 365 dai partner più comuni in questo spazio. Ulteriori guide verranno aggiunte non appena rese disponibili.
+Questa sezione contiene collegamenti a guide dettagliate per l'implementazione dello split tunneling per il traffico di Office 365 dai partner più comuni in questo spazio. Ulteriori guide verranno aggiunte non appena rese disponibili.
 
 - **Client VPN per Windows 10**: [ottimizzazione del traffico di Office 365 per i lavoratori remoti con il client VPN di Windows 10 nativo](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco Anyconnect**: [Optimize Anyconnect Split Tunnel per Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
