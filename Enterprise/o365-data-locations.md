@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: Posizioni dei dati di Office 365'
-ms.openlocfilehash: 7f7804c74eaf6122b59385abd79934157ae47062
-ms.sourcegitcommit: b2d1dbc42ceafad1b583df59c1b4be55e35beb44
+ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772477"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798817"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -230,7 +230,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 2 - Asia Pacifico |
 | SharePoint Online | Area geografica globale 2 - Asia Pacifico |
 | Skype for Business | Area geografica globale 2 - Asia Pacifico |
-| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
+| Microsoft Teams | Stati Uniti |
 | Office Online &amp; Mobile | Area geografica globale 2 - Asia Pacifico |
 | EOP | Area geografica globale 2 - Asia Pacifico |
 | MyAnalytics | Area geografica globale 2 - Asia Pacifico |
@@ -391,7 +391,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 1 - EMEA |
 | SharePoint Online | Area geografica globale 1 - EMEA |
 | Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
+| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
 | Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
 | EOP | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
@@ -874,7 +874,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 2 - Asia Pacifico |
 | SharePoint Online | Area geografica globale 2 - Asia Pacifico |
 | Skype for Business | Area geografica globale 2 - Asia Pacifico |
-| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
+| Microsoft Teams | Area geografica globale 1 - EMEA |
 | Office Online &amp; Mobile | Area geografica globale 2 - Asia Pacifico |
 | EOP | Area geografica globale 2 - Asia Pacifico |
 | MyAnalytics | Area geografica globale 2 - Asia Pacifico |
@@ -1771,7 +1771,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 3 - Americhe |
 | SharePoint Online | Area geografica globale 3 - Americhe |
 | Skype for Business | Stati Uniti |
-| Microsoft Teams | Stati Uniti |
+| Microsoft Teams | Area geografica globale 1 - EMEA |
 | Office Online &amp; Mobile | Area geografica globale 3 - Americhe |
 | EOP | Area geografica globale 3 - Americhe |
 | MyAnalytics | Area geografica globale 3 - Americhe |
@@ -1828,29 +1828,6 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | Stream | Area geografica globale 2 - Asia Pacifico |
 | Whiteboard | Stati Uniti |
 | Forms | Stati Uniti |
-| Workplace Analytics | Stati Uniti |
-</p></details>
-
-## <a name="federated-states-of-micronesia"></a>Stati federati di Micronesia
-<details><summary>Fare clic per espandere</summary><p>
-
-| Servizio | Posizione |
-| --- | --- |
-| Exchange Online | Area geografica globale 1 - EMEA |
-| OneDrive for Business | Area geografica globale 1 - EMEA |
-| SharePoint Online | Area geografica globale 1 - EMEA |
-| Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
-| Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
-| EOP | Area geografica globale 1 - EMEA |
-| MyAnalytics | Area geografica globale 1 - EMEA |
-| Planner | Area geografica globale 1 - EMEA |
-| Sway | Stati Uniti |
-| Yammer | Area geografica globale 1 - EMEA |
-| Servizi di OneNote | Area geografica globale 1 - EMEA |
-| Stream | Area geografica globale 1 - EMEA |
-| Whiteboard | Stati Uniti |
-| Forms | Area geografica globale 1 - EMEA |
 | Workplace Analytics | Stati Uniti |
 </p></details>
 
@@ -2047,7 +2024,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 1 - EMEA |
 | SharePoint Online | Area geografica globale 1 - EMEA |
 | Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
+| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
 | Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
 | EOP | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
@@ -2162,7 +2139,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Stati Uniti |
 | SharePoint Online | Stati Uniti |
 | Skype for Business | Stati Uniti |
-| Microsoft Teams | Stati Uniti |
+| Microsoft Teams | Area geografica globale 1 - EMEA |
 | Office Online &amp; Mobile | Stati Uniti |
 | EOP | Stati Uniti |
 | MyAnalytics | Stati Uniti |
@@ -2806,7 +2783,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 1 - EMEA |
 | SharePoint Online | Area geografica globale 1 - EMEA |
 | Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
+| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
 | Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
 | EOP | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
@@ -2944,7 +2921,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 1 - EMEA |
 | SharePoint Online | Area geografica globale 1 - EMEA |
 | Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
+| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
 | Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
 | EOP | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
@@ -3979,7 +3956,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 1 - EMEA |
 | SharePoint Online | Area geografica globale 1 - EMEA |
 | Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
+| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
 | Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
 | EOP | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
@@ -4025,7 +4002,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 2 - Asia Pacifico |
 | SharePoint Online | Area geografica globale 2 - Asia Pacifico |
 | Skype for Business | Area geografica globale 2 - Asia Pacifico |
-| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
+| Microsoft Teams | Area geografica globale 1 - EMEA |
 | Office Online &amp; Mobile | Area geografica globale 2 - Asia Pacifico |
 | EOP | Area geografica globale 2 - Asia Pacifico |
 | MyAnalytics | Area geografica globale 2 - Asia Pacifico |
@@ -4278,7 +4255,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 1 - EMEA |
 | SharePoint Online | Area geografica globale 1 - EMEA |
 | Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
+| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
 | Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
 | EOP | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
@@ -4462,7 +4439,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Stati Uniti |
 | SharePoint Online | Stati Uniti |
 | Skype for Business | Stati Uniti |
-| Microsoft Teams | Stati Uniti |
+| Microsoft Teams | Area geografica globale 1 - EMEA |
 | Office Online &amp; Mobile | Stati Uniti |
 | EOP | Stati Uniti |
 | MyAnalytics | Stati Uniti |
@@ -4485,7 +4462,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Stati Uniti |
 | SharePoint Online | Stati Uniti |
 | Skype for Business | Stati Uniti |
-| Microsoft Teams | Stati Uniti |
+| Microsoft Teams | Area geografica globale 1 - EMEA |
 | Office Online &amp; Mobile | Stati Uniti |
 | EOP | Stati Uniti |
 | MyAnalytics | Stati Uniti |
@@ -4761,7 +4738,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Stati Uniti |
 | SharePoint Online | Stati Uniti |
 | Skype for Business | Stati Uniti |
-| Microsoft Teams | Stati Uniti |
+| Microsoft Teams | Area geografica globale 1 - EMEA |
 | Office Online &amp; Mobile | Stati Uniti |
 | EOP | Stati Uniti |
 | MyAnalytics | Stati Uniti |
@@ -4899,7 +4876,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Stati Uniti |
 | SharePoint Online | Stati Uniti |
 | Skype for Business | Stati Uniti |
-| Microsoft Teams | Stati Uniti |
+| Microsoft Teams | Area geografica globale 1 - EMEA |
 | Office Online &amp; Mobile | Stati Uniti |
 | EOP | Stati Uniti |
 | MyAnalytics | Stati Uniti |
@@ -5106,7 +5083,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 1 - EMEA |
 | SharePoint Online | Area geografica globale 1 - EMEA |
 | Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
+| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
 | Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
 | EOP | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
@@ -5336,7 +5313,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 1 - EMEA |
 | SharePoint Online | Area geografica globale 1 - EMEA |
 | Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
+| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
 | Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
 | EOP | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
@@ -5589,7 +5566,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | OneDrive for Business | Area geografica globale 1 - EMEA |
 | SharePoint Online | Area geografica globale 1 - EMEA |
 | Skype for Business | Area geografica globale 1 - EMEA |
-| Microsoft Teams | Area geografica globale 1 - EMEA |
+| Microsoft Teams | Area geografica globale 2 - Asia Pacifico |
 | Office Online &amp; Mobile | Area geografica globale 1 - EMEA |
 | EOP | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
