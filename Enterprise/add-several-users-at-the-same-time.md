@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Informazioni su come aggiungere più utenti a Office 365 for business da un elenco in un foglio di calcolo o in un altro file in formato CSV. Guarda un video su YouTube che spiega come aggiungere account a Office 365. Alla fine di questo processo, ogni utente con un account avrà una cassetta postale di Office 365. '
-ms.openlocfilehash: 0d0416662bf4934d3373f1ab7ac23c8055ad3098
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: 9c24c52e280fcb316d9e77ea613a1812a235c2d2
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42316015"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901209"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Aggiungere più utenti a Office 365 contemporaneamente - Guida per l'amministratore
 
@@ -105,9 +105,9 @@ Quando si salva il file, è probabile che venga visualizzato un messaggio indica
     
 - **Che cosa succede se non si hanno tutte le informazioni necessarie per ogni utente?** I campi obbligatori sono Nome utente e Nome visualizzato, pertanto non è possibile aggiungere un nuovo utente in assenza di tali informazioni. Se non si dispone di altre informazioni, ad esempio il fax, è possibile usare uno spazio seguito da una virgola per indicare che il campo deve rimanere vuoto. 
     
-- ** How small or large can the spreadsheet be? ** The spreadsheet must have at least two rows. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet. 
+- **Come può essere piccolo o grande il foglio di calcolo?** Il foglio di calcolo deve disporre di almeno due righe. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet. 
     
-- ** What languages can I use? ** When you create your spreadsheet, you can enter user data column labels in any language or characters, but you must not change the order of the labels, as shown in the sample. You can then make entries into the fields, using any language or characters, and save your file in a Unicode or UTF-8 format. 
+- **Quali lingue è possibile utilizzare?** Quando si crea il foglio di calcolo, è possibile immettere le etichette delle colonne di dati degli utenti in qualsiasi lingua o carattere, ma non è necessario modificare l'ordine delle etichette, come illustrato nell'esempio. You can then make entries into the fields, using any language or characters, and save your file in a Unicode or UTF-8 format. 
     
 - **Che cosa succede se si aggiungono utenti di paesi o aree geografiche diverse?** Creare un foglio di calcolo distinto per ogni area. È necessario eseguire i passaggi della procedura guidata Aggiunta utenti in blocco per ogni foglio di calcolo, specificando una singola area geografica per tutti gli utenti inclusi nel file in uso. 
     
