@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Riepilogo: elenco riferimenti dei record DNS da utilizzare quando si pianifica una distribuzione di Office 365.'
-ms.openlocfilehash: 294bf256df48f4c9c846346d7b303ba452b689ec
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: f7a4363f0b93a0b8735d3eae21e6e70e6b0ac3ba
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890345"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901229"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Record Domain Name System (DNS) esterni per Office 365
 
@@ -68,11 +68,11 @@ I clienti di posta elettronica che utilizzano la federazione di Exchange dovrann
 ||||
 |:-----|:-----|:-----|
 |**Record DNS** <br/> |**Scopo** <br/> |**Valore da utilizzare** <br/> |
-|**CNAME** <br/> **(Exchange Online)** <br/> |Consente ai client di Outlook di connettersi con facilità al servizio Exchange Online utilizzando il servizio di individuazione automatica. Il servizio di individuazione automatica trova automaticamente l'host di Exchange Server e configura Outlook per gli utenti.  <br/> |**Alias:** Autodiscover  <br/> **Target:** autodiscover.outlook.com  <br/> |
+|**CNAME** <br/> **(Exchange Online)** <br/> |Consente ai client di Outlook di connettersi con facilità al servizio Exchange Online utilizzando il servizio di individuazione automatica. Il servizio di individuazione automatica trova automaticamente l'host di Exchange Server e configura Outlook per gli utenti.  <br/> |**Alias:** Autodiscover  <br/> **Destinazione:** autodiscover.outlook.com  <br/> |
 |**MX** <br/> **(Exchange Online)** <br/> |Invia la posta in arrivo per il dominio al servizio Exchange Online in Office 365.  <br/> [!NOTE] Una volta che la posta elettronica viene inviata a Exchange Online, è necessario rimuovere i record MX che puntano al vecchio sistema.   |**Dominio:** ad esempio, contoso.com  <br/> **Server di posta elettronica di destinazione:**\<token MX\>.mail.protection.outlook.com  <br/> **Preferenza/priorità:** inferiore rispetto ad altri record MX (ciò garantisce che la posta venga recapitata a Exchange Online), ad esempio 1 o "bassa"  <br/>  Trovare il \<token MX\> attenendosi alla seguente procedura:  <br/>  Accedere a Office 365, passare ad Amministrazione di Office 365 \> Domini.  <br/>  Nella colonna Azione relativa al dominio, scegliere Correggi i problemi.  <br/>  Nella sezione dei record MX, scegliere Cosa risolvere?  <br/>  Seguire le istruzioni contenute in questa pagina per aggiornare il record MX.  <br/> [Cos'è la priorità MX?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |Consente di impedire che altri utenti utilizzino il dominio per l'invio di posta indesiderata o comunque dannosa. I record SPF (Sender Policy Framework) identificano i server che sono autorizzati a inviare posta elettronica dal dominio dell'utente.  <br/> |[Record DNS esterni necessari per SPF](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **(federazione di Exchange)** <br/> |Utilizzato per la federazione di Exchange per la distribuzione ibrida.  <br/> |**Record TXT 1:** ad esempio, contoso.com e il testo hash associato, generato in modo personalizzato e per la prova del dominio (ad esempio, Y96nu89138789315669824)  <br/> **Record TXT 2:** ad esempio, exchangedelegation.contoso.com e il testo hash associato, generato in modo personalizzato e per la prova del dominio (ad esempio, Y3259071352452626169)  <br/> |
-|**CNAME** <br/> **(federazione di Exchange)** <br/> |Consente ai client di Outlook di connettersi con facilità al servizio Exchange Online tramite il servizio di individuazione automatica, nel caso in cui la società dell'utente utilizzi la federazione di Exchange. Il servizio di individuazione automatica consente di trovare automaticamente l'host di Exchange Server e configura Outlook per gli utenti.  <br/> |**Alias:** ad esempio, Autodiscover.service.contoso.com  <br/> **Target:** autodiscover.outlook.com  <br/> |
+|**CNAME** <br/> **(federazione di Exchange)** <br/> |Consente ai client di Outlook di connettersi con facilità al servizio Exchange Online tramite il servizio di individuazione automatica, nel caso in cui la società dell'utente utilizzi la federazione di Exchange. Il servizio di individuazione automatica consente di trovare automaticamente l'host di Exchange Server e configura Outlook per gli utenti.  <br/> |**Alias:** ad esempio, Autodiscover.service.contoso.com  <br/> **Destinazione:** autodiscover.outlook.com  <br/> |
 
 
 ## <a name="external-dns-records-required-for-skype-for-business-online"></a>Record DNS esterni necessari per Skype for Business Online
@@ -137,10 +137,9 @@ Per gli scenari in cui non si usa solo la posta elettronica di Exchange Online p
 ||Se si sta utilizzando...  <br/> |Scopo  <br/> |Aggiungere i seguenti valori  <br/> |
 |1  <br/> |Tutti i sistemi di posta elettronica (obbligatorio)  <br/> |Tutti i record SPF devono iniziare con questo valore  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (comune)  <br/> |Utilizzare solo con Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
-|3  <br/> |SharePoint Online ed Exchange Online (comune)  <br/> |Utilizzare con Exchange Online e SharePoint Online  <br/> |include:sharepointonline.com  <br/> |
-|4  <br/> |Sistema di posta elettronica di terze parti (meno comune)  <br/> ||include:\<sistema di posta elettronica come mail.contoso.com\>  <br/> |
-|5  <br/> |Sistema di posta locale (meno comune)  <br/> |Utilizzare se si utilizza Exchange Online Protection o Exchange Online e un altro sistema di posta elettronica  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> include:\<mail.contoso.com\>  <br/> Il valore tra parentesi (\<\>) deve rappresentare altri sistemi di posta elettronica che inviano la posta elettronica per il dominio.  <br/> |
-|6  <br/> |Tutti i sistemi di posta elettronica (obbligatorio)  <br/> ||-all  <br/> |
+|3  <br/> |Sistema di posta elettronica di terze parti (meno comune)  <br/> ||include:\<sistema di posta elettronica come mail.contoso.com\>  <br/> |
+|4  <br/> |Sistema di posta locale (meno comune)  <br/> |Utilizzare se si utilizza Exchange Online Protection o Exchange Online e un altro sistema di posta elettronica  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> include:\<mail.contoso.com\>  <br/> Il valore tra parentesi (\<\>) deve rappresentare altri sistemi di posta elettronica che inviano la posta elettronica per il dominio.  <br/> |
+|5  <br/> |Tutti i sistemi di posta elettronica (obbligatorio)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Esempio: aggiunta di un record SPF esistente
 <a name="bkmk_addtospf"> </a>

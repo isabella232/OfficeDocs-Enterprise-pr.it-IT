@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Informazioni su come usare lo split tunneling per VPN con Office 365 per ottimizzare la connettività di Office 365 per gli utenti remoti.
-ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
-ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
+ms.openlocfilehash: d40a5c3f81baae24253bc8a24d5916c6729e393b
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803988"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901219"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling VPN
 <!---
@@ -78,6 +78,7 @@ Per Office 365, Microsoft ha progettato requisiti di connettività per il serviz
 Office 365 classifica gli endpoint necessari per Office 365 in tre categorie: **Optimize**, **Allow** e **Default**. Gli endpoint **Optimize** sono al centro di questa soluzione e presentano le seguenti caratteristiche:
 
 - Sono endpoint gestiti di proprietà di Microsoft, ospitati sull'infrastruttura Microsoft
+- Sono dedicati ai carichi di lavoro principali di Office 365, come Exchange Online, SharePoint Online, Skype for Business Online e Microsoft Teams.
 - Sono forniti di IP
 - Sono caratterizzati da indicatore ROC basso che dovrebbe mantenersi tale (attualmente 20 subnet IP)
 - Sono caratterizzati da sensibilità alla latenza e/o intensità
