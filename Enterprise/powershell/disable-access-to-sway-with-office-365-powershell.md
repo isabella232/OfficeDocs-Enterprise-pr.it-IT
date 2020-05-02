@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,25 +18,25 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
 description: Informazioni su come scaricare lo script ManageSway.ps1 PowerShell che consente di disattivare l'accesso a Sway nell'organizzazione di Office 365.
-ms.openlocfilehash: c9cb31c2bdc2b4fd30f74ffa39bd288549f51f18
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a9434c3285075c45048526df755c8f1d06e0de0b
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841513"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004639"
 ---
-# <a name="disable-access-to-sway-with-office-365-powershell"></a><span data-ttu-id="2d004-103">Disattivare l'accesso a Sway con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="2d004-103">Disable access to Sway with Office 365 PowerShell</span></span>
+# <a name="disable-access-to-sway-with-office-365-powershell"></a><span data-ttu-id="140a8-103">Disattivare l'accesso a Sway con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="140a8-103">Disable access to Sway with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="2d004-p101">Lo script ManageSway.ps1 PowerShell consente di visualizzare e disabilitare i servizi nell'organizzazione di Office 365, tra cui Sway. Questo script consente di automatizzare le procedure descritte negli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="2d004-p101">The ManageSway.ps1 PowerShell script lets you view and disable services in your Office 365 organization, including Sway. This script automates the procedures that are described in the following topics:</span></span>
+<span data-ttu-id="140a8-p101">Lo script ManageSway.ps1 PowerShell consente di visualizzare e disabilitare i servizi nell'organizzazione di Office 365, tra cui Sway. Questo script consente di automatizzare le procedure descritte negli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="140a8-p101">The ManageSway.ps1 PowerShell script lets you view and disable services in your Office 365 organization, including Sway. This script automates the procedures that are described in the following topics:</span></span>
   
-- [<span data-ttu-id="2d004-106">Visualizzare le licenze e i servizi con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="2d004-106">View licenses and services with Office 365 PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
+- [<span data-ttu-id="140a8-106">Visualizzare le licenze e i servizi con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="140a8-106">View licenses and services with Office 365 PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
     
-- [<span data-ttu-id="2d004-107">Disattivare l'accesso ai servizi con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="2d004-107">Disable access to services with Office 365 PowerShell</span></span>](disable-access-to-services-with-office-365-powershell.md)
+- [<span data-ttu-id="140a8-107">Disattivare l'accesso ai servizi con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="140a8-107">Disable access to services with Office 365 PowerShell</span></span>](disable-access-to-services-with-office-365-powershell.md)
     
-<span data-ttu-id="2d004-108">È necessario scaricare i due file che sono associati allo script:</span><span class="sxs-lookup"><span data-stu-id="2d004-108">You need to download the two files that are associated with the script:</span></span>
+<span data-ttu-id="140a8-108">È necessario scaricare i due file che sono associati allo script:</span><span class="sxs-lookup"><span data-stu-id="140a8-108">You need to download the two files that are associated with the script:</span></span>
   
-- <span data-ttu-id="2d004-109">Script ManageSway.ps1 in [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)</span><span class="sxs-lookup"><span data-stu-id="2d004-109">The ManageSway.ps1 script at [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)</span></span>
+- <span data-ttu-id="140a8-109">Script ManageSway.ps1 in [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)</span><span class="sxs-lookup"><span data-stu-id="140a8-109">The ManageSway.ps1 script at [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)</span></span>
     
-- <span data-ttu-id="2d004-110">Il file della Guida per lo script in [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)</span><span class="sxs-lookup"><span data-stu-id="2d004-110">The help file for the script at [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)</span></span>
+- <span data-ttu-id="140a8-110">Il file della Guida per lo script in [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)</span><span class="sxs-lookup"><span data-stu-id="140a8-110">The help file for the script at [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)</span></span>
     
 
