@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: In questo articolo viene descritto come utilizzare minimizzazione e le tecniche di raggruppamento con Web Essentials per ridurre il numero di richieste HTTP e per ridurre il tempo necessario per il caricamento delle pagine in SharePoint Online.
-ms.openlocfilehash: ca0ad53f2c854226b729a94e345a553850517eaf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44f9e6151c22c3715b56a164bd0c9cacedcf2580
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844897"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004771"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimizzazione e creazione di bundle in SharePoint Online
 
