@@ -13,16 +13,17 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+- MET150
 f1.keywords:
 - NOCSH
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Utilizzare i cmdlet di PowerShell per la distribuzione centralizzata per facilitare la distribuzione e la gestione dei componenti aggiuntivi di Office per l'organizzazione di Office 365.
-ms.openlocfilehash: 586b66ac3632a5d86a63014a50f3c605b1c005e7
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3e3ca622f4c7a84d1fb267880ebf13cc56ad9373
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844157"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004499"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usare i cmdlet di PowerShell della distribuzione centralizzata per gestire i componenti aggiuntivi
 

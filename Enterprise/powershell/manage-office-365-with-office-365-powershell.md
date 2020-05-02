@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Riepilogo: informazioni su come usare PowerShell di Office 365 con utenti e licenze di Office 365, Skype for Business online, SharePoint Online, Exchange Online e il Centro sicurezza e conformità di Office 365.'
-ms.openlocfilehash: 5608d955dc408a600b398c9f0fb061d436f0ba56
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fbc10833d3ee1e7377e6ed68adb7d2299fce72fa
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841433"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004569"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Gestire Office 365 con PowerShell di Office 365
 
@@ -32,7 +34,7 @@ Office 365 PowerShell è uno strumento di gestione potente che integra l'interfa
   
 Selezionare l'argomento in base alle proprie esigenze:
   
-- [Panoramica](getting-started-with-office-365-powershell.md)
+- [Introduzione](getting-started-with-office-365-powershell.md)
 
     Iniziare da qui se non si ha familiarità con Office 365 PowerShell e si desidera installare i moduli di PowerShell di Office 365 e connettersi alla sottoscrizione di Office 365.
 
@@ -52,7 +54,7 @@ Selezionare l'argomento in base alle proprie esigenze:
 
     Iniziare da qui se i moduli di PowerShell di Office 365 sono stati installati e si desidera eseguire la migrazione della posta elettronica dai sistemi esistenti.
 
-- [Centro sicurezza & conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
 
     Iniziare da qui se si desidera usare i comandi di automazione per gestire il Centro sicurezza e conformità.
 

@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: In questo articolo viene illustrato come è possibile diagnosticare problemi comuni con il sito di SharePoint Online utilizzando gli strumenti di sviluppo di Internet Explorer.
-ms.openlocfilehash: 6061af0f3fa032274f03d0d531b42d1f8db05b70
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 06b9958953b55c70fe52981cd55d24c00faa490e
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840433"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004589"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosi dei problemi delle prestazioni con SharePoint Online
 

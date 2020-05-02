@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: In questo articolo viene descritto come distribuire SharePoint Online senza eseguire il test di carico tradizionale, poiché non è consentito.
-ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d082dbd93f9724080118f5e387713dc374e50643
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844707"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004609"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Pianificazione della capacità e test di carico di SharePoint Online
 In questo articolo viene descritto come eseguire la distribuzione in SharePoint Online senza il test di carico tradizionale, in quanto i test di carico non sono consentiti in SharePoint Online. SharePoint Online è un servizio cloud e le funzionalità di carico, integrità e bilanciamento del carico generale del servizio sono gestite da Microsoft.
@@ -41,6 +43,6 @@ La capacità non è solo l'aggiunta di ulteriori componenti hardware su base con
 ## <a name="why-you-cannot-load-test-sharepoint-online"></a>Perché non è possibile caricare il test di SharePoint Online
 Con gli ambienti locali, il test di carico viene utilizzato per convalidare il presupposto della scala e infine individuare il punto di interruzione di una farm. saturando il carico. 
 
-Con SharePoint Online, è necessario eseguire le operazioni in modo diverso poiché la scala è relativamente fluida e regola, limita e controlla il carico, in base a determinati sistemi euristici. Poiché si tratta di un ambiente multi-tenant su vasta scala, è necessario proteggere tutti i tenant della stessa farm, in modo da limitare automaticamente eventuali test di carico. Tuttavia, se si tenta di caricare il test, oltre a essere limitato, si riceveranno risultati deludenti e potenzialmente indesiderati perché la farm che si è verificata oggi avrà probabilmente avuto modifiche di scala durante la finestra di testing o in poche ore dopo il testing, come la scalabilità e le azioni di bilanciamento della farm vengono eseguite su base continuativa.
+Con SharePoint Online, è necessario eseguire le operazioni in modo diverso poiché la scala è relativamente fluida e regola, limita e controlla il carico, in base a determinati sistemi euristici. Poiché si tratta di un ambiente multi-tenant su vasta scala, è necessario proteggere tutti i tenant della stessa farm, in modo da limitare automaticamente eventuali test di carico. Tuttavia, se si tenta di caricare il test, oltre a essere limitato, si riceveranno risultati deludenti e potenzialmente indesiderati perché la farm che si è verificata oggi avrà probabilmente avuto modifiche in scala durante la finestra di testing o in poche ore dopo il test, in quanto le azioni di scala e di bilanciamento della farm vengono eseguite su base continuativa.
 
 Invece di tentare di caricare SharePoint come servizio, concentrarsi su seguendo le procedure consigliate e seguire le istruzioni per la [creazione, l'avvio e la gestione di un portale integro](https://go.microsoft.com/fwlink/?linkid=2105838) .
