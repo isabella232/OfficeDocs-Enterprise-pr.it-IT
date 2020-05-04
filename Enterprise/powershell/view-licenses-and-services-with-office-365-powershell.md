@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Viene illustrato come utilizzare Office 365 PowerShell per visualizzare informazioni sui piani di licenza, i servizi e le licenze disponibili nell'organizzazione di Office 365.
-ms.openlocfilehash: a130faef640e875bde864ff26e46863e82f6df7a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: e76a11d0ac174ef2de05c7e670537304dad9462f
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004139"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009531"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Visualizzare le licenze e i servizi con PowerShell di Office 365
 
@@ -33,7 +33,7 @@ Ogni sottoscrizione di Office 365 è costituita dai seguenti elementi:
 
 - **Piani di gestione delle licenze** Questi sono noti anche come piani di licenza o piani di Office 365. I piani di gestione delle licenze definiscono i servizi di Office 365 che sono disponibili per gli utenti. La sottoscrizione di Office 365 potrebbe contenere più piani di gestione delle licenze. Un esempio di piano di gestione delle licenze sarebbe Office 365 Enterprise E3.
     
-- **Servizi offerti** Questi sono noti anche come piani di servizio. Servizi sono i prodotti, le caratteristiche e le funzionalità di Office 365 disponibili in ogni piano di gestione delle licenze, ad esempio Exchange Online e Office 365 ProPlus. Gli utenti possono disporre di più licenze tramite diversi piani di licenza che garantiscono l'accesso ai diversi servizi.
+- **Servizi offerti** Questi sono noti anche come piani di servizio. Servizi sono i prodotti, le caratteristiche e le funzionalità di Office 365 disponibili in ogni piano di gestione delle licenze, ad esempio, Exchange Online e Microsoft 365 Apps for Enterprise (in precedenza denominato Office 365 ProPlus). Gli utenti possono disporre di più licenze tramite diversi piani di licenza che garantiscono l'accesso ai diversi servizi.
     
 - **Licenze** Ogni piano di gestione delle licenze contiene il numero di licenze acquistate. Assegnare licenze agli utenti in modo che possano usare i servizi di Office 365 definiti dal piano di gestione delle licenze. Ogni account utente richiede almeno una licenza da un piano di gestione delle licenze, in modo che possano accedere a Office 365 e utilizzare i servizi.
     
@@ -141,8 +141,8 @@ Nella tabella seguente vengono illustrati i piani di servizio di Office 365 e i 
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office 365 ProPlus  <br/> |
-| `MCOSTANDARD` <br/> |Skype for Business online  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for Enterprise *(in precedenza denominato Office 365 ProPlus)*  <br/> |
+| `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Ufficio  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online, piano 2  <br/> |
