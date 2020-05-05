@@ -111,7 +111,7 @@
 ## [3. Implementare la sicurezza](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. Distribuire il software client
-### [Distribuire Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+### [Come distribuire App di Microsoft 365 per grandi imprese](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 ### [Distribuire il client di Skype for Business](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [Distribuire e gestire le app per dispositivi mobili](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
