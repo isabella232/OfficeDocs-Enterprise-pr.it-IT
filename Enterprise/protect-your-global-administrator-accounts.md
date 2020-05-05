@@ -3,7 +3,7 @@ title: Proteggere gli account di amministratore globale di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 05/04/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,17 +19,14 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protezione dell'accesso da parte dell'amministratore globale all'abbonamento a Office 365.
-ms.openlocfilehash: fcd4d69df967ad592af52a36a55008463b6f30e2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 1ddd910a1515e11b6f57ac7581682d15eed31e5e
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979368"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013409"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Office 365
-
-> [!NOTE]
-> Un account di amministratore globale può essere creato senza aggiungere alcuna licenza.
 
 *Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
@@ -45,8 +42,7 @@ Microsoft fornisce funzionalità che consentono di proteggere l'organizzazione, 
     
 2. Configurare l'autenticazione a più fattori per gli account di amministratore globale di Office 365 dedicati e utilizzare la forma più complessa di autenticazione secondaria.
     
-> [!NOTE]
-> Anche se questo articolo è concentrato sugli account di amministratore globale, è opportuno considerare se sono presenti account aggiuntivi con autorizzazioni di ampio respiro per accedere ai dati dell'abbonamento, ad esempio amministratore di eDiscovery o amministratore di sicurezza o conformità. gli account devono essere protetti nello stesso modo. 
+> [! NOTE] Sebbene questo articolo sia incentrato sugli account di amministratore globale, è opportuno considerare se gli account aggiuntivi con autorizzazioni di vasta portata per accedere ai dati dell'abbonamento, ad esempio l'amministratore di eDiscovery o gli account di amministratore di sicurezza o conformità, devono essere protetti nello stesso modo. <br > Un account di amministratore globale può essere creato senza aggiungere alcuna licenza.
   
 ## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Passaggio 1. Creare account di amministratore globale di Office 365 dedicati e utilizzarli solo se necessario
 
@@ -60,7 +56,7 @@ Vi sono relativamente poche attività amministrative, ad esempio l'assegnazione 
 
 2. Accedere all'abbonamento a Office 365 con un account utente a cui è stato assegnato il ruolo di amministratore globale.
     
-3. Creare almeno un massimo di cinque account utente di amministratore globale dedicati. **Utilizzare password complesse con una lunghezza di almeno 12 caratteri.** Per ulteriori informazioni, vedere [creare una password complessa](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) . Archiviare le password per i nuovi account in una posizione sicura. 
+3. Creare fino a un massimo di quattro account utente di amministratore globale dedicati. **Utilizzare password complesse con una lunghezza di almeno 12 caratteri.** Per ulteriori informazioni, vedere [creare una password complessa](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) . Archiviare le password per i nuovi account in una posizione sicura. 
     
 4. Assegnare il ruolo di amministratore globale a ognuno dei nuovi account utente di amministratore globale dedicato.
     
@@ -91,13 +87,15 @@ Da questo momento in poi, si accede con gli account amministratore globale dedic
 > [!NOTE]
 > In questo modo, è necessario eseguire ulteriori passaggi per disconnettersi come account utente giornaliero e accedere con un account di amministratore globale dedicato. Tuttavia, è necessario eseguire questa operazione solo occasionalmente per le operazioni di amministratore globale. Si consideri che il ripristino dell'abbonamento a Office 365 dopo una violazione di un account amministratore globale richiede passaggi molto più.
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-secondary-authentication"></a>Passaggio 2. Configurare l'autenticazione a più fattori per gli account di amministratore globale di Office 365 dedicati e utilizzare la forma più complessa di autenticazione secondaria
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>Passaggio 2. Configurare l'autenticazione a più fattori per gli account di amministratore globale di Office 365 dedicati e utilizzare la forma più complessa di verifica aggiuntiva
 
-L'autenticazione a più fattori richiede ulteriori informazioni oltre il nome e la password dell'account. Office 365 supporta questi metodi di verifica:
+L'autenticazione a più fattori richiede ulteriori informazioni oltre il nome e la password dell'account. Office 365 supporta questi metodi di verifica aggiuntivi:
   
+- L'app Microsoft Authenticator
+
 - Una telefonata
     
-- Un passcode generato casualmente
+- Un codice di verifica generato casualmente inviato tramite un messaggio di testo
     
 - Una smart card virtuale o fisica
     
@@ -107,15 +105,15 @@ Se si è una società di piccole dimensioni che utilizza gli account utente arch
   
 1. [Configurare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
-2. [Impostare la verifica in due passaggi per Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) per configurare ogni account amministratore globale dedicato per la chiamata telefonica o il messaggio di testo come metodo di verifica. 
+2. Configurare il servizio di amministrazione di [microsoft 365 Office](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) per la configurazione di ogni account di amministratore globale dedicato per la chiamata telefonica o il messaggio di testo come metodo di verifica. 
     
 Se si è un'organizzazione più grande che utilizza un modello di identità ibrido di Office 365, sono disponibili altre opzioni di verifica. Se l'infrastruttura di sicurezza è già attiva per un metodo di autenticazione secondario più forte, attenersi alla seguente procedura:
   
 1. [Configurare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
-2. [Impostare la verifica in due passaggi per Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) per configurare ogni account amministratore globale dedicato per il metodo di verifica appropriato. 
+2. Configurare il servizio di certificazione generale [per Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) per la configurazione di ogni account amministratore globale dedicato per il metodo di verifica appropriato. 
     
-Se l'infrastruttura di sicurezza per il metodo di verifica più sicuro desiderato non è in esecuzione e funziona per Office 365 AMF, è consigliabile configurare gli account di amministratore globale dedicati con AMF tramite una telefonata o un messaggio di testo codice di verifica inviato a uno Smart Phone per gli account di amministratore globale come misura di sicurezza provvisoria. Non lasciare gli account di amministratore globale dedicati senza l'ulteriore protezione fornita dall'AMF.
+Se l'infrastruttura di sicurezza per il metodo di verifica più sicuro desiderato non è in esecuzione e funziona per Office 365 Mae, è consigliabile configurare gli account di amministratore globale dedicati con AMF utilizzando una chiamata telefonica o un codice di verifica del messaggio di testo inviato a uno Smart Phone per gli account di amministratore globale come misura di sicurezza provvisoria. Non lasciare gli account di amministratore globale dedicati senza l'ulteriore protezione fornita dall'AMF.
   
 Per maggiori informazioni, vedere [Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)
   
@@ -138,16 +136,15 @@ Per istruzioni su come configurare una ZAMPa, vedere [https://aka.ms/cyberpaw](h
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-Invece di avere gli account amministratore globale assegnati definitivamente al ruolo di amministratore globale, è possibile utilizzare Azure AD Privileged Identity Management (PIM) per abilitare l'assegnazione su richiesta, just-in-Time del ruolo di amministratore globale quando è necessario.
+Invece di avere gli account amministratore globale assegnati definitivamente al ruolo di amministratore globale, è possibile utilizzare Azure AD Privileged Identity Management (PIM) per abilitare l'assegnazione su richiesta, just-in-Time del ruolo di amministratore globale quando necessario.
   
 Gli account di amministratore globale, invece di essere amministratori permanenti, diventano amministratori idonei. Il ruolo di amministratore globale è inattivo finché non è necessario per un utente. Completare quindi un processo di attivazione per aggiungere il ruolo di amministratore globale all'account di amministratore globale per un periodo di tempo predeterminato. Quando il tempo scade, PIM rimuove il ruolo di amministratore globale dall'account di amministratore globale.
   
 L'utilizzo di PIM e questo processo riduce significativamente la quantità di tempo in cui gli account di amministratore globale sono vulnerabili all'attacco e all'utilizzo da parte di utenti malintenzionati.
+
+PIM è disponibile con Azure AD Premium P2, incluso in Microsoft 365 Enterprise E5 o Enterprise Mobility + Security (EMS) E5, oppure è possibile acquistare licenze individuali per gli account di amministratore globale.
   
 Per ulteriori informazioni, vedere [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
-  
-> [!NOTE]
-> PIM è disponibile con Azure AD Premium P2, incluso in Microsoft 365 Enterprise E5 o Enterprise Mobility + Security (EMS) E5, oppure è possibile acquistare licenze individuali per gli account di amministratore globale. 
   
 ### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Software di sicurezza e gestione eventi (SIEM) per la registrazione di Office 365
 
