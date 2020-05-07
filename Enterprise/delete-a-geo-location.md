@@ -12,20 +12,20 @@ f1.keywords:
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Informazioni su come eliminare una posizione satellite in Office 365 Multi-Geo.
-ms.openlocfilehash: 702f42eb9211d6c3c4f59812c6894855b169f587
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Informazioni su come eliminare una posizione satellite in Microsoft 365 Multi-Geo.
+ms.openlocfilehash: 840c1bf494ddcd7e6558b134655b5cb708bf6e7b
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974865"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057642"
 ---
-# <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>Eliminare una posizione satellite in Office 365 Multi-Geo
+# <a name="delete-a-satellite-location-in-microsoft-365-multi-geo"></a>Eliminare una posizione satellite in Microsoft 365 Multi-Geo
 
 Se una posizione satellite non è più necessaria, è possibile eliminarla dal tenant dall'interfaccia di amministrazione di SharePoint.
 
 > [!WARNING]
-> Tutti i dati degli utenti nella posizione satellite verranno eliminati definitivamente. I dati eliminati comprendono tutto il contenuto di OneDrive for Business, i siti di SharePoint e le cassette postali di Exchange, tra cui le cassette postali dei gruppi di Office 365. Prima di eliminare la posizione satellite, è necessario migrare i dati a un'altra posizione satellitare o centrale. Questa azione non può essere annullata.
+> Tutti i dati degli utenti nella posizione satellite verranno eliminati definitivamente. I dati eliminati comprendono tutto il contenuto di OneDrive for Business, i siti di SharePoint e le cassette postali di Exchange, tra cui le cassette postali dei gruppi di Microsoft 365. Prima di eliminare la posizione satellite, è necessario migrare i dati a un'altra posizione satellitare o centrale. Questa azione non può essere annullata.
 
 Solo gli amministratori globali possono eliminare le posizioni satellite.
 

@@ -13,12 +13,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sull'esperienza utente riguardo SharePoint e OneDrive in ambiente multi-geografico.
-ms.openlocfilehash: 75d24ac7a89ff2dfe66af713fdae7ece21ebda3c
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 21858989f853b2a8c87808e38763068631173f7f
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974218"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057752"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Esperienza utente in ambiente multi-geografico.
 
@@ -32,7 +32,7 @@ Viene effettuato il provisioning della cassetta postale di Exchange dell'utente 
 
 I siti hub di SharePoint migliorano l'individuazione e l’interesse per il contenuto dei dipendenti, creando una rappresentazione completa e coerente di progetti, reparti e aree geografiche. In un ambiente multi-geo, siti da posizioni satellite possono essere facilmente associati con un sito hub indipendentemente dalla sua posizione geografica. Gli utenti possono eseguire ricerche e ottenere risultati attraverso l'hub con una singola ricerca, indipendentemente dalla posizione geografica dei siti.
 
-## <a name="office-365-app-launcher"></a>Avvio app di Office 365
+## <a name="microsoft-365-app-launcher"></a>Icona di avvio delle app di Microsoft 365
 
 L’icona di avvio delle app funziona con il multi-geo e indirizza ogni riquadro verso la posizione geografica appropriata del carico di lavoro. I riquadri di SharePoint e OneDrive indirizzeranno l'utente verso la località corrispondente alla posizione geografica predisposta per l'utente. Questo significa che se l'utente ha un OneDrive nella posizione centrale, il riquadro SharePoint lo indirizzerà verso SP Home nella posizione centrale, ma sarà effettuato il provisioning del sito del gruppo nella posizione corrispondente al proprio PDL. 
 

@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Informazioni sull'amministrazione di servizi SharePoint e OneDrive in un ambiente multi-geo.
-ms.openlocfilehash: 483250f8956ba1220c29bb769abef187ac9ec53d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 979ca202ac4d21dc3eff5a933538eee5af050167
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974028"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057662"
 ---
-# <a name="administering-a-multi-geo-environment"></a>Amministrare un ambiente multi-geo
+# <a name="administering-a-multi-geo-environment"></a>Amministrare un ambiente multi-geografico
 
-Di seguito viene descritto come funzionano i servizi Office 365 in un ambiente multi-geo.
+Di seguito viene descritto come funzionano i servizi di Microsoft 365 in un ambiente multi-geografico.
 
 ## <a name="audit-log-search"></a>Ricerca dei log di controllo
 
-Un [log di controllo](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) univoco per tutte le posizioni satellite è disponibile dalla pagina di ricerca del registro di controllo di Office 365. Sono disponibili tutte le voci di log di controllo tra le varie aree geografiche, ad esempio, attività di utenti dell'area geografica NAM e EUR verranno visualizzate in un'unica vista dell'organizzazione e sarà possibile applicarvi i filtri esistenti per vedere le attività di un utente specifico.
+Un [log di controllo](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificato per tutte le posizioni satellite è disponibile dalla pagina di ricerca log di controllo di Microsoft 365. Sono disponibili tutte le voci di log di controllo tra le varie aree geografiche, ad esempio, attività di utenti dell'area geografica NAM e EUR verranno visualizzate in un'unica vista dell'organizzazione e sarà possibile applicarvi i filtri esistenti per vedere le attività di un utente specifico.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, Archiviazione sicura, App
 
@@ -36,7 +36,7 @@ Tutti i servizi BCS, Archiviazione sicura e App presentano istanze separate in o
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-Per impostazione predefinita, un responsabile di eDiscovery o un amministratore di un multi tenant geografico potranno eseguire eDiscovery solo in una posizione centrale di quel tenant. L'amministratore globale di Office 365 deve assegnare le autorizzazioni di manager di eDiscovery per consentire ad altri di eseguire eDiscovery e assegnare un parametro "Area" nel filtro di sicurezza e conformità applicabile per specificare l'area per l'esecuzione di eDiscovery come posizione satellite, in caso contrario nessuna istanza di eDiscovery verrà eseguita per la posizione geografica satellite. Per configurare il filtro di sicurezza e conformità di un'area, vedere [Configurare Multi-Geo eDiscovery di Office 365](multi-geo-ediscovery-configuration.md).
+Per impostazione predefinita, un responsabile di eDiscovery o un amministratore di un multi tenant geografico potranno eseguire eDiscovery solo in una posizione centrale di quel tenant. L'amministratore globale di Microsoft 365 deve assegnare le autorizzazioni di manager di eDiscovery per consentire ad altri di eseguire eDiscovery e assegnare un parametro "Area" nel filtro di sicurezza e conformità applicabile per specificare l'area per l'esecuzione di eDiscovery come posizione satellite, in caso contrario nessuna istanza di eDiscovery verrà eseguita per la posizione geografica satellite. Per configurare il filtro di sicurezza e conformità di un'area, vedere [Configurare eDiscovery per Microsoft 365 Multi-Geo](multi-geo-ediscovery-configuration.md).
 
 ## <a name="exchange-mailboxes"></a>Cassette postali di Exchange
 
@@ -64,7 +64,7 @@ L'[Interfaccia di amministrazione di OneDrive](https://admin.onedrive.com) è un
 
 ## <a name="security-and-compliance-admin-center"></a>Centro sicurezza e conformità
 
-Per il tenant Multi-Geo esiste un centro di conformità centrale: [Centro sicurezza e conformità di Office 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
+Per un tenant multi-geografico esiste un centro di conformità centrale: [Centro sicurezza e conformità di Microsoft 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
 
 ## <a name="sharepoint-storage-quota"></a>Quota di archiviazione di SharePoint
 
@@ -98,7 +98,7 @@ L'app è attualmente disponibile nelle aree geografiche seguenti:
 - Europa
 - Asia Pacifico
 
-Tuttavia, Stream non è ancora disponibile nei seguenti paesi/aree geografiche attualmente supportati per Office 365 Video, quindi per le istanze locali verrà usata la RMS che si trova nell’area supportata più vicina.
+Tuttavia, Stream non è ancora disponibile nei seguenti paesi/aree geografiche attualmente supportati per Microsoft 365 Video, quindi per le istanze locali verrà usato il servizio RMS che si trova nell'area supportata più vicina.
 
 - Australia
 - Canada

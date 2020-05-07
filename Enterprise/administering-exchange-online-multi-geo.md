@@ -12,18 +12,18 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sull'amministrazione delle impostazioni multi-geografiche di Exchange Online con PowerShell di Microsoft.
-ms.openlocfilehash: 4074748a9fdd567e37159198524acb3979291ef5
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 5dac890d2b0d5a797f8c2507c115c14147add7ff
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41973998"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057652"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico
 
-È richiesta la Sessione remota di PowerShell per visualizzare e configurare le proprietà multi-geografiche nell’ambiente di Office 365. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+È richiesta la Sessione remota di PowerShell per visualizzare e configurare le proprietà multi-geografiche nell’ambiente di Microsoft 365. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-È necessario il [modulo di PowerShell di Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o versione successiva in V1. x per visualizzare la proprietà**PreferredDataLocation** sugli oggetti utente. Gli oggetti utente sincronizzati con AAD Connect in AAD non possono contenere i valori **PreferredDataLocation** modificati direttamente tramite ADD PowerShell. Gli oggetti utente solo cloud possono essere modificati tramite AAD PowerShell. Per connettersi a PowerShell di Azure Active Directory, vedere [Connettersi a PowerShell di Office 365](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
+È necessario il [modulo di PowerShell di Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o versione successiva in V1. x per visualizzare la proprietà**PreferredDataLocation** sugli oggetti utente. Gli oggetti utente sincronizzati con AAD Connect in AAD non possono contenere i valori **PreferredDataLocation** modificati direttamente tramite ADD PowerShell. Gli oggetti utente solo cloud possono essere modificati tramite AAD PowerShell. Per connettersi a PowerShell di Azure Active Directory, vedere [Connettersi a PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
 
 ## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>È possibile connettersi direttamente a una posizione geografica con PowerShell di Exchange Online.
 
@@ -59,7 +59,7 @@ Per connettersi a una posizione geografica specifica, il parametro *ConnectionUr
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>Visualizzare le posizioni geografiche disponibili configurate nella propria organizzazione di Exchange Online
 
-Per visualizzare l'elenco di località geografiche configurate in Office 365 Multi-Geo, eseguire il comando seguente in PowerShell di Exchange Online:
+Per visualizzare l'elenco di località geografiche configurate in Microsoft 365 Multi-Geo, eseguire il comando seguente in PowerShell di Exchange Online:
 
 ```powershell
 Get-OrganizationConfig | Select -ExpandProperty AllowedMailboxRegions | Format-Table
@@ -135,7 +135,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 **Note**:
 
-- Come già accennato in precedenza non è possibile usare questa procedura per gli oggetti utente sincronizzati dalla Active Directory locale. È necessario modificare il valore **PreferredDataLocation** in Active Directory e sincronizzarlo con AAD Connect. Per ulteriori informazioni, vedere [Sincronizzazione di Azure Active Directory Connect: configurare il percorso di dati preferito per le risorse di Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+- Come già accennato in precedenza non è possibile usare questa procedura per gli oggetti utente sincronizzati dalla Active Directory locale. È necessario modificare il valore **PreferredDataLocation** in Active Directory e sincronizzarlo con AAD Connect. Per ulteriori informazioni, vedere [Sincronizzazione di Azure Active Directory Connect: configurare il percorso di dati preferito per le risorse di Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 - Il tempo necessario per spostare una cassetta postale in una nuova posizione geografica dipende da diversi fattori:
 
@@ -189,7 +189,7 @@ In questo esempio crea un nuovo account utente per Elizabeth Brunner con i valor
 New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "Elizabeth Brunner" -FirstName Elizabeth -LastName Brunner -LicenseAssignment contoso:ENTERPRISEPREMIUM -PreferredDataLocation AUS
 ```
 
-Per ulteriori informazioni sulla creazione di nuovi account utente e la ricerca di valori di LicenseAssignment in Azure AD PowerShell, vedere [Creare account utente con PowerShell di Office 365](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell) e [Visualizzare le licenze e i servizi con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell).
+Per ulteriori informazioni sulla creazione di nuovi account utente e la ricerca di valori di LicenseAssignment in Azure AD PowerShell, vedere [Creare account utente con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell) e [Visualizzare le licenze e i servizi con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell).
 
 > [!NOTE]
 > Se si sta utilizzando PowerShell di Exchange Online per abilitare una cassetta postale si desidera che questa sia creata direttamente nella posizione geografica specificata in **PreferredDataLocation**, è necessario utilizzare un cmdlet di Exchange Online come **Enable-Mailbox** o **New-Mailbox** direttamente con il servizio di cloud. Se si usa il cmdlet di Exchange PowerShell locale**Enable-RemoteMailbox**, la cassetta postale verrà creata nella posizione geografica centrale.
@@ -228,4 +228,4 @@ Oppure, la procedura seguente consente di aggiungere cassette postali direttamen
 
 ## <a name="see-also"></a>Vedere anche
 
-[Gestione di Office 365 ed Exchange Online con Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6)
+[Gestione di Microsoft 365 ed Exchange Online con Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6)

@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni su come trasferire un sito di SharePoint in un'altra posizione geografica.
-ms.openlocfilehash: 8a842f32091f84d64522526ad5407af8cfd780a9
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185717"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057996"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Trasferire un sito di SharePoint in una posizione geografica diversa
 
@@ -26,8 +26,8 @@ Con il trasferimento geografico dei siti di SharePoint, è possibile spostare si
 
 È possibile trasferire da una posizione geografica a un'altra i tipi di siti seguenti:
 
-- Siti connessi a un gruppo di Office 365
-- Siti moderni senza associazioni a gruppi di Office 365
+- Siti connessi a un gruppo di Microsoft 365
+- Siti moderni senza associazioni a gruppi di Microsoft 365
 - Siti di SharePoint classici
 - Siti di comunicazioni
 
@@ -96,13 +96,13 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 Verrà restituito *Success* se il sito è pronto per il trasferimento oppure *Fail* se sono presenti condizioni di blocco.
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-office-365-group"></a>Avviare il trasferimento geografico di un sito di SharePoint non associato a gruppi di Office 365
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Avviare lo spostamento geografico di un sito di SharePoint non associato a gruppi di Microsoft 365
 
 Per impostazione predefinita, l'URL iniziale del sito diventerà l'URL della posizione geografica di destinazione. Ad esempio:
 
 Da https://Contoso.sharepoint.com/sites/projectx a https://ContosoEUR.sharepoint.com/sites/projectx
 
-Per i siti privi di associazioni a gruppi di Office 365, è anche possibile rinominare il sito usando il parametro `-DestinationUrl`. Ad esempio:
+Per i siti privi di associazioni a gruppi di Microsoft 365, è anche possibile rinominare il sito usando il parametro `-DestinationUrl`. Ad esempio:
 
 Da https://Contoso.sharepoint.com/sites/projectx a https://ContosoEUR.sharepoint.com/sites/projecty
 
@@ -112,11 +112,11 @@ Per avviare il trasferimento del sito, eseguire:
 
 ![Screenshot della finestra di PowerShell con il cmdlet Start-SPOSiteContentMove](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-office-365-group-connected-site"></a>Avviare il trasferimento geografico di un sito di SharePoint connesso a un gruppo di Office 365
+### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Avviare lo spostamento geografico di un sito di SharePoint connesso a un gruppo di Microsoft 365
 
-Per trasferire un sito connesso a un gruppo di Office 365, l'amministratore globale deve prima di tutto modificare l'attributo relativo al percorso dati preferito (PDL) per il gruppo di Office 365.
+Per spostare un sito connesso a un gruppo di Microsoft 365, l'amministratore globale deve prima di tutto modificare l'attributo relativo al percorso dati preferito (PDL) per il gruppo di Microsoft 365.
 
-Per impostare il PDL per un gruppo di Office 365:
+Per impostare il PDL per un gruppo di Microsoft 365:
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -187,9 +187,9 @@ Il client win32 di OneNote e l'app UWP (Universal Windows Platform) rileveranno 
 - OneNote UWP – Versione 16.0.8431.1006 (e successive)
 - OneNote Mobile App – Versione 16.0.8431.1011 (e successive)
 
-### <a name="teams-applicable-to-office-365-group-connected-sites"></a>Teams (applicabile ai siti connessi a gruppi di Office 365)
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (applicabile ai siti connessi a gruppi di Microsoft 365)
 
-Al termine del trasferimento geografico del sito di SharePoint, gli utenti avranno accesso ai propri file nel sito del gruppo di Office 365 nell'app Teams. Inoltre, i file condivisi tramite la chat di Teams dal proprio sito prima del trasferimento geografico continueranno a funzionare anche dopo il trasferimento.
+Al termine dello spostamento geografico del sito di SharePoint, gli utenti avranno accesso ai propri file nel sito del gruppo di Microsoft 365 nell'app Teams. Inoltre, i file condivisi tramite la chat di Teams dal proprio sito prima del trasferimento geografico continueranno a funzionare anche dopo il trasferimento.
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>App SharePoint per dispositivi mobili (iOS/Android)
 

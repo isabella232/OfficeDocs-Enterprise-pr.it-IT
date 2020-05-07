@@ -11,15 +11,15 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords:
 - NOCSH
-description: Informazioni su come aggiungere o rimuovere un amministratore geografico in Office 365 multi-geo.
-ms.openlocfilehash: 4225cd73aa243fadde21e5bd2d248fe54f738e33
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Informazioni su come aggiungere o rimuovere un amministratore di posizione geografica in Microsoft 365 Multi-Geo.
+ms.openlocfilehash: f2cb71f26216d859c00cefb10661608178e19315
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974198"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057702"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Aggiungere o rimuovere un amministratore geografico in Office 365 multi-geo.
+# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Aggiungere o rimuovere un amministratore di posizione geografica in Microsoft 365 Multi-Geo
 
 È possibile configurare amministratori separati per ogni posizione geografica disponibili nel tenant. Questi amministratori avranno accesso alle impostazioni SharePoint Online e OneDrive specifiche per la posizione geografica.
 
@@ -43,7 +43,7 @@ Per rimuovere un utente da amministratore geografico di una posizione, eseguire 
 
 ### <a name="adding-a-group-as-a-geo-admin"></a>Aggiunta di un gruppo come amministratore geografico
 
-È possibile aggiungere un gruppo di sicurezza o un gruppo di sicurezza abilitato alla posta elettronica come amministratore geografico. (I gruppi di distribuzione e i Gruppi di Office 365 non sono supportati).
+È possibile aggiungere un gruppo di sicurezza o un gruppo di sicurezza abilitato alla posta elettronica come amministratore di posizione geografica. I gruppi di distribuzione e i gruppi di Microsoft 365 non sono supportati.
 
 Per aggiungere un gruppo come amministratore geografico, eseguire `Add-SPOGeoAdministrator -GroupAlias <alias>`
 

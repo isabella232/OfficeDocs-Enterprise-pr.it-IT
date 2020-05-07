@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Informazioni su come spostare un sito OneDrive in un'altra posizione geografica.
-ms.openlocfilehash: e093eab04a5ef19fcd6759d66cb65e9ee264c388
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974018"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058006"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Spostare un sito OneDrive in un'altra posizione geografica 
 
-Lo spostamento geografico di Onedrive consente di spostare OneDrive di un utente in un'altra posizione geografica. Lo spostamento geografico di OneDrive viene eseguito dall'amministratore di SharePoint Online o dall'amministratore globale di Office 365. Prima di avviare lo spostamento geografico di OneDrive, assicurarsi di informare l'utente che il relativo OneDrive sarà spostato e di suggerirgli di chiudere tutti i file per la durata dello spostamento. Se l'utente ha un documento Office aperto durante lo spostamento, dopo lo spostamento dovrà salvarlo nella nuova posizione. Lo spostamento può essere pianificato nel futuro, se lo si desidera.
+Lo spostamento geografico di Onedrive consente di spostare OneDrive di un utente in un'altra posizione geografica. Lo spostamento geografico di OneDrive viene eseguito dall'amministratore di SharePoint Online o dall'amministratore globale di Microsoft 365. Prima di avviare lo spostamento geografico di OneDrive, assicurarsi di informare l'utente che il relativo OneDrive sarà spostato e di suggerirgli di chiudere tutti i file per la durata dello spostamento. Se l'utente ha un documento Office aperto durante lo spostamento, dopo lo spostamento dovrà salvarlo nella nuova posizione. Lo spostamento può essere pianificato nel futuro, se lo si desidera.
 
 Il servizio OneDrive usa Archiviazione BLOB di Azure per archiviare il contenuto. L'archiviazione BLOB associata a OneDrive dell'utente verrà spostata dall'origine alla posizione geografica di destinazione entro 40 giorni, quando il OneDrive di destinazione diventerà disponibile all'utente. L'accesso al OneDrive dell'utente verrà ripristinato non appena il OneDrive di destinazione diventa disponibile. 
 
-Durante il periodo dello spostamento geografico di OneDrive (circa 2-6 ore), OneDrive dell'utente è in sola lettura. L'utente può comunque accedere ai propri file attraverso il client di sincronizzazione di OneDrive oppure il sito OneDrive in SharePoint Online. Al termine dello spostamento geografico di OneDrive, l'utente verrà automaticamente connesso al proprio OneDrive nella posizione geografica di destinazione quando accederà a OneDrive dall'icona di avvio dell'app Office 365. Il client di sincronizzazione inizierà automaticamente la sincronizzazione dalla nuova posizione.
+Durante il periodo dello spostamento geografico di OneDrive (circa 2-6 ore), OneDrive dell'utente è in sola lettura. L'utente può comunque accedere ai propri file attraverso il client di sincronizzazione di OneDrive oppure il sito OneDrive in SharePoint Online. Al termine dello spostamento geografico di OneDrive, l'utente verrà automaticamente connesso al proprio OneDrive nella posizione geografica di destinazione quando accederà a OneDrive dall'icona di avvio dell'app di Microsoft 365. Il client di sincronizzazione inizierà automaticamente la sincronizzazione dalla nuova posizione.
 
 Le procedure descritte in questo articolo richiedono il [modulo PowerShell di Microsoft SharePoint Online](https://www.microsoft.com/download/details.aspx?id=35588).
 
@@ -163,7 +163,7 @@ Gli utenti di OneDrive dovrebbero riscontrare un'interruzione minima del proprio
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-Mentre lo spostamento è in corso, OneDrive dell'utente diventa di sola lettura. Al termine dello spostamento, l'utente viene indirizzato al suo OneDrive nella nuova posizione geografica non appena accede a OneDrive dall'icona di avvio dell'app Office 365 o da un browser Web.
+Mentre lo spostamento è in corso, OneDrive dell'utente diventa di sola lettura. Al termine dello spostamento, l'utente viene indirizzato al suo OneDrive nella nuova posizione geografica non appena accede a OneDrive dall'icona di avvio dell'app di Microsoft 365 o da un browser Web.
 
 ### <a name="permissions-on-onedrive-content"></a>Autorizzazioni per il contenuto di OneDrive
 

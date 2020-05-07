@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Informazioni sulle funzionalità Multi-Geo in Exchange Online.
-ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: e6273c49e185c59cad6b56cf7d8399cdd6f25d22
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890548"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057976"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Funzionalità Multi-Geo in Exchange Online
 
@@ -45,11 +45,11 @@ Exchange Online sincronizza la proprietà **PreferredDataLocation** di Azure AD 
 
 - Se il codice **PreferredDataLocation** non è corretto, ad esempio un tipo di NAN anziché NAM, verrà effettuato il provisioning della cassetta postale nella posizione geografica centrale.
 
-**Nota**: le funzionalità Multi-Geo e le riunioni di Skype for Business online ospitate a livello regionale usano la proprietà **PreferredDataLocation** per gli oggetti utente per individuare i servizi. Se si configurano i valori di **PreferredDataLocation** per gli oggetti utente per le riunioni ospitate a livello regionale, la cassetta postale di tali utenti verrà spostata automaticamente nella posizione geografica specificata dopo che il Multi-Geo è abilitato nel tenant di Office 365.
+**Nota**: le funzionalità Multi-Geo e le riunioni di Skype for Business online ospitate a livello regionale usano la proprietà **PreferredDataLocation** per gli oggetti utente per individuare i servizi. Se si configurano i valori di **PreferredDataLocation** per gli oggetti utente per le riunioni ospitate a livello regionale, la cassetta postale di tali utenti verrà spostata automaticamente nella posizione geografica specificata dopo che il Multi-Geo è abilitato nel tenant di Microsoft 365.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitazioni della funzionalità per il Multi-Geo in Exchange Online
 
-- Le funzionalità di sicurezza e conformità, ad esempio il controllo ed eDiscovery, disponibili nell'interfaccia di amministrazione di Exchange (EAC) non sono disponibili nelle organizzazioni Multi-Geo. È invece necessario usare il [Centro sicurezza e conformità di Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) per configurare le funzionalità di sicurezza e conformità.
+- Le funzionalità di sicurezza e conformità, ad esempio il controllo ed eDiscovery, disponibili nell'interfaccia di amministrazione di Exchange (EAC) non sono disponibili nelle organizzazioni Multi-Geo. È invece necessario usare il [Centro sicurezza e conformità di Microsoft 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) per configurare le funzionalità di sicurezza e conformità.
 
 - Gli utenti di Outlook per Mac potrebbero riscontrare una perdita temporanea di accesso alla cartella di archiviazione online mentre viene spostata la cassetta postale in una nuova posizione geografica. Questa condizione si verifica quando la cassetta postale primaria e quella di archiviazione dell’utente si trovano in diverse posizioni geografiche, poiché gli spostamenti delle cassette postali tra diverse aree geografiche potrebbero essere completati in momenti diversi.
 
