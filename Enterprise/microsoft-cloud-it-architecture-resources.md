@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: "Riepilogo: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft. Informazioni su come implementare un desktop protetto e moderno con Windows 10 e Office ProPlus."
-ms.openlocfilehash: ebbf2f2eb15523b455c7fab1c306eea6e0d192b1
-ms.sourcegitcommit: 9416fbf8f136baeaf7d45eb243921c70ae67438d
+description: "Riepilogo: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft."
+ms.openlocfilehash: e5d1ba6b69dc092df72ead30da620f6007843f5c
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43037803"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013429"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 
- **Riepilogo:** informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft. Informazioni su come implementare un desktop protetto e moderno con Windows 10 e Office ProPlus.
+ **Riepilogo**: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft.
   
 Questi poster e strumenti dell'architettura forniscono informazioni sui servizi cloud Microsoft, tra cui Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 e soluzioni cloud e locali ibride. Decision maker ed esperti IT possono usare queste risorse per determinare le soluzioni ideali per i propri carichi di lavoro e prendere decisioni sulla base di componenti dell'infrastruttura, quali sicurezza e identità. 
   
@@ -52,7 +52,6 @@ Questi poster e strumenti dell'architettura forniscono informazioni sui servizi 
     - [Information Protection di Office 365 per il GDPR](#office-365-information-protection-for-gdpr)
     - [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
     - [Soluzioni di telefonia Microsoft](#microsoft-telephony-solutions) 
-    - [Distribuire un desktop protetto e moderno con Microsoft](microsoft-cloud-it-architecture-resources.md#msd)
     
 Inviare commenti e suggerimenti all'indirizzo [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
 
@@ -224,15 +223,6 @@ Microsoft supporta diverse opzioni per iniziare il viaggio verso l'implementazio
 
 Per altre informazioni, vedere l'articolo correlato a questo poster: [Soluzioni di telefonia Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Distribuire un desktop protetto e moderno con Microsoft
-
-Cosa devono sapere gli architetti IT della distribuzione e della gestione degli aggiornamenti per Office 365 ProPlus su Windows 10.
-  
-|**Elemento**|**Descrizione**|
-|:-----|:-----|
-|[![Miniatura per il modello Distribuire un desktop protetto e moderno con Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf) \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Questo modello contiene: <ul><li>  Distribuzione di Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Distribuzione di Windows 10 e Office ProPlus con Microsoft Endpoint Configuration Manager </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus con Microsoft Endpoint Configuration Manager </li><li>  Funzionalità di protezione predefinite e aggiuntive di Windows 10 </li></ul><br/> |
-   
 ## <a name="see-also"></a>Vedere anche
 
 [Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
