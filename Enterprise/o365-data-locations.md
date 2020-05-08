@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: Posizioni dei dati di Office 365'
-ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+ms.openlocfilehash: 8fd863034439f22c1c030ff8af6dba97f678f537
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798817"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058016"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -84,7 +84,7 @@ Office 365 usa tecnologie lato servizio che crittografano i dati dei clienti ina
 
 Consultare la pagina [Prodotti disponibili in base all'area](https://go.microsoft.com/fwlink/p/?linkid=2093451) per informazioni sulla residenza dei dati per Microsoft Azure.
 
-### <a name="what-are-multi-geo-capabilities-in-office-365"></a>Cos'è Multi-Geo Capabilities in Office 365?
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Cos'è Multi-Geo Capabilities in Microsoft 365?
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) consente di estendere un singolo tenant di Office 365 in più aree di data center di Office 365 e offre ai clienti la possibilità di archiviare i dati essenziali di Office 365 dei clienti in specifiche aree per ogni singolo utente.
 
@@ -121,7 +121,7 @@ Per i data center specifici per paese o area geografica, di seguito sono indicat
 | Giappone | Osaka, Tokyo, Saitama |
 | Corea del Sud | Busan, Seoul |
 | Norvegia | Oslo, Stavanger |
-| Sudafrica | Capetown, Johannesburg |
+| Sudafrica | Città del Capo, Johannesburg |
 | Svizzera | Ginevra, Zurigo |
 | Emirati Arabi Uniti | Dubai, Abu Dhabi |
 | Regno Unito | Durham, Londra, Cardiff |
@@ -727,7 +727,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | Workplace Analytics | Stati Uniti |
 </p></details>
 
-## <a name="boliva"></a>Bolivia
+## <a name="bolivia"></a>Bolivia
 <details><summary>Fare clic per espandere</summary><p>
 
 | Servizio | Posizione |
@@ -4039,7 +4039,7 @@ Per impostazione predefinita, i nuovi tenant di Office 365 vengono ospitati in u
 | Workplace Analytics | Stati Uniti |
 </p></details>
 
-## <a name="papaua-new-guinea"></a>Papua Nuova Guinea
+## <a name="papua-new-guinea"></a>Papua Nuova Guinea
 <details><summary>Fare clic per espandere</summary><p>
 
 | Servizio | Posizione |
