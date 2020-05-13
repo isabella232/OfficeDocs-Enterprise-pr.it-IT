@@ -18,16 +18,16 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Riepilogo: connettere Windows PowerShell a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell."
-ms.openlocfilehash: d47f4dab4938bd02be25525d2912604f676079db
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: 47fd2be814b446cf12b136e359cdadc9374a7ab6
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547754"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208807"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Effettuare la connessione a tutti i servizi Office 365 in un'unica finestra di Windows PowerShell
 
-Quando si utilizza PowerShell per gestire Office 365, è possibile che siano disponibili fino a cinque sessioni di Windows PowerShell diverse contemporaneamente corrispondenti all'interfaccia di amministrazione di Microsoft 365, SharePoint Online, Exchange Online, Skype for business online, Microsoft teams e il Centro sicurezza &amp; e conformità. Con cinque diversi metodi di connessione in sessioni di Windows PowerShell separate, il desktop potrebbe essere simile al seguente:
+Quando si utilizza PowerShell per gestire Office 365, è possibile che siano disponibili fino a cinque sessioni di Windows PowerShell diverse contemporaneamente corrispondenti all'interfaccia di amministrazione di Microsoft 365, SharePoint Online, Exchange Online, Skype for business online, Microsoft teams e il Centro sicurezza e &amp; conformità. Con cinque diversi metodi di connessione in sessioni di Windows PowerShell separate, il desktop potrebbe essere simile al seguente:
   
 ![Cinque console di Windows PowerShell in esecuzione contemporaneamente](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
@@ -37,7 +37,7 @@ Questo non è ottimale per la gestione di Office 365 perché non è possibile sc
 >Questo articolo contiene attualmente solo i comandi per la connessione al cloud Office 365 Worldwide (+ GCC). Altre note forniscono collegamenti ad articoli contenenti informazioni sulla connessione alle altre cloud di Office 365.
 >
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Prima di poter gestire tutte le Office 365 da una singola istanza di Windows PowerShell, prendere in considerazione i prerequisiti seguenti:
   
@@ -63,7 +63,7 @@ Prima di poter gestire tutte le Office 365 da una singola istanza di Windows Pow
     
     È necessario utilizzare una versione di Windows a 64 bit a causa dei requisiti per il modulo Skype for business online e uno dei moduli di Office 365.
     
-- È necessario installare i moduli necessari per Azure AD, Exchange Online, SharePoint Online, Skype for business online e teams:
+- È necessario installare i moduli necessari per Azure Active Directory (Azure AD), Exchange Online, SharePoint Online, Skype for business online e teams:
     
    - [Azure Active Directory V2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
@@ -71,7 +71,7 @@ Prima di poter gestire tutte le Office 365 da una singola istanza di Windows Pow
    - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
    - [Panoramica di PowerShell Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  Windows PowerShell deve essere configurato per l'esecuzione di script firmati per Skype for business online e &amp; il Centro sicurezza e conformità. A tale scopo, eseguire il comando riportato di seguito in una sessione di Windows PowerShell con privilegi elevati (una finestra di Windows PowerShell che si apre selezionando **Esegui come amministratore**).
+-  Windows PowerShell deve essere configurato per l'esecuzione di script firmati per Skype for business online e il Centro sicurezza e &amp; conformità. A tale scopo, eseguire il comando riportato di seguito in una sessione di Windows PowerShell con privilegi elevati (una finestra di Windows PowerShell che si apre selezionando **Esegui come amministratore**).
     
   ```powershell
   Set-ExecutionPolicy RemoteSigned
@@ -89,7 +89,7 @@ Di seguito sono riportati i passaggi da eseguire per la connessione a tutti i se
   $credential = Get-Credential
   ```
 
-3. Eseguire questo comando per connettersi ad Azure Active Directory (AD) utilizzando il modulo Azure Active Directory PowerShell per Graph.
+3. Eseguire questo comando per connettersi ad Azure AD utilizzando il modulo di Azure Active Directory PowerShell per Graph.
     
   ```powershell
   Connect-AzureAD -Credential $credential
@@ -105,14 +105,14 @@ Di seguito sono riportati i passaggi da eseguire per la connessione a tutti i se
 >PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
 >
 
-4. Eseguire questi comandi per connettersi a SharePoint Online. Sostituire _ \<DomainHost>_ con il valore effettivo per il dominio. Ad esempio, per "litwareinc.onmicrosoft.com", il _ \<valore di DomainHost>_ è "litwareinc".
+4. Eseguire questi comandi per connettersi a SharePoint Online. Sostituire _ \< DomainHost>_ con il valore effettivo per il dominio. Ad esempio, per "litwareinc.onmicrosoft.com", il valore di _ \< DomainHost>_ è "litwareinc".
     
   ```powershell
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
   Connect-SPOService -Url https://<domainhost>-admin.sharepoint.com -credential $credential
   ```
 
-5. Eseguire questi comandi per connettersi a Skype for business online. Un avviso relativo all'aumento `WSMan NetworkDelayms` del valore è previsto per la prima volta che si connette e deve essere ignorato.
+5. Eseguire questi comandi per connettersi a Skype for business online. Un avviso relativo all'aumento del `WSMan NetworkDelayms` valore è previsto per la prima volta che si connette e deve essere ignorato.
     
   ```powershell
   Import-Module SkypeOnlineConnector
@@ -141,7 +141,7 @@ Di seguito sono riportati i passaggi da eseguire per la connessione a tutti i se
 >Per connettersi a cloud di Microsoft teams diversi da quelli di tutto il mondo, vedere [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams?view=teams-ps).
 >
 
-8. Eseguire questi comandi per connettersi al centro sicurezza &amp; e conformità.
+8. Eseguire questi comandi per connettersi al centro sicurezza e &amp; conformità.
     
   ```powershell
   $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
@@ -149,7 +149,7 @@ Di seguito sono riportati i passaggi da eseguire per la connessione a tutti i se
   ```
 
 >[!Note]
->Per eseguire la connessione al &amp; Centro sicurezza e conformità per Office 365 cloud diversi da quelli di tutto il mondo, vedere [connect to office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+>Per eseguire la connessione al &amp; Centro sicurezza e conformità per office 365 cloud diversi da quelli di tutto il mondo, vedere [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 >
 
 Di seguito sono riportati tutti i comandi in un singolo blocco quando si utilizza il modulo di Azure Active Directory PowerShell per Graph. Specificare il nome dell'host di dominio e quindi eseguirli contemporaneamente.
@@ -234,7 +234,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
-Per il centro &amp; sicurezza e conformità, vedere [connect to Office 365 Security & Compliance Center PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) to Connect using multi-factor authentication:
+Per il &amp; Centro sicurezza e conformità, vedere [Connect to Office 365 Security & Compliance Center PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) to Connect using multi-factor authentication:
 
 ## <a name="see-also"></a>Vedere anche
 

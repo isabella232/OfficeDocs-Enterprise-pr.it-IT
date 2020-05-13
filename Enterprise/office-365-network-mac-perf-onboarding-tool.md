@@ -1,5 +1,5 @@
 ---
-title: Test di connettività Microsoft 365 nell'interfaccia di amministrazione di M365 (anteprima)
+title: Test di connettività Microsoft 365 (Preview) nell'interfaccia di amministrazione di Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Test di connettività Microsoft 365 nell'interfaccia di amministrazione di M365 (anteprima)
-ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 0c6f16c39c5a2db99ed636cb3a1b52818383ea5a
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612876"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208797"
 ---
-# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>Test di connettività Microsoft 365 nell'interfaccia di amministrazione di M365 (anteprima)
+# <a name="microsoft-365-connectivity-test-in-the-microsoft-365-admin-center-preview"></a>Test di connettività Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
-Il test di connettività Microsoft 365 si trova <https://connectivity.office.com>in. Si tratta di uno strumento aggiunto alle informazioni sulla rete e sui punteggi di rete disponibili nell'interfaccia di amministrazione di Microsoft 365 nell'area **integrità | Menu prestazioni di rete** .
+Il test di connettività Microsoft 365 si trova in <https://connectivity.office.com> . Si tratta di uno strumento aggiunto alle informazioni sulla rete e sui punteggi di rete disponibili nell'interfaccia di amministrazione di Microsoft 365 nell'area **integrità | Menu prestazioni di rete** .
 
 >[!NOTE]
 >Lo strumento di onboarding supporta i tenant in WW Commercial e GCC moderato ma non GCC High, DoD, Germany o China.
@@ -37,7 +37,7 @@ Le informazioni sulla rete nell'interfaccia di amministrazione di Microsoft 365 
 
 ## <a name="the-advanced-tests-client-application"></a>Applicazione client test avanzati
 
-Vi sono due parti del test di connettività di Microsoft 365. È disponibile il sito <https://connectivity.office.com> Web ed è disponibile un'applicazione client Windows scaricabile. Il client scaricabile esegue test di connettività di rete avanzati e la maggior parte dei test richiede l'esecuzione di questa operazione.
+Vi sono due parti del test di connettività di Microsoft 365. È disponibile il sito Web <https://connectivity.office.com> ed è disponibile un'applicazione client Windows scaricabile. Il client scaricabile esegue test di connettività di rete avanzati e la maggior parte dei test richiede l'esecuzione di questa operazione.
 
 È possibile eseguire il test client avanzato dal sito Web e i risultati vengono inseriti di nuovo nella pagina Web durante l'esecuzione.
 
@@ -103,19 +103,19 @@ Vengono identificati i server proxy configurati nel computer locale. Si identifi
 
 ## <a name="media-quality-checks"></a>Controlli qualità multimediale
 
-Questo test consente di installare ed eseguire lo strumento di valutazione della rete di Skype for business e di interpretare i risultati. Lo strumento può essere trovato in [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885).
+Questo test consente di installare ed eseguire lo strumento di valutazione della rete di Skype for business e di interpretare i risultati. Lo strumento può essere trovato in [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885) .
 
 Questi sono i test del protocollo UDP usati da Microsoft teams audio and video call and Conferencing funzionalità. Testiamo per la perdita di pacchetti UDP, la latenza della rete UDP, il tremolio UDP e il riordino dei pacchetti UDP. Se uno di questi valori è compreso nell'intervallo consentito, viene visualizzata una panoramica della rete.
 
 ## <a name="tcp-connectivity-tests"></a>Test di connettività TCP
 
-Testiamo la connettività HTTP dal percorso dell'utente a tutti gli endpoint di rete Microsoft 365 necessari. Questi sono pubblicati su [https://aka.ms/o365ip](https://aka.ms/o365ip). Viene visualizzata una panoramica della rete per tutti gli endpoint di rete necessari che non possono essere connessi.
+Testiamo la connettività HTTP dal percorso dell'utente a tutti gli endpoint di rete Microsoft 365 necessari. Questi sono pubblicati su [https://aka.ms/o365ip](https://aka.ms/o365ip) . Viene visualizzata una panoramica della rete per tutti gli endpoint di rete necessari che non possono essere connessi.
 
 La connettività ay deve essere bloccata da un server proxy, un firewall o un altro dispositivo di sicurezza di rete nel perimetro della rete aziendale o in uso come proxy cloud.
 
 ## <a name="ssl-interception-tests"></a>Test di intercettazione SSL
 
-Testiamo il certificato SSL a ogni endpoint di rete Microsoft 365 necessario che si trova nella categoria ottimizza o Consenti come definito [https://aka.ms/o365ip](https://aka.ms/o365ip)in. Se i test non trovano un certificato SSL Microsoft, è necessario che la rete crittografata connessa sia stata intercettata da un dispositivo di rete intermediario. Un'analisi di rete viene visualizzata su tutti gli endpoint di rete crittografati intercettati.
+Testiamo il certificato SSL a ogni endpoint di rete Microsoft 365 necessario che si trova nella categoria ottimizza o Consenti come definito in [https://aka.ms/o365ip](https://aka.ms/o365ip) . Se i test non trovano un certificato SSL Microsoft, è necessario che la rete crittografata connessa sia stata intercettata da un dispositivo di rete intermediario. Un'analisi di rete viene visualizzata su tutti gli endpoint di rete crittografati intercettati.
 
 Quando viene rilevato un certificato SSL non fornito da Microsoft, viene visualizzato il nome di dominio completo per il test e il proprietario del certificato SSL in uso. Questo proprietario del certificato SSL può essere un fornitore del server proxy oppure un certificato autofirmato Enterprise.
 
