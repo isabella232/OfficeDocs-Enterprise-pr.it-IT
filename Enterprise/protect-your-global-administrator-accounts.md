@@ -3,7 +3,7 @@ title: Proteggere gli account di amministratore globale di Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protezione dell'accesso da parte dell'amministratore globale all'abbonamento a Office 365.
-ms.openlocfilehash: 1ddd910a1515e11b6f57ac7581682d15eed31e5e
-ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
+ms.openlocfilehash: 4f3e7dcb23f467768d647b7a5e8db9c41af2d076
+ms.sourcegitcommit: fa25333a28ad300a7be990c1491d95f09a214a12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44013409"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44253293"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Office 365
 
@@ -101,6 +101,10 @@ L'autenticazione a più fattori richiede ulteriori informazioni oltre il nome e 
     
 - Un dispositivo biometrico
     
+>[!Note]
+>Per le organizzazioni che devono aderire agli standard di National Institute of Standards and Technology (NIST), l'utilizzo di una chiamata telefonica o di metodi di verifica aggiuntivi basati su messaggi di testo sono limitati. Fare clic [qui](https://pages.nist.gov/800-63-FAQ/#q-b01) per i dettagli.
+>
+
 Se si è una società di piccole dimensioni che utilizza gli account utente archiviati solo nel cloud (modello di identità solo cloud), attenersi alla procedura seguente per configurare l'utilizzo di una chiamata telefonica o di un codice di verifica del messaggio di testo inviato a uno Smart Phone:
   
 1. [Configurare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
@@ -132,7 +136,7 @@ Dopo i passaggi 1 e 2, utilizzare questi metodi aggiuntivi per verificare che l'
 
 Per garantire che l'esecuzione di attività con privilegi elevati sia la più sicura possibile, utilizzare una workstation con accesso privilegiato (PAW). La ZAMPa è un computer dedicato utilizzato solo per le attività di configurazione sensibili, ad esempio la configurazione di Office 365 che richiede un account di amministratore globale. Poiché questo computer non viene utilizzato giornalmente per la navigazione Internet o la posta elettronica, è meglio proteggerlo dagli attacchi e dalle minacce di Internet.
   
-Per istruzioni su come configurare una ZAMPa, vedere [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw).
+Per istruzioni su come configurare una ZAMPa, vedere [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) .
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
