@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: In che modo Microsoft utilizza i principi fondamentali dell'assorbimento, del rilevamento e dell'attenuazione in difesa degli attacchi DoS (Denial of Service).
-ms.openlocfilehash: 82957dd1b863e14c13e86b63888e2b1374beb73b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 78d1392adb35bead5d41f9655bea3c2680975561
+ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844527"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278079"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principi fondamentali di protezione contro gli attacchi Denial of Service
 
@@ -36,7 +36,7 @@ Per difendersi correttamente da un attacco DoS, è essenziale il rilevamento pre
 
 La formula seguente consente di approssimare il tempo necessario per l'impatto di un attacco DoS:
 
-   **Capacità massima (in byte/sec)/frequenza di crescita (in byte/sec) = tempo di impatto (in byte/sec)**
+   **Capacità massima (in byte/sec)/frequenza di crescita (in byte/sec) = tempo di impatto (in sec)**
 
 Se il time-to-Detection si verifica dopo il periodo di impatto, è probabile che l'attacco DoS avrà esito positivo. Se il tempo di rilevamento si verifica prima del tempo di impatto, i servizi assaliti dovrebbero rimanere online e accessibili se si utilizzano le strategie di attenuazione. Pertanto, esistono solo due operazioni che è possibile eseguire per difendersi dagli attacchi DoS:
 

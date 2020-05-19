@@ -23,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come l'autenticazione moderna di Office 365 funziona in modo diverso per le app client di Office 2013 e 2016.
-ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
+ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844857"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280215"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funzionamento dell'autenticazione moderna per le applicazioni client di Office 2013 e Office 2016
 
@@ -54,7 +54,14 @@ Per i servizi di Office 365, lo stato predefinito dell'autenticazione moderna è
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Comportamento di accesso delle app client di Office
 
-Le app client di Office 2013 supportano l'autenticazione legacy per impostazione predefinita. Legacy significa che supportano l'assistente per l'accesso di Microsoft online o l'autenticazione di base. Affinché questi client utilizzino le funzionalità di autenticazione moderne, il client Windows dispone delle chiavi del registro di sistema impostate. Per istruzioni, vedere [abilitare l'autenticazione moderna per Office 2013 nei dispositivi Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
+Le app client di Office 2013 supportano l'autenticazione legacy per impostazione predefinita. Legacy significa che supportano l'assistente per l'accesso di Microsoft online o l'autenticazione di base. Affinché questi client utilizzino le funzionalità di autenticazione moderne, è necessario che il client Windows disponga delle chiavi del registro di sistema impostate. Per istruzioni, vedere [abilitare l'autenticazione moderna per Office 2013 nei dispositivi Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
+
+Per abilitare l'autenticazione moderna per tutti i dispositivi che eseguono Windows (ad esempio su portatili e tablet) con Microsoft Office 2013 installato, è necessario impostare le seguenti chiavi del Registro di sistema. Le chiavi devono essere impostate in ogni dispositivo per cui si vuole abilitare l'autenticazione moderna:
+  
+|**Chiave del Registro di sistema**|**Tipo**|**Valore** |
+|:-------|:------:|--------:|
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
   
 Leggere [come usare l'autenticazione moderna (adal) con Skype for business](https://go.microsoft.com/fwlink/p/?LinkId=785431) per informazioni su come funziona con Skype for business. 
   
