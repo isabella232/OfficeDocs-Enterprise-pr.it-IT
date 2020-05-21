@@ -3,7 +3,7 @@ title: Rimuovere le licenze dagli account utente con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/12/2020
+ms.date: 05/20/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Viene illustrato come utilizzare Office 365 PowerShell per rimuovere le licenze di Office 365 precedentemente assegnate agli utenti.
-ms.openlocfilehash: 4a99fb115b7c3241beb2cb3b0dd83666622747d5
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+ms.openlocfilehash: a8ec35f4f82f9c01a784301099383a6b9a049547
+ms.sourcegitcommit: d1863fada327df5c8a4c04f07d68ac7e3dbcfaa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208757"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330530"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Rimuovere le licenze dagli account utente con Office 365 PowerShell
 
@@ -125,13 +125,20 @@ kakers@contoso.com
 2. Utilizzare la sintassi seguente:
     
   ```powershell
-  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "<AccountSkuId>" }
+  $x=Get-Content "<FileNameAndPath>"
+  for ($i=0; $i -lt $x.Count; $i++)
+  {
+  Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
+  }
   ```
-
 In questo esempio viene rimossa la licenza **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) dagli account utente definiti nel file di testo C:\My Documents\Accounts.txt.
     
   ```powershell
-  Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
+  $x=Get-Content "C:\My Documents\Accounts.txt"
+  for ($i=0; $i -lt $x.Count; $i++)
+  {
+  Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "litwareinc:ENTERPRISEPACK"
+  }
   ```
 
 Per rimuovere tutte le licenze da tutti gli account utente esistenti, utilizzare la sintassi seguente:
