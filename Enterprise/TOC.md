@@ -86,6 +86,13 @@
 #### [Panoramica: split tunneling per VPN](office-365-vpn-split-tunnel.md)
 #### [Implementazione di split tunneling per VPN](office-365-vpn-implement-split-tunnel.md)
 #### [Ottimizzazione di Office 365 per utenti della Repubblica popolare cinese](office-365-networking-china.md)
+### Servizi di rete per tenant GCC High e DOD
+#### [Altri requisiti di sicurezza della rete per GCC High e DoD](additional-network-security-requirements-for-office-365-gcchigh-and-dod.md)
+#### [Record DNS per Office 365 DoD](dns-records-for-office-365-dod.md)
+#### [Record DNS necessari per Office 365 GCC High](dns-records-for-office-365-gcc-high.md)
+#### [Endpoint del U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)
+#### [Endpoint del U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md)
+#### [Catene di crittografia di Office 365 - DOD e GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
 ### [Reti per la distribuzione di contenuti](content-delivery-networks.md)
 ### [Supporto IPv6 nei servizi Office 365](ipv6-support.md)
 ### [Supporto NAT con Office 365](nat-support-with-office-365.md)
