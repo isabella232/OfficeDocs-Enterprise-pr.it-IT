@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Riepilogo: Utilizzare PowerShell di Office 365 per assegnare impostazioni di comunicazione per utente con criteri Skype for Business online.'
-ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
-ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
+ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
+ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "43146811"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374445"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Assegnare criteri Skype for Business Online con PowerShell di Office 365
 
@@ -110,7 +110,7 @@ Per disabilitare un account utente tramite Windows PowerShell, utilizzare i cmdl
 
 ## <a name="managing-large-numbers-of-users"></a>Gestione di un numero elevato di utenti
 
-Per gestire un numero elevato di utenti (1000 o più), è necessario eseguire il batch dei comandi tramite un blocco di script utilizzando il cmdlet [Invoke-Command](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  Negli esempi precedenti, ogni volta che si esegue un cmdlet, è necessario impostare la chiamata e quindi attendere il risultato prima di inviarlo.  Quando si utilizza un blocco di script, questo consente l'esecuzione remota dei cmdlet e, una volta completata, l'invio dei dati. 
+Per gestire un numero elevato di utenti (1000 o più), è necessario eseguire il batch dei comandi tramite un blocco di script utilizzando il cmdlet [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  Negli esempi precedenti, ogni volta che si esegue un cmdlet, è necessario impostare la chiamata e quindi attendere il risultato prima di inviarlo.  Quando si utilizza un blocco di script, questo consente l'esecuzione remota dei cmdlet e, una volta completata, l'invio dei dati. 
 
 ```powershell
 Import-Module LyncOnlineConnector
