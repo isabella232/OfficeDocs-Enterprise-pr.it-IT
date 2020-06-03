@@ -17,7 +17,7 @@
 #### [Identità ibrida](plan-for-directory-synchronization.md)
 
 ### [Pianificare i certificati SSL di terze parti per Office 365](plan-for-third-party-ssl-certificates.md)
-### [Assistenti distribuzione per i servizi di Office 365](deployment-advisors-for-office-365.md)
+### [Guide alla configurazione per Office 365 e servizi Microsoft 365](setup-guides-for-office-365.md)
 ### [App integrate e Azure AD](integrated-apps-and-azure-ads.md)
 
 ### Integrazione di Office 365
@@ -181,7 +181,6 @@
 # Gestire Office 365
 
 ## Rete
-### [Connettività client](client-connectivity.md)
 ### [Monitorare la connettività](monitor-connectivity.md)
 
 ## Sincronizzazione della directory
