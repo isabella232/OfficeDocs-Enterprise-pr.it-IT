@@ -3,7 +3,7 @@ title: Utilizzare lo strumento di diagnostica delle pagine per SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/11/2020
+ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,26 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Utilizzare lo strumento page Diagnostics for SharePoint per analizzare i moderni portale e le pagine di pubblicazione classiche di SharePoint online in base a un set predefinito di criteri di prestazioni.
-ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: 08bfa6abf0aab4abafaf5fad3a0e43afb9000370
+ms.sourcegitcommit: ea2f92f147dbf8183124476302ca33c4cf4265a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603735"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44561814"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utilizzare lo strumento page Diagnostics for SharePoint
 
-In questo articolo viene descritto come utilizzare lo **strumento page Diagnostics for SharePoint** per analizzare pagine del sito moderne e classiche di SharePoint online in base a un set predefinito di criteri di prestazioni.  
+In questo articolo viene descritto come utilizzare lo **strumento page Diagnostics for SharePoint** per analizzare pagine del sito moderne e classiche di SharePoint online in base a un set predefinito di criteri di prestazioni.
+
+È possibile installare lo strumento page Diagnostics for SharePoint per:
+
+- **Microsoft Edge** [(estensione perimetrale)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **Chrome** [(estensione Chrome)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
 >La versione **2.0.0** e versioni successive include il supporto per le pagine moderne oltre alle pagine del sito classiche. Se non si è certi di quale versione dello strumento si sta utilizzando, è possibile selezionare il collegamento **About** o i puntini di controllo (...) per verificare la versione. **Aggiornare sempre la versione più recente quando si** utilizza lo strumento.
 
-Lo strumento page Diagnostics for SharePoint è un'estensione del browser per il nuovo Microsofthttps://www.microsoft.com/edge) Edge (e i browser Chrome che analizzano sia il portale moderno di SharePoint Online che le pagine del sito di pubblicazione classiche. Questo strumento funziona solo per SharePoint Online e non può essere utilizzato in una pagina di sistema di SharePoint.
+Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per il nuovo browser Microsoft Edge (https://www.microsoft.com/edge) e per Chrome che consente di analizzare le pagine del sito di pubblicazione di SharePoint Online sia classiche che dei portali moderni. Questo strumento funziona solo per SharePoint Online e non può essere utilizzato in una pagina di sistema di SharePoint.
 
 Lo strumento genera un rapporto per ogni pagina analizzata che mostra la modalità di esecuzione della pagina in base a un set di regole predefinito e visualizza informazioni dettagliate quando i risultati di un test non rientrano nel valore previsto. Gli amministratori e i progettisti di SharePoint Online possono utilizzare lo strumento per la risoluzione dei problemi relativi alle prestazioni e per garantire che le nuove pagine vengano ottimizzate prima della pubblicazione.
 
@@ -126,7 +131,7 @@ La scheda **traccia di rete** fornisce informazioni dettagliate su entrambe le r
 
     ![Traccia di rete](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
-    Nell'immagine sopra riportata, l'elemento rosso appartiene alla pagina predefinita. La visualizzazione sarà sempre rossa, a meno che la pagina \< non venga caricata in 1000ms (meno di 1 secondo).
+    Nell'immagine sopra riportata, l'elemento rosso appartiene alla pagina predefinita. La visualizzazione sarà sempre rossa, a meno che la pagina non venga caricata in \< 1000ms (meno di 1 secondo).
 
 2. **Tempi di caricamento degli elementi di prova**. In alcuni casi non vi sarà alcun indicatore di tempo o colore perché gli elementi sono già stati memorizzati nella cache dal browser. Per eseguire il testing in modo corretto, aprire la pagina, cancellare la cache del browser e quindi fare clic su **Avvia** come che forza il caricamento di una pagina "fredda" ed essere una vera riflessione del caricamento della pagina iniziale. Questo dovrebbe essere quindi confrontato con il caricamento della pagina "calda", che consentirà anche di determinare quali elementi vengono memorizzati nella cache della pagina.
 
