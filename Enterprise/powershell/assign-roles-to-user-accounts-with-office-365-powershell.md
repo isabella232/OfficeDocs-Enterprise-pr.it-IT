@@ -3,7 +3,7 @@ title: Assegnare i ruoli agli account utente con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 06/09/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,16 +19,20 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Sintesi: usare Office 365 PowerShell per assegnare ruoli agli account utente.'
-ms.openlocfilehash: 8cd3bd27f95c9d4191c24c7febc85c8fb2fb0118
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 9a28ff27138b689ed0325580af956a90d7eb7982
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004739"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698913"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Assegnare i ruoli agli account utente con Office 365 PowerShell
 
 Per assegnare ruoli agli account utente in modo semplice e rapido, è possibile usare Office 365 PowerShell.
+
+>[!Note]
+>Per assegnare i ruoli agli account utente con l'interfaccia di amministrazione di Microsoft 365, vedere le [istruzioni](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)riportate di seguito.
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
@@ -125,7 +129,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Copiare i comandi e incollarli nel blocco note. Per le variabili **$dispName** e **$roleName**, sostituire il testo della descrizione con i rispettivi valori, rimuovere i caratteri \< e > e lasciare le virgolette. Copiare le righe modificate e incollarle nel modulo di Windows Azure Active Directory modulo affinché Windows PowerShell le esegua. È anche possibile utilizzare Windows PowerShell Integrated Scripting Environment (ISE).
+Copiare i comandi e incollarli nel blocco note. Per le variabili **$dispName** e **$roleName** , sostituire il testo della descrizione con i relativi valori, rimuovere i \< and > caratteri e lasciare le virgolette. Copiare le righe modificate e incollarle nel modulo di Windows Azure Active Directory modulo affinché Windows PowerShell le esegua. È anche possibile utilizzare Windows PowerShell Integrated Scripting Environment (ISE).
   
 Segue un esempio di un set di comandi completati:
   
@@ -171,7 +175,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-Copiare i comandi e incollarli nel blocco note. Per le variabili **$upnName** e **$roleName** , sostituire il testo della descrizione con i relativi valori, \< rimuovere i caratteri e > e lasciare le virgolette. Copiare le righe modificate e incollarle nel modulo di Windows Azure Active Directory modulo affinché Windows PowerShell le esegua. In alternativa, è possibile utilizzare Windows PowerShell ISE.
+Copiare i comandi e incollarli nel blocco note. Per le variabili **$upnName** e **$roleName** , sostituire il testo della descrizione con i relativi valori, rimuovere i \< and > caratteri e lasciare le virgolette. Copiare le righe modificate e incollarle nel modulo di Windows Azure Active Directory modulo affinché Windows PowerShell le esegua. In alternativa, è possibile utilizzare Windows PowerShell ISE.
   
 Segue un esempio di un set di comandi completati:
   

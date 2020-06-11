@@ -1,5 +1,5 @@
 ---
-title: Assegnare le licenze di Office 365 agli account utente
+title: Assegnare le licenze Microsoft 365 agli account utente
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,27 +25,27 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Descrive come assegnare le licenze di Office 365 agli account utente, individualmente o in base all'appartenenza a un gruppo.
-ms.openlocfilehash: 77e6f6c20e9eeff11487a31cb2d616abbed42601
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: Descrive come assegnare le licenze Microsoft 365 agli account utente, individualmente o in base all'appartenenza ai gruppi.
+ms.openlocfilehash: bd9587f81d2267e1d6fd28f60e8ac2e85171457b
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009381"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44699223"
 ---
-# <a name="assign-office-365-licenses-to-user-accounts"></a>Assegnare le licenze di Office 365 agli account utente
+# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Assegnare le licenze Microsoft 365 agli account utente
 
 *Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
-Per il modello di identità solo cloud, è possibile assegnare le licenze di Office 365 agli account utente quando vengono create, a seconda della modalità di creazione.
+Per il modello di identità solo cloud, è possibile assegnare le licenze Microsoft 365 agli account utente quando vengono creati, a seconda della modalità di creazione.
 
-Per il modello di identità ibrida, quando gli account utente di servizi di dominio Active Directory (AD DS) vengono sincronizzati per la prima volta, non viene assegnata automaticamente una licenza di Office 365.
+Per il modello di identità ibrida, quando gli account utente di servizi di dominio Active Directory (AD DS) vengono sincronizzati per la prima volta, non viene assegnata automaticamente una licenza Microsoft 365. Prima di tutto, è necessario configurare ogni account utente con un percorso utente.
 
-In entrambi i casi, è necessario assegnare una licenza agli account utente in modo che gli utenti possano accedere ai servizi di Office 365, ad esempio la posta elettronica e Microsoft teams.
+In entrambi i casi, è necessario assegnare una licenza agli account utente in modo che gli utenti possano accedere ai servizi Microsoft 365, ad esempio la posta elettronica e Microsoft teams.
 
 È possibile assegnare le licenze agli account utente singolarmente o automaticamente tramite l'appartenenza al gruppo.
 
-Per assegnare le licenze di Office 365 a singoli account utente, è possibile utilizzare:
+Per assegnare le licenze Microsoft 365 ai singoli account utente, è possibile utilizzare:
 
 - [L'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)
 - [PowerShell di Office 365](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
@@ -58,5 +58,5 @@ Con l'intero set di account utente a cui sono state assegnate le licenze, ora è
 
 - [Implementare la sicurezza](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Distribuire il software client, ad esempio le app Microsoft 365](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
-- [Configurare la gestione dei dispositivi mobili in Office 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Configurare la gestione dei dispositivi mobili in Microsoft 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [Configurare servizi e applicazioni](configure-services-and-applications.md)

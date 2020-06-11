@@ -1,9 +1,9 @@
 ---
-title: Identità solo cloud di Office 365
+title: Identità solo cloud di Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 06/09/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: In questo articolo viene descritto come creare utenti e gruppi quando la sottoscrizione di Office 365 utilizza identità solo cloud.
-ms.openlocfilehash: 0c066ca22f372c10b04c60f9bd44cf24300b6492
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: In questo articolo viene descritto come creare utenti e gruppi quando la sottoscrizione Microsoft 365 utilizza l'identità solo cloud.
+ms.openlocfilehash: 257634db4ba8cd001ea52004be05f8a8a7d35e87
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844667"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698923"
 ---
-# <a name="office-365-cloud-only-identities"></a>Identità solo cloud di Office 365
+# <a name="microsoft-365-cloud-only-identity"></a>Identità solo cloud di Microsoft 365
 
 *Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
 
-Con l'identità solo cloud, tutti gli utenti, i gruppi e i contatti vengono archiviati nel tenant di Azure Active Directory (Azure AD) dell'abbonamento a Office 365. Ecco i componenti di base dell'identità solo cloud.
+Con l'identità solo cloud, tutti gli utenti, i gruppi e i contatti vengono archiviati nel tenant di Azure Active Directory (Azure AD) dell'abbonamento a Microsoft 365. Ecco i componenti di base dell'identità solo cloud.
  
 ![I componenti di base dell'identità solo cloud](./media/about-office-365-identity/cloud-only-identity.png)
 
@@ -45,15 +45,17 @@ Gli utenti e i loro account utente nelle organizzazioni possono essere categoriz
 
 - Gli account tenant rappresentano gli utenti all'interno dell'organizzazione con la licenza per i servizi cloud
 
-- Gli account business to business (B2B) rappresentano gli utenti esterni all'organizzazione che invitano a partecipare alla collaborazione per fare il punto sui tipi di utenti dell'organizzazione. Quali sono i raggruppamenti? Ad esempio, è possibile raggruppare gli utenti in base alla funzione o allo scopo di alto livello dell'organizzazione.
+- Gli account Business to Business (B2B) rappresentano gli utenti esterni all'organizzazione che vengono invitati a collaborare.
+
+Fare un bilancio dei tipi di utenti dell'organizzazione. Quali sono i raggruppamenti? Ad esempio, è possibile raggruppare gli utenti in base alla funzione o allo scopo di alto livello dell'organizzazione.
 
 Inoltre, alcuni servizi cloud possono essere condivisi al di fuori dell'organizzazione senza alcun account utente. È necessario identificare anche questi gruppi di utenti.
 
 È possibile utilizzare i gruppi in Azure AD per diversi scopi che semplificano la gestione dell'ambiente cloud. Ad esempio, con i gruppi di Azure AD, è possibile:
 
-- Utilizzo delle licenze basate su gruppo per assegnare le licenze per Office 365 agli account utente automaticamente non appena vengono aggiunti.
-- Aggiungere account utente a gruppi specifici in modo dinamico in base agli attributi dell'account utente, come per esempio il reparto.
-- Effettuare automaticamente il provisioning degli utenti per le applicazioni Software as a Service (SaaS) e proteggere l'accesso a tali applicazioni con l'autenticazione a più fattori e altre regole di accesso condizionale.
+- Utilizzare la gestione delle licenze basate su gruppo per assegnare le licenze per Microsoft 365 agli account utente automaticamente non appena vengono aggiunti come membri.
+- Aggiungere account utente a gruppi specifici in modo dinamico in base agli attributi degli account utente, ad esempio il nome del reparto.
+- Provisioning automatico degli utenti per le applicazioni del software come servizio (SaaS) e per proteggere l'accesso a tali applicazioni con l'autenticazione a più fattori e altre regole di accesso condizionale.
 - Provisioning delle autorizzazioni e dei livelli di accesso per i siti del team di SharePoint Online.
 
 È possibile creare nuovi ***utenti*** con:
@@ -67,6 +69,6 @@ Inoltre, alcuni servizi cloud possono essere condivisi al di fuori dell'organizz
 - [PowerShell di Office 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 
-## <a name="next-step-for-cloud-only-identities"></a>Passaggio successivo per le identità solo cloud
+## <a name="next-step-for-cloud-only-identity"></a>Passaggio successivo per l'identità solo cloud
 
 [Assegnare licenze agli account utente](assign-licenses-to-user-accounts.md).

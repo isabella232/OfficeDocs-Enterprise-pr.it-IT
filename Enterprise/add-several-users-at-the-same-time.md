@@ -1,5 +1,5 @@
 ---
-title: Aggiungere più utenti a Office 365 contemporaneamente - Guida dell'amministratore
+title: Aggiungere più utenti contemporaneamente a Microsoft 365-Guida per gli amministratori
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -24,26 +24,26 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: 'Informazioni su come aggiungere più utenti a Office 365 for business da un elenco in un foglio di calcolo o in un altro file in formato CSV. Guarda un video su YouTube che spiega come aggiungere account a Office 365. Alla fine di questo processo, ogni utente con un account avrà una cassetta postale di Office 365. '
-ms.openlocfilehash: 9c24c52e280fcb316d9e77ea613a1812a235c2d2
-ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
+description: 'Informazioni su come aggiungere più utenti a Microsoft 365 for business da un elenco in un foglio di calcolo o in un altro file in formato CSV. Guardare un video su YouTube che spiega come aggiungere account a Microsoft 365. Alla fine di questo processo, ogni utente con un account avrà una cassetta postale di Microsoft 365. '
+ms.openlocfilehash: 88c83b7163bfa6d389995704595d80458ddc8198
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901209"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44699243"
 ---
-# <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Aggiungere più utenti a Office 365 contemporaneamente - Guida per l'amministratore
+# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Aggiungere più utenti contemporaneamente a Microsoft 365-Guida per gli amministratori
 
-Per poter accedere a Office 365 e ai relativi servizi, ad esempio posta elettronica e Office, è necessario che ogni persona del team abbia un account utente. Se il team è composto da numerose persone, è possibile aggiungere tutti gli account contemporaneamente da un foglio di calcolo di Excel o da un altro file salvato in formato CSV. [Che cos'è il formato CSV?](add-several-users-at-the-same-time.md#__toc316652088)
+Ogni persona del team ha bisogno di un account utente prima di poter accedere ai servizi Microsoft 365, ad esempio la posta elettronica e l'ufficio. Se il team è composto da numerose persone, è possibile aggiungere tutti gli account contemporaneamente da un foglio di calcolo di Excel o da un altro file salvato in formato CSV. [Che cos'è il formato CSV?](add-several-users-at-the-same-time.md#__toc316652088)
   
 > [!NOTE] 
 > Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
-## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Aggiungere più utenti a Office 365 nell'interfaccia di amministrazione di Microsoft 365
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Aggiungere più utenti nell'interfaccia di amministrazione di Microsoft 365
 
-1. Accedere a Office 365 con l'account di lavoro o della scuola. 
+1. Accedere a Microsoft 365 con l'account aziendale o dell'istituto di istruzione. 
     
-2. Nell'interfaccia di **amministrazione scegliere** \> utenti **attivi**.
+2. Nell'interfaccia di **amministrazione scegliere utenti** \> **attivi**.
 
 3. Selezionare **Aggiungi più utenti**.
 
@@ -74,13 +74,13 @@ Per poter accedere a Office 365 e ai relativi servizi, ad esempio posta elettron
 ## <a name="next-steps"></a>Passaggi successivi
 <a name="bk_preview"> </a>
 
-- Ora che queste persone hanno account, devono [scaricare e installare o reinstallare office 365 o office 2016 su un PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Ogni persona del team può installare Office 365 in un totale di 5 PC o Mac. 
+- Ora che queste persone hanno account, devono [scaricare e installare o reinstallare Microsoft 365 o Office 2016 su un PC o un Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Ogni persona del team può installare Microsoft 365 su un massimo di 5 PC o Mac. 
     
 - Ogni persona può anche [configurare le app di Office e la posta elettronica su un dispositivo mobile su un](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) massimo di 5 tablet e 5 telefoni, ad esempio iPhone, iPad, telefoni e Tablet Android. In questo modo, potrà modificare i file di Office ovunque vada. 
     
-    Per un elenco end-to-end dei passaggi di configurazione, vedere [configurare Office 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) . 
+    Per un elenco end-to-end dei passaggi di configurazione, vedere [configurare Microsoft 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) . 
     
-## <a name="more-information-about-how-to-add-users-to-office-365"></a>Altre informazioni su come aggiungere utenti a Office 365
+## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Ulteriori informazioni su come aggiungere utenti a Microsoft 365
 <a name="bk_preview"> </a>
 
 ### <a name="not-sure-what-csv-format-is"></a>Che cos'è il formato CSV?
@@ -88,7 +88,7 @@ Per poter accedere a Office 365 e ai relativi servizi, ad esempio posta elettron
 
 Un file CSV è un file con valori delimitati da virgole. È possibile creare o modificare un file di questo tipo con qualsiasi editor di testo o foglio di calcolo, ad esempio Excel.
   
-Come punto di partenza, è possibile scaricare questo [foglio di calcolo](https://www.microsoft.com/download/details.aspx?id=45485). Tenere presente che Office 365 richiede intestazioni di colonna nella prima riga, quindi non sostituirle con altro contenuto. 
+Come punto di partenza, è possibile scaricare questo [foglio di calcolo](https://www.microsoft.com/download/details.aspx?id=45485). Tenere presente che Microsoft 365 richiede intestazioni di colonna nella prima riga, quindi non sostituirle con qualcos'altro. 
   
 Salvare il file con un nuovo nome e specificare il formato CSV.
   
@@ -101,7 +101,7 @@ Quando si salva il file, è probabile che venga visualizzato un messaggio indica
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Suggerimenti per la formattazione del foglio di calcolo
 <a name="__toc314595848"> </a>
 
-- **È necessario mantenere le stesse intestazioni di colonna del foglio di calcolo di esempio?** Sì. Il foglio di calcolo di esempio contiene intestazioni di colonna nella prima riga. Queste intestazioni sono obbligatorie. Sotto l'intestazione creare una riga per ogni utente da aggiungere in Office 365. Se si aggiungono intestazioni di colonna oppure si modificano o si eliminano quelle esistenti, Office 365 potrebbe non riuscire a creare gli utenti dalle informazioni del file. 
+- **È necessario mantenere le stesse intestazioni di colonna del foglio di calcolo di esempio?** Sì. Il foglio di calcolo di esempio contiene intestazioni di colonna nella prima riga. Queste intestazioni sono obbligatorie. Per ogni utente che si desidera aggiungere a Microsoft 365, creare una riga sotto l'intestazione. Se si aggiungono, si modificano o si eliminano le intestazioni di colonna, Microsoft 365 potrebbe non essere in grado di creare gli utenti dalle informazioni contenute nel file. 
     
 - **Che cosa succede se non si hanno tutte le informazioni necessarie per ogni utente?** I campi obbligatori sono Nome utente e Nome visualizzato, pertanto non è possibile aggiungere un nuovo utente in assenza di tali informazioni. Se non si dispone di altre informazioni, ad esempio il fax, è possibile usare uno spazio seguito da una virgola per indicare che il campo deve rimanere vuoto. 
     
@@ -115,7 +115,7 @@ Quando si salva il file, è probabile che venga visualizzato un messaggio indica
     
 |**Etichetta colonna dati utente**|**Numero massimo di caratteri**|
 |:-----|:-----|
-|Nome utente (obbligatorio)  <br/> |79, incluso il simbolo (@), nel formato nome@dominio.\<estensione\>. L'alias dell'utente non può superare i 50 caratteri e il nome di dominio non può superare i 48 caratteri.  <br/> |
+|Nome utente (obbligatorio)  <br/> |79 incluso il simbolo di chiocciola (@), nel formato name@domain. \<extension\> . L'alias dell'utente non può superare i 50 caratteri e il nome di dominio non può superare i 48 caratteri.  <br/> |
 |Nome  <br/> |64  <br/> |
 |Cognome  <br/> |64  <br/> |
 |Nome visualizzato (obbligatorio)  <br/> |256  <br/> |
@@ -131,15 +131,15 @@ Quando si salva il file, è probabile che venga visualizzato un messaggio indica
 |CAP  <br/> |40  <br/> |
 |Paese o area geografica  <br/> |128  <br/> |
    
-### <a name="still-having-problems-when-adding-users-to-office-365"></a>Si verificano ancora problemi durante l'aggiunta di utenti a Office 365?
+### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>Si verificano ancora problemi quando si aggiungono utenti a Microsoft 365?
 
 - **Verificare che il foglio di calcolo sia stato formattato correttamente.** Controllare le intestazioni di colonna per verificare che corrispondano a quelle del file di esempio. Assicurarsi di aver rispettato le regole relative al numero massimo di caratteri e di aver usato una virgola per separare i campi. 
     
-- **Se i nuovi utenti di Office 365 non sono visibili subito, attendere qualche minuto.** La modifica di tutti i servizi di Office 365 può richiedere un po' di tempo. 
+- **Se non si vedono subito i nuovi utenti in Microsoft 365, attendere qualche minuto.** È possibile che le modifiche apportate in tutti i servizi in Microsoft 365 possano richiedere un po' di tempo. 
     
 ## <a name="related-articles"></a>Articoli correlati
 
-[Aggiungere gli utenti singolarmente o in blocco a Office 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[Aggiungere gli utenti singolarmente o in blocco a Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
 
 
 
