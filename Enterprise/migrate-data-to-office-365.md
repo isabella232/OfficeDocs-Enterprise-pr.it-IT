@@ -1,5 +1,5 @@
 ---
-title: Eseguire la migrazione dei dati dell'organizzazione a Office 365 Enterprise
+title: Eseguire la migrazione dei dati dell'organizzazione a Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,25 +15,25 @@ search.appverid:
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
-description: Se si è scelto di rifiutare la distribuzione di FastTrack e si è pronti per eseguire la migrazione dei dati a Office 365, questo è il punto di partenza.
-ms.openlocfilehash: 44038429ecf3b927db408679f8651d4055113a48
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+description: Se si è scelto di escludere la distribuzione di FastTrack e si è pronti per eseguire la migrazione dei dati a Microsoft 365, questo è il punto di partenza.
+ms.openlocfilehash: a04c4df37d5f8c72330907752247d7bea48fb72d
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419344"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711849"
 ---
-# <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Eseguire la migrazione dei dati dell'organizzazione a Office 365 Enterprise
+# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Eseguire la migrazione dei dati dell'organizzazione a Microsoft 365 Enterprise
 
-## <a name="ready-to-migrate-your-data-to-office-365"></a>Si è pronti per eseguire la migrazione dei dati a Office 365?
+## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>Pronto per eseguire la migrazione dei dati a Microsoft 365?
 
-Le nostre [istruzioni per la configurazione di base](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) consentono di fare in modo che tutti gli utenti usino i servizi e le applicazioni di Office 365 nel più breve tempo possibile. Queste indicazioni non includono gli scenari ibridi e i metodi più avanzati per eseguire la migrazione a Office 365. 
+Le [istruzioni](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) per l'installazione di base consentono di ottenere tutti i servizi e le applicazioni Microsoft 365 nel minor tempo possibile. In questo modo vengono ignorati gli scenari ibridi e i metodi più avanzati per la migrazione a Microsoft 365. 
   
-Se si desidera ottenere assistenza per la configurazione di Office 365, [FastTrack](https://fasttrack.microsoft.com/office) è il modo più semplice per distribuire Office 365, è inoltre possibile accedere e utilizzare le [guide di installazione per i servizi di Office 365](setup-guides-for-office-365.md).
+Se si desidera ottenere assistenza per la configurazione di Microsoft 365, [FastTrack](https://fasttrack.microsoft.com/office) è il modo più semplice per distribuire Microsoft 365, è inoltre possibile accedere e utilizzare le [guide di installazione per i servizi Microsoft 365](setup-guides-for-office-365.md).
 
-## <a name="migrate-email-to-office-365"></a>Eseguire la migrazione della posta elettronica a Office 365
+## <a name="migrate-email-to-microsoft-365"></a>Eseguire la migrazione della posta elettronica a Microsoft 365
 - Eseguire la migrazione con Exchange ibrido usando l'[Assistente per la distribuzione di Exchange](https://technet.microsoft.com/exdeploy2013) (amministratore).
-- Ulteriori informazioni sui diversi [modi per eseguire la migrazione della posta elettronica a Office 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842).
+- Per ulteriori informazioni, vedere i diversi [modi per eseguire la migrazione della posta elettronica a Microsoft 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842).
 - Modi alternativi che consentono alle [persone nell'organizzazione di eseguire la migrazione della posta elettronica, dei contatti e dei calendari](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 ## <a name="migrate-files-and-folders"></a>Eseguire la migrazione di file e cartelle

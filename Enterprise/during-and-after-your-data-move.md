@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: 24239f4e6cb8207fe53043dce80ae77035d8e834
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009301"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711919"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -29,7 +29,7 @@ Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli 
 > [!NOTE]
 > Gli spostamenti si verificano in momenti diversi per ogni servizio. Di conseguenza, si vedrà la funzionalità ridotta descritta per ogni servizio in un'ora diversa. 
   
-Guardare il centro messaggi di Microsoft 365 per conferma quando si sposta per ogni di Exchange Online, SharePoint Online, teams e Skype for business sono stati completati. Come illustrato nella tabella seguente, è possibile richiedere fino a 24 mesi, dopo la fine del periodo di registrazione, per completare tutti gli spostamenti di dati richiesti per tutti i clienti in uno specifico Geo. Se dopo lo spostamento vengono visualizzati eventuali problemi con il tenant, contattare il [supporto di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) per ottenere assistenza. 
+Guardare il centro messaggi di Microsoft 365 per conferma quando si sposta per ogni di Exchange Online, SharePoint Online, teams e Skype for business sono stati completati. Come illustrato nella tabella seguente, è possibile richiedere fino a 24 mesi, dopo la fine del periodo di registrazione, per completare tutti gli spostamenti di dati richiesti per tutti i clienti in uno specifico Geo. Se dopo lo spostamento vengono visualizzati problemi con il tenant, contattare il [supporto tecnico](https://go.microsoft.com/fwlink/p/?LinkID=522459) per ottenere assistenza. 
   
 
 |**Clienti con paese di registrazione in**|**Tutti gli spostamenti completati da**|

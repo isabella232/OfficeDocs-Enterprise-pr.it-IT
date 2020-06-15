@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi di sincronizzazione della directory per Office 365
+title: Risoluzione dei problemi relativi alla sincronizzazione della directory per Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,14 +19,14 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Descrive le cause comuni dei problemi di sincronizzazione della directory in Office 365 e fornisce alcuni metodi per individuarli e risolverli.
-ms.openlocfilehash: 658f1649d0a4b9bf109bbb35593d4c64092e1cf8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cb2ec57331d227f0965095ee0782f13af935d569
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840333"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711908"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Risoluzione dei problemi di sincronizzazione della directory per Office 365
+# <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Risoluzione dei problemi relativi alla sincronizzazione della directory per Microsoft 365
 
 Con la sincronizzazione della directory, puoi continuare a gestire gli utenti e gruppi locali e sincronizzare aggiunte, eliminazioni e modifiche nel cloud. Tuttavia, la configurazione è un po' complicata e a volte può essere difficile identificare l'origine dei problemi. Sono disponibili risorse per consentire di individuare e risolvere potenziali problemi.
   
@@ -34,19 +34,19 @@ Con la sincronizzazione della directory, puoi continuare a gestire gli utenti e 
 
 La prima indicazione che qualcosa è errato è quando il riquadro di stato DirSync nell'interfaccia di amministrazione di Microsoft 365 indica che si è verificato un problema.
   
-Office 365 invia anche un messaggio di posta elettronica, all'indirizzo di posta elettronica alternativo e a quello di amministrazione, per segnalare che nel tenant si sono verificati errori di sincronizzazione della directory. Per informazioni dettagliate, vedere [Identificare gli errori di sincronizzazione della directory in Office 365](identify-directory-synchronization-errors.md).
+Riceverà anche una mail (alla posta elettronica alternativa e alla posta elettronica di amministrazione) da Microsoft 365 che indica che il tenant ha riscontrato errori di sincronizzazione della directory. Per ulteriori informazioni, vedere [identificare gli errori di sincronizzazione della directory in Microsoft 365](identify-directory-synchronization-errors.md).
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Come si ottiene lo strumento Azure Active Directory Connect?
 
-Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), passare **a** \> utenti **attivi**. Fare clic sul menu **altro** (tre punti) e selezionare **sincronizzazione directory**. 
+Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), passare **a utenti** \> **attivi**. Fare clic sul menu **altro** (tre punti) e selezionare **sincronizzazione directory**. 
   
 Seguire le [istruzioni della procedura guidata](set-up-directory-synchronization.md) per scaricare Azure AD Connect. 
   
-Se si usa ancora Azure Active Directory Sync (DirSync), vedere [Come risolvere i problemi di installazione dello strumento di sincronizzazione di Azure Active Directory e i messaggi di errore della Configurazione guidata in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) per informazioni sui requisiti di sistema per l'installazione di DirSync, sulle autorizzazioni necessarie e sulla risoluzione dei problemi comuni. 
+Se si sta ancora utilizzando Azure Active Directory Sync (DirSync), vedere [come risolvere i problemi relativi all'installazione e alla configurazione guidata dello strumento di sincronizzazione di Azure Active Directory in Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) per informazioni sui requisiti di sistema per l'installazione di dirsync, le autorizzazioni necessarie e la risoluzione dei problemi relativi agli errori comuni. 
   
 Per eseguire l'aggiornamento da Azure Active Directory Sync ad Azure AD Connect, vedere le [istruzioni di aggiornamento](https://go.microsoft.com/fwlink/p/?LinkId=733240).
   
-## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>Risoluzione delle cause comuni dei problemi relativi alla sincronizzazione delle directory in Office 365
+## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Risoluzione delle cause comuni dei problemi relativi alla sincronizzazione della directory in Microsoft 365
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**Gli oggetti sincronizzati non vengono visualizzati o aggiornati online oppure si riceve un errore di sincronizzazione dal servizio.**
 
@@ -62,7 +62,7 @@ Per eseguire l'aggiornamento da Azure Active Directory Sync ad Azure AD Connect,
 - [Implementazione della sincronizzazione dell'hash delle password con la sincronizzazione di Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Viene visualizzato un avviso relativo al superamento della quota per gli oggetti**
-- Per proteggere il servizio, è prevista una quota predefinita per gli oggetti. Se la directory contiene troppi oggetti da sincronizzare con Office 365, per aumentare la quota, è necessario [contattare il supporto per i prodotti per le aziende](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- Per proteggere il servizio, è prevista una quota predefinita per gli oggetti. Se nella directory sono presenti troppi oggetti che devono essere sincronizzati con Microsoft 365, è necessario contattare il [supporto per i prodotti aziendali](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) per aumentare la quota.
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**Si desidera sapere quali attributi sono sincronizzati**
 - L'elenco di tutti gli attributi sincronizzati tra l'ambiente locale e il cloud è disponibile [qui](https://go.microsoft.com/fwlink/p/?LinkId=396719).
@@ -91,6 +91,6 @@ Per eseguire l'aggiornamento da Azure Active Directory Sync ad Azure AD Connect,
     
 ## <a name="diagnostic-tools"></a>Strumenti di diagnostica
 
-Lo [strumento IDFix](prepare-directory-attributes-for-synch-with-idfix.md) viene usato per l'individuazione e la correzione di oggetti identità e dei relativi attributi in un ambiente Active Directory locale per la preparazione della migrazione a Office 365. IDFix è destinato agli amministratori di Active Directory responsabili della sincronizzazione della directory con il servizio Office 365. 
+[Lo strumento IDFix](prepare-directory-attributes-for-synch-with-idfix.md) viene utilizzato per eseguire l'individuazione e la correzione degli oggetti Identity e dei relativi attributi in un ambiente Active Directory locale in preparazione per la migrazione a Microsoft 365. IDFix è destinato agli amministratori di Active Directory responsabili della sincronizzazione della directory con il servizio Microsoft 365. 
 
 [Scaricare lo strumento IDFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) dall'Area download Microsoft.

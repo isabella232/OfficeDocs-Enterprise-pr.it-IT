@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Riepilogo: Utilizzare PowerShell di Office 365 per assegnare impostazioni di comunicazione per utente con criteri Skype for Business online.'
-ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
-ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
+ms.openlocfilehash: 0b95c993c3795bdbe9a68e23e107ea745c15f71b
+ms.sourcegitcommit: 88ede20888e2db0bb904133c0bd97726d6d65ee2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374445"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44719967"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Assegnare criteri Skype for Business Online con PowerShell di Office 365
 
@@ -50,16 +50,13 @@ Si supponga di voler modificare le impostazioni di comunicazione esterna in un a
     
 2. Assegnare tale criterio di accesso esterno ad Alex.
     
-> [!NOTE]
->  Non è possibile creare un criterio personalizzato in autonomia. Ciò si verifica poiché Skype for Business online non consente all'utente di creare criteri personalizzati. Al contrario, è necessario assegnare uno dei criteri che sono stati creati appositamente per Office 365. Tali criteri creati in precedenza includono: 4 criteri client differenti, 224 criteri conferenza differenti, 5 dial plan differenti, 5 criteri di accesso esterno differenti, 1 criterio segreteria telefonica ospitata e 4 criteri vocali differenti.
-  
-Pertanto, come è possibile determinare qualche criterio di accesso esterno deve essere assegnato ad Alex? Il comando seguente restituisce tutti i criteri di accesso esterno nei quali EnableFederationAccess è impostato su True e EnablePublicCloudAccess è impostato su False:
+Come determinare il criterio di accesso esterno per l'assegnazione di Alex? Il comando seguente restituisce tutti i criteri di accesso esterno nei quali EnableFederationAccess è impostato su True e EnablePublicCloudAccess è impostato su False:
   
 ```powershell
-Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
+Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Il comando chiede di restituire tutti i criteri che soddisfano due requisiti: la proprietà EnableFederationAccess deve essere impostata su True e il criterio EnablePublicCloudAccess su False. A sua volta, il comando restituisce un criterio (FederationOnly) che soddisfa i criteri necessari. Di seguito viene riportato un esempio:
+A meno che non siano state create istanze personalizzate di ExternalAccessPolicy, tale comando restituirà un criterio che soddisfi i criteri (FederationOnly). Ecco un esempio:
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -71,9 +68,6 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-> [!NOTE]
-> L'identità del criterio corrisponde a Tag:FederationOnly. In realtà, il Tag: prefisso corrisponde a un carryover di operazioni preliminari eseguite su Microsoft Lync 2013. Quando si assegnano i criteri agli utenti, è necessario eliminare il Tag: prefisso e utilizzare soltanto il nome del criterio: FederationOnly. 
-  
 Quando si conosce il criterio da assegnare ad Alex, è possibile assegnarlo utilizzando il cmdlet [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974). Di seguito viene riportato un esempio:
   
 ```powershell
@@ -98,7 +92,7 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 
 Il comando utilizza Get-CsOnlineUser per restituire una raccolta di tutti gli utenti che sono stati abilitati per Lync. In seguito, invia tutte le informazioni su Grant-CsExternalAccessPolicy che assegna il criterio FederationAndPICDefault a tutti gli utenti presenti nella raccolta.
   
-Come esempio aggiuntivo, si supponga di aver assegnato in precedenza il criterio FederationAndPICDefault ad Alex, ma ora si desidera che Alex sia gestito dal criterio di accesso esterno globale. Non è possibile assegnare in modo esplicito il criterio globale. Viene utilizzato solo se nessun altro criterio per utente è assegnato. Pertanto, se si desidera che Alex sia gestito dal criterio globale, è necessario  *non assegnare*  i criteri per utente assegnati in precedenza all'utente. Ecco un esempio di comando:
+Come esempio aggiuntivo, si supponga di aver assegnato in precedenza il criterio FederationAndPICDefault ad Alex, ma ora si desidera che Alex sia gestito dal criterio di accesso esterno globale. Non è possibile assegnare in modo esplicito il criterio globale. Al contrario, il criterio globale viene utilizzato per un determinato utente se all'utente non viene assegnato alcun criterio per utente. Pertanto, se si desidera che Alex sia gestito dal criterio globale, è necessario  *non assegnare*  i criteri per utente assegnati in precedenza all'utente. Ecco un esempio di comando:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
@@ -106,7 +100,6 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 Il comando imposta il nome del criterio di accesso esterno assegnato ad Alex su un valore ($Null). Null vuol dire "niente". In altre parole, nessun criterio di accesso esterno viene assegnato ad Alex. Se non viene assegnato alcun criterio di accesso esterno a un utente, quest'ultimo viene gestito dal criterio globale.
   
-Per disabilitare un account utente tramite Windows PowerShell, utilizzare i cmdlet di Azure Active Directory per rimuovere la licenza di Skype for Business Online di Alex. Per ulteriori informazioni, vedere [Disabilitare l'accesso ai servizi con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
 
 ## <a name="managing-large-numbers-of-users"></a>Gestione di un numero elevato di utenti
 
