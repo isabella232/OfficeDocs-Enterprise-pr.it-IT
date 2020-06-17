@@ -20,18 +20,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: "Informazioni sugli strumenti da utilizzare per la gestione degli utenti di Office 365 e sul modo in cui è possibile utilizzare dipende dalla modalità di gestione delle identità dell'utente. "
-ms.openlocfilehash: 669d71aafe0efdff575615dab835dd67cb7aebdf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 46a17dc1e5e9337b9f1d8a03f5903acc96dad74b
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843947"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735660"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Strumenti per gestire gli account di Office 365
 
 È possibile gestire gli utenti di Office 365 in diversi modi, a seconda della configurazione. È possibile gestire gli utenti nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), Windows PowerShell, la directory locale o nel portale di amministrazione di Azure Active Directory.
 
-Non appena si acquista Office 365, è possibile utilizzare l'interfaccia di amministrazione e Windows PowerShell per gestire gli account. Quando si gestiscono le identità cloud ogni persona dell'organizzazione dispone di un ID utente e di una password distinti per Office 365. Se si desidera eseguire l'integrazione con l'infrastruttura locale e fare in modo che gli account utente siano sincronizzati con Office 365, è possibile utilizzare Azure Active Directory Connect per fornire la sincronizzazione delle identità e facoltativamente fornire la sincronizzazione delle password o la versione completa funzionalità Single Sign-on.
+Non appena si acquista Office 365, è possibile utilizzare l'interfaccia di amministrazione e Windows PowerShell per gestire gli account. Quando si gestiscono le identità cloud ogni persona dell'organizzazione dispone di un ID utente e di una password distinti per Office 365. Se si desidera eseguire l'integrazione con l'infrastruttura locale e gli account utente vengono sincronizzati con Office 365, è possibile utilizzare Azure Active Directory Connect per fornire la sincronizzazione delle identità e facoltativamente fornire la sincronizzazione delle password o la funzionalità Single Sign-on completa.
   
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>Pianificare la posizione e la modalità di gestione degli account utente
 
@@ -72,4 +72,4 @@ Indipendentemente dal modo in cui si intende aggiungere gli account utente a Off
 Se si sceglie di aggiungere e gestire tutti gli utenti tramite l'interfaccia di amministrazione, è possibile specificare il percorso e assegnare le licenze contemporaneamente alla creazione dell'account di Office 365. Di conseguenza, non è necessaria una pianificazione eccessiva.
 
 > [!IMPORTANT]
-> La creazione di account in Office 365 senza assegnare una licenza (ad esempio a SharePoint Online) significa che il proprietario dell'account può visualizzare il portale di Office 365 ma non può accedere ad alcuno dei servizi all'interno della sottoscrizione dell'azienda. Dopo aver assegnato un percorso e la licenza, l'account viene replicato nel servizio o nei servizi assegnati. L'utente può accedere al proprio account e utilizzare i servizi assegnati.
+> La creazione di account in Office 365 senza assegnare una licenza (ad esempio a SharePoint Online) significa che il proprietario dell'account può visualizzare l'interfaccia di amministrazione di Microsoft 365 ma non può accedere ad alcuno dei servizi all'interno della sottoscrizione dell'azienda. Dopo aver assegnato un percorso e la licenza, l'account viene replicato nel servizio o nei servizi assegnati. L'utente può accedere al proprio account e utilizzare i servizi assegnati.

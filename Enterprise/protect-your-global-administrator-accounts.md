@@ -1,9 +1,9 @@
 ---
-title: Proteggere gli account di amministratore globale di Office 365
+title: Proteggere gli account di amministratore globale di Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/15/2020
+ms.date: 06/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -18,19 +18,19 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Protezione dell'accesso da parte dell'amministratore globale all'abbonamento a Office 365.
-ms.openlocfilehash: 4f3e7dcb23f467768d647b7a5e8db9c41af2d076
-ms.sourcegitcommit: fa25333a28ad300a7be990c1491d95f09a214a12
+description: Protezione dell'accesso da parte dell'amministratore globale all'abbonamento a Microsoft 365.
+ms.openlocfilehash: 6378a7c7b6e8479e25cf6465006f422cdc2137b0
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44253293"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735724"
 ---
-# <a name="protect-your-office-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Office 365
+# <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Microsoft 365
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
-Le violazioni della sicurezza di un abbonamento a Office 365, incluse le informazioni sulla raccolta e gli attacchi di phishing, vengono in genere eseguite compromettendo le credenziali di un account di amministratore globale di Office 365. La sicurezza nel cloud è una partnership tra l'utente e Microsoft:
+Le violazioni della sicurezza di un abbonamento a Microsoft 365, incluse le informazioni raccolte e gli attacchi di phishing, vengono in genere eseguite compromettendo le credenziali di un account di amministratore globale di Microsoft 365. La sicurezza nel cloud è una partnership tra l'utente e Microsoft:
   
 - I servizi cloud Microsoft sono basati su una base di attendibilità e sicurezza. Microsoft fornisce controlli e funzionalità di sicurezza che consentono di proteggere i dati e le applicazioni.
     
@@ -38,13 +38,13 @@ Le violazioni della sicurezza di un abbonamento a Office 365, incluse le informa
     
 Microsoft fornisce funzionalità che consentono di proteggere l'organizzazione, ma sono effettive solo se vengono utilizzate. Se non vengono utilizzati, potrebbe essere vulnerabile all'attacco. Per proteggere gli account di amministratore globale, Microsoft è qui per informazioni dettagliate su come eseguire le operazioni seguenti:
   
-1. Creare account di amministratore globale di Office 365 dedicati e utilizzarli solo quando necessario.
+1. Creare account di amministratore globale di Microsoft 365 dedicati e utilizzarli solo quando necessario.
     
-2. Configurare l'autenticazione a più fattori per gli account di amministratore globale di Office 365 dedicati e utilizzare la forma più complessa di autenticazione secondaria.
+2. Configurare l'autenticazione a più fattori per gli account di amministratore globale di Microsoft 365 dedicati e utilizzare la forma più complessa di autenticazione secondaria.
     
 > [! NOTE] Sebbene questo articolo sia incentrato sugli account di amministratore globale, è opportuno considerare se gli account aggiuntivi con autorizzazioni di vasta portata per accedere ai dati dell'abbonamento, ad esempio l'amministratore di eDiscovery o gli account di amministratore di sicurezza o conformità, devono essere protetti nello stesso modo. <br > Un account di amministratore globale può essere creato senza aggiungere alcuna licenza.
   
-## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Passaggio 1. Creare account di amministratore globale di Office 365 dedicati e utilizzarli solo se necessario
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Passaggio 1. Creare account di amministratore globale di Microsoft 365 dedicati e utilizzarli solo se necessario
 
 Vi sono relativamente poche attività amministrative, ad esempio l'assegnazione di ruoli agli account utente, che richiedono privilegi di amministratore globale. Pertanto, anziché utilizzare gli account utente giornalieri a cui è stato assegnato il ruolo di amministratore globale, procedere come segue:
   
@@ -54,13 +54,13 @@ Vi sono relativamente poche attività amministrative, ad esempio l'assegnazione 
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
-2. Accedere all'abbonamento a Office 365 con un account utente a cui è stato assegnato il ruolo di amministratore globale.
+2. Accedere all'abbonamento a Microsoft 365 con un account utente a cui è stato assegnato il ruolo di amministratore globale.
     
 3. Creare fino a un massimo di quattro account utente di amministratore globale dedicati. **Utilizzare password complesse con una lunghezza di almeno 12 caratteri.** Per ulteriori informazioni, vedere [creare una password complessa](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) . Archiviare le password per i nuovi account in una posizione sicura. 
     
 4. Assegnare il ruolo di amministratore globale a ognuno dei nuovi account utente di amministratore globale dedicato.
     
-5. Disconnettersi da Office 365.
+5. Disconnettersi da Microsoft 365.
     
 6. Accedere con uno dei nuovi account utente di amministratore globale dedicati.
     
@@ -68,9 +68,9 @@ Vi sono relativamente poche attività amministrative, ad esempio l'assegnazione 
     
   - Rimuovere il ruolo di amministratore globale.
     
-  - Assegnare i ruoli di amministratore all'account appropriato per la funzione e la responsabilità del processo dell'utente. Per ulteriori informazioni sui vari ruoli di amministratore in Office 365, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  - Assegnare i ruoli di amministratore all'account appropriato per la funzione e la responsabilità del processo dell'utente. Per ulteriori informazioni sui vari ruoli di amministratore in Microsoft 365, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
     
-8. Disconnettersi da Office 365.
+8. Disconnettersi da Microsoft 365.
     
 Il risultato deve essere:
   
@@ -82,14 +82,14 @@ Il risultato deve essere:
 
 - A tutti gli altri account utente quotidiani che gestiscono l'abbonamento sono assegnati ruoli di amministratore associati ai propri ruoli professionali.
     
-Da questo momento in poi, si accede con gli account amministratore globale dedicato solo per le attività che richiedono privilegi di amministratore globale. Tutte le altre attività di amministrazione di Office 365 devono essere eseguite assegnando altri ruoli di amministrazione agli account utente.
+Da questo momento in poi, si accede con gli account amministratore globale dedicato solo per le attività che richiedono privilegi di amministratore globale. Tutte le altre attività di amministrazione di Microsoft 365 devono essere eseguite assegnando altri ruoli di amministrazione agli account utente.
   
 > [!NOTE]
-> In questo modo, è necessario eseguire ulteriori passaggi per disconnettersi come account utente giornaliero e accedere con un account di amministratore globale dedicato. Tuttavia, è necessario eseguire questa operazione solo occasionalmente per le operazioni di amministratore globale. Si consideri che il ripristino dell'abbonamento a Office 365 dopo una violazione di un account amministratore globale richiede passaggi molto più.
+> In questo modo, è necessario eseguire ulteriori passaggi per disconnettersi come account utente giornaliero e accedere con un account di amministratore globale dedicato. Tuttavia, è necessario eseguire questa operazione solo occasionalmente per le operazioni di amministratore globale. Si consideri che il ripristino della sottoscrizione Microsoft 365 dopo una violazione dell'account amministratore globale richiede passaggi molto più.
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>Passaggio 2. Configurare l'autenticazione a più fattori per gli account di amministratore globale di Office 365 dedicati e utilizzare la forma più complessa di verifica aggiuntiva
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>Passaggio 2. Configurare l'autenticazione a più fattori per gli account di amministratore globale di Microsoft 365 dedicati e utilizzare la forma più complessa di verifica aggiuntiva
 
-L'autenticazione a più fattori richiede ulteriori informazioni oltre il nome e la password dell'account. Office 365 supporta questi metodi di verifica aggiuntivi:
+L'autenticazione a più fattori richiede ulteriori informazioni oltre il nome e la password dell'account. Microsoft 365 supporta questi metodi di verifica aggiuntivi:
   
 - L'app Microsoft Authenticator
 
@@ -109,24 +109,25 @@ Se si è una società di piccole dimensioni che utilizza gli account utente arch
   
 1. [Configurare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
-2. Configurare il servizio di amministrazione di [microsoft 365 Office](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) per la configurazione di ogni account di amministratore globale dedicato per la chiamata telefonica o il messaggio di testo come metodo di verifica. 
+2. Configurare l' [AMF per Microsoft 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) per la configurazione di ogni account di amministratore globale dedicato per la chiamata telefonica o il messaggio di testo come metodo di verifica. 
     
-Se si è un'organizzazione più grande che utilizza un modello di identità ibrido di Office 365, sono disponibili altre opzioni di verifica. Se l'infrastruttura di sicurezza è già attiva per un metodo di autenticazione secondario più forte, attenersi alla seguente procedura:
+Se si è un'organizzazione più grande che utilizza un modello di identità ibrido di Microsoft 365, sono disponibili altre opzioni di verifica. Se l'infrastruttura di sicurezza è già attiva per un metodo di autenticazione secondario più forte, attenersi alla seguente procedura:
   
 1. [Configurare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
-2. Configurare il servizio di certificazione generale [per Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) per la configurazione di ogni account amministratore globale dedicato per il metodo di verifica appropriato. 
+2. Configurare l' [AMF per i nuovi account](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14) di amministratore globale per la configurazione di ogni account amministratore globale dedicato per il metodo di verifica appropriato. 
     
-Se l'infrastruttura di sicurezza per il metodo di verifica più sicuro desiderato non è in esecuzione e funziona per Office 365 Mae, è consigliabile configurare gli account di amministratore globale dedicati con AMF utilizzando una chiamata telefonica o un codice di verifica del messaggio di testo inviato a uno Smart Phone per gli account di amministratore globale come misura di sicurezza provvisoria. Non lasciare gli account di amministratore globale dedicati senza l'ulteriore protezione fornita dall'AMF.
+Se l'infrastruttura di sicurezza per il metodo di verifica più avanzato desiderato non è in esecuzione e funziona per Microsoft 365 Mae, è consigliabile configurare gli account di amministratore globale dedicati con AMF utilizzando l'app Microsoft Authenticator, una telefonata o un codice di verifica del messaggio di testo inviato a uno Smart Phone per gli account di amministratore globale come misura di sicurezza provvisoria. Non lasciare gli account di amministratore globale dedicati senza l'ulteriore protezione fornita dall'AMF.
   
-Per maggiori informazioni, vedere [Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)
+Per ulteriori informazioni, vedere [pianificare l'autenticazione a più fattori per le distribuzioni di Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
   
-Per connettersi ai servizi di Office 365 con AMF e PowerShell, vedere gli articoli seguenti:
+Per connettersi ai servizi di Microsoft 365 con AMF e PowerShell, vedere gli articoli seguenti:
 
 - [Office 365 PowerShell per gli account utente, i gruppi e le licenze](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
-- [Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-by-using-mfa)
+- [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/powershell/manage-microsoft-teams-with-office-365-powershell#sign-in-with-multi-factor-authentication-mfa)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
-- [Skype for Business online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication)
+- [Skype for Business online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>Protezioni aggiuntive per le organizzazioni aziendali
 
@@ -134,7 +135,7 @@ Dopo i passaggi 1 e 2, utilizzare questi metodi aggiuntivi per verificare che l'
   
 ### <a name="privileged-access-workstation"></a>Workstation con accesso privilegiato
 
-Per garantire che l'esecuzione di attività con privilegi elevati sia la più sicura possibile, utilizzare una workstation con accesso privilegiato (PAW). La ZAMPa è un computer dedicato utilizzato solo per le attività di configurazione sensibili, ad esempio la configurazione di Office 365 che richiede un account di amministratore globale. Poiché questo computer non viene utilizzato giornalmente per la navigazione Internet o la posta elettronica, è meglio proteggerlo dagli attacchi e dalle minacce di Internet.
+Per garantire che l'esecuzione di attività con privilegi elevati sia la più sicura possibile, utilizzare una workstation con accesso privilegiato (PAW). La ZAMPa è un computer dedicato utilizzato solo per le attività di configurazione sensibili, ad esempio la configurazione di Microsoft 365 che richiede un account di amministratore globale. Poiché questo computer non viene utilizzato giornalmente per la navigazione Internet o la posta elettronica, è meglio proteggerlo dagli attacchi e dalle minacce di Internet.
   
 Per istruzioni su come configurare una ZAMPa, vedere [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) .
   
@@ -150,13 +151,13 @@ PIM è disponibile con Azure AD Premium P2, incluso in Microsoft 365 Enterprise 
   
 Per ulteriori informazioni, vedere [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
   
-### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Software di sicurezza e gestione eventi (SIEM) per la registrazione di Office 365
+### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Software di sicurezza e gestione eventi (SIEM) per la registrazione di Microsoft 365
 
-Il software di SIEM eseguito su un server esegue un'analisi in tempo reale degli avvisi di sicurezza e degli eventi creati dalle applicazioni e dall'hardware di rete. Per consentire al server SIEM di includere gli avvisi e gli eventi di sicurezza di Office 365 nelle sue funzioni di analisi e Reporting, integrare Azure AD in You SEIM. Vedere [Introduzione all'integrazione del registro di Azure](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
+Il software di SIEM eseguito su un server esegue un'analisi in tempo reale degli avvisi di sicurezza e degli eventi creati dalle applicazioni e dall'hardware di rete. Per consentire al server SIEM di includere gli avvisi e gli eventi di sicurezza di Microsoft 365 nelle sue funzioni di analisi e Reporting, integrare Azure AD in You SEIM. Vedere [Introduzione all'integrazione del registro di Azure](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Se si sta impostando Identity per l'abbonamento a Office 365, vedere:
+Se si sta configurando l'identità per la sottoscrizione Microsoft 365, vedere:
 
 - [Identità solo cloud](cloud-only-identities.md) se si utilizza l'identità solo cloud
 - [Preparare la sincronizzazione della directory](prepare-for-directory-synchronization.md) se si utilizza l'identità ibrida
@@ -164,4 +165,4 @@ Se si sta impostando Identity per l'abbonamento a Office 365, vedere:
   
 ## <a name="see-also"></a>Vedere anche
 
-Guida di [orientamento alla sicurezza di Office 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).
+[Roadmap sulla sicurezza di Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).

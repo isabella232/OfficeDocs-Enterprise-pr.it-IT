@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: Di seguito sono riportate le risposte alle domande generali su come spostare i dati di base in un nuovo datacenter Geo.
-ms.openlocfilehash: 09c2e9acd482f10c6883ce0134793a9656675631
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516557"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735844"
 ---
 # <a name="data-move-general-faq"></a>Domande frequenti sullo spostamento dati
 
@@ -64,7 +64,7 @@ Sì. Una volta che un nuovo datacenter geografico è disponibile, nuovi clienti 
   
  ## <a name="where-is-my-core-customer-data-located"></a>Dove si trovano i dati dei clienti di base?
 
-Gli amministratori tenant possono visualizzare la scheda percorso dati nell'interfaccia di amministrazione in qualsiasi momento per confermare i dati del cliente di base nel percorso REST per ogni servizio, in particolare per il tenant.Inoltre, viene pubblicata la posizione del centro dati GEOS, dei datacenter e la posizione di Office 365 clienti sui [ mapping del datacenter interattivi di office 365](https://office.com/datamaps) come riferimento per i dati dei clienti di base predefiniti correnti nelle posizioni REST per i nuovi tenant.  È possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Microsoft 365.  
+Gli amministratori tenant possono visualizzare la scheda percorso dati nell'interfaccia di amministrazione in qualsiasi momento per confermare i dati del cliente di base nel percorso REST per ogni servizio, in particolare per il tenant.Inoltre, viene pubblicata la posizione del centro dati GEOS, dei datacenter e la posizione di Office 365 clienti sui [mapping del datacenter interattivi di office 365](https://office.com/datamaps) come riferimento per i dati dei clienti di base predefiniti correnti nelle posizioni REST per i nuovi tenant.  È possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Microsoft 365.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Quando sarà possibile richiedere una mossa?
   
@@ -72,7 +72,7 @@ Per ulteriori informazioni, vedere la sezione come richiedere la pagina di [spos
   
 ## <a name="how-can-i-request-to-be-moved"></a>Come si può richiedere di essere spostati?
   
-I clienti idonei vedranno una pagina nel [portale di amministrazione di Office 365](https://portal.office.com/). Per istruzioni su come richiedere uno spostamento, vedere [come richiedere lo spostamento dei dati](request-your-data-move.md) . 
+I clienti idonei vedranno una pagina nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com/). Per istruzioni su come richiedere uno spostamento, vedere [come richiedere lo spostamento dei dati](request-your-data-move.md) . 
   
 ## <a name="can-i-change-my-selection-after-requesting-a-move"></a>È possibile modificare la selezione dopo aver richiesto uno spostamento?
   
@@ -80,7 +80,7 @@ Non è possibile per noi rimuovere il processo dopo aver inviato la richiesta.
   
 ## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>Cosa succede se non si richiede una mossa prima della scadenza?
   
-Potrebbe essere possibile accettare le richieste su base eccezione per concedere al tenant una scadenza impegnata per completare lo spostamento.   Contattare il [supporto di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) per eseguire la richiesta.
+Potrebbe essere possibile accettare le richieste su base eccezione per concedere al tenant una scadenza impegnata per completare lo spostamento.  Contattare il [supporto di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) per eseguire la richiesta.
 
 ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>Che cosa fare se si desidera spostare i dati in modo da ottenere prestazioni di rete migliori?
   

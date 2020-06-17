@@ -18,18 +18,18 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: utilizzare Office 365 PowerShell per creare nuovi siti di SharePoint Online e quindi aggiungere utenti e gruppi a tali siti.'
-ms.openlocfilehash: 1fc9192ed27bfd097ac770b53837fb8ba2eb062d
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 8011a7e3f61e6b26d4606bfdae67152a1d894840
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004699"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735704"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Creare siti di SharePoint Online e aggiungere utenti con PowerShell di Office 365
 
-Quando si utilizza Office 365 PowerShell per creare siti di SharePoint Online e aggiungere utenti, è possibile eseguire rapidamente e più volte le attività molto più velocemente di quanto non sia possibile nell'interfaccia di amministrazione di Microsoft 356. È inoltre possibile eseguire attività che non possono essere eseguite nell'interfaccia di amministrazione di Office 356. 
+Quando si utilizza Office 365 PowerShell per creare siti di SharePoint Online e aggiungere utenti, è possibile eseguire rapidamente e più volte le attività molto più velocemente di quanto non sia possibile nell'interfaccia di amministrazione di Microsoft 365. È inoltre possibile eseguire attività che non possono essere eseguite nell'interfaccia di amministrazione di Office 365. 
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Le procedure descritte in questo argomento richiedono la connessione a SharePoint Online. Per istruzioni, vedere [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -52,7 +52,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 <br/>Dove *tenant* è il nome del tenant e *owner* è il nome utente dell'utente nel tenant a cui si desidera concedere il ruolo di amministratore principale della raccolta siti.<br/>È possibile premere CTRL + H quando si utilizza il blocco note per eseguire la sostituzione in blocco più velocemente.<br/>
 
-2. Salvare il file sul desktop come **SiteCollections. csv**.<br/>
+2. Salvare il file sul desktop come **SiteCollections.csv**.<br/>
 
 > [!TIP]
 > Prima di utilizzare questo o qualsiasi altro file. csv o script di Windows PowerShell, è consigliabile verificare che non vi siano caratteri estranei o non stampabili. Aprire il file in Word e, nella barra multifunzione, fare clic sull'icona del paragrafo per mostrare i caratteri non stampabili. Non dovrebbero esserci caratteri estranei non stampabili. Ad esempio, non dovrebbe esserci alcun segno di paragrafo oltre quello finale alla fine del file.
@@ -80,7 +80,7 @@ Questo è tutto. Sono state create più raccolte siti utilizzando il file. csv c
 
 ## <a name="step-2-add-users-and-groups"></a>Passaggio 2: aggiungere utenti e gruppi
 
-A questo punto verranno creati gli utenti che verranno poi aggiunti a un gruppo di raccolte di sit. Si utilizzerà un file .csv per caricare in massa nuovi gruppi e utenti.
+Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
 
 Le procedure seguenti continuano a utilizzare i siti di esempio TeamSite01, Blog01, Project01 e Community01.
 
@@ -101,7 +101,7 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 ```
 <br/>Dove *tenant* è uguale al nome del tenant.<br/>
 
-2. Salvare il file sul desktop come **GroupsAndPermissions. csv**.<br/>
+2. Salvare il file sul desktop come **GroupsAndPermissions.csv**.<br/>
 
 3. Aprire una nuova istanza del blocco note e incollare il seguente blocco di testo:<br/>
 
@@ -118,7 +118,7 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 ```
 <br/>Dove *tenant* è uguale al nome del tenant e *username* è uguale al nome utente di un utente esistente.<br/>
 
-4. Salvare il file sul desktop come **Users. csv**.<br/>
+4. Salvare il file sul desktop come **Users.csv**.<br/>
 
 5. Aprire una nuova istanza del blocco note e incollare il seguente blocco di testo:<br/>
 
@@ -128,7 +128,7 @@ Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Gro
 ```
 <br/>Dove alias è uguale al nome utente dell'utente attualmente connesso.<br/>
 
-6. Salvare il file sul desktop come **UsersAndGroups. ps1**. Si tratta di un semplice script di Windows PowerShell.
+6. Salvare il file sul desktop come **UsersAndGroups.ps1**. Si tratta di un semplice script di Windows PowerShell.
 
 L'utente è ora pronto a eseguire lo script UsersAndGroup.ps1 per aggiungere utenti e gruppi a più raccolte di siti.
 
@@ -150,7 +150,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>Dove *alias* è uguale al nome utente.<br/>
 
-5. Attendere che il prompt risponda prima di andare avanti. Verranno innanzitutto visualizzati i gruppi man mano che vengono creati. Poi verrà visualizzato l'elenco dei gruppi ripetuto man mano che vengono aggiunti gli utenti.
+5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
 
 ## <a name="see-also"></a>Vedere anche
 
