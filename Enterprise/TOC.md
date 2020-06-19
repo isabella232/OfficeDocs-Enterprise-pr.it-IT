@@ -2,35 +2,35 @@
 # [Soluzioni cloud aziendali](cloud-adoption-and-hybrid-solutions.yml)
 ## [Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# [Pianificare per Office 365](get-your-organization-ready-for-office-365.md)
+# [Pianificare per Microsoft 365](get-your-organization-ready-for-office-365.md)
 
-## Tenant di Office 365
+## Tenant di Microsoft 365
 ### [Sottoscrizioni, licenze e tenant](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### Pianificare la rete
-#### [Valutazione della connettività di rete di Office 365](assessing-network-connectivity.md)
-#### [Pianificare i dispositivi di rete che si connettono ai servizi di Office 365](plan-for-network-devices.md)
-#### [Pianificazione della rete e della migrazione per Office 365](network-and-migration-planning.md)
+#### [Valutazione della connettività di rete di Microsoft 365](assessing-network-connectivity.md)
+#### [Pianificare i dispositivi di rete che si connettono ai servizi di Microsoft 365](plan-for-network-devices.md)
+#### [Pianificazione della rete e della migrazione per Microsoft 365](network-and-migration-planning.md)
 
 ### Pianificare le identità
 #### [Modelli di identità](about-office-365-identity.md)
 #### [Identità ibrida](plan-for-directory-synchronization.md)
 
-### [Pianificare i certificati SSL di terze parti per Office 365](plan-for-third-party-ssl-certificates.md)
-### [Guide alla configurazione per Office 365 e servizi Microsoft 365](setup-guides-for-office-365.md)
+### [Pianificare i certificati SSL di terze parti per Microsoft 365](plan-for-third-party-ssl-certificates.md)
+### [Guide alla configurazione per i servizi di Office 365 e Microsoft 365](setup-guides-for-office-365.md)
 ### [App integrate e Azure AD](integrated-apps-and-azure-ads.md)
 
-### Integrazione di Office 365
+### Integrazione di Microsoft 365
 #### [Integrazione con l'ambiente locale](office-365-integration.md)
 #### [Integrazione di Azure](azure-integration.md)
 #### [Azure ExpressRoute](azure-expressroute.md)
 #### [Funzionamento dell'autenticazione moderna per le applicazioni client di Office 2013 e Office 2016](modern-auth-for-office-2013-and-2016.md)
 #### [Collaborazione tra tenant](office-365-inter-tenant-collaboration.md)
 
-## Supporto client di Office 365
+## Supporto client di Microsoft 365
 ### [Autenticazione basata su certificati](office-365-client-support-certificate-based-authentication.md)
 ### [Accesso condizionale](office-365-client-support-conditional-access.md)
-### [Gestione di applicazioni mobili](https://support.microsoft.com/en-us/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a?ui=en-US&rs=en-US&ad=US)
+### [Gestione di applicazioni mobili](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)
 ### [Autenticazione moderna](office-365-client-support-modern-authentication.md)
 ### [Single Sign-On](office-365-client-support-single-sign-on.md)
 
@@ -58,17 +58,17 @@
 #### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# [Provare Office 365](cloud-adoption-test-lab-guides-tlgs.md)
+# [Testare Microsoft 365](cloud-adoption-test-lab-guides-tlgs.md)
 
-# [Distribuire Office 365 Enterprise](setup-overview-for-enterprises.md)
+# [Distribuire Microsoft 365 Enterprise](setup-overview-for-enterprises.md)
 
 ## 1. Configurare la rete
 ### [Configurare la rete aziendale](set-up-network-for-office-365.md)
 ### [Aggiungere un dominio](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
-### [Informazioni generali sulla connettività di rete di Office 365](office-365-networking-overview.md)
-### [Principi della connettività di rete di Office 365](office-365-network-connectivity-principles.md)
-### [Pianificazione della rete e ottimizzazione delle prestazioni per Office 365](network-planning-and-performance.md)
-### [Valutazione della connettività di rete di Office 365](assessing-network-connectivity.md)
+### [Informazioni generali sulla connettività di rete di Microsoft 365](office-365-networking-overview.md)
+### [Principi della connettività di rete di Microsoft 365](office-365-network-connectivity-principles.md)
+### [Pianificazione della rete e ottimizzazione delle prestazioni per Microsoft 365](network-planning-and-performance.md)
+### [Valutazione della connettività di rete di Microsoft 365](assessing-network-connectivity.md)
 ### [Office 365 Networking Partner Program](office-365-networking-partner-program.md)
 ### URL e indirizzi IP di Office 365
 #### [Endpoint di Office 365](office-365-endpoints.md)
@@ -86,10 +86,10 @@
 #### [Guida introduttiva della rete CDN di Office 365](office-365-cdn-quickstart.md)
 #### [Usare la rete CDN di Office 365 con SharePoint Online](use-office-365-cdn-with-spo.md)
 #### [Reti per la distribuzione di contenuti](content-delivery-networks.md)
-### Ottimizzare la connettività Office 365 per gli utenti remoti
+### Ottimizzare la connettività di Microsoft 365 per gli utenti remoti
 #### [Panoramica: split tunneling per VPN](office-365-vpn-split-tunnel.md)
 #### [Implementazione di split tunneling per VPN](office-365-vpn-implement-split-tunnel.md)
-#### [Ottimizzazione di Office 365 per utenti della Repubblica popolare cinese](office-365-networking-china.md)
+#### [Ottimizzazione di Microsoft 365 per utenti della Repubblica popolare cinese](office-365-networking-china.md)
 ### Servizi di rete per tenant GCC High e DOD
 #### [Altri requisiti di sicurezza della rete per GCC High e DoD](additional-network-security-requirements-for-office-365-gcchigh-and-dod.md)
 #### [Record DNS per Office 365 DoD](dns-records-for-office-365-dod.md)
@@ -97,13 +97,13 @@
 #### [Endpoint del U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)
 #### [Endpoint del U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Catene di crittografia di Office 365 - DOD e GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Supporto IPv6 nei servizi Office 365](ipv6-support.md)
-### [Supporto NAT con Office 365](nat-support-with-office-365.md)
-### Utilizzo di ExpressRoute per Office 365
-#### [ExpressRoute per Office 365](azure-expressroute.md)
-#### [Implementazione di ExpressRoute per Office 365](implementing-expressroute.md)
-#### [Pianificazione della rete con ExpressRoute per Office 365](network-planning-with-expressroute.md)
-#### [Routing con ExpressRoute per Office 365](routing-with-expressroute.md)
+### [Supporto IPv6 nei servizi di Microsoft 365](ipv6-support.md)
+### [Supporto NAT con Microsoft 365](nat-support-with-office-365.md)
+### Uso di ExpressRoute per Microsoft 365
+#### [ExpressRoute per Microsoft 365](azure-expressroute.md)
+#### [Implementazione di ExpressRoute per Microsoft 365](implementing-expressroute.md)
+#### [Pianificazione della rete con ExpressRoute per Microsoft 365](network-planning-with-expressroute.md)
+#### [Routing con ExpressRoute per Microsoft 365](routing-with-expressroute.md)
 
 ## 2. Configurare le identità
 ### [Proteggere gli account di amministrazione globale](protect-your-global-administrator-accounts.md)
@@ -129,7 +129,7 @@
 
 ## 6. Configurare i servizi e le applicazioni
 ### [Introduzione](configure-services-and-applications.md)
-### [Eseguire la migrazione dei dati a Office 365](migrate-data-to-office-365.md)
+### [Eseguire la migrazione dei dati a Microsoft 365](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
 ### [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
 ### [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
@@ -163,7 +163,7 @@
 ##### [Abilitazione di SharePoint Multi-Geo in una posizione geografica satellite](enabling-SP-multigeo-satellite-geolocation.md)
 ##### [Amministrazione di Exchange Multi-Geo](administering-exchange-online-multi-geo.md)
 
-### [Passare a una nuova posizione geografica per il datacenter di Office 365](moving-data-to-new-datacenter-geos.md)
+### [Passare a una nuova posizione geografica per il datacenter di Microsoft 365](moving-data-to-new-datacenter-geos.md)
 #### [Come richiedere lo spostamento dati](request-your-data-move.md)
 #### [Durante e dopo lo spostamento dati](during-and-after-your-data-move.md)
 #### [Domande frequenti sullo spostamento dati](data-move-faq.md)
@@ -175,14 +175,14 @@
 #### [Usare Azure Active Directory per l'autenticazione di SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [Connettere una rete locale a una rete virtuale di Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Distribuire un server di sincronizzazione directory in Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-#### [Distribuire l'autenticazione federata a disponibilità elevata per Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+#### [Distribuire l'autenticazione federata a disponibilità elevata per Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
 ##### [Fase 1: configurare Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
 ##### [Fase 2: configurare i controller di dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
 ##### [Fase 3: configurare i server AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
 ##### [Fase 4: configurare i proxy applicazione Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
 ##### [Fase 5: configurare l'autenticazione federata](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
-# Gestire Office 365
+# Gestire Microsoft 365
 
 ## Rete
 ### [Monitorare la connettività](monitor-connectivity.md)
@@ -194,7 +194,7 @@
 ### [Disattivare la sincronizzazione della directory](turn-off-directory-synchronization.md)
 
 ## Utenti
-### [Centro assistenza per gli amministratori di Office 365](https://docs.microsoft.com/office365/admin/admin-home)
+### [Guida all'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/admin-home)
 ### [Strumenti per gestire gli account utente](manage-office-365-accounts.md)
 ### [Aggiungere più utenti contemporaneamente](add-several-users-at-the-same-time.md)
 ### [Recuperare gli elementi eliminati nella cassetta postale di un utente](recover-deleted-items-in-a-mailbox.md)
@@ -214,7 +214,7 @@
 ### [Opzioni di supporto](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## Prestazioni
-### [Ottimizzare le prestazioni di Office 365](tune-office-365-performance.md)
+### [Ottimizzare le prestazioni di Microsoft 365](tune-office-365-performance.md)
 ### [Ottimizzazione delle prestazioni mediante l'uso della cronologia delle prestazioni e delle previsioni](performance-tuning-using-baselines-and-history.md)
 ### [Ottimizzare le prestazioni di Exchange Online](tune-exchange-online-performance.md)
 ### [Ottimizzare le prestazioni di SharePoint Online](tune-sharepoint-online-performance.md)
@@ -226,8 +226,8 @@
 ### [Gestione di ExpressRoute](managing-expressroute-for-connectivity.md)
 
 # Garanzia del servizio
-## [Garanzia del servizio nel Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)
-## [Controlli di accesso amministrativo in Office 365](office-365-administrative-access-controls-overview.md)
+## [Garanzia del servizio nel Centro sicurezza e conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)
+## [Controlli di accesso amministrativo in Microsoft 365](office-365-administrative-access-controls-overview.md)
 ### [Monitoraggio e controllo dei controlli di accesso ](office-365-monitoring-and-auditing-access-controls.md)
 ### [Controlli di isolamento di Office 365](office-365-isolation-controls.md)
 ### [Controlli del personale di Office 365](office-365-personnel-controls.md)
@@ -254,7 +254,7 @@
 ### [Strategia di Microsoft per la protezione contro gli attacchi Denial of Service](office-365-microsoft-dos-defense-strategy.md)
 ### [I principi fondamentali di protezione contro gli attacchi Denial of Service](office-365-core-principles-of-defense-against-dos-attacks.md)
 ## [Crittografia nel Microsoft Cloud](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)
-### [Servizio di crittografia di Office 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption)
+### [Servizio di crittografia di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption)
 ### [Crittografia per i dati in transito](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit)
 ### [Funzionalità di crittografia gestite dai clienti](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
 ### [Protezione e rischi della crittografa](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
@@ -273,5 +273,5 @@
 # [PowerShell di Office 365](powershell/manage-office-365-with-office-365-powershell.md)
 # [Conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Sicurezza di Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
-# [Office 365 per le aziende](https://docs.microsoft.com/office365/admin/admin-home)
+# [Microsoft 365 per le aziende](https://www.microsoft.com/microsoft-365/business)
 # [Microsoft 365](https://docs.microsoft.com/microsoft-365)
