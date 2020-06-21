@@ -19,16 +19,16 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: Il supporto termina per SharePoint 2010 e SharePoint Server 2010 il 13 aprile 2021. Utilizzare questo articolo come guida per l'aggiornamento a SharePoint Online o a una versione più recente di SharePoint Server locale.
-ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
-ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
+ms.openlocfilehash: 906fd4a5189bba29e90f342c1c9199c927210bb2
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43532299"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774451"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Aggiornamento da SharePoint 2010
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Microsoft SharePoint 2010 e SharePoint Server 2010 potranno raggiungere la fine del supporto del **13 aprile 2021**. In questo articolo vengono illustrate le risorse che consentono di eseguire la migrazione dei dati di SharePoint Server 2010 esistenti a SharePoint online in Office 365 o di aggiornare l'ambiente di SharePoint Server 2010 locale.
   
@@ -128,7 +128,7 @@ A partire dalla versione più recente del prodotto SharePoint locale (SharePoint
   
 |||
 |:-----|:-----|
-||Percorso di aggiornamento seriale * * * *: SharePoint Server **\>** 2010 sharepoint server **\>** 2013 SharePoint Server 2016 |
+||Percorso di aggiornamento seriale * * * *: SharePoint Server 2010 **\>** SharePoint server 2013 **\>** sharepoint server 2016 |
    
 Se si sceglie di seguire l'intero percorso da SharePoint 2010 a SharePoint Server 2016, questa operazione richiederà tempo e pianificazione. Gli aggiornamenti prevedono un costo in termini di hardware aggiornato (tenere presente che è necessario aggiornare anche SQL Server), il software e l'amministrazione. Inoltre, potrebbe essere necessario aggiornare o addirittura abbandonare le personalizzazioni. Prima di eseguire l'aggiornamento della farm di SharePoint Server, assicurarsi di raccogliere note su tutte le personalizzazioni critiche.
   
@@ -162,15 +162,15 @@ Iniziare confrontando i requisiti hardware e software. Se non si soddisfano i re
   
 - **Requisiti hardware e software per**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - **Limiti software e limitazioni per**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **Panoramica del processo di aggiornamento per**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Creare una soluzione ibrida di SharePoint tra SharePoint Online e SharePoint Server locale
 

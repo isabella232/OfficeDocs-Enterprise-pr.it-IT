@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: d07c9c62a778ce23d2e088ddeb8b34346911a19a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711919"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774491"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -68,19 +68,19 @@ Quando viene spostato SharePoint Online, vengono spostati anche i dati per i ser
     
 - Project Online
     
-- Project per Office 365
+- Project per Microsoft 365
     
-- Servizi video di Office 365
+- Servizi video Microsoft 365
     
 - Office nel browser s
     
 - Microsoft 365 Apps for enterprise
     
-- Visio Pro per Office 365
+- Visio Pro per Microsoft 365
     
 Dopo aver completato lo spostamento dei dati di SharePoint Online, è possibile che vengano visualizzati alcuni degli effetti riportati di seguito.
   
-### <a name="office-365-video-services"></a>Servizi video di Office 365
+### <a name="microsoft-365-video-services"></a>Servizi video Microsoft 365
 
 - Lo spostamento dei dati per il video richiede più tempo degli spostamenti per il resto del contenuto in SharePoint Online.
     

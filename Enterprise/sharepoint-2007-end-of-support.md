@@ -1,5 +1,5 @@
 ---
-title: Roadmap di fine supporto di SharePoint Server 2007
+title: Guida sulla fine del supporto di SharePoint Server 2007
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -36,16 +36,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: Il 10 ottobre 2017 è stato terminato il supporto per SharePoint Server 2007. Leggere questo articolo per informazioni sulle opzioni di aggiornamento, la risoluzione dei problemi, le procedure consigliate, i requisiti di sistema, i passaggi di aggiornamento e su come ottenere assistenza dai partner Microsoft.
-ms.openlocfilehash: 6f0bd60d1f1201750ae1f0e4cc1a001ab4ed2ef6
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 860e142912d54b87c10677681dcbb429a6df9a8a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844007"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44775001"
 ---
-# <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Roadmap di fine supporto di SharePoint Server 2007
+# <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Guida sulla fine del supporto di SharePoint Server 2007
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Il **10 ottobre 2017**, Microsoft Office SharePoint Server 2007 ha raggiunto la fine del supporto. Se non è stata avviata la migrazione da SharePoint Server 2007 a Office 365 o una versione più recente di SharePoint Server locale, ora è il momento di iniziare a pianificare. In questo articolo vengono illustrate le risorse che consentono agli utenti di eseguire la migrazione dei dati in SharePoint Online o di aggiornare il server SharePoint locale. 
   
@@ -108,9 +108,7 @@ Quando si esegue la migrazione a Office 365, lo spostamento di una tantum avrà 
   
 ### <a name="migrate-to-sharepoint-online"></a>Eseguire la migrazione a SharePoint Online
 
-Verificare che in SharePoint Online siano disponibili tutte le funzionalità necessarie rivedendo la descrizione del servizio associato. Di seguito è indicato il collegamento a tutte le descrizioni dei servizi di Office 365:
-  
-[Descrizioni del servizio Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
+Verificare che in SharePoint Online siano disponibili tutte le funzionalità necessarie rivedendo la descrizione del servizio associato. Vedere [le descrizioni del servizio Microsoft 365 e Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
   
 Non esiste un modo diretto per eseguire la migrazione da SharePoint 2007 a SharePoint Online; lo spostamento a SharePoint Online verrebbe effettuato manualmente. Se si esegue l'aggiornamento a SharePoint Server 2013 o SharePoint Server 2016, è possibile che lo spostamento implichi anche l'utilizzo dell'API di migrazione di SharePoint (per eseguire la migrazione delle informazioni in OneDrive for business, ad esempio).
   
@@ -141,7 +139,7 @@ Non esiste un modo storica di ignorare le versioni degli aggiornamenti di ShareP
 Per utilizzare l'intero percorso da SharePoint 2007 a SharePoint Server 2016, si verificherà un notevole investimento di tempo e comporterà un costo in termini di hardware aggiornato (tenere presente che è necessario aggiornare anche SQL Server), il software e l'amministrazione. Le personalizzazioni dovranno essere aggiornate o abbandonate, in base alla criticità della caratteristica.
   
 > [!NOTE]
-> È possibile mantenere la farm di SharePoint 2007 di fine vita, installare una farm di SharePoint Server 2016 su un nuovo hardware (in modo che le farm separate vengano eseguite affiancate) e quindi pianificare ed eseguire una migrazione manuale del contenuto (per il download e il caricamento del contenuto, ad esempio). Tenere presente alcuni aspetti negativi degli spostamenti manuali, ad esempio gli spostamenti di documenti che sostituiscono l'ultimo account modificato con l'alias dell'account che esegue lo spostamento manuale, e il lavoro che deve essere eseguito in anticipo, ad esempio ricreando siti, siti secondari, autorizzazioni ed elenchi Structures). Di nuovo, è il momento di prendere in considerazione i dati che è possibile spostare nello spazio di archiviazione, o non è più necessario, un'azione che può ridurre l'impatto della migrazione.
+> È possibile mantenere la farm di SharePoint 2007 di fine vita, installare una farm di SharePoint Server 2016 su un nuovo hardware (in modo che le farm separate vengano eseguite affiancate) e quindi pianificare ed eseguire una migrazione manuale del contenuto, ad esempio per il download e il caricamento del contenuto. Tenere conto di alcuni aspetti negativi degli spostamenti manuali, ad esempio gli spostamenti di documenti che sostituiscono l'ultimo account modificato con l'alias dell'account che esegue lo spostamento manuale, e il lavoro che deve essere eseguito in anticipo, ad esempio la ricreazione di siti, siti secondari, autorizzazioni e strutture di elenchi. Di nuovo, è il momento di prendere in considerazione i dati che è possibile spostare nello spazio di archiviazione, o non è più necessario, un'azione che può ridurre l'impatto della migrazione.
   
 In entrambi i casi, pulire l'ambiente prima dell'aggiornamento. Accertarsi che la farm esistente sia funzionale prima di eseguire l'aggiornamento e (di sicuro) prima di rimuovere le autorizzazioni. 
   
@@ -176,15 +174,15 @@ Per iniziare, è necessario conoscere i requisiti hardware e software e quindi s
   
 - **Requisiti hardware e software per**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - **Limiti software e limitazioni per**: 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **Panoramica del processo di aggiornamento per**: 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>Creare una soluzione ibrida di SharePoint tra SharePoint Online e in locale
 
@@ -192,7 +190,7 @@ Se la risposta alle esigenze di migrazione è da qualche parte tra il self-contr
   
 Se si decide che una farm di SharePoint Server ibrida trarrà vantaggio dalla propria azienda, acquisire familiarità con i tipi di ibrido esistenti e come configurare la connessione tra la farm di SharePoint locale e la sottoscrizione di Office 365.
   
-Un buon modo per vedere come funziona è la creazione di un [ambiente di sviluppo/test di Office 365](https://go.microsoft.com/fwlink/?linkid=843152). Una volta che si dispone di una sottoscrizione di valutazione di Office 365, è possibile creare le raccolte siti, i siti Web e le raccolte documenti in SharePoint Online a cui eseguire la migrazione dei dati (manualmente, tramite l'API di migrazione o-se si desidera eseguire la migrazione di My Contenuto del sito in OneDrive for business-tramite la procedura guidata ibrida).
+Un buon modo per vedere come funziona è la creazione di un [ambiente di sviluppo/test di Office 365](https://go.microsoft.com/fwlink/?linkid=843152). Una volta che si dispone di una sottoscrizione di prova o di Office 365, è possibile creare le raccolte siti, i siti Web e le raccolte documenti in SharePoint Online a cui eseguire la migrazione dei dati (manualmente, tramite l'API di migrazione oppure, se si desidera eseguire la migrazione del contenuto del sito personale a OneDrive for business, tramite la procedura guidata ibrida).
   
 > [!NOTE]
 > Tenere presente che la farm di SharePoint 2007 dovrà essere aggiornata, in locale, a SharePoint Server 2013 o SharePoint Server 2016 per utilizzare l'opzione ibrida 

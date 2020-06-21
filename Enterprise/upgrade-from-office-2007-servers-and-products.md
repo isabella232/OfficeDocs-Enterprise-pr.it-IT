@@ -23,16 +23,16 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Il supporto si concluderà presto per i server e le applicazioni client di Office 2007 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
-ms.openlocfilehash: 2686d081952a2b18a1d08378e3aa7f66f4142542
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 8da5cd95b683be40c4efa3137ecfca4d31e11aae
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979358"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774561"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2007
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Se si utilizzano i prodotti e i servizi di Office 2007, il supporto per queste applicazioni è terminato. Durante la pianificazione dell'aggiornamento, questo è il momento ideale per passare al cloud Microsoft, a partire da Office 365. Utilizzare questo articolo come punto di partenza per esaminare le opzioni e pianificare l'aggiornamento.
       

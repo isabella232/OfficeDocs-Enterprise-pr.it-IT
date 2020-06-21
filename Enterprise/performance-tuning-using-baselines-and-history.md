@@ -21,12 +21,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Esistono alcuni modi semplici per controllare le prestazioni della connessione tra Office 365 e la propria azienda che consentirà di stabilire una linea di base approssimativa della connettività. Se si conosce la cronologia delle prestazioni delle connessioni dei computer client, è possibile rilevare i problemi emergenti in anticipo, identificare e stimare.
-ms.openlocfilehash: 2eed0b20886552c207399ab4144b63364132f98c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ffccd9f5763d7d47dbb3aa02d3063582d1fa83cc
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844337"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774551"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ottimizzazione delle prestazioni di Office 365 con le linee di base e la cronologia delle prestazioni
 
@@ -42,9 +42,9 @@ Se non si è abituati a lavorare sui problemi di prestazioni, questo articolo è
 Office 365 risiede all'interno di una rete Microsoft dedicata e a elevata capacità, che viene costantemente monitorata non solo dall'automazione, ma da persone reali. Parte del ruolo di manutenzione del cloud di Office 365 è l'ottimizzazione delle prestazioni e la razionalizzazione dei casi in cui è possibile. Poiché i client del cloud di Office 365 devono connettersi su Internet, è possibile ottimizzare le prestazioni anche tra i servizi di Office 365. I miglioramenti delle prestazioni non si interrompono mai nel cloud e sono presenti molte esperienze accumulate con la conservazione del cloud in modo rapido e integro. Se si verifica un problema di prestazioni che si connette dal percorso a Office 365, è preferibile non iniziare e attendere un caso di supporto. In alternativa, è consigliabile iniziare a esaminare il problema da "all'interno". In altri termini, iniziare dall'interno della rete e procedere con l'uscita a Office 365. Prima di aprire un caso con il supporto di Office 365, è possibile raccogliere dati e intraprendere azioni che analizzino e possano risolvere il problema.
   
 > [!IMPORTANT]
-> Tenere conto della pianificazione della capacità e dei limiti in Office 365. Tali informazioni consentiranno di superare la curva quando si tenta di risolvere un problema di prestazioni. Di seguito è indicato un collegamento alla [Descrizione del servizio piattaforma Office 365](https://technet.microsoft.com/library/office-365-service-descriptions.aspx). Si tratta di un hub centrale e tutti i servizi offerti da Office 365 dispongono di un collegamento che passa alla propria descrizione dei servizi da qui. Questo significa che, se è necessario visualizzare i limiti standard per SharePoint Online, ad esempio, fare clic su [Descrizione servizio SharePoint Online](https://technet.microsoft.com/library/sharepoint-online-service-description.aspx) e individuare la [sezione limiti di SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=856113). 
+> Tenere conto della pianificazione della capacità e dei limiti in Office 365. Tali informazioni consentiranno di superare la curva quando si tenta di risolvere un problema di prestazioni. Di seguito è indicato un collegamento alle [descrizioni del servizio Microsoft 365 e Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library). Si tratta di un hub centrale e tutti i servizi offerti da Office 365 dispongono di un collegamento che passa alla propria descrizione dei servizi da qui. Questo significa che, se è necessario visualizzare i limiti standard per SharePoint Online, ad esempio, fare clic su [Descrizione servizio SharePoint Online](https://technet.microsoft.com/library/sharepoint-online-service-description.aspx) e individuare la [sezione limiti di SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=856113). 
   
-Assicurarsi di andare alla risoluzione dei problemi con la consapevolezza che le prestazioni sono una scala scorrevole, non si tratta di ottenere un valore idealizzato e di mantenerlo permanentemente (se si ritiene che sia così, quindi occasionali attività a larghezza di banda elevata come l'imbarco a un numero elevato di utenti o la migrazione di dati di grandi dimensioni sarà molto stressante, quindi pianificare gli effetti delle prestazioni. È possibile, e deve, avere una vaga idea dei vostri obiettivi di prestazioni, ma molte variabili giocano nelle prestazioni, pertanto, le prestazioni variano. Questa è la natura delle prestazioni. 
+Assicurarsi di andare alla risoluzione dei problemi con la comprensione che le prestazioni sono una scala scorrevole, non si tratta di ottenere un valore idealizzato e di mantenerlo permanentemente (se si ritiene che sia così, quindi occasionali attività a larghezza di banda elevata come l'imbarco di un numero elevato di utenti o la migrazione di dati di grandi dimensioni saranno molto stressanti). È possibile, e deve, avere una vaga idea dei vostri obiettivi di prestazioni, ma molte variabili giocano nelle prestazioni, pertanto, le prestazioni variano. Questa è la natura delle prestazioni. 
   
 La risoluzione dei problemi relativi alle prestazioni non riguarda la riunione di obiettivi specifici e la gestione di tali numeri a tempo indeterminato, ovvero il miglioramento delle attività esistenti, date tutte le variabili. 
   
@@ -116,7 +116,7 @@ Se si è sfortunati, nessuno lo sa. Nessuno aveva numeri. Questo significa che n
   
 Ciò che manca è una previsione delle prestazioni.
   
-Le linee di base forniscono un contesto per le prestazioni. A seconda delle esigenze della propria azienda, è consigliabile utilizzare occasionalmente una linea di base. Se si è una società di dimensioni maggiori, il team operativo può già prendere le previsioni per l'ambiente locale. Ad esempio, se si esegue il patch di tutti i server di Exchange del primo lunedì del mese e di tutti i server di SharePoint il terzo lunedì, il team operativo ha probabilmente un elenco di attività e scenari che eseguono la post-Patching per dimostrare che le funzioni critiche sono operativi. Ad esempio, aprire la posta in arrivo, fare clic su Invia/Ricevi e verificare che le cartelle vengano aggiornate oppure, in SharePoint, esplorare la pagina principale del sito, accedere alla pagina di ricerca dell'organizzazione ed eseguire una ricerca che restituisca i risultati.
+Le linee di base forniscono un contesto per le prestazioni. A seconda delle esigenze della propria azienda, è consigliabile utilizzare occasionalmente una linea di base. Se si è una società di dimensioni maggiori, il team operativo può già prendere le previsioni per l'ambiente locale. Ad esempio, se si esegue la patch di tutti i server di Exchange del primo lunedì del mese e di tutti i server di SharePoint il terzo lunedì, il team operativo ha probabilmente un elenco di attività e scenari che eseguono la post-Patching per dimostrare che le funzioni critiche sono operative. Ad esempio, aprire la posta in arrivo, fare clic su Invia/Ricevi e verificare che le cartelle vengano aggiornate oppure, in SharePoint, esplorare la pagina principale del sito, accedere alla pagina di ricerca dell'organizzazione ed eseguire una ricerca che restituisca i risultati.
   
 Se le applicazioni sono presenti in Office 365, alcune delle linee di base più importanti è possibile misurare il tempo (in millisecondi) da un computer client all'interno della rete, a un punto di uscita o al punto in cui si lascia la rete e si esce a Office 365. Di seguito sono riportate alcune utili linee di base che è possibile analizzare e registrare:
   
@@ -170,7 +170,7 @@ Le opzioni sono elencate come **semplici** e **Avanzate** a causa della quantit�
     
 - Feb_08_2015_8-30amEST_PerfBaseline_GoodPerf
     
-Esistono diversi modi per eseguire questa operazione, ma utilizzando il formato ** \<DateTime\>\<quello che succede nel\> test** è un buon punto di partenza. Essere diligenti in questo modo sarà di grande aiuto quando si tenta di risolvere i problemi in un secondo momento. Successivamente, potrai dire "ho scattato due tracce l'8 febbraio, una ha mostrato una buona prestazione e una cattiva, quindi possiamo confrontarle". Questo è estremamente utile per la risoluzione dei problemi. 
+Sono disponibili diversi modi per eseguire questa operazione, ma l'utilizzo del formato **\<dateTime\>\<what's happening in the test\>** è un buon punto di partenza. Essere diligenti in questo modo sarà di grande aiuto quando si tenta di risolvere i problemi in un secondo momento. Successivamente, potrai dire "ho scattato due tracce l'8 febbraio, una ha mostrato una buona prestazione e una cattiva, quindi possiamo confrontarle". Questo è estremamente utile per la risoluzione dei problemi. 
   
 È necessario disporre di un metodo organizzato per mantenere le linee di base storiche. In questo esempio, i metodi semplici hanno prodotto tre output della riga di comando e i risultati sono stati raccolti come schermate, ma è possibile che vengano invece creati file di acquisizione di rete. Utilizzare il metodo più adatto per l'utente. Archiviare le linee di base cronologiche e fare riferimento a essi in punti in cui si notano modifiche del comportamento dei servizi online. 
   
@@ -201,7 +201,7 @@ L'obiettivo di questi metodi semplici consiste nell'imparare a prendere, compren
 ![Rete di base con client, proxy e cloud e suggerimenti per gli strumenti PSPing, TraceTCP e le tracce di rete.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP è incluso in questa schermata perché è uno strumento utile per mostrare, in millisecondi, la durata della richiesta di elaborazione e il numero di hop di rete o di connessioni da un computer all'altro, che la richiesta richiede per raggiungere una destinazione. TraceTCP può anche fornire i nomi dei server utilizzati durante il luppolo, il che può essere utile per una soluzione di risoluzione dei problemi di Microsoft Office 365 in supporto. > i comandi di TraceTCP possono essere molto semplici, ad esempio `tracetcp.exe outlook.office365.com:443` : >> ricordarsi di includere il numero di porta nel comando. > [TraceTCP](https://simulatedsimian.github.io/tracetcp_download.html) è un download gratuito, ma si basa su WINCAP. WINCAP è uno strumento utilizzato e installato anche da Netmon. È inoltre possibile utilizzare Netmon nella sezione Advanced methods. 
+> TraceTCP è incluso in questa schermata perché è uno strumento utile per mostrare, in millisecondi, la durata della richiesta di elaborazione e il numero di hop di rete o di connessioni da un computer all'altro, che la richiesta richiede per raggiungere una destinazione. TraceTCP può anche fornire i nomi dei server utilizzati durante il luppolo, il che può essere utile per una soluzione di risoluzione dei problemi di Microsoft Office 365 in supporto. > i comandi di TraceTCP possono essere molto semplici, ad esempio: > `tracetcp.exe outlook.office365.com:443`> ricordarsi di includere il numero di porta nel comando. > [TraceTCP](https://simulatedsimian.github.io/tracetcp_download.html) è un download gratuito, ma si basa su WINCAP. WINCAP è uno strumento utilizzato e installato anche da Netmon. È inoltre possibile utilizzare Netmon nella sezione Advanced methods. 
   
  Se si dispone di più uffici, è necessario mantenere un set di dati da un client in ognuno di questi percorsi. Questo test misura la latenza, che, in questo caso, è un valore numerico che descrive la quantità di tempo tra un client che invia una richiesta a Office 365 e Office 365 che risponde alla richiesta. Il testing ha origine all'interno del dominio in un computer client e cerca di misurare un round trip dall'interno della rete, tramite un punto di uscita, tramite Internet a Office 365 e viceversa. 
   
@@ -263,7 +263,7 @@ Assicurarsi di includere il numero di porta 443. Tenere presente che Office 365 
   
 ![Grafico in cui viene illustrata un'illustrazione del client per il proxy PSPing con un tempo di andata e ritorno di 2,8 millisecondi.](media/96901aea-1093-4f1b-b5a3-6078e9035e6c.png)
   
-Se non si ha familiarità con il bypass proxy e si preferisce eseguire operazioni dettagliate, è necessario innanzitutto individuare il nome del server proxy. In Internet Explorer vai a **strumenti** \> **Internet Options** \> **Connections** \> **Impostazioni** \> LAN **Avanzate**. La scheda **Avanzate** è la posizione in cui verrà visualizzato il server proxy elencato. Eseguire il ping del server proxy al prompt dei comandi completando questa attività: 
+Se non si ha familiarità con il bypass proxy e si preferisce eseguire operazioni dettagliate, è necessario innanzitutto individuare il nome del server proxy. In Internet Explorer vai a **strumenti** \> **Internet Options** \> **Connections** \> **Impostazioni LAN** \> **Avanzate**. La scheda **Avanzate** è la posizione in cui verrà visualizzato il server proxy elencato. Eseguire il ping del server proxy al prompt dei comandi completando questa attività: 
   
  **Per eseguire il ping del server proxy e ottenere un valore di andata e ritorno in millisecondi per la fase 1-2**
   
@@ -275,7 +275,7 @@ Se non si ha familiarità con il bypass proxy e si preferisce eseguire operazion
     
 3. Se viene visualizzata la finestra di dialogo **Controllo account utente**, confermare che l'azione visualizzata è quella desiderata e scegliere **Continua**.
     
-2. Digitare ping \<il nome del server proxy utilizzato dal browser oppure l'indirizzo IP del server\> proxy e quindi premere INVIO. Se si dispone di PsPing o di un altro strumento installato, è possibile scegliere di utilizzare lo strumento. 
+2. Digitare ping \<the name of the proxy server your browser uses, or the IP address of the proxy server\> e quindi premere INVIO. Se si dispone di PsPing o di un altro strumento installato, è possibile scegliere di utilizzare lo strumento. 
     
     Il comando può essere simile a uno di questi esempi: 
     
@@ -303,7 +303,7 @@ Ad esempio, se si dispone di 51,84 millisecondi dal client all'URL di Office 365
   
 ![Grafico aggiuntivo che consente di visualizzare il ping in millisecondi da client a proxy accanto a client a Office 365 in modo che i valori possano essere sottratti.](media/cd764e77-5154-44ba-a5cd-443a628eb2d9.PNG)
   
-In termini di risoluzione dei problemi, è possibile trovare qualcosa di interessante solo da mantenere queste linee di base. Ad esempio, se si rileva che in genere sono presenti circa 59 40 millisecondi di latenza dal proxy o dall'uscita dall'indirizzo all'URL di Office 365 e che un client può eseguire il proxy o la latenza di un punto di uscita di circa 3 o 7 millisecondi (a seconda del traffico di rete che si sta rivedendo g in quell'ora del giorno) allora saprete sicuramente che qualcosa è problematico se le ultime tre client per il proxy o l'uscita di linea di base mostrano una latenza di 45 millisecondi.
+In termini di risoluzione dei problemi, è possibile trovare qualcosa di interessante solo da mantenere queste linee di base. Ad esempio, se si rileva che in genere sono presenti circa 59 40 millisecondi di latenza dal proxy o dal punto di uscita all'URL di Office 365, e avere un client per il proxy o l'uscita latenza del punto di circa 3 a 7 millisecondi (a seconda del traffico di rete che si sta vedendo in quel momento della giornata), quindi sarà sicuramente sapere che qualcosa è problematico se le ultime tre client di proxy o di uscita di base mostrano una latenza di 45 millisecondi.
   
 ### <a name="advanced-methods"></a>Metodi avanzati
 

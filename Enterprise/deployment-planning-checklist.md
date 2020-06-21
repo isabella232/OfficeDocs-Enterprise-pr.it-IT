@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Questo elenco di controllo aiuterà l'organizzazione durante la pianificazione e la preparazione di una migrazione a Microsoft 365.
-ms.openlocfilehash: f958a48b01c3e027804c75bf469276bcfeed1d83
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 3eaca9cdc248dd4c72691fec37eb6e54add52218
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711900"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774821"
 ---
 # <a name="deployment-planning-checklist-for-microsoft-365"></a>Elenco di controllo per la pianificazione della distribuzione per Microsoft 365
 
@@ -80,5 +80,5 @@ Quando si sposta un'organizzazione Enterprise in Microsoft 365, è importante pi
 | Facoltativamente, eseguire la migrazione dei dati ( [posta elettronica](https://go.microsoft.com/fwlink/?LinkId=534823)e [file](https://go.microsoft.com/fwlink/?LinkId=534824)e così via) |||||
 |Convalidare la funzionalità e completare i passaggi finali |||||
 | Eseguire la migrazione [delle impostazioni DNS in modo che puntino a Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| Informare gli utenti quando è possibile [iniziare a utilizzare Microsoft 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
+| Informare gli utenti quando è possibile [iniziare a utilizzare Microsoft 365](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb) |||||
 | Riconfigurare i sistemi client per la connessione a Microsoft 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook per Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [dispositivi mobili](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

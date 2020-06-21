@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Ottenere l'accesso alle risorse da pianificare per la distribuzione di Microsoft 365 Enterprise.
-ms.openlocfilehash: 106ee743f6f1ddd49d2d81d653f97bfa40566649
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 4b779365fc1dbad05e1eacbba1e346530952d372
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735794"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774471"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Pianificare Microsoft 365 Enterprise
 
@@ -33,7 +33,7 @@ Quando si sposta un'organizzazione Enterprise in Microsoft 365, è importante pi
 
 ## <a name="planning-with-microsoft-365-fasttrack"></a>Planning with Microsoft 365 FastTrack
 
-[FastTrack per microsoft 365](https://www.microsoft.com/en-us/fasttrack/microsoft-365) è il metodo migliore per ottenere assistenza da Microsoft per la pianificazione della distribuzione di Microsoft 365. FastTrack può essere di aiuto nelle considerazioni di progettazione più comuni e può rispondere a domande lungo la strada. 
+[FastTrack per microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) è il metodo migliore per ottenere assistenza da Microsoft per la pianificazione della distribuzione di Microsoft 365. FastTrack può essere di aiuto nelle considerazioni di progettazione più comuni e può rispondere a domande lungo la strada. 
 
 >[!Note]
 >È inoltre possibile ottenere assistenza da un [partner Microsoft](https://www.microsoft.com/solution-providers/home).
@@ -43,7 +43,7 @@ Quando si sposta un'organizzazione Enterprise in Microsoft 365, è importante pi
 
 Per pianificare Microsoft 365 da soli, è possibile eseguire le decisioni di pianificazione e progettazione per queste aree:
 
-- Il tenant Microsoft 365
+- Tenant di Microsoft 365
 
   Include la pianificazione per le connessioni di rete a Internet, le identità di Microsoft 365 e l'integrazione con le app, gli elementi locali, di Azure e di altro. Iniziare da [qui](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
 

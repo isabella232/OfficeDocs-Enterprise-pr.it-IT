@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Le applicazioni di Office per Mac forniscono un'esperienza di app nativa sulla piattaforma macOS. Ogni app è progettata per funzionare in diversi scenari, tra cui gli stati in cui non è disponibile alcun accesso alla rete. Quando un computer è connesso a una rete, le applicazioni si connettono automaticamente a una serie di servizi basati sul Web per fornire funzionalità avanzate. In questo articolo vengono descritti gli endpoint e gli URL che le applicazioni tentano di raggiungere e i servizi forniti. Queste informazioni sono utili per la risoluzione dei problemi relativi alla configurazione della rete e per l'impostazione di un criterio per i server proxy di rete. I dettagli in questo articolo sono destinati a completare l'articolo di Office 365 URL e degli intervalli di indirizzi.
-ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844547"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774951"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Richieste di rete in Office per Mac
 
@@ -52,7 +52,7 @@ I seguenti endpoint di rete vengono utilizzati per scaricare il programma di ins
   
 |**URL**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
-|```https://go.microsoft.com/fwlink/```  <br/> |ST  <br/> |Office 365 Installation Portal forward link Service ai pacchetti di installazione più recenti.  <br/> |
+|```https://go.microsoft.com/fwlink/```  <br/> |ST  <br/> |Microsoft 365 Installation Portal forward link Service ai pacchetti di installazione più recenti.  <br/> |
 |```https://officecdn-microsoft-com.akamaized.net/```  <br/> |SS  <br/> |Percorso dei pacchetti di installazione nella rete di distribuzione del contenuto.  <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |SS  <br/> |Percorso dei pacchetti di installazione nella rete di distribuzione del contenuto.  <br/> |
 |```https://officeci-mauservice.azurewebsites.net/```  <br/> |ST  <br/> |Endpoint di controllo di gestione per Microsoft AutoUpdate  <br/> |
@@ -86,7 +86,7 @@ I seguenti endpoint di rete vengono contattati al primo avvio di un'app di Offic
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |ST  <br/> |Servizio di supporto in-app.  <br/> |
 |```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |ST  <br/> |Servizio di rilevamento degli account di posta elettronica.  <br/> |
 |```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |ST  <br/> |Individuazione automatica di Outlook  <br/> |
-|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |ST  <br/> |Endpoint di Outlook per il servizio Office 365.  <br/> |
+|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |ST  <br/> |Endpoint di Outlook per il servizio Microsoft 365.  <br/> |
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |ST  <br/> |Icone per i componenti aggiuntivi di Outlook.  <br/> |
    
 > [!NOTE]
@@ -103,10 +103,10 @@ Quando si esegue l'accesso all'archiviazione basata sul cloud, vengono contattat
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |ST  <br/> |Servizio di autorizzazione di Windows  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ST  <br/> |Servizio di accesso di Office 365 (OrgID)  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ST  <br/> |Microsoft 365 login Service (OrgID)  <br/> |
 |```https://login.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Servizio di accesso account Microsoft (MSA)  <br/> |
 |```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |CS  <br/> |Helper del servizio account di accesso Microsoft (MSA)  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Branding di accesso di Office 365 (OrgID)  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Branding di login Microsoft 365 (OrgID)  <br/> |
 |```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Localizzatore di archiviazione di documenti e posizioni  <br/> |
 |```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Servizio documenti utilizzato più di recente (MRU)  <br/> |
    
@@ -115,7 +115,7 @@ Quando si esegue l'accesso all'archiviazione basata sul cloud, vengono contattat
   
  **Attivazione del prodotto**
   
-Gli endpoint di rete riportati di seguito si applicano a Office 365 Subscription and Retail License Activations. In particolare, questa operazione non si applica alle installazioni con contratti multilicenza.
+Gli endpoint di rete riportati di seguito si applicano a Microsoft 365 Subscription and Retail License Activations. In particolare, questa operazione non si applica alle installazioni con contratti multilicenza.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
@@ -123,15 +123,15 @@ Gli endpoint di rete riportati di seguito si applicano a Office 365 Subscription
    
  **Novità di contenuto**
   
-Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione di Office 365.
+Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione Microsoft 365.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |SS  <br/> |Che cos'è il nuovo contenuto della pagina JSON.  <br/> |
    
- **Strumento ricerche**
+ **Ricercatore**
   
-Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione di Office 365.
+Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione Microsoft 365.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
@@ -139,9 +139,9 @@ Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione 
 |```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Contenuto statico del ricercatore  <br/> |
 |```https://www.bing.com/```  <br/> |W  <br/> |CS  <br/> |Provider di contenuto del ricercatore  <br/> |
    
- **Ricerca intelligente**
+ **Ricerca avanzata**
   
-Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione di Office 365 sia alle attivazioni delle licenze di retail/volume.
+Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione Microsoft 365 che alle attivazioni di contratti multilicenza e retail.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
@@ -153,15 +153,15 @@ Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione d
    
  **PowerPoint Designer**
   
-Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione di Office 365.
+Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione Microsoft 365.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |Servizio Web di PowerPoint designer  <br/> |
    
- **Avvio rapido di PowerPoint**
+ **Guida introduttiva di PowerPoint**
   
-Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione di Office 365.
+Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione Microsoft 365.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
@@ -169,7 +169,7 @@ Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione 
    
  **Inviare un sorriso/cipiglio**
   
-Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione di Office 365 sia alle attivazioni delle licenze di retail/volume.
+Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione Microsoft 365 che alle attivazioni di contratti multilicenza e retail.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
@@ -177,7 +177,7 @@ Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione d
    
  **Supporto per i contatti**
   
-Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione di Office 365 sia alle attivazioni delle licenze di retail/volume.
+Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione Microsoft 365 che alle attivazioni di contratti multilicenza e retail.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
@@ -186,7 +186,7 @@ Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione d
    
  **Salva come PDF**
   
-Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione di Office 365 sia alle attivazioni delle licenze di retail/volume.
+Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione Microsoft 365 che alle attivazioni di contratti multilicenza e retail.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
@@ -194,7 +194,7 @@ Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione d
    
  **App di Office (componenti aggiuntivi aka)**
   
-Quando i componenti aggiuntivi di Office app sono considerati attendibili, gli endpoint di rete seguenti si applicano sia alla sottoscrizione di Office 365 sia alle attivazioni di licenze Retail/volume.
+Quando i componenti aggiuntivi di Office app sono considerati attendibili, gli endpoint di rete seguenti si applicano sia alla sottoscrizione Microsoft 365 che alle attivazioni di contratti multilicenza o al dettaglio.
   
 |**URL**|**App**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
@@ -224,7 +224,7 @@ Quando i componenti aggiuntivi di Office app sono considerati attendibili, gli e
    
  **Collegamenti sicuri**
   
-L'endpoint di rete seguente si applica solo a tutte le applicazioni di Office per la sottoscrizione di Office 365.
+L'endpoint di rete seguente si applica solo a tutte le applicazioni di Office per la sottoscrizione di Microsoft 365.
   
 |**URL**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -232,7 +232,7 @@ L'endpoint di rete seguente si applica solo a tutte le applicazioni di Office pe
    
  **Segnalazione crash**
   
-L'endpoint di rete seguente si applica a tutte le applicazioni di Office per la sottoscrizione di Office 365 e le attivazioni delle licenze di retail/volume. Quando un processo si blocca in modo imprevisto, viene generato un report e inviato al servizio Watson.
+L'endpoint di rete seguente si applica a tutte le applicazioni di Office sia per la sottoscrizione Microsoft 365 che per le attivazioni delle licenze di retail/volume. Quando un processo si blocca in modo imprevisto, viene generato un report e inviato al servizio Watson.
   
 |**URL**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -280,7 +280,7 @@ Office per Mac invia nuovamente a Microsoft le informazioni di telemetria a inte
     
 - **Usage** contiene informazioni sul modo in cui vengono utilizzate le app e gli errori non irreversibili. Questi dati vengono inviati ogni 60 minuti. 
     
-Microsoft prende molto sul serio la propria privacy. È possibile leggere informazioni sui criteri di raccolta dati di [https://privacy.microsoft.com](https://privacy.microsoft.com)Microsoft all'indirizzo. Per impedire alle applicazioni di inviare la telemetria "Usage", è possibile regolare la preferenza **SendAllTelemetryEnabled** . La preferenza è per applicazione e può essere impostata tramite i profili di configurazione di macOS o manualmente da terminale: 
+Microsoft prende molto sul serio la propria privacy. È possibile leggere informazioni sui criteri di raccolta dati di Microsoft all'indirizzo [https://privacy.microsoft.com](https://privacy.microsoft.com) . Per impedire alle applicazioni di inviare la telemetria "Usage", è possibile regolare la preferenza **SendAllTelemetryEnabled** . La preferenza è per applicazione e può essere impostata tramite i profili di configurazione di macOS o manualmente da terminale: 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 

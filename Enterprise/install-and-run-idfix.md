@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Come scaricare ed eseguire lo strumento Microsoft 365 IdFix per facilitare la pulizia dei servizi di dominio Active Directory (AD DS) prima di sincronizzarlo con Microsoft 365.
-ms.openlocfilehash: dde12d7e16aad8488fe067888eacdf1c80e1a037
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: c4df63e6162b1d53cb7a45f046542443177b25ff
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711596"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774861"
 ---
 # <a name="download-and-run-the-microsoft-365-idfix-tool"></a>Scaricare ed eseguire lo strumento Microsoft 365 IdFix
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 IdFix identifica gli errori quali duplicati e problemi di formattazione nel dominio di servizi di dominio Active Directory prima di eseguire la sincronizzazione con Microsoft 365. 
   
@@ -110,7 +110,7 @@ Dopo aver scaricato ed estratto IdFix, eseguirlo per cercare problemi nel domini
     
     Ogni errore viene visualizzato in una riga separata nella finestra principale dello strumento. 
     
-8. Se si accetta la modifica consigliata nella colonna **UPDATE**, nella colonna **ACTION** selezionare l'operazione che si desidera che lo strumento IdFix esegua per implementare la modifica, quindi fare clic su **Applica**. Quando si fa clic su **Applica**, lo strumento apporta le modifiche nella directory.
+8. If you agree with the suggested change in the **UPDATE** column, in the **ACTION** column select what you want IdFix to do to implement the change and then click **Apply**. When you click **Apply**, the tool makes the changes in the directory.
     
     Non è necessario fare clic su **Applica** dopo ogni aggiornamento. È possibile correggere diversi errori prima di fare clic su **Applica** in modo che lo strumento IdFix li modifichi in contemporanea. È possibile ordinare gli errori per tipo facendo clic su **ERROR** all'inizio della colonna che elenca i tipi di errore. 
     
@@ -125,8 +125,3 @@ Dopo aver scaricato ed estratto IdFix, eseguirlo per cercare problemi nel domini
 - [Oggetti e attributi esclusi e supportati da IdFix](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [Registro delle transazioni di Microsoft 365 IdFix](idfix-transaction-log.md)
     
-## <a name="video-training"></a>Video di formazione
-
-Per altre informazioni, vedere la lezione [Installare e usare lo strumento IdFix](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US), offerta da LinkedIn Learning.
-  
-

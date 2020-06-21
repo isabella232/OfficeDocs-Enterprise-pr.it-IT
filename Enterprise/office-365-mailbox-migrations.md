@@ -1,7 +1,7 @@
 ---
-title: Migrazioni delle cassette postali di Office 365
-ms.author: robmazz
-author: robmazz
+title: Migrazioni delle cassette postali di Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Un breve riepilogo dei cmdlet utilizzati per le migrazioni delle cassette postali di Office 365.
-ms.openlocfilehash: b3af6d4b392e45a5200917bf5cebf22c601620a2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Un breve riepilogo dei cmdlet utilizzati per le migrazioni delle cassette postali di Microsoft 365.
+ms.openlocfilehash: 4c53737f4047df0751c4216b57d772bd6fe8acad
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843607"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774901"
 ---
-# <a name="office-365-mailbox-migrations"></a>Migrazioni delle cassette postali di Office 365
+# <a name="microsoft-365-mailbox-migrations"></a>Migrazioni delle cassette postali di Microsoft 365
 
 Con una distribuzione ibrida basata su Exchange, i clienti possono scegliere di spostare le cassette postali di Exchange locali in un'organizzazione di [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) o di spostare le cassette postali di Exchange online in un'organizzazione di [Exchange locale](https://docs.microsoft.com/Exchange/exchange-server) . Quando si spostano le cassette postali tra organizzazioni locali e di Exchange Online, vengono utilizzati i batch di migrazione.
 

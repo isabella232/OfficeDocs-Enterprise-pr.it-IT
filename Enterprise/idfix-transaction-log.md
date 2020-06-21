@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: Viene fornito un esempio e vengono descritti la convenzione di denominazione e il livello di registrazione predefinito del registro delle transazioni di Microsoft 365 IdFix.
-ms.openlocfilehash: a2b887907dd1ad622a9d237cf7200aa6db8a2a8e
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 199d765d640a30fa163f74e6b6029b228b41a63d
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711556"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774511"
 ---
 # <a name="microsoft-365-idfix-transaction-log"></a>Registro delle transazioni di Microsoft 365 IdFix
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Viene fornito un esempio e vengono descritti la convenzione di denominazione e il livello di registrazione predefinito del registro delle transazioni di Microsoft 365 IdFix.
   
@@ -37,7 +37,7 @@ Lo strumento Microsoft 365 IdFix crea un nuovo log delle transazioni ogni volta 
   
 ## <a name="idfix-transaction-log-logging-level"></a>Il livello di registrazione del registro delle transazioni IdFix
 
-La parola Dettagli nel file di registro della transazione indica il livello di registrazione nel file. "Dettagli" significa che la quantità massima delle informazioni viene acquisita nel registro. Questo è il livello di registrazione predefinito. In questo momento, non puoi cambiare il livello di registrazione.
+The word verbose in the transaction log file name indicates the level of logging in the file. Verbose means that the maximum amount of information is captured in the log. This is the default logging level. At this time, you cannot change the logging level.
   
 ## <a name="idfix-transaction-log-format"></a>Formato del registro delle transazioni IdFix
 

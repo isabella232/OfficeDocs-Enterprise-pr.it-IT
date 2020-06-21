@@ -1,5 +1,5 @@
 ---
-title: Funzionalità di creazione di report di Office 365
+title: Funzionalità di creazione di report di Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,23 +14,21 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Una spiegazione delle funzionalità di Reporting all'interno di Office 365.
-ms.openlocfilehash: 19ffd501627426b08599b29c3125a52c839df5e2
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: Una spiegazione delle funzionalità di Reporting all'interno di Microsoft 365.
+ms.openlocfilehash: 1b8a75504712a46faa8b6fff8dfe20f3f3c6cf79
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009511"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774461"
 ---
-# <a name="office-365-reporting-features"></a>Funzionalità di creazione di report di Office 365 
+# <a name="microsoft-365-reporting-features"></a>Funzionalità di creazione di report di Microsoft 365 
 
-## <a name="introduction"></a>Introduzione
+Le funzionalità di Reporting in Microsoft 365 offrono diversi rapporti di controllo per Azure Active Directory (Azure AD), Exchange Online, gestione dei dispositivi, revisione di supervisione e prevenzione della perdita di dati (DLP). Questi rapporti sono diversi e separati dai rapporti attività di Microsoft 365.
 
-La caratteristica rapporti di Office 365 fornisce diversi rapporti di controllo per Azure Active Directory (AD), Exchange Online, gestione dei dispositivi, revisione di supervisione e prevenzione della perdita di dati (DLP). Questi rapporti sono diversi e separati dai rapporti attività di Office 365.
+## <a name="microsoft-365-reports-dashboard"></a>Dashboard di Microsoft 365 Reports
 
-## <a name="office-365-reports-dashboard"></a>Dashboard di report di Office 365
-
-Il dashboard report nell'anteprima dell'interfaccia di amministrazione di Microsoft 365 Visualizza l'attività di utilizzo in Office 365. Gli amministratori globali di Office 365 o un amministratore di Exchange Online, SharePoint Online o Skype for business possono ottenere informazioni dettagliate sull'utilizzo del servizio. Ad esempio, il numero di utenti di un determinato servizio di Office 365, il numero di utenti che hanno attivato le app di Microsoft 365 per Enterprise (in precedenza denominato Office 365 ProPlus) e la quantità di posta che scorre nell'organizzazione. I report sono disponibili per gli ultimi 7, 30, 90 e 180 giorni.
+Il dashboard report nell'anteprima dell'interfaccia di amministrazione di Microsoft 365 Visualizza l'attività di utilizzo in Microsoft 365. Gli amministratori globali di Microsoft 365, o un amministratore di Exchange Online, SharePoint Online o Skype for business, possono ottenere informazioni dettagliate sull'utilizzo del servizio. Ad esempio, il numero di utenti in un particolare servizio Microsoft 365, il numero di utenti che hanno attivato Microsoft 365 Apps for Enterprise (in precedenza denominato Office 365 ProPlus) e la quantità di posta che scorre nell'organizzazione. I report sono disponibili per gli ultimi 7, 30, 90 e 180 giorni.
 
 Sono disponibili i report seguenti:
 
@@ -46,11 +44,11 @@ Sono disponibili i report seguenti:
 
 Per ulteriori informazioni, vedere [report attività nell'interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/activity-reports-in-the-office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263).
 
-## <a name="azure-active-directory-reports"></a>Report di Azure Active Directory
+## <a name="azure-ad-reports"></a>Report di Azure AD
 
-Office 365 utilizza Azure AD per l'autenticazione e la gestione delle identità. Gli amministratori di Office 365 utilizzano i report generati da Azure per identificare attività insolite e l'accesso non autorizzato ai dati. È possibile utilizzare i report di accesso e utilizzo in Azure AD per ottenere visibilità nell'integrità e sicurezza della directory per l'organizzazione. Con queste informazioni, è possibile identificare e mitigare i possibili rischi per la sicurezza.
+Microsoft 365 utilizza Azure AD per l'autenticazione e la gestione delle identità. Gli amministratori di Microsoft 365 utilizzano i report generati da Azure per identificare attività insolite e l'accesso non autorizzato ai dati. È possibile utilizzare i report di accesso e utilizzo in Azure AD per ottenere visibilità nell'integrità e sicurezza della directory per l'organizzazione. Con queste informazioni, è possibile identificare e mitigare i possibili rischi per la sicurezza.
 
-I report di Azure AD possono essere esportati in Microsoft Excel e correlati ad altri dati provenienti da Office 365. Ad esempio, i risultati di una ricerca del registro di controllo possono fornire informazioni sulle attività di accesso, autenticazione e a livello di applicazione. I report sull'utilizzo delle risorse e delle anomalie avanzate sono disponibili con Azure AD Premium. Questi report avanzati consentono di migliorare la posizione di sicurezza e di rispondere alle potenziali minacce applicando analisi sull'accesso ai dispositivi e sull'utilizzo delle applicazioni. Per ulteriori informazioni, vedere [report di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/overview-reports/).
+I report di Azure AD possono essere esportati in Microsoft Excel e correlati ad altri dati provenienti da Microsoft 365. Ad esempio, i risultati di una ricerca del registro di controllo possono fornire informazioni sulle attività di accesso, autenticazione e a livello di applicazione. I report sull'utilizzo delle risorse e delle anomalie avanzate sono disponibili con Azure AD Premium. Questi report avanzati consentono di migliorare la posizione di sicurezza e di rispondere alle potenziali minacce applicando analisi sull'accesso ai dispositivi e sull'utilizzo delle applicazioni. Per ulteriori informazioni, vedere [report di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/overview-reports/).
 
 ## <a name="exchange-online-audit-reports"></a>Rapporti di controllo di Exchange Online
 
@@ -72,19 +70,19 @@ I report di controllo di Exchange Online includono informazioni dettagliate sull
 
 ## <a name="device-compliance-reports"></a>Rapporti di conformità del dispositivo
 
-È possibile gestire e proteggere i dispositivi mobili connessi alla propria organizzazione di Office 365 utilizzando la gestione dei dispositivi mobili di Office 365 (MDM). I dispositivi mobili utilizzati per accedere ai messaggi di posta elettronica, al calendario, ai contatti e ai documenti di lavoro giocano una parte significativa per garantire che i dipendenti siano in grado di funzionare in qualsiasi momento e da qualsiasi luogo. È fondamentale proteggere le informazioni dell'organizzazione. È possibile utilizzare Office 365 MDM per impostare i criteri di sicurezza e le regole di accesso per i dispositivi. Se persi o rubati, utilizzare anche Office 365 MDM per cancellare i dispositivi mobili.
+È possibile gestire e proteggere i dispositivi mobili connessi alla sottoscrizione tramite Microsoft 365 Mobile Device Management (MDM). I dispositivi mobili utilizzati per accedere ai messaggi di posta elettronica, al calendario, ai contatti e ai documenti di lavoro giocano una parte significativa per garantire che i dipendenti siano in grado di funzionare in qualsiasi momento e da qualsiasi luogo. È fondamentale proteggere le informazioni dell'organizzazione. È possibile utilizzare Microsoft 365 MDM per impostare i criteri di sicurezza del dispositivo e le regole di accesso. Se persi o rubati, è possibile utilizzare anche Microsoft 365 MDM per cancellare i dispositivi mobili.
 
-I report di conformità MDM offrono una panoramica dei criteri configurati da un'organizzazione per proteggere i dispositivi mobili che accedono ai dati di Office 365. Il report consente di filtrare i dispositivi in base allo stato di conformità, alle violazioni segnalate, ai dispositivi bloccati e al numero di dispositivi cancellati come risultato dei criteri di sicurezza. Per ulteriori informazioni, vedere [Panoramica della gestione dei dispositivi mobili per Office 365](https://support.office.com/article/Overview-of-Mobile-Device-Management-for-Office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
+I report di conformità MDM offrono una panoramica dei criteri configurati da un'organizzazione per proteggere i dispositivi mobili che accedono ai dati di Microsoft 365. Il report consente di filtrare i dispositivi in base allo stato di conformità, alle violazioni segnalate, ai dispositivi bloccati e al numero di dispositivi cancellati come risultato dei criteri di sicurezza. Per ulteriori informazioni, vedere [Overview of Mobile Device Management for Microsoft 365](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 ## <a name="data-loss-prevention"></a>Prevenzione della perdita di dati
 
 I criteri DLP consentono di gestire la sicurezza e il flusso di informazioni in un'organizzazione. È possibile configurare i criteri per bloccare l'accesso al contenuto, crittografare i dati o informare gli utenti delle violazioni di criteri e criteri utilizzando suggerimenti per i criteri DLP in-Application. I report DLP forniscono informazioni sul numero di corrispondenze di criteri e regole, sostituzioni e falsi positivi.
 
-È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per visualizzare le informazioni sul numero di messaggi rilevati dai criteri DLP. I report DLP forniscono informazioni dettagliate sui criteri e sulle corrispondenze della regola per la posta inviata e ricevuta. È inoltre possibile visualizzare il numero di corrispondenze, sostituzioni e falsi positivi per ogni criterio nelle ultime 24 ore utilizzando l'interfaccia di amministrazione di Exchange. Se si scarica un report di Excel, è possibile visualizzare ulteriori dettagli, ad esempio chi ha inviato il messaggio, in quale giorno e quali criteri sono stati attivati. Per ulteriori informazioni, vedere [visualizzare i report sui rilevamenti dei criteri DLP](https://technet.microsoft.com/library/jj889415(v=exchg.150).aspx).
+È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per visualizzare le informazioni sul numero di messaggi rilevati dai criteri DLP. I report DLP forniscono informazioni dettagliate sui criteri e sulle corrispondenze della regola per la posta inviata e ricevuta. È inoltre possibile visualizzare il numero di corrispondenze, sostituzioni e falsi positivi per ogni criterio nelle ultime 24 ore utilizzando l'interfaccia di amministrazione di Exchange. Se si scarica un report di Excel, è possibile visualizzare ulteriori dettagli, ad esempio chi ha inviato il messaggio, in quale giorno e quali criteri sono stati attivati. Per ulteriori informazioni, vedere [visualizzare i report sui rilevamenti dei criteri DLP](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj889415(v=exchg.150)).
 
 ## <a name="auditing-in-yammer-enterprise"></a>Controllo in Yammer Enterprise
 
-Yammer Enterprise fornisce agli amministratori la possibilità di esportare i dati delle attività degli utenti dalla propria rete Yammer tramite l' [API di esportazione dei dati di Yammer](https://support.office.com/article/export-data-from-yammer-enterprise-b303d8f3-007d-4ad4-81f8-54fb1ecfb3f2)o manualmente tramite la pagina di amministrazione di rete di Yammer. La possibilità di esportare i registri è riservata agli amministratori di rete in Yammer. (Tutti gli amministratori globali di Office 365 sono amministratori di rete di Yammer).
+Yammer Enterprise fornisce agli amministratori la possibilità di esportare i dati delle attività degli utenti dalla propria rete Yammer tramite l' [API di esportazione dei dati di Yammer](https://support.office.com/article/export-data-from-yammer-enterprise-b303d8f3-007d-4ad4-81f8-54fb1ecfb3f2)o manualmente tramite la pagina di amministrazione di rete di Yammer. La possibilità di esportare i registri è riservata agli amministratori di rete in Yammer. (Tutti gli amministratori globali di Microsoft 365 sono amministratori di rete di Yammer).
 
 I dati seguenti sono esportabili:
 
@@ -92,11 +90,11 @@ I dati seguenti sono esportabili:
 |----------------------------|-------------------------------------------------------------------------|
 | Users.csv | Tutti gli utenti nuovi, in sospeso e sospesi nella rete |
 | Messages.csv | Tutti i messaggi nella rete |
-| File. csv (metadati) | Metadati quali nome file, URL API file, ID caricatore, caricato su, ecc. |
-| File. csv (file originali) | File zip dei file originali caricati dagli utenti in Yammer |
+| Files.csv (metadati) | Metadati quali nome file, URL API file, ID caricatore, caricato su, ecc. |
+| Files.csv (file originali) | File zip dei file originali caricati dagli utenti in Yammer |
 | Topics.csv | Argomenti creati sulla rete |
 | Pages.csv | Pagine (note) create dagli utenti nella rete |
 | Admins.csv | Tutti gli amministratori verificati sulla rete |
 | Networks.csv | Tutte le reti esterne di Yammer |
 
-I dati dell'organizzazione di Yammer sono inoltre disponibili tramite i report attività di Office 365. Inoltre, Yammer sta lavorando attivamente all'esposizione di ulteriori registrazioni tramite l'API di attività di gestione di Office 365 e sulla possibilità di ragionare sui dati utilizzando Power BI. Per ulteriori informazioni su queste funzionalità, vedere la Guida di [orientamento di Office](https://fasttrack.microsoft.com/roadmap?filters=yammer) .
+I dati dell'organizzazione di Yammer sono inoltre disponibili tramite i report di attività di Microsoft 365. Inoltre, Yammer sta lavorando attivamente all'esposizione di ulteriori registrazioni tramite l'API Microsoft 365 Management Activity e alla possibilità di ragionare sui dati utilizzando Power BI. Per ulteriori informazioni su queste funzionalità, vedere la Guida di [orientamento di Office](https://fasttrack.microsoft.com/roadmap?filters=yammer) .
