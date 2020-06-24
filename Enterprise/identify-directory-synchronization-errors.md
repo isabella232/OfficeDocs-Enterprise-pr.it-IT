@@ -21,42 +21,34 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Informazioni su come visualizzare gli errori di sincronizzazione della directory nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: d10abc29a08da4352d4c0779698e2062175008b4
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 57ca9ce125679931adcca93621474cec9ee9b82f
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711646"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842078"
 ---
-# <a name="view-directory-synchronization-errors-in-microsoft-365"></a><span data-ttu-id="1820a-103">Visualizzare gli errori di sincronizzazione della directory in Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="1820a-103">View directory synchronization errors in Microsoft 365</span></span>
+# <a name="view-directory-synchronization-errors-in-microsoft-365"></a><span data-ttu-id="64981-103">Visualizzare gli errori di sincronizzazione della directory in Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="64981-103">View directory synchronization errors in Microsoft 365</span></span>
 
-<span data-ttu-id="1820a-104">È possibile visualizzare gli errori di sincronizzazione della directory nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="1820a-104">You can view directory synchronization errors in the [Microsoft 365 admin center](https://admin.microsoft.com).</span></span> <span data-ttu-id="1820a-105">Vengono visualizzati solo gli errori degli oggetti utente.</span><span class="sxs-lookup"><span data-stu-id="1820a-105">Only the User object errors are displayed.</span></span> <span data-ttu-id="1820a-106">Per visualizzare gli errori tramite PowerShell, vedere [identificare gli oggetti con DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).</span><span class="sxs-lookup"><span data-stu-id="1820a-106">To view errors by using PowerShell, see [Identify objects with DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).</span></span>
+<span data-ttu-id="64981-104">È possibile visualizzare gli errori di sincronizzazione della directory nell'interfaccia di amministrazione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="64981-104">You can view directory synchronization errors in the Microsoft 365 admin center.</span></span> <span data-ttu-id="64981-105">Vengono visualizzati solo gli errori degli oggetti utente.</span><span class="sxs-lookup"><span data-stu-id="64981-105">Only the User object errors are displayed.</span></span> <span data-ttu-id="64981-106">Per visualizzare gli errori con PowerShell, vedere [identificare gli oggetti con DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).</span><span class="sxs-lookup"><span data-stu-id="64981-106">To view errors with PowerShell, see [Identify objects with DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).</span></span>
 
-<span data-ttu-id="1820a-107">Dopo la visualizzazione, vedere risolvere i problemi relativi alla [sincronizzazione della directory per Microsoft 365](fix-problems-with-directory-synchronization.md) per correggere eventuali problemi identificati.</span><span class="sxs-lookup"><span data-stu-id="1820a-107">After viewing, see [fixing problems with directory synchronization for Microsoft 365](fix-problems-with-directory-synchronization.md) to correct any identified issues.</span></span>
-  
-## <a name="view-directory-synchronization-errors-in-the-admin-center"></a><span data-ttu-id="1820a-108">Visualizzare gli errori di sincronizzazione della directory nell'interfaccia di amministrazione</span><span class="sxs-lookup"><span data-stu-id="1820a-108">View directory synchronization errors in the admin center</span></span>
+## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a><span data-ttu-id="64981-107">Visualizzare gli errori di sincronizzazione della directory nell'interfaccia di amministrazione di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="64981-107">View directory synchronization errors in the Microsoft 365 admin center</span></span>
 
-<span data-ttu-id="1820a-109">Per visualizzare gli errori nell'interfaccia di amministrazione:</span><span class="sxs-lookup"><span data-stu-id="1820a-109">To view any errors in the admin center:</span></span>
+<span data-ttu-id="64981-108">Per visualizzare gli eventuali errori nell'interfaccia di amministrazione di Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="64981-108">To view any errors in the Microsoft 365 admin center:</span></span>
   
-1. <span data-ttu-id="1820a-110">Accedere a Microsoft 365 con l'account aziendale o dell'istituto di istruzione.</span><span class="sxs-lookup"><span data-stu-id="1820a-110">Sign in to Microsoft 365 with your work or school account.</span></span> 
+1. <span data-ttu-id="64981-109">Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) con un account di amministratore globale.</span><span class="sxs-lookup"><span data-stu-id="64981-109">Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with a global administrator account.</span></span> 
     
-2. <span data-ttu-id="1820a-111">Accedere all'interfaccia [di amministrazione](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).</span><span class="sxs-lookup"><span data-stu-id="1820a-111">Go to the [About the admin center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).</span></span>
+2. <span data-ttu-id="64981-110">Nella **Home** page verrà visualizzata la scheda di **Gestione utente** .</span><span class="sxs-lookup"><span data-stu-id="64981-110">On the **Home** page, you'll see the **User management** card.</span></span> 
     
-3. <span data-ttu-id="1820a-112">Nella **Home** page verrà visualizzato il riquadro **stato dirsync** .</span><span class="sxs-lookup"><span data-stu-id="1820a-112">On the **Home** page you will see the **DirSync Status** tile.</span></span> 
-    
-    ![Riquadro Stato DirSync nell'anteprima dell'interfaccia di amministrazione](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![La scheda di gestione utente nell'interfaccia di amministrazione di Microsoft 365](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-4. <span data-ttu-id="1820a-114">Nel riquadro, scegliere **stato dirsync** per passare alla pagina **stato sincronizzazione directory** .</span><span class="sxs-lookup"><span data-stu-id="1820a-114">On the tile, choose **DirSync Status** to go to the **Directory Sync Status** page.</span></span> 
+3. <span data-ttu-id="64981-112">Sulla scheda, scegliere **Sync Errors** in **Azure ad Connect** per visualizzare gli errori nella pagina **errori di sincronizzazione della directory** .</span><span class="sxs-lookup"><span data-stu-id="64981-112">On the card, choose **Sync errors** under **Azure AD Connect** to see the errors on the **Directory sync errors** page.</span></span>   
     
-    <span data-ttu-id="1820a-115">Nella parte inferiore della pagina è possibile vedere se sono presenti errori di DirSync.</span><span class="sxs-lookup"><span data-stu-id="1820a-115">On the bottom of the page you can see if there are DirSync errors.</span></span>
-    
-    ![Nella pagina stato sincronizzazione directory è possibile vedere se sono presenti errori degli oggetti DirSync](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+    ![Un esempio della pagina errori di sincronizzazione della directory](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+
+4. <span data-ttu-id="64981-114">Scegliere uno degli errori per visualizzare il riquadro dei dettagli con informazioni sull'errore e suggerimenti su come risolverlo.</span><span class="sxs-lookup"><span data-stu-id="64981-114">Choose any of the errors to display the details pane with information about the error and tips on how to fix it.</span></span>
+
+   ![Esempio dei dettagli di un errore di sincronizzazione della directory](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
-    <span data-ttu-id="1820a-117">Scegliere gli **errori degli oggetti dirsync trovati** per passare a una visualizzazione dettagliata degli errori di sincronizzazione della directory.</span><span class="sxs-lookup"><span data-stu-id="1820a-117">Choose **We found DirSync object errors** to go to a detailed view of the directory synchronization errors.</span></span> 
-    
-    > [!NOTE]
-    > <span data-ttu-id="1820a-118">È anche possibile passare alla pagina **errori dirsync** se si sceglie di **trovare gli errori degli oggetti dirsync** sul riquadro di **stato dirsync** .</span><span class="sxs-lookup"><span data-stu-id="1820a-118">You can also go to the **DirSync errors** page if you choose **We found DirSync object errors** on the **DirSync status** tile.</span></span> 
-  
-![Pagina errori DirSync](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
-  
-5. <span data-ttu-id="1820a-120">Nella pagina **errori dirsync** scegliere uno degli errori elencati per visualizzare il riquadro dei dettagli con informazioni sull'errore e suggerimenti su come risolverlo.</span><span class="sxs-lookup"><span data-stu-id="1820a-120">On the **DirSync errors** page, choose any of the errors listed to display the details pane with information about the error and tips on how to fix it.</span></span> 
+<span data-ttu-id="64981-116">Dopo la visualizzazione, vedere risolvere i problemi relativi alla [sincronizzazione della directory per Microsoft 365](fix-problems-with-directory-synchronization.md) per correggere eventuali problemi identificati.</span><span class="sxs-lookup"><span data-stu-id="64981-116">After viewing, see [fixing problems with directory synchronization for Microsoft 365](fix-problems-with-directory-synchronization.md) to correct any identified issues.</span></span>
+
