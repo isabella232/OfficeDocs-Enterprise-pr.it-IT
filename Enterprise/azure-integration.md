@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: La sottoscrizione Microsoft 365 include una sottoscrizione ad Azure AD. Integrazione di Microsoft 365 con Azure AD se si desidera sincronizzare la password o l'accesso Single Sign-on con l'ambiente locale.
-ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774841"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842058"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Integrazione di Azure con Microsoft 365
 
@@ -40,7 +40,7 @@ Azure offre anche altre funzionalità, come la gestione delle app integrate, che
 
  - [Advisor di Azure AD Connect](https://aka.ms/aadconnectpwsync)
  - [Assistente distribuzione di AD FS](https://aka.ms/adfsguidance)
- - [Guida alla configurazione di Azure AD Premium](https://aka.ms/aadpguidance)
+ - [Guida alla configurazione di Azure AD](https://aka.ms/aadpguidance)
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Azure AD Editions e Microsoft 365 Identity Management
 
