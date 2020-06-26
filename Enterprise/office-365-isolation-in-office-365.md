@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: "Sintesi: una spiegazione dell'isolamento e del controllo di accesso all'interno delle diverse applicazioni di Office 365."
-ms.openlocfilehash: 2cf98480a2a3f5d202198c9056ecb46d281e1a3e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
+ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844407"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44892125"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Isolamento e controllo di accesso in Office 365
 
@@ -70,3 +70,33 @@ Per ogni tenant viene utilizzato un *SubscriptionId* univoco. Tutti i siti dei c
 SharePoint Online utilizza SQL Server e lo spazio di archiviazione di Azure per l'archiviazione dei metadati del contenuto. La chiave di partizione per l'archivio di contenuto è *siteID* in SQL. Quando si esegue una query SQL, SharePoint Online utilizza un *siteID* verificato come parte di un controllo *SubscriptionId* a livello di tenant.
 
 SharePoint Online archivia il contenuto del file crittografato nei BLOB di Microsoft Azure. Ogni farm di SharePoint Online dispone di un proprio account di Microsoft Azure e tutti gli oggetti BLOB salvati in Azure vengono crittografati singolarmente con una chiave memorizzata nell'archivio di contenuto SQL. La chiave di crittografia protetta nel codice dal livello di autorizzazione e non esposta direttamente all'utente finale. SharePoint Online ha Monitoring in tempo reale per rilevare quando una richiesta HTTP legge o scrive i dati per più di un tenant. La richiesta Identity *SubscriptionId* viene registrata in base alla *SubscriptionId* della risorsa a cui si accede. Le richieste di accesso alle risorse di più tenant non devono mai essere eseguite dagli utenti finali. Le richieste di servizio in un ambiente multi-tenant sono l'unica eccezione. Ad esempio, il crawler di ricerca estrae tutte le modifiche del contenuto per un intero database contemporaneamente. Questo comporta di solito l'esecuzione di query su siti di più tenant in una singola richiesta di servizio, operazione eseguita per motivi di efficienza.
+
+## <a name="teams"></a>Teams
+
+I dati dei team vengono archiviati in modo diverso, a seconda del tipo di contenuto. 
+
+Consultare la [sessione Ignite breakout su Microsoft teams Architecture](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) per una discussione approfondita.
+
+### <a name="core-teams-customer-data"></a>Dati dei clienti del team di base
+
+Se il tenant è provisioning in Australia, Canada, Unione europea, Francia, Germania, India, Giappone, Sud Africa, Corea del sud, Svizzera (che include il Liechtenstein), Emirati Arabi Uniti, Regno Unito o Stati Uniti, Microsoft archivia i seguenti dati dei clienti a riposo solo all'interno di tale percorso:
+
+- Chat Team, conversazioni di team e di canale, immagini, messaggi vocali e contatti.
+- Contenuto del sito di SharePoint Online e i file archiviati all'interno del sito.
+- File caricati in OneDrive per il lavoro o la scuola.
+
+#### <a name="chat-channel-messages-team-structure"></a>Chat, messaggi di canale, struttura del team
+
+Ogni team in teams è affiancato da un gruppo di Microsoft 365 e dal relativo sito di SharePoint e dalla cassetta postale di Exchange. Chat private (incluse le chat di gruppo), i messaggi inviati come parte di una conversazione in un canale e la struttura di team e canali sono archiviati in un servizio chat in esecuzione in Azure. I dati vengono archiviati anche in una cartella nascosta nelle cassette postali di utenti e gruppi per abilitare le funzionalità di protezione delle informazioni.
+
+#### <a name="voicemail-and-contacts"></a>Segreteria telefonica e contatti
+
+I messaggi vocali vengono archiviati in Exchange. I contatti sono archiviati nell'archivio dati del cloud basato su Exchange. Exchange e l'archivio cloud basato su Exchange forniscono già la residenza dei dati in ognuna delle centrali del datacenter GEOS. Per tutti i team, la segreteria telefonica e i contatti vengono archiviati in-Country per Australia, Canada, Francia, Germania, India, Giappone, Emirati Arabi Uniti, Regno Unito, Sud Africa, Corea del sud, Svizzera (che include il Liechtenstein) e Stati Uniti. Per tutti gli altri paesi, i file vengono archiviati nella posizione Stati Uniti, Europa o Asia-Pacifico in base all'affinità tenant.
+
+#### <a name="images-and-media"></a>Immagini e supporti
+
+Supporto utilizzato nelle chat (ad eccezione di Giphy gif che non sono archiviate ma sono un collegamento di riferimento all'URL del servizio di Giphy originale, Giphy è un servizio non Microsoft) è archiviato in un servizio multimediale basato su Azure distribuito negli stessi percorsi del servizio chat.
+
+#### <a name="files"></a>File
+
+File (inclusi OneNote e wiki) in cui una persona condivide un canale viene archiviata nel sito di SharePoint del team. I file condivisi in una chat privata o in una chat durante una riunione o una chiamata vengono caricati e archiviati nell'account OneDrive for Work o School dell'utente che condivide il file. Exchange, SharePoint e OneDrive già forniscono la residenza dei dati in ciascuna delle centrali geoglobali GEOS. Pertanto, per i clienti esistenti, tutti i file, i blocchi appunti di OneNote, il contenuto wiki di team e le cassette postali che fanno parte dell'esperienza teams sono già archiviati nel percorso basato sull'affinità tenant. I file vengono archiviati in un paese per Australia, Canada, Francia, Germania, India, Giappone, Emirati Arabi Uniti, Regno Unito, Sud Africa, Corea del sud e Svizzera (che include il Liechtenstein). Per tutti gli altri paesi, i file vengono archiviati nella posizione Stati Uniti, Europa o Asia Pacific in base all'affinità tenant.
