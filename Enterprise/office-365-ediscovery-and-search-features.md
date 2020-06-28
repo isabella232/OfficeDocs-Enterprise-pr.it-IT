@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Una panoramica della funzionalità di eDiscovery e di altre funzionalità di ricerca in Microsoft 365 per l'utilizzo e la trasparenza di controllo.
-ms.openlocfilehash: d628bc9aa3964ffed671035a1f78f61d9632b87e
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: f4c401bf81767eb9111e6e8ca508cc3ee87152db
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774941"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906189"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Panoramica delle funzionalità di ricerca e di Microsoft 365 eDiscovery 
 
@@ -35,7 +35,7 @@ La [ricerca di contenuti](https://support.office.com/article/Run-a-Content-Searc
 
 ## <a name="audit-log-search"></a>Ricerca nel registro di controllo
 
-Oltre a tenere traccia delle modifiche apportate all'organizzazione Microsoft 365, è possibile visualizzare i report di controllo ed esportare i registri di controllo. Dopo aver abilitato il controllo per un tenant di Microsoft 365, le attività amministrative e degli utenti vengono registrate nei registri eventi e rese disponibili per la ricerca. Ad esempio, è possibile utilizzare la registrazione di controllo delle cassette postali per controllare le azioni eseguite su una cassetta postale da parte di utenti diversi dal proprietario della cassetta postale. I responsabili della conformità possono utilizzare le funzionalità di ricerca e filtro per specifiche attività utente. Ad esempio, per identificare gli utenti che hanno visualizzato o scaricato un documento specifico, se gli amministratori hanno eseguito attività di gestione degli utenti o per visualizzare le modifiche apportate alla configurazione del tenant negli ultimi 90 giorni. I risultati della ricerca contengono preziose informazioni forensi su specifiche attività svolte da un utente o da un amministratore. Vedere [Search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) per una descrizione dell'utente e delle attività amministrative registrate in Microsoft 365.
+Oltre a tenere traccia delle modifiche apportate all'organizzazione Microsoft 365, è possibile visualizzare i report di controllo ed esportare i registri di controllo. Una volta che il controllo è abilitato per il tenant Microsoft 365, le attività amministrative e degli utenti vengono registrate nei registri eventi e rese disponibili per la ricerca. Ad esempio, è possibile utilizzare la registrazione di controllo delle cassette postali per controllare le azioni eseguite su una cassetta postale da parte di utenti diversi dal proprietario della cassetta postale. I responsabili della conformità possono utilizzare le funzionalità di ricerca e filtro per specifiche attività utente. Ad esempio, per identificare gli utenti che hanno visualizzato o scaricato un documento specifico, se gli amministratori hanno eseguito attività di gestione degli utenti o per visualizzare le modifiche apportate alla configurazione del tenant negli ultimi 90 giorni. I risultati della ricerca contengono preziose informazioni forensi su specifiche attività svolte da un utente o da un amministratore. Vedere [Search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) per una descrizione dell'utente e delle attività amministrative registrate in Microsoft 365.
 
 Gli eventi provenienti da SharePoint Online e OneDrive for business vengono visualizzati nel registro entro 30 minuti dall'occorrenza. Gli eventi provenienti da Exchange Online vengono visualizzati nei registri di controllo entro 24 ore dalla ricorrenza. Gli eventi di accesso da Azure AD sono disponibili entro pochi minuti dall'occorrenza e altri eventi di directory di Azure AD sono disponibili entro 24 ore dall'evento. È possibile esportare le aperture nei risultati della ricerca dei log di controllo per ulteriori analisi. Vengono esportate al massimo 50.000 voci dalla ricerca del registro di controllo singolo. Per esportare più voci che questo limite, ridurre l'intervallo di date o eseguire più ricerche nei registri di controllo.
 
@@ -44,7 +44,7 @@ Nella tabella seguente vengono illustrate alcune delle informazioni visualizzate
 | Proprietà | Descrizione |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | Data | Data e ora dell'evento |
-| User | Utente che ha eseguito l'azione |
+| Utente | Utente che ha eseguito l'azione |
 | ClientIP | Indirizzo IPv4 o IPv6 del dispositivo utilizzato quando è stata registrata l'attività. |
 | CreationTime | Data e ora in formato UTC (Coordinated Universal Time) quando l'utente ha eseguito l'attività. |
 | EventSource | Indica che si è verificato un evento. I valori possibili sono SharePoint e ObjectModel. |

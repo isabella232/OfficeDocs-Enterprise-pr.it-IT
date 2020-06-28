@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Il supporto si concluderà presto per i server e le applicazioni client di Office 2010 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
-ms.openlocfilehash: 0bfb3f60583f944971823f4653255cd2531e703a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 570386c2f12a098ee2ccb355b5d0fa20bc32aaee
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775105"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906239"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2010
 
@@ -38,11 +38,11 @@ Office 2010 e Exchange 2010 raggiungeranno la fine del supporto il **13 ottobre 
 
 SharePoint 2010 e Project Server 2010 raggiungeranno la fine del supporto il **13 aprile 2021**.
 
-Durante la pianificazione dell'aggiornamento, è opportuno passare a Office 365 o Microsoft 365. 
+Durante la pianificazione dell'aggiornamento, è opportuno passare a Microsoft 365. 
 
-- Office 365 dispone di servizi basati su cloud per prodotti server di Office 2010, quali Exchange Server e SharePoint Server e servizi quali teams e OneDrive for business. 
+- Microsoft 365 dispone di servizi basati su cloud per prodotti di Office 2010 Server quali Exchange Server e SharePoint Server e servizi quali teams e OneDrive for business. 
 
-- Microsoft 365 Apps for Enterprise (in precedenza denominato Office 365 ProPlus), incluso in Office 365 E3 e E5 e Microsoft 365 Enterprise, è l'insieme di applicazioni client di Office installate nel dispositivo locale. Sono state aggiornate con nuove funzionalità di sicurezza e produttività su base continuativa dal cloud Microsoft.
+- Microsoft 365 Apps for Enterprise (in precedenza denominato Office 365 ProPlus), incluso in Microsoft 365 E3 ed E5, è l'insieme di applicazioni client di Office installate nel dispositivo locale. Sono state aggiornate con nuove funzionalità di sicurezza e produttività su base continuativa dal cloud Microsoft.
 
 Per un riepilogo visivo dell'aggiornamento, la migrazione e le opzioni di spostamento al cloud per i client e i server di Office 2010 e Windows 7, vedere il [poster relativo alla fine del supporto tecnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
@@ -68,7 +68,7 @@ Se si utilizzano i prodotti e le applicazioni di Office 2010 a casa, vedere [que
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Video: che cos'è Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Video: che cos'è Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Politica relativa al ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
