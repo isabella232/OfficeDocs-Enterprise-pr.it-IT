@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: Informazioni sulla migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: 7e9ba9135d024be5c12d6ca19b55ec68588d9ab4
-ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
+ms.openlocfilehash: 0a90c1b7f74ce9bc14ccae9965c4ce07f74e1b73
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772147"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998561"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche
 
@@ -128,7 +128,7 @@ I servizi di Office 365 nelle nuove aree data center tedesche dispongono di bene
 - Offrono prezzi di mercato competitivi per [Azure](https://azure.microsoft.com/pricing/calculator/), [Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans), [Dynamics 365 Customer Engagement](https://dynamics.microsoft.com/pricing/) e [Power BI](https://powerbi.microsoft.com/pricing/). 
 - Sono connessi alla rete globale Microsoft, con centinaia di siti di rete perimetrale, posizioni di peering e punti di uscita per offrire un'esperienza utente affidabile in qualsiasi parte del mondo. 
 - Consentono ai clienti locali di rispettare i requisiti di residenza dei dati in Germania. 
-- Propongono l'offerta cloud globale completa, che comprende la versione più recente dei servizi e le nuove funzionalità, tra cui Microsoft Teams e Multi-Geo in Office 365. Confrontano i prodotti per area geografica per [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](https://products.office.com/it-IT/where-is-your-data-located)e [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).
+- Propongono l'offerta cloud globale completa, che comprende la versione più recente dei servizi e le nuove funzionalità, tra cui Microsoft Teams e Multi-Geo in Office 365. Confrontano i prodotti per area geografica per [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](https://docs.microsoft.com/office365/enterprise/o365-data-locations)e [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).
 - Offrono funzionalità complete e sicurezza di livello aziendale che consentono ai clienti di soddisfare i requisiti normativi e di conformità. 
 - Sono accessibili tramite i contratti dei servizi online esistenti.
 
