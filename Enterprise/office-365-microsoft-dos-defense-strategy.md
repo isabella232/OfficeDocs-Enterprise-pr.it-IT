@@ -1,7 +1,7 @@
 ---
-title: Strategia di difesa DoS di Office 365
-ms.author: robmazz
-author: robmazz
+title: Strategia di difesa Microsoft 365 DoS
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Una panoramica della strategia di difesa Microsoft per gli attacchi DoS (Denial of Service).
-ms.openlocfilehash: c30e8e5c91ead81ceda9cfaeb4ef6b17c9addc9f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f3359bb39e01c6b090c30e9f7ce88d69dc3be17e
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844387"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998753"
 ---
-# <a name="office-365-denial-of-service-defense-strategy"></a>Strategia di difesa Denial-of-Service di Office 365
+# <a name="microsoft-365-denial-of-service-defense-strategy"></a>Strategia di difesa Denial-of-Service di Microsoft 365
 
 La strategia di Microsoft per la protezione contro gli attacchi DoS (Denial of Service) basati sulla rete è univoca grazie alla scalabilità e all'impronta globale. Questa scala consente a Microsoft di utilizzare strategie e tecniche che possono corrispondere a poche organizzazioni, provider o organizzazioni di clienti. La pietra miliare della strategia DoS è la nostra presenza globale. Microsoft si impegna con provider Internet, provider di peering (pubblici e privati) e società private in tutto il mondo. Questo fornisce a Microsoft una presenza Internet significativa e consente a Microsoft di assorbire gli attacchi su un'area di grandi dimensioni.
 

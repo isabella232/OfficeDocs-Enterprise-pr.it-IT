@@ -1,7 +1,7 @@
 ---
 title: Ripristinare gli elementi eliminati in una cassetta postale utente - Guida per l'amministratore
-ms.author: markjjo
-author: markjjo
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 f1.keywords:
 - NOCSH
 description: "Questo articolo è rivolto agli amministratori. Può accadere che un utente elimini in modo permanente alcuni elementi della propria cassetta postale di Outlook e che voglia recuperarli senza riuscirci. È possibile recuperare gli elementi eliminati se non sono stati rimossi definitivamente dalla cassetta postale dell'utente. "
-ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d5911167289d448a68fbe65fa6ba3c5cb9c9609b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845127"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998310"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Ripristinare gli elementi eliminati in una cassetta postale utente - Guida per l'amministratore
 
@@ -38,16 +38,16 @@ Può accadere che un utente elimini in modo permanente alcuni elementi della pro
 Ecco i passaggi per ripristinare gli elementi eliminati nella cassetta postale di un utente. Quanto tempo è necessario? La prima volta può richiedere da 20 a 30 minuti per il completamento di tutti i passaggi, a seconda del numero di elementi che si vuole recuperare.
   
 > [!NOTE]
-> Per eseguire i passaggi descritti in questo articolo, è necessario essere un **amministratore di Exchange** o **un amministratore globale** di Office 365 o essere un membro del gruppo di ruoli Gestione organizzazione di Exchange Online. Per ulteriori informazioni, vedere [Informazioni sui ruoli di amministratore di Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> È necessario essere un **amministratore di Exchange** o un **amministratore globale** in Microsoft 365 o essere un membro del gruppo di ruoli Gestione organizzazione in Exchange Online per eseguire la procedura descritta in questo articolo. Per ulteriori informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Passaggio 1: Assegnare a se stessi le autorizzazioni di eDiscovery
 <a name="step1"> </a>
 
 Il primo passaggio consiste nell'assegnare a se stessi le autorizzazioni necessarie di Exchange Online per poter usare lo strumento eDiscovery sul posto per eseguire ricerche nella cassetta postale di un utente. Questa procedura deve essere eseguita una sola volta. Se sarà necessario eseguire una ricerca in un'altra cassetta postale in futuro, è possibile ignorare questo passaggio.
   
-1. [Dove accedere a Office 365 per le aziende](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con l'account aziendale o dell'istituto di istruzione. 
+1. [Dove accedere a Microsoft 365 for business](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) con il proprio account aziendale o dell'Istituto di istruzione. 
     
-2. Selezionare l’icona di avvio dell’app ![Icona di avvio delle app di Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) nell'angolo in alto a sinistra e fare clic su **Amministratore**.
+2. Selezionare l'icona di avvio ![ delle app icona di avvio delle app in Microsoft 365 ](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) nell'angolo in alto a sinistra e fare clic su **amministratore**.
     
 3. Nel riquadro di spostamento a sinistra nell'interfaccia di amministrazione di Microsoft 365, espandere **Interfaccia di amministrazione** e poi fare clic su **Exchange**.
     
@@ -68,7 +68,7 @@ Il primo passaggio consiste nell'assegnare a se stessi le autorizzazioni necessa
   
 8. In **Gruppo di ruoli**, fare clic su **Salva**.
     
-9. Disconnettersi da Office 365.
+9. Disconnettersi da Microsoft 365.
     
     È necessario disconnettersi prima di iniziare il passaggio successivo, in modo da rendere effettive le nuove autorizzazioni.
     
@@ -82,9 +82,9 @@ Il primo passaggio consiste nell'assegnare a se stessi le autorizzazioni necessa
 
 Quando si esegue una ricerca eDiscovery sul posto, la cartella Elementi ripristinabili nella cassetta postale in cui si sta eseguendo la ricerca viene automaticamente inclusa nella ricerca. La cartella Elementi ripristinabili è il luogo dove vengono archiviati gli elementi eliminati fino a quando non vengono rimossi per sempre dalla cassetta postale. Pertanto, se un elemento non è stato rimosso, è possibile trovarlo con lo strumento eDiscovery sul posto.
   
-1. [Dove accedere a Office 365 per le aziende](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con l'account aziendale o dell'istituto di istruzione. 
+1. [Dove accedere a Microsoft 365 for business](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) con il proprio account aziendale o dell'Istituto di istruzione. 
     
-2. Selezionare l’icona di avvio dell’app ![Icona di avvio delle app di Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) nell'angolo in alto a sinistra e fare clic su **Amministratore**.
+2. Selezionare l'icona di avvio ![ delle app icona di avvio delle app in Microsoft 365 ](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) nell'angolo in alto a sinistra e fare clic su **amministratore**.
     
 3. Nel riquadro di spostamento a sinistra nell'interfaccia di amministrazione di Office 365, espandere **Amministratore** e poi fare clic su **Exchange**.
     
@@ -161,7 +161,7 @@ Se non si riesce a trovare un elemento nell’anteprima dei risultati della rice
     ![Copiare i risultati della ricerca nella cassetta postale di individuazione predefinita](media/36e8ef47-0035-4982-9ed6-426719c5f9ec.png)
   
     > [!NOTE]
-    > La cassetta postale di individuazione è una cassetta postale predefinita creata automaticamente nell'organizzazione di Office 365. 
+    > La cassetta postale di ricerca di individuazione è una cassetta postale di individuazione predefinita creata automaticamente nell'organizzazione Microsoft 365. 
   
 6. Tornare alla pagina **Copia risultati della ricerca**, fare clic su **Copia** per avviare la copia dei risultati della ricerca nella assetta postale di individuazione. 
     

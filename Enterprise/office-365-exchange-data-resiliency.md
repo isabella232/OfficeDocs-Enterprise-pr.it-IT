@@ -1,7 +1,7 @@
 ---
-title: Resilienza dei dati di Exchange di Office 365
-ms.author: robmazz
-author: robmazz
+title: Resilienza dei dati di Exchange online in Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Una spiegazione dei vari aspetti della resilienza dei dati in Exchange Online e Office 365.
-ms.openlocfilehash: 73b217f7b85722bca10cdf1abbe10c3a32922e9f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Una spiegazione dei vari aspetti della resilienza dei dati in Exchange Online e Microsoft 365.
+ms.openlocfilehash: 1af8acc10f9d45055d6575e2dfcc45451b6eaf6a
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844477"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998737"
 ---
-# <a name="exchange-online-data-resiliency-in-office-365"></a>Resilienza dei dati di Exchange online in Office 365
+# <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Resilienza dei dati di Exchange online in Microsoft 365
 
 ## <a name="introduction"></a>Introduzione
 Esistono due tipi di danneggiamento che possono influire su un database di Exchange: il danneggiamento fisico, che in genere è causato da problemi hardware (in particolare, hardware di archiviazione) e da un danneggiamento logico, che si verifica a causa di altri fattori. In generale, esistono due tipi di danneggiamenti logici che possono verificarsi in un database di Exchange: 
@@ -31,7 +31,7 @@ Esistono due tipi di danneggiamento che possono influire su un database di Excha
 
 Exchange Online esegue diversi controlli di coerenza sui file di registro replicati durante l'ispezione dei registri e la riproduzione dei registri. Questi controlli di coerenza impediscono la replica del danneggiamento fisico da parte del sistema. Ad esempio, durante l'ispezione dei registri, è presente un controllo dell'integrità fisica che verifica il file di registro e convalida che il checksum registrato nel file di registro corrisponde al checksum generato in memoria. Viene inoltre esaminata l'intestazione del file di registro per verificare che la firma del file di registro registrata nell'intestazione del registro corrisponda a quella del file di registro. Durante la riproduzione dei log, il file di registro subisce un ulteriore controllo. Ad esempio, l'intestazione del database contiene anche la firma del registro che viene confrontata con la firma del file di registro per verificare che corrispondano. 
 
-La protezione contro la corruzione dei dati delle cassette postali in Exchange Online viene ottenuta utilizzando la protezione dei dati nativi di Exchange, una strategia di resilienza che sfrutta la replica a livello di applicazione tra più server e più datacenter insieme ad altri caratteristiche che consentono di proteggere i dati dalla perdita a causa di danneggiamenti o altri motivi. Queste funzionalità includono funzionalità native gestite da Microsoft o dall'applicazione Exchange Online, ad esempio:
+La protezione contro la corruzione dei dati delle cassette postali in Exchange Online viene ottenuta utilizzando la protezione dei dati nativi di Exchange, una strategia di resilienza che sfrutta la replica a livello di applicazione tra più server e più datacenter insieme ad altre caratteristiche che consentono di proteggere i dati da perdite dovute a danneggiamenti o altri motivi. Queste funzionalità includono funzionalità native gestite da Microsoft o dall'applicazione Exchange Online, ad esempio:
 
 - [Gruppi di disponibilità dei dati](https://docs.microsoft.com/exchange/back-up-email)
 - Correzione bit singolo 
@@ -48,11 +48,11 @@ Per ulteriori informazioni sulle caratteristiche native sopra elencate, fare cli
 - [Conservazione degli elementi eliminati e cassette postali eliminate temporaneamente (entrambi abilitati per impostazione predefinita)](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) 
 
 ## <a name="database-availability-groups"></a>Gruppi di disponibilità del database 
-Tutti i database delle cassette postali di Office 365 sono ospitati in un [gruppo di disponibilità del database (DAG)](https://docs.microsoft.com/exchange/back-up-email) e vengono replicati in datacenter geograficamente separati all'interno della stessa area. La configurazione più comune è costituita da quattro copie del database in quattro datacenter. Tuttavia, alcune aree dispongono di un numero minore di centri dati (i database vengono replicati in tre datacenter in India e due datacenter in Australia e Giappone). Tuttavia, in tutti i casi, ogni database delle cassette postali dispone di quattro copie distribuite su più datacenter, garantendo così che i dati delle cassette postali siano protetti da errori software, hardware e persino del datacenter. 
+Ogni database delle cassette postali in Microsoft 365 è ospitato in un [gruppo di disponibilità del database (DAG)](https://docs.microsoft.com/exchange/back-up-email) e replicato in datacenter geograficamente separati all'interno della stessa area. La configurazione più comune è costituita da quattro copie del database in quattro datacenter. Tuttavia, alcune aree dispongono di un numero minore di centri dati (i database vengono replicati in tre datacenter in India e due datacenter in Australia e Giappone). Tuttavia, in tutti i casi, ogni database delle cassette postali dispone di quattro copie distribuite su più datacenter, garantendo così che i dati delle cassette postali siano protetti da errori software, hardware e persino del datacenter. 
 
 Tra queste quattro copie, tre sono configurate come estremamente disponibili. La quarta copia è configurata come [copia del database ritardata](https://docs.microsoft.com/Exchange/high-availability/manage-ha/activate-lagged-db-copies). La copia del database ritardata non è progettata per il ripristino di una singola cassetta postale o per il recupero di un elemento. Lo scopo è quello di fornire un meccanismo di ripristino per l'evento raro di un danneggiamento logico irreversibile a livello di sistema. 
 
-Le copie ritardate del database in Exchange Online sono configurate con un intervallo di riesecuzione dei file di registro di sette giorni. Inoltre, il gestore di lag di riesecuzione di Exchange è abilitato a fornire un file di registro dinamico riprodotto per le copie ritardate in modo da consentire le copie ritardate del database per la correzione automatica e la gestione dello sviluppo dei file di registro. Anche se le copie del database ritardate vengono utilizzate in Exchange Online, è importante comprendere che non sono un backup temporizzato garantito. Le copie ritardate del database in Exchange Online hanno una soglia di disponibilità, in genere attorno al 90%, a causa di periodi in cui il disco contenente una copia ritardata viene perso a causa di un errore del disco, la copia ritardata diventa una copia a disponibilità elevata (a causa del riutilizzo automatico) e come i periodi in cui la copia del database ritardata sta ricostruendo la coda di riesecuzione del registro. 
+Le copie ritardate del database in Exchange Online sono configurate con un intervallo di riesecuzione dei file di registro di sette giorni. Inoltre, il gestore di lag di riesecuzione di Exchange è abilitato a fornire un file di registro dinamico riprodotto per le copie ritardate in modo da consentire le copie ritardate del database per la correzione automatica e la gestione dello sviluppo dei file di registro. Anche se le copie del database ritardate vengono utilizzate in Exchange Online, è importante comprendere che non sono un backup temporizzato garantito. Le copie ritardate del database in Exchange Online hanno una soglia di disponibilità, in genere attorno al 90%, a causa di periodi in cui il disco contenente una copia ritardata viene perso a causa di un errore del disco, la copia ritardata diventa una copia estremamente disponibile (a causa del riutilizzo automatico), nonché i periodi in cui la copia del database ritardata ricostruisce la coda di 
 
 ## <a name="transport-resilience"></a>Resilienza del trasporto 
 Exchange Online include due caratteristiche di resilienza del trasporto principali: la ridondanza shadow e la rete sicura. La ridondanza shadow conserva una copia ridondante di un messaggio mentre è in transito. La rete sicura mantiene una copia ridondante di un messaggio dopo che il messaggio è stato recapitato correttamente. 
@@ -78,7 +78,7 @@ Il ripristino di una pagina singola, ovvero l'applicazione di *patch*, è un pro
 In caso di danneggiamento in una copia passiva del database, inclusa una copia del database ritardata, poiché queste copie sono sempre dietro la loro copia attiva, è sempre possibile copiare una pagina dalla copia attiva a una copia passiva. Una copia passiva del database è a disponibilità elevata, pertanto, durante il processo di applicazione delle patch, la riproduzione del registro viene sospesa, ma la copia del registro continua. La copia passiva del database recupera una copia della pagina danneggiata dalla copia attiva, attende che il file di registro che soddisfa il requisito massimo necessario per la generazione dei registri venga copiato e ispezionato e quindi patch la pagina danneggiata. Dopo la correzione della pagina, la riproduzione del registro riprende. Il processo è lo stesso per la copia ritardata del database, tranne per il fatto che il database ritardato riproduce tutti i file di registro necessari per ottenere uno stato patchable. 
 
 ## <a name="mailbox-replication-service"></a>Servizio di replica delle cassette postali 
-Lo spostamento delle cassette postali è una parte fondamentale della gestione di un servizio di posta elettronica su larga scala. Sono sempre aggiornate le tecnologie e gli aggiornamenti per l'hardware e la versione, in modo da disporre di un sistema robusto e limitato che consente ai propri ingegneri di realizzare questo lavoro mantenendo la trasparenza degli spostamenti delle cassette postali per gli utenti (assicurandosi che rimangano online nel corso del processo) è la chiave e verificare che il processo venga applicato a una scalabilità verticale in modo che le cassette postali vengano sempre più grandi. 
+Lo spostamento delle cassette postali è una parte fondamentale della gestione di un servizio di posta elettronica su larga scala. Sono sempre aggiornate le tecnologie e gli aggiornamenti per l'hardware e la versione da gestire, quindi disporre di un sistema robusto e limitato che consente ai propri ingegneri di realizzare questo lavoro mantenendo la trasparenza degli spostamenti delle cassette postali per gli utenti (assicurandosi che rimangano online durante tutto il processo) sia fondamentale e che il processo venga applicato in modo graduale quando le cassette postali aumentano 
 
 Il servizio di replica delle cassette postali di Exchange (MRS) è responsabile dello spostamento delle cassette postali tra database. Durante lo spostamento, la signora esegue una verifica della coerenza su tutti gli elementi all'interno della cassetta postale. Se si verifica un problema di coerenza, la signora correggerà il problema oppure ignorerà gli elementi danneggiati, rimuovendo così il danneggiamento dalla cassetta postale. 
 
@@ -97,5 +97,5 @@ Exchange Online si avvale di diversi vantaggi per gli arbitri:
 - Supporto per altre funzionalità utilizzate da Exchange Online, ad esempio la crittografia BitLocker. 
 
 Exchange Online beneficia anche di altre caratteristiche di ReFS: 
-- **Integrità (flussi di integrità)** -l'arbitro archivia i dati in modo da proteggerli da molti degli errori comuni che in genere possono causare la perdita di dati. La ricerca di Office 365 utilizza flussi di integrità per facilitare il rilevamento dei danni del disco precoce e il checksum del contenuto del file. La caratteristica riduce anche gli incidenti di danneggiamento causati da "Scritture strappate" (quando un'operazione di scrittura non viene completata a causa di interruzioni di corrente, ecc.). 
+- **Integrità (flussi di integrità)** -l'arbitro archivia i dati in modo da proteggerli da molti degli errori comuni che in genere possono causare la perdita di dati. Microsoft 365 Search utilizza flussi di integrità per facilitare il rilevamento dei danni del disco precoce e il checksum del contenuto del file. La caratteristica riduce anche gli incidenti di danneggiamento causati da "Scritture strappate" (quando un'operazione di scrittura non viene completata a causa di interruzioni di corrente, ecc.). 
 - **Availability (Salvage)** -refs dà la priorità alla disponibilità dei dati. Storicamente, i sistemi di file erano spesso suscettibili di danneggiamento dei dati che richiedeva che il sistema venisse portato offline per il ripristino. Sebbene sia raro, se si verifica un danneggiamento, ReFS implementa il salvataggio, una funzionalità che rimuove i dati danneggiati dallo spazio dei nomi in un volume attivo e assicura che i dati validi non siano influenzati negativamente dai dati danneggiati non riparabili. L'applicazione della funzionalità di salvataggio e l'isolamento del danneggiamento dei dati nei volumi di database di Exchange Online significa che è possibile mantenere integro i database non interessati su un volume danneggiato tra il tempo di danneggiamento e l'azione di ripristino. In questo modo si aumenta la disponibilità dei database che in genere sono danneggiati da problemi di danneggiamento del disco. 

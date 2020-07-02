@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: "Riepilogo: In questo articolo vengono fornite informazioni dettagliate su come calcolare il numero approssimativo di client che è possibile utilizzare per ciascun indirizzo IP all'interno dell'organizzazione utilizzando NAT (Network Address Translation)."
-ms.openlocfilehash: 6140cf664a08701e9491c241d5754d51196e3922
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844567"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998541"
 ---
 # <a name="nat-support-with-office-365"></a>Supporto NAT con Office 365
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 In precedenza, le indicazioni suggerivano che il numero massimo di client di Exchange da utilizzare per l'indirizzo IP per la connessione a Office 365 era di circa 2.000 client per porta di rete.
   
@@ -34,13 +34,13 @@ In precedenza, le indicazioni suggerivano che il numero massimo di client di Exc
 
 Utilizzando NAT, migliaia di persone in una rete aziendale possono "condividere" alcuni indirizzi IP instradabili pubblicamente.
   
-La maggior parte delle reti aziendali utilizza spazio degli indirizzi IP privato (RFC1918). Lo spazio degli indirizzi IP privato viene assegnato dalla Internet Assigned Numbers Authority (IANA) ed è destinato esclusivamente alle reti che non indirizzano direttamente a e da Internet globale.
+Most corporate networks use private (RFC1918) IP address space. Private address space is allocated by the Internet Assigned Numbers Authority (IANA) and intended solely for networks that do not route directly to and from the global Internet.
   
 Per offrire accesso Internet ai dispositivi nello spazio degli indirizzi IP privato, le organizzazioni utilizzano tecnologie gateway come firewall e proxy che offrono servizi di conversione degli indirizzi di rete (NAT) o di porta (PAT). Questi gateway fanno in modo che il traffico proveniente da dispositivi interni a Internet (incluso Office 365) venga visualizzato da uno o più indirizzi IP instradabili pubblicamente. Ogni connessione esterna da un dispositivo interno traduce in una diversa porta TCP di origine nell'indirizzo IP pubblico. 
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Perché è necessario disporre di un numero elevato di connessioni aperte contemporaneamente a Office 365?
 
-Outlook può aprire otto o più connessioni (in situazioni in cui sono presenti componenti aggiuntivi, calendari condivisi, cassette postali e così via). Poiché vi sono un massimo di 64.000 porte disponibili su un dispositivo NAT basato su Windows, può essere presente un massimo di 8.000 utenti dietro un indirizzo IP prima che le porte siano esaurite. Si noti che se i clienti utilizzano dispositivi non basati su sistema operativo Windows per NAT, le porte totali disponibili dipendono dal dispositivo o dal software di NAT utilizzato. In questo scenario, il numero massimo di porte potrebbe essere inferiore a 64.000. La disponibilità delle porte è anche soggetta ad altri fattori, come le finestre che limitano le porte a 4.000 per il proprio utilizzo, riducendo il numero totale di porte disponibili a 60.000. possono essere presenti altre applicazioni, ad esempio Internet Explorer, che potrebbero connettersi contemporaneamente , che richiede ulteriori porte.
+Outlook può aprire otto o più connessioni (in situazioni in cui sono presenti componenti aggiuntivi, calendari condivisi, cassette postali e così via). Poiché vi sono un massimo di 64.000 porte disponibili su un dispositivo NAT basato su Windows, può essere presente un massimo di 8.000 utenti dietro un indirizzo IP prima che le porte siano esaurite. Si noti che se i clienti utilizzano dispositivi non basati su sistema operativo Windows per NAT, le porte totali disponibili dipendono dal dispositivo o dal software di NAT utilizzato. In questo scenario, il numero massimo di porte potrebbe essere inferiore a 64.000. La disponibilità delle porte è anche soggetta ad altri fattori, come le finestre che limitano le porte a 4.000 per il proprio utilizzo, riducendo il numero totale di porte disponibili a 60.000. possono essere presenti altre applicazioni, ad esempio Internet Explorer, che potrebbero connettersi contemporaneamente, richiedendo porte aggiuntive.
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Calcolo del numero massimo di dispositivi supportati dietro un unico indirizzo IP pubblico con Office 365
 
@@ -60,7 +60,7 @@ Numero massimo di dispositivi supportati dietro un unico indirizzo IP pubblico =
 
 Successivamente, il numero massimo di dispositivi supportati dietro un unico indirizzo IP pubblico = (64.000-4000)/(6 + 4) = 6.000
   
-Con il rilascio di Office 365 Hosting Pack, incluso negli aggiornamenti a partire da settembre 2011 per Microsoft Office Outlook 2007 o novembre 2011 per Microsoft Outlook 2010 o un aggiornamento successivo, il numero di connessioni da Outlook (sia Office Outlook 2007 che Service Pack 2 e Outlook 2010) per Exchange possono essere di almeno 2. Sarà necessario fattorizzare i diversi sistemi operativi, i comportamenti degli utenti e così via per determinare il numero minimo e massimo di porte che la rete richiederà al massimo.
+Con il rilascio di Office 365 Hosting Pack, incluso negli aggiornamenti a partire da settembre 2011 per Microsoft Office Outlook 2007 o novembre 2011 per Microsoft Outlook 2010 o un aggiornamento successivo, il numero di connessioni da Outlook (sia Office Outlook 2007 con Service Pack 2 che Outlook 2010) a Exchange può essere di almeno 2. Sarà necessario fattorizzare i diversi sistemi operativi, i comportamenti degli utenti e così via per determinare il numero minimo e massimo di porte che la rete richiederà al massimo.
   
 Se si desidera supportare più dispositivi dietro un unico indirizzo IP pubblico, seguire la procedura descritta per valutare il numero massimo di dispositivi che possono essere supportati:
   

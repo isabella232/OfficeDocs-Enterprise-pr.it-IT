@@ -13,16 +13,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 si sta avvicinando alla fine del supporto. Utilizzare questa roadmap di pianificazione come guida per preparare l'aggiornamento a Exchange Online o a una versione più recente di Exchange Server locale.
-ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979344"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998044"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Guida di orientamento alla fine del supporto di Exchange 2010
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Il **13 ottobre 2020**, Exchange Server 2010 raggiungerà la fine del supporto. Se non è già stata avviata la migrazione da Exchange 2010 a Office 365 o Exchange 2016, ora è il momento di iniziare la pianificazione.
 
@@ -82,7 +82,7 @@ Office 365 ottiene le nuove caratteristiche e le esperienze prima e gli utenti p
 
 ### <a name="how-should-i-migrate-to-office-365"></a>Come si esegue la migrazione a Office 365?
 
-A seconda dell'organizzazione, sono disponibili alcune opzioni che consentono di accedere a Office 365. Quando si sceglie un'opzione di migrazione, è necessario prendere in considerazione alcuni aspetti come il numero di postazioni o di cassette postali da spostare, per quanto tempo si desidera che la migrazione duri e se è necessaria una perfetta integrazione tra l'installazione locale e Office 365 durante la migrazione. In questa tabella vengono illustrate le opzioni di migrazione e i fattori più importanti che determinano il metodo da utilizzare.
+A seconda dell'organizzazione, sono disponibili alcune opzioni che consentono di accedere a Office 365. Quando si sceglie un'opzione di migrazione, è necessario prendere in considerazione alcuni aspetti come il numero di postazioni o cassette postali da spostare, per quanto tempo si desidera che la migrazione duri e se è necessaria una perfetta integrazione tra l'installazione locale e Office 365 durante la migrazione. In questa tabella vengono illustrate le opzioni di migrazione e i fattori più importanti che determinano il metodo da utilizzare.
 
 | **Opzione di migrazione**     | **Dimensioni dell'organizzazione** | **Durata**        |
 |--------------------------|-----------------------|---------------------|
@@ -146,8 +146,8 @@ Le migrazioni ibride complete sono le migliori per le organizzazioni che si aspe
 Se si sta pensando di eseguire una migrazione ibrida completa, ecco alcuni aspetti da considerare:
 
 - Le migrazioni ibride complete non sono adatte a tutti i tipi di organizzazioni. A causa della complessità delle migrazioni ibride complete, le organizzazioni con meno di poche centinaia di cassette postali in genere non vedono vantaggi che giustificano lo sforzo e i costi necessari per impostarne uno. Se questa operazione suona come la propria organizzazione, è consigliabile considerare invece completa o le migrazioni ibride minime;
-- È necessario configurare la sincronizzazione della directory utilizzando Azure Active Directory Connect (AADConnect) tra i server Active Directory locali e Office 365;
-- Gli utenti saranno in grado di accedere alla propria cassetta postale di Office 365 utilizzando lo stesso nome utente e la stessa password utilizzati per l'accesso alla rete locale (richiede Azure Active Directory Connect with Password Synchronization and/or Active Directory Federation Services);
+- È necessario configurare la sincronizzazione della directory utilizzando Azure Active Directory (Azure AD) Connect tra i server Active Directory locali e Office 365;
+- Gli utenti saranno in grado di accedere alla propria cassetta postale di Office 365 utilizzando lo stesso nome utente e la stessa password utilizzati per accedere alla rete locale (richiede Azure AD Connect con sincronizzazione password e/o Active Directory Federation Services);
 - È necessaria una licenza di Office 365 che includa Exchange Online per ogni cassetta postale dell'utente di cui si esegue la migrazione.
 - Gli utenti non devono configurare un nuovo profilo di Outlook sulla maggior parte dei dispositivi (alcuni telefoni Android meno recenti potrebbero necessitare di un nuovo profilo) e non dovranno riscaricare i messaggi di posta elettronica.
 
@@ -164,7 +164,7 @@ Se una migrazione ibrida completa è adatta per l'utente, vedere le risorse segu
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>Eseguire l'aggiornamento a una versione più recente di Exchange Server locale
 
-Anche se si ritiene che sia possibile ottenere il massimo valore e l'esperienza utente eseguendo una migrazione completa a Office 365, è inoltre necessario che alcune organizzazioni debbano mantenere i server Exchange locali. Questo potrebbe essere dovuto ai requisiti normativi, per garantire che i dati non siano archiviati in un datacenter situato in un altro paese o che potrebbero essere perché si dispone di impostazioni o requisiti univoci che non possono essere soddisfatti nel cloud o potrebbe essere semplicemente necessario Exchange per gestire le cassette postali cloud perché è ancora in uso Active Directory locale. In ogni caso, per il quale si sceglie o si ha la necessità di mantenere Exchange locale, è necessario assicurarsi che l'ambiente di Exchange 2010 sia stato aggiornato ad almeno Exchange 2013 o Exchange 2016 ed Exchange 2010 sia stato rimosso prima della data di fine del supporto.
+Anche se si ritiene che sia possibile ottenere il massimo valore e l'esperienza utente eseguendo una migrazione completa a Office 365, è inoltre necessario che alcune organizzazioni debbano mantenere i server Exchange locali. Questo potrebbe essere dovuto ai requisiti normativi, per garantire che i dati non siano archiviati in un datacenter situato in un altro paese o che potrebbero essere perché si dispone di impostazioni o requisiti univoci che non possono essere soddisfatti nel cloud oppure è possibile che sia necessario Exchange per gestire le cassette postali cloud perché è ancora in uso Active Directory locale. In ogni caso, per il quale si sceglie o si ha la necessità di mantenere Exchange locale, è necessario assicurarsi che l'ambiente di Exchange 2010 sia stato aggiornato ad almeno Exchange 2013 o Exchange 2016 ed Exchange 2010 sia stato rimosso prima della data di fine del supporto.
 
 Per un'esperienza ottimale, è consigliabile aggiornare l'ambiente locale rimanente a Exchange 2016. Non è necessario installare Exchange Server 2013 se si vuole andare direttamente da Exchange Server 2010 a Exchange Server 2016.
 

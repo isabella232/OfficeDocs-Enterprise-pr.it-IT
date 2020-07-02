@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: L'autenticazione moderna ibrida (HMA), è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure ed è disponibile per le distribuzioni ibride locali di Exchange Server.
-ms.openlocfilehash: d73b7c28ea5b64be46a3e3a40d8160ccdfcea18c
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 74c7ba7f050c4ac6f6c9b0e6eee7a399a15b196a
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774521"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997382"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 L'autenticazione moderna ibrida (HMA) è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure ed è disponibile per le distribuzioni ibride di Exchange Server locale.
   
@@ -65,7 +65,7 @@ Poiché molti prerequisiti sono comuni sia per Skype for business che per Exchan
   
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Aggiungere URL dei servizi Web locali come nomi SPN in Azure AD
 
-Eseguire i comandi che assegnano gli URL dei servizi Web locali come SPN AD Azure AD. Gli SPN vengono utilizzati dai computer e dai dispositivi client durante l'autenticazione e l'autorizzazione. Tutti gli URL che possono essere utilizzati per la connessione da locale ad Azure Active Directory (AAD) devono essere registrati in AAD (inclusi gli spazi dei nomi interni ed esterni).
+Eseguire i comandi che assegnano gli URL dei servizi Web locali come SPN AD Azure AD. Gli SPN vengono utilizzati dai computer e dai dispositivi client durante l'autenticazione e l'autorizzazione. Tutti gli URL che possono essere utilizzati per la connessione da locale ad Azure Active Directory (Azure AD) devono essere registrati in Azure AD (inclusi gli spazi dei nomi interni ed esterni).
   
 In primo luogo, raccogliere tutti gli URL che è necessario aggiungere in AAD. Eseguire questi comandi in locale:
   

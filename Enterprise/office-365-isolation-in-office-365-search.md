@@ -1,7 +1,7 @@
 ---
-title: Isolamento tenant di Office 365 in Office 365 search
-ms.author: robmazz
-author: robmazz
+title: Isolamento tenant in Microsoft 365 search
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: "Riepilogo: Descrizione dell'isolamento del tenant in Office 365 search."
-ms.openlocfilehash: 9583b923abdb87140863fad8cfc7ad606df6e979
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: "Riepilogo: Descrizione dell'isolamento del tenant in Microsoft 365 search."
+ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844417"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998256"
 ---
-# <a name="tenant-isolation-in-office-365-search"></a>Isolamento del tenant per la funzionalità di ricerca di Office 365
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Isolamento tenant in Microsoft 365 search
 
 La ricerca di SharePoint Online utilizza un modello di separazione tenant che bilancia l'efficienza delle strutture di dati condivise con una protezione dalle informazioni che fuoriescono tra i tenant. Con questo modello, vengono impedite le funzionalità di ricerca:
 
@@ -56,7 +56,7 @@ Il prefisso dei termini dell'ID tenant si verifica solo nell'indice full-text. L
 
 La ricerca controlla l'accesso ai documenti tramite gli elenchi ACL salvati nell'indice di ricerca. Ogni elemento viene indicizzato con un set di termini in un campo ACL speciale. Il campo ACL contiene un termine per gruppo o utente che può visualizzare il documento. Ogni query viene aumentata con un elenco di termini ACE (Access Control Entry), uno per ogni gruppo a cui appartiene l'utente autenticato.
 
-Ad esempio, una query come "<*guid*>. *foo e tenantID*: <*GUID*> "diventa:" <*GUID*>. *foo e tenantID*: <*GUID*> *e* (*docACL:*<*ace1*> *o docACL*: <*ace2*> *o docACL*: <*ACE3*> *...*) "
+Ad esempio, una query come "<*guid*>. *foo e tenantID*: <*GUID*> "diventa:" <*GUID*>. *foo e tenantID*: <*GUID* >  *e* (*docACL:* < *ace1* >  *o docACL*: <*ace2* >  *o docACL*: <*ACE3* >  *...*) "
 
 Poiché gli identificatori di utenti e gruppi e quindi gli ACE sono univoci, questo fornisce un livello di sicurezza supplementare tra i tenant per i documenti visibili solo ad alcuni utenti. Lo stesso vale per l'ACE speciale "tutti tranne gli utenti esterni" che concede l'accesso agli utenti abituali del tenant. Tuttavia, poiché gli ACE per "tutti" sono uguali per tutti i tenant, la separazione dei tenant per i documenti pubblici dipende dal filtro dell'ID tenant. Anche le voci ACE Deny sono supportate. L'incremento di query aggiunge una clausola che consente di rimuovere un documento dal risultato quando è presente una corrispondenza con una ACE di negazione.
 

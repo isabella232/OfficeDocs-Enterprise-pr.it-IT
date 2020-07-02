@@ -1,7 +1,7 @@
 ---
-title: Isolamento del tenant di Office 365 in Office 365 video
-ms.author: robmazz
-author: robmazz
+title: Isolamento del tenant in Office 365 Video
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,17 +15,17 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: "Sintesi: una spiegazione dell'isolamento del tenant in Office 365 video."
-ms.openlocfilehash: c7fb97180fbe6c96d2849be7725958a788309558
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843657"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998699"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Isolamento del tenant in Office 365 Video
 
 > [!NOTE]
-> Il video di Office 365 verrà sostituito da Microsoft Stream. Per ulteriori informazioni sul nuovo servizio video aziendale che aggiunge servizi di intelligence alla collaborazione video e informazioni sui piani di transizione per i clienti di Office 365 video correnti, vedere [migrate to Stream from office 365 video](https://docs.microsoft.com/stream/).
+> Il video di Office 365 verrà sostituito da Microsoft Stream. Per ulteriori informazioni sul nuovo servizio video aziendale che consente di aggiungere servizi di intelligence alla collaborazione video e di conoscere i piani di transizione per i clienti Microsoft 365 video attuali, vedere [transizione video di Office 365 a Microsoft Stream Overview](https://docs.microsoft.com/stream/migrate-from-office-365).
 
 ## <a name="introduction"></a>Introduzione
 

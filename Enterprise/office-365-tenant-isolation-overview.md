@@ -1,7 +1,7 @@
 ---
-title: Isolamento del tenant in Office 365
-ms.author: robmazz
-author: robmazz
+title: Isolamento tenant in Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Un riepilogo del modo in cui Microsoft impone l'isolamento tenant per Office 365.
-ms.openlocfilehash: 5b9db878fce46e02815a06b16271289d199105a0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Sintesi del modo in cui Microsoft impone l'isolamento del tenant per Microsoft 365.
+ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844297"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998645"
 ---
-# <a name="tenant-isolation-in-office-365"></a>Isolamento del tenant in Office 365
+# <a name="tenant-isolation-in-microsoft-365"></a>Isolamento tenant in Microsoft 365
 
 Uno dei vantaggi principali del cloud computing è il concetto di un'infrastruttura comune condivisa tra i numerosi clienti contemporaneamente, che porta a economie di scala. Questo concetto è denominato *multi-tenant*. Microsoft funziona continuamente per garantire che le architetture multi-tenant dei servizi cloud supportino la sicurezza a livello aziendale, la riservatezza, la privacy, l'integrità e gli standard di disponibilità.
 
@@ -33,12 +33,12 @@ I due obiettivi principali per mantenere l'isolamento del tenant in un ambiente 
 1.  Impedire la fuoriuscita o l'accesso non autorizzato al contenuto dei clienti tra i tenant; e
 2.  Impedire alle azioni di un tenant di influenzare negativamente il servizio per un altro tenant
 
-Sono state implementate più forme di protezione in Office 365 per impedire ai clienti di compromettere i servizi o le applicazioni di Office 365 o di ottenere un accesso non autorizzato alle informazioni di altri tenant o del sistema Office 365 stesso, tra cui:
+Sono state implementate più forme di protezione in Microsoft 365 per impedire ai clienti di compromettere i servizi o le applicazioni di Microsoft 365 o di ottenere un accesso non autorizzato alle informazioni di altri tenant o del sistema Microsoft 365 stesso, tra cui:
 
-- L'isolamento logico del contenuto dei clienti all'interno di ogni tenant per i servizi di Office 365 viene ottenuto tramite l'autorizzazione di Azure Active Directory e il controllo di accesso basato sui ruoli.
+- L'isolamento logico del contenuto dei clienti all'interno di ogni tenant per i servizi Microsoft 365 viene ottenuto tramite l'autorizzazione di Azure Active Directory e il controllo di accesso basato sui ruoli.
 - SharePoint Online fornisce meccanismi di isolamento dei dati a livello di archiviazione.
-- Microsoft utilizza la sicurezza fisica rigorosa, lo screening di sfondo e una strategia di crittografia a più livelli per proteggere la riservatezza e l'integrità del contenuto dei clienti. Tutti i datacenter di Office 365 dispongono di controlli di accesso biometrici, con la maggior parte delle stampe Palm che richiedono l'accesso fisico. Inoltre, tutti i dipendenti Microsoft basati su Stati Uniti sono necessari per completare correttamente un controllo di sfondo standard come parte del processo di assunzione. Per ulteriori informazioni sui controlli utilizzati per l'accesso amministrativo in Office 365, vedere [office 365 Administrative Access Controls](office-365-administrative-access-controls-overview.md).
-- Office 365 utilizza tecnologie sul fianco del servizio che crittografano il contenuto dei clienti a riposo e in transito, tra cui BitLocker, crittografia per file, TLS (Transport Layer Security) e IPsec (Internet Protocol Security). Per informazioni specifiche sulla crittografia in Office 365, vedere [tecnologie di crittografia dei dati in office 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview).
+- Microsoft utilizza la sicurezza fisica rigorosa, lo screening di sfondo e una strategia di crittografia a più livelli per proteggere la riservatezza e l'integrità del contenuto dei clienti. Tutti i datacenter Microsoft 365 dispongono di controlli di accesso biometrici, con la maggior parte delle stampe Palm che richiedono l'accesso fisico. Inoltre, tutti i dipendenti Microsoft basati su Stati Uniti sono necessari per completare correttamente un controllo di sfondo standard come parte del processo di assunzione. Per ulteriori informazioni sui controlli utilizzati per l'accesso amministrativo in Microsoft 365, vedere [controlli di accesso amministrativo di microsoft 365](office-365-administrative-access-controls-overview.md).
+- Microsoft 365 utilizza tecnologie sul fianco del servizio che crittografano il contenuto dei clienti a riposo e in transito, tra cui BitLocker, crittografia per file, TLS (Transport Layer Security) e IPsec (Internet Protocol Security). Per informazioni specifiche sulla crittografia in Microsoft 365, vedere [Data Encryption Technologies in microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview).
 
 Insieme, le protezioni elencate di seguito offrono robusti controlli di isolamento logico che forniscono protezione dalle minacce e una mitigazione equivalente a quella fornita solo dall'isolamento fisico.
 
@@ -46,8 +46,8 @@ Insieme, le protezioni elencate di seguito offrono robusti controlli di isolamen
 
 - [Isolamento e controllo di accesso in Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 - [Isolamento del tenant in Office Graph e Delve](office-365-isolation-in-graph-and-delve.md)
-- [Isolamento del tenant per la funzionalità di ricerca di Office 365](office-365-isolation-in-office-365-search.md)
+- [Isolamento tenant in Microsoft 365 search](office-365-isolation-in-office-365-search.md)
 - [Isolamento del tenant in Office 365 Video](office-365-isolation-in-office-365-video.md)
 - [Limiti della risorsa](office-365-resource-limits.md)
 - [Monitoraggio e verifica dei limiti del tenant](office-365-monitoring-and-testing.md)
-- [Isolamento e controllo di accesso in Office 365](office-365-isolation-in-office-365.md)
+- [Isolamento e controllo di accesso in Microsoft 365](office-365-isolation-in-office-365.md)

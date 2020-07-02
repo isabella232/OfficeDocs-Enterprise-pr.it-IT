@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Riepilogo: in questo articolo viene descritto il supporto IPv6 nei componenti di Microsoft Office 365 e nelle offerte governative di Office 365.'
-ms.openlocfilehash: 939b5653981cb78dfa316e0baf1c498a3db97904
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: 594f656f8342fa7eddeeea09779cbcf638ae1882
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009311"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998108"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Supporto IPv6 nei servizi Office 365
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Office 365 supporta sia IPv6 che IPv4. Tuttavia, non tutte le funzionalità di Office 365 sono completamente abilitate con IPv6. Questo significa che è necessario utilizzare sia IPv4 che IPv6 per connettersi a Office 365. Se si sta filtrando il traffico in uscita in Office 365, l'elenco completo degli indirizzi IPv6 supportati da Office 365 è disponibile nell'articolo [office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md). Una volta configurata la rete e gli indirizzi IPv6 corretti sono consentiti, è possibile scaricare il [piano di testing IPv6 di Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) dall'area download Microsoft.
   
@@ -73,7 +73,7 @@ Si consiglia di non disabilitare IPv6. Per ulteriori informazioni, vedere l' [ar
 
 Queste considerazioni potrebbero essere applicate alla rete:
   
-- Il servizio di sottoscrizione pubblica non supporta l'acquisto con carta di credito su IPv6. Ciò non viene applicato al GCC (Government Community Cloud) perché gli enti pubblici dispongono di licenza EA (Contratto enterprise.
+- The public subscription service does not support purchase by credit card over IPv6. This does not apply to the Government Community Cloud (GCC) because governments have Enterprise Agreement (EA) licensing.
 
 - IPv6 non supporta alcuni scenari di Rights Management Services (RMS).
 

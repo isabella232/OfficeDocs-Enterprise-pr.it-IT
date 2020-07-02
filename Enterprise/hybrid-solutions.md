@@ -16,17 +16,15 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Sintesi: utilizzare gli articoli per distribuire i carichi di lavoro di Office Server in Microsoft Azure.'
-ms.openlocfilehash: 558b3eb612d67b3135a762326382218ae4f286c1
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711566"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998014"
 ---
 # <a name="hybrid-solutions"></a>Soluzioni ibride
 
- **Sintesi:** utilizzare gli articoli per distribuire i carichi di lavoro di Office Server in Microsoft Azure.
-  
 Con Microsoft Azure, è ora possibile distribuire alcuni carichi di lavoro di Office Server in genere distribuiti in locale a servizi infrastruttura di Azure.
   
 Per l'infrastruttura di identità Microsoft 365 in Azure:

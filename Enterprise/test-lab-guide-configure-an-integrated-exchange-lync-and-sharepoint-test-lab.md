@@ -15,22 +15,22 @@ ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 f1.keywords:
 - NOCSH
 description: 'Riepilogo: informazioni su come creare un laboratorio di testing integrato contenente un server che esegue Exchange Server 2013, un server che esegue Lync Server 2013 e un server che esegue SharePoint Server 2013.'
-ms.openlocfilehash: 6041f47520f7a02efe08d05835ca0f15dfd6633a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bfb2e1be3b9bb401514e736d38a6f1a2944940f0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841103"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996520"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guida del laboratorio di testing: configurare un laboratorio di testing di Exchange, Lync e SharePoint integrato
 
- **Riepilogo:** Informazioni su come creare un laboratorio di testing integrato contenente un server che esegue Exchange Server 2013, un server che esegue Lync Server 2013 e un server che esegue SharePoint Server 2013.
+ Informazioni su come creare un laboratorio di testing integrato contenente un server che esegue Exchange Server 2013, un server che esegue Lync Server 2013 e un server che esegue SharePoint Server 2013.
  
 **Video introduttivo della guida del laboratorio di testing integrato di Exchange, Lync e SharePoint**
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
-Il laboratorio di testing risultante da questa configurazione, che include l'autenticazione da server a server tra tutti e tre i tipi di server, può essere utilizzato per la creazione e la dimostrazione di scenari e soluzioni multi-prodotto che utilizzano un server che esegue Exchange Server 2013, un Server che esegue Lync Server 2013 e un server che esegue SharePoint Server 2013.
+Il laboratorio di testing risultante da questa configurazione, che include l'autenticazione da server a server tra tutti e tre i tipi di server, può essere utilizzato per la creazione e la dimostrazione di scenari e soluzioni multi-prodotto che utilizzano un server che esegue Exchange Server 2013, un server che esegue Lync Server 2013 e un server che esegue SharePoint Server 2013.
   
 Questo documento contiene istruzioni per:
   

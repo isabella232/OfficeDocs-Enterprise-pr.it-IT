@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: L'autenticazione moderna, è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure, è disponibile per Skype for Business Server locale e Exchange Server locale, nonché per gli ibridi di Skype for business suddivisi in domini.
-ms.openlocfilehash: de5063da9eed03e2cd455b79b3a2d1c2f671ad1e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bd287bc768aa43c95bc073892b79b7f5aed969df
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840723"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997432"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Skype for Business locale per utilizzare l'autenticazione moderna ibrida
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 L'autenticazione moderna, è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure, è disponibile per Skype for Business Server locale e Exchange Server locale, nonché per gli ibridi di Skype for business suddivisi in domini.
   
@@ -33,15 +33,15 @@ L'autenticazione moderna, è un metodo di gestione delle identità che offre un'
   
  **Prima di iniziare**, chiamo:
   
-- Autenticazione \> moderna ma
+- Autenticazione moderna \> ma
 
-- HMA di autenticazione \> moderna ibrida
+- HMA di autenticazione moderna ibrida \>
 
-- Exch locale \> di Exchange
+- Exch locale di Exchange \>
 
-- ESO di \> Exchange Online
+- ESO di Exchange Online \>
 
-- Questo in locale \> di Skype for business
+- Questo in locale di Skype for business \>
 
 - e Skype for business online \> SFBO
 
@@ -125,9 +125,9 @@ A questo punto è necessario eseguire comandi per aggiungere gli URL (raccolti i
 
 2. Eseguire questo comando, in locale, per ottenere un elenco di URL del servizio Web di questo.
 
-   Si noti che AppPrincipalId inizia con `00000004`. Corrisponde a Skype for business online.
+   Si noti che AppPrincipalId inizia con `00000004` . Corrisponde a Skype for business online.
 
-   Prendere nota di (e screenshot per il confronto successivo) l'output di questo comando, che includerà un URL SE e WS, ma principalmente costituito da nomi SPN `00000004-0000-0ff1-ce00-000000000000/`che iniziano con.
+   Prendere nota di (e screenshot per il confronto successivo) l'output di questo comando, che includerà un URL SE e WS, ma principalmente costituito da nomi SPN che iniziano con `00000004-0000-0ff1-ce00-000000000000/` .
 
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
@@ -144,7 +144,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Verificare che i nuovi record siano stati aggiunti eseguendo di nuovo il comando **Get-MsolServicePrincipal viene** del passaggio 2 e analizzando l'output. Confrontare l'elenco/screenshot da prima al nuovo elenco di nomi SPN (è anche possibile schermare il nuovo elenco per i record). In caso di esito positivo, verranno visualizzati i due nuovi URL presenti nell'elenco. In questo esempio, l'elenco dei nomi SPN includerà ora gli URL https://lyncwebint01.contoso.com specifici e https://lyncwebext01.contoso.com/.
+4. Verificare che i nuovi record siano stati aggiunti eseguendo di nuovo il comando **Get-MsolServicePrincipal viene** del passaggio 2 e analizzando l'output. Confrontare l'elenco/screenshot da prima al nuovo elenco di nomi SPN (è anche possibile schermare il nuovo elenco per i record). In caso di esito positivo, verranno visualizzati i due nuovi URL presenti nell'elenco. In questo esempio, l'elenco dei nomi SPN includerà ora gli URL specifici https://lyncwebint01.contoso.com e https://lyncwebext01.contoso.com/ .
 
 ### <a name="create-the-evosts-auth-server-object"></a>Creare l'oggetto server auth EvoSTS
 
@@ -170,9 +170,9 @@ Per testare il funzionamento di HMA dopo averla abilitata, disconnettersi da un 
   
 È inoltre necessario controllare le ' informazioni di configurazione ' per i client Skype for business per un'autorità OAuth. Per eseguire questa operazione nel computer client, tenere premuto il tasto CTRL contemporaneamente facendo clic con il pulsante destro del mouse sull'icona Skype for business nel vassoio di notifica di Windows. Fare clic su **informazioni di configurazione** nel menu visualizzato. Nella finestra ' informazioni di configurazione di Skype for business ' che verrà visualizzata sul desktop, cercare gli elementi seguenti:
   
-![Le informazioni di configurazione di un client Skype for business utilizzando l'autenticazione moderna mostrano un URL dell'autorità OAUTH di https://login.windows.net/common/oauth2/authorizeLync e EWS.](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+![Le informazioni di configurazione di un client Skype for business utilizzando l'autenticazione moderna mostrano un URL dell'autorità OAUTH di Lync e EWS https://login.windows.net/common/oauth2/authorize .](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-È inoltre necessario tenere premuto il tasto CTRL contemporaneamente facendo clic con il pulsante destro del mouse sull'icona per il client di Outlook (anche nel vassoio notifiche di Windows) e facendo clic su' stato connessione '. Cercare l'indirizzo SMTP del client rispetto a un tipo di "portatore\*", che rappresenta il token del portatore utilizzato in OAuth.
+È inoltre necessario tenere premuto il tasto CTRL contemporaneamente facendo clic con il pulsante destro del mouse sull'icona per il client di Outlook (anche nel vassoio notifiche di Windows) e facendo clic su' stato connessione '. Cercare l'indirizzo SMTP del client rispetto a un tipo di "portatore \* ", che rappresenta il token del portatore utilizzato in OAuth.
   
 ## <a name="related-articles"></a>Articoli correlati
 

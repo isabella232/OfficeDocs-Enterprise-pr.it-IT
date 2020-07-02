@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Per comprendere adeguatamente il traffico di routing a Office 365 utilizzando Azure ExpressRoute, è necessario disporre di una solida conoscenza dei requisiti di routing di ExpressRoute di base e dei circuiti di ExpressRoute e i domini di routing. Questi sono i principi fondamentali per l'utilizzo di ExpressRoute su cui si basano i clienti di Office 365.
-ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844057"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998195"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routing con ExpressRoute per Office 365
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Per comprendere adeguatamente il traffico di routing a Office 365 utilizzando Azure ExpressRoute, è necessario disporre di una solida conoscenza dei [requisiti di routing di ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-routing/) di base e dei circuiti di [ExpressRoute e i domini di routing](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). Questi sono i principi fondamentali per l'utilizzo di ExpressRoute su cui si basano i clienti di Office 365.
   
@@ -117,7 +117,7 @@ In questa tabella vengono visualizzati i domini jolly che vengono pubblicizzati 
 |\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
-|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> individuazione automatica-\<tenant\>. Outlook.com  <br/> |
+|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> individuazione automatica- \<tenant\> . Outlook.com  <br/> |
 |\*. windows.net  <br/> |login.windows.net  <br/> |
 
 ## <a name="routing-office-365-traffic-over-the-internet-and-expressroute"></a>Routing di Office 365 traffico su Internet e ExpressRoute
@@ -156,11 +156,11 @@ Gli FQDN dei volumi più alti per Exchange Online, SharePoint Online e Skype for
   
 - outlook.office365.com, outlook.office.com
 
-- \<tenant-Name\>. SharePoint.com, \<tenant-Name\>-My.SharePoint.com, \<tenant-Name\>-\<app\>. SharePoint.com
+- \<tenant-name\>. SharePoint.com, \<tenant-name\> -My.SharePoint.com, \<tenant-name\> - \<app\> . SharePoint.com
 
 - \*. Lync.com insieme agli intervalli IP per il traffico non TCP
 
-- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*powerpoint.officeapps.live.com, \*view.officeapps.live.com, \*Visio.officeapps.Live.com, \*Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
+- \*broadcast.officeapps.live.com, \* Excel.officeapps.Live.com, \* onenote.officeapps.live.com, \* PowerPoint.officeapps.Live.com, \* view.officeapps.live.com, \* Visio.officeapps.Live.com, \* Word-Edit.officeapps.Live.com, Word-View.officeapps.Live.com \* , Office.Live.com
 
 Per ulteriori informazioni, vedere [distribuzione e gestione delle impostazioni proxy in Windows 8](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) e [garantire che Office 365 non sia limitato dal proxy](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
@@ -197,25 +197,25 @@ Questo esempio è uno scenario per una società fittizia denominata assicurazion
   
 L'assicurazione gigantesca è dislocata geograficamente con uffici di tutto il mondo. Si desidera implementare Azure ExpressRoute per Office 365 per mantenere la maggior parte del traffico di Office 365 su connessioni di rete dirette. La coesistenza di assicurazioni ha anche uffici in due continenti aggiuntivi. Per utilizzare una connessione ExpressRoute, è necessario che i dipendenti dell'ufficio remoto in cui ExpressRoute non sia possibile eseguire il routing di nuovo a una o entrambe le strutture principali.
   
-Il principio guida è di ottenere il traffico destinato a un centro dati Microsoft Office 365 al più presto possibile. In questo esempio, l'assicurazione gigantesca deve decidere se le proprie sedi remote devono essere instradate su Internet per accedere a un datacenter Microsoft su qualsiasi connessione il più velocemente possibile o se le rispettive sedi remote devono essere instradate su una rete interna per accedere a un sito Microsoft Datacenter su una connessione ExpressRoute il più velocemente possibile.
+Il principio guida è di ottenere il traffico destinato a un centro dati Microsoft Office 365 al più presto possibile. In questo esempio, l'assicurazione gigantesca deve decidere se le proprie sedi remote devono essere instradate su Internet per accedere a un datacenter Microsoft su qualsiasi connessione il più velocemente possibile o se le rispettive sedi remote devono essere instradate su una rete interna per accedere a un datacenter Microsoft su una connessione ExpressRoute il più velocemente possibile.
   
 I datacenter, le reti e l'architettura delle applicazioni di Microsoft sono stati studiati per rendere più efficienti le comunicazioni e il servizio nel modo più efficiente possibile. Si tratta di una delle reti più grandi al mondo. Le richieste destinate a Office 365 che rimangono sulle reti dei clienti più lunghe del necessario non potranno usufruire di questa architettura.
   
-Nel caso di una situazione di assicurazione di tipo gigantesco, dovrebbero procedere a seconda delle applicazioni che intendono utilizzare su ExpressRoute. Ad esempio, se si tratta di un cliente Skype for business online o se si prevede di utilizzare la connettività di ExpressRoute per la connessione a riunioni esterne di Skype for business online, la progettazione è consigliata per la qualità e la rete multimediale di Skype for business online la guida alla connettività è quella di eseguire il provisioning di un ulteriore circuito ExpressRoute per la terza posizione. Questo potrebbe essere più costoso rispetto a una prospettiva di rete. Tuttavia, l'instradamento delle richieste da un continente all'altro prima del recapito a un datacenter Microsoft può causare un'esperienza scarsa o inutilizzabile durante le riunioni e le comunicazioni di Skype for business online.
+Nel caso di una situazione di assicurazione di tipo gigantesco, dovrebbero procedere a seconda delle applicazioni che intendono utilizzare su ExpressRoute. Ad esempio, se si tratta di un cliente di Skype for business online o si intende utilizzare la connettività di ExpressRoute per la connessione a riunioni esterne di Skype for business online, la progettazione consigliata nella Guida alla qualità multimediale di Skype for business online e alla connettività di rete è quella di eseguire il provisioning di un ulteriore circuito di ExpressRoute per la terza posizione. Questo potrebbe essere più costoso rispetto a una prospettiva di rete. Tuttavia, l'instradamento delle richieste da un continente all'altro prima del recapito a un datacenter Microsoft può causare un'esperienza scarsa o inutilizzabile durante le riunioni e le comunicazioni di Skype for business online.
   
-Se l'assicurazione non è in uso o non prevede di utilizzare Skype for business online in alcun modo, in365 stradare il traffico di rete destinato a un continente con una connessione ExpressRoute potrebbe essere possibile anche se potrebbe causare latenza non necessaria o TCP congestione. In entrambi i casi, è consigliabile instradare il traffico destinato a Internet su Internet nel sito locale per sfruttare le reti di distribuzione del contenuto su cui si basa Office 365.
+Se l'assicurazione non è in uso o non prevede di utilizzare Skype for business online in alcun modo, in365 stradare il traffico di rete destinato a un continente con una connessione ExpressRoute potrebbe essere possibile anche se potrebbe causare latenza o congestione TCP inutili. In entrambi i casi, è consigliabile instradare il traffico destinato a Internet su Internet nel sito locale per sfruttare le reti di distribuzione del contenuto su cui si basa Office 365.
   
 ![ExpressRoute multi-geography](media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
 Quando l'assicurazione gigante sta pianificando la propria strategia di multi-geografia, sono disponibili diverse considerazioni sulla dimensione del circuito, il numero di circuiti, il failover e così via.
   
-Con ExpressRoute in un'unica posizione con più aree che tentano di utilizzare il circuito, l'assicurazione gigante vuole garantire che le connessioni a Office 365 dall'ufficio remoto vengano inviate al centro dati di Office 365 più vicino al quartier generale e ricevute dal sede centrale. A tale scopo, l'assicurazione di tipo gigantesco implementa l'inoltro DNS per ridurre il numero di round trip e le ricerche DNS necessarie per stabilire la connessione appropriata con l'ambiente Office 365 più vicino al punto di uscita Internet della sede centrale. In questo modo si impedisce al client di risolvere un front end server locale e garantisce che il front end server a cui si connette la persona sia vicino alla sede centrale, in cui l'assicurazione è in peering con Microsoft. È inoltre possibile imparare a [assegnare un forwarder condizionale per un nome di dominio](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx).
+Con ExpressRoute in un'unica posizione con più aree che tentano di utilizzare il circuito, l'assicurazione gigante vuole garantire che le connessioni a Office 365 dall'ufficio remoto vengano inviate al centro dati di Office 365 più vicino al quartier generale e ricevute dal percorso della sede centrale. A tale scopo, l'assicurazione di tipo gigantesco implementa l'inoltro DNS per ridurre il numero di round trip e le ricerche DNS necessarie per stabilire la connessione appropriata con l'ambiente Office 365 più vicino al punto di uscita Internet della sede centrale. In questo modo si impedisce al client di risolvere un front end server locale e garantisce che il front end server a cui si connette la persona sia vicino alla sede centrale, in cui l'assicurazione è in peering con Microsoft. È inoltre possibile imparare a [assegnare un forwarder condizionale per un nome di dominio](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx).
   
 In questo scenario, il traffico proveniente dall'ufficio remoto risolverebbe l'infrastruttura di Office 365 front end nel Nord America e sfrutterà Office 365 per connettersi ai server back-end in base all'architettura dell'applicazione Office 365. Ad esempio, Exchange Online disporrà la connessione in Nord America e i Front End Server si connetteranno al server cassette postali di backend laddove risiedeva il tenant. Tutti i servizi dispongono di un servizio front door ampiamente distribuito costituito da destinazioni unicast e anycast.
   
 Se il numeroso ha uffici importanti in più continenti, è consigliato un minimo di due circuiti attivi/attivi per ogni area geografica per ridurre la latenza per le applicazioni sensibili come Skype for business online. Se tutti gli uffici si trovano in un unico continente o non utilizzano la collaborazione in tempo reale, la scelta di un punto di uscita consolidato o distribuito è una decisione specifica del cliente. Quando sono disponibili più circuiti, il routing BGP assicurerà il failover nel caso in cui un singolo circuito diventi non disponibile.
   
-Per ulteriori informazioni, vedere [configurazioni](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) di [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)routing di esempio e.
+Per ulteriori informazioni, vedere [configurazioni di routing](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) di esempio e [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/) .
   
 ## <a name="selective-routing-with-expressroute"></a>Routing selettivo con ExpressRoute
 
@@ -225,7 +225,7 @@ Il routing selettivo con ExpressRoute può essere necessario per una serie di mo
 
 2. **File PAC/URL** -direzione del traffico di rete destinato a Office 365 per FQDN specifici da instradare su un percorso specifico. Questo consente di instradare selettivamente il computer client come identificato dalla [distribuzione dei file PAC](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies).
 
-3. **Route filtering** - i[filtri route](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) sono un modo per utilizzare un sottoinsieme di servizi supportati tramite Microsoft peering.
+3. **Filtro route**  -  I [filtri route](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) sono un modo per utilizzare un sottoinsieme di servizi supportati tramite peering Microsoft.
 
 4. **Comunità BGP** -il filtro basato sui [tag della community BGP](https://aka.ms/bgpexpressroute365) consente a un cliente di determinare quali applicazioni di Office 365 attraverserà ExpressRoute e che attraverserà Internet.
 
@@ -247,9 +247,9 @@ Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/erorouting](
   
 [Ottimizzazione della rete per Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute e QoS in Skype for business online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute e QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Flusso delle chiamate con ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Flusso di chiamata con ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Utilizzo delle community BGP in ExpressRoute per gli scenari di Office 365](bgp-communities-in-expressroute.md)
   

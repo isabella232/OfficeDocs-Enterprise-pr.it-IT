@@ -1,7 +1,7 @@
 ---
-title: Resilienza dei dati in Office 365
-ms.author: robmazz
-author: robmazz
+title: Resilienza dei dati in Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Comprendere la resilienza dei dati in Microsoft Office 365.
-ms.openlocfilehash: 43eae5db254a0b352f44d60c81767dfa4caa33f3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Comprendere la resilienza dei dati in Microsoft Microsoft 365.
+ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843677"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998470"
 ---
-# <a name="data-resiliency-in-office-365"></a>Resilienza dei dati in Office 365
+# <a name="data-resiliency-in-microsoft-365"></a>Resilienza dei dati in Microsoft 365
 
 ## <a name="introduction"></a>Introduzione
 
@@ -39,9 +39,9 @@ La creazione di resilienza e ripristino inizia con l'assunto che l'infrastruttur
 
 Oggi, i clienti si aspettano un'innovazione continua da Microsoft senza compromettere la qualità e questo è uno dei motivi per cui i servizi e il software di Microsoft sono stati creati con resilienza e ripristino in mente. 
 
-## <a name="office-365-data-resiliency-principles"></a>Principi di resilienza dei dati di Office 365
+## <a name="microsoft-365-data-resiliency-principles"></a>Principi di resilienza dei dati di Microsoft 365
 
-La resilienza si riferisce alla capacità di un servizio basato sul cloud di resistere a determinati tipi di errori, ma rimane completamente funzionante dalla prospettiva dei clienti. La resilienza dei dati significa che non importa quali errori si verifichino all'interno di Office 365, i dati critici dei clienti restano intatti e inalterati. A tal fine, i servizi di Office 365 sono stati disegnati attorno a cinque specifici principi di resilienza:
+La resilienza si riferisce alla capacità di un servizio basato sul cloud di resistere a determinati tipi di errori, ma rimane completamente funzionante dalla prospettiva dei clienti. La resilienza dei dati significa che non importa quali errori si verificano in Microsoft 365, i dati critici dei clienti restano intatti e inalterati. A tal fine, i servizi Microsoft 365 sono stati disegnati attorno a cinque specifici principi di resilienza:
 
 - Sono presenti dati critici e non critici. I dati non critici, ad esempio l'eventuale lettura di un messaggio, possono essere eliminati in scenari di errore rari. I dati critici (ad esempio, i dati dei clienti come i messaggi di posta elettronica) devono essere protetti a costi estremi. Come obiettivo di progettazione, i messaggi di posta elettronica recapitati sono sempre importanti e gli elementi come se un messaggio è stato letto non sono critici. 
 - Le copie dei dati del cliente devono essere separate in aree di errore diverse o come molti domini di errore possibili (ad esempio, Datacenter, accessibili tramite credenziali singole (processo, server o operatore)) per fornire l'isolamento degli errori. 
@@ -49,7 +49,7 @@ La resilienza si riferisce alla capacità di un servizio basato sul cloud di res
 - I dati dei clienti devono essere protetti dal danneggiamento. Deve essere analizzato o monitorato attivamente, ripristinabile e ripristinabile. 
 - La maggior parte delle perdite di dati risulta dalle azioni dei clienti, quindi consente ai clienti di eseguire il ripristino autonomo utilizzando una GUI che consente di ripristinare accidentalmente gli elementi eliminati. 
  
-Tramite la creazione dei servizi cloud a questi principi, insieme a testing e convalida robusti, Office 365 è in grado di soddisfare e superare i requisiti dei clienti garantendo una piattaforma per l'innovazione continua e il miglioramento. 
+Tramite la creazione dei servizi cloud a questi principi, insieme a testing e convalida robusti, Microsoft 365 è in grado di soddisfare e superare i requisiti dei clienti garantendo una piattaforma per l'innovazione continua e il miglioramento. 
 
 ## <a name="related-links"></a>Collegamenti correlati
 

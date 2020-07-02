@@ -19,12 +19,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Descrive le cause comuni dei problemi di sincronizzazione della directory in Office 365 e fornisce alcuni metodi per individuarli e risolverli.
-ms.openlocfilehash: cb2ec57331d227f0965095ee0782f13af935d569
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: d9e390a7230499f724ebbdae592264a850dd9418
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711908"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998034"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Risoluzione dei problemi relativi alla sincronizzazione della directory per Microsoft 365
 
@@ -42,9 +42,9 @@ Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.c
   
 Seguire le [istruzioni della procedura guidata](set-up-directory-synchronization.md) per scaricare Azure AD Connect. 
   
-Se si sta ancora utilizzando Azure Active Directory Sync (DirSync), vedere [come risolvere i problemi relativi all'installazione e alla configurazione guidata dello strumento di sincronizzazione di Azure Active Directory in Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) per informazioni sui requisiti di sistema per l'installazione di dirsync, le autorizzazioni necessarie e la risoluzione dei problemi relativi agli errori comuni. 
+Se si sta ancora utilizzando Azure Active Directory (Azure AD) Sync (DirSync), vedere [come risolvere i problemi relativi all'installazione dello strumento di sincronizzazione di Azure Active Directory e ai messaggi di errore della configurazione guidata in Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) per informazioni sui requisiti di sistema per l'installazione di dirsync, le autorizzazioni necessarie e la risoluzione dei problemi relativi agli errori comuni. 
   
-Per eseguire l'aggiornamento da Azure Active Directory Sync ad Azure AD Connect, vedere le [istruzioni di aggiornamento](https://go.microsoft.com/fwlink/p/?LinkId=733240).
+Per eseguire l'aggiornamento da Azure AD Sync ad Azure AD Connect, vedere [le istruzioni relative all'aggiornamento](https://go.microsoft.com/fwlink/p/?LinkId=733240).
   
 ## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Risoluzione delle cause comuni dei problemi relativi alla sincronizzazione della directory in Microsoft 365
 

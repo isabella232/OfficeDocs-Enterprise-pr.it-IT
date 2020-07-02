@@ -1,7 +1,7 @@
 ---
-title: Isolamento tenant di Office 365 nel grafico di Office e approfondire
-ms.author: robmazz
-author: robmazz
+title: Isolamento del tenant Microsoft 365 in Microsoft Graph and approfondire
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,23 +14,23 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: "Sintesi: una spiegazione dell'isolamento del tenant in Office Graph e in approfondire."
-ms.openlocfilehash: c9e054494e6d71d84a19350bc38e0d3981fede45
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: "Sintesi: una spiegazione dell'isolamento dei tenant di Microsoft 365 in Microsoft Graph e in approfondire."
+ms.openlocfilehash: 70888d084792cfb819c0ee54f34d2a8869fb198b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844437"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998266"
 ---
-# <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Isolamento del tenant in Office Graph e Delve
+# <a name="microsoft-365-tenant-isolation-in-the-microsoft-graph-and-delve"></a>Isolamento del tenant Microsoft 365 in Microsoft Graph and approfondire
 
-## <a name="tenant-isolation-in-the-office-graph"></a>Isolamento del tenant in Office Graph
+## <a name="tenant-isolation-in-the-microsoft-graph"></a>Isolamento tenant in Microsoft Graph
 
-L'attività dei modelli di [Office Graph](https://developer.microsoft.com) nei servizi di Office 365, tra cui Exchange Online, SharePoint Online, Yammer, Skype for business, Azure Active Directory e altro ancora, e nei servizi esterni, ad esempio altri servizi Microsoft o servizi di terze parti. I componenti di Office Graph vengono utilizzati in Office 365. Il grafico di Office rappresenta un insieme di contenuto e attività e le relazioni tra di essi che si verificano nell'intera famiglia di prodotti Office. Utilizza sofisticate tecniche di apprendimento automatico per connettere le persone ai contenuti, alle conversazioni e alle persone rilevanti che li circondano. Ad esempio, l'indice tenant in SharePoint Online include un indice di Office Graph utilizzato per eseguire query approfondite, il motore di elaborazione dell'analisi in SharePoint Online viene utilizzato per archiviare i segnali e calcolare gli Insight e Exchange Online calcola i dati di ogni utente cache dei destinatari come input nell'analisi del tenant.
+L'attività dei modelli di [Microsoft Graph](https://developer.microsoft.com/graph) in Microsoft 365 Services, tra cui Exchange Online, SharePoint Online, Yammer, Skype for business, Azure Active Directory e altro ancora, e nei servizi esterni, ad esempio altri servizi Microsoft o servizi di terze parti. I componenti di Microsoft Graph vengono utilizzati in Microsoft 365. Il grafico Microsoft rappresenta un insieme di contenuto e attività e le relazioni tra di esse che si verificano nell'intera famiglia di prodotti Office. Utilizza sofisticate tecniche di apprendimento automatico per connettere le persone ai contenuti, alle conversazioni e alle persone rilevanti che li circondano. Ad esempio, l'indice tenant in SharePoint Online ha un indice di Microsoft Graph utilizzato per fornire query approfondite, il motore di elaborazione dell'analisi in SharePoint Online viene utilizzato per archiviare i segnali e calcolare gli Insight e Exchange Online calcola la cache dei destinatari di ogni utente come input nell'analisi del tenant.
 
-Il grafico di Office contiene informazioni sugli oggetti dell'organizzazione, ad esempio persone e documenti, nonché le relazioni e le interazioni tra questi oggetti. Le relazioni e le interazioni sono rappresentate come *spigoli*. Il grafico di Office è segmentato dal tenant in modo che i bordi possano esistere solo tra i *nodi* dello stesso contratto di locazione. Un *nodo* è un'entità con un URI (Uniform Resource Identifier), un tipo di nodo, un elenco di controllo di accesso e un set di facet che contengono *metadati* e spigoli. A ciascun nodo sono associati metadati e spigoli, disposti in *facet* come nel modello di conoscenza comune. I *metadati* sono proprietà denominate archiviate in un nodo che è possibile utilizzare per la ricerca, il filtro o l'analisi all'interno del grafico di Office. Un *facet* è una raccolta logica di metadati e spigoli su un nodo. Ogni facet descrive un aspetto di un nodo. 
+Microsoft Graph contiene informazioni sugli oggetti dell'organizzazione, ad esempio persone e documenti, nonché sulle relazioni e le interazioni tra questi oggetti. Le relazioni e le interazioni sono rappresentate come *spigoli*. Il grafico Microsoft viene segmentato dal tenant in modo che i bordi possano esistere solo tra i *nodi* dello stesso contratto di locazione. Un *nodo* è un'entità con un URI (Uniform Resource Identifier), un tipo di nodo, un elenco di controllo di accesso e un set di facet che contengono *metadati* e spigoli. A ciascun nodo sono associati metadati e spigoli, disposti in *facet* come nel modello di conoscenza comune. I *metadati* sono proprietà denominate archiviate in un nodo che è possibile utilizzare per la ricerca, il filtro o l'analisi all'interno di Microsoft Graph. Un *facet* è una raccolta logica di metadati e spigoli su un nodo. Ogni facet descrive un aspetto di un nodo. 
 
-In Office Graph non vengono portati tutti i dati in un unico repository. piuttosto, memorizza i metadati e le relazioni sui dati che vivono altrove. Il grafico di Office è costituito da diversi archivi dati e componenti di elaborazione:
+Microsoft Graph non porta tutti i dati in un unico repository; piuttosto, memorizza i metadati e le relazioni sui dati che vivono altrove. Microsoft Graph è costituito da diversi archivi dati e componenti di elaborazione:
 
 - L'archivio grafico tenant fornisce archiviazione di massa ottimizzata per analisi efficienti.
 - La cache del contenuto attivo fornisce un accesso casuale rapido ai nodi e ai bordi attivi per guidare le esperienze degli utenti.
@@ -40,5 +40,5 @@ L'analisi all'interno di ogni carico di lavoro deduce informazioni rilevanti per
 
 ## <a name="tenant-isolation-in-delve"></a>Isolamento del tenant nell'approfondimento
 
-Come accennato in precedenza, Office Graph alimenta le esperienze che consentono agli utenti di individuare e collaborare alle attività correnti nell'organizzazione e fornisce una piattaforma di analisi incentrata su entità per il motivo del contenuto e dell'attività tra i carichi di lavoro e oltre Office 365. Approfondire è la prima esperienza di questo tipo fornita da Office Graph.
-Approfondire è un'esperienza Web di Office 365 che consente di visualizzare il contenuto di Office 365 e Yammer Enterprise con gli utenti di Office 365 tramite Office Graph. L'esperienza Web consente di visualizzare i dati come schede diverse, ognuna con un determinato argomento, ad esempio i *trend attorno a me* o *modificati da me*. Ogni scheda è costituita da diverse schede documento che visualizzano testo di riepilogo e un'immagine del documento. La scheda consente agli utenti di eseguire operazioni come aprire il documento o una pagina di Yammer per il documento. Vi è una pagina per ogni persona in un tenant di Office 365 che Visualizza i documenti più rilevanti per questa persona e le icone che possono richiamare Exchange Online o Skype for business per interagire con quella persona. Poiché il servizio di approfondimento è basato sull'API di Office Graph, è associato all'isolamento basato sul tenant di tale API.
+Come accennato in precedenza, Microsoft Graph Powers experiences che aiuta gli utenti a individuare e collaborare alle attività correnti nell'organizzazione e fornisce una piattaforma basata su entità per l'analisi per ragionare sul contenuto e sulle attività tra i carichi di lavoro e oltre Microsoft 365. Approfondire è la prima esperienza di questo tipo alimentata da Microsoft Graph.
+Approfondire è un'esperienza Web di Microsoft 365 che consente di visualizzare il contenuto da Microsoft 365 e Yammer Enterprise agli utenti di Microsoft 365 tramite Microsoft Graph. L'esperienza Web consente di visualizzare i dati come schede diverse, ognuna con un determinato argomento, ad esempio i *trend attorno a me* o *modificati da me*. Ogni scheda è costituita da diverse schede documento che visualizzano testo di riepilogo e un'immagine del documento. La scheda consente agli utenti di eseguire operazioni come aprire il documento o una pagina di Yammer per il documento. Vi è una pagina per ogni persona in un tenant di Microsoft 365 che Visualizza i documenti più rilevanti per questa persona e le icone che possono richiamare Exchange Online o Skype for business per interagire con quella persona. Poiché il servizio di approfondimento è basato sull'API di Microsoft Graph, è associato all'isolamento basato sul tenant di quell'API.

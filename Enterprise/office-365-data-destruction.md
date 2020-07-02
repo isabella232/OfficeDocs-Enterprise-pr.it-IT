@@ -1,7 +1,7 @@
 ---
-title: Distruzione dei dati di Office 365
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 distruzione dei dati
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Una panoramica dei criteri Microsoft relativi al riciclo, allo smaltimento o alla distruzione di unità disco e server del centro dati di Office 365.
-ms.openlocfilehash: 2ad73206309751729f776081d66d6c6d5daf1308
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Una panoramica dei criteri Microsoft relativi al riciclo, allo smaltimento o alla distruzione di unità disco e server del centro dati di Microsoft 365.
+ms.openlocfilehash: 8e0725f449dd999c0f892543883a775695969dc9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843687"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998440"
 ---
-# <a name="office-365-data-destruction"></a>Distruzione dei dati di Office 365
+# <a name="microsoft-365-data-destruction"></a>Microsoft 365 distruzione dei dati
 
 ## <a name="physical-data-destruction"></a>Distruzione fisica dei dati
 
-Microsoft dispone di criteri standard per la gestione dei dati che soddisfano il riciclo e lo smaltimento di unità disco e server non riusciti o in pensione. Prima di riutilizzare le unità disco di Office 365, Microsoft esegue un processo di disinfezione fisica coerente con l'Istituto nazionale di Standards and Technology Special Publication 800-88 ([NIST SP 800-88 Guidelines for Media sanification](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). Poiché tutte le unità disco di Office 365 vengono crittografate utilizzando la crittografia a livello di volume di BitLocker, la cancellazione di NIST SP 800-88 conforme non è tecnicamente necessaria. Tuttavia, Microsoft esegue questo processo.
+Microsoft dispone di criteri standard per la gestione dei dati che soddisfano il riciclo e lo smaltimento di unità disco e server non riusciti o in pensione. Prima di riutilizzare le unità disco Microsoft 365, Microsoft esegue un processo di disinfezione fisica coerente con l'Istituto nazionale di Standards and Technology Special Publication 800-88 ([NIST SP 800-88 Guidelines for Media sanification](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). Poiché tutte le unità disco in Microsoft 365 vengono crittografate utilizzando la crittografia a livello di volume di BitLocker, la cancellazione del NIST SP 800-88 conforme non è tecnicamente necessaria. Tuttavia, Microsoft esegue questo processo.
 
-I dischi non riusciti utilizzati all'interno dei datacenter di Office 365 vengono distrutti fisicamente e controllati tramite il processo ISO. Il tipo di risorsa determina il metodo di eliminazione appropriato. Per i dischi rigidi che non possono essere cancellati, Microsoft utilizza un processo di distruzione per distruggere i contenuti multimediali e rendere impossibile il ripristino delle informazioni. Ad esempio, i dischi vengono eliminati fisicamente, polverizzati o inceneriti. Microsoft conserva tutti i record della distruzione ed esegue un processo di sanificazione simile nei server riutilizzati in Office 365. Queste linee guida comprendono sia la sanificazione elettronica sia quella fisica.
+I dischi non riusciti utilizzati all'interno dei datacenter Microsoft 365 vengono distrutti fisicamente e controllati tramite il processo ISO. Il tipo di risorsa determina il metodo di eliminazione appropriato. Per i dischi rigidi che non possono essere cancellati, Microsoft utilizza un processo di distruzione per distruggere i contenuti multimediali e rendere impossibile il ripristino delle informazioni. Ad esempio, i dischi vengono eliminati fisicamente, polverizzati o inceneriti. Microsoft conserva tutti i record della distruzione ed esegue un processo di sanificazione simile nei server riutilizzati in Microsoft 365. Queste linee guida comprendono sia la sanificazione elettronica sia quella fisica.
 
 Ogni Data Center utilizza un processo di distruzione fisica sul posto per eliminare i dischi. Le collocazioni sicure per i supporti di archiviazione designate per lo smaltimento del disco sono disponibili in ogni area del datacenter. Ogni Secure bin Station ha video monitoring Surveillance. Una volta che un cassetto di eliminazione raggiunge circa 50% di capacità, il team di servizi del sito contatta il team di sicurezza fisica per coordinare la rimozione. Il personale dei servizi sito e un ufficio di sicurezza rimuovono il contenitore di eliminazione sicuro e lo inseriscono in un'area di archiviazione protetta designata. I criteri e le procedure che regolano la gestione dei dispositivi di supporto per i dati durante lo smaltimento sono testati di routine, incluse le procedure per garantire la condizione del macchinario approvato per la distruzione.
 

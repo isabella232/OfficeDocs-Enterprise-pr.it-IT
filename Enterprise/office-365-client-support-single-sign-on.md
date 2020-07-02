@@ -1,7 +1,7 @@
 ---
-title: 'Supporto delle app client di Office 365: Single Sign-on'
-ms.author: robmazz
-author: robmazz
+title: Supporto delle app client Microsoft 365-Single Sign-on
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Supporto delle app client di Office 365 per Single Sign-on.
-ms.openlocfilehash: 8d6ba1701d9981bb5833bd6cf6ace641d5a27181
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: Supporto delle app client Microsoft 365 per Single Sign-on.
+ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619332"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998514"
 ---
-# <a name="office-365-client-app-support--single-sign-on"></a>Supporto delle app client di Office 365: Single Sign-on
+# <a name="microsoft-365-client-app-support--single-sign-on"></a>Supporto delle app client Microsoft 365-Single Sign-on
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Single Sign-on (SSO) aggiunge la sicurezza e la convenienza quando gli utenti eseguono l'accesso alle applicazioni in Azure Active Directory (Azure AD). Con Single Sign-on, gli utenti accedono una sola volta con un account per accedere ai dispositivi associati a un dominio, alle risorse aziendali, alle applicazioni software come servizio (SaaS) e alle applicazioni Web.
 
@@ -39,7 +39,7 @@ Per ulteriori informazioni, vedere [Single Sign-on](https://docs.microsoft.com/a
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Per ulteriori informazioni sul supporto delle piattaforme in Office 365, vedere [requisiti di sistema per office 365](https://products.office.com/office-system-requirements).
+Per ulteriori informazioni sul supporto delle piattaforme in Microsoft 365, vedere [requisiti di sistema per microsoft 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Client supportati
 

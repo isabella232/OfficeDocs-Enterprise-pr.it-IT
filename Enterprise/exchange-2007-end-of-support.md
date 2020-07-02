@@ -13,16 +13,16 @@ ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
 description: L'11 aprile 2017, Exchange Server 2007 ha raggiunto la fine del supporto. Se non è già stata avviata la migrazione da Exchange 2007 a Office 365 o Exchange 2016, ora è il momento di iniziare la pianificazione.
-ms.openlocfilehash: 75bafe48b3b384430312ad0c0942c98732985073
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: a0dd549c4a9be5721dae66111e8cdd5a569b2b9c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605651"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996550"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Guida sulla fine del supporto di Exchange 2007
 
-*Questo articolo si applica sia a Office 365 Enterprise che a Microsoft 365 Enterprise*.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 L' **11 aprile 2017**, Exchange Server 2007 ha raggiunto la fine del supporto. Se non è già stata avviata la migrazione da Exchange 2007 a Office 365 o Exchange 2016, ora è il momento di iniziare la pianificazione. 
   
@@ -80,7 +80,7 @@ Office 365 ottiene le nuove caratteristiche e le esperienze prima e gli utenti p
     
 #### <a name="how-should-i-migrate-to-office-365"></a>Come si esegue la migrazione a Office 365?
 
-A seconda dell'organizzazione, sono disponibili alcune opzioni che consentono di accedere a Office 365. Quando si sceglie un'opzione di migrazione, è necessario prendere in considerazione alcuni aspetti come il numero di postazioni o di cassette postali da spostare, per quanto tempo si desidera che la migrazione duri e se è necessaria una perfetta integrazione tra l'installazione locale e Office 365 durante la migrazione. In questa tabella vengono illustrate le opzioni di migrazione e i fattori più importanti che determinano il metodo da utilizzare.
+A seconda dell'organizzazione, sono disponibili alcune opzioni che consentono di accedere a Office 365. Quando si sceglie un'opzione di migrazione, è necessario prendere in considerazione alcuni aspetti come il numero di postazioni o cassette postali da spostare, per quanto tempo si desidera che la migrazione duri e se è necessaria una perfetta integrazione tra l'installazione locale e Office 365 durante la migrazione. In questa tabella vengono illustrate le opzioni di migrazione e i fattori più importanti che determinano il metodo da utilizzare.
   
 | |
 |**Opzione di migrazione**|**Dimensioni dell'organizzazione**|**Durata**|
@@ -179,9 +179,9 @@ Se si sta pensando di eseguire una migrazione ibrida completa, ecco alcuni aspet
     
 - Office 365 sarà necessario connettersi al server ibrido utilizzando Outlook Anywhere sulla porta TCP 443;
     
-- È necessario configurare la sincronizzazione della directory utilizzando Azure Active Directory Connect (AADConnect) tra i server Active Directory locali e Office 365;
+- È necessario configurare la sincronizzazione della directory utilizzando Azure Active Directory (Azure AD) Connect tra i server Active Directory locali e Office 365;
     
-- Gli utenti saranno in grado di accedere alla propria cassetta postale di Office 365 utilizzando lo stesso nome utente e la stessa password utilizzati per l'accesso alla rete locale (richiede Azure Active Directory Connect with Password Synchronization and/or Active Directory Federation Services);
+- Gli utenti saranno in grado di accedere alla propria cassetta postale di Office 365 utilizzando lo stesso nome utente e la stessa password utilizzati per accedere alla rete locale (richiede Azure AD Connect con sincronizzazione password e/o Active Directory Federation Services);
     
 - È necessaria una licenza di Office 365 che includa Exchange Online per ogni cassetta postale dell'utente di cui si esegue la migrazione.
     
@@ -219,7 +219,7 @@ Si consiglia di iniziare a eseguire la migrazione a Exchange 2016. Successivamen
 |:-----|:-----|
 |Date di fine del supporto  <br/> | Analogamente a Exchange 2007, ogni versione di Exchange ha la propria data di fine del supporto:  <br/> **Exchange 2010** -January 2020  <br/> **Exchange 2013** -April 2023  <br/> **Exchange 2016** -ottobre 2025  <br/>  Prima la data di fine del supporto, prima sarà necessario eseguire un'altra migrazione. Gennaio 2020 è molto più vicino di quanto si pensi!  <br/> |
 |Percorso di migrazione a Exchange 2010 e 2013  <br/> |Di seguito sono ritratte le fasi generali per la migrazione a Exchange 2010 o Exchange 2013:  <br/> Installare Exchange 2010 o 2013 nell'organizzazione Exchange 2007 Organization Move Services and other Infrastructure to Exchange 2010 or 2013 Move Mailboxes and Public Folders to Exchange 2010 or 2013 decommission restant Exchange 2007 Servers |
-|Percorso di migrazione a Exchange 2016  <br/> |Di seguito sono ritratte le fasi generali per la migrazione a Exchange 2016:  <br/> Installare Exchange 2013 nell'organizzazione di Exchange 2007 e negli altri servizi infrastrutturali di Exchange 2013 spostare le cassette postali e le cartelle pubbliche in Exchange 2013 rimuovere i server di Exchange 2007 restanti installare Exchange 2016 nell'ambiente esistente Organizzazione di Exchange 2013. Spostare le cassette postali, le cartelle pubbliche, i servizi e altre infrastrutture a Exchange 2016 (l'ordine non è importante). Rimuovere i server di Exchange 2013 > [!NOTE]> la migrazione da Exchange 2013 a Exchange 2016 è semplice. Entrambe le versioni presentano quasi gli stessi requisiti hardware. Questo, e il fatto che queste versioni siano compatibili, significa che è possibile ricreare un server acquistato per Exchange 2013 e installare Exchange 2016 su di esso. E, con gli spostamenti delle cassette postali online, la maggior parte degli utenti non noterà mai che la cassetta postale viene spostata dal server e poi di nuovo dopo che è stata ricreata con Exchange 2016.           |
+|Percorso di migrazione a Exchange 2016  <br/> |Di seguito sono ritratte le fasi generali per la migrazione a Exchange 2016:  <br/> Installare Exchange 2013 nell'organizzazione di Exchange 2007 e negli altri servizi infrastrutturali per Exchange 2013 spostare le cassette postali e le cartelle pubbliche in Exchange 2013 rimuovere i server di Exchange 2007 restanti installare Exchange 2016 nell'organizzazione di Exchange 2013 esistente. Spostare le cassette postali, le cartelle pubbliche, i servizi e altre infrastrutture a Exchange 2016 (l'ordine non è importante). Rimuovere i server di Exchange 2013 > [!NOTE]> la migrazione da exchange 2013 a exchange 2016 è semplice. Entrambe le versioni presentano quasi gli stessi requisiti hardware. Questo, e il fatto che queste versioni siano compatibili, significa che è possibile ricreare un server acquistato per Exchange 2013 e installare Exchange 2016 su di esso. E, con gli spostamenti delle cassette postali online, la maggior parte degli utenti non noterà mai che la cassetta postale viene spostata dal server e poi di nuovo dopo che è stata ricreata con Exchange 2016.           |
 |Coesistenza della versione  <br/> | Quando si esegue la migrazione a:  <br/> **Exchange 2016** Exchange 2016 non può essere installato in un'organizzazione che include un server Exchange 2007. Per prima cosa, è necessario eseguire la migrazione a Exchange 2010 o 2013 (si consiglia vivamente Exchange 2013), rimuovere tutti i server Exchange 2007 e quindi eseguire la migrazione a Exchange 2016.  <br/> **Exchange 2010 o exchange 2013** È possibile installare Exchange 2010 o Exchange 2013 in un'organizzazione Exchange 2007 esistente. In questo modo è possibile installare uno o più server Exchange 2010 o 2013 ed eseguire la migrazione.  <br/> |
 |Hardware dei server  <br/> | I requisiti hardware del server sono stati modificati da Exchange 2007. È necessario assicurarsi che l'hardware utilizzato sia compatibile. Per ulteriori informazioni sui requisiti hardware per ogni versione, vedere:  <br/> [Requisiti di sistema di Exchange 2016](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Requisiti di sistema di Exchange 2013](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Requisiti di sistema di Exchange 2010](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  Si noterà che, con i miglioramenti significativi nelle prestazioni di Exchange e la maggiore capacità di elaborazione e di archiviazione nei server più recenti, è probabile che siano necessari meno server per supportare lo stesso numero di cassette postali.  <br/> |
 |Versione del sistema operativo  <br/> | Le versioni minime del sistema operativo supportate per ogni versione sono le seguenti:  <br/> **Exchange 2016** Windows Server 2012  <br/> **Exchange 2013** Windows Server 2008 R2 SP1  <br/> **Exchange 2010** Windows Server 2008 SP2  <br/>  Per ulteriori informazioni sul supporto del sistema operativo, vedere [Matrix supportabilità di Exchange](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |

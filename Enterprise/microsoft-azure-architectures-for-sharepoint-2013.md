@@ -14,18 +14,16 @@ f1.keywords:
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Riepilogo: le soluzioni di SharePoint 2013 possono essere ospitate nelle macchine virtuali di Microsoft Azure. Informazioni sul tipo di soluzione adatta e su come configurare Microsoft Azure per ospitarne uno.'
-ms.openlocfilehash: 62a3668fe231e8cb5d60964a3325cc200126df12
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793739"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997898"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure Architectures for SharePoint 2013
 
- **Riepilogo:** Le soluzioni di SharePoint 2013 possono essere ospitate nelle macchine virtuali di Microsoft Azure. Informazioni sul tipo di soluzione adatta e su come configurare Microsoft Azure per ospitarne uno.
-  
-Azure è un buon ambiente per ospitare una soluzione di SharePoint Server 2013. Nella maggior parte dei casi, è consigliabile Office 365, ma una farm di SharePoint Server ospitata in Azure può essere una buona opzione per soluzioni specifiche. In questo articolo viene descritto come progettare soluzioni SharePoint in modo che siano adatte alla piattaforma di Azure. Di seguito sono illustrate le due soluzioni specifiche seguenti:
+Azure è un buon ambiente per ospitare una soluzione di SharePoint Server 2013. Nella maggior parte dei casi, è consigliabile Microsoft 365, ma una farm di SharePoint Server ospitata in Azure può essere una buona opzione per soluzioni specifiche. In questo articolo viene descritto come progettare soluzioni SharePoint in modo che siano adatte alla piattaforma di Azure. Di seguito sono illustrate le due soluzioni specifiche seguenti:
   
 - [Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -39,14 +37,14 @@ Servizi di infrastruttura di Azure è un'opzione interessante per ospitare le so
 |:-----|:-----|
 |Ambienti di sviluppo e di testing  <br/> |È facile creare e gestire questi ambienti.  <br/> |
 |Ripristino di emergenza di farm di SharePoint locali in Azure  <br/> |**Datacenter secondario ospitato** Utilizzare Azure anziché investire in un centro dati secondario in un'area diversa. <br/> **Ambienti di ripristino di emergenza con costi inferiori** Mantenere e pagare meno risorse rispetto a un ambiente di ripristino di emergenza locale. Il numero di risorse dipende dall'ambiente di ripristino di emergenza scelto: Cold standby, warm standby o hot standby. <br/> **Piattaforma più elastica** In caso di emergenza, è possibile eseguire la scalabilità orizzontale della farm di SharePoint di ripristino per soddisfare i requisiti di carico. Ridurre quando la risorsa non è più necessaria. <br/> Vedere [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Siti con connessione Internet che utilizzano caratteristiche e scala non disponibili in Office 365  <br/> |**Concentrare gli sforzi** Concentrarsi sulla creazione di un sito fantastico anziché sull'infrastruttura di costruzione. <br/> **Trarre vantaggio dall'elasticità in Azure** Ridimensiona la farm per la richiesta aggiungendo nuovi server e pagando solo le risorse di cui hai bisogno. La distribuzione dinamica del computer non è supportata (scala automatica). <br/> **Utilizzo di Azure Active Directory (ad)** Trarre vantaggio da Azure AD per gli account dei clienti. <br/> **Aggiungere la funzionalità di SharePoint non disponibile in Office 365** Aggiungere rapporti profondi e analisi Web. <br/> Per ulteriori informazioni, vedere [Internet Sites in Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
-|Farm di app per supportare ambienti Office 365 o locali  <br/> |**Creare, testare e ospitare app** in Azure per supportare ambienti locali e cloud. <br/> **Ospitare questo ruolo** in Azure anziché acquistare nuovo hardware per ambienti locali. <br/> |
+|Siti con connessione Internet che utilizzano funzionalità e scala non disponibili in Microsoft 365  <br/> |**Concentrare gli sforzi** Concentrarsi sulla creazione di un sito fantastico anziché sull'infrastruttura di costruzione. <br/> **Trarre vantaggio dall'elasticità in Azure** Ridimensiona la farm per la richiesta aggiungendo nuovi server e pagando solo le risorse di cui hai bisogno. La distribuzione dinamica del computer non è supportata (scala automatica). <br/> **Utilizzo di Azure Active Directory (ad)** Trarre vantaggio da Azure AD per gli account dei clienti. <br/> **Aggiungere la funzionalità di SharePoint non disponibile in Microsoft 365** Aggiungere rapporti profondi e analisi Web. <br/> Per ulteriori informazioni, vedere [Internet Sites in Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|Farm di app per supportare ambienti Microsoft 365 o locali  <br/> |**Creare, testare e ospitare app** in Azure per supportare ambienti locali e cloud. <br/> **Ospitare questo ruolo** in Azure anziché acquistare nuovo hardware per ambienti locali. <br/> |
    
 Per le soluzioni e i carichi di lavoro per Intranet e collaborazione, prendere in considerazione le seguenti opzioni:
   
-- Determinare se Office 365 soddisfa i requisiti aziendali o può far parte della soluzione. Office 365 fornisce un set di funzionalità RTF sempre aggiornato.
+- Determinare se Microsoft 365 soddisfa i requisiti aziendali o può essere parte della soluzione. Microsoft 365 fornisce un set di funzionalità RTF sempre aggiornato.
     
-- Se Office 365 non soddisfa tutti i requisiti aziendali, prendere in considerazione un'implementazione standard di SharePoint 2013 in locale da Microsoft Consulting Services (MCS). Un'architettura standard può essere una soluzione più rapida, economica e semplice da supportare rispetto a quella personalizzata. 
+- Se Microsoft 365 non soddisfa tutti i requisiti aziendali, prendere in considerazione un'implementazione standard di SharePoint 2013 in locale da Microsoft Consulting Services (MCS). Un'architettura standard può essere una soluzione più rapida, economica e semplice da supportare rispetto a quella personalizzata. 
     
 - Se un'implementazione standard non soddisfa i requisiti aziendali, prendere in considerazione una soluzione locale personalizzata.
     

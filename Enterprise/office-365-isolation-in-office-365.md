@@ -1,7 +1,7 @@
 ---
-title: Isolamento e controllo di accesso di Office 365 in Office 365
-ms.author: robmazz
-author: robmazz
+title: Isolamento e controllo di accesso in Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,23 +15,23 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: "Sintesi: una spiegazione dell'isolamento e del controllo di accesso all'interno delle diverse applicazioni di Office 365."
-ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
-ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
+description: "Sintesi: una spiegazione dell'isolamento e del controllo di accesso all'interno delle diverse applicazioni di Microsoft 365."
+ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892125"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998790"
 ---
-# <a name="isolation-and-access-control-in-office-365"></a>Isolamento e controllo di accesso in Office 365
+# <a name="isolation-and-access-control-in-microsoft-365"></a>Isolamento e controllo di accesso in Microsoft 365
 
-Azure Active Directory e Office 365 utilizzano un modello di dati di elevata complessità che include decine di servizi, centinaia di entità, migliaia di relazioni e decine di migliaia di attributi. A livello elevato, Azure Active Directory e le directory del servizio sono contenitori di tenant e destinatari mantenuti sincronizzati tramite protocolli di replica basati sullo stato. Oltre alle informazioni sulla directory conservate all'interno di Azure Active Directory, ognuno dei carichi di lavoro del servizio dispone di un'infrastruttura di servizi directory.
+Azure Active directo Ry (Azure AD) e Microsoft 365 utilizzano un modello di dati di elevata complessità che include decine di servizi, centinaia di entità, migliaia di relazioni e decine di migliaia di attributi. A livello elevato, Azure AD e le directory del servizio sono contenitori di tenant e destinatari mantenuti sincronizzati tramite protocolli di replica basati sullo stato. Oltre alle informazioni sulla directory conservate all'interno di Azure AD, ognuno dei carichi di lavoro del servizio ha una propria infrastruttura di servizi directory.
  
-![Sincronizzazione dei dati del tenant di Office 365](media/office-365-isolation-tenant-data-sync.png)
+![Sincronizzazione dei dati di Microsoft 365 tenant](media/office-365-isolation-tenant-data-sync.png)
 
-All'interno di questo modello non esiste un'unica origine di dati di directory. I sistemi specifici specificano singoli pezzi di dati, ma nessun singolo sistema contiene tutti i dati. I servizi di Office 365 cooperano con Azure Active Directory in questo modello di dati. Azure Active Directory è il "sistema di verità" per i dati condivisi, che in genere sono dati di piccole dimensioni e statici utilizzati da tutti i servizi. Il modello federato utilizzato all'interno di Office 365 e Azure Active Directory fornisce la visualizzazione condivisa dei dati.
+All'interno di questo modello non esiste un'unica origine di dati di directory. I sistemi specifici specificano singoli pezzi di dati, ma nessun singolo sistema contiene tutti i dati. Microsoft 365 Services coopera con Azure AD in questo modello di dati. Azure AD è il "sistema di verità" per i dati condivisi, che in genere sono dati di piccole dimensioni e statici utilizzati da tutti i servizi. Il modello federato utilizzato in Microsoft 365 e Azure AD fornisce la visualizzazione condivisa dei dati.
 
-Office 365 utilizza sia l'archiviazione fisica che lo spazio di archiviazione cloud di Azure. Exchange Online (incluso Exchange Online Protection) e Skype for business utilizzano la propria archiviazione per i dati dei clienti. SharePoint Online utilizza l'archiviazione di SQL Server e lo spazio di archiviazione di Azure, quindi la necessità di un ulteriore isolamento dei dati del cliente a livello di archiviazione.
+Microsoft 365 utilizza lo spazio di archiviazione fisico e lo spazio di archiviazione cloud di Azure. Exchange Online (incluso Exchange Online Protection) e Skype for business utilizzano la propria archiviazione per i dati dei clienti. SharePoint Online utilizza l'archiviazione di SQL Server e lo spazio di archiviazione di Azure, quindi la necessità di un ulteriore isolamento dei dati del cliente a livello di archiviazione.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -47,7 +47,7 @@ Il contenuto della cassetta postale dell'utente include:
 - Gruppi
 - Dati di inferenza
 
-Ogni database delle cassette postali in Exchange Online contiene cassette postali provenienti da più tenant. Un codice di autorizzazione protegge ogni cassetta postale, anche all'interno di una locazione. Per impostazione predefinita, solo l'utente assegnato ha accesso a una cassetta postale. L'elenco di controllo di accesso (ACL, Access Control List) che protegge una cassetta postale contiene un'identità autenticata da Azure Active Directory a livello di tenant. Le cassette postali per ogni tenant sono limitate alle identità autenticate con il provider di autenticazione del tenant, che include solo gli utenti di tale tenant. Il contenuto del tenant a non può in alcun modo essere ottenuto dagli utenti nel tenant B, a meno che non sia esplicitamente approvato dal tenant A.
+Ogni database delle cassette postali in Exchange Online contiene cassette postali provenienti da più tenant. Un codice di autorizzazione protegge ogni cassetta postale, anche all'interno di una locazione. Per impostazione predefinita, solo l'utente assegnato ha accesso a una cassetta postale. L'elenco di controllo di accesso (ACL, Access Control List) che protegge una cassetta postale contiene un'identità autenticata da Azure AD a livello di tenant. Le cassette postali per ogni tenant sono limitate alle identità autenticate con il provider di autenticazione del tenant, che include solo gli utenti di tale tenant. Il contenuto del tenant a non può in alcun modo essere ottenuto dagli utenti nel tenant B, a meno che non sia esplicitamente approvato dal tenant A.
 
 ## <a name="skype-for-business"></a>Skype for Business
 
@@ -63,7 +63,7 @@ SharePoint Online dispone di diversi meccanismi indipendenti che forniscono l'is
 
 Se un utente può accedere direttamente allo spazio di archiviazione contenente i dati, il contenuto non può essere interpretato da un essere umano o da un sistema diverso da SharePoint Online. Tali meccanismi includono il controllo dell'accesso alla sicurezza e le proprietà. Tutte le risorse di SharePoint Online sono protette dal codice di autorizzazione e dai criteri RBAC, anche all'interno di una locazione. L'elenco di controllo di accesso (ACL, Access Control List) che protegge una risorsa contiene un'identità autenticata a livello di tenant. I dati di SharePoint Online per un tenant sono limitati alle identità autenticate dal provider di autenticazione per il tenant.
 
-Oltre agli elenchi ACL, una proprietà a livello di tenant che specifica il provider di autenticazione (ovvero Azure Active Directory specifica del tenant) viene scritta una sola volta e non può essere modificata dopo l'impostazione. Dopo aver impostato la proprietà tenant del provider di autenticazione per un tenant, non è possibile modificarla utilizzando le API esposte a un tenant.
+Oltre agli elenchi ACL, una proprietà a livello di tenant che specifica il provider di autenticazione (ovvero Azure AD specifico del tenant), viene scritta una sola volta e non può essere modificata dopo l'impostazione. Dopo aver impostato la proprietà tenant del provider di autenticazione per un tenant, non è possibile modificarla utilizzando le API esposte a un tenant.
 
 Per ogni tenant viene utilizzato un *SubscriptionId* univoco. Tutti i siti dei clienti sono di proprietà di un tenant e sono assegnati a un *SubscriptionId* univoco per il tenant. La proprietà *SubscriptionId* di un sito viene scritta una volta ed è permanente. Una volta assegnata a un tenant, un sito non può essere spostato in un altro tenant. *SubscriptionId* è la chiave utilizzata per creare l'ambito di sicurezza per il provider di autenticazione ed è associato al tenant.
 

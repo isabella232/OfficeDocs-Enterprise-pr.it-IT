@@ -1,7 +1,7 @@
 ---
-title: Office 365 difesa dei servizi cloud per gli attacchi Denial of Service
-ms.author: robmazz
-author: robmazz
+title: Difesa dei servizi cloud di Microsoft 365 per gli attacchi Denial of Service
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,21 +15,21 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: In che modo Microsoft difende i propri servizi cloud contro gli attacchi DoS (Denial of Service).
-ms.openlocfilehash: 042748927ddfa4d81fa3c62b98ab8f1114a8ada0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843617"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998330"
 ---
-# <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>Difesa dei servizi cloud Microsoft in base agli attacchi Denial of Service
+# <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Difesa dei servizi cloud di Microsoft 365 per gli attacchi Denial of Service
 
 ## <a name="introduction"></a>Introduzione
 I datacenter Microsoft sono protetti da una sicurezza di difesa approfondita che include recinzioni perimetrali, telecamere, personale di sicurezza e accessi sicuri che utilizzano la biometria, la smartcard e l'autenticazione a più fattori. La sicurezza della difesa in profondità continua attraverso tutte le aree della struttura e di ogni unità server fisica. Il [gruppo Infrastructure and Operations di Microsoft Cloud](https://www.microsoft.com/cloud-platform/global-datacenters) fornisce l'infrastruttura di base e le tecnologie fondamentali per i servizi cloud. I datacenter sono conformi agli standard del settore per la sicurezza fisica e l'affidabilità e sono gestiti, monitorati e amministrati dal personale Microsoft Operations.
 
 Per proteggere ulteriormente i servizi cloud, Microsoft fornisce un sistema di difesa DDoS che fa parte del monitoraggio continuo di Microsoft Azure e dei processi di test di penetrazione. Il sistema di difesa DDoS di Azure è stato creato non solo per resistere agli attacchi dall'esterno, ma anche da altri tenant di Azure. Azure utilizza tecniche di rilevamento e attenuazione standard, ad esempio i cookie SYN, la limitazione della velocità e i limiti di connessione per la protezione da attacchi DDoS.
 
-I servizi cloud di Microsoft sono soggetti alla minaccia di attacchi provenienti da più origini. Per attenuare e proteggere le varie minacce DoS, sono stati sviluppati e implementati un sistema di prevenzione e rilevamento delle minacce basato su Azure estremamente scalabile e dinamico con l'obiettivo primario di proteggere l'infrastruttura sottostante da DoS consente di evitare interruzioni del servizio per i clienti dei servizi cloud. Il sistema di attenuazione di Azure DoS protegge il traffico in ingresso, in uscita e tra aree geografiche.
+I servizi cloud di Microsoft sono soggetti alla minaccia di attacchi provenienti da più origini. Per attenuare e proteggere le varie minacce DoS, sono stati sviluppati e implementati un sistema di prevenzione e rilevamento delle minacce basato su Azure estremamente scalabile e dinamico con l'obiettivo primario di proteggere l'infrastruttura sottostante dagli attacchi DoS e di evitare interruzioni del servizio per i clienti dei servizi cloud. Il sistema di attenuazione di Azure DoS protegge il traffico in ingresso, in uscita e tra aree geografiche.
 
 La maggior parte degli attacchi DoS è stata avviata contro gli obiettivi dei layer Network (L3) e Transport (L4) del modello OSI ( [Open Systems Interconnection](https://docs.microsoft.com/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model) ). Gli attacchi diretti ai layer L3 e L4 sono stati studiati per inondare un'interfaccia o un servizio di rete con traffico di attacco per sopraffare le risorse e negare la possibilità di rispondere al traffico legittimo. In particolare, gli attacchi L3 e L4 tentano di saturare la capacità dei collegamenti di rete, i dispositivi o i servizi o sopraffare le CPU dei server o delle macchine virtuali che supportano un'applicazione.
 
