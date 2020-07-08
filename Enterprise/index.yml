@@ -1,47 +1,47 @@
 ### YamlMime:Landing
-title: Documentazione relativa a Office 365 Enterprise
-summary: In questa pagina vengono fornite indicazioni per gli amministratori e i professionisti IT che distribuiscono, configurano e gestiscono i servizi di Office 365 nelle organizzazioni aziendali.
+title: Documentazione relativa a Microsoft 365 e Office 365 Enterprise
+summary: In questa pagina vengono forniti collegamenti alle linee guida per gli amministratori e i professionisti IT che distribuiscono, configurano e gestiscono i servizi Microsoft 365 e Office 365 nelle organizzazioni aziendali.
 metadata:
-  title: Documentazione relativa a Office 365 Enterprise
-  description: In questa pagina vengono fornite indicazioni per gli amministratori e i professionisti IT che distribuiscono, configurano e gestiscono i servizi di Office 365 nelle organizzazioni aziendali.
+  title: Documentazione relativa a Microsoft 365 e Office 365 Enterprise
+  description: In questa pagina vengono forniti collegamenti alle linee guida per gli amministratori e i professionisti IT che distribuiscono, configurano e gestiscono i servizi Microsoft 365 e Office 365 nelle organizzazioni aziendali.
   ms.service: o365-solutions
   ms.topic: landing-page
   author: wingtofree
   ms.author: v-qingao
   ms.date: 03/12/2020
-  ms.openlocfilehash: 8397c93d6632710a036b2de7ef604451c5c42e70
-  ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+  ms.openlocfilehash: c01461934a08d3baf314c35bbb0c0e3eed34f9f8
+  ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 05/03/2020
-  ms.locfileid: "44009291"
+  ms.lasthandoff: 07/07/2020
+  ms.locfileid: "45052449"
 landingContent:
-- title: Informazioni su Office 365 Enterprise
+- title: Informazioni su Microsoft 365 e Office 365 Enterprise
   linkLists:
   - linkListType: deploy
     links:
+    - text: Adottare Microsoft 365 con FastTrack
+      url: https://www.microsoft.com/fasttrack/microsoft-365
     - text: Adottare Office 365 con FastTrack
       url: https://www.microsoft.com/fasttrack/microsoft-365/office-365
-    - text: Eseguire la migrazione dei dati dell'organizzazione a Office 365 Enterprise
+    - text: Distribuire Microsoft 365 per l'organizzazione
+      url: setup-overview-for-enterprises.md
+    - text: Eseguire la migrazione dei dati dell'organizzazione a Microsoft 365
       url: migrate-data-to-office-365.md
     - text: Guida alla distribuzione di Microsoft 365 Apps for Enterprise
       url: https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps
-    - text: Distribuire Office 365 Enterprise per l'organizzazione
-      url: setup-overview-for-enterprises.md
-    - text: Distribuzioni ibride
-      url: microsoft-cloud-it-architecture-resources.md
   - linkListType: learn
     links:
     - text: Introduzione a Microsoft 365
       url: https://support.office.com/article/office-365-admin-and-it-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5
-- title: Distribuire i carichi di lavoro di Office 365
+- title: Distribuire i carichi di lavoro di Microsoft 365 e Office 365
   linkLists:
   - linkListType: overview
     links:
     - text: Exchange Online
       url: https://docs.microsoft.com/Exchange/exchange-online
-    - text: SharePoint Online
-      url: https://support.office.com/article/sharepoint-online-%E2%80%93-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
+    - text: SharePoint
+      url: https://docs.microsoft.com/sharepoint/introduction
     - text: Skype for Business Online
       url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
     - text: Microsoft Teams
@@ -49,20 +49,22 @@ landingContent:
     - text: Power BI
       url: https://docs.microsoft.com/power-bi
     - text: Yammer
-      url: https://support.office.com/yammer
+      url: https://microsoft.office.com/yammer
 - title: Altre risorse
   linkLists:
   - linkListType: overview
     links:
+    - text: Microsoft 365 Tech community
+      url: https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365
     - text: Office 365 Tech Community
       url: https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365
     - text: Ottenere supporto
       url: https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
   - linkListType: learn
     links:
-    - text: Altre informazioni su Microsoft 365
+    - text: Centro assistenza Microsoft 365
       url: https://docs.microsoft.com/microsoft-365
-    - text: Ulteriori informazioni sulla conformità a Microsoft 365
+    - text: Conformità di Microsoft 365
       url: https://docs.microsoft.com/microsoft-365/compliance/
-    - text: Ulteriori informazioni sulla sicurezza di Microsoft 365
+    - text: Sicurezza di Microsoft 365
       url: https://docs.microsoft.com/microsoft-365/security/
