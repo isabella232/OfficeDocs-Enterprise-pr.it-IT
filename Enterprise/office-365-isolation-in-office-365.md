@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: "Sintesi: una spiegazione dell'isolamento e del controllo di accesso all'interno delle diverse applicazioni di Microsoft 365."
-ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: fc0aa37025936a1a60cfbb8914b079eba5ba2e7f
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998790"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052589"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Isolamento e controllo di accesso in Microsoft 365
 
-Azure Active directo Ry (Azure AD) e Microsoft 365 utilizzano un modello di dati di elevata complessità che include decine di servizi, centinaia di entità, migliaia di relazioni e decine di migliaia di attributi. A livello elevato, Azure AD e le directory del servizio sono contenitori di tenant e destinatari mantenuti sincronizzati tramite protocolli di replica basati sullo stato. Oltre alle informazioni sulla directory conservate all'interno di Azure AD, ognuno dei carichi di lavoro del servizio ha una propria infrastruttura di servizi directory.
+Azure Active Directory (Azure AD) e Microsoft 365 utilizzano un modello di dati di elevata complessità che include decine di servizi, centinaia di entità, migliaia di relazioni e decine di migliaia di attributi. A livello elevato, Azure AD e le directory del servizio sono contenitori di tenant e destinatari mantenuti sincronizzati tramite protocolli di replica basati sullo stato. Oltre alle informazioni sulla directory conservate all'interno di Azure AD, ognuno dei carichi di lavoro del servizio ha una propria infrastruttura di servizi directory.
  
 ![Sincronizzazione dei dati di Microsoft 365 tenant](media/office-365-isolation-tenant-data-sync.png)
 

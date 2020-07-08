@@ -13,18 +13,18 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 si sta avvicinando alla fine del supporto. Utilizzare questa roadmap di pianificazione come guida per preparare l'aggiornamento a Exchange Online o a una versione più recente di Exchange Server locale.
-ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 2d7ab96d065ffd2d85427f320ce01e3b9023891f
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998044"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052469"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Guida di orientamento alla fine del supporto di Exchange 2010
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
-Il **13 ottobre 2020**, Exchange Server 2010 raggiungerà la fine del supporto. Se non è già stata avviata la migrazione da Exchange 2010 a Office 365 o Exchange 2016, ora è il momento di iniziare la pianificazione.
+Il **13 ottobre 2020**, Exchange Server 2010 raggiungerà la fine del supporto. Se non è già stata avviata la migrazione da Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ora è il momento di iniziare la pianificazione.
 
 ## <a name="what-does-end-of-support-mean"></a>Cosa significa fine del supporto?
 
@@ -44,17 +44,17 @@ Per ulteriori informazioni sui server di Office 2010 che si avvicinano alla fine
 
 Con Exchange 2010 che raggiunge la fine del supporto, questo è il momento ideale per esplorare le opzioni e preparare un piano di migrazione. È possibile:
 
-- Eseguire la migrazione completa a Office 365. Eseguire la migrazione delle cassette postali utilizzando completa, una migrazione ibrida minima o completa, quindi rimuovere i server Exchange locali e Active Directory.
+- Eseguire la migrazione completa a Microsoft 365. Eseguire la migrazione delle cassette postali utilizzando completa, una migrazione ibrida minima o completa, quindi rimuovere i server Exchange locali e Active Directory.
 - Eseguire la migrazione dei server Exchange 2010 a Exchange 2016 nei server locali.
 
 > [!IMPORTANT]
-> Se l'organizzazione sceglie di eseguire la migrazione delle cassette postali a Office 365 ma intende mantenere DirSync o Azure AD Connect sul posto per continuare a gestire gli account utente da Active Directory locale, è necessario mantenere almeno un server Exchange locale. Se l'ultimo server Exchange è stato rimosso, non sarà possibile apportare modifiche ai destinatari di Exchange in Exchange Online. Ciò è dovuto al fatto che l'origine dell'autorità rimane in Active Directory locale e che devono essere apportate modifiche. In questo scenario, sono disponibili le opzioni seguenti:
+> Se l'organizzazione sceglie di eseguire la migrazione delle cassette postali a Microsoft 365 ma intende mantenere DirSync o Azure AD Connect sul posto per continuare a gestire gli account utente da Active Directory locale, è necessario mantenere almeno un server Exchange locale. Se l'ultimo server Exchange è stato rimosso, non sarà possibile apportare modifiche ai destinatari di Exchange in Exchange Online. Ciò è dovuto al fatto che l'origine dell'autorità rimane in Active Directory locale e che devono essere apportate modifiche. In questo scenario, sono disponibili le opzioni seguenti:
 
-- (**Scelta consigliata**) Se è possibile eseguire la migrazione delle cassette postali a Office 365 e aggiornare i server entro il 13 ottobre 2020, utilizzare Exchange 2010 per connettersi a Office 365 e migrare le cassette postali. Successivamente, eseguire la migrazione di Exchange 2010 a Exchange 2016 e rimuovere i server Exchange 2010 restanti.
-- Se non è possibile completare la migrazione delle cassette postali e l'aggiornamento del server locale entro il 13 ottobre 2020, aggiornare i server Exchange 2010 locali a Exchange 2016 prima, quindi utilizzare Exchange 2016 per connettersi a Office 365 e migrare le cassette postali.
+- (**Scelta consigliata**) Se è possibile eseguire la migrazione delle cassette postali a Microsoft 365 e aggiornare i server entro il 13 ottobre 2020, utilizzare Exchange 2010 per connettersi a Microsoft 365 e migrare le cassette postali. Successivamente, eseguire la migrazione di Exchange 2010 a Exchange 2016 e rimuovere i server Exchange 2010 restanti.
+- Se non è possibile completare la migrazione delle cassette postali e l'aggiornamento del server locale entro il 13 ottobre 2020, aggiornare i server Exchange 2010 locali a Exchange 2016 prima, quindi utilizzare Exchange 2016 per connettersi a Microsoft 365 e migrare le cassette postali.
 
 > [!NOTE]
-> Anche se un po' più complicato, è possibile eseguire la migrazione delle cassette postali a Office 365 durante la migrazione dei server Exchange 2010 locali a Exchange 2016.
+> Anche se un po' più complicato, è possibile eseguire la migrazione delle cassette postali a Microsoft 365 durante la migrazione dei server Exchange 2010 locali a Exchange 2016.
 
 Di seguito sono riportati i tre percorsi che è possibile eseguire per evitare la fine del supporto per Exchange Server 2010.
 
@@ -62,27 +62,27 @@ Di seguito sono riportati i tre percorsi che è possibile eseguire per evitare l
 
 Nelle sezioni seguenti vengono esplorate tutte le opzioni in modo più dettagliato.
 
-## <a name="migrate-to-office-365"></a>Eseguire la migrazione a Office 365
+## <a name="migrate-to-microsoft-365"></a>Eseguire la migrazione a Microsoft 365
 
-La migrazione della posta elettronica a Office 365 è l'opzione migliore e più semplice per ritirare la distribuzione di Exchange 2010. Con una migrazione a Office 365, è possibile creare un singolo hop dalla tecnologia obsoleta alle funzionalità di stato-of-the-Art, ad esempio:
+La migrazione della posta elettronica a Microsoft 365 è l'opzione migliore e più semplice per ritirare la distribuzione di Exchange 2010. Con una migrazione a Microsoft 365, è possibile creare un singolo hop dalla tecnologia obsoleta alle funzionalità di stato-of-the-Art, ad esempio:
 
 - Funzionalità di conformità, ad esempio i criteri di conservazione, il blocco sul posto e la controversia legale, la eDiscovery sul posto e altro ancora;
 - Microsoft Teams;
 - Power BI;
 - Posta in arrivo evidenziata;
-- Approfondire le analisi;
+- MyAnalytics
 
-Office 365 ottiene le nuove caratteristiche e le esperienze prima e gli utenti possono iniziare a usarli immediatamente. Oltre alle nuove funzionalità, non è necessario preoccuparsi di quanto segue:
+Microsoft 365 è in grado di ottenere le nuove caratteristiche e le esperienze prima e gli utenti possono iniziare a usarli immediatamente. Oltre alle nuove funzionalità, non è necessario preoccuparsi di quanto segue:
 
 - Acquistare e gestire l'hardware;
 - Pagamento del riscaldamento e del raffreddamento dei server;
 - Aggiornamento delle correzioni per la sicurezza, il prodotto e il fuso orario;
 - Gestione dell'archiviazione e del software per il supporto dei requisiti di conformità;
-- Aggiornamento a una nuova versione di Exchange-si è sempre nella versione più recente di Exchange in Office 365.
+- Aggiornamento a una nuova versione di Exchange-si è sempre nella versione più recente di Exchange in Microsoft 365.
 
-### <a name="how-should-i-migrate-to-office-365"></a>Come si esegue la migrazione a Office 365?
+### <a name="how-should-i-migrate-to-microsoft-365"></a>Come è possibile eseguire la migrazione a Microsoft 365?
 
-A seconda dell'organizzazione, sono disponibili alcune opzioni che consentono di accedere a Office 365. Quando si sceglie un'opzione di migrazione, è necessario prendere in considerazione alcuni aspetti come il numero di postazioni o cassette postali da spostare, per quanto tempo si desidera che la migrazione duri e se è necessaria una perfetta integrazione tra l'installazione locale e Office 365 durante la migrazione. In questa tabella vengono illustrate le opzioni di migrazione e i fattori più importanti che determinano il metodo da utilizzare.
+A seconda dell'organizzazione, sono disponibili alcune opzioni che consentiranno di accedere a Microsoft 365. Quando si sceglie un'opzione di migrazione, è necessario prendere in considerazione alcuni aspetti come il numero di postazioni o di cassette postali da spostare, la durata della migrazione e l'eventuale necessità di una perfetta integrazione tra l'installazione locale e Microsoft 365 durante la migrazione. In questa tabella vengono illustrate le opzioni di migrazione e i fattori più importanti che determinano il metodo da utilizzare.
 
 | **Opzione di migrazione**     | **Dimensioni dell'organizzazione** | **Durata**        |
 |--------------------------|-----------------------|---------------------|
@@ -94,19 +94,19 @@ Nelle sezioni seguenti viene illustrata una panoramica di questi metodi. Per inf
 
 ### <a name="cutover-migration"></a>Migrazione completa
 
-Una migrazione di completa è quella in cui, a una data e un'ora preselezionate, si eseguirà la migrazione di tutte le cassette postali, i gruppi di distribuzione, i contatti e così via, a Office 365; al termine, chiudere i server Exchange locali e iniziare a usare Office 365 in modo esclusivo.
+Una migrazione di completa è quella in cui, a una data e un'ora preselezionate, si eseguirà la migrazione di tutte le cassette postali, i gruppi di distribuzione, i contatti e così via, a Office 365; al termine, chiudere i server Exchange locali e iniziare a usare esclusivamente Microsoft 365.
 
-Il metodo di migrazione di completa è ideale per le organizzazioni di piccole dimensioni che non dispongono di molte cassette postali, che desiderano accedere rapidamente a Office 365 e che non si desidera gestire alcune delle complessità degli altri metodi. Ma è anche un po' limitata perché dovrebbe essere completata in una settimana o meno e perché richiede agli utenti di riconfigurare i profili di Outlook. Anche se la migrazione di completa è in grado di gestire fino a 2.000 cassette postali, è consigliabile eseguire la migrazione di un massimo di 150 cassette postali con questo metodo. Se si tenta di eseguire la migrazione di più di 150 cassette postali, si potrebbe esaurire il tempo necessario per trasferire tutte le cassette postali prima della scadenza e il personale di supporto IT potrebbe ottenere una maggiore assistenza per gli utenti nella riconfigurazione di Outlook.
+Il metodo di migrazione di completa è ideale per le organizzazioni di piccole dimensioni che non dispongono di molte cassette postali, che desiderano accedere rapidamente a Microsoft 365 e che non si desidera gestire alcune delle complessità degli altri metodi. Ma è anche un po' limitata perché dovrebbe essere completata in una settimana o meno e perché richiede agli utenti di riconfigurare i profili di Outlook. Anche se la migrazione di completa è in grado di gestire fino a 2.000 cassette postali, è consigliabile eseguire la migrazione di un massimo di 150 cassette postali con questo metodo. Se si tenta di eseguire la migrazione di più di 150 cassette postali, si potrebbe esaurire il tempo necessario per trasferire tutte le cassette postali prima della scadenza e il personale di supporto IT potrebbe ottenere una maggiore assistenza per gli utenti nella riconfigurazione di Outlook.
 
-Se si sta pensando di eseguire una migrazione completa, è necessario considerare quanto segue:
+Se si sta pensando di eseguire una migrazione di completa, è necessario considerare alcuni aspetti seguenti:
 
-- Office 365 deve connettersi ai server Exchange 2010 utilizzando Outlook Anywhere sulla porta TCP 443;
-- Tutte le cassette postali locali verranno spostate in Office 365;
+- Microsoft 365 dovrà connettersi ai server Exchange 2010 utilizzando Outlook Anywhere sulla porta TCP 443;
+- Tutte le cassette postali locali verranno spostate in Microsoft 365;
 - È necessario un account di amministratore locale che abbia accesso per leggere il contenuto delle cassette postali degli utenti.
-- I domini accettati di Exchange 2010 che si desidera utilizzare in Office 365 devono essere aggiunti come domini verificati nel servizio.
-- Tra il momento in cui si avvia la migrazione e quando si inizia la fase di completamento, Office 365 sincronizza periodicamente le cassette postali di Office 365 e locali. In questo modo è possibile completare la migrazione senza preoccuparsi del fatto che la posta elettronica venga lasciata nelle cassette postali locali.
-- Gli utenti riceveranno nuove password temporanee per l'account di Office 365 che dovranno cambiare quando accedono alle proprie cassette postali per la prima volta.
-- È necessaria una licenza di Office 365 che includa Exchange Online per ogni cassetta postale dell'utente di cui si esegue la migrazione.
+- I domini accettati di Exchange 2010 che si desidera utilizzare in Microsoft 365 devono essere aggiunti come domini verificati nel servizio.
+- Tra il momento in cui si avvia la migrazione e quando si inizia la fase di completamento, Microsoft 365 sincronizza periodicamente le cassette postali di Microsoft 365 e locali. In questo modo è possibile completare la migrazione senza preoccuparsi del fatto che la posta elettronica venga lasciata nelle cassette postali locali.
+- Gli utenti riceveranno nuove password temporanee per l'account Microsoft 365 che dovranno cambiare quando accedono alle proprie cassette postali per la prima volta.
+- È necessaria una licenza di Microsoft 365 che includa Exchange Online per ogni cassetta postale dell'utente di cui si esegue la migrazione.
 - Gli utenti dovranno impostare un nuovo profilo di Outlook su ciascuno dei propri dispositivi e scaricare di nuovo la posta elettronica. La quantità di messaggi di posta elettronica che Outlook scaricherà può variare. Per ulteriori informazioni, vedere [modificare la quantità di posta da mantenere offline](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&rs=en-US&ad=US&fromAR=1).
 
 Per ulteriori informazioni sulla migrazione di completa, vedere:
@@ -116,43 +116,43 @@ Per ulteriori informazioni sulla migrazione di completa, vedere:
 
 ### <a name="minimal-hybrid-migration"></a>Migrazione ibrida minima
 
-Una migrazione minima ibrida o espressa è quella in cui si dispone di poche centinaia di cassette postali di cui si desidera eseguire la migrazione a Office 365, è possibile completare la migrazione entro poche settimane e non è necessaria alcuna funzionalità di migrazione ibrida avanzata, ad esempio le informazioni sulla disponibilità del calendario condivise.
+Una migrazione minima ibrida o espressa è quella in cui si dispone di poche centinaia di cassette postali di cui si desidera eseguire la migrazione a Microsoft 365, è possibile completare la migrazione entro poche settimane e non è necessaria alcuna funzionalità di migrazione ibrida avanzata, ad esempio le informazioni sulla disponibilità del calendario condivise.
 
-La migrazione ibrida minima è ideale per le organizzazioni che devono richiedere più tempo per eseguire la migrazione delle cassette postali a Office 365, ma comunque pianificano di completare la migrazione entro poche settimane. È possibile ottenere alcuni vantaggi della migrazione ibrida completa più avanzata senza molte delle complessità. È possibile controllare il numero di cassette postali di cui è stata eseguita la migrazione in un determinato momento. Le cassette postali di Office 365 verranno create con il nome utente e le password degli account locali. a differenza delle migrazioni di completa, gli utenti non dovranno ricreare i profili di Outlook.
+La migrazione ibrida minima è ideale per le organizzazioni che devono richiedere più tempo per eseguire la migrazione delle cassette postali a Microsoft 365, ma comunque pianificano di completare la migrazione entro poche settimane. È possibile ottenere alcuni vantaggi della migrazione ibrida completa più avanzata senza molte delle complessità. È possibile controllare il numero di cassette postali di cui è stata eseguita la migrazione in un determinato momento. Le cassette postali di Microsoft 365 verranno create con il nome utente e la password degli account locali. a differenza delle migrazioni di completa, gli utenti non dovranno ricreare i profili di Outlook.
 
 Se si sta pensando di eseguire una migrazione ibrida minima, ecco alcuni aspetti da considerare:
 
-- È necessario eseguire una sincronizzazione della directory singola tra i server Active Directory locali e Office 365;
-- Gli utenti saranno in grado di accedere alla propria cassetta postale di Office 365 usando lo stesso nome utente e la stessa password che stavano usando quando la loro cassetta postale è stata migrata;
-- È necessaria una licenza di Office 365 che includa Exchange Online per ogni cassetta postale dell'utente di cui si esegue la migrazione.
+- È necessario eseguire una sincronizzazione della directory singola tra i server Active Directory locali e Microsoft 365;
+- Gli utenti saranno in grado di accedere alla propria cassetta postale Microsoft 365 usando lo stesso nome utente e la stessa password che stavano usando quando la loro cassetta postale è stata migrata;
+- È necessaria una licenza di Microsoft 365 che includa Exchange Online per ogni cassetta postale dell'utente di cui si esegue la migrazione.
 - Gli utenti non devono configurare un nuovo profilo di Outlook sulla maggior parte dei dispositivi (alcuni telefoni Android meno recenti potrebbero necessitare di un nuovo profilo) e non dovranno riscaricare i messaggi di posta elettronica.
 
 Per ulteriori informazioni sulla migrazione ibrida minima, vedere [use minimal Hybrid per eseguire rapidamente la migrazione delle cassette postali di Exchange a Office 365](https://support.office.com/article/Use-Minimal-Hybrid-to-quickly-migrate-Exchange-mailboxes-to-Office-365-fdecceed-0702-4af3-85be-f2a0013937ef)
 
 ### <a name="full-hybrid"></a>Full Hybrid
 
-Una migrazione ibrida completa è quella in cui l'organizzazione ha molte centinaia, fino a decine di migliaia, di cassette postali e si desidera spostarne alcune o tutte in Office 365. Poiché queste migrazioni sono in genere più a lungo termine, le migrazioni ibride consentono di:
+Una migrazione ibrida completa è quella in cui l'organizzazione ha molte centinaia, fino a decine di migliaia, di cassette postali e si desidera spostarne alcune o tutte a Microsoft 365. Poiché queste migrazioni sono in genere più a lungo termine, le migrazioni ibride consentono di:
 
-- Mostra agli utenti locali le informazioni sui calendari sulla disponibilità per gli utenti di Office 365 e viceversa;
-- Consultare un elenco indirizzi globale unificato che contiene i destinatari sia in locale che in Office 365;
-- Visualizzare le schede del destinatario di Outlook complete per tutti gli utenti, indipendentemente dal fatto che si trovino in locale o in Office 365;
+- Mostra agli utenti locali le informazioni sulla disponibilità per gli utenti in Microsoft 365 e viceversa;
+- Consultare un elenco indirizzi globale unificato che contiene i destinatari sia in locale che in Microsoft 365;
+- Visualizzare le proprietà dei destinatari di Outlook completi per tutti gli utenti, indipendentemente dal fatto che si trovino in locale o in Microsoft 365;
 - Proteggere la comunicazione tramite posta elettronica tra i server Exchange locali e Office 365 tramite TLS e certificati;
-- Trattare i messaggi inviati tra i server Exchange locali e Office 365 come interni, consentendo loro di:
+- Trattare i messaggi inviati tra i server Exchange locali e Microsoft 365 come interni, consentendo loro di:
 - Essere valutato ed elaborati correttamente dagli agenti di trasporto e conformità destinati ai messaggi interni;
 - Ignorare i filtri di protezione dalla posta indesiderata.
 
-Le migrazioni ibride complete sono le migliori per le organizzazioni che si aspettano di rimanere in una configurazione ibrida per molti mesi o più. Verranno riportate le funzionalità elencate in precedenza in questa sezione, oltre alla sincronizzazione della directory, alle funzionalità di conformità integrate e alla possibilità di spostare le cassette postali da e verso Office 365 utilizzando gli spostamenti delle cassette postali online. Office 365 diventa un'estensione dell'organizzazione locale.
+Le migrazioni ibride complete sono le migliori per le organizzazioni che si aspettano di rimanere in una configurazione ibrida per molti mesi o più. Verranno riportate le funzionalità elencate in precedenza in questa sezione, oltre alla sincronizzazione della directory, alle funzionalità di conformità integrate e alla possibilità di spostare le cassette postali da e verso Microsoft 365 utilizzando gli spostamenti delle cassette postali online. Microsoft 365 diventa un'estensione dell'organizzazione locale.
 
 Se si sta pensando di eseguire una migrazione ibrida completa, ecco alcuni aspetti da considerare:
 
 - Le migrazioni ibride complete non sono adatte a tutti i tipi di organizzazioni. A causa della complessità delle migrazioni ibride complete, le organizzazioni con meno di poche centinaia di cassette postali in genere non vedono vantaggi che giustificano lo sforzo e i costi necessari per impostarne uno. Se questa operazione suona come la propria organizzazione, è consigliabile considerare invece completa o le migrazioni ibride minime;
-- È necessario configurare la sincronizzazione della directory utilizzando Azure Active Directory (Azure AD) Connect tra i server Active Directory locali e Office 365;
-- Gli utenti saranno in grado di accedere alla propria cassetta postale di Office 365 utilizzando lo stesso nome utente e la stessa password utilizzati per accedere alla rete locale (richiede Azure AD Connect con sincronizzazione password e/o Active Directory Federation Services);
-- È necessaria una licenza di Office 365 che includa Exchange Online per ogni cassetta postale dell'utente di cui si esegue la migrazione.
+- È necessario configurare la sincronizzazione della directory utilizzando Azure Active Directory (Azure AD) Connect tra i server Active Directory locali e Microsoft 365;
+- Gli utenti saranno in grado di accedere alla propria cassetta postale Microsoft 365 utilizzando lo stesso nome utente e la stessa password utilizzati per accedere alla rete locale (richiede Azure AD Connect con sincronizzazione password e/o Active Directory Federation Services);
+- È necessaria una licenza di Microsoft 365 che includa Exchange Online per ogni cassetta postale dell'utente di cui si esegue la migrazione.
 - Gli utenti non devono configurare un nuovo profilo di Outlook sulla maggior parte dei dispositivi (alcuni telefoni Android meno recenti potrebbero necessitare di un nuovo profilo) e non dovranno riscaricare i messaggi di posta elettronica.
 
 > [!IMPORTANT]
-> Se l'organizzazione sceglie di eseguire la migrazione delle cassette postali a Office 365 ma intende mantenere DirSync o Azure AD Connect sul posto per continuare a gestire gli account utente da Active Directory locale, è necessario mantenere almeno un server Exchange locale. Se l'ultimo server Exchange è stato rimosso, non sarà possibile apportare modifiche ai destinatari di Exchange in Exchange Online. Ciò è dovuto al fatto che l'origine dell'autorità rimane in Active Directory locale e che devono essere apportate modifiche.
+> Se l'organizzazione sceglie di eseguire la migrazione delle cassette postali a Microsoft 365 ma intende mantenere DirSync o Azure AD Connect sul posto per continuare a gestire gli account utente da Active Directory locale, è necessario mantenere almeno un server Exchange locale. Se l'ultimo server Exchange è stato rimosso, non sarà possibile apportare modifiche ai destinatari di Exchange in Exchange Online. Ciò è dovuto al fatto che l'origine dell'autorità rimane in Active Directory locale e che devono essere apportate modifiche.
 
 Se una migrazione ibrida completa è adatta per l'utente, vedere le risorse seguenti per aiutarti a eseguire la migrazione:
 
@@ -164,11 +164,11 @@ Se una migrazione ibrida completa è adatta per l'utente, vedere le risorse segu
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>Eseguire l'aggiornamento a una versione più recente di Exchange Server locale
 
-Anche se si ritiene che sia possibile ottenere il massimo valore e l'esperienza utente eseguendo una migrazione completa a Office 365, è inoltre necessario che alcune organizzazioni debbano mantenere i server Exchange locali. Questo potrebbe essere dovuto ai requisiti normativi, per garantire che i dati non siano archiviati in un datacenter situato in un altro paese o che potrebbero essere perché si dispone di impostazioni o requisiti univoci che non possono essere soddisfatti nel cloud oppure è possibile che sia necessario Exchange per gestire le cassette postali cloud perché è ancora in uso Active Directory locale. In ogni caso, per il quale si sceglie o si ha la necessità di mantenere Exchange locale, è necessario assicurarsi che l'ambiente di Exchange 2010 sia stato aggiornato ad almeno Exchange 2013 o Exchange 2016 ed Exchange 2010 sia stato rimosso prima della data di fine del supporto.
+Anche se si ritiene che sia possibile ottenere il massimo valore e l'esperienza utente eseguendo una migrazione completa a Microsoft 365, è inoltre chiaro che alcune organizzazioni devono mantenere i server Exchange locali. Questo potrebbe essere dovuto ai requisiti normativi, per garantire che i dati non siano archiviati in un datacenter situato in un altro paese o che potrebbero essere perché si dispone di impostazioni o requisiti univoci che non possono essere soddisfatti nel cloud oppure è possibile che sia necessario Exchange per gestire le cassette postali cloud perché è ancora in uso Active Directory locale. In ogni caso, per il quale si sceglie o si ha la necessità di mantenere Exchange locale, è necessario assicurarsi che l'ambiente di Exchange 2010 sia stato aggiornato ad almeno Exchange 2013 o Exchange 2016 ed Exchange 2010 sia stato rimosso prima della data di fine del supporto.
 
 Per un'esperienza ottimale, è consigliabile aggiornare l'ambiente locale rimanente a Exchange 2016. Non è necessario installare Exchange Server 2013 se si vuole andare direttamente da Exchange Server 2010 a Exchange Server 2016.
 
-Exchange 2016 include tutte le funzionalità e gli avanzamenti inclusi nelle versioni precedenti di Exchange e corrisponde più fedelmente all'esperienza disponibile con Office 365 (anche se alcune funzionalità sono disponibili solo in Office 365). Vedere solo alcune delle cose che mancano:
+Exchange 2016 include tutte le funzionalità e gli avanzamenti inclusi nelle versioni precedenti di Exchange e corrisponde più fedelmente all'esperienza disponibile con Microsoft 365 (anche se alcune funzionalità sono disponibili solo in Microsoft 365). Vedere solo alcune delle cose che sono state mancanti:
 
 | **Versione di Exchange**                     | **Caratteristiche**                                                                                                                                                                                                                                         |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -226,9 +226,9 @@ Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi
       
 ## <a name="what-if-i-need-help"></a>Cosa succede se si ha bisogno di assistenza?
 
-Se si esegue la migrazione a Office 365, potrebbe essere possibile utilizzare il servizio Microsoft FastTrack. In FastTrack sono disponibili procedure consigliate, strumenti e risorse che consentono di eseguire la migrazione a Office 365 nel modo più semplice possibile. È consigliabile disporre di un supporto tecnico reale che consentirà di eseguire la migrazione, dalla pianificazione e progettazione fino alla migrazione dell'ultima cassetta postale. Se si desiderano ulteriori informazioni su FastTrack, vedere [Microsoft FastTrack](https://fasttrack.microsoft.com/).
+Se si esegue la migrazione a Microsoft 365, potrebbe essere possibile utilizzare il servizio Microsoft FastTrack. In FastTrack sono disponibili procedure consigliate, strumenti e risorse che consentono di eseguire la migrazione a Microsoft 365 nel modo più semplice possibile. È consigliabile disporre di un supporto tecnico reale che consentirà di eseguire la migrazione, dalla pianificazione e progettazione fino alla migrazione dell'ultima cassetta postale. Se si desiderano ulteriori informazioni su FastTrack, vedere [Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
-Se si verificano problemi durante la migrazione a Office 365 e non si utilizza FastTrack o si esegue la migrazione a una versione più recente di Exchange Server, è possibile aiutarla. Di seguito sono riportate alcune risorse che è possibile utilizzare:
+Se si verificano problemi durante la migrazione a Microsoft 365 e non si utilizza FastTrack o si esegue la migrazione a una versione più recente di Exchange Server, è possibile aiutarla. Di seguito sono riportate alcune risorse che è possibile utilizzare:
 
 - [Community tecnica](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [Assistenza clienti](https://support.microsoft.com/gp/support-options-for-business)
