@@ -69,7 +69,7 @@
 ### [Principi della connettività di rete di Microsoft 365](office-365-network-connectivity-principles.md)
 ### [Pianificazione della rete e ottimizzazione delle prestazioni per Microsoft 365](network-planning-and-performance.md)
 ### [Valutazione della connettività di rete di Microsoft 365](assessing-network-connectivity.md)
-### [Office 365 Networking Partner Program](office-365-networking-partner-program.md)
+### [Microsoft 365 Networking Partner Program](office-365-networking-partner-program.md)
 ### URL e indirizzi IP di Office 365
 #### [Endpoint di Office 365](office-365-endpoints.md)
 #### [Gestione degli endpoint di Office 365](managing-office-365-endpoints.md)
@@ -97,13 +97,13 @@
 #### [Endpoint del U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)
 #### [Endpoint del U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Catene di crittografia di Office 365 - DOD e GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Supporto IPv6 nei servizi di Microsoft 365](ipv6-support.md)
-### [Supporto NAT con Microsoft 365](nat-support-with-office-365.md)
+### [Supporto IPv6 nei servizi Office 365](ipv6-support.md)
+### [Supporto NAT con Office 365](nat-support-with-office-365.md)
 ### Uso di ExpressRoute per Microsoft 365
-#### [ExpressRoute per Microsoft 365](azure-expressroute.md)
-#### [Implementazione di ExpressRoute per Microsoft 365](implementing-expressroute.md)
-#### [Pianificazione della rete con ExpressRoute per Microsoft 365](network-planning-with-expressroute.md)
-#### [Routing con ExpressRoute per Microsoft 365](routing-with-expressroute.md)
+#### [ExpressRoute per Office 365](azure-expressroute.md)
+#### [Implementazione di ExpressRoute per Office 365](implementing-expressroute.md)
+#### [Pianificazione della rete con ExpressRoute per Office 365](network-planning-with-expressroute.md)
+#### [Routing con ExpressRoute per Office 365](routing-with-expressroute.md)
 
 ## 2. Configurare le identità
 ### [Proteggere gli account di amministrazione globale](protect-your-global-administrator-accounts.md)
@@ -274,4 +274,4 @@
 # [Conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Sicurezza di Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 per le aziende](https://www.microsoft.com/microsoft-365/business)
-# [Microsoft 365](https://docs.microsoft.com/microsoft-365)
+# [Centro assistenza di Microsoft 365](https://docs.microsoft.com/microsoft-365)
