@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Con Microsoft 365 Multi-Geo si può espandere la propria presenza Microsoft 365 a più paesi/aree geografiche.
-ms.openlocfilehash: d69d8adb83eb639589efec0863b2e15966339b58
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: af1036ce2e8512a13cbf1867bb75a18aff3ac0a2
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057732"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052579"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -30,7 +30,7 @@ Con Microsoft 365 Multi-Geo, è possibile effettuare il provisioning e archiviar
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
 
-In un ambiente multi-geografico, il tenant di Microsoft 365 è costituito da una posizione centrale (in cui è stato originariamente effettuato il provisioning dell'abbonamento a Microsoft 365) e una o più posizioni satellite. In un tenant Multi-Geo, le informazioni su località geografiche, gruppi e le informazioni utente, vengono acquisite in Azure Active Directory (AAD). Poiché le informazioni del tenant sono acquisite in modo centralizzato e sincronizzate in ogni località geografica, la condivisione e le esperienze coinvolgono tutti gli utenti della società.
+In un ambiente multi-geografico, il tenant di Microsoft 365 è costituito da una posizione centrale (in cui è stato originariamente effettuato il provisioning dell'abbonamento a Microsoft 365) e una o più posizioni satellite. In un tenant Multi-Geo, le informazioni su località geografiche, gruppi e le informazioni utente, vengono acquisite in Azure Active Directory (Azure AD). Poiché le informazioni del tenant sono acquisite in modo centralizzato e sincronizzate in ogni località geografica, la condivisione e le esperienze coinvolgono tutti gli utenti della società.
 
 ![Schermata della mappa multi-geo dall'interfaccia di amministrazione di SharePoint.](media/multi-geo-world-map.png)
 
