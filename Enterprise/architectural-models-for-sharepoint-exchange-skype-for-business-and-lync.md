@@ -20,18 +20,18 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Riepilogo: ottenere i poster IT in cui vengono descritti i modelli architetturali, la distribuzione e le opzioni delle piattaforme per SharePoint, Exchange, Skype for Business e Lync.'
-ms.openlocfilehash: 33613e8e4b4eefc051a1c249773301c5249b0b69
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: 9e6e4f2b32bb2e5b39f8891d8acddc0699cdbf8d
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997987"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102564"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync
 
 In questi poster IT vengono descritti i modelli architetturali e le opzioni di distribuzione per SharePoint, Exchange, Skype for Business e Lync; sono inoltre disponibili informazioni relative alla progettazione per distribuire SharePoint in Microsoft Azure.
   
-Con Microsoft 365, è possibile fornire servizi di collaborazione e comunicazione che gli utenti hanno familiarità con il servizio basato su cloud. Con alcune eccezioni, l'esperienza utente resta invariata se si sta mantenendo una distribuzione locale o si utilizza Microsoft 365. Questa esperienza utente unificata rende meno facile decidere dove posizionare ogni carico di lavoro e fa sorgere domande come le seguenti:
+Con Microsoft 365 è possibile fornire servizi di comunicazione e collaborazione noti agli utenti con un servizio basato sul cloud. Con alcune eccezioni, l'esperienza utente rimane la stessa sia se si mantiene una distribuzione locale che se si utilizza Microsoft 365. Questa esperienza utente unificata rende meno facile decidere dove posizionare ogni carico di lavoro e fa sorgere domande come le seguenti:
   
 - Come si determina l'opzione di piattaforma da scegliere per i carichi di lavoro individuali?
     
@@ -53,8 +53,6 @@ In questa pagina sono disponibili i collegamenti ai poster seguenti:
 - **Poster dei modelli architetturali** È possibile utilizzare queste risorse per determinare la piattaforma e la configurazione ideali per SharePoint 2016 e Skype for Business 2015.
     
   - [Modelli architetturali di Microsoft SharePoint 2016](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_ArchModel)
-    
-  - [Funzionalità multi-Geo in OneDrive e SharePoint online in Microsoft 365](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#MultiGeoO365ODB)
     
   - [Database di SharePoint Server 2016](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_Databases)
     
@@ -95,21 +93,14 @@ These new IT posters for SharePoint 2016 and Skype for Business 2015 provide a w
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Anteprima del poster dei modelli architetturali di SharePoint 2016](media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf) \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | In questo poster IT vengono descritte le configurazioni locali di SharePoint Online, Microsoft Azure e SharePoint che i decision maker aziendali e gli architetti di soluzioni devono conoscere. <br/><br/> - **SharePoint Online (SaaS)**: utilizzare SharePoint tramite un modello di sottoscrizione Software as a Service (SaaS). <br/> - **SharePoint ibrido**: spostare i siti e le app di SharePoint nel cloud secondo le proprie esigenze. <br/> - **SharePoint in Azure (IaaS)** - You extend your on-premises environment into Microsoft Azure and deploy SharePoint 2016 Servers there. (This is recommended for High Availability/Disaster Recovery and dev/test environments.) <br/> - **SharePoint locale**: l'ambiente di SharePoint viene pianificato, distribuito, conservato e personalizzato in un data center gestito dall'utente. <br/> |
-   
-<a name="MultiGeoO365ODB"> </a>
-### <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365"></a>Funzionalità multi-Geo in OneDrive e SharePoint online in Microsoft 365
-
-|**Elemento**|**Descrizione**|
-|:-----|:-----|
-|[![Multi-Geo OneDrive in Microsoft 365 modello](media/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Multi-Geo-ODB.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Multi-Geo-ODB.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Multi-Geo-ODB.vsdx) <br/> | Questo poster è una panoramica di una pagina di funzionalità multi-Geo in OneDrive e SharePoint online in Microsoft 365. Questo modello include: <br/><br/> - Vantaggi <br/> - Procedura per la distribuzione <br/> - Un esempio di configurazione <br/><br/>  Per ulteriori informazioni sulle funzionalità multi-Geo in OneDrive e SharePoint online in Microsoft 365, fare clic [qui](https://aka.ms/onedrivemultigeo).  <br/> |
+|[![Anteprima del poster dei modelli architetturali di SharePoint 2016](media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | In questo poster IT vengono descritte le configurazioni locali di SharePoint Online, Microsoft Azure e SharePoint che i decision maker aziendali e gli architetti di soluzioni devono conoscere. <br/><br/> - **SharePoint Online (SaaS)**: utilizzare SharePoint tramite un modello di sottoscrizione Software as a Service (SaaS). <br/> - **SharePoint ibrido**: spostare i siti e le app di SharePoint nel cloud secondo le proprie esigenze. <br/> - **SharePoint in Azure (IaaS)** - You extend your on-premises environment into Microsoft Azure and deploy SharePoint 2016 Servers there. (This is recommended for High Availability/Disaster Recovery and dev/test environments.) <br/> - **SharePoint locale**: l'ambiente di SharePoint viene pianificato, distribuito, conservato e personalizzato in un data center gestito dall'utente. <br/> |
    
 <a name="SP2016_Databases"> </a>
 ### <a name="sharepoint-server-2016-databases"></a>Database di SharePoint Server 2016
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Anteprima del poster dei database di SharePoint Server 2016.](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf) \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | This IT poster is a quick reference guide for SharePoint Server 2016 databases. Each database has the following details: <br/><br/> - Dimensioni <br/> - Linee guida sul ridimensionamento <br/> - Modello di I/O <br/> - Requisiti <br/><br/>  The first page has the SharePoint system databases and the service applications that have multiple databases. The second page shows all of the service applications that have single databases. <br/><br/>  Per ulteriori informazioni sui database di SharePoint Server 2016, vedere [Tipi di database e relative descrizioni in SharePoint Server 2016](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions) <br/> |
+|[![Anteprima del poster dei database di SharePoint Server 2016.](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | This IT poster is a quick reference guide for SharePoint Server 2016 databases. Each database has the following details: <br/><br/> - Dimensioni <br/> - Linee guida sul ridimensionamento <br/> - Modello di I/O <br/> - Requisiti <br/><br/>  The first page has the SharePoint system databases and the service applications that have multiple databases. The second page shows all of the service applications that have single databases. <br/><br/>  Per ulteriori informazioni sui database di SharePoint Server 2016, vedere [Tipi di database e relative descrizioni in SharePoint Server 2016](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions) <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Modelli architetturali di Microsoft Skype for Business 2015
@@ -139,7 +130,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di anteprima delle opzioni della piattaforma SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Per i decisori aziendali (BDMs) e gli architetti, questo modello illustra le opzioni della piattaforma per SharePoint 2013, SharePoint in Microsoft 365, ibrido locale con Microsoft 365, Azure e distribuzioni locali. Include una panoramica di ogni architettura, suggerimenti, licenze necessarie e un elenco di attività per architetti e professionisti IT per ogni piattaforma. Sono evidenziate diverse soluzioni SharePoint in Azure. <br/> |
+|[![Immagine di anteprima delle opzioni della piattaforma SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Per i decision maker aziendali (BDMs) e gli architetti, questo modello mostra le opzioni della piattaforma per SharePoint 2013, SharePoint in Microsoft 365, ibrido locale con distribuzioni Microsoft 365, Azure e solo locali. Include una panoramica di ogni architettura, consigli, requisiti di licenza ed elenchi di attività per architetti e professionisti IT per ogni piattaforma. Sono evidenziate diverse soluzioni di SharePoint su Azure. <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Opzioni della piattaforma Exchange 2013
@@ -148,7 +139,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di anteprima delle opzioni della piattaforma Exchange](media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=42676) <br/> |Destinato a BDM e architetti, questo modello descrive le opzioni della piattaforma disponibili per Exchange 2013. I clienti possono scegliere da Exchange Online con Microsoft 365, Exchange ibrido, Exchange Server locale e Hosted Exchange. Il poster include le informazioni su ogni opzione architetturale, compresi gli scenari ideali per ciascuna di esse, i requisiti di licenze e le responsabilità dei professionisti IT. <br/> |
+|[![Immagine di anteprima delle opzioni della piattaforma Exchange](media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=42676) <br/> |Destinato a BDM e architetti, questo modello descrive le opzioni della piattaforma disponibili per Exchange 2013. I clienti possono scegliere da Exchange Online con Microsoft 365, una distribuzione ibrida di Exchange, Exchange Server in locale e Hosted Exchange. Il poster include le informazioni su ogni opzione architetturale, compresi gli scenari ideali per ciascuna di esse, i requisiti di licenze e le responsabilità dei professionisti IT. <br/> |
    
 <a name="Lync2013_Options"> </a>
 ## <a name="lync-2013-platform-options"></a>Opzioni della piattaforma Lync 2013
@@ -157,7 +148,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di anteprima delle opzioni della piattaforma Lync](media/Lync-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839)  \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=41677) <br/> |Destinato a BDM e architetti, questo modello descrive le opzioni della piattaforma disponibili per Lync 2013. I clienti possono scegliere tra Lync Online con Microsoft 365, Lync ibrido, Lync Server locale e ospitato Lync. Il poster IT include le informazioni su ogni opzione architetturale, compresi gli scenari ideali per ciascuna di esse, i requisiti di licenze e le responsabilità dei professionisti IT.  <br/> |
+|[![Immagine di anteprima delle opzioni della piattaforma Lync](media/Lync-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=41677) <br/> |Destinato a BDM e architetti, questo modello descrive le opzioni della piattaforma disponibili per Lync 2013. I clienti possono scegliere da Lync Online con Microsoft 365, una distribuzione ibrida di Lync, Lync Server in locale e Hosted Lync. Il poster IT include le informazioni su ogni opzione architetturale, compresi gli scenari ideali per ciascuna di esse, i requisiti di licenze e le responsabilità dei professionisti IT.  <br/> |
    
 <a name="Lync2013_Options"> </a>
 ## <a name="sharepoint-in-azure-solutions-posters"></a>Poster di SharePoint nelle soluzioni di Azure
@@ -171,7 +162,7 @@ In questi poster IT vengono illustrate le soluzioni basate su Azure che utilizza
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di siti Internet in Azure con SharePoint](media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |In questo poster vengono illustrate le attività di progettazione e le scelte di architettura consigliate per i siti Internet in Azure.  <br/><br/> Per ulteriori informazioni, vedere gli articoli seguenti:  <br/><br/> - [Siti Internet in Microsoft Azure che utilizzano SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Architetture di Microsoft Azure per SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Immagine di siti Internet in Azure con SharePoint](media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |In questo poster vengono descritte le attività di progettazione di base e le scelte di architettura consigliate per i siti Internet in Azure.  <br/><br/> Per ulteriori informazioni, vedere gli articoli seguenti:  <br/><br/> - [Siti Internet in Microsoft Azure che utilizzano SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Architetture di Microsoft Azure per SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 <a name="DesignSampleInternetSites"> </a>
 ### <a name="design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Esempio di progettazione: siti Internet in Microsoft Azure per SharePoint 2013
@@ -180,7 +171,7 @@ In questi poster IT vengono illustrate le soluzioni basate su Azure che utilizza
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine con esempio di progettazione: siti Internet in Microsoft Azure per SharePoint 2013](media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Utilizzare questo esempio di progettazione come punto di partenza per la propria architettura sito Internet in Azure con SharePoint Server 2013. <br/><br/> Per ulteriori informazioni, vedere gli articoli seguenti:  <br/><br/> - [Siti Internet in Microsoft Azure che utilizzano SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Architetture di Microsoft Azure per SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Immagine con esempio di progettazione: siti Internet in Microsoft Azure per SharePoint 2013](media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Utilizzare questo esempio di progettazione come punto di partenza per l'architettura del proprio sito Internet in Azure con SharePoint Server 2013. <br/><br/> Per ulteriori informazioni, vedere gli articoli seguenti:  <br/><br/> - [Siti Internet in Microsoft Azure che utilizzano SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Architetture di Microsoft Azure per SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 <a name="sharepoint_recovery_Azure"> </a>
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Ripristino di emergenza di SharePoint in Microsoft Azure
@@ -189,15 +180,15 @@ In questi poster IT vengono illustrate le soluzioni basate su Azure che utilizza
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Processo di ripristino di emergenza di SharePoint in Azure](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |In questo poster IT vengono illustrati i principi dell'architettura per un ambiente di ripristino di emergenza in Azure. <br/><br/> Per ulteriori informazioni, vedere gli articoli seguenti:  <br/><br/> - [Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Architetture di Microsoft Azure per SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Processo di ripristino di emergenza di SharePoint in Azure](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554) \| [Altre lingue](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |In questo poster IT vengono illustrati i principi di architettura per un ambiente di ripristino di emergenza in Azure. <br/><br/> Per ulteriori informazioni, vedere gli articoli seguenti:  <br/><br/> - [Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Architetture di Microsoft Azure per SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ## <a name="see-also"></a>Vedere anche
 
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.yml)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
-[Guide al lab di test di Microsoft 365 per le aziende](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
+[Guide ai lab di test di Microsoft 365 per le aziende](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [Soluzioni ibride](hybrid-solutions.md)
 
