@@ -3,7 +3,7 @@ title: Reti per la distribuzione di contenuti
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilizzare queste informazioni per scoprire in che modo Office 365 utilizza le reti di distribuzione del contenuto (reti CDN) per migliorare le prestazioni.
-ms.openlocfilehash: 21dc32da619a8f5f7521d07213156f2ab86fc876
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d63d784804640b1dda3394d129f905b01fa4b972
+ms.sourcegitcommit: f12be5137553cc41d8bd43e9e6cfbce84215a763
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997472"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146514"
 ---
 # <a name="content-delivery-networks-cdns"></a>Reti per la distribuzione di contenuti (CDN)
 
@@ -78,6 +78,9 @@ Anche se non fa parte della rete CDN di Office 365, è possibile utilizzare ques
 
 ### <a name="azure-cdn"></a>Rete CDN di Azure
 
+>[!NOTE]
+>A partire dal Q3 2020, SharePoint Online inizierà la memorizzazione nella cache dei video sulla rete CDN di Azure per supportare la riproduzione e l'affidabilità migliorate del video. I video più diffusi verranno trasmessi dall'endpoint della rete CDN più vicino all'utente. Questi dati rimarranno all'interno del limite di conformità di Microsoft 365. Si tratta di un servizio gratuito per tutti i tenant e non richiede alcuna azione del cliente da configurare.
+
 È possibile utilizzare la rete **CDN di Azure** per distribuire un'istanza CDN personalizzata per l'hosting di Web part personalizzate, raccolte e altre risorse risorsa, che consente di applicare i tasti di accesso allo spazio di archiviazione CDN e di esercitare un maggiore controllo sulla configurazione CDN. L'utilizzo della rete CDN di Azure non è gratuito e richiede una sottoscrizione di Azure.
 
 Per ulteriori informazioni su come configurare un'istanza di Azure CDN, vedere [Guida introduttiva: integrare un account di archiviazione di Azure con la rete CDN di Azure](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn).
@@ -90,7 +93,7 @@ Per informazioni sul modulo di PowerShell CDN di Azure, vedere Gestione della re
 
 La rete **CDN** di Microsoft AJAX è una rete CDN di sola lettura che offre molte librerie di sviluppo popolari, tra cui jQuery (e tutte le sue altre raccolte), ASP.NET AJAX, Bootstrap, Knockout.js e altri.
   
-To include these scripts in your project, simply replace any references to these publicly available libraries with references to the CDN address instead of including it in your project itself. For example, use the following code to link to jQuery:
+Per includere gli script nel progetto, è sufficiente sostituire i riferimenti a queste raccolte disponibili pubblicamente con riferimenti all'indirizzo della rete CDN anziché includerlo nel progetto stesso. Per creare un collegamento a jQuery, ad esempio, utilizzare il codice seguente:
 
 ``` html
 <script src=https://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
