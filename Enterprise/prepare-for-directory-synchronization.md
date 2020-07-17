@@ -154,7 +154,7 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
 - **userPrincipalName**
     
   - L'attributo **userPrincipalName** deve trovarsi nel formato di accesso di tipo Internet, in cui il nome utente è seguito dal segno di chiocciola (@) e dal nome di dominio: ad esempio, user@contoso.com. Tutti gli indirizzi SMTP (Simple Mail Transport Protocol) devono essere conformi agli standard di messaggistica di posta elettronica
-  - The maximum number of characters for the **userPrincipalName** attribute is 113. A specific number of characters are permitted before and after the at sign (@), as follows: 
+  - Il numero massimo di caratteri per l'attributo **userPrincipalName** è 113. È consentito un numero specifico di caratteri prima e dopo il simbolo di chiocciola (@), come riportato di seguito: 
   - Numero massimo di caratteri per il nome utente che si trova di fronte al segno di chiocciola (@): 64
   - Numero massimo di caratteri per il nome di dominio dopo il simbolo chiocciola (@): 48
   - Caratteri non validi: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] " '

@@ -31,7 +31,7 @@ Windows PowerShell consente ai partner di syndication e Cloud Solution Provider 
 I partner di autorizzazione accesso delegato (DAP, Delegated Access Permission) sono partner di Syndication e Cloud Solution Provider (CSP). Di solito, rappresentano fornitori di rete o telecomunicazioni di altre aziende. Essi bundle Microsoft 365 abbonamenti nelle loro offerte di servizi ai propri clienti. Quando vendono un abbonamento a Microsoft 365, vengono concesse automaticamente amministra per conto di (AOBO) le autorizzazioni per il cliente locazione in modo che possano amministrare e segnalare sul locazione cliente.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-The procedures in this topic require you to connect to Windows PowerShell for Office 365. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).
+Le procedure descritte in questo argomento richiedono all'utente di connettersi a Windows PowerShell per Office 365. Per istruzioni, vedere [Connettersi a PowerShell di Office 365](connect-to-office-365-powershell.md).
   
 Sono necessarie anche le credenziali di amministratore tenant del partner.
   
@@ -40,7 +40,7 @@ Sono necessarie anche le credenziali di amministratore tenant del partner.
 ### <a name="list-all-tenant-ids"></a>Elencare tutti gli ID tenant
 
 > [!NOTE]
-> If you have more than 500 tenants, scope the cmdlet syntax with either  _-All_ or _-MaxResultsParameter_. This applies to other cmdlets that can give a large output, such as **Get-MsolUser**.
+> Se si dispone di più di 500 tenant, definire l'ambito della sintassi del cmdlet con  _-All_ o _-MaxResultsParameter_. Questo è applicabile agli altri cmdlet che possono fornire un output di grandi dimensioni, come **Get-MsolUser**.
   
 Per elencare tutti gli ID tenant dei clienti ai quali si ha accesso, eseguire questo comando.
   
@@ -56,7 +56,7 @@ In questo modo verrà visualizzato un elenco di tutti i tenant dei clienti trami
   
 ### <a name="get-a-tenant-id-by-using-the-domain-name"></a>Ottenere un ID tenant tramite il nome di dominio
 
-To get the **TenantId** for a specific customer tenant by domain name, run this command. Replace _<domainname.onmicrosoft.com>_ with the actual domain name of the customer tenant that you want.
+Per ottenere il **TenantId** per il tenant di un cliente specifico per nome di dominio, eseguire questo comando. Sostituire _<nomedominio.onmicrosoft.com>_ con il nome di dominio effettivo del tenant del cliente desiderato.
   
 ```
 Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object TenantId
@@ -64,7 +64,7 @@ Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object
 
 ### <a name="list-all-domains-for-a-tenant"></a>Elencare tutti i domini per un tenant
 
-To get all domains for any one customer tenant, run this command. Replace  _<customer TenantId value>_ with the actual value.
+Per ottenere tutti i domini per il tenant di un cliente qualsiasi, eseguire questo comando. Sostituire  _<customer TenantId value>_ con il valore effettivo.
   
 ```
 Get-MsolDomain -TenantId <customer TenantId value>
@@ -74,7 +74,7 @@ Se sono stati registrati ulteriori domini, verranno restituiti tutti i domini as
   
 ### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>Ottenere un mapping di tutti i tenant e i domini registrati
 
-The previous Windows PowerShell for Office 365 commands showed you how to retrieve either tenant IDs or domains but not both at the same time, and with no clear mapping between them all. This command generates a listing of all your customer tenant IDs and their domains.
+La versione precedente di Windows PowerShell per i comandi di Office 365 mostrava come recuperare gli ID tenant o i domini, ma non entrambi contemporaneamente e senza fornire un mapping chiaro tra di loro. Questo comando consente di generare un elenco di tutti gli ID tenant dei clienti e i relativi domini.
   
 ```
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
@@ -82,7 +82,7 @@ $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.Tenan
 
 ### <a name="get-all-users-for-a-tenant"></a>Ottenere tutti gli utenti per un tenant
 
-This will display the **UserPrincipalName**, the **DisplayName**, and the **isLicensed** status for all users for a particular tenant. Replace _<customer TenantId value>_ with the actual value.
+Questo comando consente di visualizzare lo stato **UserPrincipalName**, **DisplayName** e **isLicensed** per tutti gli utenti di un tenant particolare. Sostituire _<customer TenantId value>_ con il valore effettivo.
   
 ```
 Get-MsolUser -TenantID <customer TenantId value>
@@ -90,7 +90,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### <a name="get-all-details-about-a-user"></a>Ottenere tutti i dettagli di un utente
 
-If you want to see all the properties of a particular user, run this command. Replace  _<customer TenantId value>_ and _<user principal name value>_ with the actual values.
+Se si desidera visualizzare tutte le proprietà per un utente particolare, eseguire questo comando. Sostituire _<customer TenantId value>_  e _<user principal name value>_ con i valori effettivi.
   
 ```
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>
@@ -108,13 +108,13 @@ Creare un file CSV utilizzando questo formato:
     
 dove:
   
-- **UsageLocation**: The value for this is the two-letter ISO country/region code of the user. The country/region codes can be looked up at the[ISO Online Browsing Platform](https://go.microsoft.com/fwlink/p/?LinkId=532703). For example, the code for the United States is US, and the code for Brazil is BR. 
+- **UsageLocation**: questo valore è costituito dal codice paese ISO di due lettere dell'utente. I codici paese ISO sono disponibili nella piattaforma[Online Browsing Platform](https://go.microsoft.com/fwlink/p/?LinkId=532703). Il codice per gli Stati Uniti, ad esempio, è US e quello per il Brasile è BR. 
     
-- **LicenseAssignment**: The value for this uses this format: `syndication-account:<PROVISIONING_ID>`. For example, if you are assigning customer tenant users O365_Business_Premium licenses, the **LicenseAssignment** value looks like this: **syndication-account:O365_Business_Premium**. You will find the PROVISIONING_IDs in the Syndication Partner Portal that you have access to as a Syndication or CSP partner.
+- **LicenseAssignment**: questo valore utilizza il seguente formato: `syndication-account:<PROVISIONING_ID>`. Ad esempio, se si assegnano licenze O365_Business_Premium agli utenti del tenant dei clienti, il valore **LicenseAssignment** sarà simile al seguente: **syndication-account:O365_Business_Premium**. I PROVISIONING_ID sono disponibili nel portale per i partner Syndication al quale è stato effettuato l'accesso come partner Syndication o CSP.
     
 #### <a name="import-the-csv-file-and-create-the-users"></a>Importare il file CSV e creare gli utenti
 
-After you have your CSV file created, run this command to create user accounts with non-expiring passwords that the user must change at first sign-in and that assigns the license you specify. Be sure to substitute the correct CSV file name.
+In seguito alla creazione del file CSV, eseguire questo comando per creare account utente con password senza scadenza che l'utente deve modificare al primo accesso e con cui viene assegnata la licenza specificata. Sostituire il nome del file CSV corretto.
   
 ```
 Import-Csv .\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}

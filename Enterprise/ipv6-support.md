@@ -73,7 +73,7 @@ Si consiglia di non disabilitare IPv6. Per ulteriori informazioni, vedere l' [ar
 
 Queste considerazioni potrebbero essere applicate alla rete:
   
-- The public subscription service does not support purchase by credit card over IPv6. This does not apply to the Government Community Cloud (GCC) because governments have Enterprise Agreement (EA) licensing.
+- Il servizio di sottoscrizione pubblica non supporta l'acquisto con carta di credito su IPv6. Ciò non viene applicato al GCC (Government Community Cloud) perché gli enti pubblici dispongono di licenza EA (Contratto enterprise.
 
 - IPv6 non supporta alcuni scenari di Rights Management Services (RMS).
 

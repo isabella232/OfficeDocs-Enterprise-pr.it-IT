@@ -28,7 +28,7 @@ Prima di configurare il tenant per Microsoft 365 Multi-Geo, assicurarsi di aver 
 
 Per usare Office 365 Multi-Geo, è necessario il piano _Multi-Geo Capabilities in Microsoft 365_. Rivolgersi al team dell’account per aggiungere questo piano al tuo tenant. Il team dell’account connetterà l’utente con lo specialista della licenza appropriato e configurerà il tenant.
 
-Note that the _Multi-Geo Capabilities in Microsoft 365_ plan are a user-level service plan. You need a license for each user that you want to host in a satellite location. You can add more licenses over time as you add users in satellite locations.
+Tenere presente che il piano _Multi-Geo Capabilities in Microsoft 365_ è un piano di servizio a livello di utente. È necessaria una licenza per ogni utente da ospitare in una posizione satellite. È possibile aggiungere più licenze nel tempo man mano che si aggiungono utenti alle posizioni satellite.
 
 Una volta che nel tenant è stato effettuato il provisioning del piano _Multi-Geo Capabilities in Microsoft 365_, la scheda **Posizioni geografiche** diventerà disponibile nell'interfaccia di amministrazione di OneDrive e SharePoint.
 
@@ -54,15 +54,15 @@ Per aggiungere una posizione satellite
 
 6. Fare clic su **Chiudi**.
 
-Provisioning may take from a few hours up to 72 hours, depending on the size of your tenant. Once provisioning of a satellite location has completed, you will receive an email confirmation. When the new geo location appears in blue on the map on the **Geo locations** tab in the OneDrive admin center, you can proceed to set users' preferred data location to that geo location. 
+Il provisioning può durare da alcune ore fino a 72 ore, a seconda delle dimensioni del tenant. Al termine del provisioning di una posizione satellite, verrà inviato un messaggio di posta elettronica di conferma. Quando la nuova posizione geografica diventa blu sulla mappa nella scheda **Posizioni geografiche** nell'interfaccia di amministrazione di OneDrive, è possibile procedere per impostare la posizione dati preferita dell'utente su tale posizione geografica. 
 
 > [!IMPORTANT]
-> Your new satellite location will be set up with default settings. This will allow you to configure that satellite location as appropriate for your local compliance needs.
+> La nuova posizione satellite sarà configurata con le impostazioni predefinite. In questo modo sarà possibile configurare tale posizione satellite in base alle proprie esigenze di conformità locale.
 
 ## <a name="setting-users-preferred-data-location"></a>Impostare la posizione dati preferita dell'utente
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
-Once you enable the needed satellite locations, you can update your user accounts to use the appropriate preferred data location. We recommend that you set a preferred data location for every user, even if that user is staying in the central location.
+Dopo aver abilitato le posizioni satellite necessarie, è possibile aggiornare gli account utente per utilizzare il percorso dati preferito appropriato. Si consiglia di impostare una posizione dati preferita per ogni utente, anche se l'utente si trova in una posizione centrale.
 
 > [!IMPORTANT]
 > Se il percorso dei dati preferito dell'utente è impostato su una posizione che non sia stata configurata come posizione satellitare o posizione centrale, il sistema imposterà la posizione centrale come predefinita durante il provisioning dei siti di OneDrive, SharePoint e delle cassette postali di gruppo.
@@ -91,11 +91,11 @@ La procedura contenuta in questa sezione richiede il [modulo di Microsoft Azure 
 
 1.  [Connettersi e accedere](/powershell/connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) con le credenziali di amministratore globale del tenant.
 
-2.  Use the [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
+2.  Usare il cmdlet [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) per impostare la posizione dati preferita per ognuno degli utenti. Ad esempio:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
-    You can check to confirm that the preferred data location was updated properly by using the Get-MsolUser cmdlet. For example:
+    È possibile controllare che la posizione dati preferita sia stata aggiornata correttamente con il cmdlet Get-MsolUser. Ad esempio:
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
@@ -144,12 +144,12 @@ Accedere all'app OneDrive per dispositivi mobili con le credenziali dell'account
 
 **Client di sincronizzazione di OneDrive**
 
-Confirm that the OneDrive sync client automatically detects your OneDrive for Business geo location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
+Confermare che il client di sincronizzazione di OneDrive rilevi automaticamente la posizione geografica di OneDrive for Business all'accesso. Se serve scaricare il client di sincronizzazione, è possibile fare clic su **Sincronizza** nella raccolta di OneDrive.
 
 **Applicazioni di Office**
 
-Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select "OneDrive – <TenantName>". Office will detect your OneDrive location and show you the files that you can open.
+Verificare di riuscire ad accedere a OneDrive for Business effettuando l'accesso da un'applicazione Office, come Word. Aprire l'applicazione Office e selezionare "OneDrive – <TenantName>". Office rileverà la posizione di OneDrive e mostrerà i file che possono essere aperti.
 
 **Condivisione**
 
-Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint online users regardless of their geo location.
+Provare a condividere i file di OneDrive. Verificare che lo strumento di selezione delle persone mostri tutti gli utenti online di SharePoint indipendentemente dalla loro posizione geografica.

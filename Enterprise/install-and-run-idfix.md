@@ -110,7 +110,7 @@ Dopo aver scaricato ed estratto IdFix, eseguirlo per cercare problemi nel domini
     
     Ogni errore viene visualizzato in una riga separata nella finestra principale dello strumento. 
     
-8. If you agree with the suggested change in the **UPDATE** column, in the **ACTION** column select what you want IdFix to do to implement the change and then click **Apply**. When you click **Apply**, the tool makes the changes in the directory.
+8. Se si accetta la modifica consigliata nella colonna **UPDATE**, nella colonna **ACTION** selezionare l'operazione che si desidera che lo strumento IdFix esegua per implementare la modifica, quindi fare clic su **Applica**. Quando si fa clic su **Applica**, lo strumento apporta le modifiche nella directory.
     
     Non è necessario fare clic su **Applica** dopo ogni aggiornamento. È possibile correggere diversi errori prima di fare clic su **Applica** in modo che lo strumento IdFix li modifichi in contemporanea. È possibile ordinare gli errori per tipo facendo clic su **ERROR** all'inizio della colonna che elenca i tipi di errore. 
     

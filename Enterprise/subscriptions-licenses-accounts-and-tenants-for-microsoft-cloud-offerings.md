@@ -40,7 +40,7 @@ Di seguito sono riportati gli elementi della gerarchia:
   
 ### <a name="organization"></a>Organizzazione
 
-An organization represents a business entity that is using Microsoft cloud offerings, typically identified by one or more public Domain Name System (DNS) domain names, such as contoso.com. The organization is a container for subscriptions.
+Un'organizzazione rappresenta un'entità aziendale che utilizza le offerte cloud di Microsoft, in genere identificate da uno o più nomi di dominio Domain Name System (DNS), ad esempio contoso.com. L'organizzazione è un contenitore per le sottoscrizioni.
   
 ### <a name="subscriptions"></a>Sottoscrizioni
 
@@ -49,7 +49,7 @@ Una sottoscrizione è un contratto stipulato con Microsoft per utilizzare uno o 
 - Microsoft ' s software as a Service (SaaS)-based cloud Offerings (Microsoft 365 e Dynamics 365) addebiti diritti di licenza per utente. 
 - Le offerte cloud PaaS e IaaS di Microsoft vengono fatturate in base al consumo di risorse.
  
-You can also use a trial subscription, but the subscription expires after a specific amount of time or consumption charges. You can convert a trial subscription to a paid subscription.
+È anche possibile utilizzare una sottoscrizione di prova, che scade dopo un determinato periodo di tempo o dopo una soglia di consumo. È possibile convertire una sottoscrizione di prova in sottoscrizione a pagamento.
   
 Le organizzazioni possono disporre di più sottoscrizioni per le offerte cloud di Microsoft. Nella figura 1 viene illustrata una singola organizzazione con più sottoscrizioni Microsoft 365, una sottoscrizione Dynamics 365 e più sottoscrizioni di Azure.
 
@@ -67,9 +67,9 @@ Per le offerte cloud SaaS di Microsoft, una licenza consente a un account utente
   
 Per i servizi cloud basati su PaaS di Azure, le licenze software sono integrate nel prezzo del servizio.
   
-For Azure IaaS-based virtual machines, additional licenses to use the software or application installed on a virtual machine image might be required. Some virtual machine images have licensed versions of software installed and the cost is included in the per-minute rate for the server. Examples are the virtual machine images for SQL Server 2014 and SQL Server 2016. 
+Per le macchine virtuali basate su IaaS di Azure, potrebbero essere necessarie altre licenze per usare il software o l'applicazione installata sull'immagine di una macchina virtuale. Alcune immagini della macchina virtuale dispongono di versioni concesse in licenza o software installato; i costi sono inclusi nella tariffa al minuto del server. Alcuni esempi sono le immagini della macchina virtuale per SQL Server 2014 e SQL Server 2016.  
   
-Some virtual machine images have trial versions of applications installed and need additional software application licenses for use beyond the trial period. For example, the SharePoint Server 2016 Trial virtual machine image includes a trial version of SharePoint Server 2016 pre-installed. To continue using SharePoint Server 2016 after the trial expiration date, you must purchase a SharePoint Server 2016 license and client licenses from Microsoft. These charges are separate from the Azure subscription and the per-minute rate to run the virtual machine still applies.
+Alcune immagini della macchina virtuale dispongono di versioni di prova delle applicazioni installate e necessitano di ulteriori licenze software per l’uso dopo il periodo di prova. Ad esempio, l'immagine della macchina virtuale di prova di SharePoint Server 2016 include una versione di prova di SharePoint Server 2016 preinstallata. Per continuare a usare SharePoint Server 2016 dopo il periodo di prova, è necessario acquistare una licenza di SharePoint Server 2016 e le licenze client da Microsoft. Tali costi sono separati rispetto alla sottoscrizione di Azure e si applica ancora la tariffa al minuto di esecuzione della macchina virtuale.
   
 ### <a name="user-accounts"></a>Account utente
 
@@ -85,7 +85,7 @@ Nella figura 3 viene mostrato un esempio di più sottoscrizioni di un'organizzaz
 
 Per le offerte cloud SaaS, il tenant rappresenta il percorso locale che ospita i server che forniscono i servizi cloud. Ad esempio, la Contoso Corporation ha scelto l'area europea per ospitare i tenant di Microsoft 365, EMS e Dynamics 365 per i lavoratori 15.000 nelle rispettive sedi di Parigi.
   
-Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
+I servizi PaaS di Azure e i carichi di lavoro basati su macchina virtuale e ospitati in IaaS di Azure possono avere tenancy in qualsiasi datacenter di Azure in tutto il mondo. Quando si crea un'app o un servizio PaaS di Azure oppure elementi di un carico di lavoro IaaS, si specifica il datacenter di Azure, noto anche come percorso.
   
 Un tenant Azure AD è un'istanza specifica di Azure AD che include account e gruppi. Gli abbonamenti a pagamento o di valutazione di Microsoft 365 o Dynamics 365 includono un tenant di Azure AD gratuito. Il tenant Azure AD non include altri servizi di Azure e non è lo stesso per la sottoscrizione di prova o a pagamento di Azure.
   
@@ -121,7 +121,7 @@ Più sottoscrizioni alle offerte cloud di Microsoft sono in grado di usare lo st
 
 ![IDaaS IaaS per l'organizzazione.](media/Subscriptions/Subscriptions-Fig4.png)
   
-Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud offerings, Azure PaaS apps, and virtual machines in Azure IaaS that use Azure AD Domain Services. Azure AD Connect synchronizes the on-premises AD DS forest with the Azure AD tenant.
+La figura 4 mostra in che modo il tenant di Azure AD comune viene usato dalle offerte cloud SaaS di Microsoft, dalle app PaaS di Azure e dalle macchine virtuali IaaS di Azure che usano Azure AD Domain Services. Azure AD Connect sincronizza la foresta di Active Directory Domain Services locale con il tenant di Azure AD.
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>Combinazione di sottoscrizioni per offerte cloud di Microsoft
 

@@ -37,7 +37,7 @@ Lo strumento Microsoft 365 IdFix crea un nuovo log delle transazioni ogni volta 
   
 ## <a name="idfix-transaction-log-logging-level"></a>Il livello di registrazione del registro delle transazioni IdFix
 
-The word verbose in the transaction log file name indicates the level of logging in the file. Verbose means that the maximum amount of information is captured in the log. This is the default logging level. At this time, you cannot change the logging level.
+La parola Dettagli nel file di registro della transazione indica il livello di registrazione nel file. "Dettagli" significa che la quantità massima delle informazioni viene acquisita nel registro. Questo è il livello di registrazione predefinito. In questo momento, non puoi cambiare il livello di registrazione.
   
 ## <a name="idfix-transaction-log-format"></a>Formato del registro delle transazioni IdFix
 

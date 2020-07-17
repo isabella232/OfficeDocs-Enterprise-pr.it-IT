@@ -56,7 +56,7 @@ Per i servizi Microsoft 365, lo stato predefinito dell'autenticazione moderna è
 
 Le app client di Office 2013 supportano l'autenticazione legacy per impostazione predefinita. Legacy significa che supportano l'assistente per l'accesso di Microsoft online o l'autenticazione di base. Affinché questi client utilizzino le funzionalità di autenticazione moderne, è necessario che il client Windows disponga delle chiavi del registro di sistema impostate. Per istruzioni, vedere [abilitare l'autenticazione moderna per Office 2013 nei dispositivi Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
-To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
+Per abilitare l'autenticazione moderna per tutti i dispositivi che eseguono Windows (ad esempio su portatili e tablet) con Microsoft Office 2013 installato, è necessario impostare le seguenti chiavi del Registro di sistema. Le chiavi devono essere impostate in ogni dispositivo per cui si vuole abilitare l'autenticazione moderna:
   
 |**Chiave del Registro di sistema**|**Tipo**|**Valore** |
 |:-------|:------:|--------:|

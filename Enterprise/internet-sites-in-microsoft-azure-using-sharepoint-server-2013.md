@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Architecture
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
-description: 'Summary: Internet sites that use SharePoint Server 2013 benefit by being hosted in Azure Infrastructure Services. This article provides resources for designing and implementing this solution.'
+description: "Sintesi: I siti Internet che utilizzano SharePoint Server 2013 traggono vantaggio dall'essere ospitati in servizi infrastruttura di Azure. In questo articolo sono disponibili risorse utili per progettare e implementare questa soluzione."
 ms.openlocfilehash: fa01df6903a9cbc2ec6163514f27a6bd2fd603aa
 ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "44998118"
   
 ## <a name="using-azure-infrastructure-services-for-internet-sites"></a>Utilizzare i servizi infrastruttura di Azure per i siti Internet
 
-Microsoft Azure provides a compelling option for hosting Internet sites based on SharePoint Server 2013. Advantages include the following:
+Microsoft Azure fornisce un'opzione interessante per ospitare siti Internet basati su SharePoint Server 2013. I vantaggi includono quanto segue:
   
 - Focalizzazione sullo sviluppo di un sito efficiente anziché sulla creazione dell'infrastruttura.
     
