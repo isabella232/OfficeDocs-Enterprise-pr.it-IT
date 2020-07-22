@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Velocizzare la pianificazione e la configurazione di Microsoft 365 o Office 365 con le guide all'installazione.
-ms.openlocfilehash: 92c792b3d82a6a0f1405059ae50db581823704dc
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a3523b78c33b51d00da24bd9b43d39e5e5fb67e7
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735974"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201630"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guide alla configurazione per i servizi di Office 365 e Microsoft 365
 
@@ -103,6 +103,15 @@ La **Guida all'installazione del lavoro remoto** fornisce alle organizzazioni i 
 | **Correre:** | [Guida alla configurazione del lavoro remoto](https://aka.ms/remoteworksetup) |
 |||
 
+### <a name="windows-virtual-desktop-setup-guide"></a>Guida alla configurazione del desktop virtuale di Windows
+
+Windows Virtual Desktop è un servizio di virtualizzazione completo di desktop e app in esecuzione nel cloud. È l'unica infrastruttura desktop virtuale (VDI) che offre una gestione semplificata, Windows 10 a più sessioni, ottimizzazioni per le app Microsoft 365 e il supporto per ambienti RDS (Remote Desktop Services). Distribuire e scalare i desktop e le app di Windows in Azure in pochi minuti e ottenere funzionalità di sicurezza e conformità incorporate. La **Guida all'installazione di Windows Virtual Desktop** fornisce agli amministratori le risorse di pianificazione e i prerequisiti per la distribuzione, le indicazioni di installazione e le risorse aggiuntive. 
+
+|||
+|:-------|:-----|
+| **Correre:** | [Guida alla configurazione del desktop virtuale di Windows](https://aka.ms/wvdsetupguide) |
+|||
+
 ## <a name="guides-for-security"></a>Guide per la sicurezza
 
 ### <a name="azure-ad-setup-guide"></a>Guida alla configurazione di Azure AD
@@ -112,6 +121,15 @@ La **Guida alla configurazione di Azure ad** fornisce informazioni per garantire
 |||
 |:-------|:-----|
 | **Correre:** | [Guida alla configurazione di Azure AD](https://aka.ms/aadpguidance) |
+|||
+
+### <a name="plan-your-passwordless-deployment"></a>Pianificare la distribuzione con password indesiderata
+
+Eseguire l'aggiornamento a un approccio di accesso alternativo che consenta agli utenti di accedere in modo sicuro ai propri dispositivi con uno dei seguenti metodi di autenticazione senza password: Windows Hello for business, Microsoft Authenticator app o chiavi di sicurezza. Utilizzare questa procedura guidata per individuare i migliori metodi di autenticazione con password per l'utilizzo e la ricezione di linee guida su come distribuirle.
+
+|||
+|:-------|:-----|
+| **Correre:** | [Pianificare la distribuzione con password indesiderata](https://aka.ms/passwordlesssetup) |
 |||
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Advisor di Microsoft Defender Advanced Threat Protection (ATP)

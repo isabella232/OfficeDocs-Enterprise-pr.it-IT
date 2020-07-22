@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: "Riepilogo: In questo articolo vengono fornite informazioni dettagliate su come calcolare il numero approssimativo di client che è possibile utilizzare per ciascun indirizzo IP all'interno dell'organizzazione utilizzando NAT (Network Address Translation)."
-ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998541"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201610"
 ---
 # <a name="nat-support-with-office-365"></a>Supporto NAT con Office 365
 
@@ -40,7 +40,7 @@ Per offrire accesso Internet ai dispositivi nello spazio degli indirizzi IP priv
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Perché è necessario disporre di un numero elevato di connessioni aperte contemporaneamente a Office 365?
 
-Outlook può aprire otto o più connessioni (in situazioni in cui sono presenti componenti aggiuntivi, calendari condivisi, cassette postali e così via). Poiché vi sono un massimo di 64.000 porte disponibili su un dispositivo NAT basato su Windows, può essere presente un massimo di 8.000 utenti dietro un indirizzo IP prima che le porte siano esaurite. Si noti che se i clienti utilizzano dispositivi non basati su sistema operativo Windows per NAT, le porte totali disponibili dipendono dal dispositivo o dal software di NAT utilizzato. In questo scenario, il numero massimo di porte potrebbe essere inferiore a 64.000. La disponibilità delle porte è anche soggetta ad altri fattori, come le finestre che limitano le porte a 4.000 per il proprio utilizzo, riducendo il numero totale di porte disponibili a 60.000. possono essere presenti altre applicazioni, ad esempio Internet Explorer, che potrebbero connettersi contemporaneamente, richiedendo porte aggiuntive.
+Outlook può aprire otto o più connessioni (in situazioni in cui sono presenti componenti aggiuntivi, calendari condivisi, cassette postali e così via). Poiché vi sono un massimo di 64.000 porte disponibili su un dispositivo NAT basato su Windows, può essere presente un massimo di 8.000 utenti dietro un indirizzo IP prima che le porte siano esaurite. Si noti che se i clienti utilizzano dispositivi non basati su sistema operativo Windows per NAT, le porte totali disponibili dipendono dal dispositivo o dal software di NAT utilizzato. In questo scenario, il numero massimo di porte potrebbe essere inferiore a 64.000. La disponibilità delle porte è anche soggetta ad altri fattori, come le finestre che limitano le porte 4.000 per il proprio utilizzo, riducendo il numero totale di porte disponibili a 60.000. Possono essere presenti altre applicazioni, ad esempio Internet Explorer, che possono connettersi contemporaneamente, che richiedono porte aggiuntive.
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Calcolo del numero massimo di dispositivi supportati dietro un unico indirizzo IP pubblico con Office 365
 
