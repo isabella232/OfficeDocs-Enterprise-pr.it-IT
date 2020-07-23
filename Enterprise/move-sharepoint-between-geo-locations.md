@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni su come trasferire un sito di SharePoint in un'altra posizione geografica.
-ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 3b8028f1dc4b33201a19a8da1cad6c9a559cf4c0
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057996"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201620"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Trasferire un sito di SharePoint in una posizione geografica diversa
 
@@ -27,7 +27,7 @@ Con il trasferimento geografico dei siti di SharePoint, è possibile spostare si
 È possibile trasferire da una posizione geografica a un'altra i tipi di siti seguenti:
 
 - Siti connessi a un gruppo di Microsoft 365
-- Siti moderni senza associazioni a gruppi di Microsoft 365
+- Siti moderni non associati a gruppi di Microsoft 365
 - Siti di SharePoint classici
 - Siti di comunicazioni
 
@@ -112,11 +112,11 @@ Per avviare il trasferimento del sito, eseguire:
 
 ![Screenshot della finestra di PowerShell con il cmdlet Start-SPOSiteContentMove](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Avviare lo spostamento geografico di un sito di SharePoint connesso a un gruppo di Microsoft 365
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Avviare lo spostamento geografico di un sito di SharePoint a un sito connesso a un gruppo di Microsoft 365
 
-Per spostare un sito connesso a un gruppo di Microsoft 365, l'amministratore globale deve prima di tutto modificare l'attributo relativo al percorso dati preferito (PDL) per il gruppo di Microsoft 365.
+Per trasferire un sito connesso a un gruppo di Office 365, l'amministratore globale o l’amministratore di SharePoint deve prima di tutto modificare l'attributo relativo alla posizione preferita dei dati per il gruppo di Office 365.
 
-Per impostare il PDL per un gruppo di Microsoft 365:
+Per impostare la posizione preferita dei dati per un gruppo di Microsoft 365:
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
