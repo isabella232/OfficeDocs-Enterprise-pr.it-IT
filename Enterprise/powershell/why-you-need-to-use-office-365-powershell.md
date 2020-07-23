@@ -1,9 +1,9 @@
 ---
-title: Perché è necessario usare PowerShell di Office 365
+title: Perché è necessario usare PowerShell per Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/13/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -11,25 +11,27 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Office_Other
+ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
-description: 'Riepilogo: comprendere il motivo per cui è necessario utilizzare PowerShell di Office 365 per gestire Office 365, in alcuni casi in modo più efficiente e in altri casi per necessità.'
-ms.openlocfilehash: f7854888db563b932567200db0d24708d59f9969
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Riepilogo: comprendere il motivo per cui è necessario utilizzare PowerShell per gestire Microsoft 365, in alcuni casi in modo più efficiente e in altri casi per necessità.'
+ms.openlocfilehash: ba786acd8b5ad08bad97b11812f0180004e55cb6
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841253"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229862"
 ---
-# <a name="why-you-need-to-use-office-365-powershell"></a>Perché è necessario usare PowerShell di Office 365
+# <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Perché è necessario usare PowerShell per Microsoft 365
 
-Con l'interfaccia di amministrazione di Microsoft 365, è possibile non solo gestire gli account utente e le licenze di Office 365, ma è anche possibile gestire i servizi di Office 365, ad esempio Exchange Online, teams e SharePoint Online. Tuttavia, questi elementi possono essere gestiti anche con i comandi PowerShell di PowerShell di Office 365, sfruttando un ambiente con riga di comando e linguaggio di scripting per velocità, automazione e funzionalità aggiuntive.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+
+Con l'interfaccia di amministrazione di Microsoft 365, è possibile non solo gestire gli account utente e le licenze di Microsoft 365, ma è anche possibile gestire i servizi Microsoft 365 quali Exchange Online, teams e SharePoint Online. Tuttavia, è anche possibile gestire questi elementi con i comandi di PowerShell, sfruttando un ambiente di gestione della riga di comando e di scripting per velocità, automazione e funzionalità aggiuntive.
   
-In questo articolo verranno illustrati i modi in cui è possibile utilizzare Office 365 PowerShell per gestire Office 365:
+In questo articolo verranno illustrati i modi in cui è possibile utilizzare PowerShell per gestire Microsoft 365:
   
 - Rivelare informazioni aggiuntive che non sono visibili con l'interfaccia di amministrazione di Microsoft 365
     
-- Configurare le funzionalità e le impostazioni possibili solo con Office 365 PowerShell
+- Configurare le funzionalità e le impostazioni possibili solo con PowerShell
     
 - Eseguire operazioni in blocco
     
@@ -39,7 +41,7 @@ In questo articolo verranno illustrati i modi in cui è possibile utilizzare Off
     
 - Gestire tra i servizi
     
-Prima di iniziare, comprendere che PowerShell di Office 365 è un insieme di moduli per Windows PowerShell, un ambiente con riga di comando per i servizi e le piattaforme basati su Windows. Questo ambiente crea un linguaggio della shell dei comandi che è possibile estendere con moduli aggiuntivi e offre un modo per eseguire comandi o script semplici o complessi. Ad esempio, dopo l'installazione dei moduli di PowerShell di Office 365 e la connessione alla sottoscrizione di Office 365, è possibile eseguire questo comando per visualizzare l'elenco di tutte le cassette postali utente per Microsoft Exchange Online:
+Prima di iniziare, è necessario comprendere che PowerShell per Microsoft 365 è un insieme di moduli per Windows PowerShell, un ambiente della riga di comando per i servizi e le piattaforme basati su Windows. Questo ambiente crea una lingua della shell dei comandi che può essere estesa con moduli aggiuntivi e consente di eseguire comandi o script semplici o complessi. Ad esempio, dopo aver installato i moduli di PowerShell per Microsoft 365 e aver eseguito la connessione alla sottoscrizione Microsoft 365, è possibile eseguire questo comando per elencare tutte le cassette postali degli utenti per Microsoft Exchange Online:
   
 ```powershell
 Get-Mailbox
@@ -47,25 +49,25 @@ Get-Mailbox
 
 La possibilità di ottenere l'elenco delle cassette postali può essere completata facilmente utilizzando l'interfaccia di amministrazione di Microsoft 365, ma il conteggio del numero di elementi in tutti gli elenchi di tutti i siti per tutte le app Web non può essere effettuato facilmente.
   
-Tenere presente che Office 365 PowerShell è stato creato per aumentare e migliorare la possibilità di gestire Office 365, non per sostituire l'interfaccia di amministrazione di Microsoft 365. In qualità di amministratore di Office 365, è necessario almeno acquisire familiarità con PowerShell di Office 365 poiché esistono alcune procedure di configurazione che possono essere eseguite solo con i comandi di PowerShell di Office 365. In questi casi, verrà richiesto di conoscere le procedure per effettuare le seguenti operazioni:
+Tenere presente che PowerShell per Microsoft 365 è stato creato per aumentare e migliorare la capacità di gestire Microsoft 365, non per sostituire l'interfaccia di amministrazione di Microsoft 365. In qualità di amministratore, è necessario essere almeno a proprio agio nell'utilizzo di PowerShell per Microsoft 365 perché esistono alcune procedure di configurazione che è possibile eseguire solo con i comandi di PowerShell per Microsoft 365. In questi casi, verrà richiesto di conoscere le procedure per effettuare le seguenti operazioni:
   
-- Installare i moduli di PowerShell di Office 365 (operazione eseguita solo una volta per ogni computer di amministratore).
+- Installare i moduli di PowerShell per Microsoft 365 (eseguiti solo una volta per ogni computer di amministratore).
     
-- Connettersi alla sottoscrizione di Office 365 (operazione eseguita una sola volta per ogni sessione di PowerShell).
+- Connettersi alla sottoscrizione Microsoft 365 (operazione eseguita una sola volta per ogni sessione di PowerShell).
     
-- Raccogliere le informazioni necessarie per eseguire i comandi di PowerShell di Office 365 necessari.
+- Raccogliere le informazioni necessarie per eseguire i comandi di PowerShell necessari per Microsoft 365.
     
-- Eseguire correttamente i comandi di PowerShell di Office 365.
+- Eseguire correttamente i comandi di PowerShell per Microsoft 365.
     
-Dopo aver appreso le competenze di base, non è necessario elencare gli utenti delle cassette postali con il comando **Get-Mailbox**, né saper creare un nuovo comando simile a quello precedente per contare tutti gli elementi in tutti gli elenchi di tutti i siti per tutte le app Web. Microsoft e la community degli amministratori di Office 365 possono offrire supporto per questa operazione.
+Dopo aver appreso le competenze di base, non è necessario elencare gli utenti delle cassette postali con il comando **Get-Mailbox**, né saper creare un nuovo comando simile a quello precedente per contare tutti gli elementi in tutti gli elenchi di tutti i siti per tutte le app Web. Microsoft e la community di amministratori possono aiutarti in base alle esigenze.
   
-## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-microsoft-365-admin-center"></a>Office 365 PowerShell è in grado di rivelare informazioni aggiuntive che non sono visibili con l'interfaccia di amministrazione di Microsoft 365
+## <a name="powershell-for-microsoft-365-can-reveal-additional-information-that-you-cannot-see-with-the-microsoft-365-admin-center"></a>PowerShell per Microsoft 365 è in grado di rivelare informazioni aggiuntive che non sono visibili con l'interfaccia di amministrazione di Microsoft 365
 
-L'interfaccia di amministrazione di Microsoft 365 Visualizza molte informazioni utili, ma ciò non significa che Visualizza tutte le informazioni possibili che Office 365 archivia su utenti, licenze, cassette postali e siti. Di seguito è riportato un esempio per **gli utenti e i gruppi** nell'interfaccia di amministrazione di Microsoft 365:
+L'interfaccia di amministrazione di Microsoft 365 Visualizza molte informazioni utili, ma ciò non significa che Visualizza tutte le informazioni possibili che Microsoft 365 archivia su utenti, licenze, cassette postali e siti. Di seguito è riportato un esempio per **gli utenti e i gruppi** nell'interfaccia di amministrazione di Microsoft 365:
   
 ![Esempio di visualizzazione di utenti e gruppi nell'interfaccia di amministrazione di Microsoft 365.](media/o365-powershell-users-and-groups.png)
   
-Per diversi scopi, verranno visualizzate le informazioni necessarie. Tuttavia, in alcuni casi sono necessarie informazioni aggiuntive. Ad esempio, le licenze di Office 365 (e le funzionalità di Office 365 disponibili per un utente) dipendono in parte dalla posizione geografica dell'utente. I criteri e le funzionalità che è possibile estendere a un utente che vive negli Stati Uniti potrebbero non essere gli stessi per un utente che risiede in India o Belgio. È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per determinare la posizione geografica di un utente con questa procedura:
+Per diversi scopi, verranno visualizzate le informazioni necessarie. Tuttavia, in alcuni casi sono necessarie informazioni aggiuntive. Ad esempio, le licenze Microsoft 365 (e le funzionalità di Microsoft 365 disponibili per un utente) dipendono in parte dalla posizione geografica dell'utente. I criteri e le funzionalità che è possibile estendere a un utente che vive negli Stati Uniti potrebbero non essere gli stessi per un utente che risiede in India o Belgio. È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per determinare la posizione geografica di un utente con questa procedura:
   
 1. Fare doppio clic sul **Nome visualizzato** dell'utente.
     
@@ -79,10 +81,10 @@ Per diversi scopi, verranno visualizzate le informazioni necessarie. Tuttavia, i
   
 5. Prendere nota del nome visualizzato e della posizione dell'utente su un pezzo di carta o copiarlo e incollarlo nel Blocco note. 
     
-È necessario ripetere questa procedura per ogni utente. Per molti utenti, potrebbe trattarsi di un'attività noiosa. Con PowerShell di Office 365, è possibile visualizzare queste informazioni per tutti gli utenti con il seguente comando:
+È necessario ripetere questa procedura per ogni utente. Per molti utenti, potrebbe trattarsi di un'attività noiosa. Con PowerShell per Microsoft 365, è possibile visualizzare queste informazioni per tutti gli utenti con il seguente comando:
   
 ```powershell
-Get-MsolUser | Select DisplayName, UsageLocation
+Get-AzureADUser | Select DisplayName, UsageLocation
 ```
 
 
@@ -104,12 +106,12 @@ David Longmuir                            BR
 ```
 
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Recuperare tutti gli utenti nella sottoscrizione di Office 365 corrente ( **Get-MsolUser** ), ma visualizzare solo il nome e la posizione di ogni utente ( **Select DisplayName, UsageLocation** ).
+>  L'interpretazione di questo comando di PowerShell è: recuperare tutti gli utenti nella sottoscrizione Microsoft 365 corrente ( **Get-AzureADUser** ), ma visualizzare solo il nome e la posizione di ogni utente ( **Select DisplayName, UsageLocation** ).
   
-Poiché PowerShell di Office 365 supporta un linguaggio della shell dei comandi, è possibile modificare ulteriormente le informazioni ottenute dal comando **Get-MSolUser**. Ad esempio, se si desidera ordinare tali utenti per posizione, è possibile raggruppare tutti gli utenti brasiliani, tutti gli utenti degli Stati Uniti e così via. Ecco il comando:
+Poiché PowerShell per Microsoft 365 supporta una lingua di shell dei comandi, è possibile modificare ulteriormente le informazioni ottenute dal comando **Get-AzureADUser** . Ad esempio, se si desidera ordinare gli utenti in base alla propria posizione, raggruppare tutti gli utenti brasiliani insieme, tutti gli utenti degli Stati Uniti e così via. Di seguito è riportato il comando:
   
 ```powershell
-Get-MsolUser | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
+Get-AzureADUser | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
 ```
 
 Ecco un esempio di visualizzazione:
@@ -126,12 +128,12 @@ Brian Johnson (TAILSPIN)                    US
 ```
 
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Recuperare tutti gli utenti nella sottoscrizione di Office 365 corrente, ma visualizzare solo il nome e il percorso per ciascun utente, e ordinarli prima in base alla posizione, quindi in base ai nomi ( **Sort UsageLocation, DisplayName** ).
+>  L'interpretazione di questo comando di PowerShell è: recuperare tutti gli utenti nella sottoscrizione Microsoft 365 corrente, ma visualizzare solo il nome e la posizione di ogni utente e ordinarli in primo luogo in base alla posizione e quindi ai rispettivi nomi ( **Sort UsageLocation, DisplayName** ).
   
 È inoltre possibile utilizzare altre opzioni di filtro. Ad esempio, se si desidera visualizzare tali informazioni sugli utenti residenti in Brasile, utilizzare questo comando:
   
 ```powershell
-Get-MsolUser | Where {$_.UsageLocation -eq "BR"} | Select DisplayName, UsageLocation 
+Get-AzureADUser | Where {$_.UsageLocation -eq "BR"} | Select DisplayName, UsageLocation 
 ```
 
 Ecco un esempio di visualizzazione:
@@ -144,28 +146,28 @@ Fabrice Canel                                         BR
 ```
 
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Recuperare tutti gli utenti nella sottoscrizione di Office 365 corrente la cui posizione è il Brasile ( **Where {$\_.UsageLocation -eq "BR"}** ), quindi visualizzare posizione e nome di ogni utente.
+>  L'interpretazione di questo comando di PowerShell è: recuperare tutti gli utenti nella sottoscrizione Microsoft 365 corrente la cui posizione è il Brasile ( **dove {$ \_ . UsageLocation-EQ "BR"}** ), quindi visualizzare il nome e la posizione di ogni utente.
   
  **Nota rapida riguardo i domini più grandi**
   
-Se si dispone di un dominio di grandi dimensioni, con decine di migliaia di utenti, alcuni degli esempi mostrati in questo articolo potrebbero causare una "limitazione". Ciò significa che, in base a dati come la potenza di elaborazione e lunghezza di banda disponibile, si sta cercando di effettuare troppe operazioni contemporaneamente. Per questo, le organizzazioni più grandi potrebbero desiderare di dividere alcuni comandi di PowerShell di Office 365 in due. Ad esempio, questo comando restituisce tutti gli account utente e mostra il nome e la posizione di ciascun utente:
+Se si dispone di un dominio di grandi dimensioni, con decine di migliaia di utenti, alcuni degli esempi mostrati in questo articolo potrebbero causare una "limitazione". Ciò significa che, in base a dati come la potenza di elaborazione e lunghezza di banda disponibile, si sta cercando di effettuare troppe operazioni contemporaneamente. Per questo motivo, le organizzazioni di grandi dimensioni potrebbero voler dividere alcuni di questi comandi PowerShell per Microsoft 365 in due comandi. Ad esempio, questo comando restituisce tutti gli account utente e mostra il nome e la posizione di ciascun utente:
   
 ```powershell
-Get-MsolUser | Select DisplayName, UsageLocation
+Get-AzureADUser | Select DisplayName, UsageLocation
 ```
 
 Questa operazione funziona perfettamente per i domini più piccoli. Nelle organizzazioni di grandi dimensioni, tuttavia, potrebbe essere necessario dividerlo in due comandi: un comando per archiviare le informazioni sugli account utente in una variabile, l'altro per visualizzare le informazioni necessarie. Ecco un esempio:
   
 ```powershell
-$x = Get-MsolUser
+$x = Get-AzureADUser
 $x | Select DisplayName, UsageLocation
 ```
 
-L'interpretazione di questo set di comandi PowerShell di Office 365 è:
-- Recuperare tutti gli utenti nella sottoscrizione di Office 365 corrente e archiviare le informazioni in una variabile denominata $x ( **$x = Get-MsolUser** ).
+L'interpretazione di questo set di comandi di PowerShell è la seguente:
+- Ottenere tutti gli utenti nella sottoscrizione Microsoft 365 corrente e archiviare le informazioni in una variabile denominata $x ( **$x = Get-AzureADUser** ).
 - Visualizzare il contenuto della variabile $x, ma includere solo il nome e la posizione di ciascun utente ( **$x | Select DisplayName, UsageLocation** ).
   
-## <a name="office-365-has-features-that-you-can-only-configure-with-office-365-powershell"></a>Office 365 presenta funzionalità che è possibile configurare solo con PowerShell di Office 365
+## <a name="microsoft-365-has-features-that-you-can-only-configure-with-powershell-for-microsoft-365"></a>Microsoft 365 dispone di funzionalità che è possibile configurare solo con PowerShell per Microsoft 365
 
 L'interfaccia di amministrazione di Microsoft 365 ha lo scopo di consentire l'accesso alle attività amministrative più comuni o significative che si applicano alla maggior parte delle persone. In altre parole, l'interfaccia di amministrazione di Microsoft 365 è stata progettata in modo che l'amministratore comune potesse utilizzare lo strumento per eseguire le attività di gestione più comuni. In base a questa definizione, significa che sono presenti alcune attività che non possono essere completate tramite l'interfaccia di amministrazione di Microsoft 365.
   
@@ -181,7 +183,7 @@ Con queste impostazioni, è possibile aggiungere un tocco di personalizzazione e
     
 - A tutti gli utenti dell'organizzazione di essere designati come relatori quando partecipano a riunione.
     
-Queste impostazioni non sono disponibili dall'interfaccia di amministrazione di Skype for Business online. Tuttavia, è possibile controllarle da PowerShell di Office 365. Ecco un comando che consente di disabilitare queste tre impostazioni:
+Queste impostazioni non sono disponibili dall'interfaccia di amministrazione di Skype for Business online. Tuttavia, è possibile controllarli da PowerShell per Microsoft 365. Ecco un comando che consente di disabilitare queste tre impostazioni:
   
 ```powershell
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConferenceRecording $False -DesignateAsPresenter "None"
@@ -191,7 +193,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
 > Questo comando richiede l'installazione del [modulo di PowerShell per Skype for Business Online ](https://www.microsoft.com/download/details.aspx?id=39366). 
   
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Per le impostazioni per le nuove riunioni di Skype for Business online ( **Set-CsMeetingConfiguration** ), disabilitare l'autorizzazione per gli utenti anonimi a ottenere l'accesso automatico alle riunioni ( **- AdmitAnonymousUsersByDefault $False** ), disattivare la possibilità per i partecipanti di registrare le riunioni ( **- AllowConferenceRecording $False** ) e non designare tutti gli utenti dell'organizzazione come relatori ( **-DesignateAsPresenter "None"** ).
+>  L'interpretazione di questo comando PowerShell è la seguente: per le impostazioni per le nuove riunioni di Skype for business online ( **Set-CsMeetingConfiguration** ), disabilitare l'accesso degli utenti anonimi alle riunioni (- **AdmitAnonymousUsersByDefault $false** ), disabilitare la possibilità per i partecipanti di registrare le riunioni ( **-AllowConferenceRecording $false** ) e non designare tutti gli utenti dell'organizzazione come relatori ( **-DesignateAsPresenter "None"** ).
   
 Se si cambia idea e si desidera ripristinare le impostazioni predefinite (tutte abilitate), sarà sufficiente eseguire questo comando:
   
@@ -199,11 +201,11 @@ Se si cambia idea e si desidera ripristinare le impostazioni predefinite (tutte 
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceRecording $True -DesignateAsPresenter "Company"
 ```
 
-Questo è solo un esempio. Ne esistono altri, per questo motivo l'amministratore di Office 365 deve avere una certa familiarità con l'esecuzione dei comandi di PowerShell di Office 365.
+Questo è solo un esempio. Ve ne sono altri, ed è il motivo per cui, in quanto amministratore, è necessario avere dimestichezza con i comandi di PowerShell per Microsoft 365.
   
-## <a name="office-365-powershell-is-great-at-carrying-out-bulk-operations"></a>PowerShell di Office 365 è ottimale per eseguire operazioni in massa
+## <a name="powershell-for-microsoft-365-is-great-at-carrying-out-bulk-operations"></a>PowerShell per Microsoft 365 è molto utile per eseguire operazioni in blocco
 
-Storicamente, le interfacce visive come l'interfaccia di amministrazione di Microsoft 365 sono più importanti quando si ha un'unica operazione da eseguire. Ad esempio, se è necessario disabilitare un account utente, è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per individuare e cancellare rapidamente una casella di controllo. Questa operazione può risultare più semplice rispetto all'esecuzione di un'operazione simile in PowerShell di Office 365.
+Storicamente, le interfacce visive come l'interfaccia di amministrazione di Microsoft 365 sono più importanti quando si ha un'unica operazione da eseguire. Ad esempio, se è necessario disabilitare un account utente, è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per individuare e cancellare rapidamente una casella di controllo. Questo può essere più semplice rispetto all'esecuzione di un'operazione analoga in PowerShell.
   
 Tuttavia, se è necessario modificare molte cose o alcuni elementi selezionati all'interno di un insieme di grandi dimensioni, è possibile che l'interfaccia di amministrazione di Microsoft 365 non sia il miglior utilizzo del proprio tempo. Ad esempio, se è stato necessario cambiare il prefisso su migliaia di numeri di telefono o se è necessario rimuovere un utente specifico, Ken remario, da tutti i siti di SharePoint Online, come è possibile eseguire tale operazione nell'interfaccia di amministrazione di Microsoft 365?
   
@@ -225,7 +227,7 @@ Per quanto riguarda l'ultimo esempio, sono presenti diverse centinaia di siti di
     
 La procedura può richiedere molto tempo per diverse centinaia di siti.
   
-L'alternativa consiste nell'usare PowerShell di Office 365 e il seguente comando per rimuovere Ken Myer da tutti i siti:
+L'alternativa consiste nell'usare PowerShell per Microsoft 365 e il seguente comando per rimuovere Ken remario da tutti i siti:
   
 ```powershell
 Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwareinc.com"}
@@ -235,9 +237,9 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > Questo comando richiede l'installazione del [modulo di PowerShell di SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps). 
   
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Recuperare tutti i siti di SharePoint nella sottoscrizione di Office 365 corrente ( **Get-SPOSite** ) e per ogni sito, rimuovere Ken Meyer dall'elenco di utenti che possono accedervi ( **ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}** ).
+>  L'interpretazione di questo comando di PowerShell è: recuperare tutti i siti di SharePoint nella sottoscrizione Microsoft 365 corrente ( **Get-SPOSite** ) e per ogni sito, rimuovere Ken Meyer dall'elenco degli utenti che possono accedervi ( **foreach {Remove-consorter-site $ \_ . URL-LoginName "kenmyer@litwareinc.com"}** ).
   
-Perché stiamo indicando a Office 365 di rimuovere Ken Meyer da tutti i siti, inclusi quelli a cui non può accedere, la visualizzazione di questo comando mostrerà degli errori per i siti per i quali al momento non dispone dell'accesso. È possibile utilizzare una condizione aggiuntiva su questo comando, per rimuovere Ken Meyer solo dai siti in cui compare nell'elenco degli accessi, ma gli errori elencati non danneggiano i siti. Questo comando potrebbe richiedere alcuni minuti per l'esecuzione in centinaia di siti anziché ore di utilizzo dell'interfaccia di amministrazione di Microsoft 365.
+Poiché si dice a Microsoft 365 di rimuovere Ken Meyer da ogni sito, compresi quelli in cui non ha accesso, la visualizzazione di questo comando mostrerà gli errori per i siti in cui attualmente non ha accesso. È possibile utilizzare una condizione aggiuntiva su questo comando, per rimuovere Ken Meyer solo dai siti in cui compare nell'elenco degli accessi, ma gli errori elencati non danneggiano i siti. Questo comando potrebbe richiedere alcuni minuti per l'esecuzione in centinaia di siti anziché ore di utilizzo dell'interfaccia di amministrazione di Microsoft 365.
   
 Ecco un altro esempio di operazione di massa. Utilizzare questo comando per aggiungere Bonnie Kearney, un nuovo amministratore di SharePoint, a tutti i siti dell'organizzazione:
   
@@ -246,9 +248,9 @@ Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.
 ```
 
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Recuperare tutti i siti di SharePoint nella sottoscrizione di Office 365 corrente e, per ogni sito, consentire l'accesso a Bonnie Kearney aggiungendo il suo nome di accesso al gruppo Membri del sito ( **ForEach {Add-SPOUser -Site $\_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}** ).
+>  L'interpretazione di questo comando di PowerShell è: recuperare tutti i siti di SharePoint nella sottoscrizione corrente di Microsoft 365 e per ogni sito, consentire a Bonnie Kearney di accedere aggiungendo il nome di accesso al gruppo membri del sito ( **foreach {Add-Consorter-site $ \_ . URL-LoginName "bkearney@litwareinc.com"-gruppo "membri"}** ).
   
-## <a name="office-365-powershell-is-great-at-filtering-data"></a>PowerShell di Office 365 è molto utile per il filtro dei dati
+## <a name="powershell-for-microsoft-365-is-great-at-filtering-data"></a>PowerShell per Microsoft 365 è ottimo per filtrare i dati
 
 L'interfaccia di amministrazione di Microsoft 365 offre diversi modi per filtrare i dati in modo da individuare rapidamente e facilmente un sottoinsieme di informazioni mirato. Ad esempio, Exchange facilita il filtro di qualsiasi proprietà relativa alla cassetta postale di un utente. Ad esempio, questo è un elenco delle cassette postali degli utenti che vivono nella città di Bloomington:
   
@@ -258,7 +260,7 @@ L'interfaccia di amministrazione di Exchange consente di combinare i criteri di 
   
 Tuttavia, esistono limitazioni per le operazioni che è possibile eseguire nell'interfaccia di amministrazione di Exchange. Ad esempio, si potrebbe desiderare di individuare le cassette postali di persone che vivono a Bloomington o San Diego oppure le cassette postali di tutte le persone non residenti a Bloomington. 
   
-Con PowerShell di Office 365 è possibile ottenere un elenco delle cassette postali di tutte le persone che vivono nelle città di Bloomington o San Diego grazie a questo comando:
+Con PowerShell per Microsoft 365, è possibile ottenere un elenco delle cassette postali per tutte le persone che vivono nelle città di Bloomington o San Diego con questo comando:
   
 ```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and ($_.City -eq "San Diego" -or $_.City -eq "Bloomington")} | Select DisplayName, City
@@ -276,7 +278,7 @@ Rob Young                                Bloomington
 ```
 
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Recuperare tutti gli utenti nella sottoscrizione di Office 365 corrente che dispongono di una cassetta postale nelle città di San Diego o Bloomington ( **Where {$\_.RecipientTypeDetails -eq "UserMailbox" -and ($\_.City -eq "San Diego" -or $\_.City -eq "Bloomington")}** ), quindi visualizzare il nome e la città di ognuno ( **Select DisplayName, City** ).
+>  L'interpretazione di questo comando di PowerShell è: recuperare tutti gli utenti nell'attuale sottoscrizione di Microsoft 365 che dispongono di una cassetta postale nelle città di San Diego o Bloomington ( **dove {$ \_ . RecipientTypeDetails-EQ "UserMailbox"-and ($ \_ . City-EQ "San Diego"-oppure $ \_ . City-EQ "Bloomington")}** ), quindi visualizzare il nome e la città per ognuno ( **selezionare DisplayName, City** ).
   
 Il comando di seguito consente di elencare tutte le cassette postali delle persone che vivono in qualsiasi altro posto a eccezione di Bloomington:
   
@@ -304,9 +306,9 @@ Janet Schorr                              Bellevue
 ```
 
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Recuperare tutti gli utenti nella sottoscrizione di Office 365 corrente che dispongono di una cassetta postale non ubicata a Bloomington ( **Where {$\_.RecipientTypeDetails -eq "UserMailbox" -and $\_.City -ne "Bloomington"}** ), quindi visualizzare il nome e la città di ognuno.
+>  L'interpretazione di questo comando di PowerShell è: recuperare tutti gli utenti nell'attuale sottoscrizione di Microsoft 365 che dispongono di una cassetta postale che non si trova nella città di Bloomington ( **dove {$ \_ . RecipientTypeDetails-EQ "UserMailbox"-e $ \_ . City-ne "Bloomington"}** ), quindi visualizzare il nome e la città per ognuno di essi.
   
-È inoltre possibile utilizzare caratteri jolly nei filtri PowerShell di Office 365 per trovare una corrispondenza con parte di un nome. Ad esempio, si supponga di effettuare la ricerca di un account utente e di ricordare solo che il cognome potrebbe corrispondere ad Anderson o forse a Henderson oppure Jorgenson.
+È inoltre possibile utilizzare i caratteri jolly nei filtri di PowerShell per far corrispondere parte di un nome. Ad esempio, si supponga di effettuare la ricerca di un account utente e di ricordare solo che il cognome potrebbe corrispondere ad Anderson o forse a Henderson oppure Jorgenson.
   
 È possibile rintracciare l'utente nell'interfaccia di amministrazione di Microsoft 365 utilizzando lo strumento di ricerca ed effettuando tre ricerche diverse:
   
@@ -316,16 +318,16 @@ Janet Schorr                              Bellevue
     
 - Una per  *Jorgenson* 
     
-Poiché tutti e tre questi nomi terminano in "son", è possibile indicare a PowerShell di Office 365 di visualizzare tutti gli utenti il cui nome termina con "son". Ecco il comando:
+Poiché tutti e tre questi nomi terminano con "son", è possibile indicare a PowerShell di visualizzare tutti gli utenti il cui nome termina con "son". Ecco il comando:
   
 ```powershell
 Get-User -Filter '{LastName -like "*son"}'
 ```
 
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Recuperare tutti gli utenti nella sottoscrizione a Office 365 corrente, ma utilizzare un filtro che elenca solo gli utenti il cui cognome termina in "son"( **-Filter '{LastName -like "\*son"}'** ). \* rappresenta qualsiasi set di caratteri, vale a dire lettere, nel caso del cognome di un utente.
+>  L'interpretazione di questo comando di PowerShell è: recuperare tutti gli utenti nella sottoscrizione Microsoft 365 corrente, ma utilizzare un filtro che elenca solo gli utenti i cui cognomi terminano con "son" ( **-Filter ' {LastName-like " \* son"}'** ). Gli \* stand per qualsiasi set di caratteri, ovvero lettere nel caso del cognome dell'utente.
   
-## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>PowerShell di Office 365 facilita la stampa e il salvataggio dei dati
+## <a name="powershell-for-microsoft-365-makes-it-easy-to-print-or-save-data"></a>PowerShell per Microsoft 365 rende più semplice la stampa o il salvataggio dei dati
 
 L'interfaccia di amministrazione di Microsoft 365 consente di visualizzare gli elenchi di dati. Ecco un esempio dell'interfaccia di amministrazione di Skype for Business online che mostra un elenco di utenti che sono stati abilitati per Skype for Business online:
   
@@ -333,7 +335,7 @@ L'interfaccia di amministrazione di Microsoft 365 consente di visualizzare gli e
   
 Per salvare queste informazioni in un file, è necessario copiarle e incollarle in un documento o in Excel. In entrambi i casi, la copia potrebbe richiedere ulteriore formattazione. Inoltre, l'interfaccia di amministrazione di Microsoft 365 non consente di stampare direttamente l'elenco visualizzato.
   
-Fortunatamente, è possibile utilizzare PowerShell di Office 365 non solo per visualizzare l'elenco, ma anche per salvarlo in un file che può essere facilmente importato in Excel. Ecco un comando di esempio per salvare i dati utente di Skype for Business online in un file con valori delimitati da virgole (CSV), che può essere facilmente importato come tabella in un foglio di lavoro di Excel:
+Fortunatamente, è possibile utilizzare PowerShell per non solo visualizzare l'elenco, ma salvarlo in un file che può essere importato facilmente in Excel. Ecco un comando di esempio per salvare i dati utente di Skype for Business online in un file con valori delimitati da virgole (CSV), che può essere facilmente importato come tabella in un foglio di lavoro di Excel:
   
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\Logs\SfBUsers.csv" -NoTypeInformation
@@ -344,11 +346,11 @@ Ecco un esempio di visualizzazione:
 ![Esempio di tabella importata in un foglio Excel di dati di utenti di Skype for Business online, salvati in un file con valori delimitati da virgole (CSV).](media/o365-powershell-data-in-excel.png)
   
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Recuperare tutti gli utenti di Skype for Business online nella sottoscrizione di Office 365 corrente ( **Get-CsOnlineUser** ), ottenere solo il nome utente, l'UPN e la posizione ( **Select DisplayName, UserPrincipalName, UsageLocation** ), quindi salvare le informazioni nel file CSV denominato C:\\Logs\\SfBUsers.csv ( **Export-Csv -Path "C:\\Logs\\SfBUsers.csv" -NoTypeInformation** ).
+>  L'interpretazione di questo comando di PowerShell è: ottenere tutti gli utenti di Skype for business online nella sottoscrizione Microsoft 365 corrente ( **Get-CsOnlineUser** ), ottenere solo il nome utente, l'UPN e la posizione ( **selezionare DisplayName, userPrincipalName, UsageLocation** ) e quindi salvare tali informazioni nel file CSV denominato c: \\ logs \\SfBUsers.csv ( **Export-CSV-path "c: \\ logs \\SfBUsers.csv"-NoTypeInformation** ).
   
 È anche possibile utilizzare le opzioni per salvare questo elenco come file XML o pagina HTML. Infatti, con altri comandi di PowerShell, è possibile salvarlo direttamente come file di Excel, con qualsiasi formattazione personalizzata che si desidera. 
   
-È anche possibile inviare l'output di un comando PowerShell di Office 365 che visualizza un elenco direttamente alla stampante predefinita in Windows. Ecco un esempio di comando:
+È anche possibile inviare l'output di un comando di PowerShell che consente di visualizzare un elenco direttamente alla stampante predefinita in Windows. Ecco un esempio di comando:
   
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Printer
@@ -356,16 +358,16 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 Di seguito, è riportato l'aspetto del documento stampato:
   
-![Esempio di documento stampato, output di un comando Office 365 PowerShell elencato direttamente alla stampante predefinita in Windows.](media/o365-powershell-printed-data.png)
+![Esempio di un documento stampato che è stato l'output di un comando di PowerShell elencato direttamente alla stampante predefinita in Windows.](media/o365-powershell-printed-data.png)
   
 > [!TIP]
->  L'interpretazione di questo comando di PowerShell di Office 365 è: Recuperare tutti gli utenti di Skype for Business online nella sottoscrizione di Office 365 corrente, ottenere solo il nome utente, l'UPN e la posizione, e quindi inviare queste informazioni alla stampante predefinita di Windows ( **Out-Printer** ).
+>  L'interpretazione di questo comando di PowerShell è: ottenere tutti gli utenti di Skype for business online nella sottoscrizione Microsoft 365 corrente, ottenere solo il nome utente, l'UPN e la posizione, quindi inviare tali informazioni alla stampante predefinita di Windows ( **fuori stampante** ).
   
-Il documento stampato presenta la stessa formattazione semplice visualizzata all'interno della finestra del comando PowerShell di Office 365, ma dopo aver creato un comando PowerShell di Office 365 per elencare gli elementi necessari, è sufficiente aggiungere **| Out-Printer** alla fine del comando per ottenere una copia stampata su cui lavorare.
+Il documento stampato ha la stessa formattazione semplice della visualizzazione all'interno della finestra di comando di PowerShell, ma dopo aver creato un comando di PowerShell per elencare gli elementi necessari, è sufficiente aggiungere **| Out-Printer** alla fine del comando per ottenere una copia cartacea da utilizzare.
   
-## <a name="office-365-powershell-lets-you-manage-across-server-products"></a>PowerShell di Office 365 consente di gestire diversi prodotti server
+## <a name="powershell-for-microsoft-365-lets-you-manage-across-server-products"></a>PowerShell per Microsoft 365 consente di gestire diversi prodotti server
 
-I diversi componenti che costituiscono Office 365 sono progettati per collaborare. Si supponga, ad esempio, di aggiungere un nuovo utente a Office 365 e, dopo aver eseguito l'operazione, di specificare informazioni come il reparto e il numero di telefono dell'utente. Queste informazioni saranno quindi disponibili se si accede alle informazioni dell'utente usando uno dei prodotti server di Office 365: Skype for Business online, Exchange o SharePoint Online.
+I diversi componenti che compongono Microsoft 365 sono stati concepiti per funzionare insieme. Si supponga, ad esempio, di aggiungere un nuovo utente a Microsoft 365 e, in tal caso, di specificare tali informazioni come reparto e numero di telefono dell'utente. Tali informazioni saranno quindi disponibili se si accede alle informazioni dell'utente utilizzando uno qualsiasi dei servizi Microsoft 365: Skype for business online, Exchange o SharePoint Online.
   
 Si tratta di informazioni generali che interessano la famiglia di prodotti. Le informazioni specifiche di un prodotto, ad esempio quelle relative alla cassetta postale di Exchange di un utente, non sono generalmente disponibili tra le famiglie di prodotti. Ad esempio, se si desidera sapere se la cassetta postale di un utente è abilitata o meno, tale informazione è disponibile solo nell'interfaccia di amministrazione di Exchange. 
   
@@ -373,20 +375,20 @@ Si supponga di voler creare un report che mostra le seguenti informazioni per tu
   
 - Nome visualizzato dell'utente
     
-- La disponibilità della licenza per Office 365 dell'utente
+- Se l'utente ha una licenza per Microsoft 365
     
 - L'abilitazione della cassetta postale di Exchange dell'utente.
     
 - L'abilitazione per Skype for Business online dell'utente
     
-Al momento non è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per produrre facilmente un rapporto di questo tipo. Al contrario, è necessario creare un documento separato per archiviare le informazioni, ad esempio un foglio di lavoro di Excel, e ottenere tutti i nomi utente e le informazioni di licenza dall'interfaccia di amministrazione di Microsoft 365, ottenere le informazioni della cassetta postale dall'interfaccia di amministrazione di Exchange, ottenere Skype for Informazioni business online dall'interfaccia di amministrazione di Skype for business online e quindi raccogliere e combinare tali informazioni.
+Al momento non è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per produrre facilmente un rapporto di questo tipo. Al contrario, è necessario creare un documento separato per archiviare le informazioni, ad esempio un foglio di lavoro di Excel, e ottenere tutti i nomi utente e le informazioni di licenza dall'interfaccia di amministrazione di Microsoft 365, ottenere le informazioni della cassetta postale dall'interfaccia di amministrazione di Exchange, ottenere informazioni su Skype for business online dal centro di amministrazione di Skype for business online, quindi raccogliere e combinare tali informazioni.
   
-L'alternativa consiste nell'usare uno script di PowerShell di Office 365 che compili automaticamente questo report.
+L'alternativa consiste nell'usare uno script di PowerShell per compilare il report.
   
-Il seguente script di esempio è più complesso dei comandi che finora sono stati illustrati in questo articolo. Tuttavia, mostra la possibilità di utilizzare PowerShell di Office 365 per creare visualizzazioni delle informazioni che sono molto difficili da creare in altri modi. Ecco lo script in grado di compilare e visualizzare l'elenco necessario:
+Il seguente script di esempio è più complesso dei comandi che finora sono stati illustrati in questo articolo. Tuttavia, dimostra la potenzialità dell'utilizzo di PowerShell per creare visualizzazioni di informazioni che sono molto difficili da fare altrimenti. Ecco lo script in grado di compilare e visualizzare l'elenco necessario:
   
 ```powershell
-$x = Get-MsolUser
+$x = Get-AzureADUser
 
 foreach ($i in $x)
     {
@@ -415,8 +417,9 @@ Katy Jordan             False        True               False
 Molly Dempsey           False        True               False
 ```
 
-L'interpretazione di questo script di PowerShell di Office 365 è:  
-- Recuperare tutti gli utenti nella sottoscrizione di Office 365 corrente e archiviare le informazioni in una variabile denominata $x ( **$x = Get-MsolUser** ).
+L'interpretazione di questo script di PowerShell è la seguente:  
+
+- Ottenere tutti gli utenti nella sottoscrizione Microsoft 365 corrente e archiviare le informazioni in una variabile denominata $x ( **$x = Get-AzureADUser** ).
 - Avviare un ciclo che viene eseguito su tutti gli utenti nella variabile denominata $x ( **foreach ($i in $x)** ).  
 - Definire una variabile denominata $y e archiviarvi all'interno le informazioni sulla cassetta postale dell'utente ( **$y = Get-Mailbox -Identity $i.UserPrincipalName** ).
 - Aggiungere una nuova proprietà alle informazioni sull'utente denominata IsMailBoxEnabled e impostarla sul valore della proprietà IsMailBoxEnabled della cassetta postale dell'utente ( **$i | Add-Member -MemberType NoteProperty -Name IsMailboxEnabled -Value $y.IsMailboxEnabled** ).
@@ -426,9 +429,9 @@ L'interpretazione di questo script di PowerShell di Office 365 è:
   
 ## <a name="see-also"></a>Vedere anche
 
-[Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
+[Guida introduttiva a PowerShell per Microsoft 365](getting-started-with-office-365-powershell.md)
   
-[Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Utilizzo di Windows PowerShell per creare rapporti in Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
+[Utilizzo di Windows PowerShell per la creazione di report in Microsoft 365](use-windows-powershell-to-create-reports-in-office-365.md)
 

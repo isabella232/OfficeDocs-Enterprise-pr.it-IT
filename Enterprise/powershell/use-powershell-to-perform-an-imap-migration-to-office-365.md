@@ -1,9 +1,9 @@
 ---
-title: Utilizzo di PowerShell per eseguire una migrazione IMAP a Office 365
+title: Utilizzare PowerShell per eseguire una migrazione IMAP a Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,24 +15,26 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
-description: "Riepilogo: informazioni sull'utilizzo di Windows PowerShell per eseguire una migrazione IMAP a Office 365."
-ms.openlocfilehash: 051b290a93fbdf7636595d31e6087fccaaf73761
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 'Riepilogo: informazioni su come utilizzare Windows PowerShell per eseguire una migrazione IMAP a Microsoft 365.'
+ms.openlocfilehash: fa53fd1829121bb697277805e4f07d25ec2179b9
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004509"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229772"
 ---
-# <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Utilizzo di PowerShell per eseguire una migrazione IMAP a Office 365
+# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Utilizzare PowerShell per eseguire una migrazione IMAP a Microsoft 365
 
-Come parte del processo di distribuzione di Office 365, è possibile scegliere di eseguire la migrazione dei contenuti delle cassette postali degli utenti da un servizio di posta elettronica IMAP (Internet Mail Access Protocol) a Office 365. In questo articolo vengono illustrate le attività per una migrazione IMAP della posta elettronica tramite PowerShell di Exchange Online. 
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+
+Come parte del processo di distribuzione di Microsoft 365, è possibile scegliere di eseguire la migrazione del contenuto delle cassette postali degli utenti da un servizio di posta elettronica IMAP (Internet Mail Access Protocol) a Microsoft 365. In questo articolo vengono illustrate le attività relative a una migrazione IMAP tramite Exchange Online PowerShell. 
   
 > [!NOTE]
-> È anche possibile utilizzare l'interfaccia di amministrazione di Exchange per eseguire una migrazione IMAP. Vedere [Eseguire la migrazione di cassette postali IMAP a Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536685). 
+> È inoltre possibile utilizzare l'interfaccia di amministrazione di Exchange per eseguire una migrazione IMAP. Vedere [eseguire la migrazione delle cassette postali IMAP](https://go.microsoft.com/fwlink/p/?LinkId=536685). 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-Tempo stimato per il completamento di questa attività: tra i 2 e i 5 minuti per creare un batch di migrazione. Dopo l'avvio del batch di migrazione, la durata della migrazione varia in base al numero di cassette postali nel batch, alla dimensione di ogni cassetta postale e alla capacità di rete disponibile. Per informazioni su altri fattori che influenzano il tempo necessario per eseguire la migrazione delle cassette postali su Office 365, vedere l'articolo relativo alle [prestazioni della migrazione](https://go.microsoft.com/fwlink/p/?LinkId=275079).
+Tempo stimato per il completamento di questa attività: 2-5 minuti per creare un batch di migrazione. Dopo l'avvio del batch di migrazione, la durata della migrazione varia in base al numero di cassette postali nel batch, alle dimensioni di ogni cassetta postale e alla capacità di rete disponibile. Per informazioni sugli altri fattori che influiscono sul tempo necessario per eseguire la migrazione delle cassette postali a Microsoft 365, vedere [Migration performance](https://go.microsoft.com/fwlink/p/?LinkId=275079).
   
 È necessario disporre delle autorizzazioni per poter eseguire queste procedure. Per verificare le autorizzazioni necessarie, vedere la voce "Migrazione" in una tabella nell'argomento [Autorizzazioni di destinatari](https://go.microsoft.com/fwlink/p/?LinkId=534105).
   
@@ -53,9 +55,9 @@ Le seguenti limitazioni valgono per le migrazioni IMAP:
 ### <a name="step-1-prepare-for-an-imap-migration"></a>Passaggio 1: predisporre una migrazione IMAP
 <a name="BK_Step1"> </a>
 
-- **Se si dispone di un dominio per l'organizzazione IMAP, è possibile aggiungerlo a Office 365 come dominio accettato.** Se si desidera utilizzare lo stesso dominio già in uso per le cassette postali di Office 365, sarà necessario aggiungerlo a Office 365 come dominio accettato. Dopo averlo aggiunto, è possibile creare utenti in Office 365. Per ulteriori informazioni, vedere[Verificare il dominio in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=534110).
+- **Se si dispone di un dominio per l'organizzazione IMAP, aggiungerlo come dominio accettato dell'organizzazione Microsoft 365.** Se si desidera utilizzare lo stesso dominio già utilizzato per le cassette postali di Microsoft 365, è necessario innanzitutto aggiungerlo come dominio accettato a Microsoft 365. Dopo averlo aggiunto, è possibile creare gli utenti in Microsoft 365. Per ulteriori informazioni, vedere[verificare il dominio](https://go.microsoft.com/fwlink/p/?LinkId=534110).
     
-- **Aggiungere ciascun utente a Office 365 affinché possa disporre di una cassetta postale di Office 365.** Per istruzioni, vedere[Aggiungere utenti a Office 365 per le aziende](https://go.microsoft.com/fwlink/p/?LinkId=535065).
+- **Aggiungere ogni utente a Microsoft 365 in modo che dispongano di una cassetta postale.** Per istruzioni, vedere[aggiungere utenti a Microsoft 365 for business](https://go.microsoft.com/fwlink/p/?LinkId=535065).
     
 - **Ottenere il nome di dominio completo (FQDN) del server IMAP**. È necessario fornire il nome di dominio completo (FQDN), denominato anche nome completo del computer, del server IMAP dal quale si desidera migrare i dati delle cassette postali quando si crea un endpoint di migrazione IMAP. Utilizzare un client IMAP o il comando PING per verificare che sia possibile utilizzare il nome di dominio completo per comunicare con il server IMAP tramite Internet.
     
@@ -82,7 +84,7 @@ Identificare il gruppo di utenti per i quali si desidera effettuare la migrazion
   
 Di seguito sono riportati gli attributi necessari per ogni utente: 
   
-- **EmailAddress** specifica l'ID utente per la cassetta postale di Office 365 dell'utente.
+- **EmailAddress** specifica l'ID utente per la cassetta postale Microsoft 365 dell'utente.
     
 - **UserName** specifica il nome di accesso per l'account da utilizzare per accedere alla cassetta postale sul server IMAP.
     
@@ -134,7 +136,7 @@ paulc@contoso.edu,#paul.cannon@contoso-students.edu#mailadmin#,P@ssw0rd
 
  **Courier IMAP:**
   
-Alcuni sistemi di posta elettronica di origine, ad esempio Courier IMAP, non supportano l'utilizzo di credenziali di amministratore delle cassette postali per eseguire la migrazione delle cassette postali a Office 365. Al contrario, è possibile configurare il sistema di posta elettronica di origine affinché utilizzi le cartelle condivise virtuali. Con le cartelle condivise virtuali, è possibile utilizzare le credenziali di amministratore delle cassette postali per accedere alle cassette postali dell'utente nel sistema di posta elettronica di origine. Per ulteriori informazioni su come configurare le cartelle condivise virtuali per Courier IMAP, vedere [Cartelle condivise](https://go.microsoft.com/fwlink/p/?LinkId=398870).
+Alcuni sistemi di posta elettronica di origine, come corriere IMAP, non supportano l'utilizzo delle credenziali di amministratore per eseguire la migrazione delle cassette postali a Microsoft 365. In alternativa, è possibile configurare il sistema di posta elettronica di origine per l'utilizzo di cartelle condivise virtuali. Utilizzando le cartelle condivise virtuali, è possibile utilizzare le credenziali di amministratore delle cassette postali per accedere alle cassette postali utente nel sistema di posta elettronica di origine. Per ulteriori informazioni su come configurare le cartelle condivise virtuali per corriere IMAP, vedere [Shared Folders](https://go.microsoft.com/fwlink/p/?LinkId=398870).
   
 Per eseguire la migrazione delle cassette postali dopo avere configurato le cartelle condivise virtuali nel sistema di posta elettronica di origine, è necessario includere l'attributo **UserRoot** facoltativo nel file di migrazione. Questo attributo consente di specificare il percorso della cassetta postale di ogni utente nella struttura di cartelle condivise virtuali nel sistema di posta elettronica di origine. Ad esempio, il percorso per la cassetta postale di Terry è /utenti/terry.adams.
   
@@ -150,7 +152,7 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ### <a name="step-3-create-an-imap-migration-endpoint"></a>Passaggio 3: creare un endpoint di migrazione IMAP
 <a name="BK_Step3"> </a>
 
-Per eseguire la migrazione della posta elettronica correttamente, Office 365 deve essere in grado di connettersi e comunicare con il sistema di posta elettronica di origine. A tale scopo, in Office 365 viene utilizzato un endpoint di migrazione. L'endpoint di migrazione definisce inoltre il numero di cassette postali da migrare contemporaneamente e il numero di cassette postali da sincronizzare contemporaneamente durante la sincronizzazione incrementale, che si verifica ogni 24 ore. Per creare un endpoint di migrazione per la migrazione IMAP, è necessario innanzitutto [connettersi a Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
+Per eseguire correttamente la migrazione della posta elettronica, Microsoft 365 deve connettersi e comunicare con il sistema di posta elettronica di origine. A tale scopo, Microsoft 365 utilizza un endpoint di migrazione. L'endpoint di migrazione definisce anche il numero di cassette postali di cui eseguire la migrazione simultaneamente e il numero di cassette postali da sincronizzare contemporaneamente durante la sincronizzazione incrementale, che si verifica una volta ogni 24 ore. Per creare un punto finale di migrazione per la migrazione IMAP, [connettersi prima a Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
   
 Per un elenco completo dei comandi di migrazione, vedere [Cmdlet di spostamento e migrazione](https://go.microsoft.com/fwlink/p/?LinkId=534750).
   
@@ -203,23 +205,23 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-office-365"></a>Passaggio 5: instradare la posta elettronica a Office 365
+### <a name="step-5-route-your-email-to-microsoft-365"></a>Passaggio 5: instradare la posta elettronica a Microsoft 365
 <a name="BK_Step5"> </a>
 
-I sistemi di posta elettronica utilizzano un record DNS denominato record MX per individuare dove recapitare i messaggi di posta elettronica. Durante il processo di migrazione della posta elettronica, il record MX fa riferimento al sistema di posta elettronica di origine. Al termine della migrazione della posta elettronica a Office 365, il record MX fa riferimento a Office 365. Ciò contribuisce a garantire che la posta elettronica sia recapitata alle cassette postali di Office 365. Spostando il record MX, è inoltre possibile disattivare il sistema di posta elettronica precedente al momento più opportuno. 
+I sistemi di posta elettronica usano un record DNS denominato record MX per stabilire dove recapitare i messaggi di posta elettronica. Durante il processo di migrazione della posta elettronica, il record MX faceva riferimento al sistema di posta elettronica di origine. Una volta completata la migrazione della posta elettronica a Microsoft 365, è possibile puntare il record MX su Microsoft 365. Ciò consente di verificare che la posta elettronica venga recapitata alle cassette postali di Microsoft 365. Spostando il record MX, è anche possibile disattivare il sistema di posta elettronica precedente quando si è pronti. 
   
-Per molti provider DNS, sono disponibili istruzioni specifiche per modificare il record MX. Se il provider DNS non è incluso oppure si desidera farsi un'idea delle direzioni generali, vengono fornite anche [istruzioni generali sul record MX](https://go.microsoft.com/fwlink/?LinkId=397449).
+Per molti provider DNS sono disponibili istruzioni specifiche per modificare il record MX. Se il provider DNS non è incluso o se si desidera ottenere un senso delle direzioni generali, vengono fornite anche [istruzioni generali sui record MX](https://go.microsoft.com/fwlink/?LinkId=397449) .
   
 È possibile che i sistemi di posta elettronica dei propri clienti e partner impieghino fino a 72 ore per riconoscere il record MX modificato. Attendere almeno 72 ore prima di procedere con l'attività successiva: Passaggio 6: eliminare il batch di migrazione IMAP. 
   
 ### <a name="step-6-delete-imap-migration-batch"></a>Passaggio 6: eliminare il batch di migrazione IMAP
 <a name="BK_Step6"> </a>
 
-Dopo aver modificato il record MX e verificato che tutta la posta elettronica venga instradata alle cassette postali di Office 365, informare gli utenti che la loro posta sarà spostata in Office 365. Dopo questa operazione, è possibile eliminare il batch di migrazione IMAP. Verificare le seguenti condizioni prima di eliminare il batch di migrazione.
+Dopo aver modificato il record MX e aver verificato che tutti i messaggi di posta elettronica vengano instradati alle cassette postali di Microsoft 365, informare gli utenti che la posta viene inviata a Microsoft 365. Dopo di ciò, è possibile eliminare il batch di migrazione IMAP. Prima di eliminare il batch di migrazione, verificare quanto segue.
   
-- Tutti gli utenti utilizzano cassette postali di Office 365. Dopo l'eliminazione del batch, la posta inviata alle cassette postali nel server di Exchange locale non viene copiata nelle cassette postali di Office 365 corrispondenti.
+- Tutti gli utenti utilizzano le cassette postali di Microsoft 365. Dopo l'eliminazione del batch, la posta inviata alle cassette postali sul server Exchange locale non viene copiata nelle cassette postali di Microsoft 365 corrispondenti.
     
-- Le cassette postali di Office 365 sono state sincronizzate almeno una volta dal momento in cui ha avuto inizio l'invio della posta elettronica direttamente verso di loro. A tale scopo, assicurarsi che il valore nella casella Ultima sincronizzazione per il batch di migrazione sia più recente di quello dell'inizio dell'invio della posta direttamente alle cassette postali di Office 365.
+- Le cassette postali di Microsoft 365 sono state sincronizzate almeno una volta dopo che la posta è cominciata a essere inviata direttamente. Per eseguire questa operazione, verificare che il valore dell'ultima casella di tempo sincronizzato per il batch di migrazione sia più recente rispetto al momento in cui la posta elettronica ha iniziato a essere instradata direttamente alle cassette postali di Microsoft 365.
     
 Per eliminare il batch di migrazione "IMAPBatch1" da PowerShell di Exchange Online, eseguire il comando riportato di seguito:
   

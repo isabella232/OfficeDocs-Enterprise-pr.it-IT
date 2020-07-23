@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
-description: ExpressRoute per Office 365 fornisce la connettività Layer 3 tra la rete e i datacenter di Microsoft. I circuiti utilizzano la route BGP (Border Gateway Protocol) per gli annunci dei front end server di Office 365. Dal punto di vista dei dispositivi locali, quando è necessario selezionare il percorso TCP/IP corretto per Office 365, Azure ExpressRoute viene visualizzato come alternativa a Internet.
-ms.openlocfilehash: 56115e366d8f9b0bf7b4b893801ebca5d216c570
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: ExpressRoute per Office 365 fornisce la connettività Layer 3 tra la rete e i datacenter di Microsoft. I circuiti utilizzano la route BGP (Border Gateway Protocol) per la pubblicità dei server front-end di Office 365. Dal punto di vista dei dispositivi locali, quando è necessario selezionare il percorso TCP/IP corretto per Office 365, Azure ExpressRoute viene visualizzato come alternativa a Internet.
+ms.openlocfilehash: f147003491b2186a05edbaf73acc86e60dbe3110
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998531"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230882"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Pianificazione della rete con ExpressRoute per Office 365
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
-ExpressRoute per Office 365 fornisce la connettività Layer 3 tra la rete e i datacenter di Microsoft. I circuiti utilizzano la route BGP (Border Gateway Protocol) per gli annunci dei front end server di Office 365. Dal punto di vista dei dispositivi locali, quando è necessario selezionare il percorso TCP/IP corretto per Office 365, Azure ExpressRoute viene visualizzato come alternativa a Internet.
+ExpressRoute per Office 365 fornisce la connettività Layer 3 tra la rete e i datacenter di Microsoft. I circuiti utilizzano la route BGP (Border Gateway Protocol) per la pubblicità dei server front-end di Office 365. Dal punto di vista dei dispositivi locali, quando è necessario selezionare il percorso TCP/IP corretto per Office 365, Azure ExpressRoute viene visualizzato come alternativa a Internet.
   
 Azure ExpressRoute aggiunge un percorso diretto a un set specifico di funzionalità e servizi supportati offerti dai server di Office 365 all'interno dei datacenter di Microsoft. Azure ExpressRoute non sostituisce la connettività Internet ai Data Center Microsoft o ai servizi Internet di base come la risoluzione del nome di dominio. Azure ExpressRoute e i circuiti Internet devono essere protetti e ridondanti.
   
@@ -37,7 +37,7 @@ Nella tabella seguente sono riportate alcune differenze tra le connessioni Inter
 
 |**Differenze nella pianificazione della rete**|**Connessione di rete Internet**|**Connessione di rete ExpressRoute**|
 |:-----|:-----|:-----|
-| Accesso ai servizi Internet richiesti, tra cui;  <br/>  Risoluzione del nome DNS  <br/>  Verifica della revoca del certificato  <br/>  Reti per la distribuzione di contenuti  <br/> |Sì  <br/> |Le richieste all'infrastruttura DNS e/o CDN di proprietà di Microsoft possono utilizzare la rete ExpressRoute.  <br/> |
+| Accesso ai servizi Internet richiesti, tra cui;  <br/>  Risoluzione del nome DNS  <br/>  Verifica della revoca del certificato  <br/>  Reti per la distribuzione di contenuti (CDN)  <br/> |Sì  <br/> |Le richieste all'infrastruttura DNS e/o CDN di proprietà di Microsoft possono utilizzare la rete ExpressRoute.  <br/> |
 | Accesso ai servizi di Office 365, tra cui;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office in un browser  <br/>  Portale e autenticazione di Office 365  <br/> |Sì, tutte le applicazioni e le funzionalità  <br/> |Sì, [applicazioni e funzionalità specifiche](https://aka.ms/o365endpoints) <br/> |
 |Sicurezza locale al perimetro.  <br/> |Sì  <br/> |Sì  <br/> |
 |Pianificazione della disponibilità elevata.  <br/> |Failover a una connessione di rete Internet alternativa  <br/> |Failover a una connessione ExpressRoute alternativa  <br/> |
@@ -52,7 +52,7 @@ Se si utilizza un circuito di Azure ExpressRoute esistente e si desidera aggiung
   
 Per abilitare l'accesso a Office 365 sui circuiti di ExpressRoute di Azure esistenti, [configurare i filtri route](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) per garantire che i servizi di Office 365 siano accessibili.
   
-La sottoscrizione di Azure ExpressRoute è Customer Centric, ovvero gli abbonamenti sono legati ai clienti. Come cliente, è possibile disporre di più circuiti di ExpressRoute di Azure e accedere a molte risorse cloud Microsoft su tali circuiti. Ad esempio, è possibile scegliere di accedere a una macchina virtuale ospitata in Azure, a un tenant di testing di Office 365 e a un tenant di produzione di Office 365 su una coppia di circuiti di ExpressRoute di Azure ridondanti.
+La sottoscrizione di Azure ExpressRoute è incentrata sui clienti, ovvero gli abbonamenti sono legati ai clienti. Come cliente, è possibile disporre di più circuiti di ExpressRoute di Azure e accedere a molte risorse cloud Microsoft su tali circuiti. Ad esempio, è possibile scegliere di accedere a una macchina virtuale ospitata in Azure, a un tenant di testing di Office 365 e a un tenant di produzione di Office 365 su una coppia di circuiti di ExpressRoute di Azure ridondanti.
   
 In questa tabella vengono illustrati i due tipi di relazioni di peering che è possibile scegliere di implementare nei circuiti.
 
@@ -204,7 +204,7 @@ Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/planningexpr
   
 [Implementazione di ExpressRoute per Office 365](implementing-expressroute.md)
   
-[Utilizzo delle community BGP in ExpressRoute per gli scenari di Office 365 (anteprima)](bgp-communities-in-expressroute.md)
+[Utilizzo delle community BGP in ExpressRoute per gli scenari di Office 365](bgp-communities-in-expressroute.md)
   
 [Qualità multimediale e prestazioni della connettività di rete in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Informazioni su come utilizzare Azure ExpressRoute con Office 365 e su come pianificare il progetto di implementazione della rete che sarà necessario se si esegue la distribuzione di Azure ExpressRoute per l'utilizzo con Office 365.
-ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997950"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230032"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute per Office 365
 
@@ -64,9 +64,9 @@ Nella tabella seguente sono elencati i servizi di Office 365 supportati su Expre
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Approfondire<sup>1</sup> <br/> |
 |Skype for business online<sup>1</sup> <br/> Microsoft teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive for business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|Portale e condiviso<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
+|Portale e condiviso<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup> Ognuna di queste applicazioni ha requisiti di connettività Internet non supportati su ExpressRoute, vedere l' [articolo Office 365 Endpoints](https://aka.ms/o365endpoints) per ulteriori informazioni.
+<sup>1</sup> ognuna di queste applicazioni ha requisiti di connettività Internet non supportati su ExpressRoute, vedere l' [articolo Office 365 Endpoints](https://aka.ms/o365endpoints) per ulteriori informazioni.
 
 I servizi che non sono inclusi in ExpressRoute per Office 365 sono Microsoft 365 Apps for Enterprise client downloads, on-premises Identity provider sign-in e Office 365 (operated by 21 Viant) Service in Cina.
 
@@ -90,7 +90,7 @@ L'implementazione di ExpressRoute richiede la partecipazione dei proprietari di 
 
 8. Facoltativamente, [implementare QoS](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) e valutare l'espansione regionale.
 
-<sup>1</sup> Considerazioni importanti sulle prestazioni. Le decisioni qui possono influire in modo significativo sulla latenza, che è un fattore critico per applicazioni come Skype for business.
+<sup>1</sup> considerazioni importanti sulle prestazioni. Le decisioni qui possono influire in modo significativo sulla latenza, che è un fattore critico per applicazioni come Skype for business.
 
 Per ulteriori riferimenti, utilizzare la [Guida di routing](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) oltre alla [documentazione di ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/).
 
@@ -112,7 +112,7 @@ Pronto a iscriversi per [ExpressRoute per Office 365](https://aka.ms/ert)?
 
 [Implementazione di ExpressRoute per Office 365](implementing-expressroute.md)
 
-[Utilizzo delle community BGP in ExpressRoute per gli scenari di Office 365 (anteprima)](bgp-communities-in-expressroute.md)
+[Utilizzo delle community BGP in ExpressRoute per gli scenari di Office 365](bgp-communities-in-expressroute.md)
 
 [Qualità multimediale e prestazioni della connettività di rete in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 

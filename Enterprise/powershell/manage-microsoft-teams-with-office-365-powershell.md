@@ -1,9 +1,9 @@
 ---
-title: Gestire Microsoft teams con Office 365 PowerShell
+title: Gestire Microsoft teams con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/12/2020
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 'Riepilogo: utilizzare Office 365 PowerShell per gestire Microsoft teams.'
-ms.openlocfilehash: 0f15d71558ddb5166090b067da06e0a6321a2b99
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+description: 'Riepilogo: utilizzare PowerShell per gestire Microsoft teams.'
+ms.openlocfilehash: 8958c6ec6f0c17c21461cbee4cb1a6441ceed8d6
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209122"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230612"
 ---
-# <a name="manage-microsoft-teams-with-office-365-powershell"></a>Gestire Microsoft teams con Office 365 PowerShell
+# <a name="manage-microsoft-teams-with-powershell"></a>Gestire Microsoft teams con PowerShell
 
-È possibile gestire Microsoft teams con Office 365 PowerShell.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+
+È possibile gestire Microsoft teams con PowerShell.
   
 Innanzitutto, installare il [modulo Microsoft teams](https://www.powershellgallery.com/packages/MicrosoftTeams/).
     
@@ -83,7 +85,7 @@ Disconnect-MicrosoftTeams
 
 [Panoramica di PowerShell Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
   
-[Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
+[Gestire Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
+[Guida introduttiva a PowerShell per Microsoft 365](getting-started-with-office-365-powershell.md)
 

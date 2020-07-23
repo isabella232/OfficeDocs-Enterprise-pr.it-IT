@@ -17,16 +17,18 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 'Riepilogo: i partner di syndication e Cloud Solution Provider (CSP) possono utilizzare Windows PowerShell per gestire i tenant dei clienti Microsoft 365.'
-ms.openlocfilehash: 00e60693ad10b705765da9ed57142c893a74b034
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 22fd26fb89d15cc036d52ed49ec61319c7e13a52
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998222"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230482"
 ---
 # <a name="manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestire Microsoft 365 con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegate Access Permissions)
 
-I partner di autorizzazione accesso delegato (DAP, Delegated Access Permission) sono partner di Syndication e Cloud Solution Provider (CSP). Di solito, rappresentano fornitori di rete o telecomunicazioni di altre aziende. Essi bundle Microsoft 365 abbonamenti nelle loro offerte di servizi ai propri clienti. Quando vendono un abbonamento a Microsoft 365, vengono concesse automaticamente amministra per conto di (AOBO) le autorizzazioni per il cliente locazione in modo che possano amministrare e segnalare sul locazione cliente. Nella maggior parte dei casi, è difficile e richiede molto tempo nell'interfaccia di amministrazione di Microsoft 365. È molto più facile effettuare attività amministrative, come elencare tutti i **TenantId** e i domini dei clienti o identificare tutti gli utenti in un tenancy e le licenze loro assegnate, utilizzando Windows PowerShell per Office 365. In alcuni casi, è possibile eseguire tali attività amministrative solo in Windows PowerShell per Office 365. Di seguito sono riportati alcuni esempi di scenari più frequenti in cui i partner di Syndication e Cloud Solution Providers (CSP) amministrano i tenancy dei clienti:
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+
+I partner di autorizzazione accesso delegato (DAP, Delegated Access Permission) sono partner di Syndication e Cloud Solution Provider (CSP). Di solito, rappresentano fornitori di rete o telecomunicazioni di altre aziende. Essi bundle Microsoft 365 abbonamenti nelle loro offerte di servizi ai propri clienti. Quando vendono un abbonamento a Microsoft 365, vengono concesse automaticamente amministra per conto di (AOBO) le autorizzazioni per il cliente locazione in modo che possano amministrare e segnalare sul locazione cliente. Nella maggior parte dei casi, è difficile e richiede molto tempo nell'interfaccia di amministrazione di Microsoft 365. È molto più semplice eseguire attività amministrative come l'elenco di tutti i clienti **TenantIds** e dei relativi domini oppure identificare tutti gli utenti in un contratto di locazione del cliente e quali licenze vengono assegnate tramite PowerShell per Microsoft 365. In alcuni casi, è possibile eseguire queste attività amministrative solo in PowerShell per Microsoft 365. Di seguito sono riportati alcuni esempi di scenari più frequenti in cui i partner di Syndication e Cloud Solution Providers (CSP) amministrano i tenancy dei clienti:
   
 ## 
 

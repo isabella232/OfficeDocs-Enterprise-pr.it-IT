@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 networking Partner Program
+title: Microsoft 365 Networking Partner Program
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Microsoft 365 networking Partner Program consente al dispositivo di essere certificato come funzionante con Microsoft 365.
 hideEdit: true
-ms.openlocfilehash: 64e04bb1f9e4ebb5d39c34c128b544f65ef5147e
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: c43f110883cfb5ca150a702253a41e84f9e1ab0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052499"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230192"
 ---
-# <a name="microsoft-365-networking-partner-program"></a>Microsoft 365 networking Partner Program
+# <a name="microsoft-365-networking-partner-program"></a>Microsoft 365 Networking Partner Program
 
 La connettività di rete ha un impatto diretto sulla capacità degli utenti di lavorare rapidamente, collaborare efficacemente e semplificare i processi aziendali con Microsoft 365. Per i clienti in qualsiasi fase della loro trasformazione digitale, la progettazione della rete è un aspetto critico che dovrebbe essere affrontato in modo proattivo prima che i problemi influenzino negativamente l'esperienza utente.
 
@@ -37,6 +37,6 @@ Il programma Microsoft 365 networking partner aiuta a rispondere a queste domand
 
 Microsoft 365 networking Partner Program definisce soluzioni di rete qualificate come "compatibile con Microsoft 365". Solo i dispositivi o le soluzioni che soddisfano i rigorosi requisiti di testing di Microsoft, hanno esperienze senza problemi con l'installazione e dimostrano un'esperienza di rete di alta qualità quando viene utilizzato con Microsoft 365 riceverà l'indicazione "Works with Microsoft 365". Queste soluzioni di partner convalidate sono elencate nella [pagina Microsoft 365 networking Partner Program](https://www.microsoft.com/microsoft-365/partners/O365networkingpartners), insieme ai dettagli della soluzione e ai collegamenti per ulteriori informazioni.
 
-Se si è un cliente di Microsoft 365, è possibile rendere il provider della soluzione di rete a conoscenza di questo programma tramite questa pagina [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP) .
+[! Nota] Se si è un cliente di Microsoft 365, è possibile rendere il provider della soluzione di rete a conoscenza di questo programma tramite questa pagina [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP) .
 
 Per i provider di soluzioni di rete che desiderano richiedere informazioni sul programma Microsoft 365 networking partner, compilare [questo modulo](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyMNEapKtzJHu98R0YXYz1RUN0QxSUVEWTdRVTdIV1RTWjIzOVk0QkE4US4u). Vi ringrazio per il vostro interesse e siamo lieti di una splendida partnership.

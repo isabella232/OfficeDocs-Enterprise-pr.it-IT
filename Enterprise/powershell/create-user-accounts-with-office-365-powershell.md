@@ -1,9 +1,9 @@
 ---
-title: Creare account utente con Office 365 PowerShell
+title: Creare gli account utente di Microsoft 365 con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,32 +18,34 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Informazioni su come usare PowerShell di Office 365 per creare account utente in Office 365.
-ms.openlocfilehash: 95cbefc2caeb61376ed77fe5023cb1c050a8fa07
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Informazioni su come utilizzare PowerShell per Microsoft 365 per creare account utente.
+ms.openlocfilehash: 4057f4e1b29e8177bee32306c49f25f607ac5a0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004689"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230792"
 ---
-# <a name="create-user-accounts-with-office-365-powershell"></a>Creare account utente con Office 365 PowerShell
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>Creare gli account utente di Microsoft 365 con PowerShell
 
-È possibile utilizzare PowerShell di Office 365 per creare in modo efficiente account utente, in particolare di tipo multiplo. Quando si creano account utente in PowerShell di Office 365, alcune proprietà dell'account sono sempre richieste. Altre proprietà non sono necessarie per creare l'account, ma sono comunque importanti. Tali proprietà sono descritte nella tabella seguente.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+
+È possibile utilizzare PowerShell per Microsoft 365 per creare efficacemente gli account utente, in particolare più account utente. Quando si creano account utente in PowerShell, vengono sempre richieste determinate proprietà dell'account. Altre proprietà non sono necessarie per creare l'account, ma sono comunque importanti. Tali proprietà sono descritte nella tabella seguente.
   
 |**Nome della proprietà**|**Obbligatorio?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**DisplayName** <br/> |Sì  <br/> |Si tratta del nome visualizzato usato nei servizi Office 365. Ad esempio, Caleb Sills.  <br/> |
-|**UserPrincipalName** <br/> |Sì  <br/> |Si tratta del nome dell'account utilizzato per accedere ai servizi Office 365. Ad esempio, CalebS@contoso.onmicrosoft.com.  <br/> |
+|**DisplayName** <br/> |Sì  <br/> |Si tratta del nome visualizzato utilizzato nei servizi Microsoft 365. Ad esempio, Caleb Sills.  <br/> |
+|**UserPrincipalName** <br/> |Sì  <br/> |Si tratta del nome dell'account utilizzato per accedere ai servizi di Microsoft 365. Ad esempio, CalebS@contoso.onmicrosoft.com.  <br/> |
 |**FirstName** <br/> |No  <br/> ||
 |**LastName** <br/> |No  <br/> ||
-|**LicenseAssignment** <br/> |No  <br/> |Questo è il piano di gestione delle licenze (detto anche piano di licenze, piano Office 365 o SKU) dal quale una licenza disponibile viene assegnata all'account utente. La licenza definisce i servizi Office 365 che sono disponibili per l'account. Non è necessario assegnare una licenza a un utente, quando si crea l'account. Tuttavia, l'account richiede una licenza per accedere ai servizi Office 365. Si hanno a disposizione 30 giorni di tempo per assegnare la licenza all'account utente, dopo averlo creato. |
+|**LicenseAssignment** <br/> |No  <br/> |Si tratta del piano di gestione delle licenze (noto anche come piano di licenza o SKU) da cui viene assegnata una licenza disponibile per l'account utente. La licenza definisce i servizi Microsoft 365 che sono disponibili per l'account. Non è necessario assegnare una licenza a un utente quando si crea l'account, ma l'account richiede una licenza per accedere ai servizi Microsoft 365. Dopo aver creato l'account utente, sono presenti 30 giorni per la licenza. |
 |**Password** <br/> |No  <br/> | Se non si specifica una password, all'account utente ne viene assegnata una casuale, visibile nei risultati del comando. Se si specifica una password, è necessario che contenga da 8 a 16 caratteri di testo ASCII di uno dei tre tipi seguenti: lettere minuscole, lettere maiuscole, numeri e simboli. <br/> |
-|**UsageLocation** <br/> |No  <br/> |Si tratta di un codice paese ISO 3166-1 alpha-2. Ad esempio, US per gli Stati Uniti e FR per la Francia. È importante indicare questo valore, poiché alcuni servizi Office 365 non sono visibili in determinati paesi. In questo caso, è possibile assegnare una licenza a un account utente solo se l'account stesso dispone di un valore configurato. Per altre informazioni, vedere [Informazioni sulle restrizioni di licenza](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
+|**UsageLocation** <br/> |No  <br/> |Questo è un codice paese valido ISO 3166-1 Alpha-2. Ad esempio, US per gli Stati Uniti e FR per la Francia. È importante fornire questo valore perché alcuni servizi Microsoft 365 non sono disponibili in alcuni paesi, pertanto non è possibile assegnare una licenza a un account utente, a meno che l'account non abbia configurato questo valore. Per ulteriori informazioni, vedere [informazioni sulle restrizioni di licenza](https://go.microsoft.com/fwlink/p/?LinkId=691730).  <br/> |
    
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 Una volta stabilita la connessione, utilizzare la sintassi seguente per creare un singolo account:
   
@@ -63,7 +65,7 @@ New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 ### <a name="create-an-individual-user-account"></a>Creare un account utente singolo
 
@@ -101,7 +103,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   ```
 
  > [!NOTE]
->I nomi della colonna e il loro ordina nella prima riga del file CVS sono arbitrari. Tuttavia, è opportuno assicurarsi che i dati nel resto del file corrispondano all'ordine relativo ai nomi della colonna e li utilizzino per i valori del parametro nel comando PowerShell di Office 365.
+>I nomi delle colonne e il relativo ordine nella prima riga del file CSV sono arbitrari, ma assicurano che i dati del resto del file corrispondano all'ordine dei nomi delle colonne e utilizzino i nomi delle colonne per i valori del parametro nel comando PowerShell per Microsoft 365.
     
 2. Utilizzare la sintassi seguente:
     
@@ -115,12 +117,12 @@ In questo esempio, vengono creati gli account utente dal file denominato C:\My D
   Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
   ```
 
-3. Esaminare il file di output per visualizzare i risultati. Non sono state indicate password, quindi quelle casuali generate da Office 365 sono visibili nel file di output.
+3. Esaminare il file di output per visualizzare i risultati. Non sono state specificate le password, pertanto le password casuali generate da Microsoft 365 sono visibili nel file di output.
     
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
+[Gestire Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
+[Guida introduttiva a PowerShell per Microsoft 365](getting-started-with-office-365-powershell.md)

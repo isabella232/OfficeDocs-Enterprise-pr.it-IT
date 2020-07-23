@@ -16,14 +16,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 'Sintesi: utilizzare Windows PowerShell remoto per connettersi a Exchange Online tramite il valore DelegatedOrg.'
-ms.openlocfilehash: 4a9f08325fc56308b27467423b047375985562c5
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: f04632f9e7b5e8dec476a5381550020e5d8a1521
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997372"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230832"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Connettersi ai tenant Exchange Online con Windows PowerShell remoto per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
+
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 > [!IMPORTANT]
 > Le procedure descritte in questo argomento sono valide solo per i partner di autorizzazione accesso delegato (DAP). Se non si è un partner DAP, non usare le procedure descritte in questo argomento. 
@@ -35,7 +37,7 @@ DAP Partners è in grado di utilizzare Exchange Online PowerShell per gestire le
 > [!NOTE]
 > Non è possibile per i partner DAP usare le procedure descritte in [Connettersi a Exchange Online PowerShell utilizzando l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell) per connettersi alle organizzazioni tenant dei clienti in Exchange Online PowerShell. MFA e Exchange Online Remote PowerShell Module non funzionano con l'autenticazione delegata.
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Tempo stimato per il completamento: 5 minuti
 

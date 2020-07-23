@@ -1,9 +1,9 @@
 ---
-title: Gestire Skype for Business Online con PowerShell di Office 365
+title: Gestire Skype for business online con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2018
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: 'Riepilogo: utilizzare PowerShell di Office 365 per gestire i criteri, i criteri per utente e le impostazioni relative alle riunioni di Skype for Business online.'
-ms.openlocfilehash: f1a5df3802d43755e81465743b81c5fbb9fff7e0
-ms.sourcegitcommit: 6c7cc6aca8713e280ae6ff51226dde9db4497401
+description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 per gestire i criteri di Skype for business online, i criteri per utente e le impostazioni delle riunioni.'
+ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44415938"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230442"
 ---
-# <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gestire Skype for Business Online con PowerShell di Office 365
+# <a name="manage-skype-for-business-online-with-powershell"></a>Gestire Skype for business online con PowerShell
 
-Una delle attività principali di qualsiasi amministratore di Skype for Business online è la gestione dei criteri. Anche se è possibile eseguire alcune di queste operazioni nell'interfaccia di amministrazione di Microsoft 365, altre attività sono molto più rapide e semplici in PowerShell di Office 365. 
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+
+Una delle attività principali di qualsiasi amministratore di Skype for Business online è la gestione dei criteri. Anche se è possibile eseguire alcune di queste attività nell'interfaccia di amministrazione di Microsoft 365, altre attività sono molto più rapide e più semplici in PowerShell. 
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
@@ -62,15 +64,15 @@ Scaricare e installare il [modulo del connettore di Skype for business online](h
 
 Per ulteriori informazioni, vedere i seguenti argomenti:
   
-- [Gestire criteri Skype for Business Online con PowerShell di Office 365](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Gestire i criteri di Skype for business online con PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
-- [Assegnare criteri Skype for Business Online con PowerShell di Office 365](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Assegnare criteri Skype for business online per utente con PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire Office 365 con PowerShell di Office 365](manage-office-365-with-office-365-powershell.md)
+[Gestire Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Guida introduttiva a PowerShell di Office 365](getting-started-with-office-365-powershell.md)
+[Guida introduttiva a PowerShell per Microsoft 365](getting-started-with-office-365-powershell.md)
 
 [Riferimenti ai cmdlet di PowerShell per Skype for business](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

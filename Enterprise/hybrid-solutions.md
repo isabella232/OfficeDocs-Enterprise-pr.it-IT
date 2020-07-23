@@ -3,7 +3,7 @@ title: Soluzioni ibride
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2018
+ms.date: 07/20/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Sintesi: utilizzare gli articoli per distribuire i carichi di lavoro di Office Server in Microsoft Azure.'
-ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998014"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229952"
 ---
 # <a name="hybrid-solutions"></a>Soluzioni ibride
 
-Con Microsoft Azure, è ora possibile distribuire alcuni carichi di lavoro di Office Server in genere distribuiti in locale a servizi infrastruttura di Azure.
+Con Microsoft Azure, è possibile distribuire alcuni carichi di lavoro di Office Server in genere distribuiti in locale nei servizi di infrastruttura di Azure.
   
 Per l'infrastruttura di identità Microsoft 365 in Azure:
 
@@ -50,7 +50,7 @@ Per i carichi di lavoro di SharePoint Server 2013 in Azure:
 
 [Adozione del cloud e soluzioni ibride](cloud-adoption-and-hybrid-solutions.yml)
   
-[Risorse sull'architettura IT del cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Risorse sull'architettura IT di Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
 [Microsoft 365 per le guide dei laboratori di testing Enterprise (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
