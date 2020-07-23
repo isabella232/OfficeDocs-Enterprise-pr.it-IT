@@ -1,9 +1,9 @@
 ---
-title: Visualizzare gli account utente con Office 365 PowerShell
+title: Visualizzare gli account utente di Microsoft 365 con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,31 +18,33 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: 'Riepilogo: visualizzare, elencare o visualizzare gli account utente in vari modi con Office 365 PowerShell.'
-ms.openlocfilehash: c97fd55b2516198f2beaddd558174c62972547c6
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 'Riepilogo: visualizzare, elencare o visualizzare gli account utente di Microsoft 365 in vari modi con PowerShell.'
+ms.openlocfilehash: a67457169328828b2b471dd5db6a53bab3bbacda
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004149"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230202"
 ---
-# <a name="view-user-accounts-with-office-365-powershell"></a><span data-ttu-id="31e4d-103">Visualizzare gli account utente con Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="31e4d-103">View user accounts with Office 365 PowerShell</span></span>
+# <a name="view-microsoft-365-user-accounts-with-powershell"></a><span data-ttu-id="62bd9-103">Visualizzare gli account utente di Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="62bd9-103">View Microsoft 365 user accounts with PowerShell</span></span>
 
-<span data-ttu-id="31e4d-104">Anche se è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per visualizzare gli account per il tenant di Office 365, è possibile utilizzare anche Office 365 PowerShell e fare alcuni elementi che l'interfaccia di amministrazione non è in grado di eseguire.</span><span class="sxs-lookup"><span data-stu-id="31e4d-104">Although you can use the Microsoft 365 admin center to view the accounts for your Office 365 tenant, you can also use Office 365 PowerShell and do some things that the admin center cannot.</span></span>
+<span data-ttu-id="62bd9-104">*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="62bd9-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+
+<span data-ttu-id="62bd9-105">Anche se è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per visualizzare gli account per il tenant di Microsoft 365, è anche possibile utilizzare PowerShell per Microsoft 365 e fare alcuni elementi che l'interfaccia di amministrazione non è in grado di eseguire.</span><span class="sxs-lookup"><span data-stu-id="62bd9-105">Although you can use the Microsoft 365 admin center to view the accounts for your Microsoft 365 tenant, you can also use PowerShell for Microsoft 365 and do some things that the admin center cannot.</span></span>
   
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="31e4d-105">Usare il modulo di Azure Active Directory PowerShell per Graph</span><span class="sxs-lookup"><span data-stu-id="31e4d-105">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="62bd9-106">Usare il modulo di Azure Active Directory PowerShell per Graph</span><span class="sxs-lookup"><span data-stu-id="62bd9-106">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="31e4d-106">Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="31e4d-106">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="62bd9-107">Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="62bd9-107">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
-### <a name="view-all-accounts"></a><span data-ttu-id="31e4d-107">Visualizzazione di tutti gli account</span><span class="sxs-lookup"><span data-stu-id="31e4d-107">View all accounts</span></span>
+### <a name="view-all-accounts"></a><span data-ttu-id="62bd9-108">Visualizzazione di tutti gli account</span><span class="sxs-lookup"><span data-stu-id="62bd9-108">View all accounts</span></span>
 
-<span data-ttu-id="31e4d-108">Per visualizzare l'elenco completo degli account utente, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="31e4d-108">To display the full list of user accounts, run this command:</span></span>
+<span data-ttu-id="62bd9-109">Per visualizzare l'elenco completo degli account utente, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="62bd9-109">To display the full list of user accounts, run this command:</span></span>
   
 ```powershell
 Get-AzureADUser
 ```
 
-<span data-ttu-id="31e4d-109">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="31e4d-109">You should see information similar to this:</span></span>
+<span data-ttu-id="62bd9-110">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="62bd9-110">You should see information similar to this:</span></span>
   
 ```powershell
 ObjectId                             DisplayName                                           UserPrincipalName
@@ -55,95 +57,95 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 40722671-e520-4a5f-97d4-0bc9e9b2dc0f Debra Berger                                          DebraB@litwareinc.OnMicr...
 ```
 
-### <a name="view-a-specific-account"></a><span data-ttu-id="31e4d-110">Visualizzazione di un account specifico</span><span class="sxs-lookup"><span data-stu-id="31e4d-110">View a specific account</span></span>
+### <a name="view-a-specific-account"></a><span data-ttu-id="62bd9-111">Visualizzazione di un account specifico</span><span class="sxs-lookup"><span data-stu-id="62bd9-111">View a specific account</span></span>
 
-<span data-ttu-id="31e4d-111">Per visualizzare un account utente specifico, inserire il nome account di accesso dell'account utente, noto anche come nome dell'entità utente (UPN), rimuovere i caratteri "<" e ">" ed eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="31e4d-111">To display a specific user account, fill in the sign-in account name of the user account, also known as the user principal name (UPN), remove the "<" and ">" characters, and run this command:</span></span>
+<span data-ttu-id="62bd9-112">Per visualizzare un account utente specifico, inserire il nome account di accesso dell'account utente, noto anche come nome dell'entità utente (UPN), rimuovere i caratteri "<" e ">" ed eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="62bd9-112">To display a specific user account, fill in the sign-in account name of the user account, also known as the user principal name (UPN), remove the "<" and ">" characters, and run this command:</span></span>
   
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account>
 ```
 
-<span data-ttu-id="31e4d-112">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="31e4d-112">Here is an example:</span></span>
+<span data-ttu-id="62bd9-113">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="62bd9-113">Here is an example:</span></span>
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 ```
 
-### <a name="view-additional-property-values-for-a-specific-account"></a><span data-ttu-id="31e4d-113">Visualizzare i valori di proprietà aggiuntivi per un account specifico</span><span class="sxs-lookup"><span data-stu-id="31e4d-113">View additional property values for a specific account</span></span>
+### <a name="view-additional-property-values-for-a-specific-account"></a><span data-ttu-id="62bd9-114">Visualizzare i valori di proprietà aggiuntivi per un account specifico</span><span class="sxs-lookup"><span data-stu-id="62bd9-114">View additional property values for a specific account</span></span>
 
-<span data-ttu-id="31e4d-114">Per impostazione predefinita, il cmdlet **Get-AzureADUser** consente di visualizzare solo le proprietà ObjectID, DisplayName e userPrincipalName degli account.</span><span class="sxs-lookup"><span data-stu-id="31e4d-114">By default, the **Get-AzureADUser** cmdlet only displays the ObjectID, DisplayName, and UserPrincipalName properties of accounts.</span></span>
+<span data-ttu-id="62bd9-115">Per impostazione predefinita, il cmdlet **Get-AzureADUser** consente di visualizzare solo le proprietà ObjectID, DisplayName e userPrincipalName degli account.</span><span class="sxs-lookup"><span data-stu-id="62bd9-115">By default, the **Get-AzureADUser** cmdlet only displays the ObjectID, DisplayName, and UserPrincipalName properties of accounts.</span></span>
 
-<span data-ttu-id="31e4d-115">Per essere più selettivi sull'elenco delle proprietà da visualizzare, è possibile utilizzare il cmdlet **Select** in combinazione con il cmdlet **Get-AzureADUser** .</span><span class="sxs-lookup"><span data-stu-id="31e4d-115">To be more selective about the list of properties to display, you can use the **Select** cmdlet in combination with the **Get-AzureADUser** cmdlet.</span></span> <span data-ttu-id="31e4d-116">Per combinare i due cmdlet, viene utilizzato il carattere "pipe" "|", che indica a Azure Active Directory PowerShell per Graph di prendere i risultati di un comando e inviarlo al comando successivo.</span><span class="sxs-lookup"><span data-stu-id="31e4d-116">To combine the two cmdlets, we use the "pipe" character "|", which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command.</span></span> <span data-ttu-id="31e4d-117">Di seguito è riportato un comando di esempio che consente di visualizzare il DisplayName, il reparto e UsageLocation per ogni account utente:</span><span class="sxs-lookup"><span data-stu-id="31e4d-117">Here is an example command that displays the DisplayName, Department, and UsageLocation for every user account:</span></span>
+<span data-ttu-id="62bd9-116">Per essere più selettivi sull'elenco delle proprietà da visualizzare, è possibile utilizzare il cmdlet **Select** in combinazione con il cmdlet **Get-AzureADUser** .</span><span class="sxs-lookup"><span data-stu-id="62bd9-116">To be more selective about the list of properties to display, you can use the **Select** cmdlet in combination with the **Get-AzureADUser** cmdlet.</span></span> <span data-ttu-id="62bd9-117">Per combinare i due cmdlet, viene utilizzato il carattere "pipe" "|", che indica a Azure Active Directory PowerShell per Graph di prendere i risultati di un comando e inviarlo al comando successivo.</span><span class="sxs-lookup"><span data-stu-id="62bd9-117">To combine the two cmdlets, we use the "pipe" character "|", which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command.</span></span> <span data-ttu-id="62bd9-118">Di seguito è riportato un comando di esempio che consente di visualizzare il DisplayName, il reparto e UsageLocation per ogni account utente:</span><span class="sxs-lookup"><span data-stu-id="62bd9-118">Here is an example command that displays the DisplayName, Department, and UsageLocation for every user account:</span></span>
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
 ```
 
-<span data-ttu-id="31e4d-118">Questo comando indica a PowerShell di Office 365 di:</span><span class="sxs-lookup"><span data-stu-id="31e4d-118">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="62bd9-119">Questo comando indica a PowerShell di:</span><span class="sxs-lookup"><span data-stu-id="62bd9-119">This command instructs PowerShell to:</span></span>
   
-- <span data-ttu-id="31e4d-119">Accedere a tutte le informazioni degli account utente ( **Get-AzureADUser** ) e inviarle al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-119">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="62bd9-120">Accedere a tutte le informazioni degli account utente ( **Get-AzureADUser** ) e inviarle al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-120">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="31e4d-120">Visualizzare solo il nome dell'account utente, il reparto e la posizione di utilizzo ( **selezionare DisplayName, Department, UsageLocation** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-120">Display only the user account name, department, and usage location ( **Select DisplayName, Department, UsageLocation** ).</span></span>
+- <span data-ttu-id="62bd9-121">Visualizzare solo il nome dell'account utente, il reparto e la posizione di utilizzo ( **selezionare DisplayName, Department, UsageLocation** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-121">Display only the user account name, department, and usage location ( **Select DisplayName, Department, UsageLocation** ).</span></span>
   
-<span data-ttu-id="31e4d-121">Per visualizzare tutte le proprietà degli account utente, utilizzare il cmdlet **Select** e il carattere jolly (\*) per visualizzarli tutti per un account utente specifico.</span><span class="sxs-lookup"><span data-stu-id="31e4d-121">To see all of the properties for user accounts, use the **Select** cmdlet and the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="31e4d-122">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="31e4d-122">Here is an example:</span></span>
+<span data-ttu-id="62bd9-122">Per visualizzare tutte le proprietà degli account utente, utilizzare il cmdlet **Select** e il carattere jolly (\*) per visualizzarli tutti per un account utente specifico.</span><span class="sxs-lookup"><span data-stu-id="62bd9-122">To see all of the properties for user accounts, use the **Select** cmdlet and the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="62bd9-123">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="62bd9-123">Here is an example:</span></span>
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-<span data-ttu-id="31e4d-123">Come un altro esempio, è possibile controllare lo stato abilitato di un account utente specifico con il seguente comando:</span><span class="sxs-lookup"><span data-stu-id="31e4d-123">As another example, you can check the enabled status of a specific user account with the following command:</span></span>
+<span data-ttu-id="62bd9-124">Come un altro esempio, è possibile controllare lo stato abilitato di un account utente specifico con il seguente comando:</span><span class="sxs-lookup"><span data-stu-id="62bd9-124">As another example, you can check the enabled status of a specific user account with the following command:</span></span>
   
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
 
-### <a name="view-some-accounts-based-on-a-common-property"></a><span data-ttu-id="31e4d-124">Visualizzare alcuni account basati su una proprietà comune</span><span class="sxs-lookup"><span data-stu-id="31e4d-124">View some accounts based on a common property</span></span>
+### <a name="view-some-accounts-based-on-a-common-property"></a><span data-ttu-id="62bd9-125">Visualizzare alcuni account basati su una proprietà comune</span><span class="sxs-lookup"><span data-stu-id="62bd9-125">View some accounts based on a common property</span></span>
 
-<span data-ttu-id="31e4d-125">Per essere più selettivi sull'elenco degli account da visualizzare, è possibile utilizzare il cmdlet **where** in combinazione con il cmdlet **Get-AzureADUser** .</span><span class="sxs-lookup"><span data-stu-id="31e4d-125">To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-AzureADUser** cmdlet.</span></span> <span data-ttu-id="31e4d-126">Per combinare i due cmdlet, viene utilizzato il carattere "pipe" "|", che indica a Azure Active Directory PowerShell per Graph di prendere i risultati di un comando e inviarlo al comando successivo.</span><span class="sxs-lookup"><span data-stu-id="31e4d-126">To combine the two cmdlets, we use the "pipe" character "|", which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command.</span></span> <span data-ttu-id="31e4d-127">Ecco un comando di esempio che visualizza soltanto gli account utente con un percorso di utilizzo non specificato:</span><span class="sxs-lookup"><span data-stu-id="31e4d-127">Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
+<span data-ttu-id="62bd9-126">Per essere più selettivi sull'elenco degli account da visualizzare, è possibile utilizzare il cmdlet **where** in combinazione con il cmdlet **Get-AzureADUser** .</span><span class="sxs-lookup"><span data-stu-id="62bd9-126">To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-AzureADUser** cmdlet.</span></span> <span data-ttu-id="62bd9-127">Per combinare i due cmdlet, viene utilizzato il carattere "pipe" "|", che indica a Azure Active Directory PowerShell per Graph di prendere i risultati di un comando e inviarlo al comando successivo.</span><span class="sxs-lookup"><span data-stu-id="62bd9-127">To combine the two cmdlets, we use the "pipe" character "|", which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command.</span></span> <span data-ttu-id="62bd9-128">Ecco un comando di esempio che visualizza soltanto gli account utente con un percorso di utilizzo non specificato:</span><span class="sxs-lookup"><span data-stu-id="62bd9-128">Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-<span data-ttu-id="31e4d-128">Questo comando indica a Azure Active Directory PowerShell per Graph di eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="31e4d-128">This command instructs Azure Active Directory PowerShell for Graph to:</span></span>
+<span data-ttu-id="62bd9-129">Questo comando indica a Azure Active Directory PowerShell per Graph di eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="62bd9-129">This command instructs Azure Active Directory PowerShell for Graph to:</span></span>
   
-- <span data-ttu-id="31e4d-129">Accedere a tutte le informazioni degli account utente ( **Get-AzureADUser** ) e inviarle al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-129">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="62bd9-130">Accedere a tutte le informazioni degli account utente ( **Get-AzureADUser** ) e inviarle al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-130">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="31e4d-130">Individuare tutti gli account utente che dispongono di una posizione di utilizzo non specificata ( **dove {\_$. UsageLocation-eq $Null}** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-130">Find all of the user accounts that have an unspecified usage location ( **Where {$\_.UsageLocation -eq $Null}** ).</span></span> <span data-ttu-id="31e4d-131">All'interno delle parentesi graffe, il comando indica a Office 365 PowerShell di trovare solo il set di account in cui la proprietà dell'account utente di UsageLocation ( \*\* $ \_. UsageLocation\*\* ) non è specificato ( **-eq $null** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-131">Inside the braces, the command instructs Office 365 PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
+- <span data-ttu-id="62bd9-131">Individuare tutti gli account utente che dispongono di una posizione di utilizzo non specificata ( **dove {$ \_ . UsageLocation-eq $Null}** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-131">Find all of the user accounts that have an unspecified usage location ( **Where {$\_.UsageLocation -eq $Null}** ).</span></span> <span data-ttu-id="62bd9-132">All'interno delle parentesi graffe, il comando indica a PowerShell di trovare solo il set di account in cui la proprietà dell'account utente di UsageLocation ( \*\* $ \_ . UsageLocation\*\* ) non è specificato ( **-eq $null** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-132">Inside the braces, the command instructs PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
     
-<span data-ttu-id="31e4d-132">La proprietà **UsageLocation** è solo una delle tante associate a un account utente.</span><span class="sxs-lookup"><span data-stu-id="31e4d-132">The **UsageLocation** property is only one of many properties associated with a user account.</span></span> <span data-ttu-id="31e4d-133">Per visualizzare tutte le proprietà degli account utente, utilizzare il cmdlet **Select** e il carattere jolly (\*) per visualizzarli tutti per un account utente specifico.</span><span class="sxs-lookup"><span data-stu-id="31e4d-133">To see all of the properties for user accounts, use the **Select** cmdlet and the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="31e4d-134">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="31e4d-134">Here is an example:</span></span>
+<span data-ttu-id="62bd9-133">La proprietà **UsageLocation** è solo una delle tante associate a un account utente.</span><span class="sxs-lookup"><span data-stu-id="62bd9-133">The **UsageLocation** property is only one of many properties associated with a user account.</span></span> <span data-ttu-id="62bd9-134">Per visualizzare tutte le proprietà degli account utente, utilizzare il cmdlet **Select** e il carattere jolly (\*) per visualizzarli tutti per un account utente specifico.</span><span class="sxs-lookup"><span data-stu-id="62bd9-134">To see all of the properties for user accounts, use the **Select** cmdlet and the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="62bd9-135">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="62bd9-135">Here is an example:</span></span>
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-<span data-ttu-id="31e4d-p106">In questo elenco, **City** è il nome di una proprietà dell'account utente. Questo significa che è possibile usare il comando seguente per elencare tutti gli account degli utenti che vivono a Londra:</span><span class="sxs-lookup"><span data-stu-id="31e4d-p106">For example, from this list, **City** is the name of a user account property. This means you can use the following command to list all of the user accounts for users living in London:</span></span>
+<span data-ttu-id="62bd9-p106">In questo elenco, **City** è il nome di una proprietà dell'account utente. Questo significa che è possibile usare il comando seguente per elencare tutti gli account degli utenti che vivono a Londra:</span><span class="sxs-lookup"><span data-stu-id="62bd9-p106">For example, from this list, **City** is the name of a user account property. This means you can use the following command to list all of the user accounts for users living in London:</span></span>
   
 ```powershell
 Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  <span data-ttu-id="31e4d-137">La sintassi del cmdlet **where** mostrato in questi esempi è **dove {\_$.**</span><span class="sxs-lookup"><span data-stu-id="31e4d-137">The syntax for the **Where** cmdlet shown in these examples is **Where {$\_.**</span></span> <span data-ttu-id="31e4d-138">[nome della proprietà dell'account utente] [operatore di confronto] valore **}**. > [operatore di confronto] è **-EQ** per Equals, **-ne** per non uguale a, **-lt** per meno di, **-gt** per maggiore di e altri.</span><span class="sxs-lookup"><span data-stu-id="31e4d-138">[user account property name] [comparison operator] [value] **}**.>  [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.</span></span>  <span data-ttu-id="31e4d-139">[valore] è in genere una stringa (una sequenza di lettere, numeri e altri caratteri), un valore numerico o **$null** per> non specificati vedere [dove](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1) per ulteriori informazioni.</span><span class="sxs-lookup"><span data-stu-id="31e4d-139">[value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified>  See [Where](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1) for more information.</span></span>
+>  <span data-ttu-id="62bd9-138">La sintassi del cmdlet **where** mostrato in questi esempi è **dove {$ \_ .**</span><span class="sxs-lookup"><span data-stu-id="62bd9-138">The syntax for the **Where** cmdlet shown in these examples is **Where {$\_.**</span></span> <span data-ttu-id="62bd9-139">[nome della proprietà dell'account utente] [operatore di confronto] valore **}**. > [operatore di confronto] è **-EQ** per Equals, **-ne** per non uguale a, **-lt** per meno di, **-gt** per maggiore di e altri.</span><span class="sxs-lookup"><span data-stu-id="62bd9-139">[user account property name] [comparison operator] [value] **}**.>  [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.</span></span>  <span data-ttu-id="62bd9-140">[valore] è in genere una stringa (una sequenza di lettere, numeri e altri caratteri), un valore numerico o **$null** per> non specificati vedere [dove](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1) per ulteriori informazioni.</span><span class="sxs-lookup"><span data-stu-id="62bd9-140">[value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified>  See [Where](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1) for more information.</span></span>
   
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="31e4d-140">Usare il modulo di Microsoft Azure Active Directory per Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="31e4d-140">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="62bd9-141">Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="62bd9-141">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="31e4d-141">Prima di tutto, [connettersi al tenant di Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="31e4d-141">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="62bd9-142">Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="62bd9-142">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-### <a name="view-all-accounts"></a><span data-ttu-id="31e4d-142">Visualizzazione di tutti gli account</span><span class="sxs-lookup"><span data-stu-id="31e4d-142">View all accounts</span></span>
+### <a name="view-all-accounts"></a><span data-ttu-id="62bd9-143">Visualizzazione di tutti gli account</span><span class="sxs-lookup"><span data-stu-id="62bd9-143">View all accounts</span></span>
 
-<span data-ttu-id="31e4d-143">Per visualizzare l'elenco completo degli account utente, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="31e4d-143">To display the full list of user accounts, run this command:</span></span>
+<span data-ttu-id="62bd9-144">Per visualizzare l'elenco completo degli account utente, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="62bd9-144">To display the full list of user accounts, run this command:</span></span>
   
 ```powershell
 Get-MsolUser
 ```
 
 >[!Note]
-><span data-ttu-id="31e4d-144">PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome.</span><span class="sxs-lookup"><span data-stu-id="31e4d-144">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="31e4d-145">Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="31e4d-145">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="62bd9-145">PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome.</span><span class="sxs-lookup"><span data-stu-id="62bd9-145">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="62bd9-146">Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="62bd9-146">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="31e4d-146">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="31e4d-146">You should see information similar to this:</span></span>
+<span data-ttu-id="62bd9-147">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="62bd9-147">You should see information similar to this:</span></span>
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -155,13 +157,13 @@ AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-<span data-ttu-id="31e4d-147">Il cmdlet **Get-MsolUser** dispone inoltre di un set di parametri per filtrare il gruppo di account utente visualizzato.</span><span class="sxs-lookup"><span data-stu-id="31e4d-147">The **Get-MsolUser** cmdlet also has a set of parameters to filter the set of user accounts displayed.</span></span> <span data-ttu-id="31e4d-148">Ad esempio, per l'elenco degli utenti senza licenza (gli utenti che sono stati aggiunti a Office 365 ma non sono stati ancora autorizzati a utilizzare uno qualsiasi dei servizi), eseguire questo comando.</span><span class="sxs-lookup"><span data-stu-id="31e4d-148">For example, for the list of unlicensed users (users who've been added to Office 365 but haven't yet been licensed to use any of the services), run this command.</span></span>
+<span data-ttu-id="62bd9-148">Il cmdlet **Get-MsolUser** dispone inoltre di un set di parametri per filtrare il gruppo di account utente visualizzato.</span><span class="sxs-lookup"><span data-stu-id="62bd9-148">The **Get-MsolUser** cmdlet also has a set of parameters to filter the set of user accounts displayed.</span></span> <span data-ttu-id="62bd9-149">Ad esempio, per l'elenco degli utenti senza licenza (gli utenti che sono stati aggiunti a Microsoft 365 ma non sono stati ancora autorizzati a utilizzare uno qualsiasi dei servizi), eseguire questo comando.</span><span class="sxs-lookup"><span data-stu-id="62bd9-149">For example, for the list of unlicensed users (users who've been added to Microsoft 365 but haven't yet been licensed to use any of the services), run this command.</span></span>
   
 ```powershell
 Get-MsolUser -UnlicensedUsersOnly
 ```
 
-<span data-ttu-id="31e4d-149">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="31e4d-149">You should see information similar to this:</span></span>
+<span data-ttu-id="62bd9-150">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="62bd9-150">You should see information similar to this:</span></span>
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -170,31 +172,31 @@ BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-<span data-ttu-id="31e4d-150">Per ulteriori informazioni sui parametri aggiuntivi per filtrare la visualizzazione del set di account utente visualizzato, vedere [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).</span><span class="sxs-lookup"><span data-stu-id="31e4d-150">For more information about additional parameters to filter the display the set of user accounts displayed, see [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).</span></span>
+<span data-ttu-id="62bd9-151">Per ulteriori informazioni sui parametri aggiuntivi per filtrare la visualizzazione del set di account utente visualizzato, vedere [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).</span><span class="sxs-lookup"><span data-stu-id="62bd9-151">For more information about additional parameters to filter the display the set of user accounts displayed, see [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).</span></span>
   
-### <a name="view-a-specific-account"></a><span data-ttu-id="31e4d-151">Visualizzazione di un account specifico</span><span class="sxs-lookup"><span data-stu-id="31e4d-151">View a specific account</span></span>
+### <a name="view-a-specific-account"></a><span data-ttu-id="62bd9-152">Visualizzazione di un account specifico</span><span class="sxs-lookup"><span data-stu-id="62bd9-152">View a specific account</span></span>
 
-<span data-ttu-id="31e4d-152">Per visualizzare un account utente specifico, inserire il nome di accesso dell'account utente dell'account utente, noto anche come nome dell'entità utente (UPN), rimuovere i caratteri "<" e ">" ed eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="31e4d-152">To display a specific user account, fill in the sign-in name of the user account of the user account, also known as the user principal name (UPN), remove the "<" and ">" characters, and run this command:</span></span>
+<span data-ttu-id="62bd9-153">Per visualizzare un account utente specifico, inserire il nome di accesso dell'account utente dell'account utente, noto anche come nome dell'entità utente (UPN), rimuovere i caratteri "<" e ">" ed eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="62bd9-153">To display a specific user account, fill in the sign-in name of the user account of the user account, also known as the user principal name (UPN), remove the "<" and ">" characters, and run this command:</span></span>
   
 ```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
-### <a name="view-some-accounts-based-on-a-common-property"></a><span data-ttu-id="31e4d-153">Visualizzare alcuni account basati su una proprietà comune</span><span class="sxs-lookup"><span data-stu-id="31e4d-153">View some accounts based on a common property</span></span>
+### <a name="view-some-accounts-based-on-a-common-property"></a><span data-ttu-id="62bd9-154">Visualizzare alcuni account basati su una proprietà comune</span><span class="sxs-lookup"><span data-stu-id="62bd9-154">View some accounts based on a common property</span></span>
 
-<span data-ttu-id="31e4d-154">Per essere più selettivi sull'elenco degli account da visualizzare, è possibile utilizzare il cmdlet **where** in combinazione con il cmdlet **Get-MsolUser** .</span><span class="sxs-lookup"><span data-stu-id="31e4d-154">To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-MsolUser** cmdlet.</span></span> <span data-ttu-id="31e4d-155">Per combinare i due cmdlet, viene utilizzato il carattere "pipe" "|", che indica a Office 365 PowerShell di prendere i risultati di un comando e inviarlo al comando successivo.</span><span class="sxs-lookup"><span data-stu-id="31e4d-155">To combine the two cmdlets, we use the "pipe" character "|", which tells Office 365 PowerShell to take the results of one command and send it to the next command.</span></span> <span data-ttu-id="31e4d-156">Ecco un comando di esempio che visualizza soltanto gli account utente con un percorso di utilizzo non specificato:</span><span class="sxs-lookup"><span data-stu-id="31e4d-156">Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
+<span data-ttu-id="62bd9-155">Per essere più selettivi sull'elenco degli account da visualizzare, è possibile utilizzare il cmdlet **where** in combinazione con il cmdlet **Get-MsolUser** .</span><span class="sxs-lookup"><span data-stu-id="62bd9-155">To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-MsolUser** cmdlet.</span></span> <span data-ttu-id="62bd9-156">Per combinare i due cmdlet, viene utilizzato il carattere "pipe" "|", che indica a PowerShell di prendere i risultati di un comando e inviarlo al comando successivo.</span><span class="sxs-lookup"><span data-stu-id="62bd9-156">To combine the two cmdlets, we use the "pipe" character "|", which tells PowerShell to take the results of one command and send it to the next command.</span></span> <span data-ttu-id="62bd9-157">Ecco un comando di esempio che visualizza soltanto gli account utente con un percorso di utilizzo non specificato:</span><span class="sxs-lookup"><span data-stu-id="62bd9-157">Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-<span data-ttu-id="31e4d-157">Questo comando indica a PowerShell di Office 365 di:</span><span class="sxs-lookup"><span data-stu-id="31e4d-157">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="62bd9-158">Questo comando indica a PowerShell di:</span><span class="sxs-lookup"><span data-stu-id="62bd9-158">This command instructs PowerShell to:</span></span>
   
-- <span data-ttu-id="31e4d-158">Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-158">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="62bd9-159">Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-159">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="31e4d-159">Individuare tutti gli account utente che dispongono di una posizione di utilizzo non specificata ( **dove {\_$. UsageLocation-eq $Null}** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-159">Find all of the user accounts that have an unspecified usage location ( **Where {$\_.UsageLocation -eq $Null}** ).</span></span> <span data-ttu-id="31e4d-160">All'interno delle parentesi graffe, il comando indica a Office 365 PowerShell di trovare solo il set di account in cui la proprietà dell'account utente di UsageLocation ( \*\* $ \_. UsageLocation\*\* ) non è specificato ( **-eq $null** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-160">Inside the braces, the command instructs Office 365 PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
+- <span data-ttu-id="62bd9-160">Individuare tutti gli account utente che dispongono di una posizione di utilizzo non specificata ( **dove {$ \_ . UsageLocation-eq $Null}** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-160">Find all of the user accounts that have an unspecified usage location ( **Where {$\_.UsageLocation -eq $Null}** ).</span></span> <span data-ttu-id="62bd9-161">All'interno delle parentesi graffe, il comando indica a PowerShell di trovare solo il set di account in cui la proprietà dell'account utente di UsageLocation ( \*\* $ \_ . UsageLocation\*\* ) non è specificato ( **-eq $null** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-161">Inside the braces, the command instructs PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
     
-<span data-ttu-id="31e4d-161">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="31e4d-161">You should see information similar to this:</span></span>
+<span data-ttu-id="62bd9-162">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="62bd9-162">You should see information similar to this:</span></span>
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -204,50 +206,50 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ```
 
-<span data-ttu-id="31e4d-162">La proprietà **UsageLocation** è solo una delle tante associate a un account utente.</span><span class="sxs-lookup"><span data-stu-id="31e4d-162">The **UsageLocation** property is only one of many properties associated with a user account.</span></span> <span data-ttu-id="31e4d-163">Per visualizzare tutte le proprietà degli account utente, utilizzare il cmdlet **Select** e il carattere jolly (\*) per visualizzarli tutti per un account utente specifico.</span><span class="sxs-lookup"><span data-stu-id="31e4d-163">To see all of the properties for user accounts, use the **Select** cmdlet and the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="31e4d-164">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="31e4d-164">Here is an example:</span></span>
+<span data-ttu-id="62bd9-163">La proprietà **UsageLocation** è solo una delle tante associate a un account utente.</span><span class="sxs-lookup"><span data-stu-id="62bd9-163">The **UsageLocation** property is only one of many properties associated with a user account.</span></span> <span data-ttu-id="62bd9-164">Per visualizzare tutte le proprietà degli account utente, utilizzare il cmdlet **Select** e il carattere jolly (\*) per visualizzarli tutti per un account utente specifico.</span><span class="sxs-lookup"><span data-stu-id="62bd9-164">To see all of the properties for user accounts, use the **Select** cmdlet and the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="62bd9-165">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="62bd9-165">Here is an example:</span></span>
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-<span data-ttu-id="31e4d-p113">In questo elenco, **City** è il nome di una proprietà dell'account utente. Questo significa che è possibile usare il comando seguente per elencare tutti gli account degli utenti che vivono a Londra:</span><span class="sxs-lookup"><span data-stu-id="31e4d-p113">For example, from this list, **City** is the name of a user account property. This means you can use the following command to list all of the user accounts for users living in London:</span></span>
+<span data-ttu-id="62bd9-p113">In questo elenco, **City** è il nome di una proprietà dell'account utente. Questo significa che è possibile usare il comando seguente per elencare tutti gli account degli utenti che vivono a Londra:</span><span class="sxs-lookup"><span data-stu-id="62bd9-p113">For example, from this list, **City** is the name of a user account property. This means you can use the following command to list all of the user accounts for users living in London:</span></span>
   
 ```powershell
 Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  <span data-ttu-id="31e4d-167">La sintassi del cmdlet **where** mostrato in questi esempi è **dove {\_$.**</span><span class="sxs-lookup"><span data-stu-id="31e4d-167">The syntax for the **Where** cmdlet shown in these examples is **Where {$\_.**</span></span> <span data-ttu-id="31e4d-168">[nome della proprietà dell'account utente] [operatore di confronto] valore **}**.</span><span class="sxs-lookup"><span data-stu-id="31e4d-168">[user account property name] [comparison operator] [value] **}**.</span></span>  <span data-ttu-id="31e4d-169">[operatore di confronto] è **-EQ** per Equals, **-ne** per non uguale a, **-lt** per meno di, **-gt** per maggiore di e altri.</span><span class="sxs-lookup"><span data-stu-id="31e4d-169">[comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.</span></span>  <span data-ttu-id="31e4d-170">[valore] è in genere una stringa, ovvero una sequenza di lettere, numeri e altri caratteri, un valore numerico o **$null** per Unspecified.</span><span class="sxs-lookup"><span data-stu-id="31e4d-170">[value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified.</span></span> <span data-ttu-id="31e4d-171">Vedere [dove](https://technet.microsoft.com/library/hh849715.aspx) per ulteriori informazioni.</span><span class="sxs-lookup"><span data-stu-id="31e4d-171">See [Where](https://technet.microsoft.com/library/hh849715.aspx) for more information.</span></span>
+>  <span data-ttu-id="62bd9-168">La sintassi del cmdlet **where** mostrato in questi esempi è **dove {$ \_ .**</span><span class="sxs-lookup"><span data-stu-id="62bd9-168">The syntax for the **Where** cmdlet shown in these examples is **Where {$\_.**</span></span> <span data-ttu-id="62bd9-169">[nome della proprietà dell'account utente] [operatore di confronto] valore **}**.</span><span class="sxs-lookup"><span data-stu-id="62bd9-169">[user account property name] [comparison operator] [value] **}**.</span></span>  <span data-ttu-id="62bd9-170">[operatore di confronto] è **-EQ** per Equals, **-ne** per non uguale a, **-lt** per meno di, **-gt** per maggiore di e altri.</span><span class="sxs-lookup"><span data-stu-id="62bd9-170">[comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.</span></span>  <span data-ttu-id="62bd9-171">[valore] è in genere una stringa, ovvero una sequenza di lettere, numeri e altri caratteri, un valore numerico o **$null** per Unspecified.</span><span class="sxs-lookup"><span data-stu-id="62bd9-171">[value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified.</span></span> <span data-ttu-id="62bd9-172">Vedere [dove](https://technet.microsoft.com/library/hh849715.aspx) per ulteriori informazioni.</span><span class="sxs-lookup"><span data-stu-id="62bd9-172">See [Where](https://technet.microsoft.com/library/hh849715.aspx) for more information.</span></span>
   
-<span data-ttu-id="31e4d-172">È possibile controllare lo stato bloccato di un account utente con il seguente comando:</span><span class="sxs-lookup"><span data-stu-id="31e4d-172">You can check the blocked status of a user account with the following command:</span></span>
+<span data-ttu-id="62bd9-173">È possibile controllare lo stato bloccato di un account utente con il seguente comando:</span><span class="sxs-lookup"><span data-stu-id="62bd9-173">You can check the blocked status of a user account with the following command:</span></span>
   
 ```powershell
 Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,BlockCredential
 ```
 
-### <a name="view-additional-property-values-for-accounts"></a><span data-ttu-id="31e4d-173">Visualizzare i valori di proprietà aggiuntivi per gli account</span><span class="sxs-lookup"><span data-stu-id="31e4d-173">View additional property values for accounts</span></span>
+### <a name="view-additional-property-values-for-accounts"></a><span data-ttu-id="62bd9-174">Visualizzare i valori di proprietà aggiuntivi per gli account</span><span class="sxs-lookup"><span data-stu-id="62bd9-174">View additional property values for accounts</span></span>
 
-<span data-ttu-id="31e4d-174">Il cmdlet **Get-MsolUser** per impostazione predefinita visualizza tre proprietà degli account utente:</span><span class="sxs-lookup"><span data-stu-id="31e4d-174">The **Get-MsolUser** cmdlet by default displays three properties of user accounts:</span></span>
+<span data-ttu-id="62bd9-175">Il cmdlet **Get-MsolUser** per impostazione predefinita visualizza tre proprietà degli account utente:</span><span class="sxs-lookup"><span data-stu-id="62bd9-175">The **Get-MsolUser** cmdlet by default displays three properties of user accounts:</span></span>
   
-- <span data-ttu-id="31e4d-175">UserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="31e4d-175">UserPrincipalName</span></span>
+- <span data-ttu-id="62bd9-176">UserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="62bd9-176">UserPrincipalName</span></span>
     
-- <span data-ttu-id="31e4d-176">DisplayName</span><span class="sxs-lookup"><span data-stu-id="31e4d-176">DisplayName</span></span>
+- <span data-ttu-id="62bd9-177">DisplayName</span><span class="sxs-lookup"><span data-stu-id="62bd9-177">DisplayName</span></span>
     
-- <span data-ttu-id="31e4d-177">isLicensed</span><span class="sxs-lookup"><span data-stu-id="31e4d-177">isLicensed</span></span>
+- <span data-ttu-id="62bd9-178">isLicensed</span><span class="sxs-lookup"><span data-stu-id="62bd9-178">isLicensed</span></span>
     
-<span data-ttu-id="31e4d-178">Se sono necessarie ulteriori proprietà, ad esempio il reparto utilizzato dall'utente e il paese/area geografica in cui l'utente utilizza i servizi di Office 365, è possibile eseguire **Get-MsolUser** in combinazione con il cmdlet **SELECT** per specificare l'elenco delle proprietà degli account utente.</span><span class="sxs-lookup"><span data-stu-id="31e4d-178">If you need additional properties, such as the department the user works for and the country/region where the user uses Office 365 services, you can run **Get-MsolUser** in combination with the **Select** cmdlet to specify the list of user account properties.</span></span> <span data-ttu-id="31e4d-179">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="31e4d-179">Here is an example:</span></span>
+<span data-ttu-id="62bd9-179">Se sono necessarie ulteriori proprietà, ad esempio il reparto utilizzato dall'utente e il paese/area geografica in cui l'utente utilizza i servizi Microsoft 365, è possibile eseguire **Get-MsolUser** in combinazione con il cmdlet **SELECT** per specificare l'elenco delle proprietà degli account utente.</span><span class="sxs-lookup"><span data-stu-id="62bd9-179">If you need additional properties, such as the department the user works for and the country/region where the user uses Microsoft 365 services, you can run **Get-MsolUser** in combination with the **Select** cmdlet to specify the list of user account properties.</span></span> <span data-ttu-id="62bd9-180">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="62bd9-180">Here is an example:</span></span>
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
 ```
 
-<span data-ttu-id="31e4d-180">Questo comando indica a PowerShell di Office 365 di:</span><span class="sxs-lookup"><span data-stu-id="31e4d-180">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="62bd9-181">Questo comando indica a PowerShell di:</span><span class="sxs-lookup"><span data-stu-id="62bd9-181">This command instructs PowerShell to:</span></span>
   
-- <span data-ttu-id="31e4d-181">Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-181">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="62bd9-182">Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-182">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="31e4d-182">Visualizzare solo il nome dell'account utente, il reparto e la posizione di utilizzo ( **selezionare DisplayName, Department, UsageLocation** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-182">Display only the user account name, department, and usage location ( **Select DisplayName, Department, UsageLocation** ).</span></span>
+- <span data-ttu-id="62bd9-183">Visualizzare solo il nome dell'account utente, il reparto e la posizione di utilizzo ( **selezionare DisplayName, Department, UsageLocation** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-183">Display only the user account name, department, and usage location ( **Select DisplayName, Department, UsageLocation** ).</span></span>
     
-<span data-ttu-id="31e4d-183">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="31e4d-183">You should see information similar to this:</span></span>
+<span data-ttu-id="62bd9-184">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="62bd9-184">You should see information similar to this:</span></span>
   
 ```powershell
 DisplayName             Department                       UsageLocation
@@ -260,27 +262,27 @@ Alex Darrow             Sales & Marketing                    US
 Scott Wallace           Operations
 ```
 
-<span data-ttu-id="31e4d-184">Il cmdlet **Select** consente di scegliere le proprietà che si desidera visualizzare.</span><span class="sxs-lookup"><span data-stu-id="31e4d-184">The **Select** cmdlet lets you pick and choose the properties you want a command to display.</span></span> <span data-ttu-id="31e4d-185">Per visualizzare tutte le proprietà degli account utente, utilizzare il carattere jolly (\*) per visualizzarle tutte per un account utente specifico.</span><span class="sxs-lookup"><span data-stu-id="31e4d-185">To see all of the properties for user accounts, use the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="31e4d-186">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="31e4d-186">Here is an example:</span></span>
+<span data-ttu-id="62bd9-185">Il cmdlet **Select** consente di scegliere le proprietà che si desidera visualizzare.</span><span class="sxs-lookup"><span data-stu-id="62bd9-185">The **Select** cmdlet lets you pick and choose the properties you want a command to display.</span></span> <span data-ttu-id="62bd9-186">Per visualizzare tutte le proprietà degli account utente, utilizzare il carattere jolly (\*) per visualizzarle tutte per un account utente specifico.</span><span class="sxs-lookup"><span data-stu-id="62bd9-186">To see all of the properties for user accounts, use the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="62bd9-187">Ecco un esempio:</span><span class="sxs-lookup"><span data-stu-id="62bd9-187">Here is an example:</span></span>
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-<span data-ttu-id="31e4d-187">Per essere più selettivi sull'elenco degli account da visualizzare, è anche possibile utilizzare il cmdlet **where** .</span><span class="sxs-lookup"><span data-stu-id="31e4d-187">To be more selective about the list of accounts to display, you can also use the **Where** cmdlet.</span></span> <span data-ttu-id="31e4d-188">Ecco un comando di esempio che visualizza soltanto gli account utente con un percorso di utilizzo non specificato:</span><span class="sxs-lookup"><span data-stu-id="31e4d-188">Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
+<span data-ttu-id="62bd9-188">Per essere più selettivi sull'elenco degli account da visualizzare, è anche possibile utilizzare il cmdlet **where** .</span><span class="sxs-lookup"><span data-stu-id="62bd9-188">To be more selective about the list of accounts to display, you can also use the **Where** cmdlet.</span></span> <span data-ttu-id="62bd9-189">Ecco un comando di esempio che visualizza soltanto gli account utente con un percorso di utilizzo non specificato:</span><span class="sxs-lookup"><span data-stu-id="62bd9-189">Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Department, UsageLocation
 ```
 
-<span data-ttu-id="31e4d-189">Questo comando indica a PowerShell di Office 365 di:</span><span class="sxs-lookup"><span data-stu-id="31e4d-189">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="62bd9-190">Questo comando indica a PowerShell di:</span><span class="sxs-lookup"><span data-stu-id="62bd9-190">This command instructs PowerShell to:</span></span>
   
-- <span data-ttu-id="31e4d-190">Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-190">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="62bd9-191">Accedere a tutte le informazioni degli account utente ( **Get-MsolUser** ) e inviarle al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-191">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="31e4d-191">Individuare tutti gli account utente che dispongono di una posizione di utilizzo non specificata ( **dove {\_$. UsageLocation-eq $Null}** ) e inviare le informazioni risultanti al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-191">Find all of the user accounts that have an unspecified usage location ( **Where {$\_.UsageLocation -eq $Null}** ) and send the resulting information to the next command ( **|** ).</span></span> <span data-ttu-id="31e4d-192">All'interno delle parentesi graffe, il comando indica a Office 365 PowerShell di trovare solo il set di account in cui si trova la proprietà dell'account utente di UsageLocation ( \*\* $ \_. UsageLocation\*\* ) non è specificato ( **-eq $null** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-192">Inside the braces, the command is instructing Office 365 PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
+- <span data-ttu-id="62bd9-192">Individuare tutti gli account utente che dispongono di una posizione di utilizzo non specificata ( **dove {$ \_ . UsageLocation-eq $Null}** ) e inviare le informazioni risultanti al comando successivo ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-192">Find all of the user accounts that have an unspecified usage location ( **Where {$\_.UsageLocation -eq $Null}** ) and send the resulting information to the next command ( **|** ).</span></span> <span data-ttu-id="62bd9-193">All'interno delle parentesi graffe, il comando indica a PowerShell di trovare solo il set di account in cui la proprietà dell'account utente di UsageLocation ( \*\* $ \_ . UsageLocation\*\* ) non è specificato ( **-eq $null** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-193">Inside the braces, the command is instructing PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
     
-- <span data-ttu-id="31e4d-193">Visualizzare solo il nome dell'account utente, il reparto e la posizione di utilizzo ( **selezionare DisplayName, Department, UsageLocation** ).</span><span class="sxs-lookup"><span data-stu-id="31e4d-193">Display only the user account name, department, and usage location ( **Select DisplayName, Department, UsageLocation** ).</span></span>
+- <span data-ttu-id="62bd9-194">Visualizzare solo il nome dell'account utente, il reparto e la posizione di utilizzo ( **selezionare DisplayName, Department, UsageLocation** ).</span><span class="sxs-lookup"><span data-stu-id="62bd9-194">Display only the user account name, department, and usage location ( **Select DisplayName, Department, UsageLocation** ).</span></span>
     
-<span data-ttu-id="31e4d-194">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="31e4d-194">You should see information similar to this:</span></span>
+<span data-ttu-id="62bd9-195">Dovrebbero essere visualizzate informazioni analoghe alle seguenti:</span><span class="sxs-lookup"><span data-stu-id="62bd9-195">You should see information similar to this:</span></span>
   
 ```powershell
 DisplayName              Department                      UsageLocation
@@ -289,17 +291,17 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-<span data-ttu-id="31e4d-195">Se si utilizza la sincronizzazione della directory per creare e gestire gli utenti di Office 365, è possibile visualizzare l'account locale da cui è stato proiettato un utente di Office 365.</span><span class="sxs-lookup"><span data-stu-id="31e4d-195">If you are using directory synchronization to create and manage your Office 365 users, you can display which local account an Office 365 user has been projected from.</span></span> <span data-ttu-id="31e4d-196">Di seguito si presuppone che Azure AD Connect sia stato configurato per l'utilizzo dell'ancoraggio di origine predefinito di ObjectGUID (per ulteriori informazioni sulla configurazione di un ancoraggio di origine, vedere [Azure ad Connect: Design Concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)) e presuppone che sia stato installato il modulo servizi di dominio Active Directory per PowerShell (vedere [strumenti di amministrazione remota](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):</span><span class="sxs-lookup"><span data-stu-id="31e4d-196">The following assumes that Azure AD Connect has been configured to use the default source anchor of ObjectGUID (for more on configuring a source anchor, see [Azure AD Connect: Design concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)) and assumes that the Active Directory Domain Services module for PowerShell has been installed (see [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):</span></span>
+<span data-ttu-id="62bd9-196">Se si utilizza la sincronizzazione della directory per creare e gestire gli utenti di Microsoft 365, è possibile visualizzare l'account locale da cui è stato progettato un utente di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="62bd9-196">If you are using directory synchronization to create and manage your Microsoft 365 users, you can display which local account a Microsoft 365 user has been projected from.</span></span> <span data-ttu-id="62bd9-197">Di seguito si presuppone che Azure AD Connect sia stato configurato per l'utilizzo dell'ancoraggio di origine predefinito di ObjectGUID (per ulteriori informazioni sulla configurazione di un ancoraggio di origine, vedere [Azure ad Connect: Design Concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)) e presuppone che sia stato installato il modulo servizi di dominio Active Directory per PowerShell (vedere [strumenti di amministrazione remota](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):</span><span class="sxs-lookup"><span data-stu-id="62bd9-197">The following assumes that Azure AD Connect has been configured to use the default source anchor of ObjectGUID (for more on configuring a source anchor, see [Azure AD Connect: Design concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)) and assumes that the Active Directory Domain Services module for PowerShell has been installed (see [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):</span></span>
 
 ```powershell
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
 ```
 
-## <a name="see-also"></a><span data-ttu-id="31e4d-197">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="31e4d-197">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="62bd9-198">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="62bd9-198">See also</span></span>
 
-[<span data-ttu-id="31e4d-198">Gestire gli account utente, le licenze e i gruppi con Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="31e4d-198">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="62bd9-199">Gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="62bd9-199">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="31e4d-199">Gestire Office 365 con PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="31e4d-199">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="62bd9-200">Gestire Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="62bd9-200">Manage Microsoft 365 with PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="31e4d-200">Guida introduttiva a PowerShell di Office 365</span><span class="sxs-lookup"><span data-stu-id="31e4d-200">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="62bd9-201">Guida introduttiva a PowerShell per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="62bd9-201">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-office-365-powershell.md)
 
