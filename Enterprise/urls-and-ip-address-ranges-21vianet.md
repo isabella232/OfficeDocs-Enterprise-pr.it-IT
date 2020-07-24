@@ -20,21 +20,18 @@ f1.keywords:
 - NOCSH
 description: Questo articolo si applica a Office 365 gestito da 21Vianet in Cina. Vengono elencati gli URL e gli intervalli di indirizzi IP utilizzati da Office 365 gestito da 21Vianet.
 hideEdit: true
-ms.openlocfilehash: 157f80b6d3bb12f0e3c3aa7f6d2d82a1d24965e1
-ms.sourcegitcommit: 338e3bcf0a62842fbbb17145b67a4a93f3b90aac
+ms.openlocfilehash: fe0015bcda70cace8247fdbcfb6a2d4424b28349
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091163"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387719"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URL e intervalli di indirizzi IP per Office 365 gestito da 21Vianet
 
  *Si applica a: Amministrazione di Office 365 gestito da 21Vianet - Small Business, Amministrazione di Office 365 gestito da 21Vianet*
 
 **Riepilogo**: i seguenti endpoint (FQDN, porte, URL, prefissi IPv4 e IPv6) si applicano a Office 365 gestito da 21Vianet e sono progettati per offrire servizi di produttività alle organizzazioni che usano solo questi piani.
-  
-> [!NOTE]
-> Microsoft ha rilasciato un servizio Web basato su REST per le voci FQDN e gli indirizzi IP in questa pagina. Questo nuovo servizio consente di configurare e aggiornare i dispositivi di rete perimetrale come firewall e server proxy. È possibile scaricare l'elenco degli endpoint, la versione corrente dell'elenco o modifiche specifiche. Questo servizio sostituisce il documento XML collegato da questa pagina, la quale è stata deprecata il 2 ottobre 2018. Per provare questo nuovo servizio, passare a [Servizio Web](office-365-ip-web-service.md).
   
  **Endpoint di Office 365:** [Worldwide (compreso GCC)](urls-and-ip-address-ranges.md)  | *Office 365 gestito da 21Vianet* | [Office 365 Germany](office-365-germany-endpoints.md) | [Office 365 U.S. Government DoD](office-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
   
