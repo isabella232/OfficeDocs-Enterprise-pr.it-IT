@@ -3,9 +3,9 @@ title: Posizioni dei dati di Microsoft 365
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 06/17/2020
+ms.date: 07/22/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 search.appverid:
@@ -16,32 +16,32 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Riepilogo: posizioni dei dati di Microsoft 365'
-ms.openlocfilehash: a0f62fa7955224c07c8e5af35fb53229e3aeb6c4
-ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
-ms.translationtype: MT
+description: 'Riepilogo: Posizioni dei dati di Microsoft 365'
+ms.openlocfilehash: 4fdac5fca89eebd8d1c44ffdf571cee2630b6e8c
+ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44781061"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45263695"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Dove sono archiviati i dati del cliente Microsoft 365
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Dove sono archiviati i dati del tuo cliente Microsoft 365
 
-Nelle tabelle riportate di seguito vengono illustrati i dati dei clienti che sono archiviati a riposo per i servizi Microsoft 365 in tutti i percorsi cloud globali di Microsoft. Espandere la posizione del paese in cui si trova l'indirizzo di fatturazione per scoprire dove verranno archiviati i dati dei clienti per ogni servizio.
+Le tabelle seguenti mostrano le posizioni in cui sono archiviati i dati inattivi dei clienti per i servizi di Microsoft 365 in tutte le aree geografiche del cloud globale di Microsoft. Espandere la posizione del paese in cui si trova l'indirizzo di fatturazione per scoprire dove verranno archiviati i dati dei clienti per ogni servizio.
 
 I clienti possono visualizzare informazioni sulla posizione di dati specifici del tenant nell'interfaccia di amministrazione di Office 365 in **Impostazioni | Profilo organizzazione | Scheda percorso dati**.
 
-I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese della transazione associata al primo abbonamento del tenant.
+Per impostazione predefinita, i nuovi tenant di Microsoft 365 vengono ospitati in un'area geografica in base al paese della transazione associata al primo abbonamento del tenant.
 
 Informazioni sugli impegni contrattuali relativi alla posizione di archiviazione dei dati inattivi dei clienti sono disponibili nelle [Condizioni di Microsoft Online Services (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Per le posizioni dei dati di Azure Active Directory, visitare la [mappa dei dati di AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-A causa delle circostanze senza precedenti in merito alla crisi COVID-19 e alla necessità di gestire la domanda dei servizi online in Europa, se l'organizzazione è un Istituto di istruzione, è possibile eseguire il provisioning del tenant Microsoft 365 nell'Unione europea (UE), nell'associazione europea di libero scambio (AELS), nel Regno Unito (Regno Unito), negli Stati Uniti (Stati Uniti) o in Canada (CA) oppure trasferire i dati in qualsiasi data center nell'Unione europea , AELS, Regno Unito, Stati Uniti o CA.  Ciò significa che i dati possono essere archiviati in modo statico nell'Unione europea, nell'Associazione europea di libero scambio, nel Regno Unito, negli Stati Uniti o in Canada.  Il nostro impegno a garantire la conformità, la privacy e la sicurezza rimane invariato e applicheremo le misure necessarie e prudenti per mantenere la disponibilità del servizio.  Manterremo la conformità a tutte le leggi applicabili relativamente ai trasferimenti dei dati.
+A causa delle circostanze senza precedenti legate alla crisi COVID-19 e della necessità di gestire la richiesta di servizi online in Europa, se l'organizzazione è un Istituto di istruzione, è possibile ottenere il tenant di Microsoft 365 nell'Unione europea, nell'Associazione europea di libero scambio, nel Regno Unito, negli Stati Uniti o in Canada oppure è possibile trasferire i dati in qualsiasi data center nelle predette aree geografiche.  Ciò significa che i dati possono essere archiviati in modo statico nell'Unione europea, nell'Associazione europea di libero scambio, nel Regno Unito, negli Stati Uniti o in Canada.  Il nostro impegno a garantire la conformità, la privacy e la sicurezza rimane invariato e applicheremo le misure necessarie e prudenti per mantenere la disponibilità del servizio.  Manterremo la conformità a tutte le leggi applicabili relativamente ai trasferimenti dei dati.
 
 
 
@@ -58,11 +58,11 @@ Microsoft non rivela gli indirizzi esatti dei propri data center. Abbiamo stabil
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>La posizione dei dati dei clienti ha un impatto diretto sull'esperienza degli utenti finali?
 
-Le prestazioni di Microsoft 365 non sono semplicemente proporzionali alla distanza tra gli utenti e le posizioni del Data Center. Gli investimenti continuati da Microsoft nella rete cloud globale, nell'infrastruttura cloud globale e nell'architettura dei servizi di Microsoft 365 offrono agli utenti un'esperienza singolare e coerente indipendentemente dalla posizione in cui i dati dei clienti sono archiviati a riposo. Se gli utenti riscontrano problemi di prestazioni, è necessario eseguire procedure complete di risoluzione dei problemi. Microsoft ha pubblicato linee guida per i clienti di Microsoft 365 per pianificare e ottimizzare le prestazioni degli utenti finali nel [sito Web del supporto tecnico di Office](https://go.microsoft.com/fwlink/p/?linkid=862645).
+Le prestazioni di Microsoft 365 non sono semplicemente proporzionali alla distanza dell'utente dalle ubicazioni dei data center. I continui investimenti effettuati da Microsoft nella propria rete cloud globale, nell'infrastruttura cloud globale e nell'architettura dei servizi di Microsoft 365 assicurano agli utenti un'esperienza unica e coerente, indipendentemente da dove vengono archiviati i loro dati inattivi. Se gli utenti riscontrano problemi di prestazioni, è necessario eseguire procedure complete di risoluzione dei problemi. Microsoft ha pubblicato istruzioni per i clienti di Microsoft 365 per pianificare e ottimizzare le prestazioni per gli utenti finali nel [sito Web del supporto di Office](https://go.microsoft.com/fwlink/p/?linkid=862645).
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>In che modo Microsoft aiuta i clienti a rispettare la conformità a normative nazionali, regionali e specifiche del settore?
 
-Per essere conformi ai requisiti nazionali, regionali e specifici per l'industria che disciplinano la raccolta e l'utilizzo dei dati degli utenti, Microsoft 365 offre il set più completo di offerte di conformità di qualsiasi provider globale di produttività cloud. Leggere le [offerte di conformità](https://go.microsoft.com/fwlink/p/?linkid=864391) e altre informazioni nella sezione [conformità Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862317) nel centro protezione Microsoft. Inoltre, alcuni piani di Microsoft 365 offrono ulteriori soluzioni di conformità che consentono di gestire i dati, conformarsi ai requisiti legali e normativi e monitorare le azioni intraprese nei dati.
+Per aiutare i clienti a rispettare la conformità a requisiti nazionali, locali e specifici del settore che regolamentano la raccolta e l'uso dei dati degli utenti, Microsoft 365 include il set più completo di offerte di conformità rispetto a qualsiasi altro provider di strumenti di produttività nel cloud. Per altre informazioni, vedere le [offerte di conformità](https://go.microsoft.com/fwlink/p/?linkid=864391) e altri dettagli nella sezione [Conformità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862317) del Centro protezione Microsoft. Inoltre, alcuni piani di Microsoft 365 offrono ulteriori soluzioni di conformità per agevolare la gestione dei dati, il rispetto della conformità a requisiti legali e normativi e il monitoraggio delle azioni eseguite sui dati.
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>Chi può accedere ai dati e in base a quali regole?
 
@@ -70,15 +70,15 @@ Per essere conformi ai requisiti nazionali, regionali e specifici per l'industri
 
 ### <a name="does-microsoft-access-your-data"></a>Microsoft accede ai dati?
 
-Microsoft automatizza la maggior parte delle operazioni di Microsoft 365, limitando intenzionalmente il proprio accesso ai dati dei clienti. In questo modo è possibile gestire Microsoft 365 in scala e risolvere i rischi di minacce interne ai dati dei clienti. Per impostazione predefinita, i tecnici Microsoft non dispongono di privilegi amministrativi permanenti e non dispongono dell'accesso permanente ai dati dei clienti in Microsoft 365. I tecnici Microsoft possono avere accesso limitato e registrato ai dati dei clienti per periodi di tempo limitati, ma solo se necessario per le normali operazioni di manutenzione e solo previa approvazione del management di Microsoft (e del cliente, se dotato di licenza della funzionalità Customer Lockbox).
+Microsoft automatizza la maggior parte delle operazioni di Microsoft 365, limitando intenzionalmente il proprio accesso ai dati dei clienti. In questo modo possiamo gestire Microsoft 365 su vasta scala e affrontare i rischi delle minacce interne verso i dati dei clienti. Per impostazione predefinita, i tecnici Microsoft non hanno privilegi amministrativi permanenti né accesso permanente ai dati dei clienti in Microsoft 365. I tecnici Microsoft possono avere accesso limitato e registrato ai dati dei clienti per periodi di tempo limitati, ma solo se necessario per le normali operazioni di manutenzione e solo previa approvazione del management di Microsoft (e del cliente, se dotato di licenza della funzionalità Customer Lockbox).
 
 ### <a name="how-does-microsoft-secure-your-data"></a>In che modo Microsoft protegge i dati?
 
-Microsoft dispone di criteri, controlli e sistemi robusti incorporati in Microsoft 365 per garantire la sicurezza delle informazioni. Per ulteriori informazioni, vedere la [sezione sicurezza di microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=864393) nel centro protezione Microsoft.
+Microsoft implementa criteri, strumenti di controllo e sistemi rigorosi integrati in Microsoft 365 per tenere al sicuro le informazioni dei clienti. Per altre informazioni, vedere la sezione sulla [Sicurezza di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=864393) nel Centro protezione Microsoft.
 
 ### <a name="does-microsoft-365-encrypt-your-data"></a>Microsoft 365 crittografa i dati?
 
-Microsoft 365 utilizza tecnologie sul fianco del servizio che crittografano i dati dei clienti a riposo e in transito. Per i dati dei clienti a riposo, Microsoft 365 utilizza la crittografia a livello di volume e di file. Per i dati dei clienti in transito, Microsoft 365 utilizza più tecnologie di crittografia per le comunicazioni tra i Data Center e tra client e server, ad esempio TLS (Transport Layer Security) e IPsec (Internet Protocol Security). Microsoft 365 include anche funzionalità di crittografia gestite dal cliente.
+Microsoft 365 usa tecnologie lato servizio che crittografano i dati dei clienti inattivi e in transito. Per i dati inattivi, Microsoft 365 usa la crittografia a livello di volume e a livello di file. Per quelli in transito, Microsoft 365 usa più tecnologie di crittografia per le comunicazioni tra data center e tra client e server, ad esempio TLS (Transport Layer Security) e IPsec (Internet Protocol Security). Microsoft 365 include anche funzionalità di crittografia gestite dal cliente.
 
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Dove è possibile trovare informazioni sulla residenza dei dati per Microsoft Azure?
 
@@ -86,26 +86,26 @@ Consultare la pagina [Prodotti disponibili in base all'area](https://go.microsof
 
 ### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Cos'è Multi-Geo Capabilities in Microsoft 365?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) offre ai clienti la possibilità di allocare i dati dei clienti di base a riposo nei nostri percorsi disponibili nel cloud Microsoft 365.   
+[Il multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) offre ai clienti la possibilità di assegnare i dati di base ai clienti nelle posizioni disponibili nel cloud Microsoft 365.   
 
 ### <a name="what-services-support-multi-geo"></a>Quali servizi supportano Multi-Geo?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) è disponibile per Exchange Online, OneDrive e SharePoint Online. Microsoft sta studiando multi-Geo per altri servizi Microsoft 365.
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) è disponibile per Exchange Online, OneDrive e SharePoint Online. Microsoft sta esaminando la possibilità di includere Multi-Geo in altri servizi di Microsoft 365.
 
-### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Quali sono le eccezioni per le posizioni dei dati di Intune?
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Quali sono le eccezioni per i percorsi dei dati di Intune?
 
-Microsoft non memorizzerà i dati dei clienti di Intune a riposo al di fuori del geografico dichiarato. eccetto se:
+Microsoft non memorizzerà i dati dei clienti di Intune all'esterno della posizione geografica indicata. A meno che:
 
-- È necessario che Microsoft fornisca supporto ai clienti, risoluzione dei problemi relativi al servizio o sia conforme ai requisiti legali.
-- Il cliente configura un account per abilitare tale archiviazione dei dati del cliente, anche mediante l'utilizzo di quanto segue:
+- È necessario che Microsoft fornisca assistenza clienti, risolva i problemi del servizio o si conformi ai requisiti legali.
+- Il cliente configura un account per abilitare tale spazio di archiviazione per i dati dei clienti, anche usando le seguenti operazioni:
 
-  - Funzionalità progettate per funzionare globalmente, ad esempio la rete di distribuzione del contenuto (CDN), che fornisce un servizio di memorizzazione nella cache globale e archivia i dati dei clienti nelle posizioni perimetrali di tutto il mondo.
+  - Caratteristiche che sono pensate per operare globalmente, come la Rete per la distribuzione di contenuti (CDN), che offre un servizio di Coaching globale e memorizza i dati dei clienti in posizioni perimetrali in tutto il mondo.
 
-  - Azure Active Directory (Azure AD), in cui è possibile archiviare i dati della directory in modo globale. Questo non si applica alle distribuzioni di Azure AD negli Stati Uniti (in cui i dati di Azure AD sono archiviati unicamente negli Stati Uniti) o in Europa (dove sono archiviati i dati di Azure AD in Europa o negli Stati Uniti).
+  - Azure Active Directory (Azure AD), che potrebbe archiviare i dati della directory globalmente. Questa operazione non è valida per le distribuzioni di Azure Active Directory negli Stati Uniti (dove i dati di Azure Active Directory sono archiviati solo negli Stati Uniti) o in Europa (in cui i dati di Azure Active Directory sono archiviati in Europa o Stati Uniti).
    
-  - Preview, beta o altri servizi di Prerelease, che in genere archiviano i dati dei clienti negli Stati Uniti, ma possono archiviarli a livello globale.
+  - Preview, beta o altri servizi provvisori, che in genere memorizzano i dati dei clienti negli Stati Uniti, ma possono archiviarli globalmente.
 
-Indipendentemente da ciò, Microsoft non controlla o limita il Geo da cui i clienti o gli utenti finali possono accedere ai dati dei clienti. 
+Indipendentemente da ciò, Microsoft non controlla o limita l’area geografica da cui i clienti o gli utenti finali possono accedere ai dati dei clienti. 
 
 ## <a name="data-center-locations"></a>Posizioni dei data center
 
@@ -134,7 +134,7 @@ Per i data center specifici per paese o area geografica, di seguito sono indicat
 | Germania | Francoforte, Berlino |
 | India | Chennai, Mumbai, Pune |
 | Giappone | Osaka, Tokyo, Saitama |
-| Sud Corea | Busan, Seoul |
+| Corea del Sud | Busan, Seoul |
 | Norvegia | Oslo, Stavanger |
 | Sudafrica | Città del Capo, Johannesburg |
 | Svizzera | Ginevra, Zurigo |
@@ -142,7 +142,7 @@ Per i data center specifici per paese o area geografica, di seguito sono indicat
 | Regno Unito | Durham, Londra, Cardiff |
 | Stati Uniti |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose |
 
-I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'indirizzo di fatturazione associato al primo abbonamento del tenant. Per verificare dove vengono archiviati i dati dei clienti per i servizi di Office 365 esistenti, vedere le informazioni sulla posizione dei dati specifici del tenant nell'interfaccia di amministrazione di Office 365, in Impostazioni | Profilo organizzazione | Scheda percorso dati. In alternativa, espandere il paese in cui si trova la propria azienda, nell'elenco seguente, per individuare la posizione in cui verranno archiviati i dati dei clienti se si desidera iniziare a utilizzare un servizio Microsoft 365 oggi.
+Per impostazione predefinita, i nuovi tenant di Microsoft 365 vengono ospitati in un'area geografica in base al paese dell'indirizzo di fatturazione associato al primo abbonamento del tenant. Per verificare dove vengono archiviati i dati dei clienti per i servizi di Office 365 esistenti, vedere le informazioni sulla posizione dei dati specifici del tenant nell'interfaccia di amministrazione di Office 365, in Impostazioni | Profilo organizzazione | Scheda percorso dati. In alternativa, espandere il paese in cui si trova l'azienda nell'elenco di seguito per scoprire dove verrebbero archiviati i dati dei clienti se si iniziasse a usare un servizio Microsoft 365 oggi stesso.
 
 ## <a name="afghanistan"></a>Afghanistan
 <details><summary>Fare clic per espandere</summary><p>
@@ -422,7 +422,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -518,7 +518,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione |  Area geografica globale 1 - EMEA |
+| Planner |  Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -566,7 +566,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -638,7 +638,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -830,7 +830,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione |  Area geografica globale 1 - EMEA |
+| Planner |  Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -1886,7 +1886,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -2126,7 +2126,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -2198,7 +2198,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -2702,7 +2702,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -2750,7 +2750,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -2774,7 +2774,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -2870,7 +2870,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer |  Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -2976,24 +2976,24 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | Workplace Analytics | Stati Uniti |
 </p></details>
 
-## <a name="south-korea"></a>Sud Corea
+## <a name="south-korea"></a>Corea del Sud
 <details><summary>Fare clic per espandere</summary><p>
 
 | Servizio | Posizione |
 | --- | --- |
-| Exchange Online | Sud Corea |
-| OneDrive for Business | Sud Corea |
-| SharePoint Online | Sud Corea |
-| Skype for Business | Sud Corea |
-| Microsoft Teams | Sud Corea |
-| Office Online &amp; Mobile | Sud Corea |
-| EOP | Sud Corea |
+| Exchange Online | Corea del Sud |
+| OneDrive for Business | Corea del Sud |
+| SharePoint Online | Corea del Sud |
+| Skype for Business | Corea del Sud |
+| Microsoft Teams | Corea del Sud |
+| Office Online &amp; Mobile | Corea del Sud |
+| EOP | Corea del Sud |
 | Intune | Area geografica globale 2 - Asia Pacifico |
-| MyAnalytics | Sud Corea |
+| MyAnalytics | Corea del Sud |
 | Planner | Area geografica globale 2 - Asia Pacifico |
 | Sway | Stati Uniti |
 | Yammer | Stati Uniti |
-| Servizi di OneNote | Sud Corea |
+| Servizi di OneNote | Corea del Sud |
 | Stream | Area geografica globale 2 - Asia Pacifico |
 | Whiteboard | Stati Uniti |
 | Forms | Stati Uniti |
@@ -3062,7 +3062,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -3590,7 +3590,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -3614,7 +3614,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -3662,7 +3662,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -4430,7 +4430,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -4454,7 +4454,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -5198,7 +5198,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -5276,7 +5276,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | Servizi di OneNote | Svizzera |
 | Stream | Area geografica globale 1 - EMEA |
 | Whiteboard | Area geografica globale 1 - EMEA |
-| Forms | Area geografica globale 1 - EMEA |
+| Moduli | Area geografica globale 1 - EMEA |
 | Workplace Analytics | Stati Uniti |
 </p></details>
 
@@ -5534,7 +5534,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -5558,7 +5558,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
@@ -5678,7 +5678,7 @@ I nuovi tenant di Microsoft 365 vengono predefiniti a Geo in base al paese dell'
 | EOP | Area geografica globale 1 - EMEA |
 | Intune | Area geografica globale 1 - EMEA |
 | MyAnalytics | Area geografica globale 1 - EMEA |
-| Programmazione | Area geografica globale 1 - EMEA |
+| Planner | Area geografica globale 1 - EMEA |
 | Sway | Stati Uniti |
 | Yammer | Area geografica globale 1 - EMEA |
 | Servizi di OneNote | Area geografica globale 1 - EMEA |
