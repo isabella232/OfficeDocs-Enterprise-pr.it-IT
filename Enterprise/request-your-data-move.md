@@ -14,17 +14,17 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi Microsoft 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: dae2c7e4f2fc529a32af6127b4f054f9c3d01344
-ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
+ms.openlocfilehash: 06deead188f985f7cd8e410937ae612f3d509b7c
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44278069"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433757"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
 > [!NOTE]
-> Le informazioni contenute in questa pagina si applicano solo ai clienti che avevano già inquilini Microsoft 365 prima che i nuovi Data Center venissero introdotti nel loro Geo. 
+> Le informazioni contenute in questa pagina si applicano solo ai clienti che avevano già inquilini Microsoft 365 prima che i nuovi Data Center venissero introdotti nel loro Geo. L'idoneità alla migrazione dipende anche dalla data di provisioning dei carichi di lavoro specifica, quindi la data di creazione del tenant potrebbe non essere sempre la singola data che conta.
   
 I clienti esistenti di Microsoft 365 sono idonei a richiedere la migrazione per i dati del cliente principale dell'intera organizzazione a riposo.  
   
@@ -37,7 +37,7 @@ I clienti esistenti di Microsoft 365 sono idonei a richiedere la migrazione per 
 |India  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
 |Canada  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
 |Regno Unito  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
-|Sud Corea  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
+|Corea del Sud  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
 |Francia  <br/> |Gennaio 1, 2020  <br/> |30 giugno 2020  <br/> |
 |Emirati Arabi Uniti  <br/> |15 luglio 2019  <br/> |30 giugno 2020  <br/> |
 |Sudafrica  <br/> |25 luglio 2019  <br/> |30 giugno 2020  <br/> |

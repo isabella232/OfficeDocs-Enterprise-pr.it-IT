@@ -10,14 +10,14 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 description: Informazioni sull'amministrazione delle impostazioni multi-geografiche di Exchange Online con PowerShell di Microsoft.
-ms.openlocfilehash: d2498178193f71c1ffaea6141a09cc76e826e99e
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
-ms.translationtype: HT
+ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352946"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433507"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico
 
@@ -103,7 +103,8 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
-> **Nota:** se il codice della posizione geografica nel nome del database non corrisponde al valore **MailboxRegion**, la cassetta postale verrà automaticamente verrà inserita in una coda di trasferimento e spostata nella posizione geografica specificata dal valore del ** MailboxRegion**(Exchange Online controlla se esiste una mancata corrispondenza tra questi valori di proprietà).
+> [!NOTE]
+> Se il codice della posizione geografica nel nome del database non corrisponde al valore di **MailboxRegion** , la cassetta postale viene automaticamente inserita in una coda di rilocazione e spostata nella posizione geografica specificata dal valore **MailboxRegion** (Exchange Online Cerca la mancata corrispondenza tra questi valori di proprietà).
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>Spostare una cassetta postale esistente solo nel cloud in una posizione geografica specifica
 
@@ -133,17 +134,16 @@ Ad esempio, per impostare i valori **PreferredDataLocation** sulla geografica de
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
-**Note**:
-
-- Come già accennato in precedenza non è possibile usare questa procedura per gli oggetti utente sincronizzati dalla Active Directory locale. È necessario modificare il valore **PreferredDataLocation** in Active Directory e sincronizzarlo con AAD Connect. Per ulteriori informazioni, vedere [Sincronizzazione di Azure Active Directory Connect: configurare il percorso di dati preferito per le risorse di Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
-
-- Il tempo necessario per spostare una cassetta postale in una nuova posizione geografica dipende da diversi fattori:
-
-  - Le dimensioni e tipo di cassetta postale.
-
-  - Il numero totale di cassette postali di cui eseguire la migrazione.
-
-  - La disponibilità delle risorse di spostamento.
+> [!NOTE]
+> - Come accennato in precedenza, non è possibile utilizzare questa procedura per gli oggetti utente sincronizzati da Active Directory locale. È necessario modificare il valore **PreferredDataLocation** in Active Directory e sincronizzarlo con AAD Connect. Per ulteriori informazioni, vedere [Sincronizzazione di Azure Active Directory Connect: configurare il percorso di dati preferito per le risorse di Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> 
+> - Il tempo necessario per spostare una cassetta postale in una nuova posizione geografica dipende da diversi fattori:
+> 
+>   - Le dimensioni e tipo di cassetta postale.
+> 
+>   - Il numero totale di cassette postali di cui eseguire la migrazione.
+> 
+>   - La disponibilità delle risorse di spostamento.
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Disattivazione della migrazione per cassette postali in blocco per controversia legale
 

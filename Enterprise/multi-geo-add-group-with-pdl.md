@@ -1,5 +1,5 @@
 ---
-title: Creare un gruppo di Microsoft 365 con una posizione preferita per i dati specifica
+title: Creare un gruppo di Microsoft 365 con un PDL specifico
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,22 +11,22 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
-description: Informazioni su come creare un gruppo di Microsoft 365 con una posizione preferita per i dati specifica in un ambiente multi-geografico.
-ms.openlocfilehash: 5b2294ff8821e84cb0158fa989b97134353969b2
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+localization_priority: Normal
+description: Informazioni su come creare un gruppo di Microsoft 365 con una posizione dati preferita specificata in un ambiente multi-geografico.
+ms.openlocfilehash: bcababe39035550be445f2eee4d8121a2983132f
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057986"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433857"
 ---
-# <a name="create-an-microsoft-365-group-with-a-specific-pdl"></a>Creare un gruppo di Microsoft 365 con una posizione preferita per i dati specifica
+# <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>Creare un gruppo di Microsoft 365 con un PDL specifico
 
-Quando gli utenti in un ambiente multi-geografico creano un gruppo di Microsoft 365, la posizione preferita per i dati del gruppo viene impostata automaticamente su quella dell'utente. Gli amministratori globali di SharePoint ed Exchange possono creare i gruppi in qualsiasi area selezionata. 
+Quando gli utenti di un ambiente multi-geografico creano un gruppo di Microsoft 365, il percorso dei dati preferito del gruppo viene automaticamente impostato su quello dell'utente. Gli amministratori globali di SharePoint ed Exchange possono creare i gruppi in qualsiasi area selezionata. 
 
 Se è necessario creare un gruppo con una posizione preferita per i dati specifica, è possibile usare il cmdlet New-UnifiedGroup di Microsoft PowerShell dall'interfaccia di amministrazione di SharePoint o tramite Exchange Online. Quando si esegue questa operazione, il provisioning della cassetta postale del gruppo e del sito di SharePoint associato al gruppo verrà effettuato nella posizione preferita per i dati specifica.
 
-Per creare un gruppo di Microsoft 365 con la posizione preferita per i dati specifica, passare all'interfaccia di amministrazione di SharePoint nella posizione geografica in cui si vuole creare il sito del gruppo.
+Per creare un gruppo di Microsoft 365 con il PDL specificato, passare all'interfaccia di amministrazione di SharePoint nella posizione geografica in cui si desidera creare il sito del gruppo.
 
 Ad esempio:
 

@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: Informazioni su come spostare un sito OneDrive in un'altra posizione geografica.
-ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 699c9502c7257e5908e79d591170b51a563c4999
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44058006"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433877"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Spostare un sito OneDrive in un'altra posizione geografica 
 
@@ -199,4 +199,8 @@ Al termine dello spostamento geografico di OneDrive, l'utente deve uscire e acce
 
 ### <a name="existing-followed-groups-and-sites"></a>I gruppi e siti seguiti esistenti
 
-I gruppi e i siti  seguiti verranno mostrati in OneDrive for business dell'utente indipendentemente dalla loro posizione geografica. I siti e i gruppi ospitati in un'altra posizione geografica si apriranno in una scheda separata.
+I siti e i gruppi seguiti verranno visualizzati nell'OneDrive dell'utente, indipendentemente dalla posizione geografica. I siti e i gruppi ospitati in un'altra posizione geografica verranno aperti in una scheda separata.
+
+### <a name="delve-geo-url-updates"></a>Approfondire gli aggiornamenti degli URL Geo
+
+Gli utenti verranno inviati all'approfondimento geografico corrispondente al proprio PDL solo dopo che la OneDrive è stata spostata nel nuovo Geo.

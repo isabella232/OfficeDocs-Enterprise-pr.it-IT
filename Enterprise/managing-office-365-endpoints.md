@@ -17,16 +17,16 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Alcune reti aziendali limitano l'accesso a percorsi Internet generici o includono una sostanziale backhaul o l'elaborazione del traffico di rete. Per garantire che i computer su reti come queste possano accedere a Office 365, gli amministratori di rete e proxy devono gestire l'elenco di nomi FQDN, URL e indirizzi IP che compongono l'elenco degli endpoint di Office 365. Queste necessità devono essere aggiunte alla route diretta, al bypass proxy e/o alle regole del firewall e ai file PAC per garantire che le richieste di rete siano in grado di raggiungere Office 365.
-ms.openlocfilehash: f1e614412c1ef789ba5f0b81e124fdfebf361f94
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: MT
+ms.openlocfilehash: 335cfd3f27762c249cc9af88b169a9f0bb59bda7
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845037"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433557"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestione degli endpoint di Office 365
 
-La maggior parte delle organizzazioni aziendali che dispongono di più percorsi di Office e di una rete WAN di connessione dovrà richiedere la configurazione di Office 365. È possibile ottimizzare la rete inviando tutte le richieste di rete di Office 365 attendibili direttamente tramite il firewall, ignorando tutti i controlli o l'elaborazione del livello di pacchetti aggiuntivi. Questo riduce la latenza e i requisiti di capacità del perimetro. Identificare il traffico di rete di Office 365 è il primo passaggio per garantire prestazioni ottimali per gli utenti. Per ulteriori informazioni sulla connettività di rete di Office 365, vedere [principi di connettività di rete di office 365](office-365-network-connectivity-principles.md).
+La maggior parte delle organizzazioni aziendali che dispongono di più posizioni di Office e di una WAN di connessione avrà bisogno di una configurazione per la connettività di rete Office 365 È possibile ottimizzare la rete inviando tutte le richieste di rete di Office 365 attendibili direttamente tramite il firewall, ignorando tutti i controlli o l'elaborazione del livello di pacchetti aggiuntivi. Questo riduce la latenza e i requisiti di capacità del perimetro. Identificare il traffico di rete di Office 365 è il primo passaggio per garantire prestazioni ottimali per gli utenti. Per ulteriori informazioni sulla connettività di rete di Office 365, vedere [principi di connettività di rete di office 365](office-365-network-connectivity-principles.md).
 
 Microsoft consiglia di accedere agli endpoint di rete di Office 365 e di modificarli utilizzando l' [indirizzo IP e il servizio Web URL di office 365](office-365-ip-web-service.md).
 
@@ -77,7 +77,7 @@ Sono disponibili diversi parametri che è possibile passare allo script:
 |**ClientRequestId** <br/> |Questo è necessario ed è un GUID passato al servizio Web che rappresenta il computer client che effettua la chiamata. <br/> |
 |**Instance** <br/> |L'istanza di servizio di Office 365 che viene impostata come predefinita in tutto il mondo. Passata anche al servizio Web. <br/> |
 |**TenantName** <br/> |Nome del tenant di Office 365. Passata al servizio Web e utilizzata come parametro sostitutivo in alcuni URL di Office 365. <br/> |
-|**Tipo** <br/> |Tipo di file PAC del proxy che si desidera generare. <br/> |
+|**Type** <br/> |Tipo di file PAC del proxy che si desidera generare. <br/> |
 
 Di seguito è riportato un altro esempio di chiamata dello script PowerShell con parametri aggiuntivi:
 
@@ -145,7 +145,7 @@ Per ulteriori informazioni, vedere un indirizzo IP associato a Office 365.
 1. Controllare se l'indirizzo IP è incluso in un intervallo di pubblicazione più grande tramite una calcolatrice CIDR, ad esempio per [IPv4](https://www.ipaddressguide.com/cidr) o [IPv6](https://www.ipaddressguide.com/ipv6-cidr). Ad esempio, 40.96.0.0/13 include l'indirizzo IP 40.103.0.1 nonostante 40,96 non corrispondente a 40,103.
 2. Vedere se un partner possiede l'indirizzo IP con una [query WHOIS](https://dnsquery.org/). Se è di proprietà di Microsoft, può trattarsi di un partner interno. Molti endpoint di rete partner sono elencati come appartenenti alla categoria _predefinita_ , per i quali gli indirizzi IP non vengono pubblicati.
 3. L'indirizzo IP potrebbe non essere parte di Office 365 o di una dipendenza. La pubblicazione di endpoint di rete di Office 365 non include tutti gli endpoint di rete Microsoft.
-4. Controllare il certificato, in un browser connettersi all'indirizzo IP utilizzando *https://\<ip_address\> * controllare i domini elencati nel certificato per comprendere quali domini sono associati all'indirizzo IP. Se si tratta di un indirizzo IP di proprietà di Microsoft e non dell'elenco degli indirizzi IP di Office 365, è probabile che l'indirizzo IP sia associato a una rete CDN Microsoft, ad esempio *MSOCDN.NET* o un altro dominio Microsoft senza informazioni IP pubblicate. Se si trova il dominio sul certificato è quello in cui pretendiamo di elencare l'indirizzo IP, fatecelo sapere.
+4. Controllare il certificato, in un browser connettersi all'indirizzo IP utilizzando *https:// \<IP_ADDRESS\> * , controllare i domini elencati nel certificato per comprendere quali domini sono associati all'indirizzo IP. Se si tratta di un indirizzo IP di proprietà di Microsoft e non dell'elenco degli indirizzi IP di Office 365, è probabile che l'indirizzo IP sia associato a una rete CDN Microsoft, ad esempio *MSOCDN.NET* o un altro dominio Microsoft senza informazioni IP pubblicate. Se si trova il dominio sul certificato è quello in cui pretendiamo di elencare l'indirizzo IP, fatecelo sapere.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Alcuni URL di Office 365 puntano ai record CNAME invece che a record nel DNS. Che cosa è necessario fare con i record CNAME?
@@ -167,9 +167,9 @@ Le configurazioni hardcoded o la whitelist in base ai nomi FQDN indiretti di Off
 
 Office 365 e altri servizi Microsoft utilizzano diversi servizi di terze parti, ad esempio Akamai e MarkMonitor, per migliorare l'esperienza di Office 365. Per continuare a fornire le migliori esperienze possibili, è possibile modificare questi servizi in futuro. I domini di terze parti possono ospitare contenuto, ad esempio una rete CDN, oppure possono ospitare un servizio, ad esempio un servizio di gestione del traffico geografico. Alcuni dei servizi attualmente in uso includono:
   
-[MarkMonitor](https://www.markmonitor.com/) è in uso quando vengono visualizzate le richieste che includono * \*. nsatc.NET* . Questo servizio fornisce la protezione del nome di dominio e il monitoraggio per proteggersi da comportamenti dannosi.
+[MarkMonitor](https://www.markmonitor.com/) è in uso quando vengono visualizzate le richieste che includono * \* . nsatc.NET* . Questo servizio fornisce la protezione del nome di dominio e il monitoraggio per proteggersi da comportamenti dannosi.
   
-[ExactTarget](https://www.marketingcloud.com/) è in uso quando si visualizzano le richieste a * \*. ExactTarget.com* . Questo servizio fornisce la gestione e il monitoraggio del collegamento tramite posta elettronica rispetto a comportamenti dannosi.
+[ExactTarget](https://www.marketingcloud.com/) è in uso quando si visualizzano le richieste a * \* . ExactTarget.com* . Questo servizio fornisce la gestione e il monitoraggio del collegamento tramite posta elettronica rispetto a comportamenti dannosi.
   
 [Akamai](https://www.akamai.com/) è in uso quando vengono visualizzate le richieste che includono uno dei seguenti FQDN. Questo servizio offre servizi di rete per la distribuzione di contenuti e Geo-DNS.
   

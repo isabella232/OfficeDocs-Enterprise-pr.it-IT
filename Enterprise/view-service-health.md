@@ -25,12 +25,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visualizzare lo stato di integrità dei servizi Microsoft 365 prima di contattare il supporto per verificare se è presente un'interruzione del servizio attiva.
-ms.openlocfilehash: d937310faeaf5af63a6c36841d7a609006fc4ab5
-ms.sourcegitcommit: 057f0fce08b41a00581fc4736cad89270129c703
+ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44266694"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433887"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Come verificare l'integrità del servizio Microsoft 365
 
@@ -68,6 +68,9 @@ Per iscriversi per le notifiche di posta elettronica di nuovi incidenti che infl
 - Fino a due indirizzi di posta elettronica.
 - Se si desiderano notifiche per gli eventi o gli avvisi
 - Servizi per i quali si desidera effettuare la notifica
+
+> [!NOTE]
+> Ogni amministratore può impostare le proprie preferenze e il limite massimo di due indirizzi di posta elettronica è per account di amministratore.
 
 > [!TIP]
 > È inoltre possibile utilizzare l' [app Microsoft 365 admin](https://go.microsoft.com/fwlink/p/?linkid=627216) sul dispositivo mobile per visualizzare l'integrità del servizio, che è un ottimo modo per rimanere aggiornati con le notifiche push. 
@@ -145,4 +148,5 @@ Per ulteriori informazioni sul nostro impegno per il tempo di attività, vedere 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Report attività nell'interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
+ di Microsoft 365 [Preferenze del centro messaggi](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)
