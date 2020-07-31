@@ -15,16 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: In che modo Microsoft difende i propri servizi cloud contro gli attacchi DoS (Denial of Service).
-ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: a8374e46c9b561afce77545293b9bae3dd42ed64
+ms.sourcegitcommit: 72217e86b0da7ba13407aefe270200449c352548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998330"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529089"
 ---
 # <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Difesa dei servizi cloud di Microsoft 365 per gli attacchi Denial of Service
 
-## <a name="introduction"></a>Introduzione
 I datacenter Microsoft sono protetti da una sicurezza di difesa approfondita che include recinzioni perimetrali, telecamere, personale di sicurezza e accessi sicuri che utilizzano la biometria, la smartcard e l'autenticazione a più fattori. La sicurezza della difesa in profondità continua attraverso tutte le aree della struttura e di ogni unità server fisica. Il [gruppo Infrastructure and Operations di Microsoft Cloud](https://www.microsoft.com/cloud-platform/global-datacenters) fornisce l'infrastruttura di base e le tecnologie fondamentali per i servizi cloud. I datacenter sono conformi agli standard del settore per la sicurezza fisica e l'affidabilità e sono gestiti, monitorati e amministrati dal personale Microsoft Operations.
 
 Per proteggere ulteriormente i servizi cloud, Microsoft fornisce un sistema di difesa DDoS che fa parte del monitoraggio continuo di Microsoft Azure e dei processi di test di penetrazione. Il sistema di difesa DDoS di Azure è stato creato non solo per resistere agli attacchi dall'esterno, ma anche da altri tenant di Azure. Azure utilizza tecniche di rilevamento e attenuazione standard, ad esempio i cookie SYN, la limitazione della velocità e i limiti di connessione per la protezione da attacchi DDoS.
