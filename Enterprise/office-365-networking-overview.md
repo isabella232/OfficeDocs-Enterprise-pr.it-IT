@@ -1,5 +1,5 @@
 ---
-title: Panoramica della connettività di rete Microsoft 365
+title: Informazioni generali sulla connettività di rete di Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Viene illustrato il motivo per cui l'ottimizzazione della rete è importante per i servizi SaaS, l'obiettivo della rete Microsoft 365 e il modo in cui SaaS richiede una rete diversa da altri carichi di lavoro.
-ms.openlocfilehash: bc754337eea5e04d6851509114763004b53a19a7
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 6dc1ea91607dc43d4e24546f938f4f7ee3af8b3a
+ms.sourcegitcommit: 92bbb6d005d005952a9e2055661fcdccfdd0567b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997826"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533501"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Panoramica della connettività di rete Microsoft 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si riferisce sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 Microsoft 365 è un cloud SaaS (software-as-a-Service) distribuito che offre scenari di produttività e collaborazione tramite una serie diversificata di micro-servizi e applicazioni. I componenti client di Microsoft 365, ad esempio Outlook, Word e PowerPoint, vengono eseguiti sui computer degli utenti e si connettono ad altri componenti di Microsoft 365 eseguiti nei Data Center Microsoft. Il fattore più significativo che determina la qualità dell'esperienza dell'utente finale di Microsoft 365 è l'affidabilità della rete e la bassa latenza tra i client Microsoft 365 e Microsoft 365 Service front doors.
 
@@ -35,7 +35,7 @@ In questo articolo vengono illustrati gli obiettivi della rete Microsoft 365 e p
 
 L'obiettivo finale della rete Microsoft 365 è ottimizzare l'esperienza dell'utente finale, consentendo l'accesso meno restrittivo tra i client e gli endpoint Microsoft 365 più vicini. La qualità dell'esperienza dell'utente finale è direttamente correlata alle prestazioni e alla capacità di risposta dell'applicazione che l'utente sta utilizzando. Ad esempio, Microsoft teams si basa su una bassa latenza in modo che le chiamate telefoniche degli utenti, le conferenze e le collaborazioni dello schermo condiviso siano prive di problemi e Outlook si basa su una grande connettività di rete per le funzionalità di ricerca immediata che sfruttano l'indicizzazione sul server e le funzionalità AI.
 
-L'obiettivo principale della progettazione della rete dovrebbe essere quello di ridurre al minimo la latenza riducendo il tempo di andata e ritorno (RTT, Round Trip Time) dai computer client alla rete globale Microsoft, la backbone di rete pubblica di Microsoft che interconnette tutti i datacenter di Microsoft con una bassa latenza, punti di ingresso dell'applicazione cloud a disponibilità elevata sparsi in tutto il mondo. Per ulteriori informazioni sulla rete globale Microsoft [, vedere come Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+L'obiettivo principale della progettazione della rete dovrebbe essere quello di ridurre al minimo la latenza riducendo il tempo di andata e ritorno (RTT, Round Trip Time) dai computer client alla rete globale Microsoft, la backbone di rete pubblica di Microsoft che interconnette tutti i datacenter di Microsoft con una bassa latenza, punti di ingresso dell'applicazione cloud a disponibilità elevata sparsi in tutto il mondo. Per altre informazioni sulla rete globale di Microsoft, vedere [Come Microsoft sviluppa la sua rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 L'ottimizzazione delle prestazioni di rete di Microsoft 365 non deve essere complicata. È possibile ottenere le migliori prestazioni possibili seguendo alcuni principi fondamentali:
 
@@ -61,7 +61,7 @@ Nelle architetture di rete tradizionali, la latenza più elevata per il traffico
 
 ## <a name="securing-microsoft-365-connections"></a>Protezione delle connessioni di Microsoft 365
 
-L'obiettivo della sicurezza della rete tradizionale è quello di indurire il perimetro della rete aziendale contro intrusioni e exploit dolosi. La maggior parte delle reti aziendali impone la sicurezza della rete per il traffico Internet utilizzando tecnologie come server proxy, firewall, Break SSL e controlli, Deep Packet Inspection e sistemi di prevenzione della perdita di dati. Queste tecnologie offrono una significativa attenuazione dei rischi per le richieste generiche su Internet, ma possono ridurre drasticamente le prestazioni, la scalabilità e la qualità dell'esperienza degli utenti finali quando vengono applicate agli endpoint di Microsoft 365.
+L'obiettivo di una sicurezza di rete tradizionale è rafforzare il perimetro della rete aziendale contro intrusioni ed exploit dannosi. La maggior parte delle reti aziendali impone la sicurezza della rete per il traffico Internet utilizzando tecnologie come server proxy, firewall, Break SSL e controlli, Deep Packet Inspection e sistemi di prevenzione della perdita di dati. Queste tecnologie forniscono importanti riduzioni dei rischi per le richieste Internet generiche, ma consentono di ridurre in modo significativo le prestazioni, la scalabilità e la qualità dell'esperienza utente finale se applicati agli endpoint Microsoft 365.
 
 Microsoft 365 aiuta a soddisfare le esigenze dell'organizzazione per la sicurezza del contenuto e l'utilizzo dei dati per la conformità con le funzionalità di governance e sicurezza incorporate progettate appositamente per le caratteristiche e i carichi di lavoro di Microsoft 365. Per ulteriori informazioni sulla sicurezza e la conformità di Microsoft 365, vedere la Guida di [orientamento alla sicurezza di Office 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap). Per ulteriori informazioni sui consigli e sulla posizione di supporto di Microsoft sulle soluzioni di rete avanzate che eseguono l'elaborazione avanzata su traffico Microsoft 365, vedere [utilizzo di dispositivi di rete o soluzioni di terze parti sul traffico di Office 365](https://support.microsoft.com/help/2690045).
 
@@ -75,18 +75,18 @@ Alcuni problemi comuni relativi alle prestazioni vengono creati quando il traffi
 - Le connessioni di Egressing da una posizione centrale vanificano le funzionalità di routing dinamico della rete globale di Microsoft 365, l'aggiunta di latenza e il tempo di andata e ritorno
 - La decrittografia del traffico di rete di Microsoft 365 protetto da SSL e la ricrittografia può causare errori di protocollo e ha un rischio per la sicurezza
 
-Accorciamento del percorso di rete per i punti di ingresso di Microsoft 365 consentendo al traffico client di essere in uscita il più vicino possibile alla propria posizione geografica, è possibile migliorare le prestazioni di connettività e l'esperienza degli utenti finali in Microsoft 365. Può anche contribuire a ridurre l'impatto delle modifiche future nell'architettura di rete su prestazioni e affidabilità di Microsoft 365. Il modello di connettività ottimale consiste nel fornire sempre l'uscita di rete nella posizione dell'utente, indipendentemente dal fatto che si trovi sulla rete aziendale o su postazioni remote come la casa, gli alberghi, i coffee shop e gli aeroporti. Il traffico generico Internet e la rete aziendale basata su WAN verrebbero instradati separatamente e non utilizzeranno il modello di uscita diretta locale. Questo modello di uscita diretta locale è rappresentato nel diagramma seguente.
+Accorciamento del percorso di rete per i punti di ingresso di Microsoft 365 consentendo al traffico client di essere in uscita il più vicino possibile alla propria posizione geografica, è possibile migliorare le prestazioni di connettività e l'esperienza degli utenti finali in Microsoft 365. Può anche contribuire a ridurre l'impatto delle modifiche future nell'architettura di rete su prestazioni e affidabilità di Microsoft 365. Il modello di connettività ottimale consiste nel fornire sempre l'uscita di rete nella posizione dell'utente, indipendentemente dal fatto che si trovi sulla rete aziendale o su postazioni remote come la casa, gli alberghi, i coffee shop e gli aeroporti. Il traffico generico Internet e la rete aziendale basata su WAN verrebbero instradati separatamente e non utilizzeranno il modello di uscita diretta locale. Il modello di uscita diretta locale è rappresentato nel diagramma seguente.
 
-![Architettura di rete in uscita locale](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Architettura di rete locale di uscita](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
 L'architettura di uscita locale presenta i seguenti vantaggi per il traffico di rete di Microsoft 365 sul modello tradizionale:
   
-- Offre prestazioni ottimali di Microsoft 365 ottimizzando la lunghezza del percorso. Le connessioni degli utenti finali vengono instradate dinamicamente al punto di ingresso Microsoft 365 più vicino dall'infrastruttura del _servizio distribut front_ -end di Microsoft Global Network e il traffico viene quindi instradato internamente a dati e endpoint dei servizi sulla fibra scura a disponibilità elevata a bassa latenza di Microsoft.
+- Garantisce prestazioni ottimali di Microsoft 365 ottimizzando la lunghezza del percorso. Le connessioni degli utenti finali vengono instradate dinamicamente al punto di ingresso Microsoft 365 più vicino dall'infrastruttura del _servizio distribut front_ -end di Microsoft Global Network e il traffico viene quindi instradato internamente a dati e endpoint dei servizi sulla fibra a disponibilità elevata a bassa latenza di Microsoft.
 - Riduce il carico dell'infrastruttura di rete aziendale consentendo l'uscita locale per il traffico di Microsoft 365, ignorando i proxy e i dispositivi di ispezione del traffico.
 - Consente di proteggere le connessioni su entrambe le estremità sfruttando le funzionalità di sicurezza e sicurezza cloud di endpoint client, evitando l'applicazione di tecnologie di sicurezza di rete ridondanti.
 
 > [!NOTE]
-> L'infrastruttura del _servizio Distributed front door_ è il perimetro di rete altamente disponibile e scalabile di Microsoft Global Network con posizioni geograficamente distribuite. Termina le connessioni degli utenti finali e le instrada efficacemente all'interno della rete globale di Microsoft. Per ulteriori informazioni sulla rete globale Microsoft [, vedere come Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+> L'infrastruttura del _servizio Distributed front door_ è il perimetro di rete altamente disponibile e scalabile di Microsoft Global Network con posizioni geograficamente distribuite. Termina le connessioni degli utenti finali e le instrada efficacemente all'interno della rete globale di Microsoft. Per altre informazioni sulla rete globale di Microsoft, vedere [Come Microsoft sviluppa la sua rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Per ulteriori informazioni sulla comprensione e sull'applicazione dei principi di connettività di rete di Microsoft 365, vedere [principi di connettività di rete di microsoft 365](office-365-network-connectivity-principles.md).
 
@@ -116,6 +116,6 @@ L'ottimizzazione delle prestazioni di rete di Microsoft 365 è una vera e propri
 
 [Test di connettività di Microsoft 365](https://aka.ms/netonboard)
 
-[In che modo Microsoft crea la propria rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Come Microsoft sviluppa la sua rete globale veloce e affidabile](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
 [Blog di rete di Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
