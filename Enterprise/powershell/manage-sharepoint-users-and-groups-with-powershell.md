@@ -19,16 +19,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 per gestire gli utenti, i gruppi e i siti di SharePoint Online.'
-ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
+ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230472"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "46542817"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Gestire gli utenti e i gruppi di SharePoint Online con PowerShell
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si riferisce sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 Se si è un amministratore di SharePoint Online che lavora con elenchi di grandi dimensioni degli account utente o dei gruppi e che si desidera gestire in modo più semplice, è possibile utilizzare PowerShell per Microsoft 365. 
 
@@ -67,7 +67,7 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-Per utilizzare questi comandi, Sostituisci Sostituisci tutto all'interno delle virgolette, compresi i caratteri < e >, con i nomi corretti.
+Per utilizzare questi comandi, sostituire tutti gli elementi racchiusi tra virgolette, compresi i caratteri < e >, con i nomi corretti.
 
 Ad esempio, questo set di comandi aggiunge Opal Castillo (nome utente opalc) all'elenco degli amministratori delle raccolte siti nella raccolta siti di ContosoTest nel contratto di locazione contoso:
 
@@ -284,4 +284,3 @@ Questo report è piuttosto semplice ed è possibile aggiungere altro codice per 
 [Gestire Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Guida introduttiva a PowerShell per Microsoft 365](getting-started-with-office-365-powershell.md)
-
