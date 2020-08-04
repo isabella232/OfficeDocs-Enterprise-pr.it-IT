@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Informazioni sull'amministrazione di servizi SharePoint e OneDrive in un ambiente multi-geo.
-ms.openlocfilehash: a4e467edebbcfbb0288b698f3e7d5bcf589cdd69
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
+ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433527"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46548898"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Amministrare un ambiente multi-geografico
 
@@ -104,3 +104,7 @@ Tuttavia, Stream non è ancora disponibile nei seguenti paesi/aree geografiche a
 - Canada
 - India
 - Regno Unito
+
+## <a name="yammer"></a>Yammer
+
+Yammer non è un carico di lavoro multi-Geo. I thread Yammer archiviati in Yammer verranno posizionati nella posizione centrale del tenant. Yammer sta implementando una modifica dell'archiviazione dei file in cui verranno archiviati i file di Yammer all'interno di SharePoint. I file di Yammer archiviati in SharePoint verranno posizionati nel sito di SharePoint associato al gruppo Yammer. I siti del gruppo di SharePoint sono basati sulla logica PDL come indicato nei [siti e nei gruppi di SharePoint](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365#sharepoint-sites-and-groups).
