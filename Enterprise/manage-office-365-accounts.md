@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Informazioni sugli strumenti da utilizzare per gestire gli utenti di Microsoft 365. '
-ms.openlocfilehash: 324a95e111812180cefffe98f2d7ec3c64e956b1
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ba73d899dee002fa08f373faaed4d772da546b13
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230232"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571029"
 ---
 # <a name="tools-to-manage-microsoft-365-accounts"></a>Strumenti per gestire gli account Microsoft 365
 
@@ -57,7 +57,7 @@ Quando si decide in che modo l'organizzazione creerà e gestirà gli account, pr
   
 - Il software di sincronizzazione della directory deve essere installato nei server all'interno dell'ambiente locale per connettere le identità tra Microsoft 365 e il servizio AD DS.
     
-- Qualsiasi opzione di sincronizzazione della directory, incluse le opzioni SSO, richiede che gli attributi di AD DS soddisfino gli standard. Le specifiche di quali attributi vengono utilizzate nella directory e quali operazioni di pulizia (se presenti) sono necessarie sono descritte in [Prepare to provisioning users through Directory Synchronization to Microsoft 365](prepare-for-directory-synchronization.md). Per istruzioni su come utilizzare ID Fix per automatizzare la pulizia della directory, vedere [scaricare ed eseguire lo strumento Microsoft 365 ID Fix](install-and-run-idfix.md) . 
+- Qualsiasi opzione di sincronizzazione della directory, incluse le opzioni SSO, richiede che gli attributi di AD DS soddisfino gli standard. Le specifiche di quali attributi vengono utilizzate nella directory e quali operazioni di pulizia (se presenti) sono necessarie sono descritte in [Prepare to provisioning users through Directory Synchronization to Microsoft 365](prepare-for-directory-synchronization.md). 
     
 - Pianificare il modo in cui si intende creare gli account Microsoft 365.
     
@@ -76,7 +76,7 @@ Quando si decide in che modo l'organizzazione creerà e gestirà gli account, pr
     Se si sceglie di aggiungere e gestire tutti gli utenti tramite l'interfaccia di amministrazione, è possibile specificare il percorso e assegnare le licenze contemporaneamente alla creazione dell'account Microsoft 365. Di conseguenza, non è necessaria una pianificazione eccessiva.
     
     > [!IMPORTANT]
-    > La creazione di account in Microsoft 365 senza assegnare una licenza (ad esempio a SharePoint Online) significa che il proprietario dell'account può visualizzare l'interfaccia di amministrazione di Microsoft 365 ma non è in grado di accedere ad alcuno dei servizi all'interno della sottoscrizione dell'azienda. Dopo aver assegnato un percorso e la licenza, l'account viene replicato nel servizio o nei servizi assegnati. L'utente può accedere al proprio account e utilizzare i servizi assegnati. 
+    > La creazione di account in Microsoft 365 senza assegnare una licenza (ad esempio a SharePoint Online) significa che il proprietario dell'account può visualizzare il centro Microsoft 365 ma non può accedere ad alcuno dei servizi all'interno della sottoscrizione dell'azienda. Dopo aver assegnato un percorso e la licenza, l'account viene replicato nel servizio o nei servizi assegnati. L'utente può accedere al proprio account e utilizzare i servizi assegnati. 
   
 ## <a name="next-steps"></a>Passaggi successivi
 

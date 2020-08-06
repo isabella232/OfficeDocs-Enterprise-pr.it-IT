@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come ottimizzare le prestazioni delle estensioni personalizzate nelle pagine moderne dei siti di SharePoint Online.
-ms.openlocfilehash: bdc05c4e786d07a18c49766bf37aca7f4fde56da
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
-ms.translationtype: HT
+ms.openlocfilehash: d4e5e492e0573c54f40b1f9e040859037a97965c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603825"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571169"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Ottimizzare le prestazioni delle estensioni personalizzate nelle pagine moderne dei siti di SharePoint Online
 
@@ -37,14 +37,15 @@ Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per 
 >[!NOTE]
 >Lo strumento Diagnostica pagine funziona solo per SharePoint Online e non può essere usato in una pagina di sistema di SharePoint.
 
-Quando si analizza una pagina del sito di SharePoint con lo strumento Diagnostica pagine per SharePoint, è possibile visualizzare informazioni sulle estensioni personalizzate che superano la metrica di base nel risultato **Le estensioni influiscono sul tempo di caricamento** del riquadro _Test diagnostici_.
+Quando si analizza una pagina del sito di SharePoint con lo strumento page Diagnostics for SharePoint, è possibile visualizzare le informazioni sulle estensioni personalizzate che superano la metrica di base nelle **estensioni che influiscono sul tempo di caricamento** e/o sulle **troppe estensioni utilizzate** per il riquadro _test diagnostici_ . 
 
 I risultati possibili includono:
 
-- **Attenzione** (rosso): in questa sezione sono elencate tutte le estensioni _personalizzate_ il cui caricamento richiede più di **un** secondo. Il tempo di caricamento totale visualizzato nei risultati del test è suddiviso per caricamento del modulo e inizializzazione.
+- **Attenzione** (rosso): in questa sezione sono elencate tutte le estensioni _personalizzate_ il cui caricamento richiede più di **un** secondo. Il tempo di caricamento totale visualizzato nei risultati del test è suddiviso per caricamento del modulo e inizializzazione. Inoltre, se sono presenti troppe estensioni in una pagina, è possibile che influenzino il tempo di caricamento della pagina e questo venga evidenziato se nella pagina vengono utilizzate **sette** o più estensioni.
+- **Opportunità di miglioramento** (giallo) se vengono utilizzate **cinque** o più estensioni, queste verranno evidenziate in questa sezione come avviso finché non vengono utilizzati sette o più che verranno evidenziate come richieste.
 - **Nessuna azione necessaria** (verde): nessuna estensione richiede più di un secondo per il caricamento.
 
-Se un'estensione influisce sui tempi di caricamento delle pagine, il risultato viene visualizzato nella sezione **Attenzione richiesta** dei risultati. Fare clic sul risultato per visualizzare i dettagli sulle estensioni che vengono caricate lentamente. Gli aggiornamenti futuri dello strumento Diagnostica pagine per SharePoint potrebbero includere novità relative alle regole di analisi, di conseguenza assicurarsi di usare sempre la versione più recente dello strumento.
+Se un'estensione ha un impatto sul tempo di caricamento delle pagine o se sono presenti troppi extsnions nella pagina, il risultato viene visualizzato nella sezione **attenzione necessaria** dei risultati. Fare clic sul risultato per visualizzare i dettagli sull'estensione che viene caricata lentamente o che sono state evidenziate troppe estensioni. Gli aggiornamenti futuri dello strumento Diagnostica pagine per SharePoint potrebbero includere novità relative alle regole di analisi, di conseguenza assicurarsi di usare sempre la versione più recente dello strumento.
 
 ![Risultati del tempo di caricamento delle pagine](media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 

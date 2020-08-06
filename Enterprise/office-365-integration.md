@@ -21,16 +21,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Informazioni su come integrare Microsoft 365 con i servizi directory esistenti.
-ms.openlocfilehash: 456e3e73451a07750d707e2fca52df9214c2dfaa
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 1207c7549a0c81a45211581be2b068ca8067a35b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736034"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571059"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Integrazione di Microsoft 365 con ambienti locali
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si riferisce sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 È possibile integrare Microsoft 365 con i servizi directory esistenti e con un'installazione locale di Exchange Server, Skype for Business Server 2015 o SharePoint Server.
   
@@ -50,7 +50,7 @@ Prima di integrare Microsoft 365 e un ambiente locale, è inoltre necessario par
 Vedere [dove gestire gli account di microsoft 365](manage-office-365-accounts.md) per un elenco di strumenti che è possibile utilizzare per gestire gli utenti e gli account di Microsoft 365. 
   
 ## <a name="integrate-microsoft-365-with-directory-services"></a>Integrazione di Microsoft 365 con i servizi directory
-Se si dispone di account utente esistenti in una directory locale, non si vuole ricreare tutti gli account in Microsoft 365 e rischiare di introdurre differenze o errori tra gli ambienti. La sincronizzazione della directory consente di eseguire il mirroring degli account tra l'ambiente online e quello locale. La sincronizzazione della directory evita agli utenti la necessità di ricordare nuove informazioni per ogni ambiente e all'amministratore di creare o aggiornare gli account due volte. Sarà necessario [preparare la directory locale](prepare-for-directory-synchronization.md) per la sincronizzazione della directory. Questa operazione può essere eseguita manualmente o usando lo [strumento IdFix](install-and-run-idfix.md) (lo strumento IdFix funziona solo con Active Directory Domain Services). 
+Se si dispone di account utente esistenti in una directory locale, non si vuole ricreare tutti gli account in Microsoft 365 e rischiare di introdurre differenze o errori tra gli ambienti. La sincronizzazione della directory consente di eseguire il mirroring degli account tra l'ambiente online e quello locale. La sincronizzazione della directory evita agli utenti la necessità di ricordare nuove informazioni per ogni ambiente e all'amministratore di creare o aggiornare gli account due volte. Sarà necessario [preparare la directory locale per la](prepare-for-directory-synchronization.md) sincronizzazione della directory.
   
 ![Usare la sincronizzazione della directory per mantenere sincronizzate le informazioni degli account locali e di quelli online](media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
   

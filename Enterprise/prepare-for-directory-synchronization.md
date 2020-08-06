@@ -1,5 +1,5 @@
 ---
-title: Preparare la sincronizzazione della directory a Microsoft 365
+title: Preparare la sincronizzazione della directory con Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -26,14 +26,14 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come prepararsi a eseguire il provisioning degli utenti a Microsoft 365 utilizzando la sincronizzazione della directory e i vantaggi a lungo termine dell'utilizzo di questo metodo.
-ms.openlocfilehash: 2a4b5f54d7b5aafd5e5eb7a43859e49caa57a519
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 30e735d086f1c31219fc9d6d52ff0b2545f5c08d
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735694"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570999"
 ---
-# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Preparare la sincronizzazione della directory a Microsoft 365
+# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Preparare la sincronizzazione della directory con Microsoft 365
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Microsoft 365 Enterprise.*
 
@@ -166,8 +166,6 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
   - I domini instradabili devono essere utilizzati. ad esempio, non è possibile utilizzare i domini locali o interni.
   - Unicode viene convertito in caratteri di sottolineatura.
   - **userPrincipalName** non può contenere valori duplicati nella directory. 
-
-Vedere [preparare gli attributi della directory con lo strumento IdFix](prepare-directory-attributes-for-synch-with-idfix.md) per utilizzare lo strumento IdFix per identificare gli errori negli attributi di ad DS.
     
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. preparare l'attributo userPrincipalName
 
@@ -189,9 +187,6 @@ Se è già stata configurata la sincronizzazione della directory, l'UPN dell'ute
   
 Vedere anche [come preparare un dominio non instradabile (ad esempio, dominio locale) per la sincronizzazione della directory](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-
 ## <a name="next-steps"></a>Passaggi successivi
 
-Vedere [Prepare Directory Attributes with the IdFix Tool](prepare-directory-attributes-for-synch-with-idfix.md) per correggere gli errori negli attributi di ad DS prima della sincronizzazione della directory.
-
-Se sono stati corretti tutti gli errori degli attributi identificati con lo strumento IdFix e sono stati eseguiti i passaggi da 1 a 5, vedere [configurare la sincronizzazione della directory](set-up-directory-synchronization.md).
+Se sono stati eseguiti i passaggi da 1 a 5, vedere [configurare la sincronizzazione della directory](set-up-directory-synchronization.md).
