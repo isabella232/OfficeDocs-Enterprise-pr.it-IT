@@ -112,11 +112,6 @@
 ### Identità ibride
 #### [Predisporre la sincronizzazione della directory](prepare-for-directory-synchronization.md)
 #### [Preparare un dominio non instradabile per la sincronizzazione della directory](prepare-a-non-routable-domain-for-directory-synchronization.md)
-#### Usare lo strumento IDFix
-##### [Preparare gli attributi della directory con lo strumento di IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
-##### [Scaricare ed eseguire lo strumento IDFix](install-and-run-idfix.md)
-##### [Oggetti e attributi esclusi e supportati di IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
-##### [Log delle transazioni di IdFix](idfix-transaction-log.md)
 #### [Configurare la sincronizzazione della directory](set-up-directory-synchronization.md)
 ### [Assegnare licenze agli account utente](assign-licenses-to-user-accounts.md).
 
