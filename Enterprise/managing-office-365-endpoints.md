@@ -7,7 +7,7 @@ ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Alcune reti aziendali limitano l'accesso a risorse internet generiche o prevedono operazioni sostanziali di backhaul o elaborazione del traffico di rete. Per assicurarsi che i computer in reti come queste possano accedere a Office 365, gli amministratori delle reti e dei proxy devono gestire l'elenco dei nomi di dominio assoluti (FQDN), degli URL e degli indirizzi IP che compongono l'elenco degli endpoint di Office 365. Questi devono essere aggiunti alle regole di instradamento diretto e di esclusione del proxy e/o del firewall e ai file PAC, per assicurare che le richieste di rete possano raggiungere Office 365.
-ms.openlocfilehash: f1d5d0f858e021bdeeae6d3045a64a9d97df4ffb
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+ms.openlocfilehash: 35f07538bd55386dc245286822eab9e14e70a3cf
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502631"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592160"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestione degli endpoint di Office 365
 

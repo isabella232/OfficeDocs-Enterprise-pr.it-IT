@@ -7,7 +7,7 @@ ms.date: 07/09/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Questo articolo si applica a Office 365 gestito da 21Vianet in Cina. Vengono elencati gli URL e gli intervalli di indirizzi IP utilizzati da Office 365 gestito da 21Vianet.
 hideEdit: true
-ms.openlocfilehash: fe0015bcda70cace8247fdbcfb6a2d4424b28349
-ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
-ms.translationtype: HT
+ms.openlocfilehash: c5a3825a5271542ca657e955b768b4ecde66eebb
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387719"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592170"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URL e intervalli di indirizzi IP per Office 365 gestito da 21Vianet
 

@@ -7,7 +7,7 @@ ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: Informazioni sulla migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
-ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
-ms.translationtype: HT
+ms.openlocfilehash: f63a9228b8669ce0b7a1d49c7b0045a2065f9ec4
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092885"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592140"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche
 
@@ -59,7 +59,7 @@ Durante la migrazione da Microsoft Cloud Germania alle aree data center tedesche
 - Gruppi di Office 365
 - Dynamics 365/Power Platform
 
-I prerequisiti e l'impatto della migrazione per questi servizi sono descritti nell'articolo [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn).
+I prerequisiti e l'impatto della migrazione per questi servizi sono descritti nell'articolo [Dynamics 365 Customer Engagement](https://aka.ms/d365ceoptin).
 
 Office 365 Video verrà ritirato il 1° marzo 2021. Se si sceglie di eseguire la migrazione del tenant di Office 365 nelle nuove aree data center tedesche, Office 365 Video non verrà più supportato dopo il completamento della migrazione di SharePoint Online. [Altre informazioni](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
@@ -203,7 +203,7 @@ Attualmente sono disponibili 29 servizi nell'ambito dell'offerta di Office 365 n
 
 #### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 e Power BI
 
-Il consenso esplicito alla migrazione gestita da Microsoft per [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) e [Power BI](https://aka.ms/pbioptin) in data odierna. Quando saremo pronti per avviare la migrazione, forniremo informazioni tramite il [Centro messaggi](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) nell'interfaccia di amministrazione di Microsoft 365.
+Il consenso esplicito alla migrazione gestita da Microsoft per [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) e [Power BI](https://aka.ms/PBIOptIn) in data odierna. Quando saremo pronti per avviare la migrazione, forniremo informazioni tramite il [Centro messaggi](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) nell'interfaccia di amministrazione di Microsoft 365.
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>Cambierà il prezzo dei servizi Office utilizzati?
 
@@ -221,7 +221,7 @@ In caso di domande, è possibile contattarci nel modo seguente oppure tramite il
 
 - [Assistenza per la migrazione di Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
 - [Come acconsentire esplicitamente a eseguire la migrazione](https://aka.ms/office365germanymoveoptin)
-- [Informazioni sul programma di migrazione di Dynamics 365](https://aka.ms/D365ceOptIn)
+- [Informazioni sul programma di migrazione di Dynamics 365](https://aka.ms/d365ceoptin)
 - [Informazioni sul programma di migrazione di Power BI](https://aka.ms/pbioptin)
 - [URL e intervalli di indirizzi IP per Office 365](https://aka.ms/o365endpoints)
 - [Configurazione ibrida guidata di Office 365](https://aka.ms/HybridWizard)
