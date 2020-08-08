@@ -1,5 +1,5 @@
 ---
-title: Endpoint di Office 365
+title: Endpoint Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 11/07/2018
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -18,40 +18,40 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
-description: 'Riepilogo: vedere questi articoli per gli endpoint di Internet dei vari cloud di Office 365.'
-ms.openlocfilehash: 29fb2dab9873aad5f54c678de482941d25d6161f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+description: 'Riepilogo: vedere questi articoli per gli endpoint Internet delle diverse nubi di Microsoft 365.'
+ms.openlocfilehash: 8fe95915f687b38a86fd13fb823a0db39637c47d
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843577"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592200"
 ---
-# <a name="office-365-endpoints"></a>Endpoint di Office 365
+# <a name="microsoft-365-endpoints"></a>Endpoint Microsoft 365
 
-**Riepilogo:** vedere questi articoli per gli endpoint di Internet dei vari cloud di Office 365.
-  
-Gli endpoint sono il set di indirizzi IP di destinazione, i nomi di dominio DNS e gli URL per il traffico di Office 365 su Internet. 
+*Questo articolo si riferisce sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Per ottimizzare le prestazioni di servizi basati sul cloud di Office 365, gli endpoint richiedono una gestione speciale da parte dei i browser client e dei dispositivi nella propria rete perimetrale. Questi dispositivi includono firewall, SSL Break and Inspect, dispositivi di ispezione dei pacchetti e sistemi di prevenzione della perdita di dati.
+Gli endpoint sono il set di indirizzi IP di destinazione, i nomi di dominio DNS e gli URL per il traffico Microsoft 365 su Internet. 
 
-Vedere [Gestione degli endpoint di Office 365](managing-office-365-endpoints.md) per i dettagli.
+Per ottimizzare le prestazioni per i servizi basati su cloud di Microsoft 365, questi endpoint richiedono una gestione speciale da parte dei browser client e dei dispositivi nella rete perimetrale. Questi dispositivi includono i firewall, la rottura SSL e il controllo e i dispositivi di ispezione dei pacchetti, nonché i sistemi di prevenzione della perdita di dati.
 
-Esistono attualmente cinque cloud di Office 365 diversi. Questa tabella consente di accedere all'elenco di endpoint per ciascuno di essi.
+Vedere [Managing Microsoft 365 Endpoints](managing-office-365-endpoints.md) for the details.
+
+Attualmente esistono cinque diverse nubi di Microsoft 365. Questa tabella consente di eseguire l'elenco degli endpoint per ognuno di essi.
 
 |||
 |:-------|:-----|
-| [Endpoint in tutto il mondo](urls-and-ip-address-ranges.md) | Gli endpoint per abbonamenti a Office 365 nel mondo, tra cui US Government Community Cloud (GCC). |
+| [Endpoint in tutto il mondo](urls-and-ip-address-ranges.md) | Gli endpoint per gli abbonamenti a livello mondiale di Microsoft 365, che includono il cloud (GCC). |
 | [Endpoint del U.S. Government DoD](office-365-u-s-government-dod-endpoints.md) | Gli endpoint per gli abbonamenti del Dipartimento della Difesa degli Stati Uniti (DoD). |
 | [Endpoint del U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) | Gli endpoint per gli abbonamenti di US Government Community Cloud High (GCC High). |
-| [Office 365 gestito dagli endpoint di 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Gli endpoint di Office 365 gestiti da 21Vianet, progettato per soddisfare le esigenze di Office 365 in Cina. |
-| [Endpoint di Office 365 Germany](office-365-germany-endpoints.md) | Gli endpoint di un cloud separato in Europa per i clienti più regolamentati in Germania, l’Unione Europea (UE) e l'Associazione europea di libero scambio (EFTA). |
+| [Microsoft 365 gestito da endpoint di 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Gli endpoint per Microsoft 365 gestiti da 21Vianet, che è stato creato per soddisfare le esigenze di Microsoft 365 in Cina. |
+| [Endpoint Microsoft 365 Germania](office-365-germany-endpoints.md) | Gli endpoint di un cloud separato in Europa per i clienti più regolamentati in Germania, l’Unione Europea (UE) e l'Associazione europea di libero scambio (EFTA). |
 |||
 
-Per ottenere automaticamente l'elenco più recente degli endpoint per il cloud di Office 365, vedere il [Servizio Web di indirizzo IP e URL di Office 365](office-365-ip-web-service.md).
+Per automatizzare l'elenco più recente di endpoint per il cloud Microsoft 365, vedere il [servizio Web indirizzo IP e URL di Office 365](office-365-ip-web-service.md).
 
 Per altri endpoint, vedere gli articoli:
 
 - [Altri endpoint non inclusi nel servizio Web](additional-office365-ip-addresses-and-urls.md)
 - [Richieste di rete in Office 2016 per Mac](network-requests-in-office-2016-for-mac.md)
 
-Se si è un fornitore di apparecchiature di rete, partecipare a [Office 365 Networking Partner Program](office-365-networking-partner-program.md). Iscriversi al programma per creare i principi di connettività di rete Office 365 ne propri prodotti e soluzioni. 
+Se si è un fornitore di apparecchiature di rete, iscriversi al [programma di networking partner di Office 365](office-365-networking-partner-program.md). Iscriversi al programma per creare i principi di connettività di rete di Microsoft 365 nei propri prodotti e soluzioni. 
