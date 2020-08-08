@@ -7,7 +7,7 @@ ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Riepilogo: elenco riferimenti dei record DNS da utilizzare quando si pianifica una distribuzione di Office 365.'
-ms.openlocfilehash: b17d97102498cbaabc87b89bb7cd1f32134cfbcd
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
-ms.translationtype: MT
+ms.openlocfilehash: d9bd097538e0aaab19e8b2a6eeb989c3a16492db
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46570979"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592190"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Record Domain Name System (DNS) esterni per Office 365
 
@@ -130,8 +130,8 @@ Per gli scenari in cui non si usa solo la posta elettronica di Exchange Online p
 |1  <br/> |Tutti i sistemi di posta elettronica (obbligatorio)  <br/> |Tutti i record SPF devono iniziare con questo valore  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (comune)  <br/> |Utilizzare solo con Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
 |3  <br/> |Sistema di posta elettronica di terze parti (meno comune)  <br/> ||Includere:\<email system like mail.contoso.com\>  <br/> |
-|4   <br/> |Sistema di posta locale (meno comune)  <br/> |Utilizzare se si utilizza Exchange Online Protection o Exchange Online e un altro sistema di posta elettronica  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> Includere:\<mail.contoso.com\>  <br/> Il valore tra parentesi (\<\>) deve rappresentare altri sistemi di posta elettronica che inviano la posta elettronica per il dominio.  <br/> |
-|5   <br/> |Tutti i sistemi di posta elettronica (obbligatorio)  <br/> ||-all  <br/> |
+|4  <br/> |Sistema di posta locale (meno comune)  <br/> |Utilizzare se si utilizza Exchange Online Protection o Exchange Online e un altro sistema di posta elettronica  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> Includere:\<mail.contoso.com\>  <br/> Il valore tra parentesi (\<\>) deve rappresentare altri sistemi di posta elettronica che inviano la posta elettronica per il dominio.  <br/> |
+|5  <br/> |Tutti i sistemi di posta elettronica (obbligatorio)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Esempio: aggiunta di un record SPF esistente
 <a name="bkmk_addtospf"> </a>
