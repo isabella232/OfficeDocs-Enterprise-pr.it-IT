@@ -14,13 +14,14 @@ f1.keywords:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 'Riepilogo: Panoramica dei controlli di accesso amministrativo e della categorizzazione dei dati di Microsoft 365.'
-ms.openlocfilehash: 93b62acbda2508d5b41578eb807293c34fdda4dd
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom: seo-marvel-apr2020
+description: In questo articolo viene fornita una panoramica dei controlli di accesso amministrativo e della categorizzazione dei dati in Microsoft 365.
+ms.openlocfilehash: 58cbc7ebea3edb66f5d48d282a3e6995b247a044
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774971"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606712"
 ---
 # <a name="administrative-access-controls-in-microsoft-365"></a>Controlli di accesso amministrativo in Microsoft 365 
 

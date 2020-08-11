@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Gli attuali clienti di Office 365 dovranno inviare una richiesta prima della data di scadenza per il proprio paese, in modo che i dati del cliente dei servizi Microsoft 365 partecipanti vengano spostati nel nuovo geografico.
-ms.openlocfilehash: 06deead188f985f7cd8e410937ae612f3d509b7c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Gli attuali clienti di Office 365 devono inviare una richiesta prima della data di scadenza per il paese in cui i dati dei servizi Microsoft 365 sono stati spostati nel nuovo geografico.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 72b7c7d1f6b6b19ff5749787fd8ea6e789c3372a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433757"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606162"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 

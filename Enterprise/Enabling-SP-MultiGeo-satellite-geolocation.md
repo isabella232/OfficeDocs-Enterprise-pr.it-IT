@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Abilitazione di SharePoint Multi-Geo in una posizione geografica satellite.
-ms.openlocfilehash: 2bf914c6df06f6e1cdfc8c95743f45a53823073c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: In questo articolo vengono fornite informazioni per gli amministratori globali o di SharePoint per l'abilitazione della multi-geo di SharePoint nelle posizioni geografiche satellitari.
+ms.openlocfilehash: dc2cd3eeb4c7e74d8dbfee1070338e0e243b0519
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433487"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605852"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Abilitazione di SharePoint Multi-Geo in una posizione geografica satellite
 
@@ -38,11 +38,11 @@ Queste istruzioni consentono di abilitare SharePoint nella posizione satellite, 
 
 Per impostare una posizione geografica in modalità SPO, connettersi alla posizione geografica scelta:
 
-1.  Aprire SharePoint Online Management Shell. 
-2.  Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com"-Credential $credential
-3.  Set-SPOMultiGeoExperience</br></br>
+1.    Aprire SharePoint Online Management Shell. 
+2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com"-Credential $credential
+3.    Set-SPOMultiGeoExperience</br></br>
 ![Set-SPOMultiGeoExperience](media/Set-SPO-MultiGeo.jpg)
-4.  Questa operazione in genere richiede circa un'ora. Durante questo intervallo di tempo eseguiamo alcune operazioni in background nel servizio e nel tenant. Dopo circa 1 ora, eseguire il comando Get-SPOMultiGeoExperience.  Servirà per visualizzare se la posizione geografica è in modalità di SharePoint Online.</br></br>
+4.    Questa operazione in genere richiede circa un'ora. Durante questo intervallo di tempo eseguiamo alcune operazioni in background nel servizio e nel tenant. Dopo circa 1 ora, eseguire il comando Get-SPOMultiGeoExperience.  Servirà per visualizzare se la posizione geografica è in modalità di SharePoint Online.</br></br>
 ![Set-SPOMultiGeoExperience](media/Get-SPO-MultiGeo.jpg)
 
  

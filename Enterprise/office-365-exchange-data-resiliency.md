@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Una spiegazione dei vari aspetti della resilienza dei dati in Exchange Online e Microsoft 365.
-ms.openlocfilehash: 1af8acc10f9d45055d6575e2dfcc45451b6eaf6a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In questo articolo, trovare una spiegazione dei vari aspetti della resilienza dei dati in Exchange Online e Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 18d8179f37cb97316b71a43cccfc631a5cc550da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998737"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606612"
 ---
 # <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Resilienza dei dati di Exchange online in Microsoft 365
 
-## <a name="introduction"></a>Introduzione
 Esistono due tipi di danneggiamento che possono influire su un database di Exchange: il danneggiamento fisico, che in genere è causato da problemi hardware (in particolare, hardware di archiviazione) e da un danneggiamento logico, che si verifica a causa di altri fattori. In generale, esistono due tipi di danneggiamenti logici che possono verificarsi in un database di Exchange: 
 - **Danneggiamento logico del database** -il checksum della pagina del database corrisponde, ma i dati della pagina sono errati logicamente. Questo problema può verificarsi quando il motore di database (ESE) tenta di scrivere una pagina di database e, anche se il sistema operativo restituisce un messaggio di esito positivo, i dati non vengono mai scritti nel disco o sono stati scritti nel posto sbagliato. Questo viene definito *rilevamento flush*. ESE include numerose funzionalità e misure di salvaguardia progettate per impedire il danneggiamento fisico di un database e di altri scenari di perdita dei dati. Per impedire la perdita di dati per gli scaricamenti persi, ESE include un meccanismo di rilevamento di incasso perso nel database insieme a una funzionalità (ripristino a pagina singola) per correggerla. 
 - **Archiviazione logica di danneggiamento** : i dati vengono aggiunti, eliminati o modificati in modo che l'utente non si aspetti. Questi casi sono generalmente causati da applicazioni di terze parti. Generalmente, questa situazione viene percepita dall'utente come un danneggiamento. L'archivio di Exchange considera la transazione che ha causato il danneggiamento della partizione logica come una serie di operazioni MAPI valide. Le funzionalità di archiviazione sul [posto](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) in Exchange Online offrono protezione dal danneggiamento logico dell'archivio (perché impedisce che il contenuto venga eliminato definitivamente da un utente o da un'applicazione). 

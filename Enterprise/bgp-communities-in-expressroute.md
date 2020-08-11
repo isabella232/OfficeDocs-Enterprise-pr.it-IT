@@ -13,19 +13,21 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
-description: 'La connessione a Office 365 con Azure ExpressRoute si basa su annunci BGP di subnet IP specifiche che rappresentano le reti in cui vengono distribuiti gli endpoint di Office 365. A causa della natura globale di Office 365 e del numero di servizi che costituiscono Office 365, i clienti spesso hanno la necessità di gestire gli annunci che accettano nella propria rete. Riduzione del numero di subnet IP; denominati prefissi IP per tutto il resto di questo articolo, per allineare con la terminologia di gestione della rete BGP, sono serviti i seguenti obiettivi finali per i clienti:'
-ms.openlocfilehash: 13d2404182eb18b7c72a9aaefdb96464fd665a03
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Informazioni su come utilizzare le community BGP in Azure ExpressRoute per gestire il numero di prefissi IP e la larghezza di banda necessaria per gli scenari di Office 365.
+ms.openlocfilehash: ce83b95de0b1032ebd23f0262f814aeac4ed2d0a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997873"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606092"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Utilizzo delle community BGP in ExpressRoute per gli scenari di Office 365
 

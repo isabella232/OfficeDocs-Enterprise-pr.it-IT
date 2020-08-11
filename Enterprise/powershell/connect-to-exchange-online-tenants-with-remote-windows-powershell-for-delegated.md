@@ -1,5 +1,5 @@
 ---
-title: Connettersi ai tenant Exchange Online con Windows PowerShell remoto per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
+title: Connettersi ai tenant Exchange Online con Windows PowerShell remoto per i partner di DAP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 'Sintesi: utilizzare Windows PowerShell remoto per connettersi a Exchange Online tramite il valore DelegatedOrg.'
-ms.openlocfilehash: f04632f9e7b5e8dec476a5381550020e5d8a1521
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: bfb041a9ab91cda54e643e8410704662c11ef175
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230832"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606012"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Connettersi ai tenant Exchange Online con Windows PowerShell remoto per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 > [!IMPORTANT]
 > Le procedure descritte in questo argomento sono valide solo per i partner di autorizzazione accesso delegato (DAP). Se non si è un partner DAP, non usare le procedure descritte in questo argomento. 

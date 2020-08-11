@@ -1,5 +1,5 @@
 ---
-title: Aggiungere un dominio a un tenancy client con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
+title: Aggiungere un dominio a un contratto di locazione client con Windows PowerShell per DAP Partners
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 per aggiungere un nome di dominio alternativo al tenant di un cliente esistente.'
-ms.openlocfilehash: eabfa9dfcbb36cb54a2d51321dfe60f197290b10
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: 8b38caf72db57d5e80f0483062adb3bd2529672b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433767"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606482"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Aggiungere un dominio a un tenancy client con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 È possibile creare e associare nuovi domini con il contratto di locazione del cliente con PowerShell per Microsoft 365 più velocemente rispetto all'interfaccia di amministrazione di Microsoft 365.
   

@@ -18,17 +18,18 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: Il supporto termina per SharePoint 2010 e SharePoint Server 2010 il 13 aprile 2021. Utilizzare questo articolo come guida per l'aggiornamento a SharePoint Online o a una versione più recente di SharePoint Server locale.
-ms.openlocfilehash: 91083cbf64bde3e083ba87e2867e7e1a9e22628c
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+description: Trovare informazioni e risorse per l'aggiornamento da SharePoint 2010 e SharePoint Server 2010, come supporto per entrambe le estremità del 13 ottobre 2020.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6382c375439acaf8b978f6ef5c2813eaebc0701d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102584"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603618"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Aggiornamento da SharePoint 2010
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Microsoft SharePoint 2010 e SharePoint Server 2010 potranno raggiungere la fine del supporto del **13 aprile 2021**. In questo articolo vengono illustrate le risorse che consentono di eseguire la migrazione dei dati di SharePoint Server 2010 esistenti a SharePoint online in Microsoft 365 o di aggiornare l'ambiente di SharePoint Server 2010 locale.
   
@@ -253,13 +254,13 @@ Un ottimo modo per vedere come funziona è la creazione di un ambiente di svilup
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Riepilogo delle opzioni per il client e i server di Office 2010 e Windows 7
 
-Per un riepilogo visivo dell'aggiornamento, la migrazione e le opzioni di spostamento al cloud per i client e i server di Office 2010 e Windows 7, vedere il [poster relativo alla fine del supporto tecnico](./downloads/Office2010Windows7EndOfSupport.pdf).
+Per un riepilogo visivo delle opzioni di aggiornamento, migrazione e passaggio al cloud per i client e i server di Office 2010 e Windows 7, vedere il [poster relativo alla fine del supporto](./downloads/Office2010Windows7EndOfSupport.pdf).
 
 [![Immagine del poster per la fine del supporto per client e server di Office 2010 e Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
-Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del supporto, con percorsi preferiti e supporto delle opzioni in Microsoft 365 Enterprise evidenziato.
+Questo poster di una pagina rappresenta un modo rapido per comprendere i vari percorsi che è possibile eseguire per evitare che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del supporto, evidenziando i percorsi preferiti e il supporto delle opzioni in Microsoft 365 Enterprise.
 
-È anche possibile [scaricare](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) questo poster e stamparlo nei formati lettera, legale o tabloid (11 x 17).
+È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
         
 ## <a name="related-topics"></a>Argomenti correlati
 

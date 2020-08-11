@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Riepilogo: informazioni su come configurare una rete virtuale di Azure cross-premise per i carichi di lavoro del server di Office con una connessione VPN da sito a sito.'
-ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 939ba28b1fc2b21a93e22ce019879fef73d58c1c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230072"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606052"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Connettere una rete locale a una rete virtuale di Microsoft Azure
 
@@ -32,7 +33,7 @@ Una rete virtuale di Azure cross-premise è connessa alla rete locale, ampliando
 
 Ad esempio, un server di sincronizzazione della directory in esecuzione su una macchina virtuale di Azure deve eseguire una query sui controller di dominio locali per modificare gli account e sincronizzare tali modifiche con la sottoscrizione Microsoft 365. In questo articolo viene illustrato come configurare una rete virtuale di Azure cross-premise tramite una connessione VPN (Virtual Private Network) da sito a sito che è pronta per ospitare macchine virtuali di Azure.
 
-## <a name="overview"></a>Panoramica
+## <a name="configure-a-cross-premises-azure-virtual-network"></a>Configurare una rete virtuale di Azure cross-premise
 
 Le macchine virtuali in Azure non devono essere isolate rispetto all'ambiente locale. Per connettere le macchine virtuali di Azure alle risorse di rete locali, è necessario configurare una rete virtuale di Azure cross-premise. Nel diagramma seguente vengono mostrati i componenti necessari per distribuire una rete virtuale di Azure cross-premise con una macchina virtuale in Azure.
   

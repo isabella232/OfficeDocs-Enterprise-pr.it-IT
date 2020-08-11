@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: In questo articolo vengono descritti i siti delle opzioni di spostamento con la pubblicazione di SharePoint abilitata in SharePoint Online. La scelta e la configurazione della struttura di spostamento incidono in modo significativo sulle prestazioni e sulla scalabilità dei siti in SharePoint Online. Questo articolo non è applicabile ai siti del team classici.
-ms.openlocfilehash: c651530284889d2808c8fa415b72836eb6d14aea
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: In questo articolo vengono descritti i siti delle opzioni di spostamento con la pubblicazione di SharePoint abilitata in SharePoint Online.
+ms.openlocfilehash: dd11775c35f9eb7d2b6bccc38023b6f8bce8efc4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004761"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606762"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opzioni di spostamento per SharePoint Online
 
@@ -33,7 +35,7 @@ In questo articolo vengono descritti i siti delle opzioni di spostamento con la 
 >[!NOTE]
 >Se si utilizzano le opzioni di spostamento di SharePoint moderne come menu Mega, spostamento a cascata o spostamento Hub, questo articolo non si applica al sito. Le architetture di siti di SharePoint moderne sfruttano una gerarchia di siti più appiattita e un modello hub e spoke. In questo modo è possibile ottenere numerosi scenari che non richiedono l'utilizzo della caratteristica di pubblicazione di SharePoint.
 
-## <a name="overview"></a>Panoramica
+## <a name="overview-of-navigation-options"></a>Panoramica delle opzioni di spostamento
 
 La configurazione del provider di spostamento può influire in modo significativo sulle prestazioni per l'intero sito e è necessario prendere in considerazione attentamente la scelta di un provider di spostamento e una configurazione in grado di ridimensionare efficacemente i requisiti di un sito di SharePoint. Sono disponibili due provider di spostamento fuori dalla casella, nonché implementazioni di spostamento personalizzate.
 
@@ -71,15 +73,15 @@ Questa è la struttura di spostamento fuori campo utilizzata per impostazione pr
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>Informazioni su come implementare la memorizzazione nella cache di spostamento strutturale
 
-In **Impostazioni** > **sito aspetto** > di**spostamento**, è possibile convalidare se l'esplorazione strutturale è selezionata per la struttura di spostamento globale o di spostamento corrente. La selezione di **Mostra pagine** avrà un impatto negativo sulle prestazioni.
+In **Impostazioni sito**  >  **aspetto**di  >  **spostamento**, è possibile convalidare se l'esplorazione strutturale è selezionata per la struttura di spostamento globale o di spostamento corrente. La selezione di **Mostra pagine** avrà un impatto negativo sulle prestazioni.
 
 ![Struttura di spostamento strutturale con i siti secondari visualizzati selezionati](media/SPONavOptionsStructuredShowSubsites.png)
 
-La memorizzazione nella cache può essere abilitata o disabilitata a livello di raccolta siti e a livello di sito ed è abilitata per entrambi per impostazione predefinita. Per abilitare a livello di raccolta siti, in**esplorazione raccolta**siti di > **Amministrazione** > raccolta siti **Impostazioni sito**selezionare la casella per **abilitare la memorizzazione nella cache**.
+La memorizzazione nella cache può essere abilitata o disabilitata a livello di raccolta siti e a livello di sito ed è abilitata per entrambi per impostazione predefinita. Per abilitare a livello di raccolta siti, in esplorazione raccolta siti di Amministrazione raccolta siti **Impostazioni sito**  >  **Site Collection Administration**  >  **Site Collection Navigation**selezionare la casella per **abilitare la memorizzazione nella cache**.
 
 ![Abilitare la memorizzazione nella cache a livello di sito](media/structural-nav/structural-nav-caching-site-coll.png)
 
-Per abilitare a livello di sito, in > **spostamento** **Impostazioni sito**selezionare la casella per **abilitare la memorizzazione nella cache**.
+Per abilitare a livello di sito, in **spostamento Impostazioni sito**  >  **Navigation**selezionare la casella per **abilitare la memorizzazione nella cache**.
 
 ![Abilitare la memorizzazione nella cache a livello di sito](media/structural-nav/structural-nav-caching-site.png)
 
@@ -119,15 +121,15 @@ Sono disponibili altre opzioni popolari per la creazione di **provider di sposta
 
 Utilizzando la ricerca è possibile utilizzare gli indici sviluppati in background tramite la ricerca per indicizzazione continua. I risultati della ricerca vengono recuperati dall'indice di ricerca e i risultati sono limitati per motivi di sicurezza. Questo è in genere più veloce rispetto ai provider di spostamento esterno alla casella quando è richiesta la limitazione della sicurezza. Utilizzando la ricerca per l'esplorazione strutturale, soprattutto se si dispone di una struttura di siti complessa, è possibile velocizzare notevolmente tempi di caricamento delle pagine. Il principale vantaggio di questa esplorazione gestita è che è possibile beneficiare della limitazione per motivi di sicurezza.
 
-Questo approccio implica la creazione di una pagina master personalizzata e la sostituzione del codice di spostamento predefinito con codice HTML personalizzato. Seguire questa procedura illustrata nell'esempio seguente per sostituire il codice di spostamento nel file `seattle.html`. In questo esempio viene aperto il `seattle.html` file e sostituito l'intero elemento `id="DeltaTopNavigation"` con codice HTML personalizzato.
+Questo approccio implica la creazione di una pagina master personalizzata e la sostituzione del codice di spostamento predefinito con codice HTML personalizzato. Seguire questa procedura illustrata nell'esempio seguente per sostituire il codice di spostamento nel file `seattle.html` . In questo esempio viene aperto il `seattle.html` file e sostituito l'intero elemento `id="DeltaTopNavigation"` con codice HTML personalizzato.
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Esempio: sostituire il codice di spostamento fuori dalla casella in una pagina master
 
 1. Andare alla pagina Impostazioni sito.
 2. Aprire la raccolta di pagine master facendo clic su **Pagine master**.
-3. Da qui è possibile passare alla raccolta e scaricare il file `seattle.master`.
+3. Da qui è possibile passare alla raccolta e scaricare il file `seattle.master` .
 4. Modificare il codice utilizzando un editor di testo ed eliminare il blocco di codice nella schermata seguente.<br/>![Eliminare il blocco di codice visualizzato](media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. Rimuovere il codice tra i `<SharePoint:AjaxDelta id="DeltaTopNavigation">` tag `<\SharePoint:AjaxDelta>` e e sostituirlo con il seguente frammento:<br/>
+5. Rimuovere il codice tra i `<SharePoint:AjaxDelta id="DeltaTopNavigation">` `<\SharePoint:AjaxDelta>` tag e e sostituirlo con il seguente frammento:<br/>
 
 ```javascript
 <div id="loading">
@@ -206,7 +208,7 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. I risultati vengono assegnati alla matrice self. Nodes e una gerarchia è costituita dagli oggetti tramite LINQ. js che assegnano l'output a una matrice self. Hierarchy. Questa matrice è l'oggetto in cui è associato il codice HTML. Questa operazione viene eseguita nella funzione toggleView() passando l'oggetto utente alla funzione ko.applyBinding().<br/>Quindi, in questo modo la matrice di gerarchia va associata al codice HTML seguente:<br/>
+8. I risultati vengono assegnati alla matrice self. Nodes e viene creata una gerarchia degli oggetti utilizzando linq.js assegnando l'output a una matrice self. Hierarchy. Questa matrice è l'oggetto in cui è associato il codice HTML. Questa operazione viene eseguita nella funzione toggleView() passando l'oggetto utente alla funzione ko.applyBinding().<br/>Quindi, in questo modo la matrice di gerarchia va associata al codice HTML seguente:<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
@@ -456,11 +458,11 @@ function addEventsToElements() {
 
 ```
 
-Per riepilogare il codice sopra riportato nella `jQuery $(document).ready` funzione viene `viewModel object` creata e quindi viene chiamata la `loadNavigationNodes()` funzione su quell'oggetto. Questa funzione carica la gerarchia di spostamento precedentemente creata memorizzata nell'archiviazione locale di HTML5 del browser client o chiama la funzione `queryRemoteInterface()`.
+Per riepilogare il codice sopra riportato nella `jQuery $(document).ready` funzione viene `viewModel object` creata e quindi `loadNavigationNodes()` viene chiamata la funzione su quell'oggetto. Questa funzione carica la gerarchia di spostamento precedentemente creata memorizzata nell'archiviazione locale di HTML5 del browser client o chiama la funzione `queryRemoteInterface()` .
 
 `QueryRemoteInterface()`Compila una richiesta utilizzando la `getRequest()` funzione con il parametro di query definito in precedenza nello script e quindi restituisce i dati dal server. Questi dati sono sostanzialmente una matrice di tutti i siti nella raccolta di siti rappresentati come oggetti di trasferimento dei dati con alcune proprietà.
 
-Questi dati vengono quindi analizzati negli oggetti definiti `SPO.Models.NavigationNode` in precedenza che utilizzano `Knockout.js` per creare proprietà osservabili per l'utilizzo da parte dei dati per l'associazione dei valori nel codice HTML definito in precedenza.
+Questi dati vengono quindi analizzati negli oggetti definiti in precedenza `SPO.Models.NavigationNode` che utilizzano `Knockout.js` per creare proprietà osservabili per l'utilizzo da parte dei dati per l'associazione dei valori nel codice HTML definito in precedenza.
 
 Gli oggetti vengono quindi inseriti in una matrice di risultati. Questa matrice viene analizzata in JSON utilizzando Knockout e memorizzata nell'archivio locale del browser per migliorare le prestazioni su caricamenti di pagina futuri.
 
@@ -474,9 +476,9 @@ Il [codice sopra](#about-the-javascript-file) riportato presenta le dipendenze s
 
 - jQueryhttps://jquery.com/
 - KnockoutJS -https://knockoutjs.com/
-- LINQ. js- https://linqjs.codeplex.com/o github.com/neuecc/LINQ.js
+- Linq.js- https://linqjs.codeplex.com/ , o github.com/neuecc/linq.js
 
-La versione corrente di LinqJS non contiene il metodo ByHierarchy utilizzato nel codice precedente e interrompe il codice di spostamento. Per risolvere il cosa, aggiungere il metodo seguente al file LINQ. js prima della riga `Flatten: function ()`.
+La versione corrente di LinqJS non contiene il metodo ByHierarchy utilizzato nel codice precedente e interrompe il codice di spostamento. Per risolvere il cosa, aggiungere il seguente metodo al file Linq.js prima della riga `Flatten: function ()` .
 
 ```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {

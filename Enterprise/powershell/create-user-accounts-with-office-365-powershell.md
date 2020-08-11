@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
+- seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Informazioni su come utilizzare PowerShell per Microsoft 365 per creare account utente.
-ms.openlocfilehash: 4057f4e1b29e8177bee32306c49f25f607ac5a0f
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In questo articolo vengono fornite informazioni su come utilizzare PowerShell per creare account utente o più account utente di Microsoft 365.
+ms.openlocfilehash: 2f4d7b42e68e3bd426ea73c8568e0c603af06dcb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230792"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605992"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Creare gli account utente di Microsoft 365 con PowerShell
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 È possibile utilizzare PowerShell per Microsoft 365 per creare efficacemente gli account utente, in particolare più account utente. Quando si creano account utente in PowerShell, vengono sempre richieste determinate proprietà dell'account. Altre proprietà non sono necessarie per creare l'account, ma sono comunque importanti. Tali proprietà sono descritte nella tabella seguente.
   

@@ -12,19 +12,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: 'Riepilogo: informazioni su come utilizzare Windows PowerShell per eseguire una migrazione completa a Microsoft 365.'
-ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Informazioni su come utilizzare PowerShell per spostare il contenuto da un sistema di posta elettronica di origine in una sola volta eseguendo una migrazione di completa a Microsoft 365.
+ms.openlocfilehash: fde0795b767f908fb0d1dcc5ce17a0bb50235d8e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229852"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606222"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Utilizzare PowerShell per eseguire una migrazione completa a Microsoft 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 È possibile eseguire la migrazione del contenuto delle cassette postali degli utenti da un sistema di posta elettronica di origine a Microsoft 365 tutti insieme utilizzando una migrazione completa. In questo articolo vengono illustrate le attività per una migrazione completa della posta elettronica tramite PowerShell di Exchange Online. 
   

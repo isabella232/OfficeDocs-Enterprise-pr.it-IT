@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: 'Riepilogo: distribuzione di Azure AD Connect in una macchina virtuale in Azure per sincronizzare gli account tra la directory locale e il tenant di Azure AD della sottoscrizione Microsoft 365.'
-ms.openlocfilehash: bd1b973c60576002f110a909c0022b27f4595b81
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Informazioni su come distribuire Azure AD Connect in una macchina virtuale in Azure per sincronizzare gli account tra la directory locale e il tenant di Azure AD.
+ms.openlocfilehash: 2872e3d5d233d04885fadd3e422ec1d15284ac26
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229972"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605742"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Distribuire la sincronizzazione della directory Microsoft 365 in Microsoft Azure
 

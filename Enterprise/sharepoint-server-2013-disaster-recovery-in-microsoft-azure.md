@@ -13,15 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Deployment
+ms.custom:
+- Ent_Deployment
+- seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: 'Riepilogo: Con Azure è possibile creare un ambiente di ripristino di emergenza per la farm locale di SharePoint. In questo articolo viene descritto come progettare e implementare questa soluzione.'
-ms.openlocfilehash: 101d87b1a25d2b3ac8a7ae29832e52c805ecdc4c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In questo articolo viene descritto come utilizzare Azure per creare un ambiente di ripristino di emergenza per la farm di SharePoint locale.
+ms.openlocfilehash: b4ba92136139d723b26fe89b13f4e43c67f5c2fe
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998168"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606132"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
 
@@ -496,7 +498,7 @@ La tabella seguente descrive le configurazioni di unità per le macchine virtual
 |C  <br/> |80  <br/> |Directory radice dati  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\  <br/> |
 |E  <br/> |500  <br/> |Directory database utente  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
 |F  <br/> |500  <br/> |Directory log database utente  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
-|G  <br/> |500  <br/> |Directory DB temp  <br/> |<DriveLetter>:\\Program Files\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATA  <br/> |
+|G  <br/> |500  <br/> |Directory DB temp  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
 |H  <br/> |500  <br/> |Directory log DB temp  <br/> |<DriveLetter>:\\Programmi\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATI  <br/> |
    
 ### <a name="setting-up-the-test-environment"></a>Configurazione dell'ambiente di testing
@@ -532,7 +534,7 @@ Abbiamo la farm e unito altri server nell'ordine seguente:
   
 - Provisioning di SP-SQL-HA1 e SP-SQL-HA2.
     
-- Configurazione di AlwaysOn e creazione di tre gruppi di disponibilità per la farm.  
+- Configurazione di AlwaysOn e creazione di tre gruppi di disponibilità per la farm. 
     
 - Provisioning di SP-APP1 all'host Amministrazione centrale.
     

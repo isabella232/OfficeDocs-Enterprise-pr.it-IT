@@ -17,18 +17,19 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: 'Riepilogo: vedere questi articoli per comprendere la rete per Microsoft 365.'
-ms.openlocfilehash: b1497c214777e34ce4a85701ce6596f50e59910d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Sono disponibili collegamenti ad articoli contenenti informazioni utili per configurare la rete per Microsoft 365, tra cui una panoramica della connettività di rete e un elenco di endpoint.
+ms.openlocfilehash: 2c5966dc169a189a4f5040d4b5673859a38e6640
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592150"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605208"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurare la rete per Microsoft 365
 
-*Questo articolo si riferisce sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Una parte importante dell'onboarding di Microsoft 365 è garantire che le connessioni di rete e Internet siano configurate per l'accesso ottimizzato. La configurazione della rete locale per l'accesso a un cloud SaaS (software-as-a-Service) distribuito a livello globale è diversa da una rete tradizionale ottimizzata per il traffico verso i centri dati locali e una connessione Internet centralizzata. 
 

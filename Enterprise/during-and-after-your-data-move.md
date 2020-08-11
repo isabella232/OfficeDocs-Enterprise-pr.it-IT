@@ -14,13 +14,14 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
-description: Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
-ms.openlocfilehash: d07c9c62a778ce23d2e088ddeb8b34346911a19a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Gli spostamenti di dati sono operazioni back-end che si verificano quando Microsoft sposta i servizi e i dati associati per il tenant in un nuovo datacenter Geo.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6dbfbd9f33aba84086b257ce5a93f01bb707a54c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774491"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606412"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -38,7 +39,7 @@ Guardare il centro messaggi di Microsoft 365 per conferma quando si sposta per o
 |Giappone  <br/> |Luglio 1, 2022  <br/> |
 |India  <br/> |Luglio 1, 2022  <br/> |
 |Canada  <br/> |Luglio 1, 2022  <br/> |
-|Sud Corea  <br/> |Luglio 1, 2022  <br/> |
+|Corea del Sud  <br/> |Luglio 1, 2022  <br/> |
 |Regno Unito  <br/> |Luglio 1, 2022  <br/> |
 |Francia  <br/> |Luglio 1, 2022  <br/> |
 |Emirati Arabi Uniti  <br/> |Luglio 1, 2022  <br/> |
@@ -88,7 +89,7 @@ Dopo aver completato lo spostamento dei dati di SharePoint Online, è possibile 
     
 - Si stanno rimuovendo le copie Trans-coded dal Data Center precedente e la loro transcodifica nel nuovo datacenter.
     
-### <a name="search"></a>Ricerca
+### <a name="search"></a>Cerca
 
 Durante lo spostamento dei dati di SharePoint Online, la migrazione dell'indice di ricerca e delle impostazioni di ricerca in una nuova posizione. Fino a quando non è stato **completato** lo spostamento dei dati di SharePoint Online, è possibile continuare a servire gli utenti dall'indice nel percorso originale. Nella nuova posizione viene avviata automaticamente la ricerca per indicizzazione del contenuto dopo aver completato lo spostamento dei dati di SharePoint Online. Da questo punto in poi, vengono serviti gli utenti dall'indice migrato. Le modifiche al contenuto che si sono verificate dopo la migrazione non vengono incluse nell'indice migrato finché la ricerca per indicizzazione non viene rilevata. La maggior parte dei clienti non si accorge che i risultati sono meno freschi subito dopo aver completato lo spostamento dei dati di SharePoint Online, ma alcuni clienti potrebbero riscontrare una riduzione della freschezza nelle prime 24-48 ore. 
   

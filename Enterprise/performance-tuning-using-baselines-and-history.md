@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +22,13 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 - SPO_Content
-description: Esistono alcuni modi semplici per controllare le prestazioni della connessione tra Office 365 e la propria azienda che consentirà di stabilire una linea di base approssimativa della connettività. Se si conosce la cronologia delle prestazioni delle connessioni dei computer client, è possibile rilevare i problemi emergenti in anticipo, identificare e stimare.
-ms.openlocfilehash: ffccd9f5763d7d47dbb3aa02d3063582d1fa83cc
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Informazioni su come controllare la cronologia delle connessioni dei computer client per individuare precocemente i problemi emergenti.
+ms.openlocfilehash: 31849e14b5dec7cba3878a85219ef2b8994f0fb9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774551"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605468"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ottimizzazione delle prestazioni di Office 365 con le linee di base e la cronologia delle prestazioni
 

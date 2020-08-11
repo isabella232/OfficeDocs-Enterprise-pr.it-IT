@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
-description: ExpressRoute per Office 365 offre un percorso di routing alternativo per raggiungere numerosi servizi di Office 365 senza che sia necessario che tutto il traffico venga in uscita su Internet. Anche se la connessione Internet a Office 365 è ancora necessaria, le route specifiche che Microsoft annuncia tramite BGP alla rete rendono il circuito ExpressRoute diretto preferito, a meno che non siano presenti altre configurazioni della rete. Le tre aree comuni che possono essere configurate per gestire questo percorso includono il filtro, la sicurezza e la conformità del prefisso.
-ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+description: Informazioni su come gestire ExpressRoute per Office 365, incluse le aree comuni da configurare come il filtro del prefisso, la sicurezza e la conformità.
+ms.openlocfilehash: f62731b9f2fcfcb47504d2f73e9b8874980c4c7e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798797"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606332"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestione di ExpressRoute per la connettività di Office 365
 

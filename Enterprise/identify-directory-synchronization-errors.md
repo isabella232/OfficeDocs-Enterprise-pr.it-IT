@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -20,13 +22,13 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Informazioni su come visualizzare gli errori di sincronizzazione della directory nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 57ca9ce125679931adcca93621474cec9ee9b82f
-ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
+description: Informazioni su come visualizzare gli errori di sincronizzazione della directory e le possibili correzioni nell'interfaccia di amministrazione di Microsoft 365.
+ms.openlocfilehash: 344cc71d192e6a73826c66c8bcbf8569d10e45d8
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44842078"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605708"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Visualizzare gli errori di sincronizzazione della directory in Microsoft 365
 

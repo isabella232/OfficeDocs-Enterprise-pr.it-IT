@@ -14,16 +14,17 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: "Riepilogo: informazioni sui concetti principali dell'architettura cloud per l'identità, la sicurezza, la rete e l'ambiente ibrido Microsoft. Controllare i suggerimenti sugli elementi consigliati per la protezione dei file, delle identità e dei dispositivi nel cloud Microsoft."
-ms.openlocfilehash: f19a84297de0ff809979bc5735eb8c19cfbb7f57
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: In questo articolo sono disponibili risorse utili per informazioni sull'architettura IT di Microsoft Cloud di base e sui relativi consigli per la protezione & procedure di distribuzione.
+ms.openlocfilehash: 644dc437fe1d0c3dc60c3e191a98ee52e761e03a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592180"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605678"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Risorse sull'architettura IT del cloud Microsoft
 

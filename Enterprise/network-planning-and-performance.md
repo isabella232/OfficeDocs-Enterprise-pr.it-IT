@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection: Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
-description: Consente di pianificare i requisiti di larghezza di banda di rete per Microsoft 365. Dopo la distribuzione, tornare qui per ottimizzare e risolvere i problemi relativi alle prestazioni di Microsoft 365.
-ms.openlocfilehash: 2754bdfe427a87f0cbed538703877b089c3fcc38
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+- Adm_O365
+description: Questo articolo consente di pianificare i requisiti di larghezza di banda di rete per Microsoft 365 e ottimizzare le prestazioni e la risoluzione dei problemi.
+ms.openlocfilehash: 4942d2d9d36123465dd15aecf6e72988c9952037
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998581"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606742"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Pianificazione della rete e ottimizzazione delle prestazioni per Microsoft 365
 Prima di eseguire la distribuzione per la prima volta o la migrazione a Microsoft 365, è possibile utilizzare le informazioni contenute in questi argomenti per valutare la larghezza di banda necessaria e quindi verificare se si dispone di una larghezza di banda sufficiente per la distribuzione o la migrazione a Microsoft 365. Per una panoramica, vedere: [pianificazione della rete e della migrazione per Microsoft 365](network-and-migration-planning.md).

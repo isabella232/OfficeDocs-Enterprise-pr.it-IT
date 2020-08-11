@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
-description: In questo articolo viene descritto come migliorare le prestazioni sostituendo la Web part Query contenuto con la Web part Ricerca contenuto in SharePoint Server 2013 e SharePoint Online.
-ms.openlocfilehash: 16d8e976a96487752a78b91a783041448621a275
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Informazioni su come migliorare le prestazioni sostituendo la Web part Query contenuto con la Web part Ricerca contenuto in SharePoint Server 2013 e SharePoint Online.
+ms.openlocfilehash: 50706236c3ecdbdf915c257877990c4b9e51e22a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843927"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603538"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Utilizzo della web part Ricerca contenuto anziché della web part Query contenuto per migliorare le prestazioni in SharePoint Online
 

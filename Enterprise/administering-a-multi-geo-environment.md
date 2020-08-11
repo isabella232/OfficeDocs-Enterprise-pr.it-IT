@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Informazioni sull'amministrazione di servizi SharePoint e OneDrive in un ambiente multi-geo.
-ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+description: Gli amministratori possono ottenere informazioni su come amministrare i servizi di SharePoint e OneDrive in un ambiente multi-geografico.
+ms.openlocfilehash: 166aa61b6ef3158c8ff479fd1a93252ef1bc50d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548898"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606112"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Amministrare un ambiente multi-geografico
 
@@ -36,7 +36,7 @@ Tutti i servizi BCS, Archiviazione sicura e App presentano istanze separate in o
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-Per impostazione predefinita, un responsabile di eDiscovery o un amministratore di un multi tenant geografico potranno eseguire eDiscovery solo in una posizione centrale di quel tenant. L'amministratore globale di Microsoft 365 deve assegnare le autorizzazioni di manager di eDiscovery per consentire ad altri di eseguire eDiscovery e assegnare un parametro "Area" nel filtro di sicurezza e conformità applicabile per specificare l'area per l'esecuzione di eDiscovery come posizione satellite, in caso contrario nessuna istanza di eDiscovery verrà eseguita per la posizione geografica satellite. Per configurare il filtro di sicurezza e conformità di un'area, vedere [Configurare eDiscovery per Microsoft 365 Multi-Geo](multi-geo-ediscovery-configuration.md).
+Per impostazione predefinita, un responsabile di eDiscovery o un amministratore di un multi tenant geografico potranno eseguire eDiscovery solo in una posizione centrale di quel tenant. L'amministratore globale di Office 365 deve assegnare le autorizzazioni di manager di eDiscovery per consentire ad altri di eseguire eDiscovery e assegnare un parametro "Area" nel filtro di sicurezza e conformità applicabile per specificare l'area per l'esecuzione di eDiscovery come posizione satellite, in caso contrario nessuna istanza di eDiscovery verrà eseguita per la posizione geografica satellite. Per configurare il filtro di sicurezza e conformità di un'area, vedere [Configurare Multi-Geo eDiscovery di Office 365](multi-geo-ediscovery-configuration.md).
 
 ## <a name="exchange-mailboxes"></a>Cassette postali di Exchange
 

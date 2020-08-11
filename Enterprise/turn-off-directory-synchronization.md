@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -18,13 +20,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
-description: Informazioni su come utilizzare PowerShell per disattivare la sincronizzazione della directory per Microsoft 365
-ms.openlocfilehash: 1e3e26a262c112c05fe22cda2dbe3f14efb61f87
-ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
+description: In questo articolo, trovare informazioni sull'utilizzo di PowerShell per disattivare la sincronizzazione della directory per Microsoft 365.
+ms.openlocfilehash: 815d20ff6a0697f1533e44305e20e61a9282312b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387709"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603648"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Disattiva la sincronizzazione della directory per Microsoft 365
 È possibile utilizzare PowerShell per disattivare la sincronizzazione della directory. Tuttavia, non è consigliabile disattivare la sincronizzazione della directory come passaggio per la risoluzione dei problemi. Se si necessita di assistenza per la risoluzione dei problemi relativi alla sincronizzazione della directory, vedere l'articolo [relativo alla correzione della sincronizzazione della directory per Microsoft 365](fix-problems-with-directory-synchronization.md) . 

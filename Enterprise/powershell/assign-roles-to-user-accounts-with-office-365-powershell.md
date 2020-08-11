@@ -17,18 +17,19 @@ ms.custom:
 - O365ITProTrain
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 per assegnare ruoli agli account utente.'
-ms.openlocfilehash: 2be491692c23b1f528612cc5c56e041553f80c48
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In questo articolo vengono fornite informazioni su come utilizzare PowerShell per Microsoft 365 in modo rapido e semplice per assegnare ruoli agli account utente.
+ms.openlocfilehash: a3e1936dfa685c78f88e4f4333192f9a07de3cec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230872"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606442"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Assegnare i ruoli agli account utente di Microsoft 365 con PowerShell
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 È possibile assegnare rapidamente e facilmente i ruoli agli account utente tramite PowerShell per Microsoft 365.
 

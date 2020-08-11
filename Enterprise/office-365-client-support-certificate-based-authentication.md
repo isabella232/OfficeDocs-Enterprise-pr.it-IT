@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Supporto delle app client Microsoft 365 per l'autenticazione basata su certificati.
-ms.openlocfilehash: a174e24c31e9ad2688ead557c29c3fecdac82a56
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In questo articolo sono disponibili informazioni dettagliate sul supporto delle app client Microsoft 365 per l'autenticazione basata su certificati.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 759979ac7236ff4a6cf4c77ab52fff9b472b84ec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998598"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606672"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Supporto delle app client Microsoft 365-autenticazione basata su certificato
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 L'autenticazione basata su certificato consente di autenticare in Azure Active Directory con un certificato client su dispositivi Windows, Android o iOS. La configurazione di questa funzionalità consente di eliminare la necessità di immettere una combinazione di nome utente e password in determinate applicazioni di posta elettronica e Microsoft Office nel dispositivo mobile.
 

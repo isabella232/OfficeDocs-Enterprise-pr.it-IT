@@ -17,18 +17,19 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 - LIL_Placement
+- seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: Utilizzare PowerShell per disabilitare l'accesso ai servizi di Microsoft 365 per gli utenti.
-ms.openlocfilehash: 7820bc44837af07975b2eeaeddf2cf20a9230fae
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+description: In questo articolo vengono fornite informazioni su come utilizzare PowerShell per disabilitare l'accesso ai servizi di Microsoft 365 per gli utenti.
+ms.openlocfilehash: f546014b83e0910e38817e0b7ef84d67f1b88614
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502641"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605972"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Disabilitare l'accesso ai servizi di Microsoft 365 con PowerShell
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Quando a un account Microsoft 365 viene assegnata una licenza da un piano di gestione delle licenze, i servizi Microsoft 365 vengono resi disponibili all'utente dalla licenza. Tuttavia, è possibile controllare i servizi Microsoft 365 che l'utente può accedere. Ad esempio, anche se la licenza consente l'accesso al servizio SharePoint Online, è possibile disabilitarne l'accesso. È possibile utilizzare PowerShell per disabilitare l'accesso a qualsiasi numero di servizi per uno specifico piano di gestione delle licenze per:
 
@@ -171,7 +172,7 @@ $LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
 Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topic"></a>Argomento correlato
 
 [Gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

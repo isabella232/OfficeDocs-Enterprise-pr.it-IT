@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: 'Riepilogo: informazioni su come utilizzare Windows PowerShell per eseguire una migrazione a fasi a Microsoft 365.'
-ms.openlocfilehash: bc21ec403b0c6daa3fe2411f8f4fea790dd5e71c
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Informazioni su come utilizzare PowerShell per spostare il contenuto da un sistema di posta elettronica di origine nel tempo utilizzando una migrazione a fasi a Microsoft 365.
+ms.openlocfilehash: a50966f65bbec5e4b453c4caf02e4b89fa7d04b5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229792"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606212"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Utilizzare PowerShell per eseguire una migrazione a fasi a Microsoft 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 È possibile migrare il contenuto delle cassette postali degli utenti da un sistema di posta elettronica di origine a Microsoft 365 nel tempo utilizzando una migrazione a fasi.
   

@@ -11,20 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - MSO150
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
-description: In questo articolo vengono forniti collegamenti per gli amministratori di sistema che desiderano pianificare i requisiti di larghezza di banda di rete o che devono migliorare le prestazioni di Skype for business online.
-ms.openlocfilehash: 4ca25d8a38ffce5b694b9ca31c330f6488720fcb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: In questo articolo vengono forniti collegamenti agli amministratori di sistema per pianificare i requisiti di larghezza di banda di rete o migliorare le prestazioni di Skype for business online.
+ms.openlocfilehash: 1ca9d969f4552cf260d44099becd41f5868286d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843917"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606422"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Ottimizzare le prestazioni di Skype for Business online
 
@@ -58,7 +60,7 @@ In questo articolo vengono forniti collegamenti per gli amministratori di sistem
   
 [Ottimizzazione della rete per Skype for Business Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
   
-[ExpressRoute e QoS in Skype for business online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
+[ExpressRoute e QoS in Skype for Business Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
   
-[Flusso delle chiamate con ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
+[Flusso di chiamata con ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
 

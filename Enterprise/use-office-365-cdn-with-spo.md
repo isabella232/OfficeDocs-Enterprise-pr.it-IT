@@ -1,5 +1,5 @@
 ---
-title: Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online
+title: Utilizzare la rete di distribuzione dei contenuti (CDN) di Office 365 con SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
-description: In questo articolo viene descritto come utilizzare la rete di distribuzione del contenuto (CDN) di Office 365 per velocizzare il recapito delle risorse di SharePoint Online a tutti gli utenti, indipendentemente dal luogo in cui si trovano o dal modo in cui accedono al contenuto.
-ms.openlocfilehash: 25e7e6aae0d4dc6dd72278763c8fc5cc3bc454ce
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+description: Informazioni su come utilizzare la rete di distribuzione dei contenuti (CDN) di Office 365 per velocizzare il recapito delle risorse di SharePoint Online.
+ms.openlocfilehash: 2f0cc396de6d950c9487024145e346007b18d3b9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42316025"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606122"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online
 
@@ -304,7 +306,7 @@ Il valore di _path_ è il percorso relativo alla raccolta o alla cartella che co
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ Il modificatore di**/** caratteri jolly * può essere utilizzato solo all'inizio del percorso e deve corrispondere a tutti i segmenti di URL sotto l'URL specificato.
++ Il modificatore di caratteri jolly * **/** può essere utilizzato solo all'inizio del percorso e deve corrispondere a tutti i segmenti di URL sotto l'URL specificato.
 + Il percorso può puntare a una raccolta documenti, una cartella o un sito. Ad esempio, il percorso _*/site1_ corrisponderà a tutte le raccolte documenti del sito.
 
 È possibile aggiungere un'origine con un percorso relativo specifico. Non è possibile aggiungere un'origine utilizzando il percorso completo.
@@ -587,7 +589,7 @@ Il valore di _path_ è il percorso relativo alla raccolta o alla cartella che co
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ Il modificatore di**/** caratteri jolly * può essere utilizzato solo all'inizio del percorso e deve corrispondere a tutti i segmenti di URL sotto l'URL specificato.
++ Il modificatore di caratteri jolly * **/** può essere utilizzato solo all'inizio del percorso e deve corrispondere a tutti i segmenti di URL sotto l'URL specificato.
 + Il percorso può puntare a una raccolta documenti, una cartella o un sito. Ad esempio, il percorso _*/site1_ corrisponderà a tutte le raccolte documenti del sito.
 
 È possibile aggiungere un'origine con un percorso relativo specifico. Non è possibile aggiungere un'origine utilizzando il percorso completo.
@@ -818,7 +820,7 @@ spo cdn origin remove --type Public --origin */masterpage
 
 ### <a name="modify-an-office-365-cdn-origin"></a>Modificare un'origine della rete CDN di Office 365
 
-Non è possibile modificare un'origine CDN esistente. Al contrario, è necessario rimuovere l'origine della rete CDN precedentemente `spo cdn origin remove` definita usando il comando e aggiungerne una `spo cdn origin add` nuova utilizzando il comando.
+Non è possibile modificare un'origine CDN esistente. Al contrario, è necessario rimuovere l'origine della rete CDN precedentemente definita usando il `spo cdn origin remove` comando e aggiungerne una nuova utilizzando il `spo cdn origin add` comando.
 
 ### <a name="change-the-types-of-files-to-include-in-the-office-365-cdn"></a>Modificare i tipi di file da includere nella rete CDN di Office 365
 
@@ -879,7 +881,7 @@ Per utilizzare le risorse aggiunte a un'origine, è sufficiente aggiornare i col
 + Per ogni collegamento a una risorsa di origine, sostituire il percorso con il percorso del file nell'origine della rete CDN. È possibile utilizzare i percorsi relativi.
 + Salvare la pagina o il contenuto.
 
-Si consideri, ad esempio, l'immagine _/site/SiteAssets/images/image.png_, che è stata copiata nella cartella della raccolta documenti _/site/CDN_origins/public/_. Per utilizzare l'asset della rete CDN, sostituire il percorso originale nel percorso del file di immagine con il percorso dell'origine per rendere il nuovo URL _/site/CDN_origins/Public/Image.png_.
+Si consideri, ad esempio, l'immagine _/site/SiteAssets/images/image.png_, che è stata copiata nella cartella della raccolta documenti _/site/CDN_origins/public/_. Per utilizzare l'asset della rete CDN, sostituire il percorso originale nel percorso del file di immagine con il percorso dell'origine per rendere il nuovo URL _/site/CDN_origins/public/image.png_.
 
 Se si desidera utilizzare l'URL completo del cespite anziché un percorso relativo, creare il collegamento in questo modo:
 
@@ -894,7 +896,7 @@ Per informazioni su come verificare che le risorse vengano servite dalla rete CD
 
 La **caratteristica di pubblicazione** in SharePoint Online riscrive automaticamente gli URL delle risorse archiviate nelle origini pubbliche nei rispettivi EQUIVALEnti CDN in modo che le risorse vengano servite dal servizio CDN invece che da SharePoint.
 
-Se l'origine è in un sito in cui è abilitata la caratteristica di pubblicazione e gli asset che si desidera scaricare nella rete CDN sono presenti in una delle categorie seguenti, SharePoint riscriverà automaticamente gli URL per le risorse nell'origine, purché il cespite non sia stato escluso da una rete CDN  politica.
+Se l'origine è in un sito in cui è abilitata la caratteristica di pubblicazione e gli asset che si desidera scaricare nella rete CDN sono presenti in una delle categorie seguenti, SharePoint riscriverà automaticamente gli URL per le risorse nell'origine, purché il cespite non sia stato escluso da un criterio CDN.
 
 Di seguito è riportata una panoramica dei collegamenti che vengono automaticamente riscritti dalla caratteristica di pubblicazione di SharePoint:
 
@@ -957,14 +959,14 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 #### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>Le autorizzazioni a livello di elemento non sono supportate per le risorse in origine privata
 
-È importante tenere presente che SharePoint Online non supporta le autorizzazioni a livello di elemento per le risorse in origine privata. Ad esempio, per un file in `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`cui gli utenti hanno accesso effettivo al file, date le condizioni seguenti:
+È importante tenere presente che SharePoint Online non supporta le autorizzazioni a livello di elemento per le risorse in origine privata. Ad esempio, per un file in `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` cui gli utenti hanno accesso effettivo al file, date le condizioni seguenti:
 
 |Utente  |Autorizzazioni  |Accesso efficace  |
 |---------|---------|---------|
-|Utente 1     |Ha accesso a Folder1         |È possibile accedere a image1. jpg dalla rete CDN         |
-|Utente 2     |Non dispone dell'accesso a Folder1         |Non è possibile accedere a image1. jpg dalla rete CDN         |
-|Utente 3     |Non dispone dell'accesso a Folder1, ma viene concessa l'autorizzazione esplicita per accedere a image1. jpg in SharePoint Online         |Possibile accedere all'asset image1. jpg direttamente da SharePoint Online, ma non dalla rete CDN         |
-|Utente 4     |Ha accesso a Folder1, ma è stato negato in modo esplicito l'accesso a image1. jpg in SharePoint Online         |Non è possibile accedere al cespite da SharePoint Online, ma è possibile accedere alla risorsa dalla rete CDN nonostante venga negato l'accesso al file in SharePoint Online         |
+|Utente 1     |Ha accesso a Folder1         |Possibile accedere a image1.jpg dalla rete CDN         |
+|Utente 2     |Non dispone dell'accesso a Folder1         |Non è possibile accedere image1.jpg dalla rete CDN         |
+|Utente 3     |Non dispone dell'accesso a Folder1, ma viene concessa l'autorizzazione esplicita per l'accesso image1.jpg in SharePoint Online         |Possibile accedere alla image1.jpg di risorse direttamente da SharePoint Online, ma non dalla rete CDN         |
+|Utente 4     |Ha accesso a Folder1, ma è stato negato in modo esplicito l'accesso ai image1.jpg in SharePoint Online         |Non è possibile accedere al cespite da SharePoint Online, ma è possibile accedere alla risorsa dalla rete CDN nonostante venga negato l'accesso al file in SharePoint Online         |
 
 <a name="CDNTroubleshooting"> </a>
 ## <a name="troubleshooting-the-office-365-cdn"></a>Risoluzione dei problemi relativi alla rete CDN di Office 365
@@ -977,7 +979,7 @@ Dopo aver aggiunto collegamenti alle risorse della rete CDN a una pagina, è pos
 È inoltre possibile utilizzare gli strumenti di sviluppo del browser per visualizzare l'URL di ogni risorsa in una pagina o utilizzare uno strumento di traccia di rete di terze parti.
 
 > [!NOTE]
-> Se si utilizza uno strumento di rete, ad esempio Fiddler, per testare le risorse all'esterno del rendering del cespite da una pagina di SharePoint, è necessario aggiungere manualmente l'intestazione `https://yourdomain.sharepoint.com`referer "Referer:" alla richiesta GET, in cui l'URL è l'URL radice del tenant di SharePoint Online.
+> Se si utilizza uno strumento di rete, ad esempio Fiddler, per testare le risorse all'esterno del rendering del cespite da una pagina di SharePoint, è necessario aggiungere manualmente l'intestazione Referer "Referer: `https://yourdomain.sharepoint.com` " alla richiesta GET, in cui l'URL è l'URL radice del tenant di SharePoint Online.
 
 Non è possibile testare gli URL della rete CDN direttamente in un Web browser perché è necessario disporre di un Referer proveniente da SharePoint Online. Tuttavia, se si aggiunge l'URL delle risorse della rete CDN a una pagina di SharePoint e quindi si apre la pagina in un browser, verrà visualizzata la risorsa della rete CDN di cui è stato eseguito il rendering nella pagina.
 

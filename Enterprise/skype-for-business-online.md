@@ -13,6 +13,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - ms.lync.lac.ProviderManagedFeature
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +21,13 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: Ottenere la guida per gli amministratori di Skype for business-configurare Skype for business, la rete, le riunioni e la messaggistica istantanea e l'accesso esterno per gli utenti. configurare le impostazioni, la risoluzione dei problemi e visualizzare i report di utilizzo.
-ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Come amministratore, trova la guida per configurare parti di Skype for business online, tra cui la rete, le riunioni e la messaggistica istantanea e l'accesso esterno per gli utenti.
+ms.openlocfilehash: 2e0a3b47c89f1573b50681445e150755e0a78985
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841113"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603658"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype for Business Online in Office 365 - Guida per gli amministratori
 
@@ -38,7 +39,7 @@ Gli amministratori di Office 365 per le aziende hanno diritto all'accesso gratui
 
 È possibile consentire alle persone che usano Skype for Business di contattare utenti esterni all'organizzazione e aggiungerli al loro elenco di contatti Skype for Business. Dopo averli aggiunti all'elenco di contatti, possono vedere se sono online, inviare loro messaggi istantanei, organizzare riunioni e condividere desktop. Per istruzioni, vedere:
   
-- [Permettere agli utenti di contattare utenti di Skype for Business esterni](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
+- [Permettere agli utenti di contattare utenti Skype for Business esterni](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
 - [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
     
@@ -52,7 +53,7 @@ Vedere anche:
     
 - [Risolvere i problemi audio e video in Skype for Business](https://support.office.com/article/62777bc6-c52b-47ae-84ba-a8905c3b71dc)
     
-## <a name="set-up-skype-for-business-online"></a>Configurare Skype for Business Online
+## <a name="set-up-skype-for-business-online"></a>Configurare Skype for Business online
 
 - [Licenze per i componenti aggiuntivi di Skype for Business](https://support.office.com/article/3ed752b1-5983-43f9-bcfd-760619ab40a7)
     
@@ -60,7 +61,7 @@ Vedere anche:
     
 - [Vantaggi offerti da Cloud PBX](https://support.office.com/article/bc9756d1-8a2f-42c4-98f6-afb17c29231c)
     
-- [Permettere agli utenti di contattare utenti di Skype for Business esterni](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
+- [Permettere agli utenti di contattare utenti Skype for Business esterni](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
 ## <a name="fix-problems-for-your-users"></a>Risolvere i problemi per gli utenti
 

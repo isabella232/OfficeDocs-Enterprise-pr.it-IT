@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Supporto delle app client Microsoft 365 per l'autenticazione moderna.
-ms.openlocfilehash: ed573cdf0cbd8f685f2807127335f5abc940cace
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In questo articolo vengono fornite informazioni sulle piattaforme, i client e i moduli di PowerShell che supportano l'autenticazione moderna per Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 29a579111d04cef444d1f8ad306b940a93517fe6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998494"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606662"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Supporto delle app client Microsoft 365-autenticazione moderna
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 L'autenticazione moderna Abilita l'accesso basato sulla libreria di autenticazione di Active Directory (ADAL) per le app client di Office su diverse piattaforme. Ciò consente di abilitare le funzionalità di accesso, ad esempio l'autenticazione a più fattori, la smart card e l'autenticazione basata su certificato.
 

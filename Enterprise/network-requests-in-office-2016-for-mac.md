@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Le applicazioni di Office per Mac forniscono un'esperienza di app nativa sulla piattaforma macOS. Ogni app è progettata per funzionare in diversi scenari, tra cui gli stati in cui non è disponibile alcun accesso alla rete. Quando un computer è connesso a una rete, le applicazioni si connettono automaticamente a una serie di servizi basati sul Web per fornire funzionalità avanzate. In questo articolo vengono descritti gli endpoint e gli URL che le applicazioni tentano di raggiungere e i servizi forniti. Queste informazioni sono utili per la risoluzione dei problemi relativi alla configurazione della rete e per l'impostazione di un criterio per i server proxy di rete. I dettagli in questo articolo sono destinati a completare l'articolo di Office 365 URL e degli intervalli di indirizzi.
-ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: In questo articolo vengono descritti gli endpoint e gli URL di Office per le applicazioni Mac che tentano di raggiungere e i servizi forniti.
+ms.openlocfilehash: 70b2da671b590dbe0c7572eebd6d96e0970532e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774951"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606722"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Richieste di rete in Office per Mac
 
@@ -129,7 +131,7 @@ Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione 
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |SS  <br/> |Che cos'è il nuovo contenuto della pagina JSON.  <br/> |
    
- **Ricercatore**
+ **Strumento ricerche**
   
 Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione Microsoft 365.
   
@@ -139,7 +141,7 @@ Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione 
 |```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Contenuto statico del ricercatore  <br/> |
 |```https://www.bing.com/```  <br/> |W  <br/> |CS  <br/> |Provider di contenuto del ricercatore  <br/> |
    
- **Ricerca avanzata**
+ **Ricerca intelligente**
   
 Gli endpoint di rete riportati di seguito si applicano sia alla sottoscrizione Microsoft 365 che alle attivazioni di contratti multilicenza e retail.
   
@@ -159,7 +161,7 @@ Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione 
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |Servizio Web di PowerPoint designer  <br/> |
    
- **Guida introduttiva di PowerPoint**
+ **Avvio rapido di PowerPoint**
   
 Gli endpoint di rete riportati di seguito si applicano solo alla sottoscrizione Microsoft 365.
   

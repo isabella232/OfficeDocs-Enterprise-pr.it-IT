@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: 'Riepilogo: le soluzioni di SharePoint 2013 possono essere ospitate nelle macchine virtuali di Microsoft Azure. Informazioni sul tipo di soluzione adatta e su come configurare Microsoft Azure per ospitarne uno.'
-ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Informazioni sui tipi di soluzioni di SharePoint 2013 che possono essere ospitate nelle macchine virtuali di Microsoft Azure e su come configurare Azure per ospitarne uno.
+ms.openlocfilehash: f76d5020ab4695f48edca956d6593040c42dcc70
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997898"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605688"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure Architectures for SharePoint 2013
 

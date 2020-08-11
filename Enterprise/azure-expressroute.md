@@ -13,23 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
-description: Informazioni su come utilizzare Azure ExpressRoute con Office 365 e su come pianificare il progetto di implementazione della rete che sarà necessario se si esegue la distribuzione di Azure ExpressRoute per l'utilizzo con Office 365.
-ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Informazioni su come utilizzare Azure ExpressRoute con Office 365 e pianificare il progetto di implementazione della rete se si esegue la distribuzione con esso.
+ms.openlocfilehash: 3d74d8b9274aebd92710f859a8c39aed12fe8da2
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230032"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605792"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute per Office 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Informazioni su come utilizzare Azure ExpressRoute con Office 365 e su come pianificare il progetto di implementazione della rete che sarà necessario se si esegue la distribuzione di Azure ExpressRoute per l'utilizzo con Office 365. L'infrastruttura e i servizi di piattaforma in esecuzione in Azure spesso usufruiscono dell'architettura di rete e delle considerazioni relative alle prestazioni. In questi casi è consigliabile ExpressRoute per Azure. Il software come offerta di servizi come Office 365 e Dynamics 365 è stato creato per accedere in modo sicuro e affidabile tramite Internet. È possibile leggere le prestazioni e la sicurezza di Internet e quando è possibile considerare Azure ExpressRoute per Office 365 nell'articolo [valutare la connettività di rete di office 365](assessing-network-connectivity.md).
 

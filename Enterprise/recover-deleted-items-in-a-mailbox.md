@@ -17,13 +17,15 @@ search.appverid:
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 f1.keywords:
 - NOCSH
-description: "Questo articolo è rivolto agli amministratori. Può accadere che un utente elimini in modo permanente alcuni elementi della propria cassetta postale di Outlook e che voglia recuperarli senza riuscirci. È possibile recuperare gli elementi eliminati se non sono stati rimossi definitivamente dalla cassetta postale dell'utente. "
-ms.openlocfilehash: d5911167289d448a68fbe65fa6ba3c5cb9c9609b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: In questo articolo sono contenute informazioni per gli amministratori che consentono di recuperare gli elementi eliminati, se non sono stati rimossi definitivamente dalla cassetta postale dell'utente.
+ms.openlocfilehash: 04249494ca777ba09df7bf6495b8ac931e83bab7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998310"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606182"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Ripristinare gli elementi eliminati in una cassetta postale utente - Guida per l'amministratore
 
@@ -38,7 +40,7 @@ Può accadere che un utente elimini in modo permanente alcuni elementi della pro
 Ecco i passaggi per ripristinare gli elementi eliminati nella cassetta postale di un utente. Quanto tempo è necessario? La prima volta può richiedere da 20 a 30 minuti per il completamento di tutti i passaggi, a seconda del numero di elementi che si vuole recuperare.
   
 > [!NOTE]
-> È necessario essere un **amministratore di Exchange** o un **amministratore globale** in Microsoft 365 o essere un membro del gruppo di ruoli Gestione organizzazione in Exchange Online per eseguire la procedura descritta in questo articolo. Per ulteriori informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> È necessario essere un **amministratore di Exchange** o un **amministratore globale** in Microsoft 365 o essere un membro del gruppo di ruoli Gestione organizzazione in Exchange Online per eseguire la procedura descritta in questo articolo. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Passaggio 1: Assegnare a se stessi le autorizzazioni di eDiscovery
 <a name="step1"> </a>

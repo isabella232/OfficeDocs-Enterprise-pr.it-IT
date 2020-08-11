@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
-description: Non sarebbe bello se la connessione Internet fosse sempre veloce e mai inattiva? Forse quel giorno verrà. Nel frattempo, tuttavia, esistono operazioni pratiche che è possibile eseguire per aggirare una rete esitante e continuare a svolgere il proprio lavoro quotidiano.
-ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom: seo-marvel-apr2020
+description: In questo articolo vengono illustrate le procedure consigliate che è possibile adottare per l'utilizzo di Office 365 in una rete lenta.
+ms.openlocfilehash: b4b81826dfca4c5962cc6aef026c3878e3b52304
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844957"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605782"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedure consigliate per l'utilizzo di Office 365 in una rete lenta
 

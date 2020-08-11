@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Sintesi: Panoramica delle procedure di screening del personale Microsoft per Microsoft 365.'
-ms.openlocfilehash: 337e9c1d92310d430c273683570a622a9fc3c9a5
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: In questo articolo è possibile trovare una panoramica delle procedure di screening del personale Microsoft per Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 52b872d9b8b49b0ed72cdfb0d879712a6e129a33
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775095"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605488"
 ---
 # <a name="microsoft-365-personnel-controls"></a>Microsoft 365 controlli del personale
 

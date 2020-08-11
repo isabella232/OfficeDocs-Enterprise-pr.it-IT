@@ -16,13 +16,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Panoramica delle funzionalità di controllo e Reporting all'interno di Microsoft 365 e Service Assurance.
-ms.openlocfilehash: 10bbf660ee0e0868abdb6b41c1cc318f6d64bb61
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Panoramica delle funzionalità di controllo e Reporting all'interno di Office 365, Microsoft 365 e Service Assurance.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40e68954cb0128ad323305bf8347a8e13afda9d5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774961"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606682"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Controllo e creazione di report nei servizi cloud Microsoft
 
@@ -57,7 +58,7 @@ Le caratteristiche principali includono un'area di conformità che consente agli
 ## <a name="related-links"></a>Collegamenti correlati
 
 - [Funzionalità di ricerca e di eDiscovery](office-365-ediscovery-and-search-features.md)
-- [Funzionalità di creazione di report di Microsoft 365](office-365-reporting-features.md)
-- [API Microsoft 365 Management Activity](office-365-management-activity-api.md)
+- [Funzionalità di reporting di Microsoft 365](office-365-reporting-features.md)
+- [API delle attività di gestione di Microsoft 365](office-365-management-activity-api.md)
 - [Migrazioni delle cassette postali di Microsoft 365](office-365-mailbox-migrations.md)
-- [Registrazione interna per Microsoft 365 Engineering](office-365-internal-logging.md)
+- [Log interni per Microsoft 365 Engineering](office-365-internal-logging.md)

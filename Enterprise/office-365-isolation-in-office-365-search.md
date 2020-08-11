@@ -1,5 +1,5 @@
 ---
-title: Isolamento tenant in Microsoft 365 search
+title: Isolamento del tenant per la funzionalità di ricerca di Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: "Riepilogo: Descrizione dell'isolamento del tenant in Microsoft 365 search."
-ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In questo articolo, trovare una spiegazione di come funziona l'isolamento tenant per separare i dati del tenant in Microsoft 365 search.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b887088799c83422a6bc5797a76dde73a58e2f29
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998256"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605588"
 ---
-# <a name="tenant-isolation-in-microsoft-365-search"></a>Isolamento tenant in Microsoft 365 search
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Isolamento del tenant per la funzionalità di ricerca di Microsoft 365
 
 La ricerca di SharePoint Online utilizza un modello di separazione tenant che bilancia l'efficienza delle strutture di dati condivise con una protezione dalle informazioni che fuoriescono tra i tenant. Con questo modello, vengono impedite le funzionalità di ricerca:
 

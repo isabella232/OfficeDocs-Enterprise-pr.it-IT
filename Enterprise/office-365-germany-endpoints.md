@@ -1,5 +1,5 @@
 ---
-title: Endpoint di Office 365 Germany
+title: Endpoint di Office 365 per la Germania
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: Se nell'organizzazione viene utilizzato Office 365 e i computer della rete vengono limitati dalla connessione a Internet, di seguito sono elencati gli endpoint (FQDN, porte, URL e intervalli di indirizzi IPv4 e IPv6) che è necessario includere negli elenchi in uscita consentiti per garantire che i computer possano utilizzare correttamente Office 365.
+description: In questo articolo sono disponibili gli endpoint che possono essere raggiunti per i clienti che utilizzano Office 365 in Germania.
 hideEdit: true
-ms.openlocfilehash: f78fe11ccf9b659c5606f743fe91bd426392f549
-ms.sourcegitcommit: b2767740251b257bb5e66d056731c6c9e7f2677d
+ms.openlocfilehash: a711499799ecbf50e7534fc0d015146fc26d220d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46596915"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606597"
 ---
 # <a name="office-365-germany-endpoints"></a>Endpoint di Office 365 Germany
 
@@ -41,7 +43,7 @@ Iniziare con la [gestione degli endpoint di Office 365](managing-office-365-endp
 
 I dati visualizzati in questa pagina sono tutti generati dai servizi Web basati su REST. Se si utilizza uno script o un dispositivo di rete per accedere a questi dati, è consigliabile andare direttamente al [servizio Web](office-365-ip-web-service.md) .
 
-I dati degli endpoint riportati di seguito elencano i requisiti di connessione del computer di un utente a Office 365. Non sono incluse le connessioni di rete da Microsoft a una rete cliente, a volte chiamate connessioni di rete ibride o in ingresso.
+Dati dell'endpoint riportati di seguito sono elencati i requisiti per la connettività dal computer di un utente a Office 365. Non include connessioni di rete da Microsoft in una rete di clienti, a volte denominate connessioni di rete ibride o in ingresso.
 
 Gli endpoint sono raggruppati in quattro aree del servizio. Le prime tre aree del servizio possono essere selezionate in modo indipendente per la connessione. La quarta area del servizio è una dipendenza comune (denominata Microsoft 365 Common e Office) e deve avere sempre la connessione di rete.
 

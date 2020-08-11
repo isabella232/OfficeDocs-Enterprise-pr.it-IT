@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
 description: Informazioni su Microsoft 365 Multi-Geo, come funziona Multi-Geo e quali posizioni geografiche sono disponibili per l'archiviazione dei dati.
-ms.openlocfilehash: 696a3c7f304a60229dc23ea6b69012c9ad5fbb78
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: f26980f09f8ec70436fc402ee1001045860caed2
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433787"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605358"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Piano per Microsoft 365 Multi-Geo
 

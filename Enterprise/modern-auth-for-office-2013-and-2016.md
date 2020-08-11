@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -22,17 +24,17 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come l'autenticazione moderna di Microsoft 365 funziona in modo diverso per le app client di Office 2013 e 2016.
-ms.openlocfilehash: 469dd665a3f427db3e2ae3731945e53b900f05e9
-ms.sourcegitcommit: 92bbb6d005d005952a9e2055661fcdccfdd0567b
+description: Informazioni su come le funzionalità di autenticazione moderna di Microsoft 365 funzionano in modo diverso per le app client di Office 2013 e 2016.
+ms.openlocfilehash: 20a6f495ac7e8bd6b2a918ca05b9edd074c7d61c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533491"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606912"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Funzionamento dell'autenticazione moderna per le app client di Office 2013, Office 2016 e Office 2019
 
-*Questo articolo si riferisce sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Leggere questo articolo per informazioni su come le app client di Office 2013, Office 2016 e Office 2019 utilizzano le funzionalità di autenticazione moderne in base alla configurazione dell'autenticazione sul tenant di Microsoft 365 per Exchange Online, SharePoint Online e Skype for business online.
 

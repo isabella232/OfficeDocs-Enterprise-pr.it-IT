@@ -14,17 +14,19 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Informazioni su come ottimizzare il peso delle pagine moderne del sito in SharePoint Online.
-ms.openlocfilehash: d571508648973a73efe1367c4d09b8cc6c8eb522
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: Informazioni su come utilizzare lo strumento page Diagnostics per ottimizzare il peso della pagina nelle pagine del sito di SharePoint Online moderne.
+ms.openlocfilehash: 0a658217b89dd50ce1c6e58024d4d78d19998612
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571109"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606892"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Ottimizzare il peso delle pagine moderne del sito in SharePoint Online
 

@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: In questo articolo viene descritto come ridurre il tempo di caricamento per le pagine di SharePoint Online utilizzando JavaScript per ritardare il caricamento delle immagini e anche in attesa di caricare JavaScript non essenziale fino al caricamento della pagina.
-ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: Informazioni su come ridurre il tempo di caricamento per le pagine di SharePoint Online utilizzando JavaScript per ritardare il caricamento di immagini e JavaScript non essenziali.
+ms.openlocfilehash: 72eabed2dd940bb07ece44bbc0dbc9d72e426a67
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009351"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605752"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Ritardo caricamento immagini e JavaScript in SharePoint Online
 
@@ -34,7 +36,7 @@ Le immagini possono influenzare negativamente la velocità di caricamento della 
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Migliorare i tempi di caricamento delle immagini nelle pagine caricando le pagine di SharePoint Online tramite JavaScript
 
-È possibile utilizzare JavaScript per impedire a un browser Web di pre-recuperare le immagini. Ciò consente di velocizzare il rendering complessivo del documento. A tale scopo, è necessario rimuovere il valore dell'attributo src dal \<tag\> IMG e sostituirlo con il percorso di un file in un attributo data, ad esempio data-src. Ad esempio:
+È possibile utilizzare JavaScript per impedire a un browser Web di pre-recuperare le immagini. Ciò consente di velocizzare il rendering complessivo del documento. Per eseguire questa operazione, è necessario rimuovere il valore dell'attributo src dal \<img\> tag e sostituirlo con il percorso di un file in un attributo dati, ad esempio: data-src. Ad esempio:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -86,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-Per SharePoint Online, è necessario collegare la funzione seguente all'evento Scroll sul tag div \<\> #s4-Workspace. Questo perché gli eventi della finestra vengono ignorati per garantire che la barra multifunzione rimanga collegata alla parte superiore della pagina.
+Per SharePoint Online, è necessario collegare la funzione seguente all'evento Scroll sul tag #s4-Workspace \<div\> . Questo perché gli eventi della finestra vengono ignorati per garantire che la barra multifunzione rimanga collegata alla parte superiore della pagina.
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -97,7 +99,7 @@ $('#s4-workspace').on("scroll", function () {
 
 Salvare il file di testo come un file JavaScript con estensione js, ad esempio delayLoadImages.js.
   
-Dopo aver completato la scrittura di delayLoadImages. js, è possibile aggiungere il contenuto del file a una pagina master in SharePoint Online. È possibile farlo aggiungendo un link di script all'intestazione nella pagina master. Una volta che si trova in una pagina master, il codice JavaScript verrà applicato a tutte le pagine del sito di SharePoint online in cui viene utilizzato il layout di pagina master. In alternativa, se si prevede di utilizzarlo solo in una pagina del sito, è possibile utilizzare l'editor di script Web Part per incorporare JavaScript nella pagina. Per ulteriori informazioni, vedere i seguenti argomenti:
+Dopo aver completato la scrittura delayLoadImages.js, è possibile aggiungere il contenuto del file a una pagina master in SharePoint Online. È possibile farlo aggiungendo un link di script all'intestazione nella pagina master. Una volta che si trova in una pagina master, il codice JavaScript verrà applicato a tutte le pagine del sito di SharePoint online in cui viene utilizzato il layout di pagina master. In alternativa, se si prevede di utilizzarlo solo in una pagina del sito, è possibile utilizzare l'editor di script Web Part per incorporare JavaScript nella pagina. Per ulteriori informazioni, vedere i seguenti argomenti:
   
 - [Procedura: applicazione di una pagina master a un sito in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
 

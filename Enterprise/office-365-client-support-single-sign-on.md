@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Supporto delle app client Microsoft 365 per Single Sign-on.
-ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In questo articolo vengono fornite informazioni sulle piattaforme, i client e i moduli di PowerShell che supportano il servizio Single Sign-on per Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d0f757c28695c46e6a960828914fff34c7fab5e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998514"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605648"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Supporto delle app client Microsoft 365-Single Sign-on
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Single Sign-on (SSO) aggiunge la sicurezza e la convenienza quando gli utenti eseguono l'accesso alle applicazioni in Azure Active Directory (Azure AD). Con Single Sign-on, gli utenti accedono una sola volta con un account per accedere ai dispositivi associati a un dominio, alle risorse aziendali, alle applicazioni software come servizio (SaaS) e alle applicazioni Web.
 

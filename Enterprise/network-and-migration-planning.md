@@ -13,22 +13,24 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: Contiene collegamenti a informazioni sulla pianificazione e il testing della rete e sulla migrazione a Office 365.
-ms.openlocfilehash: 530e07aeb2f3420f0c752f2b254913a42c73f8ee
-ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
+description: In questo articolo sono inclusi collegamenti a informazioni sulla pianificazione, il testing e la migrazione di rete a Office 365.
+ms.openlocfilehash: 56a4d0179f373fd846d2a746d081829a04e94088
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117268"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606752"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Pianificazione della rete e della migrazione per Office 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 In questo articolo sono inclusi collegamenti a informazioni sulla pianificazione e il testing della rete e sulla migrazione a Office 365.
   
@@ -73,7 +75,7 @@ Per ulteriori informazioni sul miglioramento dell'esperienza di Office 365, è c
   
 1. Si desidera iniziare ad aiutare gli utenti subito? Vedere [procedure consigliate per l'utilizzo di office 365 in una rete lenta](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) per suggerimenti sull'utilizzo di Office 365, tra cui SharePoint Online, Exchange Online e Lync Online, quando la rete non è in fase di collaborazione. In questo articolo vengono forniti collegamenti a carichi di contenuto su TechNet e Support.office.com per ottimizzare l'esperienza di Office 365 e vengono fornite informazioni su come personalizzare le pagine Web e su come impostare le impostazioni di Internet Explorer per la migliore esperienza di Office 365. 
     
-2. Leggere i [principi di connettività di rete di office 365](https://aka.ms/o365networkingprinciples) per comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e ottenere le migliori prestazioni possibili. In questo articolo vengono fornite informazioni utili per comprendere le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365. 
+2. Leggere i [principi di connettività di rete di office 365](https://aka.ms/o365networkingprinciples) per comprendere i principi di connettività per la gestione sicura del traffico di Office 365 e ottenere le migliori prestazioni possibili. Questo articolo spiega come comprendere le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365. 
     
 3. Migliorare le prestazioni della migrazione della posta gestendo accuratamente la pianificazione per gli aggiornamenti di Windows. È possibile aggiornare i computer client in batch e assicurarsi che tutti i computer client vengano aggiornati prima di eseguire la migrazione a Office 365 per regolare l'utilizzo della larghezza di banda della rete. Per ulteriori informazioni, vedere [aggiornamento e configurazione manuale dei desktop per Office 365 per gli aggiornamenti più recenti](https://support.microsoft.com/gp/office-2013-365-update).
     

@@ -7,18 +7,18 @@ manager: arnek
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Informazioni su come configurare la ricerca in un ambiente multi-geografico.
-ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: Informazioni su come configurare la ricerca in un ambiente multi-geografico. Solo alcuni client, come OneDrive for business, possono restituire risultati in un ambiente multi-geografico.
+ms.openlocfilehash: 94d8b9de0fc7eeb6b7fda20275686de62eaa9346
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433567"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605772"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurare la ricerca di Microsoft 365 Multi-Geo
 
@@ -69,7 +69,7 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Funzionalità</strong></th>
+<th align="left"><strong>Caratteristica</strong></th>
 <th align="left"><strong>Come funziona</strong></th>
 <th align="left"><strong>Soluzione</strong></th>
 </tr>
@@ -88,7 +88,7 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La ricerca multi-geografica non supporta il bucket di criteri di affinamento numerici.</td>
-<td align="left">Utilizzare il <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "Discretize"</a> per criteri di affinamento numerici.</td>
+<td align="left">Utilizzare il <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "discretizzare"</a> per i perfezionamenti numerici.</td>
 </tr>
 <tr class="even">
 <td align="left">ID documenti</td>

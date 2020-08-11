@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Definisce e spiega l'immutabilità dei dati in Microsoft 365.
-ms.openlocfilehash: 8648060f3036d2f3c81704cf53a817910607263a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Informazioni su come Microsoft 365 conserva i dati in un modulo individuabile per soddisfare la conformità normativa, i requisiti di governance interna e i rischi per controversia legale.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dcc997cf157df08441bf1f6e825d0a5a468edbd1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998460"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605638"
 ---
 # <a name="immutability-in-microsoft-365"></a>Immutabilità in Microsoft 365
 
@@ -28,7 +29,7 @@ La conformità alle normative, i requisiti di governance interna o i rischi per 
 
 I metodi tradizionali per l'immutabilità in genere hanno funzionato spostando i messaggi di posta elettronica in un percorso di archiviazione separato e di sola lettura. Sebbene tali sistemi servano allo scopo di preservare gli elementi delle cassette postali per l'individuazione, spesso influiscono sull'esperienza degli utenti rimuovendo gli elementi conservati dal flusso di lavoro giornaliero consueto. Per i professionisti IT, questo approccio immutabilità richiede la distribuzione e la manutenzione continua di un'infrastruttura di server e di archiviazione distinta. L'individuazione viene eseguita con gli strumenti esterni al sistema di posta elettronica e include i costi di distribuzione e manutenzione associati.
 
-Tramite le caratteristiche dei criteri di conservazione e conservazione sul posto dell'archiviazione in Microsoft 365 e i relativi servizi, è possibile conservare e mantenere numerose classi di dati in ingresso, interno e in uscita. Ciò include:
+Tramite le caratteristiche dei criteri di conservazione e conservazione sul posto dell'archiviazione in Microsoft 365 e i relativi servizi, è possibile conservare e mantenere numerose classi di dati in ingresso, interno e in uscita. Questo include:
 
 - Comunicazioni di posta elettronica in ingresso e in uscita
 - Libri e record contenuti in un modulo di posta elettronica o in documenti condivisi online

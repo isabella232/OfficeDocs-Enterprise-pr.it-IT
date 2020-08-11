@@ -11,23 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365 è stato creato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Man mano che il servizio si evolve, la sicurezza, le prestazioni e l'affidabilità di Microsoft 365 sono state migliorate in base ai clienti che utilizzano Internet per stabilire una connessione al servizio.
-ms.openlocfilehash: 0ccf729dc8eddfd99ffc0b70c8ab56e31451be88
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: eae7e56c13ab0d0799226c834dd7d9092c8f9551
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997960"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605802"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Valutazione della connettività di rete di Microsoft 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Microsoft 365 è stato creato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Man mano che il servizio si evolve, la sicurezza, le prestazioni e l'affidabilità di Microsoft 365 sono state migliorate in base ai clienti che utilizzano Internet per stabilire una connessione al servizio.
   
@@ -107,9 +109,9 @@ L'applicazione scaricabile test avanzati fornisce le seguenti informazioni aggiu
   
 Ecco un breve collegamento che è possibile utilizzare per tornare: [ https://aka.ms/o365networkconnectivity .](https://aka.ms/o365networkconnectivity)
   
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
-[Panoramica della connettività di rete Microsoft 365](office-365-networking-overview.md)
+[Informazioni generali sulla connettività di rete di Microsoft 365](office-365-networking-overview.md)
 
 [Principi della connettività di rete di Microsoft 365](https://aka.ms/o365networkingprinciples)
 

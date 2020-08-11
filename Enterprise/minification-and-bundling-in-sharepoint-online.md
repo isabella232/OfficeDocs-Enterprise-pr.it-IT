@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: In questo articolo viene descritto come utilizzare minimizzazione e le tecniche di raggruppamento con Web Essentials per ridurre il numero di richieste HTTP e per ridurre il tempo necessario per il caricamento delle pagine in SharePoint Online.
-ms.openlocfilehash: 44f9e6151c22c3715b56a164bd0c9cacedcf2580
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Informazioni su come utilizzare minimizzazione e il raggruppamento di tecniche con Web Essentials per ridurre le richieste HTTP e il tempo necessario per il caricamento delle pagine in SharePoint Online.
+ms.openlocfilehash: 3b840b7da953103448515c51f79ba15cb356ae38
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004771"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605658"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimizzazione e creazione di bundle in SharePoint Online
 
@@ -39,7 +41,7 @@ Per i file JavaScript e CSS, è anche possibile utilizzare un approccio denomina
 È possibile utilizzare software di terze parti, ad esempio Web Essentials, per raggruppare i file CSS e JavaScript.
   
 > [!IMPORTANT]
-> Web Essentials è un progetto di terze parti, open source e basato sulla community. Il software è un'estensione di Visual Studio 2012 e Visual Studio 2013 e non è supportato da Microsoft. Per scaricare Web Essentials, visitare il sito Web [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)all'indirizzo. 
+> Web Essentials è un progetto di terze parti, open source e basato sulla community. Il software è un'estensione di Visual Studio 2012 e Visual Studio 2013 e non è supportato da Microsoft. Per scaricare Web Essentials, visitare il sito Web all'indirizzo [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) . 
   
 Web Essentials offre due forme di creazione di bundle:
   

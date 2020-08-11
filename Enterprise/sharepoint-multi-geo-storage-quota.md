@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Informazioni sulle Quote di archiviazione di SharePoint in ambienti multi-geo.
-ms.openlocfilehash: f0463797dd3471f349e60d8f029b7ae2fa4b65a6
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Informazioni sulle quote di archiviazione di SharePoint in ambienti multi-Geo e sul modo in cui le quote possono essere gestite dall'amministratore di SharePoint Online.
+ms.openlocfilehash: 6198b5c6c22b2eefcf65224bdfbd92bccd3f966d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433737"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606142"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Quote di archiviazione di SharePoint in ambienti multi-geo
 

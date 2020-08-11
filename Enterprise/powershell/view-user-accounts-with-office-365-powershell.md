@@ -17,18 +17,19 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: 'Riepilogo: visualizzare, elencare o visualizzare gli account utente di Microsoft 365 in vari modi con PowerShell.'
-ms.openlocfilehash: a67457169328828b2b471dd5db6a53bab3bbacda
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Informazioni su come visualizzare, elencare o visualizzare gli account utente di Microsoft 365 in modi diversi con PowerShell.
+ms.openlocfilehash: 56da6bfc7b467b6a85a4bd8c84abd4c2ae05913f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230202"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605297"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Visualizzare gli account utente di Microsoft 365 con PowerShell
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Anche se è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per visualizzare gli account per il tenant di Microsoft 365, è anche possibile utilizzare PowerShell per Microsoft 365 e fare alcuni elementi che l'interfaccia di amministrazione non è in grado di eseguire.
   

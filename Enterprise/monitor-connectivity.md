@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
-description: Dopo aver distribuito Microsoft 365, è possibile mantenere la connettività Microsoft 365 utilizzando alcuni degli strumenti e delle tecniche seguenti. È consigliabile comprendere le linee guida per l'integrità e la continuità dei servizi ufficiali, nonché le procedure consigliate per l'utilizzo di Microsoft 365 su una rete lenta.
-ms.openlocfilehash: aa47ff76f70e48285c6ca5f21ffdf30f1db52521
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: In questo articolo vengono fornite informazioni sugli strumenti e sulle tecniche che è possibile utilizzare per monitorare e gestire la connettività Microsoft 365.
+ms.openlocfilehash: 791352910cf82bf4d43543166cb4b1e974f9a238
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571009"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606862"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Monitorare la connettività di Microsoft 365
 
@@ -41,7 +43,7 @@ Dopo aver distribuito Microsoft 365, è possibile mantenere la connettività Mic
 
 Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Configurare le applicazioni e i servizi Microsoft 365 Enterprise](configure-services-and-applications.md)
   

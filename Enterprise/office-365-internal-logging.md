@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Una spiegazione di come funziona la registrazione interna per Microsoft 365 Engineering.
-ms.openlocfilehash: 09e0d2910a71cbcae9db0b75193cc5d672914737
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: In questo articolo, trovare una spiegazione di come funziona la registrazione interna per i team di ingegneri di Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e7c5c32d1ea0704f8f56a4af6e6dd85f73f9c2df
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774921"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606552"
 ---
 # <a name="internal-logging-for-microsoft-365-engineering"></a>Registrazione interna per Microsoft 365 Engineering
 

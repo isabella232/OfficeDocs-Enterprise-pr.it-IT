@@ -1,5 +1,5 @@
 ---
-title: Gestire i tenant Microsoft 365 con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegate Access Permissions)
+title: Gestire gli inquilini Microsoft 365 con Windows PowerShell per DAP Partners
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 per gestire il locazione del cliente.'
-ms.openlocfilehash: 31ce5b9a7bdfa50234c76be65eaeb99d6d199136
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In questo articolo vengono fornite informazioni su come utilizzare PowerShell per Microsoft 365 per gestire le locazione del cliente.
+ms.openlocfilehash: b1e0459b906bd0a06758147923dff0dcc0af1b3e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230592"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605942"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestire i tenant Microsoft 365 con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegate Access Permissions)
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Windows PowerShell consente ai partner di syndication e Cloud Solution Provider (CSP) di amministrare e segnalare facilmente le impostazioni di locazione dei clienti che non sono disponibili nell'interfaccia di amministrazione di Microsoft 365. Tenere presente che per l'account Administrator del partner sono necessarie le autorizzazioni di amministrazione per conto di (AOBO) per la connessione al relativo cliente locazione.
   

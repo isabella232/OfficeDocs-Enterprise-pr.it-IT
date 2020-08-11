@@ -11,23 +11,23 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 per assegnare impostazioni di comunicazione per utente con criteri di Skype for business online.'
-ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: a5850c24f991161ec1de817d5b3f5037e9526767
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229843"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606462"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Assegnare criteri Skype for business online per utente con PowerShell per Microsoft 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 L'utilizzo di PowerShell per Microsoft 365 rappresenta un modo efficace per assegnare le impostazioni di comunicazione per utente con i criteri di Skype for business online.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="prepare-to-run-the-powershell-commands"></a>Preparare l'esecuzione dei comandi di PowerShell
 
 Utilizzare queste istruzioni per ottenere la configurazione che consenta di eseguire i comandi (ignorare i passaggi già completati):
   
@@ -138,7 +138,7 @@ In questo modo si troveranno 500 utenti alla volta che non dispongono di un crit
   
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire Skype for business online con PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
+[Gestire Skype for Business Online con PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   
 [Gestire Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   

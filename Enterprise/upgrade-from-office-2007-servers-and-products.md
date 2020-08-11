@@ -22,17 +22,18 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: È stato completato il supporto per i server e le applicazioni client di Office 2007 e non sono disponibili contratti di supporto personalizzato. Utilizzare questo articolo per iniziare a pianificare l'aggiornamento.
-ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+description: In questo articolo sono disponibili risorse utili per l'aggiornamento da server e client di Office 2007, in quanto il supporto per Office 2007 è terminato.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 21147ccd027ba0492ced6078f91932acc3bb958c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906229"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605872"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Risorse utili per l'aggiornamento da server e client di Office 2007
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Se si utilizzano i prodotti e i servizi di Office 2007, il supporto per queste applicazioni è terminato. Durante la pianificazione dell'aggiornamento, questo è il momento ideale per passare al cloud Microsoft, a partire da Microsoft 365. Utilizzare questo articolo come punto di partenza per esaminare le opzioni e pianificare l'aggiornamento.
       
@@ -57,9 +58,9 @@ Se si utilizzano i prodotti e le applicazioni di Office 2007 a casa, vedere [que
      
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Video: che cos'è Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Video: Che cos'è Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Politica relativa al ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Criteri per il ciclo di vita di Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
 [Pianificare l'aggiornamento di client e server di Office 2007 o Office 2010](plan-upgrade-previous-versions-office.md)
   

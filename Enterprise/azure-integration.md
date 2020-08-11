@@ -13,24 +13,26 @@ ms.collection:
 - M365-identity-device-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
-description: La sottoscrizione Microsoft 365 include una sottoscrizione ad Azure AD. Integrazione di Microsoft 365 con Azure AD se si desidera sincronizzare la password o l'accesso Single Sign-on con l'ambiente locale.
-ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
-ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
+description: Integrazione di Microsoft 365 con Azure AD se si desidera sincronizzare la password o l'accesso Single Sign-on con l'ambiente locale.
+ms.openlocfilehash: 64fcf25c75e636bebf78e9367f4cc68b367548f7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44842058"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606102"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Integrazione di Azure con Microsoft 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Microsoft 365 utilizza Azure Active Directory (Azure AD) per gestire le identità degli utenti dietro le quinte. La sottoscrizione Microsoft 365 include una sottoscrizione gratuita ad Azure AD in modo che sia possibile integrare Microsoft 365 con Azure AD se si desidera sincronizzare le password o configurare Single Sign-on con l'ambiente locale. È inoltre possibile acquistare funzionalità avanzate per gestire al meglio gli account.
   

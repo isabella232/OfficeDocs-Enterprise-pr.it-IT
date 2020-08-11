@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Un breve riepilogo dei cmdlet utilizzati per le migrazioni delle cassette postali di Microsoft 365.
-ms.openlocfilehash: 4c53737f4047df0751c4216b57d772bd6fe8acad
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: In questo articolo è incluso un breve riepilogo delle migrazioni delle cassette postali di Microsoft 365 e un elenco dei cmdlet utilizzati per le migrazioni.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c28ab1702e6a81826ce77bf0b4ef30e4d24832b4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774901"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605568"
 ---
 # <a name="microsoft-365-mailbox-migrations"></a>Migrazioni delle cassette postali di Microsoft 365
 

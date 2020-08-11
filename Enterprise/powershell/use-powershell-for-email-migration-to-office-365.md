@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: 'Riepilogo: informazioni su come eseguire la migrazione della posta elettronica a Microsoft 365 utilizzando Windows PowerShell.'
-ms.openlocfilehash: e3b16f43161d87d46306e3f9420c84037be24ba8
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In questo articolo vengono fornite informazioni su come eseguire la migrazione della posta elettronica dal sistema esistente a Microsoft 365 tramite PowerShell.
+ms.openlocfilehash: 6234da89e0c07b6a1342fdabf8e629e847a10aae
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230222"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606232"
 ---
 # <a name="use-powershell-for-email-migration-to-microsoft-365"></a>Usare PowerShell per la migrazione della posta elettronica a Microsoft 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Quando gli amministratori configurano per la prima volta Microsoft 365, molti di essi migrano la posta elettronica dai sistemi esistenti. È possibile eseguire questa operazione anche utilizzando l'interfaccia di amministrazione di Microsoft 365. È inoltre possibile utilizzare Windows PowerShell per eseguire la migrazione della posta elettronica.
   
@@ -37,7 +37,7 @@ Utilizzare Windows PowerShell per eseguire la migrazione della posta elettronica
     
 - [Utilizzare PowerShell per eseguire una migrazione a fasi a Microsoft 365](use-powershell-to-perform-a-staged-migration-to-office-365.md)
     
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Gestire Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   

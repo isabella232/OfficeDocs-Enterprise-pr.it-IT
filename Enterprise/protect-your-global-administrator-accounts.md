@@ -18,17 +18,18 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Protezione dell'accesso da parte dell'amministratore globale all'abbonamento a Microsoft 365.
-ms.openlocfilehash: fdab22944902b554bc7fa295d189cfd2899933ef
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In questo articolo vengono fornite informazioni sulla protezione dell'accesso di amministratore globale all'abbonamento a Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5184b39a48348b07f0a16ce3db2aeaccfe0b2d21
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229762"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606192"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Microsoft 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Le violazioni della sicurezza di un abbonamento a Microsoft 365, incluse le informazioni raccolte e gli attacchi di phishing, vengono in genere eseguite compromettendo le credenziali di un account di amministratore globale di Microsoft 365. La sicurezza nel cloud è una partnership tra l'utente e Microsoft:
   

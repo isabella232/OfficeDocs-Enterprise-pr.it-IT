@@ -14,23 +14,25 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-mar2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: Informazioni su come viene gestita l'identità dell'utente in Microsoft 365.
-ms.openlocfilehash: 418d5841a55e6a0da2ccb098c6b41e5a247c9552
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Informazioni su come gestire il servizio di identità degli utenti di Azure AD in Microsoft 365 utilizzando modelli di identità solo cloud o ibridi.
+ms.openlocfilehash: fee2f0e9c8a2ee1216fb2a37e6d517348111b064
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433617"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605832"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 modelli di identità e Azure Active Directory
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Microsoft 365 utilizza Azure Active Directory (Azure AD), un servizio di autenticazione e identità utente basato sul cloud incluso nell'abbonamento a Microsoft 365, per gestire le identità e l'autenticazione di Microsoft 365. Ottenere l'infrastruttura di identità configurata in modo corretto è fondamentale per la gestione dell'accesso utente e delle autorizzazioni di Microsoft 365 per l'organizzazione.
 

@@ -14,15 +14,16 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Una spiegazione delle funzionalità di Reporting all'interno di Microsoft 365.
-ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Informazioni su varie funzionalità di Reporting all'interno di Microsoft 365, tra cui Azure Active Directory ed Exchange Online.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1e0039f354516f85362a8936d10d9fca2a7e3f6f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997786"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606312"
 ---
-# <a name="microsoft-365-reporting-features"></a>Funzionalità di creazione di report di Microsoft 365 
+# <a name="microsoft-365-reporting-features"></a>Funzionalità di creazione di report di Microsoft 365
 
 Le funzionalità di Reporting in Microsoft 365 offrono diversi rapporti di controllo per Azure Active Directory (Azure AD), Exchange Online, gestione dei dispositivi, revisione di supervisione e prevenzione della perdita di dati (DLP). Questi rapporti sono diversi e separati dai rapporti attività di Microsoft 365.
 

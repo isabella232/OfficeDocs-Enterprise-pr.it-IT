@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Sintesi del modo in cui Microsoft impone l'isolamento del tenant per Microsoft 365.
-ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Questo articolo contiene un riepilogo del modo in cui Microsoft impone l'isolamento dei tenant nei servizi cloud come Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 531b5023af49c776cccfef06dee5bff4b303beff
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998645"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606542"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Isolamento tenant in Microsoft 365
 
@@ -30,8 +31,8 @@ In base ai significativi investimenti e all'esperienza ottenuti dall' [elaborazi
 
 I due obiettivi principali per mantenere l'isolamento del tenant in un ambiente multi-tenant sono:
 
-1.  Impedire la fuoriuscita o l'accesso non autorizzato al contenuto dei clienti tra i tenant; e
-2.  Impedire alle azioni di un tenant di influenzare negativamente il servizio per un altro tenant
+1.    Impedire la fuoriuscita o l'accesso non autorizzato al contenuto dei clienti tra i tenant; e
+2.    Impedire alle azioni di un tenant di influenzare negativamente il servizio per un altro tenant
 
 Sono state implementate più forme di protezione in Microsoft 365 per impedire ai clienti di compromettere i servizi o le applicazioni di Microsoft 365 o di ottenere un accesso non autorizzato alle informazioni di altri tenant o del sistema Microsoft 365 stesso, tra cui:
 
@@ -46,7 +47,7 @@ Insieme, le protezioni elencate di seguito offrono robusti controlli di isolamen
 
 - [Isolamento e controllo di accesso in Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 - [Isolamento del tenant in Office Graph e Delve](office-365-isolation-in-graph-and-delve.md)
-- [Isolamento tenant in Microsoft 365 search](office-365-isolation-in-office-365-search.md)
+- [Isolamento del tenant per la funzionalità di ricerca di Microsoft 365](office-365-isolation-in-office-365-search.md)
 - [Isolamento del tenant in Office 365 Video](office-365-isolation-in-office-365-video.md)
 - [Limiti della risorsa](office-365-resource-limits.md)
 - [Monitoraggio e verifica dei limiti del tenant](office-365-monitoring-and-testing.md)

@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 per gestire gli utenti, i gruppi e i siti di SharePoint Online.'
-ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
-ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
+description: In questo articolo vengono fornite informazioni su come utilizzare PowerShell per Microsoft 365 per gestire gli utenti, i gruppi e i siti di SharePoint Online.
+ms.openlocfilehash: 96e9040542ac9a3351cf8b8f3ab314910dc66a3b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "46542817"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605892"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Gestire gli utenti e i gruppi di SharePoint Online con PowerShell
 
-*Questo articolo si riferisce sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 Se si è un amministratore di SharePoint Online che lavora con elenchi di grandi dimensioni degli account utente o dei gruppi e che si desidera gestire in modo più semplice, è possibile utilizzare PowerShell per Microsoft 365. 
 

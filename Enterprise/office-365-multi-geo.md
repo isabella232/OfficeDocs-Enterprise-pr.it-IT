@@ -7,18 +7,18 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Con Microsoft 365 Multi-Geo si può espandere la propria presenza Microsoft 365 a più paesi/aree geografiche.
-ms.openlocfilehash: 01683caa3dfebc8331bb0b4b6ba239be2e0d9aaa
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: In questo articolo vengono fornite informazioni su come espandere la presenza di Microsoft 365 a più aree geografiche con Microsoft 365 multi-Geo.
+ms.openlocfilehash: 74fdf77ed28ea443cdb14bd37c2735b3a221e14d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433807"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605508"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 

@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: "Nuovo datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescente domanda e la crescita dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. I dati dei clienti principali sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle condizioni dei servizi online Microsoft: il contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, le voci del calendario e il contenuto degli allegati di posta elettronica) e il contenuto del sito di SharePoint Online e i file archiviati all'interno del sito e i file caricati in OneDrive"
-ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+description: Informazioni su New Office 365 datacenter GEOS e su come utilizzare l'opzione di residenza dei dati per richiedere lo spostamento dei dati di base in un nuovo geografico.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d612c77eec4cb14e9522f3003c557e7e5bffd900
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547724"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606822"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Spostamento dei dati di base in un nuovo datacenter di Microsoft 365 GEOS
 
@@ -40,7 +41,7 @@ I clienti esistenti che dispongono di dati di base dei clienti archiviati in un 
 |**India**| Asia/Pacifico | India | Ottobre 2015 |
 |**Canada**| Nord America | Canada | Maggio 2016 |
 |**Regno Unito**| Europa | Regno Unito | Settembre 2016 |
-|**Corea del Sud**| Asia/Pacifico | Sud Corea | Aprile 2017 |
+|**Corea del Sud**| Asia/Pacifico | Corea del Sud | Aprile 2017 |
 |**Francia**| Europa | Francia | Marzo 2018 |
 |**Emirati Arabi Uniti**| Europa | Emirati Arabi Uniti | Giugno 2019 |
 |**Sudafrica**| Europa | Sudafrica | Luglio 2019 |
