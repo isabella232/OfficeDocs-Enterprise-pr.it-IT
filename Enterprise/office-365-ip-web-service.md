@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: pandrew
 search.appverid:
 - MET150
 - MOE150
 - BCS160
-description: Servizio Web per URL e indirizzi IP di Office 365 consentono di identificare e distinguere il traffico di rete di Office 365, semplificando la valutazione, la configurazione e il miglioramento delle modifiche apportate.
-ms.openlocfilehash: 7a1d882b6bc5e34e3d59cf4bade30a58a1c76d6f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Informazioni su come usare l'indirizzo IP e il servizio Web URL di Office 365 per identificare e distinguere meglio il traffico di rete di Office 365.
+ms.openlocfilehash: a51ee69c5d1364e92b2f8a1f4c06059023084ef5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843599"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605628"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Servizio Web per URL e indirizzi IP di Office 365
 
@@ -61,7 +63,7 @@ Per ulteriori informazioni, vedere:
 Questi parametri sono comuni a tutti i metodi di servizio Web:
 
 - **formato = < JSON | CSV >** — Per impostazione predefinita il formato dei dati restituiti è JSON. Questo parametro facoltativo consente di restituire i dati con valori delimitati da virgole (CSV).
-- **ClientRequestId =\<guid >** — GUID necessario creato per l'associazione di client. Generare un GUID univoco per ogni computer che chiama il servizio Web, ossia gli script inclusi in questa pagina generano un GUID. Non usare i GUID illustrati negli esempi seguenti perché potrebbero essere bloccati dal servizio web in futuro. Il formato GUID è _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, dove x rappresenta un numero esadecimale.
+- **ClientRequestId =\<guid>** — GUID necessario creato per l'associazione di client. Generare un GUID univoco per ogni computer che chiama il servizio Web, ossia gli script inclusi in questa pagina generano un GUID. Non usare i GUID illustrati negli esempi seguenti perché potrebbero essere bloccati dal servizio web in futuro. Il formato GUID è _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, dove x rappresenta un numero esadecimale.
 
   Per generare un GUID, è possibile usare il comando di PowerShell [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) oppure usare un servizio online come [generatore di GUID online](https://www.guidgenerator.com/).
 
@@ -247,7 +249,7 @@ Le modifiche più importanti ai dati degli endpoint sono nuovi URL e indirizzi I
 
 Il parametro obbligatorio del metodo Web per le modifiche è il seguente:
 
-- **Versione =\<AAAAMMGGNN>** - Parametro di route URL obbligatorio. Questo valore deve corrispondere alla versione attualmente implementata. Il servizio Web restituisce le modifiche apportate dopo tale versione. Il formato è _AAAAMMGGNN_, dove _NN_ è un numero naturale incrementabile se è necessario pubblicare più versioni nello stesso giorno, con _00_ che rappresenta il primo aggiornamento del giorno. Il servizio Web richiede che il parametro della _versione_ contenga esattamente 10 cifre.
+- **Versione =\<YYYYMMDDNN>** - Parametro obbligatorio di route URL. Questo valore deve corrispondere alla versione attualmente implementata. Il servizio Web restituisce le modifiche apportate dopo tale versione. Il formato è _AAAAMMGGNN_, dove _NN_ è un numero naturale incrementabile se è necessario pubblicare più versioni nello stesso giorno, con _00_ che rappresenta il primo aggiornamento del giorno. Il servizio Web richiede che il parametro della _versione_ contenga esattamente 10 cifre.
 
 Il metodo Web per le modifiche ha frequenza limitata, allo stesso modo del metodo Web per gli endpoint. Se viene visualizzato il codice di risposta 429 HTTP, attendere un'ora prima di ripetere la richiesta o generare un nuovo GUID per la richiesta.
 
