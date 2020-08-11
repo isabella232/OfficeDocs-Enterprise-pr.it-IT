@@ -17,71 +17,72 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 - PowerShell
+- seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: Viene illustrato come utilizzare PowerShell per visualizzare gli account utente di Microsoft 365 con licenza e senza licenza.
-ms.openlocfilehash: 02b1f76bab0e64e4e7e72f5e5556f5047d956d11
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In questo articolo viene illustrato come utilizzare PowerShell per visualizzare gli account utente di Microsoft 365 con licenza e senza licenza.
+ms.openlocfilehash: 470c4dff2b425ba570926002c1efd68310e37d71
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230252"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605288"
 ---
-# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a><span data-ttu-id="5f38d-103">Visualizzare gli utenti di Microsoft 365 con licenza e senza licenza con PowerShell</span><span class="sxs-lookup"><span data-stu-id="5f38d-103">View licensed and unlicensed Microsoft 365 users with PowerShell</span></span>
+# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a><span data-ttu-id="117dd-103">Visualizzare gli utenti di Microsoft 365 con licenza e senza licenza con PowerShell</span><span class="sxs-lookup"><span data-stu-id="117dd-103">View licensed and unlicensed Microsoft 365 users with PowerShell</span></span>
 
-<span data-ttu-id="5f38d-104">*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="5f38d-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="117dd-104">*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="117dd-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="5f38d-105">Gli account utente nell'organizzazione di Microsoft 365 potrebbero avere alcune, tutte o nessuna delle licenze disponibili assegnate ai piani di gestione delle licenze disponibili nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="5f38d-105">User accounts in your Microsoft 365 organization may have some, all, or none of the available licenses assigned to them from the licensing plans that are available in your organization.</span></span> <span data-ttu-id="5f38d-106">È possibile utilizzare PowerShell per Microsoft 365 per trovare rapidamente gli utenti con licenza e senza licenza nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="5f38d-106">You can use PowerShell for Microsoft 365 to quickly find the licensed and unlicensed users in your organization.</span></span>
+<span data-ttu-id="117dd-105">Gli account utente nell'organizzazione di Microsoft 365 potrebbero avere alcune, tutte o nessuna delle licenze disponibili assegnate ai piani di gestione delle licenze disponibili nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="117dd-105">User accounts in your Microsoft 365 organization may have some, all, or none of the available licenses assigned to them from the licensing plans that are available in your organization.</span></span> <span data-ttu-id="117dd-106">È possibile utilizzare PowerShell per Microsoft 365 per trovare rapidamente gli utenti con licenza e senza licenza nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="117dd-106">You can use PowerShell for Microsoft 365 to quickly find the licensed and unlicensed users in your organization.</span></span>
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="5f38d-107">Usare il modulo di Azure Active Directory PowerShell per Graph</span><span class="sxs-lookup"><span data-stu-id="5f38d-107">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="117dd-107">Usare il modulo di Azure Active Directory PowerShell per Graph</span><span class="sxs-lookup"><span data-stu-id="117dd-107">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="5f38d-108">Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="5f38d-108">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="117dd-108">Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="117dd-108">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
  
-<span data-ttu-id="5f38d-109">Per visualizzare l'elenco di tutti gli account utente all'interno dell'organizzazione a cui non è stato assegnato alcun piano di gestione delle licenze (utenti senza licenza), eseguire il comando riportato di seguito:</span><span class="sxs-lookup"><span data-stu-id="5f38d-109">To view the list of all user accounts in your organization that have NOT been assigned any of your licensing plans (unlicensed users), run the following command:</span></span>
+<span data-ttu-id="117dd-109">Per visualizzare l'elenco di tutti gli account utente all'interno dell'organizzazione a cui non è stato assegnato alcun piano di gestione delle licenze (utenti senza licenza), eseguire il comando riportato di seguito:</span><span class="sxs-lookup"><span data-stu-id="117dd-109">To view the list of all user accounts in your organization that have NOT been assigned any of your licensing plans (unlicensed users), run the following command:</span></span>
   
 ```powershell
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-<span data-ttu-id="5f38d-110">Per visualizzare l'elenco di tutti gli account utente all'interno dell'organizzazione a cui sono stati assegnati i piani di gestione delle licenze (utenti con licenza), eseguire il comando riportato di seguito:</span><span class="sxs-lookup"><span data-stu-id="5f38d-110">To view the list of all user accounts in your organization that have been assigned any of your licensing plans (licensed users), run the following command:</span></span>
+<span data-ttu-id="117dd-110">Per visualizzare l'elenco di tutti gli account utente all'interno dell'organizzazione a cui sono stati assegnati i piani di gestione delle licenze (utenti con licenza), eseguire il comando riportato di seguito:</span><span class="sxs-lookup"><span data-stu-id="117dd-110">To view the list of all user accounts in your organization that have been assigned any of your licensing plans (licensed users), run the following command:</span></span>
   
 ```powershell
 Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 >[!Note]
-><span data-ttu-id="5f38d-111">Per elencare tutti gli utenti dell'abbonamento, utilizzare il `Get-AzureAdUser -All $true` comando.</span><span class="sxs-lookup"><span data-stu-id="5f38d-111">To list all of the users in your subscription, use the `Get-AzureAdUser -All $true` command.</span></span>
+><span data-ttu-id="117dd-111">Per elencare tutti gli utenti dell'abbonamento, utilizzare il `Get-AzureAdUser -All $true` comando.</span><span class="sxs-lookup"><span data-stu-id="117dd-111">To list all of the users in your subscription, use the `Get-AzureAdUser -All $true` command.</span></span>
 >
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="5f38d-112">Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="5f38d-112">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="117dd-112">Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="117dd-112">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="5f38d-113">Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="5f38d-113">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="117dd-113">Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="117dd-113">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-<span data-ttu-id="5f38d-114">Per visualizzare l'elenco di tutti gli account utente e il relativo stato di licenza nell'organizzazione, eseguire il comando seguente in PowerShell:</span><span class="sxs-lookup"><span data-stu-id="5f38d-114">To view the list of all user accounts and their licensing status in your organization, run the following command in PowerShell:</span></span>
+<span data-ttu-id="117dd-114">Per visualizzare l'elenco di tutti gli account utente e il relativo stato di licenza nell'organizzazione, eseguire il comando seguente in PowerShell:</span><span class="sxs-lookup"><span data-stu-id="117dd-114">To view the list of all user accounts and their licensing status in your organization, run the following command in PowerShell:</span></span>
   
 ```powershell
 Get-MsolUser -All
 ```
 
 >[!Note]
-><span data-ttu-id="5f38d-115">PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome.</span><span class="sxs-lookup"><span data-stu-id="5f38d-115">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="5f38d-116">Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="5f38d-116">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="117dd-115">PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome.</span><span class="sxs-lookup"><span data-stu-id="117dd-115">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="117dd-116">Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="117dd-116">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="5f38d-117">Per visualizzare l'elenco di tutti gli account utente senza licenza nell'organizzazione, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="5f38d-117">To view the list of all unlicensed user accounts in your organization, run the following command:</span></span>
+<span data-ttu-id="117dd-117">Per visualizzare l'elenco di tutti gli account utente senza licenza nell'organizzazione, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="117dd-117">To view the list of all unlicensed user accounts in your organization, run the following command:</span></span>
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-<span data-ttu-id="5f38d-118">Per visualizzare l'elenco di tutti gli account utente con licenza nell'organizzazione, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="5f38d-118">To view the list of all licensed user accounts in your organization, run the following command:</span></span>
+<span data-ttu-id="117dd-118">Per visualizzare l'elenco di tutti gli account utente con licenza nell'organizzazione, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="117dd-118">To view the list of all licensed user accounts in your organization, run the following command:</span></span>
   
 ```powershell
 Get-MsolUser -All | where {$_.isLicensed -eq $true}
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5f38d-119">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="5f38d-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="117dd-119">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="117dd-119">See also</span></span>
 
-[<span data-ttu-id="5f38d-120">Gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="5f38d-120">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="117dd-120">Gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="117dd-120">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="5f38d-121">Gestire Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="5f38d-121">Manage Microsoft 365 with PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="117dd-121">Gestire Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="117dd-121">Manage Microsoft 365 with PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="5f38d-122">Guida introduttiva a PowerShell per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="5f38d-122">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="117dd-122">Guida introduttiva a PowerShell per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="117dd-122">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-office-365-powershell.md)

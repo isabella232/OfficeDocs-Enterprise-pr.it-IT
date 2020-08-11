@@ -13,50 +13,52 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
-description: Ottenere l'accesso alle risorse da pianificare per la distribuzione di Microsoft 365 Enterprise.
-ms.openlocfilehash: 4b779365fc1dbad05e1eacbba1e346530952d372
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: In questo articolo vengono forniti elenchi di controllo e altre risorse per la pianificazione della distribuzione di Microsoft 365 Enterprise.
+ms.openlocfilehash: 0f3fb9a70f9f5035f2f1a0f3a90ce1a50ac3c6b8
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774471"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606392"
 ---
-# <a name="plan-for-microsoft-365-enterprise"></a><span data-ttu-id="38e82-103">Pianificare Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="38e82-103">Plan for Microsoft 365 Enterprise</span></span>
+# <a name="plan-for-microsoft-365-enterprise"></a><span data-ttu-id="62390-103">Pianificare Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="62390-103">Plan for Microsoft 365 Enterprise</span></span>
 
-<span data-ttu-id="38e82-104">Quando si sposta un'organizzazione Enterprise in Microsoft 365, è importante pianificare la pianificazione e prendere le decisioni di progettazione chiave che semplificano la distribuzione e l'adozione dell'utente.</span><span class="sxs-lookup"><span data-stu-id="38e82-104">When you move an enterprise organization to Microsoft 365, it's important to plan ahead and make the key design decisions that will streamline IT deployment and user adoption.</span></span> 
+<span data-ttu-id="62390-104">Quando si sposta un'organizzazione Enterprise in Microsoft 365, è importante pianificare la pianificazione e prendere le decisioni di progettazione chiave che semplificano la distribuzione e l'adozione dell'utente.</span><span class="sxs-lookup"><span data-stu-id="62390-104">When you move an enterprise organization to Microsoft 365, it's important to plan ahead and make the key design decisions that will streamline IT deployment and user adoption.</span></span> 
 
-## <a name="planning-with-microsoft-365-fasttrack"></a><span data-ttu-id="38e82-105">Planning with Microsoft 365 FastTrack</span><span class="sxs-lookup"><span data-stu-id="38e82-105">Planning with Microsoft 365 FastTrack</span></span>
+## <a name="planning-with-microsoft-365-fasttrack"></a><span data-ttu-id="62390-105">Planning with Microsoft 365 FastTrack</span><span class="sxs-lookup"><span data-stu-id="62390-105">Planning with Microsoft 365 FastTrack</span></span>
 
-<span data-ttu-id="38e82-106">[FastTrack per microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) è il metodo migliore per ottenere assistenza da Microsoft per la pianificazione della distribuzione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="38e82-106">[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) is the best method for getting help from Microsoft for planning your Microsoft 365 deployment.</span></span> <span data-ttu-id="38e82-107">FastTrack può essere di aiuto nelle considerazioni di progettazione più comuni e può rispondere a domande lungo la strada.</span><span class="sxs-lookup"><span data-stu-id="38e82-107">FastTrack can help you through the most common design considerations and can answer questions along the way.</span></span> 
+<span data-ttu-id="62390-106">[FastTrack per microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) è il metodo migliore per ottenere assistenza da Microsoft per la pianificazione della distribuzione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="62390-106">[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) is the best method for getting help from Microsoft for planning your Microsoft 365 deployment.</span></span> <span data-ttu-id="62390-107">FastTrack può essere di aiuto nelle considerazioni di progettazione più comuni e può rispondere a domande lungo la strada.</span><span class="sxs-lookup"><span data-stu-id="62390-107">FastTrack can help you through the most common design considerations and can answer questions along the way.</span></span> 
 
 >[!Note]
-><span data-ttu-id="38e82-108">È inoltre possibile ottenere assistenza da un [partner Microsoft](https://www.microsoft.com/solution-providers/home).</span><span class="sxs-lookup"><span data-stu-id="38e82-108">You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).</span></span>
+><span data-ttu-id="62390-108">È inoltre possibile ottenere assistenza da un [partner Microsoft](https://www.microsoft.com/solution-providers/home).</span><span class="sxs-lookup"><span data-stu-id="62390-108">You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).</span></span>
 >
 
-## <a name="do-it-yourself-planning-for-microsoft-365"></a><span data-ttu-id="38e82-109">Pianificazione del fai da te per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="38e82-109">Do-it-yourself planning for Microsoft 365</span></span>
+## <a name="do-it-yourself-planning-for-microsoft-365"></a><span data-ttu-id="62390-109">Pianificazione del fai da te per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="62390-109">Do-it-yourself planning for Microsoft 365</span></span>
 
-<span data-ttu-id="38e82-110">Per pianificare Microsoft 365 da soli, è possibile eseguire le decisioni di pianificazione e progettazione per queste aree:</span><span class="sxs-lookup"><span data-stu-id="38e82-110">To plan for Microsoft 365 on your own, step through the planning and design decisions for these areas:</span></span>
+<span data-ttu-id="62390-110">Per pianificare Microsoft 365 da soli, è possibile eseguire le decisioni di pianificazione e progettazione per queste aree:</span><span class="sxs-lookup"><span data-stu-id="62390-110">To plan for Microsoft 365 on your own, step through the planning and design decisions for these areas:</span></span>
 
-- <span data-ttu-id="38e82-111">Tenant di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="38e82-111">Your Microsoft 365 tenant</span></span>
+- <span data-ttu-id="62390-111">Tenant di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="62390-111">Your Microsoft 365 tenant</span></span>
 
-  <span data-ttu-id="38e82-112">Include la pianificazione per le connessioni di rete a Internet, le identità di Microsoft 365 e l'integrazione con le app, gli elementi locali, di Azure e di altro.</span><span class="sxs-lookup"><span data-stu-id="38e82-112">Includes planning for your network connections to the Internet, your Microsoft 365 identities, and integration with apps, on-premises, Azure, and other elements.</span></span> <span data-ttu-id="38e82-113">Iniziare da [qui](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span><span class="sxs-lookup"><span data-stu-id="38e82-113">Start [here](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span></span>
+  <span data-ttu-id="62390-112">Include la pianificazione per le connessioni di rete a Internet, le identità di Microsoft 365 e l'integrazione con le app, gli elementi locali, di Azure e di altro.</span><span class="sxs-lookup"><span data-stu-id="62390-112">Includes planning for your network connections to the Internet, your Microsoft 365 identities, and integration with apps, on-premises, Azure, and other elements.</span></span> <span data-ttu-id="62390-113">Per ulteriori informazioni, visitare [abbonamenti, licenze, account e tenant per le offerte cloud di Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) .</span><span class="sxs-lookup"><span data-stu-id="62390-113">Go to [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) for more information.</span></span>
 
-- <span data-ttu-id="38e82-114">Supporto per i client</span><span class="sxs-lookup"><span data-stu-id="38e82-114">Support for your clients</span></span>
+- <span data-ttu-id="62390-114">Supporto per i client</span><span class="sxs-lookup"><span data-stu-id="62390-114">Support for your clients</span></span>
 
-  <span data-ttu-id="38e82-115">Include l'autenticazione basata su certificati, la gestione dei dispositivi mobili, le opzioni di autenticazione e la collaborazione tra tenant.</span><span class="sxs-lookup"><span data-stu-id="38e82-115">Includes certificate-based authentication, mobile device management, authentication options, and inter-tenant collaboration.</span></span> <span data-ttu-id="38e82-116">Iniziare da [qui](office-365-client-support-certificate-based-authentication.md).</span><span class="sxs-lookup"><span data-stu-id="38e82-116">Start [here](office-365-client-support-certificate-based-authentication.md).</span></span>
+  <span data-ttu-id="62390-115">Include l'autenticazione basata su certificati, la gestione dei dispositivi mobili, le opzioni di autenticazione e la collaborazione tra tenant.</span><span class="sxs-lookup"><span data-stu-id="62390-115">Includes certificate-based authentication, mobile device management, authentication options, and inter-tenant collaboration.</span></span> <span data-ttu-id="62390-116">Per ulteriori informazioni, accedere all' [autenticazione basata su certificato](office-365-client-support-certificate-based-authentication.md) .</span><span class="sxs-lookup"><span data-stu-id="62390-116">Go to [Certificate-based Authentication](office-365-client-support-certificate-based-authentication.md) for more information.</span></span>
 
-- <span data-ttu-id="38e82-117">Supporto per l'autenticazione moderna ibrida</span><span class="sxs-lookup"><span data-stu-id="38e82-117">Support for hybrid modern authentication</span></span>
+- <span data-ttu-id="62390-117">Supporto per l'autenticazione moderna ibrida</span><span class="sxs-lookup"><span data-stu-id="62390-117">Support for hybrid modern authentication</span></span>
 
-  <span data-ttu-id="38e82-118">Include la pianificazione per l'autenticazione moderna quando si utilizzano configurazioni ibride delle app principali per la produttività di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="38e82-118">Includes planning for modern authentication when using hybrid configurations of key Microsoft 365 productivity apps.</span></span> <span data-ttu-id="38e82-119">Iniziare da [qui](hybrid-modern-auth-overview.md).</span><span class="sxs-lookup"><span data-stu-id="38e82-119">Start [here](hybrid-modern-auth-overview.md).</span></span>
+  <span data-ttu-id="62390-118">Include la pianificazione per l'autenticazione moderna quando si utilizzano configurazioni ibride delle app principali per la produttività di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="62390-118">Includes planning for modern authentication when using hybrid configurations of key Microsoft 365 productivity apps.</span></span> <span data-ttu-id="62390-119">Per ulteriori informazioni, andare alla [panoramica e ai prerequisiti per l'autenticazione moderna ibrida](hybrid-modern-auth-overview.md) .</span><span class="sxs-lookup"><span data-stu-id="62390-119">Go to [Hybrid modern authentication overview and prerequisites](hybrid-modern-auth-overview.md) for more information.</span></span>
 
-- <span data-ttu-id="38e82-120">Server e client di Office meno recenti</span><span class="sxs-lookup"><span data-stu-id="38e82-120">Older Office clients and servers</span></span>
+- <span data-ttu-id="62390-120">Server e client di Office meno recenti</span><span class="sxs-lookup"><span data-stu-id="62390-120">Older Office clients and servers</span></span>
 
-  <span data-ttu-id="38e82-121">Include informazioni sulla migrazione per i prodotti client e server di Office 2007 e Office 2010.</span><span class="sxs-lookup"><span data-stu-id="38e82-121">Includes migration information for Office 2007 and Office 2010 client and server products.</span></span> <span data-ttu-id="38e82-122">Iniziare da [qui](plan-upgrade-previous-versions-office.md).</span><span class="sxs-lookup"><span data-stu-id="38e82-122">Start [here](plan-upgrade-previous-versions-office.md).</span></span>
+  <span data-ttu-id="62390-121">Include informazioni sulla migrazione per i prodotti client e server di Office 2007 e Office 2010.</span><span class="sxs-lookup"><span data-stu-id="62390-121">Includes migration information for Office 2007 and Office 2010 client and server products.</span></span> <span data-ttu-id="62390-122">Andare a [pianificare l'aggiornamento](plan-upgrade-previous-versions-office.md) per ulteriori informazioni.</span><span class="sxs-lookup"><span data-stu-id="62390-122">Go to [Plan your upgrade](plan-upgrade-previous-versions-office.md) for more information.</span></span>
 
-<span data-ttu-id="38e82-123">È inoltre possibile accedere alla sottoscrizione Microsoft 365 e utilizzare le [guide di installazione per microsoft 365 e i servizi di Office 365](setup-guides-for-office-365.md).</span><span class="sxs-lookup"><span data-stu-id="38e82-123">You can also sign in to your Microsoft 365 subscription and use the [Setup guides for Microsoft 365 and Office 365 services](setup-guides-for-office-365.md).</span></span>
+<span data-ttu-id="62390-123">È inoltre possibile accedere alla sottoscrizione Microsoft 365 e utilizzare le [guide di installazione per microsoft 365 e i servizi di Office 365](setup-guides-for-office-365.md).</span><span class="sxs-lookup"><span data-stu-id="62390-123">You can also sign in to your Microsoft 365 subscription and use the [Setup guides for Microsoft 365 and Office 365 services](setup-guides-for-office-365.md).</span></span>
