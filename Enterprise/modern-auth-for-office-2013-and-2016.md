@@ -111,7 +111,7 @@ Nella tabella seguente viene descritto il comportamento di autenticazione per le
 |Office 2013  <br/> |No  <br/> |No  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |Solo assistente per l'accesso di Microsoft online.  <br/> |
 |Office 2013  <br/> |Sì, EnableADAL = 1  <br/> |Sì  <br/> |Solo autenticazione moderna.  <br/> |Errore di connessione.  <br/> |
    
-### <a name="skype-for-business-online"></a>Skype for Business Online
+### <a name="skype-for-business-online"></a>Skype for Business online
 <a name="BK_SFBO"> </a>
 
 Nella tabella seguente viene descritto il comportamento di autenticazione per le app client di Office 2013, Office 2016 e Office 2019 quando si connettono a Skype for business online con o senza l'autenticazione moderna.
